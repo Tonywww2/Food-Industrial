@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau"
+  ],
+  "features": "foodindustrial:wild_stevia",
+  "step": "vegetal_decoration"
+}

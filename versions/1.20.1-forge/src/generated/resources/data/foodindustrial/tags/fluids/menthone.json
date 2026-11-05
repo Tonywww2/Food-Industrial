@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthone",
+    "foodindustrial:flowing_menthone",
+    {
+      "id": "#forge:menthone",
+      "required": false
+    }
+  ]
+}

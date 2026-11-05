@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_vanillylmandelic_acid",
+    "foodindustrial:flowing_ethyl_vanillylmandelic_acid",
+    {
+      "id": "#forge:ethyl_vanillylmandelic_acid",
+      "required": false
+    }
+  ]
+}

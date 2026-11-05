@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bha",
+    {
+      "id": "#forge:dusts/bha",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/bha",
+      "required": false
+    }
+  ]
+}

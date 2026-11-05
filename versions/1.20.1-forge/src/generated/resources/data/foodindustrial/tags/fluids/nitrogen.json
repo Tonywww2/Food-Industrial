@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitrogen",
+    "foodindustrial:flowing_nitrogen",
+    {
+      "id": "#forge:nitrogen",
+      "required": false
+    }
+  ]
+}

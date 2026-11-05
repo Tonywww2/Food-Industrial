@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_seagrass",
+  "textures": {
+    "texture": "foodindustrial:block/eucheuma"
+  },
+  "render_type": "minecraft:cutout"
+}

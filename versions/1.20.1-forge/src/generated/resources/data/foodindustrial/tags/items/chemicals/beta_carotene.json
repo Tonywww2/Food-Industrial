@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_carotene",
+    {
+      "id": "#forge:dusts/beta_carotene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/beta_carotene",
+      "required": false
+    }
+  ]
+}

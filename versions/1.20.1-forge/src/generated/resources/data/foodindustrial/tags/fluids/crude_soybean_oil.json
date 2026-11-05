@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:crude_soybean_oil",
+    "foodindustrial:flowing_crude_soybean_oil",
+    {
+      "id": "#forge:crude_soybean_oil",
+      "required": false
+    }
+  ]
+}

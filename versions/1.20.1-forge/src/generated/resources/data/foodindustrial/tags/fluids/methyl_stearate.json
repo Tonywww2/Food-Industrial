@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_stearate",
+    "foodindustrial:flowing_methyl_stearate",
+    {
+      "id": "#forge:methyl_stearate",
+      "required": false
+    }
+  ]
+}

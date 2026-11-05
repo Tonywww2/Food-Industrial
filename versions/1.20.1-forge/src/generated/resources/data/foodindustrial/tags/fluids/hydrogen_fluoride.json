@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrogen_fluoride",
+    "foodindustrial:flowing_hydrogen_fluoride",
+    {
+      "id": "#forge:hydrogen_fluoride",
+      "required": false
+    }
+  ]
+}

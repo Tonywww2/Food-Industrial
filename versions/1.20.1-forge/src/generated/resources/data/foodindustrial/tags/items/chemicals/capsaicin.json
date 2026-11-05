@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:capsaicin",
+    {
+      "id": "#forge:dusts/capsaicin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/capsaicin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ricinoleic_acid",
+    "foodindustrial:flowing_ricinoleic_acid",
+    {
+      "id": "#forge:ricinoleic_acid",
+      "required": false
+    }
+  ]
+}

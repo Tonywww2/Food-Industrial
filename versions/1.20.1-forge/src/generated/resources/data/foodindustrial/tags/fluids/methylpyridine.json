@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylpyridine",
+    "foodindustrial:flowing_methylpyridine",
+    {
+      "id": "#forge:methylpyridine",
+      "required": false
+    }
+  ]
+}

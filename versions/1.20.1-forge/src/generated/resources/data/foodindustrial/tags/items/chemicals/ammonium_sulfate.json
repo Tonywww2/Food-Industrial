@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_sulfate",
+    {
+      "id": "#forge:dusts/ammonium_sulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_sulfate",
+      "required": false
+    }
+  ]
+}

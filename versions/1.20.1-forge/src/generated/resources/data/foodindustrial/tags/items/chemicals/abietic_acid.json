@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:abietic_acid",
+    {
+      "id": "#forge:dusts/abietic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/abietic_acid",
+      "required": false
+    }
+  ]
+}

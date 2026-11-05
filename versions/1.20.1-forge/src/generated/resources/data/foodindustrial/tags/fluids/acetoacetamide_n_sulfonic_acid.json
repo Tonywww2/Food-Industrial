@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetoacetamide_n_sulfonic_acid",
+    "foodindustrial:flowing_acetoacetamide_n_sulfonic_acid",
+    {
+      "id": "#forge:acetoacetamide_n_sulfonic_acid",
+      "required": false
+    }
+  ]
+}

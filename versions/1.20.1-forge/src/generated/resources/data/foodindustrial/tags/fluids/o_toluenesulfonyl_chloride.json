@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_toluenesulfonyl_chloride",
+    "foodindustrial:flowing_o_toluenesulfonyl_chloride",
+    {
+      "id": "#forge:o_toluenesulfonyl_chloride",
+      "required": false
+    }
+  ]
+}

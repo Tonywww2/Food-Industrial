@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aluminium_chloride",
+    {
+      "id": "#forge:dusts/aluminium_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aluminium_chloride",
+      "required": false
+    }
+  ]
+}

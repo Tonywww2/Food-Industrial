@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorosulfonic_acid",
+    "foodindustrial:flowing_chlorosulfonic_acid",
+    {
+      "id": "#forge:chlorosulfonic_acid",
+      "required": false
+    }
+  ]
+}

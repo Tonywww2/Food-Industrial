@@ -1,0 +1,1231 @@
+{
+ "tags": [
+  {
+   "tag": "materials/kelp",
+   "kind": "item",
+   "forge": [
+    "minecraft:kelp"
+   ],
+   "c": [
+    "minecraft:kelp"
+   ]
+  },
+  {
+   "tag": "materials/dried_kelp",
+   "kind": "item",
+   "forge": [
+    "minecraft:dried_kelp"
+   ],
+   "c": [
+    "minecraft:dried_kelp"
+   ]
+  },
+  {
+   "tag": "materials/seagrass",
+   "kind": "item",
+   "forge": [
+    "minecraft:seagrass"
+   ],
+   "c": [
+    "minecraft:seagrass"
+   ]
+  },
+  {
+   "tag": "materials/sugar_cane",
+   "kind": "item",
+   "forge": [
+    "minecraft:sugar_cane"
+   ],
+   "c": [
+    "minecraft:sugar_cane",
+    "#c:crops/sugar_cane"
+   ]
+  },
+  {
+   "tag": "chemicals/sucrose",
+   "kind": "item",
+   "forge": [
+    "minecraft:sugar",
+    "#forge:sugar"
+   ],
+   "c": [
+    "minecraft:sugar",
+    "#c:sugar"
+   ]
+  },
+  {
+   "tag": "materials/beetroot",
+   "kind": "item",
+   "forge": [
+    "minecraft:beetroot",
+    "#forge:crops/beetroot",
+    "#forge:vegetables/beetroot"
+   ],
+   "c": [
+    "minecraft:beetroot",
+    "#c:crops/beetroot",
+    "#c:vegetables/beetroot"
+   ]
+  },
+  {
+   "tag": "materials/carrot",
+   "kind": "item",
+   "forge": [
+    "minecraft:carrot",
+    "#forge:crops/carrot",
+    "#forge:vegetables/carrot"
+   ],
+   "c": [
+    "minecraft:carrot",
+    "#c:crops/carrot",
+    "#c:vegetables/carrot"
+   ]
+  },
+  {
+   "tag": "materials/potato",
+   "kind": "item",
+   "forge": [
+    "minecraft:potato",
+    "#forge:crops/potato",
+    "#forge:vegetables/potato"
+   ],
+   "c": [
+    "minecraft:potato",
+    "#c:crops/potato",
+    "#c:vegetables/potato"
+   ]
+  },
+  {
+   "tag": "materials/wheat",
+   "kind": "item",
+   "forge": [
+    "minecraft:wheat",
+    "#forge:crops/wheat",
+    "#forge:grain/wheat"
+   ],
+   "c": [
+    "minecraft:wheat",
+    "#c:crops/wheat",
+    "#c:grain/wheat",
+    "#c:grains/wheat"
+   ]
+  },
+  {
+   "tag": "materials/apple",
+   "kind": "item",
+   "forge": [
+    "minecraft:apple",
+    "#forge:fruits/apple"
+   ],
+   "c": [
+    "minecraft:apple",
+    "#c:fruits/apple"
+   ]
+  },
+  {
+   "tag": "materials/berries",
+   "kind": "item",
+   "forge": [
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    "#forge:berries"
+   ],
+   "c": [
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    "#c:foods/berry"
+   ]
+  },
+  {
+   "tag": "materials/cocoa_beans",
+   "kind": "item",
+   "forge": [
+    "minecraft:cocoa_beans",
+    "#forge:crops/cocoabeans"
+   ],
+   "c": [
+    "minecraft:cocoa_beans",
+    "#c:crops/cocoa_bean",
+    "#c:crops/cocoabeans"
+   ]
+  },
+  {
+   "tag": "materials/honey",
+   "kind": "item",
+   "forge": [
+    "minecraft:honey_bottle"
+   ],
+   "c": [
+    "minecraft:honey_bottle"
+   ]
+  },
+  {
+   "tag": "honey",
+   "kind": "fluid",
+   "forge": [
+    "#forge:honey"
+   ],
+   "c": [
+    "#c:honey"
+   ]
+  },
+  {
+   "tag": "materials/honeycomb",
+   "kind": "item",
+   "forge": [
+    "minecraft:honeycomb"
+   ],
+   "c": [
+    "minecraft:honeycomb"
+   ]
+  },
+  {
+   "tag": "materials/egg",
+   "kind": "item",
+   "forge": [
+    "minecraft:egg",
+    "#forge:eggs"
+   ],
+   "c": [
+    "minecraft:egg",
+    "#c:eggs"
+   ]
+  },
+  {
+   "tag": "milk",
+   "kind": "fluid",
+   "forge": [
+    "#forge:milk"
+   ],
+   "c": [
+    "#c:milk"
+   ]
+  },
+  {
+   "tag": "materials/milk",
+   "kind": "item",
+   "forge": [
+    "minecraft:milk_bucket"
+   ],
+   "c": [
+    "minecraft:milk_bucket"
+   ]
+  },
+  {
+   "tag": "materials/bone",
+   "kind": "item",
+   "forge": [
+    "minecraft:bone",
+    "#forge:bones"
+   ],
+   "c": [
+    "minecraft:bone",
+    "#c:bones"
+   ]
+  },
+  {
+   "tag": "materials/bone_meal",
+   "kind": "item",
+   "forge": [
+    "minecraft:bone_meal"
+   ],
+   "c": [
+    "minecraft:bone_meal"
+   ]
+  },
+  {
+   "tag": "materials/horn",
+   "kind": "item",
+   "forge": [
+    "minecraft:goat_horn"
+   ],
+   "c": [
+    "minecraft:goat_horn"
+   ]
+  },
+  {
+   "tag": "materials/hide",
+   "kind": "item",
+   "forge": [
+    "minecraft:leather",
+    "minecraft:rabbit_hide",
+    "#forge:leather"
+   ],
+   "c": [
+    "minecraft:leather",
+    "minecraft:rabbit_hide",
+    "#c:leathers"
+   ]
+  },
+  {
+   "tag": "materials/raw_pork",
+   "kind": "item",
+   "forge": [
+    "minecraft:porkchop",
+    "#forge:raw_pork"
+   ],
+   "c": [
+    "minecraft:porkchop",
+    "#c:foods/raw_pork"
+   ]
+  },
+  {
+   "tag": "materials/raw_beef",
+   "kind": "item",
+   "forge": [
+    "minecraft:beef",
+    "#forge:raw_beef"
+   ],
+   "c": [
+    "minecraft:beef",
+    "#c:foods/raw_beef"
+   ]
+  },
+  {
+   "tag": "materials/raw_mutton",
+   "kind": "item",
+   "forge": [
+    "minecraft:mutton",
+    "#forge:raw_mutton"
+   ],
+   "c": [
+    "minecraft:mutton",
+    "#c:foods/raw_mutton"
+   ]
+  },
+  {
+   "tag": "materials/raw_chicken",
+   "kind": "item",
+   "forge": [
+    "minecraft:chicken",
+    "#forge:raw_chicken"
+   ],
+   "c": [
+    "minecraft:chicken",
+    "#c:foods/raw_chicken"
+   ]
+  },
+  {
+   "tag": "materials/raw_rabbit",
+   "kind": "item",
+   "forge": [
+    "minecraft:rabbit"
+   ],
+   "c": [
+    "minecraft:rabbit"
+   ]
+  },
+  {
+   "tag": "materials/raw_fish",
+   "kind": "item",
+   "forge": [
+    "#minecraft:fishes",
+    "#forge:raw_fishes"
+   ],
+   "c": [
+    "#minecraft:fishes",
+    "#c:foods/raw_fish"
+   ]
+  },
+  {
+   "tag": "materials/logs",
+   "kind": "item",
+   "forge": [
+    "#minecraft:logs"
+   ],
+   "c": [
+    "#minecraft:logs"
+   ]
+  },
+  {
+   "tag": "materials/leaves",
+   "kind": "item",
+   "forge": [
+    "#minecraft:leaves"
+   ],
+   "c": [
+    "#minecraft:leaves"
+   ]
+  },
+  {
+   "tag": "materials/grass",
+   "kind": "item",
+   "forge": [
+    "minecraft:grass",
+    "minecraft:fern",
+    "minecraft:tall_grass"
+   ],
+   "c": [
+    "minecraft:short_grass",
+    "minecraft:fern",
+    "minecraft:tall_grass"
+   ]
+  },
+  {
+   "tag": "materials/saltbush",
+   "kind": "item",
+   "forge": [
+    "minecraft:dead_bush"
+   ],
+   "c": [
+    "minecraft:dead_bush"
+   ]
+  },
+  {
+   "tag": "materials/limestone",
+   "kind": "item",
+   "forge": [
+    "minecraft:calcite",
+    "minecraft:dripstone_block"
+   ],
+   "c": [
+    "minecraft:calcite",
+    "minecraft:dripstone_block"
+   ]
+  },
+  {
+   "tag": "materials/sand",
+   "kind": "item",
+   "forge": [
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "#forge:sand"
+   ],
+   "c": [
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "#c:sands"
+   ]
+  },
+  {
+   "tag": "materials/clay",
+   "kind": "item",
+   "forge": [
+    "minecraft:clay_ball"
+   ],
+   "c": [
+    "minecraft:clay_ball"
+   ]
+  },
+  {
+   "tag": "materials/coal",
+   "kind": "item",
+   "forge": [
+    "#minecraft:coals"
+   ],
+   "c": [
+    "#minecraft:coals"
+   ]
+  },
+  {
+   "tag": "materials/copper",
+   "kind": "item",
+   "forge": [
+    "minecraft:copper_ingot",
+    "#forge:ingots/copper"
+   ],
+   "c": [
+    "minecraft:copper_ingot",
+    "#c:ingots/copper"
+   ]
+  },
+  {
+   "tag": "materials/iron",
+   "kind": "item",
+   "forge": [
+    "minecraft:iron_ingot",
+    "#forge:ingots/iron"
+   ],
+   "c": [
+    "minecraft:iron_ingot",
+    "#c:ingots/iron"
+   ]
+  },
+  {
+   "tag": "materials/gold",
+   "kind": "item",
+   "forge": [
+    "minecraft:gold_ingot",
+    "#forge:ingots/gold"
+   ],
+   "c": [
+    "minecraft:gold_ingot",
+    "#c:ingots/gold"
+   ]
+  },
+  {
+   "tag": "materials/ice",
+   "kind": "item",
+   "forge": [
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice"
+   ],
+   "c": [
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice"
+   ]
+  },
+  {
+   "tag": "materials/snow",
+   "kind": "item",
+   "forge": [
+    "minecraft:snowball",
+    "minecraft:snow_block"
+   ],
+   "c": [
+    "minecraft:snowball",
+    "minecraft:snow_block"
+   ]
+  },
+  {
+   "tag": "water",
+   "kind": "fluid",
+   "forge": [
+    "#minecraft:water"
+   ],
+   "c": [
+    "#minecraft:water"
+   ]
+  },
+  {
+   "tag": "heat_sources",
+   "kind": "fluid",
+   "forge": [
+    "#minecraft:lava"
+   ],
+   "c": [
+    "#minecraft:lava"
+   ]
+  },
+  {
+   "tag": "materials/wool",
+   "kind": "item",
+   "forge": [
+    "#minecraft:wool"
+   ],
+   "c": [
+    "#minecraft:wool"
+   ]
+  },
+  {
+   "tag": "materials/hemicellulose",
+   "kind": "item",
+   "forge": [
+    "minecraft:birch_log",
+    "minecraft:stripped_birch_log"
+   ],
+   "c": [
+    "minecraft:birch_log",
+    "minecraft:stripped_birch_log"
+   ]
+  },
+  {
+   "tag": "materials/rice",
+   "kind": "item",
+   "forge": [
+    "farmersdelight:rice",
+    "foodindustrial:rice",
+    "#forge:crops/rice",
+    "#forge:grain/rice"
+   ],
+   "c": [
+    "farmersdelight:rice",
+    "foodindustrial:rice",
+    "#c:crops/rice",
+    "#c:grain/rice"
+   ]
+  },
+  {
+   "tag": "materials/tomato",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/tomato",
+    "#forge:vegetables/tomato"
+   ],
+   "c": [
+    "#c:crops/tomato",
+    "#c:vegetables/tomato"
+   ]
+  },
+  {
+   "tag": "materials/onion",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/onion"
+   ],
+   "c": [
+    "#c:crops/onion"
+   ]
+  },
+  {
+   "tag": "materials/cabbage",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/cabbage"
+   ],
+   "c": [
+    "#c:crops/cabbage"
+   ]
+  },
+  {
+   "tag": "materials/straw",
+   "kind": "item",
+   "forge": [
+    "farmersdelight:straw"
+   ],
+   "c": [
+    "farmersdelight:straw"
+   ]
+  },
+  {
+   "tag": "chemicals/sulfur",
+   "kind": "item",
+   "forge": [
+    "#forge:dusts/sulfur",
+    "#forge:gems/sulfur"
+   ],
+   "c": [
+    "#c:dusts/sulfur",
+    "#c:gems/sulfur"
+   ]
+  },
+  {
+   "tag": "chemicals/potassium_nitrate",
+   "kind": "item",
+   "forge": [
+    "#forge:dusts/niter",
+    "#forge:gems/niter",
+    "#forge:dusts/saltpeter"
+   ],
+   "c": [
+    "#c:dusts/niter",
+    "#c:gems/niter",
+    "#c:dusts/saltpeter"
+   ]
+  },
+  {
+   "tag": "materials/apatite",
+   "kind": "item",
+   "forge": [
+    "#forge:gems/apatite",
+    "#forge:dusts/apatite",
+    "foodindustrial:apatite_ore",
+    "#forge:ores/apatite"
+   ],
+   "c": [
+    "#c:gems/apatite",
+    "#c:dusts/apatite",
+    "foodindustrial:apatite_ore",
+    "#c:ores/apatite"
+   ]
+  },
+  {
+   "tag": "materials/nickel",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/nickel",
+    "#forge:dusts/nickel"
+   ],
+   "c": [
+    "#c:ingots/nickel",
+    "#c:dusts/nickel"
+   ]
+  },
+  {
+   "tag": "materials/lead",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/lead"
+   ],
+   "c": [
+    "#c:ingots/lead"
+   ]
+  },
+  {
+   "tag": "materials/coke",
+   "kind": "item",
+   "forge": [
+    "#forge:coal_coke",
+    "#forge:gems/coke"
+   ],
+   "c": [
+    "#c:coal_coke",
+    "#c:gems/coke"
+   ]
+  },
+  {
+   "tag": "crude_oil",
+   "kind": "fluid",
+   "forge": [
+    "#forge:crude_oil"
+   ],
+   "c": [
+    "#c:crude_oil"
+   ]
+  },
+  {
+   "tag": "wood_tar",
+   "kind": "fluid",
+   "forge": [
+    "#forge:creosote"
+   ],
+   "c": [
+    "#c:creosote"
+   ]
+  },
+  {
+   "tag": "vegetable_oil",
+   "kind": "fluid",
+   "forge": [
+    "#forge:plantoil",
+    "pneumaticcraft:vegetable_oil"
+   ],
+   "c": [
+    "#c:plantoil",
+    "pneumaticcraft:vegetable_oil"
+   ]
+  },
+  {
+   "tag": "materials/tannin_source",
+   "kind": "item",
+   "forge": [
+    "farmersdelight:tree_bark",
+    "#minecraft:oak_logs"
+   ],
+   "c": [
+    "farmersdelight:tree_bark",
+    "#minecraft:oak_logs"
+   ]
+  },
+  {
+   "tag": "latex",
+   "kind": "fluid",
+   "forge": [
+    "thermal:latex",
+    "#forge:latex"
+   ],
+   "c": [
+    "#c:latex"
+   ]
+  },
+  {
+   "tag": "resin",
+   "kind": "fluid",
+   "forge": [
+    "thermal:resin"
+   ],
+   "c": []
+  },
+  {
+   "tag": "materials/tin",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/tin"
+   ],
+   "c": [
+    "#c:ingots/tin"
+   ]
+  },
+  {
+   "tag": "materials/silver",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/silver"
+   ],
+   "c": [
+    "#c:ingots/silver"
+   ]
+  },
+  {
+   "tag": "materials/lemon",
+   "kind": "item",
+   "forge": [
+    "#forge:fruits/lemon",
+    "#forge:crops/lemon"
+   ],
+   "c": [
+    "#c:fruits/lemon",
+    "#c:crops/lemon"
+   ]
+  },
+  {
+   "tag": "materials/citrus",
+   "kind": "item",
+   "forge": [
+    "#forge:fruits/lemon",
+    "#forge:fruits/orange",
+    "#forge:fruits/lime",
+    "#forge:fruits/grapefruit"
+   ],
+   "c": [
+    "#c:fruits/lemon",
+    "#c:fruits/orange",
+    "#c:fruits/lime",
+    "#c:fruits/grapefruit"
+   ]
+  },
+  {
+   "tag": "materials/grape",
+   "kind": "item",
+   "forge": [
+    "#forge:fruits/grape",
+    "#forge:crops/grape"
+   ],
+   "c": [
+    "#c:fruits/grape",
+    "#c:crops/grape"
+   ]
+  },
+  {
+   "tag": "materials/soybean",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/soybean",
+    "#forge:seeds/soybean"
+   ],
+   "c": [
+    "#c:crops/soybean",
+    "#c:seeds/soybean"
+   ]
+  },
+  {
+   "tag": "materials/corn",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/corn"
+   ],
+   "c": [
+    "#c:crops/corn"
+   ]
+  },
+  {
+   "tag": "materials/chili",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/chilipepper"
+   ],
+   "c": [
+    "#c:crops/chilipepper"
+   ]
+  },
+  {
+   "tag": "materials/tea",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/tealeaf"
+   ],
+   "c": [
+    "#c:crops/tealeaf"
+   ]
+  },
+  {
+   "tag": "materials/mint",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:mint"
+   ],
+   "c": [
+    "foodindustrial:mint"
+   ]
+  },
+  {
+   "tag": "materials/vanilla",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/vanillabean",
+    "foodindustrial:vanilla_pod"
+   ],
+   "c": [
+    "#c:crops/vanillabean",
+    "foodindustrial:vanilla_pod"
+   ]
+  },
+  {
+   "tag": "materials/sesame",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/sesameseeds"
+   ],
+   "c": [
+    "#c:crops/sesameseeds"
+   ]
+  },
+  {
+   "tag": "materials/peanut",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/peanut"
+   ],
+   "c": [
+    "#c:crops/peanut"
+   ]
+  },
+  {
+   "tag": "materials/papaya",
+   "kind": "item",
+   "forge": [
+    "#forge:fruits/papaya"
+   ],
+   "c": [
+    "#c:fruits/papaya"
+   ]
+  },
+  {
+   "tag": "materials/pineapple",
+   "kind": "item",
+   "forge": [
+    "#forge:fruits/pineapple"
+   ],
+   "c": [
+    "#c:fruits/pineapple"
+   ]
+  },
+  {
+   "tag": "materials/gardenia",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:gardenia_fruit"
+   ],
+   "c": [
+    "foodindustrial:gardenia_fruit"
+   ]
+  },
+  {
+   "tag": "materials/rosemary",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:rosemary"
+   ],
+   "c": [
+    "foodindustrial:rosemary"
+   ]
+  },
+  {
+   "tag": "materials/cinnamon",
+   "kind": "item",
+   "forge": [
+    "#forge:crops/cinnamon"
+   ],
+   "c": [
+    "#c:crops/cinnamon"
+   ]
+  },
+  {
+   "tag": "materials/orange",
+   "kind": "item",
+   "forge": [
+    "#forge:fruits/orange"
+   ],
+   "c": [
+    "#c:fruits/orange"
+   ]
+  },
+  {
+   "tag": "chemicals/salt",
+   "kind": "item",
+   "forge": [
+    "#forge:dusts/salt"
+   ],
+   "c": [
+    "#c:dusts/salt"
+   ]
+  },
+  {
+   "tag": "brine",
+   "kind": "fluid",
+   "forge": [
+    "#forge:brine"
+   ],
+   "c": [
+    "#c:brine"
+   ]
+  },
+  {
+   "tag": "sulfuric_acid",
+   "kind": "fluid",
+   "forge": [
+    "#forge:sulfuric_acid"
+   ],
+   "c": [
+    "#c:sulfuric_acid"
+   ]
+  },
+  {
+   "tag": "hydrochloric_acid",
+   "kind": "fluid",
+   "forge": [
+    "#forge:hydrochloric_acid"
+   ],
+   "c": [
+    "#c:hydrochloric_acid"
+   ]
+  },
+  {
+   "tag": "hydrogen_chloride",
+   "kind": "fluid",
+   "forge": [
+    "#forge:hydrogen_chloride"
+   ],
+   "c": [
+    "#c:hydrogen_chloride"
+   ]
+  },
+  {
+   "tag": "hydrogen",
+   "kind": "fluid",
+   "forge": [
+    "#forge:hydrogen"
+   ],
+   "c": [
+    "#c:hydrogen"
+   ]
+  },
+  {
+   "tag": "oxygen",
+   "kind": "fluid",
+   "forge": [
+    "#forge:oxygen"
+   ],
+   "c": [
+    "#c:oxygen"
+   ]
+  },
+  {
+   "tag": "chlorine",
+   "kind": "fluid",
+   "forge": [
+    "#forge:chlorine"
+   ],
+   "c": [
+    "#c:chlorine"
+   ]
+  },
+  {
+   "tag": "ethanol",
+   "kind": "fluid",
+   "forge": [
+    "#forge:ethanol"
+   ],
+   "c": [
+    "#c:ethanol"
+   ]
+  },
+  {
+   "tag": "materials/zinc",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/zinc"
+   ],
+   "c": [
+    "#c:ingots/zinc"
+   ]
+  },
+  {
+   "tag": "materials/tungsten",
+   "kind": "item",
+   "forge": [
+    "#forge:dusts/tungsten",
+    "#forge:ingots/tungsten"
+   ],
+   "c": [
+    "#c:dusts/tungsten",
+    "#c:ingots/tungsten"
+   ]
+  },
+  {
+   "tag": "materials/red_algae",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:gelidium"
+   ],
+   "c": [
+    "foodindustrial:gelidium"
+   ]
+  },
+  {
+   "tag": "materials/red_algae_carrageenan",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:eucheuma"
+   ],
+   "c": [
+    "foodindustrial:eucheuma"
+   ]
+  },
+  {
+   "tag": "materials/stevia",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:stevia"
+   ],
+   "c": [
+    "foodindustrial:stevia"
+   ]
+  },
+  {
+   "tag": "materials/indigo_plant",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:indigo_plant"
+   ],
+   "c": [
+    "foodindustrial:indigo_plant"
+   ]
+  },
+  {
+   "tag": "materials/gypsum",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:gypsum_ore",
+    "#forge:ores/gypsum"
+   ],
+   "c": [
+    "foodindustrial:gypsum_ore",
+    "#c:ores/gypsum"
+   ]
+  },
+  {
+   "tag": "materials/alunite",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:alunite_ore",
+    "#forge:ores/alunite"
+   ],
+   "c": [
+    "foodindustrial:alunite_ore",
+    "#c:ores/alunite"
+   ]
+  },
+  {
+   "tag": "materials/trona",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:trona_ore"
+   ],
+   "c": [
+    "foodindustrial:trona_ore"
+   ]
+  },
+  {
+   "tag": "materials/rock_salt",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:rock_salt",
+    "#forge:ores/salt"
+   ],
+   "c": [
+    "foodindustrial:rock_salt",
+    "#c:ores/salt"
+   ]
+  },
+  {
+   "tag": "materials/magnesite",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:magnesite_ore",
+    "#forge:ores/magnesite"
+   ],
+   "c": [
+    "foodindustrial:magnesite_ore",
+    "#c:ores/magnesite"
+   ]
+  },
+  {
+   "tag": "materials/nitratine",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:nitratine"
+   ],
+   "c": [
+    "foodindustrial:nitratine"
+   ]
+  },
+  {
+   "tag": "materials/nitre_soil",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:nitre_soil"
+   ],
+   "c": [
+    "foodindustrial:nitre_soil"
+   ]
+  },
+  {
+   "tag": "materials/rubber_log",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:rubber_log",
+    "foodindustrial:rubber_wood",
+    "#forge:rubberwood_logs",
+    "#gtceu:rubber_logs"
+   ],
+   "c": [
+    "foodindustrial:rubber_log",
+    "foodindustrial:rubber_wood",
+    "#gtceu:rubber_logs"
+   ]
+  },
+  {
+   "tag": "catalysts/nickel",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:nickel_catalyst"
+   ],
+   "c": [
+    "foodindustrial:nickel_catalyst"
+   ]
+  },
+  {
+   "tag": "catalysts/vanadium",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:vanadium_pentoxide"
+   ],
+   "c": [
+    "foodindustrial:vanadium_pentoxide"
+   ]
+  },
+  {
+   "tag": "catalysts/activated_carbon",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:activated_carbon"
+   ],
+   "c": [
+    "foodindustrial:activated_carbon"
+   ]
+  },
+  {
+   "tag": "catalysts/tungstate",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:sodium_tungstate"
+   ],
+   "c": [
+    "foodindustrial:sodium_tungstate"
+   ]
+  },
+  {
+   "tag": "catalysts/organotin",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:dibutyltin_oxide"
+   ],
+   "c": [
+    "foodindustrial:dibutyltin_oxide"
+   ]
+  },
+  {
+   "tag": "catalysts/aluminium_chloride",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:aluminium_chloride"
+   ],
+   "c": [
+    "foodindustrial:aluminium_chloride"
+   ]
+  }
+ ]
+}

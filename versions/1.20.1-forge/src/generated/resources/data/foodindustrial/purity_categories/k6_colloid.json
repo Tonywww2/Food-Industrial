@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k6_colloid",
+  "grades": {
+    "crude": 40,
+    "refined": 55,
+    "food": 65,
+    "lab": 90
+  }
+}

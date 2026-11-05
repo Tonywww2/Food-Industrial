@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:resin",
+    "foodindustrial:flowing_resin",
+    {
+      "id": "#forge:resin",
+      "required": false
+    },
+    {
+      "id": "thermal:resin",
+      "required": false
+    }
+  ]
+}

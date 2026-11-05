@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonia",
+    "foodindustrial:flowing_ammonia",
+    {
+      "id": "#forge:ammonia",
+      "required": false
+    }
+  ]
+}

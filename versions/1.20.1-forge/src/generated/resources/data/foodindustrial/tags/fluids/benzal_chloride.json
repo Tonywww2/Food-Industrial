@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzal_chloride",
+    "foodindustrial:flowing_benzal_chloride",
+    {
+      "id": "#forge:benzal_chloride",
+      "required": false
+    }
+  ]
+}

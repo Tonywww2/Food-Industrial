@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:caramel",
+  "category": "foodindustrial:k5_natural_extract",
+  "source_purity": 30,
+  "grades": {
+    "crude": 20,
+    "refined": 30,
+    "food": 40,
+    "lab": null
+  }
+}

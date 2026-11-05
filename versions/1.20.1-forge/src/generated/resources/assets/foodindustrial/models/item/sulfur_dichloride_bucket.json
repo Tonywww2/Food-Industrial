@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:sulfur_dichloride",
+  "loader": "forge:fluid_container"
+}

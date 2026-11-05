@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_sulfide",
+    {
+      "id": "#forge:dusts/calcium_sulfide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_sulfide",
+      "required": false
+    }
+  ]
+}

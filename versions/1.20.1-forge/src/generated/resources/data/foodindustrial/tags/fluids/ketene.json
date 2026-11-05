@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ketene",
+    "foodindustrial:flowing_ketene",
+    {
+      "id": "#forge:ketene",
+      "required": false
+    }
+  ]
+}

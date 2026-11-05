@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alginic_acid",
+    {
+      "id": "#forge:dusts/alginic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/alginic_acid",
+      "required": false
+    }
+  ]
+}

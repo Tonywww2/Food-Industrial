@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_hypochlorite",
+    "foodindustrial:flowing_sodium_hypochlorite",
+    {
+      "id": "#forge:sodium_hypochlorite",
+      "required": false
+    }
+  ]
+}

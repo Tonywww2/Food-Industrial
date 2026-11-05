@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:hydrochloric_acid",
+  "category": "foodindustrial:k4_organic_liquid",
+  "grades": {
+    "crude": 20,
+    "refined": 25,
+    "food": 31,
+    "lab": 36
+  }
+}

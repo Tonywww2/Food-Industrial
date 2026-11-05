@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:glyceryl_monostearate",
+  "category": "foodindustrial:k8_emulsifier",
+  "grades": {
+    "crude": 20,
+    "refined": 30,
+    "food": 40,
+    "lab": 90
+  }
+}

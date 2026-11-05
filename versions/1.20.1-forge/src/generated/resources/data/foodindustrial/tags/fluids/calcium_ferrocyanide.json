@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_ferrocyanide",
+    "foodindustrial:flowing_calcium_ferrocyanide",
+    {
+      "id": "#forge:calcium_ferrocyanide",
+      "required": false
+    }
+  ]
+}

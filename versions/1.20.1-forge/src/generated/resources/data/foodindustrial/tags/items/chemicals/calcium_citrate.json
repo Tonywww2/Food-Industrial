@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_citrate",
+    {
+      "id": "#forge:dusts/calcium_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_citrate",
+      "required": false
+    }
+  ]
+}

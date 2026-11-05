@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "foodindustrial:block/rosemary_stage0"
+  },
+  "render_type": "minecraft:cutout"
+}

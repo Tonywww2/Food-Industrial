@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfural",
+    "foodindustrial:flowing_furfural",
+    {
+      "id": "#forge:furfural",
+      "required": false
+    }
+  ]
+}

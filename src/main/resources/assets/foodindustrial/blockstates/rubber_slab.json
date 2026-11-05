@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "foodindustrial:block/rubber_slab"
+    },
+    "type=double": {
+      "model": "foodindustrial:block/rubber_planks"
+    },
+    "type=top": {
+      "model": "foodindustrial:block/rubber_slab_top"
+    }
+  }
+}

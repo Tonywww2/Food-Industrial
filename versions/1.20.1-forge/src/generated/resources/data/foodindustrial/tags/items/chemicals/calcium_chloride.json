@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_chloride",
+    {
+      "id": "#forge:dusts/calcium_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_chloride",
+      "required": false
+    }
+  ]
+}

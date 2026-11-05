@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_bicarbonate",
+    {
+      "id": "#forge:dusts/ammonium_bicarbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_bicarbonate",
+      "required": false
+    }
+  ]
+}

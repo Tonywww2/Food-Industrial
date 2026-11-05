@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethanol",
+    "foodindustrial:flowing_ethanol",
+    {
+      "id": "#forge:ethanol",
+      "required": false
+    }
+  ]
+}

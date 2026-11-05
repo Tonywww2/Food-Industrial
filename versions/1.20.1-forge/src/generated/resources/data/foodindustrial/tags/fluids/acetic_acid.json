@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetic_acid",
+    "foodindustrial:flowing_acetic_acid",
+    {
+      "id": "#forge:acetic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_bisulfite",
+    "foodindustrial:flowing_sodium_bisulfite",
+    {
+      "id": "#forge:sodium_bisulfite",
+      "required": false
+    }
+  ]
+}

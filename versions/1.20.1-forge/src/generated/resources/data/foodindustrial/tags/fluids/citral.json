@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citral",
+    "foodindustrial:flowing_citral",
+    {
+      "id": "#forge:citral",
+      "required": false
+    }
+  ]
+}

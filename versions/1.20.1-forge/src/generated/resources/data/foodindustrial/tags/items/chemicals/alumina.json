@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alumina",
+    {
+      "id": "#forge:dusts/alumina",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/alumina",
+      "required": false
+    }
+  ]
+}

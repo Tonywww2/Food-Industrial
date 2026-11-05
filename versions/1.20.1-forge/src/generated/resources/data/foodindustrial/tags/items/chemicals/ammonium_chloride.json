@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_chloride",
+    {
+      "id": "#forge:dusts/ammonium_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_chloride",
+      "required": false
+    }
+  ]
+}

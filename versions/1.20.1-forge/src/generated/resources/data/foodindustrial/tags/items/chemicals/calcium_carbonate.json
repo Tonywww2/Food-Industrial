@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_carbonate",
+    {
+      "id": "#forge:dusts/calcium_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_carbonate",
+      "required": false
+    }
+  ]
+}

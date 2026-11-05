@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cocoa_stage1",
+  "textures": {
+    "cocoa": "foodindustrial:block/vanilla_stage1",
+    "particle": "foodindustrial:block/vanilla_stage1"
+  },
+  "render_type": "minecraft:cutout"
+}

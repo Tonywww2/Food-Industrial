@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:whey",
+    "foodindustrial:flowing_whey",
+    {
+      "id": "#forge:whey",
+      "required": false
+    }
+  ]
+}

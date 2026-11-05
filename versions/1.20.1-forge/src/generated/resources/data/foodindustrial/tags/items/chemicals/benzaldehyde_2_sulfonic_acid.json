@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzaldehyde_2_sulfonic_acid",
+    {
+      "id": "#forge:dusts/benzaldehyde_2_sulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzaldehyde_2_sulfonic_acid",
+      "required": false
+    }
+  ]
+}

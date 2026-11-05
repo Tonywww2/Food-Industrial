@@ -1,0 +1,36 @@
+# NeoForge metadata (1.21.1-neoforge and 26.1.2-neoforge nodes). Placeholders are expanded per node
+# from gradle.properties + versions/<node>/gradle.properties by processResources.
+# The Forge 1.20.1 node ships META-INF/mods.toml instead.
+modLoader = "javafml"
+loaderVersion = "${loaderRange}"
+license = "${license}"
+#issueTrackerURL = ""
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+#updateJSONURL = ""
+#displayURL = ""
+#logoFile = ""
+#credits = ""
+authors = "${authors}"
+description = '''${description}'''
+
+[[mixins]]
+config = "foodindustrial.mixins.json"
+
+# Table names must use the literal mod id.
+[[dependencies.foodindustrial]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "${loaderDepRange}"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.foodindustrial]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "${minecraftRange}"
+    ordering = "NONE"
+    side = "BOTH"

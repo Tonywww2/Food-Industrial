@@ -13,13 +13,18 @@ out
 *.iml
 .idea
 
-# gradle
+# gradle / kotlin dsl
 build
 .gradle
+.kotlin
+
+# run directories (run/<node>/)
+run
+run-data
 
 # other
 eclipse
-run
+logs
 
 # Files from Forge MDK
 forge*changelog.txt

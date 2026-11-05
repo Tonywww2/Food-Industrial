@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aluminium_sulfate",
+    {
+      "id": "#forge:dusts/aluminium_sulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aluminium_sulfate",
+      "required": false
+    }
+  ]
+}

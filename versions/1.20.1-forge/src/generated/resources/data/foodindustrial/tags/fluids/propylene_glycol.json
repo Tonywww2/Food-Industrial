@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propylene_glycol",
+    "foodindustrial:flowing_propylene_glycol",
+    {
+      "id": "#forge:propylene_glycol",
+      "required": false
+    }
+  ]
+}

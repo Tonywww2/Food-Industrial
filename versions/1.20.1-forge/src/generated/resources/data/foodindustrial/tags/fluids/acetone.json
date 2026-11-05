@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetone",
+    "foodindustrial:flowing_acetone",
+    {
+      "id": "#forge:acetone",
+      "required": false
+    }
+  ]
+}

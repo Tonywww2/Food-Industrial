@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_silicate",
+    {
+      "id": "#forge:dusts/calcium_silicate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_silicate",
+      "required": false
+    }
+  ]
+}

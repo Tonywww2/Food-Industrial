@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclohexylamine",
+    "foodindustrial:flowing_cyclohexylamine",
+    {
+      "id": "#forge:cyclohexylamine",
+      "required": false
+    }
+  ]
+}

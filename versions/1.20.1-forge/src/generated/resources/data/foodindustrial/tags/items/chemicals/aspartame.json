@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aspartame",
+    {
+      "id": "#forge:dusts/aspartame",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aspartame",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:m_cresol",
+  "loader": "forge:fluid_container"
+}

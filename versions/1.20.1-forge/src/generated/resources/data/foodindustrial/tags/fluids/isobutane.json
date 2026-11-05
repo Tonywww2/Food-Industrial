@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutane",
+    "foodindustrial:flowing_isobutane",
+    {
+      "id": "#forge:isobutane",
+      "required": false
+    }
+  ]
+}

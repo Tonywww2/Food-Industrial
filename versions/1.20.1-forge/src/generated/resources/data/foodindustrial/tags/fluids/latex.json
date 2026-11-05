@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:latex",
+    "foodindustrial:flowing_latex",
+    {
+      "id": "#forge:latex",
+      "required": false
+    },
+    {
+      "id": "thermal:latex",
+      "required": false
+    }
+  ]
+}

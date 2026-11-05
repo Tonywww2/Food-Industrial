@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:n_propanol",
+    "foodindustrial:flowing_n_propanol",
+    {
+      "id": "#forge:n_propanol",
+      "required": false
+    }
+  ]
+}

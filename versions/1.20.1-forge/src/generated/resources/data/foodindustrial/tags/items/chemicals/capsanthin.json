@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:capsanthin",
+    {
+      "id": "#forge:dusts/capsanthin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/capsanthin",
+      "required": false
+    }
+  ]
+}

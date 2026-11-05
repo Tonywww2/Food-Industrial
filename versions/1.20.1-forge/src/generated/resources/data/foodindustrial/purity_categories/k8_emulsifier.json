@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k8_emulsifier",
+  "grades": {
+    "crude": 30,
+    "refined": 40,
+    "food": 60,
+    "lab": 90
+  }
+}

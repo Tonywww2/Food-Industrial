@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylene_oxide",
+    "foodindustrial:flowing_ethylene_oxide",
+    {
+      "id": "#forge:ethylene_oxide",
+      "required": false
+    }
+  ]
+}

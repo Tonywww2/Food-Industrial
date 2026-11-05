@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diketene",
+    "foodindustrial:flowing_diketene",
+    {
+      "id": "#forge:diketene",
+      "required": false
+    }
+  ]
+}

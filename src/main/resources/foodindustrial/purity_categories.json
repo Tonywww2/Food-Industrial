@@ -1,0 +1,112 @@
+{
+ "categories": [
+  {
+   "id": "foodindustrial:k0_raw",
+   "grades": {
+    "crude": null,
+    "refined": null,
+    "food": null,
+    "lab": null
+   }
+  },
+  {
+   "id": "foodindustrial:k1_inorganic",
+   "grades": {
+    "crude": 90,
+    "refined": 95,
+    "food": 98,
+    "lab": 99.8
+   }
+  },
+  {
+   "id": "foodindustrial:k2_sugar",
+   "grades": {
+    "crude": 85,
+    "refined": 95,
+    "food": 99.5,
+    "lab": 99.9
+   }
+  },
+  {
+   "id": "foodindustrial:k3_organic_solid",
+   "grades": {
+    "crude": 90,
+    "refined": 95,
+    "food": 99,
+    "lab": 99.8
+   }
+  },
+  {
+   "id": "foodindustrial:k4_organic_liquid",
+   "grades": {
+    "crude": 80,
+    "refined": 90,
+    "food": 95,
+    "lab": 99.5
+   }
+  },
+  {
+   "id": "foodindustrial:k5_natural_extract",
+   "grades": {
+    "crude": 10,
+    "refined": 50,
+    "food": 90,
+    "lab": 98
+   }
+  },
+  {
+   "id": "foodindustrial:k6_colloid",
+   "grades": {
+    "crude": 40,
+    "refined": 55,
+    "food": 65,
+    "lab": 90
+   }
+  },
+  {
+   "id": "foodindustrial:k7_fat",
+   "grades": {
+    "crude": 90,
+    "refined": 97,
+    "food": 99,
+    "lab": 99.8
+   }
+  },
+  {
+   "id": "foodindustrial:k8_emulsifier",
+   "grades": {
+    "crude": 30,
+    "refined": 40,
+    "food": 60,
+    "lab": 90
+   }
+  },
+  {
+   "id": "foodindustrial:k9_gas",
+   "grades": {
+    "crude": 95,
+    "refined": 99,
+    "food": 99.9,
+    "lab": 99.99
+   }
+  },
+  {
+   "id": "foodindustrial:k10_synthetic_color",
+   "grades": {
+    "crude": 50,
+    "refined": 70,
+    "food": 85,
+    "lab": 95
+   }
+  },
+  {
+   "id": "foodindustrial:k11_culture",
+   "grades": {
+    "crude": 50,
+    "refined": 90,
+    "food": 99,
+    "lab": 99.9
+   }
+  }
+ ]
+}

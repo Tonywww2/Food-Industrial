@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzaldehyde",
+    "foodindustrial:flowing_benzaldehyde",
+    {
+      "id": "#forge:benzaldehyde",
+      "required": false
+    }
+  ]
+}

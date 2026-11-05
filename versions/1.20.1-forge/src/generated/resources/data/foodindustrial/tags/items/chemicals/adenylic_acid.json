@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:adenylic_acid",
+    {
+      "id": "#forge:dusts/adenylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/adenylic_acid",
+      "required": false
+    }
+  ]
+}

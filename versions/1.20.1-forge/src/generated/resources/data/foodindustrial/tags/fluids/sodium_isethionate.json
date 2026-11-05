@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_isethionate",
+    "foodindustrial:flowing_sodium_isethionate",
+    {
+      "id": "#forge:sodium_isethionate",
+      "required": false
+    }
+  ]
+}

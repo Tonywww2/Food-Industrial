@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_acetate",
+    {
+      "id": "#forge:dusts/calcium_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_acetate",
+      "required": false
+    }
+  ]
+}

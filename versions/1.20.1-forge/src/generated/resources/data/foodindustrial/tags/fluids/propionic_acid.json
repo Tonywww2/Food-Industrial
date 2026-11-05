@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionic_acid",
+    "foodindustrial:flowing_propionic_acid",
+    {
+      "id": "#forge:propionic_acid",
+      "required": false
+    }
+  ]
+}

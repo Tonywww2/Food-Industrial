@@ -1,0 +1,137 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "NeoForge Client (:1.21.1-neoforge)",
+      "presentation": {
+        "group": "Mod Development - 1.21.1-neoforge",
+        "order": 0
+      },
+      "projectName": "1.21.1-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmod%%C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\1.21.1-neoforge",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Minecraft Data (1.21.1-neoforge)",
+      "presentation": {
+        "group": "Mod Development - 1.21.1-neoforge",
+        "order": 1
+      },
+      "projectName": "1.21.1-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmod%%C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\1.21.1-neoforge",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "NeoForge Server (:1.21.1-neoforge)",
+      "presentation": {
+        "group": "Mod Development - 1.21.1-neoforge",
+        "order": 2
+      },
+      "projectName": "1.21.1-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmod%%C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\1.21.1-neoforge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\1.21.1-neoforge",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "NeoForge Client (:26.1.2-neoforge)",
+      "presentation": {
+        "group": "Mod Development - 26.1.2-neoforge",
+        "order": 0
+      },
+      "projectName": "26.1.2-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmod%%C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\26.1.2-neoforge",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Minecraft Data (26.1.2-neoforge)",
+      "presentation": {
+        "group": "Mod Development - 26.1.2-neoforge",
+        "order": 1
+      },
+      "projectName": "26.1.2-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmod%%C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\26.1.2-neoforge",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "NeoForge Server (:26.1.2-neoforge)",
+      "presentation": {
+        "group": "Mod Development - 26.1.2-neoforge",
+        "order": 2
+      },
+      "projectName": "26.1.2-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmod%%C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\versions\\26.1.2-neoforge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\26.1.2-neoforge",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

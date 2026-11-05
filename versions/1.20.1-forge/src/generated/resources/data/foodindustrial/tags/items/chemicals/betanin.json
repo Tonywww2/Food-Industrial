@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:betanin",
+    {
+      "id": "#forge:dusts/betanin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/betanin",
+      "required": false
+    }
+  ]
+}

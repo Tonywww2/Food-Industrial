@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:retinol",
+    "foodindustrial:flowing_retinol",
+    {
+      "id": "#forge:retinol",
+      "required": false
+    }
+  ]
+}

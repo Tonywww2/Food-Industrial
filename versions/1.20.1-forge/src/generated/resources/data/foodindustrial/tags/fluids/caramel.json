@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:caramel",
+    "foodindustrial:flowing_caramel",
+    {
+      "id": "#forge:caramel",
+      "required": false
+    }
+  ]
+}
