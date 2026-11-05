@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epigallocatechin_gallate",
+    {
+      "id": "#c:dusts/epigallocatechin_gallate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/epigallocatechin_gallate",
+      "required": false
+    }
+  ]
+}

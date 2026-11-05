@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tbhq",
+    {
+      "id": "#forge:dusts/tbhq",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tbhq",
+      "required": false
+    }
+  ]
+}

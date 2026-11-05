@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glucose",
+    {
+      "id": "#c:dusts/glucose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glucose",
+      "required": false
+    }
+  ]
+}

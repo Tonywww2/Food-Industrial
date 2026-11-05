@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:saccharin",
+    {
+      "id": "#forge:dusts/saccharin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/saccharin",
+      "required": false
+    }
+  ]
+}

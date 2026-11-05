@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glutamic_acid",
+    {
+      "id": "#forge:dusts/glutamic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glutamic_acid",
+      "required": false
+    }
+  ]
+}

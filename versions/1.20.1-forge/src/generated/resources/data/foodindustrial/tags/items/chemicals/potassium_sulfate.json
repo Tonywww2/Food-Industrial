@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_sulfate",
+    {
+      "id": "#forge:dusts/potassium_sulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_sulfate",
+      "required": false
+    }
+  ]
+}

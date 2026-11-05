@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monascorubrin",
+    {
+      "id": "#forge:dusts/monascorubrin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monascorubrin",
+      "required": false
+    }
+  ]
+}

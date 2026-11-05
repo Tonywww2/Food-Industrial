@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:coal_coke",
+      "required": false
+    },
+    {
+      "id": "#c:gems/coke",
+      "required": false
+    }
+  ]
+}

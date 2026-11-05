@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rosin_glycerol_ester",
+    {
+      "id": "#forge:dusts/rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rosin_glycerol_ester",
+      "required": false
+    }
+  ]
+}

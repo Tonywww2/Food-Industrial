@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:goat_horn",
+      "required": false
+    }
+  ]
+}

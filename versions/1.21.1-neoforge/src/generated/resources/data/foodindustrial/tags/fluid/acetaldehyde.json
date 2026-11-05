@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetaldehyde",
+    "foodindustrial:flowing_acetaldehyde",
+    {
+      "id": "#c:acetaldehyde",
+      "required": false
+    }
+  ]
+}

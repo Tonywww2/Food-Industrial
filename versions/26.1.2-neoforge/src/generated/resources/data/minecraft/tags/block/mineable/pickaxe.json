@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gypsum_ore",
+    "foodindustrial:alunite_ore",
+    "foodindustrial:magnesite_ore",
+    "foodindustrial:rock_salt",
+    "foodindustrial:apatite_ore",
+    "foodindustrial:sulfur_ore",
+    "foodindustrial:crusher",
+    "foodindustrial:item_port",
+    "foodindustrial:fluid_port",
+    "foodindustrial:energy_port",
+    "foodindustrial:metal_tank"
+  ]
+}

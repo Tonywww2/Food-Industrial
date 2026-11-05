@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_metabisulfite",
+    {
+      "id": "#c:dusts/sodium_metabisulfite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_metabisulfite",
+      "required": false
+    }
+  ]
+}

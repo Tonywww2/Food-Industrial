@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_iodide",
+    {
+      "id": "#c:dusts/potassium_iodide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_iodide",
+      "required": false
+    }
+  ]
+}

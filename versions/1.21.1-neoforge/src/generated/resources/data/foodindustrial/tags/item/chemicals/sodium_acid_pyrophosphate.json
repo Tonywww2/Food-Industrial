@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_acid_pyrophosphate",
+    {
+      "id": "#c:dusts/sodium_acid_pyrophosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_acid_pyrophosphate",
+      "required": false
+    }
+  ]
+}

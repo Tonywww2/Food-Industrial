@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:kaolinite",
+    {
+      "id": "#forge:dusts/kaolinite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/kaolinite",
+      "required": false
+    }
+  ]
+}

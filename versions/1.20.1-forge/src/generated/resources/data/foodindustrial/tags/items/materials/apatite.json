@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:gems/apatite",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/apatite",
+      "required": false
+    },
+    "foodindustrial:apatite_ore",
+    {
+      "id": "#forge:ores/apatite",
+      "required": false
+    }
+  ]
+}

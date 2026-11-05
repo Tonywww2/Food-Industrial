@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrogen",
+    "foodindustrial:flowing_hydrogen",
+    {
+      "id": "#c:hydrogen",
+      "required": false
+    }
+  ]
+}

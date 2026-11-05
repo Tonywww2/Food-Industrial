@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:acetoacetamide_n_sulfonic_acid",
+  "loader": "neoforge:fluid_container"
+}

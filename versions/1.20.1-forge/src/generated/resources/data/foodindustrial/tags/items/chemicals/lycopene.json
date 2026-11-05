@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lycopene",
+    {
+      "id": "#forge:dusts/lycopene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lycopene",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiamine_hydrochloride",
+    {
+      "id": "#c:dusts/thiamine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thiamine_hydrochloride",
+      "required": false
+    }
+  ]
+}

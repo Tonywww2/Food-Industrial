@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_methoxyphenol",
+    {
+      "id": "#c:dusts/p_methoxyphenol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_methoxyphenol",
+      "required": false
+    }
+  ]
+}

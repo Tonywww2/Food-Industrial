@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gallic_acid",
+    {
+      "id": "#forge:dusts/gallic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gallic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:folic_acid",
+    {
+      "id": "#c:dusts/folic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/folic_acid",
+      "required": false
+    }
+  ]
+}

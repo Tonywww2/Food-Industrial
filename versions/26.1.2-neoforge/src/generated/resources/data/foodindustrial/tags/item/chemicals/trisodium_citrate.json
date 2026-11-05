@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trisodium_citrate",
+    {
+      "id": "#c:dusts/trisodium_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trisodium_citrate",
+      "required": false
+    }
+  ]
+}

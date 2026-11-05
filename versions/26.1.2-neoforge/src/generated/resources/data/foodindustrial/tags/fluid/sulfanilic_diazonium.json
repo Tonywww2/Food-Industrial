@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfanilic_diazonium",
+    "foodindustrial:flowing_sulfanilic_diazonium",
+    {
+      "id": "#c:sulfanilic_diazonium",
+      "required": false
+    }
+  ]
+}

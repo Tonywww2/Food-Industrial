@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:stevia_crop",
+    "foodindustrial:mint_crop",
+    "foodindustrial:rosemary_crop",
+    "foodindustrial:indigo_plant_crop",
+    "foodindustrial:rice_crop",
+    "foodindustrial:gardenia_bush"
+  ]
+}

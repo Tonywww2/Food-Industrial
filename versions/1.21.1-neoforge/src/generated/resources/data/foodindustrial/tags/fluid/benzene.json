@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzene",
+    "foodindustrial:flowing_benzene",
+    {
+      "id": "#c:benzene",
+      "required": false
+    }
+  ]
+}

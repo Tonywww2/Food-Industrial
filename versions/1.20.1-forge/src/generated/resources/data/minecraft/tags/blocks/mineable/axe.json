@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:stripped_rubber_log",
+    "foodindustrial:stripped_rubber_wood",
+    "foodindustrial:rubber_log",
+    "foodindustrial:rubber_wood",
+    "foodindustrial:rubber_planks",
+    "foodindustrial:rubber_stairs",
+    "foodindustrial:rubber_slab",
+    "foodindustrial:rubber_fence",
+    "foodindustrial:rubber_fence_gate",
+    "foodindustrial:rubber_door",
+    "foodindustrial:rubber_trapdoor",
+    "foodindustrial:rubber_pressure_plate",
+    "foodindustrial:rubber_button",
+    "foodindustrial:wooden_tank"
+  ]
+}

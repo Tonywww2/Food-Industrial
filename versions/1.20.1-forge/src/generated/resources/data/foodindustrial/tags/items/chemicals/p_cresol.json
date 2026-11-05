@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_cresol",
+    {
+      "id": "#forge:dusts/p_cresol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_cresol",
+      "required": false
+    }
+  ]
+}

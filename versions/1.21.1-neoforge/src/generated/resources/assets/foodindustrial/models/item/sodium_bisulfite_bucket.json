@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sodium_bisulfite",
+  "loader": "neoforge:fluid_container"
+}

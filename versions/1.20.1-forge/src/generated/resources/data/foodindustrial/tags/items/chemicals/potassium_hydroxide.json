@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_hydroxide",
+    {
+      "id": "#forge:dusts/potassium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_hydroxide",
+      "required": false
+    }
+  ]
+}

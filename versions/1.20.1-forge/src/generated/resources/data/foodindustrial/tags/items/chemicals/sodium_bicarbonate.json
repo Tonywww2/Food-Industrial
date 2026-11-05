@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_bicarbonate",
+    {
+      "id": "#forge:dusts/sodium_bicarbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_bicarbonate",
+      "required": false
+    }
+  ]
+}

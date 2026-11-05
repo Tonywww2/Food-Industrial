@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rubropunctatin",
+    {
+      "id": "#c:dusts/rubropunctatin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rubropunctatin",
+      "required": false
+    }
+  ]
+}

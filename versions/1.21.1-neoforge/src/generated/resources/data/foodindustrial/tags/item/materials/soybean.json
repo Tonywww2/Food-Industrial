@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:crops/soybean",
+      "required": false
+    },
+    {
+      "id": "#c:seeds/soybean",
+      "required": false
+    }
+  ]
+}

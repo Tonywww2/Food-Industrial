@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:coal_coke",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/coke",
+      "required": false
+    }
+  ]
+}

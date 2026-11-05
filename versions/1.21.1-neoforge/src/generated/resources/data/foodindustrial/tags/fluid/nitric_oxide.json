@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitric_oxide",
+    "foodindustrial:flowing_nitric_oxide",
+    {
+      "id": "#c:nitric_oxide",
+      "required": false
+    }
+  ]
+}

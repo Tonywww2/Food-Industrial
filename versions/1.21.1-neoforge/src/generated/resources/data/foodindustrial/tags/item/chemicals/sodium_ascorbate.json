@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_ascorbate",
+    {
+      "id": "#c:dusts/sodium_ascorbate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_ascorbate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyisobutylene",
+    {
+      "id": "#c:dusts/polyisobutylene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyisobutylene",
+      "required": false
+    }
+  ]
+}

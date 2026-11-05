@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:seawater",
+    "foodindustrial:flowing_seawater",
+    {
+      "id": "#c:seawater",
+      "required": false
+    }
+  ]
+}

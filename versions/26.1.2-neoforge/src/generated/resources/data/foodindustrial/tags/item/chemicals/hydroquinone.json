@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroquinone",
+    {
+      "id": "#c:dusts/hydroquinone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroquinone",
+      "required": false
+    }
+  ]
+}

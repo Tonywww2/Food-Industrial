@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:n_phenylglycine",
+    {
+      "id": "#forge:dusts/n_phenylglycine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/n_phenylglycine",
+      "required": false
+    }
+  ]
+}

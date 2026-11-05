@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:guaiacol",
+    "foodindustrial:flowing_guaiacol",
+    {
+      "id": "#c:guaiacol",
+      "required": false
+    }
+  ]
+}

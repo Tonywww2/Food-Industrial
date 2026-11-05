@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_hydroxide",
+    {
+      "id": "#forge:dusts/sodium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_hydroxide",
+      "required": false
+    }
+  ]
+}

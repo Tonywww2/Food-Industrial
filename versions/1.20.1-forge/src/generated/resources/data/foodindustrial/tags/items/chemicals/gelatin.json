@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gelatin",
+    {
+      "id": "#forge:dusts/gelatin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gelatin",
+      "required": false
+    }
+  ]
+}

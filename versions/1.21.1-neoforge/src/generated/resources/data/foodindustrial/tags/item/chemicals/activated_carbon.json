@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:activated_carbon",
+    {
+      "id": "#c:dusts/activated_carbon",
+      "required": false
+    },
+    {
+      "id": "#c:gems/activated_carbon",
+      "required": false
+    }
+  ]
+}

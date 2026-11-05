@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "foodindustrial:block/metal_tank_top",
+    "side": "foodindustrial:block/metal_tank_side",
+    "top": "foodindustrial:block/metal_tank_top"
+  }
+}

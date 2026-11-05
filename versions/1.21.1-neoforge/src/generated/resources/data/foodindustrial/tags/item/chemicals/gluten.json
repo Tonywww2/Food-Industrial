@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gluten",
+    {
+      "id": "#c:dusts/gluten",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gluten",
+      "required": false
+    }
+  ]
+}

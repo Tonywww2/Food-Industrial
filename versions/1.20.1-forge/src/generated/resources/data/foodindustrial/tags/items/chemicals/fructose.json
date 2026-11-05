@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fructose",
+    {
+      "id": "#forge:dusts/fructose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fructose",
+      "required": false
+    }
+  ]
+}

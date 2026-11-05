@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_sulfate",
+    {
+      "id": "#forge:dusts/ferrous_sulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_sulfate",
+      "required": false
+    }
+  ]
+}

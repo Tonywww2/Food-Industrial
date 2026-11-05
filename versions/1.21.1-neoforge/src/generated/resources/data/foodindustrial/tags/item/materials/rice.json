@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    },
+    "foodindustrial:rice",
+    {
+      "id": "#c:crops/rice",
+      "required": false
+    },
+    {
+      "id": "#c:grain/rice",
+      "required": false
+    }
+  ]
+}

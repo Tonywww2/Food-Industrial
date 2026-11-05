@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_acetate",
+    {
+      "id": "#c:dusts/sodium_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_acetate",
+      "required": false
+    }
+  ]
+}

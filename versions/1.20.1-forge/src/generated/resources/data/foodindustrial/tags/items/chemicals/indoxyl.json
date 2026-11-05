@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:indoxyl",
+    {
+      "id": "#forge:dusts/indoxyl",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/indoxyl",
+      "required": false
+    }
+  ]
+}

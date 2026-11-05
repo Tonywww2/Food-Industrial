@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:plantoil",
+      "required": false
+    },
+    {
+      "id": "pneumaticcraft:vegetable_oil",
+      "required": false
+    }
+  ]
+}

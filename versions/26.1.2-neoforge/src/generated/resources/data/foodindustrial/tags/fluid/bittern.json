@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bittern",
+    "foodindustrial:flowing_bittern",
+    {
+      "id": "#c:bittern",
+      "required": false
+    }
+  ]
+}

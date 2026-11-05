@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:natural_rubber",
+  "category": "foodindustrial:k6_colloid",
+  "source_purity": 90,
+  "grades": {
+    "crude": 80,
+    "refined": 90,
+    "food": 95,
+    "lab": null
+  }
+}

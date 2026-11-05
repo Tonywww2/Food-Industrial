@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_iron_edta",
+    {
+      "id": "#forge:dusts/sodium_iron_edta",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_iron_edta",
+      "required": false
+    }
+  ]
+}

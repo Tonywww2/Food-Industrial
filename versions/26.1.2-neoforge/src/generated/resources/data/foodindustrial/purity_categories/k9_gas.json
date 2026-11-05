@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k9_gas",
+  "grades": {
+    "crude": 95,
+    "refined": 99,
+    "food": 99.9,
+    "lab": 99.99
+  }
+}

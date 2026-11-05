@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:betanidin",
+    {
+      "id": "#c:dusts/betanidin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/betanidin",
+      "required": false
+    }
+  ]
+}

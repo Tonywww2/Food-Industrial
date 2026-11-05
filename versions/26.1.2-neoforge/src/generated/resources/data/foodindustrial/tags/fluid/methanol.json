@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methanol",
+    "foodindustrial:flowing_methanol",
+    {
+      "id": "#c:methanol",
+      "required": false
+    }
+  ]
+}

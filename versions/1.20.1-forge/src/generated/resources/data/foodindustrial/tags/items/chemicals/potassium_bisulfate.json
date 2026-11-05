@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_bisulfate",
+    {
+      "id": "#forge:dusts/potassium_bisulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_bisulfate",
+      "required": false
+    }
+  ]
+}

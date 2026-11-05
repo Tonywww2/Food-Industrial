@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nickel_catalyst",
+    {
+      "id": "#forge:dusts/nickel_catalyst",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nickel_catalyst",
+      "required": false
+    }
+  ]
+}

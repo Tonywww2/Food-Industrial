@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gluconic_acid",
+    "foodindustrial:flowing_gluconic_acid",
+    {
+      "id": "#c:gluconic_acid",
+      "required": false
+    }
+  ]
+}

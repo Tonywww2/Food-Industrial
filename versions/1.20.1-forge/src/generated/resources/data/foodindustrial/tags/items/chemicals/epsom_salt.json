@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epsom_salt",
+    {
+      "id": "#forge:dusts/epsom_salt",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/epsom_salt",
+      "required": false
+    }
+  ]
+}

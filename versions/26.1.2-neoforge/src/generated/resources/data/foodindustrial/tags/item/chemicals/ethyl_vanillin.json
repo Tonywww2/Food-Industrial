@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_vanillin",
+    {
+      "id": "#c:dusts/ethyl_vanillin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_vanillin",
+      "required": false
+    }
+  ]
+}

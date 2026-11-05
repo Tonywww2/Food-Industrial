@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:white_phosphorus",
+    {
+      "id": "#forge:dusts/white_phosphorus",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/white_phosphorus",
+      "required": false
+    }
+  ]
+}

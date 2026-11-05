@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_acetate",
+    "foodindustrial:flowing_isoamyl_acetate",
+    {
+      "id": "#c:isoamyl_acetate",
+      "required": false
+    }
+  ]
+}

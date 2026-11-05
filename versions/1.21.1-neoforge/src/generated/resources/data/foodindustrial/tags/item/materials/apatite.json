@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:gems/apatite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/apatite",
+      "required": false
+    },
+    "foodindustrial:apatite_ore",
+    {
+      "id": "#c:ores/apatite",
+      "required": false
+    }
+  ]
+}

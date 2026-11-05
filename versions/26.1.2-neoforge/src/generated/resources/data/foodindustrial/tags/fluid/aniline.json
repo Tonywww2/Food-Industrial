@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aniline",
+    "foodindustrial:flowing_aniline",
+    {
+      "id": "#c:aniline",
+      "required": false
+    }
+  ]
+}

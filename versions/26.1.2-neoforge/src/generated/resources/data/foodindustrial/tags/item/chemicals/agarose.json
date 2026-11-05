@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:agarose",
+    {
+      "id": "#c:dusts/agarose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/agarose",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_lactate",
+    {
+      "id": "#c:dusts/calcium_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_lactate",
+      "required": false
+    }
+  ]
+}

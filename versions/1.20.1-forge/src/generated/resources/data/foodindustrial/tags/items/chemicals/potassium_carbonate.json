@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_carbonate",
+    {
+      "id": "#forge:dusts/potassium_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_carbonate",
+      "required": false
+    }
+  ]
+}

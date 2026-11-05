@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_decalactone",
+    "foodindustrial:flowing_gamma_decalactone",
+    {
+      "id": "#c:gamma_decalactone",
+      "required": false
+    }
+  ]
+}

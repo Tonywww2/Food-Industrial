@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sucrose_monostearate",
+    {
+      "id": "#forge:dusts/sucrose_monostearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sucrose_monostearate",
+      "required": false
+    }
+  ]
+}

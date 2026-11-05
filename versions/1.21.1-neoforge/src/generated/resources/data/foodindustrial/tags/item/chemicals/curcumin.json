@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:curcumin",
+    {
+      "id": "#c:dusts/curcumin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/curcumin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:ingots/nickel",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/nickel",
+      "required": false
+    }
+  ]
+}

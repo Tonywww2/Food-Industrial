@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferric_hydroxide",
+    {
+      "id": "#forge:dusts/ferric_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferric_hydroxide",
+      "required": false
+    }
+  ]
+}

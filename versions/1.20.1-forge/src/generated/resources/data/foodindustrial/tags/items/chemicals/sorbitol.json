@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorbitol",
+    {
+      "id": "#forge:dusts/sorbitol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sorbitol",
+      "required": false
+    }
+  ]
+}

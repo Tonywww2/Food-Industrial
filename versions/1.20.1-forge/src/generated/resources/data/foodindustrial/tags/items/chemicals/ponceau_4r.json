@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ponceau_4r",
+    {
+      "id": "#forge:dusts/ponceau_4r",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ponceau_4r",
+      "required": false
+    }
+  ]
+}

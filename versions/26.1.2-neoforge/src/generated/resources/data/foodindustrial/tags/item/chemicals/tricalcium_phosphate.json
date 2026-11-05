@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tricalcium_phosphate",
+    {
+      "id": "#c:dusts/tricalcium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tricalcium_phosphate",
+      "required": false
+    }
+  ]
+}

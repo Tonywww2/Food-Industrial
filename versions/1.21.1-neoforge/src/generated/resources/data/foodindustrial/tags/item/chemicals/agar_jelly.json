@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:agar_jelly",
+    {
+      "id": "#c:dusts/agar_jelly",
+      "required": false
+    },
+    {
+      "id": "#c:gems/agar_jelly",
+      "required": false
+    }
+  ]
+}

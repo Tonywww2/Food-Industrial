@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxyapatite",
+    {
+      "id": "#c:dusts/hydroxyapatite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxyapatite",
+      "required": false
+    }
+  ]
+}

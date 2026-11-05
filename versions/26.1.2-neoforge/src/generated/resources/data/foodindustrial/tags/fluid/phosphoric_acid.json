@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phosphoric_acid",
+    "foodindustrial:flowing_phosphoric_acid",
+    {
+      "id": "#c:phosphoric_acid",
+      "required": false
+    }
+  ]
+}

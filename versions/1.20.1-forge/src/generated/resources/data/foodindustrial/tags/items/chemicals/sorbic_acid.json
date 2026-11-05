@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorbic_acid",
+    {
+      "id": "#forge:dusts/sorbic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sorbic_acid",
+      "required": false
+    }
+  ]
+}

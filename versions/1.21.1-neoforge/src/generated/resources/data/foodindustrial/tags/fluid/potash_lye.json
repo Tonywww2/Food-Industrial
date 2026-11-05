@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potash_lye",
+    "foodindustrial:flowing_potash_lye",
+    {
+      "id": "#c:potash_lye",
+      "required": false
+    }
+  ]
+}

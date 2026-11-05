@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cmc_unit",
+    {
+      "id": "#c:dusts/cmc_unit",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cmc_unit",
+      "required": false
+    }
+  ]
+}

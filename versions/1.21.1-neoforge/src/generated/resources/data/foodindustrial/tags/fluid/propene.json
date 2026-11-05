@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propene",
+    "foodindustrial:flowing_propene",
+    {
+      "id": "#c:propene",
+      "required": false
+    }
+  ]
+}

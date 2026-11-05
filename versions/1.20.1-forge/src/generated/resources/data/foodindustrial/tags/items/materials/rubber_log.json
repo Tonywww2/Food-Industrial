@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rubber_log",
+    "foodindustrial:rubber_wood",
+    {
+      "id": "#forge:rubberwood_logs",
+      "required": false
+    },
+    {
+      "id": "#gtceu:rubber_logs",
+      "required": false
+    }
+  ]
+}

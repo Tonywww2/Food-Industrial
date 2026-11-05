@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_stearate",
+    {
+      "id": "#forge:dusts/sodium_stearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_stearate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydrotrimethylpyrazine",
+    "foodindustrial:flowing_dihydrotrimethylpyrazine",
+    {
+      "id": "#c:dihydrotrimethylpyrazine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epoxysuccinic_acid",
+    {
+      "id": "#forge:dusts/epoxysuccinic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/epoxysuccinic_acid",
+      "required": false
+    }
+  ]
+}

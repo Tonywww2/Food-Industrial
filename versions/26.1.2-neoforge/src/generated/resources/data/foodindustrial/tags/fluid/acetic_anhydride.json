@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetic_anhydride",
+    "foodindustrial:flowing_acetic_anhydride",
+    {
+      "id": "#c:acetic_anhydride",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_benzoquinone",
+    {
+      "id": "#c:dusts/p_benzoquinone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_benzoquinone",
+      "required": false
+    }
+  ]
+}

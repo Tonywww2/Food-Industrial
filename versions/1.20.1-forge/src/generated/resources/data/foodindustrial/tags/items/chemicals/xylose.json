@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:xylose",
+    {
+      "id": "#forge:dusts/xylose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/xylose",
+      "required": false
+    }
+  ]
+}

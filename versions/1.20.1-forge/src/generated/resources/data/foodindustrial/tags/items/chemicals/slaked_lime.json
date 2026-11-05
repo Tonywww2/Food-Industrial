@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:slaked_lime",
+    {
+      "id": "#forge:dusts/slaked_lime",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/slaked_lime",
+      "required": false
+    }
+  ]
+}

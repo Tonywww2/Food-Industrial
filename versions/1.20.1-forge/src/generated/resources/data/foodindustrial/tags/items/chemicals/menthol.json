@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthol",
+    {
+      "id": "#forge:dusts/menthol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/menthol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fumaric_acid",
+    {
+      "id": "#forge:dusts/fumaric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fumaric_acid",
+      "required": false
+    }
+  ]
+}

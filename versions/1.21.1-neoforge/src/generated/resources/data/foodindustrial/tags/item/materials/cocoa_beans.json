@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:cocoa_beans",
+      "required": false
+    },
+    {
+      "id": "#c:crops/cocoa_bean",
+      "required": false
+    },
+    {
+      "id": "#c:crops/cocoabeans",
+      "required": false
+    }
+  ]
+}

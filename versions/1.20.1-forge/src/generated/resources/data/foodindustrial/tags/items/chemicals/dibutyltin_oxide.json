@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dibutyltin_oxide",
+    {
+      "id": "#forge:dusts/dibutyltin_oxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dibutyltin_oxide",
+      "required": false
+    }
+  ]
+}

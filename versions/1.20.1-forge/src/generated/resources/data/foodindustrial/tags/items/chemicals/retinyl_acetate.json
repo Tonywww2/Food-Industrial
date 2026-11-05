@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:retinyl_acetate",
+    {
+      "id": "#forge:dusts/retinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/retinyl_acetate",
+      "required": false
+    }
+  ]
+}

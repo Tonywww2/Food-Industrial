@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorine",
+    "foodindustrial:flowing_chlorine",
+    {
+      "id": "#c:chlorine",
+      "required": false
+    }
+  ]
+}

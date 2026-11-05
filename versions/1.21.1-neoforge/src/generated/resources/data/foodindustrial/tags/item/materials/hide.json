@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:leather",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit_hide",
+      "required": false
+    },
+    {
+      "id": "#c:leathers",
+      "required": false
+    }
+  ]
+}

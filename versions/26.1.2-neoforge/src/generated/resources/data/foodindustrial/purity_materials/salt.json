@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:salt",
+  "category": "foodindustrial:k1_inorganic",
+  "source_purity": 83,
+  "grades": {
+    "crude": 90,
+    "refined": 95,
+    "food": 97,
+    "lab": 99.8
+  }
+}

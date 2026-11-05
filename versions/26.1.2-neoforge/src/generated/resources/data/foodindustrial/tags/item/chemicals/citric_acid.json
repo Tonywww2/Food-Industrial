@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citric_acid",
+    {
+      "id": "#c:dusts/citric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/citric_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:guaethol",
+    "foodindustrial:flowing_guaethol",
+    {
+      "id": "#c:guaethol",
+      "required": false
+    }
+  ]
+}

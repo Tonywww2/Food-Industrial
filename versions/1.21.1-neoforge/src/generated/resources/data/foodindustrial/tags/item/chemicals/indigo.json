@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:indigo",
+    {
+      "id": "#c:dusts/indigo",
+      "required": false
+    },
+    {
+      "id": "#c:gems/indigo",
+      "required": false
+    }
+  ]
+}

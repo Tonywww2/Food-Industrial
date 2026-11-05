@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylene",
+    "foodindustrial:flowing_ethylene",
+    {
+      "id": "#c:ethylene",
+      "required": false
+    }
+  ]
+}

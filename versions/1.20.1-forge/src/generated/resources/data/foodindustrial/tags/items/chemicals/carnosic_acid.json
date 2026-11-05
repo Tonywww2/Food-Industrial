@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carnosic_acid",
+    {
+      "id": "#forge:dusts/carnosic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carnosic_acid",
+      "required": false
+    }
+  ]
+}

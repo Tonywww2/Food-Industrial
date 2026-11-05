@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamaldehyde",
+    "foodindustrial:flowing_cinnamaldehyde",
+    {
+      "id": "#c:cinnamaldehyde",
+      "required": false
+    }
+  ]
+}

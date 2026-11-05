@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thionyl_chloride",
+    "foodindustrial:flowing_thionyl_chloride",
+    {
+      "id": "#c:thionyl_chloride",
+      "required": false
+    }
+  ]
+}

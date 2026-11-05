@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:river",
+    "minecraft:swamp"
+  ],
+  "features": "foodindustrial:wild_indigo_plant",
+  "step": "vegetal_decoration"
+}

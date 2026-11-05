@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tartrazine",
+    {
+      "id": "#c:dusts/tartrazine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tartrazine",
+      "required": false
+    }
+  ]
+}

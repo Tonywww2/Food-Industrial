@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:chlorodimethylbutane",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mannitol",
+    {
+      "id": "#forge:dusts/mannitol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/mannitol",
+      "required": false
+    }
+  ]
+}

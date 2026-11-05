@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:capsanthin",
+  "category": "foodindustrial:k5_natural_extract",
+  "source_purity": 0.2,
+  "grades": {
+    "crude": 1,
+    "refined": 5,
+    "food": 10,
+    "lab": 50
+  }
+}

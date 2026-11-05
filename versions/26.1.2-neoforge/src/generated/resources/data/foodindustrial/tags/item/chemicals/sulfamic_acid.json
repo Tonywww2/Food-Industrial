@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfamic_acid",
+    {
+      "id": "#c:dusts/sulfamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sulfamic_acid",
+      "required": false
+    }
+  ]
+}

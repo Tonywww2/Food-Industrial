@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanadium_pentoxide",
+    {
+      "id": "#c:dusts/vanadium_pentoxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vanadium_pentoxide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:m_cresol",
+    "foodindustrial:flowing_m_cresol",
+    {
+      "id": "#c:m_cresol",
+      "required": false
+    }
+  ]
+}

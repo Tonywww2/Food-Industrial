@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gypsum",
+    {
+      "id": "#c:dusts/gypsum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gypsum",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propylene_oxide",
+    "foodindustrial:flowing_propylene_oxide",
+    {
+      "id": "#c:propylene_oxide",
+      "required": false
+    }
+  ]
+}

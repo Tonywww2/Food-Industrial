@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:plaster",
+    {
+      "id": "#c:dusts/plaster",
+      "required": false
+    },
+    {
+      "id": "#c:gems/plaster",
+      "required": false
+    }
+  ]
+}

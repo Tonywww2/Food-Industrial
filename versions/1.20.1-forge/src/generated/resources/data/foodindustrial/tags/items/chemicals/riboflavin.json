@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:riboflavin",
+    {
+      "id": "#forge:dusts/riboflavin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/riboflavin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gellan_gum",
+    {
+      "id": "#forge:dusts/gellan_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gellan_gum",
+      "required": false
+    }
+  ]
+}

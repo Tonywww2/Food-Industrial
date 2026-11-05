@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesite_ore",
+    {
+      "id": "#forge:ores/magnesite",
+      "required": false
+    }
+  ]
+}

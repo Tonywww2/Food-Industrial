@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_propionate",
+    {
+      "id": "#c:dusts/calcium_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_propionate",
+      "required": false
+    }
+  ]
+}

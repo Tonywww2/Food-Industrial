@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:birch_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_birch_log",
+      "required": false
+    }
+  ]
+}

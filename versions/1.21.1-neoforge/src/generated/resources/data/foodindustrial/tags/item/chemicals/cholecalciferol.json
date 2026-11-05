@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cholecalciferol",
+    {
+      "id": "#c:dusts/cholecalciferol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cholecalciferol",
+      "required": false
+    }
+  ]
+}

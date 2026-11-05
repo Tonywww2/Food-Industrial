@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:brine",
+    "foodindustrial:flowing_brine",
+    {
+      "id": "#c:brine",
+      "required": false
+    }
+  ]
+}

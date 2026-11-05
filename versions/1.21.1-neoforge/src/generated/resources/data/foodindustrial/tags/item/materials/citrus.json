@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:fruits/lemon",
+      "required": false
+    },
+    {
+      "id": "#c:fruits/orange",
+      "required": false
+    },
+    {
+      "id": "#c:fruits/lime",
+      "required": false
+    },
+    {
+      "id": "#c:fruits/grapefruit",
+      "required": false
+    }
+  ]
+}

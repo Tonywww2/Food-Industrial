@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gellan_gum",
+    {
+      "id": "#c:dusts/gellan_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gellan_gum",
+      "required": false
+    }
+  ]
+}

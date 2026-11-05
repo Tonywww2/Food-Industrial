@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylimidazole",
+    {
+      "id": "#c:dusts/methylimidazole",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylimidazole",
+      "required": false
+    }
+  ]
+}

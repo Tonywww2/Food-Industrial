@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:sulfuric_acid",
+  "category": "foodindustrial:k4_organic_liquid",
+  "grades": {
+    "crude": 60,
+    "refined": 80,
+    "food": 92.5,
+    "lab": 98
+  }
+}

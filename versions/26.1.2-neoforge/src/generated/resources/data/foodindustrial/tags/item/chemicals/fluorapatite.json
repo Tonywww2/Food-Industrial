@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fluorapatite",
+    {
+      "id": "#c:dusts/fluorapatite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fluorapatite",
+      "required": false
+    }
+  ]
+}

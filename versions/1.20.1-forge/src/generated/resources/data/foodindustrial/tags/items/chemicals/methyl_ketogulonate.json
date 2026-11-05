@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_ketogulonate",
+    {
+      "id": "#forge:dusts/methyl_ketogulonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_ketogulonate",
+      "required": false
+    }
+  ]
+}

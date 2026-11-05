@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:enzymes",
+    {
+      "id": "#c:dusts/enzymes",
+      "required": false
+    },
+    {
+      "id": "#c:gems/enzymes",
+      "required": false
+    }
+  ]
+}

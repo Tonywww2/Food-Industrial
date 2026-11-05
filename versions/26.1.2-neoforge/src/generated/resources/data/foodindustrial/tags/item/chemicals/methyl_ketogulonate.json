@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_ketogulonate",
+    {
+      "id": "#c:dusts/methyl_ketogulonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_ketogulonate",
+      "required": false
+    }
+  ]
+}

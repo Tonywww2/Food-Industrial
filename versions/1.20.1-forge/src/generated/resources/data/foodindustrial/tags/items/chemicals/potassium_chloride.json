@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_chloride",
+    {
+      "id": "#forge:dusts/potassium_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_chloride",
+      "required": false
+    }
+  ]
+}

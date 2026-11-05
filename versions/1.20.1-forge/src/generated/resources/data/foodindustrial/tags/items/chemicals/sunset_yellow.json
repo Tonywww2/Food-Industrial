@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sunset_yellow",
+    {
+      "id": "#forge:dusts/sunset_yellow",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sunset_yellow",
+      "required": false
+    }
+  ]
+}

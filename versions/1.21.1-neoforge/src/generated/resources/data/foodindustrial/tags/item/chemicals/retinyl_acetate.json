@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:retinyl_acetate",
+    {
+      "id": "#c:dusts/retinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/retinyl_acetate",
+      "required": false
+    }
+  ]
+}

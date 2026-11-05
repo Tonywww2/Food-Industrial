@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coal_tar",
+    "foodindustrial:flowing_coal_tar",
+    {
+      "id": "#c:coal_tar",
+      "required": false
+    }
+  ]
+}

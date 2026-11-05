@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carrageenan",
+    {
+      "id": "#forge:dusts/carrageenan",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carrageenan",
+      "required": false
+    }
+  ]
+}

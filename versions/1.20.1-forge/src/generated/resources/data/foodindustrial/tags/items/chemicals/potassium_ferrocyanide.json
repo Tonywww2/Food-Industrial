@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_ferrocyanide",
+    {
+      "id": "#forge:dusts/potassium_ferrocyanide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_ferrocyanide",
+      "required": false
+    }
+  ]
+}

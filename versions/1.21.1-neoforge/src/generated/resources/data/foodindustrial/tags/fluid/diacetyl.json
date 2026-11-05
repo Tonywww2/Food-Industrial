@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diacetyl",
+    "foodindustrial:flowing_diacetyl",
+    {
+      "id": "#c:diacetyl",
+      "required": false
+    }
+  ]
+}

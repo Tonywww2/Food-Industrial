@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:edta",
+    {
+      "id": "#c:dusts/edta",
+      "required": false
+    },
+    {
+      "id": "#c:gems/edta",
+      "required": false
+    }
+  ]
+}

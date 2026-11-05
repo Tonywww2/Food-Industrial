@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonia",
+    "foodindustrial:flowing_ammonia",
+    {
+      "id": "#c:ammonia",
+      "required": false
+    }
+  ]
+}

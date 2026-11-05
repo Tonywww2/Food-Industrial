@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dicalcium_phosphate",
+    {
+      "id": "#forge:dusts/dicalcium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dicalcium_phosphate",
+      "required": false
+    }
+  ]
+}

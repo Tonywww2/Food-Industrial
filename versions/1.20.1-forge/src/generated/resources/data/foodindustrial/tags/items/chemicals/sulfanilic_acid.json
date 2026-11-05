@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfanilic_acid",
+    {
+      "id": "#forge:dusts/sulfanilic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sulfanilic_acid",
+      "required": false
+    }
+  ]
+}

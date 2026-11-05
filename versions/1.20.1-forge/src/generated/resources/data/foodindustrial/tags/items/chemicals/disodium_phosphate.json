@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:disodium_phosphate",
+    {
+      "id": "#forge:dusts/disodium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/disodium_phosphate",
+      "required": false
+    }
+  ]
+}

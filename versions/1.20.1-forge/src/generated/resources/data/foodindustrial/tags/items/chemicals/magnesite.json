@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesite",
+    {
+      "id": "#forge:dusts/magnesite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesite",
+      "required": false
+    }
+  ]
+}

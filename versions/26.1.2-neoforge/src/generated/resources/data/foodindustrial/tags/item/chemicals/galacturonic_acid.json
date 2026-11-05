@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:galacturonic_acid",
+    {
+      "id": "#c:dusts/galacturonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/galacturonic_acid",
+      "required": false
+    }
+  ]
+}

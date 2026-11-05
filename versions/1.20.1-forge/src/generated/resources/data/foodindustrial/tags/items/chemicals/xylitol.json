@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:xylitol",
+    {
+      "id": "#forge:dusts/xylitol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/xylitol",
+      "required": false
+    }
+  ]
+}

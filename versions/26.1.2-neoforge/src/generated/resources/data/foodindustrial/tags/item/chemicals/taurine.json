@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:taurine",
+    {
+      "id": "#c:dusts/taurine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/taurine",
+      "required": false
+    }
+  ]
+}

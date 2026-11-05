@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_alginate",
+    {
+      "id": "#c:dusts/sodium_alginate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_alginate",
+      "required": false
+    }
+  ]
+}

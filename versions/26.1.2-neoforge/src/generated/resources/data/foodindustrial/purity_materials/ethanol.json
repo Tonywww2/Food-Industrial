@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:ethanol",
+  "category": "foodindustrial:k4_organic_liquid",
+  "grades": {
+    "crude": 80,
+    "refined": 90,
+    "food": 92.4,
+    "lab": 99.5
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alunite",
+    {
+      "id": "#c:dusts/alunite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alunite",
+      "required": false
+    }
+  ]
+}

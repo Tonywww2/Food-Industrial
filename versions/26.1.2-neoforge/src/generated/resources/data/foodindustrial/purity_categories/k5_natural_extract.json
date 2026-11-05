@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k5_natural_extract",
+  "grades": {
+    "crude": 10,
+    "refined": 50,
+    "food": 90,
+    "lab": 98
+  }
+}

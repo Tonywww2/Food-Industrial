@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_cyclopentenolone",
+    {
+      "id": "#c:dusts/methyl_cyclopentenolone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_cyclopentenolone",
+      "required": false
+    }
+  ]
+}

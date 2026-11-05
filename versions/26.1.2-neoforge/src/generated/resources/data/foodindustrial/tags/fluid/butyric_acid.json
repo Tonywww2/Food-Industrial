@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyric_acid",
+    "foodindustrial:flowing_butyric_acid",
+    {
+      "id": "#c:butyric_acid",
+      "required": false
+    }
+  ]
+}

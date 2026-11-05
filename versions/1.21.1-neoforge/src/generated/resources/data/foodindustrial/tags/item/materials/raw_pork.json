@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:porkchop",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_pork",
+      "required": false
+    }
+  ]
+}

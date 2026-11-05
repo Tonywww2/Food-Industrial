@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_chloride",
+    {
+      "id": "#forge:dusts/magnesium_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_chloride",
+      "required": false
+    }
+  ]
+}

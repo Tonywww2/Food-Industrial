@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_tungstate",
+    {
+      "id": "#forge:dusts/sodium_tungstate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_tungstate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glycerol",
+    "foodindustrial:flowing_glycerol",
+    {
+      "id": "#c:glycerol",
+      "required": false
+    }
+  ]
+}

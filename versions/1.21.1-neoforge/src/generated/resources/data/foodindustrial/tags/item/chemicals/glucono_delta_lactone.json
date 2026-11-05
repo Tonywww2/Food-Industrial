@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glucono_delta_lactone",
+    {
+      "id": "#c:dusts/glucono_delta_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glucono_delta_lactone",
+      "required": false
+    }
+  ]
+}

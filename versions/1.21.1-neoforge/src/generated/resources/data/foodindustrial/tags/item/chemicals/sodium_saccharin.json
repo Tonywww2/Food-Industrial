@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_saccharin",
+    {
+      "id": "#c:dusts/sodium_saccharin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_saccharin",
+      "required": false
+    }
+  ]
+}

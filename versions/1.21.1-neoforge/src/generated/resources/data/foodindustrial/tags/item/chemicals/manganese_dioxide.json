@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:manganese_dioxide",
+    {
+      "id": "#c:dusts/manganese_dioxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/manganese_dioxide",
+      "required": false
+    }
+  ]
+}

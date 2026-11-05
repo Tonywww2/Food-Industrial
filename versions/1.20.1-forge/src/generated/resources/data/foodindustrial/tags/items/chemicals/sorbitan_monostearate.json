@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorbitan_monostearate",
+    {
+      "id": "#forge:dusts/sorbitan_monostearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sorbitan_monostearate",
+      "required": false
+    }
+  ]
+}

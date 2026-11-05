@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_hydroxide",
+    {
+      "id": "#forge:dusts/magnesium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_hydroxide",
+      "required": false
+    }
+  ]
+}

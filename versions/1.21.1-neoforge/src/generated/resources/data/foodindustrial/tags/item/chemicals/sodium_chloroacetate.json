@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_chloroacetate",
+    {
+      "id": "#c:dusts/sodium_chloroacetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_chloroacetate",
+      "required": false
+    }
+  ]
+}

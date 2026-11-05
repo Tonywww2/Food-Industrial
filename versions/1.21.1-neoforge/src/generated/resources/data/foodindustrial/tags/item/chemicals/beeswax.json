@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beeswax",
+    {
+      "id": "#c:dusts/beeswax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/beeswax",
+      "required": false
+    }
+  ]
+}

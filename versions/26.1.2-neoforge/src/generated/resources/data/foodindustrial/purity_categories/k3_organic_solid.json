@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k3_organic_solid",
+  "grades": {
+    "crude": 90,
+    "refined": 95,
+    "food": 99,
+    "lab": 99.8
+  }
+}

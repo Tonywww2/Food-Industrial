@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:warm_ocean"
+  ],
+  "features": "foodindustrial:eucheuma",
+  "step": "vegetal_decoration"
+}

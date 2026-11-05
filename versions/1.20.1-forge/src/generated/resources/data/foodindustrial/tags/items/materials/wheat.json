@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:wheat",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/wheat",
+      "required": false
+    },
+    {
+      "id": "#forge:grain/wheat",
+      "required": false
+    }
+  ]
+}

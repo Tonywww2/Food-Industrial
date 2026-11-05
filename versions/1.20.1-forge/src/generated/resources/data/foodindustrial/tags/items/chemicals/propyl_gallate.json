@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_gallate",
+    {
+      "id": "#forge:dusts/propyl_gallate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/propyl_gallate",
+      "required": false
+    }
+  ]
+}

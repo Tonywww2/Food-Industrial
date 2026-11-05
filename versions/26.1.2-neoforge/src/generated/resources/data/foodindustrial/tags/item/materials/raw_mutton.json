@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:mutton",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_mutton",
+      "required": false
+    }
+  ]
+}

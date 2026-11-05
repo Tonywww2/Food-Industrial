@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tristearin",
+    {
+      "id": "#c:dusts/tristearin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tristearin",
+      "required": false
+    }
+  ]
+}

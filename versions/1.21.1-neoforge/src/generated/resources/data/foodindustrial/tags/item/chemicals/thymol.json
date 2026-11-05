@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thymol",
+    {
+      "id": "#c:dusts/thymol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thymol",
+      "required": false
+    }
+  ]
+}

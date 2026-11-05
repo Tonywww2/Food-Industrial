@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pectin",
+    {
+      "id": "#forge:dusts/pectin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pectin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:chicken",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_chicken",
+      "required": false
+    }
+  ]
+}

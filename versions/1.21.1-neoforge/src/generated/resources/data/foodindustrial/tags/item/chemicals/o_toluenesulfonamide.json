@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_toluenesulfonamide",
+    {
+      "id": "#c:dusts/o_toluenesulfonamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/o_toluenesulfonamide",
+      "required": false
+    }
+  ]
+}

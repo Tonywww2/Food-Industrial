@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:dusts/tungsten",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/tungsten",
+      "required": false
+    }
+  ]
+}

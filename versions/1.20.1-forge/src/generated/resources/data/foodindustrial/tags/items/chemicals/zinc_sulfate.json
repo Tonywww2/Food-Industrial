@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_sulfate",
+    {
+      "id": "#forge:dusts/zinc_sulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_sulfate",
+      "required": false
+    }
+  ]
+}

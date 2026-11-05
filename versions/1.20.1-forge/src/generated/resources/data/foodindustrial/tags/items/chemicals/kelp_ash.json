@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:kelp_ash",
+    {
+      "id": "#forge:dusts/kelp_ash",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/kelp_ash",
+      "required": false
+    }
+  ]
+}

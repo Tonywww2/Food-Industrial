@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cresidine_sulfonic_acid",
+    {
+      "id": "#c:dusts/cresidine_sulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cresidine_sulfonic_acid",
+      "required": false
+    }
+  ]
+}

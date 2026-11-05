@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:naphthionic_acid",
+    {
+      "id": "#forge:dusts/naphthionic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/naphthionic_acid",
+      "required": false
+    }
+  ]
+}

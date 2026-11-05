@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wood_tar",
+    "foodindustrial:flowing_wood_tar",
+    {
+      "id": "#c:wood_tar",
+      "required": false
+    },
+    {
+      "id": "#c:creosote",
+      "required": false
+    }
+  ]
+}

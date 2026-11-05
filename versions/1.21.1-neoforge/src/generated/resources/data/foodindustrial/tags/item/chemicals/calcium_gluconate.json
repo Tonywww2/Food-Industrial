@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_gluconate",
+    {
+      "id": "#c:dusts/calcium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_gluconate",
+      "required": false
+    }
+  ]
+}

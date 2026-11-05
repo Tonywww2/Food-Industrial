@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carnallite",
+    {
+      "id": "#forge:dusts/carnallite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carnallite",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acesulfame_potassium",
+    {
+      "id": "#c:dusts/acesulfame_potassium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acesulfame_potassium",
+      "required": false
+    }
+  ]
+}

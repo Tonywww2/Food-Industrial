@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfur_trioxide",
+    "foodindustrial:flowing_sulfur_trioxide",
+    {
+      "id": "#c:sulfur_trioxide",
+      "required": false
+    }
+  ]
+}

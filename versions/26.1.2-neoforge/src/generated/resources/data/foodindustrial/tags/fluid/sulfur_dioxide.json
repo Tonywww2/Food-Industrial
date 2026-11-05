@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfur_dioxide",
+    "foodindustrial:flowing_sulfur_dioxide",
+    {
+      "id": "#c:sulfur_dioxide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:stripped_rubber_log",
+    "foodindustrial:stripped_rubber_wood",
+    "foodindustrial:rubber_log",
+    "foodindustrial:rubber_wood"
+  ]
+}

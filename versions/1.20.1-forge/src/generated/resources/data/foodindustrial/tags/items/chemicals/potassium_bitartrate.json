@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_bitartrate",
+    {
+      "id": "#forge:dusts/potassium_bitartrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_bitartrate",
+      "required": false
+    }
+  ]
+}

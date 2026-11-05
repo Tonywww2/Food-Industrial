@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pectin",
+    {
+      "id": "#c:dusts/pectin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pectin",
+      "required": false
+    }
+  ]
+}

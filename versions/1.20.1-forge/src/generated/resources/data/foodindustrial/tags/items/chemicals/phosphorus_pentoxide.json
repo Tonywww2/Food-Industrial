@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phosphorus_pentoxide",
+    {
+      "id": "#forge:dusts/phosphorus_pentoxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phosphorus_pentoxide",
+      "required": false
+    }
+  ]
+}

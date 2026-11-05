@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:g_acid",
+    {
+      "id": "#forge:dusts/g_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/g_acid",
+      "required": false
+    }
+  ]
+}

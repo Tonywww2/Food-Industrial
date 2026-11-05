@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:jungle",
+    "minecraft:sparse_jungle"
+  ],
+  "features": "foodindustrial:rubber_tree",
+  "step": "vegetal_decoration"
+}

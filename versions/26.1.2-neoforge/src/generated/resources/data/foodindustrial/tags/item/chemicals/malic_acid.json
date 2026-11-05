@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:malic_acid",
+    {
+      "id": "#c:dusts/malic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/malic_acid",
+      "required": false
+    }
+  ]
+}

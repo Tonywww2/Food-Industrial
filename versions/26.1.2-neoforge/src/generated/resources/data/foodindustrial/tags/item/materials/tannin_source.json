@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tree_bark",
+    {
+      "id": "#minecraft:oak_logs",
+      "required": false
+    }
+  ]
+}

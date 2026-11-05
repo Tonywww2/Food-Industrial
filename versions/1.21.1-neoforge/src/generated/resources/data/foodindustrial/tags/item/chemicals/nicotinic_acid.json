@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nicotinic_acid",
+    {
+      "id": "#c:dusts/nicotinic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/nicotinic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:copper_sulfate",
+    {
+      "id": "#c:dusts/copper_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper_sulfate",
+      "required": false
+    }
+  ]
+}

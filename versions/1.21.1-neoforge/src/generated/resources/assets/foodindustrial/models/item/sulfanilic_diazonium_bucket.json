@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sulfanilic_diazonium",
+  "loader": "neoforge:fluid_container"
+}

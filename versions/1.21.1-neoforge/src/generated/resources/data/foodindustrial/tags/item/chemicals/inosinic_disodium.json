@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:inosinic_disodium",
+    {
+      "id": "#c:dusts/inosinic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/inosinic_disodium",
+      "required": false
+    }
+  ]
+}

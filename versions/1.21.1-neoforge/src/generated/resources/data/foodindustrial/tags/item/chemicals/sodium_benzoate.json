@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_benzoate",
+    {
+      "id": "#c:dusts/sodium_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_benzoate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfuric_acid",
+    "foodindustrial:flowing_sulfuric_acid",
+    {
+      "id": "#c:sulfuric_acid",
+      "required": false
+    }
+  ]
+}

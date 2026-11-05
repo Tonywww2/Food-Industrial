@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_gluconate",
+    {
+      "id": "#c:dusts/zinc_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_gluconate",
+      "required": false
+    }
+  ]
+}

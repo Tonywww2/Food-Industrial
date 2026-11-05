@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:natural_rubber",
+    {
+      "id": "#c:dusts/natural_rubber",
+      "required": false
+    },
+    {
+      "id": "#c:gems/natural_rubber",
+      "required": false
+    }
+  ]
+}

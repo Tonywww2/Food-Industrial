@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nicotinamide",
+    {
+      "id": "#forge:dusts/nicotinamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nicotinamide",
+      "required": false
+    }
+  ]
+}

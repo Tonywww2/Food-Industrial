@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_nitrate",
+    {
+      "id": "#c:dusts/sodium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_nitrate",
+      "required": false
+    }
+  ]
+}

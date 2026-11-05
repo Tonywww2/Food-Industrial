@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monosodium_glutamate",
+    {
+      "id": "#c:dusts/monosodium_glutamate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monosodium_glutamate",
+      "required": false
+    }
+  ]
+}

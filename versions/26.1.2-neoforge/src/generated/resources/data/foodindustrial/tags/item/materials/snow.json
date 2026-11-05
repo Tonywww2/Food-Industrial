@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:snowball",
+      "required": false
+    },
+    {
+      "id": "minecraft:snow_block",
+      "required": false
+    }
+  ]
+}

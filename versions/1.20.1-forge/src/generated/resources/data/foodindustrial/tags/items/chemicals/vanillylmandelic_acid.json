@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillylmandelic_acid",
+    {
+      "id": "#forge:dusts/vanillylmandelic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vanillylmandelic_acid",
+      "required": false
+    }
+  ]
+}

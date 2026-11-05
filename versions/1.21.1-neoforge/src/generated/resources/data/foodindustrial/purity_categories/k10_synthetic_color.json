@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k10_synthetic_color",
+  "grades": {
+    "crude": 50,
+    "refined": 70,
+    "food": 85,
+    "lab": 95
+  }
+}

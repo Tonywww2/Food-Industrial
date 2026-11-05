@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:acetic_acid",
+  "category": "foodindustrial:k4_organic_liquid",
+  "source_purity": 4,
+  "grades": {
+    "crude": null,
+    "refined": null,
+    "food": 3.5,
+    "lab": 99.8
+  }
+}

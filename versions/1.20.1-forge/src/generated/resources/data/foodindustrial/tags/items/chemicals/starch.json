@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:starch",
+    {
+      "id": "#forge:dusts/starch",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/starch",
+      "required": false
+    }
+  ]
+}

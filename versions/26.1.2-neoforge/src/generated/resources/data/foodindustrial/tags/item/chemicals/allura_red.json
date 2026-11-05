@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allura_red",
+    {
+      "id": "#c:dusts/allura_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/allura_red",
+      "required": false
+    }
+  ]
+}

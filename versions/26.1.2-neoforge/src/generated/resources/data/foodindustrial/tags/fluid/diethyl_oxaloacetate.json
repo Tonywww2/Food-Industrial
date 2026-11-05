@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_oxaloacetate",
+    "foodindustrial:flowing_diethyl_oxaloacetate",
+    {
+      "id": "#c:diethyl_oxaloacetate",
+      "required": false
+    }
+  ]
+}

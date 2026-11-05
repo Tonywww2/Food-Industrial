@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tert_butyl_chloride",
+    "foodindustrial:flowing_tert_butyl_chloride",
+    {
+      "id": "#c:tert_butyl_chloride",
+      "required": false
+    }
+  ]
+}

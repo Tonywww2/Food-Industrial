@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": "#c:ingots/copper",
+    "I": "#c:ingots/iron"
+  },
+  "pattern": [
+    "I I",
+    " C ",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:device_wrench"
+  }
+}

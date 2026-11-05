@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lignin",
+    {
+      "id": "#forge:dusts/lignin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lignin",
+      "required": false
+    }
+  ]
+}

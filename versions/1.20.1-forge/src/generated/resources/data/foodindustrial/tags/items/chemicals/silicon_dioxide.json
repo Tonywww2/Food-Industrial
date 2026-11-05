@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:silicon_dioxide",
+    {
+      "id": "#forge:dusts/silicon_dioxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/silicon_dioxide",
+      "required": false
+    }
+  ]
+}

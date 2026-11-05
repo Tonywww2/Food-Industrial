@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maleic_acid",
+    {
+      "id": "#forge:dusts/maleic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/maleic_acid",
+      "required": false
+    }
+  ]
+}

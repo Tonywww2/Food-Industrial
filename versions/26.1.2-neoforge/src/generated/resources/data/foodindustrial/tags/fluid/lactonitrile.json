@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactonitrile",
+    "foodindustrial:flowing_lactonitrile",
+    {
+      "id": "#c:lactonitrile",
+      "required": false
+    }
+  ]
+}

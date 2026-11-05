@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrochloric_acid",
+    "foodindustrial:flowing_hydrochloric_acid",
+    {
+      "id": "#c:hydrochloric_acid",
+      "required": false
+    }
+  ]
+}

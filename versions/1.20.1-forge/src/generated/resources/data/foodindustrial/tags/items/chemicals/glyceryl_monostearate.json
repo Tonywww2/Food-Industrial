@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glyceryl_monostearate",
+    {
+      "id": "#forge:dusts/glyceryl_monostearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glyceryl_monostearate",
+      "required": false
+    }
+  ]
+}

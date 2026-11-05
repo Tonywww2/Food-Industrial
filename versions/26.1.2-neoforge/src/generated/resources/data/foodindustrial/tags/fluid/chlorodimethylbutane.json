@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorodimethylbutane",
+    "foodindustrial:flowing_chlorodimethylbutane",
+    {
+      "id": "#c:chlorodimethylbutane",
+      "required": false
+    }
+  ]
+}

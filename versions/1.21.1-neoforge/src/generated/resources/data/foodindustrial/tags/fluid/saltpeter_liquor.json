@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:saltpeter_liquor",
+    "foodindustrial:flowing_saltpeter_liquor",
+    {
+      "id": "#c:saltpeter_liquor",
+      "required": false
+    }
+  ]
+}

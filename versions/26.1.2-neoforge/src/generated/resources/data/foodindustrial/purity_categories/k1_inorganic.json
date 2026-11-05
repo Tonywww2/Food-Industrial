@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k1_inorganic",
+  "grades": {
+    "crude": 90,
+    "refined": 95,
+    "food": 98,
+    "lab": 99.8
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:lactic_acid",
+  "category": "foodindustrial:k4_organic_liquid",
+  "source_purity": 1.2,
+  "grades": {
+    "crude": 20,
+    "refined": 50,
+    "food": 80,
+    "lab": 90
+  }
+}

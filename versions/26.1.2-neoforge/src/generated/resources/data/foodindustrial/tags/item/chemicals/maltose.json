@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maltose",
+    {
+      "id": "#c:dusts/maltose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maltose",
+      "required": false
+    }
+  ]
+}

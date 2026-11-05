@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenol",
+    {
+      "id": "#c:dusts/phenol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenol",
+      "required": false
+    }
+  ]
+}

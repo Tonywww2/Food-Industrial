@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ketogulonic_acid",
+    {
+      "id": "#c:dusts/ketogulonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ketogulonic_acid",
+      "required": false
+    }
+  ]
+}

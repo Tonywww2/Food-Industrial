@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tannin",
+    {
+      "id": "#c:dusts/tannin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tannin",
+      "required": false
+    }
+  ]
+}

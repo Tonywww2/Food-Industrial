@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:guanylic_disodium",
+    {
+      "id": "#c:dusts/guanylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/guanylic_disodium",
+      "required": false
+    }
+  ]
+}

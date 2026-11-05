@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gypsum_ore",
+    {
+      "id": "#c:ores/gypsum",
+      "required": false
+    }
+  ]
+}

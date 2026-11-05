@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carbon_monoxide",
+    "foodindustrial:flowing_carbon_monoxide"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_sorbate",
+    {
+      "id": "#c:dusts/potassium_sorbate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_sorbate",
+      "required": false
+    }
+  ]
+}

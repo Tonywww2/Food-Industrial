@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gum_base",
+    {
+      "id": "#c:dusts/gum_base",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gum_base",
+      "required": false
+    }
+  ]
+}

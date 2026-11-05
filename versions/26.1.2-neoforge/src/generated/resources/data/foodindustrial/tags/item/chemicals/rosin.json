@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rosin",
+    {
+      "id": "#c:dusts/rosin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rosin",
+      "required": false
+    }
+  ]
+}

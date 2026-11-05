@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:manganese_sulfate",
+    {
+      "id": "#c:dusts/manganese_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/manganese_sulfate",
+      "required": false
+    }
+  ]
+}

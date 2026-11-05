@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:crude_oil",
+    "foodindustrial:flowing_crude_oil",
+    {
+      "id": "#c:crude_oil",
+      "required": false
+    }
+  ]
+}

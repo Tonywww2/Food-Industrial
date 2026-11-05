@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furaneol",
+    {
+      "id": "#forge:dusts/furaneol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/furaneol",
+      "required": false
+    }
+  ]
+}

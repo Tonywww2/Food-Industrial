@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trona",
+    {
+      "id": "#forge:dusts/trona",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/trona",
+      "required": false
+    }
+  ]
+}

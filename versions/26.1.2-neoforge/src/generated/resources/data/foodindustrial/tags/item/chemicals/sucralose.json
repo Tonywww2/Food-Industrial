@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sucralose",
+    {
+      "id": "#c:dusts/sucralose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sucralose",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wood_ash",
+    {
+      "id": "#forge:dusts/wood_ash",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/wood_ash",
+      "required": false
+    }
+  ]
+}

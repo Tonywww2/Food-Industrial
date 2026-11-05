@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_tartrate",
+    {
+      "id": "#c:dusts/calcium_tartrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_tartrate",
+      "required": false
+    }
+  ]
+}

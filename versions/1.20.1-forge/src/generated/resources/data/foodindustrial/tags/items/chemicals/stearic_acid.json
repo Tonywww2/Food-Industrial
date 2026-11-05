@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:stearic_acid",
+    {
+      "id": "#forge:dusts/stearic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/stearic_acid",
+      "required": false
+    }
+  ]
+}

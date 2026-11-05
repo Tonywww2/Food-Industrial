@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k7_fat",
+  "grades": {
+    "crude": 90,
+    "refined": 97,
+    "food": 99,
+    "lab": 99.8
+  }
+}

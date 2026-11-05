@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylformamide",
+    "foodindustrial:flowing_dimethylformamide",
+    {
+      "id": "#c:dimethylformamide",
+      "required": false
+    }
+  ]
+}

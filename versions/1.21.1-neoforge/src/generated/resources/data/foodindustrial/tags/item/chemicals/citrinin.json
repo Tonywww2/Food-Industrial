@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citrinin",
+    {
+      "id": "#c:dusts/citrinin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/citrinin",
+      "required": false
+    }
+  ]
+}

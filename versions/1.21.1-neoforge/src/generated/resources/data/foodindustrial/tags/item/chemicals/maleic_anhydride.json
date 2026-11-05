@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maleic_anhydride",
+    {
+      "id": "#c:dusts/maleic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maleic_anhydride",
+      "required": false
+    }
+  ]
+}

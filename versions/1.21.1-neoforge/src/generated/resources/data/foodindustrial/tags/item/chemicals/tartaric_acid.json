@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tartaric_acid",
+    {
+      "id": "#c:dusts/tartaric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tartaric_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gypsum",
+    {
+      "id": "#forge:dusts/gypsum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gypsum",
+      "required": false
+    }
+  ]
+}

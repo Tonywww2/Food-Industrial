@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rock_salt",
+    {
+      "id": "#c:ores/salt",
+      "required": false
+    }
+  ]
+}

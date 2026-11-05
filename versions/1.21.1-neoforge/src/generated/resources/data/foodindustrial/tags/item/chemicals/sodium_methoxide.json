@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_methoxide",
+    {
+      "id": "#c:dusts/sodium_methoxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_methoxide",
+      "required": false
+    }
+  ]
+}

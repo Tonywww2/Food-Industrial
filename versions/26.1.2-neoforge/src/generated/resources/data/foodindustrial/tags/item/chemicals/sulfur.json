@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfur",
+    {
+      "id": "#c:dusts/sulfur",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sulfur",
+      "required": false
+    }
+  ]
+}

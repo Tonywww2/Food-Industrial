@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_nitrate",
+    {
+      "id": "#c:dusts/potassium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/niter",
+      "required": false
+    },
+    {
+      "id": "#c:gems/niter",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/saltpeter",
+      "required": false
+    }
+  ]
+}

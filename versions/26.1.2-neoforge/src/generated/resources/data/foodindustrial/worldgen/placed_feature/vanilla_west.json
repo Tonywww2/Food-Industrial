@@ -1,0 +1,53 @@
+{
+  "feature": "foodindustrial:vanilla_west",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 16
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 8,
+        "min_inclusive": 1
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:air",
+              "minecraft:vine"
+            ]
+          },
+          {
+            "type": "minecraft:would_survive",
+            "state": {
+              "Name": "foodindustrial:vanilla",
+              "Properties": {
+                "age": "2",
+                "facing": "west"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

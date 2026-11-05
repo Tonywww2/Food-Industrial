@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_sulfide",
+    {
+      "id": "#c:dusts/sodium_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_sulfide",
+      "required": false
+    }
+  ]
+}

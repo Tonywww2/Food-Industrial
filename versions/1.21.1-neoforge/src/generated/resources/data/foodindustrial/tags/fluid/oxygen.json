@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oxygen",
+    "foodindustrial:flowing_oxygen",
+    {
+      "id": "#c:oxygen",
+      "required": false
+    }
+  ]
+}

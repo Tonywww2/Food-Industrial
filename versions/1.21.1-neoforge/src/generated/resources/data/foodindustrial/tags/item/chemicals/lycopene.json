@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lycopene",
+    {
+      "id": "#c:dusts/lycopene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lycopene",
+      "required": false
+    }
+  ]
+}

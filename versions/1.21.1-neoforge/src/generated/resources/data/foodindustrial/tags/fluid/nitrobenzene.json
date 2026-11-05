@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitrobenzene",
+    "foodindustrial:flowing_nitrobenzene",
+    {
+      "id": "#c:nitrobenzene",
+      "required": false
+    }
+  ]
+}

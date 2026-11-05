@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cholesterol",
+    {
+      "id": "#c:dusts/cholesterol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cholesterol",
+      "required": false
+    }
+  ]
+}

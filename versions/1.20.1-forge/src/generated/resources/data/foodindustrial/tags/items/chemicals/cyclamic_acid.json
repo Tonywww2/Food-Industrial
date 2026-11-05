@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclamic_acid",
+    {
+      "id": "#forge:dusts/cyclamic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cyclamic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:salt",
+    {
+      "id": "#c:dusts/salt",
+      "required": false
+    },
+    {
+      "id": "#c:gems/salt",
+      "required": false
+    }
+  ]
+}

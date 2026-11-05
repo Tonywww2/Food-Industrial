@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_nitrate",
+    {
+      "id": "#c:dusts/calcium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_nitrate",
+      "required": false
+    }
+  ]
+}

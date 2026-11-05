@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k2_sugar",
+  "grades": {
+    "crude": 85,
+    "refined": 95,
+    "food": 99.5,
+    "lab": 99.9
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_maltol",
+    {
+      "id": "#c:dusts/ethyl_maltol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_maltol",
+      "required": false
+    }
+  ]
+}

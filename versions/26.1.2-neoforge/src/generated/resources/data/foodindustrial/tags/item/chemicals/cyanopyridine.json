@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyanopyridine",
+    {
+      "id": "#c:dusts/cyanopyridine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyanopyridine",
+      "required": false
+    }
+  ]
+}

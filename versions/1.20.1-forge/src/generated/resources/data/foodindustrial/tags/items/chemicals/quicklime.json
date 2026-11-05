@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quicklime",
+    {
+      "id": "#forge:dusts/quicklime",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/quicklime",
+      "required": false
+    }
+  ]
+}

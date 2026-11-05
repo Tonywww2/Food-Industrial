@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dehydrocholesterol",
+    {
+      "id": "#c:dusts/dehydrocholesterol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dehydrocholesterol",
+      "required": false
+    }
+  ]
+}

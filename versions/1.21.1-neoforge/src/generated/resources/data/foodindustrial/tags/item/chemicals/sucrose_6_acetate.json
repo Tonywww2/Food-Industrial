@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sucrose_6_acetate",
+    {
+      "id": "#c:dusts/sucrose_6_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sucrose_6_acetate",
+      "required": false
+    }
+  ]
+}

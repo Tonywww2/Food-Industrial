@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sucrose_6_acetate",
+    {
+      "id": "#forge:dusts/sucrose_6_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sucrose_6_acetate",
+      "required": false
+    }
+  ]
+}

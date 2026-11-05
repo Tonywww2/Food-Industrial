@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylbutanal",
+    "foodindustrial:flowing_dimethylbutanal",
+    {
+      "id": "#c:dimethylbutanal",
+      "required": false
+    }
+  ]
+}

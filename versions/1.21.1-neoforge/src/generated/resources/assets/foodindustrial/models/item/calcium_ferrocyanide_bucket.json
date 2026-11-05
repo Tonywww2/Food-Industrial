@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:calcium_ferrocyanide",
+  "loader": "neoforge:fluid_container"
+}

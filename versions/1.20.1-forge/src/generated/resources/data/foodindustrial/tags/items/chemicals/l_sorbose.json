@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_sorbose",
+    {
+      "id": "#forge:dusts/l_sorbose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_sorbose",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ascorbic_acid",
+    {
+      "id": "#c:dusts/ascorbic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ascorbic_acid",
+      "required": false
+    }
+  ]
+}

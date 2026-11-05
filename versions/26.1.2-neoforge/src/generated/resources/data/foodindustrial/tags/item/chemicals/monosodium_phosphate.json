@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monosodium_phosphate",
+    {
+      "id": "#c:dusts/monosodium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monosodium_phosphate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyvinyl_acetate",
+    {
+      "id": "#c:dusts/polyvinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyvinyl_acetate",
+      "required": false
+    }
+  ]
+}

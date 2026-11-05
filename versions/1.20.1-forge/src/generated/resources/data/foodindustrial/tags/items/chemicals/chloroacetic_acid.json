@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chloroacetic_acid",
+    {
+      "id": "#forge:dusts/chloroacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chloroacetic_acid",
+      "required": false
+    }
+  ]
+}

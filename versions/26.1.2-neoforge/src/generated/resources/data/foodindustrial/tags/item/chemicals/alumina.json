@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alumina",
+    {
+      "id": "#c:dusts/alumina",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alumina",
+      "required": false
+    }
+  ]
+}

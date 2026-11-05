@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferric_chloride",
+    {
+      "id": "#forge:dusts/ferric_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferric_chloride",
+      "required": false
+    }
+  ]
+}

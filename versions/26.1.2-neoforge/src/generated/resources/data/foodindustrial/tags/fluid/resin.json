@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:resin",
+    "foodindustrial:flowing_resin",
+    {
+      "id": "#c:resin",
+      "required": false
+    }
+  ]
+}

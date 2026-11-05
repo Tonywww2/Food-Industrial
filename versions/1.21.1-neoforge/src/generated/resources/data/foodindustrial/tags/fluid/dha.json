@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dha",
+    "foodindustrial:flowing_dha",
+    {
+      "id": "#c:dha",
+      "required": false
+    }
+  ]
+}

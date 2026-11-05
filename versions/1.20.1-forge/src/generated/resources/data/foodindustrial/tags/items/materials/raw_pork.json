@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:porkchop",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_pork",
+      "required": false
+    }
+  ]
+}

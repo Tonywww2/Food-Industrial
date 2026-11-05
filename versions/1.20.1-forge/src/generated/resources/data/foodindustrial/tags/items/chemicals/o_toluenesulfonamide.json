@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_toluenesulfonamide",
+    {
+      "id": "#forge:dusts/o_toluenesulfonamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/o_toluenesulfonamide",
+      "required": false
+    }
+  ]
+}

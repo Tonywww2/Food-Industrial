@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butane",
+    "foodindustrial:flowing_butane",
+    {
+      "id": "#c:butane",
+      "required": false
+    }
+  ]
+}

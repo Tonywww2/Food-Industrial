@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:o_toluenesulfonyl_chloride",
+  "loader": "neoforge:fluid_container"
+}

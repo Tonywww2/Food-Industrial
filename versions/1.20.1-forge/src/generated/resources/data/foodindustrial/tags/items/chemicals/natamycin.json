@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:natamycin",
+    {
+      "id": "#forge:dusts/natamycin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/natamycin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:xanthan_gum",
+    {
+      "id": "#c:dusts/xanthan_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/xanthan_gum",
+      "required": false
+    }
+  ]
+}

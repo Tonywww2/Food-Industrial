@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:erythritol",
+    {
+      "id": "#c:dusts/erythritol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/erythritol",
+      "required": false
+    }
+  ]
+}

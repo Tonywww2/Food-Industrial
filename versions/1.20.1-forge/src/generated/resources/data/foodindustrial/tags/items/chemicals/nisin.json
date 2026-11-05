@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nisin",
+    {
+      "id": "#forge:dusts/nisin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nisin",
+      "required": false
+    }
+  ]
+}

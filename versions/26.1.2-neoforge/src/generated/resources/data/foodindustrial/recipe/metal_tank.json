@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:glass",
+    "I": "#c:ingots/iron"
+  },
+  "pattern": [
+    "IGI",
+    "G G",
+    "IGI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:metal_tank"
+  }
+}

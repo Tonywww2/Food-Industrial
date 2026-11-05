@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diacetone_sorbose",
+    {
+      "id": "#c:dusts/diacetone_sorbose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diacetone_sorbose",
+      "required": false
+    }
+  ]
+}

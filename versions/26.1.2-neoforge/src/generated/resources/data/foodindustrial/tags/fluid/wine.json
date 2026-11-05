@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wine",
+    "foodindustrial:flowing_wine",
+    {
+      "id": "#c:wine",
+      "required": false
+    }
+  ]
+}

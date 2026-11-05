@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sucrose",
+    {
+      "id": "#forge:dusts/sucrose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sucrose",
+      "required": false
+    },
+    {
+      "id": "minecraft:sugar",
+      "required": false
+    },
+    {
+      "id": "#forge:sugar",
+      "required": false
+    }
+  ]
+}

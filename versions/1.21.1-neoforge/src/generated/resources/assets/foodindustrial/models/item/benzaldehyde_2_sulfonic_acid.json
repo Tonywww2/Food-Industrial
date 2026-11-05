@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodindustrial:item/benzaldehyde_2_sulfonic_acid"
+  }
+}

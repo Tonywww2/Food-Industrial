@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:crops/soybean",
+      "required": false
+    },
+    {
+      "id": "#forge:seeds/soybean",
+      "required": false
+    }
+  ]
+}

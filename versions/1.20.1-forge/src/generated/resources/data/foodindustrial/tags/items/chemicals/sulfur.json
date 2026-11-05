@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfur",
+    {
+      "id": "#forge:dusts/sulfur",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sulfur",
+      "required": false
+    }
+  ]
+}

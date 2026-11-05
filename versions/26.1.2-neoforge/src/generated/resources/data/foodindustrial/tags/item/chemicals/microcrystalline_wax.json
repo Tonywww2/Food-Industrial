@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:microcrystalline_wax",
+    {
+      "id": "#c:dusts/microcrystalline_wax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/microcrystalline_wax",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_alum",
+    {
+      "id": "#c:dusts/potassium_alum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_alum",
+      "required": false
+    }
+  ]
+}

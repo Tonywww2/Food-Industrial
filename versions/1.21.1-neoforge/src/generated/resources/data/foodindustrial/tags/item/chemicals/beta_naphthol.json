@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_naphthol",
+    {
+      "id": "#c:dusts/beta_naphthol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/beta_naphthol",
+      "required": false
+    }
+  ]
+}

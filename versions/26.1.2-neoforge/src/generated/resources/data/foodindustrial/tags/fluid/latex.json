@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:latex",
+    "foodindustrial:flowing_latex",
+    {
+      "id": "#c:latex",
+      "required": false
+    }
+  ]
+}

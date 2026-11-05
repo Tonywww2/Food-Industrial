@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:neotame",
+    {
+      "id": "#forge:dusts/neotame",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/neotame",
+      "required": false
+    }
+  ]
+}

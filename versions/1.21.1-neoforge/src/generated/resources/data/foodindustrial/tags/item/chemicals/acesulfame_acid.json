@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acesulfame_acid",
+    {
+      "id": "#c:dusts/acesulfame_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acesulfame_acid",
+      "required": false
+    }
+  ]
+}

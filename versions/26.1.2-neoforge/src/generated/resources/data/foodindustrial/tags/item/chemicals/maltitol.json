@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maltitol",
+    {
+      "id": "#c:dusts/maltitol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maltitol",
+      "required": false
+    }
+  ]
+}

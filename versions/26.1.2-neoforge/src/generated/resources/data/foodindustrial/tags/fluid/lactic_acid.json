@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactic_acid",
+    "foodindustrial:flowing_lactic_acid",
+    {
+      "id": "#c:lactic_acid",
+      "required": false
+    }
+  ]
+}

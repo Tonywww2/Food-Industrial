@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_tocopherol",
+    "foodindustrial:flowing_alpha_tocopherol",
+    {
+      "id": "#c:alpha_tocopherol",
+      "required": false
+    }
+  ]
+}

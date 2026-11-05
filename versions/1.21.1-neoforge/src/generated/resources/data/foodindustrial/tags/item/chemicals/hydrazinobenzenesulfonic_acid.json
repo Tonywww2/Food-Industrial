@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrazinobenzenesulfonic_acid",
+    {
+      "id": "#c:dusts/hydrazinobenzenesulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydrazinobenzenesulfonic_acid",
+      "required": false
+    }
+  ]
+}

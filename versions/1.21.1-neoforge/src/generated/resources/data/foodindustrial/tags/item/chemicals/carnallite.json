@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carnallite",
+    {
+      "id": "#c:dusts/carnallite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carnallite",
+      "required": false
+    }
+  ]
+}

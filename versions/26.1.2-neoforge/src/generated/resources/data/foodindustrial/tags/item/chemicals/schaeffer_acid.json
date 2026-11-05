@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:schaeffer_acid",
+    {
+      "id": "#c:dusts/schaeffer_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/schaeffer_acid",
+      "required": false
+    }
+  ]
+}

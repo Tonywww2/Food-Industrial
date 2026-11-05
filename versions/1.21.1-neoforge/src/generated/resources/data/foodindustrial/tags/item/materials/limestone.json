@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:calcite",
+      "required": false
+    },
+    {
+      "id": "minecraft:dripstone_block",
+      "required": false
+    }
+  ]
+}

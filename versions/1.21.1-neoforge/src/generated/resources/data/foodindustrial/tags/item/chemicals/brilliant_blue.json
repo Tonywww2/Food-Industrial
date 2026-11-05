@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:brilliant_blue",
+    {
+      "id": "#c:dusts/brilliant_blue",
+      "required": false
+    },
+    {
+      "id": "#c:gems/brilliant_blue",
+      "required": false
+    }
+  ]
+}

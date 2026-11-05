@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:iodine",
+    {
+      "id": "#c:dusts/iodine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/iodine",
+      "required": false
+    }
+  ]
+}

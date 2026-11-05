@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferric_pyrophosphate",
+    {
+      "id": "#forge:dusts/ferric_pyrophosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferric_pyrophosphate",
+      "required": false
+    }
+  ]
+}

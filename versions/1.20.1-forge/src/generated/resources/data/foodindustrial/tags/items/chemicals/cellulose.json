@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cellulose",
+    {
+      "id": "#forge:dusts/cellulose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cellulose",
+      "required": false
+    }
+  ]
+}

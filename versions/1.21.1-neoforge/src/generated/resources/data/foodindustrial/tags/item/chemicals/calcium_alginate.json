@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_alginate",
+    {
+      "id": "#c:dusts/calcium_alginate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_alginate",
+      "required": false
+    }
+  ]
+}

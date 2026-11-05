@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:map"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:redprint"
+  }
+}

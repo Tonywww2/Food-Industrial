@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_sulfobenzyl_aniline",
+    {
+      "id": "#forge:dusts/ethyl_sulfobenzyl_aniline",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ethyl_sulfobenzyl_aniline",
+      "required": false
+    }
+  ]
+}
