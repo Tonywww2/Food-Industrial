@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:titanium_slag",
+    {
+      "id": "#forge:dusts/titanium_slag",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/titanium_slag",
+      "required": false
+    }
+  ]
+}

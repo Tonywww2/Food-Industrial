@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pancreatic_extract",
+    "foodindustrial:flowing_pancreatic_extract",
+    {
+      "id": "#forge:pancreatic_extract",
+      "required": false
+    }
+  ]
+}

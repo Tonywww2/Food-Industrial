@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:silicon",
+    {
+      "id": "#forge:dusts/silicon",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/silicon",
+      "required": false
+    }
+  ]
+}

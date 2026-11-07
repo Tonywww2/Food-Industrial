@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:caffeine",
+    {
+      "id": "#c:dusts/caffeine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/caffeine",
+      "required": false
+    }
+  ]
+}

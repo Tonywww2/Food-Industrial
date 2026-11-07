@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:adipic_acid",
+    {
+      "id": "#c:dusts/adipic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/adipic_acid",
+      "required": false
+    }
+  ]
+}

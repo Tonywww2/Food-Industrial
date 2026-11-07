@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_starch_phosphate",
+    {
+      "id": "#forge:dusts/sodium_starch_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_starch_phosphate",
+      "required": false
+    }
+  ]
+}

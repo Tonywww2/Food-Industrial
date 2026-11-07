@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ice_structuring_protein",
+    "foodindustrial:flowing_ice_structuring_protein",
+    {
+      "id": "#c:ice_structuring_protein",
+      "required": false
+    }
+  ]
+}

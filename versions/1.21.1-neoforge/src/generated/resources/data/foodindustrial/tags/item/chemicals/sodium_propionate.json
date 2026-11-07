@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_propionate",
+    {
+      "id": "#c:dusts/sodium_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_propionate",
+      "required": false
+    }
+  ]
+}

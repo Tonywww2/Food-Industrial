@@ -25,11 +25,9 @@ final class Widgets {
         }
     }
 
-    /** 16 × 16 icons in {@code elements.png}: row 100 panels, row 116 redstone and automation. */
+    /** 16 × 16 icons in {@code elements.png} row 100: left panels and the top buttons (the right panels use item icons). */
     enum Icon {
-        INFO(0, 100), UPGRADES(16, 100), IO(32, 100), REDSTONE(48, 100), STRUCTURE(64, 100), MODE(80, 100), HIGHLIGHT(96, 100), BACK(112, 100),
-        IGNORE(0, 116), LOW(16, 116), HIGH(32, 116), DISABLED(48, 116),
-        IN_ITEMS(64, 116), IN_FLUIDS(80, 116), OUT_ITEMS(96, 116), OUT_FLUIDS(112, 116);
+        INFO(0, 100), UPGRADES(16, 100), STRUCTURE(64, 100), MODE(80, 100), HIGHLIGHT(96, 100);
 
         final int u;
         final int v;
@@ -39,6 +37,18 @@ final class Widgets {
             this.v = v;
         }
     }
+
+    /** 8 × 8 icons of the small panel buttons in {@code elements.png} row 132 (2026-11-05). */
+    enum SmallIcon {
+        IGNORE, LOW, HIGH, DISABLED, IN_ITEMS, IN_FLUIDS, OUT_ITEMS, OUT_FLUIDS, BACK;
+
+        int u() {
+            return ordinal() * 8;
+        }
+    }
+
+    /** Size of the small panel buttons (redstone and input/output panels). */
+    static final int SMALL = 10;
 
     /** Slot frame variants in {@code elements.png} row 0. */
     enum SlotKind {
@@ -149,6 +159,14 @@ final class Widgets {
         }
     }
 
+    /** Colour of the zone frames of the machine area. */
+    static final int ZONE_FRAME = 0xFF8B8B8B;
+
+    /** 1-pixel frame around a zone of the machine area (machines/04 §1, 2026-11-05). */
+    static void zoneFrame(Canvas canvas, GuiLayout.Box frame) {
+        canvas.outline(frame.x(), frame.y(), frame.w(), frame.h(), ZONE_FRAME);
+    }
+
     /** Button background (normal, hovered or selected) cut from the 120 × 20 frames. */
     static void button(Canvas canvas, int x, int y, int w, int h, boolean hovered, boolean selected) {
         int u = selected ? 0 : hovered ? 120 : 0;
@@ -170,6 +188,12 @@ final class Widgets {
     static void iconButton(Canvas canvas, int x, int y, int size, Icon icon, boolean hovered, boolean selected) {
         button(canvas, x, y, size, size, hovered, selected);
         icon(canvas, icon, x + (size - 16) / 2, y + (size - 16) / 2);
+    }
+
+    /** A {@link #SMALL} button with a centred 8 × 8 icon. */
+    static void smallButton(Canvas canvas, int x, int y, SmallIcon icon, boolean hovered, boolean selected) {
+        button(canvas, x, y, SMALL, SMALL, hovered, selected);
+        canvas.blit(ELEMENTS, x + 1, y + 1, icon.u(), 132, 8, 8, SIZE, SIZE);
     }
 
     /** Text shrunk to {@code maxWidth} when longer. */

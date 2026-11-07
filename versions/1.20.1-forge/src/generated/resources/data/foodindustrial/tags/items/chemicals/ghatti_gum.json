@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ghatti_gum",
+    {
+      "id": "#forge:dusts/ghatti_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ghatti_gum",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_erythorbate",
+    {
+      "id": "#forge:dusts/sodium_erythorbate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_erythorbate",
+      "required": false
+    }
+  ]
+}

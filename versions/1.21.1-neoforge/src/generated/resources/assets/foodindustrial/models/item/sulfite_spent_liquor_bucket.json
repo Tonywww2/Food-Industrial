@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sulfite_spent_liquor",
+  "loader": "neoforge:fluid_container"
+}

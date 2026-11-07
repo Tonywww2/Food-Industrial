@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diacetyltartaric_monoglycerides",
+    {
+      "id": "#c:dusts/diacetyltartaric_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diacetyltartaric_monoglycerides",
+      "required": false
+    }
+  ]
+}

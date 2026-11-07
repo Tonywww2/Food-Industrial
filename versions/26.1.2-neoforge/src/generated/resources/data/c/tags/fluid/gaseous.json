@@ -27,6 +27,10 @@
     "foodindustrial:flowing_nitrogen_dioxide",
     "foodindustrial:hydrogen_fluoride",
     "foodindustrial:flowing_hydrogen_fluoride",
+    "foodindustrial:nitrous_oxide",
+    "foodindustrial:flowing_nitrous_oxide",
+    "foodindustrial:chlorine_dioxide",
+    "foodindustrial:flowing_chlorine_dioxide",
     "foodindustrial:methane",
     "foodindustrial:flowing_methane",
     "foodindustrial:propene",
@@ -42,6 +46,12 @@
     "foodindustrial:isobutylene",
     "foodindustrial:flowing_isobutylene",
     "foodindustrial:isobutane",
-    "foodindustrial:flowing_isobutane"
+    "foodindustrial:flowing_isobutane",
+    "foodindustrial:methyl_chloride",
+    "foodindustrial:flowing_methyl_chloride",
+    "foodindustrial:phosgene",
+    "foodindustrial:flowing_phosgene",
+    "foodindustrial:methylamine",
+    "foodindustrial:flowing_methylamine"
   ]
 }

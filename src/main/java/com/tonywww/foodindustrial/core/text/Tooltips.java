@@ -6,6 +6,8 @@ import com.tonywww.foodindustrial.core.purity.PurityScale;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,7 +28,7 @@ public final class Tooltips {
     }
 
     /**
-     * Material / additive item (§3.1): formula (yellow) when known, purity line (grade colour) when
+     * Material / additive item (§3.1): formula (element colours) when known, purity line (grade colour) when
      * the item carries purity, and the one-line description (grey) while Shift is held.
      *
      * @param formula        ASCII formula from the material table, or {@code null}
@@ -73,8 +75,18 @@ public final class Tooltips {
 
     private static void formula(@Nullable String formula, List<Component> lines) {
         if (formula != null && !formula.isEmpty()) {
-            lines.add(Component.literal(ChemicalFormula.toDisplay(formula)).withStyle(ChatFormatting.YELLOW));
+            lines.add(coloredFormula(formula));
         }
+    }
+
+    /** A formula with each element symbol in its group colour and the rest light grey (§3.1). */
+    public static MutableComponent coloredFormula(String formula) {
+        MutableComponent line = Component.empty();
+        for (ChemicalFormula.Run run : ChemicalFormula.runs(formula)) {
+            TextColor color = TextColor.fromRgb(run.color());
+            line.append(Component.literal(run.display()).withStyle(style -> style.withColor(color)));
+        }
+        return line;
     }
 
     private static void description(String descriptionKey, List<Component> lines, boolean shiftDown) {

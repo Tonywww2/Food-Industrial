@@ -10,6 +10,7 @@ import com.tonywww.foodindustrial.gui.GuiText;
 import com.tonywww.foodindustrial.gui.MachineMenu;
 import com.tonywww.foodindustrial.gui.MachineView;
 import com.tonywww.foodindustrial.gui.MenuActions;
+import com.tonywww.foodindustrial.machine.ModMachines;
 import com.tonywww.foodindustrial.machine.block.MachineBlock;
 import com.tonywww.foodindustrial.machine.component.RedstoneControl;
 import com.tonywww.foodindustrial.machine.component.SideConfig;
@@ -33,6 +34,7 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
@@ -41,6 +43,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.function.Supplier;
 
 /**
  * The machine screen (machines/04 §1–§5): main window with slots, tanks, energy or fuel, progress
@@ -50,8 +53,16 @@ import java.util.Map;
  */
 public class MachineScreen extends PlatformScreen<MachineMenu> {
     private static final int OVERLAP = 3;
-    private static final int CELL = 24;
-    private static final int CELL_PITCH = 26;
+    /** Face cells of the input/output panel and their pitch (half size, 2026-11-05). */
+    private static final int CELL = 12;
+    private static final int CELL_PITCH = 13;
+    /** Pitch of the redstone buttons. */
+    private static final int SMALL_PITCH = Widgets.SMALL + 2;
+    /** Height of the text buttons in the advanced input/output options and the pitch of their rows. */
+    private static final int TEXT_BUTTON_H = 10;
+    private static final int ROW_PITCH = TEXT_BUTTON_H + 2;
+    /** Side of the coloured squares of a face cell's item and fluid channels. */
+    private static final int CHANNEL = 4;
     private static final long DUMP_CONFIRM_MS = 2000;
     /** Open panel per side and machine type, for this game session (2026-11-05). */
     private static final Map<String, Panel> OPEN_LEFT = new HashMap<>();
@@ -59,20 +70,26 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     private static final Map<String, Boolean> STRUCTURE_PAGE = new HashMap<>();
 
     private enum Panel {
-        INFO(true, Widgets.Color.BLUE, Widgets.Icon.INFO, "info"),
-        UPGRADES(true, Widgets.Color.GREEN, Widgets.Icon.UPGRADES, "upgrades"),
-        IO(false, Widgets.Color.ORANGE, Widgets.Icon.IO, "io"),
-        REDSTONE(false, Widgets.Color.RED, Widgets.Icon.REDSTONE, "redstone");
+        INFO(true, Widgets.Color.BLUE, Widgets.Icon.INFO, null, "info"),
+        UPGRADES(true, Widgets.Color.GREEN, Widgets.Icon.UPGRADES, null, "upgrades"),
+        /** Tab icon: the device wrench (2026-11-05). */
+        IO(false, Widgets.Color.ORANGE, null, () -> new ItemStack(ModMachines.DEVICE_WRENCH.get()), "io"),
+        /** Tab icon: redstone dust (2026-11-05). */
+        REDSTONE(false, Widgets.Color.RED, null, () -> new ItemStack(Items.REDSTONE), "redstone");
 
         final boolean left;
         final Widgets.Color color;
+        @Nullable
         final Widgets.Icon icon;
+        @Nullable
+        final Supplier<ItemStack> item;
         final String key;
 
-        Panel(boolean left, Widgets.Color color, Widgets.Icon icon, String key) {
+        Panel(boolean left, Widgets.Color color, @Nullable Widgets.Icon icon, @Nullable Supplier<ItemStack> item, String key) {
             this.left = left;
             this.color = color;
             this.icon = icon;
+            this.item = item;
             this.key = key;
         }
     }
@@ -133,7 +150,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         } else {
             map.put(definition.id(), panel);
         }
-        if (panel == Panel.IO) {
+        if (!panel.left) {
             advancedFace = -1;
         }
         syncMenuState();
@@ -174,8 +191,8 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         return switch (panel) {
             case INFO -> 118;
             case UPGRADES -> GuiLayout.UPGRADES_WIDTH - OVERLAP;
-            case IO -> 4 * CELL_PITCH - 2 + 12;
-            case REDSTONE -> 104;
+            case IO -> ioContentWidth() + 10;
+            case REDSTONE -> redstoneContentWidth() + 10;
         };
     }
 
@@ -183,9 +200,64 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         return switch (panel) {
             case INFO -> GuiLayout.PANEL_HEADER + infoLines().size() * 10 + 4;
             case UPGRADES -> GuiLayout.upgradesSlotsBottom(definition.layout()) + 4 + upgradeLines().size() * 10 + 4;
-            case IO -> GuiLayout.PANEL_HEADER + 3 * CELL_PITCH + 4;
-            case REDSTONE -> GuiLayout.PANEL_HEADER + 20 + 4 + 20 + 4;
+            case IO -> GuiLayout.PANEL_HEADER + (advancedFace >= 0 ? advancedHeight() : 3 * CELL_PITCH - 1) + 5;
+            case REDSTONE -> GuiLayout.PANEL_HEADER + Widgets.SMALL + 4 + 10 + 3;
         };
+    }
+
+    /**
+     * Content width the header title of a right panel needs: it starts 1 pixel left of the content and
+     * ends 4 pixels before the panel edge (no icon on an open right panel), and on the advanced page
+     * follows the back button.
+     */
+    private int titleRoom(Component title, boolean back) {
+        return font.width(title) - 2 + (back ? Widgets.SMALL + 2 : 0);
+    }
+
+    private Component panelTitle(Panel panel) {
+        if (panel == Panel.IO && advancedFace >= 0) {
+            return advancedTitle(SideConfig.Face.values()[advancedFace]);
+        }
+        return Component.translatable(GuiText.key("panel", panel.key));
+    }
+
+    private static Component advancedTitle(SideConfig.Face face) {
+        return Component.translatable(GuiText.key("io", "advanced_title"), Component.translatable(GuiText.key("io", face.name().toLowerCase(Locale.ROOT))));
+    }
+
+    /** Content width of the input/output panel: face grid, titles of both pages, advanced rows. */
+    private int ioContentWidth() {
+        int width = Math.max(4 * CELL_PITCH - 1, titleRoom(Component.translatable(GuiText.key("panel", Panel.IO.key)), false));
+        if (!advancedRows().isEmpty()) {
+            for (SideConfig.Face face : SideConfig.Face.values()) {
+                width = Math.max(width, titleRoom(advancedTitle(face), true));
+            }
+            for (String key : new String[]{"scope_out", "scope_in"}) {
+                width = Math.max(width, font.width(Component.translatable(GuiText.key("io", key))));
+            }
+            int widest = 0;
+            for (String key : new String[]{"scope_all", "scope_main", "scope_byproduct"}) {
+                widest = Math.max(widest, font.width(Component.translatable(GuiText.key("io", key))));
+            }
+            widest = Math.max(widest, font.width(Component.translatable(GuiText.key("io", "scope_tank"), "9")));
+            width = Math.max(width, rowLabelWidth() + 2 + widest + 6);
+        }
+        return width;
+    }
+
+    /** Width of the row labels of the advanced options ("物品：", "流体："). */
+    private int rowLabelWidth() {
+        return Math.max(font.width(Component.translatable(GuiText.key("io", "label_items"))),
+            font.width(Component.translatable(GuiText.key("io", "label_fluids"))));
+    }
+
+    /** Content width of the redstone panel: the buttons, every mode name, the title. */
+    private int redstoneContentWidth() {
+        int width = Math.max(4 * SMALL_PITCH - 2, titleRoom(Component.translatable(GuiText.key("panel", Panel.REDSTONE.key)), false));
+        for (RedstoneControl control : RedstoneControl.values()) {
+            width = Math.max(width, font.width(Component.translatable(GuiText.key("redstone", control.id()))));
+        }
+        return width;
     }
 
     @Override
@@ -228,6 +300,9 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     private void drawMain(Canvas canvas, int mx, int my) {
         MachineView view = view();
         IoLayout io = definition.layout();
+        for (GuiLayout.Zone zone : layout.zones()) {
+            Widgets.zoneFrame(canvas, zone.frame());
+        }
         for (int i = 0; i < menu.machineSlots(); i++) {
             SlotRole role = io.roleOf(i);
             if (role == SlotRole.UPGRADE || role == SlotRole.MODULE) {
@@ -273,10 +348,13 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         GuiLayout.Box arrow = layout.arrow();
         int done = view.total > 0 ? (int) Math.min(GuiLayout.ARROW_W, (long) view.progress * GuiLayout.ARROW_W / view.total) : 0;
         Widgets.arrow(canvas, arrow.x(), arrow.y(), done);
+        GuiLayout.Box purityBox = layout.purity();
+        Widgets.zoneFrame(canvas, purityBox);
         Component purity = productPurity(true);
         if (purity != null) {
-            int width = canvas.width(purity);
-            canvas.text(purity, arrow.x() + (arrow.w() - width) / 2, arrow.y() + arrow.h() + 2, 0xFFFFFFFF, true);
+            int room = purityBox.w() - 4;
+            int width = Math.min(room, canvas.width(purity));
+            Widgets.fitText(canvas, purity, purityBox.x() + (purityBox.w() - width) / 2, purityBox.y() + 2, room, 0xFFFFFFFF, true);
         }
         Widgets.fitText(canvas, statusText(), 8, layout.statusY(), GuiLayout.WIDTH - 16, statusColor(), false);
     }
@@ -303,11 +381,11 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     }
 
     private GuiLayout.Box modeButton() {
-        return new GuiLayout.Box(GuiLayout.WIDTH - 22, 3, 14, 14);
+        return new GuiLayout.Box(GuiLayout.WIDTH - 22, 2, 14, 14);
     }
 
     private GuiLayout.Box structureButton() {
-        return new GuiLayout.Box(GuiLayout.WIDTH - 22 - (definition.modes().isEmpty() ? 0 : 16), 3, 14, 14);
+        return new GuiLayout.Box(GuiLayout.WIDTH - 22 - (definition.modes().isEmpty() ? 0 : 16), 2, 14, 14);
     }
 
     @Override
@@ -334,14 +412,28 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
 
     private void drawPanel(Canvas canvas, PanelBox box, int mx, int my) {
         Widgets.panel(canvas, box.panel.color, box.x, box.y, box.w, box.h);
-        int iconX = box.panel.left ? box.x + 4 : box.x + box.w - 20;
-        Widgets.icon(canvas, box.panel.icon, iconX, box.y + 4);
+        // right panels show their icon only on the collapsed tab (2026-11-05)
+        if (box.panel.left || !box.open) {
+            int iconX = box.panel.left ? box.x + 4 : box.x + box.w - 20;
+            if (box.panel.item != null) {
+                canvas.item(box.panel.item.get(), iconX, box.y + 4);
+            } else if (box.panel.icon != null) {
+                Widgets.icon(canvas, box.panel.icon, iconX, box.y + 4);
+            }
+        }
         if (!box.open) {
             return;
         }
-        Component title = Component.translatable(GuiText.key("panel", box.panel.key));
+        Component title = panelTitle(box.panel);
         int titleX = box.panel.left ? box.x + 22 : box.inner() + 4;
-        Widgets.fitText(canvas, title, titleX, box.y + 8, box.w - OVERLAP - 26, 0xFFFFFFFF, true);
+        int titleWidth = box.panel.left ? box.w - OVERLAP - 26 : box.w - OVERLAP - 8;
+        if (box.panel == Panel.IO && advancedFace >= 0) {
+            GuiLayout.Box back = backButton(box);
+            Widgets.smallButton(canvas, back.x(), back.y(), Widgets.SmallIcon.BACK, back.contains(mx, my), false);
+            titleX += Widgets.SMALL + 2;
+            titleWidth -= Widgets.SMALL + 2;
+        }
+        Widgets.fitText(canvas, title, titleX, box.y + 8, titleWidth, 0xFFFFFFFF, true);
         int cx = box.inner() + 5;
         int cy = box.y + GuiLayout.PANEL_HEADER;
         switch (box.panel) {
@@ -383,7 +475,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     };
     /** Automation switches in the corners: input items, input fluids, output items, output fluids. */
     private static final int[][] AUTO_CELLS = {{0, 0}, {2, 0}, {0, 2}, {2, 2}};
-    private static final Widgets.Icon[] AUTO_ICONS = {Widgets.Icon.IN_ITEMS, Widgets.Icon.IN_FLUIDS, Widgets.Icon.OUT_ITEMS, Widgets.Icon.OUT_FLUIDS};
+    private static final Widgets.SmallIcon[] AUTO_ICONS = {Widgets.SmallIcon.IN_ITEMS, Widgets.SmallIcon.IN_FLUIDS, Widgets.SmallIcon.OUT_ITEMS, Widgets.SmallIcon.OUT_FLUIDS};
     private static final String[] AUTO_KEYS = {"auto_input_items", "auto_input_fluids", "auto_output_items", "auto_output_fluids"};
 
     private boolean hasItems() {
@@ -401,36 +493,45 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         }
         MachineView view = view();
         for (SideConfig.Face face : SideConfig.Face.values()) {
-            int x = cx + FACE_CELLS[face.ordinal()][0] * CELL_PITCH;
-            int y = cy + FACE_CELLS[face.ordinal()][1] * CELL_PITCH;
-            drawFace(canvas, face, x, y, view, mx, my);
+            drawFace(canvas, face, faceCell(cx, cy, face), view, mx, my);
         }
         for (int i = 0; i < 4; i++) {
-            boolean fluid = (i & 1) == 1;
-            if (fluid ? !hasFluids() : !hasItems()) {
+            if (!hasAuto(i)) {
                 continue;
             }
-            int x = cx + AUTO_CELLS[i][0] * CELL_PITCH + 2;
-            int y = cy + AUTO_CELLS[i][1] * CELL_PITCH + 2;
+            GuiLayout.Box button = autoButton(cx, cy, i);
             boolean on = (view.auto & (1 << i)) != 0;
-            Widgets.iconButton(canvas, x, y, 20, AUTO_ICONS[i], mx >= x && mx < x + 20 && my >= y && my < y + 20, on);
+            Widgets.smallButton(canvas, button.x(), button.y(), AUTO_ICONS[i], button.contains(mx, my), on);
         }
     }
 
-    private void drawFace(Canvas canvas, SideConfig.Face face, int x, int y, MachineView view, int mx, int my) {
-        int half = CELL / 2;
+    private static GuiLayout.Box faceCell(int cx, int cy, SideConfig.Face face) {
+        return new GuiLayout.Box(cx + FACE_CELLS[face.ordinal()][0] * CELL_PITCH, cy + FACE_CELLS[face.ordinal()][1] * CELL_PITCH, CELL, CELL);
+    }
+
+    /** Automation switch {@code i} in a corner cell of the face grid. */
+    private static GuiLayout.Box autoButton(int cx, int cy, int i) {
+        int inset = (CELL - Widgets.SMALL) / 2;
+        return new GuiLayout.Box(cx + AUTO_CELLS[i][0] * CELL_PITCH + inset, cy + AUTO_CELLS[i][1] * CELL_PITCH + inset, Widgets.SMALL, Widgets.SMALL);
+    }
+
+    private boolean hasAuto(int i) {
+        return (i & 1) == 1 ? hasFluids() : hasItems();
+    }
+
+    /**
+     * A face cell: a centred square for the item channel on top and one for the fluid channel below,
+     * coloured by mode; no letters, the tooltip names the modes (2026-11-05).
+     */
+    private void drawFace(Canvas canvas, SideConfig.Face face, GuiLayout.Box cell, MachineView view, int mx, int my) {
+        int x = cell.x();
+        int y = cell.y();
+        int inset = (CELL - CHANNEL) / 2;
+        int gap = CELL - 2 * CHANNEL - 2;
         canvas.fill(x, y, x + CELL, y + CELL, 0xFF202020);
-        drawChannel(canvas, x + 1, y + 1, CELL - 2, half - 1, hasItems() ? view.sideItems[face.ordinal()] : -1);
-        drawChannel(canvas, x + 1, y + half, CELL - 2, half - 1, hasFluids() ? view.sideFluids[face.ordinal()] : -1);
-        ItemStack neighbour = neighbour(face);
-        if (!neighbour.isEmpty()) {
-            canvas.push();
-            canvas.translate(x + CELL - 13, y + 6);
-            canvas.scale(0.75F);
-            canvas.item(neighbour, 0, 0);
-            canvas.pop();
-        }
-        if (mx >= x && mx < x + CELL && my >= y && my < y + CELL) {
+        drawChannel(canvas, x + inset, y + 1, CHANNEL, CHANNEL, hasItems() ? view.sideItems[face.ordinal()] : -1);
+        drawChannel(canvas, x + inset, y + 1 + CHANNEL + gap, CHANNEL, CHANNEL, hasFluids() ? view.sideFluids[face.ordinal()] : -1);
+        if (cell.contains(mx, my)) {
             canvas.outline(x - 1, y - 1, CELL + 2, CELL + 2, 0xFFFFFFFF);
         }
     }
@@ -452,15 +553,6 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
                     canvas.fill(split, y + row, x + w, y + row + 1, Widgets.CHANNEL_OUTPUT);
                 }
             }
-        }
-        String letters = switch (value) {
-            case OFF -> "";
-            case INPUT -> "I";
-            case OUTPUT -> "O";
-            case BOTH -> "IO";
-        };
-        if (!letters.isEmpty()) {
-            canvas.text(letters, x + 1, y + (h - 8) / 2 + 1, 0xFFFFFFFF, true);
         }
     }
 
@@ -491,22 +583,70 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         return rows;
     }
 
+    /** A row of the advanced options: option 0 item output, 1 fluid output, 2 fluid input. */
+    private record AdvancedRow(int option, int y, boolean items) {
+    }
+
+    /** Section headings ("输出范围", "输入范围") and rows of the advanced options, from the top of the content. */
+    private List<int[]> advancedSections() {
+        List<int[]> sections = new ArrayList<>();
+        int y = 0;
+        List<Integer> options = advancedRows();
+        if (options.contains(0) || options.contains(1)) {
+            sections.add(new int[]{0, y});
+            y += 10 + (options.contains(0) ? ROW_PITCH : 0) + (options.contains(1) ? ROW_PITCH : 0);
+        }
+        if (options.contains(2)) {
+            sections.add(new int[]{1, y + (y > 0 ? 2 : 0)});
+        }
+        return sections;
+    }
+
+    private List<AdvancedRow> advancedLayout() {
+        List<AdvancedRow> rows = new ArrayList<>();
+        List<Integer> options = advancedRows();
+        for (int[] section : advancedSections()) {
+            int y = section[1] + 10;
+            for (int option : section[0] == 0 ? new int[]{0, 1} : new int[]{2}) {
+                if (options.contains(option)) {
+                    rows.add(new AdvancedRow(option, y, option == 0));
+                    y += ROW_PITCH;
+                }
+            }
+        }
+        return rows;
+    }
+
+    private int advancedHeight() {
+        List<AdvancedRow> rows = advancedLayout();
+        return rows.isEmpty() ? 0 : rows.get(rows.size() - 1).y() + TEXT_BUTTON_H;
+    }
+
+    /**
+     * Advanced options of one face (2026-11-05): "输出范围" with an item row and a fluid row, then
+     * "输入范围" with a fluid row; each row is a label followed by its button.
+     */
     private void drawAdvanced(Canvas canvas, int cx, int cy, int mx, int my) {
         SideConfig.Face face = SideConfig.Face.values()[advancedFace];
-        canvas.text(Component.translatable(GuiText.key("io", face.name().toLowerCase(Locale.ROOT))), cx, cy, 0xFFFFFFFF, true);
-        GuiLayout.Box back = backButton(cx, cy);
-        Widgets.iconButton(canvas, back.x(), back.y(), back.w(), Widgets.Icon.BACK, back.contains(mx, my), false);
-        int y = cy + 14;
-        for (int row : advancedRows()) {
-            canvas.text(Component.translatable(GuiText.key("io", row == 0 ? "scope_items" : row == 1 ? "scope_fluid_out" : "scope_fluid_in")), cx, y, 0xFFFFFFFF, true);
-            GuiLayout.Box button = new GuiLayout.Box(cx, y + 10, 4 * CELL_PITCH - 2, 14);
-            Widgets.textButton(canvas, button.x(), button.y(), button.w(), button.h(), scopeText(face, row), button.contains(mx, my), false);
-            y += 26;
+        for (int[] section : advancedSections()) {
+            canvas.text(Component.translatable(GuiText.key("io", section[0] == 0 ? "scope_out" : "scope_in")), cx, cy + section[1], 0xFFFFFFFF, true);
+        }
+        for (AdvancedRow row : advancedLayout()) {
+            Component label = Component.translatable(GuiText.key("io", row.items() ? "label_items" : "label_fluids"));
+            canvas.text(label, cx, cy + row.y() + 1, 0xFFE0E0E0, true);
+            GuiLayout.Box button = scopeButton(cx, cy, row);
+            Widgets.textButton(canvas, button.x(), button.y(), button.w(), button.h(), scopeText(face, row.option()), button.contains(mx, my), false);
         }
     }
 
-    private GuiLayout.Box backButton(int cx, int cy) {
-        return new GuiLayout.Box(cx + 4 * CELL_PITCH - 2 - 14, cy - 3, 14, 14);
+    private GuiLayout.Box scopeButton(int cx, int cy, AdvancedRow row) {
+        int x = cx + rowLabelWidth() + 2;
+        return new GuiLayout.Box(x, cy + row.y(), cx + ioContentWidth() - x, TEXT_BUTTON_H);
+    }
+
+    /** Back button of the advanced options: top left of the panel, before the title (2026-11-05). */
+    private static GuiLayout.Box backButton(PanelBox box) {
+        return new GuiLayout.Box(box.inner() + 4, box.y + (GuiLayout.PANEL_HEADER - Widgets.SMALL) / 2, Widgets.SMALL, Widgets.SMALL);
     }
 
     private Component scopeText(SideConfig.Face face, int row) {
@@ -526,15 +666,19 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
 
     // ---- redstone panel ----
 
+    private static final Widgets.SmallIcon[] REDSTONE_ICONS = {Widgets.SmallIcon.IGNORE, Widgets.SmallIcon.LOW, Widgets.SmallIcon.HIGH, Widgets.SmallIcon.DISABLED};
+
     private void drawRedstone(Canvas canvas, int cx, int cy, int mx, int my) {
-        Widgets.Icon[] icons = {Widgets.Icon.IGNORE, Widgets.Icon.LOW, Widgets.Icon.HIGH, Widgets.Icon.DISABLED};
         for (int i = 0; i < 4; i++) {
-            int x = cx + i * 24;
-            Widgets.iconButton(canvas, x, cy, 20, icons[i], mx >= x && mx < x + 20 && my >= cy && my < cy + 20, view().redstone == i);
+            GuiLayout.Box button = redstoneButton(cx, cy, i);
+            Widgets.smallButton(canvas, button.x(), button.y(), REDSTONE_ICONS[i], button.contains(mx, my), view().redstone == i);
         }
         RedstoneControl current = RedstoneControl.byIndex(view().redstone);
-        canvas.text(Component.translatable(GuiText.key("redstone", current.id())), cx, cy + 24, 0xFFFFFFFF, true);
-        canvas.text(Component.translatable(GuiText.key("redstone", view().powered ? "powered" : "unpowered")), cx, cy + 34, 0xFFE0E0E0, true);
+        canvas.text(Component.translatable(GuiText.key("redstone", current.id())), cx, cy + Widgets.SMALL + 4, 0xFFFFFFFF, true);
+    }
+
+    private static GuiLayout.Box redstoneButton(int cx, int cy, int i) {
+        return new GuiLayout.Box(cx + i * SMALL_PITCH, cy, Widgets.SMALL, Widgets.SMALL);
     }
 
     // ---- structure page ----
@@ -770,6 +914,12 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             lines.add(Component.translatable(GuiText.key("info", "progress"), String.valueOf(view.progress), String.valueOf(view.total)));
             return lines;
         }
+        Component purity = layout.purity().contains(mx, my) ? productPurity(false) : null;
+        if (purity != null) {
+            lines.add(Component.translatable(GuiText.key("info", "purity"), ""));
+            lines.add(Component.literal("  ").append(purity));
+            return lines;
+        }
         Slot slot = hoveredSlot();
         if (slot != null && !slot.hasItem() && slot.index < definition.layout().itemSlots()) {
             ItemStack lock = slot.index < view.slotLocks.length ? view.slotLocks[slot.index] : ItemStack.EMPTY;
@@ -803,6 +953,10 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     }
 
     private void panelTooltip(PanelBox box, int mx, int my, List<Component> lines) {
+        if (box.panel == Panel.IO && box.open && advancedFace >= 0 && backButton(box).contains(mx, my)) {
+            lines.add(Component.translatable(GuiText.key("io", "back_to_faces")));
+            return;
+        }
         if (box.onHeader(mx, my)) {
             lines.add(Component.translatable(GuiText.key("panel", box.panel.key)));
             return;
@@ -812,10 +966,12 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         MachineView view = view();
         if (box.panel == Panel.IO && advancedFace < 0) {
             for (SideConfig.Face face : SideConfig.Face.values()) {
-                int x = cx + FACE_CELLS[face.ordinal()][0] * CELL_PITCH;
-                int y = cy + FACE_CELLS[face.ordinal()][1] * CELL_PITCH;
-                if (mx >= x && mx < x + CELL && my >= y && my < y + CELL) {
+                if (faceCell(cx, cy, face).contains(mx, my)) {
                     lines.add(Component.translatable(GuiText.key("io", face.name().toLowerCase(Locale.ROOT))));
+                    ItemStack neighbour = neighbour(face);
+                    if (!neighbour.isEmpty()) {
+                        lines.add(Component.translatable(GuiText.key("io", "neighbour"), neighbour.getHoverName()).withStyle(ChatFormatting.GRAY));
+                    }
                     if (hasItems()) {
                         lines.add(Component.translatable(GuiText.key("io", "items"), modeName(view.sideItems[face.ordinal()])).withStyle(ChatFormatting.GRAY));
                     }
@@ -829,9 +985,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
                 }
             }
             for (int i = 0; i < 4; i++) {
-                int x = cx + AUTO_CELLS[i][0] * CELL_PITCH + 2;
-                int y = cy + AUTO_CELLS[i][1] * CELL_PITCH + 2;
-                if (mx >= x && mx < x + 20 && my >= y && my < y + 20 && ((i & 1) == 1 ? hasFluids() : hasItems())) {
+                if (hasAuto(i) && autoButton(cx, cy, i).contains(mx, my)) {
                     boolean on = (view.auto & (1 << i)) != 0;
                     lines.add(Component.translatable(GuiText.key("io", AUTO_KEYS[i]), Component.translatable(GuiText.key("io", on ? "on" : "switched_off"))));
                     return;
@@ -840,8 +994,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         }
         if (box.panel == Panel.REDSTONE) {
             for (int i = 0; i < 4; i++) {
-                int x = cx + i * 24;
-                if (mx >= x && mx < x + 20 && my >= cy && my < cy + 20) {
+                if (redstoneButton(cx, cy, i).contains(mx, my)) {
                     lines.add(Component.translatable(GuiText.key("redstone", RedstoneControl.byIndex(i).id())));
                     return;
                 }
@@ -945,6 +1098,10 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     }
 
     private boolean clickPanel(PanelBox box, double mx, double my, int button) {
+        if (box.panel == Panel.IO && box.open && advancedFace >= 0 && backButton(box).contains(mx, my)) {
+            advancedFace = -1;
+            return true;
+        }
         if (box.onHeader(mx, my)) {
             toggle(box.panel);
             return true;
@@ -955,8 +1112,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             case IO -> clickIo(cx, cy, mx, my, button);
             case REDSTONE -> {
                 for (int i = 0; i < 4; i++) {
-                    int x = cx + i * 24;
-                    if (mx >= x && mx < x + 20 && my >= cy && my < cy + 20) {
+                    if (redstoneButton(cx, cy, i).contains(mx, my)) {
                         menu.send(MenuActions.REDSTONE, i, 0);
                     }
                 }
@@ -973,40 +1129,34 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     private void clickIo(int cx, int cy, double mx, double my, int button) {
         MachineView view = view();
         if (advancedFace >= 0) {
-            if (backButton(cx, cy).contains(mx, my)) {
-                advancedFace = -1;
-                return;
-            }
             SideConfig.Face face = SideConfig.Face.values()[advancedFace];
-            int y = cy + 14;
-            for (int row : advancedRows()) {
-                if (new GuiLayout.Box(cx, y + 10, 4 * CELL_PITCH - 2, 14).contains(mx, my)) {
+            for (AdvancedRow row : advancedLayout()) {
+                if (scopeButton(cx, cy, row).contains(mx, my)) {
                     boolean forwards = button != 1;
-                    if (row == 0) {
+                    if (row.option() == 0) {
                         int next = Math.floorMod(view.itemScopes[face.ordinal()] + (forwards ? 1 : -1), 3);
                         menu.send(MenuActions.SCOPE_ITEMS, face.ordinal(), next);
                     } else {
-                        int tanks = row == 1 ? definition.layout().fluidOut() : definition.layout().fluidIn();
-                        int current = row == 1 ? view.fluidOutTanks[face.ordinal()] : view.fluidInTanks[face.ordinal()];
+                        boolean out = row.option() == 1;
+                        int tanks = out ? definition.layout().fluidOut() : definition.layout().fluidIn();
+                        int current = out ? view.fluidOutTanks[face.ordinal()] : view.fluidInTanks[face.ordinal()];
                         int next = Math.floorMod(current + 1 + (forwards ? 1 : -1), tanks + 1) - 1;
-                        menu.send(row == 1 ? MenuActions.SCOPE_FLUID_OUT : MenuActions.SCOPE_FLUID_IN, face.ordinal(), next);
+                        menu.send(out ? MenuActions.SCOPE_FLUID_OUT : MenuActions.SCOPE_FLUID_IN, face.ordinal(), next);
                     }
                 }
-                y += 26;
             }
             return;
         }
         for (SideConfig.Face face : SideConfig.Face.values()) {
-            int x = cx + FACE_CELLS[face.ordinal()][0] * CELL_PITCH;
-            int y = cy + FACE_CELLS[face.ordinal()][1] * CELL_PITCH;
-            if (mx >= x && mx < x + CELL && my >= y && my < y + CELL) {
+            GuiLayout.Box cell = faceCell(cx, cy, face);
+            if (cell.contains(mx, my)) {
                 if (Platform.isAltDown()) {
                     if (!advancedRows().isEmpty()) {
                         advancedFace = face.ordinal();
                     }
                     return;
                 }
-                boolean fluid = my >= y + CELL / 2;
+                boolean fluid = my >= cell.y() + CELL / 2;
                 if (fluid ? !hasFluids() : !hasItems()) {
                     return;
                 }
@@ -1018,9 +1168,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             }
         }
         for (int i = 0; i < 4; i++) {
-            int x = cx + AUTO_CELLS[i][0] * CELL_PITCH + 2;
-            int y = cy + AUTO_CELLS[i][1] * CELL_PITCH + 2;
-            if (mx >= x && mx < x + 20 && my >= y && my < y + 20 && ((i & 1) == 1 ? hasFluids() : hasItems())) {
+            if (hasAuto(i) && autoButton(cx, cy, i).contains(mx, my)) {
                 boolean on = (view.auto & (1 << i)) != 0;
                 menu.send(MenuActions.AUTO, i, on ? 0 : 1);
                 return;

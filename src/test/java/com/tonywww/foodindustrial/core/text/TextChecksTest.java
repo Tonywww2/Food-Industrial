@@ -56,6 +56,8 @@ class TextChecksTest {
         assertTrue(!zh("tooltip.foodindustrial.a", "容量 1000mB").isEmpty(), "unit without space");
         assertTrue(!zh("tooltip.foodindustrial.a", "中和,酸解").isEmpty(), "half-width comma");
         assertTrue(!zh("tooltip.foodindustrial.a", "盐(NaCl)").isEmpty(), "half-width parenthesis after Han");
+        assertTrue(zh("item.foodindustrial.a", "聚氧乙烯(20)山梨醇酐单硬脂酸酯（吐温 60）").isEmpty(), "GB 2760 degree of polymerisation");
+        assertTrue(zh("item.foodindustrial.a", "3-(3-羟基-4-甲氧基苯基)丙醛").isEmpty(), "substituent group after a locant");
         assertTrue(!en("item.foodindustrial.salt", "Sodium chloride").isEmpty(), "name not capitalised");
         assertTrue(!en("tooltip.foodindustrial.a", "used in tofu.").isEmpty(), "lower case and period");
         assertTrue(!en("tooltip.foodindustrial.a", "A".repeat(61)).isEmpty(), "too long");

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:h_acid",
+    {
+      "id": "#c:dusts/h_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/h_acid",
+      "required": false
+    }
+  ]
+}

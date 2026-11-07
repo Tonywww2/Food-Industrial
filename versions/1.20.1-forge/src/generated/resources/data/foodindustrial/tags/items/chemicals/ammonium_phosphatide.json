@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_phosphatide",
+    {
+      "id": "#forge:dusts/ammonium_phosphatide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_phosphatide",
+      "required": false
+    }
+  ]
+}

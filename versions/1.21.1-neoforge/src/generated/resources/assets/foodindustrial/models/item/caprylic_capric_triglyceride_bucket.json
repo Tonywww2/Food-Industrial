@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:caprylic_capric_triglyceride",
+  "loader": "neoforge:fluid_container"
+}

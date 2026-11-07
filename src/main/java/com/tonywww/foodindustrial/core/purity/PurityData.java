@@ -86,8 +86,24 @@ public final class PurityData {
      * @param missing    value of items and fluids without stored purity: the external default
      *                   (graded), the source purity (K0) or {@link #NONE}
      */
+    /** Category of compound products (K12): every component must reach its own food grade (additives/10 §1.1). */
+    public static final String COMPOUND_CATEGORY = "foodindustrial:k12_compound";
+
     public record Material(String id, String category, List<Optional<BigDecimal>> bounds, int[] boundBytes,
                            @Nullable BigDecimal source, int sourceByte, int missing, JsonObject json) {
+        /**
+         * Whether the material's items and fluids carry purity: graded materials, and K0 materials with
+         * a source purity (additives/10 §1.4).
+         */
+        public boolean bears() {
+            return graded() || sourceByte != NONE;
+        }
+
+        /** Whether the material is a compound product (K12, additives/10 §1.1). */
+        public boolean compound() {
+            return COMPOUND_CATEGORY.equals(category);
+        }
+
         /** Whether the material has at least one grade bound; K0 materials show "content" instead. */
         public boolean graded() {
             for (int b : boundBytes) {

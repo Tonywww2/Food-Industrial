@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mulberry_red",
+    {
+      "id": "#forge:dusts/mulberry_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/mulberry_red",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diisopropylbenzene",
+    "foodindustrial:flowing_diisopropylbenzene",
+    {
+      "id": "#forge:diisopropylbenzene",
+      "required": false
+    }
+  ]
+}

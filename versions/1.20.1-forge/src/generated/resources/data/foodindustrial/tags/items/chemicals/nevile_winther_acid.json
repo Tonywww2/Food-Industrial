@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nevile_winther_acid",
+    {
+      "id": "#forge:dusts/nevile_winther_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nevile_winther_acid",
+      "required": false
+    }
+  ]
+}

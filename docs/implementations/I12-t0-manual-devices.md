@@ -4,7 +4,7 @@
 | --- | --- |
 | 状态 | 未开始 |
 | 阶段 | D 设备 |
-| 依赖 | I08、I09、I07 |
+| 依赖 | I08、I09、I07、I29 |
 | 原文档 | [additives/07](../additives/07-manual-crafting.md)、[machines/01 §2](../machines/01-recipe-types.md)、[additives/10 §2.1](../additives/10-purity-jei-ae2.md) |
 | 节点 | 1.20.1-forge、1.21.1-neoforge、26.1.2-neoforge |
 | 代码位置 | `manual`、`world` |
@@ -26,7 +26,9 @@
 - [ ] W01 方块转化、W02 割取的配方格式与 `BlockTransformRecipe`、`HarvestRecipe`（自 I08 移入，2026-11-04 定；配方类型 ID 与默认来源规则已在 I08 登记）：格式先拟定写回 [machines/01 §3.1](../machines/01-recipe-types.md)，与用户确认后实装（[machines/02 §3](../machines/02-architecture.md)）
 - [ ] H11 硝土生成（W01，随机刻）；H12 寒冷冻融；H14 冷置析酒石；H15 割取（W02，带冷却）（[additives/07 §世界交互](../additives/07-manual-crafting.md)）
 - [ ] H13 自然接种：按底物与群系长出确定菌种（[additives/07 §自然接种（H13）](../additives/07-manual-crafting.md)）
-- [ ] 环境条件只影响耗时与产量；失败产物（焦糖渣、死烧石膏、霉变姜黄、徒长麦芽）（[additives/10 §2.2 第 6 条](../additives/10-purity-jei-ae2.md)，[additives/07 §手工能做出的第一批产品](../additives/07-manual-crafting.md)）
+- [ ] 不带纯度的手工产物不写 `Purity`：苦卤、海藻灰、草木灰、碱液、钾碱液、硝水、松脂、鱼肝油（多组分混合物），麦芽、木瓜乳汁（酶源）（2026-11-05，[additives/10 §1.1](../additives/10-purity-jei-ae2.md)，[additives/07 §手工能做出的第一批产品](../additives/07-manual-crafting.md)）
+- [ ] 精制配方带 `t0_max`（I29）：手工反复精制到上限后不再升高，例如海盐在 T0 上停在 95.2%（[additives/07 §手工能做出的第一批产品](../additives/07-manual-crafting.md)）
+- [ ] 环境条件只影响耗时与产量；失败产物（焦糖渣、死烧石膏、霉变姜黄、徒长麦芽；麦芽不带纯度后，徒长麦芽是不能糖化的单独物品）（[additives/10 §2.2 第 6 条](../additives/10-purity-jei-ae2.md)，[additives/07 §手工能做出的第一批产品](../additives/07-manual-crafting.md)）
 
 ## 节点差异
 

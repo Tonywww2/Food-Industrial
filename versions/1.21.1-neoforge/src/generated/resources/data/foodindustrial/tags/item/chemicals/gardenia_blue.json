@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gardenia_blue",
+    {
+      "id": "#c:dusts/gardenia_blue",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gardenia_blue",
+      "required": false
+    }
+  ]
+}

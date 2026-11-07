@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:norbixin",
+    {
+      "id": "#c:dusts/norbixin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/norbixin",
+      "required": false
+    }
+  ]
+}

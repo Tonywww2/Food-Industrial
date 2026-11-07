@@ -1,4 +1,10 @@
 {
   "id": "foodindustrial:calcium_silicate",
-  "category": "foodindustrial:k1_inorganic"
+  "category": "foodindustrial:k1_inorganic",
+  "grades": {
+    "crude": 20,
+    "refined": 30,
+    "food": 40,
+    "lab": null
+  }
 }

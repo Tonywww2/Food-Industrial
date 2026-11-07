@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phosphorus_trichloride",
+    "foodindustrial:flowing_phosphorus_trichloride",
+    {
+      "id": "#forge:phosphorus_trichloride",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_alginate",
+    {
+      "id": "#forge:dusts/potassium_alginate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_alginate",
+      "required": false
+    }
+  ]
+}

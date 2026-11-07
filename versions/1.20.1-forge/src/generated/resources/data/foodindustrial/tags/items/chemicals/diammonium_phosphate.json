@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diammonium_phosphate",
+    {
+      "id": "#forge:dusts/diammonium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/diammonium_phosphate",
+      "required": false
+    }
+  ]
+}

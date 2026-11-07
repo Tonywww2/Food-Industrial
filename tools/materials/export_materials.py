@@ -6,10 +6,16 @@ enzymes, catalysts). Rows marked "见 09" (described in 09) or "（I20）", and 
 物品 or 流体 (ores, crops, plants and trees, registered as blocks by I07 code) are skipped, as is
 vanilla water.
 
-Purity (I28): the 09 "纯度类别" column (08 §C cultures and enzymes are K11, other 08 §C rows carry
-no purity), the 09 §D table of source purities and single-material overrides (checked against
-10 §1.5), and the category bounds of 10 §1.4, exported to purity_categories.json. A material bears a
-stored purity when it has a category other than K0, or K0 with a source purity (additives/10 §1.3).
+Names: in 09 a trailing parenthesis with Han characters is the common name (专业名称（日常名称）,
+text-standard §2.1); in 08 parentheses are part of the name (qualifiers such as 工程菌（漆酶）,
+2026-11-05).
+
+Purity (I28, I29): the 09 "纯度类别" column ("—" = no purity: enzymes, distilled water, mixtures of
+several substances); in 08 §C cultures are K11, enzymes, consumables and the other rows carry no
+purity (2026-11-05); the 09 §D table of source purities and single-material overrides (checked
+against 10 §1.5), and the category bounds of 10 §1.4, exported to purity_categories.json. A material
+bears a stored purity when it has a category other than K0, or K0 with a source purity
+(additives/10 §1.3).
 
 tag_imports.json (I06): the 08 §A/§B tables (one tag per row, per-node content columns) plus the
 catalyst tags of 09 chemicals listed in the 08 §C catalyst table. Only backticked entries are
@@ -29,12 +35,14 @@ TAGS_OUT = OUT.parent / 'tag_imports.json'
 CATEGORIES_OUT = OUT.parent / 'purity_categories.json'
 
 STATES = {'固': 'solid', '液': 'liquid', '气': 'gas', '溶液': 'solution', '物品': 'solid', '流体': 'liquid'}
-CATEGORIES = {'化学品': 'chemical', '催化剂': 'catalyst', '原料': 'raw', '菌种': 'culture', '酶': 'enzyme', '原版': 'vanilla'}
+CATEGORIES = {'化学品': 'chemical', '催化剂': 'catalyst', '原料': 'raw', '菌种': 'culture', '酶': 'enzyme', '耗材': 'consumable',
+              '原版': 'vanilla'}
 # Purity categories of additives/10 §1.4 and §4.7.
 PURITY_CATEGORY_IDS = {
     'K0': 'k0_raw', 'K1': 'k1_inorganic', 'K2': 'k2_sugar', 'K3': 'k3_organic_solid',
     'K4': 'k4_organic_liquid', 'K5': 'k5_natural_extract', 'K6': 'k6_colloid', 'K7': 'k7_fat',
     'K8': 'k8_emulsifier', 'K9': 'k9_gas', 'K10': 'k10_synthetic_color', 'K11': 'k11_culture',
+    'K12': 'k12_compound',
 }
 UNGRADED = 'K0'
 GRADES = ('crude', 'refined', 'food', 'lab')
@@ -71,14 +79,15 @@ def split_common(zh, en):
     """'氯化钠（盐）', 'Sodium Chloride (Salt)' -> professional and common names.
 
     Only a trailing parenthesis whose Chinese text contains Han characters is a common name;
-    others ('三孢布拉霉（+）') are part of the name.
+    others ('三孢布拉霉（+）') are part of the name. An English name without a parenthesis has no
+    separate English common name ('过氧化氢（双氧水）', 'Hydrogen Peroxide').
     """
     match = re.fullmatch(r'(.+)（([^（）]+)）', zh)
     if not match or not HAN.search(match.group(2)):
         return {'zh': zh, 'en': en}, None
     en_match = re.fullmatch(r'(.+) \(([^()]+)\)', en)
     if not en_match:
-        sys.exit(f'English name of {zh} lacks the common name: {en}')
+        return {'zh': match.group(1), 'en': en}, {'zh': match.group(2), 'en': en}
     return ({'zh': match.group(1), 'en': en_match.group(1)},
             {'zh': match.group(2), 'en': en_match.group(2)})
 
@@ -205,9 +214,10 @@ def tag_imports(eight):
     return [entry for entry in merged.values() if entry['forge'] or entry['c']]
 
 
-def material(mid, zh, en, state, category, color, formula_text, gtceu, tag, source, purity_category=None):
+def material(mid, zh, en, state, category, color, formula_text, gtceu, tag, source, purity_category=None, split=True):
+    """split: whether a trailing parenthesis can be a common name (09 rows); in 08 it is part of the name."""
     category = CATEGORIES[category]
-    professional, common = split_common(zh, en)
+    professional, common = split_common(zh, en) if split else ({'zh': zh, 'en': en}, None)
     if purity_category is not None and purity_category not in PURITY_CATEGORY_IDS:
         sys.exit(f'Unknown purity category of {mid}: {purity_category}')
     return {
@@ -253,15 +263,16 @@ def main():
             state = STATES[row['类型']]
             tag = re.search(r'`([^`]+)`', row['配方引用标签']).group(1)
             materials.append(material(mid, row['原料'], row['英文名（待审）'], state, row['分类'], row['颜色'],
-                                      None, None, tag, '08 §C'))
+                                      None, None, tag, '08 §C', split=False))
     for _, rows in tables(eight, '| 菌种 / 酶 | 配方引用标签 |'):
         for row in rows:
             mid = row['ID']
             if mid.startswith('（'):
                 continue
             tag = re.search(r'`([^`]+)`', row['配方引用标签']).group(1)
+            purity_category = 'K11' if row['分类'] == '菌种' else None  # enzymes and consumables: none
             materials.append(material(mid, row['菌种 / 酶'], row['英文名（待审）'], 'solid', row['分类'], None,
-                                      None, None, tag, '08 §C', 'K11'))
+                                      None, None, tag, '08 §C', purity_category, split=False))
     for _, rows in tables(eight, '| 催化剂 | 配方引用标签 |'):
         for row in rows:
             mid = row['ID']
@@ -269,7 +280,7 @@ def main():
                 continue
             tag = re.search(r'`([^`]+)`', row['配方引用标签']).group(1)
             materials.append(material(mid, row['催化剂'], row['英文名（待审）'], 'solid', row['分类'], None,
-                                      formula(row['显示化学式']), None, tag, '08 §C'))
+                                      formula(row['显示化学式']), None, tag, '08 §C', split=False))
     ids = [m['id'] for m in materials]
     duplicates = sorted({i for i in ids if ids.count(i) > 1})
     if duplicates:

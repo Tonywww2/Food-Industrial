@@ -522,6 +522,40 @@
    ]
   },
   {
+   "tag": "materials/feather",
+   "kind": "item",
+   "forge": [
+    "minecraft:feather",
+    "#forge:feathers"
+   ],
+   "c": [
+    "minecraft:feather",
+    "#c:feathers"
+   ]
+  },
+  {
+   "tag": "materials/quartz",
+   "kind": "item",
+   "forge": [
+    "minecraft:quartz",
+    "#forge:gems/quartz"
+   ],
+   "c": [
+    "minecraft:quartz",
+    "#c:gems/quartz"
+   ]
+  },
+  {
+   "tag": "materials/bamboo",
+   "kind": "item",
+   "forge": [
+    "minecraft:bamboo"
+   ],
+   "c": [
+    "minecraft:bamboo"
+   ]
+  },
+  {
    "tag": "materials/rice",
    "kind": "item",
    "forge": [
@@ -1035,6 +1069,24 @@
    ]
   },
   {
+   "tag": "materials/molybdenum",
+   "kind": "item",
+   "forge": [
+    "#forge:dusts/molybdenum",
+    "#forge:ingots/molybdenum"
+   ],
+   "c": []
+  },
+  {
+   "tag": "materials/bismuth",
+   "kind": "item",
+   "forge": [
+    "#forge:dusts/bismuth",
+    "#forge:ingots/bismuth"
+   ],
+   "c": []
+  },
+  {
    "tag": "materials/red_algae",
    "kind": "item",
    "forge": [
@@ -1225,6 +1277,56 @@
    ],
    "c": [
     "foodindustrial:aluminium_chloride"
+   ]
+  },
+  {
+   "tag": "catalysts/alumina",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:alumina"
+   ],
+   "c": [
+    "foodindustrial:alumina"
+   ]
+  },
+  {
+   "tag": "catalysts/copper",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:copper_catalyst"
+   ],
+   "c": [
+    "foodindustrial:copper_catalyst"
+   ]
+  },
+  {
+   "tag": "catalysts/bismuth_molybdate",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:bismuth_molybdate_catalyst"
+   ],
+   "c": [
+    "foodindustrial:bismuth_molybdate_catalyst"
+   ]
+  },
+  {
+   "tag": "catalysts/zinc_chloride",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:zinc_chloride"
+   ],
+   "c": [
+    "foodindustrial:zinc_chloride"
+   ]
+  },
+  {
+   "tag": "catalysts/immobilized_sucrose_isomerase",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:immobilized_sucrose_isomerase"
+   ],
+   "c": [
+    "foodindustrial:immobilized_sucrose_isomerase"
    ]
   }
  ]

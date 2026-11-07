@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acorn_shell_brown",
+    {
+      "id": "#c:dusts/acorn_shell_brown",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acorn_shell_brown",
+      "required": false
+    }
+  ]
+}

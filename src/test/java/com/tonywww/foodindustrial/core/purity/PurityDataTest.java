@@ -25,7 +25,6 @@ class PurityDataTest {
     private static final String SALT = "foodindustrial:salt";
     private static final String SUGAR = "foodindustrial:sucrose";
     private static final String ACETIC_ACID = "foodindustrial:acetic_acid";
-    private static final String BITTERN = "foodindustrial:bittern";
 
     @BeforeAll
     static void registerMaterials() {
@@ -61,7 +60,7 @@ class PurityDataTest {
         }
         PurityData data = PurityData.build(PurityData.builtinCategories(), materials, errors::add);
         assertEquals(List.of(), errors);
-        assertEquals(12, data.categories().size());
+        assertEquals(13, data.categories().size());
         assertEquals(withData, data.materials().size());
         for (MaterialDef def : MaterialTable.load()) {
             PurityData.Material material = data.material("foodindustrial:" + def.id());
@@ -104,11 +103,12 @@ class PurityDataTest {
         assertEquals(Optional.of(PurityGrade.POOR), acid.gradeOf(PurityScale.ofPercent(3)));
         assertEquals(Optional.of(PurityGrade.FOOD), acid.gradeOf(PurityScale.ofPercent(4)), "vinegar is food grade");
 
-        PurityData.Material bittern = material(BITTERN);
-        assertFalse(bittern.graded());
-        assertEquals(Optional.empty(), bittern.gradeOf(10));
-        assertEquals("7.3", display(bittern.missing()), "K0 content is the source purity");
-        assertEquals(List.of(bittern.sourceByte()), bittern.listedValues());
+        PurityData.Material k0 = PurityTestData.k0Material(7);
+        assertFalse(k0.graded());
+        assertEquals(Optional.empty(), k0.gradeOf(10));
+        assertEquals("7.3", display(k0.missing()), "K0 content is the source purity");
+        assertEquals(List.of(k0.sourceByte()), k0.listedValues());
+        assertNull(PurityData.current().material("foodindustrial:bittern"), "mixtures carry no purity (additives/10 §1.1)");
     }
 
     @Test
@@ -134,7 +134,7 @@ class PurityDataTest {
         assertEquals(PurityScale.ofPercent(12), PurityThreshold.resolve(JsonParser.parseString("12"), null, null).value());
         assertThrows(IllegalArgumentException.class, () -> PurityThreshold.resolve(Either.left("crude"), null, ACETIC_ACID), "no crude");
         assertThrows(IllegalArgumentException.class, () -> PurityThreshold.resolve(Either.left("food"), null, null), "no material");
-        assertThrows(IllegalArgumentException.class, () -> PurityThreshold.resolve(Either.left("food"), null, BITTERN), "K0 has no grades");
+        assertThrows(IllegalArgumentException.class, () -> PurityThreshold.resolve(Either.left("food"), null, "foodindustrial:brine"), "K0 has no grades");
         assertThrows(IllegalArgumentException.class, () -> PurityThreshold.resolve(Either.left("poor"), null, SALT));
         assertThrows(IllegalArgumentException.class, () -> PurityThreshold.resolve(Either.right(101.0), null, null));
     }

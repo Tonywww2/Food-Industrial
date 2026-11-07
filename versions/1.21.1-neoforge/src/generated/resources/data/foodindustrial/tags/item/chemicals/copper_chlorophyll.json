@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:copper_chlorophyll",
+    {
+      "id": "#c:dusts/copper_chlorophyll",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper_chlorophyll",
+      "required": false
+    }
+  ]
+}

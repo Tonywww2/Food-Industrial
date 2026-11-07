@@ -34,7 +34,8 @@ import java.util.function.BiFunction;
  * </pre>
  * {@code purity} is a percentage, or a grade name standing for that grade's lower bound by the bounds
  * of the matched item's material ({@code poor}: the external default). A grade name on an item that
- * is in no material tag, or whose material lacks the grade, is logged and ignored for that item.
+ * is in no material tag, or whose material lacks the grade, is logged and ignored for that item; so
+ * is any rule matching an item of a material without purity (additives/10 §1.1).
  * Without a matching rule the external default applies; with several, the lowest wins. The loader
  * does not cap the value; the mod's own rules are checked at data generation ({@link #checkBundled}).
  * Rules are synced to clients on login and after {@code /reload}, so client displays match server
@@ -143,6 +144,46 @@ public final class PurityRules {
             return Purity.NONE;
         }
         return current.fluids().computeIfAbsent(fluid, key -> computeFluid(current.rules(), key, material));
+    }
+
+    /**
+     * An item of a material without purity: rules matching it are logged once per reload and ignored
+     * (additives/10 §1.1).
+     */
+    static void ignoredFor(Item item, String plainMaterial) {
+        State current = state;
+        if (!current.rules().isEmpty()) {
+            current.items().computeIfAbsent(item, key -> {
+                ItemStack probe = new ItemStack(item);
+                String id = PlatformTags.itemId(item);
+                for (Rule rule : current.rules()) {
+                    if (matchesItem(rule.items(), probe, id)) {
+                        warnPlain(rule, id, plainMaterial);
+                    }
+                }
+                return Purity.NONE;
+            });
+        }
+    }
+
+    /** A fluid of a material without purity, as {@link #ignoredFor(Item, String)}. */
+    static void ignoredFor(Fluid fluid, String plainMaterial) {
+        State current = state;
+        if (!current.rules().isEmpty()) {
+            current.fluids().computeIfAbsent(fluid, key -> {
+                String id = PlatformTags.fluidId(fluid);
+                for (Rule rule : current.rules()) {
+                    if (matchesFluid(rule.fluids(), fluid, id)) {
+                        warnPlain(rule, id, plainMaterial);
+                    }
+                }
+                return Purity.NONE;
+            });
+        }
+    }
+
+    private static void warnPlain(Rule rule, String id, String plainMaterial) {
+        FoodIndustrial.LOGGER.warn("Purity rule {}: {} belongs to {}, which carries no purity; ignored", rule.source(), id, plainMaterial);
     }
 
     private static int computeItem(List<Rule> rules, Item item, @Nullable String material) {
@@ -310,6 +351,10 @@ public final class PurityRules {
         }
         for (String material : materials) {
             PurityData.Material data = PurityData.current().material(material);
+            if (data == null) {
+                throw new IllegalStateException("Bundled purity rule " + rule.source() + ": " + entry + " belongs to "
+                    + material + ", which carries no purity");
+            }
             int cap = Purity.NONE;
             if (data != null) {
                 cap = !data.graded() ? data.sourceByte()

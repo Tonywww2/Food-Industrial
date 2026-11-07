@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:titanium_dioxide",
+    {
+      "id": "#c:dusts/titanium_dioxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/titanium_dioxide",
+      "required": false
+    }
+  ]
+}

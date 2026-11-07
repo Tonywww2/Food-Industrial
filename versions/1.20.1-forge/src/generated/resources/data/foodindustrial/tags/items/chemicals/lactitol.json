@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactitol",
+    {
+      "id": "#forge:dusts/lactitol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lactitol",
+      "required": false
+    }
+  ]
+}

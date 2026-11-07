@@ -11,12 +11,23 @@ import com.tonywww.foodindustrial.core.Tier;
  * @param speed          progress units per tick (T1 ×1, T2 ×2, T3 ×4, T4 ×4; hand tools count actions)
  * @param yieldPermille  main product multiplier of physical recipes, 1000 = ×1
  * @param energyPermille recipe energy multiplier, 1000 = ×1
+ * @param normalizing    a standardisation module is installed: products drop to their grade's lower
+ *                       bound (machines/01 §1.2, 2026-11-05)
  */
-public record DeviceProfile(Tier tier, int speed, int yieldPermille, int energyPermille) {
+public record DeviceProfile(Tier tier, int speed, int yieldPermille, int energyPermille, boolean normalizing) {
     public DeviceProfile {
         if (speed <= 0 || yieldPermille < 1000 || energyPermille < 0) {
             throw new IllegalArgumentException("Invalid device profile " + speed + "/" + yieldPermille + "/" + energyPermille);
         }
+    }
+
+    public DeviceProfile(Tier tier, int speed, int yieldPermille, int energyPermille) {
+        this(tier, speed, yieldPermille, energyPermille, false);
+    }
+
+    /** This profile with or without the standardisation module. */
+    public DeviceProfile withNormalizing(boolean normalizing) {
+        return normalizing == this.normalizing ? this : new DeviceProfile(tier, speed, yieldPermille, energyPermille, normalizing);
     }
 
     /** Default values of a tier (machines/01 §1). */

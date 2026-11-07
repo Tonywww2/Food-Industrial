@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_copper_chlorophyllin",
+    {
+      "id": "#forge:dusts/potassium_copper_chlorophyllin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_copper_chlorophyllin",
+      "required": false
+    }
+  ]
+}

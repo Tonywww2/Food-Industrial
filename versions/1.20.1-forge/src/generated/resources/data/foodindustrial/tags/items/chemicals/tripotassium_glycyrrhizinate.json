@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tripotassium_glycyrrhizinate",
+    {
+      "id": "#forge:dusts/tripotassium_glycyrrhizinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tripotassium_glycyrrhizinate",
+      "required": false
+    }
+  ]
+}

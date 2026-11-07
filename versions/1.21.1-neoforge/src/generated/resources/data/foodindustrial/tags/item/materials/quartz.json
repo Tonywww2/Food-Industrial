@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:quartz",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quartz",
+      "required": false
+    }
+  ]
+}

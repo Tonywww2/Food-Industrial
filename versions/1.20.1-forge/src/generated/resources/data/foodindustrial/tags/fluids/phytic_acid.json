@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phytic_acid",
+    "foodindustrial:flowing_phytic_acid",
+    {
+      "id": "#forge:phytic_acid",
+      "required": false
+    }
+  ]
+}

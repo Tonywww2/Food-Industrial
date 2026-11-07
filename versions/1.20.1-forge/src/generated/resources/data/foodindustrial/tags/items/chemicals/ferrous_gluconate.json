@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_gluconate",
+    {
+      "id": "#forge:dusts/ferrous_gluconate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_gluconate",
+      "required": false
+    }
+  ]
+}

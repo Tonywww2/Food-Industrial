@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_ethyl_paraben",
+    {
+      "id": "#forge:dusts/sodium_ethyl_paraben",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_ethyl_paraben",
+      "required": false
+    }
+  ]
+}

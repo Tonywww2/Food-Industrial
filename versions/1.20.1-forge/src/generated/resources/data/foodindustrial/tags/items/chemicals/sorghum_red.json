@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorghum_red",
+    {
+      "id": "#forge:dusts/sorghum_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sorghum_red",
+      "required": false
+    }
+  ]
+}

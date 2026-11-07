@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_paraben",
+    {
+      "id": "#forge:dusts/ethyl_paraben",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ethyl_paraben",
+      "required": false
+    }
+  ]
+}

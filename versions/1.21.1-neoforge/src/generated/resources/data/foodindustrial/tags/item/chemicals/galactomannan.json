@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:galactomannan",
+    {
+      "id": "#c:dusts/galactomannan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/galactomannan",
+      "required": false
+    }
+  ]
+}

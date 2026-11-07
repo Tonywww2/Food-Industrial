@@ -3,9 +3,9 @@
   "category": "foodindustrial:k5_natural_extract",
   "source_purity": 0.2,
   "grades": {
-    "crude": 1,
-    "refined": 5,
-    "food": 10,
-    "lab": 50
+    "crude": 0.5,
+    "refined": 1,
+    "food": 2.4,
+    "lab": 90
   }
 }

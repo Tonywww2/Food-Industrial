@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactylated_monoglycerides",
+    {
+      "id": "#c:dusts/lactylated_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lactylated_monoglycerides",
+      "required": false
+    }
+  ]
+}

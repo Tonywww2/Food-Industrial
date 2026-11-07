@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferric_tartrate",
+    "foodindustrial:flowing_ferric_tartrate",
+    {
+      "id": "#c:ferric_tartrate",
+      "required": false
+    }
+  ]
+}

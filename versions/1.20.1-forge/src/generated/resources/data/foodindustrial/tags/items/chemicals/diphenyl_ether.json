@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diphenyl_ether",
+    {
+      "id": "#forge:dusts/diphenyl_ether",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/diphenyl_ether",
+      "required": false
+    }
+  ]
+}

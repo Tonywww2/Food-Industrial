@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_nitrochlorobenzene",
+    {
+      "id": "#forge:dusts/p_nitrochlorobenzene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_nitrochlorobenzene",
+      "required": false
+    }
+  ]
+}

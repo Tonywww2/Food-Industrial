@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:turmeric",
+    {
+      "id": "#c:dusts/turmeric",
+      "required": false
+    },
+    {
+      "id": "#c:gems/turmeric",
+      "required": false
+    }
+  ]
+}

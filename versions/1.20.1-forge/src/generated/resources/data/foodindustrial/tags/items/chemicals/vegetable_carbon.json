@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vegetable_carbon",
+    {
+      "id": "#forge:dusts/vegetable_carbon",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vegetable_carbon",
+      "required": false
+    }
+  ]
+}

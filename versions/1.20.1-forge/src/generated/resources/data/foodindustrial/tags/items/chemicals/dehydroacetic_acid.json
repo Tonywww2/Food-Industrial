@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dehydroacetic_acid",
+    {
+      "id": "#forge:dusts/dehydroacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dehydroacetic_acid",
+      "required": false
+    }
+  ]
+}

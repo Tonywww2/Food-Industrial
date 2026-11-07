@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:retinyl_phosphonium_chloride",
+    {
+      "id": "#c:dusts/retinyl_phosphonium_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/retinyl_phosphonium_chloride",
+      "required": false
+    }
+  ]
+}

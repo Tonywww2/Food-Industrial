@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:natural_carotene",
+  "loader": "neoforge:fluid_container"
+}

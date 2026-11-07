@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:thiodipropionitrile",
+  "loader": "forge:fluid_container"
+}

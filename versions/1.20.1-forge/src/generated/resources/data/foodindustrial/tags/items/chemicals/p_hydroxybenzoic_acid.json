@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_hydroxybenzoic_acid",
+    {
+      "id": "#forge:dusts/p_hydroxybenzoic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_hydroxybenzoic_acid",
+      "required": false
+    }
+  ]
+}

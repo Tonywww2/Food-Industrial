@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylurea",
+    {
+      "id": "#forge:dusts/dimethylurea",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethylurea",
+      "required": false
+    }
+  ]
+}

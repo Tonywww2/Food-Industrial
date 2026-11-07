@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetrasodium_edta",
+    "foodindustrial:flowing_tetrasodium_edta",
+    {
+      "id": "#c:tetrasodium_edta",
+      "required": false
+    }
+  ]
+}

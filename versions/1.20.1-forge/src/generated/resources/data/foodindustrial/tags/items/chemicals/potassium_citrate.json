@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_citrate",
+    {
+      "id": "#forge:dusts/potassium_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_citrate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thaumatin",
+    {
+      "id": "#forge:dusts/thaumatin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thaumatin",
+      "required": false
+    }
+  ]
+}

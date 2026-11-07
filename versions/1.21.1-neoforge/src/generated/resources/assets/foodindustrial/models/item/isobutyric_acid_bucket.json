@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:isobutyric_acid",
+  "loader": "neoforge:fluid_container"
+}

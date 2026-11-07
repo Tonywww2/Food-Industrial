@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorbitan_monopalmitate",
+    {
+      "id": "#c:dusts/sorbitan_monopalmitate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sorbitan_monopalmitate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:triacetin",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diacetyltartaric_anhydride",
+    {
+      "id": "#c:dusts/diacetyltartaric_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diacetyltartaric_anhydride",
+      "required": false
+    }
+  ]
+}

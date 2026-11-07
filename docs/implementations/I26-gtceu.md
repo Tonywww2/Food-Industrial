@@ -20,7 +20,7 @@
 ## 任务
 
 - [ ] 按 09 的 GT 对应列建立映射（[additives/09 §与 GTCEu 的联动](../additives/09-chemical-formulas.md)）
-- [ ] GT 材料按外部物品计（外部默认值，additives/10 §1.6）（[additives/09 §与 GTCEu 的联动 联动方式 3](../additives/09-chemical-formulas.md)）；需要提高的经 `BundledPurityRules` 加规则，不高于该物料的粗制下限（2026-11-04 定；上限随 I28 由 60% 改）
+- [ ] GT 材料按外部物品计（外部默认值，additives/10 §1.6）（[additives/09 §与 GTCEu 的联动 联动方式 3](../additives/09-chemical-formulas.md)）；需要提高的经 `BundledPurityRules` 加规则，不高于该物料的粗制下限（2026-11-04 定；上限随 I28 由 60% 改）；对应到不带纯度的物料（原油、木焦油、植物油、蒸馏水等）时不写纯度（2026-11-05，[additives/10 §1.1](../additives/10-purity-jei-ae2.md)）
 - [ ] 处理不一致项（糖、钾碱、明矾石、磷灰石、草木灰、岩盐等）（[additives/09 §与 GTCEu 的联动](../additives/09-chemical-formulas.md)）
 
 ## 节点差异

@@ -109,7 +109,7 @@ public final class PurityReport {
             }
             int b = index == 0 && recipe.purityRange().isPresent() ? recipe.rangeHigh()
                 : OutcomeResolver.apply(recipe.ruleOf(index), PurityData.current().material(output.material()), start,
-                device.ordinal() - base.ordinal());
+                device.ordinal() - base.ordinal(), device == Tier.T0, false);
             if (b == PurityData.NONE) {
                 continue;
             }

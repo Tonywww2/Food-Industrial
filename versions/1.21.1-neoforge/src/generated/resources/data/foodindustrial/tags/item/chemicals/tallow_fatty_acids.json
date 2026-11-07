@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tallow_fatty_acids",
+    {
+      "id": "#c:dusts/tallow_fatty_acids",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tallow_fatty_acids",
+      "required": false
+    }
+  ]
+}

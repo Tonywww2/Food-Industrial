@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geniposide",
+    "foodindustrial:flowing_geniposide",
+    {
+      "id": "#forge:geniposide",
+      "required": false
+    }
+  ]
+}

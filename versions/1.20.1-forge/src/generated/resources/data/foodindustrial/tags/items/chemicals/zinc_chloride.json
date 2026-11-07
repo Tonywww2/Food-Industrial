@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_chloride",
+    {
+      "id": "#forge:dusts/zinc_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_chloride",
+      "required": false
+    }
+  ]
+}

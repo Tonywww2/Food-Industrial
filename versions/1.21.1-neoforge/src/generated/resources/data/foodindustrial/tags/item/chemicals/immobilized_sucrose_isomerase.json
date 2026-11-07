@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:immobilized_sucrose_isomerase",
+    {
+      "id": "#c:dusts/immobilized_sucrose_isomerase",
+      "required": false
+    },
+    {
+      "id": "#c:gems/immobilized_sucrose_isomerase",
+      "required": false
+    }
+  ]
+}

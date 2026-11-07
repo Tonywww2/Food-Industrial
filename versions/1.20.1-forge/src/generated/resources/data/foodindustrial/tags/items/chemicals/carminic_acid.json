@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carminic_acid",
+    {
+      "id": "#forge:dusts/carminic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carminic_acid",
+      "required": false
+    }
+  ]
+}

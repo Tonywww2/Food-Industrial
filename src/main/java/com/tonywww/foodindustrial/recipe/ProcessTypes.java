@@ -47,7 +47,8 @@ public final class ProcessTypes {
     public static final ProcessType SOLID_FERMENTING = add("solid_fermenting", "R17", true, true, KEEP);
     public static final ProcessType CULTURING = add("culturing", "R18", false, false, conditions -> PurityRule.removal(99));
     /** Compound products carry no purity; the same material mixed keeps the weighted average. */
-    public static final ProcessType MIXING = add("mixing", "R19", false, false, KEEP);
+    /** Compounding takes the product's food bound (machines/01 §1.1, 2026-11-05); homogenizing is a built-in M21 rule. */
+    public static final ProcessType MIXING = add("mixing", "R19", false, false, conditions -> PurityRule.SOURCE_FOOD);
     public static final ProcessType BLOCK_TRANSFORM = add("block_transform", "W01", false, true, KEEP);
     public static final ProcessType HARVESTING = add("harvesting", "W02", false, true, KEEP);
 

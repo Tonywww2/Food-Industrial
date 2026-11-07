@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxymethoxycinnamaldehyde",
+    {
+      "id": "#forge:dusts/hydroxymethoxycinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxymethoxycinnamaldehyde",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:animal_fat",
+    {
+      "id": "#c:dusts/animal_fat",
+      "required": false
+    },
+    {
+      "id": "#c:gems/animal_fat",
+      "required": false
+    }
+  ]
+}

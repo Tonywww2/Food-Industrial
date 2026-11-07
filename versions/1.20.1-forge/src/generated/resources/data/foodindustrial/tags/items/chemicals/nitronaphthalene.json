@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitronaphthalene",
+    {
+      "id": "#forge:dusts/nitronaphthalene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nitronaphthalene",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maltitol_syrup",
+    "foodindustrial:flowing_maltitol_syrup",
+    {
+      "id": "#c:maltitol_syrup",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rosa_laevigata_brown",
+    {
+      "id": "#forge:dusts/rosa_laevigata_brown",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rosa_laevigata_brown",
+      "required": false
+    }
+  ]
+}

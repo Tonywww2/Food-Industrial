@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:morpholine_fruit_wax",
+  "loader": "forge:fluid_container"
+}

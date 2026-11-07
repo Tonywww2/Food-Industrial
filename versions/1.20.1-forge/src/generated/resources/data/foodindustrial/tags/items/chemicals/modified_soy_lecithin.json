@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:modified_soy_lecithin",
+    {
+      "id": "#forge:dusts/modified_soy_lecithin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/modified_soy_lecithin",
+      "required": false
+    }
+  ]
+}

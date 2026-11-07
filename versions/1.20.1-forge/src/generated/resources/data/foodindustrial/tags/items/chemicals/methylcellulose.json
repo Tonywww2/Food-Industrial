@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylcellulose",
+    {
+      "id": "#forge:dusts/methylcellulose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylcellulose",
+      "required": false
+    }
+  ]
+}

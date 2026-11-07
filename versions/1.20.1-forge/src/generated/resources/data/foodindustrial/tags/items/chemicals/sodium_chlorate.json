@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_chlorate",
+    {
+      "id": "#forge:dusts/sodium_chlorate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_chlorate",
+      "required": false
+    }
+  ]
+}

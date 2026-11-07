@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sanzan_gum",
+    {
+      "id": "#c:dusts/sanzan_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sanzan_gum",
+      "required": false
+    }
+  ]
+}

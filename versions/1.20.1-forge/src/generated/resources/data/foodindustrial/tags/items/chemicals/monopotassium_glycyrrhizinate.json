@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monopotassium_glycyrrhizinate",
+    {
+      "id": "#forge:dusts/monopotassium_glycyrrhizinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monopotassium_glycyrrhizinate",
+      "required": false
+    }
+  ]
+}

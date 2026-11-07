@@ -59,11 +59,11 @@ public final class PlatformClient {
         Supplier<MenuType<M>> type, MenuScreens.ScreenConstructor<M, U> constructor) {
     }
 
-    /** A run of slot label text; small runs are drawn smaller and lower (subscripts). */
-    public record LabelRun(String text, boolean small) {
+    /** A run of slot label text in one colour (ARGB); small runs are drawn smaller and lower (subscripts). */
+    public record LabelRun(String text, boolean small, int color) {
     }
 
-    private record SlotLabel(Supplier<? extends Item> item, List<LabelRun> runs, int color) {
+    private record SlotLabel(Supplier<? extends Item> item, List<LabelRun> runs) {
     }
 
     private static final List<SlotLabel> SLOT_LABELS = new ArrayList<>();
@@ -82,12 +82,10 @@ public final class PlatformClient {
      * Draws a one-line label along the top of the item's icon wherever it is drawn in a GUI slot
      * (inventories, hotbar, JEI): centred, at most half the font size and shrunk to fit the slot
      * width. Call during mod construction from client-only code.
-     *
-     * @param color ARGB text colour
      */
-    public static void registerSlotLabel(Supplier<? extends Item> item, List<LabelRun> runs, int color) {
+    public static void registerSlotLabel(Supplier<? extends Item> item, List<LabelRun> runs) {
         if (!runs.isEmpty()) {
-            SLOT_LABELS.add(new SlotLabel(item, List.copyOf(runs), color));
+            SLOT_LABELS.add(new SlotLabel(item, List.copyOf(runs)));
         }
     }
 
@@ -124,7 +122,7 @@ public final class PlatformClient {
             if (run.small()) {
                 pose.scale(LABEL_SMALL, LABEL_SMALL, 1.0F);
             }
-            graphics.drawString(font, run.text(), 0, 0, label.color(), true);
+            graphics.drawString(font, run.text(), 0, 0, run.color(), true);
             pose.popPose();
             cursor += font.width(run.text()) * (run.small() ? LABEL_SMALL : 1.0F);
         }
@@ -145,7 +143,7 @@ public final class PlatformClient {
             if (run.small()) {
                 pose.scale(LABEL_SMALL, LABEL_SMALL);
             }
-            graphics.text(font, run.text(), 0, 0, label.color(), true);
+            graphics.text(font, run.text(), 0, 0, run.color(), true);
             pose.popMatrix();
             cursor += font.width(run.text()) * (run.small() ? LABEL_SMALL : 1.0F);
         }

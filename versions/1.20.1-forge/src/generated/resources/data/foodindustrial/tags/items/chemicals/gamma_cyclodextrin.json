@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_cyclodextrin",
+    {
+      "id": "#forge:dusts/gamma_cyclodextrin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gamma_cyclodextrin",
+      "required": false
+    }
+  ]
+}

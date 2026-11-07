@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactose",
+    {
+      "id": "#forge:dusts/lactose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lactose",
+      "required": false
+    }
+  ]
+}

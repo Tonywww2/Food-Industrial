@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oxidized_hydroxypropyl_starch",
+    {
+      "id": "#c:dusts/oxidized_hydroxypropyl_starch",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oxidized_hydroxypropyl_starch",
+      "required": false
+    }
+  ]
+}

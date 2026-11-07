@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monascus_yellow",
+    {
+      "id": "#forge:dusts/monascus_yellow",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monascus_yellow",
+      "required": false
+    }
+  ]
+}

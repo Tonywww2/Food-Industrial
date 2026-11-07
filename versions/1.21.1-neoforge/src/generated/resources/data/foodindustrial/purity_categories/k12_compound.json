@@ -1,0 +1,9 @@
+{
+  "id": "foodindustrial:k12_compound",
+  "grades": {
+    "crude": 80,
+    "refined": 90,
+    "food": 95,
+    "lab": null
+  }
+}

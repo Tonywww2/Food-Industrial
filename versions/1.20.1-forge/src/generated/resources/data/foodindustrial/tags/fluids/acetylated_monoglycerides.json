@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylated_monoglycerides",
+    "foodindustrial:flowing_acetylated_monoglycerides",
+    {
+      "id": "#forge:acetylated_monoglycerides",
+      "required": false
+    }
+  ]
+}

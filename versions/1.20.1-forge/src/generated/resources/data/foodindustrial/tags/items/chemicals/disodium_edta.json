@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:disodium_edta",
+    {
+      "id": "#forge:dusts/disodium_edta",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/disodium_edta",
+      "required": false
+    }
+  ]
+}

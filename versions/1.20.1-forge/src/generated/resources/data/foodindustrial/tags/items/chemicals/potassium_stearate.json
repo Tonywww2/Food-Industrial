@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_stearate",
+    {
+      "id": "#forge:dusts/potassium_stearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_stearate",
+      "required": false
+    }
+  ]
+}

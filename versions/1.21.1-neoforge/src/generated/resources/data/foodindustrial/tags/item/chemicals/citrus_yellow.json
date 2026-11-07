@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citrus_yellow",
+    {
+      "id": "#c:dusts/citrus_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/citrus_yellow",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:distannous_citrate",
+    {
+      "id": "#forge:dusts/distannous_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/distannous_citrate",
+      "required": false
+    }
+  ]
+}

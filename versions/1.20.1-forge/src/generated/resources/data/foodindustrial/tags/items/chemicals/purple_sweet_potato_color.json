@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:purple_sweet_potato_color",
+    {
+      "id": "#forge:dusts/purple_sweet_potato_color",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/purple_sweet_potato_color",
+      "required": false
+    }
+  ]
+}

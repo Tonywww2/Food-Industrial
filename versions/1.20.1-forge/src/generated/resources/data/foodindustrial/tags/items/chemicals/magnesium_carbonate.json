@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_carbonate",
+    {
+      "id": "#forge:dusts/magnesium_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_carbonate",
+      "required": false
+    }
+  ]
+}

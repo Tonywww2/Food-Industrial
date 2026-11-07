@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_cystine",
+    {
+      "id": "#forge:dusts/l_cystine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_cystine",
+      "required": false
+    }
+  ]
+}

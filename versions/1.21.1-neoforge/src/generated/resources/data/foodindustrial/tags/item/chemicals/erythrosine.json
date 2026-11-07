@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:erythrosine",
+    {
+      "id": "#c:dusts/erythrosine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/erythrosine",
+      "required": false
+    }
+  ]
+}

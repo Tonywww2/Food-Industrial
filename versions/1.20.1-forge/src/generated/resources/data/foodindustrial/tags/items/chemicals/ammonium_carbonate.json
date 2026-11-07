@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_carbonate",
+    {
+      "id": "#forge:dusts/ammonium_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_carbonate",
+      "required": false
+    }
+  ]
+}

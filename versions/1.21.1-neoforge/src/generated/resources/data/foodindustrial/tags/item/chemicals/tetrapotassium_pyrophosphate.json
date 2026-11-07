@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetrapotassium_pyrophosphate",
+    {
+      "id": "#c:dusts/tetrapotassium_pyrophosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tetrapotassium_pyrophosphate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glycyrrhizic_acid",
+    {
+      "id": "#forge:dusts/glycyrrhizic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glycyrrhizic_acid",
+      "required": false
+    }
+  ]
+}

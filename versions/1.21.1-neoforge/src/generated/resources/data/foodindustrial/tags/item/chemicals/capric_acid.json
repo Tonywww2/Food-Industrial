@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:capric_acid",
+    {
+      "id": "#c:dusts/capric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/capric_acid",
+      "required": false
+    }
+  ]
+}

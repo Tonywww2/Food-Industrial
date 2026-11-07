@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:microcrystalline_cellulose",
+    {
+      "id": "#c:dusts/microcrystalline_cellulose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/microcrystalline_cellulose",
+      "required": false
+    }
+  ]
+}

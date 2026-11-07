@@ -22,7 +22,7 @@
 - [ ] 21 个配方类别，类别键 `jei.foodindustrial.category.<配方类型 ID>`（[machines/01 §6](../machines/01-recipe-types.md)，[text-standard §4](../text-standard.md)）
 - [ ] 催化剂：机器、手工工具、被动设备、原版设备（[machines/01 §5](../machines/01-recipe-types.md)）
 - [ ] 配方页的设备行（耗时、纯度、产率）与设备切换，转移到 AE2 样板终端时按所选设备编码（[machines/01 §6](../machines/01-recipe-types.md)）
-- [ ] 纯度规则的显示：来源、除杂、保持、劣化，有上限时加“最高”；输出槽按门槛输入与所选设备算出结果（[additives/10 §5 显示纯度产出](../additives/10-purity-jei-ae2.md)）
+- [ ] 纯度规则的显示：来源、除杂、保持、劣化，有上限时加“最高”；输出槽按门槛输入与所选设备算出结果；不带纯度的产物不显示纯度规则（2026-11-05，[additives/10 §1.1](../additives/10-purity-jei-ae2.md)）（[additives/10 §5 显示纯度产出](../additives/10-purity-jei-ae2.md)）
 - [ ] 条件图标与词表（[text-standard §5](../text-standard.md)）
 - [ ] 自定义转移处理器，逐槽用 `Ingredient.test` 选料（[additives/10 §5 一键转移](../additives/10-purity-jei-ae2.md)）
 - [ ] 从原版熔炉、烟熏炉、高炉、营火类别中隐藏桥接配方（[additives/10 §5 原版设备](../additives/10-purity-jei-ae2.md)）

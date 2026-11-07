@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:stabilized_chlorine_dioxide",
+  "loader": "forge:fluid_container"
+}

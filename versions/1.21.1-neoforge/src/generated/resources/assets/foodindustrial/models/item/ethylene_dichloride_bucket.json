@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethylene_dichloride",
+  "loader": "neoforge:fluid_container"
+}

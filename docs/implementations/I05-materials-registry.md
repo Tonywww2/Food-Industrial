@@ -53,6 +53,7 @@
 - 注册结果：293 个物品、108 种流体（气体 21 种无桶无方块，其余 87 种有桶和流体方块）；启动日志 `Registered 401 materials (293 items, 108 fluids)`
 - 纯度：化学品、菌种、酶及其流体与桶带纯度；催化剂、原料不带。无存储值时一律按劣质 35% 计（2026-11-04 定为全局默认，见 [additives/10 §1](../additives/10-purity-jei-ae2.md)）
 - 桶：桶与储罐互倒保留纯度（三个节点实测：95% 的桶倒入再取出仍为 95%；储罐 80% 灌入空原版桶得 80%，靠覆写 `FluidType.getBucket`）。原版发射器取回的桶不带数据，按默认 35% 计（三个节点实测）。玩家用桶取回写入 35% 的代码在 `FluidContainers.Liquid.pickupBlock`，云端测试无玩家输入，未实测
+- 化学式按元素族着色（2026-11-05 改，[text-standard §3.1](../text-standard.md)）：`core.text.ElementColors` 存 118 种元素的族与颜色，`ChemicalFormula.runs` 把化学式切成同色同大小的段，Tooltip（`Tooltips.coloredFormula`）与图标标签共用；单元测试检查物料表里每个化学式的元素都认识
 - 图标上的化学式（2026-11-04 加）：化学品物品与其桶在界面格子顶部画一行化学式（`material.MaterialLabels` → `PlatformClient.registerSlotLabel`，三个节点都用加载器的物品装饰 `IItemDecorator`），规则见 [text-standard §3.1](../text-standard.md)
 - 创造模式标签页：五个，空的不显示（机器、成品暂空）；带纯度的物料按五档标准值各列一个
 - 资源：`tools/materials/placeholder_textures.py` 生成物品的占位贴图和流体的静止、流动贴图；桶不另画贴图，用加载器的动态桶模型（原版桶 + 流体贴图按流体颜色着色，2026-11-04 改；1.20.1 `forge:fluid_container`、1.21.1 `neoforge:fluid_container` 并登记物品着色，26.1 在物品定义里写 `neoforge:fluid_container`）；数据生成写物品模型、流体方块模型与方块状态，26.1.2 另写 `items/` 物品定义。三个节点客户端启动无本模组物料的缺失模型警告

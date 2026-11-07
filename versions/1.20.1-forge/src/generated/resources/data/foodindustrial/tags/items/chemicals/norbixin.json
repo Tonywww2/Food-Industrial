@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:norbixin",
+    {
+      "id": "#forge:dusts/norbixin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/norbixin",
+      "required": false
+    }
+  ]
+}

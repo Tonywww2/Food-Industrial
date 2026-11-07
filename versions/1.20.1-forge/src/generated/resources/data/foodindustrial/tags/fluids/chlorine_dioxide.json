@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorine_dioxide",
+    "foodindustrial:flowing_chlorine_dioxide",
+    {
+      "id": "#forge:chlorine_dioxide",
+      "required": false
+    }
+  ]
+}

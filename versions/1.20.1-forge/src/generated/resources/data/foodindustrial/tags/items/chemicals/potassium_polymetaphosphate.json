@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_polymetaphosphate",
+    {
+      "id": "#forge:dusts/potassium_polymetaphosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_polymetaphosphate",
+      "required": false
+    }
+  ]
+}

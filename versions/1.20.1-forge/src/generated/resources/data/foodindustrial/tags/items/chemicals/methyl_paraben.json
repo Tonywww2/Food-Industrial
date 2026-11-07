@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_paraben",
+    {
+      "id": "#forge:dusts/methyl_paraben",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_paraben",
+      "required": false
+    }
+  ]
+}

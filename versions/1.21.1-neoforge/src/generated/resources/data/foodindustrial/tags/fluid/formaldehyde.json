@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:formaldehyde",
+    "foodindustrial:flowing_formaldehyde",
+    {
+      "id": "#c:formaldehyde",
+      "required": false
+    }
+  ]
+}

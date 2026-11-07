@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetraiodofluorescein",
+    {
+      "id": "#forge:dusts/tetraiodofluorescein",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tetraiodofluorescein",
+      "required": false
+    }
+  ]
+}

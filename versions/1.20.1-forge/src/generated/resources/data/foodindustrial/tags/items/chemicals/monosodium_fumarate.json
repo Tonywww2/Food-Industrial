@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monosodium_fumarate",
+    {
+      "id": "#forge:dusts/monosodium_fumarate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monosodium_fumarate",
+      "required": false
+    }
+  ]
+}

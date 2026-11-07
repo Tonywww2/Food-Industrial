@@ -2,7 +2,6 @@ package com.tonywww.foodindustrial.material;
 
 import com.tonywww.foodindustrial.core.text.ChemicalFormula;
 import com.tonywww.foodindustrial.platform.client.PlatformClient;
-import net.minecraft.ChatFormatting;
 import net.minecraft.world.item.Item;
 
 import java.util.Collection;
@@ -11,13 +10,11 @@ import java.util.function.Supplier;
 
 /**
  * Client only: the chemical formula along the top of chemical items and their buckets in GUI slots, so
- * that look-alike icons can be told apart (2026-11-04, text standard §3.1). Materials without a
- * definite formula (mixtures, extracts) get none.
+ * that look-alike icons can be told apart (2026-11-04, text standard §3.1), element symbols in their
+ * group colours like the tooltip formula line (2026-11-05). Materials without a definite formula
+ * (mixtures, extracts) get none.
  */
 final class MaterialLabels {
-    /** Same colour as the tooltip formula line (yellow §e). */
-    private static final int COLOR = 0xFF000000 | ChatFormatting.YELLOW.getColor();
-
     private MaterialLabels() {
     }
 
@@ -31,10 +28,10 @@ final class MaterialLabels {
             if (item == null) {
                 continue;
             }
-            List<PlatformClient.LabelRun> runs = ChemicalFormula.parts(def.formula()).stream()
-                .map(part -> new PlatformClient.LabelRun(part.text(), part.subscript()))
+            List<PlatformClient.LabelRun> runs = ChemicalFormula.runs(def.formula()).stream()
+                .map(run -> new PlatformClient.LabelRun(run.ascii(), run.subscript(), 0xFF000000 | run.color()))
                 .toList();
-            PlatformClient.registerSlotLabel(item, runs, COLOR);
+            PlatformClient.registerSlotLabel(item, runs);
         }
     }
 }

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_metabisulfite",
+    {
+      "id": "#forge:dusts/potassium_metabisulfite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_metabisulfite",
+      "required": false
+    }
+  ]
+}

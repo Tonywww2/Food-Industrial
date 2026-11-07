@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethoxy_methoxybenzaldehyde",
+    {
+      "id": "#c:dusts/ethoxy_methoxybenzaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethoxy_methoxybenzaldehyde",
+      "required": false
+    }
+  ]
+}

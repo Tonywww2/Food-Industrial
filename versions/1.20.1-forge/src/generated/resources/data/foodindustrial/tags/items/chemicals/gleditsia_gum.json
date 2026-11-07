@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gleditsia_gum",
+    {
+      "id": "#forge:dusts/gleditsia_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gleditsia_gum",
+      "required": false
+    }
+  ]
+}

@@ -11,19 +11,43 @@ import java.util.List;
 
 /**
  * Positions of a machine window (machines/04 §1), relative to the window's top-left corner, shared by
- * the menu (slot positions) and the screen. Width 176; height 166, or 190 when the machine has tanks or
- * more than two slots of a role in a column. Left to right: energy bar or fuel, item inputs, catalysts,
- * input tanks, the progress arrow with the product purity under it, item outputs (main product first),
- * output tanks with their venting switch underneath. Too many columns make the tanks narrower. Upgrade and module slots sit in the left
- * upgrades panel (§2).
+ * the menu (slot positions) and the screen. Width 176, height 190 for every machine (2026-11-05).
+ *
+ * <p>The machine area is split into framed zones, left to right (2026-11-05): energy (energy bar, or
+ * fuel flame and fuel slots), inputs (item inputs, then input tanks), processing (progress arrow on the
+ * top row, the product purity in its own frame under it, catalysts on the bottom row) and products (item
+ * outputs with the main product first, then output tanks with their venting switch underneath). Zones
+ * without content are left out; the processing zone takes the width left over, so the zones always span
+ * the window. Elements sit on an 18-pixel grid of three rows: slots touch, columns start at the top row
+ * and are centred horizontally in their zone; tanks and the energy bar fill the zone height. The energy
+ * zone holds either the energy bar or the fuel and is centred vertically. Too many columns make the
+ * tanks narrower. Upgrade and module slots sit in the left upgrades panel (§2).
  */
 public final class GuiLayout {
     public static final int WIDTH = 176;
-    public static final int SHORT = 166;
+    /** Height of a machine window. */
     public static final int TALL = 190;
+    /** Height of a port window that is not linked to a controller. */
+    public static final int SHORT = 166;
+    /** Rows of the machine area grid. */
+    public static final int ROWS = 3;
+    /** Product purity frame (holds "100%"), centred under the arrow. */
+    public static final int PURITY_W = 30;
+    public static final int PURITY_H = 12;
     public static final int SLOT = 18;
     public static final int ARROW_W = 24;
     public static final int ARROW_H = 17;
+    /** Top of the zone contents; the zone frames are {@link #ZONE_PAD} outside. */
+    public static final int TOP = 19;
+    /** Frame line plus padding around a zone's contents. */
+    public static final int ZONE_PAD = 3;
+    /** Space between two zone frames. */
+    public static final int ZONE_GAP = 2;
+    /** Left and right edge of the zone frames. */
+    public static final int AREA_LEFT = 7;
+    public static final int AREA_RIGHT = WIDTH - 7;
+    /** Width of the energy bar. */
+    public static final int ENERGY_W = 12;
     /** Top of the side panels and their collapsed size. */
     public static final int PANEL_TOP = 4;
     public static final int TAB = 24;
@@ -40,6 +64,15 @@ public final class GuiLayout {
         }
     }
 
+    /** The zones of the machine area, left to right. */
+    public enum ZoneKind {
+        ENERGY, INPUTS, PROCESSING, PRODUCTS
+    }
+
+    /** A zone and its frame (the outer edge of the frame line). */
+    public record Zone(ZoneKind kind, Box frame) {
+    }
+
     private final int height;
     private final Box[] slots;
     private final Box[] tanks;
@@ -49,9 +82,12 @@ public final class GuiLayout {
     @Nullable
     private final Box flame;
     private final Box arrow;
+    private final Box purity;
+    private final List<Zone> zones;
     private final int statusY;
 
-    private GuiLayout(int height, Box[] slots, Box[] tanks, Box[] vents, @Nullable Box energy, @Nullable Box flame, Box arrow, int statusY) {
+    private GuiLayout(int height, Box[] slots, Box[] tanks, Box[] vents, @Nullable Box energy, @Nullable Box flame, Box arrow, Box purity,
+                      List<Zone> zones, int statusY) {
         this.height = height;
         this.slots = slots;
         this.tanks = tanks;
@@ -59,6 +95,8 @@ public final class GuiLayout {
         this.energy = energy;
         this.flame = flame;
         this.arrow = arrow;
+        this.purity = purity;
+        this.zones = zones;
         this.statusY = statusY;
     }
 
@@ -99,6 +137,16 @@ public final class GuiLayout {
         return arrow;
     }
 
+    /** Frame of the product purity, under the arrow (2026-11-05). */
+    public Box purity() {
+        return purity;
+    }
+
+    /** The framed zones, left to right. */
+    public List<Zone> zones() {
+        return zones;
+    }
+
     /** Baseline of the status line. */
     public int statusY() {
         return statusY;
@@ -124,61 +172,82 @@ public final class GuiLayout {
         return of(definition.layout(), definition.power());
     }
 
+    /** Tank widths tried in turn until the zones fit. */
+    private static final int[] TANK_WIDTHS = {18, 16, 14, 12, 10, 8};
+
     /** Builds the automatic layout for slot counts and a power kind. */
     public static GuiLayout of(IoLayout io, PowerKind power) {
-        boolean tall = io.tanks() > 0 || io.itemIn() > 2 || io.itemOut() > 2 || io.catalyst() > 2;
-        int height = tall ? TALL : SHORT;
-        int rows = tall ? 3 : 2;
-        int top = 18;
-        int area = rows * SLOT + (rows - 1) * 2;
-        Box[] slots = new Box[io.itemSlots()];
-        int left = 8;
-        Box energy = null;
-        Box flame = null;
-        int fuelStart = io.start(SlotRole.FUEL);
-        if (power == PowerKind.ENERGY) {
-            energy = new Box(8, top, 12, area);
-            left = 24;
-        } else if (io.fuel() > 0) {
-            flame = new Box(10, top + 2, 14, 14);
-            for (int i = 0; i < io.fuel(); i++) {
-                slots[fuelStart + i] = new Box(8, top + 20 + i * 20, SLOT, SLOT);
-            }
-            left = 30;
-        }
-        int[] tankWidths = {18, 14, 10};
-        int[] gaps = {2, 1, 1};
-        int[] groupGaps = {4, 4, 2};
-        int[] arrowGaps = {6, 4, 2};
-        Plan plan = null;
-        for (int attempt = 0; attempt < tankWidths.length; attempt++) {
-            plan = plan(io, rows, tankWidths[attempt], gaps[attempt], groupGaps[attempt], arrowGaps[attempt]);
-            if (plan.width <= 168 - left) {
+        int rows = ROWS;
+        int area = rows * SLOT;
+        int energyContent = power == PowerKind.ENERGY ? ENERGY_W : io.fuel() > 0 ? SLOT : 0;
+        int processingContent = Math.max(Math.max(ARROW_W, PURITY_W), io.catalyst() * SLOT);
+        int tankWidth = TANK_WIDTHS[0];
+        int[] contents = new int[4];
+        for (int width : TANK_WIDTHS) {
+            tankWidth = width;
+            contents[0] = energyContent;
+            contents[1] = columns(io.itemIn(), rows) * SLOT + io.fluidIn() * width;
+            contents[2] = processingContent;
+            contents[3] = columns(io.itemOut(), rows) * SLOT + io.fluidOut() * width;
+            if (naturalWidth(contents) <= AREA_RIGHT - AREA_LEFT) {
                 break;
             }
         }
-        int x = left + Math.max(0, (168 - left - plan.width) / 2);
+        contents[2] += Math.max(0, AREA_RIGHT - AREA_LEFT - naturalWidth(contents));
+
+        Box[] slots = new Box[io.itemSlots()];
         Box[] tanks = new Box[io.tanks()];
         Box[] vents = new Box[io.tanks()];
+        Box energy = null;
+        Box flame = null;
         Box arrow = null;
-        for (Group group : plan.groups) {
-            switch (group.kind) {
-                case ITEMS -> placeSlots(slots, io.start(group.role), group.count, rows, x, top, area, plan.gap);
-                case TANKS -> {
-                    for (int i = 0; i < group.count; i++) {
-                        int tank = group.first + i;
-                        int tx = x + i * (plan.tankWidth + plan.gap);
-                        if (tank >= io.fluidIn()) {
-                            tanks[tank] = new Box(tx, top, plan.tankWidth, area - VENT_H - 1);
-                            vents[tank] = new Box(tx, top + area - VENT_H, plan.tankWidth, VENT_H);
-                        } else {
-                            tanks[tank] = new Box(tx, top, plan.tankWidth, area);
+        Box purity = null;
+        List<Zone> zones = new ArrayList<>();
+        int frameX = AREA_LEFT;
+        for (ZoneKind kind : ZoneKind.values()) {
+            int content = contents[kind.ordinal()];
+            if (content == 0) {
+                continue;
+            }
+            zones.add(new Zone(kind, new Box(frameX, TOP - ZONE_PAD, content + 2 * ZONE_PAD, area + 2 * ZONE_PAD)));
+            int x = frameX + ZONE_PAD;
+            switch (kind) {
+                case ENERGY -> {
+                    if (power == PowerKind.ENERGY) {
+                        energy = new Box(x, TOP, ENERGY_W, area);
+                    } else {
+                        int y = TOP + (area - (1 + io.fuel()) * SLOT) / 2;
+                        flame = new Box(x + 2, y + 2, 14, 14);
+                        for (int i = 0; i < io.fuel(); i++) {
+                            slots[io.start(SlotRole.FUEL) + i] = new Box(x, y + (1 + i) * SLOT, SLOT, SLOT);
                         }
                     }
                 }
-                case ARROW -> arrow = new Box(x, top + (area - ARROW_H) / 2 - 4, ARROW_W, ARROW_H);
+                case INPUTS -> {
+                    x = placeSlots(slots, io.start(SlotRole.INPUT), io.itemIn(), rows, x);
+                    for (int i = 0; i < io.fluidIn(); i++) {
+                        tanks[i] = new Box(x + i * tankWidth, TOP, tankWidth, area);
+                    }
+                }
+                case PROCESSING -> {
+                    // top row: arrow; middle row: purity frame; bottom row: catalysts
+                    arrow = new Box(x + (content - ARROW_W) / 2, TOP, ARROW_W, ARROW_H);
+                    purity = new Box(x + (content - PURITY_W) / 2, TOP + SLOT + (SLOT - PURITY_H) / 2, PURITY_W, PURITY_H);
+                    int catalystX = x + (content - io.catalyst() * SLOT) / 2;
+                    for (int i = 0; i < io.catalyst(); i++) {
+                        slots[io.start(SlotRole.CATALYST) + i] = new Box(catalystX + i * SLOT, TOP + 2 * SLOT, SLOT, SLOT);
+                    }
+                }
+                case PRODUCTS -> {
+                    x = placeSlots(slots, io.start(SlotRole.OUTPUT), io.itemOut(), rows, x);
+                    for (int i = 0; i < io.fluidOut(); i++) {
+                        int tank = io.fluidIn() + i;
+                        tanks[tank] = new Box(x + i * tankWidth, TOP, tankWidth, area - VENT_H - 1);
+                        vents[tank] = new Box(x + i * tankWidth, TOP + area - VENT_H, tankWidth, VENT_H);
+                    }
+                }
             }
-            x += group.width + group.after;
+            frameX += content + 2 * ZONE_PAD + ZONE_GAP;
         }
         int panelTop = upgradesPanelTop() + PANEL_HEADER;
         int panelLeft = -UPGRADES_WIDTH + 8;
@@ -190,7 +259,24 @@ public final class GuiLayout {
         for (int i = 0; i < io.modules(); i++) {
             slots[io.start(SlotRole.MODULE) + i] = new Box(panelLeft + (i % 4) * SLOT, moduleTop + (i / 4) * SLOT, SLOT, SLOT);
         }
-        return new GuiLayout(height, slots, tanks, vents, energy, flame, arrow, top + area + 4);
+        return new GuiLayout(TALL, slots, tanks, vents, energy, flame, arrow, purity, List.copyOf(zones), TOP + area + ZONE_PAD + 2);
+    }
+
+    /** Width of the zones with their frames and gaps for the given content widths (0 = no zone). */
+    private static int naturalWidth(int[] contents) {
+        int width = 0;
+        int zones = 0;
+        for (int content : contents) {
+            if (content > 0) {
+                width += content + 2 * ZONE_PAD;
+                zones++;
+            }
+        }
+        return width + Math.max(0, zones - 1) * ZONE_GAP;
+    }
+
+    private static int columns(int count, int rows) {
+        return (count + rows - 1) / rows;
     }
 
     /** Bottom of the upgrade and module slots in the upgrades panel, relative to the panel's top. */
@@ -200,58 +286,14 @@ public final class GuiLayout {
         return PANEL_HEADER + (upgradeRows + moduleRows) * SLOT + (upgradeRows > 0 && moduleRows > 0 ? 4 : 0);
     }
 
-    private static void placeSlots(Box[] slots, int first, int count, int rows, int x, int top, int area, int gap) {
+    /**
+     * Places {@code count} touching slots in columns of {@code rows}, each column starting at the top
+     * row (2026-11-05); returns the x after the last column.
+     */
+    private static int placeSlots(Box[] slots, int first, int count, int rows, int x) {
         for (int i = 0; i < count; i++) {
-            int column = i / rows;
-            int row = i % rows;
-            int inColumn = Math.min(rows, count - column * rows);
-            int y0 = top + (area - (inColumn * SLOT + (inColumn - 1) * 2)) / 2;
-            slots[first + i] = new Box(x + column * (SLOT + gap), y0 + row * (SLOT + 2), SLOT, SLOT);
+            slots[first + i] = new Box(x + (i / rows) * SLOT, TOP + (i % rows) * SLOT, SLOT, SLOT);
         }
-    }
-
-    private enum Kind {
-        ITEMS, TANKS, ARROW
-    }
-
-    private record Group(Kind kind, SlotRole role, int first, int count, int width, int after) {
-    }
-
-    private record Plan(List<Group> groups, int width, int tankWidth, int gap) {
-    }
-
-    private static Plan plan(IoLayout io, int rows, int tankWidth, int gap, int groupGap, int arrowGap) {
-        List<Group> groups = new ArrayList<>();
-        addItems(groups, SlotRole.INPUT, io.itemIn(), rows, gap, groupGap);
-        addItems(groups, SlotRole.CATALYST, io.catalyst(), rows, gap, groupGap);
-        addTanks(groups, 0, io.fluidIn(), tankWidth, gap, groupGap);
-        int beforeArrow = groups.size();
-        groups.add(new Group(Kind.ARROW, SlotRole.INPUT, 0, 0, ARROW_W, arrowGap));
-        addItems(groups, SlotRole.OUTPUT, io.itemOut(), rows, gap, groupGap);
-        addTanks(groups, io.fluidIn(), io.fluidOut(), tankWidth, gap, groupGap);
-        if (beforeArrow > 0) {
-            Group last = groups.get(beforeArrow - 1);
-            groups.set(beforeArrow - 1, new Group(last.kind, last.role, last.first, last.count, last.width, arrowGap));
-        }
-        Group end = groups.get(groups.size() - 1);
-        groups.set(groups.size() - 1, new Group(end.kind, end.role, end.first, end.count, end.width, 0));
-        int width = 0;
-        for (Group group : groups) {
-            width += group.width + group.after;
-        }
-        return new Plan(groups, width, tankWidth, gap);
-    }
-
-    private static void addItems(List<Group> groups, SlotRole role, int count, int rows, int gap, int after) {
-        if (count > 0) {
-            int columns = (count + rows - 1) / rows;
-            groups.add(new Group(Kind.ITEMS, role, 0, count, columns * SLOT + (columns - 1) * gap, after));
-        }
-    }
-
-    private static void addTanks(List<Group> groups, int first, int count, int tankWidth, int gap, int after) {
-        if (count > 0) {
-            groups.add(new Group(Kind.TANKS, SlotRole.INPUT, first, count, count * tankWidth + (count - 1) * gap, after));
-        }
+        return x + columns(count, rows) * SLOT;
     }
 }

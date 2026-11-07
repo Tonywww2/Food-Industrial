@@ -7,13 +7,15 @@ import net.minecraft.world.item.ItemStack;
 
 /**
  * Effects of the installed upgrades and modules (machines/01 §1 rule 4, §4.3), recomputed only when
- * those slots change: speed and energy multipliers (per mille), parallel runs and the capabilities the
- * modules add. Modules never change purity.
+ * those slots change: speed and energy multipliers (per mille), parallel runs, standardisation
+ * (machines/01 §1.2) and the capabilities the modules add. Modules never change purity; the
+ * standardisation upgrade is the only upgrade that does.
  */
 public final class UpgradeSet {
     private int speedPermille = 1000;
     private int energyPermille = 1000;
     private int parallel = 1;
+    private boolean normalizing;
     private Capabilities moduleCapabilities = Capabilities.NONE;
 
     /** Recomputes from the upgrade and module slots. */
@@ -21,6 +23,7 @@ public final class UpgradeSet {
         long speed = 1000;
         long energy = 1000;
         int runs = 1;
+        boolean normalize = false;
         for (int i = 0; i < inventory.count(SlotRole.UPGRADE); i++) {
             ItemStack stack = inventory.get(SlotRole.UPGRADE, i);
             Upgrade upgrade = stack.isEmpty() ? null : Upgrade.of(stack.getItem());
@@ -30,6 +33,7 @@ public final class UpgradeSet {
                     energy = energy * upgrade.energyPermille() / 1000;
                     runs += upgrade.parallel();
                 }
+                normalize |= upgrade.normalizing();
             }
         }
         Capabilities capabilities = Capabilities.NONE;
@@ -44,6 +48,7 @@ public final class UpgradeSet {
         speedPermille = (int) Math.max(1, Math.min(Integer.MAX_VALUE, speed));
         energyPermille = (int) Math.max(0, Math.min(Integer.MAX_VALUE, energy));
         parallel = Math.max(1, runs);
+        normalizing = normalize;
         moduleCapabilities = capabilities;
     }
 
@@ -57,6 +62,11 @@ public final class UpgradeSet {
 
     public int parallel() {
         return parallel;
+    }
+
+    /** A standardisation module is installed (machines/01 §1.2). */
+    public boolean normalizing() {
+        return normalizing;
     }
 
     public Capabilities moduleCapabilities() {

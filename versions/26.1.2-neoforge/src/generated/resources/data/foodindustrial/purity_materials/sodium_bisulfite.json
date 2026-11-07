@@ -1,4 +1,10 @@
 {
   "id": "foodindustrial:sodium_bisulfite",
-  "category": "foodindustrial:k0_raw"
+  "category": "foodindustrial:k1_inorganic",
+  "grades": {
+    "crude": 10,
+    "refined": 20,
+    "food": 32,
+    "lab": null
+  }
 }

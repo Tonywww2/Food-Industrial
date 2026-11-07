@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:resorcinol",
+    {
+      "id": "#forge:dusts/resorcinol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/resorcinol",
+      "required": false
+    }
+  ]
+}

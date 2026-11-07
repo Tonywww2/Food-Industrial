@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetramethylthietanamine",
+    "foodindustrial:flowing_tetramethylthietanamine",
+    {
+      "id": "#forge:tetramethylthietanamine",
+      "required": false
+    }
+  ]
+}

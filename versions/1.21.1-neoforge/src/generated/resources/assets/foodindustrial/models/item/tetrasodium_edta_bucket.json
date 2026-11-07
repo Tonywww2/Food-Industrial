@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:tetrasodium_edta",
+  "loader": "neoforge:fluid_container"
+}

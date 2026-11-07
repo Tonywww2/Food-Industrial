@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:titanium_tetrachloride",
+    "foodindustrial:flowing_titanium_tetrachloride",
+    {
+      "id": "#c:titanium_tetrachloride",
+      "required": false
+    }
+  ]
+}

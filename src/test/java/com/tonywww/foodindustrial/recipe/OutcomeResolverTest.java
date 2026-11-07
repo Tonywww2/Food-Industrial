@@ -3,10 +3,12 @@ package com.tonywww.foodindustrial.recipe;
 import com.tonywww.foodindustrial.core.purity.PurityData;
 import com.tonywww.foodindustrial.core.purity.PurityScale;
 import com.tonywww.foodindustrial.core.purity.PurityTestData;
+import com.tonywww.foodindustrial.api.purity.PurityGrade;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class OutcomeResolverTest {
     @BeforeAll
@@ -60,7 +62,8 @@ class OutcomeResolverTest {
     @Test
     void sourceDefaultsToMaterialData() {
         assertEquals(PurityScale.ofPercent(83), OutcomeResolver.apply(PurityRule.SOURCE_DEFAULT, material("salt"), Double.NaN, 0));
-        assertEquals(PurityScale.ofPercent(7), OutcomeResolver.apply(PurityRule.SOURCE_DEFAULT, material("bittern"), Double.NaN, 0));
+        // K0 with a source purity (no such row in the table now; additives/10 §1.4)
+        assertEquals(PurityScale.ofPercent(7), OutcomeResolver.apply(PurityRule.SOURCE_DEFAULT, PurityTestData.k0Material(7), Double.NaN, 0));
         // no source purity: the crude bound
         PurityData.Material ethanol = material("ethanol");
         assertEquals(ethanol.boundBytes()[0], OutcomeResolver.apply(PurityRule.SOURCE_DEFAULT, ethanol, Double.NaN, 0));
@@ -83,6 +86,68 @@ class OutcomeResolverTest {
         // keep and degrade take no tier bonus
         assertEquals(OutcomeResolver.apply(PurityRule.degrade(10), salt, start(b, 1000), 0),
             OutcomeResolver.apply(PurityRule.degrade(10), salt, start(b, 1000), 4));
+    }
+
+    /** additives/10 §2.1 step 4: t0_max = refined on the H03 pot, then the same recipe on T2 (I29 acceptance). */
+    @Test
+    void t0MaxCapsRepeatedHandRecrystallization() {
+        PurityData.Material salt = material("salt");
+        PurityRule rule = PurityRule.removal(50).withT0Max(PurityGrade.REFINED);
+        String[] expected = {"90.6", "94.7", "95.2", "95.2", "95.2"};
+        int b = PurityScale.ofPercent(83);
+        for (String step : expected) {
+            b = OutcomeResolver.apply(rule, salt, start(b, 4 * PurityScale.ITEM_AMOUNT), 0, true, false);
+            assertEquals(step, format(b), "T0");
+        }
+        assertEquals("98.4", format(OutcomeResolver.apply(rule, salt, start(b, 4 * PurityScale.ITEM_AMOUNT), 2, false, false)), "T2");
+        // above T0 the cap does not apply
+        double from = start(PurityScale.ofPercent(94.7), 4000);
+        assertEquals(OutcomeResolver.apply(PurityRule.removal(50), salt, from, 0), OutcomeResolver.apply(rule, salt, from, 0, false, false));
+        assertEquals("97.1", format(OutcomeResolver.apply(rule, salt, from, 0, false, false)));
+    }
+
+    /** A cap never lowers the start purity: 98% sea salt on T0 stays at least 98%. */
+    @Test
+    void capsDoNotLowerTheStart() {
+        PurityData.Material salt = material("salt");
+        int start = PurityScale.ofPercent(98);
+        int t0 = OutcomeResolver.apply(PurityRule.removal(50).withT0Max(PurityGrade.REFINED), salt, start(start, 4000), 0, true, false);
+        assertTrue(t0 >= start, "t0_max: " + format(t0));
+        int max = OutcomeResolver.apply(PurityRule.removal(50).withMax(95), salt, start(start, 4000), 3, false, false);
+        assertTrue(max >= start, "max: " + format(max));
+        assertEquals(PurityScale.ofPercent(95), OutcomeResolver.apply(PurityRule.removal(50).withMax(95), salt, start(PurityScale.ofPercent(90), 4000), 3, false, false));
+    }
+
+    /** R19 compounding: the K12 product takes its food bound (95.2%); a crafting result of 20b shows 85% (crude). */
+    @Test
+    void compoundProducts() {
+        PurityData.Material gumBase = material("gum_base");
+        assertEquals("foodindustrial:k12_compound", gumBase.category());
+        int b = OutcomeResolver.apply(PurityRule.SOURCE_FOOD, gumBase, start(PurityScale.ofPercent(99), 3000), 0, false, false);
+        assertEquals("95.2", format(b));
+        assertEquals(PurityGrade.FOOD, gumBase.gradeOf(b).orElseThrow());
+        assertEquals("85", format(20));
+        assertEquals(PurityGrade.CRUDE, gumBase.gradeOf(20).orElseThrow());
+        assertTrue(gumBase.lowerBound(PurityGrade.LAB).isEmpty(), "K12 has no lab grade");
+    }
+
+    /** additives/10 §2.1 step 6: the standardisation module lowers to the grade's lower bound (I29 acceptance). */
+    @Test
+    void standardisation() {
+        PurityData.Material salt = material("salt");
+        int food = PurityScale.ofPercent(98.4);
+        assertEquals(46, food);
+        assertEquals(39, OutcomeResolver.normalize(food, salt));
+        assertEquals("97.1", format(OutcomeResolver.normalize(food, salt)));
+        assertEquals(33, OutcomeResolver.normalize(33, salt), "refined 95.2% is the bound");
+        assertEquals(20, OutcomeResolver.normalize(20, salt), "poor 85% unchanged");
+        PurityData.Material brine = material("brine");
+        int content = PurityScale.ofPercent(26);
+        assertEquals(content, OutcomeResolver.normalize(content, brine), "K0 unchanged");
+        assertEquals(OutcomeResolver.NONE, OutcomeResolver.normalize(OutcomeResolver.NONE, salt));
+        // through apply: the T2 result 98.4% drops to 97.1% on a standardising device
+        int b = OutcomeResolver.apply(PurityRule.removal(50).withT0Max(PurityGrade.REFINED), salt, start(33, 4000), 2, false, true);
+        assertEquals("97.1", format(b));
     }
 
     @Test

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:liquefied_starch",
+    "foodindustrial:flowing_liquefied_starch",
+    {
+      "id": "#forge:liquefied_starch",
+      "required": false
+    }
+  ]
+}

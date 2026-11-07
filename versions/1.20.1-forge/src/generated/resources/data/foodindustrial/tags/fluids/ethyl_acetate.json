@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_acetate",
+    "foodindustrial:flowing_ethyl_acetate",
+    {
+      "id": "#forge:ethyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   "id": "foodindustrial:betanin",
   "category": "foodindustrial:k5_natural_extract",
   "grades": {
-    "crude": 1,
-    "refined": 5,
-    "food": 10,
-    "lab": 50
+    "crude": 0.05,
+    "refined": 0.1,
+    "food": 0.27,
+    "lab": 90
   }
 }

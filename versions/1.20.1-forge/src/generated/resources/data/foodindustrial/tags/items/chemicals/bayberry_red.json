@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bayberry_red",
+    {
+      "id": "#forge:dusts/bayberry_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/bayberry_red",
+      "required": false
+    }
+  ]
+}

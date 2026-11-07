@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_stearate",
+    {
+      "id": "#c:dusts/calcium_stearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_stearate",
+      "required": false
+    }
+  ]
+}

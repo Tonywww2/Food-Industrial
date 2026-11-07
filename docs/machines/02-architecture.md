@@ -203,7 +203,7 @@ classDiagram
 | `ProcessingMachineBlockEntity` | 配方驱动的通用机器 | 除 M21、M30 外的单方块机器（17 台）直接用它，差异全部来自 `MachineDefinition` |
 | `MultiblockControllerBlockEntity` | 结构校验、仓口登记 | 10 台多方块（M06、M07、M10、M19、M20、M22、M26、M27、M28、M29）共用；结构由定义中的图样描述 |
 | `MixerBlockEntity` | M21：均质、归一、密炼 | 覆写选配方一步 |
-| `CultureBenchBlockEntity` | M30：分离、纯化、诱变的交互流程 | 不走通用配方流程 |
+| `CultureBenchBlockEntity` | M30：分离、纯化、诱变、基因重组的交互流程 | 不走通用配方流程 |
 | `PortBlockEntity` | 多方块的物品 / 流体 / 能量仓 | 不 tick，读写转发给控制器 |
 | `Device`（接口） | 让机器、手工工具、被动设备都能执行 `ProcessRecipe` | 手工工具由 `ManualProcess` 实现 |
 

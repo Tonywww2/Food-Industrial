@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorbitol_syrup",
+    "foodindustrial:flowing_sorbitol_syrup",
+    {
+      "id": "#c:sorbitol_syrup",
+      "required": false
+    }
+  ]
+}

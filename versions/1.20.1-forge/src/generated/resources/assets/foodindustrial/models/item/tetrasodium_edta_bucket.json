@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:tetrasodium_edta",
+  "loader": "forge:fluid_container"
+}

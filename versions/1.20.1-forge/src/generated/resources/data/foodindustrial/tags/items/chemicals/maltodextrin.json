@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maltodextrin",
+    {
+      "id": "#forge:dusts/maltodextrin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/maltodextrin",
+      "required": false
+    }
+  ]
+}

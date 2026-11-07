@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:triphenylphosphine",
+    {
+      "id": "#forge:dusts/triphenylphosphine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/triphenylphosphine",
+      "required": false
+    }
+  ]
+}

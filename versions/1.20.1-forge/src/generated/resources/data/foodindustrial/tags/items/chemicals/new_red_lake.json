@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:new_red_lake",
+    {
+      "id": "#forge:dusts/new_red_lake",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/new_red_lake",
+      "required": false
+    }
+  ]
+}

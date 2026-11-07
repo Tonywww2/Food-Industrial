@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sorbitan_monooleate",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentaerythritol",
+    {
+      "id": "#forge:dusts/pentaerythritol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pentaerythritol",
+      "required": false
+    }
+  ]
+}

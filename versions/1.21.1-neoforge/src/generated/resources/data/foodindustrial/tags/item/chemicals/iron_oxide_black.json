@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:iron_oxide_black",
+    {
+      "id": "#c:dusts/iron_oxide_black",
+      "required": false
+    },
+    {
+      "id": "#c:gems/iron_oxide_black",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ficus_latex",
+    "foodindustrial:flowing_ficus_latex",
+    {
+      "id": "#forge:ficus_latex",
+      "required": false
+    }
+  ]
+}

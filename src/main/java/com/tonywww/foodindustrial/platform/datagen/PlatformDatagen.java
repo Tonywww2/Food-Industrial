@@ -28,6 +28,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
@@ -49,6 +50,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
  */
 public final class PlatformDatagen {
     private static final List<Generator> GENERATORS = new ArrayList<>();
+    private static final List<Map.Entry<Kind, Check>> CHECKS = new ArrayList<>();
 
     private PlatformDatagen() {
     }
@@ -110,6 +112,73 @@ public final class PlatformDatagen {
     private static final Gson KEEPING_NULLS = new GsonBuilder().serializeNulls().setPrettyPrinting().disableHtmlEscaping().create();
 
     private record Generator(String name, Consumer<Sink> body) {
+    }
+
+    /** A content check of generated files; throwing fails the data run. */
+    @FunctionalInterface
+    public interface Check {
+        /**
+         * @param id   {@code namespace:path} of the file
+         * @param json the file content
+         * @param ops  JSON ops that know the data run's registries (decode recipe parts with them)
+         */
+        void check(String id, JsonElement json, DynamicOps<JsonElement> ops);
+    }
+
+    /** Registers a check that runs on every generated file of {@code kind}, from any generator. */
+    public static void addCheck(Kind kind, Check check) {
+        CHECKS.add(Map.entry(kind, check));
+    }
+
+    private static void runChecks(Kind kind, String namespace, String path, JsonElement json, DynamicOps<JsonElement> ops) {
+        for (Map.Entry<Kind, Check> check : CHECKS) {
+            if (check.getKey() == kind) {
+                check.getValue().check(namespace + ":" + path, json, ops);
+            }
+        }
+    }
+
+    /**
+     * Result item id of a vanilla-format recipe file on the running node ({@code result} as an id, or
+     * an object with {@code item} on 1.20.1 and {@code id} from 1.21 on); empty when it has none.
+     */
+    public static Optional<String> recipeResultItem(JsonElement recipe) {
+        if (!recipe.isJsonObject() || !recipe.getAsJsonObject().has("result")) {
+            return Optional.empty();
+        }
+        JsonElement result = recipe.getAsJsonObject().get("result");
+        if (result.isJsonPrimitive()) {
+            return Optional.of(result.getAsString());
+        }
+        if (result.isJsonObject()) {
+            JsonObject object = result.getAsJsonObject();
+            JsonElement id = object.has("id") ? object.get("id") : object.get("item");
+            return id != null && id.isJsonPrimitive() ? Optional.of(id.getAsString()) : Optional.empty();
+        }
+        return Optional.empty();
+    }
+
+    /**
+     * Ingredients of a vanilla-format recipe file: the values of a shaped recipe's {@code key}, a
+     * shapeless recipe's {@code ingredients}, and a cooking or stonecutting recipe's {@code ingredient},
+     * as JSON to decode with {@link com.tonywww.foodindustrial.platform.recipe.PlatformIngredients#codec()}.
+     */
+    public static List<JsonElement> recipeIngredients(JsonElement recipe) {
+        List<JsonElement> found = new ArrayList<>();
+        if (!recipe.isJsonObject()) {
+            return found;
+        }
+        JsonObject object = recipe.getAsJsonObject();
+        if (object.has("key") && object.get("key").isJsonObject()) {
+            object.getAsJsonObject("key").entrySet().forEach(entry -> found.add(entry.getValue()));
+        }
+        if (object.has("ingredients") && object.get("ingredients").isJsonArray()) {
+            object.getAsJsonArray("ingredients").forEach(found::add);
+        }
+        if (object.has("ingredient")) {
+            found.add(object.get("ingredient"));
+        }
+        return found;
     }
 
     /** Registers a generator; it runs once per data run. */
@@ -365,6 +434,7 @@ public final class PlatformDatagen {
 
                     @Override
                     public void json(Kind kind, String namespace, String path, JsonElement json) {
+                        runChecks(kind, namespace, path, json, ops);
                         String relative = relativePath(kind, namespace, path);
                         if (relative != null) {
                             writes.add(DataProvider.saveStable(cache, json, root.resolve(relative)));
@@ -373,6 +443,7 @@ public final class PlatformDatagen {
 
                     @Override
                     public void jsonKeepingNulls(Kind kind, String namespace, String path, JsonElement json) {
+                        runChecks(kind, namespace, path, json, ops);
                         String relative = relativePath(kind, namespace, path);
                         if (relative != null) {
                             writes.add(saveKeepingNulls(cache, json, root.resolve(relative)));

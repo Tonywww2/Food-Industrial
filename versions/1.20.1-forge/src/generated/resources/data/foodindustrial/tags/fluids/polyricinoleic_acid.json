@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyricinoleic_acid",
+    "foodindustrial:flowing_polyricinoleic_acid",
+    {
+      "id": "#forge:polyricinoleic_acid",
+      "required": false
+    }
+  ]
+}

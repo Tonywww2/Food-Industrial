@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_phytate",
+    {
+      "id": "#forge:dusts/sodium_phytate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_phytate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_dithionite",
+    {
+      "id": "#forge:dusts/sodium_dithionite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_dithionite",
+      "required": false
+    }
+  ]
+}

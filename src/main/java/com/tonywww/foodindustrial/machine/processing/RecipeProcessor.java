@@ -317,7 +317,7 @@ public final class RecipeProcessor {
                 amount += OutcomeResolver.extra(amount, machine.definition().profile().yieldPermille(), 0);
             }
             int b = index == 0 && recipe.purityRange().isPresent() ? OutcomeResolver.NONE
-                : OutcomeResolver.purity(recipe, index, tier, baseTier(), values, amounts, fixed);
+                : OutcomeResolver.purity(recipe, index, profile(machine), baseTier(), values, amounts, fixed);
             if (output.isFluid()) {
                 FluidAmount fluid = output.fluidAmount(amount);
                 fluids.add(b == OutcomeResolver.NONE ? fluid : fluid.withPurity(b));
@@ -333,6 +333,11 @@ public final class RecipeProcessor {
         plannedItems = items.toArray(ItemStack[]::new);
         plannedFluids = fluids.toArray(FluidAmount[]::new);
         outputsDirty = true;
+    }
+
+    /** Profile of the machine with its standardisation upgrade (machines/01 §1.2). */
+    private static DeviceProfile profile(MachineBlockEntity machine) {
+        return machine.definition().profile().withNormalizing(machine.upgrades().normalizing());
     }
 
     private Tier baseTier() {
@@ -354,8 +359,7 @@ public final class RecipeProcessor {
 
     private void complete(MachineBlockEntity machine) {
         ProcessRecipe recipe = entry.recipe();
-        Tier tier = machine.definition().tier();
-        DeviceProfile profile = machine.definition().profile();
+        DeviceProfile profile = profile(machine);
         RandomSource random = machine.getLevel().getRandom();
         int[] values = new int[recipe.inputs().size()];
         long[] amounts = new long[recipe.inputs().size()];
@@ -377,7 +381,7 @@ public final class RecipeProcessor {
                 continue;
             }
             ProcessOutput output = recipe.outputs().get(index);
-            int b = OutcomeResolver.purity(recipe, index, tier, base, values, amounts, random);
+            int b = OutcomeResolver.purity(recipe, index, profile, base, values, amounts, random);
             if (output.isFluid()) {
                 FluidAmount fluid = output.fluidAmount(amount);
                 machine.tanks().fillOutput(b == OutcomeResolver.NONE ? fluid : fluid.withPurity(b), false);

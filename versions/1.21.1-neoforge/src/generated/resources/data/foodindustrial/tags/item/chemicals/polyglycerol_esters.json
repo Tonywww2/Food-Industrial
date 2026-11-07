@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyglycerol_esters",
+    {
+      "id": "#c:dusts/polyglycerol_esters",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyglycerol_esters",
+      "required": false
+    }
+  ]
+}

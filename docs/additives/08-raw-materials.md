@@ -1,6 +1,6 @@
 # 08 原料清单与标签
 
-第一批共用到约 **90 种一级原料**：原版物品 32 类、他模组原料 26 类、本模组新增 35 种（含菌种、酶与催化剂）。第二、三批另增约 80 种（“用于”一栏标 31–139 编号的行，来源见 [13](13-batch-2.md)、[14](14-batch-3.md)）。**所有配方输入一律按标签匹配**：配方只引用本模组命名空间下的标签，标签再聚合原版物品、本模组物品和各模组的 `forge:` 标签；只有配方输出写具体物品。
+第一批共用到约 **90 种一级原料**：原版物品 32 类、他模组原料 26 类、本模组新增 35 种（含菌种、酶与催化剂）。第二、三批另增约 80 种（“用于”一栏标 31–139 编号的行，来源见 [13](13-batch-2.md)、[14](14-batch-3.md)）；第四批另增原料 69 种、菌种 32 个、酶 49 种、耗材 1 种、催化剂 5 种（“用于”标 140–423，来源见 [15](15-batch-4.md)），其中“暂无来源（待定）”的原料要等以后补作物、生物或联动标签。**所有配方输入一律按标签匹配**：配方只引用本模组命名空间下的标签，标签再聚合原版物品、本模组物品和各模组的 `forge:` 标签；只有配方输出写具体物品。
 
 ## 标签体系
 
@@ -91,6 +91,9 @@
 | 熔岩 | `heat_sources`（流体） | `#minecraft:lava` | `#minecraft:lava` | T1 热源 | — |
 | 羊毛 | `materials/wool` | `#minecraft:wool` | `#minecraft:wool` | 108（洗毛得羊毛脂 → 胆固醇） | 角蛋白、羊毛脂 |
 | 桦木原木 | `materials/hemicellulose` | `minecraft:birch_log`、`minecraft:stripped_birch_log` | `minecraft:birch_log`、`minecraft:stripped_birch_log` | 37（木糖），124（糠醛） | 半纤维素（木聚糖） |
+| 羽毛 | `materials/feather` | `minecraft:feather`、`#forge:feathers` | `minecraft:feather`、`#c:feathers` | 181 | 角蛋白 |
+| 石英 | `materials/quartz` | `minecraft:quartz`、`#forge:gems/quartz` | `minecraft:quartz`、`#c:gems/quartz` | 163（沙子只作低纯度替代） | SiO2 |
+| 竹子 | `materials/bamboo` | `minecraft:bamboo` | `minecraft:bamboo` | 162、229、327 | 纤维素、半纤维素、木质素 |
 
 > 生肉按 2026-11-04 的回答补全为猪、牛、羊、鸡、兔；原版兔肉没有通用标签。草在 1.20.3 起改名为 `minecraft:short_grass`。原表“方解石”的候选 `#forge:stone/limestone` 未核实到，未写入。
 
@@ -167,6 +170,8 @@
 | 乙醇 | `ethanol`（流体） | 本模组乙醇（酒精）、`#forge:ethanol` | 本模组乙醇（酒精）、`#c:ethanol` |
 | 锌 | `materials/zinc` | `#forge:ingots/zinc` | `#c:ingots/zinc` |
 | 钨 | `materials/tungsten` | `#forge:dusts/tungsten`、`#forge:ingots/tungsten` | `#c:dusts/tungsten`、`#c:ingots/tungsten` |
+| 钼 | `materials/molybdenum` | —（候选 GTCEu `#forge:dusts/molybdenum`、`#forge:ingots/molybdenum`，未核对） | —（未核对） |
+| 铋 | `materials/bismuth` | —（候选 GTCEu `#forge:dusts/bismuth`、`#forge:ingots/bismuth`，未核对） | —（未核对） |
 
 > 通用机械的气体属于 Mekanism Chemical，不进 Forge 流体标签；只有它额外注册的流体形态才能被匹配。
 
@@ -189,7 +194,7 @@
 | 钠硝石矿 | `materials/nitratine` | 地表方块（硝壳） | 沙漠、恶地地表 | 24（硝酸钠） | NaNO3 | nitratine | Nitratine Ore | 原料 | — |
 | 硝土 | `materials/nitre_soil` | 方块 | 07 中 H11 世界交互 | 24 | Ca(NO3)2、KNO3 混合 | nitre_soil | Nitre Soil | 原料 | — |
 | 磷灰石（后备） | `materials/apatite` | 矿石 | 未安装热力时生成 | 10 | Ca5(PO4)3F | apatite_ore | Apatite Ore | 原料 | — |
-| 麒麟菜 | `materials/red_algae_carrageenan` | 海洋植物 | 温暖海洋生成，可养殖 | 42 | κ-卡拉胶 | eucheuma | Eucheuma | 原料 | — |
+| 麒麟菜 | `materials/red_algae_carrageenan` | 海洋植物 | 温暖海洋生成，可养殖 | 42、394（基因供体） | κ-卡拉胶 | eucheuma | Eucheuma | 原料 | — |
 | 栀子果 | `materials/gardenia` | 灌木 | 丛林、竹林野生，成熟后右键采果（同甜浆果丛） | 62 | 栀子苷、藏花素 | gardenia_fruit | Gardenia Fruit | 原料 | — |
 | 迷迭香 | `materials/rosemary` | 作物 | 草甸、风袭丘陵野生 | 67 | 鼠尾草酸、迷迭香酸 | rosemary | Rosemary | 原料 | — |
 | 蓼蓝 | `materials/indigo_plant` | 作物 | 河边、沼泽野生 | 84 | 靛苷 | indigo_plant | Indigo Plant | 原料 | — |
@@ -206,8 +211,72 @@
 | 啤酒酵母 | `materials/spent_yeast` | 物品 | 啤酒酿造副产 | 73 | 核糖核酸 | spent_yeast | Spent Brewer's Yeast | 原料 | — |
 | 乳清 | `whey`（流体） | 流体 | 奶酪制作副产 | 32, 34 | 乳糖、乳清蛋白 | whey | Whey | 原料 | #E8E8B0 |
 | 鱼肝 | `materials/fish_liver` | 物品 | 处理鳕鱼的副产 | 107 | 鱼肝油（维生素 A、D） | fish_liver | Fish Liver | 原料 | — |
+| 红花干花 | `materials/safflower` | 物品 | 暂无来源（待定，见 15） | 206 | 红花黄色素（羟基红花黄色素 A）、红花红色素 | safflower | Dried Safflower | 原料 | — |
+| 紫胶原胶 | `materials/sticklac` | 物品 | 暂无来源（待定，见 15） | 207、271、273 | 紫胶树脂、紫胶色酸、蜡 | sticklac | Sticklac | 原料 | — |
+| 越橘 | `materials/lingonberry` | 物品 | 标签默认含原版甜浆果（游戏简化） | 208 | 花青素、有机酸 | lingonberry | Lingonberry | 原料 | — |
+| 红米 | `materials/red_rice` | 作物 | 暂无来源（待定，见 15） | 210 | 淀粉、种皮花青素 | red_rice | Red Rice | 原料 | — |
+| 红米糠 | `materials/red_rice_bran` | 物品 | 红米经 M01 / M11 碾米的副产 | 210 | 花青素、米糠油、蛋白质 | red_rice_bran | Red Rice Bran | 原料 | — |
+| 剑叶金鸡菊花序 | `materials/coreopsis` | 物品 | 暂无来源（待定，见 15） | 211 | 查耳酮、橙酮类黄酮 | coreopsis | Coreopsis Flower | 原料 | — |
+| 黑豆种皮 | `materials/black_soybean_hull` | 物品 | 暂无来源（待定，见 15） | 212 | 花青素（矢车菊素-3-葡萄糖苷） | black_soybean_hull | Black Soybean Hull | 原料 | — |
+| 高粱壳 | `materials/sorghum_husk` | 物品 | 暂无来源（待定，见 15） | 213 | 3-脱氧花青素、黄酮 | sorghum_husk | Sorghum Husk | 原料 | — |
+| 玉米蛋白粉 | `materials/corn_gluten_meal` | 物品 | 玉米（`materials/corn`）M01 湿磨副产 | 214 | 玉米醇溶蛋白、玉米黄质、叶黄素 | corn_gluten_meal | Corn Gluten Meal | 原料 | — |
+| 红心萝卜 | `materials/red_radish` | 作物 | 暂无来源（待定，见 15）；作物模组标签未核对 | 215 | 花青素（天竺葵素酰化苷） | red_radish | Red Radish | 原料 | — |
+| 可可豆壳 | `materials/cocoa_shell` | 物品 | 可可豆焙炒、M11 破碎风选的副产 | 216 | 多酚聚合色素、纤维 | cocoa_shell | Cocoa Shell | 原料 | — |
+| 黑加仑 | `materials/blackcurrant` | 物品 | 暂无来源（待定，见 15） | 217 | 花青素（飞燕草素、矢车菊素芸香苷） | blackcurrant | Blackcurrant | 原料 | — |
+| 沙棘果 | `materials/sea_buckthorn` | 物品 | 暂无来源（待定，见 15） | 219 | 类胡萝卜素、黄酮、油脂 | sea_buckthorn | Sea Buckthorn Berry | 原料 | — |
+| 玫瑰茄花萼 | `materials/roselle` | 物品 | 暂无来源（待定，见 15） | 220 | 花青素（飞燕草素桑布双糖苷）、有机酸 | roselle | Roselle Calyx | 原料 | — |
+| 橡子壳 | `materials/acorn_shell` | 物品 | 暂无来源（待定，见 15） | 221 | 单宁、多酚 | acorn_shell | Acorn Shell | 原料 | — |
+| 桑椹 | `materials/mulberry` | 物品 | 暂无来源（待定，见 15） | 222 | 花青素（矢车菊素-3-葡萄糖苷） | mulberry | Mulberry | 原料 | — |
+| 红苋菜 | `materials/red_amaranth` | 作物 | 暂无来源（待定，见 15） | 223 | 苋菜红素（甜菜色素） | red_amaranth | Red Amaranth | 原料 | — |
+| 金樱子 | `materials/rosa_laevigata` | 物品 | 暂无来源（待定，见 15） | 224 | 多酚、单宁、黄酮 | rosa_laevigata | Cherokee Rose Hip | 原料 | — |
+| 花生红衣 | `materials/peanut_skin` | 物品 | 花生（`materials/peanut`）榨油前脱红衣的副产（12 的榨油线补此工序） | 225 | 原花青素、单宁 | peanut_skin | Peanut Skin | 原料 | — |
+| 葡萄皮渣 | `materials/grape_pomace` | 物品 | 葡萄（`materials/grape`）M02 压榨或葡萄酒压渣的副产 | 226 | 花青素、单宁、酒石 | grape_pomace | Grape Pomace | 原料 | — |
+| 蓝锭果 | `materials/haskap` | 物品 | 暂无来源（待定，见 15） | 227 | 花青素（矢车菊素-3-葡萄糖苷） | haskap | Haskap Berry | 原料 | — |
+| 螺旋藻粉 | `materials/spirulina` | 物品 | 暂无来源（待定，见 15） | 228 | 藻蓝蛋白、蛋白质、叶绿素 | spirulina | Spirulina Powder | 原料 | — |
+| 紫草根 | `materials/gromwell_root` | 物品 | 暂无来源（待定，见 15） | 230 | 紫草素及其酯 | gromwell_root | Gromwell Root | 原料 | — |
+| 柑橘皮 | `materials/citrus_peel` | 物品 | 柑橘（`materials/citrus`）M02 压榨的副产 | 231，16 | 类胡萝卜素、果胶、柠檬烯 | citrus_peel | Citrus Peel | 原料 | — |
+| 胭脂树籽 | `materials/annatto_seed` | 物品 | 暂无来源（待定，见 15） | 232 | 红木素、降红木素 | annatto_seed | Annatto Seed | 原料 | — |
+| 胭脂虫干 | `materials/dried_cochineal` | 物品 | 暂无来源（待定，见 15） | 233 | 胭脂红酸 | dried_cochineal | Dried Cochineal | 原料 | — |
+| 万寿菊干花 | `materials/marigold` | 物品 | 暂无来源（待定，见 15） | 234 | 叶黄素酯 | marigold | Dried Marigold | 原料 | — |
+| 杨梅 | `materials/bayberry` | 物品 | 暂无来源（待定，见 15） | 237 | 花青素（矢车菊素-3-葡萄糖苷）、有机酸 | bayberry | Chinese Bayberry | 原料 | — |
+| 紫甘薯 | `materials/purple_sweet_potato` | 作物 | 暂无来源（待定，见 15） | 242 | 酰化花青素、淀粉 | purple_sweet_potato | Purple Sweet Potato | 原料 | — |
+| 盐藻粉 | `materials/dunaliella` | 物品 | 暂无来源（待定，见 15） | 197 | β-胡萝卜素、甘油 | dunaliella | Dunaliella Powder | 原料 | — |
+| 钛铁矿石 | `materials/ilmenite` | 矿石 | 暂无来源（待定，见 15）；GTCEu `#forge:ores/ilmenite`、`#forge:dusts/ilmenite` 未核对 | 198 | FeTiO3 | ilmenite | Ilmenite Ore | 原料 | — |
+| 椰子干 | `materials/copra` | 物品 | 暂无来源（待定，见 15）；潘马斯椰子标签未核对 | 252、256、257、324、325、342 | 椰子油（月桂酸甘油三酯为主） | copra | Copra | 原料 | — |
+| 油棕果 | `materials/oil_palm_fruit` | 物品 | 暂无来源（待定，见 15） | 248、258 | 棕榈油、类胡萝卜素 | oil_palm_fruit | Oil Palm Fruit | 原料 | — |
+| 皂树皮 | `materials/quillaja_bark` | 物品 | 暂无来源（待定，见 15） | 269 | 皂树皂苷、多酚 | quillaja_bark | Quillaja Bark | 原料 | — |
+| 达瓦树胶块 | `materials/ghatti_lump` | 物品 | 暂无来源（待定，见 15） | 270 | 酸性杂多糖（阿拉伯糖、半乳糖、葡萄糖醛酸） | ghatti_lump | Gum Ghatti Lump | 原料 | — |
+| 巴西棕榈蜡粉 | `materials/carnauba_powder` | 物品 | 暂无来源（待定，见 15） | 273、275 | 蜡酯（长链脂肪酸与长链醇） | carnauba_powder | Carnauba Wax Powder | 原料 | — |
+| 刺梧桐胶块 | `materials/karaya_lump` | 物品 | 暂无来源（待定，见 15） | 283 | 乙酰化酸性多糖（鼠李糖、半乳糖醛酸） | karaya_lump | Karaya Gum Lump | 原料 | — |
+| 阿拉伯胶块 | `materials/acacia_lump` | 物品 | 暂无来源（待定，见 15） | 288 | 阿拉伯半乳聚糖–蛋白复合物 | acacia_lump | Gum Arabic Lump | 原料 | — |
+| 罗望子种子 | `materials/tamarind_seed` | 物品 | 暂无来源（待定，见 15）；潘马斯罗望子标签未核对 | 290 | 罗望子多糖（木葡聚糖） | tamarind_seed | Tamarind Seed | 原料 | — |
+| 亚麻籽 | `materials/flaxseed` | 物品 | 暂无来源（待定，见 15）；潘马斯亚麻标签未核对 | 297 | 种皮黏液（亚麻籽胶）、亚麻籽油 | flaxseed | Flaxseed | 原料 | — |
+| 田菁籽 | `materials/sesbania_seed` | 物品 | 暂无来源（待定，见 15） | 298 | 半乳甘露聚糖 | sesbania_seed | Sesbania Seed | 原料 | — |
+| 槐豆 | `materials/carob_seed` | 物品 | 暂无来源（待定，见 15） | 300、369 | 半乳甘露聚糖（甘露糖 : 半乳糖约 4 : 1） | carob_seed | Carob Seed | 原料 | — |
+| 瓜尔豆 | `materials/guar_seed` | 物品 | 暂无来源（待定，见 15） | 302、369 | 半乳甘露聚糖（约 2 : 1） | guar_seed | Guar Seed | 原料 | — |
+| 皂荚籽 | `materials/gleditsia_seed` | 物品 | 暂无来源（待定，见 15） | 305 | 半乳甘露聚糖 | gleditsia_seed | Honeylocust Seed | 原料 | — |
+| 沙蒿籽 | `materials/artemisia_seed` | 物品 | 暂无来源（待定，见 15） | 311 | 沙蒿胶多糖、油脂 | artemisia_seed | Sand Sagebrush Seed | 原料 | — |
+| 刺云实籽 | `materials/tara_seed` | 物品 | 暂无来源（待定，见 15） | 312 | 半乳甘露聚糖（约 3 : 1） | tara_seed | Tara Seed | 原料 | — |
+| 决明子 | `materials/cassia_seed` | 物品 | 暂无来源（待定，见 15） | 316 | 半乳甘露聚糖、蒽醌 | cassia_seed | Cassia Seed | 原料 | — |
+| 虾蟹壳 | `materials/crustacean_shell` | 物品 | 暂无来源（待定，见 15） | 296、303 | 甲壳素、碳酸钙、蛋白质 | crustacean_shell | Crustacean Shell | 原料 | — |
+| 黑曲霉菌丝体 | `materials/fungal_mycelium` | 物品 | 柠檬酸（3）B、C 路线发酵液过滤副产 | 296、303 | 甲壳素–葡聚糖、蛋白质 | fungal_mycelium | Fungal Mycelium | 原料 | — |
+| 豆渣 | `materials/okara` | 物品 | 大豆（`materials/soybean`）M01 湿磨、M12 过滤副产，与豆奶、豆腐共用 | 315 | 膳食纤维、大豆多糖、蛋白质 | okara | Okara | 原料 | — |
+| 甘草根 | `materials/licorice_root` | 物品 | 暂无来源（待定，见 15） | 321、352、353、362 | 甘草酸、甘草黄酮 | licorice_root | Licorice Root | 原料 | — |
+| 罗汉果干果 | `materials/monk_fruit` | 物品 | 暂无来源（待定，见 15） | 356 | 罗汉果苷 V | monk_fruit | Dried Monk Fruit | 原料 | — |
+| 西非竹芋果 | `materials/katemfe_fruit` | 物品 | 暂无来源（待定，见 15） | 357 | 索马甜（甜味蛋白） | katemfe_fruit | Katemfe Fruit | 原料 | — |
+| 米糠 | `materials/rice_bran` | 物品 | 稻谷（`materials/rice`）M01 / M11 碾磨的副产（碾米配方补副产） | 320、331 | 米糠油、阿魏酸酯、植酸 | rice_bran | Rice Bran | 原料 | — |
+| 蛋清 | `materials/egg_white` | 物品 | 鸡蛋（`materials/egg`）在工作台或 M12 分离，蛋黄供 69 | 346 | 卵清蛋白、溶菌酶 | egg_white | Egg White | 原料 | — |
+| 咖啡生豆 | `materials/coffee_bean` | 物品 | 暂无来源（待定，见 15）；潘马斯 `#forge:crops/coffeebean` 未核对 | 366 | 咖啡因、绿原酸 | coffee_bean | Green Coffee Bean | 原料 | — |
+| 软锰矿石 | `materials/pyrolusite` | 矿石 | 暂无来源（待定，见 15）；GTCEu `#forge:ores/pyrolusite`、`#forge:dusts/pyrolusite` 未核对 | 92、364 | MnO2 | pyrolusite | Pyrolusite Ore | 原料 | — |
+| 胰脏 | `materials/pancreas` | 物品 | 暂无来源（待定，见 15） | 397、399、418、419 | 胰蛋白酶原、胰脂肪酶、胰淀粉酶 | pancreas | Pancreas | 原料 | — |
+| 胃黏膜 | `materials/gastric_mucosa` | 物品 | 暂无来源（待定，见 15） | 415 | 胃蛋白酶原 | gastric_mucosa | Gastric Mucosa | 原料 | — |
+| 肝脏 | `materials/liver` | 物品 | 暂无来源（待定，见 15）（不含鱼肝） | 390 | 过氧化氢酶 | liver | Liver | 原料 | — |
+| 无花果乳汁 | `ficus_latex`（流体） | 流体 | 暂无来源（待定，见 15）；作物模组提供无花果树时扩展 H15 割取 | 416 | 无花果蛋白酶 | ficus_latex | Fig Latex | 原料 | #F0EEE6 |
+| 大麦 | `materials/barley` | 作物 | 暂无来源（待定，见 15）；潘马斯 `#forge:crops/barley` 未核对 | 402（大麦麦芽）、378（诱导底物） | 淀粉、β-葡聚糖 | barley | Barley | 原料 | — |
+| 皱胃 | `materials/abomasum` | 物品 | 暂无来源（待定，见 15） | 105 A、工程菌（凝乳酶）供体 | 凝乳酶原、胃蛋白酶原 | abomasum | Abomasum | 原料 | — |
+| 菊芋块茎 | `materials/jerusalem_artichoke` | 作物 | 暂无来源（待定，见 15） | 395 | 菊粉 | jerusalem_artichoke | Jerusalem Artichoke | 原料 | — |
 
-> I07 的方块与作物（2026-11-04 定）：作物的收获物本身可种（同胡萝卜），野外有野生植株；栀子按甜浆果丛、香荚兰按可可果的形态；橡胶木做完整木材套组（原木、木头、去皮原木、去皮木头、木板、楼梯、台阶、栅栏、栅栏门、门、活板门、压力板、按钮、树叶、树苗；告示牌、悬挂式告示牌、船列入后续）；松脂先按原料注册，纯度口径按纯度模型 v2（07 #137：K0，按松香计含量）由 I28 落实。后备来源只做硫矿石、磷灰石矿石（未装热力时）和稻谷、树皮（未装农夫乐事时）；镍、锡、银、铅不做后备，依赖其他模组。后备物品在各节点都注册，只在缺对应模组时生成或掉落，配置文件 `foodindustrial-common.toml` 的 `[fallbacks]` 可强制启用。
+> I07 的方块与作物（2026-11-04 定）：作物的收获物本身可种（同胡萝卜），野外有野生植株；栀子按甜浆果丛、香荚兰按可可果的形态；橡胶木做完整木材套组（原木、木头、去皮原木、去皮木头、木板、楼梯、台阶、栅栏、栅栏门、门、活板门、压力板、按钮、树叶、树苗；告示牌、悬挂式告示牌、船列入后续）；松脂先按原料注册；松脂是多组分混合物，不带纯度（2026-11-05，10 §1.1）。后备来源只做硫矿石、磷灰石矿石（未装热力时）和稻谷、树皮（未装农夫乐事时）；镍、锡、银、铅不做后备，依赖其他模组。后备物品在各节点都注册，只在缺对应模组时生成或掉落，配置文件 `foodindustrial-common.toml` 的 `[fallbacks]` 可强制启用。
 
 #### I07 方块与作物的标签
 
@@ -260,6 +329,10 @@
 
 ### 菌种与酶（物品，可在 M30 菌种工作台繁殖）
 
+菌种带纯度（K11，按目标菌所占比例）；酶与耗材不带纯度，现实按酶活计价（2026-11-05 定，10 §1.1）。
+
+名称里的括号是名称的一部分（限定语，如“工程菌（漆酶）”），不是日常名称，游戏内原样显示；GB 2760 的“又名”括号不写（2026-11-05 定，文本规范第 2.1 节）。
+
 | 菌种 / 酶 | 配方引用标签 | 自然来源（H13） | 用于 | ID | 英文名（待审） | 分类 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 醋酸菌（醋母） | `cultures/acetobacter` | 陶坛开口静置果酒（H13） | 1 | acetobacter | Acetobacter (Vinegar Mother) | 菌种 |
@@ -274,7 +347,7 @@
 | 酮古龙酸菌 | `cultures/ketogulonicigenium` | 土壤样本（M30 诱变选育） | 28 | ketogulonicigenium | Ketogulonicigenium Vulgare | 菌种 |
 | 巨大芽孢杆菌 | `cultures/bacillus_megaterium` | 土壤样本（M30 诱变选育） | 28 | bacillus_megaterium | Bacillus Megaterium | 菌种 |
 | 麦芽 | `enzymes/malt` | 小麦发芽 | T1 糖化（β-淀粉酶来源） | malt | Malt | 酶 |
-| β-淀粉酶 | `enzymes/beta_amylase` | 麦芽浸提纯化（2026-11-04 定单设，来源待审） | 39（T3 糖化） | beta_amylase | β-Amylase | 酶 |
+| β-淀粉酶 | `enzymes/beta_amylase` | 大麦麦芽（`enzymes/barley_malt`）浸提纯化（2026-11-05 定，同 14 第 D 节） | 39（T3 糖化） | beta_amylase | β-Amylase | 酶 |
 | α-淀粉酶 | `enzymes/alpha_amylase` | 枯草芽孢杆菌发酵 | T2+ 液化 | alpha_amylase | α-Amylase | 酶 |
 | 葡萄糖淀粉酶 | `enzymes/glucoamylase` | 黑曲霉发酵 | T2+ 糖化 | glucoamylase | Glucoamylase | 酶 |
 | 丙酸杆菌 | `cultures/propionibacterium` | 奶酪（M30 筛选） | 32 | propionibacterium | Propionibacterium | 菌种 |
@@ -297,15 +370,97 @@
 | 嗜酸普鲁兰芽孢杆菌 | `cultures/bacillus_acidopullulyticus` | 土壤样本（M30 筛选） | 97 | bacillus_acidopullulyticus | Bacillus Acidopullulyticus | 菌种 |
 | 米黑根毛霉 | `cultures/rhizomucor` | 堆肥 | 102 | rhizomucor | Rhizomucor Miehei | 菌种 |
 | 普鲁兰酶 | `enzymes/pullulanase` | 对应菌种发酵（见 13） | 39 | pullulanase | Pullulanase | 酶 |
-| 核酸酶 | `enzymes/nuclease` | 对应菌种发酵（见 13） | 73 | nuclease | Nuclease | 酶 |
-| 脱氨酶 | `enzymes/deaminase` | 对应菌种发酵（见 13） | 73 | deaminase | Deaminase | 酶 |
+| 核酸酶 | `enzymes/nuclease` | 对应菌种发酵（见 13） | 73；391（表 C.3 品种） | nuclease | Nuclease | 酶 |
+| 脱氨酶 | `enzymes/deaminase` | 对应菌种发酵（见 13） | 73；414（表 C.3 品种） | deaminase | Deaminase | 酶 |
 | 富马酸酶 | `enzymes/fumarase` | 对应菌种发酵（见 13） | 56 | fumarase | Fumarase | 酶 |
 | 环氧琥珀酸水解酶 | `enzymes/epoxysuccinate_hydrolase` | 对应菌种发酵（见 13） | 54 | epoxysuccinate_hydrolase | Epoxysuccinate Hydrolase | 酶 |
 | 天冬氨酸酶 | `enzymes/aspartase` | 对应菌种发酵（见 14） | 85 | aspartase | Aspartase | 酶 |
 | 腈水合酶 | `enzymes/nitrile_hydratase` | 对应菌种发酵（见 14） | 110 | nitrile_hydratase | Nitrile Hydratase | 酶 |
-| 单宁酶 | `enzymes/tannase` | 对应菌种发酵（见 14） | 93 | tannase | Tannase | 酶 |
+| 单宁酶 | `enzymes/tannase` | 对应菌种发酵（见 14） | 93；384（表 C.3 品种） | tannase | Tannase | 酶 |
 | 嗜热菌蛋白酶 | `enzymes/thermolysin` | 对应菌种发酵（见 14） | 85 | thermolysin | Thermolysin | 酶 |
-| 酶制剂成品（94–106） | `enzymes/<名称>` | 菌种发酵或动植物提取（见 14） | 成品配方、上述工艺 | （I20） | （I20） | 酶 |
+| 酶制剂成品（94–106；374–423 见下） | `enzymes/<名称>` | 菌种发酵或动植物提取（见 14） | 成品配方、上述工艺 | （I20） | （I20） | 酶 |
+| 达库哈假单胞菌 | `cultures/pseudomonas_dacunhae` | 土壤样本（M30 筛选） | 179 | pseudomonas_dacunhae | Pseudomonas Dacunhae | 菌种 |
+| 大肠杆菌 | `cultures/e_coli` | 生肉样本（M30 筛选，游戏设定） | 181、105 的宿主；表达载体 | e_coli | Escherichia Coli | 菌种 |
+| 表达载体 | `cultures/expression_vector` | M30 用大肠杆菌制得（游戏抽象） | P94 每次消耗 1 个 | expression_vector | Expression Vector | 耗材 |
+| 产半胱氨酸大肠杆菌 | `cultures/e_coli_cysteine` | M30 基因重组（P94）：大肠杆菌（游戏简化） | 181 | e_coli_cysteine | Cysteine-Producing E. Coli | 菌种 |
+| 工程菌（凝乳酶） | `cultures/engineered_chymosin` | M30 基因重组（P94）：大肠杆菌 + 皱胃样本 | 105（表 C.3 第 39 项） | engineered_chymosin | Engineered Strain (Chymosin) | 菌种 |
+| 出芽短梗霉 | `cultures/aureobasidium` | 树叶或果皮样本（M30 筛选） | 278 | aureobasidium | Aureobasidium Pullulans | 菌种 |
+| 粪产碱杆菌黏胶变种 | `cultures/alcaligenes_myxogenes` | 土壤样本（M30 筛选） | 313 | alcaligenes_myxogenes | Alcaligenes Faecalis Myxogenes | 菌种 |
+| 三赞鞘氨醇单胞菌 | `cultures/sphingomonas_sanxanigenens` | 土壤样本（M30 筛选） | 318 | sphingomonas_sanxanigenens | Sphingomonas Sanxanigenens | 菌种 |
+| 荧光假单胞菌 | `cultures/pseudomonas_fluorescens` | 腐烂水果（M30 筛选） | 319、326 | pseudomonas_fluorescens | Pseudomonas Fluorescens | 菌种 |
+| 白色链霉菌 | `cultures/streptomyces_albulus` | 土壤样本（M30 筛选） | 348、349 | streptomyces_albulus | Streptomyces Albulus | 菌种 |
+| 红色精朊杆菌 | `cultures/protaminobacter` | 甜菜根样本（M30 筛选，游戏设定） | 350 | protaminobacter | Protaminobacter Rubrum | 菌种 |
+| 节杆菌 | `cultures/arthrobacter` | 土壤样本（M30 筛选） | 354 | arthrobacter | Arthrobacter | 菌种 |
+| 重组酿酒酵母（冰结构蛋白） | `cultures/yeast_isp` | M30 基因重组（P94）：酿酒酵母 + 鳕鱼 | 371 | yeast_isp | Recombinant Yeast (Ice Structuring Protein) | 菌种 |
+| 斐济曲霉 | `cultures/aspergillus_fijiensis` | 土壤样本（M30 筛选）；中文名暂译 | 377 | aspergillus_fijiensis | Aspergillus Fijiensis | 菌种 |
+| 解朊金黄杆菌 | `cultures/chryseobacterium` | 土壤样本（M30 筛选） | 383 | chryseobacterium | Chryseobacterium Proteolyticum | 菌种 |
+| 解淀粉芽孢杆菌 | `cultures/bacillus_amyloliquefaciens` | 稻草、土壤 | 387 | bacillus_amyloliquefaciens | Bacillus Amyloliquefaciens | 菌种 |
+| 橘青霉（不产毒株） | `cultures/penicillium_citrinum` | 发霉谷物（M30 筛选） | 391 | penicillium_citrinum | Penicillium Citrinum | 菌种 |
+| 多形汉逊酵母 | `cultures/hansenula` | 腐烂水果（M30 筛选） | 394（宿主） | hansenula | Hansenula Polymorpha | 菌种 |
+| 锈棕色链霉菌 | `cultures/streptomyces_rubiginosus` | 土壤样本（M30 筛选） | 406 | streptomyces_rubiginosus | Streptomyces Rubiginosus | 菌种 |
+| 苍白空气芽孢杆菌 | `cultures/aeribacillus` | 堆肥 | 412 | aeribacillus | Aeribacillus Pallidus | 菌种 |
+| 无定毛壳菌 | `cultures/chaetomium` | 腐木（M30 筛选） | 417 | chaetomium | Chaetomium Erraticum | 菌种 |
+| 工程菌（D-阿洛酮糖-3-差向异构酶） | `cultures/engineered_psicose_epimerase` | M30 基因重组（P94）：枯草芽孢杆菌工程菌（供体瘤胃球菌） | 374 | engineered_psicose_epimerase | Engineered Strain (D-Psicose 3-Epimerase) | 菌种 |
+| 工程菌（α-乙酰乳酸脱羧酶） | `cultures/engineered_aldc` | M30 基因重组（P94）：枯草芽孢杆菌工程菌（供体短小芽孢杆菌） | 376 | engineered_aldc | Engineered Strain (α-Acetolactate Decarboxylase) | 菌种 |
+| 工程菌（甘油磷脂胆固醇酰基转移酶） | `cultures/engineered_gcat` | M30 基因重组（P94）：地衣芽孢杆菌工程菌（供体杀鲑气单胞菌） | 386 | engineered_gcat | Engineered Strain (Phospholipid Cholesterol Acyltransferase) | 菌种 |
+| 工程菌（环糊精葡萄糖苷转移酶） | `cultures/engineered_cgtase` | M30 基因重组（P94）：地衣芽孢杆菌工程菌（供体高温厌氧杆菌） | 393 | engineered_cgtase | Engineered Strain (Cyclomaltodextrin Glucanotransferase) | 菌种 |
+| 工程菌（己糖氧化酶） | `cultures/engineered_hexose_oxidase` | M30 基因重组（P94）：多形汉逊酵母工程菌（供体皱波角叉菜） | 394 | engineered_hexose_oxidase | Engineered Strain (Hexose Oxidase) | 菌种 |
+| 工程菌（磷脂酶 A1） | `cultures/engineered_phospholipase_a1` | M30 基因重组（P94）：米曲霉工程菌（供体红聚颈腔菌） | 398 | engineered_phospholipase_a1 | Engineered Strain (Phospholipase A1) | 菌种 |
+| 工程菌（磷脂酶 C） | `cultures/engineered_phospholipase_c` | M30 基因重组（P94）：地衣芽孢杆菌工程菌（供体苏云金芽孢杆菌） | 400 | engineered_phospholipase_c | Engineered Strain (Phospholipase C) | 菌种 |
+| 工程菌（磷酸肌醇磷脂酶 C） | `cultures/engineered_pi_plc` | M30 基因重组（P94）：地衣芽孢杆菌工程菌（供体假单胞菌） | 401 | engineered_pi_plc | Engineered Strain (Phosphoinositide Phospholipase C) | 菌种 |
+| 工程菌（麦芽糖淀粉酶） | `cultures/engineered_maltogenic_amylase` | M30 基因重组（P94）：枯草芽孢杆菌工程菌（供体嗜热脂肪地芽孢杆菌） | 403 | engineered_maltogenic_amylase | Engineered Strain (Maltogenic Amylase) | 菌种 |
+| 工程菌（麦芽四糖水解酶） | `cultures/engineered_maltotetraohydrolase` | M30 基因重组（P94）：地衣芽孢杆菌工程菌（供体施氏假单胞菌） | 404 | engineered_maltotetraohydrolase | Engineered Strain (Maltotetraohydrolase) | 菌种 |
+| 工程菌（α-葡萄糖苷酶） | `cultures/engineered_alpha_glucosidase` | M30 基因重组（P94）：李氏木霉工程菌（供体黑曲霉） | 408 | engineered_alpha_glucosidase | Engineered Strain (α-Glucosidase) | 菌种 |
+| 工程菌（漆酶） | `cultures/engineered_laccase` | M30 基因重组（P94）：米曲霉工程菌（供体嗜热毁丝霉） | 409 | engineered_laccase | Engineered Strain (Laccase) | 菌种 |
+| D-阿洛酮糖-3-差向异构酶 | `enzymes/psicose_epimerase` | 枯草芽孢杆菌工程菌（供体瘤胃球菌） | 374 | psicose_epimerase | D-Psicose 3-Epimerase | 酶 |
+| α-半乳糖苷酶 | `enzymes/alpha_galactosidase` | 黑曲霉 | 375 | alpha_galactosidase | α-Galactosidase | 酶 |
+| α-乙酰乳酸脱羧酶 | `enzymes/aldc` | 枯草芽孢杆菌工程菌（供体短小芽孢杆菌） | 376 | aldc | α-Acetolactate Decarboxylase (ALDC) | 酶 |
+| β-果糖基转移酶 | `enzymes/beta_fructosyltransferase` | Aspergillus fijiensis | 377 | beta_fructosyltransferase | β-Fructofuranosidase (Fructosyltransferase) | 酶 |
+| β-葡聚糖酶 | `enzymes/beta_glucanase` | 枯草芽孢杆菌 | 378 | beta_glucanase | β-Glucanase | 酶 |
+| 阿拉伯呋喃糖苷酶 | `enzymes/arabinofuranosidase` | 黑曲霉 | 379 | arabinofuranosidase | Arabinofuranosidase | 酶 |
+| 氨基肽酶 | `enzymes/aminopeptidase` | 米曲霉 | 380 | aminopeptidase | Aminopeptidase | 酶 |
+| 半纤维素酶 | `enzymes/hemicellulase` | 黑曲霉 | 381 | hemicellulase | Hemicellulase | 酶 |
+| 蛋白酶（微生物） | `enzymes/microbial_protease` | 枯草芽孢杆菌（中性蛋白酶） | 382 | microbial_protease | Protease (Microbial) | 酶 |
+| 蛋白质谷氨酰胺酶 | `enzymes/protein_glutaminase` | 解朊金黄杆菌 | 383 | protein_glutaminase | Protein-Glutaminase | 酶 |
+| 多聚半乳糖醛酸酶 | `enzymes/polygalacturonase` | 黑曲霉 | 385 | polygalacturonase | Polygalacturonase | 酶 |
+| 甘油磷脂胆固醇酰基转移酶 | `enzymes/gcat` | 地衣芽孢杆菌工程菌（供体杀鲑气单胞菌） | 386 | gcat | Glycerophospholipid Cholesterol Acyltransferase (GCAT) | 酶 |
+| 谷氨酰胺酶 | `enzymes/glutaminase` | 解淀粉芽孢杆菌 | 387 | glutaminase | Glutaminase | 酶 |
+| 果胶裂解酶 | `enzymes/pectin_lyase` | 黑曲霉 | 388 | pectin_lyase | Pectin Lyase | 酶 |
+| 果胶酯酶 | `enzymes/pectinesterase` | 黑曲霉 | 389 | pectinesterase | Pectinesterase | 酶 |
+| 过氧化氢酶 | `enzymes/catalase` | A 牛肝；B 黑曲霉 | 390 | catalase | Catalase | 酶 |
+| 海藻糖酶 | `enzymes/trehalase` | 李氏木霉 | 392 | trehalase | Trehalase | 酶 |
+| 环糊精葡萄糖苷转移酶 | `enzymes/cgtase` | 地衣芽孢杆菌工程菌（供体高温厌氧杆菌） | 393 | cgtase | Cyclomaltodextrin Glucanotransferase (CGTase) | 酶 |
+| 己糖氧化酶 | `enzymes/hexose_oxidase` | 多形汉逊酵母工程菌（供体皱波角叉菜） | 394 | hexose_oxidase | Hexose Oxidase | 酶 |
+| 菊糖酶 | `enzymes/inulinase` | 黑曲霉 | 395 | inulinase | Inulinase | 酶 |
+| 壳聚糖酶 | `enzymes/chitosanase` | 枯草芽孢杆菌 | 396 | chitosanase | Chitosanase | 酶 |
+| 磷脂酶 | `enzymes/phospholipase` | 猪胰脏 | 397 | phospholipase | Phospholipase | 酶 |
+| 磷脂酶 A1 | `enzymes/phospholipase_a1` | 米曲霉工程菌（供体红聚颈腔菌） | 398 | phospholipase_a1 | Phospholipase A1 | 酶 |
+| 磷脂酶 A2 | `enzymes/phospholipase_a2` | 猪胰脏 | 399 | phospholipase_a2 | Phospholipase A2 | 酶 |
+| 磷脂酶 C | `enzymes/phospholipase_c` | 地衣芽孢杆菌工程菌（供体苏云金芽孢杆菌） | 400 | phospholipase_c | Phospholipase C | 酶 |
+| 磷酸肌醇磷脂酶 C | `enzymes/pi_plc` | 地衣芽孢杆菌工程菌（供体假单胞菌） | 401 | pi_plc | Phosphoinositide Phospholipase C (PI-PLC) | 酶 |
+| 麦芽碳水化合物水解酶（α-、β-淀粉酶） | `enzymes/malt_carbohydrase` | 大麦麦芽 | 402 | malt_carbohydrase | Malt Carbohydrases (α- and β-Amylase) | 酶 |
+| 麦芽糖淀粉酶 | `enzymes/maltogenic_amylase` | 枯草芽孢杆菌工程菌（供体嗜热脂肪地芽孢杆菌） | 403 | maltogenic_amylase | Maltogenic Amylase | 酶 |
+| 麦芽四糖水解酶 | `enzymes/maltotetraohydrolase` | 地衣芽孢杆菌工程菌（供体施氏假单胞菌） | 404 | maltotetraohydrolase | Maltotetraohydrolase | 酶 |
+| 木聚糖酶 | `enzymes/xylanase` | 李氏木霉 | 405 | xylanase | Xylanase | 酶 |
+| 葡糖异构酶 | `enzymes/glucose_isomerase` | 锈棕色链霉菌 | 406 | glucose_isomerase | Glucose Isomerase | 酶 |
+| β-葡萄糖苷酶 | `enzymes/beta_glucosidase` | 黑曲霉 | 407 | beta_glucosidase | β-Glucosidase | 酶 |
+| α-葡萄糖苷酶 | `enzymes/alpha_glucosidase` | 李氏木霉工程菌（供体黑曲霉） | 408 | alpha_glucosidase | α-Glucosidase | 酶 |
+| 漆酶 | `enzymes/laccase` | 米曲霉工程菌（供体嗜热毁丝霉） | 409 | laccase | Laccase | 酶 |
+| 溶血磷脂酶 | `enzymes/lysophospholipase` | 黑曲霉 | 410 | lysophospholipase | Lysophospholipase | 酶 |
+| 羧肽酶 | `enzymes/carboxypeptidase` | 黑曲霉 | 411 | carboxypeptidase | Carboxypeptidase | 酶 |
+| 4-α-糖基转移酶 | `enzymes/alpha_glucanotransferase` | 苍白空气芽孢杆菌 | 412 | alpha_glucanotransferase | 4-α-Glucanotransferase | 酶 |
+| 天门冬酰胺酶 | `enzymes/asparaginase` | 米曲霉 | 413 | asparaginase | Asparaginase | 酶 |
+| 胃蛋白酶 | `enzymes/pepsin` | 猪胃黏膜 | 415 | pepsin | Pepsin | 酶 |
+| 无花果蛋白酶 | `enzymes/ficin` | 无花果乳汁 | 416 | ficin | Ficin | 酶 |
+| 右旋糖酐酶 | `enzymes/dextranase` | 无定毛壳菌 | 417 | dextranase | Dextranase | 酶 |
+| 胰蛋白酶 | `enzymes/trypsin` | 猪胰脏 | 418 | trypsin | Trypsin | 酶 |
+| 胰凝乳蛋白酶 | `enzymes/chymotrypsin` | 猪胰脏 | 419 | chymotrypsin | Chymotrypsin | 酶 |
+| 蔗糖 1-果糖转移酶 | `enzymes/sucrose_fructosyltransferase` | 米曲霉 | 420 | sucrose_fructosyltransferase | Sucrose 1-Fructosyltransferase | 酶 |
+| 酯酶 | `enzymes/esterase` | 米黑根毛霉 | 421 | esterase | Esterase | 酶 |
+| 植酸酶 | `enzymes/phytase` | 黑曲霉 | 422 | phytase | Phytase | 酶 |
+| 转葡糖苷酶 | `enzymes/transglucosidase` | 黑曲霉 | 423 | transglucosidase | Transglucosidase | 酶 |
+| L-天冬氨酸 β-脱羧酶 | `enzymes/aspartate_decarboxylase` | 达库哈假单胞菌 M29 发酵，卡拉胶包埋固定化 | 179 | aspartate_decarboxylase | Aspartate β-Decarboxylase | 酶 |
+| 大麦麦芽 | `enzymes/barley_malt` | 大麦发芽（大麦标签未核对） | 402 | barley_malt | Barley Malt | 酶 |
 
 ### 催化剂与助剂（机器内部计数消耗）
 
@@ -330,3 +485,8 @@
 | 有机锡 | `catalysts/organotin` | 二丁基氧化锡 | 蔗糖-6-乙酸酯（87） | 锡锭 | dibutyltin_oxide（见 09） | — | 催化剂 | 见 09 |
 | 钯碳 | `catalysts/palladium` | Pd / C | 还原胺化（88）、乙酸乙烯酯（134） | `catalysts/noble_metal` + 活性炭 | palladium_on_carbon | Palladium on Carbon | 催化剂 | — |
 | 三氯化铝 | `catalysts/aluminium_chloride` | AlCl3 | 异丁烯低温聚合（135） | 氧化铝 + 氯气 + 焦炭 | aluminium_chloride（见 09） | — | 催化剂 | 见 09 |
+| 氧化铝 | `catalysts/alumina` | Al2O3 | 甲醇氢氯化（304、314、163 的氯甲烷） | 09 的 `alumina`（化学品）同时进催化剂标签 | alumina（见 09） | — | 见 09 | 见 09 |
+| 铜催化剂 | `catalysts/copper` | Cu（含锌、锡助剂） | 甲基氯硅烷直接法（163） | 铜锭 | copper_catalyst（见 09） | — | 催化剂 | 见 09 |
+| 钼酸铋催化剂 | `catalysts/bismuth_molybdate` | Bi2(MoO4)3 | 丙烯氧化制丙烯酸（310） | 钼、铋（他模组，按标签匹配） | bismuth_molybdate_catalyst（见 09） | — | 催化剂 | 见 09 |
+| 氯化锌 | `catalysts/zinc_chloride` | ZnCl2 | 己酸与间苯二酚酰化（325） | 锌 + 盐酸 | zinc_chloride（见 09） | — | 催化剂 | 见 09 |
+| 固定化蔗糖异构酶菌体 | `catalysts/immobilized_sucrose_isomerase` | 海藻酸钙包埋的灭活菌体 | 异麦芽酮糖（350） | 红色精朊杆菌发酵 → 海藻酸钙包埋（P96） | immobilized_sucrose_isomerase（见 09） | — | 催化剂 | 见 09 |

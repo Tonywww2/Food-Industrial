@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:titanyl_sulfate",
+  "loader": "neoforge:fluid_container"
+}

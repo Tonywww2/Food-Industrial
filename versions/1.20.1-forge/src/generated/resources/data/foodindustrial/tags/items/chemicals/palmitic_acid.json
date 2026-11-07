@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:palmitic_acid",
+    {
+      "id": "#forge:dusts/palmitic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/palmitic_acid",
+      "required": false
+    }
+  ]
+}

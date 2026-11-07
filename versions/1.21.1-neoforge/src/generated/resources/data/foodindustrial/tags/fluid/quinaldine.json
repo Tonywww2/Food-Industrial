@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quinaldine",
+    "foodindustrial:flowing_quinaldine",
+    {
+      "id": "#c:quinaldine",
+      "required": false
+    }
+  ]
+}

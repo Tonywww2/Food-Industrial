@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:casein",
+    {
+      "id": "#forge:dusts/casein",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/casein",
+      "required": false
+    }
+  ]
+}

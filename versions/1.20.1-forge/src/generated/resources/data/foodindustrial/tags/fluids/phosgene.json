@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phosgene",
+    "foodindustrial:flowing_phosgene",
+    {
+      "id": "#forge:phosgene",
+      "required": false
+    }
+  ]
+}

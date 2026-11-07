@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorobenzene",
+    "foodindustrial:flowing_chlorobenzene",
+    {
+      "id": "#forge:chlorobenzene",
+      "required": false
+    }
+  ]
+}

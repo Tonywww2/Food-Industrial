@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bismuth_molybdate_catalyst",
+    {
+      "id": "#c:dusts/bismuth_molybdate_catalyst",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bismuth_molybdate_catalyst",
+      "required": false
+    }
+  ]
+}

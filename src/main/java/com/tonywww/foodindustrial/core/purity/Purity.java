@@ -42,6 +42,9 @@ import java.util.function.Supplier;
  *     default of the material whose tag holds them (or of the material a recipe checks for);</li>
  *     <li>other items and fluids of this mod (crops, ores, seawater): no purity.</li>
  * </ul>
+ * Materials of the master table without purity (enzymes, consumables, multi-component mixtures;
+ * additives/10 §1.1) register as plain materials: foreign items in their tags have no purity, and
+ * external rules that match them are logged and ignored.
  * {@link #NONE} stands for "no purity".
  */
 public final class Purity {
@@ -52,12 +55,15 @@ public final class Purity {
     }
 
     private static final Map<String, MaterialTag> MATERIALS = new LinkedHashMap<>();
+    private static final Map<String, MaterialTag> PLAIN = new LinkedHashMap<>();
     private static final List<Map.Entry<Supplier<? extends Item>, String>> ITEM_BEARERS = new ArrayList<>();
     private static final List<Map.Entry<Supplier<? extends Fluid>, String>> FLUID_BEARERS = new ArrayList<>();
     private static volatile Map<Item, String> itemBearers;
     private static volatile Map<Fluid, String> fluidBearers;
     /** Materials of foreign items and fluids by tag membership; replaced when tags or data change. */
     private static volatile Map<Object, Optional<String>> foreignMaterials = new ConcurrentHashMap<>();
+    /** Plain materials of foreign items and fluids by tag membership. */
+    private static volatile Map<Object, Optional<String>> foreignPlain = new ConcurrentHashMap<>();
 
     private Purity() {
     }
@@ -80,6 +86,7 @@ public final class Purity {
 
     private static void invalidate() {
         foreignMaterials = new ConcurrentHashMap<>();
+        foreignPlain = new ConcurrentHashMap<>();
     }
 
     // ---- registration (mod construction) ----
@@ -93,10 +100,25 @@ public final class Purity {
      * @param data     purity data as in the material files: {@code category}, {@code source_purity}, {@code grades}
      */
     public static void registerMaterial(String id, @Nullable String itemTag, @Nullable String fluidTag, JsonObject data) {
-        if (MATERIALS.putIfAbsent(id, new MaterialTag(id, itemTag, fluidTag)) != null) {
+        if (PLAIN.containsKey(id) || MATERIALS.putIfAbsent(id, new MaterialTag(id, itemTag, fluidTag)) != null) {
             throw new IllegalArgumentException("Duplicate purity material " + id);
         }
         PurityData.registerBuiltin(id, data);
+    }
+
+    /**
+     * Registers a material without purity (additives/10 §1.1), with the tag recipes use for it.
+     * Parameters as in {@link #registerMaterial}.
+     */
+    public static void registerPlainMaterial(String id, @Nullable String itemTag, @Nullable String fluidTag) {
+        if (MATERIALS.containsKey(id) || PLAIN.putIfAbsent(id, new MaterialTag(id, itemTag, fluidTag)) != null) {
+            throw new IllegalArgumentException("Duplicate material " + id);
+        }
+    }
+
+    /** Whether {@code id} is a registered material without purity. */
+    public static boolean isPlain(@Nullable String id) {
+        return id != null && PLAIN.containsKey(id);
     }
 
     /** Marks an item as a purity bearer of {@code material}. Call during mod construction. */
@@ -190,12 +212,53 @@ public final class Purity {
     /** Material whose recipe tag is {@code tagId}, or {@code null}. */
     @Nullable
     public static String materialOfTag(String tagId, boolean fluid) {
-        for (MaterialTag material : MATERIALS.values()) {
+        return ofTag(MATERIALS, tagId, fluid);
+    }
+
+    /** Plain material (without purity) whose recipe tag is {@code tagId}, or {@code null}. */
+    @Nullable
+    public static String plainMaterialOfTag(String tagId, boolean fluid) {
+        return ofTag(PLAIN, tagId, fluid);
+    }
+
+    @Nullable
+    private static String ofTag(Map<String, MaterialTag> materials, String tagId, boolean fluid) {
+        for (MaterialTag material : materials.values()) {
             if (tagId.equals(fluid ? material.fluidTag() : material.itemTag())) {
                 return material.id();
             }
         }
         return null;
+    }
+
+    /**
+     * Plain material whose recipe tag holds {@code item} (in table order), or {@code null}. Only
+     * consulted when the item has no purity material.
+     */
+    @Nullable
+    public static String plainMaterialOf(Item item) {
+        return foreignPlain.computeIfAbsent(item, key -> {
+            ItemStack probe = new ItemStack(item);
+            for (MaterialTag material : PLAIN.values()) {
+                if (material.itemTag() != null && probe.is(PlatformTags.itemTag(material.itemTag()))) {
+                    return Optional.of(material.id());
+                }
+            }
+            return Optional.empty();
+        }).orElse(null);
+    }
+
+    /** Plain material of a fluid, as {@link #plainMaterialOf(Item)}. */
+    @Nullable
+    public static String plainMaterialOf(Fluid fluid) {
+        return foreignPlain.computeIfAbsent(fluid, key -> {
+            for (MaterialTag material : PLAIN.values()) {
+                if (material.fluidTag() != null && fluid.defaultFluidState().is(PlatformTags.fluidTag(material.fluidTag()))) {
+                    return Optional.of(material.id());
+                }
+            }
+            return Optional.empty();
+        }).orElse(null);
     }
 
     /**
@@ -206,20 +269,33 @@ public final class Purity {
     @Nullable
     public static String materialHint(@Nullable JsonElement json, boolean fluid) {
         Set<String> found = new LinkedHashSet<>();
-        if (!collectHints(json, fluid, found) || found.size() != 1) {
+        if (!collectHints(json, fluid, false, found) || found.size() != 1) {
             return null;
         }
         return found.iterator().next();
     }
 
-    private static boolean collectHints(@Nullable JsonElement json, boolean fluid, Set<String> found) {
+    /**
+     * Material without purity a recipe ingredient refers to, read as {@link #materialHint}: {@code null}
+     * unless every reference resolves to the same plain material.
+     */
+    @Nullable
+    public static String plainMaterialHint(@Nullable JsonElement json, boolean fluid) {
+        Set<String> found = new LinkedHashSet<>();
+        if (!collectHints(json, fluid, true, found) || found.size() != 1) {
+            return null;
+        }
+        return found.iterator().next();
+    }
+
+    private static boolean collectHints(@Nullable JsonElement json, boolean fluid, boolean plain, Set<String> found) {
         if (json == null || json.isJsonNull()) {
             return false;
         }
         if (json.isJsonArray()) {
             JsonArray array = json.getAsJsonArray();
             for (JsonElement element : array) {
-                if (!collectHints(element, fluid, found)) {
+                if (!collectHints(element, fluid, plain, found)) {
                     return false;
                 }
             }
@@ -244,7 +320,9 @@ public final class Purity {
         }
         String material = null;
         if (tag != null) {
-            material = materialOfTag(tag, fluid);
+            material = plain ? plainMaterialOfTag(tag, fluid) : materialOfTag(tag, fluid);
+        } else if (plain) {
+            return false;
         } else if (id != null && PlatformTags.isValidId(id)) {
             material = fluid
                 ? PlatformTags.fluid(id).map(f -> fluidBearers().get(f)).orElse(null)
@@ -307,6 +385,10 @@ public final class Purity {
             return NONE;
         }
         String material = materialOf(item);
+        if (material == null && plainMaterialOf(item) != null) {
+            PurityRules.ignoredFor(item, plainMaterialOf(item));
+            return NONE;
+        }
         int ruled = PurityRules.value(item, material);
         return ruled != NONE ? ruled : missingValue(material != null ? material : hint);
     }
@@ -331,6 +413,10 @@ public final class Purity {
             return NONE;
         }
         String material = materialOf(type);
+        if (material == null && plainMaterialOf(type) != null) {
+            PurityRules.ignoredFor(type, plainMaterialOf(type));
+            return NONE;
+        }
         int ruled = PurityRules.value(type, material);
         return ruled != NONE ? ruled : missingValue(material != null ? material : hint);
     }

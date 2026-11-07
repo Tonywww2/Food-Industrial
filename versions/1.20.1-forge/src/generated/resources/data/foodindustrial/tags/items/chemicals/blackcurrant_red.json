@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:blackcurrant_red",
+    {
+      "id": "#forge:dusts/blackcurrant_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/blackcurrant_red",
+      "required": false
+    }
+  ]
+}

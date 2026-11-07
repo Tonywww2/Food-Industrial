@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:theaflavins",
+    {
+      "id": "#forge:dusts/theaflavins",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/theaflavins",
+      "required": false
+    }
+  ]
+}

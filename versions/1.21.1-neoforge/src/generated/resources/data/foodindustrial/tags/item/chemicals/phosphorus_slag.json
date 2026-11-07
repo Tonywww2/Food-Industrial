@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phosphorus_slag",
+    {
+      "id": "#c:dusts/phosphorus_slag",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phosphorus_slag",
+      "required": false
+    }
+  ]
+}

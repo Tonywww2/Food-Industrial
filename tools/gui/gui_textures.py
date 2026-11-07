@@ -169,23 +169,6 @@ def icon_upgrades(draw, x, y):
     draw.rectangle([x + 5, y + 8, x + 10, y + 13], fill=green)
 
 
-def icon_io(draw, x, y):
-    blue = (63, 118, 228, 255)
-    orange = (224, 123, 39, 255)
-    draw.rectangle([x + 4, y + 4, x + 11, y + 11], fill=GRAY, outline=SLOT_DARK)
-    draw.line([x, y + 7, x + 3, y + 7], fill=blue)
-    draw.line([x, y + 8, x + 3, y + 8], fill=blue)
-    draw.line([x + 12, y + 7, x + 15, y + 7], fill=orange)
-    draw.line([x + 12, y + 8, x + 15, y + 8], fill=orange)
-
-
-def icon_redstone(draw, x, y):
-    red = (200, 20, 20, 255)
-    dark = (110, 0, 0, 255)
-    for px, py in [(4, 5), (7, 3), (10, 6), (5, 9), (9, 10), (7, 7), (11, 12), (3, 12)]:
-        draw.rectangle([x + px, y + py, x + px + 2, y + py + 2], fill=red, outline=dark)
-
-
 def icon_structure(draw, x, y):
     stone = (150, 150, 155, 255)
     for bx, by in [(1, 8), (8, 8), (4, 1)]:
@@ -207,80 +190,76 @@ def icon_highlight(draw, x, y):
     draw.rectangle([x + 6, y + 6, x + 9, y + 9], fill=red)
 
 
-def icon_back(draw, x, y):
-    for i in range(5):
-        draw.line([x + 3 + i, y + 7 - i, x + 3 + i, y + 8 + i], fill=SLOT_DARK)
-    draw.rectangle([x + 7, y + 6, x + 13, y + 9], fill=SLOT_DARK)
+# 8 x 8 icons of the small buttons in the redstone and input/output panels (2026-11-05)
+
+def small_ignore(draw, x, y):
+    draw.ellipse([x, y, x + 7, y + 7], outline=SHADOW)
+    draw.rectangle([x + 2, y + 3, x + 5, y + 4], fill=SHADOW)
 
 
-def torch(draw, x, y, head):
-    draw.rectangle([x + 7, y + 6, x + 8, y + 14], fill=(130, 90, 50, 255))
-    draw.rectangle([x + 6, y + 2, x + 9, y + 5], fill=head)
+def small_torch(draw, x, y, head):
+    draw.rectangle([x + 3, y + 3, x + 4, y + 7], fill=(130, 90, 50, 255))
+    draw.rectangle([x + 2, y, x + 5, y + 2], fill=head)
 
 
-def icon_ignore(draw, x, y):
-    draw.ellipse([x + 2, y + 2, x + 13, y + 13], outline=SHADOW)
-    draw.line([x + 4, y + 7, x + 11, y + 7], fill=SHADOW)
-    draw.line([x + 4, y + 8, x + 11, y + 8], fill=SHADOW)
+def small_low(draw, x, y):
+    small_torch(draw, x, y, (90, 20, 20, 255))
 
 
-def icon_low(draw, x, y):
-    torch(draw, x, y, (90, 20, 20, 255))
+def small_high(draw, x, y):
+    small_torch(draw, x, y, (255, 40, 40, 255))
+    draw.point((x, y + 1), fill=(255, 120, 120, 255))
+    draw.point((x + 7, y + 1), fill=(255, 120, 120, 255))
 
 
-def icon_high(draw, x, y):
-    torch(draw, x, y, (255, 40, 40, 255))
-    draw.point((x + 5, y + 1), fill=(255, 120, 120, 255))
-    draw.point((x + 10, y + 1), fill=(255, 120, 120, 255))
-
-
-def icon_disabled(draw, x, y):
+def small_disabled(draw, x, y):
     red = (200, 30, 30, 255)
-    for i in range(10):
-        draw.rectangle([x + 3 + i, y + 3 + i, x + 4 + i, y + 4 + i], fill=red)
-        draw.rectangle([x + 12 - i, y + 3 + i, x + 13 - i, y + 4 + i], fill=red)
+    for i in range(7):
+        draw.rectangle([x + i, y + i, x + i + 1, y + i], fill=red)
+        draw.rectangle([x + 6 - i, y + i, x + 7 - i, y + i], fill=red)
 
 
-def box(draw, x, y):
-    draw.rectangle([x + 8, y + 5, x + 14, y + 11], fill=(160, 120, 70, 255), outline=(90, 60, 30, 255))
+def small_box(draw, x, y):
+    draw.rectangle([x, y + 2, x + 3, y + 5], fill=(160, 120, 70, 255), outline=(90, 60, 30, 255))
 
 
-def drop(draw, x, y):
+def small_drop(draw, x, y):
     water = (60, 110, 220, 255)
-    draw.polygon([(x + 11, y + 3), (x + 14, y + 9), (x + 8, y + 9)], fill=water)
-    draw.ellipse([x + 8, y + 7, x + 14, y + 13], fill=water)
+    draw.rectangle([x + 1, y + 1, x + 2, y + 2], fill=water)
+    draw.rectangle([x, y + 3, x + 3, y + 5], fill=water)
+    draw.point((x, y + 3), fill=CLEAR)
+    draw.point((x + 3, y + 3), fill=CLEAR)
 
 
-def arrow_in(draw, x, y):
-    blue = (63, 118, 228, 255)
-    draw.rectangle([x + 1, y + 7, x + 5, y + 8], fill=blue)
-    draw.polygon([(x + 5, y + 4), (x + 8, y + 7), (x + 8, y + 8), (x + 5, y + 11)], fill=blue)
+def small_arrow(draw, x, y, color):
+    """4 pixels wide arrow pointing right."""
+    draw.rectangle([x, y + 3, x + 1, y + 4], fill=color)
+    draw.polygon([(x + 2, y + 1), (x + 3, y + 3), (x + 3, y + 4), (x + 2, y + 6)], fill=color)
 
 
-def arrow_out(draw, x, y):
-    orange = (224, 123, 39, 255)
-    draw.rectangle([x + 1, y + 7, x + 4, y + 8], fill=orange)
-    draw.polygon([(x + 4, y + 4), (x + 7, y + 7), (x + 7, y + 8), (x + 4, y + 11)], fill=orange)
+def small_in_items(draw, x, y):
+    small_arrow(draw, x, y, (63, 118, 228, 255))
+    small_box(draw, x + 4, y)
 
 
-def icon_in_items(draw, x, y):
-    box(draw, x, y)
-    arrow_in(draw, x, y)
+def small_in_fluids(draw, x, y):
+    small_arrow(draw, x, y, (63, 118, 228, 255))
+    small_drop(draw, x + 4, y)
 
 
-def icon_in_fluids(draw, x, y):
-    drop(draw, x, y)
-    arrow_in(draw, x, y)
+def small_out_items(draw, x, y):
+    small_box(draw, x, y)
+    small_arrow(draw, x + 4, y, (224, 123, 39, 255))
 
 
-def icon_out_items(draw, x, y):
-    box(draw, x - 7, y)
-    arrow_out(draw, x + 8, y)
+def small_out_fluids(draw, x, y):
+    small_drop(draw, x, y)
+    small_arrow(draw, x + 4, y, (224, 123, 39, 255))
 
 
-def icon_out_fluids(draw, x, y):
-    drop(draw, x - 7, y)
-    arrow_out(draw, x + 8, y)
+def small_back(draw, x, y):
+    draw.polygon([(x, y + 3), (x + 3, y), (x + 3, y + 7), (x, y + 4)], fill=SLOT_DARK)
+    draw.rectangle([x + 3, y + 3, x + 7, y + 4], fill=SLOT_DARK)
 
 
 def button(draw, x, y, w, h, fill, light, dark):
@@ -318,11 +297,13 @@ def elements():
         color = (int(255 - 70 * t), int(40 + 20 * (1 - t)), int(30 * (1 - t)), 255)
         draw.line([50, 32 + i, 61, 32 + i], fill=color)
     # row 100: panel icons
-    for index, painter in enumerate([icon_info, icon_upgrades, icon_io, icon_redstone, icon_structure, icon_mode, icon_highlight, icon_back]):
+    # (columns 2 and 3 were the input/output and redstone panel icons; those tabs show items since 2026-11-05)
+    for index, painter in {0: icon_info, 1: icon_upgrades, 4: icon_structure, 5: icon_mode, 6: icon_highlight}.items():
         icon(draw, index, 100, painter)
-    # row 116: redstone modes and automation switches
-    for index, painter in enumerate([icon_ignore, icon_low, icon_high, icon_disabled, icon_in_items, icon_in_fluids, icon_out_items, icon_out_fluids]):
-        icon(draw, index, 116, painter)
+    # row 132: 8 x 8 icons of the small panel buttons
+    for index, painter in enumerate([small_ignore, small_low, small_high, small_disabled, small_in_items,
+                                     small_in_fluids, small_out_items, small_out_fluids, small_back]):
+        painter(draw, index * 8, 132)
     # row 160: buttons 120 x 20 (normal, hover), row 180: selected
     button(draw, 0, 160, 120, 20, (150, 150, 150, 255), (220, 220, 220, 255), (90, 90, 90, 255))
     button(draw, 120, 160, 120, 20, (170, 180, 210, 255), (230, 235, 250, 255), (100, 110, 140, 255))

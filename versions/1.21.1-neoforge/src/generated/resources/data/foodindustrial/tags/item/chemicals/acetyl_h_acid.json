@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetyl_h_acid",
+    {
+      "id": "#c:dusts/acetyl_h_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetyl_h_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bamboo_leaf_antioxidant",
+    {
+      "id": "#forge:dusts/bamboo_leaf_antioxidant",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/bamboo_leaf_antioxidant",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:liquefied_starch",
+  "loader": "forge:fluid_container"
+}

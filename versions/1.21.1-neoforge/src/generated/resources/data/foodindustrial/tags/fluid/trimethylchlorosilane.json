@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethylchlorosilane",
+    "foodindustrial:flowing_trimethylchlorosilane",
+    {
+      "id": "#c:trimethylchlorosilane",
+      "required": false
+    }
+  ]
+}

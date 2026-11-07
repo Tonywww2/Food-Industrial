@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tamarind_gum",
+    {
+      "id": "#forge:dusts/tamarind_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tamarind_gum",
+      "required": false
+    }
+  ]
+}

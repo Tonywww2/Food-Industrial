@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:sunset_yellow_lake",
+  "category": "foodindustrial:k10_synthetic_color",
+  "grades": {
+    "crude": 3,
+    "refined": 6,
+    "food": 10,
+    "lab": null
+  }
+}

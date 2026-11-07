@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aminodimethyluracil",
+    {
+      "id": "#forge:dusts/aminodimethyluracil",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aminodimethyluracil",
+      "required": false
+    }
+  ]
+}

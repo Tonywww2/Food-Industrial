@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lithospermum_red",
+    {
+      "id": "#c:dusts/lithospermum_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lithospermum_red",
+      "required": false
+    }
+  ]
+}

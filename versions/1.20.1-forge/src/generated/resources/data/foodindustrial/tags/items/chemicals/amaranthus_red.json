@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amaranthus_red",
+    {
+      "id": "#forge:dusts/amaranthus_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/amaranthus_red",
+      "required": false
+    }
+  ]
+}

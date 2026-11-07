@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amaranth",
+    {
+      "id": "#forge:dusts/amaranth",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/amaranth",
+      "required": false
+    }
+  ]
+}

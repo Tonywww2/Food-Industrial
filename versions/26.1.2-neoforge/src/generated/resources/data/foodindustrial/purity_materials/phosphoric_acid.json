@@ -2,9 +2,9 @@
   "id": "foodindustrial:phosphoric_acid",
   "category": "foodindustrial:k4_organic_liquid",
   "grades": {
-    "crude": 50,
-    "refined": 75,
-    "food": 85,
-    "lab": null
+    "crude": 40,
+    "refined": 60,
+    "food": 75,
+    "lab": 85
   }
 }

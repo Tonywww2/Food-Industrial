@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:caprylic_acid",
+    "foodindustrial:flowing_caprylic_acid",
+    {
+      "id": "#forge:caprylic_acid",
+      "required": false
+    }
+  ]
+}

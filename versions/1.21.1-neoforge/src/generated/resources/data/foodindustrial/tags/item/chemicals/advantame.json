@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:advantame",
+    {
+      "id": "#c:dusts/advantame",
+      "required": false
+    },
+    {
+      "id": "#c:gems/advantame",
+      "required": false
+    }
+  ]
+}

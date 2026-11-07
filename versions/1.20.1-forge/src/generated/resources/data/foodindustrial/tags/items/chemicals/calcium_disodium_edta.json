@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_disodium_edta",
+    {
+      "id": "#forge:dusts/calcium_disodium_edta",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_disodium_edta",
+      "required": false
+    }
+  ]
+}

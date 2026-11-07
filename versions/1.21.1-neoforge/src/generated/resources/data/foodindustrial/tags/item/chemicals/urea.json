@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:urea",
+    {
+      "id": "#c:dusts/urea",
+      "required": false
+    },
+    {
+      "id": "#c:gems/urea",
+      "required": false
+    }
+  ]
+}

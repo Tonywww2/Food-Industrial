@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:xylitan_monostearate",
+    {
+      "id": "#forge:dusts/xylitan_monostearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/xylitan_monostearate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sesbania_gum",
+    {
+      "id": "#c:dusts/sesbania_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sesbania_gum",
+      "required": false
+    }
+  ]
+}

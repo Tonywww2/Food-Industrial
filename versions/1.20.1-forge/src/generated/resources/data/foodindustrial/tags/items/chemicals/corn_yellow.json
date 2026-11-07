@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:corn_yellow",
+    {
+      "id": "#forge:dusts/corn_yellow",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/corn_yellow",
+      "required": false
+    }
+  ]
+}

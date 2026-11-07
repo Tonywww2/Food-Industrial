@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:liquid_paraffin",
+    "foodindustrial:flowing_liquid_paraffin",
+    {
+      "id": "#c:liquid_paraffin",
+      "required": false
+    }
+  ]
+}

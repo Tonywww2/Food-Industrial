@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_phenetidine",
+    "foodindustrial:flowing_p_phenetidine",
+    {
+      "id": "#c:p_phenetidine",
+      "required": false
+    }
+  ]
+}

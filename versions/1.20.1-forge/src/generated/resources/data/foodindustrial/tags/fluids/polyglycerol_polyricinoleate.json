@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyglycerol_polyricinoleate",
+    "foodindustrial:flowing_polyglycerol_polyricinoleate",
+    {
+      "id": "#forge:polyglycerol_polyricinoleate",
+      "required": false
+    }
+  ]
+}

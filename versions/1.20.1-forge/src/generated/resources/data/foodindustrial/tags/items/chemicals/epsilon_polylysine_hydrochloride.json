@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epsilon_polylysine_hydrochloride",
+    {
+      "id": "#forge:dusts/epsilon_polylysine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/epsilon_polylysine_hydrochloride",
+      "required": false
+    }
+  ]
+}

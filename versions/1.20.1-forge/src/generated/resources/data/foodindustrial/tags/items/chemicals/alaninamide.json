@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alaninamide",
+    {
+      "id": "#forge:dusts/alaninamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/alaninamide",
+      "required": false
+    }
+  ]
+}

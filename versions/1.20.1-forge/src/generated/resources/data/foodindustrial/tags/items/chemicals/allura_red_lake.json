@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allura_red_lake",
+    {
+      "id": "#forge:dusts/allura_red_lake",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/allura_red_lake",
+      "required": false
+    }
+  ]
+}

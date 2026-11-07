@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:succinylated_monoglycerides",
+    {
+      "id": "#c:dusts/succinylated_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/succinylated_monoglycerides",
+      "required": false
+    }
+  ]
+}

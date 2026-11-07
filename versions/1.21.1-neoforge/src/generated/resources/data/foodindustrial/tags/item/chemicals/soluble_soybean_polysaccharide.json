@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:soluble_soybean_polysaccharide",
+    {
+      "id": "#c:dusts/soluble_soybean_polysaccharide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/soluble_soybean_polysaccharide",
+      "required": false
+    }
+  ]
+}

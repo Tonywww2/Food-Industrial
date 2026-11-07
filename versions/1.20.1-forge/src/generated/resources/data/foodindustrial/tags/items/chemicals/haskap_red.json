@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:haskap_red",
+    {
+      "id": "#forge:dusts/haskap_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/haskap_red",
+      "required": false
+    }
+  ]
+}

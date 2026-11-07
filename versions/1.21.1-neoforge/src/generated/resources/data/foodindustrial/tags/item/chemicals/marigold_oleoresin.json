@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:marigold_oleoresin",
+    {
+      "id": "#c:dusts/marigold_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/marigold_oleoresin",
+      "required": false
+    }
+  ]
+}

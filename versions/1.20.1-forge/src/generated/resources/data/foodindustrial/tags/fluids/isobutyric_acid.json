@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyric_acid",
+    "foodindustrial:flowing_isobutyric_acid",
+    {
+      "id": "#forge:isobutyric_acid",
+      "required": false
+    }
+  ]
+}

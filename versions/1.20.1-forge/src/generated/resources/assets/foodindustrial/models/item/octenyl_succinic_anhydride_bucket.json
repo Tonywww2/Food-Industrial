@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:octenyl_succinic_anhydride",
+  "loader": "forge:fluid_container"
+}

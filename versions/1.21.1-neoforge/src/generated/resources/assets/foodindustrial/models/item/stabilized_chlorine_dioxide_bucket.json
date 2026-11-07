@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:stabilized_chlorine_dioxide",
+  "loader": "neoforge:fluid_container"
+}

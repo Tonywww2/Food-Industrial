@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:n_hexane",
+    "foodindustrial:flowing_n_hexane",
+    {
+      "id": "#forge:n_hexane",
+      "required": false
+    }
+  ]
+}

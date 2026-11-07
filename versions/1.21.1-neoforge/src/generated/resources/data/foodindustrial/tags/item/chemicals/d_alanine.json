@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:d_alanine",
+    {
+      "id": "#c:dusts/d_alanine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/d_alanine",
+      "required": false
+    }
+  ]
+}

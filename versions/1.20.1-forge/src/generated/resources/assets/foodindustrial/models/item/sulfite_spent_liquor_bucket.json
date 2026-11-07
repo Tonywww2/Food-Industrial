@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:sulfite_spent_liquor",
+  "loader": "forge:fluid_container"
+}

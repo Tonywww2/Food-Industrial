@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorbitan_monooleate",
+    "foodindustrial:flowing_sorbitan_monooleate",
+    {
+      "id": "#forge:sorbitan_monooleate",
+      "required": false
+    }
+  ]
+}

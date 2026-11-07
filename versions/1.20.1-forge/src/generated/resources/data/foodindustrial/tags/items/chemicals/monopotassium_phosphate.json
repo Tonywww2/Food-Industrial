@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monopotassium_phosphate",
+    {
+      "id": "#forge:dusts/monopotassium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monopotassium_phosphate",
+      "required": false
+    }
+  ]
+}

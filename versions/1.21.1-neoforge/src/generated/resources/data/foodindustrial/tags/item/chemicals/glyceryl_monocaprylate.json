@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glyceryl_monocaprylate",
+    {
+      "id": "#c:dusts/glyceryl_monocaprylate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glyceryl_monocaprylate",
+      "required": false
+    }
+  ]
+}

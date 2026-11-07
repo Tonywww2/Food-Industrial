@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isomaltulose",
+    {
+      "id": "#forge:dusts/isomaltulose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isomaltulose",
+      "required": false
+    }
+  ]
+}

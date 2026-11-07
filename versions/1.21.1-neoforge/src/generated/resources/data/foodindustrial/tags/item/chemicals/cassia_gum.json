@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cassia_gum",
+    {
+      "id": "#c:dusts/cassia_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cassia_gum",
+      "required": false
+    }
+  ]
+}

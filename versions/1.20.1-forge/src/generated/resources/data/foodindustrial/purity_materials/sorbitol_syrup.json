@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:sorbitol_syrup",
+  "category": "foodindustrial:k2_sugar",
+  "grades": {
+    "crude": 15,
+    "refined": 30,
+    "food": 50,
+    "lab": null
+  }
+}

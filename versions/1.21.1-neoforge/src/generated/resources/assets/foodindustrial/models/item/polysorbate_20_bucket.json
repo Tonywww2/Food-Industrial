@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:polysorbate_20",
+  "loader": "neoforge:fluid_container"
+}

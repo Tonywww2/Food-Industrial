@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:distarch_phosphate",
+    {
+      "id": "#forge:dusts/distarch_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/distarch_phosphate",
+      "required": false
+    }
+  ]
+}

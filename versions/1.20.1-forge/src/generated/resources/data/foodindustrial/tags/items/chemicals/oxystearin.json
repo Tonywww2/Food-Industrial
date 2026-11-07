@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oxystearin",
+    {
+      "id": "#forge:dusts/oxystearin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/oxystearin",
+      "required": false
+    }
+  ]
+}

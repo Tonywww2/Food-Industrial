@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:magnesium_carbonate",
+  "category": "foodindustrial:k1_inorganic",
+  "grades": {
+    "crude": 80,
+    "refined": 88,
+    "food": 92.8,
+    "lab": null
+  }
+}

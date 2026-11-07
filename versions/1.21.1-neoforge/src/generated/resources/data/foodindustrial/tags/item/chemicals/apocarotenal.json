@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:apocarotenal",
+    {
+      "id": "#c:dusts/apocarotenal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/apocarotenal",
+      "required": false
+    }
+  ]
+}

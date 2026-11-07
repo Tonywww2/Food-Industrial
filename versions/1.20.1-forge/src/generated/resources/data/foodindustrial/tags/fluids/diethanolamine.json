@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethanolamine",
+    "foodindustrial:flowing_diethanolamine",
+    {
+      "id": "#forge:diethanolamine",
+      "required": false
+    }
+  ]
+}

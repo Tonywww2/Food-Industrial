@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lysozyme",
+    {
+      "id": "#forge:dusts/lysozyme",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lysozyme",
+      "required": false
+    }
+  ]
+}

@@ -25,10 +25,16 @@ public final class TextChecks {
     private static final Pattern MISSING_SPACE = Pattern.compile("\\p{IsHan}[A-Za-z0-9]|[A-Za-z0-9]\\p{IsHan}");
     /**
      * Half-width punctuation in Chinese text (§1.4). Chemical names keep their half-width locants and
-     * descriptors: commas between letters or digits (1,2-丙二醇、N,N-二甲基甲酰胺) and parentheses
-     * inside a descriptor (L(+)-酒石酸、3(2H)-呋喃酮).
+     * descriptors: commas between letters or digits (1,2-丙二醇、N,N-二甲基甲酰胺), parentheses
+     * inside a descriptor (L(+)-酒石酸、3(2H)-呋喃酮) and the groups of {@link #CHEMICAL_GROUP}.
      */
     private static final Pattern HALF_WIDTH = Pattern.compile("(?<![A-Za-z0-9]),|,(?![A-Za-z0-9])|[;:?]|(?<=\\p{IsHan})\\(|\\)(?=\\p{IsHan})|^\\(|\\)$");
+    /**
+     * Half-width parenthesised groups that belong to a chemical name and are skipped by
+     * {@link #HALF_WIDTH} (2026-11-05): a degree of polymerisation as GB 2760 writes it (聚氧乙烯(20)山梨醇酐…)
+     * and a substituent group after a locant or descriptor (3-(3-羟基-4-甲氧基苯基)丙醛).
+     */
+    private static final Pattern CHEMICAL_GROUP = Pattern.compile("\\(\\d+\\)|(?<=[-0-9A-Za-z,])\\([^()（）]*\\)");
     /** Hyphen used for a numeric range instead of the en dash (§1.4). */
     private static final Pattern RANGE_HYPHEN = Pattern.compile("\\d%?\\s*-\\s*\\d");
     /** Space between a number and % (§1.5). */
@@ -82,7 +88,7 @@ public final class TextChecks {
             problems.add(key + ": exclamation mark or emoji in \"" + value + "\"");
         }
         find(MISSING_SPACE, key, value, "missing space between Chinese and Latin / digits", problems);
-        find(HALF_WIDTH, key, value, "half-width punctuation", problems);
+        find(HALF_WIDTH, key, CHEMICAL_GROUP.matcher(value).replaceAll(""), "half-width punctuation", problems);
         find(RANGE_HYPHEN, key, value, "range written with '-' instead of '–'", problems);
         find(PERCENT_SPACE, key, value, "space before %", problems);
         find(UNIT, key, value, "unit spacing or case", problems);

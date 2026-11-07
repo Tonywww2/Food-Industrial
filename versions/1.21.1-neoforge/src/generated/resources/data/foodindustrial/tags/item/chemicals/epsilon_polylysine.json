@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epsilon_polylysine",
+    {
+      "id": "#c:dusts/epsilon_polylysine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/epsilon_polylysine",
+      "required": false
+    }
+  ]
+}

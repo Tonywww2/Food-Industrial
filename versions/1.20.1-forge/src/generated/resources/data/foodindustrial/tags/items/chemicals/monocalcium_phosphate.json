@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monocalcium_phosphate",
+    {
+      "id": "#forge:dusts/monocalcium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monocalcium_phosphate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monosodium_citrate",
+    {
+      "id": "#forge:dusts/monosodium_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monosodium_citrate",
+      "required": false
+    }
+  ]
+}

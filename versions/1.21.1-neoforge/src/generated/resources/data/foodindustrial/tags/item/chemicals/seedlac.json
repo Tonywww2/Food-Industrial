@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:seedlac",
+    {
+      "id": "#c:dusts/seedlac",
+      "required": false
+    },
+    {
+      "id": "#c:gems/seedlac",
+      "required": false
+    }
+  ]
+}

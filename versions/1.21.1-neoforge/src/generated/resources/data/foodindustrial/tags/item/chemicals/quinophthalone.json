@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quinophthalone",
+    {
+      "id": "#c:dusts/quinophthalone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quinophthalone",
+      "required": false
+    }
+  ]
+}

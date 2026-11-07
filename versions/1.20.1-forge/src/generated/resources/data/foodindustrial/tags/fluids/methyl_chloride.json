@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_chloride",
+    "foodindustrial:flowing_methyl_chloride",
+    {
+      "id": "#forge:methyl_chloride",
+      "required": false
+    }
+  ]
+}

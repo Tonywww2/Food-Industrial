@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polysuccinimide",
+    {
+      "id": "#forge:dusts/polysuccinimide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polysuccinimide",
+      "required": false
+    }
+  ]
+}

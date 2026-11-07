@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_trimetaphosphate",
+    {
+      "id": "#c:dusts/sodium_trimetaphosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_trimetaphosphate",
+      "required": false
+    }
+  ]
+}

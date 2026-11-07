@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:turmeric",
+  "category": "foodindustrial:k5_natural_extract",
+  "source_purity": 3,
+  "grades": {
+    "crude": 0.5,
+    "refined": 1,
+    "food": 1.8,
+    "lab": null
+  }
+}

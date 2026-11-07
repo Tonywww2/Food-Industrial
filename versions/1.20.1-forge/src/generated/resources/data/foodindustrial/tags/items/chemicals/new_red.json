@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:new_red",
+    {
+      "id": "#forge:dusts/new_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/new_red",
+      "required": false
+    }
+  ]
+}

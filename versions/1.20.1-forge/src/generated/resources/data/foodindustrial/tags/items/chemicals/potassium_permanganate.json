@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_permanganate",
+    {
+      "id": "#forge:dusts/potassium_permanganate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_permanganate",
+      "required": false
+    }
+  ]
+}

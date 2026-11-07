@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:metatitanic_acid",
+    {
+      "id": "#forge:dusts/metatitanic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/metatitanic_acid",
+      "required": false
+    }
+  ]
+}

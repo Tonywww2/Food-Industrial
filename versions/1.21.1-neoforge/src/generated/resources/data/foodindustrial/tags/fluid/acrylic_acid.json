@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acrylic_acid",
+    "foodindustrial:flowing_acrylic_acid",
+    {
+      "id": "#c:acrylic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:succinic_anhydride",
+    {
+      "id": "#forge:dusts/succinic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/succinic_anhydride",
+      "required": false
+    }
+  ]
+}

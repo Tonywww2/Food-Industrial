@@ -57,6 +57,7 @@ public final class RecipeGen {
 
     static void bootstrap() {
         PlatformDatagen.register("process recipes", RecipeGen::generate);
+        PlatformDatagen.addCheck(PlatformDatagen.Kind.RECIPE, RecipeChecks::checkCraftingJson);
     }
 
     private static void generate(PlatformDatagen.Sink sink) {

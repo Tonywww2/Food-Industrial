@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:grape_skin_red",
+    {
+      "id": "#c:dusts/grape_skin_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/grape_skin_red",
+      "required": false
+    }
+  ]
+}

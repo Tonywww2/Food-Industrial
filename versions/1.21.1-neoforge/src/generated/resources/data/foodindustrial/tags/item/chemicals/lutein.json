@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lutein",
+    {
+      "id": "#c:dusts/lutein",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lutein",
+      "required": false
+    }
+  ]
+}

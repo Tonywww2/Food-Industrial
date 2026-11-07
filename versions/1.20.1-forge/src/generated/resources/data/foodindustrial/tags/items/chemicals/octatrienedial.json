@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octatrienedial",
+    {
+      "id": "#forge:dusts/octatrienedial",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/octatrienedial",
+      "required": false
+    }
+  ]
+}

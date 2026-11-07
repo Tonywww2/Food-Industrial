@@ -34,6 +34,30 @@ final class DevMachines {
         .development()
         .register();
 
+    /** Dense FE layout with a catalyst, like M14 (layout checks of machines/04 §1). */
+    static final MachineDefinition REACTOR = MachineDefinition.builder("dev_reactor")
+        .name("测试反应罐", "Test Reactor")
+        .tier(Tier.T2)
+        .types(ProcessTypes.CRYSTALLIZING)
+        .layout(IoLayout.of(3, 2, 3, 2).withCatalyst(1).withUpgrades(2).withModules(3))
+        .capabilities(Capabilities.of("temperature.cooling"))
+        .power(PowerKind.ENERGY)
+        .phase(TickPhase.REFINING)
+        .development()
+        .register();
+
+    /** Unpowered layout with two catalysts, like M05 / M29 (layout checks of machines/04 §1). */
+    static final MachineDefinition FERMENTER = MachineDefinition.builder("dev_fermenter")
+        .name("测试发酵缸", "Test Fermenter")
+        .tier(Tier.T1)
+        .types(ProcessTypes.CRYSTALLIZING)
+        .layout(IoLayout.of(2, 1, 1, 2).withCatalyst(2))
+        .capabilities(Capabilities.of("temperature.cooling"))
+        .power(PowerKind.NONE)
+        .phase(TickPhase.REFINING)
+        .development()
+        .register();
+
     /** A 3×3×3 multiblock of test casing and ports, controller in the middle of the front, hollow centre. */
     static final MachineDefinition MULTIBLOCK = MachineDefinition.builder("dev_multiblock")
         .name("测试多方块", "Test Multiblock")

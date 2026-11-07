@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bayberry_red",
+    {
+      "id": "#c:dusts/bayberry_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bayberry_red",
+      "required": false
+    }
+  ]
+}

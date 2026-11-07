@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quinophthalone",
+    {
+      "id": "#forge:dusts/quinophthalone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/quinophthalone",
+      "required": false
+    }
+  ]
+}

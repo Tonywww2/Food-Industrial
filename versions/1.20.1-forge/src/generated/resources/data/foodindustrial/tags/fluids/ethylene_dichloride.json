@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylene_dichloride",
+    "foodindustrial:flowing_ethylene_dichloride",
+    {
+      "id": "#forge:ethylene_dichloride",
+      "required": false
+    }
+  ]
+}

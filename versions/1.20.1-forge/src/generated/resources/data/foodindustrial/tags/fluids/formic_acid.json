@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:formic_acid",
+    "foodindustrial:flowing_formic_acid",
+    {
+      "id": "#forge:formic_acid",
+      "required": false
+    }
+  ]
+}

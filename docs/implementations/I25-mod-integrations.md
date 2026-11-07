@@ -24,7 +24,7 @@
 - [ ] 机械动力：磨石、粉碎轮、搅拌、压制、洗涤、鼓风机（[additives/06 §他模组机器参与](../additives/06-machines.md)）
 - [ ] 机械动力配方使用 `foodindustrial:purity` 时判定正确，客户端与服务端一致（自 I03 移入，[additives/10 §8](../additives/10-purity-jei-ae2.md)）
 - [ ] 热力、通用机械、气动工艺、核电工艺的对应机器（[additives/06 §他模组机器参与](../additives/06-machines.md)）
-- [ ] 输出纯度：生成联动配方时按本模组配方的纯度规则、输入取门槛、农夫乐事与机械动力按 T1、其余按 T2 算出固定值（[additives/10 §7](../additives/10-purity-jei-ae2.md)）
+- [ ] 输出纯度：生成联动配方时按本模组配方的纯度规则、输入取门槛、农夫乐事与机械动力按 T1、其余按 T2 算出固定值；产物不带纯度时不写（2026-11-05，[additives/10 §1.1](../additives/10-purity-jei-ae2.md)）（[additives/10 §7](../additives/10-purity-jei-ae2.md)）
 - [ ] 潘马斯等作物模组只到标签层（[additives/08 §B 计划联动的作物模组](../additives/08-raw-materials.md)）
 - [ ] 各联动模组的外部纯度规则（不高于该物料的粗制下限，I28 起；原为 60%）经 `BundledPurityRules` 加入（自 I06 移入，2026-11-04 定；[additives/10 §1](../additives/10-purity-jei-ae2.md)）
 - [ ] 每个联动可在配置中关闭；未安装时整文件排除（[CONVENTIONS §2.1](../../CONVENTIONS.md)）

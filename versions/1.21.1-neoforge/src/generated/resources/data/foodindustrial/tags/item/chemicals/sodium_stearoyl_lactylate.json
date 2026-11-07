@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_stearoyl_lactylate",
+    {
+      "id": "#c:dusts/sodium_stearoyl_lactylate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_stearoyl_lactylate",
+      "required": false
+    }
+  ]
+}

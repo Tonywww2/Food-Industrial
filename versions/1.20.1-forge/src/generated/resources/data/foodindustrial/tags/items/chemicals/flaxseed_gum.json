@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:flaxseed_gum",
+    {
+      "id": "#forge:dusts/flaxseed_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/flaxseed_gum",
+      "required": false
+    }
+  ]
+}

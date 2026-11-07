@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexamethyldisiloxane",
+    "foodindustrial:flowing_hexamethyldisiloxane",
+    {
+      "id": "#forge:hexamethyldisiloxane",
+      "required": false
+    }
+  ]
+}

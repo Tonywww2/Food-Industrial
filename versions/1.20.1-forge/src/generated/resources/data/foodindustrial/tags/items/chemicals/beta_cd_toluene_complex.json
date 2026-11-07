@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_cd_toluene_complex",
+    {
+      "id": "#forge:dusts/beta_cd_toluene_complex",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/beta_cd_toluene_complex",
+      "required": false
+    }
+  ]
+}

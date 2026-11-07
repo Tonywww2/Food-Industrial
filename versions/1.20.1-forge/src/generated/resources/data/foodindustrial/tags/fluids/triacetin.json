@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:triacetin",
+    "foodindustrial:flowing_triacetin",
+    {
+      "id": "#forge:triacetin",
+      "required": false
+    }
+  ]
+}

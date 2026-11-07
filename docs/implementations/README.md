@@ -45,10 +45,10 @@
 | [I09](I09-machine-framework.md) | 机器框架 | C 框架 | 已完成 | I01、I08 |
 | [I10](I10-machine-gui.md) | 机器界面与配置器 | C 框架 | 已完成 | I09、I04 |
 | [I11](I11-logistics-blocks.md) | 辅助物流方块 | C 框架 | 已完成 | I09 |
-| [I12](I12-t0-manual-devices.md) | T0 手工工具、被动设备与世界交互 | D 设备 | 未开始 | I08、I09、I07 |
+| [I12](I12-t0-manual-devices.md) | T0 手工工具、被动设备与世界交互 | D 设备 | 未开始 | I08、I09、I07、I29 |
 | [I13](I13-vanilla-device-bridge.md) | 原版设备桥接 | D 设备 | 未开始 | I08、I01 |
 | [I14](I14-machines-t1.md) | T1 作坊机器（M01–M10） | D 设备 | 未开始 | I09、I10、I08 |
-| [I15](I15-machines-t2.md) | T2 机器（M11、M12、M14、M15、M17–M21） | D 设备 | 未开始 | I14 |
+| [I15](I15-machines-t2.md) | T2 机器（M11、M12、M14、M15、M17–M21） | D 设备 | 未开始 | I14、I29 |
 | [I16](I16-machines-t3.md) | T3 化工机器（M22–M28） | D 设备 | 未开始 | I15 |
 | [I17](I17-machines-t4.md) | T4 生物与精细机器（M29–M31） | D 设备 | 未开始 | I16 |
 | [I18](I18-content-batch-1.md) | 第一批添加剂内容（1–30） | E 内容 | 未开始 | I05、I06、I12、I13、I14 |
@@ -62,6 +62,7 @@
 | [I26](I26-gtceu.md) | GTCEu 材料联动 | F 联动与验证 | 未开始 | I05、I06 |
 | [I27](I27-performance.md) | 性能基准与回归 | F 联动与验证 | 未开始 | I09、I16 |
 | [I28](I28-purity-model-v2.md) | 纯度模型 v2 | A 基础 | 已完成 | I02、I03、I05 |
+| [I29](I29-purity-caps-compound.md) | 纯度补充：手工上限、复配产品、规范化与不带纯度的物料 | A 基础 | 已完成 | I28、I08 |
 <!-- plan-index:end -->
 
 ## 设计文档 → 计划
@@ -71,24 +72,25 @@
 <!-- doc-map:start -->
 | 设计文档 | 引用它的计划 |
 | --- | --- |
-| [CONVENTIONS.md](../../CONVENTIONS.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I04](I04-text-and-lang.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I26](I26-gtceu.md)、[I27](I27-performance.md)、[I28](I28-purity-model-v2.md) |
+| [CONVENTIONS.md](../../CONVENTIONS.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I04](I04-text-and-lang.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I26](I26-gtceu.md)、[I27](I27-performance.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
 | [docs/additives/02-gb2760-additive-list.md](../additives/02-gb2760-additive-list.md) | [I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md) |
 | [docs/additives/03-first-batch.md](../additives/03-first-batch.md) | [I18](I18-content-batch-1.md) |
 | [docs/additives/04-production-routes.md](../additives/04-production-routes.md) | [I18](I18-content-batch-1.md) |
 | [docs/additives/05-processes.md](../additives/05-processes.md) | [I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md) |
 | [docs/additives/06-machines.md](../additives/06-machines.md) | [I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I23](I23-patchouli.md)、[I25](I25-mod-integrations.md) |
-| [docs/additives/07-manual-crafting.md](../additives/07-manual-crafting.md) | [I07](I07-worldgen-and-crops.md)、[I12](I12-t0-manual-devices.md)、[I18](I18-content-batch-1.md)、[I23](I23-patchouli.md)、[I28](I28-purity-model-v2.md) |
-| [docs/additives/08-raw-materials.md](../additives/08-raw-materials.md) | [I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I25](I25-mod-integrations.md) |
-| [docs/additives/09-chemical-formulas.md](../additives/09-chemical-formulas.md) | [I05](I05-materials-registry.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I26](I26-gtceu.md)、[I28](I28-purity-model-v2.md) |
-| [docs/additives/10-purity-jei-ae2.md](../additives/10-purity-jei-ae2.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I12](I12-t0-manual-devices.md)、[I17](I17-machines-t4.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I28](I28-purity-model-v2.md) |
-| [docs/additives/11-roadmap.md](../additives/11-roadmap.md) | [I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I09](I09-machine-framework.md)、[I11](I11-logistics-blocks.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I28](I28-purity-model-v2.md) |
+| [docs/additives/07-manual-crafting.md](../additives/07-manual-crafting.md) | [I07](I07-worldgen-and-crops.md)、[I12](I12-t0-manual-devices.md)、[I18](I18-content-batch-1.md)、[I23](I23-patchouli.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
+| [docs/additives/08-raw-materials.md](../additives/08-raw-materials.md) | [I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I17](I17-machines-t4.md)、[I20](I20-content-batch-3.md)、[I25](I25-mod-integrations.md)、[I29](I29-purity-caps-compound.md) |
+| [docs/additives/09-chemical-formulas.md](../additives/09-chemical-formulas.md) | [I05](I05-materials-registry.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I26](I26-gtceu.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
+| [docs/additives/10-purity-jei-ae2.md](../additives/10-purity-jei-ae2.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I12](I12-t0-manual-devices.md)、[I17](I17-machines-t4.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I26](I26-gtceu.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
+| [docs/additives/11-roadmap.md](../additives/11-roadmap.md) | [I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I09](I09-machine-framework.md)、[I11](I11-logistics-blocks.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I28](I28-purity-model-v2.md) |
 | [docs/additives/12-finished-products.md](../additives/12-finished-products.md) | [I21](I21-finished-products.md) |
 | [docs/additives/13-batch-2.md](../additives/13-batch-2.md) | [I19](I19-content-batch-2.md) |
 | [docs/additives/14-batch-3.md](../additives/14-batch-3.md) | [I20](I20-content-batch-3.md) |
-| [docs/machines/01-recipe-types.md](../machines/01-recipe-types.md) | [I08](I08-recipe-framework.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I24](I24-ae2.md)、[I28](I28-purity-model-v2.md) |
+| [docs/additives/15-batch-4.md](../additives/15-batch-4.md) | [I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md) |
+| [docs/machines/01-recipe-types.md](../machines/01-recipe-types.md) | [I08](I08-recipe-framework.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I24](I24-ae2.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
 | [docs/machines/02-architecture.md](../machines/02-architecture.md) | [I01](I01-platform-api.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I23](I23-patchouli.md)、[I27](I27-performance.md) |
 | [docs/machines/03-io-layout.md](../machines/03-io-layout.md) | [I01](I01-platform-api.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md) |
-| [docs/machines/04-gui.md](../machines/04-gui.md) | [I01](I01-platform-api.md)、[I04](I04-text-and-lang.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I22](I22-jei.md) |
+| [docs/machines/04-gui.md](../machines/04-gui.md) | [I01](I01-platform-api.md)、[I04](I04-text-and-lang.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I15](I15-machines-t2.md)、[I22](I22-jei.md) |
 | [docs/text-standard.md](../text-standard.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I04](I04-text-and-lang.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I28](I28-purity-model-v2.md) |
 <!-- doc-map:end -->
 
@@ -125,6 +127,7 @@ flowchart LR
   I26["I26 GTCEu 材料联动"]
   I27["I27 性能基准与回归"]
   I28["I28 纯度模型 v2"]
+  I29["I29 纯度补充：手工上限、复配产品、规范化与不带纯度的物料"]
   I01 --> I02
   I02 --> I03
   I01 --> I04
@@ -143,12 +146,14 @@ flowchart LR
   I08 --> I12
   I09 --> I12
   I07 --> I12
+  I29 --> I12
   I08 --> I13
   I01 --> I13
   I09 --> I14
   I10 --> I14
   I08 --> I14
   I14 --> I15
+  I29 --> I15
   I15 --> I16
   I16 --> I17
   I05 --> I18
@@ -178,6 +183,8 @@ flowchart LR
   I02 --> I28
   I03 --> I28
   I05 --> I28
+  I28 --> I29
+  I08 --> I29
 ```
 <!-- dep-graph:end -->
 

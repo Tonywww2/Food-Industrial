@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hydrogen_peroxide",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propylene_glycol_monostearate",
+    {
+      "id": "#c:dusts/propylene_glycol_monostearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/propylene_glycol_monostearate",
+      "required": false
+    }
+  ]
+}

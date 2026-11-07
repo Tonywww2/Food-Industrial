@@ -141,7 +141,7 @@ final class DevRecipeCommands {
         reply(context, entry.id() + " on " + device.id() + " (" + device.tier().id() + ", base " + base.id() + ", speed ×" + profile.speed()
             + ", " + profile.ticks(recipe) + " ticks, " + profile.energyPerTick(recipe) + " FE/t)");
         for (int index = 0; index < recipe.outputs().size(); index++) {
-            int b = OutcomeResolver.purity(recipe, index, device.tier(), base, values, amounts, random);
+            int b = OutcomeResolver.purity(recipe, index, profile, base, values, amounts, random);
             long total = 0;
             int runs = 10000;
             for (int run = 0; run < runs; run++) {

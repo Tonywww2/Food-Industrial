@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:coconut_fatty_acids",
+  "loader": "forge:fluid_container"
+}

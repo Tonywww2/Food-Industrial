@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_lactate",
+    "foodindustrial:flowing_sodium_lactate",
+    {
+      "id": "#c:sodium_lactate",
+      "required": false
+    }
+  ]
+}

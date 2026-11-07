@@ -33,19 +33,25 @@ public final class ModTags {
     private static List<String> materialsOf(String entry, boolean fluid) {
         List<String> result = new ArrayList<>();
         if (entry.startsWith("#")) {
-            String own = Purity.materialOfTag(entry.substring(1), fluid);
+            String own = materialOfTag(entry.substring(1), fluid);
             if (own != null) {
                 result.add(own);
             }
         }
         Map<String, List<TagPlan.Value>> tags = fluid ? plan().fluids() : plan().items();
         tags.forEach((tag, values) -> {
-            String material = Purity.materialOfTag(tag, fluid);
+            String material = materialOfTag(tag, fluid);
             if (material != null && !result.contains(material) && values.stream().anyMatch(value -> value.id().equals(entry))) {
                 result.add(material);
             }
         });
         return result;
+    }
+
+    /** Material (with or without purity) whose recipe tag is {@code tag}. */
+    private static String materialOfTag(String tag, boolean fluid) {
+        String material = Purity.materialOfTag(tag, fluid);
+        return material != null ? material : Purity.plainMaterialOfTag(tag, fluid);
     }
 
     private static void generate(PlatformDatagen.Sink sink) {

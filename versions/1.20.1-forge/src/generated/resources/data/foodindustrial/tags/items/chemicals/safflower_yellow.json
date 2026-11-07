@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:safflower_yellow",
+    {
+      "id": "#forge:dusts/safflower_yellow",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/safflower_yellow",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:ferric_tartrate",
+  "category": "foodindustrial:k4_organic_liquid",
+  "grades": {
+    "crude": 0.8,
+    "refined": 1.7,
+    "food": 2.8,
+    "lab": null
+  }
+}

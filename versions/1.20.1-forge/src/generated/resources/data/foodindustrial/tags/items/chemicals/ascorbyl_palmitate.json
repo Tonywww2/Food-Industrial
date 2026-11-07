@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ascorbyl_palmitate",
+    {
+      "id": "#forge:dusts/ascorbyl_palmitate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ascorbyl_palmitate",
+      "required": false
+    }
+  ]
+}

@@ -27,11 +27,14 @@ class MaterialTableTest {
             if (def.isFluid()) {
                 assertNotEquals(0, def.color(), "fluid colour of " + def.id());
             }
-            if (Set.of("culture", "enzyme").contains(def.category())) {
-                assertEquals("foodindustrial:k11_culture", def.purity().get("category").getAsString(), "cultures and enzymes are K11");
+            // additives/10 §1.1, §1.4 (2026-11-05): cultures are K11 and only cultures; enzymes and consumables carry no purity
+            if (def.category().equals("culture")) {
+                assertEquals("foodindustrial:k11_culture", def.purity().get("category").getAsString(), "cultures are K11: " + def.id());
             }
-            if (!Set.of("chemical", "culture", "enzyme").contains(def.category())) {
-                assertNull(def.purity(), "only chemicals, cultures and enzymes have a purity category: " + def.id());
+            boolean k11 = def.purity() != null && def.purity().get("category").getAsString().equals("foodindustrial:k11_culture");
+            assertEquals(def.category().equals("culture"), k11, "K11 holds only cultures: " + def.id());
+            if (!Set.of("chemical", "culture").contains(def.category())) {
+                assertNull(def.purity(), "only chemicals and cultures have a purity category: " + def.id());
             }
             boolean k0 = def.purity() != null && def.purity().get("category").getAsString().equals("foodindustrial:k0_raw");
             assertEquals(def.purity() != null && (!k0 || def.purity().has("source_purity")), def.bearer(), "bearer of " + def.id());
@@ -53,11 +56,17 @@ class MaterialTableTest {
         assertEquals(null, find("pectin").formula());
         assertFalse(find("latex").bearer());
         assertFalse(find("nickel_catalyst").bearer());
-        assertFalse(find("gum_base").bearer(), "compound products carry no purity");
-        assertTrue(find("bittern").bearer(), "K0 with source purity shows its content");
-        assertTrue(find("resin").bearer());
-        assertFalse(find("soda_lye").bearer(), "K0 without source purity");
-        assertTrue(find("fish_liver_oil").bearer());
+        assertTrue(find("gum_base").bearer(), "compound products are K12");
+        assertEquals("foodindustrial:k12_compound", find("gum_base").purity().get("category").getAsString());
+        assertFalse(find("brine").bearer(), "K0 without source purity");
+        // carry no purity (additives/10 §1.1): mixtures, enzymes and enzyme sources, distilled water, consumables
+        for (String id : List.of("bittern", "resin", "soda_lye", "fish_liver_oil", "enzymes", "lysozyme", "pancreatic_extract",
+            "beta_amylase", "distilled_water", "expression_vector")) {
+            assertNull(find(id).purity(), id);
+            assertFalse(find(id).bearer(), id);
+        }
+        assertEquals("consumable", find("expression_vector").category());
+        assertEquals("foodindustrial:k1_inorganic", find("sodium_bisulfite").purity().get("category").getAsString());
         assertEquals(83, find("salt").purity().get("source_purity").getAsInt());
         assertNotNull(find("vpo_catalyst").formula());
     }

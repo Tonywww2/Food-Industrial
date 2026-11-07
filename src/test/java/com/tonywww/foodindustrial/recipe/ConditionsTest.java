@@ -66,6 +66,8 @@ class ConditionsTest {
         assertEquals(PurityRule.SOURCE_DEFAULT, ProcessTypes.FERMENTING.defaultRule(plain, true));
         assertEquals(PurityRule.SOURCE_DEFAULT, ProcessTypes.CRYSTALLIZING.defaultRule(plain, false));
         assertEquals(PurityRule.SOURCE_DEFAULT, ProcessTypes.HARVESTING.defaultRule(plain, true));
+        assertEquals(PurityRule.SOURCE_FOOD, ProcessTypes.MIXING.defaultRule(plain, true), "R19 compounding: food bound");
+        assertEquals(PurityRule.SOURCE_DEFAULT, ProcessTypes.MIXING.defaultRule(plain, false));
         assertEquals(19, ProcessTypes.recipeTypes().size());
         assertEquals(21, ProcessTypes.all().size());
     }
@@ -79,5 +81,21 @@ class ConditionsTest {
         PurityRule rule = PurityRule.CODEC.parse(JsonOps.INSTANCE, json).result().orElseThrow();
         assertEquals(new PurityRule(PurityRule.Mode.SOURCE, 3.5, 97), rule);
         assertEquals(json.toString(), PurityRule.CODEC.encodeStart(JsonOps.INSTANCE, rule).result().orElseThrow().toString());
+    }
+
+    @Test
+    void t0MaxCodec() {
+        JsonElement grade = JsonParser.parseString("{\"mode\":\"removal\",\"value\":50,\"t0_max\":\"refined\"}");
+        PurityRule rule = PurityRule.CODEC.parse(JsonOps.INSTANCE, grade).result().orElseThrow();
+        assertEquals(PurityRule.removal(50).withT0Max(com.tonywww.foodindustrial.api.purity.PurityGrade.REFINED), rule);
+        assertEquals(com.tonywww.foodindustrial.api.purity.PurityGrade.REFINED, rule.t0MaxGrade());
+        assertEquals(grade.toString(), PurityRule.CODEC.encodeStart(JsonOps.INSTANCE, rule).result().orElseThrow().toString());
+        JsonElement percent = JsonParser.parseString("{\"mode\":\"keep\",\"t0_max\":92.5}");
+        PurityRule byPercent = PurityRule.CODEC.parse(JsonOps.INSTANCE, percent).result().orElseThrow();
+        assertEquals(com.tonywww.foodindustrial.core.purity.PurityScale.ofPercent(92.5), byPercent.t0MaxByte(null));
+        assertEquals(percent.toString(), PurityRule.CODEC.encodeStart(JsonOps.INSTANCE, byPercent).result().orElseThrow().toString());
+        assertTrue(PurityRule.CODEC.parse(JsonOps.INSTANCE, JsonParser.parseString("{\"mode\":\"keep\",\"t0_max\":\"poor\"}")).result().isEmpty());
+        assertTrue(PurityRule.CODEC.parse(JsonOps.INSTANCE, JsonParser.parseString("{\"mode\":\"keep\",\"t0_max\":\"best\"}")).result().isEmpty());
+        assertTrue(PurityRule.CODEC.parse(JsonOps.INSTANCE, JsonParser.parseString("{\"mode\":\"keep\",\"t0_max\":92.55}")).result().isEmpty());
     }
 }

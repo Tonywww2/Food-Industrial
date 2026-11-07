@@ -10,6 +10,15 @@
 | 代码位置 | `content.batch1`（数据生成） |
 
 > 纯度模型已改为 v2（2026-11-04）：本计划中与 [I28](I28-purity-model-v2.md) 冲突的条目以 I28 为准。
+>
+> 2026-11-05 设计调整（以原文档为准）：
+> - 不带纯度的物料（2026-11-05，[additives/10 §1.1](../additives/10-purity-jei-ae2.md)）：酶与酶源（麦芽、大麦麦芽、木瓜乳汁等）、蒸馏水、多组分混合物（苦卤、灰、碱液、硝水、发酵液、天然油脂、松脂、焦油、原油等）。这些物料的产出不写 `Purity`，配方不对它们设门槛，它们也不参与起点纯度；输入全部不带纯度时产物按来源方式取值。
+> - 27 用的动物脂改为混合油脂 `animal_fat`（不带纯度）；`tristearin` 只作硬化油代表物（[additives/09](../additives/09-chemical-formulas.md)）。
+> - 10 C 热法磷酸的炉渣为 `phosphorus_slag`（不带纯度）；`calcium_silicate` 只指食品硅酸钙。
+> - 11 用的 `magnesite` 改名“菱镁矿粉”；食品碳酸镁是另一物料 `magnesium_carbonate`。
+> - 共用中间体增加蒸馏水 `distilled_water`：M08 蒸馏，M25 离子交换、M31 反渗透同产，不带纯度。
+> - 用氢氰酸、光气的可选路线全部注册，不设配置项禁用（[additives/11 §待定问题 5](../additives/11-roadmap.md)，2026-11-05）；本批涉及 2 D。
+> - 精制配方的 `t0_max` 与复配产品的 K12 规则见 [I29](I29-purity-caps-compound.md)；装规范化模块的设备按档位下限输出（I15）。
 
 ## 目标
 
@@ -24,7 +33,7 @@
 
 | 编号 | 名称 | 最早阶段 | 物料 ID（09） | 路线（原文档） | 状态 |
 | --- | --- | --- | --- | --- | --- |
-| — | 共用中间体（硫酸、硝酸、盐酸、氮气、乙醛等） | T1–T3 | 见 09 | [additives/04 §共用中间体与基础化学品](../additives/04-production-routes.md) | 未开始 |
+| — | 共用中间体（硫酸、硝酸、盐酸、氮气、乙醛、蒸馏水等） | T1–T3 | 见 09 | [additives/04 §共用中间体与基础化学品](../additives/04-production-routes.md) | 未开始 |
 | 1 | 冰乙酸（冰醋酸） | T0（最终 T3） | — | [additives/04 §1](../additives/04-production-routes.md) | 未开始 |
 | 2 | 乳酸 | T0（最终 T4） | `lactic_acid` | [additives/04 §2](../additives/04-production-routes.md) | 未开始 |
 | 3 | 柠檬酸 | T1（最终 T4） | `citric_acid` | [additives/04 §3](../additives/04-production-routes.md) | 未开始 |
@@ -68,7 +77,7 @@
 ## 验收
 
 - [ ] 清单中每一项在“最早阶段”的设备上能做出，并能沿路线升级到最终阶段
-- [ ] 数据生成检查全部通过（时长为 4 的倍数、每条配方至少一台设备可执行、产出写入纯度）
+- [ ] 数据生成检查全部通过（时长为 4 的倍数、每条配方至少一台设备可执行、带纯度的产出写入纯度、不带纯度的物料不写纯度也不设门槛）
 - [ ] 三个节点的数据生成输出无报错
 - [ ] [additives/03 §清单](../additives/03-first-batch.md) 中每项的“最早”“最终”阶段都能做到
 

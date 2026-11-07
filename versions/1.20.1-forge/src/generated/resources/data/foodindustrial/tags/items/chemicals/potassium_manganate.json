@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_manganate",
+    {
+      "id": "#forge:dusts/potassium_manganate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_manganate",
+      "required": false
+    }
+  ]
+}

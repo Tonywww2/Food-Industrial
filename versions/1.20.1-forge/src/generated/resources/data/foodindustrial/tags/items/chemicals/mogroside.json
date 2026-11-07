@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mogroside",
+    {
+      "id": "#forge:dusts/mogroside",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/mogroside",
+      "required": false
+    }
+  ]
+}

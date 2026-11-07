@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diisopropyl_ketone",
+    "foodindustrial:flowing_diisopropyl_ketone",
+    {
+      "id": "#forge:diisopropyl_ketone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:iron_oxide_red",
+    {
+      "id": "#forge:dusts/iron_oxide_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/iron_oxide_red",
+      "required": false
+    }
+  ]
+}

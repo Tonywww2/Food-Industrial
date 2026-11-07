@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_tartrate",
+    "foodindustrial:flowing_sodium_tartrate",
+    {
+      "id": "#forge:sodium_tartrate",
+      "required": false
+    }
+  ]
+}

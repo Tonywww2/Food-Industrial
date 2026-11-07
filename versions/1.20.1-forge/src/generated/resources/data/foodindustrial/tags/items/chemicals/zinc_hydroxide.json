@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_hydroxide",
+    {
+      "id": "#forge:dusts/zinc_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_hydroxide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_cyclamate",
+    {
+      "id": "#forge:dusts/calcium_cyclamate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_cyclamate",
+      "required": false
+    }
+  ]
+}

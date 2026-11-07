@@ -28,7 +28,8 @@ import java.util.function.Supplier;
 /**
  * Registers every row of the material master table (I05): solids as {@link MaterialItem}s, liquids,
  * solutions and gases as fluids (liquids with block and bucket, gases without). Materials with a purity
- * category register their purity data; purity bearers register their items, fluids and buckets.
+ * category register their purity data, the others register as plain materials (additives/10 §1.1);
+ * purity bearers register their items, fluids and buckets.
  * Buckets keep the purity, and buckets filled from the world get the material's value for missing
  * purity (external default, or source purity for K0; additives/10 §1.6).
  */
@@ -43,9 +44,11 @@ public final class ModMaterials {
     static {
         for (MaterialDef def : MaterialTable.load()) {
             String material = materialId(def);
+            String tag = FoodIndustrial.MOD_ID + ":" + def.tag();
             if (def.purity() != null) {
-                String tag = FoodIndustrial.MOD_ID + ":" + def.tag();
                 Purity.registerMaterial(material, def.isFluid() ? null : tag, def.isFluid() ? tag : null, def.purity());
+            } else {
+                Purity.registerPlainMaterial(material, def.isFluid() ? null : tag, def.isFluid() ? tag : null);
             }
             if (def.isFluid()) {
                 PlatformFluids.Spec spec = def.state() == MaterialDef.State.GAS ? PlatformFluids.Spec.gas(def.color()) : PlatformFluids.Spec.liquid(def.color());
@@ -117,7 +120,7 @@ public final class ModMaterials {
         });
         ModCreativeTabs.add(ModCreativeTabs.Tab.CHEMICALS, output -> tabEntries(output, "chemical", "catalyst"));
         ModCreativeTabs.add(ModCreativeTabs.Tab.RAW_MATERIALS, output -> tabEntries(output, "raw"));
-        ModCreativeTabs.add(ModCreativeTabs.Tab.CULTURES, output -> tabEntries(output, "culture", "enzyme"));
+        ModCreativeTabs.add(ModCreativeTabs.Tab.CULTURES, output -> tabEntries(output, "culture", "enzyme", "consumable"));
         ModCreativeTabs.icon(ModCreativeTabs.Tab.CHEMICALS, () -> icon("salt"));
         ModCreativeTabs.icon(ModCreativeTabs.Tab.RAW_MATERIALS, () -> icon("tomato_pomace"));
         ModCreativeTabs.icon(ModCreativeTabs.Tab.CULTURES, () -> icon("acetobacter"));

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amaranth_lake",
+    {
+      "id": "#c:dusts/amaranth_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/amaranth_lake",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylcellulose",
+    {
+      "id": "#c:dusts/methylcellulose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylcellulose",
+      "required": false
+    }
+  ]
+}

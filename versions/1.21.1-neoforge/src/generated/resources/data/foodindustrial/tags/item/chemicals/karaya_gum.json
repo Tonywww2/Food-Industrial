@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:karaya_gum",
+    {
+      "id": "#c:dusts/karaya_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/karaya_gum",
+      "required": false
+    }
+  ]
+}

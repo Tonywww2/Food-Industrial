@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acrylonitrile",
+    "foodindustrial:flowing_acrylonitrile",
+    {
+      "id": "#forge:acrylonitrile",
+      "required": false
+    }
+  ]
+}

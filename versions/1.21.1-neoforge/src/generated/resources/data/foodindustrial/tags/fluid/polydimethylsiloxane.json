@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polydimethylsiloxane",
+    "foodindustrial:flowing_polydimethylsiloxane",
+    {
+      "id": "#c:polydimethylsiloxane",
+      "required": false
+    }
+  ]
+}

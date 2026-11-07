@@ -10,6 +10,14 @@
 | 代码位置 | `content.batch2`（数据生成） |
 
 > 纯度模型已改为 v2（2026-11-04）：本计划中与 [I28](I28-purity-model-v2.md) 冲突的条目以 I28 为准。
+>
+> 2026-11-05 设计调整（以原文档为准）：
+> - 阶段按工艺重标：52、53、71、61 改为 T2（[additives/11 §待定问题 25](../additives/11-roadmap.md)），清单已改。
+> - 56 拆为两种物料：A 路线得 DL-苹果酸 `malic_acid`，B 路线得 L-苹果酸 `l_malic_acid`（与第四批 140 同一物品）。
+> - 61 A 的姜黄粉是独立物品 `turmeric`（K5，界限见 [additives/10 §1.5](../additives/10-purity-jei-ae2.md)，手工 3% 为食品级）；姜黄素本身从 B 起。
+> - 动物脂改为混合油脂 `animal_fat`（不带纯度）：71 用的硬脂酸按第四批 276 从动物脂脂肪酸压榨、精馏得到，粗硬脂酸含棕榈酸（[additives/15](../additives/15-batch-4.md)）；第四批暂无实装计划，这条中间体路线在本计划先做。
+> - 77 B 用氢氰酸，为可选路线；用氢氰酸、光气的可选路线全部注册，不设配置项禁用（[additives/11 §待定问题 5](../additives/11-roadmap.md)，2026-11-05）。
+> - 不带纯度的物料（2026-11-05，[additives/10 §1.1](../additives/10-purity-jei-ae2.md)）：酶与酶源（麦芽、大麦麦芽、木瓜乳汁等）、蒸馏水、多组分混合物（苦卤、灰、碱液、硝水、发酵液、天然油脂、松脂、焦油、原油等）。这些物料的产出不写 `Purity`，配方不对它们设门槛，它们也不参与起点纯度；输入全部不带纯度时产物按来源方式取值。
 
 ## 目标
 
@@ -44,16 +52,16 @@
 | 49 | 磷酸三钙 | T2 | `tricalcium_phosphate` | [additives/13 §磷酸盐（49–53）](../additives/13-batch-2.md) | 未开始 |
 | 50 | 磷酸氢二钠 | T2 | `disodium_phosphate` | [additives/13 §磷酸盐（49–53）](../additives/13-batch-2.md) | 未开始 |
 | 51 | 三聚磷酸钠 | T3 | `sodium_tripolyphosphate` | [additives/13 §磷酸盐（49–53）](../additives/13-batch-2.md) | 未开始 |
-| 52 | 多聚磷酸钠（含六偏磷酸钠） | T3 | — | [additives/13 §磷酸盐（49–53）](../additives/13-batch-2.md) | 未开始 |
-| 53 | 焦磷酸钠 | T3 | `tetrasodium_pyrophosphate` | [additives/13 §磷酸盐（49–53）](../additives/13-batch-2.md) | 未开始 |
+| 52 | 多聚磷酸钠（含六偏磷酸钠） | T2 | — | [additives/13 §磷酸盐（49–53）](../additives/13-batch-2.md) | 未开始 |
+| 53 | 焦磷酸钠 | T2 | `tetrasodium_pyrophosphate` | [additives/13 §磷酸盐（49–53）](../additives/13-batch-2.md) | 未开始 |
 | 54 | L(+)-酒石酸 | T1 | `tartaric_acid` | [additives/13 §酸度调节剂（54–58）](../additives/13-batch-2.md) | 未开始 |
 | 55 | 酒石酸氢钾（塔塔粉） | T0 | `potassium_bitartrate` | [additives/13 §酸度调节剂（54–58）](../additives/13-batch-2.md) | 未开始 |
-| 56 | 苹果酸 | T3 | `malic_acid` | [additives/13 §酸度调节剂（54–58）](../additives/13-batch-2.md) | 未开始 |
+| 56 | 苹果酸 | T3 | `malic_acid`（DL）、`l_malic_acid`（L） | [additives/13 §酸度调节剂（54–58）](../additives/13-batch-2.md) | 未开始 |
 | 57 | 富马酸 | T3 | `fumaric_acid` | [additives/13 §酸度调节剂（54–58）](../additives/13-batch-2.md) | 未开始 |
 | 58 | 柠檬酸钠 | T2 | `trisodium_citrate` | [additives/13 §酸度调节剂（54–58）](../additives/13-batch-2.md) | 未开始 |
 | 59 | 番茄红素 | T2 | `lycopene` | [additives/13 §着色剂（59–64）](../additives/13-batch-2.md) | 未开始 |
 | 60 | 辣椒红 | T0 | — | [additives/13 §着色剂（59–64）](../additives/13-batch-2.md) | 未开始 |
-| 61 | 姜黄素 | T0 | `curcumin` | [additives/13 §着色剂（59–64）](../additives/13-batch-2.md) | 未开始 |
+| 61 | 姜黄素 | T2 | `curcumin`（A 的姜黄粉为 `turmeric`） | [additives/13 §着色剂（59–64）](../additives/13-batch-2.md) | 未开始 |
 | 62 | 栀子黄 | T0 | — | [additives/13 §着色剂（59–64）](../additives/13-batch-2.md) | 未开始 |
 | 63 | 核黄素（维生素 B2） | T4 | `riboflavin` | [additives/13 §着色剂（59–64）](../additives/13-batch-2.md) | 未开始 |
 | 64 | 焦糖色（加氨生产、亚硫酸铵法） | T3 | `caramel` | [additives/13 §着色剂（59–64）](../additives/13-batch-2.md) | 未开始 |
@@ -63,7 +71,7 @@
 | 68 | 抗坏血酸钠 | T2 | `sodium_ascorbate` | [additives/13 §抗氧化剂（65–69）](../additives/13-batch-2.md) | 未开始 |
 | 69 | 磷脂（卵磷脂） | T1 | `lecithin` | [additives/13 §抗氧化剂（65–69）](../additives/13-batch-2.md) | 未开始 |
 | 70 | 蔗糖脂肪酸酯 | T3 | — | [additives/13 §乳化剂（70–72）](../additives/13-batch-2.md) | 未开始 |
-| 71 | 山梨醇酐单硬脂酸酯（司盘 60） | T3 | `sorbitan_monostearate` | [additives/13 §乳化剂（70–72）](../additives/13-batch-2.md) | 未开始 |
+| 71 | 山梨醇酐单硬脂酸酯（司盘 60） | T2 | `sorbitan_monostearate` | [additives/13 §乳化剂（70–72）](../additives/13-batch-2.md) | 未开始 |
 | 72 | 聚氧乙烯(20)山梨醇酐单油酸酯（吐温 80） | T3 | — | [additives/13 §乳化剂（70–72）](../additives/13-batch-2.md) | 未开始 |
 | 73 | 5'-呈味核苷酸二钠 | T4 | — | [additives/13 §增味剂、其他（73–78）](../additives/13-batch-2.md) | 未开始 |
 | 74 | 氯化钙 | T2 | `calcium_chloride` | [additives/13 §增味剂、其他（73–78）](../additives/13-batch-2.md) | 未开始 |
@@ -84,7 +92,7 @@
 ## 验收
 
 - [ ] 清单中每一项在“最早阶段”的设备上能做出，并能沿路线升级到最终阶段
-- [ ] 数据生成检查全部通过（时长为 4 的倍数、每条配方至少一台设备可执行、产出写入纯度）
+- [ ] 数据生成检查全部通过（时长为 4 的倍数、每条配方至少一台设备可执行、带纯度的产出写入纯度、不带纯度的物料不写纯度也不设门槛）
 - [ ] 三个节点的数据生成输出无报错
 - [ ] [additives/13 §新增原料](../additives/13-batch-2.md) 中的原料都有获取途径
 

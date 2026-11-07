@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:genipin",
+    {
+      "id": "#forge:dusts/genipin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/genipin",
+      "required": false
+    }
+  ]
+}

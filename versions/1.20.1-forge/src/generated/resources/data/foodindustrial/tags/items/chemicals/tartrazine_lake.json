@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tartrazine_lake",
+    {
+      "id": "#forge:dusts/tartrazine_lake",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tartrazine_lake",
+      "required": false
+    }
+  ]
+}

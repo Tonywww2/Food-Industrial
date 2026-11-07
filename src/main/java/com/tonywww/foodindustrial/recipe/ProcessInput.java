@@ -19,6 +19,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 /**
  * One recipe input (machines/01 §3.1): an item ingredient with a count, or a fluid ingredient
  * {@code foodindustrial:fluid} with its amount inside.
@@ -38,6 +40,13 @@ public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInpu
 
     /** Weight in the start purity: items count × 1,000, fluids by mB (additives/10 §2.1). */
     long weight();
+
+    /** The {@code min_purity} threshold, if written. */
+    Optional<PurityThreshold> threshold();
+
+    /** Material without purity (additives/10 §1.1) the input's tag refers to, or {@code null}; for checks. */
+    @Nullable
+    String plainMaterial();
 
     /** Item input. */
     record ItemInput(Ingredient ingredient, int count, @Nullable String material) implements ProcessInput {
@@ -65,6 +74,17 @@ public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInpu
         @Override
         public long weight() {
             return count * PurityScale.ITEM_AMOUNT;
+        }
+
+        @Override
+        public Optional<PurityThreshold> threshold() {
+            return PlatformIngredients.purityThreshold(ingredient);
+        }
+
+        @Override
+        @Nullable
+        public String plainMaterial() {
+            return Purity.plainMaterialHint(PlatformIngredients.references(PlatformIngredients.unwrap(ingredient)), false);
         }
     }
 
@@ -96,6 +116,17 @@ public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInpu
         @Override
         public long weight() {
             return fluid.amount();
+        }
+
+        @Override
+        public Optional<PurityThreshold> threshold() {
+            return fluid.threshold();
+        }
+
+        @Override
+        @Nullable
+        public String plainMaterial() {
+            return fluid.tag().map(tag -> Purity.plainMaterialOfTag(PlatformTags.tagId(tag), true)).orElse(null);
         }
     }
 

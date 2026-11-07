@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:stabilized_chlorine_dioxide",
+  "category": "foodindustrial:k1_inorganic",
+  "grades": {
+    "crude": 0.3,
+    "refined": 0.7,
+    "food": 1.1,
+    "lab": null
+  }
+}

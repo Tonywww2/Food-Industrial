@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tripotassium_phosphate",
+    {
+      "id": "#c:dusts/tripotassium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tripotassium_phosphate",
+      "required": false
+    }
+  ]
+}

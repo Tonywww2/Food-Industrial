@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citrated_monoglycerides",
+    {
+      "id": "#forge:dusts/citrated_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/citrated_monoglycerides",
+      "required": false
+    }
+  ]
+}

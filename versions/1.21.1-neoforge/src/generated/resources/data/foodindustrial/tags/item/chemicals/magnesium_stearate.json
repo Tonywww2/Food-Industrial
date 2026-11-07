@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_stearate",
+    {
+      "id": "#c:dusts/magnesium_stearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_stearate",
+      "required": false
+    }
+  ]
+}

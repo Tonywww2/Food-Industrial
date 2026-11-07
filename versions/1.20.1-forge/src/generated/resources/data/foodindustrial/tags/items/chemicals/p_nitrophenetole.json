@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_nitrophenetole",
+    {
+      "id": "#forge:dusts/p_nitrophenetole",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_nitrophenetole",
+      "required": false
+    }
+  ]
+}

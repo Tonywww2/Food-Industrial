@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_alum",
+    {
+      "id": "#c:dusts/ammonium_alum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ammonium_alum",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lingonberry_red",
+    {
+      "id": "#forge:dusts/lingonberry_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lingonberry_red",
+      "required": false
+    }
+  ]
+}

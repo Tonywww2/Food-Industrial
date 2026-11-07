@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclohexanol",
+    "foodindustrial:flowing_cyclohexanol",
+    {
+      "id": "#c:cyclohexanol",
+      "required": false
+    }
+  ]
+}

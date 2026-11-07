@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quinoline_yellow_lake",
+    {
+      "id": "#forge:dusts/quinoline_yellow_lake",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/quinoline_yellow_lake",
+      "required": false
+    }
+  ]
+}

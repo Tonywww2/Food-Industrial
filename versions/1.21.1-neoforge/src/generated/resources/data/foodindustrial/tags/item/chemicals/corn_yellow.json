@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:corn_yellow",
+    {
+      "id": "#c:dusts/corn_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/corn_yellow",
+      "required": false
+    }
+  ]
+}

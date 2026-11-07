@@ -19,7 +19,7 @@ public final class GuiText {
     static void bootstrap() {
         add("panel", "info", "信息", "Info");
         add("panel", "upgrades", "升级与模块", "Upgrades and modules");
-        add("panel", "io", "输入输出", "Input and output");
+        add("panel", "io", "I/O", "I/O");
         add("panel", "redstone", "红石", "Redstone");
 
         add("status", "running", "运行中", "Running");
@@ -38,6 +38,7 @@ public final class GuiText {
         add("io", "both", "输入 + 输出", "Input + output");
         add("io", "items", "物品：%s", "Items: %s");
         add("io", "fluids", "流体：%s", "Fluids: %s");
+        add("io", "neighbour", "相邻：%s", "Next to: %s");
         add("io", "front", "前", "Front");
         add("io", "back", "后", "Back");
         add("io", "left", "左", "Left");
@@ -51,9 +52,11 @@ public final class GuiText {
         add("io", "on", "开", "On");
         add("io", "switched_off", "关", "Off");
         add("io", "advanced", "Alt + 单击：高级选项", "Alt + click: advanced options");
-        add("io", "scope_items", "物品输出范围", "Item output");
-        add("io", "scope_fluid_out", "流体输出范围", "Fluid output");
-        add("io", "scope_fluid_in", "流体输入范围", "Fluid input");
+        add("io", "advanced_title", "高级：%s", "Advanced: %s");
+        add("io", "scope_out", "输出范围", "Output range");
+        add("io", "scope_in", "输入范围", "Input range");
+        add("io", "label_items", "物品：", "Items:");
+        add("io", "label_fluids", "流体：", "Fluids:");
         add("io", "scope_all", "全部", "All");
         add("io", "scope_main", "仅主产物", "Main product only");
         add("io", "scope_byproduct", "仅副产物", "Byproducts only");
@@ -64,8 +67,6 @@ public final class GuiText {
         add("redstone", "low", "低电平运行", "Run on low signal");
         add("redstone", "high", "高电平运行", "Run on high signal");
         add("redstone", "disabled", "禁用", "Disabled");
-        add("redstone", "powered", "当前信号：有", "Signal: on");
-        add("redstone", "unpowered", "当前信号：无", "Signal: off");
 
         add("info", "recipe", "配方：%s", "Recipe: %s");
         add("info", "none", "无", "None");

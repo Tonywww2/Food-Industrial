@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dilauryl_thiodipropionate",
+    {
+      "id": "#forge:dusts/dilauryl_thiodipropionate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dilauryl_thiodipropionate",
+      "required": false
+    }
+  ]
+}

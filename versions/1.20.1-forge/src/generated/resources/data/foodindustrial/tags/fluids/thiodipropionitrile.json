@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiodipropionitrile",
+    "foodindustrial:flowing_thiodipropionitrile",
+    {
+      "id": "#forge:thiodipropionitrile",
+      "required": false
+    }
+  ]
+}

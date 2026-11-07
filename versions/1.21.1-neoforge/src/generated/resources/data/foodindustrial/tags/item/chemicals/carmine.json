@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carmine",
+    {
+      "id": "#c:dusts/carmine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carmine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octenyl_succinic_anhydride",
+    "foodindustrial:flowing_octenyl_succinic_anhydride",
+    {
+      "id": "#forge:octenyl_succinic_anhydride",
+      "required": false
+    }
+  ]
+}

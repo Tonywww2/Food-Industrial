@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylenediamine",
+    "foodindustrial:flowing_ethylenediamine",
+    {
+      "id": "#forge:ethylenediamine",
+      "required": false
+    }
+  ]
+}

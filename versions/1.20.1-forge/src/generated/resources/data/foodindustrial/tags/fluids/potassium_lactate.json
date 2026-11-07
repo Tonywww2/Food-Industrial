@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_lactate",
+    "foodindustrial:flowing_potassium_lactate",
+    {
+      "id": "#forge:potassium_lactate",
+      "required": false
+    }
+  ]
+}
