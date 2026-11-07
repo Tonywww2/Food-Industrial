@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_acid_pyrophosphate",
+    {
+      "id": "#c:dusts/calcium_acid_pyrophosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_acid_pyrophosphate",
+      "required": false
+    }
+  ]
+}

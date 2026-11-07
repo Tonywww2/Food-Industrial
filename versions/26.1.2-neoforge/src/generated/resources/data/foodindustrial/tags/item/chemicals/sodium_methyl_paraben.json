@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_methyl_paraben",
+    {
+      "id": "#c:dusts/sodium_methyl_paraben",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_methyl_paraben",
+      "required": false
+    }
+  ]
+}

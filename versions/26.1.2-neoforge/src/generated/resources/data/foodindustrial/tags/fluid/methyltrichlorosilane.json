@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyltrichlorosilane",
+    "foodindustrial:flowing_methyltrichlorosilane",
+    {
+      "id": "#c:methyltrichlorosilane",
+      "required": false
+    }
+  ]
+}

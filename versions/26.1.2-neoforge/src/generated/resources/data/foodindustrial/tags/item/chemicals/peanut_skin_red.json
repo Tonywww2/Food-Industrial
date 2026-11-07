@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:peanut_skin_red",
+    {
+      "id": "#c:dusts/peanut_skin_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/peanut_skin_red",
+      "required": false
+    }
+  ]
+}

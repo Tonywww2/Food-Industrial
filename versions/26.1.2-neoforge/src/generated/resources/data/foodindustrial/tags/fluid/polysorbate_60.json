@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polysorbate_60",
+    "foodindustrial:flowing_polysorbate_60",
+    {
+      "id": "#c:polysorbate_60",
+      "required": false
+    }
+  ]
+}

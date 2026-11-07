@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:r_acid",
+    {
+      "id": "#c:dusts/r_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/r_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geniposide",
+    "foodindustrial:flowing_geniposide",
+    {
+      "id": "#c:geniposide",
+      "required": false
+    }
+  ]
+}

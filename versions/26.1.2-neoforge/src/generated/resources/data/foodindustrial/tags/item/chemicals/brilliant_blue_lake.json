@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:brilliant_blue_lake",
+    {
+      "id": "#c:dusts/brilliant_blue_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/brilliant_blue_lake",
+      "required": false
+    }
+  ]
+}

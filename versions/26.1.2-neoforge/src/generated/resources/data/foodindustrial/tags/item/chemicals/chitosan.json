@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chitosan",
+    {
+      "id": "#c:dusts/chitosan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chitosan",
+      "required": false
+    }
+  ]
+}

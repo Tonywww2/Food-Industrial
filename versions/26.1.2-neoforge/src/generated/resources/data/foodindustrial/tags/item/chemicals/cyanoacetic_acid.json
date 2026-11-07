@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyanoacetic_acid",
+    {
+      "id": "#c:dusts/cyanoacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyanoacetic_acid",
+      "required": false
+    }
+  ]
+}

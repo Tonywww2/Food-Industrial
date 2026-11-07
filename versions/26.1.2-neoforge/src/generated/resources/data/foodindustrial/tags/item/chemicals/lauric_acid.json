@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lauric_acid",
+    {
+      "id": "#c:dusts/lauric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lauric_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:starch_sodium_octenylsuccinate",
+    {
+      "id": "#c:dusts/starch_sodium_octenylsuccinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/starch_sodium_octenylsuccinate",
+      "required": false
+    }
+  ]
+}

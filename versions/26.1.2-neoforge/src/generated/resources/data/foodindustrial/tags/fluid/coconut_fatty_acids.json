@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coconut_fatty_acids",
+    "foodindustrial:flowing_coconut_fatty_acids",
+    {
+      "id": "#c:coconut_fatty_acids",
+      "required": false
+    }
+  ]
+}

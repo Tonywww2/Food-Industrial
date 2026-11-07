@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:lactulose_syrup",
+  "category": "foodindustrial:k2_sugar",
+  "grades": {
+    "crude": 10,
+    "refined": 20,
+    "food": 33,
+    "lab": null
+  }
+}

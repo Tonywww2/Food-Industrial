@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:radish_red",
+    {
+      "id": "#c:dusts/radish_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/radish_red",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_carboxymethyl_starch",
+    {
+      "id": "#c:dusts/sodium_carboxymethyl_starch",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_carboxymethyl_starch",
+      "required": false
+    }
+  ]
+}

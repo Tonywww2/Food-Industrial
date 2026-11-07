@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octamethylcyclotetrasiloxane",
+    "foodindustrial:flowing_octamethylcyclotetrasiloxane",
+    {
+      "id": "#c:octamethylcyclotetrasiloxane",
+      "required": false
+    }
+  ]
+}

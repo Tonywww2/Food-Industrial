@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_cyclodextrin",
+    {
+      "id": "#c:dusts/beta_cyclodextrin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/beta_cyclodextrin",
+      "required": false
+    }
+  ]
+}

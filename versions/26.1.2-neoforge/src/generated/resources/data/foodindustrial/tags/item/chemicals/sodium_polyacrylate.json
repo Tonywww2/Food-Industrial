@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_polyacrylate",
+    {
+      "id": "#c:dusts/sodium_polyacrylate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_polyacrylate",
+      "required": false
+    }
+  ]
+}

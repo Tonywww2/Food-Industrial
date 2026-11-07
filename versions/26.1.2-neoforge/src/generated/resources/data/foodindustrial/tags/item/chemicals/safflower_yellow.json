@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:safflower_yellow",
+    {
+      "id": "#c:dusts/safflower_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/safflower_yellow",
+      "required": false
+    }
+  ]
+}

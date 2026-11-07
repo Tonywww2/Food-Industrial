@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethoxyquin",
+    "foodindustrial:flowing_ethoxyquin",
+    {
+      "id": "#c:ethoxyquin",
+      "required": false
+    }
+  ]
+}

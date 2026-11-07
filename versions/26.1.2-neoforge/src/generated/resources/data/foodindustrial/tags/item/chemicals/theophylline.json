@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:theophylline",
+    {
+      "id": "#c:dusts/theophylline",
+      "required": false
+    },
+    {
+      "id": "#c:gems/theophylline",
+      "required": false
+    }
+  ]
+}

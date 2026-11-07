@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:morpholine_fruit_wax",
+    "foodindustrial:flowing_morpholine_fruit_wax",
+    {
+      "id": "#c:morpholine_fruit_wax",
+      "required": false
+    }
+  ]
+}

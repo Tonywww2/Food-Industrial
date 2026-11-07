@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylamine",
+    "foodindustrial:flowing_methylamine",
+    {
+      "id": "#c:methylamine",
+      "required": false
+    }
+  ]
+}

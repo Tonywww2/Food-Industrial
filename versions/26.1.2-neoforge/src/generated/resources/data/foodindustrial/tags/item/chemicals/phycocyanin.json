@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phycocyanin",
+    {
+      "id": "#c:dusts/phycocyanin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phycocyanin",
+      "required": false
+    }
+  ]
+}

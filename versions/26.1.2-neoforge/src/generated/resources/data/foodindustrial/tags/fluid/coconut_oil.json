@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coconut_oil",
+    "foodindustrial:flowing_coconut_oil",
+    {
+      "id": "#c:coconut_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:capsicum_orange",
+    {
+      "id": "#c:dusts/capsicum_orange",
+      "required": false
+    },
+    {
+      "id": "#c:gems/capsicum_orange",
+      "required": false
+    }
+  ]
+}

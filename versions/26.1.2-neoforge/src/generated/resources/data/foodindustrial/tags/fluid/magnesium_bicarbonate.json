@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_bicarbonate",
+    "foodindustrial:flowing_magnesium_bicarbonate",
+    {
+      "id": "#c:magnesium_bicarbonate",
+      "required": false
+    }
+  ]
+}

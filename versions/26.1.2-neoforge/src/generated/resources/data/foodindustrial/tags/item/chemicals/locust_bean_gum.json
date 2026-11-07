@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:locust_bean_gum",
+    {
+      "id": "#c:dusts/locust_bean_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/locust_bean_gum",
+      "required": false
+    }
+  ]
+}

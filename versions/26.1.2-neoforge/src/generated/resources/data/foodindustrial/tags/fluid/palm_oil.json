@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:palm_oil",
+    "foodindustrial:flowing_palm_oil",
+    {
+      "id": "#c:palm_oil",
+      "required": false
+    }
+  ]
+}

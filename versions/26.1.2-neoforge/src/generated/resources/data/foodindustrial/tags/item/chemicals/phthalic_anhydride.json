@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phthalic_anhydride",
+    {
+      "id": "#c:dusts/phthalic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phthalic_anhydride",
+      "required": false
+    }
+  ]
+}

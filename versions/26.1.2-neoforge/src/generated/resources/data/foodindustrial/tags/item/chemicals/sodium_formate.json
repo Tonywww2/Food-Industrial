@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_formate",
+    {
+      "id": "#c:dusts/sodium_formate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_formate",
+      "required": false
+    }
+  ]
+}

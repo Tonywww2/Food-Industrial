@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:sodium_lactate",
+  "category": "foodindustrial:k4_organic_liquid",
+  "grades": {
+    "crude": 15,
+    "refined": 30,
+    "food": 50,
+    "lab": null
+  }
+}

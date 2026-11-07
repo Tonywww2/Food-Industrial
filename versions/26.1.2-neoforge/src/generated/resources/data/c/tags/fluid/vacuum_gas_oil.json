@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vacuum_gas_oil",
+    "foodindustrial:flowing_vacuum_gas_oil"
+  ]
+}

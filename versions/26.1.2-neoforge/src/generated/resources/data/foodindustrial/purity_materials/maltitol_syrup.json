@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:maltitol_syrup",
+  "category": "foodindustrial:k2_sugar",
+  "grades": {
+    "crude": 10,
+    "refined": 20,
+    "food": 34,
+    "lab": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_palmitate",
+    {
+      "id": "#c:dusts/potassium_palmitate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_palmitate",
+      "required": false
+    }
+  ]
+}

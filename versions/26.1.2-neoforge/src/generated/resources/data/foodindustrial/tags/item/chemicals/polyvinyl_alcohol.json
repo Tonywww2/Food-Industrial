@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyvinyl_alcohol",
+    {
+      "id": "#c:dusts/polyvinyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyvinyl_alcohol",
+      "required": false
+    }
+  ]
+}

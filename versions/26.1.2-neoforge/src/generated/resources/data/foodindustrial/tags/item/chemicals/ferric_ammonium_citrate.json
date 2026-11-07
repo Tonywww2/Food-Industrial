@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferric_ammonium_citrate",
+    {
+      "id": "#c:dusts/ferric_ammonium_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferric_ammonium_citrate",
+      "required": false
+    }
+  ]
+}

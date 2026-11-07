@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylated_distarch_adipate",
+    {
+      "id": "#c:dusts/acetylated_distarch_adipate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetylated_distarch_adipate",
+      "required": false
+    }
+  ]
+}

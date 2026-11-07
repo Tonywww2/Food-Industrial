@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:paraffin_wax",
+    {
+      "id": "#c:dusts/paraffin_wax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/paraffin_wax",
+      "required": false
+    }
+  ]
+}

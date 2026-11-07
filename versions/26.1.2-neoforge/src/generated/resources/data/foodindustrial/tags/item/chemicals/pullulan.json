@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pullulan",
+    {
+      "id": "#c:dusts/pullulan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pullulan",
+      "required": false
+    }
+  ]
+}

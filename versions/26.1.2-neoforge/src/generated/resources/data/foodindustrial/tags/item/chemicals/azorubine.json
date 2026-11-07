@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:azorubine",
+    {
+      "id": "#c:dusts/azorubine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/azorubine",
+      "required": false
+    }
+  ]
+}

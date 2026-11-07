@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:ponceau_4r_lake",
+  "category": "foodindustrial:k10_synthetic_color",
+  "grades": {
+    "crude": 7,
+    "refined": 13,
+    "food": 22,
+    "lab": null
+  }
+}

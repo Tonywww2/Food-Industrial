@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_ascorbate",
+    {
+      "id": "#c:dusts/calcium_ascorbate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_ascorbate",
+      "required": false
+    }
+  ]
+}

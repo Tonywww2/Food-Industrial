@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:ice_structuring_protein",
+  "category": "foodindustrial:k5_natural_extract",
+  "grades": {
+    "crude": 0.15,
+    "refined": 0.3,
+    "food": 0.5,
+    "lab": null
+  }
+}

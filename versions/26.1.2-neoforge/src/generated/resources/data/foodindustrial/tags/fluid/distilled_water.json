@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:distilled_water",
+    "foodindustrial:flowing_distilled_water",
+    {
+      "id": "#c:distilled_water",
+      "required": false
+    }
+  ]
+}

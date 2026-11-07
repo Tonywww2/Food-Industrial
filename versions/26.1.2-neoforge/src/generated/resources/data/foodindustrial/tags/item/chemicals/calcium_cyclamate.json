@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_cyclamate",
+    {
+      "id": "#c:dusts/calcium_cyclamate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_cyclamate",
+      "required": false
+    }
+  ]
+}

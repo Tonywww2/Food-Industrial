@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:naphthylamine",
+    {
+      "id": "#c:dusts/naphthylamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naphthylamine",
+      "required": false
+    }
+  ]
+}

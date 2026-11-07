@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_cd_cyclohexane_complex",
+    {
+      "id": "#c:dusts/alpha_cd_cyclohexane_complex",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alpha_cd_cyclohexane_complex",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:titanyl_sulfate",
+    "foodindustrial:flowing_titanyl_sulfate",
+    {
+      "id": "#c:titanyl_sulfate",
+      "required": false
+    }
+  ]
+}

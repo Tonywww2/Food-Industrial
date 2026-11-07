@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:erythrosine_lake",
+    {
+      "id": "#c:dusts/erythrosine_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/erythrosine_lake",
+      "required": false
+    }
+  ]
+}

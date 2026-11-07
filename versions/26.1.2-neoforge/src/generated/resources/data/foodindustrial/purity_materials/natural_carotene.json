@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:natural_carotene",
+  "category": "foodindustrial:k5_natural_extract",
+  "grades": {
+    "crude": 1.5,
+    "refined": 3,
+    "food": 5,
+    "lab": null
+  }
+}

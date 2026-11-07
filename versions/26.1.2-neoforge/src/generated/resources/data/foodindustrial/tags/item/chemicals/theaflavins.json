@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:theaflavins",
+    {
+      "id": "#c:dusts/theaflavins",
+      "required": false
+    },
+    {
+      "id": "#c:gems/theaflavins",
+      "required": false
+    }
+  ]
+}

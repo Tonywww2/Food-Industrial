@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quinoline_yellow",
+    {
+      "id": "#c:dusts/quinoline_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quinoline_yellow",
+      "required": false
+    }
+  ]
+}

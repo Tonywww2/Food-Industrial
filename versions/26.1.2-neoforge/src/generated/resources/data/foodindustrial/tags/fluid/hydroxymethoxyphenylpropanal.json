@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxymethoxyphenylpropanal",
+    "foodindustrial:flowing_hydroxymethoxyphenylpropanal",
+    {
+      "id": "#c:hydroxymethoxyphenylpropanal",
+      "required": false
+    }
+  ]
+}

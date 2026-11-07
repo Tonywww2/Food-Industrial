@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chitin",
+    {
+      "id": "#c:dusts/chitin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chitin",
+      "required": false
+    }
+  ]
+}

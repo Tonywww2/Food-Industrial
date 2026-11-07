@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:copper_catalyst",
+    {
+      "id": "#c:dusts/copper_catalyst",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper_catalyst",
+      "required": false
+    }
+  ]
+}

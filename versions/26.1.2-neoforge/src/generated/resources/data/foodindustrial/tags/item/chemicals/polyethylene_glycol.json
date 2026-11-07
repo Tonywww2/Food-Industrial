@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyethylene_glycol",
+    {
+      "id": "#c:dusts/polyethylene_glycol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyethylene_glycol",
+      "required": false
+    }
+  ]
+}

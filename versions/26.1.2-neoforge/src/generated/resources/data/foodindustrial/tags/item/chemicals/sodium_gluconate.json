@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_gluconate",
+    {
+      "id": "#c:dusts/sodium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_gluconate",
+      "required": false
+    }
+  ]
+}

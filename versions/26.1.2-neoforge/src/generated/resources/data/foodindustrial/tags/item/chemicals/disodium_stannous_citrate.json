@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:disodium_stannous_citrate",
+    {
+      "id": "#c:dusts/disodium_stannous_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/disodium_stannous_citrate",
+      "required": false
+    }
+  ]
+}

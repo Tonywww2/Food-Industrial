@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oxidized_starch",
+    {
+      "id": "#c:dusts/oxidized_starch",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oxidized_starch",
+      "required": false
+    }
+  ]
+}

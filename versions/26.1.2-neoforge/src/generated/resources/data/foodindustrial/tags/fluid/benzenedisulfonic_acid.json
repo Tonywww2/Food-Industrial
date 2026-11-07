@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzenedisulfonic_acid",
+    "foodindustrial:flowing_benzenedisulfonic_acid",
+    {
+      "id": "#c:benzenedisulfonic_acid",
+      "required": false
+    }
+  ]
+}

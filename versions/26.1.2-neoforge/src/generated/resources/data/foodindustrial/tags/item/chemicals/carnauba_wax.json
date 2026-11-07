@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carnauba_wax",
+    {
+      "id": "#c:dusts/carnauba_wax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carnauba_wax",
+      "required": false
+    }
+  ]
+}

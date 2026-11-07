@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sulfite_spent_liquor",
+    "foodindustrial:flowing_sulfite_spent_liquor"
+  ]
+}

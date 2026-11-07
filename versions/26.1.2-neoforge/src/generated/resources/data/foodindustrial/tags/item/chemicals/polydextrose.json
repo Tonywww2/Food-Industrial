@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polydextrose",
+    {
+      "id": "#c:dusts/polydextrose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polydextrose",
+      "required": false
+    }
+  ]
+}

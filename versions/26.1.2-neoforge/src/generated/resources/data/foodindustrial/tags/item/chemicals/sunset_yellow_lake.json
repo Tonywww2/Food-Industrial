@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sunset_yellow_lake",
+    {
+      "id": "#c:dusts/sunset_yellow_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sunset_yellow_lake",
+      "required": false
+    }
+  ]
+}

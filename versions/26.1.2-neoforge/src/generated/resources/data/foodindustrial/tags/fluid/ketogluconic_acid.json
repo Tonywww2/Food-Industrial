@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ketogluconic_acid",
+    "foodindustrial:flowing_ketogluconic_acid",
+    {
+      "id": "#c:ketogluconic_acid",
+      "required": false
+    }
+  ]
+}

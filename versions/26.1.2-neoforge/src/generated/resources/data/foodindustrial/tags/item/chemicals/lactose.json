@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactose",
+    {
+      "id": "#c:dusts/lactose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lactose",
+      "required": false
+    }
+  ]
+}

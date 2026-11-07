@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:feather",
+      "required": false
+    },
+    {
+      "id": "#c:feathers",
+      "required": false
+    }
+  ]
+}

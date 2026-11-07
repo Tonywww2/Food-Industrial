@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_nitrite",
+    {
+      "id": "#c:dusts/potassium_nitrite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_nitrite",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:caprylic_capric_triglyceride",
+    "foodindustrial:flowing_caprylic_capric_triglyceride",
+    {
+      "id": "#c:caprylic_capric_triglyceride",
+      "required": false
+    }
+  ]
+}

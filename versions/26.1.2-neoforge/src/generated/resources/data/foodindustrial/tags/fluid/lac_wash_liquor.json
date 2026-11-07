@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lac_wash_liquor",
+    "foodindustrial:flowing_lac_wash_liquor",
+    {
+      "id": "#c:lac_wash_liquor",
+      "required": false
+    }
+  ]
+}

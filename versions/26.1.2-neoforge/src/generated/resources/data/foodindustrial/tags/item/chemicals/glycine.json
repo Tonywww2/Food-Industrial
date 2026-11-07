@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glycine",
+    {
+      "id": "#c:dusts/glycine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glycine",
+      "required": false
+    }
+  ]
+}

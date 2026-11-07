@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lingonberry_red",
+    {
+      "id": "#c:dusts/lingonberry_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lingonberry_red",
+      "required": false
+    }
+  ]
+}

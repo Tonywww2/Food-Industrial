@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactulose_syrup",
+    "foodindustrial:flowing_lactulose_syrup",
+    {
+      "id": "#c:lactulose_syrup",
+      "required": false
+    }
+  ]
+}

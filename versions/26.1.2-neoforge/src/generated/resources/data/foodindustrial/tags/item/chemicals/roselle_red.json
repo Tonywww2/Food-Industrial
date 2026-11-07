@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:roselle_red",
+    {
+      "id": "#c:dusts/roselle_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/roselle_red",
+      "required": false
+    }
+  ]
+}

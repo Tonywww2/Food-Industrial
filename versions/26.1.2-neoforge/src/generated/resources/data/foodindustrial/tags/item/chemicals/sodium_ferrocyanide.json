@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_ferrocyanide",
+    {
+      "id": "#c:dusts/sodium_ferrocyanide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_ferrocyanide",
+      "required": false
+    }
+  ]
+}

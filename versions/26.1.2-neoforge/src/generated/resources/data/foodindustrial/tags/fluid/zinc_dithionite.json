@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_dithionite",
+    "foodindustrial:flowing_zinc_dithionite",
+    {
+      "id": "#c:zinc_dithionite",
+      "required": false
+    }
+  ]
+}

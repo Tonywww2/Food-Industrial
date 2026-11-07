@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:guanylic_acid",
+    {
+      "id": "#c:dusts/guanylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/guanylic_acid",
+      "required": false
+    }
+  ]
+}

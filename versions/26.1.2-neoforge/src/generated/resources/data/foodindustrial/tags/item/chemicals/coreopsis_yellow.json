@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coreopsis_yellow",
+    {
+      "id": "#c:dusts/coreopsis_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/coreopsis_yellow",
+      "required": false
+    }
+  ]
+}

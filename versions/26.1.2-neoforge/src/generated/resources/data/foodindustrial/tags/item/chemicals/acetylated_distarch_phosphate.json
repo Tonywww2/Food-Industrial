@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylated_distarch_phosphate",
+    {
+      "id": "#c:dusts/acetylated_distarch_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetylated_distarch_phosphate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:licorice_antioxidant",
+    {
+      "id": "#c:dusts/licorice_antioxidant",
+      "required": false
+    },
+    {
+      "id": "#c:gems/licorice_antioxidant",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_dl_malate",
+    {
+      "id": "#c:dusts/sodium_dl_malate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_dl_malate",
+      "required": false
+    }
+  ]
+}

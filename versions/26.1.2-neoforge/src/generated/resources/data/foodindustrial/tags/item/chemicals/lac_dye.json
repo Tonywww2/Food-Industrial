@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lac_dye",
+    {
+      "id": "#c:dusts/lac_dye",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lac_dye",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:morpholine",
+    "foodindustrial:flowing_morpholine",
+    {
+      "id": "#c:morpholine",
+      "required": false
+    }
+  ]
+}

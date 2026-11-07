@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alitame",
+    {
+      "id": "#c:dusts/alitame",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alitame",
+      "required": false
+    }
+  ]
+}

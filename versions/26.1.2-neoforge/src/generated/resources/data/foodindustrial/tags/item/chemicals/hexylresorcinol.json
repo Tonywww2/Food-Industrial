@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexylresorcinol",
+    {
+      "id": "#c:dusts/hexylresorcinol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hexylresorcinol",
+      "required": false
+    }
+  ]
+}

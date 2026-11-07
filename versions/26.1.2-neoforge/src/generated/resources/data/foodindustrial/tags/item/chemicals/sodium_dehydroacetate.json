@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_dehydroacetate",
+    {
+      "id": "#c:dusts/sodium_dehydroacetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_dehydroacetate",
+      "required": false
+    }
+  ]
+}

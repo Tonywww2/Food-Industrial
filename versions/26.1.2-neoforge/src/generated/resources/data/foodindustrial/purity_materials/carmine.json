@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:carmine",
+  "category": "foodindustrial:k5_natural_extract",
+  "grades": {
+    "crude": 12,
+    "refined": 24,
+    "food": 40,
+    "lab": null
+  }
+}

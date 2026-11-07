@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:natural_carotene",
+    "foodindustrial:flowing_natural_carotene",
+    {
+      "id": "#c:natural_carotene",
+      "required": false
+    }
+  ]
+}

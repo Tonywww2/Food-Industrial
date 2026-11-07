@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:koch_acid",
+    {
+      "id": "#c:dusts/koch_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/koch_acid",
+      "required": false
+    }
+  ]
+}

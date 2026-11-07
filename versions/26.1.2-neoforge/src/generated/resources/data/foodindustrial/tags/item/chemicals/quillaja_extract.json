@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quillaja_extract",
+    {
+      "id": "#c:dusts/quillaja_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quillaja_extract",
+      "required": false
+    }
+  ]
+}

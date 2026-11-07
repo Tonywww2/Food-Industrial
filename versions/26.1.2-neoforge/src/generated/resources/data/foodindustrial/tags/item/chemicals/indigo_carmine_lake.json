@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:indigo_carmine_lake",
+    {
+      "id": "#c:dusts/indigo_carmine_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/indigo_carmine_lake",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_glycyrrhizinate",
+    {
+      "id": "#c:dusts/ammonium_glycyrrhizinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ammonium_glycyrrhizinate",
+      "required": false
+    }
+  ]
+}
