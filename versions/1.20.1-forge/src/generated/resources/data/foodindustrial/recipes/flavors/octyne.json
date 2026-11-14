@@ -1,0 +1,46 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:octene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:chlorine"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:ammonia"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:octyne",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

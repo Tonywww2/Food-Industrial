@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dihydro_beta_ionone",
+  "loader": "neoforge:fluid_container"
+}

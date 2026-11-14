@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/p_methoxyphenol"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:chloropropionic_acid"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:lactisole",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

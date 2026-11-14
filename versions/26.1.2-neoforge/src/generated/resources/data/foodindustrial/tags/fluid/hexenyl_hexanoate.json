@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexenyl_hexanoate",
+    "foodindustrial:flowing_hexenyl_hexanoate",
+    {
+      "id": "#forge:hexenyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:hexenyl_hexanoate",
+      "required": false
+    }
+  ]
+}

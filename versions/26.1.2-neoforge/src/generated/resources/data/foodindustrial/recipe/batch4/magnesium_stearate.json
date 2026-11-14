@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_stearate"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/magnesium_chloride"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:magnesium_stearate"
+    },
+    {
+      "count": 2,
+      "item": "foodindustrial:salt"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

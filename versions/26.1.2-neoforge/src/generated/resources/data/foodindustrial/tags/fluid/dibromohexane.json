@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dibromohexane",
+    "foodindustrial:flowing_dibromohexane",
+    {
+      "id": "#forge:dibromohexane",
+      "required": false
+    },
+    {
+      "id": "#c:dibromohexane",
+      "required": false
+    }
+  ]
+}

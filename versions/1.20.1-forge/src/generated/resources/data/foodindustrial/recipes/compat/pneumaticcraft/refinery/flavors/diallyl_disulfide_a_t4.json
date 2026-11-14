@@ -1,0 +1,36 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:garlic_oil"
+  },
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:diallyl_trisulfide",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:diallyl_disulfide",
+      "nbt": "{Purity:19b}"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

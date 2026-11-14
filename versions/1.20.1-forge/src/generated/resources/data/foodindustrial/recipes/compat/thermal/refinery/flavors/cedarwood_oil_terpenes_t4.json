@@ -1,0 +1,37 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:cedarwood_oil"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:cedrol",
+      "nbt": "{Purity:28b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:cedrenol",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:cedarwood_oil_terpenes"
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/maltodextrin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/maltodextrin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maltodextrin",
+      "required": false
     }
   ]
 }

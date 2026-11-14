@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "foodindustrial:activated_carbon"
+    },
+    "F": {
+      "item": "foodindustrial:chemical_frame"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "GAG",
+    "RFR",
+    "GAG"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:adsorption_column"
+  }
+}

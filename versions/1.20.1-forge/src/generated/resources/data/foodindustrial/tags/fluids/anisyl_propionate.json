@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisyl_propionate",
+    "foodindustrial:flowing_anisyl_propionate",
+    {
+      "id": "#forge:anisyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:anisyl_propionate",
+      "required": false
+    }
+  ]
+}

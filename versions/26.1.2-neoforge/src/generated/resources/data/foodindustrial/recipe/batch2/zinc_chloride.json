@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/zinc"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:zinc_chloride"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

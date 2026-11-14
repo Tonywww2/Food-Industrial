@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:beetroot_juice",
+  "loader": "forge:fluid_container"
+}

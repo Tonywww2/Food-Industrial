@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nootkatone",
+    {
+      "id": "#forge:dusts/nootkatone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nootkatone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/nootkatone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/nootkatone",
+      "required": false
+    }
+  ]
+}

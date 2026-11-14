@@ -6,6 +6,10 @@
     {
       "id": "#forge:methyl_chloroformate",
       "required": false
+    },
+    {
+      "id": "#c:methyl_chloroformate",
+      "required": false
     }
   ]
 }

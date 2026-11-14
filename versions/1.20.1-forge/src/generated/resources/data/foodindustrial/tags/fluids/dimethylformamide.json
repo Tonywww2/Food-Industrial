@@ -6,6 +6,10 @@
     {
       "id": "#forge:dimethylformamide",
       "required": false
+    },
+    {
+      "id": "#c:dimethylformamide",
+      "required": false
     }
   ]
 }

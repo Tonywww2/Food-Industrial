@@ -6,6 +6,10 @@
     {
       "id": "#forge:coconut_fatty_acids",
       "required": false
+    },
+    {
+      "id": "#c:coconut_fatty_acids",
+      "required": false
     }
   ]
 }

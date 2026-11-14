@@ -8,6 +8,18 @@
     {
       "id": "#forge:raw_mutton",
       "required": false
+    },
+    {
+      "id": "#c:foods/raw_mutton",
+      "required": false
+    },
+    {
+      "id": "#c:raw_mutton",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/raw_mutton",
+      "required": false
     }
   ]
 }

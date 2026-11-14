@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_citrate",
+    {
+      "id": "#forge:dusts/zinc_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_citrate",
+      "required": false
+    }
+  ]
+}

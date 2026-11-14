@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:enzymes/hemicellulase"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/guar_gum"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:enzymes/papain"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:galactomannan"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

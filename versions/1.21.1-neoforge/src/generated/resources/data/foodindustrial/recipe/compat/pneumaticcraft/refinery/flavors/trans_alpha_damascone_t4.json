@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:alpha_damascone"
+  },
+  "outputs": [
+    {
+      "amount": 400,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:trans_alpha_damascone"
+    },
+    {
+      "amount": 500,
+      "components": {
+        "foodindustrial:purity": 36
+      },
+      "id": "foodindustrial:alpha_damascone"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

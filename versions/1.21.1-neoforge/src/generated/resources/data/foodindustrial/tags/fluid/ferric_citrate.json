@@ -4,6 +4,10 @@
     "foodindustrial:ferric_citrate",
     "foodindustrial:flowing_ferric_citrate",
     {
+      "id": "#forge:ferric_citrate",
+      "required": false
+    },
+    {
       "id": "#c:ferric_citrate",
       "required": false
     }

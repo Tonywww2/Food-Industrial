@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leaf_alcohol",
+    "foodindustrial:flowing_leaf_alcohol",
+    {
+      "id": "#forge:leaf_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:leaf_alcohol",
+      "required": false
+    }
+  ]
+}

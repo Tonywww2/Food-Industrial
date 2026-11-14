@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:electrolyzing",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/electrode"
+    }
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/ammonium_bisulfate"
+      }
+    }
+  ],
+  "mode": "electrooxidation",
+  "outputs": [
+    {
+      "item": "foodindustrial:ammonium_persulfate"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/quinoline_yellow_lake",
       "required": false
+    },
+    {
+      "id": "#c:dusts/quinoline_yellow_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quinoline_yellow_lake",
+      "required": false
     }
   ]
 }

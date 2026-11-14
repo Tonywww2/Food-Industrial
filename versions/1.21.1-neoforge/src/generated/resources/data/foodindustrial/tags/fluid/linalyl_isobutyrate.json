@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_isobutyrate",
+    "foodindustrial:flowing_linalyl_isobutyrate",
+    {
+      "id": "#forge:linalyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

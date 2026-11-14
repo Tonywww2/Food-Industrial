@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "foodindustrial:steamed_wheat"
+    }
+  ]
+}

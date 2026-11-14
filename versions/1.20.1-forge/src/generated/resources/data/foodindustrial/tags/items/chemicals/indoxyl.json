@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/indoxyl",
       "required": false
+    },
+    {
+      "id": "#c:dusts/indoxyl",
+      "required": false
+    },
+    {
+      "id": "#c:gems/indoxyl",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propane_1_3_dithiol",
+    "foodindustrial:flowing_propane_1_3_dithiol",
+    {
+      "id": "#forge:propane_1_3_dithiol",
+      "required": false
+    },
+    {
+      "id": "#c:propane_1_3_dithiol",
+      "required": false
+    }
+  ]
+}

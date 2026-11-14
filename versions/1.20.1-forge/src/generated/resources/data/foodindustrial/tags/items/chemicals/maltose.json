@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/maltose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/maltose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maltose",
+      "required": false
     }
   ]
 }

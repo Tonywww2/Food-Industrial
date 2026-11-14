@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/dehydrocholesterol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/dehydrocholesterol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dehydrocholesterol",
+      "required": false
     }
   ]
 }

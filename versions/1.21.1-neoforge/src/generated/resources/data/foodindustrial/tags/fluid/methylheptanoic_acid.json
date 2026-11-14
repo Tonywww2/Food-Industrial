@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylheptanoic_acid",
+    "foodindustrial:flowing_methylheptanoic_acid",
+    {
+      "id": "#forge:methylheptanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:methylheptanoic_acid",
+      "required": false
+    }
+  ]
+}

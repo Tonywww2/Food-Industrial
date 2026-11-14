@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambroxide",
+    {
+      "id": "#forge:dusts/ambroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ambroxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ambroxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ambroxide",
+      "required": false
+    }
+  ]
+}

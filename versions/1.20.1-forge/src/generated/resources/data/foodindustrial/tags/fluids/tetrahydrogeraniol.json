@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetrahydrogeraniol",
+    "foodindustrial:flowing_tetrahydrogeraniol",
+    {
+      "id": "#forge:tetrahydrogeraniol",
+      "required": false
+    },
+    {
+      "id": "#c:tetrahydrogeraniol",
+      "required": false
+    }
+  ]
+}

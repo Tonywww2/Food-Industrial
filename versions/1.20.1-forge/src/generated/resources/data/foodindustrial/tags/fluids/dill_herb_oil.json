@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dill_herb_oil",
+    "foodindustrial:flowing_dill_herb_oil",
+    {
+      "id": "#forge:dill_herb_oil",
+      "required": false
+    },
+    {
+      "id": "#c:dill_herb_oil",
+      "required": false
+    }
+  ]
+}

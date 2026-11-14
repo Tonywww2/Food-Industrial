@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_tetrathiane_trithiolane",
+    "foodindustrial:flowing_diethyl_tetrathiane_trithiolane",
+    {
+      "id": "#forge:diethyl_tetrathiane_trithiolane",
+      "required": false
+    },
+    {
+      "id": "#c:diethyl_tetrathiane_trithiolane",
+      "required": false
+    }
+  ]
+}

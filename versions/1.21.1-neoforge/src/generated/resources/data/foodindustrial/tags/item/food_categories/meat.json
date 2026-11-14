@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:larou",
+    "foodindustrial:lap_cheong",
+    "foodindustrial:salted_pork",
+    "foodindustrial:pressed_salted_duck",
+    "foodindustrial:chinese_ham",
+    "foodindustrial:western_ham",
+    "foodindustrial:bacon",
+    "foodindustrial:hot_dog",
+    "foodindustrial:luncheon_meat",
+    "foodindustrial:ham_sausage",
+    "foodindustrial:char_siu",
+    "foodindustrial:roast_duck",
+    "foodindustrial:braised_beef",
+    "foodindustrial:soy_braised_duck",
+    "foodindustrial:white_cut_chicken",
+    "foodindustrial:braised_pork_belly",
+    "foodindustrial:dongpo_pork",
+    "foodindustrial:pork_floss",
+    "foodindustrial:beef_jerky",
+    "foodindustrial:pork_jerky_sheet",
+    "foodindustrial:meatballs",
+    "foodindustrial:lions_head_meatball",
+    "foodindustrial:meat_aspic",
+    "foodindustrial:braised_chicken_feet"
+  ]
+}

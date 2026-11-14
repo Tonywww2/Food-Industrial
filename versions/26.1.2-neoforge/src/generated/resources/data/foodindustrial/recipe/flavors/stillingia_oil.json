@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:pressing",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": "#foodindustrial:materials/tallow_tree_seed"
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:stillingia_oil"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

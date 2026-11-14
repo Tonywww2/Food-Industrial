@@ -6,6 +6,10 @@
     {
       "id": "#forge:sodium_silicate",
       "required": false
+    },
+    {
+      "id": "#c:sodium_silicate",
+      "required": false
     }
   ]
 }

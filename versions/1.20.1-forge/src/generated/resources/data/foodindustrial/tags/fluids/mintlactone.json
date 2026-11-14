@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mintlactone",
+    "foodindustrial:flowing_mintlactone",
+    {
+      "id": "#forge:mintlactone",
+      "required": false
+    },
+    {
+      "id": "#c:mintlactone",
+      "required": false
+    }
+  ]
+}

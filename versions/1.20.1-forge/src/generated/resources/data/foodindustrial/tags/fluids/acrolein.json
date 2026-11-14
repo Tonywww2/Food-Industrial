@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acrolein",
+    "foodindustrial:flowing_acrolein",
+    {
+      "id": "#forge:acrolein",
+      "required": false
+    },
+    {
+      "id": "#c:acrolein",
+      "required": false
+    }
+  ]
+}

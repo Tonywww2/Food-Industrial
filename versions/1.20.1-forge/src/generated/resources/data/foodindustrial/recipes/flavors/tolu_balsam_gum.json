@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/tolu_balsam"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:tolu_balsam_gum"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

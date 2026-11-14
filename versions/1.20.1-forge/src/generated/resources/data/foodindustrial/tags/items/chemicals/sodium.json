@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium",
+      "required": false
     }
   ]
 }

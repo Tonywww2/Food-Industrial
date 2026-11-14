@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sweet_birch_oil",
+    "foodindustrial:flowing_sweet_birch_oil",
+    {
+      "id": "#forge:sweet_birch_oil",
+      "required": false
+    },
+    {
+      "id": "#c:sweet_birch_oil",
+      "required": false
+    }
+  ]
+}

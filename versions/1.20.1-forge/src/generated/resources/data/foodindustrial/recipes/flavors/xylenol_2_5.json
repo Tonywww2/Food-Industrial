@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/alumina"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:m_cresol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:methanol"
+      }
+    }
+  ],
+  "mode": "gas_catalysis",
+  "outputs": [
+    {
+      "item": "foodindustrial:xylenol_2_5",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/gum_arabic"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/slaked_lime"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:l_arabinose",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

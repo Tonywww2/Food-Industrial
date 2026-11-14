@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:cultures/engineered_phospholipase_a1"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/agar"
+      }
+    }
+  ],
+  "mode": "purification",
+  "outputs": [
+    {
+      "item": "foodindustrial:engineered_phospholipase_a1"
+    },
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "plate": {
+    "by_purity": true
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

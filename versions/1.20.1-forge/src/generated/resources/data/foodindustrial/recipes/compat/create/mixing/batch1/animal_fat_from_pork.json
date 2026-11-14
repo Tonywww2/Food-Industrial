@@ -1,0 +1,34 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    },
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    },
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    },
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:animal_fat"
+    }
+  ]
+}

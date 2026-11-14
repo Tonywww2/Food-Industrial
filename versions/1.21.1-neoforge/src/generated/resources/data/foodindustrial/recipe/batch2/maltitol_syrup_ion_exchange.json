@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:purifying",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/ion_exchange_resin"
+    },
+    "runs": 4
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:maltitol_syrup"
+      }
+    }
+  ],
+  "mode": "adsorption",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:maltitol_syrup"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "ion_exchange"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

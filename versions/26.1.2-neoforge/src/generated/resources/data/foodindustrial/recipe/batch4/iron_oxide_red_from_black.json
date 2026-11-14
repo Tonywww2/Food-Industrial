@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/iron_oxide_black"
+    }
+  ],
+  "mode": "roasting",
+  "outputs": [
+    {
+      "count": 6,
+      "item": "foodindustrial:iron_oxide_red"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

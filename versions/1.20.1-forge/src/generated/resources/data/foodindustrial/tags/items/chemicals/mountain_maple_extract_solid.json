@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mountain_maple_extract_solid",
+    {
+      "id": "#forge:dusts/mountain_maple_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/mountain_maple_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/mountain_maple_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/mountain_maple_extract_solid",
+      "required": false
+    }
+  ]
+}

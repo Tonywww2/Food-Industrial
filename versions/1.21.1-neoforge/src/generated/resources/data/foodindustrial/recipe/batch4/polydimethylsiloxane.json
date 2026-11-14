@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_hydroxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:octamethylcyclotetrasiloxane"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "tag": "foodindustrial:hexamethyldisiloxane"
+      }
+    }
+  ],
+  "mode": "polymerization",
+  "outputs": [
+    {
+      "amount": 4000,
+      "fluid": "foodindustrial:polydimethylsiloxane"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

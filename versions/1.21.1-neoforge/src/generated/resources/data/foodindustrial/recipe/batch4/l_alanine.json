@@ -1,0 +1,41 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/immobilized_aspartate_decarboxylase"
+    }
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/l_aspartic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:l_alanine",
+      "purity": {
+        "mode": "source",
+        "value": 95
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

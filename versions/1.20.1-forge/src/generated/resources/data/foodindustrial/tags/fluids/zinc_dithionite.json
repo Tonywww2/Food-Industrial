@@ -6,6 +6,10 @@
     {
       "id": "#forge:zinc_dithionite",
       "required": false
+    },
+    {
+      "id": "#c:zinc_dithionite",
+      "required": false
     }
   ]
 }

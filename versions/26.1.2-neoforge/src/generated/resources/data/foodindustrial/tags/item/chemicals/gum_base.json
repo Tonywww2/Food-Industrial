@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:gum_base",
     {
+      "id": "#forge:dusts/gum_base",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gum_base",
+      "required": false
+    },
+    {
       "id": "#c:dusts/gum_base",
       "required": false
     },

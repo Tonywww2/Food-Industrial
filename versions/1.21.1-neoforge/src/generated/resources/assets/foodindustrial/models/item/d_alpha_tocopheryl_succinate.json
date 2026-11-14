@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodindustrial:item/d_alpha_tocopheryl_succinate"
+  }
+}

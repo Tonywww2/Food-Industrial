@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclopropylamine",
+    "foodindustrial:flowing_cyclopropylamine",
+    {
+      "id": "#forge:cyclopropylamine",
+      "required": false
+    },
+    {
+      "id": "#c:cyclopropylamine",
+      "required": false
+    }
+  ]
+}

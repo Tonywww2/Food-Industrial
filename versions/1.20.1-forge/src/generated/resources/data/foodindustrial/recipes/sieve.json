@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "tag": "forge:rods/wooden"
+    },
+    "T": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "K K",
+    "TTT",
+    "K K"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:sieve"
+  }
+}

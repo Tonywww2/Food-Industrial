@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:terpinen_4_ol",
+  "loader": "neoforge:fluid_container"
+}

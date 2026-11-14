@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/acetyl_h_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/acetyl_h_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetyl_h_acid",
+      "required": false
     }
   ]
 }

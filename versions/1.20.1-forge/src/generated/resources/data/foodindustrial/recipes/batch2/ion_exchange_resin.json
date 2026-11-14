@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/polystyrene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:ion_exchange_resin"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

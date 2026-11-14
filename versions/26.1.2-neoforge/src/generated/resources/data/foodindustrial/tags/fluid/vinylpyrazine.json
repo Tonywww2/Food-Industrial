@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vinylpyrazine",
+    "foodindustrial:flowing_vinylpyrazine",
+    {
+      "id": "#forge:vinylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:vinylpyrazine",
+      "required": false
+    }
+  ]
+}

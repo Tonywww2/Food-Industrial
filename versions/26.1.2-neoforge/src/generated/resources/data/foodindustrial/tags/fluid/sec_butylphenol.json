@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sec_butylphenol",
+    "foodindustrial:flowing_sec_butylphenol",
+    {
+      "id": "#forge:sec_butylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:sec_butylphenol",
+      "required": false
+    }
+  ]
+}

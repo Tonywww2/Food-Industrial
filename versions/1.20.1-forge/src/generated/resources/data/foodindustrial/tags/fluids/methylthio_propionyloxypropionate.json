@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthio_propionyloxypropionate",
+    "foodindustrial:flowing_methylthio_propionyloxypropionate",
+    {
+      "id": "#forge:methylthio_propionyloxypropionate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthio_propionyloxypropionate",
+      "required": false
+    }
+  ]
+}

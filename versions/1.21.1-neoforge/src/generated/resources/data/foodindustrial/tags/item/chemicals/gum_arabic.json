@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:gum_arabic",
     {
+      "id": "#forge:dusts/gum_arabic",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gum_arabic",
+      "required": false
+    },
+    {
       "id": "#c:dusts/gum_arabic",
       "required": false
     },

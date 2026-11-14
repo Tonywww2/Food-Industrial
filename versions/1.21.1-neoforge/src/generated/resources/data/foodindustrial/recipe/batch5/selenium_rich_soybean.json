@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:materials/soybean"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_selenite"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "item": "foodindustrial:selenium_rich_soybean"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

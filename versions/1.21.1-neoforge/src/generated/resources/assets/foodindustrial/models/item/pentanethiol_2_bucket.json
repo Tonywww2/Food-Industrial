@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:pentanethiol_2",
+  "loader": "neoforge:fluid_container"
+}

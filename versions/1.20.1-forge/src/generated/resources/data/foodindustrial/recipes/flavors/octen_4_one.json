@@ -1,0 +1,54 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:crotonaldehyde"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:n_butanol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/magnesium"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:oxygen"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:octen_4_one",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

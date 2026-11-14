@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxycitronellal_diethyl_acetal",
+    "foodindustrial:flowing_hydroxycitronellal_diethyl_acetal",
+    {
+      "id": "#forge:hydroxycitronellal_diethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxycitronellal_diethyl_acetal",
+      "required": false
+    }
+  ]
+}

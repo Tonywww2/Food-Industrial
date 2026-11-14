@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:valerian_root_extract",
+    "foodindustrial:flowing_valerian_root_extract",
+    {
+      "id": "#forge:valerian_root_extract",
+      "required": false
+    },
+    {
+      "id": "#c:valerian_root_extract",
+      "required": false
+    }
+  ]
+}

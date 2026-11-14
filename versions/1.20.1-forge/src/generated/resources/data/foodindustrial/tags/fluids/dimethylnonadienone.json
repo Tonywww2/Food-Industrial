@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylnonadienone",
+    "foodindustrial:flowing_dimethylnonadienone",
+    {
+      "id": "#forge:dimethylnonadienone",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylnonadienone",
+      "required": false
+    }
+  ]
+}

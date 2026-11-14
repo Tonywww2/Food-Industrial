@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:metatartaric_acid",
     {
+      "id": "#forge:dusts/metatartaric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/metatartaric_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/metatartaric_acid",
       "required": false
     },

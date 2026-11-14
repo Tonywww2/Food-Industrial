@@ -6,6 +6,10 @@
     {
       "id": "#forge:sulfur_trioxide",
       "required": false
+    },
+    {
+      "id": "#c:sulfur_trioxide",
+      "required": false
     }
   ]
 }

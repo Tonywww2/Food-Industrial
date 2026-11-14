@@ -6,6 +6,10 @@
     {
       "id": "#forge:methyltrichlorosilane",
       "required": false
+    },
+    {
+      "id": "#c:methyltrichlorosilane",
+      "required": false
     }
   ]
 }

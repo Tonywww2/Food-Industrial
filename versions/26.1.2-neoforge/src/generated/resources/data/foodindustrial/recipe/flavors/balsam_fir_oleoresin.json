@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/canada_balsam"
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:balsam_fir_oleoresin"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

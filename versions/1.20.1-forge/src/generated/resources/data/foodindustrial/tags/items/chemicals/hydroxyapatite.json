@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/hydroxyapatite",
       "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxyapatite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxyapatite",
+      "required": false
     }
   ]
 }

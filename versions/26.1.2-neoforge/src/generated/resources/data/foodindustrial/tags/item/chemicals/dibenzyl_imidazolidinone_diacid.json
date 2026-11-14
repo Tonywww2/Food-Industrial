@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dibenzyl_imidazolidinone_diacid",
+    {
+      "id": "#forge:dusts/dibenzyl_imidazolidinone_diacid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dibenzyl_imidazolidinone_diacid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dibenzyl_imidazolidinone_diacid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dibenzyl_imidazolidinone_diacid",
+      "required": false
+    }
+  ]
+}

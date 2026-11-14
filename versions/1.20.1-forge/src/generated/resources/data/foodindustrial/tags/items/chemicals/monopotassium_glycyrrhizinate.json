@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/monopotassium_glycyrrhizinate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/monopotassium_glycyrrhizinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monopotassium_glycyrrhizinate",
+      "required": false
     }
   ]
 }

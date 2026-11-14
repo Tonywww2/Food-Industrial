@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/stevia"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dried_stevia"
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "open_sky",
+      "clear_weather"
+    ]
+  },
+  "time": 24000
+}

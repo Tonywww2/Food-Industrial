@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dibenzylbiotin",
+    {
+      "id": "#forge:dusts/dibenzylbiotin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dibenzylbiotin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dibenzylbiotin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dibenzylbiotin",
+      "required": false
+    }
+  ]
+}

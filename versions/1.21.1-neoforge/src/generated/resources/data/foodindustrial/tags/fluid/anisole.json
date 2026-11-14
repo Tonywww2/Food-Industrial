@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisole",
+    "foodindustrial:flowing_anisole",
+    {
+      "id": "#forge:anisole",
+      "required": false
+    },
+    {
+      "id": "#c:anisole",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethyl_propyl_ketone",
+  "loader": "neoforge:fluid_container"
+}

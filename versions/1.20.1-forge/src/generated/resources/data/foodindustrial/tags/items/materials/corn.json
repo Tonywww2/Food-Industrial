@@ -4,6 +4,10 @@
     {
       "id": "#forge:crops/corn",
       "required": false
+    },
+    {
+      "id": "#c:crops/corn",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "type": "thermal:centrifuge",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t2",
+        "t3",
+        "t4"
+      ]
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/raw_rabbit"
+  },
+  "result": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:animal_blood"
+    }
+  ]
+}

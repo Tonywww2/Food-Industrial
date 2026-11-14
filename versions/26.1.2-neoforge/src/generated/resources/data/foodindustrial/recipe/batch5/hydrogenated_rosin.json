@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/palladium"
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/rosin"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "hydrogenation",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:hydrogenated_rosin"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/silver"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:methanol"
+      }
+    }
+  ],
+  "mode": "gas_catalysis",
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:formaldehyde"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

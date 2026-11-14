@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:stillingia_oil",
+    "foodindustrial:flowing_stillingia_oil",
+    {
+      "id": "#forge:stillingia_oil",
+      "required": false
+    },
+    {
+      "id": "#c:stillingia_oil",
+      "required": false
+    }
+  ]
+}

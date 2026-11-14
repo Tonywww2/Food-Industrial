@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_valine",
+    {
+      "id": "#forge:dusts/dl_valine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dl_valine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dl_valine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dl_valine",
+      "required": false
+    }
+  ]
+}

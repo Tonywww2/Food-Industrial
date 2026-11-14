@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_caseinate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_caseinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_caseinate",
+      "required": false
     }
   ]
 }

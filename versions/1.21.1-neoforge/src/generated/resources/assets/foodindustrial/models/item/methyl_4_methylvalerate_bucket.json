@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methyl_4_methylvalerate",
+  "loader": "neoforge:fluid_container"
+}

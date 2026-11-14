@@ -6,6 +6,10 @@
     {
       "id": "#forge:soda_lye",
       "required": false
+    },
+    {
+      "id": "#c:soda_lye",
+      "required": false
     }
   ]
 }

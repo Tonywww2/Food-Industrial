@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/soda_ash",
       "required": false
+    },
+    {
+      "id": "#c:dusts/soda_ash",
+      "required": false
+    },
+    {
+      "id": "#c:gems/soda_ash",
+      "required": false
     }
   ]
 }

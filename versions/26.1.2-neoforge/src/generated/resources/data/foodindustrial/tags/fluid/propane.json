@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propane",
+    "foodindustrial:flowing_propane",
+    {
+      "id": "#forge:propane",
+      "required": false
+    },
+    {
+      "id": "#c:propane",
+      "required": false
+    }
+  ]
+}

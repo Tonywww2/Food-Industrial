@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:folded_apple_essence",
+    "foodindustrial:flowing_folded_apple_essence",
+    {
+      "id": "#forge:folded_apple_essence",
+      "required": false
+    },
+    {
+      "id": "#c:folded_apple_essence",
+      "required": false
+    }
+  ]
+}

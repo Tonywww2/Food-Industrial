@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/benzoic_acid"
+      }
+    }
+  ],
+  "mode": "sublimation",
+  "outputs": [
+    {
+      "item": "foodindustrial:benzoic_acid"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

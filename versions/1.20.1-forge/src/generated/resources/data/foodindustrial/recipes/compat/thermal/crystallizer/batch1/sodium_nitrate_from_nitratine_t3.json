@@ -1,0 +1,33 @@
+{
+  "type": "thermal:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "energy": 3000,
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid_tag": "foodindustrial:water"
+    },
+    {
+      "tag": "foodindustrial:materials/nitratine"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:sodium_nitrate",
+      "nbt": "{Purity:31b}"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethylthiazole",
+    "foodindustrial:flowing_trimethylthiazole",
+    {
+      "id": "#forge:trimethylthiazole",
+      "required": false
+    },
+    {
+      "id": "#c:trimethylthiazole",
+      "required": false
+    }
+  ]
+}

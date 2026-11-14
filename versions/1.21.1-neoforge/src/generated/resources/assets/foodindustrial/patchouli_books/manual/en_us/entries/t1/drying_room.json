@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:drying_room",
+  "name": "book.foodindustrial.manual.entry.drying_room",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:drying_room",
+      "text": "book.foodindustrial.manual.entry.drying_room.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:drying_room[facing=south]",
+          "A": "foodindustrial:drying_room_wall"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.drying_room"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.drying_room.structure"
+    }
+  ],
+  "sortnum": 9
+}

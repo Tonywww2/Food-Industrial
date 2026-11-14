@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/flaxseed_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/flaxseed_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/flaxseed_gum",
+      "required": false
     }
   ]
 }

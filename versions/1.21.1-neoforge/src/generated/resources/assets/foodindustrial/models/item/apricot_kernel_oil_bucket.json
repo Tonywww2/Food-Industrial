@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:apricot_kernel_oil",
+  "loader": "neoforge:fluid_container"
+}

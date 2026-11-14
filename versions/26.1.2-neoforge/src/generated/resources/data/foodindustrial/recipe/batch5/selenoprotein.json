@@ -1,0 +1,64 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/selenium_rich_soybean"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:n_hexane"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:selenoprotein",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:crude_soybean_oil"
+    },
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:n_hexane",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:ethanol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

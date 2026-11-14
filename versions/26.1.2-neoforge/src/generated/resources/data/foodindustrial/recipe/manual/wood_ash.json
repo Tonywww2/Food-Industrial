@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/logs"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:wood_ash"
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200,
+  "vanilla_devices": [
+    "campfire"
+  ]
+}

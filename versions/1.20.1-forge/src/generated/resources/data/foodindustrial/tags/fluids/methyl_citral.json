@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_citral",
+    "foodindustrial:flowing_methyl_citral",
+    {
+      "id": "#forge:methyl_citral",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_citral",
+      "required": false
+    }
+  ]
+}

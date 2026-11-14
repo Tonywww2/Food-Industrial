@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thymol_methyl_ether",
+    "foodindustrial:flowing_thymol_methyl_ether",
+    {
+      "id": "#forge:thymol_methyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:thymol_methyl_ether",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiazolylethyl_formate",
+    "foodindustrial:flowing_methylthiazolylethyl_formate",
+    {
+      "id": "#forge:methylthiazolylethyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiazolylethyl_formate",
+      "required": false
+    }
+  ]
+}

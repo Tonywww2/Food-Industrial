@@ -6,6 +6,10 @@
     {
       "id": "#forge:propylenediamine",
       "required": false
+    },
+    {
+      "id": "#c:propylenediamine",
+      "required": false
     }
   ]
 }

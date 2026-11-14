@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoleucinamide",
+    {
+      "id": "#forge:dusts/isoleucinamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isoleucinamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/isoleucinamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/isoleucinamide",
+      "required": false
+    }
+  ]
+}

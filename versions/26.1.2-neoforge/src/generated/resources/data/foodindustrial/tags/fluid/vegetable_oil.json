@@ -4,6 +4,10 @@
     {
       "id": "#c:plantoil",
       "required": false
+    },
+    {
+      "id": "#forge:plantoil",
+      "required": false
     }
   ]
 }

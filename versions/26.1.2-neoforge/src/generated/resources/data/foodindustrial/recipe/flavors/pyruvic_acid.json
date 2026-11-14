@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/tartaric_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/potassium_bisulfate"
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:pyruvic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

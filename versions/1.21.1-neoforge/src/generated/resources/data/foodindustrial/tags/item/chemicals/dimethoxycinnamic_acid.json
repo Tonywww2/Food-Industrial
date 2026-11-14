@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethoxycinnamic_acid",
+    {
+      "id": "#forge:dusts/dimethoxycinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethoxycinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimethoxycinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethoxycinnamic_acid",
+      "required": false
+    }
+  ]
+}

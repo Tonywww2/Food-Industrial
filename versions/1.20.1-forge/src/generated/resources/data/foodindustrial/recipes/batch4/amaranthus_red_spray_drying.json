@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/amaranthus_red"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:amaranthus_red"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "sensitive",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

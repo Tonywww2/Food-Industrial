@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/gum_arabic"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:octenyl_succinic_anhydride"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:gum_arabic_octenylsuccinate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

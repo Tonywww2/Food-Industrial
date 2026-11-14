@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carene_3",
+    "foodindustrial:flowing_carene_3",
+    {
+      "id": "#forge:carene_3",
+      "required": false
+    },
+    {
+      "id": "#c:carene_3",
+      "required": false
+    }
+  ]
+}

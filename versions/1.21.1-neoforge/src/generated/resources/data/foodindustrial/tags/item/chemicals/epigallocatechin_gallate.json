@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:epigallocatechin_gallate",
     {
+      "id": "#forge:dusts/epigallocatechin_gallate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/epigallocatechin_gallate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/epigallocatechin_gallate",
       "required": false
     },

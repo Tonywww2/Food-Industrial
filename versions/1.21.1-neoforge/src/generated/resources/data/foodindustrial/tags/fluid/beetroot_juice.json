@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beetroot_juice",
+    "foodindustrial:flowing_beetroot_juice",
+    {
+      "id": "#forge:beetroot_juice",
+      "required": false
+    },
+    {
+      "id": "#c:beetroot_juice",
+      "required": false
+    }
+  ]
+}

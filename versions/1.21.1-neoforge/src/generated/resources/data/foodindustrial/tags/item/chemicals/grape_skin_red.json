@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:grape_skin_red",
     {
+      "id": "#forge:dusts/grape_skin_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/grape_skin_red",
+      "required": false
+    },
+    {
       "id": "#c:dusts/grape_skin_red",
       "required": false
     },

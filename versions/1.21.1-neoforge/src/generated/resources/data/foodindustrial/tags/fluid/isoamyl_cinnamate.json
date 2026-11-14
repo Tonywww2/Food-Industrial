@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_cinnamate",
+    "foodindustrial:flowing_isoamyl_cinnamate",
+    {
+      "id": "#forge:isoamyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_cinnamate",
+      "required": false
+    }
+  ]
+}

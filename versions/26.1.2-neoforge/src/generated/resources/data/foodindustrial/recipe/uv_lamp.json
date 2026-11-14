@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:amethyst_shard",
+    "G": "minecraft:glass",
+    "I": "#c:ingots/iron",
+    "O": "minecraft:glowstone"
+  },
+  "pattern": [
+    "GAG",
+    "IOI",
+    "GAG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:uv_lamp"
+  }
+}

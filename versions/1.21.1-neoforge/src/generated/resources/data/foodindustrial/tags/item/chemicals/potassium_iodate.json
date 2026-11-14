@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:potassium_iodate",
     {
+      "id": "#forge:dusts/potassium_iodate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_iodate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/potassium_iodate",
       "required": false
     },

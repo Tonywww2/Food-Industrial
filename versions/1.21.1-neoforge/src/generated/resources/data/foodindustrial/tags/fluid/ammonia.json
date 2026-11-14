@@ -4,6 +4,10 @@
     "foodindustrial:ammonia",
     "foodindustrial:flowing_ammonia",
     {
+      "id": "#forge:ammonia",
+      "required": false
+    },
+    {
       "id": "#c:ammonia",
       "required": false
     }

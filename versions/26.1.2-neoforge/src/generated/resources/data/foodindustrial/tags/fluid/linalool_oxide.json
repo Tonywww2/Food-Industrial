@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalool_oxide",
+    "foodindustrial:flowing_linalool_oxide",
+    {
+      "id": "#forge:linalool_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:linalool_oxide",
+      "required": false
+    }
+  ]
+}

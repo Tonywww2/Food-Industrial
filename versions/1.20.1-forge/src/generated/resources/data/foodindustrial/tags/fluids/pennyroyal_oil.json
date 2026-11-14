@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pennyroyal_oil",
+    "foodindustrial:flowing_pennyroyal_oil",
+    {
+      "id": "#forge:pennyroyal_oil",
+      "required": false
+    },
+    {
+      "id": "#c:pennyroyal_oil",
+      "required": false
+    }
+  ]
+}

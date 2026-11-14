@@ -1,0 +1,28 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:hydrotreated_naphtha"
+  },
+  "result": [
+    {
+      "amount": 600,
+      "fluid": "foodindustrial:vegetable_oil_extraction_solvent"
+    },
+    {
+      "amount": 300,
+      "fluid": "foodindustrial:petroleum_ether"
+    }
+  ]
+}

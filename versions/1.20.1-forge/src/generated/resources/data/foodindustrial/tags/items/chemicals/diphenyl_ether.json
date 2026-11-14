@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/diphenyl_ether",
       "required": false
+    },
+    {
+      "id": "#c:dusts/diphenyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diphenyl_ether",
+      "required": false
     }
   ]
 }

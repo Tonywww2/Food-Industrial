@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/hydrazinobenzenesulfonic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/hydrazinobenzenesulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydrazinobenzenesulfonic_acid",
+      "required": false
     }
   ]
 }

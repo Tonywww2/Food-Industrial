@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_isovalerate",
+    "foodindustrial:flowing_geranyl_isovalerate",
+    {
+      "id": "#forge:geranyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_isovalerate",
+      "required": false
+    }
+  ]
+}

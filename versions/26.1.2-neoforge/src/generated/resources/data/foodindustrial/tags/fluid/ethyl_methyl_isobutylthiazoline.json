@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_methyl_isobutylthiazoline",
+    "foodindustrial:flowing_ethyl_methyl_isobutylthiazoline",
+    {
+      "id": "#forge:ethyl_methyl_isobutylthiazoline",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_methyl_isobutylthiazoline",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitroethane",
+    "foodindustrial:flowing_nitroethane",
+    {
+      "id": "#forge:nitroethane",
+      "required": false
+    },
+    {
+      "id": "#c:nitroethane",
+      "required": false
+    }
+  ]
+}

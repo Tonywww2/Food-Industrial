@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carvomenthone",
+    "foodindustrial:flowing_carvomenthone",
+    {
+      "id": "#forge:carvomenthone",
+      "required": false
+    },
+    {
+      "id": "#c:carvomenthone",
+      "required": false
+    }
+  ]
+}

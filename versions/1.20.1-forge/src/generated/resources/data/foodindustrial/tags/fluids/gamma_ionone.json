@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_ionone",
+    "foodindustrial:flowing_gamma_ionone",
+    {
+      "id": "#forge:gamma_ionone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_ionone",
+      "required": false
+    }
+  ]
+}

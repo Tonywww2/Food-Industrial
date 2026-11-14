@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:geranium_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "id": "foodindustrial:rhodinol"
+    },
+    {
+      "amount": 250,
+      "id": "foodindustrial:terpeneless_geranium_oil"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

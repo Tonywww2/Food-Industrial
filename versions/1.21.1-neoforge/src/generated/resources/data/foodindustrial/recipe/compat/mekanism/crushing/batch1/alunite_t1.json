@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "foodindustrial:materials/alunite"
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": 25
+    },
+    "count": 1,
+    "id": "foodindustrial:alunite"
+  }
+}

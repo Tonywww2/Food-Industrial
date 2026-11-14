@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cascarilla_bark_oil",
+    "foodindustrial:flowing_cascarilla_bark_oil",
+    {
+      "id": "#forge:cascarilla_bark_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cascarilla_bark_oil",
+      "required": false
+    }
+  ]
+}

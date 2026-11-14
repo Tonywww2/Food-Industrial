@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:douchi_tincture",
+  "loader": "forge:fluid_container"
+}

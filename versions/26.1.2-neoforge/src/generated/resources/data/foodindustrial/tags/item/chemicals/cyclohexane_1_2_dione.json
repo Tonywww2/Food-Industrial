@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclohexane_1_2_dione",
+    {
+      "id": "#forge:dusts/cyclohexane_1_2_dione",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cyclohexane_1_2_dione",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cyclohexane_1_2_dione",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyclohexane_1_2_dione",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vitex_leaf_oil",
+    "foodindustrial:flowing_vitex_leaf_oil",
+    {
+      "id": "#forge:vitex_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:vitex_leaf_oil",
+      "required": false
+    }
+  ]
+}

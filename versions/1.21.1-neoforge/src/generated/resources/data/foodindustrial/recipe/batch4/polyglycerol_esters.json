@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/stearic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:polyglycerol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:polyglycerol_esters"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

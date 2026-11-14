@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "min_purity": "food",
+        "tag": "foodindustrial:lactic_acid"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/calcium_carbonate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_l_lactate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

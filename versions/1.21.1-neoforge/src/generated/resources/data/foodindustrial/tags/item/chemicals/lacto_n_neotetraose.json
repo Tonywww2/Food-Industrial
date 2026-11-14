@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lacto_n_neotetraose",
+    {
+      "id": "#forge:dusts/lacto_n_neotetraose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lacto_n_neotetraose",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lacto_n_neotetraose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lacto_n_neotetraose",
+      "required": false
+    }
+  ]
+}

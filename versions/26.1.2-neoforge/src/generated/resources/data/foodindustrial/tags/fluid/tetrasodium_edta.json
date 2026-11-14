@@ -4,6 +4,10 @@
     "foodindustrial:tetrasodium_edta",
     "foodindustrial:flowing_tetrasodium_edta",
     {
+      "id": "#forge:tetrasodium_edta",
+      "required": false
+    },
+    {
       "id": "#c:tetrasodium_edta",
       "required": false
     }

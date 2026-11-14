@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_starch_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_starch_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_starch_phosphate",
+      "required": false
     }
   ]
 }

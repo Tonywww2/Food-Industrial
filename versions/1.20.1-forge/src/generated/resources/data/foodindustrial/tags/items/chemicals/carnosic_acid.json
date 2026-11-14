@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/carnosic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/carnosic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carnosic_acid",
+      "required": false
     }
   ]
 }

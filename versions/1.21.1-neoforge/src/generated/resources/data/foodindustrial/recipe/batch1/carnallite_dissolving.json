@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/carnallite"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:potassium_chloride"
+    },
+    {
+      "item": "foodindustrial:magnesium_chloride"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

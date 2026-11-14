@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexanoic_anhydride",
+    "foodindustrial:flowing_hexanoic_anhydride",
+    {
+      "id": "#forge:hexanoic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:hexanoic_anhydride",
+      "required": false
+    }
+  ]
+}

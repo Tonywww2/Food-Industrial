@@ -38,19 +38,69 @@ public final class OutcomeResolver {
      * @param amounts weight of each recipe input ({@link ProcessInput#weight()}, × parallel runs)
      */
     public static int purity(ProcessRecipe recipe, int index, DeviceProfile device, Tier base, int[] values, long[] amounts, RandomSource random) {
+        return purity(recipe, index, device, base, values, amounts, random, false);
+    }
+
+    /**
+     * Purity of output {@code index}; {@code upperRange}: a {@code purity_range} result comes from the
+     * upper half of the range (a warm and humid fermentation room, M06, I14).
+     */
+    public static int purity(ProcessRecipe recipe, int index, DeviceProfile device, Tier base, int[] values, long[] amounts, RandomSource random,
+                             boolean upperRange) {
         ProcessOutput output = recipe.outputs().get(index);
         if (!output.bearsPurity()) {
             return NONE;
         }
         PurityData.Material material = PurityData.current().material(output.material());
         if (index == 0 && recipe.purityRange().isPresent()) {
-            int low = recipe.rangeLow();
             int high = recipe.rangeHigh();
+            int low = upperRange ? upperHalf(recipe.rangeLow(), high) : recipe.rangeLow();
             int b = low + random.nextInt(high - low + 1);
             return device.normalizing() ? normalize(b, material) : b;
         }
         return apply(recipe.ruleOf(index), material, start(recipe, values, amounts), device.tier().ordinal() - base.ordinal(),
             device.tier() == Tier.T0, device.normalizing());
+    }
+
+    /**
+     * Purity of output {@code index} on a device of {@code profile} with every input at its purity
+     * threshold, or at its material's external default without one; a {@code purity_range} result at its
+     * low end. What JEI shows (additives/10 §5) and the fixed purity of other mods' machines (§7, I25).
+     */
+    public static int atThreshold(ProcessRecipe recipe, int index, DeviceProfile profile, Tier base) {
+        ProcessOutput output = recipe.outputs().get(index);
+        if (!output.bearsPurity()) {
+            return NONE;
+        }
+        if (index == 0 && recipe.purityRange().isPresent()) {
+            return recipe.rangeLow();
+        }
+        int size = recipe.inputs().size();
+        int[] values = new int[size];
+        long[] amounts = new long[size];
+        for (int i = 0; i < size; i++) {
+            ProcessInput input = recipe.inputs().get(i);
+            values[i] = thresholdPurity(input);
+            amounts[i] = input.weight();
+        }
+        return purity(recipe, index, profile, base, values, amounts, FIXED);
+    }
+
+    /** Purity an input counts at for {@link #atThreshold}: its threshold, else its material's external default. */
+    public static int thresholdPurity(ProcessInput input) {
+        java.util.Optional<com.tonywww.foodindustrial.core.purity.PurityThreshold> threshold = input.threshold();
+        if (threshold.isPresent()) {
+            return threshold.get().value();
+        }
+        PurityData.Material material = PurityData.current().material(input.material());
+        return material == null || !material.bears() ? NONE : material.missing();
+    }
+
+    private static final RandomSource FIXED = RandomSource.create(0);
+
+    /** Lowest byte of the upper half of the range {@code low}–{@code high}. */
+    public static int upperHalf(int low, int high) {
+        return low + (high - low + 1) / 2;
     }
 
     /** Start purity of a completion as a fraction, or {@code NaN} when no participating input carries purity. */

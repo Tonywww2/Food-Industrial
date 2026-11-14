@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanilla_ice_cream",
+    "foodindustrial:chocolate_ice_cream",
+    "foodindustrial:mint_ice_cream",
+    "foodindustrial:berry_ice_cream",
+    "foodindustrial:matcha_ice_cream",
+    "foodindustrial:ice_cream_bar",
+    "foodindustrial:popsicle",
+    "foodindustrial:mung_bean_popsicle",
+    "foodindustrial:sorbet",
+    "foodindustrial:shaved_ice",
+    "foodindustrial:red_bean_ice"
+  ]
+}

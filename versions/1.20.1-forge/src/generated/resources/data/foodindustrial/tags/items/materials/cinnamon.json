@@ -4,6 +4,10 @@
     {
       "id": "#forge:crops/cinnamon",
       "required": false
+    },
+    {
+      "id": "#c:crops/cinnamon",
+      "required": false
     }
   ]
 }

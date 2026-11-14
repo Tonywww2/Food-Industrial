@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tert_butylbenzyl_chloride",
+    "foodindustrial:flowing_tert_butylbenzyl_chloride",
+    {
+      "id": "#forge:tert_butylbenzyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:tert_butylbenzyl_chloride",
+      "required": false
+    }
+  ]
+}

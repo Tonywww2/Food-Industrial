@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:leaf_isobutyrate",
+  "loader": "forge:fluid_container"
+}

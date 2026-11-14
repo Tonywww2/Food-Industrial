@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:pressing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/rubber_coagulum"
+    }
+  ],
+  "manual": {
+    "actions": 4
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:wet_rubber_sheet"
+    }
+  ],
+  "time": 200
+}

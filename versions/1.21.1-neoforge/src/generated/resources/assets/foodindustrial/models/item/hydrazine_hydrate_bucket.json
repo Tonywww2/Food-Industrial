@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hydrazine_hydrate",
+  "loader": "neoforge:fluid_container"
+}

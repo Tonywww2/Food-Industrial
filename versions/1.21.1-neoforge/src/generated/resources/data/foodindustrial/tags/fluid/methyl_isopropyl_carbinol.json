@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_isopropyl_carbinol",
+    "foodindustrial:flowing_methyl_isopropyl_carbinol",
+    {
+      "id": "#forge:methyl_isopropyl_carbinol",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_isopropyl_carbinol",
+      "required": false
+    }
+  ]
+}

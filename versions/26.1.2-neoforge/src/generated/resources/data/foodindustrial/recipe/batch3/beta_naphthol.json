@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_2_naphtholate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:beta_naphthol"
+    },
+    {
+      "item": "foodindustrial:sodium_sulfate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

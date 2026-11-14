@@ -6,6 +6,10 @@
     {
       "id": "#forge:hexamethyldisiloxane",
       "required": false
+    },
+    {
+      "id": "#c:hexamethyldisiloxane",
+      "required": false
     }
   ]
 }

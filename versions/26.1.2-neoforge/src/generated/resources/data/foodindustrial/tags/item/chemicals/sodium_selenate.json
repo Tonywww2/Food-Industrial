@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_selenate",
+    {
+      "id": "#forge:dusts/sodium_selenate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_selenate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_selenate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_selenate",
+      "required": false
+    }
+  ]
+}

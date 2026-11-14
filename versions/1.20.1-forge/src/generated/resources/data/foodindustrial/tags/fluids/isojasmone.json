@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isojasmone",
+    "foodindustrial:flowing_isojasmone",
+    {
+      "id": "#forge:isojasmone",
+      "required": false
+    },
+    {
+      "id": "#c:isojasmone",
+      "required": false
+    }
+  ]
+}

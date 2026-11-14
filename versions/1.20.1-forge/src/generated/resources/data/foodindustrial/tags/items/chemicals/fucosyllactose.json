@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fucosyllactose",
+    {
+      "id": "#forge:dusts/fucosyllactose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fucosyllactose",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/fucosyllactose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fucosyllactose",
+      "required": false
+    }
+  ]
+}

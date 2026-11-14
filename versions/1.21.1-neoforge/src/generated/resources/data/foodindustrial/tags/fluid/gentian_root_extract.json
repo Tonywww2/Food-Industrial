@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gentian_root_extract",
+    "foodindustrial:flowing_gentian_root_extract",
+    {
+      "id": "#forge:gentian_root_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gentian_root_extract",
+      "required": false
+    }
+  ]
+}

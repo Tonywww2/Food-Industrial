@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/p_cresol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:isobutylene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:bht"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

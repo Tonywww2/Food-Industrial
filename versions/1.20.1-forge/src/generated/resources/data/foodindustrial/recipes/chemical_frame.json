@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "forge:ingots/gold"
+    },
+    "I": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "L": {
+      "item": "foodindustrial:corrosion_lining"
+    },
+    "M": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "R": {
+      "tag": "forge:storage_blocks/redstone"
+    }
+  },
+  "pattern": [
+    "IGI",
+    "LML",
+    "RGR"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:chemical_frame"
+  }
+}

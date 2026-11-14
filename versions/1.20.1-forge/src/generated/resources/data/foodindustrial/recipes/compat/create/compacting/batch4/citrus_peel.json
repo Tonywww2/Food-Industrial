@@ -1,0 +1,37 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/citrus"
+    },
+    {
+      "tag": "foodindustrial:materials/citrus"
+    },
+    {
+      "tag": "foodindustrial:materials/citrus"
+    },
+    {
+      "tag": "foodindustrial:materials/citrus"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:citrus_peel"
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:raw_citrus_juice"
+    }
+  ]
+}

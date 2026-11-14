@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclohexyl_acetate",
+    "foodindustrial:flowing_cyclohexyl_acetate",
+    {
+      "id": "#forge:cyclohexyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:cyclohexyl_acetate",
+      "required": false
+    }
+  ]
+}

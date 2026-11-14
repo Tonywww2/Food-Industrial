@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dementholized_mint_oil",
+  "loader": "neoforge:fluid_container"
+}

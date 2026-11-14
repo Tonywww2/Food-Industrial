@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:myrrh_oil",
+  "loader": "neoforge:fluid_container"
+}

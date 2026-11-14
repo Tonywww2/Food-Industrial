@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:verbenone",
+    "foodindustrial:flowing_verbenone",
+    {
+      "id": "#forge:verbenone",
+      "required": false
+    },
+    {
+      "id": "#c:verbenone",
+      "required": false
+    }
+  ]
+}

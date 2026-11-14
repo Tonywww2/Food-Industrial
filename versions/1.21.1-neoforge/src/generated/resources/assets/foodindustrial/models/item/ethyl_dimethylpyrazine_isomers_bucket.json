@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethyl_dimethylpyrazine_isomers",
+  "loader": "neoforge:fluid_container"
+}

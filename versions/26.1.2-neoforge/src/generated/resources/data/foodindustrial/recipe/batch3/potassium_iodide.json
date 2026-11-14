@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:chemicals/iodine"
+    },
+    {
+      "count": 6,
+      "ingredient": "#foodindustrial:chemicals/potassium_hydroxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "item": "foodindustrial:potassium_iodide"
+    },
+    {
+      "item": "foodindustrial:potassium_iodate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

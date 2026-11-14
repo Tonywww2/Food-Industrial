@@ -78,6 +78,16 @@ public final class PlatformFluids {
             return new Spec(color, true, 300, 200, "block/fluid_still", "block/fluid_flowing", null);
         }
 
+        /** Same fluid drawn with other textures (paths under {@code textures/}, greyscale, tinted with the colour). */
+        public Spec withTextures(String still, String flowing) {
+            return new Spec(color, gas, temperature, viscosity, still, flowing, pickupPurity);
+        }
+
+        /** Same fluid flowing slower in the world (water 1000). */
+        public Spec withViscosity(int value) {
+            return new Spec(color, gas, temperature, value, stillTexture, flowingTexture, pickupPurity);
+        }
+
         /** Same fluid carrying purity: buckets keep it, buckets filled from the world get {@code pickup}. */
         public Spec withPurity(IntSupplier pickup) {
             return new Spec(color, gas, temperature, viscosity, stillTexture, flowingTexture, pickup);

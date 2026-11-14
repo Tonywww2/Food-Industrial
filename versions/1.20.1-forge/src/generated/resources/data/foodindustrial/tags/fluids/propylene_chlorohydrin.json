@@ -6,6 +6,10 @@
     {
       "id": "#forge:propylene_chlorohydrin",
       "required": false
+    },
+    {
+      "id": "#c:propylene_chlorohydrin",
+      "required": false
     }
   ]
 }

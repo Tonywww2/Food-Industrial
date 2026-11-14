@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amyl_hexanoate",
+    "foodindustrial:flowing_amyl_hexanoate",
+    {
+      "id": "#forge:amyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:amyl_hexanoate",
+      "required": false
+    }
+  ]
+}

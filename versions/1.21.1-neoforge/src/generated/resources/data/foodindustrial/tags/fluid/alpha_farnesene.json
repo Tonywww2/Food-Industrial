@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_farnesene",
+    "foodindustrial:flowing_alpha_farnesene",
+    {
+      "id": "#forge:alpha_farnesene",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_farnesene",
+      "required": false
+    }
+  ]
+}

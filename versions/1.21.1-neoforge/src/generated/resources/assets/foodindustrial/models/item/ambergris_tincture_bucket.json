@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ambergris_tincture",
+  "loader": "neoforge:fluid_container"
+}

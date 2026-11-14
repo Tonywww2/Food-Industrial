@@ -1,0 +1,35 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:cyclocitral"
+  },
+  "result": [
+    {
+      "amount": 400,
+      "fluid": "foodindustrial:alpha_cyclocitral",
+      "nbt": "{Purity:16b}"
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:cyclocitral",
+      "nbt": "{Purity:33b}"
+    }
+  ]
+}

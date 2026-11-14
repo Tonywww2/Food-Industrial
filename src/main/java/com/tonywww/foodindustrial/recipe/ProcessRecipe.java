@@ -2,7 +2,10 @@ package com.tonywww.foodindustrial.recipe;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
+import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.MapLike;
+import com.mojang.serialization.RecordBuilder;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.tonywww.foodindustrial.core.data.StrictCodecs;
 import com.tonywww.foodindustrial.core.purity.PurityData;
@@ -15,8 +18,10 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Stream;
 
 /**
  * One recipe of any general type (machines/01 §3, §3.1; machines/02 §3). Every type uses this class;
@@ -60,6 +65,8 @@ public final class ProcessRecipe {
     private final int manualActions;
     private final List<Catalyst> catalysts;
     private final List<VanillaDevice> vanillaDevices;
+    private final Map<String, EnvironmentFactor> environmentFactors;
+    private final Optional<Plate> plate;
 
     private final Capabilities required;
     private final int itemInputs;
@@ -68,6 +75,21 @@ public final class ProcessRecipe {
     public ProcessRecipe(ProcessType type, List<ProcessInput> inputs, List<ProcessOutput> outputs, Optional<List<Integer>> puritySources,
                          Optional<List<Double>> purityRange, int time, int energy, Conditions conditions, Optional<String> mode,
                          int manualActions, List<VanillaDevice> vanillaDevices, List<Catalyst> catalysts) {
+        this(type, inputs, outputs, puritySources, purityRange, time, energy, conditions, mode, manualActions, vanillaDevices, catalysts, Map.of());
+    }
+
+    public ProcessRecipe(ProcessType type, List<ProcessInput> inputs, List<ProcessOutput> outputs, Optional<List<Integer>> puritySources,
+                         Optional<List<Double>> purityRange, int time, int energy, Conditions conditions, Optional<String> mode,
+                         int manualActions, List<VanillaDevice> vanillaDevices, List<Catalyst> catalysts,
+                         Map<String, EnvironmentFactor> environmentFactors) {
+        this(type, inputs, outputs, puritySources, purityRange, time, energy, conditions, mode, manualActions, vanillaDevices, catalysts,
+            environmentFactors, Optional.empty());
+    }
+
+    public ProcessRecipe(ProcessType type, List<ProcessInput> inputs, List<ProcessOutput> outputs, Optional<List<Integer>> puritySources,
+                         Optional<List<Double>> purityRange, int time, int energy, Conditions conditions, Optional<String> mode,
+                         int manualActions, List<VanillaDevice> vanillaDevices, List<Catalyst> catalysts,
+                         Map<String, EnvironmentFactor> environmentFactors, Optional<Plate> plate) {
         this.type = type;
         this.inputs = List.copyOf(inputs);
         this.outputs = List.copyOf(outputs);
@@ -80,6 +102,8 @@ public final class ProcessRecipe {
         this.manualActions = manualActions;
         this.vanillaDevices = List.copyOf(vanillaDevices);
         this.catalysts = List.copyOf(catalysts);
+        this.environmentFactors = Map.copyOf(environmentFactors);
+        this.plate = plate;
         this.required = mode.map(m -> conditions.required().with(Capabilities.of("mode." + m))).orElse(conditions.required());
         int items = 0;
         for (ProcessInput input : inputs) {
@@ -104,11 +128,45 @@ public final class ProcessRecipe {
             StrictCodecs.optional("mode", MODE).forGetter(ProcessRecipe::mode),
             StrictCodecs.optional("manual", MANUAL, 0).forGetter(ProcessRecipe::manualActions),
             StrictCodecs.optional("vanilla_devices", VanillaDevice.CODEC.listOf(), List.of()).forGetter(ProcessRecipe::vanillaDevices),
-            StrictCodecs.optional("catalyst", Catalyst.ONE_OR_MORE, List.of()).forGetter(ProcessRecipe::catalysts)
-        ).apply(instance, (inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts) ->
-            new ProcessRecipe(type, inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts)))
+            StrictCodecs.optional("catalyst", Catalyst.ONE_OR_MORE, List.of()).forGetter(ProcessRecipe::catalysts),
+            StrictCodecs.optional("environment_factors", EnvironmentFactor.MAP, Map.of()).forGetter(ProcessRecipe::environmentFactors),
+            StrictCodecs.optional("plate", Plate.CODEC).forGetter(ProcessRecipe::plate)
+        ).apply(instance, (inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts, factors, plate) ->
+            new ProcessRecipe(type, inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts, factors, plate)))
             .flatXmap(ProcessRecipe::validate, DataResult::success);
     }
+
+    /**
+     * A recipe with its {@code type} field ({@code "type": "foodindustrial:kiln"}) as a data pack file
+     * writes it, for formats that embed one (vanilla device bridges, machines/01 §5).
+     */
+    public static final Codec<ProcessRecipe> TYPED_CODEC = new MapCodec<ProcessRecipe>() {
+        @Override
+        public <T> Stream<T> keys(DynamicOps<T> ops) {
+            return Stream.of(ops.createString("type"));
+        }
+
+        @Override
+        public <T> DataResult<ProcessRecipe> decode(DynamicOps<T> ops, MapLike<T> input) {
+            T written = input.get("type");
+            if (written == null) {
+                return DataResult.error(() -> "Missing recipe type");
+            }
+            return Codec.STRING.parse(ops, written).flatMap(id -> {
+                ProcessType type = id.startsWith("foodindustrial:") ? ProcessTypes.byId(id) : null;
+                if (type == null || type.isWorldInteraction()) {
+                    return DataResult.error(() -> "Unknown process recipe type " + id);
+                }
+                return mapCodec(type).decode(ops, input);
+            });
+        }
+
+        @Override
+        public <T> RecordBuilder<T> encode(ProcessRecipe input, DynamicOps<T> ops, RecordBuilder<T> prefix) {
+            prefix.add("type", ops.createString("foodindustrial:" + input.type().id()));
+            return mapCodec(input.type()).encode(input, ops, prefix);
+        }
+    }.codec();
 
     private static DataResult<ProcessRecipe> validate(ProcessRecipe recipe) {
         List<String> problems = recipe.structureProblems();
@@ -161,6 +219,20 @@ public final class ProcessRecipe {
                 problems.add("vanilla device " + device.id() + " does not run " + type.id() + " recipes");
             }
         }
+        plate.ifPresent(written -> {
+            if (type != ProcessTypes.CULTURING || mode.isEmpty()) {
+                problems.add("a plate needs a culturing recipe with a mode (M30)");
+            }
+            if (!written.weights().isEmpty() && (written.byPurity() || written.weights().size() != outputs.size())) {
+                problems.add("plate weights need one weight per output and no by_purity");
+            }
+            if (written.byPurity() && (outputs.size() < 2 || inputs.isEmpty())) {
+                problems.add("a by_purity plate needs an input culture, the target and the wild colony outputs");
+            }
+            if (fluidInputs > 0 || outputs.stream().anyMatch(ProcessOutput::isFluid)) {
+                problems.add("a plate takes and gives items only");
+            }
+        });
         return problems;
     }
 
@@ -181,16 +253,47 @@ public final class ProcessRecipe {
      */
     @Nullable
     public Match match(List<ItemStack> items, List<FluidAmount> fluids) {
+        return match(items, fluids, fluid -> false);
+    }
+
+    /**
+     * The slot and tank each input takes, or {@code null}. Matching covers the contents fully (machines/01
+     * §3.2, 2026-11-12): every non-empty slot and tank must be taken by an input, except tanks {@code spare}
+     * accepts (the machine's own gas supply, such as the nitrogen of an inert reactor).
+     */
+    @Nullable
+    public Match match(List<ItemStack> items, List<FluidAmount> fluids, java.util.function.Predicate<FluidAmount> spare) {
+        return match(items, fluids, stack -> false, spare);
+    }
+
+    /**
+     * As {@link #match(List, List, java.util.function.Predicate)}, with slots that need not be taken either (a T0
+     * device whose products stay in its slots: they do not stop the next run).
+     */
+    @Nullable
+    public Match match(List<ItemStack> items, List<FluidAmount> fluids, java.util.function.Predicate<ItemStack> spareItems,
+                       java.util.function.Predicate<FluidAmount> spare) {
         int[] slots = new int[inputs.size()];
         int[] tanks = new int[inputs.size()];
         boolean[] usedSlots = new boolean[items.size()];
         boolean[] usedTanks = new boolean[fluids.size()];
-        return assign(0, items, fluids, slots, tanks, usedSlots, usedTanks) ? new Match(slots, tanks) : null;
+        return assign(0, items, fluids, slots, tanks, usedSlots, usedTanks, spareItems, spare) ? new Match(slots, tanks) : null;
     }
 
     private boolean assign(int index, List<ItemStack> items, List<FluidAmount> fluids, int[] slots, int[] tanks,
-                           boolean[] usedSlots, boolean[] usedTanks) {
+                           boolean[] usedSlots, boolean[] usedTanks, java.util.function.Predicate<ItemStack> spareItems,
+                           java.util.function.Predicate<FluidAmount> spare) {
         if (index == inputs.size()) {
+            for (int slot = 0; slot < items.size(); slot++) {
+                if (!usedSlots[slot] && !items.get(slot).isEmpty() && !spareItems.test(items.get(slot))) {
+                    return false;
+                }
+            }
+            for (int tank = 0; tank < fluids.size(); tank++) {
+                if (!usedTanks[tank] && !fluids.get(tank).isEmpty() && !spare.test(fluids.get(tank))) {
+                    return false;
+                }
+            }
             return true;
         }
         ProcessInput input = inputs.get(index);
@@ -200,7 +303,7 @@ public final class ProcessRecipe {
                 if (!usedSlots[slot] && item.test(items.get(slot))) {
                     usedSlots[slot] = true;
                     slots[index] = slot;
-                    if (assign(index + 1, items, fluids, slots, tanks, usedSlots, usedTanks)) {
+                    if (assign(index + 1, items, fluids, slots, tanks, usedSlots, usedTanks, spareItems, spare)) {
                         return true;
                     }
                     usedSlots[slot] = false;
@@ -214,7 +317,7 @@ public final class ProcessRecipe {
             if (!usedTanks[tank] && fluid.test(fluids.get(tank))) {
                 usedTanks[tank] = true;
                 tanks[index] = tank;
-                if (assign(index + 1, items, fluids, slots, tanks, usedSlots, usedTanks)) {
+                if (assign(index + 1, items, fluids, slots, tanks, usedSlots, usedTanks, spareItems, spare)) {
                     return true;
                 }
                 usedTanks[tank] = false;
@@ -327,6 +430,25 @@ public final class ProcessRecipe {
     /** Capabilities a device needs: the conditions plus the mode. */
     public Capabilities required() {
         return required;
+    }
+
+    /** Effects of environment capabilities on time and yield (machines/01 §3.1). */
+    public Map<String, EnvironmentFactor> environmentFactors() {
+        return environmentFactors;
+    }
+
+    /** The culture plate of an M30 recipe (I17), if any. */
+    public Optional<Plate> plate() {
+        return plate;
+    }
+
+    /**
+     * How specific the recipe is, for choosing among the recipes the same contents could run: the
+     * conditions and catalysts first, then, between equals, the number of inputs (2026-11-11: a recipe
+     * using more of the contents wins over one using a part of them); ties go by id.
+     */
+    public int specificity() {
+        return (required.keys().size() + catalysts.size()) * 16 + inputs.size();
     }
 
     public int itemInputCount() {

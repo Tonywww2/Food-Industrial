@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": "#foodindustrial:materials/tea"
+    }
+  ],
+  "mode": "sublimation",
+  "outputs": [
+    {
+      "item": "foodindustrial:caffeine",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:potash_lye"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:potassium_carbonate",
+      "nbt": "{Purity:9b}"
+    }
+  ]
+}

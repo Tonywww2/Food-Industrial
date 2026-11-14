@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:vacuum_gas_oil"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:acetone"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:paraffin_wax"
+    },
+    {
+      "amount": 600,
+      "fluid": "foodindustrial:dewaxed_oil"
+    },
+    {
+      "amount": 450,
+      "fluid": "foodindustrial:acetone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "freezing"
+  },
+  "time": 200
+}

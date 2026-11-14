@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:coconut_oil"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:coconut_fatty_acids"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:glycerol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "high",
+    "temperature": "high"
+  },
+  "time": 200
+}

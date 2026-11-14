@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tartrazine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tartrazine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tartrazine",
+      "required": false
     }
   ]
 }

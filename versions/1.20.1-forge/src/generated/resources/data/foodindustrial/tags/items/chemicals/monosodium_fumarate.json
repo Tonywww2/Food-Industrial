@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/monosodium_fumarate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/monosodium_fumarate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monosodium_fumarate",
+      "required": false
     }
   ]
 }

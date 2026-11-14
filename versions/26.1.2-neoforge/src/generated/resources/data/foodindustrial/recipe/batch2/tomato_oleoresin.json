@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/tomato_pomace"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethyl_acetate"
+      }
+    }
+  ],
+  "mode": "solvent_extraction",
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:tomato_oleoresin",
+      "purity": {
+        "mode": "source",
+        "value": 3
+      }
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:ethyl_acetate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

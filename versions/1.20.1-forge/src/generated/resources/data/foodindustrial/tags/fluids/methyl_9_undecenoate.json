@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_9_undecenoate",
+    "foodindustrial:flowing_methyl_9_undecenoate",
+    {
+      "id": "#forge:methyl_9_undecenoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_9_undecenoate",
+      "required": false
+    }
+  ]
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:hydrogen_chloride",
       "required": false
+    },
+    {
+      "id": "#c:hydrogen_chloride",
+      "required": false
     }
   ]
 }

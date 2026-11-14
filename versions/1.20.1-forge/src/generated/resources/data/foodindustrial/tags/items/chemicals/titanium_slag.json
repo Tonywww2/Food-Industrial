@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/titanium_slag",
       "required": false
+    },
+    {
+      "id": "#c:dusts/titanium_slag",
+      "required": false
+    },
+    {
+      "id": "#c:gems/titanium_slag",
+      "required": false
     }
   ]
 }

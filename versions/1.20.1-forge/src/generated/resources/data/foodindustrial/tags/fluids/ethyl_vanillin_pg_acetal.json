@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_vanillin_pg_acetal",
+    "foodindustrial:flowing_ethyl_vanillin_pg_acetal",
+    {
+      "id": "#forge:ethyl_vanillin_pg_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_vanillin_pg_acetal",
+      "required": false
+    }
+  ]
+}

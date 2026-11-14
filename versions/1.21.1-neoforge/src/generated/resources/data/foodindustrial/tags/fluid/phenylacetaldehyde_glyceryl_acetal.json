@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylacetaldehyde_glyceryl_acetal",
+    "foodindustrial:flowing_phenylacetaldehyde_glyceryl_acetal",
+    {
+      "id": "#forge:phenylacetaldehyde_glyceryl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:phenylacetaldehyde_glyceryl_acetal",
+      "required": false
+    }
+  ]
+}

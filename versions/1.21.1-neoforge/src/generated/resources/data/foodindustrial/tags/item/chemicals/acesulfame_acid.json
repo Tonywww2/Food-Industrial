@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:acesulfame_acid",
     {
+      "id": "#forge:dusts/acesulfame_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acesulfame_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/acesulfame_acid",
       "required": false
     },

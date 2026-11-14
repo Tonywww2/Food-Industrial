@@ -6,6 +6,10 @@
     {
       "id": "#forge:acetic_acid",
       "required": false
+    },
+    {
+      "id": "#c:acetic_acid",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperonyl_acetate",
+    "foodindustrial:flowing_piperonyl_acetate",
+    {
+      "id": "#forge:piperonyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:piperonyl_acetate",
+      "required": false
+    }
+  ]
+}

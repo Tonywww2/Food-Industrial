@@ -1,0 +1,49 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:enzymes/aminoacylase"
+    }
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/acetyl_methylselenocysteine"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:methylselenocysteine",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "item": "foodindustrial:acetyl_d_methylselenocysteine",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

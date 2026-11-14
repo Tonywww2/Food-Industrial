@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetoxybutanone",
+    "foodindustrial:flowing_acetoxybutanone",
+    {
+      "id": "#forge:acetoxybutanone",
+      "required": false
+    },
+    {
+      "id": "#c:acetoxybutanone",
+      "required": false
+    }
+  ]
+}

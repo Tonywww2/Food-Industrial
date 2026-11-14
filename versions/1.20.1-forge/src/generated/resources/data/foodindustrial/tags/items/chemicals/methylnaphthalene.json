@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylnaphthalene",
+    {
+      "id": "#forge:dusts/methylnaphthalene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylnaphthalene",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylnaphthalene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylnaphthalene",
+      "required": false
+    }
+  ]
+}

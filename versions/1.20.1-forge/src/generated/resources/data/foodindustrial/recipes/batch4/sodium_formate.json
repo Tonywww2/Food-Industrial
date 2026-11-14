@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:carbon_monoxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_formate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

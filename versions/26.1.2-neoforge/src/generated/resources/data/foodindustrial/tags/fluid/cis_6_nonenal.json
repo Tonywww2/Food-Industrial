@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_6_nonenal",
+    "foodindustrial:flowing_cis_6_nonenal",
+    {
+      "id": "#forge:cis_6_nonenal",
+      "required": false
+    },
+    {
+      "id": "#c:cis_6_nonenal",
+      "required": false
+    }
+  ]
+}

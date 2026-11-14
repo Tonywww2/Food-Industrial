@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_anisate",
+    {
+      "id": "#forge:dusts/methyl_anisate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_anisate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_anisate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_anisate",
+      "required": false
+    }
+  ]
+}

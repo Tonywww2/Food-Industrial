@@ -1,0 +1,45 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/immobilized_lipase"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:palm_oil"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:oleic_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:dioleoyl_palmitoyl_glycerol",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "count": 2,
+      "item": "foodindustrial:palmitic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "T": {
+      "item": "foodindustrial:wooden_tank"
+    }
+  },
+  "pattern": [
+    " P ",
+    "PTP",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:steeping_vat"
+  }
+}

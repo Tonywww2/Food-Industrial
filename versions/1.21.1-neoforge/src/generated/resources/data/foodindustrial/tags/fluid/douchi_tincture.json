@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:douchi_tincture",
+    "foodindustrial:flowing_douchi_tincture",
+    {
+      "id": "#forge:douchi_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:douchi_tincture",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:stirred_reactor",
+  "name": "book.foodindustrial.manual.entry.stirred_reactor",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:stirred_reactor",
+      "text": "book.foodindustrial.manual.entry.stirred_reactor.text"
+    }
+  ],
+  "sortnum": 2
+}

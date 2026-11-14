@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/dried_cochineal"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:carminic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

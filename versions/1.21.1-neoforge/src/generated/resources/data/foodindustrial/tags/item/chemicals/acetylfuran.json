@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylfuran",
+    {
+      "id": "#forge:dusts/acetylfuran",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetylfuran",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetylfuran",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetylfuran",
+      "required": false
+    }
+  ]
+}

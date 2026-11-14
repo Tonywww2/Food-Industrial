@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:z_dodecenolactone",
+  "loader": "neoforge:fluid_container"
+}

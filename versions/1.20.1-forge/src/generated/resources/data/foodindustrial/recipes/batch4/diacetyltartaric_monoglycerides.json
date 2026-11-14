@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/glyceryl_monostearate"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/diacetyltartaric_anhydride"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:acetic_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:diacetyltartaric_monoglycerides"
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

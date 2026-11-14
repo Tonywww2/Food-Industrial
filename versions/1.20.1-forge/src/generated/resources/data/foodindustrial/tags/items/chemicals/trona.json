@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/trona",
       "required": false
+    },
+    {
+      "id": "#c:dusts/trona",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trona",
+      "required": false
     }
   ]
 }

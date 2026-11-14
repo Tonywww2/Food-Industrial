@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/alginic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/potassium_carbonate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:potassium_alginate"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

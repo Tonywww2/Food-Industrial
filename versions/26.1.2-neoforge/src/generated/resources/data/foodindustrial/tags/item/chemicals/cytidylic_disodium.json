@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cytidylic_disodium",
+    {
+      "id": "#forge:dusts/cytidylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cytidylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cytidylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cytidylic_disodium",
+      "required": false
+    }
+  ]
+}

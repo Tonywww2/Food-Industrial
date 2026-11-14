@@ -4,6 +4,10 @@
     "foodindustrial:glutamate_broth",
     "foodindustrial:flowing_glutamate_broth",
     {
+      "id": "#forge:glutamate_broth",
+      "required": false
+    },
+    {
       "id": "#c:glutamate_broth",
       "required": false
     }

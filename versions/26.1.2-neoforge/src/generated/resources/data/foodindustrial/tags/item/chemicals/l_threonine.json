@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_threonine",
+    {
+      "id": "#forge:dusts/l_threonine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_threonine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/l_threonine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_threonine",
+      "required": false
+    }
+  ]
+}

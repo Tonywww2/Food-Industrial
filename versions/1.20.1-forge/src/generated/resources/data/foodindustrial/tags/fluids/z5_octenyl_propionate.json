@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:z5_octenyl_propionate",
+    "foodindustrial:flowing_z5_octenyl_propionate",
+    {
+      "id": "#forge:z5_octenyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:z5_octenyl_propionate",
+      "required": false
+    }
+  ]
+}

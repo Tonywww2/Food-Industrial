@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:phenylethyl_anthranilate",
+  "loader": "neoforge:fluid_container"
+}

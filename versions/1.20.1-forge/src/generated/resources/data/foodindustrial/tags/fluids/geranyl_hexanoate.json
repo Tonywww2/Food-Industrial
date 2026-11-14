@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_hexanoate",
+    "foodindustrial:flowing_geranyl_hexanoate",
+    {
+      "id": "#forge:geranyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_hexanoate",
+      "required": false
+    }
+  ]
+}

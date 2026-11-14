@@ -1,0 +1,29 @@
+{
+  "type": "create:milling",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/dried_turmeric"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:turmeric",
+      "nbt": "{Purity:-26b}"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "create:milling",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/ghatti_lump"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:ghatti_gum",
+      "nbt": "{Purity:8b}"
+    }
+  ]
+}

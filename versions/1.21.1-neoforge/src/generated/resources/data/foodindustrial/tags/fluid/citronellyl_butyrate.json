@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronellyl_butyrate",
+    "foodindustrial:flowing_citronellyl_butyrate",
+    {
+      "id": "#forge:citronellyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:citronellyl_butyrate",
+      "required": false
+    }
+  ]
+}

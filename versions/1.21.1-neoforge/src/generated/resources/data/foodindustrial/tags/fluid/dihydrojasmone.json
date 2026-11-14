@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydrojasmone",
+    "foodindustrial:flowing_dihydrojasmone",
+    {
+      "id": "#forge:dihydrojasmone",
+      "required": false
+    },
+    {
+      "id": "#c:dihydrojasmone",
+      "required": false
+    }
+  ]
+}

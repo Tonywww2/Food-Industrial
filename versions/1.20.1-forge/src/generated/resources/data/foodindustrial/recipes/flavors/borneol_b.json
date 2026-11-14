@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:alpha_pinene"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/oxalic_acid"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:borneol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

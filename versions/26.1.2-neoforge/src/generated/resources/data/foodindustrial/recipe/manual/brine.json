@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/salt"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:brine"
+    }
+  ],
+  "time": 200
+}

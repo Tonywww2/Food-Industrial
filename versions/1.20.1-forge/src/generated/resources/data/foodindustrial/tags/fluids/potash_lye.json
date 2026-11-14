@@ -6,6 +6,10 @@
     {
       "id": "#forge:potash_lye",
       "required": false
+    },
+    {
+      "id": "#c:potash_lye",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:disodium_sebacate",
+    {
+      "id": "#forge:dusts/disodium_sebacate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/disodium_sebacate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/disodium_sebacate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/disodium_sebacate",
+      "required": false
+    }
+  ]
+}

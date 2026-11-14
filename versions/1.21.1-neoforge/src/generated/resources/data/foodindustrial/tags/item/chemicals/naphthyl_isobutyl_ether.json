@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:naphthyl_isobutyl_ether",
+    {
+      "id": "#forge:dusts/naphthyl_isobutyl_ether",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/naphthyl_isobutyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/naphthyl_isobutyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naphthyl_isobutyl_ether",
+      "required": false
+    }
+  ]
+}

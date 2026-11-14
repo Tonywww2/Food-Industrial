@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carbonyl_iron",
+    {
+      "id": "#forge:dusts/carbonyl_iron",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carbonyl_iron",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/carbonyl_iron",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carbonyl_iron",
+      "required": false
+    }
+  ]
+}

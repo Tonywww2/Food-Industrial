@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hop_oil",
+    "foodindustrial:flowing_hop_oil",
+    {
+      "id": "#forge:hop_oil",
+      "required": false
+    },
+    {
+      "id": "#c:hop_oil",
+      "required": false
+    }
+  ]
+}

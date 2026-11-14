@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorbyl_alcohol",
+    "foodindustrial:flowing_sorbyl_alcohol",
+    {
+      "id": "#forge:sorbyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:sorbyl_alcohol",
+      "required": false
+    }
+  ]
+}

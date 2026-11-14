@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetramethyl_ethylcyclohexenone",
+    "foodindustrial:flowing_tetramethyl_ethylcyclohexenone",
+    {
+      "id": "#forge:tetramethyl_ethylcyclohexenone",
+      "required": false
+    },
+    {
+      "id": "#c:tetramethyl_ethylcyclohexenone",
+      "required": false
+    }
+  ]
+}

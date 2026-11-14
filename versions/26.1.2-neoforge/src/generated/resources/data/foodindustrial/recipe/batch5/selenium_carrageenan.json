@@ -1,0 +1,48 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/carrageenan"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_selenite"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/soda_ash"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:nitric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:selenium_carrageenan",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:ethanol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

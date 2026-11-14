@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:blackcurrant_tincture",
+    "foodindustrial:flowing_blackcurrant_tincture",
+    {
+      "id": "#forge:blackcurrant_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:blackcurrant_tincture",
+      "required": false
+    }
+  ]
+}

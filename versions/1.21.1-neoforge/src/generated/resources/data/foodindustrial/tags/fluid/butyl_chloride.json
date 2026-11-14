@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_chloride",
+    "foodindustrial:flowing_butyl_chloride",
+    {
+      "id": "#forge:butyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_chloride",
+      "required": false
+    }
+  ]
+}

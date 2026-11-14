@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:balata_latex",
+    "foodindustrial:flowing_balata_latex",
+    {
+      "id": "#forge:balata_latex",
+      "required": false
+    },
+    {
+      "id": "#c:balata_latex",
+      "required": false
+    }
+  ]
+}

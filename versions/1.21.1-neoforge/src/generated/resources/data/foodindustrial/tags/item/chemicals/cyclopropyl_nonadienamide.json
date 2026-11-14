@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclopropyl_nonadienamide",
+    {
+      "id": "#forge:dusts/cyclopropyl_nonadienamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cyclopropyl_nonadienamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cyclopropyl_nonadienamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyclopropyl_nonadienamide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylnaphthalene_1",
+    "foodindustrial:flowing_methylnaphthalene_1",
+    {
+      "id": "#forge:methylnaphthalene_1",
+      "required": false
+    },
+    {
+      "id": "#c:methylnaphthalene_1",
+      "required": false
+    }
+  ]
+}

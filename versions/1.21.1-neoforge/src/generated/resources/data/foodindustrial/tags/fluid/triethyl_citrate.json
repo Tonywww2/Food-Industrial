@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:triethyl_citrate",
+    "foodindustrial:flowing_triethyl_citrate",
+    {
+      "id": "#forge:triethyl_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:triethyl_citrate",
+      "required": false
+    }
+  ]
+}

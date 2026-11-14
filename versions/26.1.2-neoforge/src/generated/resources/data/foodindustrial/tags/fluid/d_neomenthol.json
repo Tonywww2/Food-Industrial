@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:d_neomenthol",
+    "foodindustrial:flowing_d_neomenthol",
+    {
+      "id": "#forge:d_neomenthol",
+      "required": false
+    },
+    {
+      "id": "#c:d_neomenthol",
+      "required": false
+    }
+  ]
+}

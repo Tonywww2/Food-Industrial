@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:alumina",
     {
+      "id": "#forge:dusts/alumina",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/alumina",
+      "required": false
+    },
+    {
       "id": "#c:dusts/alumina",
       "required": false
     },

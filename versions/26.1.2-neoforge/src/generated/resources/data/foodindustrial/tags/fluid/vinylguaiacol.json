@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vinylguaiacol",
+    "foodindustrial:flowing_vinylguaiacol",
+    {
+      "id": "#forge:vinylguaiacol",
+      "required": false
+    },
+    {
+      "id": "#c:vinylguaiacol",
+      "required": false
+    }
+  ]
+}

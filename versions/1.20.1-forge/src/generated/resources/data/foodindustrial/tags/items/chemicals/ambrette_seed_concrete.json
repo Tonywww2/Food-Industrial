@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambrette_seed_concrete",
+    {
+      "id": "#forge:dusts/ambrette_seed_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ambrette_seed_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ambrette_seed_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ambrette_seed_concrete",
+      "required": false
+    }
+  ]
+}

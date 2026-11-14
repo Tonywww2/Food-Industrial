@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:manganese_carbonate",
+    {
+      "id": "#forge:dusts/manganese_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/manganese_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/manganese_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/manganese_carbonate",
+      "required": false
+    }
+  ]
+}

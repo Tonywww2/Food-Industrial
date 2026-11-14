@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:isoamyl_valerate",
+  "loader": "neoforge:fluid_container"
+}

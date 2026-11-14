@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    },
+    "W": {
+      "item": "foodindustrial:chemical_tower_wall"
+    }
+  },
+  "pattern": [
+    "IQI",
+    "QWQ",
+    "IQI"
+  ],
+  "result": {
+    "count": 8,
+    "id": "foodindustrial:sterile_vessel_wall"
+  }
+}

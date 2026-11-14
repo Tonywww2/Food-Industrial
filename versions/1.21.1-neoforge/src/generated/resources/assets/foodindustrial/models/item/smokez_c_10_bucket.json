@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:smokez_c_10",
+  "loader": "neoforge:fluid_container"
+}

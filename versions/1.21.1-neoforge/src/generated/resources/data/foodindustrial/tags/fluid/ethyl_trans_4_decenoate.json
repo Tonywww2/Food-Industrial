@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_trans_4_decenoate",
+    "foodindustrial:flowing_ethyl_trans_4_decenoate",
+    {
+      "id": "#forge:ethyl_trans_4_decenoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_trans_4_decenoate",
+      "required": false
+    }
+  ]
+}

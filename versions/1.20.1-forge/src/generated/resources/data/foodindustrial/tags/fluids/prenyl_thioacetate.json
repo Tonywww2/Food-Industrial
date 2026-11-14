@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:prenyl_thioacetate",
+    "foodindustrial:flowing_prenyl_thioacetate",
+    {
+      "id": "#forge:prenyl_thioacetate",
+      "required": false
+    },
+    {
+      "id": "#c:prenyl_thioacetate",
+      "required": false
+    }
+  ]
+}

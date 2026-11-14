@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_methoxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:carbon_monoxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "tag": "foodindustrial:methanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 4000,
+      "fluid": "foodindustrial:formic_acid"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

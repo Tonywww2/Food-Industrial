@@ -4,6 +4,10 @@
     "foodindustrial:diketene",
     "foodindustrial:flowing_diketene",
     {
+      "id": "#forge:diketene",
+      "required": false
+    },
+    {
       "id": "#c:diketene",
       "required": false
     }

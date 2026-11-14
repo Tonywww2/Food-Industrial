@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:blackcurrant_concrete",
+    {
+      "id": "#forge:dusts/blackcurrant_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/blackcurrant_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/blackcurrant_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/blackcurrant_concrete",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_methylpropenyl_thf",
+    "foodindustrial:flowing_dimethyl_methylpropenyl_thf",
+    {
+      "id": "#forge:dimethyl_methylpropenyl_thf",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_methylpropenyl_thf",
+      "required": false
+    }
+  ]
+}

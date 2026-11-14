@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/coal"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_monoxide",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 200
+}

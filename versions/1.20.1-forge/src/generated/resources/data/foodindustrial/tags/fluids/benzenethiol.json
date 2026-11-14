@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzenethiol",
+    "foodindustrial:flowing_benzenethiol",
+    {
+      "id": "#forge:benzenethiol",
+      "required": false
+    },
+    {
+      "id": "#c:benzenethiol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetrahydrofolic_acid",
+    {
+      "id": "#forge:dusts/tetrahydrofolic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tetrahydrofolic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tetrahydrofolic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tetrahydrofolic_acid",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/monascorubrin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/monascorubrin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monascorubrin",
+      "required": false
     }
   ]
 }

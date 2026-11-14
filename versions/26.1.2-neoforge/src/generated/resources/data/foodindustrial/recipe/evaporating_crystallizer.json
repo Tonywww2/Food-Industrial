@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "foodindustrial:machine_frame",
+    "I": "#c:ingots/iron",
+    "R": "#c:dusts/redstone",
+    "T": "foodindustrial:crystallizing_tank"
+  },
+  "pattern": [
+    "ITI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:evaporating_crystallizer"
+  }
+}

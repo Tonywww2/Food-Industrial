@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/capsanthin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/capsanthin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/capsanthin",
+      "required": false
     }
   ]
 }

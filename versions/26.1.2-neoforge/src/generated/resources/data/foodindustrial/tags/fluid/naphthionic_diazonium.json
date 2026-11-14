@@ -4,6 +4,10 @@
     "foodindustrial:naphthionic_diazonium",
     "foodindustrial:flowing_naphthionic_diazonium",
     {
+      "id": "#forge:naphthionic_diazonium",
+      "required": false
+    },
+    {
       "id": "#c:naphthionic_diazonium",
       "required": false
     }

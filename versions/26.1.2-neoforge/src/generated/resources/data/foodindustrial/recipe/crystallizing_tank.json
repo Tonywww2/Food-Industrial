@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:brick",
+    "T": "foodindustrial:wooden_tank"
+  },
+  "pattern": [
+    "BTB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:crystallizing_tank"
+  }
+}

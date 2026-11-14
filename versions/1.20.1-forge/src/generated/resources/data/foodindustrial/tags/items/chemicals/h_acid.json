@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/h_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/h_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/h_acid",
+      "required": false
     }
   ]
 }

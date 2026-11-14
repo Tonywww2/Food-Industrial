@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:pentenylcyclopentanone",
+  "loader": "neoforge:fluid_container"
+}

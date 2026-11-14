@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bitter_orange_oil",
+    "foodindustrial:flowing_bitter_orange_oil",
+    {
+      "id": "#forge:bitter_orange_oil",
+      "required": false
+    },
+    {
+      "id": "#c:bitter_orange_oil",
+      "required": false
+    }
+  ]
+}

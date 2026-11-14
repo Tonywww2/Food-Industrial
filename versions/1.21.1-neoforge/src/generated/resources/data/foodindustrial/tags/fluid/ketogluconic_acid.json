@@ -4,6 +4,10 @@
     "foodindustrial:ketogluconic_acid",
     "foodindustrial:flowing_ketogluconic_acid",
     {
+      "id": "#forge:ketogluconic_acid",
+      "required": false
+    },
+    {
       "id": "#c:ketogluconic_acid",
       "required": false
     }

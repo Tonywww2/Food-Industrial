@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_cyanide",
+    "foodindustrial:flowing_benzyl_cyanide",
+    {
+      "id": "#forge:benzyl_cyanide",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_cyanide",
+      "required": false
+    }
+  ]
+}

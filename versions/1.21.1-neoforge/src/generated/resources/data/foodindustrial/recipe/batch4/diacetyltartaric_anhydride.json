@@ -1,0 +1,41 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/tartaric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:acetic_anhydride"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 50,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:diacetyltartaric_anhydride"
+    },
+    {
+      "amount": 4000,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 50
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

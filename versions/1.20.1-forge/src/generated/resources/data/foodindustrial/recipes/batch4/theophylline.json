@@ -1,0 +1,55 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/palladium"
+    }
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/aminodimethyluracil"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_nitrite"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:formic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "hydrogenation",
+  "outputs": [
+    {
+      "item": "foodindustrial:theophylline"
+    },
+    {
+      "item": "foodindustrial:salt"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "high"
+  },
+  "time": 200
+}

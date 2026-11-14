@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_pyruvate",
+    "foodindustrial:flowing_isoamyl_pyruvate",
+    {
+      "id": "#forge:isoamyl_pyruvate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_pyruvate",
+      "required": false
+    }
+  ]
+}

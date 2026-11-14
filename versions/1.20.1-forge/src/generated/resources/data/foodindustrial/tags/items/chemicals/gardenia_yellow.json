@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gardenia_yellow",
+    {
+      "id": "#forge:dusts/gardenia_yellow",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gardenia_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/gardenia_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gardenia_yellow",
+      "required": false
+    }
+  ]
+}

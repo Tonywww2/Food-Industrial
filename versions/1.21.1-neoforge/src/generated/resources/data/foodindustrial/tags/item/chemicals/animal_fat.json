@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:animal_fat",
     {
+      "id": "#forge:dusts/animal_fat",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/animal_fat",
+      "required": false
+    },
+    {
       "id": "#c:dusts/animal_fat",
       "required": false
     },

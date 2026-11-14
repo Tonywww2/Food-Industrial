@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/phthalic_anhydride"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/resorcinol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:fluorescein"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 200
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:inulin",
+    {
+      "id": "#forge:dusts/inulin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/inulin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/inulin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/inulin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:bis_methylfuryl_tetrasulfide",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:m_cresol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ammonia"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:cresidine_sulfonic_acid"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,33 @@
+{
+  "fluids": [
+    "nuclearcraft:ammonia",
+    "nuclearcraft:carbon_dioxide",
+    "nuclearcraft:carbon_monoxide",
+    "nuclearcraft:chlorine",
+    "nuclearcraft:ethanol",
+    "nuclearcraft:hydrochloric_acid",
+    "nuclearcraft:hydrogen",
+    "nuclearcraft:hydrogen_chloride",
+    "nuclearcraft:methanol",
+    "nuclearcraft:nitric_acid",
+    "nuclearcraft:nitric_oxide",
+    "nuclearcraft:nitrogen",
+    "nuclearcraft:nitrogen_dioxide",
+    "nuclearcraft:oxygen",
+    "nuclearcraft:sulfur_dioxide",
+    "nuclearcraft:sulfur_trioxide",
+    "nuclearcraft:sulfuric_acid"
+  ],
+  "items": [
+    "nuclearcraft:salt",
+    "nuclearcraft:sulfur_dust",
+    "nuclearcraft:iodine_dust",
+    "nuclearcraft:manganese_dioxide_dust",
+    "nuclearcraft:potassium_hydroxide_dust",
+    "nuclearcraft:potassium_iodide_dust",
+    "nuclearcraft:sodium_dust",
+    "nuclearcraft:sodium_hydroxide_dust",
+    "nuclearcraft:silicon_gem"
+  ],
+  "purity": "crude"
+}

@@ -1,0 +1,46 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:chemicals/shellac",
+        "min_purity": "food"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 200,
+        "min_purity": "food",
+        "tag": "foodindustrial:oleic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "min_purity": "food",
+        "tag": "foodindustrial:morpholine"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:morpholine_fruit_wax"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

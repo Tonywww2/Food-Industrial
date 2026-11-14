@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:theaspirane",
+    "foodindustrial:flowing_theaspirane",
+    {
+      "id": "#forge:theaspirane",
+      "required": false
+    },
+    {
+      "id": "#c:theaspirane",
+      "required": false
+    }
+  ]
+}

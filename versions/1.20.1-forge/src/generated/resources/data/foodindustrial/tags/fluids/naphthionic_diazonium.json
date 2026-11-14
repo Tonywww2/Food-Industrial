@@ -6,6 +6,10 @@
     {
       "id": "#forge:naphthionic_diazonium",
       "required": false
+    },
+    {
+      "id": "#c:naphthionic_diazonium",
+      "required": false
     }
   ]
 }

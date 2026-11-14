@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aluminium_isopropoxide",
+    {
+      "id": "#forge:dusts/aluminium_isopropoxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aluminium_isopropoxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/aluminium_isopropoxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aluminium_isopropoxide",
+      "required": false
+    }
+  ]
+}

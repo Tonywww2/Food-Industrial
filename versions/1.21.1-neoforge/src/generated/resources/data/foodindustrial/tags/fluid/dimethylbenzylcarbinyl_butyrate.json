@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylbenzylcarbinyl_butyrate",
+    "foodindustrial:flowing_dimethylbenzylcarbinyl_butyrate",
+    {
+      "id": "#forge:dimethylbenzylcarbinyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylbenzylcarbinyl_butyrate",
+      "required": false
+    }
+  ]
+}

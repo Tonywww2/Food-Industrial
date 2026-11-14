@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_hydrocinnamate",
+    "foodindustrial:flowing_ethyl_hydrocinnamate",
+    {
+      "id": "#forge:ethyl_hydrocinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_hydrocinnamate",
+      "required": false
+    }
+  ]
+}

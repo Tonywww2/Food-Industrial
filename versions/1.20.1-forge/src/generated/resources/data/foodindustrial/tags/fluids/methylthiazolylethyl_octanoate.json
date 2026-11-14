@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiazolylethyl_octanoate",
+    "foodindustrial:flowing_methylthiazolylethyl_octanoate",
+    {
+      "id": "#forge:methylthiazolylethyl_octanoate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiazolylethyl_octanoate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_octanoate",
+    "foodindustrial:flowing_furfuryl_octanoate",
+    {
+      "id": "#forge:furfuryl_octanoate",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_octanoate",
+      "required": false
+    }
+  ]
+}

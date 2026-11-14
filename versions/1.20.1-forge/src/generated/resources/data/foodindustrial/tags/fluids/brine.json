@@ -6,6 +6,10 @@
     {
       "id": "#forge:brine",
       "required": false
+    },
+    {
+      "id": "#c:brine",
+      "required": false
     }
   ]
 }

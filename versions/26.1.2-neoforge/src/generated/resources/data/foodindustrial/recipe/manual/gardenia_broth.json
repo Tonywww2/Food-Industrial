@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/crushed_gardenia"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:gardenia_broth"
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200
+}

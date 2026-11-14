@@ -1,0 +1,46 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/cinchona_bark"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/slaked_lime"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:toluene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    }
+  ],
+  "mode": "solvent_extraction",
+  "outputs": [
+    {
+      "item": "foodindustrial:quinine_hydrochloride",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:toluene",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:diacetyl",
       "required": false
+    },
+    {
+      "id": "#c:diacetyl",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:chemicals/titanium_dioxide"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:alpha_pinene"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:camphene",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

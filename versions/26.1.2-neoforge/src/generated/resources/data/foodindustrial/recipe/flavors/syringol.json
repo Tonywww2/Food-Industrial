@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/pyrogallol"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:methyl_chloride"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:syringol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

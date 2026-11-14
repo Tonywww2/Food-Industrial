@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:homoeriodictyol_sodium",
+    {
+      "id": "#forge:dusts/homoeriodictyol_sodium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/homoeriodictyol_sodium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/homoeriodictyol_sodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/homoeriodictyol_sodium",
+      "required": false
+    }
+  ]
+}

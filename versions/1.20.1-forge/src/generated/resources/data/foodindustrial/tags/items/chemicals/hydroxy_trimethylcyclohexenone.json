@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxy_trimethylcyclohexenone",
+    {
+      "id": "#forge:dusts/hydroxy_trimethylcyclohexenone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxy_trimethylcyclohexenone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxy_trimethylcyclohexenone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxy_trimethylcyclohexenone",
+      "required": false
+    }
+  ]
+}

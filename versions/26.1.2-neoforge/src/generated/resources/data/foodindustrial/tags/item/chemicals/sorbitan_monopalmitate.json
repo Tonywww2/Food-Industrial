@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sorbitan_monopalmitate",
     {
+      "id": "#forge:dusts/sorbitan_monopalmitate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sorbitan_monopalmitate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sorbitan_monopalmitate",
       "required": false
     },

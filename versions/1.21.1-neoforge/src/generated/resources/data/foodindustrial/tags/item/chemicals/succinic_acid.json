@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:succinic_acid",
     {
+      "id": "#forge:dusts/succinic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/succinic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/succinic_acid",
       "required": false
     },

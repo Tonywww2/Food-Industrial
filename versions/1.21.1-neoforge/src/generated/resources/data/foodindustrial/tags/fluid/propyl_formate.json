@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_formate",
+    "foodindustrial:flowing_propyl_formate",
+    {
+      "id": "#forge:propyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:propyl_formate",
+      "required": false
+    }
+  ]
+}

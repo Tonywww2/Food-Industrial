@@ -1,0 +1,28 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:isoamyl_formate"
+  },
+  "result": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:isoamyl_formate",
+      "nbt": "{Purity:26b}"
+    }
+  ]
+}

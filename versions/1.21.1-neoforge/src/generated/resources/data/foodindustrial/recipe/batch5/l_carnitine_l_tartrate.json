@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/l_carnitine"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/tartaric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:l_carnitine_l_tartrate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:ethanol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

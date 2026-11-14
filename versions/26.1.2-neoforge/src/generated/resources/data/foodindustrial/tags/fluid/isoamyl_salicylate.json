@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_salicylate",
+    "foodindustrial:flowing_isoamyl_salicylate",
+    {
+      "id": "#forge:isoamyl_salicylate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_salicylate",
+      "required": false
+    }
+  ]
+}

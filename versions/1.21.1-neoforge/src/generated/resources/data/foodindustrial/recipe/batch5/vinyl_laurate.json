@@ -1,0 +1,50 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/palladium"
+    }
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/lauric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:vinyl_acetate"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:vinyl_laurate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:vinyl_acetate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

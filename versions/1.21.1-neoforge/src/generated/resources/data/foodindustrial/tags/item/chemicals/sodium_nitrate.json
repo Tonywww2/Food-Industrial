@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_nitrate",
     {
+      "id": "#forge:dusts/sodium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_nitrate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_nitrate",
       "required": false
     },

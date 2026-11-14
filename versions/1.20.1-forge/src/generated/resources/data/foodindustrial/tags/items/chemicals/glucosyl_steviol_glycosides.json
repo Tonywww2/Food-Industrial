@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glucosyl_steviol_glycosides",
+    {
+      "id": "#forge:dusts/glucosyl_steviol_glycosides",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glucosyl_steviol_glycosides",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/glucosyl_steviol_glycosides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glucosyl_steviol_glycosides",
+      "required": false
+    }
+  ]
+}

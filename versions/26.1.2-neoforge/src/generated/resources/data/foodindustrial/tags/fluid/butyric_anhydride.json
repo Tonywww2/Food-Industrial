@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyric_anhydride",
+    "foodindustrial:flowing_butyric_anhydride",
+    {
+      "id": "#forge:butyric_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:butyric_anhydride",
+      "required": false
+    }
+  ]
+}

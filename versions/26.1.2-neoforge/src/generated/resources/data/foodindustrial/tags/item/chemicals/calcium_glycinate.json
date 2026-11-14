@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_glycinate",
+    {
+      "id": "#forge:dusts/calcium_glycinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_glycinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_glycinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_glycinate",
+      "required": false
+    }
+  ]
+}

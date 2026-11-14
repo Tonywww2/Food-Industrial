@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:nonadienol_3e_6z",
+  "loader": "neoforge:fluid_container"
+}

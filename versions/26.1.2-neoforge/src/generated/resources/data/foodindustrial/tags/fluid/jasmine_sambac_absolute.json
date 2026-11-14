@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jasmine_sambac_absolute",
+    "foodindustrial:flowing_jasmine_sambac_absolute",
+    {
+      "id": "#forge:jasmine_sambac_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:jasmine_sambac_absolute",
+      "required": false
+    }
+  ]
+}

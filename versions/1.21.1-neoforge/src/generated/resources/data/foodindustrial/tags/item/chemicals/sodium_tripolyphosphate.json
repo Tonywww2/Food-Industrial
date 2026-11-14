@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_tripolyphosphate",
     {
+      "id": "#forge:dusts/sodium_tripolyphosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_tripolyphosphate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_tripolyphosphate",
       "required": false
     },

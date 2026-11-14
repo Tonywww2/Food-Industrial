@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_phellandrene",
+    "foodindustrial:flowing_alpha_phellandrene",
+    {
+      "id": "#forge:alpha_phellandrene",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_phellandrene",
+      "required": false
+    }
+  ]
+}

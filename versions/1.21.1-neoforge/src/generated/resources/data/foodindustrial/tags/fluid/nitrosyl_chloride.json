@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitrosyl_chloride",
+    "foodindustrial:flowing_nitrosyl_chloride",
+    {
+      "id": "#forge:nitrosyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:nitrosyl_chloride",
+      "required": false
+    }
+  ]
+}

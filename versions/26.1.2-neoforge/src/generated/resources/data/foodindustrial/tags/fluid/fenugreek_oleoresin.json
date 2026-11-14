@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fenugreek_oleoresin",
+    "foodindustrial:flowing_fenugreek_oleoresin",
+    {
+      "id": "#forge:fenugreek_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:fenugreek_oleoresin",
+      "required": false
+    }
+  ]
+}

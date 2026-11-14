@@ -4,6 +4,10 @@
     {
       "id": "#c:ingots/lead",
       "required": false
+    },
+    {
+      "id": "#forge:ingots/lead",
+      "required": false
     }
   ]
 }

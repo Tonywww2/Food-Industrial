@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/dicalcium_phosphate"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/slaked_lime"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:tricalcium_phosphate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

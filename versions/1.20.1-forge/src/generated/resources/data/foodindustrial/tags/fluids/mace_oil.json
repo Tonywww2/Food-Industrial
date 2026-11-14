@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mace_oil",
+    "foodindustrial:flowing_mace_oil",
+    {
+      "id": "#forge:mace_oil",
+      "required": false
+    },
+    {
+      "id": "#c:mace_oil",
+      "required": false
+    }
+  ]
+}

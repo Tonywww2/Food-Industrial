@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_phenylacetate",
+    "foodindustrial:flowing_methyl_phenylacetate",
+    {
+      "id": "#forge:methyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

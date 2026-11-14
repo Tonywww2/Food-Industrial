@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cassie_absolute",
+    "foodindustrial:flowing_cassie_absolute",
+    {
+      "id": "#forge:cassie_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:cassie_absolute",
+      "required": false
+    }
+  ]
+}

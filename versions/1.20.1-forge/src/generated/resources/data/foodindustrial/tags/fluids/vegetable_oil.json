@@ -8,6 +8,10 @@
     {
       "id": "pneumaticcraft:vegetable_oil",
       "required": false
+    },
+    {
+      "id": "#c:plantoil",
+      "required": false
     }
   ]
 }

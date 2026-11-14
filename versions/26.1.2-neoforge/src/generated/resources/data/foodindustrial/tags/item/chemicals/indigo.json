@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:indigo",
     {
+      "id": "#forge:dusts/indigo",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/indigo",
+      "required": false
+    },
+    {
       "id": "#c:dusts/indigo",
       "required": false
     },

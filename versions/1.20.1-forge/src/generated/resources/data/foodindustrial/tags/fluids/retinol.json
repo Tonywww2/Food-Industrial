@@ -6,6 +6,10 @@
     {
       "id": "#forge:retinol",
       "required": false
+    },
+    {
+      "id": "#c:retinol",
+      "required": false
     }
   ]
 }

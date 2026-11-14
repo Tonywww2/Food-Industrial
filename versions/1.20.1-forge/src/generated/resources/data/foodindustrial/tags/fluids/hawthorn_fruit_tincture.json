@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hawthorn_fruit_tincture",
+    "foodindustrial:flowing_hawthorn_fruit_tincture",
+    {
+      "id": "#forge:hawthorn_fruit_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:hawthorn_fruit_tincture",
+      "required": false
+    }
+  ]
+}

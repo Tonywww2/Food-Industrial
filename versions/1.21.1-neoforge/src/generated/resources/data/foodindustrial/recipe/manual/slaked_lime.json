@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/quicklime"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 4
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:slaked_lime",
+      "purity": {
+        "mode": "keep"
+      }
+    }
+  ],
+  "time": 200
+}

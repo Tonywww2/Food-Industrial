@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sorbitol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sorbitol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sorbitol",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/thaumatin"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:thaumatin"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "very_sensitive",
+    "min_tier": "t1",
+    "temperature": "freezing"
+  },
+  "time": 200
+}

@@ -4,6 +4,10 @@
     "foodindustrial:triacetin",
     "foodindustrial:flowing_triacetin",
     {
+      "id": "#forge:triacetin",
+      "required": false
+    },
+    {
       "id": "#c:triacetin",
       "required": false
     }

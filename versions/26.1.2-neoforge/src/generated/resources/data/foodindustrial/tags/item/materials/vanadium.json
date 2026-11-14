@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:ingots/vanadium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/vanadium",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/vanadium",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/vanadium",
+      "required": false
+    }
+  ]
+}

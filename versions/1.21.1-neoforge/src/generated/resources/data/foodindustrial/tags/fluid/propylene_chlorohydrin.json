@@ -4,6 +4,10 @@
     "foodindustrial:propylene_chlorohydrin",
     "foodindustrial:flowing_propylene_chlorohydrin",
     {
+      "id": "#forge:propylene_chlorohydrin",
+      "required": false
+    },
+    {
       "id": "#c:propylene_chlorohydrin",
       "required": false
     }

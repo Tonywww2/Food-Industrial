@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:p_cymen_8_ol",
+  "loader": "forge:fluid_container"
+}

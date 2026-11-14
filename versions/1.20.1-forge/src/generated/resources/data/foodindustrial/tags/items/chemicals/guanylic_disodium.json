@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/guanylic_disodium",
       "required": false
+    },
+    {
+      "id": "#c:dusts/guanylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/guanylic_disodium",
+      "required": false
     }
   ]
 }

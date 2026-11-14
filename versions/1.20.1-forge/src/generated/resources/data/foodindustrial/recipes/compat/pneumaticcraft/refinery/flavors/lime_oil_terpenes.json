@@ -1,0 +1,31 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:lime_oil"
+  },
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:terpeneless_lime_oil"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:lime_oil_terpenes"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

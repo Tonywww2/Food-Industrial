@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/red_algae_carrageenan"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:potash_lye"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:carrageenan",
+      "purity": {
+        "mode": "source",
+        "value": 40
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

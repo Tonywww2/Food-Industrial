@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:benzyl_chloride"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/magnesium"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:acetone"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:dimethylbenzylcarbinol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

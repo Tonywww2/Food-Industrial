@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "foodindustrial:refractory_bricks"
+    },
+    "E": {
+      "item": "foodindustrial:graphite_electrode"
+    },
+    "F": {
+      "item": "foodindustrial:chemical_frame"
+    },
+    "K": {
+      "item": "foodindustrial:rotary_kiln"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "BEB",
+    "RFK",
+    "BEB"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:electric_arc_furnace"
+  }
+}

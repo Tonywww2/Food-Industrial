@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ammonium_sulfide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:ammonium_sulfide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylpyridine_2",
+    "foodindustrial:flowing_acetylpyridine_2",
+    {
+      "id": "#forge:acetylpyridine_2",
+      "required": false
+    },
+    {
+      "id": "#c:acetylpyridine_2",
+      "required": false
+    }
+  ]
+}

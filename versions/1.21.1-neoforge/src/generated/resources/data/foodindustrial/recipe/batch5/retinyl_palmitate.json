@@ -1,0 +1,51 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/immobilized_lipase"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:retinol"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/palmitic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:n_hexane"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:retinyl_palmitate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:n_hexane",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

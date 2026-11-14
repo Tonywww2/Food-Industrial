@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:clary_sage_oil",
+  "loader": "neoforge:fluid_container"
+}

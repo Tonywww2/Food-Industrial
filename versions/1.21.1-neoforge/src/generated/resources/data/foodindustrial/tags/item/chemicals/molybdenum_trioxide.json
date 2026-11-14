@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:molybdenum_trioxide",
+    {
+      "id": "#forge:dusts/molybdenum_trioxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/molybdenum_trioxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/molybdenum_trioxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/molybdenum_trioxide",
+      "required": false
+    }
+  ]
+}

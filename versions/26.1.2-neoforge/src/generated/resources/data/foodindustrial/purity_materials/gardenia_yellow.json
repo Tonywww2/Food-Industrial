@@ -1,0 +1,11 @@
+{
+  "id": "foodindustrial:gardenia_yellow",
+  "category": "foodindustrial:k5_natural_extract",
+  "source_purity": 0.2,
+  "grades": {
+    "crude": 0.2,
+    "refined": 0.5,
+    "food": 0.9,
+    "lab": 90
+  }
+}

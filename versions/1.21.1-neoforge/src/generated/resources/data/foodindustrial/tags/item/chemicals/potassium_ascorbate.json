@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_ascorbate",
+    {
+      "id": "#forge:dusts/potassium_ascorbate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_ascorbate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_ascorbate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_ascorbate",
+      "required": false
+    }
+  ]
+}

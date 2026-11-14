@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetoin_butyrate",
+    "foodindustrial:flowing_acetoin_butyrate",
+    {
+      "id": "#forge:acetoin_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:acetoin_butyrate",
+      "required": false
+    }
+  ]
+}

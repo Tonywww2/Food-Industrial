@@ -1,0 +1,52 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/fumaric_acid"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:bromine"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:benzylamine"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:phosgene"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dibenzyl_imidazolidinone_diacid",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrochloric_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

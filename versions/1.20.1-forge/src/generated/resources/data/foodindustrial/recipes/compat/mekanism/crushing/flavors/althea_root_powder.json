@@ -1,0 +1,23 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "amount": 2,
+    "ingredient": {
+      "tag": "foodindustrial:materials/marshmallow_root"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:althea_root_powder"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:phenylethyl_mercaptan",
+  "loader": "neoforge:fluid_container"
+}

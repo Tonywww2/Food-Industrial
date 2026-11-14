@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_hexyl_ketone",
+    "foodindustrial:flowing_ethyl_hexyl_ketone",
+    {
+      "id": "#forge:ethyl_hexyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_hexyl_ketone",
+      "required": false
+    }
+  ]
+}

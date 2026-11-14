@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpinyl_propionate",
+    "foodindustrial:flowing_terpinyl_propionate",
+    {
+      "id": "#forge:terpinyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:terpinyl_propionate",
+      "required": false
+    }
+  ]
+}

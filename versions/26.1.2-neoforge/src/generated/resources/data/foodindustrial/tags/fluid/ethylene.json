@@ -4,6 +4,10 @@
     "foodindustrial:ethylene",
     "foodindustrial:flowing_ethylene",
     {
+      "id": "#forge:ethylene",
+      "required": false
+    },
+    {
       "id": "#c:ethylene",
       "required": false
     }

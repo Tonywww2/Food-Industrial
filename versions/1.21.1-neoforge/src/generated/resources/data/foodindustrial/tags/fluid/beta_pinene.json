@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_pinene",
+    "foodindustrial:flowing_beta_pinene",
+    {
+      "id": "#forge:beta_pinene",
+      "required": false
+    },
+    {
+      "id": "#c:beta_pinene",
+      "required": false
+    }
+  ]
+}

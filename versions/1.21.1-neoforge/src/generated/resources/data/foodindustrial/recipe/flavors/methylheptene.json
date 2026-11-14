@@ -1,0 +1,52 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:active_amyl_alcohol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrogen_chloride"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/magnesium"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:allyl_chloride"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:methylheptene",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "item": "foodindustrial:magnesium_chloride",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

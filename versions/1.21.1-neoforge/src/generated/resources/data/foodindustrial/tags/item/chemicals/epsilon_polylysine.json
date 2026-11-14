@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:epsilon_polylysine",
     {
+      "id": "#forge:dusts/epsilon_polylysine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/epsilon_polylysine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/epsilon_polylysine",
       "required": false
     },

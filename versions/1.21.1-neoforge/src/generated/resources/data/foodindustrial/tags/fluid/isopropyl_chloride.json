@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopropyl_chloride",
+    "foodindustrial:flowing_isopropyl_chloride",
+    {
+      "id": "#forge:isopropyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:isopropyl_chloride",
+      "required": false
+    }
+  ]
+}

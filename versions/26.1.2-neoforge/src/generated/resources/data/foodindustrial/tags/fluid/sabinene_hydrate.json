@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sabinene_hydrate",
+    "foodindustrial:flowing_sabinene_hydrate",
+    {
+      "id": "#forge:sabinene_hydrate",
+      "required": false
+    },
+    {
+      "id": "#c:sabinene_hydrate",
+      "required": false
+    }
+  ]
+}

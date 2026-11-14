@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oxobutyric_acid",
+    {
+      "id": "#forge:dusts/oxobutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/oxobutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/oxobutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oxobutyric_acid",
+      "required": false
+    }
+  ]
+}

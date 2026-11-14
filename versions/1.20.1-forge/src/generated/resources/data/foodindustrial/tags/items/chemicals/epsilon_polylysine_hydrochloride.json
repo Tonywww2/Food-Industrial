@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/epsilon_polylysine_hydrochloride",
       "required": false
+    },
+    {
+      "id": "#c:dusts/epsilon_polylysine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/epsilon_polylysine_hydrochloride",
+      "required": false
     }
   ]
 }

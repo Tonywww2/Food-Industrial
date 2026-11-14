@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methylthioethyl_methyl_ketone",
+  "loader": "forge:fluid_container"
+}

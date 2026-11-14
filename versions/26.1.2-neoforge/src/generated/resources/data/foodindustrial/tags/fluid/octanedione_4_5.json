@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octanedione_4_5",
+    "foodindustrial:flowing_octanedione_4_5",
+    {
+      "id": "#forge:octanedione_4_5",
+      "required": false
+    },
+    {
+      "id": "#c:octanedione_4_5",
+      "required": false
+    }
+  ]
+}

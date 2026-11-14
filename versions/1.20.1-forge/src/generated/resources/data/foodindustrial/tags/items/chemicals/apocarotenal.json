@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/apocarotenal",
       "required": false
+    },
+    {
+      "id": "#c:dusts/apocarotenal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/apocarotenal",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:p_menthene_8_thiol",
+  "loader": "neoforge:fluid_container"
+}

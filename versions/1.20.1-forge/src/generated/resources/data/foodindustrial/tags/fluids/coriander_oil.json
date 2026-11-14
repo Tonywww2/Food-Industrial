@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coriander_oil",
+    "foodindustrial:flowing_coriander_oil",
+    {
+      "id": "#forge:coriander_oil",
+      "required": false
+    },
+    {
+      "id": "#c:coriander_oil",
+      "required": false
+    }
+  ]
+}

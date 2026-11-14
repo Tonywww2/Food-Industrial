@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamyl_propionate",
+    "foodindustrial:flowing_cinnamyl_propionate",
+    {
+      "id": "#forge:cinnamyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:cinnamyl_propionate",
+      "required": false
+    }
+  ]
+}

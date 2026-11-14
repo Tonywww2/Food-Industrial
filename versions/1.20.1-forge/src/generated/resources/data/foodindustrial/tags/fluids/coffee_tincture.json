@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coffee_tincture",
+    "foodindustrial:flowing_coffee_tincture",
+    {
+      "id": "#forge:coffee_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:coffee_tincture",
+      "required": false
+    }
+  ]
+}

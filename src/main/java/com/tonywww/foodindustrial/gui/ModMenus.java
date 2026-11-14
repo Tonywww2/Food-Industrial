@@ -26,6 +26,8 @@ public final class ModMenus {
     public static void bootstrap() {
         MenuNetwork.bootstrap();
         GuiText.bootstrap();
+        RecipeText.bootstrap();
+        RecipeInfo.bootstrap();
         if (Platform.isPhysicalClient()) {
             com.tonywww.foodindustrial.gui.client.ClientGui.bootstrap();
         }

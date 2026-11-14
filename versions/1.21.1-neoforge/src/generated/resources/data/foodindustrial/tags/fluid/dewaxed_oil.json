@@ -4,6 +4,10 @@
     "foodindustrial:dewaxed_oil",
     "foodindustrial:flowing_dewaxed_oil",
     {
+      "id": "#forge:dewaxed_oil",
+      "required": false
+    },
+    {
       "id": "#c:dewaxed_oil",
       "required": false
     }

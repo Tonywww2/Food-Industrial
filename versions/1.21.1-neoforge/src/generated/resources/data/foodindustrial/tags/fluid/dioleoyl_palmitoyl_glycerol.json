@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dioleoyl_palmitoyl_glycerol",
+    "foodindustrial:flowing_dioleoyl_palmitoyl_glycerol",
+    {
+      "id": "#forge:dioleoyl_palmitoyl_glycerol",
+      "required": false
+    },
+    {
+      "id": "#c:dioleoyl_palmitoyl_glycerol",
+      "required": false
+    }
+  ]
+}

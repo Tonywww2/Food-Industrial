@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_chromate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_dichromate"
+    },
+    {
+      "item": "foodindustrial:sodium_sulfate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

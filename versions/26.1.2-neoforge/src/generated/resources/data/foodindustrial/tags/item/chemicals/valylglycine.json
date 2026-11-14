@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:valylglycine",
+    {
+      "id": "#forge:dusts/valylglycine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/valylglycine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/valylglycine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/valylglycine",
+      "required": false
+    }
+  ]
+}

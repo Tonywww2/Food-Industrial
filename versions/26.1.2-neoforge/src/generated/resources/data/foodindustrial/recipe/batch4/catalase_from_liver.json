@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/liver"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/ammonium_sulfate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:catalase"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

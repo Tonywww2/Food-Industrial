@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopropyl_methylthiazole",
+    "foodindustrial:flowing_isopropyl_methylthiazole",
+    {
+      "id": "#forge:isopropyl_methylthiazole",
+      "required": false
+    },
+    {
+      "id": "#c:isopropyl_methylthiazole",
+      "required": false
+    }
+  ]
+}

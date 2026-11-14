@@ -4,6 +4,10 @@
     "foodindustrial:sulfuric_acid",
     "foodindustrial:flowing_sulfuric_acid",
     {
+      "id": "#forge:sulfuric_acid",
+      "required": false
+    },
+    {
       "id": "#c:sulfuric_acid",
       "required": false
     }

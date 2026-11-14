@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/dipotassium_phosphate"
+    }
+  ],
+  "mode": "condensation",
+  "outputs": [
+    {
+      "item": "foodindustrial:tetrapotassium_pyrophosphate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

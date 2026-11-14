@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzalacetone",
+    {
+      "id": "#forge:dusts/benzalacetone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzalacetone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzalacetone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzalacetone",
+      "required": false
+    }
+  ]
+}

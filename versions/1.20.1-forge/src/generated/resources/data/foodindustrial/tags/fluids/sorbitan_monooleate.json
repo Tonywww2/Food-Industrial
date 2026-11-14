@@ -6,6 +6,10 @@
     {
       "id": "#forge:sorbitan_monooleate",
       "required": false
+    },
+    {
+      "id": "#c:sorbitan_monooleate",
+      "required": false
     }
   ]
 }

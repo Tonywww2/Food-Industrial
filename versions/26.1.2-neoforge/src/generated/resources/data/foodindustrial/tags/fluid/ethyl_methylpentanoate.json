@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_methylpentanoate",
+    "foodindustrial:flowing_ethyl_methylpentanoate",
+    {
+      "id": "#forge:ethyl_methylpentanoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_methylpentanoate",
+      "required": false
+    }
+  ]
+}

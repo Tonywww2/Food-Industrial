@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:vanadium_pentoxide",
     {
+      "id": "#forge:dusts/vanadium_pentoxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vanadium_pentoxide",
+      "required": false
+    },
+    {
       "id": "#c:dusts/vanadium_pentoxide",
       "required": false
     },

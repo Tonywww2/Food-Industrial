@@ -1,0 +1,24 @@
+{
+  "type": "thermal:centrifuge",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/tomato"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:tomato_pomace"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/potassium_bicarbonate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/potassium_bicarbonate"
+    }
+  ],
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": 27
+      },
+      "count": 1,
+      "id": "foodindustrial:potassium_carbonate"
+    },
+    {
+      "amount": 1000,
+      "components": {
+        "foodindustrial:purity": 27
+      },
+      "id": "foodindustrial:carbon_dioxide"
+    }
+  ]
+}

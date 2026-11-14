@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_cis_4_7_octadienoate",
+    "foodindustrial:flowing_ethyl_cis_4_7_octadienoate",
+    {
+      "id": "#forge:ethyl_cis_4_7_octadienoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_cis_4_7_octadienoate",
+      "required": false
+    }
+  ]
+}

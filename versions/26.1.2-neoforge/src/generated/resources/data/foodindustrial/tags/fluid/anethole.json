@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anethole",
+    "foodindustrial:flowing_anethole",
+    {
+      "id": "#forge:anethole",
+      "required": false
+    },
+    {
+      "id": "#c:anethole",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:licorice_fluid_extract",
+    "foodindustrial:flowing_licorice_fluid_extract",
+    {
+      "id": "#forge:licorice_fluid_extract",
+      "required": false
+    },
+    {
+      "id": "#c:licorice_fluid_extract",
+      "required": false
+    }
+  ]
+}

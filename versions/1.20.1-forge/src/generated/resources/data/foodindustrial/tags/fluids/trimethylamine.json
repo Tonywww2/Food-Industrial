@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethylamine",
+    "foodindustrial:flowing_trimethylamine",
+    {
+      "id": "#forge:trimethylamine",
+      "required": false
+    },
+    {
+      "id": "#c:trimethylamine",
+      "required": false
+    }
+  ]
+}

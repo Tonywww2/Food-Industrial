@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/maltitol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/maltitol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maltitol",
+      "required": false
     }
   ]
 }

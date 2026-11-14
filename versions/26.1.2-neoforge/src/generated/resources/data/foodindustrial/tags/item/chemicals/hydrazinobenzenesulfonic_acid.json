@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:hydrazinobenzenesulfonic_acid",
     {
+      "id": "#forge:dusts/hydrazinobenzenesulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydrazinobenzenesulfonic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/hydrazinobenzenesulfonic_acid",
       "required": false
     },

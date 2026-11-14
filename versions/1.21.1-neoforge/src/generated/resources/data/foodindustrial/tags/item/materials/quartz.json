@@ -8,6 +8,10 @@
     {
       "id": "#c:gems/quartz",
       "required": false
+    },
+    {
+      "id": "#forge:gems/quartz",
+      "required": false
     }
   ]
 }

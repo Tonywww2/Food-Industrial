@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dipropyl_trisulfide",
+  "loader": "neoforge:fluid_container"
+}

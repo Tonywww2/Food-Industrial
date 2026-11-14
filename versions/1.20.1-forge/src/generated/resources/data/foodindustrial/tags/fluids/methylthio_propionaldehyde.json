@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthio_propionaldehyde",
+    "foodindustrial:flowing_methylthio_propionaldehyde",
+    {
+      "id": "#forge:methylthio_propionaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:methylthio_propionaldehyde",
+      "required": false
+    }
+  ]
+}

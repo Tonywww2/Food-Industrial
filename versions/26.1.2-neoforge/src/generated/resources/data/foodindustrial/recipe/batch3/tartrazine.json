@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/hydrazinobenzenesulfonic_acid"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:diethyl_oxaloacetate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfanilic_diazonium"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:tartrazine"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:ethanol",
+      "purity": {
+        "mode": "source",
+        "value": 50
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

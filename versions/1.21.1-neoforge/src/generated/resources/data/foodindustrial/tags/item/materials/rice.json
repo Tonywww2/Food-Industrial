@@ -1,17 +1,25 @@
 {
   "replace": false,
   "values": [
+    "foodindustrial:rice",
     {
       "id": "farmersdelight:rice",
       "required": false
     },
-    "foodindustrial:rice",
     {
       "id": "#c:crops/rice",
       "required": false
     },
     {
       "id": "#c:grain/rice",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/rice",
+      "required": false
+    },
+    {
+      "id": "#forge:grain/rice",
       "required": false
     }
   ]

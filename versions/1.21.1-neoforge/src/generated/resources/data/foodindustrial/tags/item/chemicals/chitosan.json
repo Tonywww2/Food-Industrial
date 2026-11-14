@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:chitosan",
     {
+      "id": "#forge:dusts/chitosan",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chitosan",
+      "required": false
+    },
+    {
       "id": "#c:dusts/chitosan",
       "required": false
     },

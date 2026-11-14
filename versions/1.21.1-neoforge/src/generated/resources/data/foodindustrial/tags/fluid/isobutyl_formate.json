@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_formate",
+    "foodindustrial:flowing_isobutyl_formate",
+    {
+      "id": "#forge:isobutyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_formate",
+      "required": false
+    }
+  ]
+}

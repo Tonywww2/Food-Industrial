@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/fluorapatite"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 5000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:phosphoric_acid"
+    },
+    {
+      "count": 5,
+      "item": "foodindustrial:gypsum"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen_fluoride"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t2"
+  },
+  "time": 200
+}

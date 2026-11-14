@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geraniol",
+    "foodindustrial:flowing_geraniol",
+    {
+      "id": "#forge:geraniol",
+      "required": false
+    },
+    {
+      "id": "#c:geraniol",
+      "required": false
+    }
+  ]
+}

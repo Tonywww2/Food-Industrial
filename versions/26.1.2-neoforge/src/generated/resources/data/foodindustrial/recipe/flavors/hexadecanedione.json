@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:ethyl_acetoacetate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:dichlorodecane"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_methoxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:hexadecanedione",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

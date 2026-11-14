@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/pheophytin_a",
       "required": false
+    },
+    {
+      "id": "#c:dusts/pheophytin_a",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pheophytin_a",
+      "required": false
     }
   ]
 }

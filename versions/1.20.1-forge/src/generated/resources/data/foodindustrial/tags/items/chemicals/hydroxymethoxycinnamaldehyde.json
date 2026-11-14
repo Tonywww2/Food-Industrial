@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/hydroxymethoxycinnamaldehyde",
       "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxymethoxycinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxymethoxycinnamaldehyde",
+      "required": false
     }
   ]
 }

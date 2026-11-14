@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:licorice_fluid_extract"
+      }
+    }
+  ],
+  "mode": "solvent_extraction",
+  "outputs": [
+    {
+      "item": "foodindustrial:licorice_extract_powder"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

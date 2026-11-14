@@ -1,0 +1,31 @@
+{
+  "type": "nuclearcraft:rock_crusher",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft"
+    }
+  ],
+  "input": [
+    {
+      "count": 4,
+      "tag": "foodindustrial:materials/red_rice"
+    }
+  ],
+  "output": [
+    {
+      "count": 3,
+      "item": "foodindustrial:rice"
+    },
+    {
+      "item": "foodindustrial:red_rice_bran"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

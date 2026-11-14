@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/gypsum"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:plaster",
+      "purity": {
+        "mode": "keep"
+      }
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200
+}

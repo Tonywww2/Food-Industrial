@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_ascorbyl_phosphate",
+    {
+      "id": "#forge:dusts/magnesium_ascorbyl_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_ascorbyl_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_ascorbyl_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_ascorbyl_phosphate",
+      "required": false
+    }
+  ]
+}

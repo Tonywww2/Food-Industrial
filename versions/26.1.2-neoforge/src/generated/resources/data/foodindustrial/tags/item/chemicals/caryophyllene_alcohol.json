@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:caryophyllene_alcohol",
+    {
+      "id": "#forge:dusts/caryophyllene_alcohol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/caryophyllene_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/caryophyllene_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/caryophyllene_alcohol",
+      "required": false
+    }
+  ]
+}

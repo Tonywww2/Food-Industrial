@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:asafoetida_fluid_extract",
+  "loader": "neoforge:fluid_container"
+}

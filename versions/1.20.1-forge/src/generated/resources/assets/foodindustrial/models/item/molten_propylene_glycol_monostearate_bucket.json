@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:molten_propylene_glycol_monostearate",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,52 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/nickel"
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:beta_ionone"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:acetic_anhydride"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "hydrogenation",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:theaspirane",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

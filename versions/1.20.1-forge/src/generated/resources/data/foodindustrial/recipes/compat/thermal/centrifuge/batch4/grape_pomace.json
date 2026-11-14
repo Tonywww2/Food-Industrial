@@ -1,0 +1,28 @@
+{
+  "type": "thermal:centrifuge",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/grape"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:grape_pomace"
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:raw_grape_juice"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:tea_tree_oil"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:alpha_terpinene",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:gamma_terpinene",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:terpinen_4_ol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "multi_fraction"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

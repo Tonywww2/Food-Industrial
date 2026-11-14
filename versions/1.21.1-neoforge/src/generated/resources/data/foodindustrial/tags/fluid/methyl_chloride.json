@@ -4,6 +4,10 @@
     "foodindustrial:methyl_chloride",
     "foodindustrial:flowing_methyl_chloride",
     {
+      "id": "#forge:methyl_chloride",
+      "required": false
+    },
+    {
       "id": "#c:methyl_chloride",
       "required": false
     }

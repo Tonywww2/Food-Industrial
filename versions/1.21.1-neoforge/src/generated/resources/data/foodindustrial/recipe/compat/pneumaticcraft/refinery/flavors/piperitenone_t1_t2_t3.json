@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:pennyroyal_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 16
+      },
+      "id": "foodindustrial:pulegone"
+    },
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 16
+      },
+      "id": "foodindustrial:piperitenone"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiohexylamine",
+    "foodindustrial:flowing_methylthiohexylamine",
+    {
+      "id": "#forge:methylthiohexylamine",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiohexylamine",
+      "required": false
+    }
+  ]
+}

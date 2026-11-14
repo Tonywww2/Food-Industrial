@@ -1,0 +1,58 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:samples/decaying_plant"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/agar"
+    }
+  ],
+  "mode": "isolation",
+  "outputs": [
+    {
+      "item": "foodindustrial:blakeslea_plus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:blakeslea_minus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:ashbya",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:fusarium",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "plate": {
+    "weights": [
+      1,
+      1,
+      1,
+      1,
+      4
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

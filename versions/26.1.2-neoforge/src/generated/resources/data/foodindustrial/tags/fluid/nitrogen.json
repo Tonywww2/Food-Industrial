@@ -4,6 +4,10 @@
     "foodindustrial:nitrogen",
     "foodindustrial:flowing_nitrogen",
     {
+      "id": "#forge:nitrogen",
+      "required": false
+    },
+    {
       "id": "#c:nitrogen",
       "required": false
     }

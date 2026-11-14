@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:satinaldehyde",
+    "foodindustrial:flowing_satinaldehyde",
+    {
+      "id": "#forge:satinaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:satinaldehyde",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/n_phenylglycine"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    }
+  ],
+  "mode": "alkali_fusion",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:indoxyl"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

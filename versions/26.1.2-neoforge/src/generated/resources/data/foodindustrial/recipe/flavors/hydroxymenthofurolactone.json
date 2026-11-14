@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:menthofuran"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:oxygen"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_sulfite"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:hydroxymenthofurolactone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "ultraviolet"
+    ],
+    "min_tier": "t2",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

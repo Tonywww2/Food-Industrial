@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trithioacetone",
+    "foodindustrial:flowing_trithioacetone",
+    {
+      "id": "#forge:trithioacetone",
+      "required": false
+    },
+    {
+      "id": "#c:trithioacetone",
+      "required": false
+    }
+  ]
+}

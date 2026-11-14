@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sorbitol"
+      }
+    },
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/stearic_acid"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "tag": "foodindustrial:phosphoric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sorbitan_tristearate"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

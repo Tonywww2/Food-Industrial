@@ -1,0 +1,46 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/urea"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sulfur"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:acetaldehyde"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ammonia"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:thiamine_hydrochloride",
+      "purity": {
+        "mode": "source",
+        "value": 80
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t3",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_toluidine",
+    {
+      "id": "#forge:dusts/p_toluidine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_toluidine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_toluidine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_toluidine",
+      "required": false
+    }
+  ]
+}

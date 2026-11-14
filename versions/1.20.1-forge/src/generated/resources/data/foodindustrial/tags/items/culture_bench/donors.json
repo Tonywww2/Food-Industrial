@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:materials/abomasum",
+    "#foodindustrial:materials/pancreas",
+    "#foodindustrial:materials/liver",
+    "#foodindustrial:materials/gastric_mucosa",
+    "#foodindustrial:materials/raw_fish",
+    "#foodindustrial:materials/red_algae_carrageenan",
+    "#foodindustrial:samples/soil",
+    "#foodindustrial:samples/compost",
+    "#foodindustrial:samples/straw",
+    "#foodindustrial:samples/leaf",
+    "#foodindustrial:samples/aquatic_plant",
+    "#foodindustrial:cultures/aspergillus_niger"
+  ]
+}

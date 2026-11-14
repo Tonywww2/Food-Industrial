@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:indigo_carmine",
     {
+      "id": "#forge:dusts/indigo_carmine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/indigo_carmine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/indigo_carmine",
       "required": false
     },

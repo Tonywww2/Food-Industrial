@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:retinol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:retinol"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "molecular_distillation"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

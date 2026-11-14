@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:horehound_extract",
+    "foodindustrial:flowing_horehound_extract",
+    {
+      "id": "#forge:horehound_extract",
+      "required": false
+    },
+    {
+      "id": "#c:horehound_extract",
+      "required": false
+    }
+  ]
+}

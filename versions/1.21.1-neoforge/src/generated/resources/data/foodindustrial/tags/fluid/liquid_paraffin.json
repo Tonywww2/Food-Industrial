@@ -4,6 +4,10 @@
     "foodindustrial:liquid_paraffin",
     "foodindustrial:flowing_liquid_paraffin",
     {
+      "id": "#forge:liquid_paraffin",
+      "required": false
+    },
+    {
       "id": "#c:liquid_paraffin",
       "required": false
     }

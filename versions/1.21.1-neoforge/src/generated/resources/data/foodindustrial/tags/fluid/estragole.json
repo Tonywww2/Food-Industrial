@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:estragole",
+    "foodindustrial:flowing_estragole",
+    {
+      "id": "#forge:estragole",
+      "required": false
+    },
+    {
+      "id": "#c:estragole",
+      "required": false
+    }
+  ]
+}

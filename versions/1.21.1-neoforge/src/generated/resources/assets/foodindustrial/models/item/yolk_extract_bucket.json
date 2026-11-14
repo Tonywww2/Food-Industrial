@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:yolk_extract",
+  "loader": "neoforge:fluid_container"
+}

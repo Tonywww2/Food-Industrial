@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butter_esters",
+    "foodindustrial:flowing_butter_esters",
+    {
+      "id": "#forge:butter_esters",
+      "required": false
+    },
+    {
+      "id": "#c:butter_esters",
+      "required": false
+    }
+  ]
+}

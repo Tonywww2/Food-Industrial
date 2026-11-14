@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/ion_exchange_resin",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:enzymes/pectinase"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:polygalacturonase"
+    },
+    {
+      "item": "foodindustrial:pectin_lyase"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

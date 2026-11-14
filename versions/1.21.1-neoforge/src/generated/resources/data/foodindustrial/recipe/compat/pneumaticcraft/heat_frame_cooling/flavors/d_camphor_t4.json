@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "input": {
+    "fluid": {
+      "amount": 1000,
+      "tag": "foodindustrial:crude_camphor_oil"
+    }
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": 34
+    },
+    "count": 1,
+    "id": "foodindustrial:d_camphor"
+  },
+  "temperature": 273
+}

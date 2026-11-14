@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexanal_diethyl_acetal",
+    "foodindustrial:flowing_hexanal_diethyl_acetal",
+    {
+      "id": "#forge:hexanal_diethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:hexanal_diethyl_acetal",
+      "required": false
+    }
+  ]
+}

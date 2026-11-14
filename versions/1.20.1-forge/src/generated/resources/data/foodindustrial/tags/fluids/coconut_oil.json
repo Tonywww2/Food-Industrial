@@ -6,6 +6,10 @@
     {
       "id": "#forge:coconut_oil",
       "required": false
+    },
+    {
+      "id": "#c:coconut_oil",
+      "required": false
     }
   ]
 }

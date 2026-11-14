@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutylbenzylcarbinol",
+    "foodindustrial:flowing_isobutylbenzylcarbinol",
+    {
+      "id": "#forge:isobutylbenzylcarbinol",
+      "required": false
+    },
+    {
+      "id": "#c:isobutylbenzylcarbinol",
+      "required": false
+    }
+  ]
+}

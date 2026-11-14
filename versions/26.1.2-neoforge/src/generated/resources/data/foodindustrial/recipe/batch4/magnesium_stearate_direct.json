@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/stearic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/magnesium_hydroxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:magnesium_stearate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranic_acid",
+    "foodindustrial:flowing_geranic_acid",
+    {
+      "id": "#forge:geranic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:geranic_acid",
+      "required": false
+    }
+  ]
+}

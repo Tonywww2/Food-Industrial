@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetaldehyde_diethyl_acetal",
+    "foodindustrial:flowing_acetaldehyde_diethyl_acetal",
+    {
+      "id": "#forge:acetaldehyde_diethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:acetaldehyde_diethyl_acetal",
+      "required": false
+    }
+  ]
+}

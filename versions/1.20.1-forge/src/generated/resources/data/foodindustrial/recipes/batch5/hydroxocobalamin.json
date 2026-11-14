@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/macroporous_resin"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:cobalamin_broth"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:hydroxocobalamin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "ultraviolet"
+    ],
+    "min_tier": "t2"
+  },
+  "time": 200
+}

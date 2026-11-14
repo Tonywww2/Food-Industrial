@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrocinnamic_acid",
+    {
+      "id": "#forge:dusts/hydrocinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydrocinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydrocinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydrocinnamic_acid",
+      "required": false
+    }
+  ]
+}

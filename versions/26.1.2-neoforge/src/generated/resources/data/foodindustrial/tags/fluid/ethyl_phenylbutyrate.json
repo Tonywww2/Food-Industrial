@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_phenylbutyrate",
+    "foodindustrial:flowing_ethyl_phenylbutyrate",
+    {
+      "id": "#forge:ethyl_phenylbutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_phenylbutyrate",
+      "required": false
+    }
+  ]
+}

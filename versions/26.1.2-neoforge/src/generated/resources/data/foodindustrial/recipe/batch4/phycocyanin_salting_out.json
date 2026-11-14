@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/phycocyanin"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/ammonium_sulfate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:phycocyanin",
+      "purity": {
+        "mode": "removal",
+        "value": 75
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

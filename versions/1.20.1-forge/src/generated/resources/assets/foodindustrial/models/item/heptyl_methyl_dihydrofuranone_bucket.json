@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:heptyl_methyl_dihydrofuranone",
+  "loader": "forge:fluid_container"
+}

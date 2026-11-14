@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:opoponax_resinoid",
+    {
+      "id": "#forge:dusts/opoponax_resinoid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/opoponax_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/opoponax_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/opoponax_resinoid",
+      "required": false
+    }
+  ]
+}

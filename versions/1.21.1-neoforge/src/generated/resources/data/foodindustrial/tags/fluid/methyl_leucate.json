@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_leucate",
+    "foodindustrial:flowing_methyl_leucate",
+    {
+      "id": "#forge:methyl_leucate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_leucate",
+      "required": false
+    }
+  ]
+}

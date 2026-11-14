@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hex_3_enyl_2_methylbutanoate",
+    "foodindustrial:flowing_hex_3_enyl_2_methylbutanoate",
+    {
+      "id": "#forge:hex_3_enyl_2_methylbutanoate",
+      "required": false
+    },
+    {
+      "id": "#c:hex_3_enyl_2_methylbutanoate",
+      "required": false
+    }
+  ]
+}

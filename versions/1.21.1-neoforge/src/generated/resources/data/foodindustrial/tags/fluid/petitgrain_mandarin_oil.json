@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:petitgrain_mandarin_oil",
+    "foodindustrial:flowing_petitgrain_mandarin_oil",
+    {
+      "id": "#forge:petitgrain_mandarin_oil",
+      "required": false
+    },
+    {
+      "id": "#c:petitgrain_mandarin_oil",
+      "required": false
+    }
+  ]
+}

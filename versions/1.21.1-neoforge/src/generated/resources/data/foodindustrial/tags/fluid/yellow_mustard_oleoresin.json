@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:yellow_mustard_oleoresin",
+    "foodindustrial:flowing_yellow_mustard_oleoresin",
+    {
+      "id": "#forge:yellow_mustard_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:yellow_mustard_oleoresin",
+      "required": false
+    }
+  ]
+}

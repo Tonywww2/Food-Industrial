@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:propionylthiazole",
+  "loader": "neoforge:fluid_container"
+}

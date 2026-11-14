@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:propionaldehyde"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:hydrogen_cyanide"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/cysteamine"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:oxygen"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:propionyl_thiazoline",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

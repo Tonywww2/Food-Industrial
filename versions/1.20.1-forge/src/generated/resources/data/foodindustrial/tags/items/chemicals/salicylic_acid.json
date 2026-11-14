@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:salicylic_acid",
+    {
+      "id": "#forge:dusts/salicylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/salicylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/salicylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/salicylic_acid",
+      "required": false
+    }
+  ]
+}

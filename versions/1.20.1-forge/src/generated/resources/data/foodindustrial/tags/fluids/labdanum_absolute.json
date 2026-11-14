@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:labdanum_absolute",
+    "foodindustrial:flowing_labdanum_absolute",
+    {
+      "id": "#forge:labdanum_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:labdanum_absolute",
+      "required": false
+    }
+  ]
+}

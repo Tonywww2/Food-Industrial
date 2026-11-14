@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:estragon_oil",
+    "foodindustrial:flowing_estragon_oil",
+    {
+      "id": "#forge:estragon_oil",
+      "required": false
+    },
+    {
+      "id": "#c:estragon_oil",
+      "required": false
+    }
+  ]
+}

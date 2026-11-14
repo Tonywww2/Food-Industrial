@@ -6,6 +6,10 @@
     {
       "id": "#forge:diethyl_oxaloacetate",
       "required": false
+    },
+    {
+      "id": "#c:diethyl_oxaloacetate",
+      "required": false
     }
   ]
 }

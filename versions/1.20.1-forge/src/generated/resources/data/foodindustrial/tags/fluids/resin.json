@@ -8,6 +8,10 @@
       "required": false
     },
     {
+      "id": "#c:resin",
+      "required": false
+    },
+    {
       "id": "thermal:resin",
       "required": false
     }

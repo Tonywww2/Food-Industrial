@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:angelica_seed_oil",
+    "foodindustrial:flowing_angelica_seed_oil",
+    {
+      "id": "#forge:angelica_seed_oil",
+      "required": false
+    },
+    {
+      "id": "#c:angelica_seed_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:drying_rack",
+  "name": "book.foodindustrial.manual.entry.drying_rack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:drying_rack",
+      "text": "book.foodindustrial.manual.entry.drying_rack.text",
+      "title": "book.foodindustrial.manual.entry.drying_rack"
+    }
+  ],
+  "sortnum": 8
+}

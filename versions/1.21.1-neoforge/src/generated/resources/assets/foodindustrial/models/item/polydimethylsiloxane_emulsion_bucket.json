@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:polydimethylsiloxane_emulsion",
+  "loader": "neoforge:fluid_container"
+}

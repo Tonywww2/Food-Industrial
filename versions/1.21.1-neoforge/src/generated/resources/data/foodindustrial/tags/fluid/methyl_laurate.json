@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_laurate",
+    "foodindustrial:flowing_methyl_laurate",
+    {
+      "id": "#forge:methyl_laurate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_laurate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_acetyl_cyclohexene",
+    "foodindustrial:flowing_dimethyl_acetyl_cyclohexene",
+    {
+      "id": "#forge:dimethyl_acetyl_cyclohexene",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_acetyl_cyclohexene",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:potassium_alum",
     {
+      "id": "#forge:dusts/potassium_alum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_alum",
+      "required": false
+    },
+    {
       "id": "#c:dusts/potassium_alum",
       "required": false
     },

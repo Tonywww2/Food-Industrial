@@ -1,0 +1,49 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "neoforge:ingredient_type": "foodindustrial:purity",
+      "base": "#foodindustrial:cultures/aspergillus_niger",
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/glucose"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/calcium_carbonate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_gluconate",
+      "purity": {
+        "mode": "source",
+        "value": 90
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

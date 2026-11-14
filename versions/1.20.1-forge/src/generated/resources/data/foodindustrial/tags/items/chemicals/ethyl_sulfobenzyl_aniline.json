@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ethyl_sulfobenzyl_aniline",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ethyl_sulfobenzyl_aniline",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_sulfobenzyl_aniline",
+      "required": false
     }
   ]
 }

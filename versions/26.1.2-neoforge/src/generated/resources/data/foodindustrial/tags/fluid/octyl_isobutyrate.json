@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octyl_isobutyrate",
+    "foodindustrial:flowing_octyl_isobutyrate",
+    {
+      "id": "#forge:octyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:octyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

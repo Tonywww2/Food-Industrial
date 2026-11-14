@@ -4,6 +4,10 @@
     "foodindustrial:magnesium_bicarbonate",
     "foodindustrial:flowing_magnesium_bicarbonate",
     {
+      "id": "#forge:magnesium_bicarbonate",
+      "required": false
+    },
+    {
       "id": "#c:magnesium_bicarbonate",
       "required": false
     }

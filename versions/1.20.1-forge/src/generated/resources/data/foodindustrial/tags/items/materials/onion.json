@@ -4,6 +4,10 @@
     {
       "id": "#forge:crops/onion",
       "required": false
+    },
+    {
+      "id": "#c:crops/onion",
+      "required": false
     }
   ]
 }

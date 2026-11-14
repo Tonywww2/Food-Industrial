@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:nitric_oxide"
+      }
+    }
+  ],
+  "mode": "burning",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:nitrogen_dioxide"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

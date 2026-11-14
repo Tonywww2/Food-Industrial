@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/epsom_salt",
       "required": false
+    },
+    {
+      "id": "#c:dusts/epsom_salt",
+      "required": false
+    },
+    {
+      "id": "#c:gems/epsom_salt",
+      "required": false
     }
   ]
 }

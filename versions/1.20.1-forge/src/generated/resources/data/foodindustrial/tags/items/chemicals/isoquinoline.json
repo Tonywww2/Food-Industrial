@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoquinoline",
+    {
+      "id": "#forge:dusts/isoquinoline",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isoquinoline",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/isoquinoline",
+      "required": false
+    },
+    {
+      "id": "#c:gems/isoquinoline",
+      "required": false
+    }
+  ]
+}

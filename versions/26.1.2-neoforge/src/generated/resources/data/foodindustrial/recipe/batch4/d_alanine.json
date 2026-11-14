@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "neoforge:ingredient_type": "foodindustrial:purity",
+      "base": "#foodindustrial:cultures/arthrobacter",
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/alaninamide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:d_alanine",
+      "purity": {
+        "mode": "source",
+        "value": 90
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:ammonia"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

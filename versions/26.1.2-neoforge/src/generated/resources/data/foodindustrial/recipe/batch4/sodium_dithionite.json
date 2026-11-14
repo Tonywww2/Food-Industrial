@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/salt"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:zinc_dithionite"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_dithionite"
+    },
+    {
+      "item": "foodindustrial:zinc_hydroxide"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

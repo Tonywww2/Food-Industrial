@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dodecanal",
+    "foodindustrial:flowing_dodecanal",
+    {
+      "id": "#forge:dodecanal",
+      "required": false
+    },
+    {
+      "id": "#c:dodecanal",
+      "required": false
+    }
+  ]
+}

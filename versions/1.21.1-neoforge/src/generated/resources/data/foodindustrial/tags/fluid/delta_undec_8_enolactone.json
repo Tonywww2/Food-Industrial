@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:delta_undec_8_enolactone",
+    "foodindustrial:flowing_delta_undec_8_enolactone",
+    {
+      "id": "#forge:delta_undec_8_enolactone",
+      "required": false
+    },
+    {
+      "id": "#c:delta_undec_8_enolactone",
+      "required": false
+    }
+  ]
+}

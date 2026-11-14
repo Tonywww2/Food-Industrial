@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanethiol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:ethanethiol"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

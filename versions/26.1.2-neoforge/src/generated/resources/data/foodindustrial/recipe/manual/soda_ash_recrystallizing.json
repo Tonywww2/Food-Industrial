@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/soda_ash"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:soda_ash",
+      "purity": {
+        "mode": "removal",
+        "t0_max": "crude",
+        "value": 50
+      }
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200
+}

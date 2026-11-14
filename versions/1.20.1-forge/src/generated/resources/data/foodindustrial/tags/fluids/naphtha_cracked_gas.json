@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:naphtha_cracked_gas",
+    "foodindustrial:flowing_naphtha_cracked_gas",
+    {
+      "id": "#forge:naphtha_cracked_gas",
+      "required": false
+    },
+    {
+      "id": "#c:naphtha_cracked_gas",
+      "required": false
+    }
+  ]
+}

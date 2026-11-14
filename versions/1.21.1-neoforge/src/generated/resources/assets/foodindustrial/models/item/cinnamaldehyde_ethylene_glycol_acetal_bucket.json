@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:cinnamaldehyde_ethylene_glycol_acetal",
+  "loader": "neoforge:fluid_container"
+}

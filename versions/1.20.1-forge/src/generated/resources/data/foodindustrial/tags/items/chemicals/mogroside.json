@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/mogroside",
       "required": false
+    },
+    {
+      "id": "#c:dusts/mogroside",
+      "required": false
+    },
+    {
+      "id": "#c:gems/mogroside",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_geranate",
+    "foodindustrial:flowing_methyl_geranate",
+    {
+      "id": "#forge:methyl_geranate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_geranate",
+      "required": false
+    }
+  ]
+}

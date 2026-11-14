@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_methyl_tolylglycidate",
+    "foodindustrial:flowing_ethyl_methyl_tolylglycidate",
+    {
+      "id": "#forge:ethyl_methyl_tolylglycidate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_methyl_tolylglycidate",
+      "required": false
+    }
+  ]
+}

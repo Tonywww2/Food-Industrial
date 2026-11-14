@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/rice"
+    },
+    {
+      "tag": "foodindustrial:materials/rice"
+    },
+    {
+      "tag": "foodindustrial:materials/rice"
+    },
+    {
+      "tag": "foodindustrial:materials/rice"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:steamed_rice"
+    }
+  ]
+}

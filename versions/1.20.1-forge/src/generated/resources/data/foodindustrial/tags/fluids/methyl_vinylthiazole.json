@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_vinylthiazole",
+    "foodindustrial:flowing_methyl_vinylthiazole",
+    {
+      "id": "#forge:methyl_vinylthiazole",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_vinylthiazole",
+      "required": false
+    }
+  ]
+}

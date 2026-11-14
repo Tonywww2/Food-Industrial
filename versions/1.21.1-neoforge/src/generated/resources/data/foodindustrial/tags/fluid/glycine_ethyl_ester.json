@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glycine_ethyl_ester",
+    "foodindustrial:flowing_glycine_ethyl_ester",
+    {
+      "id": "#forge:glycine_ethyl_ester",
+      "required": false
+    },
+    {
+      "id": "#c:glycine_ethyl_ester",
+      "required": false
+    }
+  ]
+}

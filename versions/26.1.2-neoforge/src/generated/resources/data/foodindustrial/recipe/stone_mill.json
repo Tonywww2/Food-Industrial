@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": "#c:rods/wooden",
+    "P": "#minecraft:planks",
+    "S": "minecraft:stone"
+  },
+  "pattern": [
+    "PKP",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:stone_mill"
+  }
+}

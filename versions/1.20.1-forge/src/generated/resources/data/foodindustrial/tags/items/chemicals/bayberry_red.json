@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/bayberry_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/bayberry_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bayberry_red",
+      "required": false
     }
   ]
 }

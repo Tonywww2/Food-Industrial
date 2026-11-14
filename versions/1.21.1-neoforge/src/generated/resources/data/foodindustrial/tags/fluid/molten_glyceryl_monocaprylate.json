@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:molten_glyceryl_monocaprylate",
+    "foodindustrial:flowing_molten_glyceryl_monocaprylate",
+    {
+      "id": "#forge:molten_glyceryl_monocaprylate",
+      "required": false
+    },
+    {
+      "id": "#c:molten_glyceryl_monocaprylate",
+      "required": false
+    }
+  ]
+}

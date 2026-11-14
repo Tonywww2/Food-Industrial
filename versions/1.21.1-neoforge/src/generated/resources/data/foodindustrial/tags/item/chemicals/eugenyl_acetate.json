@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:eugenyl_acetate",
+    {
+      "id": "#forge:dusts/eugenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/eugenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/eugenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/eugenyl_acetate",
+      "required": false
+    }
+  ]
+}

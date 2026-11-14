@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sorbitol"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:oleic_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:sorbitan_monooleate"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

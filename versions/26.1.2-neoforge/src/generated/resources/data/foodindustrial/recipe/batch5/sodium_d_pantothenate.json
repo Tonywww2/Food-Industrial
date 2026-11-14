@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/d_pantolactone"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/beta_alanine"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_d_pantothenate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

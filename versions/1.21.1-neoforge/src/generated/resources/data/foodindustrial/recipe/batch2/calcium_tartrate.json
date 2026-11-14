@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_bitartrate"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/calcium_carbonate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_tartrate"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

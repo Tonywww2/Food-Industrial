@@ -1,0 +1,61 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "foodindustrial:purity",
+        "base": {
+          "tag": "foodindustrial:chemicals/stearyl_alcohol"
+        },
+        "min_purity": "food"
+      }
+    },
+    {
+      "ingredient": {
+        "type": "foodindustrial:purity",
+        "base": {
+          "tag": "foodindustrial:chemicals/glyceryl_monostearate"
+        },
+        "min_purity": "food"
+      }
+    },
+    {
+      "ingredient": {
+        "type": "foodindustrial:purity",
+        "base": {
+          "tag": "foodindustrial:chemicals/sorbitan_monostearate"
+        },
+        "min_purity": "food"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "min_purity": "food",
+        "tag": "foodindustrial:polysorbate_80"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:higher_alcohol_fatty_ester_complex"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "emulsifying"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 100
+}

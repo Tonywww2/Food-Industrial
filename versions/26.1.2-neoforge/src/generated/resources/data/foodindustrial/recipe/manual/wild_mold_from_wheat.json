@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/steamed_wheat"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air"
+  },
+  "time": 48000
+}

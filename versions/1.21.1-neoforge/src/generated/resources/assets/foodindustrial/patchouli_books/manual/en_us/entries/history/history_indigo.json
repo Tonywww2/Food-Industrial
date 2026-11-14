@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:indigo_plant",
+  "name": "book.foodindustrial.manual.entry.history_indigo",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:indigo_plant",
+      "text": "book.foodindustrial.manual.entry.history_indigo.text"
+    }
+  ],
+  "sortnum": 10
+}

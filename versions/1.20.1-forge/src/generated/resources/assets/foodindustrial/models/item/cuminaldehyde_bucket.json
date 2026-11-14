@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:cuminaldehyde",
+  "loader": "forge:fluid_container"
+}

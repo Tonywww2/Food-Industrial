@@ -6,6 +6,10 @@
     {
       "id": "#forge:polyglycerol_polyricinoleate",
       "required": false
+    },
+    {
+      "id": "#c:polyglycerol_polyricinoleate",
+      "required": false
     }
   ]
 }

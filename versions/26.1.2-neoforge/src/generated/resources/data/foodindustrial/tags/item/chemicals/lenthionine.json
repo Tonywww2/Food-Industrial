@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lenthionine",
+    {
+      "id": "#forge:dusts/lenthionine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lenthionine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lenthionine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lenthionine",
+      "required": false
+    }
+  ]
+}

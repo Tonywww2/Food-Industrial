@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:black_pepper_oil",
+    "foodindustrial:flowing_black_pepper_oil",
+    {
+      "id": "#forge:black_pepper_oil",
+      "required": false
+    },
+    {
+      "id": "#c:black_pepper_oil",
+      "required": false
+    }
+  ]
+}

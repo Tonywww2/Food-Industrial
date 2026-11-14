@@ -22,6 +22,11 @@ public interface DataReader {
 
     String getString(String key, String defaultValue);
 
+    /** The stored double, or {@code defaultValue}. */
+    default double getDouble(String key, double defaultValue) {
+        return getCodec(key, Codec.DOUBLE).orElse(defaultValue);
+    }
+
     /** The stored array, or an empty array. */
     int[] getIntArray(String key);
 

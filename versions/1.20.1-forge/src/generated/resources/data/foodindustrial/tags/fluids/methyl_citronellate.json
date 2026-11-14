@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_citronellate",
+    "foodindustrial:flowing_methyl_citronellate",
+    {
+      "id": "#forge:methyl_citronellate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_citronellate",
+      "required": false
+    }
+  ]
+}

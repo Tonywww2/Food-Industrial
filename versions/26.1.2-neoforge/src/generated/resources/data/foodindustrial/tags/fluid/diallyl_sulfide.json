@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diallyl_sulfide",
+    "foodindustrial:flowing_diallyl_sulfide",
+    {
+      "id": "#forge:diallyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:diallyl_sulfide",
+      "required": false
+    }
+  ]
+}

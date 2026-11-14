@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "minecraft:string"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    "T T",
+    " W "
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:cloth_bag"
+  }
+}

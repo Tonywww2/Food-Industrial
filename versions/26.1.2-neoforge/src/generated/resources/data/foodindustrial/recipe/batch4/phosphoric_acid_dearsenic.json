@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_sulfide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:phosphoric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 4000,
+      "fluid": "foodindustrial:phosphoric_acid"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

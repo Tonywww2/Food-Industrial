@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/styrax"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:styrax_extract"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

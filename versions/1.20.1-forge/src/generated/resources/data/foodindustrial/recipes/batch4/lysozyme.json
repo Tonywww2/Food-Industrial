@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg_white"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/salt"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:lysozyme"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

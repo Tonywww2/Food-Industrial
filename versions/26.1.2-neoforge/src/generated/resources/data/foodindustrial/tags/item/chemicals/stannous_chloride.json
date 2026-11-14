@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:stannous_chloride",
     {
+      "id": "#forge:dusts/stannous_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/stannous_chloride",
+      "required": false
+    },
+    {
       "id": "#c:dusts/stannous_chloride",
       "required": false
     },

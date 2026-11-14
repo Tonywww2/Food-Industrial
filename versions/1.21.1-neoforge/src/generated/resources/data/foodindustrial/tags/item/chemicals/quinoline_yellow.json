@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:quinoline_yellow",
     {
+      "id": "#forge:dusts/quinoline_yellow",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/quinoline_yellow",
+      "required": false
+    },
+    {
       "id": "#c:dusts/quinoline_yellow",
       "required": false
     },

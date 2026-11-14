@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/l_cysteine"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:l_cysteine_hydrochloride"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wormwood_powder",
+    {
+      "id": "#forge:dusts/wormwood_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/wormwood_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/wormwood_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/wormwood_powder",
+      "required": false
+    }
+  ]
+}

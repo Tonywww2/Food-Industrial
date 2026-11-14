@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionyl_pyrroline",
+    "foodindustrial:flowing_propionyl_pyrroline",
+    {
+      "id": "#forge:propionyl_pyrroline",
+      "required": false
+    },
+    {
+      "id": "#c:propionyl_pyrroline",
+      "required": false
+    }
+  ]
+}

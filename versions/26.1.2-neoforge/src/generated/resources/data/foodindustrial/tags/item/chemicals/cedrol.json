@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cedrol",
+    {
+      "id": "#forge:dusts/cedrol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cedrol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cedrol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cedrol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oakmoss_concrete",
+    {
+      "id": "#forge:dusts/oakmoss_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/oakmoss_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/oakmoss_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oakmoss_concrete",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:lime_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "id": "foodindustrial:terpeneless_lime_oil"
+    },
+    {
+      "amount": 250,
+      "id": "foodindustrial:lime_oil_terpenes"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

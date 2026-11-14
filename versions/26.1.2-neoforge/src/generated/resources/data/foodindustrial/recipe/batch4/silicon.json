@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:kiln",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/electrode",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/quartz"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/coke"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:silicon"
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:carbon_monoxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "extreme"
+  },
+  "time": 400
+}

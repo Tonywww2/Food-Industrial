@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:enzymes/laccase"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/vanillin"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:oxygen"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "item": "foodindustrial:divanillin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

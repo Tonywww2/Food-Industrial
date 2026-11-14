@@ -1,0 +1,53 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/aluminium_chloride"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:isobutylene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "tag": "foodindustrial:isoprene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:methyl_chloride"
+      }
+    }
+  ],
+  "mode": "polymerization",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:butyl_rubber",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:methyl_chloride",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "freezing"
+  },
+  "time": 200
+}

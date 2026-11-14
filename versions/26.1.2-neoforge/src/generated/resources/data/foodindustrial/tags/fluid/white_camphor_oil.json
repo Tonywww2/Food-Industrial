@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:white_camphor_oil",
+    "foodindustrial:flowing_white_camphor_oil",
+    {
+      "id": "#forge:white_camphor_oil",
+      "required": false
+    },
+    {
+      "id": "#c:white_camphor_oil",
+      "required": false
+    }
+  ]
+}

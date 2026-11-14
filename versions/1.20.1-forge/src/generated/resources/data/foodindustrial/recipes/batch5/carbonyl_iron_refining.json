@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/carbonyl_iron"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "fluidized_bed",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:carbonyl_iron"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

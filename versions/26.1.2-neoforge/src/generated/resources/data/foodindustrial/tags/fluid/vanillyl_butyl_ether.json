@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillyl_butyl_ether",
+    "foodindustrial:flowing_vanillyl_butyl_ether",
+    {
+      "id": "#forge:vanillyl_butyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:vanillyl_butyl_ether",
+      "required": false
+    }
+  ]
+}

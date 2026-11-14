@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acrylamide",
+    "foodindustrial:flowing_acrylamide",
+    {
+      "id": "#forge:acrylamide",
+      "required": false
+    },
+    {
+      "id": "#c:acrylamide",
+      "required": false
+    }
+  ]
+}

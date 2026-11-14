@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethylbenzoquinone",
+    {
+      "id": "#forge:dusts/trimethylbenzoquinone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/trimethylbenzoquinone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/trimethylbenzoquinone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trimethylbenzoquinone",
+      "required": false
+    }
+  ]
+}

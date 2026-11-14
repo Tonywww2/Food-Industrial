@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/barley"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "koji_tray",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:barley_malt"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 2400
+}

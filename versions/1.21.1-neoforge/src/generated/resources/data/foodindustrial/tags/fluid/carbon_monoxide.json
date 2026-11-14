@@ -4,6 +4,10 @@
     "foodindustrial:carbon_monoxide",
     "foodindustrial:flowing_carbon_monoxide",
     {
+      "id": "#forge:carbon_monoxide",
+      "required": false
+    },
+    {
       "id": "#c:carbon_monoxide",
       "required": false
     }

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:kelp_extract",
+  "loader": "neoforge:fluid_container"
+}

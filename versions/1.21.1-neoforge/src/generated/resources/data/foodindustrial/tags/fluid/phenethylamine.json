@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenethylamine",
+    "foodindustrial:flowing_phenethylamine",
+    {
+      "id": "#forge:phenethylamine",
+      "required": false
+    },
+    {
+      "id": "#c:phenethylamine",
+      "required": false
+    }
+  ]
+}

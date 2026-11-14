@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:octanal_dimethyl_acetal",
+  "loader": "neoforge:fluid_container"
+}

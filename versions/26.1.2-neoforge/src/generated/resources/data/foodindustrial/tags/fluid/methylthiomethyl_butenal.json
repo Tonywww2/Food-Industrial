@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiomethyl_butenal",
+    "foodindustrial:flowing_methylthiomethyl_butenal",
+    {
+      "id": "#forge:methylthiomethyl_butenal",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiomethyl_butenal",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_dimethoxybenzene",
+    {
+      "id": "#forge:dusts/p_dimethoxybenzene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_dimethoxybenzene",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_dimethoxybenzene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_dimethoxybenzene",
+      "required": false
+    }
+  ]
+}

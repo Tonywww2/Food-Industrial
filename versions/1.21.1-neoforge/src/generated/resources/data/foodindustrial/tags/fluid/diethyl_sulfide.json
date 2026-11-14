@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_sulfide",
+    "foodindustrial:flowing_diethyl_sulfide",
+    {
+      "id": "#forge:diethyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:diethyl_sulfide",
+      "required": false
+    }
+  ]
+}

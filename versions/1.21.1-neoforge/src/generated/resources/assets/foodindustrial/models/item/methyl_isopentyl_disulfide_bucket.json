@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methyl_isopentyl_disulfide",
+  "loader": "neoforge:fluid_container"
+}

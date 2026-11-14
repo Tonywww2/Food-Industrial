@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/monascus_yellow",
       "required": false
+    },
+    {
+      "id": "#c:dusts/monascus_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monascus_yellow",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/licorice_antioxidant",
       "required": false
+    },
+    {
+      "id": "#c:dusts/licorice_antioxidant",
+      "required": false
+    },
+    {
+      "id": "#c:gems/licorice_antioxidant",
+      "required": false
     }
   ]
 }

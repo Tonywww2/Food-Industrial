@@ -1,0 +1,162 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:samples/soil"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/agar"
+    }
+  ],
+  "mode": "isolation",
+  "outputs": [
+    {
+      "item": "foodindustrial:corynebacterium",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:streptomyces_gilvosporeus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:clostridium_butyricum",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:bacillus_acidopullulyticus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:streptoverticillium",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:pseudomonas_dacunhae",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:alcaligenes_myxogenes",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:sphingomonas_sanxanigenens",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:streptomyces_albulus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:arthrobacter",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:aspergillus_fijiensis",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:chryseobacterium",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:bacillus_amyloliquefaciens",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:streptomyces_rubiginosus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:clostridium_acetobutylicum",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:mortierella",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:carnitine_hk4",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "plate": {
+    "weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      17
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

@@ -4,6 +4,10 @@
     "foodindustrial:propylenediamine",
     "foodindustrial:flowing_propylenediamine",
     {
+      "id": "#forge:propylenediamine",
+      "required": false
+    },
+    {
       "id": "#c:propylenediamine",
       "required": false
     }

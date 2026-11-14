@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:butane_2_3_diol",
+  "loader": "forge:fluid_container"
+}

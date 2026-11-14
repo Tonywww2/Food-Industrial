@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:triethyl_citrate",
+  "loader": "neoforge:fluid_container"
+}

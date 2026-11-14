@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:butyraldehyde"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/carbethoxypropyl_tpp_bromide"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_methoxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:ethyl_cis_4_octenoate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "item": "foodindustrial:triphenylphosphine_oxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

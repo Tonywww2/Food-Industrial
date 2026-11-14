@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:crusher",
+  "name": "book.foodindustrial.manual.entry.crusher",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:crusher",
+      "text": "book.foodindustrial.manual.entry.crusher.text"
+    }
+  ],
+  "sortnum": 0
+}

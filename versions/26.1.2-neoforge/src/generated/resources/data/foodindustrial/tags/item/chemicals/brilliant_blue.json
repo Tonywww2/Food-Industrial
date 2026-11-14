@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:brilliant_blue",
     {
+      "id": "#forge:dusts/brilliant_blue",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/brilliant_blue",
+      "required": false
+    },
+    {
       "id": "#c:dusts/brilliant_blue",
       "required": false
     },

@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/d_ribose"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/l_cysteine"
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:methyl_3_furanthiol",
+      "purity": {
+        "mode": "source",
+        "value": 30
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

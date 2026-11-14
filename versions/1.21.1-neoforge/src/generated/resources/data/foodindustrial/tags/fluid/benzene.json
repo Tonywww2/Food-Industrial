@@ -4,6 +4,10 @@
     "foodindustrial:benzene",
     "foodindustrial:flowing_benzene",
     {
+      "id": "#forge:benzene",
+      "required": false
+    },
+    {
       "id": "#c:benzene",
       "required": false
     }

@@ -1,0 +1,26 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/trona"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:trona",
+    "nbt": "{Purity:28b}"
+  }
+}

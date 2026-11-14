@@ -4,6 +4,10 @@
     "foodindustrial:d_carvone",
     "foodindustrial:flowing_d_carvone",
     {
+      "id": "#forge:d_carvone",
+      "required": false
+    },
+    {
       "id": "#c:d_carvone",
       "required": false
     }

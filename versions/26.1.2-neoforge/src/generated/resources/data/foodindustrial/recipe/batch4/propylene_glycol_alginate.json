@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/alginic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/soda_ash"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:propylene_oxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:propylene_glycol_alginate"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

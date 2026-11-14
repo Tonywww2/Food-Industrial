@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_isobutyl_ketone",
+    "foodindustrial:flowing_benzyl_isobutyl_ketone",
+    {
+      "id": "#forge:benzyl_isobutyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_isobutyl_ketone",
+      "required": false
+    }
+  ]
+}

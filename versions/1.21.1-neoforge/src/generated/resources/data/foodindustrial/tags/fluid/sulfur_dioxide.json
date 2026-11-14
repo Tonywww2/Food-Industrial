@@ -4,6 +4,10 @@
     "foodindustrial:sulfur_dioxide",
     "foodindustrial:flowing_sulfur_dioxide",
     {
+      "id": "#forge:sulfur_dioxide",
+      "required": false
+    },
+    {
       "id": "#c:sulfur_dioxide",
       "required": false
     }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_5_octenol",
+    "foodindustrial:flowing_cis_5_octenol",
+    {
+      "id": "#forge:cis_5_octenol",
+      "required": false
+    },
+    {
+      "id": "#c:cis_5_octenol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_lactate",
+    {
+      "id": "#forge:dusts/zinc_lactate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_lactate",
+      "required": false
+    }
+  ]
+}

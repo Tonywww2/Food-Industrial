@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cardamom_tincture",
+    "foodindustrial:flowing_cardamom_tincture",
+    {
+      "id": "#forge:cardamom_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:cardamom_tincture",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/paraffin_wax"
+    }
+  ],
+  "mode": "cracking",
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:octene",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 150,
+      "fluid": "foodindustrial:butene",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 150,
+      "fluid": "foodindustrial:decene",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

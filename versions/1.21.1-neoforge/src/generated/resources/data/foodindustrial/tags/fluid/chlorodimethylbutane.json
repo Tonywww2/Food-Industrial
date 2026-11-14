@@ -4,6 +4,10 @@
     "foodindustrial:chlorodimethylbutane",
     "foodindustrial:flowing_chlorodimethylbutane",
     {
+      "id": "#forge:chlorodimethylbutane",
+      "required": false
+    },
+    {
       "id": "#c:chlorodimethylbutane",
       "required": false
     }

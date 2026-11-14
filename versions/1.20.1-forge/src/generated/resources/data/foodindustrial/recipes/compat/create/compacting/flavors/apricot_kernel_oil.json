@@ -1,0 +1,27 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/apricot_kernel"
+    },
+    {
+      "tag": "foodindustrial:materials/apricot_kernel"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:apricot_kernel_oil"
+    }
+  ]
+}

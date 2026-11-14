@@ -4,6 +4,10 @@
     "foodindustrial:dimethylformamide",
     "foodindustrial:flowing_dimethylformamide",
     {
+      "id": "#forge:dimethylformamide",
+      "required": false
+    },
+    {
       "id": "#c:dimethylformamide",
       "required": false
     }

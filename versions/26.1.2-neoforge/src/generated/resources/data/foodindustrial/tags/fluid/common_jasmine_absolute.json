@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:common_jasmine_absolute",
+    "foodindustrial:flowing_common_jasmine_absolute",
+    {
+      "id": "#forge:common_jasmine_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:common_jasmine_absolute",
+      "required": false
+    }
+  ]
+}

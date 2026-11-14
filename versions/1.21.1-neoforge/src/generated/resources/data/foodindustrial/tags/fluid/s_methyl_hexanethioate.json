@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:s_methyl_hexanethioate",
+    "foodindustrial:flowing_s_methyl_hexanethioate",
+    {
+      "id": "#forge:s_methyl_hexanethioate",
+      "required": false
+    },
+    {
+      "id": "#c:s_methyl_hexanethioate",
+      "required": false
+    }
+  ]
+}

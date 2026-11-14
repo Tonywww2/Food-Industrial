@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_3_hexenyl_hexanoate",
+    "foodindustrial:flowing_cis_3_hexenyl_hexanoate",
+    {
+      "id": "#forge:cis_3_hexenyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:cis_3_hexenyl_hexanoate",
+      "required": false
+    }
+  ]
+}

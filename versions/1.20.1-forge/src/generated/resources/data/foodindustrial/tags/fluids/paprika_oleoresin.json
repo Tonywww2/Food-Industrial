@@ -6,6 +6,10 @@
     {
       "id": "#forge:paprika_oleoresin",
       "required": false
+    },
+    {
+      "id": "#c:paprika_oleoresin",
+      "required": false
     }
   ]
 }

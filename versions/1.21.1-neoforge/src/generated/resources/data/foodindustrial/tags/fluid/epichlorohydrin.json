@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epichlorohydrin",
+    "foodindustrial:flowing_epichlorohydrin",
+    {
+      "id": "#forge:epichlorohydrin",
+      "required": false
+    },
+    {
+      "id": "#c:epichlorohydrin",
+      "required": false
+    }
+  ]
+}

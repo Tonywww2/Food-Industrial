@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leaf_formate",
+    "foodindustrial:flowing_leaf_formate",
+    {
+      "id": "#forge:leaf_formate",
+      "required": false
+    },
+    {
+      "id": "#c:leaf_formate",
+      "required": false
+    }
+  ]
+}

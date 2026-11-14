@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:white_thyme_oil",
+    "foodindustrial:flowing_white_thyme_oil",
+    {
+      "id": "#forge:white_thyme_oil",
+      "required": false
+    },
+    {
+      "id": "#c:white_thyme_oil",
+      "required": false
+    }
+  ]
+}

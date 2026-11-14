@@ -4,6 +4,10 @@
     "foodindustrial:benzenedisulfonic_acid",
     "foodindustrial:flowing_benzenedisulfonic_acid",
     {
+      "id": "#forge:benzenedisulfonic_acid",
+      "required": false
+    },
+    {
       "id": "#c:benzenedisulfonic_acid",
       "required": false
     }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_nicotinate",
+    {
+      "id": "#forge:dusts/methyl_nicotinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_nicotinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_nicotinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_nicotinate",
+      "required": false
+    }
+  ]
+}

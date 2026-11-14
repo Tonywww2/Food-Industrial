@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_citrate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_citrate",
+      "required": false
     }
   ]
 }

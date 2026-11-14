@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:angostura_extract",
+    "foodindustrial:flowing_angostura_extract",
+    {
+      "id": "#forge:angostura_extract",
+      "required": false
+    },
+    {
+      "id": "#c:angostura_extract",
+      "required": false
+    }
+  ]
+}

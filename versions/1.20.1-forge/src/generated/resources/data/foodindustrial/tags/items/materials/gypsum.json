@@ -5,6 +5,10 @@
     {
       "id": "#forge:ores/gypsum",
       "required": false
+    },
+    {
+      "id": "#c:ores/gypsum",
+      "required": false
     }
   ]
 }

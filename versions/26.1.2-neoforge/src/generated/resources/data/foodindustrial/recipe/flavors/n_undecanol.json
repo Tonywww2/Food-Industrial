@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/copper"
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/undecylenic_acid"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "hydrogenation",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:n_undecanol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "high",
+    "temperature": "heated"
+  },
+  "time": 200
+}

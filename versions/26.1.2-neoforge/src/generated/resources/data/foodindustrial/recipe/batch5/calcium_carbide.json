@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/quicklime"
+    },
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:materials/coke"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_carbide",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_monoxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "extreme"
+  },
+  "time": 400
+}

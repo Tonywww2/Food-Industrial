@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:agarose",
     {
+      "id": "#forge:dusts/agarose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/agarose",
+      "required": false
+    },
+    {
       "id": "#c:dusts/agarose",
       "required": false
     },

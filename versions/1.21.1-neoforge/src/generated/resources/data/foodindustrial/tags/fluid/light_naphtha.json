@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:light_naphtha",
+    "foodindustrial:flowing_light_naphtha",
+    {
+      "id": "#forge:light_naphtha",
+      "required": false
+    },
+    {
+      "id": "#c:light_naphtha",
+      "required": false
+    }
+  ]
+}

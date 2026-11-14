@@ -6,6 +6,10 @@
     {
       "id": "#forge:thiodipropionitrile",
       "required": false
+    },
+    {
+      "id": "#c:thiodipropionitrile",
+      "required": false
     }
   ]
 }

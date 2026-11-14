@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_tryptophan",
+    {
+      "id": "#forge:dusts/l_tryptophan",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_tryptophan",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/l_tryptophan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_tryptophan",
+      "required": false
+    }
+  ]
+}

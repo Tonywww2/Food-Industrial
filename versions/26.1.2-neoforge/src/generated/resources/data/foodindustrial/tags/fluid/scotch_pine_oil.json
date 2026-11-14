@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:scotch_pine_oil",
+    "foodindustrial:flowing_scotch_pine_oil",
+    {
+      "id": "#forge:scotch_pine_oil",
+      "required": false
+    },
+    {
+      "id": "#c:scotch_pine_oil",
+      "required": false
+    }
+  ]
+}

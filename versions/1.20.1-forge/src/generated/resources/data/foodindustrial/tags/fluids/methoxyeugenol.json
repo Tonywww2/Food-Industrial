@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxyeugenol",
+    "foodindustrial:flowing_methoxyeugenol",
+    {
+      "id": "#forge:methoxyeugenol",
+      "required": false
+    },
+    {
+      "id": "#c:methoxyeugenol",
+      "required": false
+    }
+  ]
+}

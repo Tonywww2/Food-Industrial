@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:milk_lactone",
+    "foodindustrial:flowing_milk_lactone",
+    {
+      "id": "#forge:milk_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:milk_lactone",
+      "required": false
+    }
+  ]
+}

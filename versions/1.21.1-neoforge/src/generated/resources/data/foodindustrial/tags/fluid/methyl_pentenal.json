@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_pentenal",
+    "foodindustrial:flowing_methyl_pentenal",
+    {
+      "id": "#forge:methyl_pentenal",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_pentenal",
+      "required": false
+    }
+  ]
+}

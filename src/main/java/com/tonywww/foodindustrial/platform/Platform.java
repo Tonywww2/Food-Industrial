@@ -4,10 +4,12 @@ package com.tonywww.foodindustrial.platform;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.fml.loading.FMLLoader;
+import net.minecraftforge.fml.loading.FMLPaths;
 //?} else {
 /*import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.fml.loading.FMLLoader;
+import net.neoforged.fml.loading.FMLPaths;
 *///?}
 
 /**
@@ -36,6 +38,12 @@ public final class Platform {
     /** Whether another mod is present (use before touching an optional integration). */
     public static boolean isModLoaded(String modId) {
         return ModList.get().isLoaded(modId);
+    }
+
+    /** The display name of a loaded mod ({@code minecraft} included), or {@code null}. */
+    @org.jetbrains.annotations.Nullable
+    public static String modName(String modId) {
+        return ModList.get().getModContainerById(modId).map(container -> container.getModInfo().getDisplayName()).orElse(null);
     }
 
     /** {@code true} on the physical client (also true for the integrated server's JVM). */
@@ -69,5 +77,10 @@ public final class Platform {
         *///?} else {
         return !FMLLoader.isProduction();
         //?}
+    }
+
+    /** The game directory (the run directory in development); exports are written below it. */
+    public static java.nio.file.Path gameDirectory() {
+        return FMLPaths.GAMEDIR.get();
     }
 }

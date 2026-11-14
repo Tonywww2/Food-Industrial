@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:gardenia_broth",
+  "loader": "forge:fluid_container"
+}

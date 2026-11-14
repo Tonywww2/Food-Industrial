@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:indigo_ferment"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/slaked_lime"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:indigo",
+      "purity": {
+        "mode": "source",
+        "value": 2
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "settling"
+    ]
+  },
+  "time": 24000
+}

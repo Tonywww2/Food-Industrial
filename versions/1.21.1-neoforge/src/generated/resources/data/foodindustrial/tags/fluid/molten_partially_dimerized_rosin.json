@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:molten_partially_dimerized_rosin",
+    "foodindustrial:flowing_molten_partially_dimerized_rosin",
+    {
+      "id": "#forge:molten_partially_dimerized_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:molten_partially_dimerized_rosin",
+      "required": false
+    }
+  ]
+}

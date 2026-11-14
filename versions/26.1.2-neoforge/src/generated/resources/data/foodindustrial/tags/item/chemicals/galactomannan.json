@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:galactomannan",
     {
+      "id": "#forge:dusts/galactomannan",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/galactomannan",
+      "required": false
+    },
+    {
       "id": "#c:dusts/galactomannan",
       "required": false
     },

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactoferrin",
+    {
+      "id": "#forge:dusts/lactoferrin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lactoferrin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lactoferrin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lactoferrin",
+      "required": false
+    }
+  ]
+}

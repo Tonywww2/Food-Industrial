@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:dl_alpha_tocopherol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:dl_alpha_tocopherol"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "molecular_distillation"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

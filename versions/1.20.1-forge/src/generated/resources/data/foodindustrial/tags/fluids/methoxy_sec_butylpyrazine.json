@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxy_sec_butylpyrazine",
+    "foodindustrial:flowing_methoxy_sec_butylpyrazine",
+    {
+      "id": "#forge:methoxy_sec_butylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:methoxy_sec_butylpyrazine",
+      "required": false
+    }
+  ]
+}

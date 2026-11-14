@@ -6,6 +6,10 @@
     {
       "id": "#forge:chlorobenzene",
       "required": false
+    },
+    {
+      "id": "#c:chlorobenzene",
+      "required": false
     }
   ]
 }

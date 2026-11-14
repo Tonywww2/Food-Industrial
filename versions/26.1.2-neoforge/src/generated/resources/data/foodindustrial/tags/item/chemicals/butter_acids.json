@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butter_acids",
+    {
+      "id": "#forge:dusts/butter_acids",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/butter_acids",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/butter_acids",
+      "required": false
+    },
+    {
+      "id": "#c:gems/butter_acids",
+      "required": false
+    }
+  ]
+}

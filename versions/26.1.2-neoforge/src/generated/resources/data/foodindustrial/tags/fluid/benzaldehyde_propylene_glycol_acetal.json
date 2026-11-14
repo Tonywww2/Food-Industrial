@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzaldehyde_propylene_glycol_acetal",
+    "foodindustrial:flowing_benzaldehyde_propylene_glycol_acetal",
+    {
+      "id": "#forge:benzaldehyde_propylene_glycol_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:benzaldehyde_propylene_glycol_acetal",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_alcohol",
+    "foodindustrial:flowing_benzyl_alcohol",
+    {
+      "id": "#forge:benzyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_alcohol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:cloth_bag",
+  "name": "book.foodindustrial.manual.entry.cloth_bag",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:cloth_bag",
+      "text": "book.foodindustrial.manual.entry.cloth_bag.text",
+      "title": "book.foodindustrial.manual.entry.cloth_bag"
+    }
+  ],
+  "sortnum": 2
+}

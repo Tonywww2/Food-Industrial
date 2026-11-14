@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/methyl_ketogluconate"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_methoxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_erythorbate"
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:methanol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

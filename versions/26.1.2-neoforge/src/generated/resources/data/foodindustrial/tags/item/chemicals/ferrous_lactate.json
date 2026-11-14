@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_lactate",
+    {
+      "id": "#forge:dusts/ferrous_lactate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferrous_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferrous_lactate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/calcium_acetate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:acetic_acid"
+    },
+    {
+      "item": "foodindustrial:gypsum"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

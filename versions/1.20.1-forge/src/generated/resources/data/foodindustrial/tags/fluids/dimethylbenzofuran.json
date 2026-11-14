@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylbenzofuran",
+    "foodindustrial:flowing_dimethylbenzofuran",
+    {
+      "id": "#forge:dimethylbenzofuran",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylbenzofuran",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:methyl_isopropyl_carbinol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:methyl_isopropyl_carbinol"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

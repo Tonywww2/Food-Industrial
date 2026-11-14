@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydroxy_methylhexanoic_delta_lactone"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:hydroxy_methylhexanoic_delta_lactone"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

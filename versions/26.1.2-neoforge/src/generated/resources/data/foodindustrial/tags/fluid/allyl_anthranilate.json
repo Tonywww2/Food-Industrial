@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_anthranilate",
+    "foodindustrial:flowing_allyl_anthranilate",
+    {
+      "id": "#forge:allyl_anthranilate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_anthranilate",
+      "required": false
+    }
+  ]
+}

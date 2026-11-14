@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyroin",
+    "foodindustrial:flowing_butyroin",
+    {
+      "id": "#forge:butyroin",
+      "required": false
+    },
+    {
+      "id": "#c:butyroin",
+      "required": false
+    }
+  ]
+}

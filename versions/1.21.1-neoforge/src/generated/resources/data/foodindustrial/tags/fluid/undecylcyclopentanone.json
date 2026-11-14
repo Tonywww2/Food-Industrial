@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecylcyclopentanone",
+    "foodindustrial:flowing_undecylcyclopentanone",
+    {
+      "id": "#forge:undecylcyclopentanone",
+      "required": false
+    },
+    {
+      "id": "#c:undecylcyclopentanone",
+      "required": false
+    }
+  ]
+}

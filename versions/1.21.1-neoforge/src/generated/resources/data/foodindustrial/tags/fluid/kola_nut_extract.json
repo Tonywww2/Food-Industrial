@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:kola_nut_extract",
+    "foodindustrial:flowing_kola_nut_extract",
+    {
+      "id": "#forge:kola_nut_extract",
+      "required": false
+    },
+    {
+      "id": "#c:kola_nut_extract",
+      "required": false
+    }
+  ]
+}

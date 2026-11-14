@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisylidene_acetone",
+    {
+      "id": "#forge:dusts/anisylidene_acetone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/anisylidene_acetone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/anisylidene_acetone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/anisylidene_acetone",
+      "required": false
+    }
+  ]
+}

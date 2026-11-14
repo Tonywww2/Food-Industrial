@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_ethylbenzenesulfonate",
+    {
+      "id": "#forge:dusts/sodium_ethylbenzenesulfonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_ethylbenzenesulfonate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_ethylbenzenesulfonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_ethylbenzenesulfonate",
+      "required": false
+    }
+  ]
+}

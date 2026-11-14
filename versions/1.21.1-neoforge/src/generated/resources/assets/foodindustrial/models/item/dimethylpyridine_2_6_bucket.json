@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dimethylpyridine_2_6",
+  "loader": "neoforge:fluid_container"
+}

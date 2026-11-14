@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diisobutyl_ketone",
+    "foodindustrial:flowing_diisobutyl_ketone",
+    {
+      "id": "#forge:diisobutyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:diisobutyl_ketone",
+      "required": false
+    }
+  ]
+}

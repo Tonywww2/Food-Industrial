@@ -4,6 +4,10 @@
     "foodindustrial:latex",
     "foodindustrial:flowing_latex",
     {
+      "id": "#forge:latex",
+      "required": false
+    },
+    {
       "id": "#c:latex",
       "required": false
     }

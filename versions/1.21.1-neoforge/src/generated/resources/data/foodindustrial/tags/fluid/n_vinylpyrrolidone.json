@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:n_vinylpyrrolidone",
+    "foodindustrial:flowing_n_vinylpyrrolidone",
+    {
+      "id": "#forge:n_vinylpyrrolidone",
+      "required": false
+    },
+    {
+      "id": "#c:n_vinylpyrrolidone",
+      "required": false
+    }
+  ]
+}

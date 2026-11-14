@@ -4,6 +4,10 @@
     "foodindustrial:dimethyl_dicarbonate",
     "foodindustrial:flowing_dimethyl_dicarbonate",
     {
+      "id": "#forge:dimethyl_dicarbonate",
+      "required": false
+    },
+    {
       "id": "#c:dimethyl_dicarbonate",
       "required": false
     }

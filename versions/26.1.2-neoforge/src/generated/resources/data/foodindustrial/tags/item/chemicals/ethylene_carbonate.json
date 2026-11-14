@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylene_carbonate",
+    {
+      "id": "#forge:dusts/ethylene_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ethylene_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ethylene_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethylene_carbonate",
+      "required": false
+    }
+  ]
+}

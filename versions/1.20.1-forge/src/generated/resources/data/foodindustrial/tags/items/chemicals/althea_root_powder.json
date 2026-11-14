@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:althea_root_powder",
+    {
+      "id": "#forge:dusts/althea_root_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/althea_root_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/althea_root_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/althea_root_powder",
+      "required": false
+    }
+  ]
+}

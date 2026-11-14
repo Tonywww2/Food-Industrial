@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aglaia_flower_tincture",
+    "foodindustrial:flowing_aglaia_flower_tincture",
+    {
+      "id": "#forge:aglaia_flower_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:aglaia_flower_tincture",
+      "required": false
+    }
+  ]
+}

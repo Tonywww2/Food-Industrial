@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tagetes_oil",
+    "foodindustrial:flowing_tagetes_oil",
+    {
+      "id": "#forge:tagetes_oil",
+      "required": false
+    },
+    {
+      "id": "#c:tagetes_oil",
+      "required": false
+    }
+  ]
+}

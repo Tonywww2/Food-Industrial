@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/macroporous_resin",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:cobalamin_broth"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrogen_cyanide"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:cyanocobalamin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,11 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "#foodindustrial:harvest/latex",
+  "container": "minecraft:glass_bottle",
+  "cooldown": 6000,
+  "result": {
+    "amount": 250,
+    "fluid": "foodindustrial:latex"
+  },
+  "tool": "#foodindustrial:knives"
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:isovanillin",
     {
+      "id": "#forge:dusts/isovanillin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isovanillin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/isovanillin",
       "required": false
     },

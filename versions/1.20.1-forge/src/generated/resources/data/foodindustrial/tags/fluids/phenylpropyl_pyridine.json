@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylpropyl_pyridine",
+    "foodindustrial:flowing_phenylpropyl_pyridine",
+    {
+      "id": "#forge:phenylpropyl_pyridine",
+      "required": false
+    },
+    {
+      "id": "#c:phenylpropyl_pyridine",
+      "required": false
+    }
+  ]
+}

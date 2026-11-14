@@ -6,6 +6,10 @@
     {
       "id": "#forge:isoamyl_acetate",
       "required": false
+    },
+    {
+      "id": "#c:isoamyl_acetate",
+      "required": false
     }
   ]
 }

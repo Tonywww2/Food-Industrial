@@ -4,6 +4,10 @@
     "foodindustrial:trimethylchlorosilane",
     "foodindustrial:flowing_trimethylchlorosilane",
     {
+      "id": "#forge:trimethylchlorosilane",
+      "required": false
+    },
+    {
       "id": "#c:trimethylchlorosilane",
       "required": false
     }

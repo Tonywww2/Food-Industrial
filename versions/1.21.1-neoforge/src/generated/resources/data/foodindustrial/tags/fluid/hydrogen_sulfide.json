@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrogen_sulfide",
+    "foodindustrial:flowing_hydrogen_sulfide",
+    {
+      "id": "#forge:hydrogen_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:hydrogen_sulfide",
+      "required": false
+    }
+  ]
+}

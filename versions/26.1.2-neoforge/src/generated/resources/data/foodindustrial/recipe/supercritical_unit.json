@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "#c:storage_blocks/iron",
+    "D": "#c:gems/diamond",
+    "G": "minecraft:glass",
+    "P": "minecraft:piston"
+  },
+  "pattern": [
+    "BGB",
+    "PDP",
+    "BGB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:supercritical_unit"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/copper"
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/trimethylphenol"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:oxygen"
+      }
+    }
+  ],
+  "mode": "pressure_oxidation",
+  "outputs": [
+    {
+      "item": "foodindustrial:trimethylbenzoquinone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

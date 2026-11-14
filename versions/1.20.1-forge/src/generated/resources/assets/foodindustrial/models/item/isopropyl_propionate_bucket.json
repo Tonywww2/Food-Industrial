@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:isopropyl_propionate",
+  "loader": "forge:fluid_container"
+}

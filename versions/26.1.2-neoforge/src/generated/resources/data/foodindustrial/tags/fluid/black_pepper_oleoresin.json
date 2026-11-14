@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:black_pepper_oleoresin",
+    "foodindustrial:flowing_black_pepper_oleoresin",
+    {
+      "id": "#forge:black_pepper_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:black_pepper_oleoresin",
+      "required": false
+    }
+  ]
+}

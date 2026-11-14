@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:michelia_alba_leaf_oil",
+    "foodindustrial:flowing_michelia_alba_leaf_oil",
+    {
+      "id": "#forge:michelia_alba_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:michelia_alba_leaf_oil",
+      "required": false
+    }
+  ]
+}

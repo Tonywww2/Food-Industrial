@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 4,
+    "tag": "foodindustrial:materials/dittany_of_crete"
+  },
+  "output": {
+    "count": 1,
+    "id": "foodindustrial:dittany_of_crete_powder"
+  }
+}

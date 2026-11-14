@@ -1,0 +1,28 @@
+{
+  "type": "thermal:centrifuge",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 2,
+    "tag": "foodindustrial:chemicals/agar_jelly"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:agar",
+      "nbt": "{Purity:20b}"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:earth_kiln",
+  "name": "book.foodindustrial.manual.entry.earth_kiln",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:earth_kiln",
+      "text": "book.foodindustrial.manual.entry.earth_kiln.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:earth_kiln[facing=south]",
+          "A": "foodindustrial:kiln_brick"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.earth_kiln"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.earth_kiln.structure"
+    }
+  ],
+  "sortnum": 6
+}

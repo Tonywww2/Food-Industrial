@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:crude_camphor_oil",
+    "foodindustrial:flowing_crude_camphor_oil",
+    {
+      "id": "#forge:crude_camphor_oil",
+      "required": false
+    },
+    {
+      "id": "#c:crude_camphor_oil",
+      "required": false
+    }
+  ]
+}

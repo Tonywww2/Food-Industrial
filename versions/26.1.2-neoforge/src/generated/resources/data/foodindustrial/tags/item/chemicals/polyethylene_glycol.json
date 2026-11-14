@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:polyethylene_glycol",
     {
+      "id": "#forge:dusts/polyethylene_glycol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polyethylene_glycol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/polyethylene_glycol",
       "required": false
     },

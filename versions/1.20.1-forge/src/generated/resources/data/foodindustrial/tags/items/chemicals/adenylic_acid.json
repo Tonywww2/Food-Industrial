@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/adenylic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/adenylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/adenylic_acid",
+      "required": false
     }
   ]
 }

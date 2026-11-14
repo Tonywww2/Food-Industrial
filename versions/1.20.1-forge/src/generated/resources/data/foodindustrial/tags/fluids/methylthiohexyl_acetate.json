@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiohexyl_acetate",
+    "foodindustrial:flowing_methylthiohexyl_acetate",
+    {
+      "id": "#forge:methylthiohexyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiohexyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:diethyl_oxaloacetate",
     "foodindustrial:flowing_diethyl_oxaloacetate",
     {
+      "id": "#forge:diethyl_oxaloacetate",
+      "required": false
+    },
+    {
       "id": "#c:diethyl_oxaloacetate",
       "required": false
     }

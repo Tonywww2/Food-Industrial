@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "active=false,facing=east": {
+      "model": "foodindustrial:block/high_pressure_reactor",
+      "y": 90
+    },
+    "active=false,facing=north": {
+      "model": "foodindustrial:block/high_pressure_reactor"
+    },
+    "active=false,facing=south": {
+      "model": "foodindustrial:block/high_pressure_reactor",
+      "y": 180
+    },
+    "active=false,facing=west": {
+      "model": "foodindustrial:block/high_pressure_reactor",
+      "y": 270
+    },
+    "active=true,facing=east": {
+      "model": "foodindustrial:block/high_pressure_reactor_active",
+      "y": 90
+    },
+    "active=true,facing=north": {
+      "model": "foodindustrial:block/high_pressure_reactor_active"
+    },
+    "active=true,facing=south": {
+      "model": "foodindustrial:block/high_pressure_reactor_active",
+      "y": 180
+    },
+    "active=true,facing=west": {
+      "model": "foodindustrial:block/high_pressure_reactor_active",
+      "y": 270
+    }
+  }
+}

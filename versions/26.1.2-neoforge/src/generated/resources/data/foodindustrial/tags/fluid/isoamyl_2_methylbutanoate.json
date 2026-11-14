@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_2_methylbutanoate",
+    "foodindustrial:flowing_isoamyl_2_methylbutanoate",
+    {
+      "id": "#forge:isoamyl_2_methylbutanoate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_2_methylbutanoate",
+      "required": false
+    }
+  ]
+}

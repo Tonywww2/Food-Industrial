@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sucrose_polyoxypropylene_ether",
+    "foodindustrial:flowing_sucrose_polyoxypropylene_ether",
+    {
+      "id": "#forge:sucrose_polyoxypropylene_ether",
+      "required": false
+    },
+    {
+      "id": "#c:sucrose_polyoxypropylene_ether",
+      "required": false
+    }
+  ]
+}

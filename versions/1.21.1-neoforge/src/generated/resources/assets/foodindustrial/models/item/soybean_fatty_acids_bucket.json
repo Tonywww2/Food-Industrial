@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:soybean_fatty_acids",
+  "loader": "neoforge:fluid_container"
+}

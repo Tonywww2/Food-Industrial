@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hops_extract_solid",
+    {
+      "id": "#forge:dusts/hops_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hops_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hops_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hops_extract_solid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_methylvaleric_acid",
+    "foodindustrial:flowing_beta_methylvaleric_acid",
+    {
+      "id": "#forge:beta_methylvaleric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:beta_methylvaleric_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/annatto_seed"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:edible_oils"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:bixin",
+      "purity": {
+        "mode": "source",
+        "value": 5
+      }
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200
+}

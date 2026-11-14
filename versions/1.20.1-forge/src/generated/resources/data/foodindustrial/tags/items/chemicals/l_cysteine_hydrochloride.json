@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/l_cysteine_hydrochloride",
       "required": false
+    },
+    {
+      "id": "#c:dusts/l_cysteine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_cysteine_hydrochloride",
+      "required": false
     }
   ]
 }

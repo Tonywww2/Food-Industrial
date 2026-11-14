@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vinyl_acetate_laurate_copolymer",
+    {
+      "id": "#forge:dusts/vinyl_acetate_laurate_copolymer",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vinyl_acetate_laurate_copolymer",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/vinyl_acetate_laurate_copolymer",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vinyl_acetate_laurate_copolymer",
+      "required": false
+    }
+  ]
+}

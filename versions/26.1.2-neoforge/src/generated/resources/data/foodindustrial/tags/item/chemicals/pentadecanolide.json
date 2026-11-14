@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentadecanolide",
+    {
+      "id": "#forge:dusts/pentadecanolide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pentadecanolide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pentadecanolide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pentadecanolide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sophora_flower_absolute",
+    "foodindustrial:flowing_sophora_flower_absolute",
+    {
+      "id": "#forge:sophora_flower_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:sophora_flower_absolute",
+      "required": false
+    }
+  ]
+}

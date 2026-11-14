@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_o_methoxybenzoate",
+    "foodindustrial:flowing_methyl_o_methoxybenzoate",
+    {
+      "id": "#forge:methyl_o_methoxybenzoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_o_methoxybenzoate",
+      "required": false
+    }
+  ]
+}

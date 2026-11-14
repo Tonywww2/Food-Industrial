@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_3_hexenyl_benzoate",
+    "foodindustrial:flowing_cis_3_hexenyl_benzoate",
+    {
+      "id": "#forge:cis_3_hexenyl_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:cis_3_hexenyl_benzoate",
+      "required": false
+    }
+  ]
+}

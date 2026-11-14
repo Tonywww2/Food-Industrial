@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:stearyl_alcohol",
+    {
+      "id": "#forge:dusts/stearyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/stearyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/stearyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/stearyl_alcohol",
+      "required": false
+    }
+  ]
+}

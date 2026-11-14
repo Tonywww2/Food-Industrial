@@ -4,6 +4,10 @@
     "foodindustrial:geniposide",
     "foodindustrial:flowing_geniposide",
     {
+      "id": "#forge:geniposide",
+      "required": false
+    },
+    {
       "id": "#c:geniposide",
       "required": false
     }

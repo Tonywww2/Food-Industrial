@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/ammonium_sulfate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:pancreatic_extract"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:trypsin"
+    },
+    {
+      "item": "foodindustrial:chymotrypsin"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

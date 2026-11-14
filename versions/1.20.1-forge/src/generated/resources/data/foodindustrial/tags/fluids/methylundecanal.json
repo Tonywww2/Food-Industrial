@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylundecanal",
+    "foodindustrial:flowing_methylundecanal",
+    {
+      "id": "#forge:methylundecanal",
+      "required": false
+    },
+    {
+      "id": "#c:methylundecanal",
+      "required": false
+    }
+  ]
+}

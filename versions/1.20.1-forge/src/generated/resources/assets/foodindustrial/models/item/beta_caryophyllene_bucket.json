@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:beta_caryophyllene",
+  "loader": "forge:fluid_container"
+}

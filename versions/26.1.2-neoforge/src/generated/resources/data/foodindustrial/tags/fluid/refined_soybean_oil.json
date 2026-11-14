@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:refined_soybean_oil",
+    "foodindustrial:flowing_refined_soybean_oil",
+    {
+      "id": "#forge:refined_soybean_oil",
+      "required": false
+    },
+    {
+      "id": "#c:refined_soybean_oil",
+      "required": false
+    }
+  ]
+}

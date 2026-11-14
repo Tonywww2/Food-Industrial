@@ -1,0 +1,57 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "type": "foodindustrial:purity",
+      "base": {
+        "tag": "foodindustrial:cultures/lactobacillus"
+      },
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/glucose"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ammonia"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:lactic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:ammonia",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

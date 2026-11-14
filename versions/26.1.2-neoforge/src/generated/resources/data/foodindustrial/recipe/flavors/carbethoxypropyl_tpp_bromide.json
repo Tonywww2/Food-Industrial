@@ -1,0 +1,50 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/nickel"
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/maleic_anhydride"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrobromic_acid"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/triphenylphosphine"
+    }
+  ],
+  "mode": "hydrogenation",
+  "outputs": [
+    {
+      "item": "foodindustrial:carbethoxypropyl_tpp_bromide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

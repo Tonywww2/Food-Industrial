@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undec_10_enal",
+    "foodindustrial:flowing_undec_10_enal",
+    {
+      "id": "#forge:undec_10_enal",
+      "required": false
+    },
+    {
+      "id": "#c:undec_10_enal",
+      "required": false
+    }
+  ]
+}

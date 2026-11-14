@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/indigo",
       "required": false
+    },
+    {
+      "id": "#c:dusts/indigo",
+      "required": false
+    },
+    {
+      "id": "#c:gems/indigo",
+      "required": false
     }
   ]
 }

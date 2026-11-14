@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "type": "foodindustrial:purity",
+      "base": {
+        "tag": "foodindustrial:cultures/pseudomonas_fluorescens"
+      },
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/glucose"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:ketogluconic_acid"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

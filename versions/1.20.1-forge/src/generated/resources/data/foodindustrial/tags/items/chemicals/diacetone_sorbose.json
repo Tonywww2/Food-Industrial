@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/diacetone_sorbose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/diacetone_sorbose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diacetone_sorbose",
+      "required": false
     }
   ]
 }

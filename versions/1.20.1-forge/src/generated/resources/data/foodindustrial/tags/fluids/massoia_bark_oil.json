@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:massoia_bark_oil",
+    "foodindustrial:flowing_massoia_bark_oil",
+    {
+      "id": "#forge:massoia_bark_oil",
+      "required": false
+    },
+    {
+      "id": "#c:massoia_bark_oil",
+      "required": false
+    }
+  ]
+}

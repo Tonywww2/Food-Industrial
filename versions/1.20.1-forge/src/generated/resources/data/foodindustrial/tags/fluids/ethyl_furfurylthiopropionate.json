@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_furfurylthiopropionate",
+    "foodindustrial:flowing_ethyl_furfurylthiopropionate",
+    {
+      "id": "#forge:ethyl_furfurylthiopropionate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_furfurylthiopropionate",
+      "required": false
+    }
+  ]
+}

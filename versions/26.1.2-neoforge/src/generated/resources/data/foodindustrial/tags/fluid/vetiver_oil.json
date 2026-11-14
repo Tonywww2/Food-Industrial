@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vetiver_oil",
+    "foodindustrial:flowing_vetiver_oil",
+    {
+      "id": "#forge:vetiver_oil",
+      "required": false
+    },
+    {
+      "id": "#c:vetiver_oil",
+      "required": false
+    }
+  ]
+}

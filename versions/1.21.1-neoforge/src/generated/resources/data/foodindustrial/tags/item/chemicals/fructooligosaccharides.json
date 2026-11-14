@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fructooligosaccharides",
+    {
+      "id": "#forge:dusts/fructooligosaccharides",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fructooligosaccharides",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/fructooligosaccharides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fructooligosaccharides",
+      "required": false
+    }
+  ]
+}

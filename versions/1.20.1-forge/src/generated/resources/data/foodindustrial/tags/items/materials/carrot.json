@@ -12,6 +12,14 @@
     {
       "id": "#forge:vegetables/carrot",
       "required": false
+    },
+    {
+      "id": "#c:crops/carrot",
+      "required": false
+    },
+    {
+      "id": "#c:vegetables/carrot",
+      "required": false
     }
   ]
 }

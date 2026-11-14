@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:electrolyzing",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/electrode"
+    }
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/salt"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "electrooxidation",
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_chlorate"
+    },
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:hydrogen"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

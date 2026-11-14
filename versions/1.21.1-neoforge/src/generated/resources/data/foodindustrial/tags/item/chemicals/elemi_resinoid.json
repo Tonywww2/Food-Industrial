@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:elemi_resinoid",
+    {
+      "id": "#forge:dusts/elemi_resinoid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/elemi_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/elemi_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/elemi_resinoid",
+      "required": false
+    }
+  ]
+}

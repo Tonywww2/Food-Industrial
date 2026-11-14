@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phytyl_acetate",
+    "foodindustrial:flowing_phytyl_acetate",
+    {
+      "id": "#forge:phytyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:phytyl_acetate",
+      "required": false
+    }
+  ]
+}

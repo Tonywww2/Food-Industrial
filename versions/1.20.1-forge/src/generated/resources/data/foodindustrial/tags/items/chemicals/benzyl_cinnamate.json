@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_cinnamate",
+    {
+      "id": "#forge:dusts/benzyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzyl_cinnamate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:mint_oil"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:menthol",
+      "purity": {
+        "mode": "source",
+        "value": 90
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

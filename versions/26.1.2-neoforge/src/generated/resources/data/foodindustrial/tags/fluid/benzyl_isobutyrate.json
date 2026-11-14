@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_isobutyrate",
+    "foodindustrial:flowing_benzyl_isobutyrate",
+    {
+      "id": "#forge:benzyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

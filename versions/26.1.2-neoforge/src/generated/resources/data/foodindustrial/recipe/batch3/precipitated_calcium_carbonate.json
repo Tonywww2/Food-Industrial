@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:absorbing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/slaked_lime"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:carbon_dioxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "carbonation",
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_carbonate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/macroporous_resin",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/bitter_orange"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:neohesperidin",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:ethanol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

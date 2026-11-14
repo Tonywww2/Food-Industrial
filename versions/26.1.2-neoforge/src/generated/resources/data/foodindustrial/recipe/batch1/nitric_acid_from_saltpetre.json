@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/potassium_nitrate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:nitric_acid"
+    },
+    {
+      "item": "foodindustrial:potassium_bisulfate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

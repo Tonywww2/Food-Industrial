@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:cultures/corynebacterium"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/glucose"
+    }
+  ],
+  "mode": "expansion",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:corynebacterium",
+      "purity": {
+        "mode": "keep"
+      }
+    }
+  ],
+  "purity_sources": [
+    0
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

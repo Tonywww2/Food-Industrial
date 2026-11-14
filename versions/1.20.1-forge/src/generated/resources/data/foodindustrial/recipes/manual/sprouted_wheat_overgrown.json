@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/sprouted_wheat"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:overgrown_malt"
+    }
+  ],
+  "time": 48000
+}

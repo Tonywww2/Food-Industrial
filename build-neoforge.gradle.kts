@@ -1,3 +1,4 @@
+import java.util.zip.ZipFile
 // Shared node script for NeoForge nodes (1.21.1-neoforge, 26.1.2-neoforge): ModStitch + ModDevGradle.
 // The Forge 1.20.1 node uses build.gradle.kts (Architectury Loom).
 plugins {
@@ -6,6 +7,9 @@ plugins {
 
 fun prop(name: String): String = project.property(name).toString()
 fun optProp(name: String): String? = project.findProperty(name)?.toString()?.takeIf { it.isNotBlank() }
+fun names(value: String?): Set<String> = value?.split(',')?.map { it.trim() }?.filter { it.isNotEmpty() }?.toSet() ?: emptySet()
+/** Optional mods in the dev runtime: fi.devWith (always), plus -PfiWith, minus -PfiWithout. */
+fun devRuntimeMods(): Set<String> = names(optProp("fi.devWith")) + names(optProp("fiWith")) - names(optProp("fiWithout"))
 
 val modId = prop("mod.id")
 val mcVersion = prop("deps.minecraft")
@@ -19,6 +23,8 @@ val splitDatagen = stonecutter.current.parsed >= "1.21.4"
 
 // Per-node datagen output (datapack layouts differ between Minecraft versions).
 val generatedResources = file("src/generated/resources")
+// Jars of the integrated mods (deps.mod.*, deps.opt.* and what they nest), listed for the data run.
+val externalJarList: File = layout.buildDirectory.file("fi-external-jars.txt").get().asFile
 sourceSets.main { resources.srcDir(generatedResources) }
 // Plain JUnit tests need the game classes (no game bootstrap); ModDevGradle only puts them on main.
 sourceSets.test {
@@ -54,6 +60,10 @@ modstitch {
                         "--output", generatedResources.absolutePath,
                         "--existing", rootProject.file("src/main/resources").absolutePath,
                     )
+                    // The other mods' jars, so integration recipes that clash with their own are left out (I25).
+                    systemProperty("foodindustrial.externalJars", externalJarList.absolutePath)
+                    // Hand-made nutrition data of vanilla and the bundled mods' foods, input of the data run (I34).
+                    systemProperty("foodindustrial.nutritionInputs", rootProject.file("tools/nutrition").absolutePath)
                 }
                 configureEach {
                     gameDirectory = rootProject.file("run/$nodeName")
@@ -96,6 +106,56 @@ dependencies {
     project.properties.keys.filter { it.startsWith("deps.mod.") }.sorted().forEach { key ->
         implementation(prop(key))
     }
+    // Dev runtime only (deps.dev.<name>): mods that fill material tags for the dev runs, never compiled against.
+    project.properties.keys.filter { it.startsWith("deps.dev.") }.sorted().forEach { key ->
+        runtimeOnly(prop(key))
+    }
+    // Optional mods (deps.opt.<name>): compiled against always, in the dev runtime only when named in
+    // -PfiWith=<name>,… (or "all"), so runs with and without each mod are possible (I24–I27, 2026-11-11).
+    // fi.devWith names those in every dev run (Jade, 2026-11-12, user); -PfiWithout=<name>,… leaves them out.
+    val withMods = devRuntimeMods()
+    project.properties.keys.filter { it.startsWith("deps.opt.") }.sorted().forEach { key ->
+        compileOnly(prop(key))
+        val name = key.removePrefix("deps.opt.")
+        if (name in withMods || "all" in withMods && name !in names(optProp("fiWithout"))) {
+            runtimeOnly(prop(key))
+        }
+    }
+    // Nested mods (META-INF/jarjar) of the optional mods join the compile classpath: code against Create's
+    // kinetic blocks needs the Flywheel and Ponder classes Create bundles (I25, 2026-11-11). At runtime the
+    // loader unpacks them itself.
+    val optionalCoordinates = project.properties.keys.filter { it.startsWith("deps.opt.") }.sorted().map { prop(it) }
+    val modCoordinates = project.properties.keys.filter { it.startsWith("deps.mod.") }.sorted().map { prop(it) }
+    val externalJars = mutableListOf<File>()
+    modCoordinates.forEach { coordinate ->
+        externalJars += configurations.detachedConfiguration(project.dependencies.create(coordinate))
+            .apply { isTransitive = false }
+            .singleFile
+    }
+    if (optionalCoordinates.isNotEmpty()) {
+        val jijDir = layout.buildDirectory.dir("jij").get().asFile
+        optionalCoordinates.forEach { coordinate ->
+            val modJar = configurations.detachedConfiguration(project.dependencies.create(coordinate))
+                .apply { isTransitive = false }
+                .singleFile
+            externalJars += modJar
+            ZipFile(modJar).use { zip ->
+                zip.entries().asSequence()
+                    .filter { it.name.startsWith("META-INF/jarjar/") && it.name.endsWith(".jar") }
+                    .forEach { entry ->
+                        val nested = jijDir.resolve(entry.name.substringAfterLast('/'))
+                        if (!nested.exists()) {
+                            nested.parentFile.mkdirs()
+                            zip.getInputStream(entry).use { input -> nested.outputStream().use { input.copyTo(it) } }
+                        }
+                        compileOnly(files(nested))
+                        externalJars += nested
+                    }
+            }
+        }
+    }
+    externalJarList.parentFile.mkdirs()
+    externalJarList.writeText(externalJars.joinToString("\n") { it.absolutePath })
 }
 
 java {

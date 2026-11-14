@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:galangal_root_extract",
+    "foodindustrial:flowing_galangal_root_extract",
+    {
+      "id": "#forge:galangal_root_extract",
+      "required": false
+    },
+    {
+      "id": "#c:galangal_root_extract",
+      "required": false
+    }
+  ]
+}

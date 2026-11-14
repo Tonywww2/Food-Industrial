@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butane_1_2_dithiol",
+    "foodindustrial:flowing_butane_1_2_dithiol",
+    {
+      "id": "#forge:butane_1_2_dithiol",
+      "required": false
+    },
+    {
+      "id": "#c:butane_1_2_dithiol",
+      "required": false
+    }
+  ]
+}

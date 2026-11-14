@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/curcumin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/curcumin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/curcumin",
+      "required": false
     }
   ]
 }

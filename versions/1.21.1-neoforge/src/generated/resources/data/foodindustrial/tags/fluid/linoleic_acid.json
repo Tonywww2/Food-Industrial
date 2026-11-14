@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linoleic_acid",
+    "foodindustrial:flowing_linoleic_acid",
+    {
+      "id": "#forge:linoleic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:linoleic_acid",
+      "required": false
+    }
+  ]
+}

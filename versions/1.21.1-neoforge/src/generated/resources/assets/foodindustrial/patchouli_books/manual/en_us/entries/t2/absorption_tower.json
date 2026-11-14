@@ -1,0 +1,50 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:absorption_tower",
+  "name": "book.foodindustrial.manual.entry.absorption_tower",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:absorption_tower",
+      "text": "book.foodindustrial.manual.entry.absorption_tower.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:absorption_tower[facing=south]",
+          "A": "foodindustrial:tower_wall"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "A0A"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.absorption_tower"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.absorption_tower.structure"
+    }
+  ],
+  "sortnum": 6
+}

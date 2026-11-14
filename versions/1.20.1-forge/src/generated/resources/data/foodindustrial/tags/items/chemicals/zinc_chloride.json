@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/zinc_chloride",
       "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_chloride",
+      "required": false
     }
   ]
 }

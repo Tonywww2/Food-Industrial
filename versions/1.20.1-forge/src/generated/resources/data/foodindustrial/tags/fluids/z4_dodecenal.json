@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:z4_dodecenal",
+    "foodindustrial:flowing_z4_dodecenal",
+    {
+      "id": "#forge:z4_dodecenal",
+      "required": false
+    },
+    {
+      "id": "#c:z4_dodecenal",
+      "required": false
+    }
+  ]
+}

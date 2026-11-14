@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dibenzyl_ketone",
+    {
+      "id": "#forge:dusts/dibenzyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dibenzyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dibenzyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dibenzyl_ketone",
+      "required": false
+    }
+  ]
+}

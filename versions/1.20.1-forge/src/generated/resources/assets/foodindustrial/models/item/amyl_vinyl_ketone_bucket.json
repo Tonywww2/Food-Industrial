@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:amyl_vinyl_ketone",
+  "loader": "forge:fluid_container"
+}

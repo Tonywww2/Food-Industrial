@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:titanium_tetrachloride"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:oxygen"
+      }
+    }
+  ],
+  "mode": "burning",
+  "outputs": [
+    {
+      "item": "foodindustrial:titanium_dioxide"
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:chlorine"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 200
+}

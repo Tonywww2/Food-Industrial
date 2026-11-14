@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/naphthionic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/naphthionic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naphthionic_acid",
+      "required": false
     }
   ]
 }

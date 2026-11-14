@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:hydrolyzed_lecithin",
     {
+      "id": "#forge:dusts/hydrolyzed_lecithin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydrolyzed_lecithin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/hydrolyzed_lecithin",
       "required": false
     },

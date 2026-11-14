@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylcyclohexanedione",
+    {
+      "id": "#forge:dusts/methylcyclohexanedione",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylcyclohexanedione",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylcyclohexanedione",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylcyclohexanedione",
+      "required": false
+    }
+  ]
+}

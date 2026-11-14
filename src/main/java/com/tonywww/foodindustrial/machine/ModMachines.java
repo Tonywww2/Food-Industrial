@@ -1,18 +1,12 @@
 package com.tonywww.foodindustrial.machine;
 
-import com.tonywww.foodindustrial.core.Tier;
 import com.tonywww.foodindustrial.core.text.Lang;
 import com.tonywww.foodindustrial.machine.block.PortBlock;
-import com.tonywww.foodindustrial.machine.definition.IoLayout;
-import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
-import com.tonywww.foodindustrial.machine.definition.PowerKind;
-import com.tonywww.foodindustrial.machine.definition.TickPhase;
 import com.tonywww.foodindustrial.machine.entity.PortBlockEntity;
 import com.tonywww.foodindustrial.machine.tool.DeviceWrenchItem;
 import com.tonywww.foodindustrial.machine.tool.RedprintItem;
 import com.tonywww.foodindustrial.platform.PlatformRegistry;
 import com.tonywww.foodindustrial.platform.machine.PlatformMachineCapabilities;
-import com.tonywww.foodindustrial.recipe.ProcessTypes;
 import com.tonywww.foodindustrial.registry.ModCreativeTabs;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -25,8 +19,9 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
- * Machines and the shared multiblock ports. I09 registers the ports and M11 as the end-to-end sample;
- * the other machines come with I14–I17.
+ * Machines and the shared multiblock ports. I09 registers the ports; I14 the T1 workshop
+ * ({@code machine.workshop}); I15 the T2 machines with M11, the I09 sample ({@code machine.mechanical});
+ * I16 the T3 machines ({@code machine.chemical}); I17 the T4 machines ({@code machine.bio}).
  */
 public final class ModMachines {
     /** A registered port: block, item and block entity type. */
@@ -37,16 +32,6 @@ public final class ModMachines {
     public static final Port ITEM_PORT = port("item_port", PortBlockEntity.Kind.ITEM, "物品仓", "Item Port");
     public static final Port FLUID_PORT = port("fluid_port", PortBlockEntity.Kind.FLUID, "流体仓", "Fluid Port");
     public static final Port ENERGY_PORT = port("energy_port", PortBlockEntity.Kind.ENERGY, "能量仓", "Energy Port");
-
-    /** M11 crusher (machines/03 §3: I 1, O 2, U 2; FE; phase 0). */
-    public static final MachineDefinition CRUSHER = MachineDefinition.builder("crusher")
-        .name("粉碎机", "Crusher")
-        .tier(Tier.T2)
-        .types(ProcessTypes.GRINDING)
-        .layout(IoLayout.of(1, 2, 0, 0).withUpgrades(2))
-        .power(PowerKind.ENERGY)
-        .phase(TickPhase.MECHANICAL)
-        .register();
 
     /** Device wrench and redprint (machines/04 §4, 2026-11-05; English names pending review). */
     public static final Supplier<DeviceWrenchItem> DEVICE_WRENCH = tool(DeviceWrenchItem.ID, DeviceWrenchItem::new,
@@ -89,6 +74,10 @@ public final class ModMachines {
 
     /** Loads the class (registration happens in the static fields). Called during mod construction. */
     public static void bootstrap() {
+        com.tonywww.foodindustrial.machine.workshop.WorkshopMachines.bootstrap();
+        com.tonywww.foodindustrial.machine.mechanical.MechanicalMachines.bootstrap();
+        com.tonywww.foodindustrial.machine.chemical.ChemicalMachines.bootstrap();
+        com.tonywww.foodindustrial.machine.bio.BioMachines.bootstrap();
         MachineData.bootstrap();
     }
 }

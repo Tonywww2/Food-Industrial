@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethylene_glycol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 8000,
+        "tag": "foodindustrial:ethylene_oxide"
+      }
+    }
+  ],
+  "mode": "ethoxylation",
+  "outputs": [
+    {
+      "item": "foodindustrial:polyethylene_glycol"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "high",
+    "temperature": "heated"
+  },
+  "time": 200
+}

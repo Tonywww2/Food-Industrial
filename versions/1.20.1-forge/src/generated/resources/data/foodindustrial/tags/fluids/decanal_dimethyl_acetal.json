@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decanal_dimethyl_acetal",
+    "foodindustrial:flowing_decanal_dimethyl_acetal",
+    {
+      "id": "#forge:decanal_dimethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:decanal_dimethyl_acetal",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chromite_ore",
+    {
+      "id": "#c:ores/chromite",
+      "required": false
+    },
+    {
+      "id": "#forge:ores/chromite",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_oxide",
+    {
+      "id": "#forge:dusts/magnesium_oxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_oxide",
+      "required": false
+    }
+  ]
+}

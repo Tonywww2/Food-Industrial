@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/gleditsia_seed"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:gleditsia_gum",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

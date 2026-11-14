@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_mercaptan",
+    "foodindustrial:flowing_allyl_mercaptan",
+    {
+      "id": "#forge:allyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_mercaptan",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_oleate",
+    "foodindustrial:flowing_ethyl_oleate",
+    {
+      "id": "#forge:ethyl_oleate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_oleate",
+      "required": false
+    }
+  ]
+}

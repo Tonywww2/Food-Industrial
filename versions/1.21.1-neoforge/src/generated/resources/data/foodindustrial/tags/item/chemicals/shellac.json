@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:shellac",
     {
+      "id": "#forge:dusts/shellac",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/shellac",
+      "required": false
+    },
+    {
       "id": "#c:dusts/shellac",
       "required": false
     },

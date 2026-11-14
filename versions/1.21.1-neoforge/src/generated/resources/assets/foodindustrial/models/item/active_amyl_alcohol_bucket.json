@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:active_amyl_alcohol",
+  "loader": "neoforge:fluid_container"
+}

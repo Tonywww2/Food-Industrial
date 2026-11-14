@@ -1,0 +1,44 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "foodindustrial:block/salt_pan"
+      }
+    },
+    {
+      "apply": {
+        "model": "foodindustrial:block/salt_pan_rim"
+      },
+      "when": {
+        "north": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "foodindustrial:block/salt_pan_rim",
+        "y": 90
+      },
+      "when": {
+        "east": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "foodindustrial:block/salt_pan_rim",
+        "y": 180
+      },
+      "when": {
+        "south": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "foodindustrial:block/salt_pan_rim",
+        "y": 270
+      },
+      "when": {
+        "west": "false"
+      }
+    }
+  ]
+}

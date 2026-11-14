@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_anisaldehyde",
+    "foodindustrial:flowing_p_anisaldehyde",
+    {
+      "id": "#forge:p_anisaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:p_anisaldehyde",
+      "required": false
+    }
+  ]
+}

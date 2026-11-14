@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_furylacrolein",
+    "foodindustrial:flowing_methyl_furylacrolein",
+    {
+      "id": "#forge:methyl_furylacrolein",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_furylacrolein",
+      "required": false
+    }
+  ]
+}

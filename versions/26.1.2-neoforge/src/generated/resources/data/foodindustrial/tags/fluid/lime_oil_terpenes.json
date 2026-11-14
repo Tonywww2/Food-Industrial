@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lime_oil_terpenes",
+    "foodindustrial:flowing_lime_oil_terpenes",
+    {
+      "id": "#forge:lime_oil_terpenes",
+      "required": false
+    },
+    {
+      "id": "#c:lime_oil_terpenes",
+      "required": false
+    }
+  ]
+}

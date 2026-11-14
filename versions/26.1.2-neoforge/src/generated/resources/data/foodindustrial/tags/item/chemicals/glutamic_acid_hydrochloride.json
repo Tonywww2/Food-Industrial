@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:glutamic_acid_hydrochloride",
     {
+      "id": "#forge:dusts/glutamic_acid_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glutamic_acid_hydrochloride",
+      "required": false
+    },
+    {
       "id": "#c:dusts/glutamic_acid_hydrochloride",
       "required": false
     },

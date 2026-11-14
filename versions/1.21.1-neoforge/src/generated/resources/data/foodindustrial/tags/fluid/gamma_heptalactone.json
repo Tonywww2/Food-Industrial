@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_heptalactone",
+    "foodindustrial:flowing_gamma_heptalactone",
+    {
+      "id": "#forge:gamma_heptalactone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_heptalactone",
+      "required": false
+    }
+  ]
+}

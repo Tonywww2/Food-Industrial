@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cold_pressed_orange_oil",
+    "foodindustrial:flowing_cold_pressed_orange_oil",
+    {
+      "id": "#forge:cold_pressed_orange_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cold_pressed_orange_oil",
+      "required": false
+    }
+  ]
+}

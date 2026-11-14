@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diisobutylene",
+    "foodindustrial:flowing_diisobutylene",
+    {
+      "id": "#forge:diisobutylene",
+      "required": false
+    },
+    {
+      "id": "#c:diisobutylene",
+      "required": false
+    }
+  ]
+}

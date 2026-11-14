@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hungarian_chamomile_oil",
+    "foodindustrial:flowing_hungarian_chamomile_oil",
+    {
+      "id": "#forge:hungarian_chamomile_oil",
+      "required": false
+    },
+    {
+      "id": "#c:hungarian_chamomile_oil",
+      "required": false
+    }
+  ]
+}

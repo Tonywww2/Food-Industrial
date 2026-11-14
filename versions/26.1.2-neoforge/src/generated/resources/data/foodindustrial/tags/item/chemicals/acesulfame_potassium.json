@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:acesulfame_potassium",
     {
+      "id": "#forge:dusts/acesulfame_potassium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acesulfame_potassium",
+      "required": false
+    },
+    {
       "id": "#c:dusts/acesulfame_potassium",
       "required": false
     },

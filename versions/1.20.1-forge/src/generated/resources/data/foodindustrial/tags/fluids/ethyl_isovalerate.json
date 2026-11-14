@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_isovalerate",
+    "foodindustrial:flowing_ethyl_isovalerate",
+    {
+      "id": "#forge:ethyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_isovalerate",
+      "required": false
+    }
+  ]
+}

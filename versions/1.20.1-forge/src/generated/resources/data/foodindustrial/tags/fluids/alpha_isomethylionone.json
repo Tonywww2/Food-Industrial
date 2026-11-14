@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_isomethylionone",
+    "foodindustrial:flowing_alpha_isomethylionone",
+    {
+      "id": "#forge:alpha_isomethylionone",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_isomethylionone",
+      "required": false
+    }
+  ]
+}

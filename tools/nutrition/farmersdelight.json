@@ -1,0 +1,2565 @@
+{
+  "mod": "farmersdelight",
+  "entries": [
+    {
+      "items": [
+        "farmersdelight:cabbage"
+      ],
+      "serving_g": 89,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 32.57,
+        "vitamin_b1_mg": 0.05429,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "卷心菜（生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169975 Cabbage, raw：每 100 g 维生素 C 36.6 mg、硫胺素 0.061 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 169975 “1 cup, chopped” = 89 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精记 0：这些食物不含，USDA 两项均为 0（建议值，用户批准，2026-11-13）",
+          "维生素 D 取 USDA 的值（建议值，用户批准，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（建议值，用户批准，2026-11-13）",
+          "一份取 1 cup 切碎：中等一整颗 908 g 一次吃不完，同南瓜派按一块计（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cabbage_leaf"
+      ],
+      "serving_g": 44.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 16.29,
+        "vitamin_b1_mg": 0.02715,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "卷心菜（生），卷心菜叶",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169975 Cabbage, raw：每 100 g 维生素 C 36.6 mg、硫胺素 0.061 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：卷心菜一份 89 g ÷ 2（切菜板把一颗卷心菜切成 2 片叶，两片叶也能合回一颗）"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精记 0：这些食物不含，USDA 两项均为 0（建议值，用户批准，2026-11-13）",
+          "维生素 D 取 USDA 的值（建议值，用户批准，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（建议值，用户批准，2026-11-13）",
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:tomato"
+      ],
+      "serving_g": 123,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 16.85,
+        "vitamin_b1_mg": 0.04551,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "番茄（红，熟，生食）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 170457 Tomatoes, red, ripe, raw, year round average：每 100 g 维生素 C 13.7 mg、硫胺素 0.037 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 170457 “1 medium whole (2-3/5\" dia)” = 123 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精记 0：这些食物不含，USDA 两项均为 0（建议值，用户批准，2026-11-13）",
+          "维生素 D 取 USDA 的值（建议值，用户批准，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:onion"
+      ],
+      "serving_g": 110,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 8.14,
+        "vitamin_b1_mg": 0.0506,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "洋葱（生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 170000 Onions, raw：每 100 g 维生素 C 7.4 mg、硫胺素 0.046 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 170000 “1 medium (2-1/2\" dia)” = 110 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精记 0：这些食物不含，USDA 两项均为 0（建议值，用户批准，2026-11-13）",
+          "维生素 D 取 USDA 的值（建议值，用户批准，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:pumpkin_slice"
+      ],
+      "serving_g": 116,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 10.44,
+        "vitamin_b1_mg": 0.058,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "南瓜（生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 168448 Pumpkin, raw：每 100 g 维生素 C 9.0 mg、硫胺素 0.05 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 168448 “1 cup (1\" cubes)” = 116 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精记 0：这些食物不含，USDA 两项均为 0（建议值，用户批准，2026-11-13）",
+          "维生素 D 取 USDA 的值（建议值，用户批准，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（建议值，用户批准，2026-11-13）",
+          "一份取 USDA 标准份 1 cup 切块：原版南瓜方块没有数据，不按整个南瓜 ÷ 4（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:fried_egg"
+      ],
+      "serving_g": 46,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.02024,
+        "vitamin_d_ug": 1.012
+      },
+      "basis": {
+        "food": "煎全蛋",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 173423 Egg, whole, cooked, fried：每 100 g 维生素 C 0.0 mg、硫胺素 0.044 mg、维生素 D 2.2 µg（Recipe; Approximate ingredient proportions (ex. combination of several recipes)）",
+          "一份：FDC 173423 “1 large” = 46 g"
+        ],
+        "processing": "煎制；直接取煎蛋的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精记 0：这些食物不含，USDA 两项均为 0（建议值，用户批准，2026-11-13）",
+          "维生素 D 取 USDA 的值（建议值，用户批准，2026-11-13）",
+          "快吸收糖记 0：不含添加糖（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cooked_rice"
+      ],
+      "serving_g": 158,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0316,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "白米饭（长粒，未强化，不加盐）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169757 Rice, white, long-grain, regular, unenriched, cooked without salt：每 100 g 维生素 C 0.0 mg、硫胺素 0.02 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 169757 “1 cup” = 158 g"
+        ],
+        "processing": "煮制；直接取米饭的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精记 0：这些食物不含，USDA 两项均为 0（建议值，用户批准，2026-11-13）",
+          "维生素 D 取 USDA 的值（建议值，用户批准，2026-11-13）",
+          "快吸收糖记 0：不含添加糖（建议值，用户批准，2026-11-13）",
+          "用未强化的米饭，与面包、牛奶不用强化品一致（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:minced_beef"
+      ],
+      "serving_g": 56.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.04238,
+        "vitamin_d_ug": 0.0565
+      },
+      "basis": {
+        "food": "牛肉（各零售部位综合，生），牛肉馅",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169485 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, raw：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.075 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.1 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：原版生牛肉（切菜板切成 2 份牛肉馅）一份 113 g ÷ 2"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:beef_patty"
+      ],
+      "serving_g": 42.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.02848,
+        "vitamin_d_ug": 0.0425
+      },
+      "basis": {
+        "food": "牛肉（各零售部位综合，熟），对应牛排，牛肉饼",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169486 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, cooked：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.067 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.1 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：原版牛排（牛肉馅烤熟得牛肉饼；生 56.5 g 烤熟 42.5 g，与原版生熟 113 g、85 g 同比）一份 85 g ÷ 2"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "牛排用综合部位的熟肉条目：西冷牛排条目（FDC 168728/168729）没有维生素 D（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:chicken_cuts"
+      ],
+      "serving_g": 56.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.904,
+        "vitamin_b1_mg": 0.0339,
+        "vitamin_d_ug": 0.113
+      },
+      "basis": {
+        "food": "整鸡（带皮，生），生鸡肉丁",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171447 Chicken, broilers or fryers, meat and skin, raw：每 100 g 维生素 C 1.6 mg、硫胺素 0.06 mg、维生素 D 0.2 (Based on physical composition; Derived from imputed data; Known physical composition) µg",
+          "一份：原版生鸡肉（切菜板切成 2 份）一份 113 g ÷ 2"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "杂质为生鸡肉每份 2 的一半（用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "杂质每份 2 单位：原版设定中吃了有负面效果（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      },
+      "impurity": 1.0
+    },
+    {
+      "items": [
+        "farmersdelight:cooked_chicken_cuts"
+      ],
+      "serving_g": 42.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.02678,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "整鸡（带皮，烤），熟鸡肉丁",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171450 Chicken, broilers or fryers, meat and skin, cooked, roasted：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.063 mg、维生素 D 0.0 µg",
+          "一份：原版熟鸡肉（切菜板切成 2 份；生鸡肉丁烤熟同此）一份 85 g ÷ 2"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:bacon"
+      ],
+      "serving_g": 56.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.2741,
+        "vitamin_d_ug": 0.2825
+      },
+      "basis": {
+        "food": "猪里脊中段带骨排（生，肥瘦同取），生培根",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 168238 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.485 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.5 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：原版生猪排（切菜板切成 2 份）一份 113 g ÷ 2"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "培根用猪里脊的数，不用现实中腌制五花肉的条目（用户决定，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cooked_bacon"
+      ],
+      "serving_g": 42.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.2545,
+        "vitamin_d_ug": 0.34
+      },
+      "basis": {
+        "food": "猪里脊中段带骨排（烤，肥瘦同取），熟培根",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 167827 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.599 (Based on physical composition; Derived from analytical data; Known physical composition) mg、维生素 D 0.8 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：原版熟猪排（生培根烤熟得熟培根）一份 85 g ÷ 2"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "培根用猪里脊的数，不用现实中腌制五花肉的条目（用户决定，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cod_slice"
+      ],
+      "serving_g": 56.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.565,
+        "vitamin_b1_mg": 0.04294,
+        "vitamin_d_ug": 0.5085
+      },
+      "basis": {
+        "food": "大西洋鳕（生），生鳕鱼片",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171955 Fish, cod, Atlantic, raw：每 100 g 维生素 C 1.0 mg、硫胺素 0.076 mg、维生素 D 0.9 µg",
+          "一份：原版生鳕鱼（切菜板切成 2 份）一份 113 g ÷ 2"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cooked_cod_slice"
+      ],
+      "serving_g": 42.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.425,
+        "vitamin_b1_mg": 0.0374,
+        "vitamin_d_ug": 0.51
+      },
+      "basis": {
+        "food": "大西洋鳕（干热烹调），熟鳕鱼片",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171956 Fish, cod, Atlantic, cooked, dry heat：每 100 g 维生素 C 1.0 mg、硫胺素 0.088 mg、维生素 D 1.2 µg",
+          "一份：原版熟鳕鱼（切菜板切成 2 份；生鳕鱼片烤熟同此）一份 85 g ÷ 2"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:salmon_slice"
+      ],
+      "serving_g": 56.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0746,
+        "vitamin_d_ug": 7.965
+      },
+      "basis": {
+        "food": "红鲑（野生，生），生鲑鱼片",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 173691 Fish, salmon, sockeye, raw：每 100 g 维生素 C 0.0（Analytical） mg、硫胺素 0.132（Analytical） mg、维生素 D 14.1 µg",
+          "一份：原版生鲑鱼（切菜板切成 2 份）一份 113 g ÷ 2"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cooked_salmon_slice"
+      ],
+      "serving_g": 42.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.06675,
+        "vitamin_d_ug": 7.1
+      },
+      "basis": {
+        "food": "红鲑（干热烹调），熟鲑鱼片",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 173692 Fish, salmon, sockeye, cooked, dry heat：每 100 g 维生素 C 0.0（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） mg、硫胺素 0.157（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） mg、维生素 D 16.7（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） µg",
+          "一份：原版熟鲑鱼（切菜板切成 2 份；生鲑鱼片烤熟同此）一份 85 g ÷ 2"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:mutton_chops"
+      ],
+      "serving_g": 56.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0678,
+        "vitamin_d_ug": 0.0565
+      },
+      "basis": {
+        "food": "羊肉（各零售部位综合，生），生羊排",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 172545 Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, raw：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.12 (Based on physical composition; Derived from analytical data; Estimated physical composition) mg，无维生素 D 数据",
+          "维生素 D 借用 USDA FDC 174370 Lamb, ground, raw：每 100 g 0.1 µg",
+          "一份：原版生羊肉（切菜板切成 2 份）一份 113 g ÷ 2"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "该条目没有维生素 D，借用 FDC 174370 的值（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cooked_mutton_chops"
+      ],
+      "serving_g": 42.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0425,
+        "vitamin_d_ug": 0.0425
+      },
+      "basis": {
+        "food": "羊肉（各零售部位综合，熟），熟羊排",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 172546 Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, cooked：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.1 (Based on physical composition; Derived from analytical data; Estimated physical composition) mg，无维生素 D 数据",
+          "维生素 D 借用 USDA FDC 172544 Lamb, ground, cooked, broiled：每 100 g 0.1 µg",
+          "一份：原版熟羊肉（切菜板切成 2 份；生羊排烤熟同此）一份 85 g ÷ 2"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "该条目没有维生素 D，借用 FDC 172544 的值（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:ham"
+      ],
+      "serving_g": 226.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 1.096,
+        "vitamin_d_ug": 1.13
+      },
+      "basis": {
+        "food": "猪里脊中段带骨排（生，肥瘦同取），火腿",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 168238 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.485 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.5 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：原版生猪排一份 113 g × 2（切菜板把火腿切成 2 块生猪排和 1 根骨头，骨头不计）"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "火腿用猪里脊的数，不用现实中腌制后腿的条目（用户决定，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:smoked_ham"
+      ],
+      "serving_g": 170.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 1.018,
+        "vitamin_d_ug": 1.36
+      },
+      "basis": {
+        "food": "猪里脊中段带骨排（烤，肥瘦同取），烟熏火腿",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 167827 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.599 (Based on physical composition; Derived from analytical data; Known physical composition) mg、维生素 D 0.8 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：原版熟猪排一份 85 g × 2（切菜板把烟熏火腿切成 2 块熟猪排和 1 根骨头，骨头不计）"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "火腿用猪里脊的数，不用现实中腌制后腿的条目（用户决定，2026-11-13）",
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:wheat_dough"
+      ],
+      "serving_g": 136.7,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.6091,
+        "vitamin_d_ug": 0.3333
+      },
+      "basis": {
+        "food": "面团：全麦面粉与鸡蛋",
+        "sources": [
+          "全麦面粉：USDA FoodData Central，SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "生鸡蛋：USDA FoodData Central，SR Legacy，FDC 171287 Egg, whole, raw, fresh：每 100 g 维生素 C 0 mg、硫胺素 0.04 mg、维生素 D 2 µg",
+          "配方：3 小麦 + 1 鸡蛋 → 3 面团（农夫乐事）"
+        ],
+        "processing": "生料混合，无加热",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "一份小麦 = 1 cup 全麦面粉 120 g（FDC 168893 “1 cup” = 120 g）（建议值，用户批准，2026-11-13）",
+          "一个鸡蛋 = 生全蛋 1 large 50 g（FDC 171287 “1 large” = 50 g）（建议值，用户批准，2026-11-13）",
+          "按鸡蛋配方计（两个版本都有）；1.21.1 另能用水做，不另算（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖记 0：不含咖啡因、酒精，没有加糖，奶中天然的糖不计（02 第 4.3 节）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:raw_pasta"
+      ],
+      "serving_g": 136.7,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.6091,
+        "vitamin_d_ug": 0.3333
+      },
+      "basis": {
+        "food": "生意面：面团切成",
+        "sources": [
+          "全麦面粉：USDA FoodData Central，SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "生鸡蛋：USDA FoodData Central，SR Legacy，FDC 171287 Egg, whole, raw, fresh：每 100 g 维生素 C 0 mg、硫胺素 0.04 mg、维生素 D 2 µg",
+          "配方：面团在切菜板上切成生意面，1 → 1（农夫乐事）；面团为 3 小麦 + 1 鸡蛋 → 3 面团"
+        ],
+        "processing": "生料，无加热",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "一份小麦 = 1 cup 全麦面粉 120 g（FDC 168893 “1 cup” = 120 g）（建议值，用户批准，2026-11-13）",
+          "一个鸡蛋 = 生全蛋 1 large 50 g（FDC 171287 “1 large” = 50 g）（建议值，用户批准，2026-11-13）",
+          "按鸡蛋配方计（两个版本都有）；1.21.1 另能用水做，不另算（建议值，用户批准，2026-11-13）",
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖记 0：不含咖啡因、酒精，没有加糖，奶中天然的糖不计（02 第 4.3 节）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:tomato_sauce"
+      ],
+      "serving_g": 246.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 32.02,
+        "vitamin_b1_mg": 0.08647,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "番茄酱：两个番茄熬煮",
+        "sources": [
+          "番茄：USDA FoodData Central，SR Legacy，FDC 170457（同农夫乐事番茄）：每 100 g 维生素 C 13.7 mg、硫胺素 0.037 mg、维生素 D 0 µg",
+          "配方：烹饪锅：2 番茄 → 1 番茄酱（农夫乐事）；番茄一份 123 g（同农夫乐事番茄）"
+        ],
+        "processing": "熬煮：按 USDA Table of Nutrient Retention Factors, Release 6（2007） 的 TOMATOES,BOILED/BAKED（3751）计，维生素 C 95%、硫胺素 95%；维生素 D 按不损失计（03 第 5 节第 3 条）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "重量按配料相加，熬煮蒸发的水不扣，同兔肉煲（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖记 0：不含咖啡因、酒精，没有加糖，奶中天然的糖不计（02 第 4.3 节）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:pie_crust"
+      ],
+      "serving_g": 617.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 1.926,
+        "vitamin_d_ug": 0.2578
+      },
+      "basis": {
+        "food": "馅饼酥皮（生）：全麦面粉与牛奶",
+        "sources": [
+          "全麦面粉：USDA FoodData Central，SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "牛奶：USDA FoodData Central，SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D（未强化，同原版牛奶桶）：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg",
+          "配方：3 小麦 + 1 牛奶 → 1 馅饼酥皮（农夫乐事）"
+        ],
+        "processing": "生料混合，无加热",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "一份小麦 = 1 cup 全麦面粉 120 g（FDC 168893 “1 cup” = 120 g）（建议值，用户批准，2026-11-13）",
+          "配方里的牛奶（桶或奶瓶）按一瓶 250 mL 计，按 FDC 172217 的密度约 257.8 g（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖记 0：不含咖啡因、酒精，没有加糖，奶中天然的糖不计（02 第 4.3 节）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:milk_bottle"
+      ],
+      "serving_g": 257.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.1186,
+        "vitamin_d_ug": 0.2578
+      },
+      "basis": {
+        "food": "牛奶（未强化全脂），一瓶 250 mL",
+        "sources": [
+          "牛奶：USDA FoodData Central，SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D（未强化，同原版牛奶桶）：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg、咖啡因 0 mg",
+          "配方：1 牛奶桶 + 4 玻璃瓶 → 4 奶瓶（农夫乐事）；牛奶桶 1 L 约 1031 g"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "快吸收糖记 0：乳中天然的糖不计（02 第 4.3 节）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:hot_cocoa"
+      ],
+      "serving_g": 407.8,
+      "per_serving": {
+        "caffeine_mg": 230.0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 49.9,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.1769,
+        "vitamin_d_ug": 0.2578
+      },
+      "basis": {
+        "food": "热可可：牛奶、糖、可可粉加热",
+        "sources": [
+          "牛奶：USDA FoodData Central，SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D（未强化，同原版牛奶桶）：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg、咖啡因 0 mg",
+          "白砂糖：USDA FoodData Central，SR Legacy，FDC 169655 Sugars, granulated：每 100 g 维生素 C 0 mg、硫胺素 0 mg、维生素 D 0 µg、咖啡因 0 mg、糖 99.8 g",
+          "无糖可可粉：USDA FoodData Central，SR Legacy，FDC 169593 Cocoa, dry powder, unsweetened：每 100 g 维生素 C 0 mg、硫胺素 0.078 mg、维生素 D 0 µg、咖啡因 230 mg",
+          "配方：烹饪锅：1 牛奶 + 1 糖 + 2 可可豆 → 1 热可可（农夫乐事）"
+        ],
+        "processing": "加热：按 USDA Table of Nutrient Retention Factors, Release 6（2007） 的 MILK,HEATED APPROX 10MIN（2151）计，维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方里的牛奶（桶或奶瓶）按一瓶 250 mL 计，按 FDC 172217 的密度约 257.8 g（农夫乐事通用原料，用户批准，2026-11-13）",
+          "一份糖 = 白砂糖 50 g（用户决定，2026-11-13）",
+          "一颗可可豆 = 无糖可可粉 50 g（用户决定，2026-11-13）",
+          "一杯咖啡因 230 mg，单份即达到 ≥ 210 mg 的耐力档并不能入睡，已告知用户并确认（用户决定，2026-11-13）",
+          "快吸收糖只计加入的白砂糖；可可粉、牛奶中天然的糖不计（02 第 4.3 节）",
+          "酒精记 0：配料都不含，配方只有加热、没有发酵"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:apple_cider"
+      ],
+      "serving_g": 414.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 87.76,
+        "vitamin_c_mg": 11.72,
+        "vitamin_b1_mg": 0.0495,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "苹果酒（不含酒精的热苹果汁）：苹果加糖熬煮",
+        "sources": [
+          "苹果：USDA FoodData Central，SR Legacy，FDC 171688 Apples, raw, with skin（同原版苹果）：每 100 g 维生素 C 4.6 mg、硫胺素 0.017 mg、维生素 D 0 µg、咖啡因 0 mg、糖 10.4 g",
+          "白砂糖：USDA FoodData Central，SR Legacy，FDC 169655 Sugars, granulated：每 100 g 维生素 C 0 mg、硫胺素 0 mg、维生素 D 0 µg、咖啡因 0 mg、糖 99.8 g",
+          "配方：烹饪锅：2 苹果 + 1 糖 → 1 苹果酒（农夫乐事）；苹果一份 182 g（同原版苹果）"
+        ],
+        "processing": "熬煮：按 USDA Table of Nutrient Retention Factors, Release 6（2007） 的 FRUITS,FRESH(NOT CITRUS),STEWED（0155）计，维生素 C 70%、硫胺素 80%；快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "一份糖 = 白砂糖 50 g（用户决定，2026-11-13）",
+          "一份按配方相加 414 g，不按一瓶 250 mL 截取（用户决定，2026-11-13）",
+          "快吸收糖计入苹果自带的糖：作为饮料（果汁），按 WHO 游离糖计（02 第 4.3 节）（建议值，用户批准，2026-11-13）",
+          "酒精记 0：配料都不含，配方只有加热、没有发酵；美国的 apple cider 指不含酒精的苹果汁（建议值，用户批准，2026-11-13）",
+          "咖啡因记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:melon_juice"
+      ],
+      "serving_g": 250.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 62.3,
+        "vitamin_c_mg": 16.2,
+        "vitamin_b1_mg": 0.066,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "西瓜汁：西瓜加糖，一瓶 250 mL",
+        "sources": [
+          "西瓜：USDA FoodData Central，SR Legacy，FDC 167765 Watermelon, raw（同原版西瓜片）：每 100 g 维生素 C 8.1 mg、硫胺素 0.033 mg、维生素 D 0 µg、咖啡因 0 mg、糖 6.2 g",
+          "白砂糖：USDA FoodData Central，SR Legacy，FDC 169655 Sugars, granulated：每 100 g 维生素 C 0 mg、硫胺素 0 mg、维生素 D 0 µg、咖啡因 0 mg、糖 99.8 g",
+          "配方：4 西瓜片 + 1 糖 + 玻璃瓶 → 1 西瓜汁（农夫乐事）；西瓜片一份 50 g（同原版西瓜片）"
+        ],
+        "processing": "不加热，无损失",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "一份糖 = 白砂糖 50 g（用户决定，2026-11-13）",
+          "西瓜汁一瓶 250 mL，按 250 g 计，为此西瓜片一份改为 50 g（用户决定，2026-11-13）",
+          "快吸收糖计入西瓜自带的糖：作为饮料（果汁），按 WHO 游离糖计（02 第 4.3 节）（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:apple_pie",
+        "farmersdelight:apple_pie_slice"
+      ],
+      "serving_g": 406.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 24.95,
+        "vitamin_c_mg": 5.023,
+        "vitamin_b1_mg": 0.7637,
+        "vitamin_d_ug": 0.06446
+      },
+      "basis": {
+        "food": "苹果派：全麦面粉、酥皮、苹果、糖，烤制；一口 = 一片 = 整个派的 1/4",
+        "sources": [
+          "USDA FoodData Central，全麦面粉：SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "USDA FoodData Central，牛奶：SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg",
+          "USDA FoodData Central，苹果：SR Legacy，FDC 171688 Apples, raw, with skin：每 100 g 维生素 C 4.6 mg、硫胺素 0.017 mg、维生素 D 0 µg",
+          "USDA FoodData Central，白砂糖：SR Legacy，FDC 169655 Sugars, granulated：每 100 g 维生素 C 0 mg、硫胺素 0 mg、维生素 D 0 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：3 小麦 + 1 馅饼酥皮 + 3 苹果 + 2 糖 → 1 苹果派（农夫乐事）；酥皮 = 3 小麦 + 1 牛奶；派切成 4 片，放置后分 4 口吃"
+        ],
+        "processing": "面粉按 FLOUR/MEAL,BAKED（0301） 计：维生素 C 80%、硫胺素 80%；酥皮中的面粉按 FLOUR/MEAL,BAKED（0301） 计：维生素 C 80%、硫胺素 80%；酥皮中的牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；苹果按 FRUITS,FRESH(NOT CITRUS),BAKED（0151） 计：维生素 C 80%、硫胺素 80%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方原料按农夫乐事通用换算：一份小麦 = 全麦面粉 120 g，一个鸡蛋 = 50 g，牛奶 = 一瓶 250 mL（约 257.8 g），一份糖 = 白砂糖 50 g，一颗可可豆 = 无糖可可粉 50 g（用户批准与决定，2026-11-13）",
+          "派与曲奇游戏里直接合成，按现实烤制扣损失（同兔肉煲的先例）（建议值，用户批准，2026-11-13）",
+          "放置后分口吃的派：一口 = 一片切片（整个派切 4 片，也分 4 口吃）",
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "快吸收糖只计加入的白砂糖；水果、牛奶中天然的糖不计（02 第 4.3 节）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:sweet_berry_cheesecake",
+        "farmersdelight:sweet_berry_cheesecake_slice"
+      ],
+      "serving_g": 433.4,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 16.8,
+        "vitamin_b1_mg": 0.4426,
+        "vitamin_d_ug": 0.1934
+      },
+      "basis": {
+        "food": "甜浆果芝士派：酥皮、牛奶、甜浆果，烤制；一口 = 一片 = 整个派的 1/4",
+        "sources": [
+          "USDA FoodData Central，全麦面粉：SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "USDA FoodData Central，牛奶：SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg",
+          "USDA FoodData Central，蔓越莓（甜浆果、发光浆果的参照）：SR Legacy，FDC 171722 Cranberries, raw：每 100 g 维生素 C 14 mg、硫胺素 0.012 mg、维生素 D 0 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：1 馅饼酥皮 + 2 牛奶 + 6 甜浆果 → 1 甜浆果芝士派（农夫乐事）；甜浆果一份 100 g（同原版）；派切成 4 片，放置后分 4 口吃"
+        ],
+        "processing": "酥皮中的面粉按 FLOUR/MEAL,BAKED（0301） 计：维生素 C 80%、硫胺素 80%；酥皮中的牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；甜浆果按 FRUITS,FRESH(NOT CITRUS),BAKED（0151） 计：维生素 C 80%、硫胺素 80%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方原料按农夫乐事通用换算：一份小麦 = 全麦面粉 120 g，一个鸡蛋 = 50 g，牛奶 = 一瓶 250 mL（约 257.8 g），一份糖 = 白砂糖 50 g，一颗可可豆 = 无糖可可粉 50 g（用户批准与决定，2026-11-13）",
+          "派与曲奇游戏里直接合成，按现实烤制扣损失（同兔肉煲的先例）（建议值，用户批准，2026-11-13）",
+          "放置后分口吃的派：一口 = 一片切片（整个派切 4 片，也分 4 口吃）",
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "快吸收糖记 0：配方没有加糖，浆果按整颗水果、乳中天然的糖不计（02 第 4.3 节）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:chocolate_pie",
+        "farmersdelight:chocolate_pie_slice"
+      ],
+      "serving_g": 410.3,
+      "per_serving": {
+        "caffeine_mg": 86.25,
+        "alcohol_g": 0,
+        "fast_sugar_g": 24.95,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.4796,
+        "vitamin_d_ug": 0.2578
+      },
+      "basis": {
+        "food": "巧克力派：酥皮、可可粉、牛奶、糖，烤制；一口 = 一片 = 整个派的 1/4",
+        "sources": [
+          "USDA FoodData Central，全麦面粉：SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "USDA FoodData Central，牛奶：SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg",
+          "USDA FoodData Central，无糖可可粉：SR Legacy，FDC 169593 Cocoa, dry powder, unsweetened：每 100 g 维生素 C 0 mg、硫胺素 0.078 mg、维生素 D 0 µg、咖啡因 230 mg",
+          "USDA FoodData Central，白砂糖：SR Legacy，FDC 169655 Sugars, granulated：每 100 g 维生素 C 0 mg、硫胺素 0 mg、维生素 D 0 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：1 馅饼酥皮 + 3 可可豆 + 3 牛奶 + 2 糖 → 1 巧克力派（农夫乐事）；派切成 4 片，放置后分 4 口吃"
+        ],
+        "processing": "酥皮中的面粉按 FLOUR/MEAL,BAKED（0301） 计：维生素 C 80%、硫胺素 80%；酥皮中的牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；可可粉在保留率表中没有对应类别，按不损失计（建议值，用户批准，2026-11-13）；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方原料按农夫乐事通用换算：一份小麦 = 全麦面粉 120 g，一个鸡蛋 = 50 g，牛奶 = 一瓶 250 mL（约 257.8 g），一份糖 = 白砂糖 50 g，一颗可可豆 = 无糖可可粉 50 g（用户批准与决定，2026-11-13）",
+          "派与曲奇游戏里直接合成，按现实烤制扣损失（同兔肉煲的先例）（建议值，用户批准，2026-11-13）",
+          "放置后分口吃的派：一口 = 一片切片（整个派切 4 片，也分 4 口吃）",
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "一口咖啡因 86 mg，单份即达到 ≥ 75 mg 的警觉档，已告知用户（建议值，用户批准，2026-11-13）",
+          "快吸收糖只计加入的白砂糖；水果、牛奶中天然的糖不计（02 第 4.3 节）",
+          "酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:sweet_berry_cookie"
+      ],
+      "serving_g": 42.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 1.4,
+        "vitamin_b1_mg": 0.1217,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "甜浆果曲奇：全麦面粉、甜浆果，烤制",
+        "sources": [
+          "USDA FoodData Central，全麦面粉：SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "USDA FoodData Central，蔓越莓（甜浆果、发光浆果的参照）：SR Legacy，FDC 171722 Cranberries, raw：每 100 g 维生素 C 14 mg、硫胺素 0.012 mg、维生素 D 0 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：1 甜浆果 + 2 小麦 → 8 甜浆果曲奇（农夫乐事）"
+        ],
+        "processing": "面粉按 FLOUR/MEAL,BAKED（0301） 计：维生素 C 80%、硫胺素 80%；甜浆果按 FRUITS,FRESH(NOT CITRUS),BAKED（0151） 计：维生素 C 80%、硫胺素 80%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方原料按农夫乐事通用换算：一份小麦 = 全麦面粉 120 g，一个鸡蛋 = 50 g，牛奶 = 一瓶 250 mL（约 257.8 g），一份糖 = 白砂糖 50 g，一颗可可豆 = 无糖可可粉 50 g（用户批准与决定，2026-11-13）",
+          "派与曲奇游戏里直接合成，按现实烤制扣损失（同兔肉煲的先例）（建议值，用户批准，2026-11-13）",
+          "快吸收糖记 0：配方没有加糖，浆果按整颗水果（02 第 4.3 节）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:honey_cookie"
+      ],
+      "serving_g": 72.27,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 34.8,
+        "vitamin_c_mg": 0.2113,
+        "vitamin_b1_mg": 0.1205,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "蜂蜜曲奇：全麦面粉、蜂蜜，烤制",
+        "sources": [
+          "USDA FoodData Central，全麦面粉：SR Legacy，FDC 168893 Wheat flour, whole-grain：每 100 g 维生素 C 0 mg、硫胺素 0.502 mg、维生素 D 0 µg",
+          "USDA FoodData Central，蜂蜜：Survey (FNDDS)，FDC 2710281 Honey：每 100 g 维生素 C 0.5 mg、硫胺素 0 mg、维生素 D 0 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：1 蜂蜜瓶 + 2 小麦 → 8 蜂蜜曲奇（农夫乐事）；蜂蜜瓶 250 mL 约 338.1 g，快吸收糖 278.4 g（同原版蜂蜜瓶）"
+        ],
+        "processing": "面粉按 FLOUR/MEAL,BAKED（0301） 计：维生素 C 80%、硫胺素 80%；蜂蜜在保留率表中没有对应类别，按不损失计（建议值，用户批准，2026-11-13）；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方原料按农夫乐事通用换算：一份小麦 = 全麦面粉 120 g，一个鸡蛋 = 50 g，牛奶 = 一瓶 250 mL（约 257.8 g），一份糖 = 白砂糖 50 g，一颗可可豆 = 无糖可可粉 50 g（用户批准与决定，2026-11-13）",
+          "派与曲奇游戏里直接合成，按现实烤制扣损失（同兔肉煲的先例）（建议值，用户批准，2026-11-13）",
+          "快吸收糖为蜂蜜瓶的 278.4 g ÷ 8（蜂蜜按游离糖计，同原版蜂蜜瓶）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:melon_popsicle"
+      ],
+      "serving_g": 200.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 11.34,
+        "vitamin_b1_mg": 0.0627,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "西瓜冰棍：冷冻西瓜",
+        "sources": [
+          "USDA FoodData Central，西瓜：SR Legacy，FDC 167765 Watermelon, raw：每 100 g 维生素 C 8.1 mg、硫胺素 0.033 mg、维生素 D 0 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：4 西瓜片 + 2 冰 + 1 木棍 → 1 西瓜冰棍（农夫乐事）；西瓜片一份 50 g（同原版）"
+        ],
+        "processing": "西瓜按 FRUITS,FROZEN（0156） 计：维生素 C 70%、硫胺素 95%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方原料按农夫乐事通用换算：一份小麦 = 全麦面粉 120 g，一个鸡蛋 = 50 g，牛奶 = 一瓶 250 mL（约 257.8 g），一份糖 = 白砂糖 50 g，一颗可可豆 = 无糖可可粉 50 g（用户批准与决定，2026-11-13）",
+          "冰、木棍不计：冰为水，没有营养，也不计重量（建议值，用户批准，2026-11-13）",
+          "快吸收糖记 0：西瓜按整块水果，自带的糖不计（02 第 4.3 节）（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:glow_berry_custard"
+      ],
+      "serving_g": 457.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 49.9,
+        "vitamin_c_mg": 9.8,
+        "vitamin_b1_mg": 0.1323,
+        "vitamin_d_ug": 1.258
+      },
+      "basis": {
+        "food": "发光浆果蛋奶沙司：发光浆果、牛奶、鸡蛋、糖，加热",
+        "sources": [
+          "USDA FoodData Central，蔓越莓（甜浆果、发光浆果的参照）：SR Legacy，FDC 171722 Cranberries, raw：每 100 g 维生素 C 14 mg、硫胺素 0.012 mg、维生素 D 0 µg",
+          "USDA FoodData Central，牛奶：SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg",
+          "USDA FoodData Central，生鸡蛋：SR Legacy，FDC 171287 Egg, whole, raw, fresh：每 100 g 维生素 C 0 mg、硫胺素 0.04 mg、维生素 D 2 µg",
+          "USDA FoodData Central，白砂糖：SR Legacy，FDC 169655 Sugars, granulated：每 100 g 维生素 C 0 mg、硫胺素 0 mg、维生素 D 0 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 发光浆果 + 1 牛奶 + 1 鸡蛋 + 1 糖 → 1 发光浆果蛋奶沙司（农夫乐事）；发光浆果一份 100 g（同原版）"
+        ],
+        "processing": "发光浆果按 FRUITS,FRESH(NOT CITRUS),STEWED（0155） 计：维生素 C 70%、硫胺素 80%；牛奶按 MILK,HEATED APPROX 10MIN（2151） 计：维生素 C 85%、硫胺素 90%；鸡蛋按 EGGS,POACHED（0107） 计：维生素 C 80%、硫胺素 80%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "配方原料按农夫乐事通用换算：一份小麦 = 全麦面粉 120 g，一个鸡蛋 = 50 g，牛奶 = 一瓶 250 mL（约 257.8 g），一份糖 = 白砂糖 50 g，一颗可可豆 = 无糖可可粉 50 g（用户批准与决定，2026-11-13）",
+          "快吸收糖只计加入的白砂糖；水果、牛奶中天然的糖不计（02 第 4.3 节）",
+          "咖啡因、酒精记 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cake_slice"
+      ],
+      "serving_g": 115.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 46.85,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0759,
+        "vitamin_d_ug": 0.345
+      },
+      "basis": {
+        "food": "白蛋糕，白色糖霜，一片（同原版蛋糕的一口）",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2707891 Cake or cupcake, white with white icing, bakery（食物编号 53120270）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 0 mg、硫胺素 0.066 mg、维生素 D 0.3 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53120270：每 100 g 9.7 茶匙当量 = 40.74 g",
+          "一份：FDC 2707891 “1 regular or small piece/slice, 1 layer cake” = 115 g；放置后分口吃，一口为一份（共 7 口）",
+          "一份：切菜板把原版蛋糕切成 7 片，原版蛋糕也是 7 口，一片 = 原版蛋糕的一口 115 g"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:pumpkin_pie_slice",
+        "farmersdelight:debug_pumpkin_pie"
+      ],
+      "serving_g": 37.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 8.348,
+        "vitamin_c_mg": 0.825,
+        "vitamin_b1_mg": 0.03562,
+        "vitamin_d_ug": 0.1125
+      },
+      "basis": {
+        "food": "南瓜派，原版南瓜派的 1/4",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2708011 Pie, pumpkin（食物编号 53347000）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 2.2 mg、硫胺素 0.095 mg、维生素 D 0.3 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53347000：每 100 g 5.3 茶匙当量 = 22.26 g",
+          "一份：FDC 2708011 “1 regular slice” = 150 g",
+          "一份：原版南瓜派一份 150 g ÷ 4：1.21.1 的农夫乐事把原版南瓜派切成 4 片，蹲下放置后也分 4 口吃，每口记作隐藏物品 debug_pumpkin_pie"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "放置后分口吃的南瓜派：一口 = 一片切片（整个派切 4 片，也分 4 口吃）",
+          "1.21.1 农夫乐事另有“1 酥皮 + 4 南瓜片 + 1 鸡蛋 + 1 糖 → 2 南瓜派”，按配方一个约 591 g，与原版南瓜派 150 g 不一致；原版南瓜派不变，这条配方不另算（建议值，用户批准，2026-11-13）",
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）",
+          "游戏里一次吃掉整个派，按一块计（整个 1200 g 过多）（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      },
+      "only_on": [
+        "1.21.1"
+      ]
+    },
+    {
+      "items": [
+        "farmersdelight:fruit_salad"
+      ],
+      "serving_g": 598.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 54.91,
+        "vitamin_b1_mg": 0.1459,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "水果沙拉：苹果、西瓜、浆果、南瓜",
+        "sources": [
+          "苹果 182 g：数据同 minecraft:apple（苹果（生，带皮））",
+          "西瓜片 50 g：数据同 minecraft:melon_slice（西瓜（生））",
+          "甜浆果 100 g：数据同 minecraft:sweet_berries（蔓越莓（生），作为甜浆果的参照）",
+          "南瓜片 116 g：数据同 farmersdelight:pumpkin_slice（南瓜（生））",
+          "配方：1 苹果 + 2 西瓜片 + 2 浆果（标签，取甜浆果）+ 1 南瓜片 + 碗 → 1 水果沙拉（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "冷的拼装菜不扣损失（建议值，用户批准，2026-11-13）",
+          "水果按整块计，自带的糖不计（02 第 4.3 节）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:mixed_salad"
+      ],
+      "serving_g": 249.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 37.16,
+        "vitamin_b1_mg": 0.09808,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "混合沙拉：卷心菜叶、番茄、甜菜根",
+        "sources": [
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "配方：1 沙拉配料（标签，取卷心菜叶）+ 1 番茄 + 1 甜菜根 + 碗 → 1 混合沙拉（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "冷的拼装菜不扣损失（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:barbecue_stick"
+      ],
+      "serving_g": 275.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 22.93,
+        "vitamin_b1_mg": 0.1158,
+        "vitamin_d_ug": 0.0425
+      },
+      "basis": {
+        "food": "烧烤串：番茄、洋葱、牛肉饼，烤制",
+        "sources": [
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "牛肉饼 42.5 g：数据同 farmersdelight:beef_patty（牛肉（各零售部位综合，熟），对应牛排，牛肉饼）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：1 番茄 + 1 洋葱 + 1 熟肉（取第一种：熟牛肉标签中的牛肉饼）+ 木棍 → 1 烧烤串（农夫乐事）；木棍不计"
+        ],
+        "processing": "番茄按 TOMATOES,FRIED/BROILED（3752） 计：维生素 C 95%、硫胺素 95%；洋葱按 VEG,OTHER,BAKED（3771，表中蔬菜没有烧烤类别，取最接近的烘烤） 计：维生素 C 85%、硫胺素 90%；牛肉饼按 BEEF,REHEATED（0770） 计：维生素 C 95%、硫胺素 95%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "烧烤串按现实烤制扣损失，已熟的牛肉饼按再加热（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:nether_salad"
+      ],
+      "serving_g": 40,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0,
+        "vitamin_d_ug": 0
+      },
+      "impurity": 1,
+      "basis": {
+        "food": "下界沙拉：绯红菌、诡异菌",
+        "sources": [
+          "无现实对应（幻想食物），各成分全部记 0（建议值，用户批准，2026-11-13）",
+          "配方：1 绯红菌 + 1 诡异菌 + 碗 → 1 下界沙拉（农夫乐事）"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "一份 40 g 为占位：两朵，每朵按原版蘑菇一份 20 g（建议值，用户批准，2026-11-13）",
+          "杂质每份 1：农夫乐事中吃下有 30% 几率反胃 12 秒（FoodValues.NETHER_SALAD），参照迷之炖菜（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:egg_sandwich"
+      ],
+      "serving_g": 164.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 3.024,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.322,
+        "vitamin_d_ug": 2.024
+      },
+      "basis": {
+        "food": "夹蛋三明治：面包、两个煎蛋",
+        "sources": [
+          "面包 72 g：数据同 minecraft:bread（全麦面包）",
+          "煎蛋 46 g：数据同 farmersdelight:fried_egg（煎全蛋）",
+          "配方：1 面包 + 2 熟蛋（标签，煎蛋）→ 1 夹蛋三明治（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "冷的拼装菜不扣损失（建议值，用户批准，2026-11-13）",
+          "面包为原版面包（全麦，一份 72 g）；快吸收糖来自面包（FPED 添加糖）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:chicken_sandwich"
+      ],
+      "serving_g": 220.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 3.024,
+        "vitamin_c_mg": 19.89,
+        "vitamin_b1_mg": 0.3757,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "鸡肉三明治：面包、熟鸡肉丁、卷心菜叶、胡萝卜",
+        "sources": [
+          "面包 72 g：数据同 minecraft:bread（全麦面包）",
+          "熟鸡肉丁 42.5 g：数据同 farmersdelight:cooked_chicken_cuts（整鸡（带皮，烤），熟鸡肉丁）",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "配方：1 面包 + 1 熟鸡肉（标签，取熟鸡肉丁）+ 1 沙拉配料（取卷心菜叶）+ 1 胡萝卜 → 1 鸡肉三明治（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "冷的拼装菜不扣损失（建议值，用户批准，2026-11-13）",
+          "面包为原版面包（全麦，一份 72 g）；快吸收糖来自面包（FPED 添加糖）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:hamburger"
+      ],
+      "serving_g": 392.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 3.024,
+        "vitamin_c_mg": 41.28,
+        "vitamin_b1_mg": 0.4332,
+        "vitamin_d_ug": 0.0425
+      },
+      "basis": {
+        "food": "汉堡包：面包、牛肉饼、卷心菜叶、番茄、洋葱",
+        "sources": [
+          "面包 72 g：数据同 minecraft:bread（全麦面包）",
+          "牛肉饼 42.5 g：数据同 farmersdelight:beef_patty（牛肉（各零售部位综合，熟），对应牛排，牛肉饼）",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "配方：1 面包 + 1 牛肉饼 + 1 沙拉配料（取卷心菜叶）+ 1 番茄 + 1 洋葱 → 1 汉堡包（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "冷的拼装菜不扣损失（建议值，用户批准，2026-11-13）",
+          "面包为原版面包（全麦，一份 72 g）；快吸收糖来自面包（FPED 添加糖）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:bacon_sandwich"
+      ],
+      "serving_g": 282.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 3.024,
+        "vitamin_c_mg": 33.14,
+        "vitamin_b1_mg": 0.6087,
+        "vitamin_d_ug": 0.34
+      },
+      "basis": {
+        "food": "培根三明治：面包、熟培根、卷心菜叶、番茄",
+        "sources": [
+          "面包 72 g：数据同 minecraft:bread（全麦面包）",
+          "熟培根 42.5 g：数据同 farmersdelight:cooked_bacon（猪里脊中段带骨排（烤，肥瘦同取），熟培根）",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "配方：1 面包 + 1 熟培根（标签，取熟培根）+ 1 沙拉配料（取卷心菜叶）+ 1 番茄 → 1 培根三明治（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "冷的拼装菜不扣损失（建议值，用户批准，2026-11-13）",
+          "面包为原版面包（全麦，一份 72 g）；快吸收糖来自面包（FPED 添加糖）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:mutton_wrap"
+      ],
+      "serving_g": 269.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 3.024,
+        "vitamin_c_mg": 24.43,
+        "vitamin_b1_mg": 0.4017,
+        "vitamin_d_ug": 0.0425
+      },
+      "basis": {
+        "food": "羊肉卷饼：面包、熟羊排、卷心菜叶、洋葱",
+        "sources": [
+          "面包 72 g：数据同 minecraft:bread（全麦面包）",
+          "熟羊排 42.5 g：数据同 farmersdelight:cooked_mutton_chops（羊肉（各零售部位综合，熟），熟羊排）",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "配方：1 面包 + 1 熟羊肉（标签，取熟羊排）+ 1 沙拉配料（取卷心菜叶）+ 1 洋葱 → 1 羊肉卷饼（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "冷的拼装菜不扣损失（建议值，用户批准，2026-11-13）",
+          "面包为原版面包（全麦，一份 72 g）；快吸收糖来自面包（FPED 添加糖）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:dumplings"
+      ],
+      "serving_g": 173.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 10.77,
+        "vitamin_b1_mg": 0.2913,
+        "vitamin_d_ug": 0.2231
+      },
+      "basis": {
+        "food": "饺子：面团、卷心菜叶、洋葱、鸡肉，蒸煮",
+        "sources": [
+          "面团 136.7 g：数据同 farmersdelight:wheat_dough（面团：全麦面粉与鸡蛋）",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "生鸡肉丁 56.5 g：数据同 farmersdelight:chicken_cuts（整鸡（带皮，生），生鸡肉丁）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 面团 + 1 卷心菜（标签，取卷心菜叶）+ 1 洋葱 + 1 馅（取第一种：生鸡肉标签中的生鸡肉丁）→ 2 饺子（农夫乐事）"
+        ],
+        "processing": "面团按 FLOUR/MEAL,BOILED,STEAMED（0302） 计：维生素 C 80%、硫胺素 80%；卷心菜叶按 VEG,OTHER,STEAMED（3784） 计：维生素 C 85%、硫胺素 90%；洋葱按 VEG,OTHER,STEAMED（3784） 计：维生素 C 85%、硫胺素 90%；生鸡肉丁按 CHICKEN,SIMMERED,W/DRIPPINGS（0856） 计：维生素 C 85%、硫胺素 75%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "饺子按蒸煮扣损失（建议值，用户批准，2026-11-13）",
+          "生鸡肉丁的杂质不带入：杂质只代表吃生鸡肉，饺子已煮熟（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:stuffed_potato"
+      ],
+      "serving_g": 473.3,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 15.78,
+        "vitamin_b1_mg": 0.239,
+        "vitamin_d_ug": 0.3003
+      },
+      "basis": {
+        "food": "填馅马铃薯：烤马铃薯、牛肉饼、牛奶，再烤一遍",
+        "sources": [
+          "烤马铃薯 173 g：数据同 minecraft:baked_potato（烤马铃薯（带皮，不加盐））",
+          "牛肉饼 42.5 g：数据同 farmersdelight:beef_patty（牛肉（各零售部位综合，熟），对应牛排，牛肉饼）",
+          "牛奶 257.8 g：数据同 farmersdelight:milk_bottle（牛奶（未强化全脂），一瓶 250 mL）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：1 烤马铃薯 + 1 熟牛肉（标签，取牛肉饼）+ 1 牛奶（按一瓶 250 mL）→ 1 填馅马铃薯（农夫乐事）"
+        ],
+        "processing": "烤马铃薯按 POTATOES,REHEATED（3379） 计：维生素 C 95%、硫胺素 95%；牛肉饼按 BEEF,REHEATED（0770） 计：维生素 C 95%、硫胺素 95%；牛奶按 MILK,HEATED APPROX 10MIN（2151） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "按再烤一遍扣损失（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cabbage_rolls"
+      ],
+      "serving_g": 101.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 13.85,
+        "vitamin_b1_mg": 0.1752,
+        "vitamin_d_ug": 0.2825
+      },
+      "basis": {
+        "food": "卷心菜卷：卷心菜叶包猪肉，炖煮",
+        "sources": [
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "生培根（猪肉） 56.5 g：数据同 farmersdelight:bacon（猪里脊中段带骨排（生，肥瘦同取），生培根）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 卷心菜（标签，取卷心菜叶）+ 1 卷心菜卷馅料（取第一种：生猪肉标签中的生培根）→ 1 卷心菜卷（农夫乐事）"
+        ],
+        "processing": "卷心菜叶按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；生培根（猪肉）按 PORK,FRSH,GROUND,SIMMERED,W/DRIPPNG（1406） 计：维生素 C 80%、硫胺素 55%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "按炖煮扣损失（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:salmon_roll"
+      ],
+      "serving_g": 135.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0904,
+        "vitamin_d_ug": 7.965
+      },
+      "basis": {
+        "food": "鲑鱼寿司：生鲑鱼片、米饭",
+        "sources": [
+          "生鲑鱼片 56.5 g：数据同 farmersdelight:salmon_slice（红鲑（野生，生），生鲑鱼片）",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "配方：2 生鲑鱼片 + 1 米饭 → 2 鲑鱼寿司（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "寿司生食，不扣损失；现实寿司饭加糖和醋，配方只有米饭，快吸收糖记 0（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:cod_roll"
+      ],
+      "serving_g": 135.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.565,
+        "vitamin_b1_mg": 0.05874,
+        "vitamin_d_ug": 0.5085
+      },
+      "basis": {
+        "food": "鳕鱼寿司：生鳕鱼片、米饭",
+        "sources": [
+          "生鳕鱼片 56.5 g：数据同 farmersdelight:cod_slice（大西洋鳕（生），生鳕鱼片）",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "配方：2 生鳕鱼片 + 1 米饭 → 2 鳕鱼寿司（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "寿司生食，不扣损失；现实寿司饭加糖和醋，配方只有米饭，快吸收糖记 0（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:kelp_roll"
+      ],
+      "serving_g": 419.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 6.389,
+        "vitamin_b1_mg": 0.2662,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "海带寿司卷：干海带、米饭、胡萝卜",
+        "sources": [
+          "干海带 14 g：数据同 minecraft:dried_kelp（干海带：约 1 米长的海带晒干）",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "配方：3 干海带 + 2 米饭 + 1 胡萝卜 → 1 海带寿司卷（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "寿司生食，不扣损失；现实寿司饭加糖和醋，配方只有米饭，快吸收糖记 0（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:kelp_roll_slice"
+      ],
+      "serving_g": 139.7,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 2.13,
+        "vitamin_b1_mg": 0.08874,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "海带寿司：海带寿司卷切成 3 份",
+        "sources": [
+          "干海带 14 g：数据同 minecraft:dried_kelp（干海带：约 1 米长的海带晒干）",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "配方：海带寿司卷在切菜板上切成 3 份海带寿司（农夫乐事）；寿司卷 = 3 干海带 + 2 米饭 + 1 胡萝卜"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "寿司生食，不扣损失；现实寿司饭加糖和醋，配方只有米饭，快吸收糖记 0（建议值，用户批准，2026-11-13）",
+          "切出或分装的物品：一份 = 原料一份 ÷ 产出个数，成分同原料（农夫乐事通用规则，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:bone_broth"
+      ],
+      "serving_g": 100.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 9.8,
+        "vitamin_b1_mg": 0.0096,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "大骨汤：骨头熬汤，加发光浆果",
+        "sources": [
+          "发光浆果 100 g：数据同 minecraft:glow_berries（蔓越莓（生），与甜浆果同一组数，作为发光浆果的参照）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 骨头 + 1 发光浆果 / 蘑菇 / 垂根 / 发光地衣（取第一种：发光浆果）→ 1 大骨汤（农夫乐事）"
+        ],
+        "processing": "发光浆果按 FRUITS,FRESH(NOT CITRUS),STEWED（0155） 计：维生素 C 70%、硫胺素 80%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "骨头与汤水不计营养也不计重量（建议值，用户批准，2026-11-13）",
+          "农夫乐事另为原版甜菜汤、蘑菇煲、兔肉煲加的锅里做法不另算，原版物品的数据不变（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:beef_stew"
+      ],
+      "serving_g": 330.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 36.27,
+        "vitamin_b1_mg": 0.1997,
+        "vitamin_d_ug": 0.0565
+      },
+      "basis": {
+        "food": "牛肉炖：牛肉馅、胡萝卜、马铃薯",
+        "sources": [
+          "牛肉馅 56.5 g：数据同 farmersdelight:minced_beef（牛肉（各零售部位综合，生），牛肉馅）",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "马铃薯 213 g：数据同 minecraft:potato（马铃薯（生，带皮））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 生牛肉（标签，取牛肉馅）+ 1 胡萝卜 + 1 马铃薯 → 1 牛肉炖（农夫乐事）"
+        ],
+        "processing": "牛肉馅按 BEEF,GROUND,SIMMERED,W/DRIPPINGS（0754） 计：维生素 C 85%、硫胺素 60%；胡萝卜按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；马铃薯按 POTATOES,BOILED(PARED) WATER USED（3309） 计：维生素 C 80%、硫胺素 80%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:chicken_soup"
+      ],
+      "serving_g": 244.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 20.33,
+        "vitamin_b1_mg": 0.109,
+        "vitamin_d_ug": 0.113
+      },
+      "basis": {
+        "food": "鸡肉汤：生鸡肉丁、胡萝卜、卷心菜叶、甜菜根",
+        "sources": [
+          "生鸡肉丁 56.5 g：数据同 farmersdelight:chicken_cuts（整鸡（带皮，生），生鸡肉丁）",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 生鸡肉（标签，取生鸡肉丁）+ 1 胡萝卜 + 1 沙拉配料（取卷心菜叶）+ 1 蔬菜（标签，取第一种：甜菜根）→ 1 鸡肉汤（农夫乐事）"
+        ],
+        "processing": "生鸡肉丁按 CHICKEN,SIMMERED,W/DRIPPINGS（0856） 计：维生素 C 85%、硫胺素 75%；胡萝卜按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；卷心菜叶按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；甜菜根按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "生鸡肉丁的杂质不带入：已煮熟（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:vegetable_soup"
+      ],
+      "serving_g": 400.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 53.13,
+        "vitamin_b1_mg": 0.2215,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "蔬菜汤：胡萝卜、马铃薯、甜菜根、卷心菜叶",
+        "sources": [
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "马铃薯 213 g：数据同 minecraft:potato（马铃薯（生，带皮））",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 胡萝卜 + 1 马铃薯 + 1 甜菜根 + 1 沙拉配料（取卷心菜叶）→ 1 蔬菜汤（农夫乐事）"
+        ],
+        "processing": "胡萝卜按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；马铃薯按 POTATOES,BOILED(PARED) WATER USED（3309） 计：维生素 C 80%、硫胺素 80%；甜菜根按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；卷心菜叶按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:fish_stew"
+      ],
+      "serving_g": 412.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 39.39,
+        "vitamin_b1_mg": 0.1707,
+        "vitamin_d_ug": 0.5085
+      },
+      "basis": {
+        "food": "鱼肉炖：生鳕鱼片、番茄酱、洋葱",
+        "sources": [
+          "生鳕鱼片 56.5 g：数据同 farmersdelight:cod_slice（大西洋鳕（生），生鳕鱼片）",
+          "番茄酱 246 g：数据同 farmersdelight:tomato_sauce（番茄酱：两个番茄熬煮）",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 生鱼（标签，取第一种：生鳕鱼标签中的生鳕鱼片）+ 1 番茄酱 + 1 洋葱 → 1 鱼肉炖（农夫乐事）"
+        ],
+        "processing": "生鳕鱼片按 FINFISH,<5%FAT,SIMMERED,W/DRIPPINGS（2402） 计：维生素 C 80%、硫胺素 90%；番茄酱按 TOMATOES,REHEATED（3754） 计：维生素 C 100%、硫胺素 100%；洋葱按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:pumpkin_soup"
+      ],
+      "serving_g": 474.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 22.72,
+        "vitamin_b1_mg": 0.3163,
+        "vitamin_d_ug": 0.5403
+      },
+      "basis": {
+        "food": "南瓜汤：南瓜片、卷心菜叶、猪肉、牛奶",
+        "sources": [
+          "南瓜片 116 g：数据同 farmersdelight:pumpkin_slice（南瓜（生））",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "生培根（猪肉） 56.5 g：数据同 farmersdelight:bacon（猪里脊中段带骨排（生，肥瘦同取），生培根）",
+          "牛奶 257.8 g：数据同 farmersdelight:milk_bottle（牛奶（未强化全脂），一瓶 250 mL）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 南瓜片 + 1 沙拉配料（取卷心菜叶）+ 1 生猪肉（标签，取生培根）+ 1 牛奶（按一瓶 250 mL）→ 1 南瓜汤（农夫乐事）"
+        ],
+        "processing": "南瓜片按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；卷心菜叶按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；生培根（猪肉）按 PORK,FRSH,GROUND,SIMMERED,W/DRIPPNG（1406） 计：维生素 C 80%、硫胺素 55%；牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:baked_cod_stew"
+      ],
+      "serving_g": 442.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 50.06,
+        "vitamin_b1_mg": 0.238,
+        "vitamin_d_ug": 1.508
+      },
+      "basis": {
+        "food": "烘焙鳕鱼炖：鳕鱼、马铃薯、鸡蛋、番茄，烤制",
+        "sources": [
+          "生鳕鱼片 56.5 g：数据同 farmersdelight:cod_slice（大西洋鳕（生），生鳕鱼片）",
+          "马铃薯 213 g：数据同 minecraft:potato（马铃薯（生，带皮））",
+          "鸡蛋 50 g：USDA FoodData Central，SR Legacy，FDC 171287 Egg, whole, raw, fresh：每 100 g 维生素 C 0 mg、硫胺素 0.04 mg、维生素 D 2 µg",
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 生鳕鱼（标签，取生鳕鱼片）+ 1 马铃薯 + 1 鸡蛋 + 1 番茄 → 1 烘焙鳕鱼炖（农夫乐事）"
+        ],
+        "processing": "生鳕鱼片按 FINFISH,<5%FAT,BAKED W/DRIPPINGS（2302） 计：维生素 C 85%、硫胺素 95%；马铃薯按 POTATOES,BAKED IN CASSEROLE（3302） 计：维生素 C 80%、硫胺素 80%；鸡蛋按 EGGS,BAKED（0101） 计：维生素 C 80%、硫胺素 80%；番茄按 TOMATOES,BOILED/BAKED（3751） 计：维生素 C 95%、硫胺素 95%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "一个鸡蛋 = 生全蛋 1 large 50 g（农夫乐事通用原料，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:noodle_soup"
+      ],
+      "serving_g": 253.2,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.7905,
+        "vitamin_b1_mg": 0.7061,
+        "vitamin_d_ug": 1.628
+      },
+      "basis": {
+        "food": "面条汤：生意面、煎蛋、干海带、猪肉",
+        "sources": [
+          "生意面 136.7 g：数据同 farmersdelight:raw_pasta（生意面：面团切成）",
+          "煎蛋 46 g：数据同 farmersdelight:fried_egg（煎全蛋）",
+          "干海带 14 g：数据同 minecraft:dried_kelp（干海带：约 1 米长的海带晒干）",
+          "生培根（猪肉） 56.5 g：数据同 farmersdelight:bacon（猪里脊中段带骨排（生，肥瘦同取），生培根）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 意面（标签，生意面）+ 1 熟蛋（标签，煎蛋）+ 1 干海带 + 1 生猪肉（标签，取生培根）→ 1 面条汤（农夫乐事）"
+        ],
+        "processing": "生意面按 PASTA,BOILED,NOT DRAINED（0384） 计：维生素 C 80%、硫胺素 80%；煎蛋按 EGGS,REHEATED（0109） 计：维生素 C 95%、硫胺素 95%；干海带按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；生培根（猪肉）按 PORK,FRSH,GROUND,SIMMERED,W/DRIPPNG（1406） 计：维生素 C 80%、硫胺素 55%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）",
+          "1.21.1 的配方用生鸡蛋（1.20.1 为煎蛋）；两个版本共用这一条，按煎蛋计（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:onion_soup"
+      ],
+      "serving_g": 549.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 3.024,
+        "vitamin_c_mg": 13.84,
+        "vitamin_b1_mg": 0.4475,
+        "vitamin_d_ug": 0.2578
+      },
+      "basis": {
+        "food": "洋葱汤：洋葱、面包、牛奶",
+        "sources": [
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "面包 72 g：数据同 minecraft:bread（全麦面包）",
+          "牛奶 257.8 g：数据同 farmersdelight:milk_bottle（牛奶（未强化全脂），一瓶 250 mL）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：2 洋葱 + 1 面包 + 1 牛奶（按一瓶 250 mL）→ 1 洋葱汤（农夫乐事 1.21.1）"
+        ],
+        "processing": "洋葱按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；面包按 FLOUR/MEAL,REHEATED（0304） 计：维生素 C 95%、硫胺素 95%；牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "汤与炖菜：生肉、生鱼按带汤汁炖煮（W/DRIPPINGS），蔬菜按汤一起喝（WATER USED），已做好的配料按再加热，汤里的牛奶按加热 30 分钟扣损失；烘焙鳕鱼炖按烤制（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      },
+      "only_on": [
+        "1.21.1"
+      ]
+    },
+    {
+      "items": [
+        "farmersdelight:fried_rice"
+      ],
+      "serving_g": 379.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 9.798,
+        "vitamin_b1_mg": 0.1288,
+        "vitamin_d_ug": 1.0
+      },
+      "basis": {
+        "food": "炒饭：米饭、鸡蛋、胡萝卜、洋葱",
+        "sources": [
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "鸡蛋 50 g：USDA FoodData Central，SR Legacy，FDC 171287 Egg, whole, raw, fresh：每 100 g 维生素 C 0 mg、硫胺素 0.04 mg、维生素 D 2 µg",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 大米 + 1 鸡蛋 + 1 胡萝卜 + 1 洋葱 → 1 炒饭（农夫乐事）"
+        ],
+        "processing": "米饭按 RICE,WHITE/BROWN,REHEATED（0434） 计：维生素 C 95%、硫胺素 95%；鸡蛋按 EGGS,FRIED,SCRAMBLED（0103） 计：维生素 C 80%、硫胺素 85%；胡萝卜按 VEG,ROOTS,ETC,STIR FRY（3465） 计：维生素 C 80%、硫胺素 90%；洋葱按 VEG,OTHER,STIR FRY（3785） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "锅里做的菜：炒饭按炒，意面按煮后沥水，牛羊肉按煎后再炖（带汤汁），蘑菇饭、蔬菜杂烩按炖扣损失（建议值，用户批准，2026-11-13）",
+          "一份大米按一份米饭计：1 大米在锅里煮成 1 米饭，取米饭的数 158 g（建议值，用户批准，2026-11-13）",
+          "一个鸡蛋 = 生全蛋 1 large 50 g（农夫乐事通用原料，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:bacon_and_eggs"
+      ],
+      "serving_g": 177.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.5495,
+        "vitamin_d_ug": 2.704
+      },
+      "basis": {
+        "food": "培根蛋：两片熟培根、两个煎蛋",
+        "sources": [
+          "熟培根 42.5 g：数据同 farmersdelight:cooked_bacon（猪里脊中段带骨排（烤，肥瘦同取），熟培根）",
+          "煎蛋 46 g：数据同 farmersdelight:fried_egg（煎全蛋）",
+          "配方：2 熟培根 + 2 熟蛋（标签，煎蛋）+ 碗 → 1 培根蛋（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "合成的盘装菜：配料原样拼合，不扣损失；生的番茄、洋葱、甜菜根、浆果按生的计（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:pasta_with_meatballs"
+      ],
+      "serving_g": 439.2,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 32.02,
+        "vitamin_b1_mg": 0.5078,
+        "vitamin_d_ug": 0.3898
+      },
+      "basis": {
+        "food": "肉丸意面：牛肉馅、意面、番茄酱",
+        "sources": [
+          "牛肉馅 56.5 g：数据同 farmersdelight:minced_beef（牛肉（各零售部位综合，生），牛肉馅）",
+          "生意面 136.7 g：数据同 farmersdelight:raw_pasta（生意面：面团切成）",
+          "番茄酱 246 g：数据同 farmersdelight:tomato_sauce（番茄酱：两个番茄熬煮）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 牛肉馅 + 1 意面（标签，生意面）+ 1 番茄酱 → 1 肉丸意面（农夫乐事）"
+        ],
+        "processing": "牛肉馅按 BEEF,GROUND,BRWN,SIMMER,W/DRIPPINGS（0752） 计：维生素 C 85%、硫胺素 60%；生意面按 PASTA,BOILED,DRAINED（0381） 计：维生素 C 70%、硫胺素 65%；番茄酱按 TOMATOES,REHEATED（3754） 计：维生素 C 100%、硫胺素 100%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "锅里做的菜：炒饭按炒，意面按煮后沥水，牛羊肉按煎后再炖（带汤汁），蘑菇饭、蔬菜杂烩按炖扣损失（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:pasta_with_mutton_chop"
+      ],
+      "serving_g": 439.2,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 32.02,
+        "vitamin_b1_mg": 0.5129,
+        "vitamin_d_ug": 0.3898
+      },
+      "basis": {
+        "food": "羊排意面：生羊排、意面、番茄酱",
+        "sources": [
+          "生羊排 56.5 g：数据同 farmersdelight:mutton_chops（羊肉（各零售部位综合，生），生羊排）",
+          "生意面 136.7 g：数据同 farmersdelight:raw_pasta（生意面：面团切成）",
+          "番茄酱 246 g：数据同 farmersdelight:tomato_sauce（番茄酱：两个番茄熬煮）",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 生羊肉（标签，取生羊排）+ 1 意面（标签，生意面）+ 1 番茄酱 → 1 羊排意面（农夫乐事）"
+        ],
+        "processing": "生羊排按 LAMB,BROWN,SIMMER,W/DRIPPINGS（1052） 计：维生素 C 85%、硫胺素 45%；生意面按 PASTA,BOILED,DRAINED（0381） 计：维生素 C 70%、硫胺素 65%；番茄酱按 TOMATOES,REHEATED（3754） 计：维生素 C 100%、硫胺素 100%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "锅里做的菜：炒饭按炒，意面按煮后沥水，牛羊肉按煎后再炖（带汤汁），蘑菇饭、蔬菜杂烩按炖扣损失（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:mushroom_rice"
+      ],
+      "serving_g": 259.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 2.699,
+        "vitamin_b1_mg": 0.102,
+        "vitamin_d_ug": 0.04
+      },
+      "basis": {
+        "food": "蘑菇饭：两种蘑菇、米饭、胡萝卜",
+        "sources": [
+          "棕色蘑菇 20 g：USDA FoodData Central，SR Legacy，FDC 168434 Mushrooms, brown, italian, or crimini, raw：每 100 g 维生素 C 0 mg、硫胺素 0.095 mg、维生素 D 0.1 µg",
+          "红色蘑菇 20 g：USDA FoodData Central，SR Legacy，FDC 168434 Mushrooms, brown, italian, or crimini, raw：每 100 g 维生素 C 0 mg、硫胺素 0.095 mg、维生素 D 0.1 µg",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 棕色蘑菇 + 1 红色蘑菇 + 1 大米 + 1 胡萝卜或马铃薯（取第一种：胡萝卜）→ 1 蘑菇饭（农夫乐事）"
+        ],
+        "processing": "棕色蘑菇按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；红色蘑菇按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；胡萝卜按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "锅里做的菜：炒饭按炒，意面按煮后沥水，牛羊肉按煎后再炖（带汤汁），蘑菇饭、蔬菜杂烩按炖扣损失（建议值，用户批准，2026-11-13）",
+          "一份大米按一份米饭计：1 大米在锅里煮成 1 米饭，取米饭的数 158 g（建议值，用户批准，2026-11-13）",
+          "蘑菇按褐蘑菇（crimini）一朵 20 g（FDC 168434 “1 piece whole”，同兔肉煲），红、棕蘑菇同（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:roasted_mutton_chops"
+      ],
+      "serving_g": 405.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 20.87,
+        "vitamin_b1_mg": 0.145,
+        "vitamin_d_ug": 0.0425
+      },
+      "basis": {
+        "food": "烤羊排：熟羊排、甜菜根、米饭、番茄",
+        "sources": [
+          "熟羊排 42.5 g：数据同 farmersdelight:cooked_mutton_chops（羊肉（各零售部位综合，熟），熟羊排）",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "配方：1 熟羊排 + 1 甜菜根 + 1 米饭 + 1 番茄 + 碗 → 1 烤羊排（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "合成的盘装菜：配料原样拼合，不扣损失；生的番茄、洋葱、甜菜根、浆果按生的计（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:vegetable_noodles"
+      ],
+      "serving_g": 344.2,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 19.94,
+        "vitamin_b1_mg": 0.4966,
+        "vitamin_d_ug": 0.3533
+      },
+      "basis": {
+        "food": "蔬菜面：胡萝卜、蘑菇、意面、卷心菜叶、甜菜根",
+        "sources": [
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "棕色蘑菇 20 g：USDA FoodData Central，SR Legacy，FDC 168434 Mushrooms, brown, italian, or crimini, raw：每 100 g 维生素 C 0 mg、硫胺素 0.095 mg、维生素 D 0.1 µg",
+          "生意面 136.7 g：数据同 farmersdelight:raw_pasta（生意面：面团切成）",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 胡萝卜 + 1 棕色蘑菇 + 1 意面（标签，生意面）+ 1 沙拉配料（取卷心菜叶）+ 1 蔬菜（标签，取第一种：甜菜根）→ 1 蔬菜面（农夫乐事）"
+        ],
+        "processing": "胡萝卜按 VEG,ROOTS,ETC,STIR FRY（3465） 计：维生素 C 80%、硫胺素 90%；棕色蘑菇按 VEG,OTHER,STIR FRY（3785） 计：维生素 C 85%、硫胺素 90%；生意面按 PASTA,BOILED,DRAINED（0381） 计：维生素 C 70%、硫胺素 65%；卷心菜叶按 VEG,OTHER,STIR FRY（3785） 计：维生素 C 85%、硫胺素 90%；甜菜根按 VEG,ROOTS,ETC,STIR FRY（3465） 计：维生素 C 80%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "锅里做的菜：炒饭按炒，意面按煮后沥水，牛羊肉按煎后再炖（带汤汁），蘑菇饭、蔬菜杂烩按炖扣损失（建议值，用户批准，2026-11-13）",
+          "蘑菇按褐蘑菇（crimini）一朵 20 g（FDC 168434 “1 piece whole”，同兔肉煲），红、棕蘑菇同（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:steak_and_potatoes"
+      ],
+      "serving_g": 526.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 24.75,
+        "vitamin_b1_mg": 0.2499,
+        "vitamin_d_ug": 0.085
+      },
+      "basis": {
+        "food": "牛排配马铃薯：烤马铃薯、牛排、洋葱、米饭",
+        "sources": [
+          "烤马铃薯 173 g：数据同 minecraft:baked_potato（烤马铃薯（带皮，不加盐））",
+          "牛排 85 g：数据同 minecraft:cooked_beef（牛肉（各零售部位综合，熟），对应牛排）",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "配方：1 烤马铃薯 + 1 牛排 + 1 洋葱 + 1 米饭 + 碗 → 1 牛排配马铃薯（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "合成的盘装菜：配料原样拼合，不扣损失；生的番茄、洋葱、甜菜根、浆果按生的计（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:ratatouille"
+      ],
+      "serving_g": 397.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 28.95,
+        "vitamin_b1_mg": 0.1345,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "蔬菜杂烩：番茄、洋葱、甜菜根，炖煮",
+        "sources": [
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 番茄 + 1 洋葱 + 1 甜菜根 + 1 蔬菜（标签，取第一种：甜菜根）→ 1 蔬菜杂烩（农夫乐事）"
+        ],
+        "processing": "番茄按 TOMATOES,BOILED/BAKED（3751） 计：维生素 C 95%、硫胺素 95%；洋葱按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；甜菜根按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "锅里做的菜：炒饭按炒，意面按煮后沥水，牛羊肉按煎后再炖（带汤汁），蘑菇饭、蔬菜杂烩按炖扣损失（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:squid_ink_pasta"
+      ],
+      "serving_g": 316.2,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 16.46,
+        "vitamin_b1_mg": 0.4778,
+        "vitamin_d_ug": 0.8418
+      },
+      "basis": {
+        "food": "鱿鱼墨面：鳕鱼、意面、番茄（墨囊不计）",
+        "sources": [
+          "生鳕鱼片 56.5 g：数据同 farmersdelight:cod_slice（大西洋鳕（生），生鳕鱼片）",
+          "生意面 136.7 g：数据同 farmersdelight:raw_pasta（生意面：面团切成）",
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 生鱼（标签，取第一种：生鳕鱼标签中的生鳕鱼片）+ 1 意面（标签，生意面）+ 1 番茄 + 1 墨囊 → 1 鱿鱼墨面（农夫乐事）"
+        ],
+        "processing": "生鳕鱼片按 FINFISH,<5%FAT,SIMMERED,W/DRIPPINGS（2402） 计：维生素 C 80%、硫胺素 90%；生意面按 PASTA,BOILED,DRAINED（0381） 计：维生素 C 70%、硫胺素 65%；番茄按 TOMATOES,BOILED/BAKED（3751） 计：维生素 C 95%、硫胺素 95%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "锅里做的菜：炒饭按炒，意面按煮后沥水，牛羊肉按煎后再炖（带汤汁），蘑菇饭、蔬菜杂烩按炖扣损失（建议值，用户批准，2026-11-13）",
+          "墨囊不计营养也不计重量，同骨头（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:grilled_salmon"
+      ],
+      "serving_g": 297.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 38.43,
+        "vitamin_b1_mg": 0.1565,
+        "vitamin_d_ug": 7.1
+      },
+      "basis": {
+        "food": "香烤鲑鱼：熟鲑鱼片、甜浆果、卷心菜叶、洋葱",
+        "sources": [
+          "熟鲑鱼片 42.5 g：数据同 farmersdelight:cooked_salmon_slice（红鲑（干热烹调），熟鲑鱼片）",
+          "甜浆果 100 g：数据同 minecraft:sweet_berries（蔓越莓（生），作为甜浆果的参照）",
+          "卷心菜叶 44.5 g：数据同 farmersdelight:cabbage_leaf（卷心菜（生），卷心菜叶）",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "配方：1 熟鲑鱼（标签，取熟鲑鱼片）+ 1 甜浆果 + 1 卷心菜（标签，取卷心菜叶）+ 1 洋葱 + 碗 → 1 香烤鲑鱼（农夫乐事）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "合成的盘装菜：配料原样拼合，不扣损失；生的番茄、洋葱、甜菜根、浆果按生的计（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:roast_chicken"
+      ],
+      "serving_g": 196.2,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0.756,
+        "vitamin_c_mg": 10.97,
+        "vitamin_b1_mg": 0.1657,
+        "vitamin_d_ug": 0.25
+      },
+      "basis": {
+        "food": "盘装烤鸡：烤鸡配面包、蛋、洋葱填料与胡萝卜、马铃薯，整盘的 1/4",
+        "sources": [
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "鸡蛋 50 g：USDA FoodData Central，SR Legacy，FDC 171287 Egg, whole, raw, fresh：每 100 g 维生素 C 0 mg、硫胺素 0.04 mg、维生素 D 2 µg",
+          "面包 72 g：数据同 minecraft:bread（全麦面包）",
+          "胡萝卜 61 g：数据同 minecraft:carrot（胡萝卜（生））",
+          "熟鸡肉 85 g：数据同 minecraft:cooked_chicken（整鸡（带皮，烤））",
+          "烤马铃薯 173 g：数据同 minecraft:baked_potato（烤马铃薯（带皮，不加盐））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：1 洋葱 + 1 鸡蛋 + 1 面包 + 2 胡萝卜 + 1 熟鸡肉 + 2 烤马铃薯 + 碗 → 1 烤鸡（方块，可盛 4 份）（农夫乐事）"
+        ],
+        "processing": "洋葱按 VEG,OTHER,BAKED（3771） 计：维生素 C 85%、硫胺素 90%；鸡蛋按 EGGS,BAKED（0101） 计：维生素 C 80%、硫胺素 80%；面包按 FLOUR/MEAL,REHEATED（0304） 计：维生素 C 95%、硫胺素 95%；胡萝卜按 VEG,ROOTS,ETC,BAKED（3451） 计：维生素 C 75%、硫胺素 90%；熟鸡肉按 CHICKEN,REHEATED（0864） 计：维生素 C 95%、硫胺素 95%；烤马铃薯按 POTATOES,REHEATED（3379） 计：维生素 C 95%、硫胺素 95%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "大餐方块放下后可盛 4 份（农夫乐事 FeastBlock.getMaxServings = 4），一份 = 整块配料之和 ÷ 4（建议值，用户批准，2026-11-13）",
+          "按烤制扣损失：生料按烤，已熟的按再加热（建议值，用户批准，2026-11-13）",
+          "一个鸡蛋 = 生全蛋 1 large 50 g（农夫乐事通用原料，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:stuffed_pumpkin"
+      ],
+      "serving_g": 286.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 22.55,
+        "vitamin_b1_mg": 0.118,
+        "vitamin_d_ug": 0.005
+      },
+      "basis": {
+        "food": "碗装填馅南瓜：南瓜里填米饭、洋葱、蘑菇、马铃薯、浆果、甜菜根，烤制，整个的 1/4",
+        "sources": [
+          "南瓜（容器） 464 g：USDA FoodData Central，SR Legacy，FDC 168448 Pumpkin, raw：每 100 g 维生素 C 9 mg、硫胺素 0.05 mg、维生素 D 0 µg",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "棕色蘑菇 20 g：USDA FoodData Central，SR Legacy，FDC 168434 Mushrooms, brown, italian, or crimini, raw：每 100 g 维生素 C 0 mg、硫胺素 0.095 mg、维生素 D 0.1 µg",
+          "马铃薯 213 g：数据同 minecraft:potato（马铃薯（生，带皮））",
+          "甜浆果 100 g：数据同 minecraft:sweet_berries（蔓越莓（生），作为甜浆果的参照）",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅（以南瓜为容器）：1 大米 + 1 洋葱 + 1 棕色蘑菇 + 1 马铃薯 + 1 浆果（取第一种：甜浆果）+ 1 蔬菜（取第一种：甜菜根）→ 1 填馅南瓜（方块，可盛 4 份）（农夫乐事）"
+        ],
+        "processing": "南瓜（容器）按 VEG,OTHER,BAKED（3771） 计：维生素 C 85%、硫胺素 90%；米饭按 RICE,WHITE/BROWN,REHEATED（0434） 计：维生素 C 95%、硫胺素 95%；洋葱按 VEG,OTHER,BAKED（3771） 计：维生素 C 85%、硫胺素 90%；棕色蘑菇按 VEG,OTHER,BAKED（3771） 计：维生素 C 85%、硫胺素 90%；马铃薯按 POTATOES,BAKED IN CASSEROLE（3302） 计：维生素 C 80%、硫胺素 80%；甜浆果按 FRUITS,FRESH(NOT CITRUS),BAKED（0151） 计：维生素 C 80%、硫胺素 80%；甜菜根按 VEG,ROOTS,ETC,BAKED（3451） 计：维生素 C 75%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "大餐方块放下后可盛 4 份（农夫乐事 FeastBlock.getMaxServings = 4），一份 = 整块配料之和 ÷ 4（建议值，用户批准，2026-11-13）",
+          "按烤制扣损失：生料按烤，已熟的按再加热（建议值，用户批准，2026-11-13）",
+          "容器南瓜一并吃掉，按切菜板“1 南瓜 = 4 南瓜片”计 464 g，数据同南瓜片（FDC 168448）（建议值，用户批准，2026-11-13）",
+          "一份大米按一份米饭计：1 大米在锅里煮成 1 米饭，取米饭的数 158 g（建议值，用户批准，2026-11-13）",
+          "蘑菇按褐蘑菇（crimini）一朵 20 g（FDC 168434 “1 piece whole”，同兔肉煲），红、棕蘑菇同（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:honey_glazed_ham"
+      ],
+      "serving_g": 306.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 69.6,
+        "vitamin_c_mg": 11.62,
+        "vitamin_b1_mg": 0.2664,
+        "vitamin_d_ug": 0.34
+      },
+      "basis": {
+        "food": "盘装蜜汁火腿：烟熏火腿涂蜂蜜，配甜浆果与米饭，整盘的 1/4",
+        "sources": [
+          "甜浆果 100 g：数据同 minecraft:sweet_berries（蔓越莓（生），作为甜浆果的参照）",
+          "蜂蜜瓶 338.1 g：数据同 minecraft:honey_bottle（蜂蜜，一瓶 250 mL）",
+          "烟熏火腿 170 g：数据同 farmersdelight:smoked_ham（猪里脊中段带骨排（烤，肥瘦同取），烟熏火腿）",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：4 甜浆果 + 1 蜂蜜瓶 + 1 烟熏火腿 + 2 米饭 + 碗 → 1 蜜汁火腿（方块，可盛 4 份）（农夫乐事）"
+        ],
+        "processing": "甜浆果按 FRUITS,FRESH(NOT CITRUS),BAKED（0151） 计：维生素 C 80%、硫胺素 80%；烟熏火腿按 PORK,FRESH,REHEATED（1407） 计：维生素 C 95%、硫胺素 95%；米饭按 RICE,WHITE/BROWN,REHEATED（0434） 计：维生素 C 95%、硫胺素 95%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "大餐方块放下后可盛 4 份（农夫乐事 FeastBlock.getMaxServings = 4），一份 = 整块配料之和 ÷ 4（建议值，用户批准，2026-11-13）",
+          "按烤制扣损失：生料按烤，已熟的按再加热（建议值，用户批准，2026-11-13）",
+          "一份快吸收糖 69.6 g（来自蜂蜜），单份即超过 30 g 的档位，已告知用户（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:shepherds_pie"
+      ],
+      "serving_g": 237.8,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 11.35,
+        "vitamin_b1_mg": 0.1279,
+        "vitamin_d_ug": 0.09632
+      },
+      "basis": {
+        "food": "盘装牧羊人派：羊肉、洋葱、牛奶马铃薯泥，烤制，整盘的 1/4",
+        "sources": [
+          "烤马铃薯 173 g：数据同 minecraft:baked_potato（烤马铃薯（带皮，不加盐））",
+          "牛奶 257.8 g：数据同 farmersdelight:milk_bottle（牛奶（未强化全脂），一瓶 250 mL）",
+          "熟羊排 42.5 g：数据同 farmersdelight:cooked_mutton_chops（羊肉（各零售部位综合，熟），熟羊排）",
+          "洋葱 110 g：数据同 farmersdelight:onion（洋葱（生））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：2 烤马铃薯 + 1 牛奶（按一瓶 250 mL）+ 3 熟羊肉（标签，取熟羊排）+ 2 洋葱 + 碗 → 1 牧羊人派（方块，可盛 4 份）（农夫乐事）"
+        ],
+        "processing": "烤马铃薯按 POTATOES,REHEATED（3379） 计：维生素 C 95%、硫胺素 95%；牛奶按 MILK,HEATED APPROX 30MIN（2152） 计：维生素 C 65%、硫胺素 75%；熟羊排按 LAMB,REHEATED（1074） 计：维生素 C 95%、硫胺素 95%；洋葱按 VEG,OTHER,BAKED（3771） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "大餐方块放下后可盛 4 份（农夫乐事 FeastBlock.getMaxServings = 4），一份 = 整块配料之和 ÷ 4（建议值，用户批准，2026-11-13）",
+          "按烤制扣损失：生料按烤，已熟的按再加热（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "farmersdelight:gleaming_salad"
+      ],
+      "serving_g": 245.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 69.6,
+        "vitamin_c_mg": 29.82,
+        "vitamin_b1_mg": 0.06094,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "碗装闪亮沙拉：发光浆果、蜂蜜、番茄、金胡萝卜、甜菜根、卷心菜，整碗的 1/4",
+        "sources": [
+          "发光浆果 100 g：数据同 minecraft:glow_berries（蔓越莓（生），与甜浆果同一组数，作为发光浆果的参照）",
+          "蜂蜜瓶 338.1 g：数据同 minecraft:honey_bottle（蜂蜜，一瓶 250 mL）",
+          "番茄 123 g：数据同 farmersdelight:tomato（番茄（红，熟，生食））",
+          "金胡萝卜 61 g：数据同 minecraft:golden_carrot（胡萝卜（生），金粒不计）",
+          "甜菜根 82 g：数据同 minecraft:beetroot（甜菜根（生））",
+          "卷心菜 89 g：数据同 farmersdelight:cabbage（卷心菜（生））",
+          "配方：2 发光浆果 + 1 蜂蜜瓶 + 1 番茄 + 1 金胡萝卜 + 1 甜菜根 + 2 卷心菜 + 碗 → 1 闪亮沙拉（方块，可盛 4 份）（农夫乐事 1.21.1）"
+        ],
+        "processing": "配料直接拼合，不加热，不扣损失（建议值，用户批准，2026-11-13）",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "大餐方块放下后可盛 4 份（农夫乐事 FeastBlock.getMaxServings = 4），一份 = 整块配料之和 ÷ 4（建议值，用户批准，2026-11-13）",
+          "冷拼，不扣损失（建议值，用户批准，2026-11-13）",
+          "一份快吸收糖 69.6 g（来自蜂蜜），单份即超过 30 g 的档位，已告知用户（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      },
+      "only_on": [
+        "1.21.1"
+      ]
+    },
+    {
+      "items": [
+        "farmersdelight:dog_food"
+      ],
+      "serving_g": 327.5,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.7684,
+        "vitamin_b1_mg": 0.05703,
+        "vitamin_d_ug": 0.113
+      },
+      "basis": {
+        "food": "狗粮：腐肉、鸡肉、米饭（骨粉不计）",
+        "sources": [
+          "腐肉 113 g：数据同 minecraft:rotten_flesh（腐肉（僵尸掉落））",
+          "生鸡肉丁 56.5 g：数据同 farmersdelight:chicken_cuts（整鸡（带皮，生），生鸡肉丁）",
+          "米饭 158 g：数据同 farmersdelight:cooked_rice（白米饭（长粒，未强化，不加盐））",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "配方：烹饪锅：1 腐肉 + 1 骨粉 + 1 狼的猎物（标签，取第一种：生鸡肉标签中的生鸡肉丁）+ 1 大米 → 1 狗粮（农夫乐事）"
+        ],
+        "processing": "生鸡肉丁按 CHICKEN,SIMMERED,W/DRIPPINGS（0856） 计：维生素 C 85%、硫胺素 75%；维生素 D 按不损失计（03 第 5 节第 3 条）；咖啡因、快吸收糖不乘保留率",
+        "assumptions": [
+          "锅里煮的菜和合成的菜按游戏配方把配料各一份相加，产出多份再除，维生素按 USDA 保留率（农夫乐事通用规则，用户批准，2026-11-13）",
+          "标签配料：有农夫乐事切料的取切料，没有的取原版物品；一格可放不同食材时取配方所列的第一种（农夫乐事通用规则，用户批准，2026-11-13）",
+          "骨粉不计营养也不计重量（建议值，用户批准，2026-11-13）",
+          "一份大米按一份米饭计：1 大米在锅里煮成 1 米饭，取米饭的数 158 g（建议值，用户批准，2026-11-13）",
+          "杂质 5 来自腐肉（每份 5），煮过仍是腐肉，保留；生鸡肉丁的杂质不带入（已煮熟）（建议值，用户批准，2026-11-13）",
+          "1.21.1 的狼的猎物换为生肉标签（c:foods/raw_meat），生鸡肉丁仍在其中",
+          "咖啡因、酒精、快吸收糖为各配料之和（快吸收糖只来自配料自带的数据）"
+        ],
+        "confirmed": "2026-11-13"
+      },
+      "impurity": 5
+    }
+  ]
+}

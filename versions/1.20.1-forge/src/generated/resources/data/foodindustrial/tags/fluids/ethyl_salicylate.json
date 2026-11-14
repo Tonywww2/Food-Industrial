@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_salicylate",
+    "foodindustrial:flowing_ethyl_salicylate",
+    {
+      "id": "#forge:ethyl_salicylate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_salicylate",
+      "required": false
+    }
+  ]
+}

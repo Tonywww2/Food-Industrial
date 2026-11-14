@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/cinnamic_acid"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/cinnamyl_alcohol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:cinnamyl_cinnamate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

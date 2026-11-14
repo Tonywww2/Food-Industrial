@@ -4,6 +4,10 @@
     "foodindustrial:hydrogen_peroxide",
     "foodindustrial:flowing_hydrogen_peroxide",
     {
+      "id": "#forge:hydrogen_peroxide",
+      "required": false
+    },
+    {
       "id": "#c:hydrogen_peroxide",
       "required": false
     }

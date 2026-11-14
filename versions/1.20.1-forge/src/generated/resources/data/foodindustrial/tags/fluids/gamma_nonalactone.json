@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_nonalactone",
+    "foodindustrial:flowing_gamma_nonalactone",
+    {
+      "id": "#forge:gamma_nonalactone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_nonalactone",
+      "required": false
+    }
+  ]
+}

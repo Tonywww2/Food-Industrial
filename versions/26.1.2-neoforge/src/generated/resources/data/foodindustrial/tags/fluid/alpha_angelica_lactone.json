@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_angelica_lactone",
+    "foodindustrial:flowing_alpha_angelica_lactone",
+    {
+      "id": "#forge:alpha_angelica_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_angelica_lactone",
+      "required": false
+    }
+  ]
+}

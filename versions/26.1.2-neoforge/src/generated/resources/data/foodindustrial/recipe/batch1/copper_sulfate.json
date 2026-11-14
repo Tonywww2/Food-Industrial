@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/copper"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:copper_sulfate"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

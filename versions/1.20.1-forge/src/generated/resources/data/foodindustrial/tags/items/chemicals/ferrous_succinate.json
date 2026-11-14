@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_succinate",
+    {
+      "id": "#forge:dusts/ferrous_succinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferrous_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferrous_succinate",
+      "required": false
+    }
+  ]
+}

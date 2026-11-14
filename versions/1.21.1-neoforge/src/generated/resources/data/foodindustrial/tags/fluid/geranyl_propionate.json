@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_propionate",
+    "foodindustrial:flowing_geranyl_propionate",
+    {
+      "id": "#forge:geranyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_propionate",
+      "required": false
+    }
+  ]
+}

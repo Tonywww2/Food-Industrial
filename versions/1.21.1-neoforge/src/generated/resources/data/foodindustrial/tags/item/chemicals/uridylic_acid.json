@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:uridylic_acid",
+    {
+      "id": "#forge:dusts/uridylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/uridylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/uridylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/uridylic_acid",
+      "required": false
+    }
+  ]
+}

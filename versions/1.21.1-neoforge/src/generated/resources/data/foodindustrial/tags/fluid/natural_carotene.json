@@ -4,6 +4,10 @@
     "foodindustrial:natural_carotene",
     "foodindustrial:flowing_natural_carotene",
     {
+      "id": "#forge:natural_carotene",
+      "required": false
+    },
+    {
       "id": "#c:natural_carotene",
       "required": false
     }

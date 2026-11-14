@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_mercaptan",
+    "foodindustrial:flowing_furfuryl_mercaptan",
+    {
+      "id": "#forge:furfuryl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_mercaptan",
+      "required": false
+    }
+  ]
+}

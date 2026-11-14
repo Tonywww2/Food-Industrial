@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/trisodium_citrate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/trisodium_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trisodium_citrate",
+      "required": false
     }
   ]
 }

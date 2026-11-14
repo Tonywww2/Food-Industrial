@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxydihydrotheaspirane",
+    "foodindustrial:flowing_hydroxydihydrotheaspirane",
+    {
+      "id": "#forge:hydroxydihydrotheaspirane",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxydihydrotheaspirane",
+      "required": false
+    }
+  ]
+}

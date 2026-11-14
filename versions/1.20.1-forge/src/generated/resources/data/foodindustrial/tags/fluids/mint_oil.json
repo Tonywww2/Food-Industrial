@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mint_oil",
+    "foodindustrial:flowing_mint_oil",
+    {
+      "id": "#forge:mint_oil",
+      "required": false
+    },
+    {
+      "id": "#c:mint_oil",
+      "required": false
+    }
+  ]
+}

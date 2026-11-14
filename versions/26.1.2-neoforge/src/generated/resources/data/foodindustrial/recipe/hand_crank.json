@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": "#c:rods/wooden",
+    "P": "#minecraft:planks"
+  },
+  "pattern": [
+    "KK",
+    "K ",
+    "P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:hand_crank"
+  }
+}

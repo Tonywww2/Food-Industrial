@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/ammonium_chloride"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/quicklime"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_chloride"
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:ammonia"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

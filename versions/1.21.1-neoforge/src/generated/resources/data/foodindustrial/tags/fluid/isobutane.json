@@ -4,6 +4,10 @@
     "foodindustrial:isobutane",
     "foodindustrial:flowing_isobutane",
     {
+      "id": "#forge:isobutane",
+      "required": false
+    },
+    {
       "id": "#c:isobutane",
       "required": false
     }

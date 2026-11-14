@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/glyceryl_monocaprylate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/glyceryl_monocaprylate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glyceryl_monocaprylate",
+      "required": false
     }
   ]
 }

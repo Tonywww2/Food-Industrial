@@ -1,0 +1,58 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "tag": "foodindustrial:materials/candelilla_stem"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:water"
+    },
+    {
+      "amount": 100,
+      "fluidTag": "foodindustrial:sulfuric_acid"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:candelilla_wax",
+      "nbt": "{Purity:31b}"
+    }
+  ]
+}

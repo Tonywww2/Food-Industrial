@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/methylcellulose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/methylcellulose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylcellulose",
+      "required": false
     }
   ]
 }

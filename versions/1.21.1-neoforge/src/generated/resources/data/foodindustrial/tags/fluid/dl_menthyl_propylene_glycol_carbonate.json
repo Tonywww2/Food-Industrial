@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_menthyl_propylene_glycol_carbonate",
+    "foodindustrial:flowing_dl_menthyl_propylene_glycol_carbonate",
+    {
+      "id": "#forge:dl_menthyl_propylene_glycol_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:dl_menthyl_propylene_glycol_carbonate",
+      "required": false
+    }
+  ]
+}

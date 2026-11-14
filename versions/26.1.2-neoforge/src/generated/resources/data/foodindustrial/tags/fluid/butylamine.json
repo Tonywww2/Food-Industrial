@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butylamine",
+    "foodindustrial:flowing_butylamine",
+    {
+      "id": "#forge:butylamine",
+      "required": false
+    },
+    {
+      "id": "#c:butylamine",
+      "required": false
+    }
+  ]
+}

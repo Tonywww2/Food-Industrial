@@ -6,6 +6,10 @@
     {
       "id": "#forge:vacuum_gas_oil",
       "required": false
+    },
+    {
+      "id": "#c:vacuum_gas_oil",
+      "required": false
     }
   ]
 }

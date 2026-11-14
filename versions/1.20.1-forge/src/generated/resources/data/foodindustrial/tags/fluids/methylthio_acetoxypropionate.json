@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthio_acetoxypropionate",
+    "foodindustrial:flowing_methylthio_acetoxypropionate",
+    {
+      "id": "#forge:methylthio_acetoxypropionate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthio_acetoxypropionate",
+      "required": false
+    }
+  ]
+}

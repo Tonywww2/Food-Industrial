@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylanisole_2_4",
+    "foodindustrial:flowing_dimethylanisole_2_4",
+    {
+      "id": "#forge:dimethylanisole_2_4",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylanisole_2_4",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiamine_mononitrate",
+    {
+      "id": "#forge:dusts/thiamine_mononitrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thiamine_mononitrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/thiamine_mononitrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thiamine_mononitrate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethoxycinnamoyl_homoveratrylamine",
+    {
+      "id": "#forge:dusts/dimethoxycinnamoyl_homoveratrylamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethoxycinnamoyl_homoveratrylamine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimethoxycinnamoyl_homoveratrylamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethoxycinnamoyl_homoveratrylamine",
+      "required": false
+    }
+  ]
+}

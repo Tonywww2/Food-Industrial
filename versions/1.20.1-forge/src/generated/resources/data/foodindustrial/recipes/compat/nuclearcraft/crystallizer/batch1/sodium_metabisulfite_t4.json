@@ -1,0 +1,32 @@
+{
+  "type": "nuclearcraft:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "inputFluids": [
+    {
+      "amount": 2000,
+      "tag": "foodindustrial:sodium_bisulfite"
+    }
+  ],
+  "output": [
+    {
+      "type": "forge:nbt",
+      "item": "foodindustrial:sodium_metabisulfite",
+      "nbt": "{Purity:-8b}"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

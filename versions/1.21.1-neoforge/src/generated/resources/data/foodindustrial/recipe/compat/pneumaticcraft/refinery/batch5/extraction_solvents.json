@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:hydrotreated_naphtha"
+  },
+  "outputs": [
+    {
+      "amount": 600,
+      "id": "foodindustrial:vegetable_oil_extraction_solvent"
+    },
+    {
+      "amount": 300,
+      "id": "foodindustrial:petroleum_ether"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

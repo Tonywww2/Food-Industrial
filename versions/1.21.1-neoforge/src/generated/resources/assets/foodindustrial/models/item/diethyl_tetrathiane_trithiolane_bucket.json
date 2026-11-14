@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:diethyl_tetrathiane_trithiolane",
+  "loader": "neoforge:fluid_container"
+}

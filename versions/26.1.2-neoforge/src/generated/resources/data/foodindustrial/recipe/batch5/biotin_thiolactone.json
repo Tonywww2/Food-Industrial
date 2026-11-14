@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/biotin_lactone"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_sulfide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:biotin_thiolactone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

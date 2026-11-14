@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/coreopsis_yellow",
       "required": false
+    },
+    {
+      "id": "#c:dusts/coreopsis_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/coreopsis_yellow",
+      "required": false
     }
   ]
 }

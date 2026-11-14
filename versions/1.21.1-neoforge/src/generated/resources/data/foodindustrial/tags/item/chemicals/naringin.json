@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:naringin",
+    {
+      "id": "#forge:dusts/naringin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/naringin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/naringin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naringin",
+      "required": false
+    }
+  ]
+}

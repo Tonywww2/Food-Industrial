@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/glycyrrhizic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/glycyrrhizic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glycyrrhizic_acid",
+      "required": false
     }
   ]
 }

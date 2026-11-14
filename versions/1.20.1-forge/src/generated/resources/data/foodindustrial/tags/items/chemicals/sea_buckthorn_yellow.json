@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sea_buckthorn_yellow",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sea_buckthorn_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sea_buckthorn_yellow",
+      "required": false
     }
   ]
 }

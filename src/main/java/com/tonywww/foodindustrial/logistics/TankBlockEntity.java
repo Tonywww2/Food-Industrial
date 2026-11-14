@@ -9,6 +9,7 @@ import com.tonywww.foodindustrial.core.storage.FluidTransfer;
 import com.tonywww.foodindustrial.core.storage.StorageHost;
 import com.tonywww.foodindustrial.machine.component.Backoff;
 import com.tonywww.foodindustrial.machine.entity.FIBlockEntity;
+import com.tonywww.foodindustrial.manual.Tartar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -31,6 +32,9 @@ public class TankBlockEntity extends FIBlockEntity implements StorageHost {
     private boolean draining;
     private boolean pendingSync;
     private final Backoff drainBackoff = new Backoff();
+    /** H14: tartar on the walls of a wooden tank holding wine, and the ticks toward the next one. */
+    private int tartar;
+    private int tartarTicks;
     @Nullable
     private FluidTanks view;
 
@@ -135,7 +139,42 @@ public class TankBlockEntity extends FIBlockEntity implements StorageHost {
         pendingSync = true;
     }
 
+    /** Tartar ready to scrape (H14). */
+    public int tartar() {
+        return tartar;
+    }
+
+    /** Takes all the tartar off the walls and returns how much there was. */
+    public int scrapeTartar() {
+        int count = tartar;
+        tartar = 0;
+        if (count > 0) {
+            markUnsaved();
+            flushDirty();
+        }
+        return count;
+    }
+
     // ---- ticking: drain mode ----
+
+    /** H14: {@code delta} ticks of tartar growth on a wooden tank of wine; development commands pass more to skip time. */
+    public void growTartar(int delta) {
+        if (kind != TankKind.WOODEN || tartar >= Tartar.MAX) {
+            return;
+        }
+        int added = Tartar.progress(level, worldPosition, fluid, delta);
+        while (added > 0 && tartar < Tartar.MAX) {
+            int step = Math.min(added, Tartar.TIME - tartarTicks);
+            tartarTicks += step;
+            added -= step;
+            if (tartarTicks >= Tartar.TIME) {
+                tartarTicks = 0;
+                tartar++;
+            }
+            markUnsaved();
+            flushDirty();
+        }
+    }
 
     @Override
     public void serverTick() {
@@ -144,6 +183,9 @@ public class TankBlockEntity extends FIBlockEntity implements StorageHost {
             syncToClient();
         }
         long time = level.getGameTime();
+        if ((time + worldPosition.asLong()) % 20 == 0) {
+            growTartar(20);
+        }
         if (!draining || (time & 3) != 1 || !drainBackoff.due(time)) {
             return;
         }
@@ -249,12 +291,18 @@ public class TankBlockEntity extends FIBlockEntity implements StorageHost {
         if (draining) {
             out.putBoolean("Draining", true);
         }
+        if (tartar > 0 || tartarTicks > 0) {
+            out.putInt("Tartar", tartar);
+            out.putInt("TartarTicks", tartarTicks);
+        }
     }
 
     @Override
     protected void loadData(DataReader in) {
         fluid = in.getFluid("Fluid");
         draining = in.getBoolean("Draining", false);
+        tartar = in.getInt("Tartar", 0);
+        tartarTicks = in.getInt("TartarTicks", 0);
     }
 
     @Override

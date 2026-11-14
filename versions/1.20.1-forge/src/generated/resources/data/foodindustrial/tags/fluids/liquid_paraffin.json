@@ -6,6 +6,10 @@
     {
       "id": "#forge:liquid_paraffin",
       "required": false
+    },
+    {
+      "id": "#c:liquid_paraffin",
+      "required": false
     }
   ]
 }

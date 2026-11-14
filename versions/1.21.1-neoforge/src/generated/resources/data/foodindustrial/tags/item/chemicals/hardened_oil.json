@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hardened_oil",
+    {
+      "id": "#forge:dusts/hardened_oil",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hardened_oil",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hardened_oil",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hardened_oil",
+      "required": false
+    }
+  ]
+}

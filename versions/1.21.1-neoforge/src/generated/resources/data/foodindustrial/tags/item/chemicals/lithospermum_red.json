@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:lithospermum_red",
     {
+      "id": "#forge:dusts/lithospermum_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lithospermum_red",
+      "required": false
+    },
+    {
       "id": "#c:dusts/lithospermum_red",
       "required": false
     },

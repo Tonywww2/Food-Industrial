@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rum_ether",
+    "foodindustrial:flowing_rum_ether",
+    {
+      "id": "#forge:rum_ether",
+      "required": false
+    },
+    {
+      "id": "#c:rum_ether",
+      "required": false
+    }
+  ]
+}

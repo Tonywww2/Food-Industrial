@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:crude_bitter_almond_oil",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercapto_2_pentanone_4",
+    "foodindustrial:flowing_mercapto_2_pentanone_4",
+    {
+      "id": "#forge:mercapto_2_pentanone_4",
+      "required": false
+    },
+    {
+      "id": "#c:mercapto_2_pentanone_4",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:furfuryl_valerate",
+  "loader": "forge:fluid_container"
+}

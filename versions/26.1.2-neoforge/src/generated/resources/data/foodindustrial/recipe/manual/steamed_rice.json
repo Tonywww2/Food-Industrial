@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/rice"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:steamed_rice"
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200
+}

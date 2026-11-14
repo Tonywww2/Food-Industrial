@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cananga_oil",
+    "foodindustrial:flowing_cananga_oil",
+    {
+      "id": "#forge:cananga_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cananga_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aminooxoethylphenyl_menthanecarboxamide",
+    {
+      "id": "#forge:dusts/aminooxoethylphenyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aminooxoethylphenyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/aminooxoethylphenyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aminooxoethylphenyl_menthanecarboxamide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/monopotassium_phosphate"
+      }
+    }
+  ],
+  "mode": "melting",
+  "outputs": [
+    {
+      "item": "foodindustrial:potassium_polymetaphosphate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 400
+}

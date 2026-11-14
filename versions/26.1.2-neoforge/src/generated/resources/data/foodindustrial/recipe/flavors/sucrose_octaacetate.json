@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 8000,
+        "tag": "foodindustrial:acetic_anhydride"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_acetate"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sucrose_octaacetate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 8000,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

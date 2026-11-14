@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:castoreum_tincture",
+    "foodindustrial:flowing_castoreum_tincture",
+    {
+      "id": "#forge:castoreum_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:castoreum_tincture",
+      "required": false
+    }
+  ]
+}

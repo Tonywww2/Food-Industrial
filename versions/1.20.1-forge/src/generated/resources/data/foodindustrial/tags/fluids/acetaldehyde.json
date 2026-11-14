@@ -6,6 +6,10 @@
     {
       "id": "#forge:acetaldehyde",
       "required": false
+    },
+    {
+      "id": "#c:acetaldehyde",
+      "required": false
     }
   ]
 }

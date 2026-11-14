@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:white_thyme_oil",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiobutanal",
+    "foodindustrial:flowing_methylthiobutanal",
+    {
+      "id": "#forge:methylthiobutanal",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiobutanal",
+      "required": false
+    }
+  ]
+}

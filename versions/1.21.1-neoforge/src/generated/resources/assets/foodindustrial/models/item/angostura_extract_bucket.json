@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:angostura_extract",
+  "loader": "neoforge:fluid_container"
+}

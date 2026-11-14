@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:tools/knives",
+      "required": false
+    },
+    "foodindustrial:flint_knife"
+  ]
+}

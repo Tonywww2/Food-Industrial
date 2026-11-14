@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/polydextrose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/polydextrose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polydextrose",
+      "required": false
     }
   ]
 }

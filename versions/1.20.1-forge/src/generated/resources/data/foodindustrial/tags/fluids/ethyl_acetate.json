@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethyl_acetate",
       "required": false
+    },
+    {
+      "id": "#c:ethyl_acetate",
+      "required": false
     }
   ]
 }

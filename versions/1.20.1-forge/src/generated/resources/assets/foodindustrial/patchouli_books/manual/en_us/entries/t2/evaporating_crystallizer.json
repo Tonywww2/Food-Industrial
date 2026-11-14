@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:evaporating_crystallizer",
+  "name": "book.foodindustrial.manual.entry.evaporating_crystallizer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:evaporating_crystallizer",
+      "text": "book.foodindustrial.manual.entry.evaporating_crystallizer.text"
+    }
+  ],
+  "sortnum": 3
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:cascara_bitterless_extract",
+  "loader": "neoforge:fluid_container"
+}

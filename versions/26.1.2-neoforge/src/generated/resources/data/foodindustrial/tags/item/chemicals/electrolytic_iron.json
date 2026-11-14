@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:electrolytic_iron",
+    {
+      "id": "#forge:dusts/electrolytic_iron",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/electrolytic_iron",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/electrolytic_iron",
+      "required": false
+    },
+    {
+      "id": "#c:gems/electrolytic_iron",
+      "required": false
+    }
+  ]
+}

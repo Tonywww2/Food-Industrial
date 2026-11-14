@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:acetyl_dimethylpyrazine",
+  "loader": "forge:fluid_container"
+}

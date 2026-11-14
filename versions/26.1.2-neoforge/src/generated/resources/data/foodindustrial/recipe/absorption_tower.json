@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "foodindustrial:machine_frame",
+    "R": "#c:dusts/redstone",
+    "T": "foodindustrial:metal_tank",
+    "W": "foodindustrial:tower_wall"
+  },
+  "pattern": [
+    "WTW",
+    "RFR",
+    "WRW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:absorption_tower"
+  }
+}

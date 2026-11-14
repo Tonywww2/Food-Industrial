@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epsilon_dodecalactone",
+    "foodindustrial:flowing_epsilon_dodecalactone",
+    {
+      "id": "#forge:epsilon_dodecalactone",
+      "required": false
+    },
+    {
+      "id": "#c:epsilon_dodecalactone",
+      "required": false
+    }
+  ]
+}

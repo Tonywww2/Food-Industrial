@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:chloro_methyl_tetrahydropyran",
+  "loader": "neoforge:fluid_container"
+}

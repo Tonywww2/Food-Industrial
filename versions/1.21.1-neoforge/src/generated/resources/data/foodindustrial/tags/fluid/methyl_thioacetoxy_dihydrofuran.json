@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_thioacetoxy_dihydrofuran",
+    "foodindustrial:flowing_methyl_thioacetoxy_dihydrofuran",
+    {
+      "id": "#forge:methyl_thioacetoxy_dihydrofuran",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_thioacetoxy_dihydrofuran",
+      "required": false
+    }
+  ]
+}

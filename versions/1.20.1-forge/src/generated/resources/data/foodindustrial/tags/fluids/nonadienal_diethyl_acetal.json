@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonadienal_diethyl_acetal",
+    "foodindustrial:flowing_nonadienal_diethyl_acetal",
+    {
+      "id": "#forge:nonadienal_diethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:nonadienal_diethyl_acetal",
+      "required": false
+    }
+  ]
+}

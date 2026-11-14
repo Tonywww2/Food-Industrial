@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:crimson_glory_rose_absolute",
+    "foodindustrial:flowing_crimson_glory_rose_absolute",
+    {
+      "id": "#forge:crimson_glory_rose_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:crimson_glory_rose_absolute",
+      "required": false
+    }
+  ]
+}

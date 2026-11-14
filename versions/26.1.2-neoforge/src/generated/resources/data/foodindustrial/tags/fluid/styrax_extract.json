@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:styrax_extract",
+    "foodindustrial:flowing_styrax_extract",
+    {
+      "id": "#forge:styrax_extract",
+      "required": false
+    },
+    {
+      "id": "#c:styrax_extract",
+      "required": false
+    }
+  ]
+}

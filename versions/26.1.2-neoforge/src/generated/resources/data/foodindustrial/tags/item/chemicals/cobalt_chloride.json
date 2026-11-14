@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cobalt_chloride",
+    {
+      "id": "#forge:dusts/cobalt_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cobalt_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cobalt_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cobalt_chloride",
+      "required": false
+    }
+  ]
+}

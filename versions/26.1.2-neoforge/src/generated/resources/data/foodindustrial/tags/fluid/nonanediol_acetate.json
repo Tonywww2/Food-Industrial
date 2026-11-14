@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonanediol_acetate",
+    "foodindustrial:flowing_nonanediol_acetate",
+    {
+      "id": "#forge:nonanediol_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:nonanediol_acetate",
+      "required": false
+    }
+  ]
+}

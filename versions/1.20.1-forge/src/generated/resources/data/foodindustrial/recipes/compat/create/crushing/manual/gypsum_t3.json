@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/gypsum"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:gypsum",
+      "nbt": "{Purity:25b}"
+    }
+  ]
+}

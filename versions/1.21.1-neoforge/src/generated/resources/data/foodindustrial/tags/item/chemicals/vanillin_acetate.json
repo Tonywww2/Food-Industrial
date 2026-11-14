@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillin_acetate",
+    {
+      "id": "#forge:dusts/vanillin_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vanillin_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/vanillin_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vanillin_acetate",
+      "required": false
+    }
+  ]
+}

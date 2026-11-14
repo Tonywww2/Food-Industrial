@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_thiocyanate",
+    {
+      "id": "#forge:dusts/potassium_thiocyanate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_thiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_thiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_thiocyanate",
+      "required": false
+    }
+  ]
+}

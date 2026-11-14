@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:drying_rack",
+  "name": "book.foodindustrial.manual.entry.history_kanten",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:drying_rack",
+      "text": "book.foodindustrial.manual.entry.history_kanten.text"
+    }
+  ],
+  "sortnum": 3
+}

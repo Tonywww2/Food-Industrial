@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:soy_protein_hydrolysate",
+  "loader": "forge:fluid_container"
+}

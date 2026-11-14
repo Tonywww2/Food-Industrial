@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decatrienal",
+    "foodindustrial:flowing_decatrienal",
+    {
+      "id": "#forge:decatrienal",
+      "required": false
+    },
+    {
+      "id": "#c:decatrienal",
+      "required": false
+    }
+  ]
+}

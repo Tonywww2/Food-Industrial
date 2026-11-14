@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glucosamine_hydrochloride",
+    {
+      "id": "#forge:dusts/glucosamine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glucosamine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/glucosamine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glucosamine_hydrochloride",
+      "required": false
+    }
+  ]
+}

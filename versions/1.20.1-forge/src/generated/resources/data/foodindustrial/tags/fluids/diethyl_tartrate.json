@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_tartrate",
+    "foodindustrial:flowing_diethyl_tartrate",
+    {
+      "id": "#forge:diethyl_tartrate",
+      "required": false
+    },
+    {
+      "id": "#c:diethyl_tartrate",
+      "required": false
+    }
+  ]
+}

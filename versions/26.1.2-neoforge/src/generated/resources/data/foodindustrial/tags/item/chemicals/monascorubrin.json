@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:monascorubrin",
     {
+      "id": "#forge:dusts/monascorubrin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monascorubrin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/monascorubrin",
       "required": false
     },

@@ -8,6 +8,18 @@
     {
       "id": "#forge:raw_fishes",
       "required": false
+    },
+    {
+      "id": "#c:foods/raw_fish",
+      "required": false
+    },
+    {
+      "id": "#c:raw_fishes",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/raw_fish",
+      "required": false
     }
   ]
 }

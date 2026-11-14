@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/gardenia"
+    }
+  ],
+  "manual": {
+    "actions": 4
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:crushed_gardenia"
+    }
+  ],
+  "time": 200
+}

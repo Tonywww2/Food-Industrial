@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobornyl_acetate",
+    "foodindustrial:flowing_isobornyl_acetate",
+    {
+      "id": "#forge:isobornyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:isobornyl_acetate",
+      "required": false
+    }
+  ]
+}

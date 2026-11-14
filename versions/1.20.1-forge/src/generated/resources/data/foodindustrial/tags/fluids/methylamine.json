@@ -6,6 +6,10 @@
     {
       "id": "#forge:methylamine",
       "required": false
+    },
+    {
+      "id": "#c:methylamine",
+      "required": false
     }
   ]
 }

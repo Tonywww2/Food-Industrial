@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:enzymes/lipase",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:stillingia_oil"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:ethyl_decadienoate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

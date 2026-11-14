@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dithiane_1_4",
+    {
+      "id": "#forge:dusts/dithiane_1_4",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dithiane_1_4",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dithiane_1_4",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dithiane_1_4",
+      "required": false
+    }
+  ]
+}

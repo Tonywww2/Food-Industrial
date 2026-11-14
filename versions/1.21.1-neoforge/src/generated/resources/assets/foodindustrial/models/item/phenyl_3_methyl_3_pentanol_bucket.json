@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:phenyl_3_methyl_3_pentanol",
+  "loader": "neoforge:fluid_container"
+}

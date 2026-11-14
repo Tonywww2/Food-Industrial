@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:basil_extract",
+    "foodindustrial:flowing_basil_extract",
+    {
+      "id": "#forge:basil_extract",
+      "required": false
+    },
+    {
+      "id": "#c:basil_extract",
+      "required": false
+    }
+  ]
+}

@@ -1,8 +1,13 @@
 {
   "replace": false,
   "values": [
+    "foodindustrial:chili_pepper",
     {
       "id": "#forge:crops/chilipepper",
+      "required": false
+    },
+    {
+      "id": "#c:crops/chilipepper",
       "required": false
     }
   ]

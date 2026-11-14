@@ -4,6 +4,10 @@
     "foodindustrial:stabilized_chlorine_dioxide",
     "foodindustrial:flowing_stabilized_chlorine_dioxide",
     {
+      "id": "#forge:stabilized_chlorine_dioxide",
+      "required": false
+    },
+    {
       "id": "#c:stabilized_chlorine_dioxide",
       "required": false
     }

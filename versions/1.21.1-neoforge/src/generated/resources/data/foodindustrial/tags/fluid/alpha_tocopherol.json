@@ -4,6 +4,10 @@
     "foodindustrial:alpha_tocopherol",
     "foodindustrial:flowing_alpha_tocopherol",
     {
+      "id": "#forge:alpha_tocopherol",
+      "required": false
+    },
+    {
       "id": "#c:alpha_tocopherol",
       "required": false
     }

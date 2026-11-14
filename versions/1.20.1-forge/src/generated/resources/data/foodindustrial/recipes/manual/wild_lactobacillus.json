@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/vegetables"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:brine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:lactic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 1.2
+      }
+    },
+    {
+      "item": "foodindustrial:lactobacillus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight"
+  },
+  "time": 48000
+}

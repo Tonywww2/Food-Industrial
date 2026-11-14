@@ -1,0 +1,50 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 6,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/calcium_carbonate"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/citric_acid"
+      }
+    },
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/malic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_citrate_malate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 6000,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

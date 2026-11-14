@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fennel_oil",
+    "foodindustrial:flowing_fennel_oil",
+    {
+      "id": "#forge:fennel_oil",
+      "required": false
+    },
+    {
+      "id": "#c:fennel_oil",
+      "required": false
+    }
+  ]
+}

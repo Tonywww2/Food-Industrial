@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dandelion_root_extract_solid",
+    {
+      "id": "#forge:dusts/dandelion_root_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dandelion_root_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dandelion_root_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dandelion_root_extract_solid",
+      "required": false
+    }
+  ]
+}

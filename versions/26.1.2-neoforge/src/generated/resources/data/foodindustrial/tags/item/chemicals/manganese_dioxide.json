@@ -3,11 +3,35 @@
   "values": [
     "foodindustrial:manganese_dioxide",
     {
+      "id": "#forge:dusts/manganese_dioxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/manganese_dioxide",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/pyrolusite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pyrolusite",
+      "required": false
+    },
+    {
       "id": "#c:dusts/manganese_dioxide",
       "required": false
     },
     {
       "id": "#c:gems/manganese_dioxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pyrolusite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pyrolusite",
       "required": false
     }
   ]

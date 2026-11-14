@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polydimethylsiloxane_emulsion",
+    "foodindustrial:flowing_polydimethylsiloxane_emulsion",
+    {
+      "id": "#forge:polydimethylsiloxane_emulsion",
+      "required": false
+    },
+    {
+      "id": "#c:polydimethylsiloxane_emulsion",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "H": {
+      "item": "minecraft:hay_block"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "PCP",
+    "CHC",
+    "PCP"
+  ],
+  "result": {
+    "count": 8,
+    "id": "foodindustrial:koji_room_wall"
+  }
+}

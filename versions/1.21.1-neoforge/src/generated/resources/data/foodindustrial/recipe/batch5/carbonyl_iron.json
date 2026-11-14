@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:iron_pentacarbonyl"
+      }
+    }
+  ],
+  "mode": "cracking",
+  "outputs": [
+    {
+      "item": "foodindustrial:carbonyl_iron",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 5000,
+      "fluid": "foodindustrial:carbon_monoxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/methylcellulose"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:methylcellulose"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 100
+}

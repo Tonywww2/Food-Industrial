@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/rhodium"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/iodine"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:rhodium_iodide_catalyst"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

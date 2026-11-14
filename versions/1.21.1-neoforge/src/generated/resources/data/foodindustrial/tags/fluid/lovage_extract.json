@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lovage_extract",
+    "foodindustrial:flowing_lovage_extract",
+    {
+      "id": "#forge:lovage_extract",
+      "required": false
+    },
+    {
+      "id": "#c:lovage_extract",
+      "required": false
+    }
+  ]
+}

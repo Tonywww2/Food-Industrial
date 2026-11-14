@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/silicon",
       "required": false
+    },
+    {
+      "id": "#c:dusts/silicon",
+      "required": false
+    },
+    {
+      "id": "#c:gems/silicon",
+      "required": false
     }
   ]
 }

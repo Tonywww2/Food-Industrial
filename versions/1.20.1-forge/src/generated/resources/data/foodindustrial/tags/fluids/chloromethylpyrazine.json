@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chloromethylpyrazine",
+    "foodindustrial:flowing_chloromethylpyrazine",
+    {
+      "id": "#forge:chloromethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:chloromethylpyrazine",
+      "required": false
+    }
+  ]
+}

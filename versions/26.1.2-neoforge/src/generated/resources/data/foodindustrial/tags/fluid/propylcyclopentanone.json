@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propylcyclopentanone",
+    "foodindustrial:flowing_propylcyclopentanone",
+    {
+      "id": "#forge:propylcyclopentanone",
+      "required": false
+    },
+    {
+      "id": "#c:propylcyclopentanone",
+      "required": false
+    }
+  ]
+}

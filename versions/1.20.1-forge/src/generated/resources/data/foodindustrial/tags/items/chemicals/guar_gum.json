@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/guar_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/guar_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/guar_gum",
+      "required": false
     }
   ]
 }

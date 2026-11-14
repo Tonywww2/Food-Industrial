@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_salicylate",
+    "foodindustrial:flowing_butyl_salicylate",
+    {
+      "id": "#forge:butyl_salicylate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_salicylate",
+      "required": false
+    }
+  ]
+}

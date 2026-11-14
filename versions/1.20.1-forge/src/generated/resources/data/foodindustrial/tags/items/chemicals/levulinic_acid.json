@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:levulinic_acid",
+    {
+      "id": "#forge:dusts/levulinic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/levulinic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/levulinic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/levulinic_acid",
+      "required": false
+    }
+  ]
+}

@@ -6,6 +6,18 @@
     {
       "id": "#forge:triolein",
       "required": false
+    },
+    {
+      "id": "#forge:seed_oil",
+      "required": false
+    },
+    {
+      "id": "#c:triolein",
+      "required": false
+    },
+    {
+      "id": "#c:seed_oil",
+      "required": false
     }
   ]
 }

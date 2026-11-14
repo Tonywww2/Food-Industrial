@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "input": {
+    "fluid": {
+      "amount": 2000,
+      "tag": "foodindustrial:bittern"
+    }
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": 31
+    },
+    "count": 1,
+    "id": "foodindustrial:carnallite"
+  },
+  "temperature": 273
+}

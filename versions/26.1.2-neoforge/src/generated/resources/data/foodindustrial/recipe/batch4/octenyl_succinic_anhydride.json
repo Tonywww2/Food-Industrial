@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/maleic_anhydride"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:octene"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:octenyl_succinic_anhydride"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

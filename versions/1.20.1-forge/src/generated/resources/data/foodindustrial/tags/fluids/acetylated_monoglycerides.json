@@ -6,6 +6,10 @@
     {
       "id": "#forge:acetylated_monoglycerides",
       "required": false
+    },
+    {
+      "id": "#c:acetylated_monoglycerides",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_dl_malate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_dl_malate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_dl_malate",
+      "required": false
     }
   ]
 }

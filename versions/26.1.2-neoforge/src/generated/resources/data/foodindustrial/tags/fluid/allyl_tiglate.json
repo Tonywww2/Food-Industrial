@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_tiglate",
+    "foodindustrial:flowing_allyl_tiglate",
+    {
+      "id": "#forge:allyl_tiglate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_tiglate",
+      "required": false
+    }
+  ]
+}

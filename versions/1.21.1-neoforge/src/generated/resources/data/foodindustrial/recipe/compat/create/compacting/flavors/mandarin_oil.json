@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    },
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    },
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    },
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    },
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    },
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    },
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    },
+    {
+      "tag": "foodindustrial:materials/mandarin"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "foodindustrial:mandarin_oil"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/karaya_lump"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:karaya_gum",
+      "purity": {
+        "mode": "source",
+        "value": 40
+      }
+    }
+  ],
+  "time": 200
+}

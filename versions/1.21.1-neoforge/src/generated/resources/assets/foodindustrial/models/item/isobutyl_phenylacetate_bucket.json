@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:isobutyl_phenylacetate",
+  "loader": "neoforge:fluid_container"
+}

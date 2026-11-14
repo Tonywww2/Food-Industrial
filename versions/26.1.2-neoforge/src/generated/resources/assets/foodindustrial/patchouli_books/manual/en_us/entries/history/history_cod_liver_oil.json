@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "minecraft:cod",
+  "name": "book.foodindustrial.manual.entry.history_cod_liver_oil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:cod",
+      "text": "book.foodindustrial.manual.entry.history_cod_liver_oil.text"
+    }
+  ],
+  "sortnum": 11
+}

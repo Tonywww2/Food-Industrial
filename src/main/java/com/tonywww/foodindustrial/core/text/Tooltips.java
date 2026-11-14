@@ -5,6 +5,7 @@ import com.tonywww.foodindustrial.core.purity.Purity;
 import com.tonywww.foodindustrial.core.purity.PurityScale;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import net.minecraft.ChatFormatting;
+import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.TextColor;
@@ -91,7 +92,10 @@ public final class Tooltips {
 
     private static void description(String descriptionKey, List<Component> lines, boolean shiftDown) {
         if (shiftDown) {
-            lines.add(Component.translatable(descriptionKey).withStyle(ChatFormatting.GRAY));
+            // a tier named in the sentence takes its colour (§3.4)
+            String text = Language.getInstance().getOrDefault(descriptionKey);
+            lines.add(TierText.namesTier(text) ? TierText.colored(text, ChatFormatting.GRAY)
+                : Component.translatable(descriptionKey).withStyle(ChatFormatting.GRAY));
         }
     }
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_nonanoate",
+    "foodindustrial:flowing_allyl_nonanoate",
+    {
+      "id": "#forge:allyl_nonanoate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_nonanoate",
+      "required": false
+    }
+  ]
+}

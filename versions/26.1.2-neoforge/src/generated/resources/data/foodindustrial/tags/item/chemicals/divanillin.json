@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:divanillin",
+    {
+      "id": "#forge:dusts/divanillin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/divanillin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/divanillin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/divanillin",
+      "required": false
+    }
+  ]
+}

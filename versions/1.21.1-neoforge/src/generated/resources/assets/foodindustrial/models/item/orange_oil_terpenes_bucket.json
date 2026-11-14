@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:orange_oil_terpenes",
+  "loader": "neoforge:fluid_container"
+}

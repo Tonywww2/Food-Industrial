@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/acetobacter",
+    "runs": 8
+  },
+  "environment_factors": {
+    "cold_biome": {
+      "time": 2.0
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:fruit_wine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 4
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air"
+  },
+  "time": 48000
+}

@@ -1,0 +1,24 @@
+{
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:molten_glyceryl_monocaprylate"
+  },
+  "max_temp": 273,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:glyceryl_monocaprylate",
+    "nbt": "{Purity:-17b}"
+  }
+}

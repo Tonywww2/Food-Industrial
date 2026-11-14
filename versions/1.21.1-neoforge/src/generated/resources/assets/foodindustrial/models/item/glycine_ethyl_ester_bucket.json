@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:glycine_ethyl_ester",
+  "loader": "neoforge:fluid_container"
+}

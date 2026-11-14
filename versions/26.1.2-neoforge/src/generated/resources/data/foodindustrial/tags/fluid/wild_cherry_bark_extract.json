@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wild_cherry_bark_extract",
+    "foodindustrial:flowing_wild_cherry_bark_extract",
+    {
+      "id": "#forge:wild_cherry_bark_extract",
+      "required": false
+    },
+    {
+      "id": "#c:wild_cherry_bark_extract",
+      "required": false
+    }
+  ]
+}

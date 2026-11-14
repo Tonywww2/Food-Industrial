@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/glutamic_acid_hydrochloride",
       "required": false
+    },
+    {
+      "id": "#c:dusts/glutamic_acid_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glutamic_acid_hydrochloride",
+      "required": false
     }
   ]
 }

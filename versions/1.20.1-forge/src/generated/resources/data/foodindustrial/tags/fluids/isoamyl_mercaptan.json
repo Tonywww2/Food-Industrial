@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_mercaptan",
+    "foodindustrial:flowing_isoamyl_mercaptan",
+    {
+      "id": "#forge:isoamyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_mercaptan",
+      "required": false
+    }
+  ]
+}

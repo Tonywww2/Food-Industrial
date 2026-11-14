@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ferric_ammonium_citrate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ferric_ammonium_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferric_ammonium_citrate",
+      "required": false
     }
   ]
 }

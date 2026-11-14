@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthoxyethanol",
+    "foodindustrial:flowing_menthoxyethanol",
+    {
+      "id": "#forge:menthoxyethanol",
+      "required": false
+    },
+    {
+      "id": "#c:menthoxyethanol",
+      "required": false
+    }
+  ]
+}

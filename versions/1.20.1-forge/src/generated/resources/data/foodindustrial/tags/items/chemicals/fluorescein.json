@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/fluorescein",
       "required": false
+    },
+    {
+      "id": "#c:dusts/fluorescein",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fluorescein",
+      "required": false
     }
   ]
 }

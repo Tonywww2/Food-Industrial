@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiopropylamine",
+    "foodindustrial:flowing_methylthiopropylamine",
+    {
+      "id": "#forge:methylthiopropylamine",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiopropylamine",
+      "required": false
+    }
+  ]
+}

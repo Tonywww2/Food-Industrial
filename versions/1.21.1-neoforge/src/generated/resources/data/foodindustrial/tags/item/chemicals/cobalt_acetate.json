@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cobalt_acetate",
+    {
+      "id": "#forge:dusts/cobalt_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cobalt_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cobalt_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cobalt_acetate",
+      "required": false
+    }
+  ]
+}

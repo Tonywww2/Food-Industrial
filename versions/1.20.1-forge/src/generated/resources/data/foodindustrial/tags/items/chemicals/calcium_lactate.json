@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_lactate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_lactate",
+      "required": false
     }
   ]
 }

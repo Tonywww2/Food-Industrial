@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_3_hydroxybutyrate",
+    "foodindustrial:flowing_ethyl_3_hydroxybutyrate",
+    {
+      "id": "#forge:ethyl_3_hydroxybutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_3_hydroxybutyrate",
+      "required": false
+    }
+  ]
+}

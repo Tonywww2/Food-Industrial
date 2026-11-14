@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/animal_fat"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:glycerol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:glyceryl_monostearate",
+      "purity": {
+        "mode": "source",
+        "value": 45
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

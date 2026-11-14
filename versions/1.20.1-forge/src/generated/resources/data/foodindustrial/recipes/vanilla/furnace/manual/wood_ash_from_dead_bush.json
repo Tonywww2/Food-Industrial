@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:vanilla_smelting",
+  "recipe": {
+    "type": "foodindustrial:kiln",
+    "inputs": [
+      {
+        "ingredient": {
+          "tag": "foodindustrial:materials/saltbush"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "item": "foodindustrial:wood_ash"
+      }
+    ],
+    "requirements": {
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace"
+    ]
+  }
+}

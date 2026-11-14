@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:copper_gluconate",
+    {
+      "id": "#forge:dusts/copper_gluconate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/copper_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/copper_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper_gluconate",
+      "required": false
+    }
+  ]
+}

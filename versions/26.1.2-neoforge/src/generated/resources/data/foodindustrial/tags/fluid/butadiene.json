@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butadiene",
+    "foodindustrial:flowing_butadiene",
+    {
+      "id": "#forge:butadiene",
+      "required": false
+    },
+    {
+      "id": "#c:butadiene",
+      "required": false
+    }
+  ]
+}

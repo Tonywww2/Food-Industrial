@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:damascenone",
+    "foodindustrial:flowing_damascenone",
+    {
+      "id": "#forge:damascenone",
+      "required": false
+    },
+    {
+      "id": "#c:damascenone",
+      "required": false
+    }
+  ]
+}

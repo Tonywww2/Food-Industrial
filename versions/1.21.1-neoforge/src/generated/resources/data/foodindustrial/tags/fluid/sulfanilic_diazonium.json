@@ -4,6 +4,10 @@
     "foodindustrial:sulfanilic_diazonium",
     "foodindustrial:flowing_sulfanilic_diazonium",
     {
+      "id": "#forge:sulfanilic_diazonium",
+      "required": false
+    },
+    {
       "id": "#c:sulfanilic_diazonium",
       "required": false
     }

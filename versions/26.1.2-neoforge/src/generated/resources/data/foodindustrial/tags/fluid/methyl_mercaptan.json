@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_mercaptan",
+    "foodindustrial:flowing_methyl_mercaptan",
+    {
+      "id": "#forge:methyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_mercaptan",
+      "required": false
+    }
+  ]
+}

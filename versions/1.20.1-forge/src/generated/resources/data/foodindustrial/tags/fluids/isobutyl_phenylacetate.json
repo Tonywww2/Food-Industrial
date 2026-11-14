@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_phenylacetate",
+    "foodindustrial:flowing_isobutyl_phenylacetate",
+    {
+      "id": "#forge:isobutyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

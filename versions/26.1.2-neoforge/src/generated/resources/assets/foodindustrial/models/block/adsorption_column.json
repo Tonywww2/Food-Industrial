@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/adsorption_column_front",
+    "side": "foodindustrial:block/adsorption_column_side",
+    "top": "foodindustrial:block/adsorption_column_top"
+  }
+}

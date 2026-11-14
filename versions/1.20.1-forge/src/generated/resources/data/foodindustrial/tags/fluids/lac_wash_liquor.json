@@ -6,6 +6,10 @@
     {
       "id": "#forge:lac_wash_liquor",
       "required": false
+    },
+    {
+      "id": "#c:lac_wash_liquor",
+      "required": false
     }
   ]
 }

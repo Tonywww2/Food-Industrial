@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:vanillyl_butyl_ether",
+  "loader": "forge:fluid_container"
+}

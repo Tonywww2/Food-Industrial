@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/aluminium_sulfate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/aluminium_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aluminium_sulfate",
+      "required": false
     }
   ]
 }

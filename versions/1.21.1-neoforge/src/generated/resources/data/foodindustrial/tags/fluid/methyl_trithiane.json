@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_trithiane",
+    "foodindustrial:flowing_methyl_trithiane",
+    {
+      "id": "#forge:methyl_trithiane",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_trithiane",
+      "required": false
+    }
+  ]
+}

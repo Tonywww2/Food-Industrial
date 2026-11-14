@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperonylideneacetone",
+    {
+      "id": "#forge:dusts/piperonylideneacetone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/piperonylideneacetone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/piperonylideneacetone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/piperonylideneacetone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopulegyl_acetate",
+    "foodindustrial:flowing_isopulegyl_acetate",
+    {
+      "id": "#forge:isopulegyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:isopulegyl_acetate",
+      "required": false
+    }
+  ]
+}

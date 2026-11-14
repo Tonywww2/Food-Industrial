@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:molten_partially_dimerized_rosin",
+  "loader": "neoforge:fluid_container"
+}

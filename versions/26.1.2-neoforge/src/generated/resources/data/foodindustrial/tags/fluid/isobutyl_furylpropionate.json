@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_furylpropionate",
+    "foodindustrial:flowing_isobutyl_furylpropionate",
+    {
+      "id": "#forge:isobutyl_furylpropionate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_furylpropionate",
+      "required": false
+    }
+  ]
+}

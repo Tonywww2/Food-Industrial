@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_propylphenol",
+    "foodindustrial:flowing_o_propylphenol",
+    {
+      "id": "#forge:o_propylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:o_propylphenol",
+      "required": false
+    }
+  ]
+}

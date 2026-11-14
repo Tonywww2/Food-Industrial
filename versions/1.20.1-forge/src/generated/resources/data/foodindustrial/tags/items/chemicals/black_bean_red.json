@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/black_bean_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/black_bean_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/black_bean_red",
+      "required": false
     }
   ]
 }

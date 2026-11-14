@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citral_dimethyl_acetal",
+    "foodindustrial:flowing_citral_dimethyl_acetal",
+    {
+      "id": "#forge:citral_dimethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:citral_dimethyl_acetal",
+      "required": false
+    }
+  ]
+}

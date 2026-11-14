@@ -6,6 +6,10 @@
     {
       "id": "#forge:coal_tar",
       "required": false
+    },
+    {
+      "id": "#c:coal_tar",
+      "required": false
     }
   ]
 }

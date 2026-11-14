@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_phenyl_2_butanol",
+    "foodindustrial:flowing_methyl_phenyl_2_butanol",
+    {
+      "id": "#forge:methyl_phenyl_2_butanol",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_phenyl_2_butanol",
+      "required": false
+    }
+  ]
+}

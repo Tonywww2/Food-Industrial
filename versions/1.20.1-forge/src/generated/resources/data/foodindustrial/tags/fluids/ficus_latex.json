@@ -6,6 +6,10 @@
     {
       "id": "#forge:ficus_latex",
       "required": false
+    },
+    {
+      "id": "#c:ficus_latex",
+      "required": false
     }
   ]
 }

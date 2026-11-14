@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sialyllactose_sodium",
+    {
+      "id": "#forge:dusts/sialyllactose_sodium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sialyllactose_sodium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sialyllactose_sodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sialyllactose_sodium",
+      "required": false
+    }
+  ]
+}

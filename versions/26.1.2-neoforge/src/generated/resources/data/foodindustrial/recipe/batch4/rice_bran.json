@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/paddy"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:rice"
+    },
+    {
+      "item": "foodindustrial:rice_bran"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

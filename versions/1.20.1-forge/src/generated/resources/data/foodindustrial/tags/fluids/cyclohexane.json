@@ -6,6 +6,10 @@
     {
       "id": "#forge:cyclohexane",
       "required": false
+    },
+    {
+      "id": "#c:cyclohexane",
+      "required": false
     }
   ]
 }

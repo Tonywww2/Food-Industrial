@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetramethylpyrazine",
+    {
+      "id": "#forge:dusts/tetramethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tetramethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tetramethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tetramethylpyrazine",
+      "required": false
+    }
+  ]
+}

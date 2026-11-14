@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_citrate_malate",
+    {
+      "id": "#forge:dusts/calcium_citrate_malate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_citrate_malate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_citrate_malate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_citrate_malate",
+      "required": false
+    }
+  ]
+}

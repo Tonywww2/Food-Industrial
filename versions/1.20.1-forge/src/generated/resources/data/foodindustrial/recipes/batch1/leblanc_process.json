@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_sulfate"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/calcium_carbonate"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/coal"
+      }
+    }
+  ],
+  "mode": "melting",
+  "outputs": [
+    {
+      "item": "foodindustrial:soda_ash"
+    },
+    {
+      "item": "foodindustrial:calcium_sulfide"
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

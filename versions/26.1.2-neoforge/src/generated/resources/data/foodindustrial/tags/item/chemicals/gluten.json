@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:gluten",
     {
+      "id": "#forge:dusts/gluten",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gluten",
+      "required": false
+    },
+    {
       "id": "#c:dusts/gluten",
       "required": false
     },

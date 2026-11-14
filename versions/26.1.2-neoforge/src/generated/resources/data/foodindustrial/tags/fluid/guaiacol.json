@@ -4,6 +4,10 @@
     "foodindustrial:guaiacol",
     "foodindustrial:flowing_guaiacol",
     {
+      "id": "#forge:guaiacol",
+      "required": false
+    },
+    {
       "id": "#c:guaiacol",
       "required": false
     }

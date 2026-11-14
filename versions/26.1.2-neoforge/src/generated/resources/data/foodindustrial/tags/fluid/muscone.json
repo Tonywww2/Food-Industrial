@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:muscone",
+    "foodindustrial:flowing_muscone",
+    {
+      "id": "#forge:muscone",
+      "required": false
+    },
+    {
+      "id": "#c:muscone",
+      "required": false
+    }
+  ]
+}

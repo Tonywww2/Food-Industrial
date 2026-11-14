@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_furanacrylate",
+    "foodindustrial:flowing_propyl_furanacrylate",
+    {
+      "id": "#forge:propyl_furanacrylate",
+      "required": false
+    },
+    {
+      "id": "#c:propyl_furanacrylate",
+      "required": false
+    }
+  ]
+}

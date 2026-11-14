@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_isopropyl_ketone",
+    "foodindustrial:flowing_methyl_isopropyl_ketone",
+    {
+      "id": "#forge:methyl_isopropyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_isopropyl_ketone",
+      "required": false
+    }
+  ]
+}

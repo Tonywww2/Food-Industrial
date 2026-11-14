@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bornyl_isovalerate",
+    "foodindustrial:flowing_bornyl_isovalerate",
+    {
+      "id": "#forge:bornyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:bornyl_isovalerate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylvaleraldehyde",
+    "foodindustrial:flowing_methylvaleraldehyde",
+    {
+      "id": "#forge:methylvaleraldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:methylvaleraldehyde",
+      "required": false
+    }
+  ]
+}

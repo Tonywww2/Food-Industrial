@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/pine_stump"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:n_hexane"
+      }
+    }
+  ],
+  "mode": "solvent_extraction",
+  "outputs": [
+    {
+      "item": "foodindustrial:wood_rosin"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:turpentine"
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:n_hexane",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

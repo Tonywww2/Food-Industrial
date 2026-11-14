@@ -1,0 +1,27 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "tag": "foodindustrial:materials/pyrolusite"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:manganese_dioxide",
+      "nbt": "{Purity:34b}"
+    }
+  ]
+}

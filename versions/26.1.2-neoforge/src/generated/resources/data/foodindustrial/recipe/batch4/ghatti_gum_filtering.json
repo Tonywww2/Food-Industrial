@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/ghatti_gum"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:ghatti_gum"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "filtration"
+    ],
+    "min_tier": "t2"
+  },
+  "time": 100
+}

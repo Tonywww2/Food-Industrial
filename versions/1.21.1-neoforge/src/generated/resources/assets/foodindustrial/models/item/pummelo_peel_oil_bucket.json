@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:pummelo_peel_oil",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:canadian_snakeroot_oil",
+    "foodindustrial:flowing_canadian_snakeroot_oil",
+    {
+      "id": "#forge:canadian_snakeroot_oil",
+      "required": false
+    },
+    {
+      "id": "#c:canadian_snakeroot_oil",
+      "required": false
+    }
+  ]
+}

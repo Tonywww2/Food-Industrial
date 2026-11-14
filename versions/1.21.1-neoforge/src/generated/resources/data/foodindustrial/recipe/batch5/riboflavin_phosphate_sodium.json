@@ -1,0 +1,59 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/riboflavin"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:phosphoryl_chloride"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:gamma_butyrolactone"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:riboflavin_phosphate_sodium",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:gamma_butyrolactone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

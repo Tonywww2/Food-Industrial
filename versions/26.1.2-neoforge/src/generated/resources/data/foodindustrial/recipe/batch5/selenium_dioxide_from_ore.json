@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/selenium_ore"
+    }
+  ],
+  "mode": "roasting",
+  "outputs": [
+    {
+      "item": "foodindustrial:selenium_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:sulfur_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 400
+}

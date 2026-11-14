@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:s_methyl_thioacetate",
+    "foodindustrial:flowing_s_methyl_thioacetate",
+    {
+      "id": "#forge:s_methyl_thioacetate",
+      "required": false
+    },
+    {
+      "id": "#c:s_methyl_thioacetate",
+      "required": false
+    }
+  ]
+}

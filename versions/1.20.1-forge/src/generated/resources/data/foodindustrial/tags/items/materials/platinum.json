@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:ingots/platinum",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/platinum",
+      "required": false
+    }
+  ]
+}

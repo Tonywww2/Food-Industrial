@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/mulberry_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/mulberry_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/mulberry_red",
+      "required": false
     }
   ]
 }

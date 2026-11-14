@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:o_dimethoxybenzene",
+  "loader": "neoforge:fluid_container"
+}

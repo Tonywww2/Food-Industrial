@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:malonic_acid",
+    {
+      "id": "#forge:dusts/malonic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/malonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/malonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/malonic_acid",
+      "required": false
+    }
+  ]
+}

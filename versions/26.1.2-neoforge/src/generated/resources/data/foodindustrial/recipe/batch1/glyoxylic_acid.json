@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:electrolyzing",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/electrode"
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/oxalic_acid"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "electroreduction",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:glyoxylic_acid"
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:oxygen"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

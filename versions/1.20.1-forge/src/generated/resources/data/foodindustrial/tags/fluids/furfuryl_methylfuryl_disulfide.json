@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_methylfuryl_disulfide",
+    "foodindustrial:flowing_furfuryl_methylfuryl_disulfide",
+    {
+      "id": "#forge:furfuryl_methylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_methylfuryl_disulfide",
+      "required": false
+    }
+  ]
+}

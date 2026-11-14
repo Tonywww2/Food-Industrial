@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:diacetyltartaric_anhydride",
     {
+      "id": "#forge:dusts/diacetyltartaric_anhydride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/diacetyltartaric_anhydride",
+      "required": false
+    },
+    {
       "id": "#c:dusts/diacetyltartaric_anhydride",
       "required": false
     },

@@ -1,0 +1,42 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:potash_lye"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:cellulose",
+      "nbt": "{Purity:-1b}"
+    }
+  ]
+}

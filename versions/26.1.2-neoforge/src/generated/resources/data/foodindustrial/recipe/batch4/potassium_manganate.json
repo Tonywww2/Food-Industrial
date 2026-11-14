@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/manganese_dioxide"
+    },
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/potassium_hydroxide"
+    }
+  ],
+  "mode": "roasting",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:potassium_manganate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

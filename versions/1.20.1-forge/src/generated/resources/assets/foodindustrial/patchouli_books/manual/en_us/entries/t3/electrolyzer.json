@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t3",
+  "icon": "foodindustrial:electrolyzer",
+  "name": "book.foodindustrial.manual.entry.electrolyzer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:electrolyzer",
+      "text": "book.foodindustrial.manual.entry.electrolyzer.text"
+    }
+  ],
+  "sortnum": 2
+}

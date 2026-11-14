@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:crude_oil"
+      }
+    }
+  ],
+  "mode": "cracking",
+  "outputs": [
+    {
+      "amount": 400,
+      "fluid": "foodindustrial:ethylene",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 200,
+      "fluid": "foodindustrial:propene",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:butane",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

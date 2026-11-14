@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:winter_savory_oil",
+    "foodindustrial:flowing_winter_savory_oil",
+    {
+      "id": "#forge:winter_savory_oil",
+      "required": false
+    },
+    {
+      "id": "#c:winter_savory_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cobalamin_broth",
+    "foodindustrial:flowing_cobalamin_broth",
+    {
+      "id": "#forge:cobalamin_broth",
+      "required": false
+    },
+    {
+      "id": "#c:cobalamin_broth",
+      "required": false
+    }
+  ]
+}

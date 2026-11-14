@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:vanillin_menthoxypropanediol_acetal",
+  "loader": "neoforge:fluid_container"
+}

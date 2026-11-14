@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    },
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    },
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    },
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    },
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    },
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    },
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    },
+    {
+      "tag": "foodindustrial:materials/bitter_orange"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "foodindustrial:bitter_orange_oil"
+    }
+  ]
+}

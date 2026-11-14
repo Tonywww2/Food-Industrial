@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": "minecraft:hay_block",
+    "L": "minecraft:barrel"
+  },
+  "pattern": [
+    "H",
+    "L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:leach_barrel"
+  }
+}

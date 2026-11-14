@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_nitrate",
+    {
+      "id": "#forge:dusts/ammonium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ammonium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ammonium_nitrate",
+      "required": false
+    }
+  ]
+}

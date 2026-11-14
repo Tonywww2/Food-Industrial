@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:aglaia_flower_tincture",
+  "loader": "neoforge:fluid_container"
+}

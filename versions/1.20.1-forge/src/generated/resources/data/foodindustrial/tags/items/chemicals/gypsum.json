@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gypsum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gypsum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gypsum",
+      "required": false
     }
   ]
 }

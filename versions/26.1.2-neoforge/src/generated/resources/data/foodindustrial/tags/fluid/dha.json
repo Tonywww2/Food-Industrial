@@ -4,6 +4,10 @@
     "foodindustrial:dha",
     "foodindustrial:flowing_dha",
     {
+      "id": "#forge:dha",
+      "required": false
+    },
+    {
       "id": "#c:dha",
       "required": false
     }

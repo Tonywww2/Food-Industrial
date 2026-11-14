@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/g_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/g_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/g_acid",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:anisyl_propionate"
+  },
+  "result": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:anisyl_propionate",
+      "nbt": "{Purity:32b}"
+    }
+  ]
+}

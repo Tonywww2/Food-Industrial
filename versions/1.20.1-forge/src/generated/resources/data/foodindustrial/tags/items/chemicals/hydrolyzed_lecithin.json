@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/hydrolyzed_lecithin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/hydrolyzed_lecithin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydrolyzed_lecithin",
+      "required": false
     }
   ]
 }

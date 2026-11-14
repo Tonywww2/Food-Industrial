@@ -6,6 +6,10 @@
     {
       "id": "#forge:dimethylbutanal",
       "required": false
+    },
+    {
+      "id": "#c:dimethylbutanal",
+      "required": false
     }
   ]
 }

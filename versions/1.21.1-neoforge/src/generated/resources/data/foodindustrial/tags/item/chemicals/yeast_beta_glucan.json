@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:yeast_beta_glucan",
+    {
+      "id": "#forge:dusts/yeast_beta_glucan",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/yeast_beta_glucan",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/yeast_beta_glucan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/yeast_beta_glucan",
+      "required": false
+    }
+  ]
+}

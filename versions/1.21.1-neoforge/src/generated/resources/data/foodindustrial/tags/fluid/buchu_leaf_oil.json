@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:buchu_leaf_oil",
+    "foodindustrial:flowing_buchu_leaf_oil",
+    {
+      "id": "#forge:buchu_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:buchu_leaf_oil",
+      "required": false
+    }
+  ]
+}

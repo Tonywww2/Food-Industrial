@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:crotonic_acid",
+    {
+      "id": "#forge:dusts/crotonic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/crotonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/crotonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/crotonic_acid",
+      "required": false
+    }
+  ]
+}

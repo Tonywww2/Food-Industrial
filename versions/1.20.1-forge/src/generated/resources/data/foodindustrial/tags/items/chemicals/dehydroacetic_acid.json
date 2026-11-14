@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/dehydroacetic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/dehydroacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dehydroacetic_acid",
+      "required": false
     }
   ]
 }

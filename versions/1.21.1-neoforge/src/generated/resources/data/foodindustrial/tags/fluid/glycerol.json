@@ -4,6 +4,10 @@
     "foodindustrial:glycerol",
     "foodindustrial:flowing_glycerol",
     {
+      "id": "#forge:glycerol",
+      "required": false
+    },
+    {
       "id": "#c:glycerol",
       "required": false
     }

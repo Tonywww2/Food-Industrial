@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dipropionyl",
+    "foodindustrial:flowing_dipropionyl",
+    {
+      "id": "#forge:dipropionyl",
+      "required": false
+    },
+    {
+      "id": "#c:dipropionyl",
+      "required": false
+    }
+  ]
+}

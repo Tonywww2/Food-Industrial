@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "neoforge:ingredient_type": "foodindustrial:purity",
+      "base": "#foodindustrial:cultures/aspergillus_niger",
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:pectin_liquor"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:pectinase"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

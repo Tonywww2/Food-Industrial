@@ -4,6 +4,10 @@
     "foodindustrial:ethylenediamine",
     "foodindustrial:flowing_ethylenediamine",
     {
+      "id": "#forge:ethylenediamine",
+      "required": false
+    },
+    {
       "id": "#c:ethylenediamine",
       "required": false
     }

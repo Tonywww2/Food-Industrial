@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:ethyl_vanillylmandelic_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:ethyl_vanillin"
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

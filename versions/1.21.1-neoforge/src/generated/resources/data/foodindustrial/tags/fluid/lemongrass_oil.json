@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lemongrass_oil",
+    "foodindustrial:flowing_lemongrass_oil",
+    {
+      "id": "#forge:lemongrass_oil",
+      "required": false
+    },
+    {
+      "id": "#c:lemongrass_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_caryophyllene",
+    "foodindustrial:flowing_beta_caryophyllene",
+    {
+      "id": "#forge:beta_caryophyllene",
+      "required": false
+    },
+    {
+      "id": "#c:beta_caryophyllene",
+      "required": false
+    }
+  ]
+}

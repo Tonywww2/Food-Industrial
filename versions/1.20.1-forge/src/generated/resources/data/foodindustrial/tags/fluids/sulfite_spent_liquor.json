@@ -6,6 +6,10 @@
     {
       "id": "#forge:sulfite_spent_liquor",
       "required": false
+    },
+    {
+      "id": "#c:sulfite_spent_liquor",
+      "required": false
     }
   ]
 }

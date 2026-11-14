@@ -80,20 +80,32 @@ public final class PlatformRecipes {
         }
     }
 
+    /** Every registered kind, in registration order (recipe sync to clients from 26.1 on). */
+    private static final List<Kind<?>> KINDS = new ArrayList<>();
+    //? if >=26.1 {
+    /*/^* Recipes of the mod's kinds the server sent with the last datapack sync (client side). ^/
+    private static volatile net.minecraft.world.item.crafting.RecipeMap clientRecipes;
+    *///?}
+
     /** Registers recipe type and serializer {@code foodindustrial:<name>}. */
     public static <D> Kind<D> register(String name, MapCodec<D> codec) {
         Kind<D> kind = new Kind<>(name, codec);
+        KINDS.add(kind);
         kind.type = PlatformRegistry.register(Registries.RECIPE_TYPE, name, () -> RecipeType.simple(PlatformIdentifier.id(name)));
         kind.serializer = PlatformRegistry.register(Registries.RECIPE_SERIALIZER, name, () -> createSerializer(kind));
         return kind;
     }
 
-    /** All loaded recipes of {@code kind} (server side; empty on clients from 26.1 on). */
+    /**
+     * All loaded recipes of {@code kind}. Clients from 26.1 on hold the recipes the server sent with the
+     * datapack sync ({@link #bindSync}).
+     */
     public static <D> List<D> all(Level level, Kind<D> kind) {
         List<D> result = new ArrayList<>();
         //? if >=26.1 {
-        /*if (level instanceof ServerLevel serverLevel) {
-            for (RecipeHolder<DataRecipe<D>> holder : serverLevel.recipeAccess().recipeMap().byType(kind.type.get())) {
+        /*net.minecraft.world.item.crafting.RecipeMap map = level instanceof ServerLevel serverLevel ? serverLevel.recipeAccess().recipeMap() : clientRecipes;
+        if (map != null) {
+            for (RecipeHolder<DataRecipe<D>> holder : map.byType(kind.type.get())) {
                 result.add(holder.value().data());
             }
         }
@@ -111,6 +123,27 @@ public final class PlatformRecipes {
         return result;
     }
 
+    /**
+     * From 26.1 on, servers send clients only the recipe types a mod asks for: sends every kind of the
+     * mod with the datapack sync and keeps what the client receives (JEI and other client views). Earlier
+     * nodes sync every recipe; nothing to do there. Called once from the mod entrypoint.
+     */
+    public static void bindSync() {
+        //? if >=26.1 {
+        /*net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.OnDatapackSyncEvent event) -> {
+            for (Kind<?> kind : KINDS) {
+                event.sendRecipes(kind.type.get());
+            }
+        });
+        if (com.tonywww.foodindustrial.platform.Platform.isPhysicalClient()) {
+            net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.client.event.RecipesReceivedEvent event) ->
+                clientRecipes = event.getRecipeMap());
+            net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent.LoggingOut event) ->
+                clientRecipes = null);
+        }
+        *///?}
+    }
+
     /** JSON ops that know the level's registries (tag ingredients encode as tags on every node). */
     public static DynamicOps<JsonElement> jsonOps(Level level) {
         //? if >=1.21 {
@@ -124,12 +157,13 @@ public final class PlatformRecipes {
     public record Loaded<D>(String id, D data) {
     }
 
-    /** All loaded recipes of {@code kind} with their ids (server side; empty on clients from 26.1 on). */
+    /** All loaded recipes of {@code kind} with their ids (clients from 26.1 on: as {@link #all}). */
     public static <D> List<Loaded<D>> loaded(Level level, Kind<D> kind) {
         List<Loaded<D>> result = new ArrayList<>();
         //? if >=26.1 {
-        /*if (level instanceof ServerLevel serverLevel) {
-            for (RecipeHolder<DataRecipe<D>> holder : serverLevel.recipeAccess().recipeMap().byType(kind.type.get())) {
+        /*net.minecraft.world.item.crafting.RecipeMap map = level instanceof ServerLevel serverLevel ? serverLevel.recipeAccess().recipeMap() : clientRecipes;
+        if (map != null) {
+            for (RecipeHolder<DataRecipe<D>> holder : map.byType(kind.type.get())) {
                 result.add(new Loaded<>(holder.id().identifier().toString(), holder.value().data()));
             }
         }

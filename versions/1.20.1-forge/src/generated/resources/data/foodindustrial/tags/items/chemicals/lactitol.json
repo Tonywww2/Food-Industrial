@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/lactitol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/lactitol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lactitol",
+      "required": false
     }
   ]
 }

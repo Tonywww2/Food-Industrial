@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:starter_culture_broth",
+    "foodindustrial:flowing_starter_culture_broth",
+    {
+      "id": "#forge:starter_culture_broth",
+      "required": false
+    },
+    {
+      "id": "#c:starter_culture_broth",
+      "required": false
+    }
+  ]
+}

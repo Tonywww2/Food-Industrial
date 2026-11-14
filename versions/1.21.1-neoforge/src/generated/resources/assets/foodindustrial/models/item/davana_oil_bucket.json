@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:davana_oil",
+  "loader": "neoforge:fluid_container"
+}

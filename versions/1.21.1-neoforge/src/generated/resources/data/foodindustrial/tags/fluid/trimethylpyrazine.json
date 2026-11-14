@@ -4,6 +4,10 @@
     "foodindustrial:trimethylpyrazine",
     "foodindustrial:flowing_trimethylpyrazine",
     {
+      "id": "#forge:trimethylpyrazine",
+      "required": false
+    },
+    {
       "id": "#c:trimethylpyrazine",
       "required": false
     }

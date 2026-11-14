@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/resorcinol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/resorcinol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/resorcinol",
+      "required": false
     }
   ]
 }

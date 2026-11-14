@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiophene",
+    "foodindustrial:flowing_thiophene",
+    {
+      "id": "#forge:thiophene",
+      "required": false
+    },
+    {
+      "id": "#c:thiophene",
+      "required": false
+    }
+  ]
+}

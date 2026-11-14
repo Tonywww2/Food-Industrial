@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyroligneous_acid_extract",
+    "foodindustrial:flowing_pyroligneous_acid_extract",
+    {
+      "id": "#forge:pyroligneous_acid_extract",
+      "required": false
+    },
+    {
+      "id": "#c:pyroligneous_acid_extract",
+      "required": false
+    }
+  ]
+}

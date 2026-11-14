@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:theophylline",
     {
+      "id": "#forge:dusts/theophylline",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/theophylline",
+      "required": false
+    },
+    {
       "id": "#c:dusts/theophylline",
       "required": false
     },

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amyl_acetate",
+    "foodindustrial:flowing_amyl_acetate",
+    {
+      "id": "#forge:amyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:amyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/activated_carbon",
       "required": false
+    },
+    {
+      "id": "#c:dusts/activated_carbon",
+      "required": false
+    },
+    {
+      "id": "#c:gems/activated_carbon",
+      "required": false
     }
   ]
 }

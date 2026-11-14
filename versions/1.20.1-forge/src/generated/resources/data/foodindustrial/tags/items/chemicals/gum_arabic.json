@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gum_arabic",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gum_arabic",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gum_arabic",
+      "required": false
     }
   ]
 }

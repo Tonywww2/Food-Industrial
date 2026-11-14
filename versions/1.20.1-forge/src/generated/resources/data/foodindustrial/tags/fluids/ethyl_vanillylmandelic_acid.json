@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethyl_vanillylmandelic_acid",
       "required": false
+    },
+    {
+      "id": "#c:ethyl_vanillylmandelic_acid",
+      "required": false
     }
   ]
 }

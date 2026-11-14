@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:vegetable_oil",
+      "required": false
+    },
+    "foodindustrial:crude_soybean_oil",
+    "foodindustrial:fish_liver_oil"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrocinnamaldehyde",
+    "foodindustrial:flowing_hydrocinnamaldehyde",
+    {
+      "id": "#forge:hydrocinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:hydrocinnamaldehyde",
+      "required": false
+    }
+  ]
+}

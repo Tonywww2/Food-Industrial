@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:hydroxyapatite",
     {
+      "id": "#forge:dusts/hydroxyapatite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxyapatite",
+      "required": false
+    },
+    {
       "id": "#c:dusts/hydroxyapatite",
       "required": false
     },

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/hexylresorcinol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/hexylresorcinol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hexylresorcinol",
+      "required": false
     }
   ]
 }

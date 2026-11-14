@@ -4,6 +4,10 @@
     "foodindustrial:ferric_tartrate",
     "foodindustrial:flowing_ferric_tartrate",
     {
+      "id": "#forge:ferric_tartrate",
+      "required": false
+    },
+    {
       "id": "#c:ferric_tartrate",
       "required": false
     }

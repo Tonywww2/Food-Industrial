@@ -6,6 +6,10 @@
     {
       "id": "#forge:tomato_oleoresin",
       "required": false
+    },
+    {
+      "id": "#c:tomato_oleoresin",
+      "required": false
     }
   ]
 }

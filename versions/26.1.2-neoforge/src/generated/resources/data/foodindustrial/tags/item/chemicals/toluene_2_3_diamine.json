@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:toluene_2_3_diamine",
+    {
+      "id": "#forge:dusts/toluene_2_3_diamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/toluene_2_3_diamine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/toluene_2_3_diamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/toluene_2_3_diamine",
+      "required": false
+    }
+  ]
+}

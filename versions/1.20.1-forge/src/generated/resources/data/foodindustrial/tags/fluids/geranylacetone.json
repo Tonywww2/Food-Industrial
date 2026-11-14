@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranylacetone",
+    "foodindustrial:flowing_geranylacetone",
+    {
+      "id": "#forge:geranylacetone",
+      "required": false
+    },
+    {
+      "id": "#c:geranylacetone",
+      "required": false
+    }
+  ]
+}

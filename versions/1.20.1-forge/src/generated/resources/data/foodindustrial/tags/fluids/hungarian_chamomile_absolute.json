@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hungarian_chamomile_absolute",
+    "foodindustrial:flowing_hungarian_chamomile_absolute",
+    {
+      "id": "#forge:hungarian_chamomile_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:hungarian_chamomile_absolute",
+      "required": false
+    }
+  ]
+}

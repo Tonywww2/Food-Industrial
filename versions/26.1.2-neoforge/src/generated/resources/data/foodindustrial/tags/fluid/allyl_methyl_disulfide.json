@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_methyl_disulfide",
+    "foodindustrial:flowing_allyl_methyl_disulfide",
+    {
+      "id": "#forge:allyl_methyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_methyl_disulfide",
+      "required": false
+    }
+  ]
+}

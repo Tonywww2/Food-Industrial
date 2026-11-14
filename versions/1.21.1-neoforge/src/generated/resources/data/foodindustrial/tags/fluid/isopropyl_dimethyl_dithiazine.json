@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopropyl_dimethyl_dithiazine",
+    "foodindustrial:flowing_isopropyl_dimethyl_dithiazine",
+    {
+      "id": "#forge:isopropyl_dimethyl_dithiazine",
+      "required": false
+    },
+    {
+      "id": "#c:isopropyl_dimethyl_dithiazine",
+      "required": false
+    }
+  ]
+}

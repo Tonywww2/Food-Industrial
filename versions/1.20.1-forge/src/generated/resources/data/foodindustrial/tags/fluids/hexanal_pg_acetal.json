@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexanal_pg_acetal",
+    "foodindustrial:flowing_hexanal_pg_acetal",
+    {
+      "id": "#forge:hexanal_pg_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:hexanal_pg_acetal",
+      "required": false
+    }
+  ]
+}

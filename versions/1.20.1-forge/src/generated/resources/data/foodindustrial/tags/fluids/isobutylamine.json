@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutylamine",
+    "foodindustrial:flowing_isobutylamine",
+    {
+      "id": "#forge:isobutylamine",
+      "required": false
+    },
+    {
+      "id": "#c:isobutylamine",
+      "required": false
+    }
+  ]
+}

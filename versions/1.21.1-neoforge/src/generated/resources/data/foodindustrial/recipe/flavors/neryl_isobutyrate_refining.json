@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:neryl_isobutyrate"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:neryl_isobutyrate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

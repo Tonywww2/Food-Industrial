@@ -18,11 +18,19 @@ public final class Lang {
     private static final Map<String, String> EN = new TreeMap<>();
     /** Professional name → common name (text standard §2.1), from the material table. */
     private static final Map<String, String> COMMON_NAMES = new TreeMap<>();
+    /** Keys whose text is a material's standard name (checked as chemical names, I31). */
+    private static final java.util.Set<String> CHEMICAL_NAMES = new java.util.HashSet<>();
 
     private Lang() {
     }
 
     /** Adds one key in both languages. A key may be added only once. */
+    /** Adds an entry whose text is a material's standard name, checked by the chemical name rules (I31). */
+    public static void addName(String key, String zh, String en) {
+        add(key, zh, en);
+        CHEMICAL_NAMES.add(key);
+    }
+
     public static void add(String key, String zh, String en) {
         if (ZH.containsKey(key)) {
             throw new IllegalStateException("Duplicate language key " + key);
@@ -84,7 +92,7 @@ public final class Lang {
     /** Registers the language generator. Called once from {@link FoodIndustrial#init()}. */
     public static void bootstrap() {
         PlatformDatagen.register("lang", sink -> {
-            TextChecks.checkAll(ZH, EN, COMMON_NAMES);
+            TextChecks.checkAll(ZH, EN, COMMON_NAMES, CHEMICAL_NAMES);
             sink.json(PlatformDatagen.Kind.LANG, FoodIndustrial.MOD_ID, "zh_cn", toJson(ZH));
             sink.json(PlatformDatagen.Kind.LANG, FoodIndustrial.MOD_ID, "en_us", toJson(EN));
         });

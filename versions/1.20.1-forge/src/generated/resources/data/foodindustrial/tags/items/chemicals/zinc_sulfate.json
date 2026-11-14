@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/zinc_sulfate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_sulfate",
+      "required": false
     }
   ]
 }

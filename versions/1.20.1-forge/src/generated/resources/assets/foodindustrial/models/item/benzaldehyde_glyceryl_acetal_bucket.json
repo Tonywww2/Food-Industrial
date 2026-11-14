@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:benzaldehyde_glyceryl_acetal",
+  "loader": "forge:fluid_container"
+}

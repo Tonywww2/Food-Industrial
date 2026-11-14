@@ -6,6 +6,10 @@
     {
       "id": "#forge:nitric_oxide",
       "required": false
+    },
+    {
+      "id": "#c:nitric_oxide",
+      "required": false
     }
   ]
 }

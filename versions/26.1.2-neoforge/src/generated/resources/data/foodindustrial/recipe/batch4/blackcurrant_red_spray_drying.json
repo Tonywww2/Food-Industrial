@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/blackcurrant_red"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:blackcurrant_red"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "sensitive",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

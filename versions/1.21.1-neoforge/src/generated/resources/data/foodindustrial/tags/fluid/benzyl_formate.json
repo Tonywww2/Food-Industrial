@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_formate",
+    "foodindustrial:flowing_benzyl_formate",
+    {
+      "id": "#forge:benzyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_formate",
+      "required": false
+    }
+  ]
+}

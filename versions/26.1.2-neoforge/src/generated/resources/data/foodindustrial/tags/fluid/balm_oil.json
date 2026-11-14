@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:balm_oil",
+    "foodindustrial:flowing_balm_oil",
+    {
+      "id": "#forge:balm_oil",
+      "required": false
+    },
+    {
+      "id": "#c:balm_oil",
+      "required": false
+    }
+  ]
+}

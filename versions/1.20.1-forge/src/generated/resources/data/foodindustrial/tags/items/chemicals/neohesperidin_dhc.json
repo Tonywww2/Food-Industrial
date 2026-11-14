@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:neohesperidin_dhc",
+    {
+      "id": "#forge:dusts/neohesperidin_dhc",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/neohesperidin_dhc",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/neohesperidin_dhc",
+      "required": false
+    },
+    {
+      "id": "#c:gems/neohesperidin_dhc",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "thermal:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 3000,
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid_tag": "foodindustrial:ethanol"
+    },
+    {
+      "count": 2,
+      "tag": "foodindustrial:chemicals/lutein"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:lutein",
+      "nbt": "{Purity:13b}"
+    }
+  ]
+}

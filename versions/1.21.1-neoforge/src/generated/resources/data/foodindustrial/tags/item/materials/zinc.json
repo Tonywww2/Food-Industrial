@@ -4,6 +4,10 @@
     {
       "id": "#c:ingots/zinc",
       "required": false
+    },
+    {
+      "id": "#forge:ingots/zinc",
+      "required": false
     }
   ]
 }

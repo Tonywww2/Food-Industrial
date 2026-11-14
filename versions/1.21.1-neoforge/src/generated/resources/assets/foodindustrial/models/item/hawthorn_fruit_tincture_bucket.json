@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hawthorn_fruit_tincture",
+  "loader": "neoforge:fluid_container"
+}

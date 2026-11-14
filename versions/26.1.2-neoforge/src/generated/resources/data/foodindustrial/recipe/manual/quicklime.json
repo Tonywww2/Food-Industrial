@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/limestone"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:quicklime",
+      "purity": {
+        "mode": "source",
+        "value": 90
+      }
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200,
+  "vanilla_devices": [
+    "furnace",
+    "blast_furnace"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:parsley_oleoresin",
+    "foodindustrial:flowing_parsley_oleoresin",
+    {
+      "id": "#forge:parsley_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:parsley_oleoresin",
+      "required": false
+    }
+  ]
+}

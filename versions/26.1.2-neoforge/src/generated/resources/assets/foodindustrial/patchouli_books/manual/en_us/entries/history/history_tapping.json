@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:flint_knife",
+  "name": "book.foodindustrial.manual.entry.history_tapping",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:flint_knife",
+      "text": "book.foodindustrial.manual.entry.history_tapping.text"
+    }
+  ],
+  "sortnum": 12
+}

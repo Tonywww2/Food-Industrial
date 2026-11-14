@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ricinoleic_acid"
+      }
+    }
+  ],
+  "mode": "cracking",
+  "outputs": [
+    {
+      "item": "foodindustrial:undecylenic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:heptanal",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

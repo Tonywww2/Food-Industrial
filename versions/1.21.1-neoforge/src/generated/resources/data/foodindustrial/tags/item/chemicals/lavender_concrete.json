@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lavender_concrete",
+    {
+      "id": "#forge:dusts/lavender_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lavender_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lavender_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lavender_concrete",
+      "required": false
+    }
+  ]
+}

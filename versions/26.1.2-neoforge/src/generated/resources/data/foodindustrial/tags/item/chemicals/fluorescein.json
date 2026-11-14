@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:fluorescein",
     {
+      "id": "#forge:dusts/fluorescein",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fluorescein",
+      "required": false
+    },
+    {
       "id": "#c:dusts/fluorescein",
       "required": false
     },

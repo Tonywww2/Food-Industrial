@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:civetone",
+    {
+      "id": "#forge:dusts/civetone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/civetone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/civetone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/civetone",
+      "required": false
+    }
+  ]
+}

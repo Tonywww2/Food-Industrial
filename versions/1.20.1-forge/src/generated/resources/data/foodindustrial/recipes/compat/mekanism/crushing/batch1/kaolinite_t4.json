@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "amount": 4,
+    "ingredient": {
+      "tag": "foodindustrial:materials/clay"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:kaolinite",
+    "nbt": "{Purity:34b}"
+  }
+}

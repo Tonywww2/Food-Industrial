@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionyl_thiazoline",
+    "foodindustrial:flowing_propionyl_thiazoline",
+    {
+      "id": "#forge:propionyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#c:propionyl_thiazoline",
+      "required": false
+    }
+  ]
+}

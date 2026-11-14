@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:e2_decenoic_acid",
+  "loader": "neoforge:fluid_container"
+}

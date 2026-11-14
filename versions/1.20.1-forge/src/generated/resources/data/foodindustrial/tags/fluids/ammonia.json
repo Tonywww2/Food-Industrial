@@ -6,6 +6,10 @@
     {
       "id": "#forge:ammonia",
       "required": false
+    },
+    {
+      "id": "#c:ammonia",
+      "required": false
     }
   ]
 }

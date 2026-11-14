@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bis_methylfuryl_tetrasulfide",
+    "foodindustrial:flowing_bis_methylfuryl_tetrasulfide",
+    {
+      "id": "#forge:bis_methylfuryl_tetrasulfide",
+      "required": false
+    },
+    {
+      "id": "#c:bis_methylfuryl_tetrasulfide",
+      "required": false
+    }
+  ]
+}

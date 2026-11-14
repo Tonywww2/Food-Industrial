@@ -9,6 +9,30 @@
     {
       "id": "#forge:gems/slaked_lime",
       "required": false
+    },
+    {
+      "id": "#forge:dusts/calcium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/slaked_lime",
+      "required": false
+    },
+    {
+      "id": "#c:gems/slaked_lime",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_hydroxide",
+      "required": false
     }
   ]
 }

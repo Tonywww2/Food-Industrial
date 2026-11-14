@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionic_anhydride",
+    "foodindustrial:flowing_propionic_anhydride",
+    {
+      "id": "#forge:propionic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:propionic_anhydride",
+      "required": false
+    }
+  ]
+}

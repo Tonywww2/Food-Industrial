@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/soluble_soybean_polysaccharide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/soluble_soybean_polysaccharide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/soluble_soybean_polysaccharide",
+      "required": false
     }
   ]
 }

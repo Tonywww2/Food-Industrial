@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/copper"
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/phenol"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:chlorobenzene"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:diphenyl_ether"
+    },
+    {
+      "item": "foodindustrial:salt"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

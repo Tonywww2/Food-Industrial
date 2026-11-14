@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/ion_exchange_resin",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/phenol"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydroxybutanone"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:raspberry_ketone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

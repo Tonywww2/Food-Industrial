@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:luohan_fruit_tincture",
+  "loader": "neoforge:fluid_container"
+}

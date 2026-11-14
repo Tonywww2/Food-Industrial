@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_2_hexenoic_acid",
+    {
+      "id": "#forge:dusts/trans_2_hexenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/trans_2_hexenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/trans_2_hexenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trans_2_hexenoic_acid",
+      "required": false
+    }
+  ]
+}

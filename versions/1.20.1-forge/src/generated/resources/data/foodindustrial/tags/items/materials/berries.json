@@ -12,6 +12,18 @@
     {
       "id": "#forge:berries",
       "required": false
+    },
+    {
+      "id": "#c:foods/berry",
+      "required": false
+    },
+    {
+      "id": "#c:berries",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/berry",
+      "required": false
     }
   ]
 }

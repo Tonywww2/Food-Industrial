@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/methylimidazole",
       "required": false
+    },
+    {
+      "id": "#c:dusts/methylimidazole",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylimidazole",
+      "required": false
     }
   ]
 }

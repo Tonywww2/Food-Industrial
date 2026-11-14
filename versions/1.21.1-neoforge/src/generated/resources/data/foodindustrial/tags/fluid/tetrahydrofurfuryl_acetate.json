@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetrahydrofurfuryl_acetate",
+    "foodindustrial:flowing_tetrahydrofurfuryl_acetate",
+    {
+      "id": "#forge:tetrahydrofurfuryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:tetrahydrofurfuryl_acetate",
+      "required": false
+    }
+  ]
+}

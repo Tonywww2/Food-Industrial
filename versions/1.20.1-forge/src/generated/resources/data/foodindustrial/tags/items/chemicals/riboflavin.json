@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/riboflavin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/riboflavin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/riboflavin",
+      "required": false
     }
   ]
 }

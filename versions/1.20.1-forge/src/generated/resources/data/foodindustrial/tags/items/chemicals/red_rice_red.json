@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/red_rice_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/red_rice_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/red_rice_red",
+      "required": false
     }
   ]
 }

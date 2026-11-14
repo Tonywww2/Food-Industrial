@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/thaumatin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/thaumatin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thaumatin",
+      "required": false
     }
   ]
 }

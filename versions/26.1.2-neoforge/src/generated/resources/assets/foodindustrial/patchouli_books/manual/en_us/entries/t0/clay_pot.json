@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:clay_pot",
+  "name": "book.foodindustrial.manual.entry.clay_pot",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:clay_pot",
+      "text": "book.foodindustrial.manual.entry.clay_pot.text",
+      "title": "book.foodindustrial.manual.entry.clay_pot"
+    }
+  ],
+  "sortnum": 3
+}

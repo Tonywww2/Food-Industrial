@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_tiglate",
+    "foodindustrial:flowing_ethyl_tiglate",
+    {
+      "id": "#forge:ethyl_tiglate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_tiglate",
+      "required": false
+    }
+  ]
+}

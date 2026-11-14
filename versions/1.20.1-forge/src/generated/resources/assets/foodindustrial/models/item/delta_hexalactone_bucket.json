@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:delta_hexalactone",
+  "loader": "forge:fluid_container"
+}

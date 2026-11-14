@@ -4,6 +4,10 @@
     "foodindustrial:nitrous_oxide",
     "foodindustrial:flowing_nitrous_oxide",
     {
+      "id": "#forge:nitrous_oxide",
+      "required": false
+    },
+    {
       "id": "#c:nitrous_oxide",
       "required": false
     }

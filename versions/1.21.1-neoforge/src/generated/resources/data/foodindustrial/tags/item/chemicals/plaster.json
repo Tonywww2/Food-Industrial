@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:plaster",
     {
+      "id": "#forge:dusts/plaster",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/plaster",
+      "required": false
+    },
+    {
       "id": "#c:dusts/plaster",
       "required": false
     },

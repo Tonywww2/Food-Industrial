@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/evaporating_crystallizer_front_active",
+    "side": "foodindustrial:block/evaporating_crystallizer_side",
+    "top": "foodindustrial:block/evaporating_crystallizer_top"
+  }
+}

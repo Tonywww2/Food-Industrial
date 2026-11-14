@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:enzymes/epoxysuccinate_hydrolase"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/epoxysuccinic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:tartaric_acid",
+      "purity": {
+        "mode": "source",
+        "value": 99
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

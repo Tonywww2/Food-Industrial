@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:biotin_thiolactone",
+    {
+      "id": "#forge:dusts/biotin_thiolactone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/biotin_thiolactone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/biotin_thiolactone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/biotin_thiolactone",
+      "required": false
+    }
+  ]
+}

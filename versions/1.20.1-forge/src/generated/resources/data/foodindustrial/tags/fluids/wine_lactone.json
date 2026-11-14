@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wine_lactone",
+    "foodindustrial:flowing_wine_lactone",
+    {
+      "id": "#forge:wine_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:wine_lactone",
+      "required": false
+    }
+  ]
+}

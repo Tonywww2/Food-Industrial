@@ -4,6 +4,10 @@
     "foodindustrial:hexanoic_acid",
     "foodindustrial:flowing_hexanoic_acid",
     {
+      "id": "#forge:hexanoic_acid",
+      "required": false
+    },
+    {
       "id": "#c:hexanoic_acid",
       "required": false
     }

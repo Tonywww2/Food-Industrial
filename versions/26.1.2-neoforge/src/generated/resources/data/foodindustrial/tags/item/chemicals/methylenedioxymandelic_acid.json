@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylenedioxymandelic_acid",
+    {
+      "id": "#forge:dusts/methylenedioxymandelic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylenedioxymandelic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylenedioxymandelic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylenedioxymandelic_acid",
+      "required": false
+    }
+  ]
+}

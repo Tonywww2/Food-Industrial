@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:bittern"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:carnallite",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

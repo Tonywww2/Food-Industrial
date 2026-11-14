@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutylthiazole",
+    "foodindustrial:flowing_isobutylthiazole",
+    {
+      "id": "#forge:isobutylthiazole",
+      "required": false
+    },
+    {
+      "id": "#c:isobutylthiazole",
+      "required": false
+    }
+  ]
+}

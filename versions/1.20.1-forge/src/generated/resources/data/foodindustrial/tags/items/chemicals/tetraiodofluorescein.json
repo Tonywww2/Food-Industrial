@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tetraiodofluorescein",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tetraiodofluorescein",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tetraiodofluorescein",
+      "required": false
     }
   ]
 }

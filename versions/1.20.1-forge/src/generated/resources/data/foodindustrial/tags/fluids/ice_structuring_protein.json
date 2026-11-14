@@ -6,6 +6,10 @@
     {
       "id": "#forge:ice_structuring_protein",
       "required": false
+    },
+    {
+      "id": "#c:ice_structuring_protein",
+      "required": false
     }
   ]
 }

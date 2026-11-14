@@ -4,6 +4,10 @@
     "foodindustrial:hydrogen_chloride",
     "foodindustrial:flowing_hydrogen_chloride",
     {
+      "id": "#forge:hydrogen_chloride",
+      "required": false
+    },
+    {
       "id": "#c:hydrogen_chloride",
       "required": false
     }

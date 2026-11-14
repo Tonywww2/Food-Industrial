@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:enzymes/nitrile_hydratase"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/benzeneacetonitrile_menthanecarboxamide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "item": "foodindustrial:aminooxoethylphenyl_menthanecarboxamide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

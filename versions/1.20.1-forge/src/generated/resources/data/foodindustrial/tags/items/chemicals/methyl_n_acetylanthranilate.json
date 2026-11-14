@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_n_acetylanthranilate",
+    {
+      "id": "#forge:dusts/methyl_n_acetylanthranilate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_n_acetylanthranilate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_n_acetylanthranilate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_n_acetylanthranilate",
+      "required": false
+    }
+  ]
+}

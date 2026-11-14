@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetrahydroquinoxaline",
+    "foodindustrial:flowing_tetrahydroquinoxaline",
+    {
+      "id": "#forge:tetrahydroquinoxaline",
+      "required": false
+    },
+    {
+      "id": "#c:tetrahydroquinoxaline",
+      "required": false
+    }
+  ]
+}

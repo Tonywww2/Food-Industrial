@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperitenone",
+    "foodindustrial:flowing_piperitenone",
+    {
+      "id": "#forge:piperitenone",
+      "required": false
+    },
+    {
+      "id": "#c:piperitenone",
+      "required": false
+    }
+  ]
+}

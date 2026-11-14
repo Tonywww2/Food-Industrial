@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amyl_heptanoate",
+    "foodindustrial:flowing_amyl_heptanoate",
+    {
+      "id": "#forge:amyl_heptanoate",
+      "required": false
+    },
+    {
+      "id": "#c:amyl_heptanoate",
+      "required": false
+    }
+  ]
+}

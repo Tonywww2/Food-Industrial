@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:dl_citronellol",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chloropropionic_acid",
+    "foodindustrial:flowing_chloropropionic_acid",
+    {
+      "id": "#forge:chloropropionic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:chloropropionic_acid",
+      "required": false
+    }
+  ]
+}

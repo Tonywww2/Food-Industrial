@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:cyclamen_aldehyde",
+  "loader": "neoforge:fluid_container"
+}

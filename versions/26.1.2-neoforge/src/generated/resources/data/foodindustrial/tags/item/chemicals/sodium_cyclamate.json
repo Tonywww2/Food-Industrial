@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_cyclamate",
     {
+      "id": "#forge:dusts/sodium_cyclamate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_cyclamate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_cyclamate",
       "required": false
     },

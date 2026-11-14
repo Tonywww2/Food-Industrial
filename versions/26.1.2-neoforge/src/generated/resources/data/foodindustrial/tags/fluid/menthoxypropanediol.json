@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthoxypropanediol",
+    "foodindustrial:flowing_menthoxypropanediol",
+    {
+      "id": "#forge:menthoxypropanediol",
+      "required": false
+    },
+    {
+      "id": "#c:menthoxypropanediol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:molten_propylene_glycol_monostearate"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:propylene_glycol_monostearate",
+      "purity": {
+        "mode": "keep"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

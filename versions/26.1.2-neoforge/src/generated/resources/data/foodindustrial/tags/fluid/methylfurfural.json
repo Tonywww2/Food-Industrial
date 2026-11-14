@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylfurfural",
+    "foodindustrial:flowing_methylfurfural",
+    {
+      "id": "#forge:methylfurfural",
+      "required": false
+    },
+    {
+      "id": "#c:methylfurfural",
+      "required": false
+    }
+  ]
+}

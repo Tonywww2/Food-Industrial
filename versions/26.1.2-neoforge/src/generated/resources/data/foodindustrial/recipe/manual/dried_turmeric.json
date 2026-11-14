@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/boiled_turmeric"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dried_turmeric"
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "open_sky",
+      "clear_weather"
+    ]
+  },
+  "time": 24000
+}

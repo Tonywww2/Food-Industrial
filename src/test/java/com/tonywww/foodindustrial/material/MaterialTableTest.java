@@ -33,8 +33,8 @@ class MaterialTableTest {
             }
             boolean k11 = def.purity() != null && def.purity().get("category").getAsString().equals("foodindustrial:k11_culture");
             assertEquals(def.category().equals("culture"), k11, "K11 holds only cultures: " + def.id());
-            if (!Set.of("chemical", "culture").contains(def.category())) {
-                assertNull(def.purity(), "only chemicals and cultures have a purity category: " + def.id());
+            if (!Set.of("chemical", "culture", "flavor").contains(def.category())) {
+                assertNull(def.purity(), "only chemicals, flavours and cultures have a purity category: " + def.id());
             }
             boolean k0 = def.purity() != null && def.purity().get("category").getAsString().equals("foodindustrial:k0_raw");
             assertEquals(def.purity() != null && (!k0 || def.purity().has("source_purity")), def.bearer(), "bearer of " + def.id());
@@ -75,8 +75,8 @@ class MaterialTableTest {
     void everyNamePassesTheTextStandard() {
         List<String> problems = new java.util.ArrayList<>();
         for (MaterialDef def : MATERIALS) {
-            TextChecksAccess.check(Lang.item(def.id()), def.nameZh(), def.nameEn(), problems);
-            TextChecksAccess.check(Lang.description(def.id()), def.professionalZh(), def.professionalEn(), problems);
+            TextChecksAccess.checkName(Lang.item(def.id()), def.nameZh(), def.nameEn(), problems);
+            TextChecksAccess.checkName(Lang.description(def.id()), def.professionalZh(), def.professionalEn(), problems);
         }
         assertEquals(List.of(), problems);
     }

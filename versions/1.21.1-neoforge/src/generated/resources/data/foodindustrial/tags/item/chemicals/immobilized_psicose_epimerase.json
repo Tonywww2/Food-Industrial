@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:immobilized_psicose_epimerase",
+    {
+      "id": "#forge:dusts/immobilized_psicose_epimerase",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/immobilized_psicose_epimerase",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/immobilized_psicose_epimerase",
+      "required": false
+    },
+    {
+      "id": "#c:gems/immobilized_psicose_epimerase",
+      "required": false
+    }
+  ]
+}

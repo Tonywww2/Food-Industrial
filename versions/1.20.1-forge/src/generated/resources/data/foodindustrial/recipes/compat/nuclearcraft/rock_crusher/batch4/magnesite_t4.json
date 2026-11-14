@@ -1,0 +1,31 @@
+{
+  "type": "nuclearcraft:rock_crusher",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": [
+    {
+      "tag": "foodindustrial:materials/magnesite"
+    }
+  ],
+  "output": [
+    {
+      "type": "forge:nbt",
+      "item": "foodindustrial:magnesite",
+      "nbt": "{Purity:34b}"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

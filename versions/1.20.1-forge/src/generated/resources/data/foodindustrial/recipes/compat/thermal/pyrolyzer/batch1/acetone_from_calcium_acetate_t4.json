@@ -1,0 +1,32 @@
+{
+  "type": "thermal:pyrolyzer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 16000,
+  "ingredient": {
+    "tag": "foodindustrial:chemicals/calcium_acetate"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:calcium_carbonate",
+      "nbt": "{Purity:34b}"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:acetone",
+      "nbt": "{Purity:34b}"
+    }
+  ]
+}

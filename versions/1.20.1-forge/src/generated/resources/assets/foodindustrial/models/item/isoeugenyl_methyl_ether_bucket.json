@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:isoeugenyl_methyl_ether",
+  "loader": "forge:fluid_container"
+}

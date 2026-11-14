@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:beetroot_juice"
+      }
+    }
+  ],
+  "mode": "concentration",
+  "outputs": [
+    {
+      "item": "foodindustrial:betanin",
+      "purity": {
+        "mode": "source",
+        "value": 0.15
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "vacuum"
+  },
+  "time": 200
+}

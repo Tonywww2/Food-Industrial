@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_stearoyl_lactylate",
+    {
+      "id": "#forge:dusts/calcium_stearoyl_lactylate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_stearoyl_lactylate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_stearoyl_lactylate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_stearoyl_lactylate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:disulfur_dichloride",
+    "foodindustrial:flowing_disulfur_dichloride",
+    {
+      "id": "#forge:disulfur_dichloride",
+      "required": false
+    },
+    {
+      "id": "#c:disulfur_dichloride",
+      "required": false
+    }
+  ]
+}

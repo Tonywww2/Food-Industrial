@@ -4,6 +4,10 @@
     "foodindustrial:morpholine_fruit_wax",
     "foodindustrial:flowing_morpholine_fruit_wax",
     {
+      "id": "#forge:morpholine_fruit_wax",
+      "required": false
+    },
+    {
       "id": "#c:morpholine_fruit_wax",
       "required": false
     }

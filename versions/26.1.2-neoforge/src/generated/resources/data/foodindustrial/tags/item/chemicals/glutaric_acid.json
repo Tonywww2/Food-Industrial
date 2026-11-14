@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glutaric_acid",
+    {
+      "id": "#forge:dusts/glutaric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glutaric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/glutaric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glutaric_acid",
+      "required": false
+    }
+  ]
+}

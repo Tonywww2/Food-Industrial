@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_butyrate",
+    "foodindustrial:flowing_linalyl_butyrate",
+    {
+      "id": "#forge:linalyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_butyrate",
+      "required": false
+    }
+  ]
+}

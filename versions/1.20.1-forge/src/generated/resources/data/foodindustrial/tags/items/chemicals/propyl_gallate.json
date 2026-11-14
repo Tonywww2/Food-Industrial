@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/propyl_gallate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/propyl_gallate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/propyl_gallate",
+      "required": false
     }
   ]
 }

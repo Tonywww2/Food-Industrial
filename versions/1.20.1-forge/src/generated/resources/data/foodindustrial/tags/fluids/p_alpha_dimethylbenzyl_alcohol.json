@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_alpha_dimethylbenzyl_alcohol",
+    "foodindustrial:flowing_p_alpha_dimethylbenzyl_alcohol",
+    {
+      "id": "#forge:p_alpha_dimethylbenzyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:p_alpha_dimethylbenzyl_alcohol",
+      "required": false
+    }
+  ]
+}

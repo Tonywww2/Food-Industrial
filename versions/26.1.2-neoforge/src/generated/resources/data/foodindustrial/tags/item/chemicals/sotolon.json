@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sotolon",
+    {
+      "id": "#forge:dusts/sotolon",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sotolon",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sotolon",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sotolon",
+      "required": false
+    }
+  ]
+}

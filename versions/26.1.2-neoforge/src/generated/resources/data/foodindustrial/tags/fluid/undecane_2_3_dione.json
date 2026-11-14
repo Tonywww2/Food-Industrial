@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecane_2_3_dione",
+    "foodindustrial:flowing_undecane_2_3_dione",
+    {
+      "id": "#forge:undecane_2_3_dione",
+      "required": false
+    },
+    {
+      "id": "#c:undecane_2_3_dione",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentylpyridine",
+    "foodindustrial:flowing_pentylpyridine",
+    {
+      "id": "#forge:pentylpyridine",
+      "required": false
+    },
+    {
+      "id": "#c:pentylpyridine",
+      "required": false
+    }
+  ]
+}

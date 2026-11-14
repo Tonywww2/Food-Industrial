@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:molasses_extract",
+    "foodindustrial:flowing_molasses_extract",
+    {
+      "id": "#forge:molasses_extract",
+      "required": false
+    },
+    {
+      "id": "#c:molasses_extract",
+      "required": false
+    }
+  ]
+}

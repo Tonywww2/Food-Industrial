@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:furfuryl_thioacetate",
+  "loader": "neoforge:fluid_container"
+}

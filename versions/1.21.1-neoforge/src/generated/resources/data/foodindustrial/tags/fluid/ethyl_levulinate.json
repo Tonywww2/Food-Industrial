@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_levulinate",
+    "foodindustrial:flowing_ethyl_levulinate",
+    {
+      "id": "#forge:ethyl_levulinate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_levulinate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/rock_salt"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": 27
+      },
+      "count": 1,
+      "id": "foodindustrial:salt"
+    }
+  ]
+}

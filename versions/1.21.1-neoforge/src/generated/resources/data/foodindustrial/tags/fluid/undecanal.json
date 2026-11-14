@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecanal",
+    "foodindustrial:flowing_undecanal",
+    {
+      "id": "#forge:undecanal",
+      "required": false
+    },
+    {
+      "id": "#c:undecanal",
+      "required": false
+    }
+  ]
+}

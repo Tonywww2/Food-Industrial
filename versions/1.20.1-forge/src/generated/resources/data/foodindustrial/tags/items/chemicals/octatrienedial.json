@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/octatrienedial",
       "required": false
+    },
+    {
+      "id": "#c:dusts/octatrienedial",
+      "required": false
+    },
+    {
+      "id": "#c:gems/octatrienedial",
+      "required": false
     }
   ]
 }

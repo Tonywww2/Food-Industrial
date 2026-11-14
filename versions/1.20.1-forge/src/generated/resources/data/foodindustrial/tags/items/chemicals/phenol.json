@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/phenol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/phenol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenol",
+      "required": false
     }
   ]
 }

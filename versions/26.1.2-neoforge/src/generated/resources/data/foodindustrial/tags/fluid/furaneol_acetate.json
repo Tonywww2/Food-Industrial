@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furaneol_acetate",
+    "foodindustrial:flowing_furaneol_acetate",
+    {
+      "id": "#forge:furaneol_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:furaneol_acetate",
+      "required": false
+    }
+  ]
+}

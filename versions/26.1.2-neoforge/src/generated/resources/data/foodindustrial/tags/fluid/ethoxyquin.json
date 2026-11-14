@@ -4,6 +4,10 @@
     "foodindustrial:ethoxyquin",
     "foodindustrial:flowing_ethoxyquin",
     {
+      "id": "#forge:ethoxyquin",
+      "required": false
+    },
+    {
       "id": "#c:ethoxyquin",
       "required": false
     }

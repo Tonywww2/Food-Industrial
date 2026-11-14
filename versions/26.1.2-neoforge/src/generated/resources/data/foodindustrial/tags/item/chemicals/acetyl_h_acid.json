@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:acetyl_h_acid",
     {
+      "id": "#forge:dusts/acetyl_h_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetyl_h_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/acetyl_h_acid",
       "required": false
     },

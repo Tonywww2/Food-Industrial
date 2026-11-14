@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:crude_bitter_almond_oil"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/slaked_lime"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/ferrous_sulfate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:bitter_almond_oil"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

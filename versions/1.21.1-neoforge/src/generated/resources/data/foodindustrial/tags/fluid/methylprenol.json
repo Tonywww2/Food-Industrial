@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylprenol",
+    "foodindustrial:flowing_methylprenol",
+    {
+      "id": "#forge:methylprenol",
+      "required": false
+    },
+    {
+      "id": "#c:methylprenol",
+      "required": false
+    }
+  ]
+}

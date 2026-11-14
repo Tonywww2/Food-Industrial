@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:peach_leaf_absolute",
+    "foodindustrial:flowing_peach_leaf_absolute",
+    {
+      "id": "#forge:peach_leaf_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:peach_leaf_absolute",
+      "required": false
+    }
+  ]
+}

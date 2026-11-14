@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decenoyloxydecanoic_acid",
+    "foodindustrial:flowing_decenoyloxydecanoic_acid",
+    {
+      "id": "#forge:decenoyloxydecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:decenoyloxydecanoic_acid",
+      "required": false
+    }
+  ]
+}

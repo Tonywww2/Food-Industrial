@@ -6,6 +6,10 @@
     {
       "id": "#forge:toluene",
       "required": false
+    },
+    {
+      "id": "#c:toluene",
+      "required": false
     }
   ]
 }

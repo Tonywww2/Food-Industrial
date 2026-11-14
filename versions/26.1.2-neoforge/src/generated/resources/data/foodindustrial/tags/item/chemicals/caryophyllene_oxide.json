@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:caryophyllene_oxide",
+    {
+      "id": "#forge:dusts/caryophyllene_oxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/caryophyllene_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/caryophyllene_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/caryophyllene_oxide",
+      "required": false
+    }
+  ]
+}

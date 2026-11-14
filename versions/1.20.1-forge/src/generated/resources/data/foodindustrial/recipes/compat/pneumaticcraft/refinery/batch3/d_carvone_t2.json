@@ -1,0 +1,36 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:caraway_seed_oil"
+  },
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:d_carvone",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 300,
+      "fluid": "foodindustrial:limonene",
+      "nbt": "{Purity:13b}"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

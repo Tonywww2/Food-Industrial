@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trithiahexane",
+    "foodindustrial:flowing_trithiahexane",
+    {
+      "id": "#forge:trithiahexane",
+      "required": false
+    },
+    {
+      "id": "#c:trithiahexane",
+      "required": false
+    }
+  ]
+}

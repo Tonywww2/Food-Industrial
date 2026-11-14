@@ -6,6 +6,10 @@
     {
       "id": "#forge:aniline",
       "required": false
+    },
+    {
+      "id": "#c:aniline",
+      "required": false
     }
   ]
 }

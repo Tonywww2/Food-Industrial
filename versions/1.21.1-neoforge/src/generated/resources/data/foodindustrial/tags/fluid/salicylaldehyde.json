@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:salicylaldehyde",
+    "foodindustrial:flowing_salicylaldehyde",
+    {
+      "id": "#forge:salicylaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:salicylaldehyde",
+      "required": false
+    }
+  ]
+}

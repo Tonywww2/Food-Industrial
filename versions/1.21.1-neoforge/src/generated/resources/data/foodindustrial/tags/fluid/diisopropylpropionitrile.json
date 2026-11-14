@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diisopropylpropionitrile",
+    "foodindustrial:flowing_diisopropylpropionitrile",
+    {
+      "id": "#forge:diisopropylpropionitrile",
+      "required": false
+    },
+    {
+      "id": "#c:diisopropylpropionitrile",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisylacetone",
+    "foodindustrial:flowing_anisylacetone",
+    {
+      "id": "#forge:anisylacetone",
+      "required": false
+    },
+    {
+      "id": "#c:anisylacetone",
+      "required": false
+    }
+  ]
+}

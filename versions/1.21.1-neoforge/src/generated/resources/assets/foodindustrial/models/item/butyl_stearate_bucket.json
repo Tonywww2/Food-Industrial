@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:butyl_stearate",
+  "loader": "neoforge:fluid_container"
+}

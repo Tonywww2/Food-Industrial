@@ -4,6 +4,10 @@
     "foodindustrial:butane",
     "foodindustrial:flowing_butane",
     {
+      "id": "#forge:butane",
+      "required": false
+    },
+    {
       "id": "#c:butane",
       "required": false
     }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furylpropionic_acid",
+    {
+      "id": "#forge:dusts/furylpropionic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/furylpropionic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/furylpropionic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/furylpropionic_acid",
+      "required": false
+    }
+  ]
+}

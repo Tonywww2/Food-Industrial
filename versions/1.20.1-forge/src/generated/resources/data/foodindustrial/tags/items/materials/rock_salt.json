@@ -5,6 +5,10 @@
     {
       "id": "#forge:ores/salt",
       "required": false
+    },
+    {
+      "id": "#c:ores/salt",
+      "required": false
     }
   ]
 }

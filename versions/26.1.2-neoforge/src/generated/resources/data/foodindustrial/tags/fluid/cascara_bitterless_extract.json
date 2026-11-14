@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cascara_bitterless_extract",
+    "foodindustrial:flowing_cascara_bitterless_extract",
+    {
+      "id": "#forge:cascara_bitterless_extract",
+      "required": false
+    },
+    {
+      "id": "#c:cascara_bitterless_extract",
+      "required": false
+    }
+  ]
+}

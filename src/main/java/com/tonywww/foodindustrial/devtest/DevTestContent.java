@@ -71,6 +71,8 @@ public final class DevTestContent {
         PlatformEvents.onRegisterCommands(DevCommands::register);
         PlatformEvents.onRegisterCommands(DevRecipeCommands::register);
         PlatformEvents.onRegisterCommands(DevMachineCommands::register);
+        PlatformEvents.onRegisterCommands(DevManualCommands::register);
+        PlatformEvents.onRegisterCommands(DevMetabolismCommands::register);
         DevMachines.bootstrap();
         registerTestDevices();
         if (Platform.isPhysicalClient()) {

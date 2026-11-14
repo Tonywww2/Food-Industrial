@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetoxydihydrotheaspirane",
+    "foodindustrial:flowing_acetoxydihydrotheaspirane",
+    {
+      "id": "#forge:acetoxydihydrotheaspirane",
+      "required": false
+    },
+    {
+      "id": "#c:acetoxydihydrotheaspirane",
+      "required": false
+    }
+  ]
+}

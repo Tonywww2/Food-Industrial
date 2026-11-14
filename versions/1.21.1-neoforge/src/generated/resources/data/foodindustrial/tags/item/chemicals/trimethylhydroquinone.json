@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethylhydroquinone",
+    {
+      "id": "#forge:dusts/trimethylhydroquinone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/trimethylhydroquinone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/trimethylhydroquinone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trimethylhydroquinone",
+      "required": false
+    }
+  ]
+}

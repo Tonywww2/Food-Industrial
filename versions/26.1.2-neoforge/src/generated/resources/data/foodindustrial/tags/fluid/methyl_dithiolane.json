@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_dithiolane",
+    "foodindustrial:flowing_methyl_dithiolane",
+    {
+      "id": "#forge:methyl_dithiolane",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_dithiolane",
+      "required": false
+    }
+  ]
+}

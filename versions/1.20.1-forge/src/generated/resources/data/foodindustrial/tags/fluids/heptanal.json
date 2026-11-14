@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptanal",
+    "foodindustrial:flowing_heptanal",
+    {
+      "id": "#forge:heptanal",
+      "required": false
+    },
+    {
+      "id": "#c:heptanal",
+      "required": false
+    }
+  ]
+}

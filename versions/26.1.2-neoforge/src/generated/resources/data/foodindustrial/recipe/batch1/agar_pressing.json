@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:pressing",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/agar_jelly"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:agar",
+      "purity": {
+        "mode": "source",
+        "value": 85
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

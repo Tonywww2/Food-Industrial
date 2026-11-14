@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzoin_resinoid",
+    {
+      "id": "#forge:dusts/benzoin_resinoid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzoin_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzoin_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzoin_resinoid",
+      "required": false
+    }
+  ]
+}

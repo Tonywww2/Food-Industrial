@@ -1,0 +1,2974 @@
+{
+ "foods": [
+  {
+   "id": "yogurt",
+   "name": {
+    "zh": "酸奶",
+    "en": "Yogurt"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "flavored_yogurt",
+   "name": {
+    "zh": "风味酸奶",
+    "en": "Flavored Yogurt"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "fruit_yogurt",
+   "name": {
+    "zh": "果粒酸奶",
+    "en": "Fruit Yogurt"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "sour_cream",
+   "name": {
+    "zh": "酸奶油",
+    "en": "Sour Cream"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "mozzarella",
+   "name": {
+    "zh": "马苏里拉奶酪",
+    "en": "Mozzarella"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "cheddar_cheese",
+   "name": {
+    "zh": "切达奶酪",
+    "en": "Cheddar Cheese"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "cream_cheese",
+   "name": {
+    "zh": "奶油奶酪",
+    "en": "Cream Cheese"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "processed_cheese_slice",
+   "name": {
+    "zh": "再制奶酪片",
+    "en": "Processed Cheese Slice"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "condensed_milk",
+   "name": {
+    "zh": "炼乳",
+    "en": "Condensed Milk"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "milk_powder",
+   "name": {
+    "zh": "奶粉",
+    "en": "Milk Powder"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "formula_milk_powder",
+   "name": {
+    "zh": "调制乳粉",
+    "en": "Formulated Milk Powder"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "butter",
+   "name": {
+    "zh": "黄油",
+    "en": "Butter"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "whipping_cream",
+   "name": {
+    "zh": "淡奶油",
+    "en": "Whipping Cream"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "milk_tablet",
+   "name": {
+    "zh": "奶片",
+    "en": "Milk Tablet"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "double_skin_milk",
+   "name": {
+    "zh": "双皮奶",
+    "en": "Double-Skin Milk"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "ginger_milk_curd",
+   "name": {
+    "zh": "姜撞奶",
+    "en": "Ginger Milk Curd"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "milk_tofu",
+   "name": {
+    "zh": "奶豆腐",
+    "en": "Milk Tofu"
+   },
+   "category": "dairy",
+   "category_name": "乳及乳制品"
+  },
+  {
+   "id": "lard",
+   "name": {
+    "zh": "猪油",
+    "en": "Lard"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "tallow",
+   "name": {
+    "zh": "牛油",
+    "en": "Tallow"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "edible_oil",
+   "name": {
+    "zh": "食用植物油",
+    "en": "Vegetable Cooking Oil"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "peanut_oil",
+   "name": {
+    "zh": "花生油",
+    "en": "Peanut Oil"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "sesame_oil",
+   "name": {
+    "zh": "芝麻油",
+    "en": "Sesame Oil"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "margarine",
+   "name": {
+    "zh": "人造黄油",
+    "en": "Margarine"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "shortening",
+   "name": {
+    "zh": "起酥油",
+    "en": "Shortening"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "non_dairy_creamer",
+   "name": {
+    "zh": "植脂末",
+    "en": "Non-Dairy Creamer"
+   },
+   "category": "fats_oils",
+   "category_name": "脂肪、油和乳化脂肪制品"
+  },
+  {
+   "id": "vanilla_ice_cream",
+   "name": {
+    "zh": "香草冰淇淋",
+    "en": "Vanilla Ice Cream"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "chocolate_ice_cream",
+   "name": {
+    "zh": "巧克力冰淇淋",
+    "en": "Chocolate Ice Cream"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "mint_ice_cream",
+   "name": {
+    "zh": "薄荷冰淇淋",
+    "en": "Mint Ice Cream"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "berry_ice_cream",
+   "name": {
+    "zh": "浆果冰淇淋",
+    "en": "Berry Ice Cream"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "matcha_ice_cream",
+   "name": {
+    "zh": "抹茶冰淇淋",
+    "en": "Matcha Ice Cream"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "ice_cream_bar",
+   "name": {
+    "zh": "雪糕",
+    "en": "Ice Cream Bar"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "popsicle",
+   "name": {
+    "zh": "冰棍",
+    "en": "Ice Pop"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "mung_bean_popsicle",
+   "name": {
+    "zh": "绿豆冰棍",
+    "en": "Mung Bean Ice Pop"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "sorbet",
+   "name": {
+    "zh": "果味冰沙",
+    "en": "Sorbet"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "shaved_ice",
+   "name": {
+    "zh": "刨冰",
+    "en": "Shaved Ice"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "red_bean_ice",
+   "name": {
+    "zh": "红豆冰",
+    "en": "Red Bean Ice"
+   },
+   "category": "frozen_desserts",
+   "category_name": "冷冻饮品"
+  },
+  {
+   "id": "apple_jam",
+   "name": {
+    "zh": "苹果酱",
+    "en": "Apple Jam"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "berry_jam",
+   "name": {
+    "zh": "浆果果酱",
+    "en": "Berry Jam"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "glow_berry_jam",
+   "name": {
+    "zh": "发光浆果果酱",
+    "en": "Glow Berry Jam"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "marmalade",
+   "name": {
+    "zh": "柑橘果酱",
+    "en": "Marmalade"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "low_sugar_jam",
+   "name": {
+    "zh": "低糖果酱",
+    "en": "Low-Sugar Jam"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "dried_apple",
+   "name": {
+    "zh": "苹果干",
+    "en": "Dried Apple"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "dried_berries",
+   "name": {
+    "zh": "浆果干",
+    "en": "Dried Berries"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "candied_apple_slices",
+   "name": {
+    "zh": "蜜饯苹果片",
+    "en": "Candied Apple Slices"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "candied_citrus_peel",
+   "name": {
+    "zh": "糖渍橘皮",
+    "en": "Candied Citrus Peel"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "preserved_plum",
+   "name": {
+    "zh": "话梅",
+    "en": "Preserved Plum"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "canned_apple",
+   "name": {
+    "zh": "糖水苹果罐头",
+    "en": "Canned Apples in Syrup"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "canned_berries",
+   "name": {
+    "zh": "浆果罐头",
+    "en": "Canned Berries"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "sichuan_pickles",
+   "name": {
+    "zh": "四川泡菜",
+    "en": "Sichuan Pickles"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "suancai",
+   "name": {
+    "zh": "酸菜",
+    "en": "Suancai"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "zhacai",
+   "name": {
+    "zh": "榨菜",
+    "en": "Zhacai"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "xuecai",
+   "name": {
+    "zh": "雪菜",
+    "en": "Xuecai"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "pickled_cucumber",
+   "name": {
+    "zh": "腌黄瓜",
+    "en": "Pickled Cucumber"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "pickled_beetroot",
+   "name": {
+    "zh": "醋渍甜菜根",
+    "en": "Pickled Beetroot"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "sweet_sour_carrot",
+   "name": {
+    "zh": "糖醋胡萝卜",
+    "en": "Sweet and Sour Carrot"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "carrot_puree",
+   "name": {
+    "zh": "胡萝卜泥",
+    "en": "Carrot Puree"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "canned_vegetables",
+   "name": {
+    "zh": "什锦蔬菜罐头",
+    "en": "Canned Mixed Vegetables"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "dehydrated_vegetables",
+   "name": {
+    "zh": "脱水蔬菜",
+    "en": "Dehydrated Vegetables"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "brine_tofu",
+   "name": {
+    "zh": "卤水豆腐（北豆腐）",
+    "en": "Brine Tofu (Firm)"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "gypsum_tofu",
+   "name": {
+    "zh": "石膏豆腐（南豆腐）",
+    "en": "Gypsum Tofu (Soft)"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "lactone_tofu",
+   "name": {
+    "zh": "内酯豆腐",
+    "en": "Silken Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "douhua",
+   "name": {
+    "zh": "豆花",
+    "en": "Douhua"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "frozen_tofu",
+   "name": {
+    "zh": "冻豆腐",
+    "en": "Frozen Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "dried_tofu",
+   "name": {
+    "zh": "豆干",
+    "en": "Dried Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "spiced_dried_tofu",
+   "name": {
+    "zh": "五香豆干",
+    "en": "Five-Spice Dried Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "braised_dried_tofu",
+   "name": {
+    "zh": "卤豆干",
+    "en": "Braised Dried Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "smoked_tofu",
+   "name": {
+    "zh": "熏豆干",
+    "en": "Smoked Dried Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "yuba",
+   "name": {
+    "zh": "腐竹",
+    "en": "Yuba Sticks"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "tofu_skin",
+   "name": {
+    "zh": "油豆皮",
+    "en": "Fried Tofu Skin"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "white_fermented_tofu",
+   "name": {
+    "zh": "白腐乳",
+    "en": "White Fermented Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "red_fermented_tofu",
+   "name": {
+    "zh": "红腐乳",
+    "en": "Red Fermented Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "stinky_tofu",
+   "name": {
+    "zh": "臭豆腐",
+    "en": "Stinky Tofu"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "douchi",
+   "name": {
+    "zh": "豆豉",
+    "en": "Douchi"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "natto",
+   "name": {
+    "zh": "纳豆",
+    "en": "Natto"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "textured_soy_protein",
+   "name": {
+    "zh": "大豆素肉",
+    "en": "Textured Soy Protein"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "kelp_salad",
+   "name": {
+    "zh": "凉拌海带丝",
+    "en": "Kelp Salad"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "kelp_knots",
+   "name": {
+    "zh": "海带结",
+    "en": "Kelp Knots"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "agar_cold_jelly",
+   "name": {
+    "zh": "琼脂凉粉",
+    "en": "Agar Cold Jelly"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "seasoned_seaweed_snack",
+   "name": {
+    "zh": "调味海苔",
+    "en": "Seasoned Seaweed Snack"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "canned_mushrooms",
+   "name": {
+    "zh": "蘑菇罐头",
+    "en": "Canned Mushrooms"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "pickled_mushrooms",
+   "name": {
+    "zh": "腌蘑菇",
+    "en": "Pickled Mushrooms"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "roasted_pumpkin_seeds",
+   "name": {
+    "zh": "炒南瓜子",
+    "en": "Roasted Pumpkin Seeds"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "salted_nuts",
+   "name": {
+    "zh": "椒盐坚果",
+    "en": "Salted Nuts"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "amber_walnuts",
+   "name": {
+    "zh": "琥珀核桃",
+    "en": "Amber Walnuts"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "peanut_butter",
+   "name": {
+    "zh": "花生酱",
+    "en": "Peanut Butter"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "sesame_paste",
+   "name": {
+    "zh": "芝麻酱",
+    "en": "Sesame Paste"
+   },
+   "category": "fruits_vegetables",
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  {
+   "id": "dark_chocolate",
+   "name": {
+    "zh": "黑巧克力",
+    "en": "Dark Chocolate"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "milk_chocolate",
+   "name": {
+    "zh": "牛奶巧克力",
+    "en": "Milk Chocolate"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "white_chocolate",
+   "name": {
+    "zh": "白巧克力",
+    "en": "White Chocolate"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "chocolate_chips",
+   "name": {
+    "zh": "巧克力豆",
+    "en": "Chocolate Chips"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "coated_chocolate_beans",
+   "name": {
+    "zh": "糖衣巧克力豆",
+    "en": "Sugar-Coated Chocolate Beans"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "liqueur_chocolate",
+   "name": {
+    "zh": "酒心巧克力",
+    "en": "Liqueur Chocolate"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "hard_candy",
+   "name": {
+    "zh": "硬糖",
+    "en": "Hard Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "mint_candy",
+   "name": {
+    "zh": "薄荷糖",
+    "en": "Mint Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "throat_lozenge",
+   "name": {
+    "zh": "润喉糖",
+    "en": "Throat Lozenge"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "gummy_candy",
+   "name": {
+    "zh": "明胶软糖",
+    "en": "Gummy Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "pectin_jelly_candy",
+   "name": {
+    "zh": "果汁软糖",
+    "en": "Fruit Jelly Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "marshmallow",
+   "name": {
+    "zh": "棉花糖",
+    "en": "Marshmallow"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "nougat",
+   "name": {
+    "zh": "牛轧糖",
+    "en": "Nougat"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "toffee",
+   "name": {
+    "zh": "太妃糖",
+    "en": "Toffee"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "caramel_candy",
+   "name": {
+    "zh": "焦糖块",
+    "en": "Caramel Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "milk_candy",
+   "name": {
+    "zh": "奶糖",
+    "en": "Milk Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "chewing_gum",
+   "name": {
+    "zh": "口香糖",
+    "en": "Chewing Gum"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "sugar_free_gum",
+   "name": {
+    "zh": "无糖口香糖",
+    "en": "Sugar-Free Gum"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "lollipop",
+   "name": {
+    "zh": "棒棒糖",
+    "en": "Lollipop"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "tanghulu",
+   "name": {
+    "zh": "冰糖葫芦",
+    "en": "Tanghulu"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "dragon_beard_candy",
+   "name": {
+    "zh": "龙须酥",
+    "en": "Dragon Beard Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "sesame_brittle",
+   "name": {
+    "zh": "芝麻糖",
+    "en": "Sesame Brittle"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "peanut_brittle",
+   "name": {
+    "zh": "花生糖",
+    "en": "Peanut Brittle"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "popping_candy",
+   "name": {
+    "zh": "跳跳糖",
+    "en": "Popping Candy"
+   },
+   "category": "cocoa_confectionery",
+   "category_name": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  {
+   "id": "self_rising_flour",
+   "name": {
+    "zh": "自发粉",
+    "en": "Self-Rising Flour"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "dried_noodles",
+   "name": {
+    "zh": "挂面",
+    "en": "Dried Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "lanzhou_pulled_noodles",
+   "name": {
+    "zh": "兰州拉面",
+    "en": "Lanzhou Pulled Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "alkaline_noodles",
+   "name": {
+    "zh": "碱水面",
+    "en": "Alkaline Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "egg_noodles",
+   "name": {
+    "zh": "鸡蛋面",
+    "en": "Egg Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "instant_noodles",
+   "name": {
+    "zh": "方便面",
+    "en": "Instant Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "knife_cut_noodles",
+   "name": {
+    "zh": "刀削面",
+    "en": "Knife-Cut Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "dumplings",
+   "name": {
+    "zh": "饺子",
+    "en": "Dumplings"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "wontons",
+   "name": {
+    "zh": "馄饨",
+    "en": "Wontons"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "shumai",
+   "name": {
+    "zh": "烧麦",
+    "en": "Shumai"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "frozen_dumplings",
+   "name": {
+    "zh": "速冻饺子",
+    "en": "Frozen Dumplings"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "tangyuan",
+   "name": {
+    "zh": "汤圆",
+    "en": "Tangyuan"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "frozen_tangyuan",
+   "name": {
+    "zh": "速冻汤圆",
+    "en": "Frozen Tangyuan"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "niangao",
+   "name": {
+    "zh": "年糕",
+    "en": "Niangao"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "rice_vermicelli",
+   "name": {
+    "zh": "米粉",
+    "en": "Rice Vermicelli"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "hor_fun",
+   "name": {
+    "zh": "河粉",
+    "en": "Hor Fun"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "glass_noodles",
+   "name": {
+    "zh": "粉丝",
+    "en": "Glass Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "starch_noodles",
+   "name": {
+    "zh": "粉条",
+    "en": "Starch Noodles"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "liangpi",
+   "name": {
+    "zh": "凉皮",
+    "en": "Liangpi"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "starch_jelly",
+   "name": {
+    "zh": "凉粉",
+    "en": "Starch Jelly"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "alkaline_zongzi",
+   "name": {
+    "zh": "碱水粽",
+    "en": "Alkaline Zongzi"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "youtiao",
+   "name": {
+    "zh": "油条",
+    "en": "Youtiao"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "mahua",
+   "name": {
+    "zh": "麻花",
+    "en": "Mahua"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "sanzi",
+   "name": {
+    "zh": "馓子",
+    "en": "Sanzi"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "steamed_bun",
+   "name": {
+    "zh": "馒头",
+    "en": "Steamed Bun"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "baozi",
+   "name": {
+    "zh": "包子",
+    "en": "Baozi"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "flower_roll",
+   "name": {
+    "zh": "花卷",
+    "en": "Flower Roll"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "fagao",
+   "name": {
+    "zh": "发糕",
+    "en": "Fagao"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "oat_flakes",
+   "name": {
+    "zh": "燕麦片",
+    "en": "Oat Flakes"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "breakfast_cereal",
+   "name": {
+    "zh": "早餐谷物",
+    "en": "Breakfast Cereal"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "rice_pudding",
+   "name": {
+    "zh": "米布丁",
+    "en": "Rice Pudding"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "tapioca_pearls",
+   "name": {
+    "zh": "珍珠粉圆",
+    "en": "Tapioca Pearls"
+   },
+   "category": "cereals",
+   "category_name": "粮食和粮食制品"
+  },
+  {
+   "id": "white_bread",
+   "name": {
+    "zh": "白面包",
+    "en": "White Bread"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "whole_wheat_bread",
+   "name": {
+    "zh": "全麦面包",
+    "en": "Whole Wheat Bread"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "toast_loaf",
+   "name": {
+    "zh": "吐司",
+    "en": "Toast Loaf"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "baguette",
+   "name": {
+    "zh": "法棍",
+    "en": "Baguette"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "croissant",
+   "name": {
+    "zh": "牛角包",
+    "en": "Croissant"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "bagel",
+   "name": {
+    "zh": "贝果",
+    "en": "Bagel"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "pretzel",
+   "name": {
+    "zh": "碱水结",
+    "en": "Pretzel"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "donut",
+   "name": {
+    "zh": "甜甜圈",
+    "en": "Donut"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "sponge_cake",
+   "name": {
+    "zh": "海绵蛋糕",
+    "en": "Sponge Cake"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "chiffon_cake",
+   "name": {
+    "zh": "戚风蛋糕",
+    "en": "Chiffon Cake"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "cheesecake",
+   "name": {
+    "zh": "芝士蛋糕",
+    "en": "Cheesecake"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "mousse_cake",
+   "name": {
+    "zh": "慕斯蛋糕",
+    "en": "Mousse Cake"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "cream_cake",
+   "name": {
+    "zh": "奶油蛋糕",
+    "en": "Cream Cake"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "cantonese_mooncake",
+   "name": {
+    "zh": "广式月饼",
+    "en": "Cantonese Mooncake"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "wuren_mooncake",
+   "name": {
+    "zh": "五仁月饼",
+    "en": "Five-Nut Mooncake"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "egg_yolk_pastry",
+   "name": {
+    "zh": "蛋黄酥",
+    "en": "Egg Yolk Pastry"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "taosu",
+   "name": {
+    "zh": "桃酥",
+    "en": "Walnut Cookie"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "soda_cracker",
+   "name": {
+    "zh": "苏打饼干",
+    "en": "Soda Cracker"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "butter_cookie",
+   "name": {
+    "zh": "黄油曲奇",
+    "en": "Butter Cookie"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "wafer",
+   "name": {
+    "zh": "威化饼干",
+    "en": "Wafer"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "sandwich_biscuit",
+   "name": {
+    "zh": "夹心饼干",
+    "en": "Sandwich Biscuit"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "egg_roll",
+   "name": {
+    "zh": "蛋卷",
+    "en": "Egg Roll"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "cream_puff",
+   "name": {
+    "zh": "泡芙",
+    "en": "Cream Puff"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "egg_tart",
+   "name": {
+    "zh": "蛋挞",
+    "en": "Egg Tart"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "apple_pie",
+   "name": {
+    "zh": "苹果派",
+    "en": "Apple Pie"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "berry_pie",
+   "name": {
+    "zh": "浆果派",
+    "en": "Berry Pie"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "muffin",
+   "name": {
+    "zh": "玛芬",
+    "en": "Muffin"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "scone",
+   "name": {
+    "zh": "司康",
+    "en": "Scone"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "waffle",
+   "name": {
+    "zh": "华夫饼",
+    "en": "Waffle"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "dorayaki",
+   "name": {
+    "zh": "铜锣烧",
+    "en": "Dorayaki"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "gingerbread",
+   "name": {
+    "zh": "姜饼",
+    "en": "Gingerbread"
+   },
+   "category": "bakery",
+   "category_name": "焙烤食品"
+  },
+  {
+   "id": "larou",
+   "name": {
+    "zh": "腊肉",
+    "en": "Cured Pork Belly"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "lap_cheong",
+   "name": {
+    "zh": "腊肠",
+    "en": "Lap Cheong"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "salted_pork",
+   "name": {
+    "zh": "咸肉",
+    "en": "Salted Pork"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "pressed_salted_duck",
+   "name": {
+    "zh": "板鸭",
+    "en": "Pressed Salted Duck"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "chinese_ham",
+   "name": {
+    "zh": "中式火腿",
+    "en": "Chinese Ham"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "western_ham",
+   "name": {
+    "zh": "西式火腿",
+    "en": "Western Ham"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "bacon",
+   "name": {
+    "zh": "培根",
+    "en": "Bacon"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "hot_dog",
+   "name": {
+    "zh": "热狗肠",
+    "en": "Hot Dog Sausage"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "luncheon_meat",
+   "name": {
+    "zh": "午餐肉罐头",
+    "en": "Canned Luncheon Meat"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "ham_sausage",
+   "name": {
+    "zh": "火腿肠",
+    "en": "Ham Sausage"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "char_siu",
+   "name": {
+    "zh": "叉烧",
+    "en": "Char Siu"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "roast_duck",
+   "name": {
+    "zh": "烤鸭",
+    "en": "Roast Duck"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "braised_beef",
+   "name": {
+    "zh": "卤牛肉",
+    "en": "Braised Beef"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "soy_braised_duck",
+   "name": {
+    "zh": "酱鸭",
+    "en": "Soy-Braised Duck"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "white_cut_chicken",
+   "name": {
+    "zh": "白切鸡",
+    "en": "White-Cut Chicken"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "braised_pork_belly",
+   "name": {
+    "zh": "红烧肉",
+    "en": "Braised Pork Belly"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "dongpo_pork",
+   "name": {
+    "zh": "东坡肉",
+    "en": "Dongpo Pork"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "pork_floss",
+   "name": {
+    "zh": "肉松",
+    "en": "Pork Floss"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "beef_jerky",
+   "name": {
+    "zh": "牛肉干",
+    "en": "Beef Jerky"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "pork_jerky_sheet",
+   "name": {
+    "zh": "猪肉脯",
+    "en": "Pork Jerky Sheet"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "meatballs",
+   "name": {
+    "zh": "肉丸",
+    "en": "Meatballs"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "lions_head_meatball",
+   "name": {
+    "zh": "狮子头",
+    "en": "Lion's Head Meatball"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "meat_aspic",
+   "name": {
+    "zh": "肉冻",
+    "en": "Meat Aspic"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "braised_chicken_feet",
+   "name": {
+    "zh": "卤鸡爪",
+    "en": "Braised Chicken Feet"
+   },
+   "category": "meat",
+   "category_name": "肉及肉制品"
+  },
+  {
+   "id": "fish_balls",
+   "name": {
+    "zh": "鱼丸",
+    "en": "Fish Balls"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "crab_stick",
+   "name": {
+    "zh": "蟹肉棒",
+    "en": "Crab Stick"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "fish_tofu",
+   "name": {
+    "zh": "鱼豆腐",
+    "en": "Fish Tofu"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "salted_fish",
+   "name": {
+    "zh": "咸鱼",
+    "en": "Salted Fish"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "dried_fish",
+   "name": {
+    "zh": "鱼干",
+    "en": "Dried Fish"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "smoked_fish",
+   "name": {
+    "zh": "熏鱼",
+    "en": "Smoked Fish"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "canned_fish",
+   "name": {
+    "zh": "鱼罐头",
+    "en": "Canned Fish"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "fried_dace_with_black_beans",
+   "name": {
+    "zh": "豆豉鲮鱼罐头",
+    "en": "Canned Dace with Black Beans"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "sweet_sour_fish",
+   "name": {
+    "zh": "糖醋鱼",
+    "en": "Sweet and Sour Fish"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "gravlax",
+   "name": {
+    "zh": "腌三文鱼",
+    "en": "Gravlax"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "fish_skin_jelly",
+   "name": {
+    "zh": "鱼皮冻",
+    "en": "Fish Skin Jelly"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "fish_sauce",
+   "name": {
+    "zh": "鱼露",
+    "en": "Fish Sauce"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "shrimp_paste",
+   "name": {
+    "zh": "虾酱",
+    "en": "Shrimp Paste"
+   },
+   "category": "aquatic",
+   "category_name": "水产及其制品"
+  },
+  {
+   "id": "century_egg",
+   "name": {
+    "zh": "皮蛋",
+    "en": "Century Egg"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "salted_egg",
+   "name": {
+    "zh": "咸鸭蛋",
+    "en": "Salted Duck Egg"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "braised_egg",
+   "name": {
+    "zh": "卤蛋",
+    "en": "Braised Egg"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "tea_egg",
+   "name": {
+    "zh": "茶叶蛋",
+    "en": "Tea Egg"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "wine_preserved_egg",
+   "name": {
+    "zh": "糟蛋",
+    "en": "Wine-Preserved Egg"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "ramen_egg",
+   "name": {
+    "zh": "溏心蛋",
+    "en": "Soft-Boiled Marinated Egg"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "egg_pudding",
+   "name": {
+    "zh": "鸡蛋布丁",
+    "en": "Egg Pudding"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "egg_white_powder",
+   "name": {
+    "zh": "蛋清粉",
+    "en": "Egg White Powder"
+   },
+   "category": "eggs",
+   "category_name": "蛋及蛋制品"
+  },
+  {
+   "id": "soft_white_sugar",
+   "name": {
+    "zh": "绵白糖",
+    "en": "Soft White Sugar"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "brown_sugar",
+   "name": {
+    "zh": "红糖",
+    "en": "Brown Sugar"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "rock_sugar",
+   "name": {
+    "zh": "冰糖",
+    "en": "Rock Sugar"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "sugar_cube",
+   "name": {
+    "zh": "方糖",
+    "en": "Sugar Cube"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "icing_sugar",
+   "name": {
+    "zh": "糖粉",
+    "en": "Icing Sugar"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "maltose_syrup",
+   "name": {
+    "zh": "麦芽糖浆",
+    "en": "Maltose Syrup"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "glucose_syrup",
+   "name": {
+    "zh": "葡萄糖浆",
+    "en": "Glucose Syrup"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "high_fructose_syrup",
+   "name": {
+    "zh": "果葡糖浆",
+    "en": "High-Fructose Syrup"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "caramel_syrup",
+   "name": {
+    "zh": "焦糖糖浆",
+    "en": "Caramel Syrup"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "tabletop_sweetener",
+   "name": {
+    "zh": "代糖",
+    "en": "Tabletop Sweetener"
+   },
+   "category": "sweeteners",
+   "category_name": "甜味料"
+  },
+  {
+   "id": "iodized_salt",
+   "name": {
+    "zh": "加碘盐",
+    "en": "Iodized Salt"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "low_sodium_salt",
+   "name": {
+    "zh": "低钠盐",
+    "en": "Low-Sodium Salt"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "sea_salt",
+   "name": {
+    "zh": "海盐",
+    "en": "Sea Salt"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "light_soy_sauce",
+   "name": {
+    "zh": "生抽",
+    "en": "Light Soy Sauce"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "dark_soy_sauce",
+   "name": {
+    "zh": "老抽",
+    "en": "Dark Soy Sauce"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "premium_soy_sauce",
+   "name": {
+    "zh": "鲜味酱油",
+    "en": "Premium Soy Sauce"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "rice_vinegar",
+   "name": {
+    "zh": "米醋",
+    "en": "Rice Vinegar"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "aged_vinegar",
+   "name": {
+    "zh": "陈醋",
+    "en": "Aged Vinegar"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "apple_cider_vinegar",
+   "name": {
+    "zh": "苹果醋",
+    "en": "Apple Cider Vinegar"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "white_vinegar",
+   "name": {
+    "zh": "白醋",
+    "en": "White Vinegar"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "doubanjiang",
+   "name": {
+    "zh": "豆瓣酱",
+    "en": "Doubanjiang"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "sweet_bean_sauce",
+   "name": {
+    "zh": "甜面酱",
+    "en": "Sweet Bean Sauce"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "soybean_paste",
+   "name": {
+    "zh": "黄豆酱",
+    "en": "Soybean Paste"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "ketchup",
+   "name": {
+    "zh": "番茄酱",
+    "en": "Ketchup"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "salad_dressing",
+   "name": {
+    "zh": "沙拉酱",
+    "en": "Salad Dressing"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "mayonnaise",
+   "name": {
+    "zh": "蛋黄酱",
+    "en": "Mayonnaise"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "mustard",
+   "name": {
+    "zh": "芥末酱",
+    "en": "Mustard"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "chili_sauce",
+   "name": {
+    "zh": "辣椒酱",
+    "en": "Chili Sauce"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "oyster_sauce",
+   "name": {
+    "zh": "蚝油",
+    "en": "Oyster Sauce"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "chicken_bouillon_powder",
+   "name": {
+    "zh": "鸡精",
+    "en": "Chicken Bouillon Powder"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "stock_cube",
+   "name": {
+    "zh": "高汤块",
+    "en": "Stock Cube"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "kombu_dashi",
+   "name": {
+    "zh": "昆布高汤",
+    "en": "Kombu Dashi"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "master_stock",
+   "name": {
+    "zh": "卤汁",
+    "en": "Master Stock"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "cooking_wine",
+   "name": {
+    "zh": "料酒",
+    "en": "Cooking Wine"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "hotpot_base",
+   "name": {
+    "zh": "火锅底料",
+    "en": "Hotpot Base"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "curry_roux",
+   "name": {
+    "zh": "咖喱块",
+    "en": "Curry Roux"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "five_spice_powder",
+   "name": {
+    "zh": "五香粉",
+    "en": "Five-Spice Powder"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "thirteen_spice",
+   "name": {
+    "zh": "十三香",
+    "en": "Thirteen-Spice Powder"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "chili_oil",
+   "name": {
+    "zh": "辣椒油",
+    "en": "Chili Oil"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "sichuan_pepper_oil",
+   "name": {
+    "zh": "花椒油",
+    "en": "Sichuan Pepper Oil"
+   },
+   "category": "condiments",
+   "category_name": "调味品"
+  },
+  {
+   "id": "infant_rice_cereal",
+   "name": {
+    "zh": "婴儿米粉",
+    "en": "Infant Rice Cereal"
+   },
+   "category": "special_dietary",
+   "category_name": "特殊膳食用食品"
+  },
+  {
+   "id": "protein_powder",
+   "name": {
+    "zh": "蛋白粉",
+    "en": "Protein Powder"
+   },
+   "category": "special_dietary",
+   "category_name": "特殊膳食用食品"
+  },
+  {
+   "id": "meal_replacement_powder",
+   "name": {
+    "zh": "代餐粉",
+    "en": "Meal Replacement Powder"
+   },
+   "category": "special_dietary",
+   "category_name": "特殊膳食用食品"
+  },
+  {
+   "id": "energy_gel",
+   "name": {
+    "zh": "能量胶",
+    "en": "Energy Gel"
+   },
+   "category": "special_dietary",
+   "category_name": "特殊膳食用食品"
+  },
+  {
+   "id": "apple_juice",
+   "name": {
+    "zh": "苹果汁",
+    "en": "Apple Juice"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "berry_juice",
+   "name": {
+    "zh": "浆果汁",
+    "en": "Berry Juice"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "carrot_juice",
+   "name": {
+    "zh": "胡萝卜汁",
+    "en": "Carrot Juice"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "beet_juice",
+   "name": {
+    "zh": "甜菜汁",
+    "en": "Beet Juice"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "watermelon_juice",
+   "name": {
+    "zh": "西瓜汁",
+    "en": "Watermelon Juice"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "grape_juice",
+   "name": {
+    "zh": "葡萄汁",
+    "en": "Grape Juice"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "citrus_juice",
+   "name": {
+    "zh": "柑橘汁",
+    "en": "Citrus Juice"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "lemonade",
+   "name": {
+    "zh": "柠檬水",
+    "en": "Lemonade"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "lemon_soda",
+   "name": {
+    "zh": "柠檬汽水",
+    "en": "Lemon Soda"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "cola",
+   "name": {
+    "zh": "可乐",
+    "en": "Cola"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "ginger_ale",
+   "name": {
+    "zh": "姜汁汽水",
+    "en": "Ginger Ale"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "orange_soda",
+   "name": {
+    "zh": "橙味汽水",
+    "en": "Orange Soda"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "soda_water",
+   "name": {
+    "zh": "苏打水",
+    "en": "Soda Water"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "sparkling_water",
+   "name": {
+    "zh": "气泡水",
+    "en": "Sparkling Water"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "sports_drink",
+   "name": {
+    "zh": "运动饮料",
+    "en": "Sports Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "energy_drink",
+   "name": {
+    "zh": "能量饮料",
+    "en": "Energy Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "vitamin_water",
+   "name": {
+    "zh": "维生素水",
+    "en": "Vitamin Water"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "sour_plum_drink",
+   "name": {
+    "zh": "酸梅汤",
+    "en": "Sour Plum Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "herbal_tea_drink",
+   "name": {
+    "zh": "凉茶",
+    "en": "Herbal Tea Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "iced_black_tea",
+   "name": {
+    "zh": "冰红茶",
+    "en": "Iced Black Tea"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "green_tea_drink",
+   "name": {
+    "zh": "绿茶饮料",
+    "en": "Green Tea Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "milk_tea",
+   "name": {
+    "zh": "奶茶",
+    "en": "Milk Tea"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "bubble_tea",
+   "name": {
+    "zh": "珍珠奶茶",
+    "en": "Bubble Tea"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "canned_coffee",
+   "name": {
+    "zh": "罐装咖啡",
+    "en": "Canned Coffee"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "instant_coffee",
+   "name": {
+    "zh": "速溶咖啡",
+    "en": "Instant Coffee"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "soy_milk",
+   "name": {
+    "zh": "豆奶",
+    "en": "Soy Milk"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "walnut_milk",
+   "name": {
+    "zh": "核桃露",
+    "en": "Walnut Milk"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "probiotic_milk_drink",
+   "name": {
+    "zh": "乳酸菌饮料",
+    "en": "Probiotic Milk Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "yogurt_drink",
+   "name": {
+    "zh": "酸奶饮品",
+    "en": "Yogurt Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "fruit_flavored_drink",
+   "name": {
+    "zh": "果味饮料",
+    "en": "Fruit-Flavored Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "mint_drink",
+   "name": {
+    "zh": "薄荷饮料",
+    "en": "Mint Drink"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "honey_lemon_tea",
+   "name": {
+    "zh": "蜂蜜柠檬茶",
+    "en": "Honey Lemon Tea"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "ginger_tea",
+   "name": {
+    "zh": "姜茶",
+    "en": "Ginger Tea"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "fruit_drink_powder",
+   "name": {
+    "zh": "果味冲剂",
+    "en": "Fruit Drink Powder"
+   },
+   "category": "beverages",
+   "category_name": "饮料类"
+  },
+  {
+   "id": "jiuniang",
+   "name": {
+    "zh": "甜米酒",
+    "en": "Sweet Rice Wine"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "huangjiu",
+   "name": {
+    "zh": "黄酒",
+    "en": "Huangjiu"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "baijiu",
+   "name": {
+    "zh": "白酒",
+    "en": "Baijiu"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "beer",
+   "name": {
+    "zh": "啤酒",
+    "en": "Beer"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "cider",
+   "name": {
+    "zh": "苹果酒",
+    "en": "Cider"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "berry_wine",
+   "name": {
+    "zh": "浆果酒",
+    "en": "Berry Wine"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "grape_wine",
+   "name": {
+    "zh": "葡萄酒",
+    "en": "Grape Wine"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "sparkling_wine",
+   "name": {
+    "zh": "起泡酒",
+    "en": "Sparkling Wine"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "mead",
+   "name": {
+    "zh": "蜂蜜酒",
+    "en": "Mead"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "brandy",
+   "name": {
+    "zh": "白兰地",
+    "en": "Brandy"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "whisky",
+   "name": {
+    "zh": "威士忌",
+    "en": "Whisky"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "rum",
+   "name": {
+    "zh": "朗姆酒",
+    "en": "Rum"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "vodka",
+   "name": {
+    "zh": "伏特加",
+    "en": "Vodka"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "plum_liqueur",
+   "name": {
+    "zh": "青梅酒",
+    "en": "Plum Liqueur"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "mint_liqueur",
+   "name": {
+    "zh": "薄荷利口酒",
+    "en": "Mint Liqueur"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "vanilla_liqueur",
+   "name": {
+    "zh": "香草利口酒",
+    "en": "Vanilla Liqueur"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "red_yeast_rice_wine",
+   "name": {
+    "zh": "红曲酒",
+    "en": "Red Yeast Rice Wine"
+   },
+   "category": "alcoholic",
+   "category_name": "酒类"
+  },
+  {
+   "id": "fruit_jelly",
+   "name": {
+    "zh": "水果果冻",
+    "en": "Fruit Jelly"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "agar_jelly_dessert",
+   "name": {
+    "zh": "琼脂果冻",
+    "en": "Agar Jelly"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "gelatin_jelly",
+   "name": {
+    "zh": "明胶果冻",
+    "en": "Gelatin Jelly"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "almond_tofu",
+   "name": {
+    "zh": "杏仁豆腐",
+    "en": "Almond Tofu"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "caramel_custard",
+   "name": {
+    "zh": "焦糖布丁",
+    "en": "Caramel Custard"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "guilinggao",
+   "name": {
+    "zh": "龟苓膏",
+    "en": "Guilinggao"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "popping_boba",
+   "name": {
+    "zh": "爆爆珠",
+    "en": "Popping Boba"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "nata_de_coco",
+   "name": {
+    "zh": "椰果",
+    "en": "Coconut Gel"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "potato_chips",
+   "name": {
+    "zh": "马铃薯片",
+    "en": "Potato Chips"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "prawn_crackers",
+   "name": {
+    "zh": "虾片",
+    "en": "Prawn Crackers"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "corn_chips",
+   "name": {
+    "zh": "玉米片",
+    "en": "Corn Chips"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "popcorn",
+   "name": {
+    "zh": "爆米花",
+    "en": "Popcorn"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "guoba",
+   "name": {
+    "zh": "锅巴",
+    "en": "Guoba"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "puffed_rice_cracker",
+   "name": {
+    "zh": "膨化米饼",
+    "en": "Puffed Rice Cracker"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "flavored_tea",
+   "name": {
+    "zh": "调味茶包",
+    "en": "Flavored Tea Bag"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "collagen_casing",
+   "name": {
+    "zh": "胶原蛋白肠衣",
+    "en": "Collagen Casing"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  },
+  {
+   "id": "dry_yeast",
+   "name": {
+    "zh": "干酵母",
+    "en": "Dry Yeast"
+   },
+   "category": "other",
+   "category_name": "其他类"
+  }
+ ]
+}

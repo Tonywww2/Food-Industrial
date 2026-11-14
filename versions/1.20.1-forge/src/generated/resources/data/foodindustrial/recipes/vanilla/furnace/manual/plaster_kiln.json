@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:vanilla_smelting",
+  "recipe": {
+    "type": "foodindustrial:kiln",
+    "inputs": [
+      {
+        "ingredient": {
+          "tag": "foodindustrial:chemicals/gypsum"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "item": "foodindustrial:plaster",
+        "purity": {
+          "mode": "keep"
+        }
+      }
+    ],
+    "requirements": {
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "furnace",
+      "blast_furnace"
+    ]
+  }
+}

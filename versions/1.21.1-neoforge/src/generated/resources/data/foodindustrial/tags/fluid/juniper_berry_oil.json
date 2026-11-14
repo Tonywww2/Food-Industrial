@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:juniper_berry_oil",
+    "foodindustrial:flowing_juniper_berry_oil",
+    {
+      "id": "#forge:juniper_berry_oil",
+      "required": false
+    },
+    {
+      "id": "#c:juniper_berry_oil",
+      "required": false
+    }
+  ]
+}

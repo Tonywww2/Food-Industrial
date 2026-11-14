@@ -6,6 +6,10 @@
     {
       "id": "#forge:isobutyric_acid",
       "required": false
+    },
+    {
+      "id": "#c:isobutyric_acid",
+      "required": false
     }
   ]
 }

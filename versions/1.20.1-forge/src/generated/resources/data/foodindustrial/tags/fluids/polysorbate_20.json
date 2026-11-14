@@ -6,6 +6,10 @@
     {
       "id": "#forge:polysorbate_20",
       "required": false
+    },
+    {
+      "id": "#c:polysorbate_20",
+      "required": false
     }
   ]
 }

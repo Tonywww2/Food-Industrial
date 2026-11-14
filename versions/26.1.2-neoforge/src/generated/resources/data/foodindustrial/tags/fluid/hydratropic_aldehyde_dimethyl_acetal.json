@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydratropic_aldehyde_dimethyl_acetal",
+    "foodindustrial:flowing_hydratropic_aldehyde_dimethyl_acetal",
+    {
+      "id": "#forge:hydratropic_aldehyde_dimethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:hydratropic_aldehyde_dimethyl_acetal",
+      "required": false
+    }
+  ]
+}

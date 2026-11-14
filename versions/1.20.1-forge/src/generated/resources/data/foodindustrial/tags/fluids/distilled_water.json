@@ -6,6 +6,10 @@
     {
       "id": "#forge:distilled_water",
       "required": false
+    },
+    {
+      "id": "#c:distilled_water",
+      "required": false
     }
   ]
 }

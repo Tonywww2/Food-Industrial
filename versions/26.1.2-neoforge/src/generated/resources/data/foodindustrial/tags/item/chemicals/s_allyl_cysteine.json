@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:s_allyl_cysteine",
+    {
+      "id": "#forge:dusts/s_allyl_cysteine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/s_allyl_cysteine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/s_allyl_cysteine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/s_allyl_cysteine",
+      "required": false
+    }
+  ]
+}

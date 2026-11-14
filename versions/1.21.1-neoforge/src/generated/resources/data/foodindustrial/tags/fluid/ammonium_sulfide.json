@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_sulfide",
+    "foodindustrial:flowing_ammonium_sulfide",
+    {
+      "id": "#forge:ammonium_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:ammonium_sulfide",
+      "required": false
+    }
+  ]
+}

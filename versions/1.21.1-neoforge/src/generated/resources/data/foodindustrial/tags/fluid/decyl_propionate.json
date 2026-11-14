@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decyl_propionate",
+    "foodindustrial:flowing_decyl_propionate",
+    {
+      "id": "#forge:decyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:decyl_propionate",
+      "required": false
+    }
+  ]
+}

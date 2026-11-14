@@ -8,6 +8,14 @@
     {
       "id": "#forge:crops/lemon",
       "required": false
+    },
+    {
+      "id": "#c:fruits/lemon",
+      "required": false
+    },
+    {
+      "id": "#c:crops/lemon",
+      "required": false
     }
   ]
 }

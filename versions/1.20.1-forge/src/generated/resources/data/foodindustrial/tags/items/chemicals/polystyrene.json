@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polystyrene",
+    {
+      "id": "#forge:dusts/polystyrene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polystyrene",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polystyrene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polystyrene",
+      "required": false
+    }
+  ]
+}

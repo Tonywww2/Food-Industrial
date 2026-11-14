@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gum_arabic_octenylsuccinate",
+    {
+      "id": "#forge:dusts/gum_arabic_octenylsuccinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gum_arabic_octenylsuccinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/gum_arabic_octenylsuccinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gum_arabic_octenylsuccinate",
+      "required": false
+    }
+  ]
+}

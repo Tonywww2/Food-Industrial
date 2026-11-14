@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:linalyl_formate",
+  "loader": "neoforge:fluid_container"
+}

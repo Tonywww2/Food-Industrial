@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amyl_vinyl_ketone",
+    "foodindustrial:flowing_amyl_vinyl_ketone",
+    {
+      "id": "#forge:amyl_vinyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:amyl_vinyl_ketone",
+      "required": false
+    }
+  ]
+}

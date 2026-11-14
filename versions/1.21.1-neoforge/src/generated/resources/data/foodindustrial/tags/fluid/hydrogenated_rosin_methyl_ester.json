@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrogenated_rosin_methyl_ester",
+    "foodindustrial:flowing_hydrogenated_rosin_methyl_ester",
+    {
+      "id": "#forge:hydrogenated_rosin_methyl_ester",
+      "required": false
+    },
+    {
+      "id": "#c:hydrogenated_rosin_methyl_ester",
+      "required": false
+    }
+  ]
+}

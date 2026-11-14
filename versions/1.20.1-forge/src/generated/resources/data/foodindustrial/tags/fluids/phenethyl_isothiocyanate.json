@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenethyl_isothiocyanate",
+    "foodindustrial:flowing_phenethyl_isothiocyanate",
+    {
+      "id": "#forge:phenethyl_isothiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:phenethyl_isothiocyanate",
+      "required": false
+    }
+  ]
+}

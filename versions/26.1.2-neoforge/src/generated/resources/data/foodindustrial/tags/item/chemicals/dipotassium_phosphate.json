@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:dipotassium_phosphate",
     {
+      "id": "#forge:dusts/dipotassium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dipotassium_phosphate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/dipotassium_phosphate",
       "required": false
     },

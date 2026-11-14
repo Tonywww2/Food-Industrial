@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_propionate",
+    "foodindustrial:flowing_isoamyl_propionate",
+    {
+      "id": "#forge:isoamyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_propionate",
+      "required": false
+    }
+  ]
+}

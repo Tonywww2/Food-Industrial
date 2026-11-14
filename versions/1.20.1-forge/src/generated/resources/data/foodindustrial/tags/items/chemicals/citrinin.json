@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/citrinin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/citrinin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/citrinin",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/phycocyanin"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:phycocyanin"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "very_sensitive",
+    "min_tier": "t1",
+    "temperature": "freezing"
+  },
+  "time": 200
+}

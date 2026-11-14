@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercaptomenthone_8",
+    "foodindustrial:flowing_mercaptomenthone_8",
+    {
+      "id": "#forge:mercaptomenthone_8",
+      "required": false
+    },
+    {
+      "id": "#c:mercaptomenthone_8",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/cellulose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/cellulose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cellulose",
+      "required": false
     }
   ]
 }

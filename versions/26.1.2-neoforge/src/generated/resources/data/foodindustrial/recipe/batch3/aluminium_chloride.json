@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/alumina"
+    },
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:materials/coal"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:chlorine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:aluminium_chloride"
+    },
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:carbon_monoxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 200
+}

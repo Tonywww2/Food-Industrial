@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:benzoic_acid",
     {
+      "id": "#forge:dusts/benzoic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzoic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/benzoic_acid",
       "required": false
     },

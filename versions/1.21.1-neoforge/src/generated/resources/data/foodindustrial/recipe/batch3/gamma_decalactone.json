@@ -1,0 +1,50 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "type": "foodindustrial:purity",
+      "base": {
+        "tag": "foodindustrial:cultures/yarrowia"
+      },
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/glucose"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ricinoleic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "amount": 200,
+      "fluid": "foodindustrial:gamma_decalactone",
+      "purity": {
+        "mode": "source",
+        "value": 60
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

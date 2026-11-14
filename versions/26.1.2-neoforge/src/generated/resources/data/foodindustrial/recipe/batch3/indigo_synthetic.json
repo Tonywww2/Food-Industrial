@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/indoxyl"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:indigo",
+      "purity": {
+        "mode": "source",
+        "value": 90
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

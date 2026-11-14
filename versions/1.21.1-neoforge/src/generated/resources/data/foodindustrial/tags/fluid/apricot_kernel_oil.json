@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:apricot_kernel_oil",
+    "foodindustrial:flowing_apricot_kernel_oil",
+    {
+      "id": "#forge:apricot_kernel_oil",
+      "required": false
+    },
+    {
+      "id": "#c:apricot_kernel_oil",
+      "required": false
+    }
+  ]
+}

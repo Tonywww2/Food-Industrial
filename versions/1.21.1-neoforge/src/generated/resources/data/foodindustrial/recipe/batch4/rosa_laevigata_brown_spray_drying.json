@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/rosa_laevigata_brown"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:rosa_laevigata_brown"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "sensitive",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

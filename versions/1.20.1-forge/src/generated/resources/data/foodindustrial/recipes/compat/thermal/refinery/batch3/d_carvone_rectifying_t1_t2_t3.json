@@ -1,0 +1,30 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:d_carvone"
+  },
+  "result": [
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:d_carvone",
+      "nbt": "{Purity:33b}"
+    }
+  ]
+}

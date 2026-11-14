@@ -6,6 +6,10 @@
     {
       "id": "#forge:lactulose_syrup",
       "required": false
+    },
+    {
+      "id": "#c:lactulose_syrup",
+      "required": false
     }
   ]
 }

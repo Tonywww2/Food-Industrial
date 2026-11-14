@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/molybdenum"
+    }
+  ],
+  "mode": "roasting",
+  "outputs": [
+    {
+      "item": "foodindustrial:molybdenum_trioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 400
+}

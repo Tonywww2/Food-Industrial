@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lard",
+    "foodindustrial:tallow",
+    "foodindustrial:edible_oil",
+    "foodindustrial:peanut_oil",
+    "foodindustrial:sesame_oil",
+    "foodindustrial:margarine",
+    "foodindustrial:shortening",
+    "foodindustrial:non_dairy_creamer"
+  ]
+}

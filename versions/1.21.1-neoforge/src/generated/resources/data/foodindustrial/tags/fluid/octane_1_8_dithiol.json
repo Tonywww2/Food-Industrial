@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octane_1_8_dithiol",
+    "foodindustrial:flowing_octane_1_8_dithiol",
+    {
+      "id": "#forge:octane_1_8_dithiol",
+      "required": false
+    },
+    {
+      "id": "#c:octane_1_8_dithiol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tuberose_concrete",
+    {
+      "id": "#forge:dusts/tuberose_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tuberose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tuberose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tuberose_concrete",
+      "required": false
+    }
+  ]
+}

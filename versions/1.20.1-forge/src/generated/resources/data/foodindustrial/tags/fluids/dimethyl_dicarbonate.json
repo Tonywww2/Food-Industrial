@@ -6,6 +6,10 @@
     {
       "id": "#forge:dimethyl_dicarbonate",
       "required": false
+    },
+    {
+      "id": "#c:dimethyl_dicarbonate",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:selenium",
+    {
+      "id": "#forge:dusts/selenium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/selenium",
+      "required": false
+    }
+  ]
+}

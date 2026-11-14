@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leaf_3_hexenoate",
+    "foodindustrial:flowing_leaf_3_hexenoate",
+    {
+      "id": "#forge:leaf_3_hexenoate",
+      "required": false
+    },
+    {
+      "id": "#c:leaf_3_hexenoate",
+      "required": false
+    }
+  ]
+}

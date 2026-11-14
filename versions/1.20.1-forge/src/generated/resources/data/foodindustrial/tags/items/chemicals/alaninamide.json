@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/alaninamide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/alaninamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alaninamide",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_nitrate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:potassium_nitrate",
+      "purity": {
+        "mode": "removal",
+        "t0_max": "refined",
+        "value": 50
+      }
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200
+}

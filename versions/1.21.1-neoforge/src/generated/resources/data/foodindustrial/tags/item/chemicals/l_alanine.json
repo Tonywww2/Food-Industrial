@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:l_alanine",
     {
+      "id": "#forge:dusts/l_alanine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_alanine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/l_alanine",
       "required": false
     },

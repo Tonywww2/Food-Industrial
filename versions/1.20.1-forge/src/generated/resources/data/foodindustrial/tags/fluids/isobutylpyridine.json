@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutylpyridine",
+    "foodindustrial:flowing_isobutylpyridine",
+    {
+      "id": "#forge:isobutylpyridine",
+      "required": false
+    },
+    {
+      "id": "#c:isobutylpyridine",
+      "required": false
+    }
+  ]
+}

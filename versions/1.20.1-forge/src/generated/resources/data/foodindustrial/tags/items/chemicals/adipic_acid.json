@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/adipic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/adipic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/adipic_acid",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:angelica_dahurica_tincture",
+    "foodindustrial:flowing_angelica_dahurica_tincture",
+    {
+      "id": "#forge:angelica_dahurica_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:angelica_dahurica_tincture",
+      "required": false
+    }
+  ]
+}

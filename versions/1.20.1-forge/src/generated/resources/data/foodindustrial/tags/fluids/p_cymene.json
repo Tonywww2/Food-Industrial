@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_cymene",
+    "foodindustrial:flowing_p_cymene",
+    {
+      "id": "#forge:p_cymene",
+      "required": false
+    },
+    {
+      "id": "#c:p_cymene",
+      "required": false
+    }
+  ]
+}

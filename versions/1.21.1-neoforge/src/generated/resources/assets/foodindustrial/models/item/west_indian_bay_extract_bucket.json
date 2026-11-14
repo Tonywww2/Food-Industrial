@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:west_indian_bay_extract",
+  "loader": "neoforge:fluid_container"
+}

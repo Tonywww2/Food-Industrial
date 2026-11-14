@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/glucose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/glucose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glucose",
+      "required": false
     }
   ]
 }

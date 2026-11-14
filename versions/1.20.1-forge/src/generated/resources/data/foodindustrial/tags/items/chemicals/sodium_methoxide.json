@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_methoxide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_methoxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_methoxide",
+      "required": false
     }
   ]
 }

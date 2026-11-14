@@ -1,0 +1,45 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/aluminium_chloride"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:toluene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:acetic_anhydride"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:o_methylacetophenone",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:p_methylacetophenone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

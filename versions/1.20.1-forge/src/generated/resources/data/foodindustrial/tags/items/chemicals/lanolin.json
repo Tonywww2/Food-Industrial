@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/lanolin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/lanolin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lanolin",
+      "required": false
     }
   ]
 }

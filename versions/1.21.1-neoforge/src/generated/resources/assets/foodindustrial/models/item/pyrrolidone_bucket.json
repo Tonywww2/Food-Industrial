@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:pyrrolidone",
+  "loader": "neoforge:fluid_container"
+}

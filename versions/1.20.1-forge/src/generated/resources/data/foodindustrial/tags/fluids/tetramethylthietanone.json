@@ -6,6 +6,10 @@
     {
       "id": "#forge:tetramethylthietanone",
       "required": false
+    },
+    {
+      "id": "#c:tetramethylthietanone",
+      "required": false
     }
   ]
 }

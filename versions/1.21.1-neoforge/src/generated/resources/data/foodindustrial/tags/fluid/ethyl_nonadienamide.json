@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_nonadienamide",
+    "foodindustrial:flowing_ethyl_nonadienamide",
+    {
+      "id": "#forge:ethyl_nonadienamide",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_nonadienamide",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/carminic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/carminic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carminic_acid",
+      "required": false
     }
   ]
 }

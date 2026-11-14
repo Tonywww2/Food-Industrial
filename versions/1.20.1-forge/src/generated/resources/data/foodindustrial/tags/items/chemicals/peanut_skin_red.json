@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/peanut_skin_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/peanut_skin_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/peanut_skin_red",
+      "required": false
     }
   ]
 }

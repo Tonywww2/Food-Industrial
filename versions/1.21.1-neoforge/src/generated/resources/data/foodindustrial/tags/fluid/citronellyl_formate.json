@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronellyl_formate",
+    "foodindustrial:flowing_citronellyl_formate",
+    {
+      "id": "#forge:citronellyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:citronellyl_formate",
+      "required": false
+    }
+  ]
+}

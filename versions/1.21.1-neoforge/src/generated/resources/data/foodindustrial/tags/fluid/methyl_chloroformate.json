@@ -4,6 +4,10 @@
     "foodindustrial:methyl_chloroformate",
     "foodindustrial:flowing_methyl_chloroformate",
     {
+      "id": "#forge:methyl_chloroformate",
+      "required": false
+    },
+    {
       "id": "#c:methyl_chloroformate",
       "required": false
     }

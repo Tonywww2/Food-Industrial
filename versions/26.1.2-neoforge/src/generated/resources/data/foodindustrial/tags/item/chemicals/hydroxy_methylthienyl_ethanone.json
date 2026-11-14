@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxy_methylthienyl_ethanone",
+    {
+      "id": "#forge:dusts/hydroxy_methylthienyl_ethanone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxy_methylthienyl_ethanone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxy_methylthienyl_ethanone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxy_methylthienyl_ethanone",
+      "required": false
+    }
+  ]
+}

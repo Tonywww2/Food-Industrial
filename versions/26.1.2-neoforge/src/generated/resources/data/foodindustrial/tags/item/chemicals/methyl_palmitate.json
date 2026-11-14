@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_palmitate",
+    {
+      "id": "#forge:dusts/methyl_palmitate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_palmitate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_palmitate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_palmitate",
+      "required": false
+    }
+  ]
+}

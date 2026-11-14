@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t4",
+  "icon": "foodindustrial:membrane_separator",
+  "name": "book.foodindustrial.manual.entry.membrane_separator",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:membrane_separator",
+      "text": "book.foodindustrial.manual.entry.membrane_separator.text"
+    }
+  ],
+  "sortnum": 2
+}

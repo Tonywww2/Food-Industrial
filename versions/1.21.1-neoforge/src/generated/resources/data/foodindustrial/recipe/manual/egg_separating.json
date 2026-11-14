@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 4
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:egg_yolk"
+    },
+    {
+      "item": "foodindustrial:egg_white"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "filtration"
+    ]
+  },
+  "time": 200
+}

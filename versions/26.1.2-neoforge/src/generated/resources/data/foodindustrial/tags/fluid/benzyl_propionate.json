@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_propionate",
+    "foodindustrial:flowing_benzyl_propionate",
+    {
+      "id": "#forge:benzyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_propionate",
+      "required": false
+    }
+  ]
+}

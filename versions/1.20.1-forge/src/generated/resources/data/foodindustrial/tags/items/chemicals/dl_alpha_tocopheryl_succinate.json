@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_alpha_tocopheryl_succinate",
+    {
+      "id": "#forge:dusts/dl_alpha_tocopheryl_succinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dl_alpha_tocopheryl_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dl_alpha_tocopheryl_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dl_alpha_tocopheryl_succinate",
+      "required": false
+    }
+  ]
+}

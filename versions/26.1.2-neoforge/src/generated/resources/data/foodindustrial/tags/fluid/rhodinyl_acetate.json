@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rhodinyl_acetate",
+    "foodindustrial:flowing_rhodinyl_acetate",
+    {
+      "id": "#forge:rhodinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:rhodinyl_acetate",
+      "required": false
+    }
+  ]
+}

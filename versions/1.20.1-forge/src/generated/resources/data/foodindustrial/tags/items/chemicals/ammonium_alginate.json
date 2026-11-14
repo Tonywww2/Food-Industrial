@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_alginate",
+    {
+      "id": "#forge:dusts/ammonium_alginate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_alginate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ammonium_alginate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ammonium_alginate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:raffinose",
+    {
+      "id": "#forge:dusts/raffinose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/raffinose",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/raffinose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/raffinose",
+      "required": false
+    }
+  ]
+}

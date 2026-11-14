@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monomenthyl_succinate",
+    {
+      "id": "#forge:dusts/monomenthyl_succinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monomenthyl_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/monomenthyl_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monomenthyl_succinate",
+      "required": false
+    }
+  ]
+}

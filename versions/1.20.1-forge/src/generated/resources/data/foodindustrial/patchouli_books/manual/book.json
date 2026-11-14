@@ -1,0 +1,9 @@
+{
+  "custom_book_item": "foodindustrial:manual",
+  "i18n": true,
+  "landing_text": "book.foodindustrial.manual.landing",
+  "name": "book.foodindustrial.manual.name",
+  "show_progress": false,
+  "subtitle": "book.foodindustrial.manual.subtitle",
+  "use_resource_pack": true
+}

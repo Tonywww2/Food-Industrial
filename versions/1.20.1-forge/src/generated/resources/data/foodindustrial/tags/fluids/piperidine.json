@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperidine",
+    "foodindustrial:flowing_piperidine",
+    {
+      "id": "#forge:piperidine",
+      "required": false
+    },
+    {
+      "id": "#c:piperidine",
+      "required": false
+    }
+  ]
+}

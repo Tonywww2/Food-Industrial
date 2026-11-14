@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leaf_isobutyrate",
+    "foodindustrial:flowing_leaf_isobutyrate",
+    {
+      "id": "#forge:leaf_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:leaf_isobutyrate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/alunite"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:alunite",
+    "nbt": "{Purity:25b}"
+  }
+}

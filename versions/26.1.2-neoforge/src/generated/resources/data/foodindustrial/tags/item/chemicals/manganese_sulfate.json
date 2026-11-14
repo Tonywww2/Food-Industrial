@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:manganese_sulfate",
     {
+      "id": "#forge:dusts/manganese_sulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/manganese_sulfate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/manganese_sulfate",
       "required": false
     },

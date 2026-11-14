@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_camphor",
+    {
+      "id": "#forge:dusts/dl_camphor",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dl_camphor",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dl_camphor",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dl_camphor",
+      "required": false
+    }
+  ]
+}

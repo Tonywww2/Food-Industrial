@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jujube_tincture",
+    "foodindustrial:flowing_jujube_tincture",
+    {
+      "id": "#forge:jujube_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:jujube_tincture",
+      "required": false
+    }
+  ]
+}

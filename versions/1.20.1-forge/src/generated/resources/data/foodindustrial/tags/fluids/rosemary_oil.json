@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rosemary_oil",
+    "foodindustrial:flowing_rosemary_oil",
+    {
+      "id": "#forge:rosemary_oil",
+      "required": false
+    },
+    {
+      "id": "#c:rosemary_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:valerian_root_oil",
+  "loader": "neoforge:fluid_container"
+}

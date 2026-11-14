@@ -8,6 +8,18 @@
     {
       "id": "#c:foods/raw_chicken",
       "required": false
+    },
+    {
+      "id": "#forge:raw_chicken",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/raw_chicken",
+      "required": false
+    },
+    {
+      "id": "#c:raw_chicken",
+      "required": false
     }
   ]
 }

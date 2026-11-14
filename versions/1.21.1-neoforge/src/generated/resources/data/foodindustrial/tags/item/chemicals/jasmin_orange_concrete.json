@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jasmin_orange_concrete",
+    {
+      "id": "#forge:dusts/jasmin_orange_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/jasmin_orange_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/jasmin_orange_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/jasmin_orange_concrete",
+      "required": false
+    }
+  ]
+}

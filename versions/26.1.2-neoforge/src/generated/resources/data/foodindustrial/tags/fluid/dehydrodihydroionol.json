@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dehydrodihydroionol",
+    "foodindustrial:flowing_dehydrodihydroionol",
+    {
+      "id": "#forge:dehydrodihydroionol",
+      "required": false
+    },
+    {
+      "id": "#c:dehydrodihydroionol",
+      "required": false
+    }
+  ]
+}

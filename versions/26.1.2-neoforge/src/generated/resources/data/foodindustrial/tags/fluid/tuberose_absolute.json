@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tuberose_absolute",
+    "foodindustrial:flowing_tuberose_absolute",
+    {
+      "id": "#forge:tuberose_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:tuberose_absolute",
+      "required": false
+    }
+  ]
+}

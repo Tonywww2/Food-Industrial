@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_propionate",
+    "foodindustrial:flowing_linalyl_propionate",
+    {
+      "id": "#forge:linalyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_propionate",
+      "required": false
+    }
+  ]
+}

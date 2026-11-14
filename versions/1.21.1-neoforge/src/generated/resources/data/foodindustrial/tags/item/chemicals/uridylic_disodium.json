@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:uridylic_disodium",
+    {
+      "id": "#forge:dusts/uridylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/uridylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/uridylic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/uridylic_disodium",
+      "required": false
+    }
+  ]
+}

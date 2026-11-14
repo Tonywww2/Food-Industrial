@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecan_2_ol",
+    "foodindustrial:flowing_undecan_2_ol",
+    {
+      "id": "#forge:undecan_2_ol",
+      "required": false
+    },
+    {
+      "id": "#c:undecan_2_ol",
+      "required": false
+    }
+  ]
+}

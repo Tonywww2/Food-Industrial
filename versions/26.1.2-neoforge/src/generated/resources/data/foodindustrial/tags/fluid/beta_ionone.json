@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_ionone",
+    "foodindustrial:flowing_beta_ionone",
+    {
+      "id": "#forge:beta_ionone",
+      "required": false
+    },
+    {
+      "id": "#c:beta_ionone",
+      "required": false
+    }
+  ]
+}

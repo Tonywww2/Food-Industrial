@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tolualdehyde_glyceryl_acetal",
+    "foodindustrial:flowing_tolualdehyde_glyceryl_acetal",
+    {
+      "id": "#forge:tolualdehyde_glyceryl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:tolualdehyde_glyceryl_acetal",
+      "required": false
+    }
+  ]
+}

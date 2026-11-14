@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carvacrol",
+    "foodindustrial:flowing_carvacrol",
+    {
+      "id": "#forge:carvacrol",
+      "required": false
+    },
+    {
+      "id": "#c:carvacrol",
+      "required": false
+    }
+  ]
+}

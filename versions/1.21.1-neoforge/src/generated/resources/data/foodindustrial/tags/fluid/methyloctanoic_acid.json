@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyloctanoic_acid",
+    "foodindustrial:flowing_methyloctanoic_acid",
+    {
+      "id": "#forge:methyloctanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:methyloctanoic_acid",
+      "required": false
+    }
+  ]
+}

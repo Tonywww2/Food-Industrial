@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:katsuobushi_co2_extract",
+    "foodindustrial:flowing_katsuobushi_co2_extract",
+    {
+      "id": "#forge:katsuobushi_co2_extract",
+      "required": false
+    },
+    {
+      "id": "#c:katsuobushi_co2_extract",
+      "required": false
+    }
+  ]
+}

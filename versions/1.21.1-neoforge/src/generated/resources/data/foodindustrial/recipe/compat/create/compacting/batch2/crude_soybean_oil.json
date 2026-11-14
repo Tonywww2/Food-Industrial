@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/soybean"
+    },
+    {
+      "tag": "foodindustrial:materials/soybean"
+    },
+    {
+      "tag": "foodindustrial:materials/soybean"
+    },
+    {
+      "tag": "foodindustrial:materials/soybean"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "foodindustrial:okara"
+    },
+    {
+      "amount": 250,
+      "id": "foodindustrial:crude_soybean_oil"
+    }
+  ]
+}

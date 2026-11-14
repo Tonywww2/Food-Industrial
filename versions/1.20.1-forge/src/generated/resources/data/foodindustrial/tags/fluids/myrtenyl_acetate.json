@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myrtenyl_acetate",
+    "foodindustrial:flowing_myrtenyl_acetate",
+    {
+      "id": "#forge:myrtenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:myrtenyl_acetate",
+      "required": false
+    }
+  ]
+}

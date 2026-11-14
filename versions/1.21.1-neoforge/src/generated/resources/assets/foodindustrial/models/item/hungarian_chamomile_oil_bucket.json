@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hungarian_chamomile_oil",
+  "loader": "neoforge:fluid_container"
+}

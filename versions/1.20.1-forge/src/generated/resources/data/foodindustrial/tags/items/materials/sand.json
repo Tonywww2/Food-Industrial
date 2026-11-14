@@ -12,6 +12,18 @@
     {
       "id": "#forge:sand",
       "required": false
+    },
+    {
+      "id": "#c:sands",
+      "required": false
+    },
+    {
+      "id": "#c:sand",
+      "required": false
+    },
+    {
+      "id": "#forge:sands",
+      "required": false
     }
   ]
 }

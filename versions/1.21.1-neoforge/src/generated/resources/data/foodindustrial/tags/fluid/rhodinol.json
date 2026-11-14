@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rhodinol",
+    "foodindustrial:flowing_rhodinol",
+    {
+      "id": "#forge:rhodinol",
+      "required": false
+    },
+    {
+      "id": "#c:rhodinol",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:betanin",
     {
+      "id": "#forge:dusts/betanin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/betanin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/betanin",
       "required": false
     },

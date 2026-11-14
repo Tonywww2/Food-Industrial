@@ -1,0 +1,27 @@
+{
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:mint_oil"
+  },
+  "max_temp": 273,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:menthol",
+    "nbt": "{Purity:25b}"
+  }
+}

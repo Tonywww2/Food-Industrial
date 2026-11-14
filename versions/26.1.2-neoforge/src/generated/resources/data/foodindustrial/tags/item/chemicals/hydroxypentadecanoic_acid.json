@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxypentadecanoic_acid",
+    {
+      "id": "#forge:dusts/hydroxypentadecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxypentadecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxypentadecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxypentadecanoic_acid",
+      "required": false
+    }
+  ]
+}

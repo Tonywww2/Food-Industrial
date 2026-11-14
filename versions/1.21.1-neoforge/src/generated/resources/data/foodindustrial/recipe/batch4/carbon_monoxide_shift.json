@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/iron"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:carbon_monoxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "gas_catalysis",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

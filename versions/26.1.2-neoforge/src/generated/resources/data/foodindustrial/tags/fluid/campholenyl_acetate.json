@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:campholenyl_acetate",
+    "foodindustrial:flowing_campholenyl_acetate",
+    {
+      "id": "#forge:campholenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:campholenyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_furoate",
+    "foodindustrial:flowing_methyl_furoate",
+    {
+      "id": "#forge:methyl_furoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_furoate",
+      "required": false
+    }
+  ]
+}

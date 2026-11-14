@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/ergosterol"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:n_hexane"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:ergocalciferol",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:n_hexane",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "ultraviolet"
+    ],
+    "min_tier": "t2",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

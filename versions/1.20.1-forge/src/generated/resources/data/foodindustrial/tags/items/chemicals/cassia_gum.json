@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/cassia_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/cassia_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cassia_gum",
+      "required": false
     }
   ]
 }

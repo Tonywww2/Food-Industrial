@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furylacrylic_acid",
+    {
+      "id": "#forge:dusts/furylacrylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/furylacrylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/furylacrylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/furylacrylic_acid",
+      "required": false
+    }
+  ]
+}

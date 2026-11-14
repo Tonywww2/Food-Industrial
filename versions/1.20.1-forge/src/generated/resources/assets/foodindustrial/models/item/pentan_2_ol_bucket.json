@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:pentan_2_ol",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:elderflower_absolute",
+  "loader": "forge:fluid_container"
+}

@@ -4,6 +4,10 @@
     "foodindustrial:acetaldehyde",
     "foodindustrial:flowing_acetaldehyde",
     {
+      "id": "#forge:acetaldehyde",
+      "required": false
+    },
+    {
       "id": "#c:acetaldehyde",
       "required": false
     }

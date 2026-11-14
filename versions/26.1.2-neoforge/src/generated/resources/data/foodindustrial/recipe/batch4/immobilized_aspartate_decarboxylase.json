@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:enzymes/aspartate_decarboxylase"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/carrageenan"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/potassium_chloride"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:immobilized_aspartate_decarboxylase"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

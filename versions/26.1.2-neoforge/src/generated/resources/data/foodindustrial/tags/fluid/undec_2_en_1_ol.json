@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undec_2_en_1_ol",
+    "foodindustrial:flowing_undec_2_en_1_ol",
+    {
+      "id": "#forge:undec_2_en_1_ol",
+      "required": false
+    },
+    {
+      "id": "#c:undec_2_en_1_ol",
+      "required": false
+    }
+  ]
+}

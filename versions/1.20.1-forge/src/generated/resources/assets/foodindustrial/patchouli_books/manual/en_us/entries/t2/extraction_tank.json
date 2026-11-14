@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:extraction_tank",
+  "name": "book.foodindustrial.manual.entry.extraction_tank",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:extraction_tank",
+      "text": "book.foodindustrial.manual.entry.extraction_tank.text"
+    }
+  ],
+  "sortnum": 5
+}

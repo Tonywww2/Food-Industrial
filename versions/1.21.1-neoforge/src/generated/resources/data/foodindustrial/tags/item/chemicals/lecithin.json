@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:lecithin",
     {
+      "id": "#forge:dusts/lecithin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lecithin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/lecithin",
       "required": false
     },

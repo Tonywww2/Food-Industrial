@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylcoumarin",
+    {
+      "id": "#forge:dusts/methylcoumarin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylcoumarin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylcoumarin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylcoumarin",
+      "required": false
+    }
+  ]
+}

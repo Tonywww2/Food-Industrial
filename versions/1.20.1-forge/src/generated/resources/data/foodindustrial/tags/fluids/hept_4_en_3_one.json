@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hept_4_en_3_one",
+    "foodindustrial:flowing_hept_4_en_3_one",
+    {
+      "id": "#forge:hept_4_en_3_one",
+      "required": false
+    },
+    {
+      "id": "#c:hept_4_en_3_one",
+      "required": false
+    }
+  ]
+}

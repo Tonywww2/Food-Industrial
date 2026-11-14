@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenethyl_tiglate",
+    "foodindustrial:flowing_phenethyl_tiglate",
+    {
+      "id": "#forge:phenethyl_tiglate",
+      "required": false
+    },
+    {
+      "id": "#c:phenethyl_tiglate",
+      "required": false
+    }
+  ]
+}

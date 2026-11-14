@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercaptohexyl_butyrate",
+    "foodindustrial:flowing_mercaptohexyl_butyrate",
+    {
+      "id": "#forge:mercaptohexyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:mercaptohexyl_butyrate",
+      "required": false
+    }
+  ]
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:isobutylene",
       "required": false
+    },
+    {
+      "id": "#c:isobutylene",
+      "required": false
     }
   ]
 }

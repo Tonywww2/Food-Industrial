@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:prenyl_acetate",
+    "foodindustrial:flowing_prenyl_acetate",
+    {
+      "id": "#forge:prenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:prenyl_acetate",
+      "required": false
+    }
+  ]
+}

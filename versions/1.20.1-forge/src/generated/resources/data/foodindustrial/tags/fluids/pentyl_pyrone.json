@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentyl_pyrone",
+    "foodindustrial:flowing_pentyl_pyrone",
+    {
+      "id": "#forge:pentyl_pyrone",
+      "required": false
+    },
+    {
+      "id": "#c:pentyl_pyrone",
+      "required": false
+    }
+  ]
+}

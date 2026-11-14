@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopropylmethylhexenal",
+    "foodindustrial:flowing_isopropylmethylhexenal",
+    {
+      "id": "#forge:isopropylmethylhexenal",
+      "required": false
+    },
+    {
+      "id": "#c:isopropylmethylhexenal",
+      "required": false
+    }
+  ]
+}

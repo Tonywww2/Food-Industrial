@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:propylene_glycol_alginate",
     {
+      "id": "#forge:dusts/propylene_glycol_alginate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/propylene_glycol_alginate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/propylene_glycol_alginate",
       "required": false
     },

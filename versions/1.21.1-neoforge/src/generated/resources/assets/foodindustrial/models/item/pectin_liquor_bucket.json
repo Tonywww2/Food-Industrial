@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:pectin_liquor",
+  "loader": "neoforge:fluid_container"
+}

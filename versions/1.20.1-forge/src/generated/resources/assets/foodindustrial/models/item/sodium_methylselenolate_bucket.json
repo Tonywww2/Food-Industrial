@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:sodium_methylselenolate",
+  "loader": "forge:fluid_container"
+}

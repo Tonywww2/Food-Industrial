@@ -4,6 +4,10 @@
     "foodindustrial:sodium_silicate",
     "foodindustrial:flowing_sodium_silicate",
     {
+      "id": "#forge:sodium_silicate",
+      "required": false
+    },
+    {
       "id": "#c:sodium_silicate",
       "required": false
     }

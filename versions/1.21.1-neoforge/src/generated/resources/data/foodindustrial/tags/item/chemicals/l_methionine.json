@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_methionine",
+    {
+      "id": "#forge:dusts/l_methionine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_methionine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/l_methionine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_methionine",
+      "required": false
+    }
+  ]
+}

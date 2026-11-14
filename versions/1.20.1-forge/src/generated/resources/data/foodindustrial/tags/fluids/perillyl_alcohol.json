@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:perillyl_alcohol",
+    "foodindustrial:flowing_perillyl_alcohol",
+    {
+      "id": "#forge:perillyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:perillyl_alcohol",
+      "required": false
+    }
+  ]
+}

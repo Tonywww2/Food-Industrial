@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:yucca_extract",
+    "foodindustrial:flowing_yucca_extract",
+    {
+      "id": "#forge:yucca_extract",
+      "required": false
+    },
+    {
+      "id": "#c:yucca_extract",
+      "required": false
+    }
+  ]
+}

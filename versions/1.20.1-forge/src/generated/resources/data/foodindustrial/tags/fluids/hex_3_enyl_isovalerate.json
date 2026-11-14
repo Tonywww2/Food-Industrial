@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hex_3_enyl_isovalerate",
+    "foodindustrial:flowing_hex_3_enyl_isovalerate",
+    {
+      "id": "#forge:hex_3_enyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:hex_3_enyl_isovalerate",
+      "required": false
+    }
+  ]
+}

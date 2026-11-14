@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambergris_tincture",
+    "foodindustrial:flowing_ambergris_tincture",
+    {
+      "id": "#forge:ambergris_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:ambergris_tincture",
+      "required": false
+    }
+  ]
+}

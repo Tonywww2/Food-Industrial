@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/agar_jelly"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:agar",
+      "purity": {
+        "mode": "source",
+        "value": 75
+      }
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "cold_biome",
+      "open_sky"
+    ]
+  },
+  "time": 96000
+}

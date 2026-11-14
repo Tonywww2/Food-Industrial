@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_trans_2_4_undecadienal",
+    "foodindustrial:flowing_trans_trans_2_4_undecadienal",
+    {
+      "id": "#forge:trans_trans_2_4_undecadienal",
+      "required": false
+    },
+    {
+      "id": "#c:trans_trans_2_4_undecadienal",
+      "required": false
+    }
+  ]
+}

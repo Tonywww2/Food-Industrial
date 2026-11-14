@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:santalol",
+    "foodindustrial:flowing_santalol",
+    {
+      "id": "#forge:santalol",
+      "required": false
+    },
+    {
+      "id": "#c:santalol",
+      "required": false
+    }
+  ]
+}

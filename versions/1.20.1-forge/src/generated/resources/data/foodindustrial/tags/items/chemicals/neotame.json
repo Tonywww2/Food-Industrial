@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/neotame",
       "required": false
+    },
+    {
+      "id": "#c:dusts/neotame",
+      "required": false
+    },
+    {
+      "id": "#c:gems/neotame",
+      "required": false
     }
   ]
 }

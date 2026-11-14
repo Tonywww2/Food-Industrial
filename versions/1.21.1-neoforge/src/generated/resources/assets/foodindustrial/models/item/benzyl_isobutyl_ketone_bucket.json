@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:benzyl_isobutyl_ketone",
+  "loader": "neoforge:fluid_container"
+}

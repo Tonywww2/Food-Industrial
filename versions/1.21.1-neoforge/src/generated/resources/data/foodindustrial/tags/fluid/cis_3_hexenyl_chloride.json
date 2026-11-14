@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_3_hexenyl_chloride",
+    "foodindustrial:flowing_cis_3_hexenyl_chloride",
+    {
+      "id": "#forge:cis_3_hexenyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:cis_3_hexenyl_chloride",
+      "required": false
+    }
+  ]
+}

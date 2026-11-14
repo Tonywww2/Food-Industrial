@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/starch"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/monosodium_phosphate"
+    }
+  ],
+  "mode": "condensation",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:sodium_starch_phosphate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

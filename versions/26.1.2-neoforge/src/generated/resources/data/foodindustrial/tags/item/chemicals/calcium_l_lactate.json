@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_l_lactate",
+    {
+      "id": "#forge:dusts/calcium_l_lactate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_l_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_l_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_l_lactate",
+      "required": false
+    }
+  ]
+}

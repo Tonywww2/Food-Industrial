@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sucrose_6_acetate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sucrose_6_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sucrose_6_acetate",
+      "required": false
     }
   ]
 }

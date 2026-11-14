@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_methoxycinnamaldehyde",
+    {
+      "id": "#forge:dusts/o_methoxycinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/o_methoxycinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/o_methoxycinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/o_methoxycinnamaldehyde",
+      "required": false
+    }
+  ]
+}

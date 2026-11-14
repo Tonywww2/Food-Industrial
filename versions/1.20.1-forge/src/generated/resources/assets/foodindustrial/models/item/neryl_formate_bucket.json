@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:neryl_formate",
+  "loader": "forge:fluid_container"
+}

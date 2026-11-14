@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_propionate",
+    "foodindustrial:flowing_ethyl_propionate",
+    {
+      "id": "#forge:ethyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_propionate",
+      "required": false
+    }
+  ]
+}

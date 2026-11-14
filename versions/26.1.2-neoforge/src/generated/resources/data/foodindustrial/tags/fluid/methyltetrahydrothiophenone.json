@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyltetrahydrothiophenone",
+    "foodindustrial:flowing_methyltetrahydrothiophenone",
+    {
+      "id": "#forge:methyltetrahydrothiophenone",
+      "required": false
+    },
+    {
+      "id": "#c:methyltetrahydrothiophenone",
+      "required": false
+    }
+  ]
+}

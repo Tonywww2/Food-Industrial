@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:raw_citrus_juice",
+    "foodindustrial:flowing_raw_citrus_juice",
+    {
+      "id": "#forge:raw_citrus_juice",
+      "required": false
+    },
+    {
+      "id": "#c:raw_citrus_juice",
+      "required": false
+    }
+  ]
+}

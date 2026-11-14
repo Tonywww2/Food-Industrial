@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_propylcyclohexenone",
+    "foodindustrial:flowing_methyl_propylcyclohexenone",
+    {
+      "id": "#forge:methyl_propylcyclohexenone",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_propylcyclohexenone",
+      "required": false
+    }
+  ]
+}

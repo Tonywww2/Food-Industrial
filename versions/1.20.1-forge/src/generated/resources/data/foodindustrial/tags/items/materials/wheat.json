@@ -12,6 +12,22 @@
     {
       "id": "#forge:grain/wheat",
       "required": false
+    },
+    {
+      "id": "#c:crops/wheat",
+      "required": false
+    },
+    {
+      "id": "#c:grain/wheat",
+      "required": false
+    },
+    {
+      "id": "#c:grains/wheat",
+      "required": false
+    },
+    {
+      "id": "#forge:grains/wheat",
+      "required": false
     }
   ]
 }

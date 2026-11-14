@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sucralose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sucralose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sucralose",
+      "required": false
     }
   ]
 }

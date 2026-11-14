@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mandarin_oil",
+    "foodindustrial:flowing_mandarin_oil",
+    {
+      "id": "#forge:mandarin_oil",
+      "required": false
+    },
+    {
+      "id": "#c:mandarin_oil",
+      "required": false
+    }
+  ]
+}

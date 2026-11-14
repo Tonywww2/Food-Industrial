@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/iodine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/iodine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/iodine",
+      "required": false
     }
   ]
 }

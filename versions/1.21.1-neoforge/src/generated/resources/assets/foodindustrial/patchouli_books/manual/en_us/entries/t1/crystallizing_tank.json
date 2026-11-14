@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:crystallizing_tank",
+  "name": "book.foodindustrial.manual.entry.crystallizing_tank",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:crystallizing_tank",
+      "text": "book.foodindustrial.manual.entry.crystallizing_tank.text"
+    }
+  ],
+  "sortnum": 8
+}

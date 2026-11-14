@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentanethiol_2",
+    "foodindustrial:flowing_pentanethiol_2",
+    {
+      "id": "#forge:pentanethiol_2",
+      "required": false
+    },
+    {
+      "id": "#c:pentanethiol_2",
+      "required": false
+    }
+  ]
+}

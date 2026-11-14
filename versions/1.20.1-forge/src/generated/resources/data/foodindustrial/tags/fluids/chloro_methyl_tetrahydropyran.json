@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chloro_methyl_tetrahydropyran",
+    "foodindustrial:flowing_chloro_methyl_tetrahydropyran",
+    {
+      "id": "#forge:chloro_methyl_tetrahydropyran",
+      "required": false
+    },
+    {
+      "id": "#c:chloro_methyl_tetrahydropyran",
+      "required": false
+    }
+  ]
+}

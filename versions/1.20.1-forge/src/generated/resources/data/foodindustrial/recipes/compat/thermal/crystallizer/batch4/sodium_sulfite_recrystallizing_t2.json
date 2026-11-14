@@ -1,0 +1,34 @@
+{
+  "type": "thermal:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "energy": 3000,
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid_tag": "foodindustrial:water"
+    },
+    {
+      "count": 4,
+      "tag": "foodindustrial:chemicals/sodium_sulfite"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "foodindustrial:sodium_sulfite",
+      "nbt": "{Purity:35b}"
+    }
+  ]
+}

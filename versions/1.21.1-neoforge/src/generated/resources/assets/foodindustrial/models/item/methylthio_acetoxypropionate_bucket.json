@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methylthio_acetoxypropionate",
+  "loader": "neoforge:fluid_container"
+}

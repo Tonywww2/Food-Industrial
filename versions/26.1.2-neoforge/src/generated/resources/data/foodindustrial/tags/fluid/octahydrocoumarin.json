@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octahydrocoumarin",
+    "foodindustrial:flowing_octahydrocoumarin",
+    {
+      "id": "#forge:octahydrocoumarin",
+      "required": false
+    },
+    {
+      "id": "#c:octahydrocoumarin",
+      "required": false
+    }
+  ]
+}

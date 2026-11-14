@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dioctyl_adipate",
+  "loader": "neoforge:fluid_container"
+}

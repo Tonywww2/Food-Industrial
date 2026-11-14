@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_methoxyacetophenone",
+    {
+      "id": "#forge:dusts/p_methoxyacetophenone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_methoxyacetophenone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_methoxyacetophenone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_methoxyacetophenone",
+      "required": false
+    }
+  ]
+}

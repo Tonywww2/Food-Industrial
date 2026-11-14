@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethylene_dichloride",
       "required": false
+    },
+    {
+      "id": "#c:ethylene_dichloride",
+      "required": false
     }
   ]
 }

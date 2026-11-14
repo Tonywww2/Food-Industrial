@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/angelica_dahurica_root"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:angelica_dahurica_tincture"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

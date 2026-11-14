@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:ethyl_dimethylpyrazine_isomers"
+  },
+  "outputs": [
+    {
+      "amount": 300,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:ethyl_dimethylpyrazine_3_2_6"
+    },
+    {
+      "amount": 600,
+      "components": {
+        "foodindustrial:purity": 36
+      },
+      "id": "foodindustrial:ethyl_dimethylpyrazine_isomers"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

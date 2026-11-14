@@ -6,6 +6,10 @@
     {
       "id": "#forge:morpholine_fruit_wax",
       "required": false
+    },
+    {
+      "id": "#c:morpholine_fruit_wax",
+      "required": false
     }
   ]
 }

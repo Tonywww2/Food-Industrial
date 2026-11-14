@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/phthalic_anhydride",
       "required": false
+    },
+    {
+      "id": "#c:dusts/phthalic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phthalic_anhydride",
+      "required": false
     }
   ]
 }

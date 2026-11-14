@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethylene_glycol",
       "required": false
+    },
+    {
+      "id": "#c:ethylene_glycol",
+      "required": false
     }
   ]
 }

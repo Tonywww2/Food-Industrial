@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:terpinyl_propionate",
+  "loader": "neoforge:fluid_container"
+}

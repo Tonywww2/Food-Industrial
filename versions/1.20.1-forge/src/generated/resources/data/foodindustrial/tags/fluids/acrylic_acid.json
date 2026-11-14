@@ -6,6 +6,10 @@
     {
       "id": "#forge:acrylic_acid",
       "required": false
+    },
+    {
+      "id": "#c:acrylic_acid",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/vanillin"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/ammonium_persulfate"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:divanillin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

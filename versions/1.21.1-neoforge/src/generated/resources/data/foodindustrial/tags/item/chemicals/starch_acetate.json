@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:starch_acetate",
+    {
+      "id": "#forge:dusts/starch_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/starch_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/starch_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/starch_acetate",
+      "required": false
+    }
+  ]
+}

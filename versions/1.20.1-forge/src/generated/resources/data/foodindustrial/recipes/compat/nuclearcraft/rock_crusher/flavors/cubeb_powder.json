@@ -1,0 +1,27 @@
+{
+  "type": "nuclearcraft:rock_crusher",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft"
+    }
+  ],
+  "input": [
+    {
+      "count": 2,
+      "tag": "foodindustrial:materials/cubeb"
+    }
+  ],
+  "output": [
+    {
+      "item": "foodindustrial:cubeb_powder"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:crimson_glory_rose_concrete",
+    {
+      "id": "#forge:dusts/crimson_glory_rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/crimson_glory_rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/crimson_glory_rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/crimson_glory_rose_concrete",
+      "required": false
+    }
+  ]
+}

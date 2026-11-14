@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isophytol",
+    "foodindustrial:flowing_isophytol",
+    {
+      "id": "#forge:isophytol",
+      "required": false
+    },
+    {
+      "id": "#c:isophytol",
+      "required": false
+    }
+  ]
+}

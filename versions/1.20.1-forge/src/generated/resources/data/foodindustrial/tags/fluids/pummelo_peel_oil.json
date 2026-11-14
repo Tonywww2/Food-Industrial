@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pummelo_peel_oil",
+    "foodindustrial:flowing_pummelo_peel_oil",
+    {
+      "id": "#forge:pummelo_peel_oil",
+      "required": false
+    },
+    {
+      "id": "#c:pummelo_peel_oil",
+      "required": false
+    }
+  ]
+}

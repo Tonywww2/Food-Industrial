@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:d_alpha_tocopheryl_acetate",
+  "loader": "forge:fluid_container"
+}

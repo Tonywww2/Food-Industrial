@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:maleic_anhydride",
     {
+      "id": "#forge:dusts/maleic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/maleic_anhydride",
+      "required": false
+    },
+    {
       "id": "#c:dusts/maleic_anhydride",
       "required": false
     },

@@ -6,6 +6,10 @@
     {
       "id": "#forge:sulfanilic_diazonium",
       "required": false
+    },
+    {
+      "id": "#c:sulfanilic_diazonium",
+      "required": false
     }
   ]
 }

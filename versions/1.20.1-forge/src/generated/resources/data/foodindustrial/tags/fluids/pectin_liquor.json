@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pectin_liquor",
+    "foodindustrial:flowing_pectin_liquor",
+    {
+      "id": "#forge:pectin_liquor",
+      "required": false
+    },
+    {
+      "id": "#c:pectin_liquor",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/copper"
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:benzene"
+      }
+    }
+  ],
+  "mode": "gas_catalysis",
+  "outputs": [
+    {
+      "item": "foodindustrial:biphenyl",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 200
+}

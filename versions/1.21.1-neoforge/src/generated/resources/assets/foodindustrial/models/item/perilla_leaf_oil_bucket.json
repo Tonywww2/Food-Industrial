@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:perilla_leaf_oil",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/grape"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:wine"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight"
+  },
+  "time": 48000
+}

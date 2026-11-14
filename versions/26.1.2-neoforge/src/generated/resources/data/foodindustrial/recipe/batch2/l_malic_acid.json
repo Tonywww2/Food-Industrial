@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:enzymes/fumarase",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/fumaric_acid"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:l_malic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 99
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

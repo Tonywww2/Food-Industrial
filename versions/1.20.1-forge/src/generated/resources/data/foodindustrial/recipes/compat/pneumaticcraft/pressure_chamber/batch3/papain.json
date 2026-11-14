@@ -1,0 +1,27 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "count": 4,
+      "tag": "foodindustrial:materials/papaya"
+    }
+  ],
+  "pressure": 2.0,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:papain"
+    }
+  ]
+}

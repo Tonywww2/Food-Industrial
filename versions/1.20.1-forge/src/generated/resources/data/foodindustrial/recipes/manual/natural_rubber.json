@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/wet_rubber_sheet"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:natural_rubber",
+      "purity": {
+        "mode": "source",
+        "value": 90
+      }
+    }
+  ],
+  "time": 48000
+}

@@ -4,6 +4,10 @@
     "foodindustrial:methylamine",
     "foodindustrial:flowing_methylamine",
     {
+      "id": "#forge:methylamine",
+      "required": false
+    },
+    {
       "id": "#c:methylamine",
       "required": false
     }

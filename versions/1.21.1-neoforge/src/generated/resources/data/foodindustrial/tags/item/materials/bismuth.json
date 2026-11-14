@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:dusts/bismuth",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/bismuth",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/bismuth",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/bismuth",
+      "required": false
+    }
+  ]
+}

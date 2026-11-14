@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "type": "foodindustrial:purity",
+      "base": {
+        "tag": "foodindustrial:cultures/aureobasidium"
+      },
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:liquefied_starch"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "item": "foodindustrial:pullulan",
+      "purity": {
+        "mode": "source",
+        "value": 40
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

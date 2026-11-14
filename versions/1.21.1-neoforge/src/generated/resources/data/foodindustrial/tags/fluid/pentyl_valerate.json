@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentyl_valerate",
+    "foodindustrial:flowing_pentyl_valerate",
+    {
+      "id": "#forge:pentyl_valerate",
+      "required": false
+    },
+    {
+      "id": "#c:pentyl_valerate",
+      "required": false
+    }
+  ]
+}

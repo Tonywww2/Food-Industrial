@@ -1,0 +1,46 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose_6_acetate"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_methoxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:thionyl_chloride"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 100,
+        "tag": "foodindustrial:dimethylformamide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sucralose"
+    },
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:sulfur_dioxide"
+    },
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:hydrogen_chloride"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

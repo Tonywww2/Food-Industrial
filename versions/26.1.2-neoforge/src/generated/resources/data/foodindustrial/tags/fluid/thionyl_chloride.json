@@ -4,6 +4,10 @@
     "foodindustrial:thionyl_chloride",
     "foodindustrial:flowing_thionyl_chloride",
     {
+      "id": "#forge:thionyl_chloride",
+      "required": false
+    },
+    {
       "id": "#c:thionyl_chloride",
       "required": false
     }

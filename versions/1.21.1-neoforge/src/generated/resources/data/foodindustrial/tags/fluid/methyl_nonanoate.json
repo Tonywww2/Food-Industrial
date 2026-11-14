@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_nonanoate",
+    "foodindustrial:flowing_methyl_nonanoate",
+    {
+      "id": "#forge:methyl_nonanoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_nonanoate",
+      "required": false
+    }
+  ]
+}

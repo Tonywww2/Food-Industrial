@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:l_cysteine",
     {
+      "id": "#forge:dusts/l_cysteine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_cysteine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/l_cysteine",
       "required": false
     },

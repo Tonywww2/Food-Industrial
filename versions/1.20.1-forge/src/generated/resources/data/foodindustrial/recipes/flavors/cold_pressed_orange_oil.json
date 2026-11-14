@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:pressing",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:materials/orange"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:cold_pressed_orange_oil"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

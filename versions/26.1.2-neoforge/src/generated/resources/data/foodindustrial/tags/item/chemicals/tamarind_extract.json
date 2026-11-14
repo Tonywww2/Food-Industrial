@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tamarind_extract",
+    {
+      "id": "#forge:dusts/tamarind_extract",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tamarind_extract",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tamarind_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tamarind_extract",
+      "required": false
+    }
+  ]
+}

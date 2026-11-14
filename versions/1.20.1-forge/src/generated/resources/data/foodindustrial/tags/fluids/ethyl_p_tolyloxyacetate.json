@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_p_tolyloxyacetate",
+    "foodindustrial:flowing_ethyl_p_tolyloxyacetate",
+    {
+      "id": "#forge:ethyl_p_tolyloxyacetate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_p_tolyloxyacetate",
+      "required": false
+    }
+  ]
+}

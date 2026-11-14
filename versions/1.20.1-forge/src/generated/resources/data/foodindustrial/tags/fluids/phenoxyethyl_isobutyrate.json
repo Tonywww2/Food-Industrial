@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenoxyethyl_isobutyrate",
+    "foodindustrial:flowing_phenoxyethyl_isobutyrate",
+    {
+      "id": "#forge:phenoxyethyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:phenoxyethyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

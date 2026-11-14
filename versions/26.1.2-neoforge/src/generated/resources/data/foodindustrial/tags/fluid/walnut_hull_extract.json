@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:walnut_hull_extract",
+    "foodindustrial:flowing_walnut_hull_extract",
+    {
+      "id": "#forge:walnut_hull_extract",
+      "required": false
+    },
+    {
+      "id": "#c:walnut_hull_extract",
+      "required": false
+    }
+  ]
+}

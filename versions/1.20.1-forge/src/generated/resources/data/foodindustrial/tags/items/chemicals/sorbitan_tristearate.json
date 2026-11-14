@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sorbitan_tristearate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sorbitan_tristearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sorbitan_tristearate",
+      "required": false
     }
   ]
 }

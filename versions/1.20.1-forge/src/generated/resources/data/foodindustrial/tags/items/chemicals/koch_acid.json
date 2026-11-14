@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/koch_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/koch_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/koch_acid",
+      "required": false
     }
   ]
 }

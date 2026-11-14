@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carvyl_acetate",
+    "foodindustrial:flowing_carvyl_acetate",
+    {
+      "id": "#forge:carvyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:carvyl_acetate",
+      "required": false
+    }
+  ]
+}

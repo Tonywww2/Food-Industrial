@@ -4,6 +4,10 @@
     "foodindustrial:furfural",
     "foodindustrial:flowing_furfural",
     {
+      "id": "#forge:furfural",
+      "required": false
+    },
+    {
       "id": "#c:furfural",
       "required": false
     }

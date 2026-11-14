@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptanoic_acid",
+    "foodindustrial:flowing_heptanoic_acid",
+    {
+      "id": "#forge:heptanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:heptanoic_acid",
+      "required": false
+    }
+  ]
+}

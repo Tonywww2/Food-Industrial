@@ -1,0 +1,10 @@
+{
+  "id": "foodindustrial:red_yeast_rice",
+  "category": "foodindustrial:k5_natural_extract",
+  "grades": {
+    "crude": 30,
+    "refined": 45,
+    "food": 55,
+    "lab": null
+  }
+}

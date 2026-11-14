@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:garlic_oil",
+    "foodindustrial:flowing_garlic_oil",
+    {
+      "id": "#forge:garlic_oil",
+      "required": false
+    },
+    {
+      "id": "#c:garlic_oil",
+      "required": false
+    }
+  ]
+}

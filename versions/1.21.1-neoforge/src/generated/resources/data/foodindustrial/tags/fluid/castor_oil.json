@@ -4,6 +4,10 @@
     "foodindustrial:castor_oil",
     "foodindustrial:flowing_castor_oil",
     {
+      "id": "#forge:castor_oil",
+      "required": false
+    },
+    {
       "id": "#c:castor_oil",
       "required": false
     }

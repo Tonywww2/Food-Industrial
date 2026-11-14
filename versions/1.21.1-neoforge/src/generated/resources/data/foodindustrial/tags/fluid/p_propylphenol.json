@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_propylphenol",
+    "foodindustrial:flowing_p_propylphenol",
+    {
+      "id": "#forge:p_propylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:p_propylphenol",
+      "required": false
+    }
+  ]
+}

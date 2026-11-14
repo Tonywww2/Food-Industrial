@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiomethyl_mercaptan",
+    "foodindustrial:flowing_methylthiomethyl_mercaptan",
+    {
+      "id": "#forge:methylthiomethyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiomethyl_mercaptan",
+      "required": false
+    }
+  ]
+}

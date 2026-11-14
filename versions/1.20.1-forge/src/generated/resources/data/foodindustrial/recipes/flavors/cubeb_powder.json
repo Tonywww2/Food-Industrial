@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/cubeb"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:cubeb_powder"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

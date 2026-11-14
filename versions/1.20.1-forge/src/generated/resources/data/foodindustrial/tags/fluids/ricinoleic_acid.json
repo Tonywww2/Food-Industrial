@@ -6,6 +6,10 @@
     {
       "id": "#forge:ricinoleic_acid",
       "required": false
+    },
+    {
+      "id": "#c:ricinoleic_acid",
+      "required": false
     }
   ]
 }

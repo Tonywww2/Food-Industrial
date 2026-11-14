@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:flint_knife",
+  "name": "book.foodindustrial.manual.entry.harvesting",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:flint_knife",
+      "text": "book.foodindustrial.manual.entry.harvesting.text"
+    }
+  ],
+  "sortnum": 12
+}

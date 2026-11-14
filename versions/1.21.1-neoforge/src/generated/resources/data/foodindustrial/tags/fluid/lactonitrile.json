@@ -4,6 +4,10 @@
     "foodindustrial:lactonitrile",
     "foodindustrial:flowing_lactonitrile",
     {
+      "id": "#forge:lactonitrile",
+      "required": false
+    },
+    {
       "id": "#c:lactonitrile",
       "required": false
     }

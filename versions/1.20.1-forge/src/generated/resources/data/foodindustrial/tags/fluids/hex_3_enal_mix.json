@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hex_3_enal_mix",
+    "foodindustrial:flowing_hex_3_enal_mix",
+    {
+      "id": "#forge:hex_3_enal_mix",
+      "required": false
+    },
+    {
+      "id": "#c:hex_3_enal_mix",
+      "required": false
+    }
+  ]
+}

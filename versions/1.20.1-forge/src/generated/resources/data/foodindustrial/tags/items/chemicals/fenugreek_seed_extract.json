@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fenugreek_seed_extract",
+    {
+      "id": "#forge:dusts/fenugreek_seed_extract",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fenugreek_seed_extract",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/fenugreek_seed_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fenugreek_seed_extract",
+      "required": false
+    }
+  ]
+}

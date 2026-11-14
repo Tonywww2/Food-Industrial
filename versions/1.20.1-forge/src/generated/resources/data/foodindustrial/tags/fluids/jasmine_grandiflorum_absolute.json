@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jasmine_grandiflorum_absolute",
+    "foodindustrial:flowing_jasmine_grandiflorum_absolute",
+    {
+      "id": "#forge:jasmine_grandiflorum_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:jasmine_grandiflorum_absolute",
+      "required": false
+    }
+  ]
+}

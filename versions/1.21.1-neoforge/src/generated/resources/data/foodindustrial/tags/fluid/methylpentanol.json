@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylpentanol",
+    "foodindustrial:flowing_methylpentanol",
+    {
+      "id": "#forge:methylpentanol",
+      "required": false
+    },
+    {
+      "id": "#c:methylpentanol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cuminaldehyde",
+    "foodindustrial:flowing_cuminaldehyde",
+    {
+      "id": "#forge:cuminaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:cuminaldehyde",
+      "required": false
+    }
+  ]
+}

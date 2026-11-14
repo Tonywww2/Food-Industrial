@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_4_phenylbutanal",
+    "foodindustrial:flowing_methyl_4_phenylbutanal",
+    {
+      "id": "#forge:methyl_4_phenylbutanal",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_4_phenylbutanal",
+      "required": false
+    }
+  ]
+}

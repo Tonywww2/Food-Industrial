@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethoxybenzylamine",
+    "foodindustrial:flowing_dimethoxybenzylamine",
+    {
+      "id": "#forge:dimethoxybenzylamine",
+      "required": false
+    },
+    {
+      "id": "#c:dimethoxybenzylamine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_ethylbenzaldehyde",
+    "foodindustrial:flowing_p_ethylbenzaldehyde",
+    {
+      "id": "#forge:p_ethylbenzaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:p_ethylbenzaldehyde",
+      "required": false
+    }
+  ]
+}

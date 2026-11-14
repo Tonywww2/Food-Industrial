@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethyl_methyl_tolylglycidate",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dichlorodecane",
+    "foodindustrial:flowing_dichlorodecane",
+    {
+      "id": "#forge:dichlorodecane",
+      "required": false
+    },
+    {
+      "id": "#c:dichlorodecane",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfurylpyrrole",
+    "foodindustrial:flowing_furfurylpyrrole",
+    {
+      "id": "#forge:furfurylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#c:furfurylpyrrole",
+      "required": false
+    }
+  ]
+}

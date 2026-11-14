@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:starter_distillate",
+    "foodindustrial:flowing_starter_distillate",
+    {
+      "id": "#forge:starter_distillate",
+      "required": false
+    },
+    {
+      "id": "#c:starter_distillate",
+      "required": false
+    }
+  ]
+}

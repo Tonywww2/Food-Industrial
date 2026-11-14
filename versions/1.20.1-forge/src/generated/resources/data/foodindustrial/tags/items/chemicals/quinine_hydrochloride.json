@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quinine_hydrochloride",
+    {
+      "id": "#forge:dusts/quinine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/quinine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/quinine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quinine_hydrochloride",
+      "required": false
+    }
+  ]
+}

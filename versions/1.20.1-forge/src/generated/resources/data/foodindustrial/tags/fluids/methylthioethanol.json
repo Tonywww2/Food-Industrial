@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthioethanol",
+    "foodindustrial:flowing_methylthioethanol",
+    {
+      "id": "#forge:methylthioethanol",
+      "required": false
+    },
+    {
+      "id": "#c:methylthioethanol",
+      "required": false
+    }
+  ]
+}

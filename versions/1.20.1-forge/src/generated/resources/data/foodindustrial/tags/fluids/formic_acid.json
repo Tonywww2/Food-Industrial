@@ -6,6 +6,10 @@
     {
       "id": "#forge:formic_acid",
       "required": false
+    },
+    {
+      "id": "#c:formic_acid",
+      "required": false
     }
   ]
 }

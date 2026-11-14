@@ -4,6 +4,10 @@
     "foodindustrial:thiodipropionitrile",
     "foodindustrial:flowing_thiodipropionitrile",
     {
+      "id": "#forge:thiodipropionitrile",
+      "required": false
+    },
+    {
       "id": "#c:thiodipropionitrile",
       "required": false
     }

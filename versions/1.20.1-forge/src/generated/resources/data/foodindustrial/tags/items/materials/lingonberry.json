@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:lingonberry"
+    "foodindustrial:lingonberry",
+    {
+      "id": "minecraft:sweet_berries",
+      "required": false
+    }
   ]
 }

@@ -6,6 +6,10 @@
     {
       "id": "#forge:d_carvone",
       "required": false
+    },
+    {
+      "id": "#c:d_carvone",
+      "required": false
     }
   ]
 }

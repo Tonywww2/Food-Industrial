@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/corn_yellow",
       "required": false
+    },
+    {
+      "id": "#c:dusts/corn_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/corn_yellow",
+      "required": false
     }
   ]
 }

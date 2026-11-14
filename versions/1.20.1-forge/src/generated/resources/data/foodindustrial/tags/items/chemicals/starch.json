@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/starch",
       "required": false
+    },
+    {
+      "id": "#c:dusts/starch",
+      "required": false
+    },
+    {
+      "id": "#c:gems/starch",
+      "required": false
     }
   ]
 }

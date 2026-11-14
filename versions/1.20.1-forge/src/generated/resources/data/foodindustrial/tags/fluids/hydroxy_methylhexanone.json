@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxy_methylhexanone",
+    "foodindustrial:flowing_hydroxy_methylhexanone",
+    {
+      "id": "#forge:hydroxy_methylhexanone",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxy_methylhexanone",
+      "required": false
+    }
+  ]
+}

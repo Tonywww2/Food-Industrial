@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:wood_vinegar"
+      }
+    }
+  ],
+  "mode": "distillation",
+  "outputs": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:methanol",
+      "purity": {
+        "mode": "source",
+        "value": 60
+      }
+    },
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 5
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

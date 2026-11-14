@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclamen_aldehyde",
+    "foodindustrial:flowing_cyclamen_aldehyde",
+    {
+      "id": "#forge:cyclamen_aldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:cyclamen_aldehyde",
+      "required": false
+    }
+  ]
+}

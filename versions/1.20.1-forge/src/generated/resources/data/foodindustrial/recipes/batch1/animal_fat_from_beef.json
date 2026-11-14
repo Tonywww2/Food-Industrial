@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/raw_beef"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:animal_fat"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

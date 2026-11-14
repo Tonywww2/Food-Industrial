@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperylene",
+    "foodindustrial:flowing_piperylene",
+    {
+      "id": "#forge:piperylene",
+      "required": false
+    },
+    {
+      "id": "#c:piperylene",
+      "required": false
+    }
+  ]
+}

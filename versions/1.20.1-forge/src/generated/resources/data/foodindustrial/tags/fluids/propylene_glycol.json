@@ -6,6 +6,10 @@
     {
       "id": "#forge:propylene_glycol",
       "required": false
+    },
+    {
+      "id": "#c:propylene_glycol",
+      "required": false
     }
   ]
 }

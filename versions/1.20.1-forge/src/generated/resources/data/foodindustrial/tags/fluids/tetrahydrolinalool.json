@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetrahydrolinalool",
+    "foodindustrial:flowing_tetrahydrolinalool",
+    {
+      "id": "#forge:tetrahydrolinalool",
+      "required": false
+    },
+    {
+      "id": "#c:tetrahydrolinalool",
+      "required": false
+    }
+  ]
+}

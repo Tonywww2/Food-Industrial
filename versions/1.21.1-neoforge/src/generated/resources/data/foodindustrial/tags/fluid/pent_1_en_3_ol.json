@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pent_1_en_3_ol",
+    "foodindustrial:flowing_pent_1_en_3_ol",
+    {
+      "id": "#forge:pent_1_en_3_ol",
+      "required": false
+    },
+    {
+      "id": "#c:pent_1_en_3_ol",
+      "required": false
+    }
+  ]
+}

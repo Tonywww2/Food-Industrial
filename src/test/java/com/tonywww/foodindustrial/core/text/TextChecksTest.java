@@ -44,6 +44,34 @@ class TextChecksTest {
         assertEquals(List.of(), en("item.foodindustrial.plaster", "Calcium Sulfate Hemihydrate (Plaster of Paris)"));
     }
 
+    private static List<String> name(String zh, String en) {
+        List<String> problems = new ArrayList<>();
+        TextChecks.checkZh("item.foodindustrial.x", zh, true, problems);
+        TextChecks.checkEn("item.foodindustrial.x", en, true, problems);
+        TextChecks.checkEn("tooltip.foodindustrial.x.desc", en, true, problems);
+        return problems;
+    }
+
+    @Test
+    void chemicalNamesFollowTheStandardName() {
+        assertEquals(List.of(), name("丁酸3-丁酮-2-醇酯", "3-Oxobutan-2-yl Butyrate"));
+        assertEquals(List.of(), name("双(2-甲基-3-呋喃基)二硫醚", "Bis(2-methyl-3-furyl) Disulfide"));
+        assertEquals(List.of(), name("二(甲硫基)甲烷", "Bis(methylthio)methane"));
+        assertEquals(List.of(), name("(+/-)-1-苯乙基硫醇", "alpha-Methylbenzyl Mercaptan"));
+        assertEquals(List.of(), name("2-乙基-3,(5或6)-二甲基吡嗪", "2-Ethyl-3,(5 or 6)-dimethylpyrazine"));
+        assertEquals(List.of(), name("丁香花蕾酊（提取物）", "trans,trans-2,4-Hexadienal (o, m, p)"));
+        assertEquals(List.of(), name("苯丙酮", "p,α-Dimethylstyrene Compound Named with Sixty Characters Plus More Words"));
+        assertEquals(1, name("丁香花蕾酊(提取物)", "Clove Bud Tincture").size(), "trailing qualifier must be full-width");
+        // configuration prefixes (2026-11-12): Fischer in capitals, optical rotation in lower case
+        assertEquals(List.of(), name("L-赖氨酸", "L-Lysine"));
+        assertEquals(List.of(), name("d-核糖", "D-Ribose"));
+        assertEquals(List.of(), name("D-泛酸钙", "Calcium D-Pantothenate"));
+        assertEquals(List.of(), name("d-苧烯", "d-Limonene"));
+        assertEquals(List.of(), name("d-α-生育酚", "d-alpha-Tocopherol"));
+        assertTrue(!name("L-赖氨酸", "l-Lysine").isEmpty(), "Fischer prefix in lower case");
+        assertTrue(!name("d-苧烯", "D-Limonene").isEmpty(), "optical prefix in capitals");
+    }
+
     @Test
     void violationsAreReported() {
         assertTrue(!zh("tooltip.foodindustrial.a.desc", "可以用来做豆腐").isEmpty(), "forbidden word");
@@ -65,7 +93,7 @@ class TextChecksTest {
 
     @Test
     void checkAllRejectsMismatchedKeys() {
-        assertThrows(IllegalStateException.class, () -> TextChecks.checkAll(Map.of("a", "甲"), Map.of("b", "B"), Map.of()));
+        assertThrows(IllegalStateException.class, () -> TextChecks.checkAll(Map.of("a", "甲"), Map.of("b", "B"), Map.of(), java.util.Set.of()));
     }
 
     @Test

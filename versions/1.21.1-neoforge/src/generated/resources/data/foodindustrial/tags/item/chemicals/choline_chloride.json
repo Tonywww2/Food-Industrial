@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:choline_chloride",
+    {
+      "id": "#forge:dusts/choline_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/choline_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/choline_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/choline_chloride",
+      "required": false
+    }
+  ]
+}

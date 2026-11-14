@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "foodindustrial:boiling_stove"
+    },
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:stirred_reactor"
+  }
+}

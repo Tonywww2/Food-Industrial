@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/epsilon_polylysine"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:epsilon_polylysine"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "sensitive",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

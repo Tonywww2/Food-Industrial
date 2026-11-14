@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butenyl_methyl_sulfide",
+    "foodindustrial:flowing_butenyl_methyl_sulfide",
+    {
+      "id": "#forge:butenyl_methyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:butenyl_methyl_sulfide",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:aniline",
     "foodindustrial:flowing_aniline",
     {
+      "id": "#forge:aniline",
+      "required": false
+    },
+    {
       "id": "#c:aniline",
       "required": false
     }

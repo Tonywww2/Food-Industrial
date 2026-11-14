@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/magnesium_hydroxide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_hydroxide",
+      "required": false
     }
   ]
 }

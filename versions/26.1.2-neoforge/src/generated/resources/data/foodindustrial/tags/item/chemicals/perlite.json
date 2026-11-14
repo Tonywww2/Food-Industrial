@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:perlite",
+    {
+      "id": "#forge:dusts/perlite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/perlite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/perlite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/perlite",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/l_alanine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/l_alanine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_alanine",
+      "required": false
     }
   ]
 }

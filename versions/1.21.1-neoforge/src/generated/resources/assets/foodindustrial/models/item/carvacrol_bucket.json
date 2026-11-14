@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:carvacrol",
+  "loader": "neoforge:fluid_container"
+}

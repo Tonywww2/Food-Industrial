@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:reduced_iron",
+    {
+      "id": "#forge:dusts/reduced_iron",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/reduced_iron",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/reduced_iron",
+      "required": false
+    },
+    {
+      "id": "#c:gems/reduced_iron",
+      "required": false
+    }
+  ]
+}

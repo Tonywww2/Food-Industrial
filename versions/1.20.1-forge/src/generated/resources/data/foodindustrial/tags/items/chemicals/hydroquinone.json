@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/hydroquinone",
       "required": false
+    },
+    {
+      "id": "#c:dusts/hydroquinone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroquinone",
+      "required": false
     }
   ]
 }

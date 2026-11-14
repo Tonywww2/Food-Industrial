@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bentonite",
+    {
+      "id": "#forge:dusts/bentonite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/bentonite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/bentonite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bentonite",
+      "required": false
+    }
+  ]
+}

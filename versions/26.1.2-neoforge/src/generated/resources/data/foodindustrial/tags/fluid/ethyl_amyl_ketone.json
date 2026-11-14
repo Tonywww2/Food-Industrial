@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_amyl_ketone",
+    "foodindustrial:flowing_ethyl_amyl_ketone",
+    {
+      "id": "#forge:ethyl_amyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_amyl_ketone",
+      "required": false
+    }
+  ]
+}

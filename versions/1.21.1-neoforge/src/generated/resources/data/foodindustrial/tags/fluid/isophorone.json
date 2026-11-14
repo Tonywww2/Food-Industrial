@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isophorone",
+    "foodindustrial:flowing_isophorone",
+    {
+      "id": "#forge:isophorone",
+      "required": false
+    },
+    {
+      "id": "#c:isophorone",
+      "required": false
+    }
+  ]
+}

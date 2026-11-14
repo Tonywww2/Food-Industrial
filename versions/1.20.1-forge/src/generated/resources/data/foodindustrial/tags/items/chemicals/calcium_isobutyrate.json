@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_isobutyrate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_isobutyrate",
+      "required": false
     }
   ]
 }

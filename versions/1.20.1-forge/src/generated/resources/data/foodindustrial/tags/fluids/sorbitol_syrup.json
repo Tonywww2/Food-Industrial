@@ -6,6 +6,10 @@
     {
       "id": "#forge:sorbitol_syrup",
       "required": false
+    },
+    {
+      "id": "#c:sorbitol_syrup",
+      "required": false
     }
   ]
 }

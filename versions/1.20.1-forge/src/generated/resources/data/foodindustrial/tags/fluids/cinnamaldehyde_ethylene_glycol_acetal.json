@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamaldehyde_ethylene_glycol_acetal",
+    "foodindustrial:flowing_cinnamaldehyde_ethylene_glycol_acetal",
+    {
+      "id": "#forge:cinnamaldehyde_ethylene_glycol_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:cinnamaldehyde_ethylene_glycol_acetal",
+      "required": false
+    }
+  ]
+}

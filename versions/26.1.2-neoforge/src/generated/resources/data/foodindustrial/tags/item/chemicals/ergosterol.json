@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ergosterol",
+    {
+      "id": "#forge:dusts/ergosterol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ergosterol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ergosterol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ergosterol",
+      "required": false
+    }
+  ]
+}

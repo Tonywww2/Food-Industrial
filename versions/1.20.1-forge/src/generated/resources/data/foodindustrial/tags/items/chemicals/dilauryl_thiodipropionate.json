@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/dilauryl_thiodipropionate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/dilauryl_thiodipropionate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dilauryl_thiodipropionate",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_thioglycolate",
+    "foodindustrial:flowing_ethyl_thioglycolate",
+    {
+      "id": "#forge:ethyl_thioglycolate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_thioglycolate",
+      "required": false
+    }
+  ]
+}

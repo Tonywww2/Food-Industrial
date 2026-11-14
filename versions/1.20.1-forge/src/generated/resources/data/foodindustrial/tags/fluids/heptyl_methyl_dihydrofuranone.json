@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptyl_methyl_dihydrofuranone",
+    "foodindustrial:flowing_heptyl_methyl_dihydrofuranone",
+    {
+      "id": "#forge:heptyl_methyl_dihydrofuranone",
+      "required": false
+    },
+    {
+      "id": "#c:heptyl_methyl_dihydrofuranone",
+      "required": false
+    }
+  ]
+}

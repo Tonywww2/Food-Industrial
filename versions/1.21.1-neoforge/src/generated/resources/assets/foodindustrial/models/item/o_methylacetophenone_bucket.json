@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:o_methylacetophenone",
+  "loader": "neoforge:fluid_container"
+}

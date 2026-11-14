@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambrette_seed_oil",
+    "foodindustrial:flowing_ambrette_seed_oil",
+    {
+      "id": "#forge:ambrette_seed_oil",
+      "required": false
+    },
+    {
+      "id": "#c:ambrette_seed_oil",
+      "required": false
+    }
+  ]
+}

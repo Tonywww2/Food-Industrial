@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aminophenylacetonitrile",
+    {
+      "id": "#forge:dusts/aminophenylacetonitrile",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aminophenylacetonitrile",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/aminophenylacetonitrile",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aminophenylacetonitrile",
+      "required": false
+    }
+  ]
+}

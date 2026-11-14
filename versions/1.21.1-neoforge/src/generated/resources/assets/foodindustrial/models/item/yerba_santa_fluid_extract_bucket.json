@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:yerba_santa_fluid_extract",
+  "loader": "neoforge:fluid_container"
+}

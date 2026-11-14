@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methylundecanal",
+  "loader": "forge:fluid_container"
+}

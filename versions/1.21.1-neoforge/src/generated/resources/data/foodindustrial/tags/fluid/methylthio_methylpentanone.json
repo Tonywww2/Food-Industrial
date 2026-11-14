@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthio_methylpentanone",
+    "foodindustrial:flowing_methylthio_methylpentanone",
+    {
+      "id": "#forge:methylthio_methylpentanone",
+      "required": false
+    },
+    {
+      "id": "#c:methylthio_methylpentanone",
+      "required": false
+    }
+  ]
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:octamethylcyclotetrasiloxane",
       "required": false
+    },
+    {
+      "id": "#c:octamethylcyclotetrasiloxane",
+      "required": false
     }
   ]
 }

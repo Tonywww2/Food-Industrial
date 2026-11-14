@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/urea",
       "required": false
+    },
+    {
+      "id": "#c:dusts/urea",
+      "required": false
+    },
+    {
+      "id": "#c:gems/urea",
+      "required": false
     }
   ]
 }

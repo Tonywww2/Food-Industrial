@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thioacetamide",
+    {
+      "id": "#forge:dusts/thioacetamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thioacetamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/thioacetamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thioacetamide",
+      "required": false
+    }
+  ]
+}

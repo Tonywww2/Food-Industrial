@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonenynol",
+    "foodindustrial:flowing_nonenynol",
+    {
+      "id": "#forge:nonenynol",
+      "required": false
+    },
+    {
+      "id": "#c:nonenynol",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/saccharin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/saccharin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/saccharin",
+      "required": false
     }
   ]
 }

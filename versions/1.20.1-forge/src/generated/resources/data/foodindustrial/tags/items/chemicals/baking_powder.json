@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:baking_powder",
+    {
+      "id": "#forge:dusts/baking_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/baking_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/baking_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/baking_powder",
+      "required": false
+    }
+  ]
+}

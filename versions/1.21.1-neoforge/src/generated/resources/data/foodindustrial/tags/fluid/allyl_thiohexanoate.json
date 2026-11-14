@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_thiohexanoate",
+    "foodindustrial:flowing_allyl_thiohexanoate",
+    {
+      "id": "#forge:allyl_thiohexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_thiohexanoate",
+      "required": false
+    }
+  ]
+}

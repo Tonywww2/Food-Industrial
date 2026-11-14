@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:screw_press",
+  "name": "book.foodindustrial.manual.entry.screw_press",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:screw_press",
+      "text": "book.foodindustrial.manual.entry.screw_press.text"
+    }
+  ],
+  "sortnum": 1
+}

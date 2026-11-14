@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:litsea_cubeba_oil",
+    "foodindustrial:flowing_litsea_cubeba_oil",
+    {
+      "id": "#forge:litsea_cubeba_oil",
+      "required": false
+    },
+    {
+      "id": "#c:litsea_cubeba_oil",
+      "required": false
+    }
+  ]
+}

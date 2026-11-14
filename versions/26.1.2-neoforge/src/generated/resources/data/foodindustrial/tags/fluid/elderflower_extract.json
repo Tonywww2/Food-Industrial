@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:elderflower_extract",
+    "foodindustrial:flowing_elderflower_extract",
+    {
+      "id": "#forge:elderflower_extract",
+      "required": false
+    },
+    {
+      "id": "#c:elderflower_extract",
+      "required": false
+    }
+  ]
+}

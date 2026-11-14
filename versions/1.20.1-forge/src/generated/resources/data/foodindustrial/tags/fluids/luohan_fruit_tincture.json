@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:luohan_fruit_tincture",
+    "foodindustrial:flowing_luohan_fruit_tincture",
+    {
+      "id": "#forge:luohan_fruit_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:luohan_fruit_tincture",
+      "required": false
+    }
+  ]
+}

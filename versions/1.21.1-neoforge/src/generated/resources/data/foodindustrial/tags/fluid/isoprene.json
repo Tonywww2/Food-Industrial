@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoprene",
+    "foodindustrial:flowing_isoprene",
+    {
+      "id": "#forge:isoprene",
+      "required": false
+    },
+    {
+      "id": "#c:isoprene",
+      "required": false
+    }
+  ]
+}

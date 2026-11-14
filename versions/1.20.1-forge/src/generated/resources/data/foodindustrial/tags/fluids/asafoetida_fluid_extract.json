@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:asafoetida_fluid_extract",
+    "foodindustrial:flowing_asafoetida_fluid_extract",
+    {
+      "id": "#forge:asafoetida_fluid_extract",
+      "required": false
+    },
+    {
+      "id": "#c:asafoetida_fluid_extract",
+      "required": false
+    }
+  ]
+}

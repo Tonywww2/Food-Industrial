@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/marigold_oleoresin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/marigold_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/marigold_oleoresin",
+      "required": false
     }
   ]
 }

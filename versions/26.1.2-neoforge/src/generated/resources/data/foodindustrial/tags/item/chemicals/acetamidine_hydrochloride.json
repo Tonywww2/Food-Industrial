@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetamidine_hydrochloride",
+    {
+      "id": "#forge:dusts/acetamidine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetamidine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetamidine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetamidine_hydrochloride",
+      "required": false
+    }
+  ]
+}

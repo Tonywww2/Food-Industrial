@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tridecatrienal",
+    "foodindustrial:flowing_tridecatrienal",
+    {
+      "id": "#forge:tridecatrienal",
+      "required": false
+    },
+    {
+      "id": "#c:tridecatrienal",
+      "required": false
+    }
+  ]
+}

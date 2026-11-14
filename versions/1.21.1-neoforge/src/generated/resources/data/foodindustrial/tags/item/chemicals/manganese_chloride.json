@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:manganese_chloride",
+    {
+      "id": "#forge:dusts/manganese_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/manganese_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/manganese_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/manganese_chloride",
+      "required": false
+    }
+  ]
+}

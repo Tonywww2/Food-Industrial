@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:abe_broth"
+  },
+  "outputs": [
+    {
+      "amount": 60,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:acetone"
+    },
+    {
+      "amount": 120,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:n_butanol"
+    },
+    {
+      "amount": 20,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:ethanol"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

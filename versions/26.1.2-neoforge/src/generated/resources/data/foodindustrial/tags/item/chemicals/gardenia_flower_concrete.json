@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gardenia_flower_concrete",
+    {
+      "id": "#forge:dusts/gardenia_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gardenia_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/gardenia_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gardenia_flower_concrete",
+      "required": false
+    }
+  ]
+}

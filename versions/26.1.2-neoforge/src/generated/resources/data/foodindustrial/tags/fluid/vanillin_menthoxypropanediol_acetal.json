@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillin_menthoxypropanediol_acetal",
+    "foodindustrial:flowing_vanillin_menthoxypropanediol_acetal",
+    {
+      "id": "#forge:vanillin_menthoxypropanediol_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:vanillin_menthoxypropanediol_acetal",
+      "required": false
+    }
+  ]
+}

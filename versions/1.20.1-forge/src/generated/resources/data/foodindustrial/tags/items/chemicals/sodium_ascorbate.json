@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_ascorbate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_ascorbate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_ascorbate",
+      "required": false
     }
   ]
 }

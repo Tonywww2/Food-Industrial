@@ -1,0 +1,27 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "tag": "foodindustrial:materials/alunite"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:alunite",
+      "nbt": "{Purity:34b}"
+    }
+  ]
+}

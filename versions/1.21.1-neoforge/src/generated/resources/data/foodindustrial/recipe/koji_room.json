@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "K": {
+      "item": "foodindustrial:koji_tray"
+    },
+    "W": {
+      "item": "foodindustrial:koji_room_wall"
+    }
+  },
+  "pattern": [
+    "WKW",
+    "KFK",
+    "WKW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:koji_room"
+  }
+}

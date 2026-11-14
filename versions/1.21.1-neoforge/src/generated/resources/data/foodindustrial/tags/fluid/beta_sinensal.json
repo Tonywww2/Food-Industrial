@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_sinensal",
+    "foodindustrial:flowing_beta_sinensal",
+    {
+      "id": "#forge:beta_sinensal",
+      "required": false
+    },
+    {
+      "id": "#c:beta_sinensal",
+      "required": false
+    }
+  ]
+}

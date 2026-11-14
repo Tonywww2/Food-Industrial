@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylpyrrole_carboxaldehyde",
+    "foodindustrial:flowing_methylpyrrole_carboxaldehyde",
+    {
+      "id": "#forge:methylpyrrole_carboxaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:methylpyrrole_carboxaldehyde",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:stone_mill",
+  "name": "book.foodindustrial.manual.entry.stone_mill",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:stone_mill",
+      "text": "book.foodindustrial.manual.entry.stone_mill.text"
+    }
+  ],
+  "sortnum": 0
+}

@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/aluminium_chloride"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:isobutylene"
+      }
+    }
+  ],
+  "mode": "polymerization",
+  "outputs": [
+    {
+      "item": "foodindustrial:polyisobutylene"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "freezing"
+  },
+  "time": 200
+}

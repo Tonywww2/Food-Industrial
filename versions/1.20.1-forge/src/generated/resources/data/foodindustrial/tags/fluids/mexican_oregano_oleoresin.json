@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mexican_oregano_oleoresin",
+    "foodindustrial:flowing_mexican_oregano_oleoresin",
+    {
+      "id": "#forge:mexican_oregano_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:mexican_oregano_oleoresin",
+      "required": false
+    }
+  ]
+}

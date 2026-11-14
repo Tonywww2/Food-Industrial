@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetaldehyde_phenethyl_propyl_acetal",
+    "foodindustrial:flowing_acetaldehyde_phenethyl_propyl_acetal",
+    {
+      "id": "#forge:acetaldehyde_phenethyl_propyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:acetaldehyde_phenethyl_propyl_acetal",
+      "required": false
+    }
+  ]
+}

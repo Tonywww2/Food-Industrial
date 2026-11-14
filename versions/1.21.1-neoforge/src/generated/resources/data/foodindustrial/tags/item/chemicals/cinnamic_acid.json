@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamic_acid",
+    {
+      "id": "#forge:dusts/cinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cinnamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cinnamic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_dihydrothienopyrimidine",
+    {
+      "id": "#forge:dusts/methyl_dihydrothienopyrimidine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_dihydrothienopyrimidine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_dihydrothienopyrimidine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_dihydrothienopyrimidine",
+      "required": false
+    }
+  ]
+}

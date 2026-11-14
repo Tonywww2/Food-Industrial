@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylacetaldehyde_dimethyl_acetal",
+    "foodindustrial:flowing_phenylacetaldehyde_dimethyl_acetal",
+    {
+      "id": "#forge:phenylacetaldehyde_dimethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:phenylacetaldehyde_dimethyl_acetal",
+      "required": false
+    }
+  ]
+}

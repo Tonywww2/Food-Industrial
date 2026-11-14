@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/acorn_shell_brown",
       "required": false
+    },
+    {
+      "id": "#c:dusts/acorn_shell_brown",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acorn_shell_brown",
+      "required": false
     }
   ]
 }

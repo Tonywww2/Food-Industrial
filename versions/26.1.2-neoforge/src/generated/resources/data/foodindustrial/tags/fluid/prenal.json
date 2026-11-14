@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:prenal",
+    "foodindustrial:flowing_prenal",
+    {
+      "id": "#forge:prenal",
+      "required": false
+    },
+    {
+      "id": "#c:prenal",
+      "required": false
+    }
+  ]
+}

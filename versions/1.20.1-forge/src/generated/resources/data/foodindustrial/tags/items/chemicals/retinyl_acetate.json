@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/retinyl_acetate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/retinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/retinyl_acetate",
+      "required": false
     }
   ]
 }

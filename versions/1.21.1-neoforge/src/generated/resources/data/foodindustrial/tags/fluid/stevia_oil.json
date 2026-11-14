@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:stevia_oil",
+    "foodindustrial:flowing_stevia_oil",
+    {
+      "id": "#forge:stevia_oil",
+      "required": false
+    },
+    {
+      "id": "#c:stevia_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_pantolactone",
+    {
+      "id": "#forge:dusts/dl_pantolactone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dl_pantolactone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dl_pantolactone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dl_pantolactone",
+      "required": false
+    }
+  ]
+}

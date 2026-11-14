@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzoic_anhydride",
+    {
+      "id": "#forge:dusts/benzoic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzoic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzoic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzoic_anhydride",
+      "required": false
+    }
+  ]
+}

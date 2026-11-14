@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_valerate",
+    "foodindustrial:flowing_butyl_valerate",
+    {
+      "id": "#forge:butyl_valerate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_valerate",
+      "required": false
+    }
+  ]
+}

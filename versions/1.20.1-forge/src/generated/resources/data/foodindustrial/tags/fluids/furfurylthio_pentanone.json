@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfurylthio_pentanone",
+    "foodindustrial:flowing_furfurylthio_pentanone",
+    {
+      "id": "#forge:furfurylthio_pentanone",
+      "required": false
+    },
+    {
+      "id": "#c:furfurylthio_pentanone",
+      "required": false
+    }
+  ]
+}

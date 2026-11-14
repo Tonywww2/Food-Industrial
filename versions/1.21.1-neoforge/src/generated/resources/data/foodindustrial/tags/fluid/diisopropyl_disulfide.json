@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diisopropyl_disulfide",
+    "foodindustrial:flowing_diisopropyl_disulfide",
+    {
+      "id": "#forge:diisopropyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:diisopropyl_disulfide",
+      "required": false
+    }
+  ]
+}

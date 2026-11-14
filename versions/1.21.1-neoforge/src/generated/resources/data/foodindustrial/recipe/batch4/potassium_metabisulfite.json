@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:absorbing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_carbonate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:sulfur_dioxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:potassium_metabisulfite"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

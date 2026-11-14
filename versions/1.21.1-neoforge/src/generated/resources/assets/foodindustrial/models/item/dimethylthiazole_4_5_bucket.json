@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dimethylthiazole_4_5",
+  "loader": "neoforge:fluid_container"
+}

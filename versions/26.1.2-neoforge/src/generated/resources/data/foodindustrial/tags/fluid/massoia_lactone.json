@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:massoia_lactone",
+    "foodindustrial:flowing_massoia_lactone",
+    {
+      "id": "#forge:massoia_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:massoia_lactone",
+      "required": false
+    }
+  ]
+}

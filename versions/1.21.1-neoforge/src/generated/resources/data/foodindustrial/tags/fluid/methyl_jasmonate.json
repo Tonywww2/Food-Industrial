@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_jasmonate",
+    "foodindustrial:flowing_methyl_jasmonate",
+    {
+      "id": "#forge:methyl_jasmonate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_jasmonate",
+      "required": false
+    }
+  ]
+}

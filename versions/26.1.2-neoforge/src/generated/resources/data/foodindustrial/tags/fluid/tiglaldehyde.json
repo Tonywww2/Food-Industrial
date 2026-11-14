@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tiglaldehyde",
+    "foodindustrial:flowing_tiglaldehyde",
+    {
+      "id": "#forge:tiglaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:tiglaldehyde",
+      "required": false
+    }
+  ]
+}

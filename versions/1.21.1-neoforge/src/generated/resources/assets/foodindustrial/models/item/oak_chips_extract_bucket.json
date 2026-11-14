@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:oak_chips_extract",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:katemfe_fruit_extract",
+    "foodindustrial:flowing_katemfe_fruit_extract",
+    {
+      "id": "#forge:katemfe_fruit_extract",
+      "required": false
+    },
+    {
+      "id": "#c:katemfe_fruit_extract",
+      "required": false
+    }
+  ]
+}

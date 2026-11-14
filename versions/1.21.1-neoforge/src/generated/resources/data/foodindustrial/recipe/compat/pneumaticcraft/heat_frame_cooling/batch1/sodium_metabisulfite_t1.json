@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "input": {
+    "fluid": {
+      "amount": 2000,
+      "tag": "foodindustrial:sodium_bisulfite"
+    }
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": -17
+    },
+    "count": 1,
+    "id": "foodindustrial:sodium_metabisulfite"
+  },
+  "temperature": 273
+}

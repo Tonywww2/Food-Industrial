@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_alcohol",
+    "foodindustrial:flowing_furfuryl_alcohol",
+    {
+      "id": "#forge:furfuryl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_alcohol",
+      "required": false
+    }
+  ]
+}

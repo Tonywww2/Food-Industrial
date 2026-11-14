@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_acetoacetate_pg_ketal",
+    "foodindustrial:flowing_ethyl_acetoacetate_pg_ketal",
+    {
+      "id": "#forge:ethyl_acetoacetate_pg_ketal",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_acetoacetate_pg_ketal",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:abhexon",
+    "foodindustrial:flowing_abhexon",
+    {
+      "id": "#forge:abhexon",
+      "required": false
+    },
+    {
+      "id": "#c:abhexon",
+      "required": false
+    }
+  ]
+}

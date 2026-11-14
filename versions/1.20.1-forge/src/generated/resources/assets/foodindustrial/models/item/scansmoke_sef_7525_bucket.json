@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:scansmoke_sef_7525",
+  "loader": "forge:fluid_container"
+}

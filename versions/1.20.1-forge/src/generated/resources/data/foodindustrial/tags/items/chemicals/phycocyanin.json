@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/phycocyanin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/phycocyanin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phycocyanin",
+      "required": false
     }
   ]
 }

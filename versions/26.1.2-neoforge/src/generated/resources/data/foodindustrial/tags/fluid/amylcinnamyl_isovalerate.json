@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amylcinnamyl_isovalerate",
+    "foodindustrial:flowing_amylcinnamyl_isovalerate",
+    {
+      "id": "#forge:amylcinnamyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:amylcinnamyl_isovalerate",
+      "required": false
+    }
+  ]
+}

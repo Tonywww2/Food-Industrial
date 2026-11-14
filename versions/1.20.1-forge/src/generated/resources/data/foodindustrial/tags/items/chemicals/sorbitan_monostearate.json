@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sorbitan_monostearate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sorbitan_monostearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sorbitan_monostearate",
+      "required": false
     }
   ]
 }

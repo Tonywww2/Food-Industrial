@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gleditsia_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gleditsia_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gleditsia_gum",
+      "required": false
     }
   ]
 }

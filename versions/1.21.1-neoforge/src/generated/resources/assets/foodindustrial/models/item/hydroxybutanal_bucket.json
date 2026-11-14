@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hydroxybutanal",
+  "loader": "neoforge:fluid_container"
+}

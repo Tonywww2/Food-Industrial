@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tricalcium_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tricalcium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tricalcium_phosphate",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/casein",
       "required": false
+    },
+    {
+      "id": "#c:dusts/casein",
+      "required": false
+    },
+    {
+      "id": "#c:gems/casein",
+      "required": false
     }
   ]
 }

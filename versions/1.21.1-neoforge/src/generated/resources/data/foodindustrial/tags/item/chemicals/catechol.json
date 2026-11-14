@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:catechol",
+    {
+      "id": "#forge:dusts/catechol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/catechol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/catechol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/catechol",
+      "required": false
+    }
+  ]
+}

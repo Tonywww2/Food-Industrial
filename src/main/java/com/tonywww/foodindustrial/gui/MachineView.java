@@ -3,18 +3,18 @@ package com.tonywww.foodindustrial.gui;
 import com.tonywww.foodindustrial.core.data.DataReader;
 import com.tonywww.foodindustrial.core.data.DataWriter;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
+import com.tonywww.foodindustrial.machine.bio.ColonyLook;
+import com.tonywww.foodindustrial.machine.bio.CultureBenchBlockEntity;
 import com.tonywww.foodindustrial.machine.component.SideConfig;
 import com.tonywww.foodindustrial.machine.component.SlotRole;
+import com.tonywww.foodindustrial.machine.definition.PowerKind;
+import com.tonywww.foodindustrial.machine.definition.StructurePattern;
 import com.tonywww.foodindustrial.machine.entity.MachineBlockEntity;
 import com.tonywww.foodindustrial.machine.entity.MultiblockControllerBlockEntity;
 import com.tonywww.foodindustrial.machine.entity.PortBlockEntity;
 import com.tonywww.foodindustrial.machine.entity.ProcessingMachineBlockEntity;
 import com.tonywww.foodindustrial.machine.processing.MachineStatus;
-import com.tonywww.foodindustrial.machine.processing.RecipeProcessor;
 import com.tonywww.foodindustrial.platform.PlatformItems;
-import com.tonywww.foodindustrial.recipe.DeviceProfile;
-import com.tonywww.foodindustrial.recipe.ProcessRecipe;
-import com.tonywww.foodindustrial.recipe.RecipeIndex;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.ItemStack;
 
@@ -39,12 +39,21 @@ public final class MachineView {
     public static final int UPGRADES = 1 << 7;
     public static final int STRUCTURE = 1 << 8;
     public static final int PORT = 1 << 9;
-    private static final int GROUPS = 10;
+    /** The culture plate of M30 (I17). */
+    public static final int PLATE = 1 << 10;
+    private static final int GROUPS = 11;
 
     // STATUS
     public MachineStatus status = MachineStatus.WAITING;
-    /** Missing condition keys joined by commas, or empty. */
+    /**
+     * Missing condition keys joined by commas, or empty; a key starting with {@code @} is the
+     * translation key of something the machine needs around it (I14: the condenser, a fluid port).
+     */
     public String missing = "";
+    /** Climate of a fermentation room: bit 1 warm, bit 2 humid (I14). */
+    public int climate;
+    /** The last batch was contaminated (M29, I17). */
+    public boolean contaminated;
     // POWER
     public long energy;
     public long energyCapacity;
@@ -70,7 +79,7 @@ public final class MachineView {
     // LOCKS
     public ItemStack[] slotLocks = new ItemStack[0];
     // CATALYST
-    /** Remaining uses per catalyst slot before one item is used up; 0 when unused. */
+    /** Remaining uses per catalyst slot before one item is used up; 0 when unused, -1 when saturated (M25). */
     public int[] catalystLeft = new int[0];
     // CONFIG
     public int[] sideItems = new int[6];
@@ -86,15 +95,30 @@ public final class MachineView {
     public int speedPermille = 1000;
     public int energyPermille = 1000;
     public int parallel = 1;
+    /** A standardisation module is installed (machines/04 §2). */
+    public boolean normalizing;
     public List<String> capabilities = List.of();
     public List<String> moduleCapabilities = List.of();
     // STRUCTURE
     public boolean formed;
+    /** Layers of a variable-height structure at the last check (M19), 0 otherwise. */
+    public int layers;
     public List<BlockPos> wrong = List.of();
     public List<String> expected = List.of();
+    /** Port directions the structure lacks ({@code item_input} …, 2026-11-10). */
+    public List<String> missingPorts = List.of();
     public List<BlockPos> ports = List.of();
     public int[] portKinds = new int[0];
     public int[] portModes = new int[0];
+    // PLATE
+    /** {@code CultureBenchBlockEntity.Stage} ordinal. */
+    public int plateStage;
+    public boolean canInoculate;
+    public boolean identified;
+    /** Look of each colony ({@code ColonyLook}). */
+    public int[] colonyLooks = new int[0];
+    /** The colonies once identified, else empty stacks: the window learns their names only then. */
+    public ItemStack[] colonyItems = new ItemStack[0];
     // PORT
     public boolean portAttached;
     public int portMode;
@@ -105,9 +129,13 @@ public final class MachineView {
         MachineView view = new MachineView();
         if ((groups & STATUS) != 0) {
             view.status = machine.status();
-            if (machine instanceof ProcessingMachineBlockEntity processing && processing.processor().missing() != null) {
+            if (machine.lacking() != null) {
+                view.missing = "@" + machine.lacking();
+            } else if (machine instanceof ProcessingMachineBlockEntity processing && processing.processor().missing() != null) {
                 view.missing = processing.processor().missing();
             }
+            view.climate = (machine.warm() ? 1 : 0) | (machine.humid() ? 2 : 0);
+            view.contaminated = machine.lastBatchContaminated();
         }
         if ((groups & POWER) != 0) {
             if (machine.energy() != null) {
@@ -118,20 +146,21 @@ public final class MachineView {
                 view.burnLeft = machine.heat().burnLeft();
                 view.burnTotal = machine.heat().burnTotal();
             }
+            if (machine.definition().power() == PowerKind.MANUAL) {
+                view.energy = machine.manualPower();
+                view.energyCapacity = PowerKind.MANUAL_MAX;
+            }
         }
         if ((groups & PROGRESS) != 0 && machine instanceof ProcessingMachineBlockEntity processing) {
-            RecipeProcessor processor = processing.processor();
-            RecipeIndex.Entry entry = processor.current();
-            DeviceProfile profile = machine.definition().profile();
-            view.rate = profile.speed() * machine.upgrades().speedPermille();
-            if (entry != null) {
-                ProcessRecipe recipe = entry.recipe();
-                view.progress = processor.progressTicks();
-                view.total = processor.totalTicks();
-                view.energyPerTick = profile.energyPerTick(recipe) * machine.upgrades().energyPermille() / 1000L;
-                view.productItem = processor.plannedItem();
-                view.productFluid = processor.plannedFluid();
-                view.yieldPermille = recipe.type().yieldScalable() ? profile.yieldPermille() : 1000;
+            view.rate = machine.definition().profile().speed() * machine.speedPermille();
+            ProcessingMachineBlockEntity.Job job = processing.job();
+            if (job != null) {
+                view.progress = job.progress();
+                view.total = job.total();
+                view.energyPerTick = job.energyPerTick();
+                view.productItem = job.item();
+                view.productFluid = job.fluid();
+                view.yieldPermille = job.yieldPermille();
             }
         }
         if ((groups & TANKS) != 0) {
@@ -161,7 +190,7 @@ public final class MachineView {
             if (machine instanceof ProcessingMachineBlockEntity processing) {
                 for (int i = 0; i < count; i++) {
                     int runs = processing.processor().catalystRuns(i);
-                    view.catalystLeft[i] = runs > 0 ? runs - machine.catalysts().used(i) : 0;
+                    view.catalystLeft[i] = machine.catalystSaturated(i) ? -1 : runs > 0 ? runs - machine.catalysts().used(i) : 0;
                 }
             }
         }
@@ -184,13 +213,29 @@ public final class MachineView {
             view.speedPermille = machine.upgrades().speedPermille();
             view.energyPermille = machine.upgrades().energyPermille();
             view.parallel = machine.upgrades().parallel();
+            view.normalizing = machine.upgrades().normalizing();
             view.capabilities = List.copyOf(machine.capabilities().keys());
             view.moduleCapabilities = List.copyOf(machine.upgrades().moduleCapabilities().keys());
         }
+        if ((groups & PLATE) != 0 && machine instanceof CultureBenchBlockEntity bench) {
+            view.plateStage = bench.stage().ordinal();
+            view.canInoculate = bench.canInoculate();
+            view.identified = bench.identified();
+            List<ItemStack> colonies = bench.colonies();
+            view.colonyLooks = new int[colonies.size()];
+            view.colonyItems = new ItemStack[colonies.size()];
+            for (int i = 0; i < colonies.size(); i++) {
+                view.colonyLooks[i] = ColonyLook.of(colonies.get(i).getItem());
+                view.colonyItems[i] = bench.identified() ? colonies.get(i) : ItemStack.EMPTY;
+            }
+        }
         if ((groups & STRUCTURE) != 0 && machine instanceof MultiblockControllerBlockEntity controller) {
             view.formed = controller.formed();
+            StructurePattern structure = machine.definition().structure();
+            view.layers = structure != null && structure.minLayers() != structure.maxLayers() ? controller.layers() : 0;
             view.wrong = controller.wrongBlocks();
             view.expected = controller.wrongExpected();
+            view.missingPorts = controller.missingPorts();
             List<BlockPos> ports = new ArrayList<>();
             List<Integer> kinds = new ArrayList<>();
             List<Integer> modes = new ArrayList<>();
@@ -234,7 +279,7 @@ public final class MachineView {
 
     private boolean same(MachineView o, int group) {
         return switch (group) {
-            case STATUS -> status == o.status && missing.equals(o.missing);
+            case STATUS -> status == o.status && missing.equals(o.missing) && climate == o.climate && contaminated == o.contaminated;
             case POWER -> energy == o.energy && energyCapacity == o.energyCapacity && burnLeft == o.burnLeft && burnTotal == o.burnTotal;
             case PROGRESS -> progress == o.progress && total == o.total && rate == o.rate && energyPerTick == o.energyPerTick
                 && sameStack(productItem, o.productItem) && productFluid.equals(o.productFluid) && yieldPermille == o.yieldPermille;
@@ -246,10 +291,14 @@ public final class MachineView {
                 && Arrays.equals(itemScopes, o.itemScopes) && Arrays.equals(fluidOutTanks, o.fluidOutTanks)
                 && Arrays.equals(fluidInTanks, o.fluidInTanks) && auto == o.auto && redstone == o.redstone && mode == o.mode;
             case UPGRADES -> speedPermille == o.speedPermille && energyPermille == o.energyPermille && parallel == o.parallel
+                && normalizing == o.normalizing
                 && capabilities.equals(o.capabilities) && moduleCapabilities.equals(o.moduleCapabilities);
-            case STRUCTURE -> formed == o.formed && wrong.equals(o.wrong) && expected.equals(o.expected) && ports.equals(o.ports)
+            case STRUCTURE -> formed == o.formed && layers == o.layers && wrong.equals(o.wrong) && expected.equals(o.expected) && missingPorts.equals(o.missingPorts)
+                && ports.equals(o.ports)
                 && Arrays.equals(portKinds, o.portKinds) && Arrays.equals(portModes, o.portModes);
             case PORT -> portAttached == o.portAttached && portMode == o.portMode && portAuto == o.portAuto;
+            case PLATE -> plateStage == o.plateStage && canInoculate == o.canInoculate && identified == o.identified
+                && Arrays.equals(colonyLooks, o.colonyLooks) && sameStacks(colonyItems, o.colonyItems);
             default -> true;
         };
     }
@@ -275,6 +324,8 @@ public final class MachineView {
         if ((groups & STATUS) != 0) {
             status = o.status;
             missing = o.missing;
+            climate = o.climate;
+            contaminated = o.contaminated;
         }
         if ((groups & POWER) != 0) {
             energy = o.energy;
@@ -318,13 +369,16 @@ public final class MachineView {
             speedPermille = o.speedPermille;
             energyPermille = o.energyPermille;
             parallel = o.parallel;
+            normalizing = o.normalizing;
             capabilities = o.capabilities;
             moduleCapabilities = o.moduleCapabilities;
         }
         if ((groups & STRUCTURE) != 0) {
             formed = o.formed;
+            layers = o.layers;
             wrong = o.wrong;
             expected = o.expected;
+            missingPorts = o.missingPorts;
             ports = o.ports;
             portKinds = o.portKinds;
             portModes = o.portModes;
@@ -333,6 +387,13 @@ public final class MachineView {
             portAttached = o.portAttached;
             portMode = o.portMode;
             portAuto = o.portAuto;
+        }
+        if ((groups & PLATE) != 0) {
+            plateStage = o.plateStage;
+            canInoculate = o.canInoculate;
+            identified = o.identified;
+            colonyLooks = o.colonyLooks;
+            colonyItems = o.colonyItems;
         }
     }
 
@@ -343,6 +404,8 @@ public final class MachineView {
         if ((groups & STATUS) != 0) {
             out.putByte("Status", (byte) status.ordinal());
             out.putString("Missing", missing);
+            out.putByte("Climate", (byte) climate);
+            out.putBoolean("Contaminated", contaminated);
         }
         if ((groups & POWER) != 0) {
             out.putLong("Energy", energy);
@@ -392,11 +455,14 @@ public final class MachineView {
             out.putInt("Speed", speedPermille);
             out.putInt("EnergyUse", energyPermille);
             out.putInt("Parallel", parallel);
+            out.putBoolean("Normalizing", normalizing);
             out.putString("Capabilities", String.join(",", capabilities));
             out.putString("ModuleCapabilities", String.join(",", moduleCapabilities));
         }
         if ((groups & STRUCTURE) != 0) {
             out.putBoolean("Formed", formed);
+            out.putInt("Layers", layers);
+            out.putString("MissingPorts", String.join(",", missingPorts));
             DataWriter.ListWriter wrongList = out.list("Wrong");
             for (int i = 0; i < wrong.size(); i++) {
                 DataWriter entry = wrongList.add();
@@ -416,6 +482,15 @@ public final class MachineView {
             out.putInt("PortMode", portMode);
             out.putBoolean("PortAuto", portAuto);
         }
+        if ((groups & PLATE) != 0) {
+            out.putInt("PlateStage", plateStage);
+            out.putBoolean("CanInoculate", canInoculate);
+            out.putBoolean("Identified", identified);
+            out.putIntArray("ColonyLooks", colonyLooks);
+            for (int i = 0; i < colonyItems.length; i++) {
+                out.putItem("Colony" + i, colonyItems[i]);
+            }
+        }
     }
 
     /** Reads the groups in {@code groups} written by {@link #write}. */
@@ -425,6 +500,8 @@ public final class MachineView {
             MachineStatus[] values = MachineStatus.values();
             view.status = values[Math.floorMod(in.getByte("Status", (byte) 0), values.length)];
             view.missing = in.getString("Missing", "");
+            view.climate = in.getByte("Climate", (byte) 0);
+            view.contaminated = in.getBoolean("Contaminated", false);
         }
         if ((groups & POWER) != 0) {
             view.energy = in.getLong("Energy", 0);
@@ -477,11 +554,14 @@ public final class MachineView {
             view.speedPermille = in.getInt("Speed", 1000);
             view.energyPermille = in.getInt("EnergyUse", 1000);
             view.parallel = in.getInt("Parallel", 1);
+            view.normalizing = in.getBoolean("Normalizing", false);
             view.capabilities = split(in.getString("Capabilities", ""));
             view.moduleCapabilities = split(in.getString("ModuleCapabilities", ""));
         }
         if ((groups & STRUCTURE) != 0) {
             view.formed = in.getBoolean("Formed", false);
+            view.layers = in.getInt("Layers", 0);
+            view.missingPorts = split(in.getString("MissingPorts", ""));
             List<BlockPos> wrong = new ArrayList<>();
             List<String> expected = new ArrayList<>();
             for (DataReader entry : in.list("Wrong")) {
@@ -505,6 +585,16 @@ public final class MachineView {
             view.portAttached = in.getBoolean("PortAttached", false);
             view.portMode = in.getInt("PortMode", 0);
             view.portAuto = in.getBoolean("PortAuto", false);
+        }
+        if ((groups & PLATE) != 0) {
+            view.plateStage = in.getInt("PlateStage", 0);
+            view.canInoculate = in.getBoolean("CanInoculate", false);
+            view.identified = in.getBoolean("Identified", false);
+            view.colonyLooks = in.getIntArray("ColonyLooks");
+            view.colonyItems = new ItemStack[view.colonyLooks.length];
+            for (int i = 0; i < view.colonyItems.length; i++) {
+                view.colonyItems[i] = in.getItem("Colony" + i);
+            }
         }
         return view;
     }

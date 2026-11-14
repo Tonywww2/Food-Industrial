@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:electrolyzing",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/electrode"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "electrooxidation",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen_peroxide"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

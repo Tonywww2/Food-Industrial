@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:gardenia_broth"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 4
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:gardenia_yellow",
+      "purity": {
+        "mode": "source",
+        "value": 0.2
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "filtration"
+    ]
+  },
+  "time": 200
+}

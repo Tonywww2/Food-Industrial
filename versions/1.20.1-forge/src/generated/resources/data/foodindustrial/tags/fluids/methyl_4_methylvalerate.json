@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_4_methylvalerate",
+    "foodindustrial:flowing_methyl_4_methylvalerate",
+    {
+      "id": "#forge:methyl_4_methylvalerate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_4_methylvalerate",
+      "required": false
+    }
+  ]
+}

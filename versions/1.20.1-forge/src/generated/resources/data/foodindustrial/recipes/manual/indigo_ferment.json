@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/indigo_plant"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:indigo_ferment"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight"
+  },
+  "time": 48000
+}

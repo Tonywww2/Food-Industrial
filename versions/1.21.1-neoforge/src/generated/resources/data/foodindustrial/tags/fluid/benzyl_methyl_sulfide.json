@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_methyl_sulfide",
+    "foodindustrial:flowing_benzyl_methyl_sulfide",
+    {
+      "id": "#forge:benzyl_methyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_methyl_sulfide",
+      "required": false
+    }
+  ]
+}

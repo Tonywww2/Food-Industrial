@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sorbitan_monostearate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 10000,
+        "tag": "foodindustrial:ethylene_oxide"
+      }
+    }
+  ],
+  "mode": "ethoxylation",
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:polysorbate_60"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "high",
+    "temperature": "heated"
+  },
+  "time": 200
+}

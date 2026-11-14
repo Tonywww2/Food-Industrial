@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:bisabolene",
+  "loader": "forge:fluid_container"
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:citric_acid",
     {
+      "id": "#forge:dusts/citric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/citric_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/citric_acid",
       "required": false
     },

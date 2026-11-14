@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:solid_liquid_separator",
+  "name": "book.foodindustrial.manual.entry.solid_liquid_separator",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:solid_liquid_separator",
+      "text": "book.foodindustrial.manual.entry.solid_liquid_separator.text"
+    }
+  ],
+  "sortnum": 1
+}

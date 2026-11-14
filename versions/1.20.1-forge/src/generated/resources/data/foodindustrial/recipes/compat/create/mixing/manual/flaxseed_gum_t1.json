@@ -1,0 +1,42 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/flaxseed"
+    },
+    {
+      "tag": "foodindustrial:materials/flaxseed"
+    },
+    {
+      "tag": "foodindustrial:materials/flaxseed"
+    },
+    {
+      "tag": "foodindustrial:materials/flaxseed"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:flaxseed_gum",
+      "nbt": "{Purity:-1b}"
+    }
+  ]
+}

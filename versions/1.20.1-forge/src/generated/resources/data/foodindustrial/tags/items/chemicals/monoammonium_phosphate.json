@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monoammonium_phosphate",
+    {
+      "id": "#forge:dusts/monoammonium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monoammonium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/monoammonium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monoammonium_phosphate",
+      "required": false
+    }
+  ]
+}

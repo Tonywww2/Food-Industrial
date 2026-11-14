@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:grapefruit_oil_terpenes",
+  "loader": "forge:fluid_container"
+}

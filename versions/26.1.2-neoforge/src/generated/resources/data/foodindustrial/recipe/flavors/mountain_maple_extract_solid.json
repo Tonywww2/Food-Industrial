@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/mountain_maple_bark"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:mountain_maple_extract_solid"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

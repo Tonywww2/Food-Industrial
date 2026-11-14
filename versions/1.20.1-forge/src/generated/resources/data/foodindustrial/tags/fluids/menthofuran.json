@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthofuran",
+    "foodindustrial:flowing_menthofuran",
+    {
+      "id": "#forge:menthofuran",
+      "required": false
+    },
+    {
+      "id": "#c:menthofuran",
+      "required": false
+    }
+  ]
+}

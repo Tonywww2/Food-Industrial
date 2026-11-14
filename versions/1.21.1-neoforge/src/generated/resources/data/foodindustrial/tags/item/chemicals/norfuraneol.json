@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:norfuraneol",
+    {
+      "id": "#forge:dusts/norfuraneol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/norfuraneol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/norfuraneol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/norfuraneol",
+      "required": false
+    }
+  ]
+}

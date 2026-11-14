@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chestnut_leaf_extract",
+    "foodindustrial:flowing_chestnut_leaf_extract",
+    {
+      "id": "#forge:chestnut_leaf_extract",
+      "required": false
+    },
+    {
+      "id": "#c:chestnut_leaf_extract",
+      "required": false
+    }
+  ]
+}

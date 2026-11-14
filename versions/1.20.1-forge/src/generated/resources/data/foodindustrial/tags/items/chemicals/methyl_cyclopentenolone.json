@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/methyl_cyclopentenolone",
       "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_cyclopentenolone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_cyclopentenolone",
+      "required": false
     }
   ]
 }

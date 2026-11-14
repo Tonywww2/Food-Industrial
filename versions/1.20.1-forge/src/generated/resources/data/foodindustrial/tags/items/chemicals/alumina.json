@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/alumina",
       "required": false
+    },
+    {
+      "id": "#c:dusts/alumina",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alumina",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/vetiver_root"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "steam_distillation",
+  "outputs": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:vetiver_oil"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "oil_separation"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

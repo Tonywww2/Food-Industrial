@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiolactic_acid",
+    "foodindustrial:flowing_thiolactic_acid",
+    {
+      "id": "#forge:thiolactic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:thiolactic_acid",
+      "required": false
+    }
+  ]
+}

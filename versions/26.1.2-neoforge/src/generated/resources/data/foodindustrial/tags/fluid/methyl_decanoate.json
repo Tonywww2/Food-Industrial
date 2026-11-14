@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_decanoate",
+    "foodindustrial:flowing_methyl_decanoate",
+    {
+      "id": "#forge:methyl_decanoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_decanoate",
+      "required": false
+    }
+  ]
+}

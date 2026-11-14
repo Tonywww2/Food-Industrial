@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "active=false,facing=east": {
+      "model": "foodindustrial:block/culture_bench",
+      "y": 90
+    },
+    "active=false,facing=north": {
+      "model": "foodindustrial:block/culture_bench"
+    },
+    "active=false,facing=south": {
+      "model": "foodindustrial:block/culture_bench",
+      "y": 180
+    },
+    "active=false,facing=west": {
+      "model": "foodindustrial:block/culture_bench",
+      "y": 270
+    },
+    "active=true,facing=east": {
+      "model": "foodindustrial:block/culture_bench_active",
+      "y": 90
+    },
+    "active=true,facing=north": {
+      "model": "foodindustrial:block/culture_bench_active"
+    },
+    "active=true,facing=south": {
+      "model": "foodindustrial:block/culture_bench_active",
+      "y": 180
+    },
+    "active=true,facing=west": {
+      "model": "foodindustrial:block/culture_bench_active",
+      "y": 270
+    }
+  }
+}

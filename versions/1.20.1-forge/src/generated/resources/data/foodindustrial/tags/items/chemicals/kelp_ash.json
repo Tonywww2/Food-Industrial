@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/kelp_ash",
       "required": false
+    },
+    {
+      "id": "#c:dusts/kelp_ash",
+      "required": false
+    },
+    {
+      "id": "#c:gems/kelp_ash",
+      "required": false
     }
   ]
 }

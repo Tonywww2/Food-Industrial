@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/propylene_glycol_alginate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/propylene_glycol_alginate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/propylene_glycol_alginate",
+      "required": false
     }
   ]
 }

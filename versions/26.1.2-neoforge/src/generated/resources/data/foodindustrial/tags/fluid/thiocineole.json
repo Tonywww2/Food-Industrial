@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiocineole",
+    "foodindustrial:flowing_thiocineole",
+    {
+      "id": "#forge:thiocineole",
+      "required": false
+    },
+    {
+      "id": "#c:thiocineole",
+      "required": false
+    }
+  ]
+}

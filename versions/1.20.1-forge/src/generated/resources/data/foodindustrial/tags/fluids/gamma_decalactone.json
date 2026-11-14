@@ -6,6 +6,10 @@
     {
       "id": "#forge:gamma_decalactone",
       "required": false
+    },
+    {
+      "id": "#c:gamma_decalactone",
+      "required": false
     }
   ]
 }

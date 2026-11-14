@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylhydrazine",
+    "foodindustrial:flowing_phenylhydrazine",
+    {
+      "id": "#forge:phenylhydrazine",
+      "required": false
+    },
+    {
+      "id": "#c:phenylhydrazine",
+      "required": false
+    }
+  ]
+}

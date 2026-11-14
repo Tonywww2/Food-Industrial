@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/menthanecarboxylic_acid"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:thionyl_chloride"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/aminophenylacetonitrile"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:benzeneacetonitrile_menthanecarboxamide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

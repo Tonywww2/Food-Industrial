@@ -1,0 +1,41 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:wood_vinegar"
+  },
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:methanol",
+      "nbt": "{Purity:8b}"
+    },
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:acetic_acid",
+      "nbt": "{Purity:-29b}"
+    },
+    {
+      "amount": 50,
+      "fluid": "foodindustrial:acetone",
+      "nbt": "{Purity:8b}"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

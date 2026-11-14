@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sage_oil",
+    "foodindustrial:flowing_sage_oil",
+    {
+      "id": "#forge:sage_oil",
+      "required": false
+    },
+    {
+      "id": "#c:sage_oil",
+      "required": false
+    }
+  ]
+}

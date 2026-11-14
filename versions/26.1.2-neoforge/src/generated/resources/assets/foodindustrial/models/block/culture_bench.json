@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/culture_bench_front",
+    "side": "foodindustrial:block/culture_bench_side",
+    "top": "foodindustrial:block/culture_bench_top"
+  }
+}

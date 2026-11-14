@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:red_yeast_rice",
+    {
+      "id": "#forge:dusts/red_yeast_rice",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/red_yeast_rice",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/red_yeast_rice",
+      "required": false
+    },
+    {
+      "id": "#c:gems/red_yeast_rice",
+      "required": false
+    }
+  ]
+}

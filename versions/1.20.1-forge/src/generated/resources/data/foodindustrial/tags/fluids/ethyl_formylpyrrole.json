@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_formylpyrrole",
+    "foodindustrial:flowing_ethyl_formylpyrrole",
+    {
+      "id": "#forge:ethyl_formylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_formylpyrrole",
+      "required": false
+    }
+  ]
+}

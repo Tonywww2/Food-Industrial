@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_2_pentenal",
+    "foodindustrial:flowing_trans_2_pentenal",
+    {
+      "id": "#forge:trans_2_pentenal",
+      "required": false
+    },
+    {
+      "id": "#c:trans_2_pentenal",
+      "required": false
+    }
+  ]
+}

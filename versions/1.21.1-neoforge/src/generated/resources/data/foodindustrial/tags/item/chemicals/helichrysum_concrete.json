@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:helichrysum_concrete",
+    {
+      "id": "#forge:dusts/helichrysum_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/helichrysum_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/helichrysum_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/helichrysum_concrete",
+      "required": false
+    }
+  ]
+}

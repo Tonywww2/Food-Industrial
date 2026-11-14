@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/rosin_pentaerythritol_ester",
       "required": false
+    },
+    {
+      "id": "#c:dusts/rosin_pentaerythritol_ester",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rosin_pentaerythritol_ester",
+      "required": false
     }
   ]
 }

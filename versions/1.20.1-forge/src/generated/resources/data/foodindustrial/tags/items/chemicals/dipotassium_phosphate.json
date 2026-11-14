@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/dipotassium_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/dipotassium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dipotassium_phosphate",
+      "required": false
     }
   ]
 }

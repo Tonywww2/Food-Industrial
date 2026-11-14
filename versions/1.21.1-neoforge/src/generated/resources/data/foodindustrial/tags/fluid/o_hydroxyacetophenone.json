@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_hydroxyacetophenone",
+    "foodindustrial:flowing_o_hydroxyacetophenone",
+    {
+      "id": "#forge:o_hydroxyacetophenone",
+      "required": false
+    },
+    {
+      "id": "#c:o_hydroxyacetophenone",
+      "required": false
+    }
+  ]
+}

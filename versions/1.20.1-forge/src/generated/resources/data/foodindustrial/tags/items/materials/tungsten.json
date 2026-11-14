@@ -8,6 +8,14 @@
     {
       "id": "#forge:ingots/tungsten",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/tungsten",
+      "required": false
     }
   ]
 }

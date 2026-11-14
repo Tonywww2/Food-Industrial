@@ -6,6 +6,10 @@
     {
       "id": "#forge:morpholine",
       "required": false
+    },
+    {
+      "id": "#c:morpholine",
+      "required": false
     }
   ]
 }

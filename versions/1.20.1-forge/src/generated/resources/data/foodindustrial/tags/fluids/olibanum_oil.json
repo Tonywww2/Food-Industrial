@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:olibanum_oil",
+    "foodindustrial:flowing_olibanum_oil",
+    {
+      "id": "#forge:olibanum_oil",
+      "required": false
+    },
+    {
+      "id": "#c:olibanum_oil",
+      "required": false
+    }
+  ]
+}

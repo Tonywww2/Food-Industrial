@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:butenyl_methyl_sulfide",
+  "loader": "neoforge:fluid_container"
+}

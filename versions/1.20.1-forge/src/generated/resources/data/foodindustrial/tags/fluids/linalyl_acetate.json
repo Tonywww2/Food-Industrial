@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_acetate",
+    "foodindustrial:flowing_linalyl_acetate",
+    {
+      "id": "#forge:linalyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_acetate",
+      "required": false
+    }
+  ]
+}

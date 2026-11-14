@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethyl_methylpyrazine_2_3",
+  "loader": "neoforge:fluid_container"
+}

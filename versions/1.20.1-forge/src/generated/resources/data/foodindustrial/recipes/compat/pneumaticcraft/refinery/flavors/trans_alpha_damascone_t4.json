@@ -1,0 +1,36 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:alpha_damascone"
+  },
+  "results": [
+    {
+      "amount": 400,
+      "fluid": "foodindustrial:trans_alpha_damascone",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:alpha_damascone",
+      "nbt": "{Purity:36b}"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

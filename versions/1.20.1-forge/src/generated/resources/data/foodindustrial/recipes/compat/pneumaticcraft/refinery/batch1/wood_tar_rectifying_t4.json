@@ -1,0 +1,45 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:wood_tar"
+  },
+  "results": [
+    {
+      "amount": 200,
+      "fluid": "foodindustrial:guaiacol",
+      "nbt": "{Purity:13b}"
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:m_cresol",
+      "nbt": "{Purity:8b}"
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:creosol",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 150,
+      "fluid": "foodindustrial:pine_tar_oil"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

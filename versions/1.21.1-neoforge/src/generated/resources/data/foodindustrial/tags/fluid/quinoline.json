@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quinoline",
+    "foodindustrial:flowing_quinoline",
+    {
+      "id": "#forge:quinoline",
+      "required": false
+    },
+    {
+      "id": "#c:quinoline",
+      "required": false
+    }
+  ]
+}

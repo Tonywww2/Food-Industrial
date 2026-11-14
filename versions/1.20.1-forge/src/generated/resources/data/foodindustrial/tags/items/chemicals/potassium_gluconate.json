@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:potassium_gluconate",
+    {
+      "id": "#forge:dusts/potassium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_gluconate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rue_oil",
+    "foodindustrial:flowing_rue_oil",
+    {
+      "id": "#forge:rue_oil",
+      "required": false
+    },
+    {
+      "id": "#c:rue_oil",
+      "required": false
+    }
+  ]
+}

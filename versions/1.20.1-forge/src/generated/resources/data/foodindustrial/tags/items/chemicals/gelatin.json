@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gelatin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gelatin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gelatin",
+      "required": false
     }
   ]
 }

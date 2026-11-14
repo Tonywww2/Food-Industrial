@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylthiazole",
+    "foodindustrial:flowing_acetylthiazole",
+    {
+      "id": "#forge:acetylthiazole",
+      "required": false
+    },
+    {
+      "id": "#c:acetylthiazole",
+      "required": false
+    }
+  ]
+}

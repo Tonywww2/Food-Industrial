@@ -6,6 +6,10 @@
     {
       "id": "#forge:pancreatic_extract",
       "required": false
+    },
+    {
+      "id": "#c:pancreatic_extract",
+      "required": false
     }
   ]
 }

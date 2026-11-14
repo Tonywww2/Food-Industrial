@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/oxystearin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/oxystearin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oxystearin",
+      "required": false
     }
   ]
 }

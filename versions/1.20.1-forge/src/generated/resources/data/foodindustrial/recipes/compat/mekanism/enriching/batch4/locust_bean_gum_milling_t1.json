@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "input": {
+    "amount": 4,
+    "ingredient": {
+      "tag": "foodindustrial:materials/carob_seed"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:locust_bean_gum",
+    "nbt": "{Purity:-4b}"
+  }
+}

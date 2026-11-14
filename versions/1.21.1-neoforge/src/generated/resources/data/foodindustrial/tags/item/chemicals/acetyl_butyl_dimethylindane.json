@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetyl_butyl_dimethylindane",
+    {
+      "id": "#forge:dusts/acetyl_butyl_dimethylindane",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetyl_butyl_dimethylindane",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetyl_butyl_dimethylindane",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetyl_butyl_dimethylindane",
+      "required": false
+    }
+  ]
+}

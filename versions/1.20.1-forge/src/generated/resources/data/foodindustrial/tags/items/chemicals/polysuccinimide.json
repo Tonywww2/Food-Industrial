@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/polysuccinimide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/polysuccinimide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polysuccinimide",
+      "required": false
     }
   ]
 }

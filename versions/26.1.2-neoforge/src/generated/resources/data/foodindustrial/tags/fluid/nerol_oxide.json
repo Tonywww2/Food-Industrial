@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nerol_oxide",
+    "foodindustrial:flowing_nerol_oxide",
+    {
+      "id": "#forge:nerol_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:nerol_oxide",
+      "required": false
+    }
+  ]
+}

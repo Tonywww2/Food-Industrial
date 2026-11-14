@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamon_leaf_oil",
+    "foodindustrial:flowing_cinnamon_leaf_oil",
+    {
+      "id": "#forge:cinnamon_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cinnamon_leaf_oil",
+      "required": false
+    }
+  ]
+}

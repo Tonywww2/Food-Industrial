@@ -4,6 +4,10 @@
     {
       "id": "#c:fruits/papaya",
       "required": false
+    },
+    {
+      "id": "#forge:fruits/papaya",
+      "required": false
     }
   ]
 }

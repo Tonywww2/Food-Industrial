@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxy_1_decene",
+    "foodindustrial:flowing_methoxy_1_decene",
+    {
+      "id": "#forge:methoxy_1_decene",
+      "required": false
+    },
+    {
+      "id": "#c:methoxy_1_decene",
+      "required": false
+    }
+  ]
+}

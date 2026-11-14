@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:capsicum_tincture",
+    "foodindustrial:flowing_capsicum_tincture",
+    {
+      "id": "#forge:capsicum_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:capsicum_tincture",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:balsam_fir_oleoresin",
+    "foodindustrial:flowing_balsam_fir_oleoresin",
+    {
+      "id": "#forge:balsam_fir_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:balsam_fir_oleoresin",
+      "required": false
+    }
+  ]
+}

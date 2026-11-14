@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "input": {
+    "fluid": {
+      "amount": 1000,
+      "tag": "foodindustrial:molten_propylene_glycol_monostearate"
+    }
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": -17
+    },
+    "count": 1,
+    "id": "foodindustrial:propylene_glycol_monostearate"
+  },
+  "temperature": 273
+}

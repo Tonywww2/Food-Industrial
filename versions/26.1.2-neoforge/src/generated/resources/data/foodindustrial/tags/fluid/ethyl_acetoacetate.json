@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_acetoacetate",
+    "foodindustrial:flowing_ethyl_acetoacetate",
+    {
+      "id": "#forge:ethyl_acetoacetate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_acetoacetate",
+      "required": false
+    }
+  ]
+}

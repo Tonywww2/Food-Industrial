@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/beeswax",
       "required": false
+    },
+    {
+      "id": "#c:dusts/beeswax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/beeswax",
+      "required": false
     }
   ]
 }

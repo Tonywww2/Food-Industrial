@@ -6,6 +6,10 @@
     {
       "id": "#forge:ketene",
       "required": false
+    },
+    {
+      "id": "#c:ketene",
+      "required": false
     }
   ]
 }

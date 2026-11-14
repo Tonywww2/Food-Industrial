@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/lactylated_monoglycerides",
       "required": false
+    },
+    {
+      "id": "#c:dusts/lactylated_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lactylated_monoglycerides",
+      "required": false
     }
   ]
 }

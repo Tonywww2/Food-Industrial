@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:triphenylphosphine_oxide",
     {
+      "id": "#forge:dusts/triphenylphosphine_oxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/triphenylphosphine_oxide",
+      "required": false
+    },
+    {
       "id": "#c:dusts/triphenylphosphine_oxide",
       "required": false
     },

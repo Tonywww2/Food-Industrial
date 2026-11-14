@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiourea",
+    {
+      "id": "#forge:dusts/thiourea",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thiourea",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/thiourea",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thiourea",
+      "required": false
+    }
+  ]
+}

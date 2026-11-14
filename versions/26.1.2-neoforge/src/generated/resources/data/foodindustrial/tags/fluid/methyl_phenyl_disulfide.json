@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_phenyl_disulfide",
+    "foodindustrial:flowing_methyl_phenyl_disulfide",
+    {
+      "id": "#forge:methyl_phenyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_phenyl_disulfide",
+      "required": false
+    }
+  ]
+}

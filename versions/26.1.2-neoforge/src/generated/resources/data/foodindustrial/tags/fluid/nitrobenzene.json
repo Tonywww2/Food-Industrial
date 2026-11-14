@@ -4,6 +4,10 @@
     "foodindustrial:nitrobenzene",
     "foodindustrial:flowing_nitrobenzene",
     {
+      "id": "#forge:nitrobenzene",
+      "required": false
+    },
+    {
       "id": "#c:nitrobenzene",
       "required": false
     }

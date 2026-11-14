@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:bixin",
     {
+      "id": "#forge:dusts/bixin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/bixin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/bixin",
       "required": false
     },

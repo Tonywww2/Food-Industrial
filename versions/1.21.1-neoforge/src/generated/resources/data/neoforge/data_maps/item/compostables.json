@@ -1,0 +1,43 @@
+{
+  "values": {
+    "foodindustrial:chili_pepper": {
+      "chance": 0.65
+    },
+    "foodindustrial:eucheuma": {
+      "chance": 0.3
+    },
+    "foodindustrial:gardenia_fruit": {
+      "chance": 0.3
+    },
+    "foodindustrial:gelidium": {
+      "chance": 0.3
+    },
+    "foodindustrial:indigo_plant": {
+      "chance": 0.65
+    },
+    "foodindustrial:mint": {
+      "chance": 0.65
+    },
+    "foodindustrial:paddy": {
+      "chance": 0.65
+    },
+    "foodindustrial:rosemary": {
+      "chance": 0.65
+    },
+    "foodindustrial:rubber_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:rubber_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:stevia": {
+      "chance": 0.65
+    },
+    "foodindustrial:turmeric_rhizome": {
+      "chance": 0.65
+    },
+    "foodindustrial:vanilla_pod": {
+      "chance": 0.65
+    }
+  }
+}

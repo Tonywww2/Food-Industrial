@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:cassia_gum",
     {
+      "id": "#forge:dusts/cassia_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cassia_gum",
+      "required": false
+    },
+    {
       "id": "#c:dusts/cassia_gum",
       "required": false
     },

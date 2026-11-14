@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hawthorn_kernel_smoke_flavoring_1",
+    "foodindustrial:flowing_hawthorn_kernel_smoke_flavoring_1",
+    {
+      "id": "#forge:hawthorn_kernel_smoke_flavoring_1",
+      "required": false
+    },
+    {
+      "id": "#c:hawthorn_kernel_smoke_flavoring_1",
+      "required": false
+    }
+  ]
+}

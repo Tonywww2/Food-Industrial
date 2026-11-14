@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:pressing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/raw_mutton"
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:animal_blood"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 100
+}

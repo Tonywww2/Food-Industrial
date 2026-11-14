@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sebacic_acid",
+    {
+      "id": "#forge:dusts/sebacic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sebacic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sebacic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sebacic_acid",
+      "required": false
+    }
+  ]
+}

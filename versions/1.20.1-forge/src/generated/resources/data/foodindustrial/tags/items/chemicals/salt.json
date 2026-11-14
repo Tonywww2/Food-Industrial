@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/salt",
       "required": false
+    },
+    {
+      "id": "#c:dusts/salt",
+      "required": false
+    },
+    {
+      "id": "#c:gems/salt",
+      "required": false
     }
   ]
 }

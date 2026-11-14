@@ -1,0 +1,51 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:rotary_kiln",
+  "name": "book.foodindustrial.manual.entry.rotary_kiln",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:rotary_kiln",
+      "text": "book.foodindustrial.manual.entry.rotary_kiln.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:rotary_kiln[facing=south]",
+          "A": "foodindustrial:kiln_shell"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "A A",
+            "A A",
+            "A A",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.rotary_kiln"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.rotary_kiln.structure"
+    }
+  ],
+  "sortnum": 7
+}

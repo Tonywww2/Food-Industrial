@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myrtenyl_formate",
+    "foodindustrial:flowing_myrtenyl_formate",
+    {
+      "id": "#forge:myrtenyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:myrtenyl_formate",
+      "required": false
+    }
+  ]
+}

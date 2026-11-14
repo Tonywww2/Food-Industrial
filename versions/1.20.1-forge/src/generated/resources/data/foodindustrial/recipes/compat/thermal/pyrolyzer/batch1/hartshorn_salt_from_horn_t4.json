@@ -1,0 +1,27 @@
+{
+  "type": "thermal:pyrolyzer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 16000,
+  "ingredient": {
+    "tag": "foodindustrial:materials/horn"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:ammonium_carbonate",
+      "nbt": "{Purity:14b}"
+    }
+  ]
+}

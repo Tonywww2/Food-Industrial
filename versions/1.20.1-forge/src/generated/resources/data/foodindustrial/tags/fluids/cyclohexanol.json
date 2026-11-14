@@ -6,6 +6,10 @@
     {
       "id": "#forge:cyclohexanol",
       "required": false
+    },
+    {
+      "id": "#c:cyclohexanol",
+      "required": false
     }
   ]
 }

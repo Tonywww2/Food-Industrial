@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dodecyl_isobutyrate",
+    "foodindustrial:flowing_dodecyl_isobutyrate",
+    {
+      "id": "#forge:dodecyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:dodecyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

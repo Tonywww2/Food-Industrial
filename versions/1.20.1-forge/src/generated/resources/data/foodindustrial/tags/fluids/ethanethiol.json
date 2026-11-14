@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethanethiol",
+    "foodindustrial:flowing_ethanethiol",
+    {
+      "id": "#forge:ethanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:ethanethiol",
+      "required": false
+    }
+  ]
+}

@@ -33,6 +33,8 @@ ORES = {
     'magnesite_ore': ((125, 125, 125), (240, 240, 232)),
     'apatite_ore': ((125, 125, 125), (70, 140, 170)),
     'sulfur_ore': ((125, 125, 125), (224, 208, 60)),
+    'selenium_ore': ((125, 125, 125), (170, 60, 50)),  # I31
+    'chromite_ore': ((125, 125, 125), (40, 40, 44)),  # I31
 }
 FULL_BLOCKS = {  # plain cube blocks: base colour, speck colour
     'rock_salt': ((214, 190, 190), (245, 236, 236)),
@@ -42,10 +44,12 @@ FULL_BLOCKS = {  # plain cube blocks: base colour, speck colour
 }
 CROPS = {  # produce id -> leaf colour, produce colour
     'stevia': ((70, 150, 60), (110, 180, 90)),
+    'turmeric_rhizome': ((70, 140, 50), (214, 150, 40)),  # I12, 2026-11-10
+    'chili_pepper': ((60, 140, 50), (200, 40, 30)),  # I12, 2026-11-10
     'mint': ((60, 170, 90), (120, 210, 140)),
     'rosemary': ((70, 110, 80), (140, 160, 200)),
     'indigo_plant': ((60, 130, 70), (190, 80, 120)),
-    'rice': ((110, 160, 60), (220, 200, 120)),
+    'paddy': ((110, 160, 60), (220, 200, 120)),  # 2026-11-12: was 'rice' (11 问题 43)
 }
 SEA_PLANTS = {'gelidium': (170, 40, 60), 'eucheuma': (150, 110, 60)}
 

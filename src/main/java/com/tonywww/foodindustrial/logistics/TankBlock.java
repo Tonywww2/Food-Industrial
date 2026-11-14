@@ -4,6 +4,7 @@ import com.tonywww.foodindustrial.core.purity.Purity;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import com.tonywww.foodindustrial.core.text.Tooltips;
 import com.tonywww.foodindustrial.gui.GuiText;
+import com.tonywww.foodindustrial.manual.Tartar;
 import com.tonywww.foodindustrial.platform.PlatformFluidContainers;
 import com.tonywww.foodindustrial.platform.PlatformFluids;
 import com.tonywww.foodindustrial.platform.PlatformPlayers;
@@ -103,6 +104,16 @@ public class TankBlock extends PlatformEntityBlock {
         if (!(level.getBlockEntity(pos) instanceof TankBlockEntity tank)) {
             return UseResult.PASS;
         }
+        if (Tartar.isKnife(held) && tank.tartar() > 0) {
+            if (!level.isClientSide()) {
+                ItemStack scraped = Tartar.stack(tank.scrapeTartar());
+                if (!player.getInventory().add(scraped)) {
+                    player.drop(scraped, false);
+                }
+                com.tonywww.foodindustrial.platform.PlatformItems.damage(held, 1, player, hand);
+            }
+            return UseResult.SUCCESS;
+        }
         if (!held.isEmpty()) {
             UseResult result = useContainer(level, tank, player, hand, held);
             return result == UseResult.PASS ? UseResult.PASS_TO_ITEM : result;
@@ -178,6 +189,9 @@ public class TankBlock extends PlatformEntityBlock {
             List<Component> purity = new ArrayList<>(1);
             Tooltips.purityLine(Purity.materialOf(contents.fluid()), Purity.get(contents), purity);
             purity.forEach(part -> line.append("  ").append(part));
+        }
+        if (tank.tartar() > 0) {
+            line.append("  ").append(Component.translatable(GuiText.key("tank", "tartar"), String.valueOf(tank.tartar())));
         }
         line.append("  ").append(Component.translatable(GuiText.key("tank", tank.draining() ? "draining_on" : "draining_off")));
         return line;

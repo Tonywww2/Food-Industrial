@@ -4,6 +4,10 @@
     "foodindustrial:palm_fatty_acids",
     "foodindustrial:flowing_palm_fatty_acids",
     {
+      "id": "#forge:palm_fatty_acids",
+      "required": false
+    },
+    {
       "id": "#c:palm_fatty_acids",
       "required": false
     }

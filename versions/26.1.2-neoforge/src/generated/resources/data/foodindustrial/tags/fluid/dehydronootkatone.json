@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dehydronootkatone",
+    "foodindustrial:flowing_dehydronootkatone",
+    {
+      "id": "#forge:dehydronootkatone",
+      "required": false
+    },
+    {
+      "id": "#c:dehydronootkatone",
+      "required": false
+    }
+  ]
+}

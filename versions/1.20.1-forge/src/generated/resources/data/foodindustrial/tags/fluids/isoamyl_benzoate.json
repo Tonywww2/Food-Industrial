@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_benzoate",
+    "foodindustrial:flowing_isoamyl_benzoate",
+    {
+      "id": "#forge:isoamyl_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_benzoate",
+      "required": false
+    }
+  ]
+}

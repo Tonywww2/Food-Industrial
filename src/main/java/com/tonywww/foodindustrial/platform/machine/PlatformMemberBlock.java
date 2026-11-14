@@ -4,15 +4,17 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
 //? if >=26.1 {
 /*import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.redstone.Orientation;
 *///?}
 
 /**
  * Base class of plain blocks that report their placement and removal on the server (multiblock casings
  * and other member blocks without a block entity): {@link #onPlaced} and {@link #onRemoved}, also for
- * changes by pistons and explosions. 26.1 has no removal hook with the level before removal; both
- * hooks run after the change on every node.
+ * changes by pistons and explosions, and {@link #onNeighborChanged} (air intakes, I15). 26.1 has no
+ * removal hook with the level before removal; both hooks run after the change on every node.
  */
 public abstract class PlatformMemberBlock extends Block {
     protected PlatformMemberBlock(Properties properties) {
@@ -26,6 +28,39 @@ public abstract class PlatformMemberBlock extends Block {
     /** Server only: this block was removed from {@code pos} (or replaced by another block). */
     protected void onRemoved(Level level, BlockPos pos) {
     }
+
+    /** Server only: a neighbouring block changed. */
+    protected void onNeighborChanged(Level level, BlockPos pos) {
+    }
+
+    //? if >=26.1 {
+    /*@Override
+    protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, @Nullable Orientation orientation, boolean movedByPiston) {
+        super.neighborChanged(state, level, pos, block, orientation, movedByPiston);
+        if (!level.isClientSide()) {
+            onNeighborChanged(level, pos);
+        }
+    }
+    *///?}
+    //? if >=1.21 && <26.1 {
+    /*@Override
+    protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean movedByPiston) {
+        super.neighborChanged(state, level, pos, block, fromPos, movedByPiston);
+        if (!level.isClientSide()) {
+            onNeighborChanged(level, pos);
+        }
+    }
+    *///?}
+    //? if <1.21 {
+    @Override
+    @SuppressWarnings("deprecation")
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean movedByPiston) {
+        super.neighborChanged(state, level, pos, block, fromPos, movedByPiston);
+        if (!level.isClientSide()) {
+            onNeighborChanged(level, pos);
+        }
+    }
+    //?}
 
     //? if >=26.1 {
     /*@Override

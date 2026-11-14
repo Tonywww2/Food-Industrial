@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethylene_oxide",
       "required": false
+    },
+    {
+      "id": "#c:ethylene_oxide",
+      "required": false
     }
   ]
 }

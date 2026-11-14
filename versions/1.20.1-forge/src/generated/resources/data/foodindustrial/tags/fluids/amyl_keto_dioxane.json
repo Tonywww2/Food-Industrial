@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amyl_keto_dioxane",
+    "foodindustrial:flowing_amyl_keto_dioxane",
+    {
+      "id": "#forge:amyl_keto_dioxane",
+      "required": false
+    },
+    {
+      "id": "#c:amyl_keto_dioxane",
+      "required": false
+    }
+  ]
+}

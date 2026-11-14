@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "forge:ingots/copper"
+    },
+    "D": {
+      "tag": "forge:gems/diamond"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "V": {
+      "item": "foodindustrial:vacuum_pump"
+    }
+  },
+  "pattern": [
+    "GVG",
+    "CDC",
+    "GVG"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:molecular_distillation"
+  }
+}

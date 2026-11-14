@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pvpp",
+    {
+      "id": "#forge:dusts/pvpp",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pvpp",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pvpp",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pvpp",
+      "required": false
+    }
+  ]
+}

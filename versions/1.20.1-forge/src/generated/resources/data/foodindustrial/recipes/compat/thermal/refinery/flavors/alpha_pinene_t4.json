@@ -1,0 +1,38 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:turpentine"
+  },
+  "result": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:carene_3",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:beta_pinene",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:alpha_pinene",
+      "nbt": "{Purity:19b}"
+    }
+  ]
+}

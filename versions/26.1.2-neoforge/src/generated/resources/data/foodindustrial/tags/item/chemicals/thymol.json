@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:thymol",
     {
+      "id": "#forge:dusts/thymol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thymol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/thymol",
       "required": false
     },

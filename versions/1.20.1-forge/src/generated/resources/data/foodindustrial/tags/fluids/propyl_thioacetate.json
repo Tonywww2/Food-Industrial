@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_thioacetate",
+    "foodindustrial:flowing_propyl_thioacetate",
+    {
+      "id": "#forge:propyl_thioacetate",
+      "required": false
+    },
+    {
+      "id": "#c:propyl_thioacetate",
+      "required": false
+    }
+  ]
+}

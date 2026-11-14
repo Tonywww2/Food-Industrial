@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:celery_seed_co2_extract",
+    "foodindustrial:flowing_celery_seed_co2_extract",
+    {
+      "id": "#forge:celery_seed_co2_extract",
+      "required": false
+    },
+    {
+      "id": "#c:celery_seed_co2_extract",
+      "required": false
+    }
+  ]
+}

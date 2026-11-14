@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:olibanum_oil",
+  "loader": "neoforge:fluid_container"
+}

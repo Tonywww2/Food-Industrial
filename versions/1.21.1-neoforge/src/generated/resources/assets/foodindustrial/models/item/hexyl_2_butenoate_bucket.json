@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hexyl_2_butenoate",
+  "loader": "neoforge:fluid_container"
+}

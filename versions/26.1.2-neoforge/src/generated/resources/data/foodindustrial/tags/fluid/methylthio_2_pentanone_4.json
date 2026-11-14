@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthio_2_pentanone_4",
+    "foodindustrial:flowing_methylthio_2_pentanone_4",
+    {
+      "id": "#forge:methylthio_2_pentanone_4",
+      "required": false
+    },
+    {
+      "id": "#c:methylthio_2_pentanone_4",
+      "required": false
+    }
+  ]
+}

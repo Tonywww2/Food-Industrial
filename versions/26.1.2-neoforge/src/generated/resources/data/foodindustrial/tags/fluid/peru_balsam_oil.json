@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:peru_balsam_oil",
+    "foodindustrial:flowing_peru_balsam_oil",
+    {
+      "id": "#forge:peru_balsam_oil",
+      "required": false
+    },
+    {
+      "id": "#c:peru_balsam_oil",
+      "required": false
+    }
+  ]
+}

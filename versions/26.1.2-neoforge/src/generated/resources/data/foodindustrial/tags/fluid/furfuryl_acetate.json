@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_acetate",
+    "foodindustrial:flowing_furfuryl_acetate",
+    {
+      "id": "#forge:furfuryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_acetate",
+      "required": false
+    }
+  ]
+}

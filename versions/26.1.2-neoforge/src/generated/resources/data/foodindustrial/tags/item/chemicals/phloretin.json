@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phloretin",
+    {
+      "id": "#forge:dusts/phloretin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phloretin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/phloretin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phloretin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/brown_mustard_seed"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:brown_mustard_extract"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

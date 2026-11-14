@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylheptanol",
+    "foodindustrial:flowing_dimethylheptanol",
+    {
+      "id": "#forge:dimethylheptanol",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylheptanol",
+      "required": false
+    }
+  ]
+}

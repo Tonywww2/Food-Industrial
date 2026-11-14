@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chloromethyl_methyl_sulfide",
+    "foodindustrial:flowing_chloromethyl_methyl_sulfide",
+    {
+      "id": "#forge:chloromethyl_methyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:chloromethyl_methyl_sulfide",
+      "required": false
+    }
+  ]
+}

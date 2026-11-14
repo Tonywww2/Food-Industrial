@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "type": "mekanism:evaporating",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:fish_liver_oil"
+  },
+  "output": {
+    "amount": 750,
+    "id": "foodindustrial:fish_liver_oil"
+  }
+}

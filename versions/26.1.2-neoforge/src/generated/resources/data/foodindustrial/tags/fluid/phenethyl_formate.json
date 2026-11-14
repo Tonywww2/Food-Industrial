@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenethyl_formate",
+    "foodindustrial:flowing_phenethyl_formate",
+    {
+      "id": "#forge:phenethyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:phenethyl_formate",
+      "required": false
+    }
+  ]
+}

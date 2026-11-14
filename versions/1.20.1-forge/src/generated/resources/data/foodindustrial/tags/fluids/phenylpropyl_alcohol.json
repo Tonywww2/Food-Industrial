@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylpropyl_alcohol",
+    "foodindustrial:flowing_phenylpropyl_alcohol",
+    {
+      "id": "#forge:phenylpropyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:phenylpropyl_alcohol",
+      "required": false
+    }
+  ]
+}

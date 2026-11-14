@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:spanish_sage_oil",
+    "foodindustrial:flowing_spanish_sage_oil",
+    {
+      "id": "#forge:spanish_sage_oil",
+      "required": false
+    },
+    {
+      "id": "#c:spanish_sage_oil",
+      "required": false
+    }
+  ]
+}

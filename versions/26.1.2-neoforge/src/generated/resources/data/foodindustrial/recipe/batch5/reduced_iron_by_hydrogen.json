@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/iron_oxide_black"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "fluidized_bed",
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:reduced_iron",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 4000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

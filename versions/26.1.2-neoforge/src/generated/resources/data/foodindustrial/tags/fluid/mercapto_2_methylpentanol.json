@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercapto_2_methylpentanol",
+    "foodindustrial:flowing_mercapto_2_methylpentanol",
+    {
+      "id": "#forge:mercapto_2_methylpentanol",
+      "required": false
+    },
+    {
+      "id": "#c:mercapto_2_methylpentanol",
+      "required": false
+    }
+  ]
+}

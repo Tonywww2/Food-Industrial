@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:yolk_extract",
+    "foodindustrial:flowing_yolk_extract",
+    {
+      "id": "#forge:yolk_extract",
+      "required": false
+    },
+    {
+      "id": "#c:yolk_extract",
+      "required": false
+    }
+  ]
+}

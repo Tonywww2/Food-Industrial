@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:electrolyzing",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/electrode"
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/l_cystine"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    }
+  ],
+  "mode": "electroreduction",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:l_cysteine"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

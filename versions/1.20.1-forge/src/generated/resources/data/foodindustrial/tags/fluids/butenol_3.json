@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butenol_3",
+    "foodindustrial:flowing_butenol_3",
+    {
+      "id": "#forge:butenol_3",
+      "required": false
+    },
+    {
+      "id": "#c:butenol_3",
+      "required": false
+    }
+  ]
+}

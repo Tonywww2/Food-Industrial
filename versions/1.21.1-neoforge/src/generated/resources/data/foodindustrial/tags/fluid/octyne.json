@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octyne",
+    "foodindustrial:flowing_octyne",
+    {
+      "id": "#forge:octyne",
+      "required": false
+    },
+    {
+      "id": "#c:octyne",
+      "required": false
+    }
+  ]
+}

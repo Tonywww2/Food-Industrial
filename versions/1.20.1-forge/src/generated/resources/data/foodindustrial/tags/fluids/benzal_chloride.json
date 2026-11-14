@@ -6,6 +6,10 @@
     {
       "id": "#forge:benzal_chloride",
       "required": false
+    },
+    {
+      "id": "#c:benzal_chloride",
+      "required": false
     }
   ]
 }

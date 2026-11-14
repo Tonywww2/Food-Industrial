@@ -1,0 +1,13 @@
+{
+  "type": "foodindustrial:block_transform",
+  "block": "#foodindustrial:nitre_soil_sources",
+  "entities": "#foodindustrial:livestock",
+  "entity_chance": 0.1,
+  "random_tick_chance": 0.01,
+  "requirements": {
+    "environment": [
+      "sheltered"
+    ]
+  },
+  "result": "foodindustrial:nitre_soil"
+}

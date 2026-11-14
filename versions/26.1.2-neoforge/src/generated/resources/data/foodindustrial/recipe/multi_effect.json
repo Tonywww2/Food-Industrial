@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": "#c:storage_blocks/copper",
+    "G": "minecraft:glass",
+    "I": "#c:ingots/iron",
+    "R": "#c:dusts/redstone"
+  },
+  "pattern": [
+    "IGI",
+    "CRC",
+    "IGI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:multi_effect"
+  }
+}

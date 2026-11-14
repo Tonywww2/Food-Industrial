@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:non_3_en_2_one",
+    "foodindustrial:flowing_non_3_en_2_one",
+    {
+      "id": "#forge:non_3_en_2_one",
+      "required": false
+    },
+    {
+      "id": "#c:non_3_en_2_one",
+      "required": false
+    }
+  ]
+}

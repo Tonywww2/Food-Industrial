@@ -6,6 +6,10 @@
     {
       "id": "#forge:caramel",
       "required": false
+    },
+    {
+      "id": "#c:caramel",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/dimethylurea",
       "required": false
+    },
+    {
+      "id": "#c:dusts/dimethylurea",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethylurea",
+      "required": false
     }
   ]
 }

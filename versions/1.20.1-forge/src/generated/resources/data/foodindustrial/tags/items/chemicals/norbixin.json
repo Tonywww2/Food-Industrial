@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/norbixin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/norbixin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/norbixin",
+      "required": false
     }
   ]
 }

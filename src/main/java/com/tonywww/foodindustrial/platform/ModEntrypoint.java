@@ -7,6 +7,7 @@ import com.tonywww.foodindustrial.platform.machine.PlatformMachineCapabilities;
 import com.tonywww.foodindustrial.platform.network.PlatformNetwork;
 import com.tonywww.foodindustrial.platform.purity.PlatformPurity;
 import com.tonywww.foodindustrial.platform.recipe.PlatformIngredients;
+import com.tonywww.foodindustrial.platform.recipe.PlatformRecipes;
 //? if forge {
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +31,9 @@ public final class ModEntrypoint {
     /*public ModEntrypoint(IEventBus modBus, ModContainer container) {
     *///?}
         PlatformEvents.bind(modBus);
+        PlatformPlayerData.bind();
+        PlatformPlayerEvents.bind();
+        PlatformAttributes.bind(modBus);
         PlatformMachineCapabilities.bind(modBus);
         PlatformNetwork.bind(modBus);
         PlatformDatagen.bind(modBus);
@@ -38,6 +42,9 @@ public final class ModEntrypoint {
         }
         PlatformPurity.bootstrap();
         PlatformIngredients.bind(modBus);
+        com.tonywww.foodindustrial.platform.recipe.PlatformRecipeConditions.bind();
+        PlatformKinetics.bind(modBus);
+        PlatformRecipes.bindSync();
         PlatformFluids.bind(modBus);
         PlatformTankItem.bind(modBus);
         PlatformWorldgen.bind();

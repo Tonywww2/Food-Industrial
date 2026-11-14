@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:p_alpha_dimethylbenzyl_alcohol",
+  "loader": "neoforge:fluid_container"
+}

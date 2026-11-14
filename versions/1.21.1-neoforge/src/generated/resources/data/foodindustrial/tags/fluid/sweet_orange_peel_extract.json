@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sweet_orange_peel_extract",
+    "foodindustrial:flowing_sweet_orange_peel_extract",
+    {
+      "id": "#forge:sweet_orange_peel_extract",
+      "required": false
+    },
+    {
+      "id": "#c:sweet_orange_peel_extract",
+      "required": false
+    }
+  ]
+}

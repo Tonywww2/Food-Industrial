@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_oxalate",
+    {
+      "id": "#forge:dusts/calcium_oxalate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_oxalate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_oxalate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_oxalate",
+      "required": false
+    }
+  ]
+}

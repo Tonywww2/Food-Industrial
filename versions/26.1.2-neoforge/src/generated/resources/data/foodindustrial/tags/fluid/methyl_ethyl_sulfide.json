@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_ethyl_sulfide",
+    "foodindustrial:flowing_methyl_ethyl_sulfide",
+    {
+      "id": "#forge:methyl_ethyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_ethyl_sulfide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/ghatti_lump"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:ghatti_gum",
+    "nbt": "{Purity:5b}"
+  }
+}

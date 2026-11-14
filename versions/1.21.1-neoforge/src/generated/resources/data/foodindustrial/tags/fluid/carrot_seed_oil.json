@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carrot_seed_oil",
+    "foodindustrial:flowing_carrot_seed_oil",
+    {
+      "id": "#forge:carrot_seed_oil",
+      "required": false
+    },
+    {
+      "id": "#c:carrot_seed_oil",
+      "required": false
+    }
+  ]
+}

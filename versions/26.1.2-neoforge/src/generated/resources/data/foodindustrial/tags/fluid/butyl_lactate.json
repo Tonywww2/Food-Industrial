@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_lactate",
+    "foodindustrial:flowing_butyl_lactate",
+    {
+      "id": "#forge:butyl_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_lactate",
+      "required": false
+    }
+  ]
+}

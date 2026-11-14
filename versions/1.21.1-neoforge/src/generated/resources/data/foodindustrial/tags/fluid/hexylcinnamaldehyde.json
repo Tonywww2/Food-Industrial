@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexylcinnamaldehyde",
+    "foodindustrial:flowing_hexylcinnamaldehyde",
+    {
+      "id": "#forge:hexylcinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:hexylcinnamaldehyde",
+      "required": false
+    }
+  ]
+}

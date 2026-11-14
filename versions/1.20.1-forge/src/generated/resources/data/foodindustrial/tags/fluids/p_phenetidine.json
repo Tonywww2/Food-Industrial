@@ -6,6 +6,10 @@
     {
       "id": "#forge:p_phenetidine",
       "required": false
+    },
+    {
+      "id": "#c:p_phenetidine",
+      "required": false
     }
   ]
 }

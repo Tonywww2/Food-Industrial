@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_furfurylthio_pyrazine",
+    "foodindustrial:flowing_methyl_furfurylthio_pyrazine",
+    {
+      "id": "#forge:methyl_furfurylthio_pyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_furfurylthio_pyrazine",
+      "required": false
+    }
+  ]
+}

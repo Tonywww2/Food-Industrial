@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpinyl_acetate",
+    "foodindustrial:flowing_terpinyl_acetate",
+    {
+      "id": "#forge:terpinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:terpinyl_acetate",
+      "required": false
+    }
+  ]
+}

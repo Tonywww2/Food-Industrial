@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lemon_oil",
+    "foodindustrial:flowing_lemon_oil",
+    {
+      "id": "#forge:lemon_oil",
+      "required": false
+    },
+    {
+      "id": "#c:lemon_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furaneol_butyrate",
+    "foodindustrial:flowing_furaneol_butyrate",
+    {
+      "id": "#forge:furaneol_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:furaneol_butyrate",
+      "required": false
+    }
+  ]
+}

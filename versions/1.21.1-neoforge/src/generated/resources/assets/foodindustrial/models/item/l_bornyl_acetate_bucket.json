@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:l_bornyl_acetate",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_aminobutyric_acid",
+    {
+      "id": "#forge:dusts/gamma_aminobutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gamma_aminobutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/gamma_aminobutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gamma_aminobutyric_acid",
+      "required": false
+    }
+  ]
+}

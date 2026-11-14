@@ -1,0 +1,34 @@
+{
+  "type": "thermal:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "energy": 3000,
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid_tag": "foodindustrial:ethanol"
+    },
+    {
+      "count": 2,
+      "tag": "foodindustrial:chemicals/lithospermum_red"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:lithospermum_red",
+      "nbt": "{Purity:6b}"
+    }
+  ]
+}

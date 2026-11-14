@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:polydimethylsiloxane_emulsion",
+  "loader": "forge:fluid_container"
+}

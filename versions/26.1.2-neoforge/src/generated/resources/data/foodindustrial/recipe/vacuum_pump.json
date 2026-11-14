@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:glass",
+    "I": "#c:ingots/iron",
+    "P": "minecraft:piston"
+  },
+  "pattern": [
+    "IPI",
+    "IGI",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:vacuum_pump"
+  }
+}

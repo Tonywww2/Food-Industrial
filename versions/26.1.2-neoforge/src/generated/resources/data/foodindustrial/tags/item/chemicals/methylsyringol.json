@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylsyringol",
+    {
+      "id": "#forge:dusts/methylsyringol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylsyringol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylsyringol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylsyringol",
+      "required": false
+    }
+  ]
+}

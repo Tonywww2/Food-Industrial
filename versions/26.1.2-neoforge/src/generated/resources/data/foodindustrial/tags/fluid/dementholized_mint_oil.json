@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dementholized_mint_oil",
+    "foodindustrial:flowing_dementholized_mint_oil",
+    {
+      "id": "#forge:dementholized_mint_oil",
+      "required": false
+    },
+    {
+      "id": "#c:dementholized_mint_oil",
+      "required": false
+    }
+  ]
+}

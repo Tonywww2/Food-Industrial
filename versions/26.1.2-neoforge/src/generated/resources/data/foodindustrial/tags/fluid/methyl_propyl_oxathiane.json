@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_propyl_oxathiane",
+    "foodindustrial:flowing_methyl_propyl_oxathiane",
+    {
+      "id": "#forge:methyl_propyl_oxathiane",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_propyl_oxathiane",
+      "required": false
+    }
+  ]
+}

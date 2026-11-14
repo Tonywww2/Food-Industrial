@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_methoxyphenyl_pentenone",
+    {
+      "id": "#forge:dusts/p_methoxyphenyl_pentenone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_methoxyphenyl_pentenone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_methoxyphenyl_pentenone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_methoxyphenyl_pentenone",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:p_phenetidine",
     "foodindustrial:flowing_p_phenetidine",
     {
+      "id": "#forge:p_phenetidine",
+      "required": false
+    },
+    {
       "id": "#c:p_phenetidine",
       "required": false
     }

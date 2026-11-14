@@ -4,6 +4,10 @@
     "foodindustrial:menthone",
     "foodindustrial:flowing_menthone",
     {
+      "id": "#forge:menthone",
+      "required": false
+    },
+    {
       "id": "#c:menthone",
       "required": false
     }

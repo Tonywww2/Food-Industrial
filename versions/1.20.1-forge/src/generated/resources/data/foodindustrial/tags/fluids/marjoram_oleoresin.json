@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:marjoram_oleoresin",
+    "foodindustrial:flowing_marjoram_oleoresin",
+    {
+      "id": "#forge:marjoram_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:marjoram_oleoresin",
+      "required": false
+    }
+  ]
+}

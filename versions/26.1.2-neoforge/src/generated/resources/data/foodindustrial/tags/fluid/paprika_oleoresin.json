@@ -4,6 +4,10 @@
     "foodindustrial:paprika_oleoresin",
     "foodindustrial:flowing_paprika_oleoresin",
     {
+      "id": "#forge:paprika_oleoresin",
+      "required": false
+    },
+    {
       "id": "#c:paprika_oleoresin",
       "required": false
     }

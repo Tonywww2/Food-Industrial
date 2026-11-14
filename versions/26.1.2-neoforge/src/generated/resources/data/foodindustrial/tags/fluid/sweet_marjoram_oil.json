@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sweet_marjoram_oil",
+    "foodindustrial:flowing_sweet_marjoram_oil",
+    {
+      "id": "#forge:sweet_marjoram_oil",
+      "required": false
+    },
+    {
+      "id": "#c:sweet_marjoram_oil",
+      "required": false
+    }
+  ]
+}

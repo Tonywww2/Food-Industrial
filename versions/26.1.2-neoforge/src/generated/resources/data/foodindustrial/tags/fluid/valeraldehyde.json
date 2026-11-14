@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:valeraldehyde",
+    "foodindustrial:flowing_valeraldehyde",
+    {
+      "id": "#forge:valeraldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:valeraldehyde",
+      "required": false
+    }
+  ]
+}

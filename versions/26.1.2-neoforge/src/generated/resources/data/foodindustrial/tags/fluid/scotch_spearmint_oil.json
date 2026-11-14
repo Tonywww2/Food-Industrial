@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:scotch_spearmint_oil",
+    "foodindustrial:flowing_scotch_spearmint_oil",
+    {
+      "id": "#forge:scotch_spearmint_oil",
+      "required": false
+    },
+    {
+      "id": "#c:scotch_spearmint_oil",
+      "required": false
+    }
+  ]
+}

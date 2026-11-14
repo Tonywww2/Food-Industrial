@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_isoleucine",
+    {
+      "id": "#forge:dusts/dl_isoleucine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dl_isoleucine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dl_isoleucine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dl_isoleucine",
+      "required": false
+    }
+  ]
+}

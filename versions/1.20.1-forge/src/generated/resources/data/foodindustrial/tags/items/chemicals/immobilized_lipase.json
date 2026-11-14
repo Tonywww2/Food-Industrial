@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:immobilized_lipase",
+    {
+      "id": "#forge:dusts/immobilized_lipase",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/immobilized_lipase",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/immobilized_lipase",
+      "required": false
+    },
+    {
+      "id": "#c:gems/immobilized_lipase",
+      "required": false
+    }
+  ]
+}

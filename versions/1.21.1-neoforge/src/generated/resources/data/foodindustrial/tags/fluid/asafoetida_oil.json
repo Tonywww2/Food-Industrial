@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:asafoetida_oil",
+    "foodindustrial:flowing_asafoetida_oil",
+    {
+      "id": "#forge:asafoetida_oil",
+      "required": false
+    },
+    {
+      "id": "#c:asafoetida_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rum_absolute",
+    "foodindustrial:flowing_rum_absolute",
+    {
+      "id": "#forge:rum_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:rum_absolute",
+      "required": false
+    }
+  ]
+}

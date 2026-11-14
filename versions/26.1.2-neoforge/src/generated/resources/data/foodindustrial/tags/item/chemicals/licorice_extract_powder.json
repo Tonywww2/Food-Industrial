@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:licorice_extract_powder",
+    {
+      "id": "#forge:dusts/licorice_extract_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/licorice_extract_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/licorice_extract_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/licorice_extract_powder",
+      "required": false
+    }
+  ]
+}

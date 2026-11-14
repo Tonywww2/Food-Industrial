@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:seawater_bucket",
+  "name": "book.foodindustrial.manual.entry.seawater",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:seawater_bucket",
+      "text": "book.foodindustrial.manual.entry.seawater.text"
+    }
+  ],
+  "sortnum": 14
+}

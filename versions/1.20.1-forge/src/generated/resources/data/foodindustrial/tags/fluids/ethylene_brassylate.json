@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylene_brassylate",
+    "foodindustrial:flowing_ethylene_brassylate",
+    {
+      "id": "#forge:ethylene_brassylate",
+      "required": false
+    },
+    {
+      "id": "#c:ethylene_brassylate",
+      "required": false
+    }
+  ]
+}

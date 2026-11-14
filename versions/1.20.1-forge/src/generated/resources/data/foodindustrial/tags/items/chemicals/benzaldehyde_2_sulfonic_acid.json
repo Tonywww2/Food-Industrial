@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/benzaldehyde_2_sulfonic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/benzaldehyde_2_sulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzaldehyde_2_sulfonic_acid",
+      "required": false
     }
   ]
 }

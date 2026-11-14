@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bergamot_oil",
+    "foodindustrial:flowing_bergamot_oil",
+    {
+      "id": "#forge:bergamot_oil",
+      "required": false
+    },
+    {
+      "id": "#c:bergamot_oil",
+      "required": false
+    }
+  ]
+}

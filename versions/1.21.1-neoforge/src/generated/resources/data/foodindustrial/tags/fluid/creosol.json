@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:creosol",
+    "foodindustrial:flowing_creosol",
+    {
+      "id": "#forge:creosol",
+      "required": false
+    },
+    {
+      "id": "#c:creosol",
+      "required": false
+    }
+  ]
+}

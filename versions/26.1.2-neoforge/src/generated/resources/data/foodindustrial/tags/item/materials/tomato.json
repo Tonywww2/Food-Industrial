@@ -8,6 +8,14 @@
     {
       "id": "#c:vegetables/tomato",
       "required": false
+    },
+    {
+      "id": "#forge:crops/tomato",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/tomato",
+      "required": false
     }
   ]
 }

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:alpha_cd_cyclohexane_complex",
     {
+      "id": "#forge:dusts/alpha_cd_cyclohexane_complex",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/alpha_cd_cyclohexane_complex",
+      "required": false
+    },
+    {
       "id": "#c:dusts/alpha_cd_cyclohexane_complex",
       "required": false
     },

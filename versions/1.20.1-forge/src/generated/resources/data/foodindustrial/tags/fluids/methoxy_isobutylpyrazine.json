@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxy_isobutylpyrazine",
+    "foodindustrial:flowing_methoxy_isobutylpyrazine",
+    {
+      "id": "#forge:methoxy_isobutylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:methoxy_isobutylpyrazine",
+      "required": false
+    }
+  ]
+}

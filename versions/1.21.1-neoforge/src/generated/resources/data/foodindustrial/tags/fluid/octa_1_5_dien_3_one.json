@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octa_1_5_dien_3_one",
+    "foodindustrial:flowing_octa_1_5_dien_3_one",
+    {
+      "id": "#forge:octa_1_5_dien_3_one",
+      "required": false
+    },
+    {
+      "id": "#c:octa_1_5_dien_3_one",
+      "required": false
+    }
+  ]
+}

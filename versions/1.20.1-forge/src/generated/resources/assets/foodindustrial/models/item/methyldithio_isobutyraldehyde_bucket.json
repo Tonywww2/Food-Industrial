@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methyldithio_isobutyraldehyde",
+  "loader": "forge:fluid_container"
+}

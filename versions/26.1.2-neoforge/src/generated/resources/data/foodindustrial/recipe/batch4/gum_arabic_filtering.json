@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/gum_arabic"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:gum_arabic"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "filtration"
+    ],
+    "min_tier": "t2"
+  },
+  "time": 100
+}

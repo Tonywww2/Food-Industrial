@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jelutong",
+    {
+      "id": "#forge:dusts/jelutong",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/jelutong",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/jelutong",
+      "required": false
+    },
+    {
+      "id": "#c:gems/jelutong",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:folded_apple_essence",
+  "loader": "forge:fluid_container"
+}

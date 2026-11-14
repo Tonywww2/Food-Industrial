@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cubeb_powder",
+    {
+      "id": "#forge:dusts/cubeb_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cubeb_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cubeb_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cubeb_powder",
+      "required": false
+    }
+  ]
+}

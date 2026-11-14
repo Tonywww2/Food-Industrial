@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/glyceryl_monostearate"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/succinic_anhydride"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:succinylated_monoglycerides"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

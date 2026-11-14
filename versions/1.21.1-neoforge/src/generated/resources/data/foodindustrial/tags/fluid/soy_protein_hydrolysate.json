@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:soy_protein_hydrolysate",
+    "foodindustrial:flowing_soy_protein_hydrolysate",
+    {
+      "id": "#forge:soy_protein_hydrolysate",
+      "required": false
+    },
+    {
+      "id": "#c:soy_protein_hydrolysate",
+      "required": false
+    }
+  ]
+}

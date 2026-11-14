@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/abietic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/abietic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/abietic_acid",
+      "required": false
     }
   ]
 }

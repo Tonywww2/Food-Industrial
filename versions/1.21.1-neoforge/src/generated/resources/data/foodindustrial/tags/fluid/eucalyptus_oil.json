@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:eucalyptus_oil",
+    "foodindustrial:flowing_eucalyptus_oil",
+    {
+      "id": "#forge:eucalyptus_oil",
+      "required": false
+    },
+    {
+      "id": "#c:eucalyptus_oil",
+      "required": false
+    }
+  ]
+}

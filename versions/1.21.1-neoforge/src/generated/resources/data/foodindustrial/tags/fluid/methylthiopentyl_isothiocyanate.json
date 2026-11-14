@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiopentyl_isothiocyanate",
+    "foodindustrial:flowing_methylthiopentyl_isothiocyanate",
+    {
+      "id": "#forge:methylthiopentyl_isothiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiopentyl_isothiocyanate",
+      "required": false
+    }
+  ]
+}

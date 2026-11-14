@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:grains_of_paradise_extract",
+  "loader": "neoforge:fluid_container"
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:ferric_citrate",
       "required": false
+    },
+    {
+      "id": "#c:ferric_citrate",
+      "required": false
     }
   ]
 }

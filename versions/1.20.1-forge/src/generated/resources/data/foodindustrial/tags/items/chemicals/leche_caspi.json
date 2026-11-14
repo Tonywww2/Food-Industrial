@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leche_caspi",
+    {
+      "id": "#forge:dusts/leche_caspi",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/leche_caspi",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/leche_caspi",
+      "required": false
+    },
+    {
+      "id": "#c:gems/leche_caspi",
+      "required": false
+    }
+  ]
+}

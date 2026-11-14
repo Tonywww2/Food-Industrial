@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propenyl_guaethol",
+    {
+      "id": "#forge:dusts/propenyl_guaethol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/propenyl_guaethol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/propenyl_guaethol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/propenyl_guaethol",
+      "required": false
+    }
+  ]
+}

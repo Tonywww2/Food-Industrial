@@ -6,6 +6,10 @@
     {
       "id": "#forge:tetrasodium_edta",
       "required": false
+    },
+    {
+      "id": "#c:tetrasodium_edta",
+      "required": false
     }
   ]
 }

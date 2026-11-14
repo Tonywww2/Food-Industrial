@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_salicylate",
+    "foodindustrial:flowing_benzyl_salicylate",
+    {
+      "id": "#forge:benzyl_salicylate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_salicylate",
+      "required": false
+    }
+  ]
+}

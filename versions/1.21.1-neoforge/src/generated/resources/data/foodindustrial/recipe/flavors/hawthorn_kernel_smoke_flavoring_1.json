@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/hawthorn_kernel"
+      }
+    }
+  ],
+  "mode": "dry_distillation",
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:hawthorn_kernel_smoke_flavoring_2"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:hawthorn_kernel_smoke_flavoring_1"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

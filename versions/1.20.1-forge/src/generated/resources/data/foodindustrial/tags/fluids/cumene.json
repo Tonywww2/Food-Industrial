@@ -6,6 +6,10 @@
     {
       "id": "#forge:cumene",
       "required": false
+    },
+    {
+      "id": "#c:cumene",
+      "required": false
     }
   ]
 }

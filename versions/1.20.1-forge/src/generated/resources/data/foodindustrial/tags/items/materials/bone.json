@@ -8,6 +8,10 @@
     {
       "id": "#forge:bones",
       "required": false
+    },
+    {
+      "id": "#c:bones",
+      "required": false
     }
   ]
 }

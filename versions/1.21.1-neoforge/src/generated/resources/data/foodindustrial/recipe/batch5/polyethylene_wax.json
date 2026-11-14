@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:ethylene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 200,
+        "tag": "foodindustrial:acetaldehyde"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 10,
+        "tag": "foodindustrial:oxygen"
+      }
+    }
+  ],
+  "mode": "polymerization",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:polyethylene_wax",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "high",
+    "temperature": "high"
+  },
+  "time": 200
+}

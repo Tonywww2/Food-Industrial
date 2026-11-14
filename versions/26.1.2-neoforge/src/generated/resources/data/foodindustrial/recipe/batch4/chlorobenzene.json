@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/ferric_chloride"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:benzene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:chlorine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 4000,
+      "fluid": "foodindustrial:chlorobenzene"
+    },
+    {
+      "amount": 4000,
+      "fluid": "foodindustrial:hydrogen_chloride"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

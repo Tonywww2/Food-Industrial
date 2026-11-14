@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylfuran",
+    "foodindustrial:flowing_ethylfuran",
+    {
+      "id": "#forge:ethylfuran",
+      "required": false
+    },
+    {
+      "id": "#c:ethylfuran",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentylthiophene",
+    "foodindustrial:flowing_pentylthiophene",
+    {
+      "id": "#forge:pentylthiophene",
+      "required": false
+    },
+    {
+      "id": "#c:pentylthiophene",
+      "required": false
+    }
+  ]
+}

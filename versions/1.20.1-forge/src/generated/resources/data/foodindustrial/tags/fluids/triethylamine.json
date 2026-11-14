@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:triethylamine",
+    "foodindustrial:flowing_triethylamine",
+    {
+      "id": "#forge:triethylamine",
+      "required": false
+    },
+    {
+      "id": "#c:triethylamine",
+      "required": false
+    }
+  ]
+}

@@ -56,19 +56,26 @@
 - 化学式按元素族着色（2026-11-05 改，[text-standard §3.1](../text-standard.md)）：`core.text.ElementColors` 存 118 种元素的族与颜色，`ChemicalFormula.runs` 把化学式切成同色同大小的段，Tooltip（`Tooltips.coloredFormula`）与图标标签共用；单元测试检查物料表里每个化学式的元素都认识
 - 图标上的化学式（2026-11-04 加）：化学品物品与其桶在界面格子顶部画一行化学式（`material.MaterialLabels` → `PlatformClient.registerSlotLabel`，三个节点都用加载器的物品装饰 `IItemDecorator`），规则见 [text-standard §3.1](../text-standard.md)
 - 创造模式标签页：五个，空的不显示（机器、成品暂空）；带纯度的物料按五档标准值各列一个
-- 资源：`tools/materials/placeholder_textures.py` 生成物品的占位贴图和流体的静止、流动贴图；桶不另画贴图，用加载器的动态桶模型（原版桶 + 流体贴图按流体颜色着色，2026-11-04 改；1.20.1 `forge:fluid_container`、1.21.1 `neoforge:fluid_container` 并登记物品着色，26.1 在物品定义里写 `neoforge:fluid_container`）；数据生成写物品模型、流体方块模型与方块状态，26.1.2 另写 `items/` 物品定义。三个节点客户端启动无本模组物料的缺失模型警告
+- 资源：物品贴图与流体的静止、流动贴图由 `tools/textures/generate.py` 生成（I33；原占位脚本 `tools/materials/placeholder_textures.py` 已删）；桶不另画贴图，用加载器的动态桶模型（原版桶 + 流体贴图按流体颜色着色，2026-11-04 改；1.20.1 `forge:fluid_container`、1.21.1 `neoforge:fluid_container` 并登记物品着色，26.1 在物品定义里写 `neoforge:fluid_container`）；数据生成写物品模型、流体方块模型与方块状态，26.1.2 另写 `items/` 物品定义。三个节点客户端启动无本模组物料的缺失模型警告
 - 单元测试：`MaterialTableTest`（ID 唯一、流体有颜色、纯度与分类对应、名称通过文本检查）
 
 - I28 改写（2026-11-04）：是否带纯度改由“纯度类别”决定（K0 只有写了来源纯度的带含量），`materials.json` 增加 `bearer` 与 `purity`（类别、来源纯度、覆盖）；从世界取回的桶写入物料的缺省值（外部默认值，K0 为来源纯度）；创造栏按物料的外部默认值与各档下限各列一个。主表补 7 种、松脂移入 09，共 410 种。详见 [I28 实现记录](I28-purity-model-v2.md)
+- 2026-11-12 审定（11 问题 43）：`cobalt_salt` 改为 `cobalt_acetate`（09 §B，分类催化剂，颜色 `#B04870`；`catalysts/cobalt` 标签只收它），旧贴图删去；`TextChecks` 加构型前缀规则，名称中氨基酸、糖、羟基酸等的费歇尔构型写成小写（l-Lysine）、萜类与生育酚的旋光前缀写成大写（D-Limonene）都报错，单元测试加正反例；香料标签页英文名本已是 Flavorings；松脂按 08 §C 导出为不带纯度的原料流体；`papaya_latex`、`materials/licorice_residue` 导出；`materials/rice` 改为大米（原料物品），稻谷是作物方块 `paddy`（I07）；β-淀粉酶由第三批“402 麦芽碳水化合物水解酶 + 硫酸铵盐析”的配方做出（第三批已有）。物料 3,490 → 3,502 种（新增 14 种，删去 `cobalt_salt`、`molasses`）
+
+## 2026-11-12 审定（11 问题 43）
+
+设计侧按还原现实审完本计划的待审六条（[additives/11 问题 43](../additives/11-roadmap.md)）。照准的：英文名、流体颜色、专业名称占位；08 §C 新增行的其余 ID；桶名“完整名称 + 桶”；五个标签页英文名；虚词与化学前缀小写。要改的：
+
+- [x] 钴盐改为具体的盐：ID `cobalt_salt` → `cobalt_acetate`，名称“乙酸钴”，英文 Cobalt(II) Acetate Tetrahydrate，化学式 `C4H6CoO4·4H2O`，颜色 `#B04870`；由 08 §C 移入 [additives/09 §B](../additives/09-chemical-formulas.md)（08 §C 的行写“见 09”），配方引用标签 `catalysts/cobalt` 不变
+- [x] 英文名的构型前缀分两种（[text-standard §2.1](../text-standard.md)）：费歇尔构型 D、L、DL 大写，旋光方向 d、l、dl 小写。09 已改 8 行：`isoleucinamide`、`dl_pantolactone`、`dl_methionine`、`dl_valine`、`dl_isoleucine`、`methylmethionine_sulfonium_chloride`、`d_ribose`、`l_rhamnose`；名称检查按此加一条规则
+- [x] 香料标签页（第五批单设）英文名 Flavorings，与另外五个一起
+- [x] 松脂改回 08 §C 的原料、不带纯度（见 [I28](I28-purity-model-v2.md) 同名一节），主表从 09 删去 `resin`，创造栏回到“矿物与原料”
+- [x] 08 §C 另补两种原料：`papaya_latex`（木瓜乳汁，流体、不带纯度）、`materials/licorice_residue`（甘草渣）；新增作物 `materials/paddy`（稻谷，I07）
+- [x] β-淀粉酶的来源按 18 §1.5 实装（08 已改为 402 麦芽浸提液加硫酸铵盐析）
 
 ## 待审
 
-- 英文名、流体颜色、Shift 描述占位（专业名称）均由实现方拟定，见 [additives/09](../additives/09-chemical-formulas.md) 与 [additives/08 §C](../additives/08-raw-materials.md) 的对应列
-- 08 §C 新增行的 ID：`iron_catalyst`、`cobalt_salt`、`rhodium_iodide_catalyst`、`platinum_gauze`、`noble_metal_catalyst`、`diatomite`、`ion_exchange_resin`、`macroporous_resin`、`silver_catalyst`、`vpo_catalyst`、`palladium_on_carbon`
-- β-淀粉酶的来源（[additives/08 §C 菌种与酶](../additives/08-raw-materials.md)）
-- 桶的名称写作“完整名称 + 桶”：`乙醇（酒精）桶`、`Ethanol (Alcohol) Bucket`
-- 标签页英文名：Chemicals、Minerals and Raw Materials、Cultures and Enzymes、Machines、Products
-- 英文名大小写：虚词与化学前缀小写（[text-standard §2.1](../text-standard.md)）
+- 无。2026-11-12 的六条已审定（11 问题 43），处理见上节。
 
 ## 待定
 

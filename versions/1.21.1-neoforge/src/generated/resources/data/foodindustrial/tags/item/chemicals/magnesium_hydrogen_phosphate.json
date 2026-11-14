@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_hydrogen_phosphate",
+    {
+      "id": "#forge:dusts/magnesium_hydrogen_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_hydrogen_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_hydrogen_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_hydrogen_phosphate",
+      "required": false
+    }
+  ]
+}

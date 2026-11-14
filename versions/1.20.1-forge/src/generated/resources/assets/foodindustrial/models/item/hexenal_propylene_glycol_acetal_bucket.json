@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:hexenal_propylene_glycol_acetal",
+  "loader": "forge:fluid_container"
+}

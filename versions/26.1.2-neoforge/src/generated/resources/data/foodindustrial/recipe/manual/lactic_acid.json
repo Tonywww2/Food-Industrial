@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/lactobacillus",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/vegetables"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:brine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:lactic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 1.2
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight"
+  },
+  "time": 24000
+}

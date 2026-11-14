@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronella_oil",
+    "foodindustrial:flowing_citronella_oil",
+    {
+      "id": "#forge:citronella_oil",
+      "required": false
+    },
+    {
+      "id": "#c:citronella_oil",
+      "required": false
+    }
+  ]
+}

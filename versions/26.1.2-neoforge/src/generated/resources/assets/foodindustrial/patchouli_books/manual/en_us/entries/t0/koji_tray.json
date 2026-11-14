@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:koji_tray",
+  "name": "book.foodindustrial.manual.entry.koji_tray",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:koji_tray",
+      "text": "book.foodindustrial.manual.entry.koji_tray.text",
+      "title": "book.foodindustrial.manual.entry.koji_tray"
+    }
+  ],
+  "sortnum": 9
+}

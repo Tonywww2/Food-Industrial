@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:kelp_extract",
+    "foodindustrial:flowing_kelp_extract",
+    {
+      "id": "#forge:kelp_extract",
+      "required": false
+    },
+    {
+      "id": "#c:kelp_extract",
+      "required": false
+    }
+  ]
+}

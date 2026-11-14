@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:palmitoyl_chloride",
+    "foodindustrial:flowing_palmitoyl_chloride",
+    {
+      "id": "#forge:palmitoyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:palmitoyl_chloride",
+      "required": false
+    }
+  ]
+}

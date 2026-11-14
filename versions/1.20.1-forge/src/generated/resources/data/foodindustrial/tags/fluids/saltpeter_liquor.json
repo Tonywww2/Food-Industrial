@@ -6,6 +6,10 @@
     {
       "id": "#forge:saltpeter_liquor",
       "required": false
+    },
+    {
+      "id": "#c:saltpeter_liquor",
+      "required": false
     }
   ]
 }

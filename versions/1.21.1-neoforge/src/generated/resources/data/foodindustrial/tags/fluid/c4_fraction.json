@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:c4_fraction",
+    "foodindustrial:flowing_c4_fraction",
+    {
+      "id": "#forge:c4_fraction",
+      "required": false
+    },
+    {
+      "id": "#c:c4_fraction",
+      "required": false
+    }
+  ]
+}

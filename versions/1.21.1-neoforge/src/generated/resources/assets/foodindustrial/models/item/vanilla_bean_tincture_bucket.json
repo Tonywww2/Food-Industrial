@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:vanilla_bean_tincture",
+  "loader": "neoforge:fluid_container"
+}

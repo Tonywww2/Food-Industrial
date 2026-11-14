@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/monocalcium_phosphate"
+      }
+    }
+  ],
+  "mode": "condensation",
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_acid_pyrophosphate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

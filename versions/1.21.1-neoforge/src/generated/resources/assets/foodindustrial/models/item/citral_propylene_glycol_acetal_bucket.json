@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:citral_propylene_glycol_acetal",
+  "loader": "neoforge:fluid_container"
+}

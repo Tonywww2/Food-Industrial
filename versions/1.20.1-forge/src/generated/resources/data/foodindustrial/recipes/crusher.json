@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "L": {
+      "item": "minecraft:flint"
+    },
+    "M": {
+      "item": "foodindustrial:stone_mill"
+    }
+  },
+  "pattern": [
+    "LML",
+    "LFL",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:crusher"
+  }
+}

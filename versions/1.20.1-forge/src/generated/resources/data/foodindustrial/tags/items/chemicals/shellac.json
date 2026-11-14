@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/shellac",
       "required": false
+    },
+    {
+      "id": "#c:dusts/shellac",
+      "required": false
+    },
+    {
+      "id": "#c:gems/shellac",
+      "required": false
     }
   ]
 }

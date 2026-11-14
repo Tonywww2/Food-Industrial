@@ -36,6 +36,6 @@ public record Catalyst(Ingredient ingredient, int runs) {
         list -> list.size() == 1 ? Either.left(list.get(0)) : Either.right(list));
 
     public boolean test(ItemStack stack) {
-        return !stack.isEmpty() && ingredient.test(stack);
+        return !stack.isEmpty() && PlatformIngredients.fresh(ingredient).test(stack);
     }
 }

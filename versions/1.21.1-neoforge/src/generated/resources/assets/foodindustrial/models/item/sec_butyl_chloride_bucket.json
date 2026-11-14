@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sec_butyl_chloride",
+  "loader": "neoforge:fluid_container"
+}

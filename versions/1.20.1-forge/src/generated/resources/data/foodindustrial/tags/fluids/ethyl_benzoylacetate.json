@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_benzoylacetate",
+    "foodindustrial:flowing_ethyl_benzoylacetate",
+    {
+      "id": "#forge:ethyl_benzoylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_benzoylacetate",
+      "required": false
+    }
+  ]
+}

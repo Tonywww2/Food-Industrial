@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthylamine",
+    "foodindustrial:flowing_menthylamine",
+    {
+      "id": "#forge:menthylamine",
+      "required": false
+    },
+    {
+      "id": "#c:menthylamine",
+      "required": false
+    }
+  ]
+}

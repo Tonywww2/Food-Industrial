@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/mannitol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/mannitol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/mannitol",
+      "required": false
     }
   ]
 }

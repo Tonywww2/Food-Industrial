@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:trans_trans_2_4_decadienal"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:decadienoic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

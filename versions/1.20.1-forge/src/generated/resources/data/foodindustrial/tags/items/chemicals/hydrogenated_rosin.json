@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrogenated_rosin",
+    {
+      "id": "#forge:dusts/hydrogenated_rosin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydrogenated_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydrogenated_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydrogenated_rosin",
+      "required": false
+    }
+  ]
+}

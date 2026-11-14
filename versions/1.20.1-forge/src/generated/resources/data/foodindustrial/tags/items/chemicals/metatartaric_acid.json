@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/metatartaric_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/metatartaric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/metatartaric_acid",
+      "required": false
     }
   ]
 }

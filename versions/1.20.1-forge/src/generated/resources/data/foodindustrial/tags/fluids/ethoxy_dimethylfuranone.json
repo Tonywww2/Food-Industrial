@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethoxy_dimethylfuranone",
+    "foodindustrial:flowing_ethoxy_dimethylfuranone",
+    {
+      "id": "#forge:ethoxy_dimethylfuranone",
+      "required": false
+    },
+    {
+      "id": "#c:ethoxy_dimethylfuranone",
+      "required": false
+    }
+  ]
+}

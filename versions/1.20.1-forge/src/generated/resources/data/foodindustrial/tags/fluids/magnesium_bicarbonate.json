@@ -6,6 +6,10 @@
     {
       "id": "#forge:magnesium_bicarbonate",
       "required": false
+    },
+    {
+      "id": "#c:magnesium_bicarbonate",
+      "required": false
     }
   ]
 }

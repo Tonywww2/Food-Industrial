@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:osmanthus_tincture",
+    "foodindustrial:flowing_osmanthus_tincture",
+    {
+      "id": "#forge:osmanthus_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:osmanthus_tincture",
+      "required": false
+    }
+  ]
+}

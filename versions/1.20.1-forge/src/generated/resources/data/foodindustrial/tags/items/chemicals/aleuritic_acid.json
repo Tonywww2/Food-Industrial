@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aleuritic_acid",
+    {
+      "id": "#forge:dusts/aleuritic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aleuritic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/aleuritic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aleuritic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_benzofuranone",
+    {
+      "id": "#forge:dusts/dimethyl_benzofuranone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethyl_benzofuranone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimethyl_benzofuranone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethyl_benzofuranone",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:gluconic_acid",
     "foodindustrial:flowing_gluconic_acid",
     {
+      "id": "#forge:gluconic_acid",
+      "required": false
+    },
+    {
       "id": "#c:gluconic_acid",
       "required": false
     }

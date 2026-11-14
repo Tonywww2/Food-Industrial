@@ -40,9 +40,13 @@ public record DeviceProfile(Tier tier, int speed, int yieldPermille, int energyP
         };
     }
 
-    /** FE per tick while running {@code recipe}. */
+    /**
+     * FE per tick while running {@code recipe}: its {@code energy}, or the type's default when it writes
+     * none (machines/01 §2, 2026-11-11), times the energy factor.
+     */
     public long energyPerTick(ProcessRecipe recipe) {
-        return (long) recipe.energy() * energyPermille / 1000L;
+        int energy = recipe.energy() > 0 ? recipe.energy() : recipe.type().defaultEnergy();
+        return (long) energy * energyPermille / 1000L;
     }
 
     /** Ticks a run of {@code recipe} takes, in whole 4-tick batches. */

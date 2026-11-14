@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/oxalic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/oxalic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oxalic_acid",
+      "required": false
     }
   ]
 }

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_copper_chlorophyllin",
     {
+      "id": "#forge:dusts/sodium_copper_chlorophyllin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_copper_chlorophyllin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_copper_chlorophyllin",
       "required": false
     },

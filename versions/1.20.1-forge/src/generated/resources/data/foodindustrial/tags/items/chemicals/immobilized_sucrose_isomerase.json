@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/immobilized_sucrose_isomerase",
       "required": false
+    },
+    {
+      "id": "#c:dusts/immobilized_sucrose_isomerase",
+      "required": false
+    },
+    {
+      "id": "#c:gems/immobilized_sucrose_isomerase",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclohexylvaleric_acid",
+    "foodindustrial:flowing_cyclohexylvaleric_acid",
+    {
+      "id": "#forge:cyclohexylvaleric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:cyclohexylvaleric_acid",
+      "required": false
+    }
+  ]
+}

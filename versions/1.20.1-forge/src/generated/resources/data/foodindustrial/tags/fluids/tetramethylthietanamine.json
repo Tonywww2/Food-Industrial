@@ -6,6 +6,10 @@
     {
       "id": "#forge:tetramethylthietanamine",
       "required": false
+    },
+    {
+      "id": "#c:tetramethylthietanamine",
+      "required": false
     }
   ]
 }

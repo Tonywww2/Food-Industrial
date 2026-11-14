@@ -5,6 +5,10 @@
       "id": "#forge:crops/vanillabean",
       "required": false
     },
-    "foodindustrial:vanilla_pod"
+    "foodindustrial:vanilla_pod",
+    {
+      "id": "#c:crops/vanillabean",
+      "required": false
+    }
   ]
 }

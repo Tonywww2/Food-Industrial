@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/p_nitrochlorobenzene",
       "required": false
+    },
+    {
+      "id": "#c:dusts/p_nitrochlorobenzene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_nitrochlorobenzene",
+      "required": false
     }
   ]
 }

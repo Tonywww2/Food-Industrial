@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/amaranth_lake",
       "required": false
+    },
+    {
+      "id": "#c:dusts/amaranth_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/amaranth_lake",
+      "required": false
     }
   ]
 }

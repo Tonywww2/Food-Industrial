@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_benzoate",
+    "foodindustrial:flowing_geranyl_benzoate",
+    {
+      "id": "#forge:geranyl_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_benzoate",
+      "required": false
+    }
+  ]
+}

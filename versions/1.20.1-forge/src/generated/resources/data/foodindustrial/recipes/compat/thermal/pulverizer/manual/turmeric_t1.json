@@ -1,0 +1,27 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "energy": 2000,
+  "ingredient": {
+    "tag": "foodindustrial:materials/dried_turmeric"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:turmeric",
+      "nbt": "{Purity:-35b}"
+    }
+  ]
+}

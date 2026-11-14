@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorva_latex",
+    "foodindustrial:flowing_sorva_latex",
+    {
+      "id": "#forge:sorva_latex",
+      "required": false
+    },
+    {
+      "id": "#c:sorva_latex",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_sorbate",
+    "foodindustrial:flowing_methyl_sorbate",
+    {
+      "id": "#forge:methyl_sorbate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_sorbate",
+      "required": false
+    }
+  ]
+}

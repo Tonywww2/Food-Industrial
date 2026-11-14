@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyldioxane",
+    "foodindustrial:flowing_dimethyldioxane",
+    {
+      "id": "#forge:dimethyldioxane",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyldioxane",
+      "required": false
+    }
+  ]
+}

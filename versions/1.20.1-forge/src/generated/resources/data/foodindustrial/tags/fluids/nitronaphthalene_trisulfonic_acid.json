@@ -6,6 +6,10 @@
     {
       "id": "#forge:nitronaphthalene_trisulfonic_acid",
       "required": false
+    },
+    {
+      "id": "#c:nitronaphthalene_trisulfonic_acid",
+      "required": false
     }
   ]
 }

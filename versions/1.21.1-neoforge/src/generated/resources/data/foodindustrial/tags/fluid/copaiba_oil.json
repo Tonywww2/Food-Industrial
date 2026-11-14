@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:copaiba_oil",
+    "foodindustrial:flowing_copaiba_oil",
+    {
+      "id": "#forge:copaiba_oil",
+      "required": false
+    },
+    {
+      "id": "#c:copaiba_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexanediol",
+    {
+      "id": "#forge:dusts/hexanediol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hexanediol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hexanediol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hexanediol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_2_4_nonanedione",
+    "foodindustrial:flowing_methyl_2_4_nonanedione",
+    {
+      "id": "#forge:methyl_2_4_nonanedione",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_2_4_nonanedione",
+      "required": false
+    }
+  ]
+}

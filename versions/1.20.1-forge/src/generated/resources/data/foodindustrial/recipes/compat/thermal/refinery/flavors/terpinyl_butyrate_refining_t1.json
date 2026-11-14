@@ -1,0 +1,28 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:terpinyl_butyrate"
+  },
+  "result": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:terpinyl_butyrate",
+      "nbt": "{Purity:23b}"
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_metabisulfite",
     {
+      "id": "#forge:dusts/sodium_metabisulfite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_metabisulfite",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_metabisulfite",
       "required": false
     },

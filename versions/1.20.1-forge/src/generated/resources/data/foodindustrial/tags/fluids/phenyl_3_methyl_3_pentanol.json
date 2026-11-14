@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenyl_3_methyl_3_pentanol",
+    "foodindustrial:flowing_phenyl_3_methyl_3_pentanol",
+    {
+      "id": "#forge:phenyl_3_methyl_3_pentanol",
+      "required": false
+    },
+    {
+      "id": "#c:phenyl_3_methyl_3_pentanol",
+      "required": false
+    }
+  ]
+}

@@ -14,7 +14,6 @@ import java.util.function.BooleanSupplier;
 public enum Fallbacks {
     SULFUR("sulfur", "thermal_foundation", "Thermal Foundation"),
     APATITE("apatite", "thermal_foundation", "Thermal Foundation"),
-    RICE("rice", "farmersdelight", "Farmer's Delight"),
     TREE_BARK("tree_bark", "farmersdelight", "Farmer's Delight");
 
     /** Prefix of the world generation switch names ({@code fallback/<id>}). */

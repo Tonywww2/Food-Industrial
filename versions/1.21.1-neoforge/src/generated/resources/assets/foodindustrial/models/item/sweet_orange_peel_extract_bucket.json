@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sweet_orange_peel_extract",
+  "loader": "neoforge:fluid_container"
+}

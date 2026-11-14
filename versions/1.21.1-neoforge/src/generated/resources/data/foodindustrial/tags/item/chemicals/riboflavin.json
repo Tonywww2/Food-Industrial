@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:riboflavin",
     {
+      "id": "#forge:dusts/riboflavin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/riboflavin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/riboflavin",
       "required": false
     },

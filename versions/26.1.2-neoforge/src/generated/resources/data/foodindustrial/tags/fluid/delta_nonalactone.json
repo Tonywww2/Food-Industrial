@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:delta_nonalactone",
+    "foodindustrial:flowing_delta_nonalactone",
+    {
+      "id": "#forge:delta_nonalactone",
+      "required": false
+    },
+    {
+      "id": "#c:delta_nonalactone",
+      "required": false
+    }
+  ]
+}

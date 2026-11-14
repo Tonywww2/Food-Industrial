@@ -6,6 +6,10 @@
     {
       "id": "#forge:quinaldine",
       "required": false
+    },
+    {
+      "id": "#c:quinaldine",
+      "required": false
     }
   ]
 }

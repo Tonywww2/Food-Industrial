@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrazine_hydrate",
+    "foodindustrial:flowing_hydrazine_hydrate",
+    {
+      "id": "#forge:hydrazine_hydrate",
+      "required": false
+    },
+    {
+      "id": "#c:hydrazine_hydrate",
+      "required": false
+    }
+  ]
+}

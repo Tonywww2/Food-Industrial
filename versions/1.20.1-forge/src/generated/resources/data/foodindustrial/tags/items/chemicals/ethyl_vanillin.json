@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ethyl_vanillin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ethyl_vanillin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_vanillin",
+      "required": false
     }
   ]
 }

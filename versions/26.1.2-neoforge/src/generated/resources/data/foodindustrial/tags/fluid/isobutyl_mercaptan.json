@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_mercaptan",
+    "foodindustrial:flowing_isobutyl_mercaptan",
+    {
+      "id": "#forge:isobutyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_mercaptan",
+      "required": false
+    }
+  ]
+}

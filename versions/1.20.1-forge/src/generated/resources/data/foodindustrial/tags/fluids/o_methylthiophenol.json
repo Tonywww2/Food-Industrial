@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_methylthiophenol",
+    "foodindustrial:flowing_o_methylthiophenol",
+    {
+      "id": "#forge:o_methylthiophenol",
+      "required": false
+    },
+    {
+      "id": "#c:o_methylthiophenol",
+      "required": false
+    }
+  ]
+}

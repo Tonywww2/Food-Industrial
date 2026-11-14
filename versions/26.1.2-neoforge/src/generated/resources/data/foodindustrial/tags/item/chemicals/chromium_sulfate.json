@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chromium_sulfate",
+    {
+      "id": "#forge:dusts/chromium_sulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chromium_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/chromium_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chromium_sulfate",
+      "required": false
+    }
+  ]
+}

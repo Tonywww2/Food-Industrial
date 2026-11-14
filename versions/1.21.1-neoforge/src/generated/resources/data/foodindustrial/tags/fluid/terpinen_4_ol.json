@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpinen_4_ol",
+    "foodindustrial:flowing_terpinen_4_ol",
+    {
+      "id": "#forge:terpinen_4_ol",
+      "required": false
+    },
+    {
+      "id": "#c:terpinen_4_ol",
+      "required": false
+    }
+  ]
+}

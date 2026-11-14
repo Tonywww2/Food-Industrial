@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cassia_oil",
+    "foodindustrial:flowing_cassia_oil",
+    {
+      "id": "#forge:cassia_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cassia_oil",
+      "required": false
+    }
+  ]
+}

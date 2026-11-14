@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_valerate",
+    "foodindustrial:flowing_furfuryl_valerate",
+    {
+      "id": "#forge:furfuryl_valerate",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_valerate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:animal_blood",
+  "loader": "neoforge:fluid_container"
+}

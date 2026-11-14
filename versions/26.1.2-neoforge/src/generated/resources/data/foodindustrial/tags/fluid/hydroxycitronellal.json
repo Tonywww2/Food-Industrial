@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxycitronellal",
+    "foodindustrial:flowing_hydroxycitronellal",
+    {
+      "id": "#forge:hydroxycitronellal",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxycitronellal",
+      "required": false
+    }
+  ]
+}

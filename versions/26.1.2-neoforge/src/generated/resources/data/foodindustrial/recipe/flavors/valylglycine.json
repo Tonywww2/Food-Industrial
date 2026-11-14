@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/dl_valine"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/glycine"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:valylglycine",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

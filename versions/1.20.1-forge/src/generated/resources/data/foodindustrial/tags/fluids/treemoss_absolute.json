@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:treemoss_absolute",
+    "foodindustrial:flowing_treemoss_absolute",
+    {
+      "id": "#forge:treemoss_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:treemoss_absolute",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:gpe_polyether",
+  "loader": "neoforge:fluid_container"
+}

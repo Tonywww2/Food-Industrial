@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:glucono_delta_lactone",
     {
+      "id": "#forge:dusts/glucono_delta_lactone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glucono_delta_lactone",
+      "required": false
+    },
+    {
       "id": "#c:dusts/glucono_delta_lactone",
       "required": false
     },

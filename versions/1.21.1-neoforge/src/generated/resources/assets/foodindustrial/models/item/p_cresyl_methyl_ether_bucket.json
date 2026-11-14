@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:p_cresyl_methyl_ether",
+  "loader": "neoforge:fluid_container"
+}

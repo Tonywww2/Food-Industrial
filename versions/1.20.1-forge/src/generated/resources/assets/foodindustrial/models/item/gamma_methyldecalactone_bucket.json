@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:gamma_methyldecalactone",
+  "loader": "forge:fluid_container"
+}

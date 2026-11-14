@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylethyl_anthranilate",
+    "foodindustrial:flowing_phenylethyl_anthranilate",
+    {
+      "id": "#forge:phenylethyl_anthranilate",
+      "required": false
+    },
+    {
+      "id": "#c:phenylethyl_anthranilate",
+      "required": false
+    }
+  ]
+}

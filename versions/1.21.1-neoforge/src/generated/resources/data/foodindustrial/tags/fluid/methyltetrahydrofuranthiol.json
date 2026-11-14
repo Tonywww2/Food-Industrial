@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyltetrahydrofuranthiol",
+    "foodindustrial:flowing_methyltetrahydrofuranthiol",
+    {
+      "id": "#forge:methyltetrahydrofuranthiol",
+      "required": false
+    },
+    {
+      "id": "#c:methyltetrahydrofuranthiol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:isobutyl_cinnamate",
+  "loader": "neoforge:fluid_container"
+}

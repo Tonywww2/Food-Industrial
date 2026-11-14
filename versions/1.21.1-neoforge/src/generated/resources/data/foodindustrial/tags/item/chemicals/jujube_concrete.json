@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jujube_concrete",
+    {
+      "id": "#forge:dusts/jujube_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/jujube_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/jujube_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/jujube_concrete",
+      "required": false
+    }
+  ]
+}

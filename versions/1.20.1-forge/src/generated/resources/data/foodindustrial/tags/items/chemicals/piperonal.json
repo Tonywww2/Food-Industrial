@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperonal",
+    {
+      "id": "#forge:dusts/piperonal",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/piperonal",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/piperonal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/piperonal",
+      "required": false
+    }
+  ]
+}

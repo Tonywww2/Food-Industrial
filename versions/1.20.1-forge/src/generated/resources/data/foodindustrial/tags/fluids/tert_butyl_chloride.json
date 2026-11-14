@@ -6,6 +6,10 @@
     {
       "id": "#forge:tert_butyl_chloride",
       "required": false
+    },
+    {
+      "id": "#c:tert_butyl_chloride",
+      "required": false
     }
   ]
 }

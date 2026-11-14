@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "neoforge:ingredient_type": "foodindustrial:purity",
+      "base": "#foodindustrial:cultures/kluyveromyces",
+      "min_purity": "food"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:whey"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:lactase"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

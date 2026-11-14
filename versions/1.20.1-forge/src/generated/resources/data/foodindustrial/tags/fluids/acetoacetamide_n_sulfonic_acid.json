@@ -6,6 +6,10 @@
     {
       "id": "#forge:acetoacetamide_n_sulfonic_acid",
       "required": false
+    },
+    {
+      "id": "#c:acetoacetamide_n_sulfonic_acid",
+      "required": false
     }
   ]
 }

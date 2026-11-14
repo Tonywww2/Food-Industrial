@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:arachidonic_acid_oil",
+    "foodindustrial:flowing_arachidonic_acid_oil",
+    {
+      "id": "#forge:arachidonic_acid_oil",
+      "required": false
+    },
+    {
+      "id": "#c:arachidonic_acid_oil",
+      "required": false
+    }
+  ]
+}

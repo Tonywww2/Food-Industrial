@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tolu_balsam_tincture",
+    "foodindustrial:flowing_tolu_balsam_tincture",
+    {
+      "id": "#forge:tolu_balsam_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:tolu_balsam_tincture",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:immortelle_extract",
+    "foodindustrial:flowing_immortelle_extract",
+    {
+      "id": "#forge:immortelle_extract",
+      "required": false
+    },
+    {
+      "id": "#c:immortelle_extract",
+      "required": false
+    }
+  ]
+}

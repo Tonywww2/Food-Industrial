@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzophenone",
+    {
+      "id": "#forge:dusts/benzophenone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzophenone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzophenone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzophenone",
+      "required": false
+    }
+  ]
+}

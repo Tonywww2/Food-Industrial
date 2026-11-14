@@ -23,7 +23,7 @@
 ## 任务
 
 - [x] 按标签前缀体系生成 `materials/`、`chemicals/`、流体、`cultures/`、`enzymes/`、`catalysts/`、`additives/`、`foods/` 标签（[additives/08 §标签体系](../additives/08-raw-materials.md)）。`additives/`、`foods/` 还没有物品，物料加进主表后由同一机制生成（I18–I21）
-- [x] 导入原版与通用标签，全部 `required: false`；1.20.1 用 `forge:`，1.21 起用 `c:`（[additives/08 §标签体系 规则 5](../additives/08-raw-materials.md)）
+- [x] 导入原版与通用标签，全部 `required: false`；每个版本同时写 `forge:` 与 `c:`（2026-11-12 起；原为 1.20.1 用 `forge:`、1.21 起用 `c:`，[additives/08 §标签体系 规则 5](../additives/08-raw-materials.md)）
 - [x] 本模组物品导出到通用标签（[additives/08 §标签体系](../additives/08-raw-materials.md)）
 - [x] 外部纯度规则的默认数据包；数据生成检查自带规则不高于 60%（[additives/10 §1 外部纯度规则](../additives/10-purity-jei-ae2.md)）。现在不带任何规则，I25、I26 联动时添加（2026-11-04 定）
 - [x] 节点差异：热力只在 1.20.1，农夫乐事在 26.1.2 缺席，相关导入条目按节点生成（[additives/11 §待定问题 14](../additives/11-roadmap.md)）
@@ -32,10 +32,11 @@
 
 | 项 | 1.20.1-forge | 1.21.1-neoforge | 26.1.2-neoforge |
 | --- | --- | --- | --- |
-| 通用标签前缀 | `forge:` | `c:` | `c:` |
+| 通用标签前缀（2026-11-12 起三个节点都写两种） | `forge:` 与 `c:` | `forge:` 与 `c:` | `forge:` 与 `c:` |
+| 08 §A/§B 直接写的 ID 取哪一栏 | 1.20.1 栏 | 1.21 起栏 | 1.21 起栏 |
 | 数据目录 | `tags/items` | `tags/item` | `tags/item` |
-| 气体标签 | 无 | `c:gaseous` | `c:gaseous` |
-| 桶标签 | 无 | `c:buckets/<ID>` | `c:buckets/<ID>` |
+| 气体标签 | `forge:gaseous`、`c:gaseous` | 同左 | 同左 |
+| 桶标签 | `forge:buckets/<ID>`、`c:buckets/<ID>` | 同左 | 同左 |
 | 直接写的他模组 ID | 农夫乐事、热力、气动工艺 | 农夫乐事、气动工艺 | 无（不存在的不写） |
 
 ## 验收
@@ -52,12 +53,14 @@
 - 输出：1.20.1 共 596 个物品标签、217 个流体标签；1.21.1 为 678 / 217；26.1.2 为 677 / 217
 - 运行验证（三个节点服务端，`/fidev tag`）：`chemicals/salt` 与导出的 `dusts/salt`、`chemicals/potassium_nitrate`（1.20.1 含热力的硝石）、`catalysts/nickel` 只有镍催化剂、`materials/grass`（1.21 起为 `short_grass`）、`c:gaseous` 21 种气体、`c:buckets/ethanol`；日志无标签加载错误
 - 单元测试：`TagPlanTest`
+- 总标签 `foodindustrial:chemicals`（2026-11-11，用户补充，[additives/08 §标签体系](../additives/08-raw-materials.md)）：分类为化学品的物料全部加入，固体进物品标签，液体、气体、溶液（源与流动）进同名流体标签；`TagPlan.CHEMICALS`，直接列本模组的物品与流体（不含他模组导入的同类物品）
+- 菌种工作台槽位标签 `foodindustrial:culture_bench/samples|media|donors|vectors`（2026-11-11，用户补充）：由 `machine.bio.CultureBenchSlots` 生成；数据生成检查 M30 每条配方的原料都能按标签放进各自的槽（不能放的让 `runData` 失败）
+- 两种前缀（2026-11-12，用户定：任何版本都同时包括 `forge:` 与 `c:` 标签）：`TagPlan.COMMON` 两个命名空间。本模组物料的导入（规则 3：`dusts/`、`gems/`、流体、GTCEu 名）与导出（规则 2：`dusts/<ID>`、流体 `<ID>`、气体 `gaseous`、桶 `buckets/<ID>`）在每个节点都写两种；08 §A/§B 的条目取该节点那一栏的直接 ID，加上两栏的全部标签，每个 `#forge:x` / `#c:x` 再补另一前缀的同名标签（`TagPlan.listed`）。原来按节点取的 `PlatformDatagen.gaseousFluidTag`、`bucketTag` 删去（Forge 1.20.1 的 `Tags.Fluids.GASEOUS` 即 `forge:gaseous`；`forge:buckets/<ID>` 没有加载器定义，照写）。合成配方原料里直接引用的通用标签（如扳手的 `#forge:ingots/iron`）仍只用该节点的前缀。三个节点数据生成与单元测试通过；1.20.1 服务端 `/fidev tag`：`c:dusts/salt`、`forge:dusts/salt` 都是本模组盐，`c:gaseous` 35 种气体，`c:buckets/sulfuric_acid` 为硫酸桶
+- 用户确认（2026-11-12）：08 §A/§B 中对原表候选的改正与补充（潘马斯的实际标签名：香荚兰、芝麻、桂皮、茶叶、可可；GTCEu 焦炭 `gems/coke`；乳胶另导入 `#forge:latex`；鸡蛋、骨头、皮革、沙子、铜铁金锭等原版物品直接写入）；`materials/raw_fish` 沿用 `#minecraft:fishes`（含熟鳕鱼、熟鲑鱼）
 
 ## 待审
 
-- 08 §A/§B 中对原表候选的改正与补充：潘马斯的实际标签名（香荚兰、芝麻、桂皮、茶叶、可可），GTCEu 焦炭 `gems/coke`，乳胶另导入 `#forge:latex`，原版物品直接写入（鸡蛋、骨头、皮革、沙子、铜铁金锭）
-- 1.21 起按通用写法换成 `c:` 但在核对的模组中没有提供者的标签（如 `c:dusts/niter`、`c:gems/apatite`、`c:latex`）
-- `materials/raw_fish` 沿用原表的 `#minecraft:fishes`，其中含熟鳕鱼、熟鲑鱼
+- 无。原两条已确认（2026-11-12，用户），见实现记录。
 
 ## 待定
 

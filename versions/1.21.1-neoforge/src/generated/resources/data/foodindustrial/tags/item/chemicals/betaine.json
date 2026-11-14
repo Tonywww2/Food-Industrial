@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:betaine",
+    {
+      "id": "#forge:dusts/betaine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/betaine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/betaine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/betaine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:crude_bitter_almond_oil",
+  "loader": "neoforge:fluid_container"
+}

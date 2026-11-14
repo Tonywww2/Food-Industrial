@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:petitgrain_bigarade_oil",
+    "foodindustrial:flowing_petitgrain_bigarade_oil",
+    {
+      "id": "#forge:petitgrain_bigarade_oil",
+      "required": false
+    },
+    {
+      "id": "#c:petitgrain_bigarade_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_propionate",
+    "foodindustrial:flowing_furfuryl_propionate",
+    {
+      "id": "#forge:furfuryl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_propionate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cedarwood_oil",
+    "foodindustrial:flowing_cedarwood_oil",
+    {
+      "id": "#forge:cedarwood_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cedarwood_oil",
+      "required": false
+    }
+  ]
+}

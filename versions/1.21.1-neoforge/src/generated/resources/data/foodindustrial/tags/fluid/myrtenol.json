@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myrtenol",
+    "foodindustrial:flowing_myrtenol",
+    {
+      "id": "#forge:myrtenol",
+      "required": false
+    },
+    {
+      "id": "#c:myrtenol",
+      "required": false
+    }
+  ]
+}

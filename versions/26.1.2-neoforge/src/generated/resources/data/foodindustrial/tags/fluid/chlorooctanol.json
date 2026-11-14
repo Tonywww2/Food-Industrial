@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorooctanol",
+    "foodindustrial:flowing_chlorooctanol",
+    {
+      "id": "#forge:chlorooctanol",
+      "required": false
+    },
+    {
+      "id": "#c:chlorooctanol",
+      "required": false
+    }
+  ]
+}

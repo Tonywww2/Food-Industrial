@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyethylene_wax",
+    {
+      "id": "#forge:dusts/polyethylene_wax",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polyethylene_wax",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polyethylene_wax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyethylene_wax",
+      "required": false
+    }
+  ]
+}

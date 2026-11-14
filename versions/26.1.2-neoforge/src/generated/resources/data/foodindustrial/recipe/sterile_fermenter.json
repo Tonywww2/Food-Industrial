@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "foodindustrial:clean_frame",
+    "R": "#c:dusts/redstone",
+    "T": "foodindustrial:fermentation_vat",
+    "V": "foodindustrial:sterile_vessel_wall"
+  },
+  "pattern": [
+    "VTV",
+    "RFR",
+    "VRV"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:sterile_fermenter"
+  }
+}

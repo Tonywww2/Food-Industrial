@@ -1,0 +1,27 @@
+{
+  "type": "nuclearcraft:rock_crusher",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft"
+    }
+  ],
+  "input": [
+    {
+      "count": 4,
+      "tag": "foodindustrial:materials/dittany_of_crete"
+    }
+  ],
+  "output": [
+    {
+      "item": "foodindustrial:dittany_of_crete_powder"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

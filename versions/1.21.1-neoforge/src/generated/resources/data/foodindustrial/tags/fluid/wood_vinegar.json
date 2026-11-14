@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wood_vinegar",
+    "foodindustrial:flowing_wood_vinegar",
+    {
+      "id": "#forge:wood_vinegar",
+      "required": false
+    },
+    {
+      "id": "#c:wood_vinegar",
+      "required": false
+    }
+  ]
+}

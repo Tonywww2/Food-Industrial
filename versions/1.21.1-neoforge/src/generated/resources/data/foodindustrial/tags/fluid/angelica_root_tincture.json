@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:angelica_root_tincture",
+    "foodindustrial:flowing_angelica_root_tincture",
+    {
+      "id": "#forge:angelica_root_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:angelica_root_tincture",
+      "required": false
+    }
+  ]
+}

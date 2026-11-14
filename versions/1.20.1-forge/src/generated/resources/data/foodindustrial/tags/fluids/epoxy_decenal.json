@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epoxy_decenal",
+    "foodindustrial:flowing_epoxy_decenal",
+    {
+      "id": "#forge:epoxy_decenal",
+      "required": false
+    },
+    {
+      "id": "#c:epoxy_decenal",
+      "required": false
+    }
+  ]
+}

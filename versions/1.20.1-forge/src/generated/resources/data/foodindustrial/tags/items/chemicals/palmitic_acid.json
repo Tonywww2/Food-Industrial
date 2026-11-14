@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/palmitic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/palmitic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/palmitic_acid",
+      "required": false
     }
   ]
 }

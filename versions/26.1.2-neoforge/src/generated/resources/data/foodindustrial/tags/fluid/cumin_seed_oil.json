@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cumin_seed_oil",
+    "foodindustrial:flowing_cumin_seed_oil",
+    {
+      "id": "#forge:cumin_seed_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cumin_seed_oil",
+      "required": false
+    }
+  ]
+}

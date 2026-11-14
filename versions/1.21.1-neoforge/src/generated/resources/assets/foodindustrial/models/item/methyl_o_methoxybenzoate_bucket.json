@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methyl_o_methoxybenzoate",
+  "loader": "neoforge:fluid_container"
+}

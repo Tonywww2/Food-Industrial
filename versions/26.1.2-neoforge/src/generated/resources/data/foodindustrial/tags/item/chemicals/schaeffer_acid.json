@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:schaeffer_acid",
     {
+      "id": "#forge:dusts/schaeffer_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/schaeffer_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/schaeffer_acid",
       "required": false
     },

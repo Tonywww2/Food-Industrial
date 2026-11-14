@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/carminic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/aluminium_hydroxide"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/calcium_carbonate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:carmine",
+      "purity": {
+        "mode": "degrade",
+        "value": 50
+      }
+    }
+  ],
+  "purity_sources": [
+    0
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

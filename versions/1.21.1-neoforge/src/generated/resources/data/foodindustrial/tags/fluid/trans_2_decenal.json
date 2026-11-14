@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_2_decenal",
+    "foodindustrial:flowing_trans_2_decenal",
+    {
+      "id": "#forge:trans_2_decenal",
+      "required": false
+    },
+    {
+      "id": "#c:trans_2_decenal",
+      "required": false
+    }
+  ]
+}

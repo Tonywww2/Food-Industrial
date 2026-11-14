@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/aluminium_chloride"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:limonene"
+      }
+    }
+  ],
+  "mode": "polymerization",
+  "outputs": [
+    {
+      "item": "foodindustrial:polylimonene",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:styrax",
+    "foodindustrial:flowing_styrax",
+    {
+      "id": "#forge:styrax",
+      "required": false
+    },
+    {
+      "id": "#c:styrax",
+      "required": false
+    }
+  ]
+}

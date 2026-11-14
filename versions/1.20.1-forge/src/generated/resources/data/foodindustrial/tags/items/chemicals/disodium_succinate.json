@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/disodium_succinate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/disodium_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/disodium_succinate",
+      "required": false
     }
   ]
 }

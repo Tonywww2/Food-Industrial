@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alfalfa_extract",
+    "foodindustrial:flowing_alfalfa_extract",
+    {
+      "id": "#forge:alfalfa_extract",
+      "required": false
+    },
+    {
+      "id": "#c:alfalfa_extract",
+      "required": false
+    }
+  ]
+}

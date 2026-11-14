@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ketoisophorone",
+    {
+      "id": "#forge:dusts/ketoisophorone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ketoisophorone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ketoisophorone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ketoisophorone",
+      "required": false
+    }
+  ]
+}

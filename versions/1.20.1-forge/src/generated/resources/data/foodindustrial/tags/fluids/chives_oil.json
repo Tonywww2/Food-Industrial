@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chives_oil",
+    "foodindustrial:flowing_chives_oil",
+    {
+      "id": "#forge:chives_oil",
+      "required": false
+    },
+    {
+      "id": "#c:chives_oil",
+      "required": false
+    }
+  ]
+}

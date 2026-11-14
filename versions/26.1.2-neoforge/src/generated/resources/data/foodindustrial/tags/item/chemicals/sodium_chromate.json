@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_chromate",
+    {
+      "id": "#forge:dusts/sodium_chromate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_chromate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_chromate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_chromate",
+      "required": false
+    }
+  ]
+}

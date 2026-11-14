@@ -1,0 +1,54 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "tag": "foodindustrial:materials/bone"
+    },
+    {
+      "amount": 2000,
+      "fluidTag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:gelatin",
+      "nbt": "{Purity:-9b}"
+    }
+  ]
+}

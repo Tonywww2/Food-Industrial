@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:molten_partially_dimerized_rosin"
+      }
+    }
+  ],
+  "mode": "vacuum_distillation",
+  "outputs": [
+    {
+      "item": "foodindustrial:polymerized_rosin"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "multi_fraction"
+    ],
+    "min_tier": "t1",
+    "pressure": "vacuum"
+  },
+  "time": 200
+}

@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/epigallocatechin_gallate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethyl_acetate"
+      }
+    }
+  ],
+  "mode": "liquid_extraction",
+  "outputs": [
+    {
+      "item": "foodindustrial:epigallocatechin_gallate"
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:ethyl_acetate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

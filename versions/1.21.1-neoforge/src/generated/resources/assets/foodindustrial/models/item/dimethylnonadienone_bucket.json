@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dimethylnonadienone",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylpropyl_cinnamate",
+    "foodindustrial:flowing_phenylpropyl_cinnamate",
+    {
+      "id": "#forge:phenylpropyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:phenylpropyl_cinnamate",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:tara_gum",
     {
+      "id": "#forge:dusts/tara_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tara_gum",
+      "required": false
+    },
+    {
       "id": "#c:dusts/tara_gum",
       "required": false
     },

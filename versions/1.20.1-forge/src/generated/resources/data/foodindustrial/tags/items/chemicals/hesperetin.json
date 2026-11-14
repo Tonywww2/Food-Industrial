@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hesperetin",
+    {
+      "id": "#forge:dusts/hesperetin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hesperetin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hesperetin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hesperetin",
+      "required": false
+    }
+  ]
+}

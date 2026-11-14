@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclohexyl_isovalerate",
+    "foodindustrial:flowing_cyclohexyl_isovalerate",
+    {
+      "id": "#forge:cyclohexyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:cyclohexyl_isovalerate",
+      "required": false
+    }
+  ]
+}

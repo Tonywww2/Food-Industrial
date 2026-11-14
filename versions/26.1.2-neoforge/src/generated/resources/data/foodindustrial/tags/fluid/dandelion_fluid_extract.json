@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dandelion_fluid_extract",
+    "foodindustrial:flowing_dandelion_fluid_extract",
+    {
+      "id": "#forge:dandelion_fluid_extract",
+      "required": false
+    },
+    {
+      "id": "#c:dandelion_fluid_extract",
+      "required": false
+    }
+  ]
+}

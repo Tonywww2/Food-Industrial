@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylbutyraldehyde",
+    "foodindustrial:flowing_methylbutyraldehyde",
+    {
+      "id": "#forge:methylbutyraldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:methylbutyraldehyde",
+      "required": false
+    }
+  ]
+}

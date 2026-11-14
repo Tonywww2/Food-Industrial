@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sesame_co2_extract",
+    "foodindustrial:flowing_sesame_co2_extract",
+    {
+      "id": "#forge:sesame_co2_extract",
+      "required": false
+    },
+    {
+      "id": "#c:sesame_co2_extract",
+      "required": false
+    }
+  ]
+}

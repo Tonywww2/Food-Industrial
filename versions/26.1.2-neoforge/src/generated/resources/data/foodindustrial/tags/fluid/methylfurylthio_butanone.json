@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylfurylthio_butanone",
+    "foodindustrial:flowing_methylfurylthio_butanone",
+    {
+      "id": "#forge:methylfurylthio_butanone",
+      "required": false
+    },
+    {
+      "id": "#c:methylfurylthio_butanone",
+      "required": false
+    }
+  ]
+}

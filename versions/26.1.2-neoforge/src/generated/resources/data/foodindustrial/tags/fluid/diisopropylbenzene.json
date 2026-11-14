@@ -4,6 +4,10 @@
     "foodindustrial:diisopropylbenzene",
     "foodindustrial:flowing_diisopropylbenzene",
     {
+      "id": "#forge:diisopropylbenzene",
+      "required": false
+    },
+    {
       "id": "#c:diisopropylbenzene",
       "required": false
     }

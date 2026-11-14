@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 16,
+      "ingredient": {
+        "tag": "foodindustrial:materials/bitter_orange_flower"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "steam_distillation",
+  "outputs": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:daidai_flower_oil"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "oil_separation"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

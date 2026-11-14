@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isomenthone",
+    "foodindustrial:flowing_isomenthone",
+    {
+      "id": "#forge:isomenthone",
+      "required": false
+    },
+    {
+      "id": "#c:isomenthone",
+      "required": false
+    }
+  ]
+}

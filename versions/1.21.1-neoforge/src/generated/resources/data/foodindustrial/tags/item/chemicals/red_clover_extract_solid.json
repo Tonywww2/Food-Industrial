@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:red_clover_extract_solid",
+    {
+      "id": "#forge:dusts/red_clover_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/red_clover_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/red_clover_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/red_clover_extract_solid",
+      "required": false
+    }
+  ]
+}

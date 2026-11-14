@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexylpyridine",
+    "foodindustrial:flowing_hexylpyridine",
+    {
+      "id": "#forge:hexylpyridine",
+      "required": false
+    },
+    {
+      "id": "#c:hexylpyridine",
+      "required": false
+    }
+  ]
+}

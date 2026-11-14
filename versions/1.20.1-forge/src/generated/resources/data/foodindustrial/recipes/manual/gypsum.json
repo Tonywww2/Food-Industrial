@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/gypsum"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:gypsum",
+      "purity": {
+        "mode": "source",
+        "value": 80
+      }
+    }
+  ],
+  "time": 200
+}

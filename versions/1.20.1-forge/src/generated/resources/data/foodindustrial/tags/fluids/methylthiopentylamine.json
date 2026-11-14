@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiopentylamine",
+    "foodindustrial:flowing_methylthiopentylamine",
+    {
+      "id": "#forge:methylthiopentylamine",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiopentylamine",
+      "required": false
+    }
+  ]
+}

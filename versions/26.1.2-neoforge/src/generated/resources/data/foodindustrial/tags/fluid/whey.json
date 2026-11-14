@@ -4,6 +4,10 @@
     "foodindustrial:whey",
     "foodindustrial:flowing_whey",
     {
+      "id": "#forge:whey",
+      "required": false
+    },
+    {
       "id": "#c:whey",
       "required": false
     }

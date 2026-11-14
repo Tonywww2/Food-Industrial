@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:thiodipropionic_acid",
     {
+      "id": "#forge:dusts/thiodipropionic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thiodipropionic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/thiodipropionic_acid",
       "required": false
     },

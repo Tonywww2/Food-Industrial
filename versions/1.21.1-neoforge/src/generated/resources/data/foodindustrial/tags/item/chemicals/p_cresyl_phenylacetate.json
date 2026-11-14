@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_cresyl_phenylacetate",
+    {
+      "id": "#forge:dusts/p_cresyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_cresyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_cresyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_cresyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

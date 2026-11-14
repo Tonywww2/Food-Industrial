@@ -4,6 +4,10 @@
     "foodindustrial:sorbitol_syrup",
     "foodindustrial:flowing_sorbitol_syrup",
     {
+      "id": "#forge:sorbitol_syrup",
+      "required": false
+    },
+    {
       "id": "#c:sorbitol_syrup",
       "required": false
     }

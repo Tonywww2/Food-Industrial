@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rose_concrete",
+    {
+      "id": "#forge:dusts/rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rose_concrete",
+      "required": false
+    }
+  ]
+}

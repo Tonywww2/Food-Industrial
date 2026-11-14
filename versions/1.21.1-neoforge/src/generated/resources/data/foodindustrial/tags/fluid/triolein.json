@@ -4,7 +4,19 @@
     "foodindustrial:triolein",
     "foodindustrial:flowing_triolein",
     {
+      "id": "#forge:triolein",
+      "required": false
+    },
+    {
+      "id": "#forge:seed_oil",
+      "required": false
+    },
+    {
       "id": "#c:triolein",
+      "required": false
+    },
+    {
+      "id": "#c:seed_oil",
       "required": false
     }
   ]

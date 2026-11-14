@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:radish_red",
     {
+      "id": "#forge:dusts/radish_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/radish_red",
+      "required": false
+    },
+    {
       "id": "#c:dusts/radish_red",
       "required": false
     },

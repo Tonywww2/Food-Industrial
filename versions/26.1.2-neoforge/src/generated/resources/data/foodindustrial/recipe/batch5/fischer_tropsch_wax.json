@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/iron"
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:carbon_monoxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 8000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:fischer_tropsch_wax",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 4000,
+      "fluid": "minecraft:water"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:light_naphtha"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

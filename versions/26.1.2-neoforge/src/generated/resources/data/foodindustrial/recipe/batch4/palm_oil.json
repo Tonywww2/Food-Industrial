@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:pressing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/oil_palm_fruit"
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:palm_oil"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

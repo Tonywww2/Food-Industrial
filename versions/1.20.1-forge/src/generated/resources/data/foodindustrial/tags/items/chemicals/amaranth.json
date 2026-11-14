@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/amaranth",
       "required": false
+    },
+    {
+      "id": "#c:dusts/amaranth",
+      "required": false
+    },
+    {
+      "id": "#c:gems/amaranth",
+      "required": false
     }
   ]
 }

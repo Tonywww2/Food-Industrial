@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/acesulfame_potassium",
       "required": false
+    },
+    {
+      "id": "#c:dusts/acesulfame_potassium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acesulfame_potassium",
+      "required": false
     }
   ]
 }

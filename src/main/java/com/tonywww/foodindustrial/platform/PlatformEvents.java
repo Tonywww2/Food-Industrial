@@ -5,9 +5,13 @@ import com.google.gson.JsonParser;
 import com.mojang.brigadier.CommandDispatcher;
 import com.tonywww.foodindustrial.FoodIndustrial;
 import com.tonywww.foodindustrial.platform.world.PlatformPlants;
+import net.minecraft.commands.CommandBuildContext;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.server.level.ServerPlayer;
@@ -65,8 +69,11 @@ public final class PlatformEvents {
     private static final List<JsonLoader> JSON_LOADERS = new ArrayList<>();
     private static final List<Consumer<List<ServerPlayer>>> DATAPACK_SYNC = new ArrayList<>();
     private static final List<Runnable> TAGS_UPDATED = new ArrayList<>();
-    private static final List<Consumer<CommandDispatcher<CommandSourceStack>>> COMMANDS = new ArrayList<>();
+    private static final List<Runnable> CLIENT_TAGS_UPDATED = new ArrayList<>();
+    private static final List<CommandRegistrar> COMMANDS = new ArrayList<>();
     private static final List<AxeStripListener> AXE_STRIP = new ArrayList<>();
+    private static final List<Consumer<ServerLevel>> LEVEL_TICK = new ArrayList<>();
+    private static final List<RightClickBlockListener> RIGHT_CLICK_BLOCK = new ArrayList<>();
 
     private PlatformEvents() {
     }
@@ -113,6 +120,14 @@ public final class PlatformEvents {
         TAGS_UPDATED.add(task);
     }
 
+    /**
+     * Client only: called when tags arrive from the server (on 1.20.1 after the recipes, so client
+     * views that need tags wait for this; I22).
+     */
+    public static void onClientTagsReceived(Runnable task) {
+        CLIENT_TAGS_UPDATED.add(task);
+    }
+
     /** Receives axe stripping on the server. */
     @FunctionalInterface
     public interface AxeStripListener {
@@ -127,8 +142,41 @@ public final class PlatformEvents {
         AXE_STRIP.add(listener);
     }
 
+    /** Runs at the end of every tick of every server level. */
+    public static void onServerLevelTick(Consumer<ServerLevel> task) {
+        LEVEL_TICK.add(task);
+    }
+
+    /** A right click on a block, before the block or the item act. */
+    public interface RightClickBlockListener {
+        /**
+         * Server side only. Return {@code true} when handled: the block and the item do not act and the
+         * arm swings.
+         */
+        boolean onUse(ServerLevel level, Player player, InteractionHand hand, BlockPos pos);
+    }
+
+    /** Listens to right clicks on blocks by players (world interactions such as tapping a log). */
+    public static void onRightClickBlock(RightClickBlockListener listener) {
+        RIGHT_CLICK_BLOCK.add(listener);
+    }
+
     /** Server side: registers commands whenever the command tree is built. */
     public static void onRegisterCommands(Consumer<CommandDispatcher<CommandSourceStack>> registrar) {
+        COMMANDS.add((dispatcher, context) -> registrar.accept(dispatcher));
+    }
+
+    /** Receives the command tree and the build context that registry-backed arguments (items) need. */
+    @FunctionalInterface
+    public interface CommandRegistrar {
+        void register(CommandDispatcher<CommandSourceStack> dispatcher, CommandBuildContext context);
+    }
+
+    /**
+     * Server side: registers commands that take registry-backed arguments; see
+     * {@link PlatformCommands#itemArgument}.
+     */
+    public static void onRegisterCommands(CommandRegistrar registrar) {
         COMMANDS.add(registrar);
     }
 
@@ -211,7 +259,49 @@ public final class PlatformEvents {
         gameBus().addListener(PlatformEvents::tagsUpdated);
         gameBus().addListener(PlatformEvents::registerCommands);
         gameBus().addListener(PlatformEvents::toolModification);
+        gameBus().addListener(PlatformEvents::levelTick);
+        gameBus().addListener(PlatformEvents::rightClickBlock);
     }
+
+    //? if forge {
+    private static void levelTick(net.minecraftforge.event.TickEvent.LevelTickEvent event) {
+        if (event.phase == net.minecraftforge.event.TickEvent.Phase.END && event.level instanceof ServerLevel level) {
+            LEVEL_TICK.forEach(task -> task.accept(level));
+        }
+    }
+
+    private static void rightClickBlock(net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock event) {
+        if (!(event.getLevel() instanceof ServerLevel level) || RIGHT_CLICK_BLOCK.isEmpty()) {
+            return;
+        }
+        for (RightClickBlockListener listener : RIGHT_CLICK_BLOCK) {
+            if (listener.onUse(level, event.getEntity(), event.getHand(), event.getPos())) {
+                event.setCanceled(true);
+                event.setCancellationResult(InteractionResult.SUCCESS);
+                return;
+            }
+        }
+    }
+    //?} else {
+    /*private static void levelTick(net.neoforged.neoforge.event.tick.LevelTickEvent.Post event) {
+        if (event.getLevel() instanceof ServerLevel level) {
+            LEVEL_TICK.forEach(task -> task.accept(level));
+        }
+    }
+
+    private static void rightClickBlock(net.neoforged.neoforge.event.entity.player.PlayerInteractEvent.RightClickBlock event) {
+        if (!(event.getLevel() instanceof ServerLevel level) || RIGHT_CLICK_BLOCK.isEmpty()) {
+            return;
+        }
+        for (RightClickBlockListener listener : RIGHT_CLICK_BLOCK) {
+            if (listener.onUse(level, event.getEntity(), event.getHand(), event.getPos())) {
+                event.setCanceled(true);
+                event.setCancellationResult(InteractionResult.SUCCESS);
+                return;
+            }
+        }
+    }
+    *///?}
 
     private static void toolModification(BlockEvent.BlockToolModificationEvent event) {
         //? if forge {
@@ -229,7 +319,7 @@ public final class PlatformEvents {
     }
 
     private static void registerCommands(RegisterCommandsEvent event) {
-        COMMANDS.forEach(registrar -> registrar.accept(event.getDispatcher()));
+        COMMANDS.forEach(registrar -> registrar.register(event.getDispatcher(), event.getBuildContext()));
     }
 
     private static void commonSetup(FMLCommonSetupEvent event) {
@@ -242,6 +332,9 @@ public final class PlatformEvents {
 
     private static void tagsUpdated(TagsUpdatedEvent event) {
         TAGS_UPDATED.forEach(Runnable::run);
+        if (event.getUpdateCause() == TagsUpdatedEvent.UpdateCause.CLIENT_PACKET_RECEIVED) {
+            CLIENT_TAGS_UPDATED.forEach(Runnable::run);
+        }
     }
 
     //? if forge {

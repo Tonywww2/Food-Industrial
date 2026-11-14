@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyldithio_isobutyraldehyde",
+    "foodindustrial:flowing_methyldithio_isobutyraldehyde",
+    {
+      "id": "#forge:methyldithio_isobutyraldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:methyldithio_isobutyraldehyde",
+      "required": false
+    }
+  ]
+}

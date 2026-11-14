@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lavender_absolute",
+    "foodindustrial:flowing_lavender_absolute",
+    {
+      "id": "#forge:lavender_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:lavender_absolute",
+      "required": false
+    }
+  ]
+}

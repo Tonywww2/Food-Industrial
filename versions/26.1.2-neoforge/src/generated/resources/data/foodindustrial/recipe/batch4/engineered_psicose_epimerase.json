@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:cultures/bacillus_subtilis"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/agar"
+    },
+    {
+      "ingredient": "#foodindustrial:samples/straw"
+    },
+    {
+      "ingredient": "#foodindustrial:cultures/expression_vector"
+    }
+  ],
+  "mode": "recombination",
+  "outputs": [
+    {
+      "item": "foodindustrial:engineered_psicose_epimerase",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:bacillus_subtilis"
+    }
+  ],
+  "plate": {
+    "weights": [
+      1,
+      1
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

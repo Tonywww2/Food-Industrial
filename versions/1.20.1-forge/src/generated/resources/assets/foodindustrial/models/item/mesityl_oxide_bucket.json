@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:mesityl_oxide",
+  "loader": "forge:fluid_container"
+}

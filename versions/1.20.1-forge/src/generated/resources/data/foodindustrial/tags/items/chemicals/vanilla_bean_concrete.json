@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanilla_bean_concrete",
+    {
+      "id": "#forge:dusts/vanilla_bean_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vanilla_bean_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/vanilla_bean_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vanilla_bean_concrete",
+      "required": false
+    }
+  ]
+}

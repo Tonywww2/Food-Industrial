@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_copper_chlorophyllin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_copper_chlorophyllin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_copper_chlorophyllin",
+      "required": false
     }
   ]
 }

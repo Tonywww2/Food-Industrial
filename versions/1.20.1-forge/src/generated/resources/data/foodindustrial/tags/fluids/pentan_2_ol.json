@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentan_2_ol",
+    "foodindustrial:flowing_pentan_2_ol",
+    {
+      "id": "#forge:pentan_2_ol",
+      "required": false
+    },
+    {
+      "id": "#c:pentan_2_ol",
+      "required": false
+    }
+  ]
+}

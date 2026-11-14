@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/caffeine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/caffeine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/caffeine",
+      "required": false
     }
   ]
 }

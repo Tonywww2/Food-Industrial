@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/glycine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/glycine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glycine",
+      "required": false
     }
   ]
 }

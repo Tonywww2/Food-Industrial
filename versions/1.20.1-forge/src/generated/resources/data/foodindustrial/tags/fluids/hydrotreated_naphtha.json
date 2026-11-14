@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrotreated_naphtha",
+    "foodindustrial:flowing_hydrotreated_naphtha",
+    {
+      "id": "#forge:hydrotreated_naphtha",
+      "required": false
+    },
+    {
+      "id": "#c:hydrotreated_naphtha",
+      "required": false
+    }
+  ]
+}

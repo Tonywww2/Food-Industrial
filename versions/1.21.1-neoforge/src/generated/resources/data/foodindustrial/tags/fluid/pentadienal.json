@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentadienal",
+    "foodindustrial:flowing_pentadienal",
+    {
+      "id": "#forge:pentadienal",
+      "required": false
+    },
+    {
+      "id": "#c:pentadienal",
+      "required": false
+    }
+  ]
+}

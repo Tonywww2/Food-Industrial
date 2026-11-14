@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": "#foodindustrial:materials/kelp"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/soda_ash"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/calcium_chloride"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_alginate",
+      "purity": {
+        "mode": "source",
+        "value": 60
+      }
+    },
+    {
+      "chance": 0.25,
+      "item": "foodindustrial:mannitol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

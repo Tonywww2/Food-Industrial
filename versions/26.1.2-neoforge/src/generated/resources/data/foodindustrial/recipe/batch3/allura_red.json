@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/cresidine_sulfonic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_nitrite"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/schaeffer_acid"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrochloric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:soda_lye"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:allura_red"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

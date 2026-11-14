@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_beta_naphthyl_ketone",
+    {
+      "id": "#forge:dusts/methyl_beta_naphthyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_beta_naphthyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_beta_naphthyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_beta_naphthyl_ketone",
+      "required": false
+    }
+  ]
+}

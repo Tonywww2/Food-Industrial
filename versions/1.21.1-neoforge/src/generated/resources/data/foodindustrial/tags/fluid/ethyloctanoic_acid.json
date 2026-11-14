@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyloctanoic_acid",
+    "foodindustrial:flowing_ethyloctanoic_acid",
+    {
+      "id": "#forge:ethyloctanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:ethyloctanoic_acid",
+      "required": false
+    }
+  ]
+}

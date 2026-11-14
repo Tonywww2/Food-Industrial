@@ -1,0 +1,24 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 2,
+    "tag": "foodindustrial:materials/marshmallow_root"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:althea_root_powder"
+    }
+  ]
+}

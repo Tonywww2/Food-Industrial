@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_butyrobetaine",
+    {
+      "id": "#forge:dusts/gamma_butyrobetaine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gamma_butyrobetaine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/gamma_butyrobetaine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gamma_butyrobetaine",
+      "required": false
+    }
+  ]
+}

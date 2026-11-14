@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/chlorination_charge"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:chlorine"
+      }
+    }
+  ],
+  "mode": "fluidized_bed",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:titanium_tetrachloride",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:carbon_monoxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 200
+}

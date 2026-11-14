@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_jasmone",
+    "foodindustrial:flowing_cis_jasmone",
+    {
+      "id": "#forge:cis_jasmone",
+      "required": false
+    },
+    {
+      "id": "#c:cis_jasmone",
+      "required": false
+    }
+  ]
+}

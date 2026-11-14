@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tannin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tannin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tannin",
+      "required": false
     }
   ]
 }

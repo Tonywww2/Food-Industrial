@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:grapefruit_oil_terpenes",
+    "foodindustrial:flowing_grapefruit_oil_terpenes",
+    {
+      "id": "#forge:grapefruit_oil_terpenes",
+      "required": false
+    },
+    {
+      "id": "#c:grapefruit_oil_terpenes",
+      "required": false
+    }
+  ]
+}

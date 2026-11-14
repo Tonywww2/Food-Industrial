@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/xylose"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/glycine"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:norfuraneol",
+      "purity": {
+        "mode": "source",
+        "value": 30
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

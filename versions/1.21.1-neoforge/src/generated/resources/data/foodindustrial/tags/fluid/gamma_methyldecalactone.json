@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_methyldecalactone",
+    "foodindustrial:flowing_gamma_methyldecalactone",
+    {
+      "id": "#forge:gamma_methyldecalactone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_methyldecalactone",
+      "required": false
+    }
+  ]
+}

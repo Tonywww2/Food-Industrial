@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyethylene",
+    {
+      "id": "#forge:dusts/polyethylene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polyethylene",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polyethylene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyethylene",
+      "required": false
+    }
+  ]
+}

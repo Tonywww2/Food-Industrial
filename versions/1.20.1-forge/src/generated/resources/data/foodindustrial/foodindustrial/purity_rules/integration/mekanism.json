@@ -1,0 +1,16 @@
+{
+  "fluids": [
+    "mekanism:chlorine",
+    "mekanism:hydrogen",
+    "mekanism:hydrogen_chloride",
+    "mekanism:oxygen",
+    "mekanism:sulfur_dioxide",
+    "mekanism:sulfur_trioxide",
+    "mekanism:sulfuric_acid"
+  ],
+  "items": [
+    "mekanism:salt",
+    "mekanism:dust_sulfur"
+  ],
+  "purity": "crude"
+}

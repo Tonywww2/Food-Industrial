@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:vanilla_smoking",
+  "recipe": {
+    "type": "foodindustrial:drying",
+    "inputs": [
+      {
+        "ingredient": "#foodindustrial:materials/apple"
+      }
+    ],
+    "outputs": [
+      {
+        "item": "foodindustrial:dried_apple"
+      }
+    ],
+    "requirements": {
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace",
+      "smoker"
+    ]
+  }
+}

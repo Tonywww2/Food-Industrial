@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cane_molasses",
+    "foodindustrial:flowing_cane_molasses",
+    {
+      "id": "#forge:cane_molasses",
+      "required": false
+    },
+    {
+      "id": "#c:cane_molasses",
+      "required": false
+    }
+  ]
+}

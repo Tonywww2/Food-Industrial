@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:chlorophyll_a",
     {
+      "id": "#forge:dusts/chlorophyll_a",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chlorophyll_a",
+      "required": false
+    },
+    {
       "id": "#c:dusts/chlorophyll_a",
       "required": false
     },

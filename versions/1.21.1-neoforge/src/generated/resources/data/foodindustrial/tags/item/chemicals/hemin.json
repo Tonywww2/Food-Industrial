@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hemin",
+    {
+      "id": "#forge:dusts/hemin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hemin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hemin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hemin",
+      "required": false
+    }
+  ]
+}

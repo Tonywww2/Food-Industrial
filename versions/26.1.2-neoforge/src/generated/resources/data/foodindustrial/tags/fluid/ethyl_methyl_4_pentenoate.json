@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_methyl_4_pentenoate",
+    "foodindustrial:flowing_ethyl_methyl_4_pentenoate",
+    {
+      "id": "#forge:ethyl_methyl_4_pentenoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_methyl_4_pentenoate",
+      "required": false
+    }
+  ]
+}

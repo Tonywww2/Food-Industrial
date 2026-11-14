@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/magnesite"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:magnesite",
+      "nbt": "{Purity:34b}"
+    }
+  ]
+}

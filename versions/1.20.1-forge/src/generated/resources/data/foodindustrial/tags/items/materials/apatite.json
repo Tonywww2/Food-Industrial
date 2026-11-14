@@ -13,6 +13,18 @@
     {
       "id": "#forge:ores/apatite",
       "required": false
+    },
+    {
+      "id": "#c:gems/apatite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/apatite",
+      "required": false
+    },
+    {
+      "id": "#c:ores/apatite",
+      "required": false
     }
   ]
 }

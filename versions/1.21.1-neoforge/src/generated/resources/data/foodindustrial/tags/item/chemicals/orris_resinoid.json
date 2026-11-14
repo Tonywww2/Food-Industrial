@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:orris_resinoid",
+    {
+      "id": "#forge:dusts/orris_resinoid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/orris_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/orris_resinoid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/orris_resinoid",
+      "required": false
+    }
+  ]
+}

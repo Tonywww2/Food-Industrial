@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonivamide",
+    {
+      "id": "#forge:dusts/nonivamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nonivamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/nonivamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/nonivamide",
+      "required": false
+    }
+  ]
+}

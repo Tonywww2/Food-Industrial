@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octanal",
+    "foodindustrial:flowing_octanal",
+    {
+      "id": "#forge:octanal",
+      "required": false
+    },
+    {
+      "id": "#c:octanal",
+      "required": false
+    }
+  ]
+}

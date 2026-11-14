@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furylacrolein",
+    {
+      "id": "#forge:dusts/furylacrolein",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/furylacrolein",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/furylacrolein",
+      "required": false
+    },
+    {
+      "id": "#c:gems/furylacrolein",
+      "required": false
+    }
+  ]
+}

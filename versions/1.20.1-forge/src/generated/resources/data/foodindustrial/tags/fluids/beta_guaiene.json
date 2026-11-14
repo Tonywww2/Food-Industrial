@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_guaiene",
+    "foodindustrial:flowing_beta_guaiene",
+    {
+      "id": "#forge:beta_guaiene",
+      "required": false
+    },
+    {
+      "id": "#c:beta_guaiene",
+      "required": false
+    }
+  ]
+}

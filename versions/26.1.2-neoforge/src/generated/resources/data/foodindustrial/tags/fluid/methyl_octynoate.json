@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_octynoate",
+    "foodindustrial:flowing_methyl_octynoate",
+    {
+      "id": "#forge:methyl_octynoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_octynoate",
+      "required": false
+    }
+  ]
+}

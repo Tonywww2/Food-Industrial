@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dibenzyl_ether",
+    "foodindustrial:flowing_dibenzyl_ether",
+    {
+      "id": "#forge:dibenzyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:dibenzyl_ether",
+      "required": false
+    }
+  ]
+}

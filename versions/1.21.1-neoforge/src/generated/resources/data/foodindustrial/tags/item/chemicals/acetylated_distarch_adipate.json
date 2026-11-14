@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:acetylated_distarch_adipate",
     {
+      "id": "#forge:dusts/acetylated_distarch_adipate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetylated_distarch_adipate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/acetylated_distarch_adipate",
       "required": false
     },

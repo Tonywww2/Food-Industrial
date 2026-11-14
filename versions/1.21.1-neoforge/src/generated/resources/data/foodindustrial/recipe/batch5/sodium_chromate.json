@@ -1,0 +1,41 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/chromite"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/soda_ash"
+      }
+    }
+  ],
+  "mode": "roasting",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:sodium_chromate"
+    },
+    {
+      "item": "foodindustrial:iron_oxide_red",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 4000,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 400
+}

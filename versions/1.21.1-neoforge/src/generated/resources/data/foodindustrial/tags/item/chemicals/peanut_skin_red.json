@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:peanut_skin_red",
     {
+      "id": "#forge:dusts/peanut_skin_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/peanut_skin_red",
+      "required": false
+    },
+    {
       "id": "#c:dusts/peanut_skin_red",
       "required": false
     },

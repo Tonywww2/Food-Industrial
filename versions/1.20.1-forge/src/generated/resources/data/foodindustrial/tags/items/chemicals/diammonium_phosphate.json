@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/diammonium_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/diammonium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diammonium_phosphate",
+      "required": false
     }
   ]
 }

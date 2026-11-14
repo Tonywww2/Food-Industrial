@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_hexanoate",
+    "foodindustrial:flowing_methyl_hexanoate",
+    {
+      "id": "#forge:methyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_hexanoate",
+      "required": false
+    }
+  ]
+}

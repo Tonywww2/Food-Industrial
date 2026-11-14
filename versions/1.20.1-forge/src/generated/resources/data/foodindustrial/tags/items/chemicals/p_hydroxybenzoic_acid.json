@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/p_hydroxybenzoic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/p_hydroxybenzoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_hydroxybenzoic_acid",
+      "required": false
     }
   ]
 }

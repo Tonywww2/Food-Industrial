@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_ethyl_ketone",
+    "foodindustrial:flowing_methyl_ethyl_ketone",
+    {
+      "id": "#forge:methyl_ethyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_ethyl_ketone",
+      "required": false
+    }
+  ]
+}

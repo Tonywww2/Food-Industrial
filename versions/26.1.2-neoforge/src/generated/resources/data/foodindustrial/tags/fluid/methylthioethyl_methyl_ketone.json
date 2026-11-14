@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthioethyl_methyl_ketone",
+    "foodindustrial:flowing_methylthioethyl_methyl_ketone",
+    {
+      "id": "#forge:methylthioethyl_methyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:methylthioethyl_methyl_ketone",
+      "required": false
+    }
+  ]
+}

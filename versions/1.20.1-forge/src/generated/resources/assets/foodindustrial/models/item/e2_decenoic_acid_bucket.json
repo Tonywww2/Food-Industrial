@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:e2_decenoic_acid",
+  "loader": "forge:fluid_container"
+}

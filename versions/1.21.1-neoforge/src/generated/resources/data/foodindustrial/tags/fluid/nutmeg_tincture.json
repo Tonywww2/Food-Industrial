@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nutmeg_tincture",
+    "foodindustrial:flowing_nutmeg_tincture",
+    {
+      "id": "#forge:nutmeg_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:nutmeg_tincture",
+      "required": false
+    }
+  ]
+}

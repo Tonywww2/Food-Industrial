@@ -4,6 +4,10 @@
     "foodindustrial:acrylonitrile",
     "foodindustrial:flowing_acrylonitrile",
     {
+      "id": "#forge:acrylonitrile",
+      "required": false
+    },
+    {
       "id": "#c:acrylonitrile",
       "required": false
     }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/theaflavins",
       "required": false
+    },
+    {
+      "id": "#c:dusts/theaflavins",
+      "required": false
+    },
+    {
+      "id": "#c:gems/theaflavins",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/enzymes",
       "required": false
+    },
+    {
+      "id": "#c:dusts/enzymes",
+      "required": false
+    },
+    {
+      "id": "#c:gems/enzymes",
+      "required": false
     }
   ]
 }

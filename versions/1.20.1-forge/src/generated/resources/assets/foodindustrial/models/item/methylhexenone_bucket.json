@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methylhexenone",
+  "loader": "forge:fluid_container"
+}

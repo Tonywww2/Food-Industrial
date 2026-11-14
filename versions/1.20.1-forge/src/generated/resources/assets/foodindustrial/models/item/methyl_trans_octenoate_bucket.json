@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methyl_trans_octenoate",
+  "loader": "forge:fluid_container"
+}

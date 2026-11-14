@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maple_oil",
+    "foodindustrial:flowing_maple_oil",
+    {
+      "id": "#forge:maple_oil",
+      "required": false
+    },
+    {
+      "id": "#c:maple_oil",
+      "required": false
+    }
+  ]
+}

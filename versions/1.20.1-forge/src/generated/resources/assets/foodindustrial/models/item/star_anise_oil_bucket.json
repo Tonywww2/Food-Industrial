@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:star_anise_oil",
+  "loader": "forge:fluid_container"
+}

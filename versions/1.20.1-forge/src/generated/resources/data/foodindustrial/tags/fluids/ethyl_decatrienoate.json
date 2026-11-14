@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_decatrienoate",
+    "foodindustrial:flowing_ethyl_decatrienoate",
+    {
+      "id": "#forge:ethyl_decatrienoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_decatrienoate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:crock",
+  "name": "book.foodindustrial.manual.entry.crock",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:crock",
+      "text": "book.foodindustrial.manual.entry.crock.text",
+      "title": "book.foodindustrial.manual.entry.crock"
+    }
+  ],
+  "sortnum": 5
+}

@@ -1,0 +1,47 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/ascorbic_acid"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:phosphoryl_chloride"
+      }
+    },
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:chemicals/magnesium_oxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:magnesium_ascorbyl_phosphate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrochloric_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "corrosion_resistant"
+    ],
+    "min_tier": "t2",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

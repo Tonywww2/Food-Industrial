@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyltridecanoic_acid",
+    {
+      "id": "#forge:dusts/methyltridecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyltridecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyltridecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyltridecanoic_acid",
+      "required": false
+    }
+  ]
+}

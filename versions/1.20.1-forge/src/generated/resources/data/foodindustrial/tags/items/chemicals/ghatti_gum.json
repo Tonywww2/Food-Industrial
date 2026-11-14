@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ghatti_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ghatti_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ghatti_gum",
+      "required": false
     }
   ]
 }

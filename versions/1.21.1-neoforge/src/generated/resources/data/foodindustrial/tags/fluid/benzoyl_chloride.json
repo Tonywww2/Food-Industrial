@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzoyl_chloride",
+    "foodindustrial:flowing_benzoyl_chloride",
+    {
+      "id": "#forge:benzoyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:benzoyl_chloride",
+      "required": false
+    }
+  ]
+}

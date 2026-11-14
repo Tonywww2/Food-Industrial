@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rosefuran",
+    "foodindustrial:flowing_rosefuran",
+    {
+      "id": "#forge:rosefuran",
+      "required": false
+    },
+    {
+      "id": "#c:rosefuran",
+      "required": false
+    }
+  ]
+}

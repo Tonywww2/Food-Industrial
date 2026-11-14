@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:active_amyl_alcohol",
+    "foodindustrial:flowing_active_amyl_alcohol",
+    {
+      "id": "#forge:active_amyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:active_amyl_alcohol",
+      "required": false
+    }
+  ]
+}

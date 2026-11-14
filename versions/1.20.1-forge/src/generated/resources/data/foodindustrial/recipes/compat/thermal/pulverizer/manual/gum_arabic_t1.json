@@ -1,0 +1,27 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "energy": 2000,
+  "ingredient": {
+    "tag": "foodindustrial:materials/acacia_lump"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:gum_arabic",
+      "nbt": "{Purity:-1b}"
+    }
+  ]
+}

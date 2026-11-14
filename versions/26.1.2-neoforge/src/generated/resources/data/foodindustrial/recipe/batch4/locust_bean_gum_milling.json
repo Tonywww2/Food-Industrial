@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/carob_seed"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:locust_bean_gum",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

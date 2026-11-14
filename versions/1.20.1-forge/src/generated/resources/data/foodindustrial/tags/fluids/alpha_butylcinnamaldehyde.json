@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_butylcinnamaldehyde",
+    "foodindustrial:flowing_alpha_butylcinnamaldehyde",
+    {
+      "id": "#forge:alpha_butylcinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_butylcinnamaldehyde",
+      "required": false
+    }
+  ]
+}

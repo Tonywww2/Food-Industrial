@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethylphenol",
+    {
+      "id": "#forge:dusts/trimethylphenol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/trimethylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/trimethylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trimethylphenol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ylang_ylang_oil",
+    "foodindustrial:flowing_ylang_ylang_oil",
+    {
+      "id": "#forge:ylang_ylang_oil",
+      "required": false
+    },
+    {
+      "id": "#c:ylang_ylang_oil",
+      "required": false
+    }
+  ]
+}

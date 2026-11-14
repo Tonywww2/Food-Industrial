@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wild_rose_concrete",
+    {
+      "id": "#forge:dusts/wild_rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/wild_rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/wild_rose_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/wild_rose_concrete",
+      "required": false
+    }
+  ]
+}

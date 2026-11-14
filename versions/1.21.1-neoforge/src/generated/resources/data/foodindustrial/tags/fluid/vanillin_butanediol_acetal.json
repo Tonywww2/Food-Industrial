@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillin_butanediol_acetal",
+    "foodindustrial:flowing_vanillin_butanediol_acetal",
+    {
+      "id": "#forge:vanillin_butanediol_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:vanillin_butanediol_acetal",
+      "required": false
+    }
+  ]
+}

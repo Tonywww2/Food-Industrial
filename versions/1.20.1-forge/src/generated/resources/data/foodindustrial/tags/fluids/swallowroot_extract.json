@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:swallowroot_extract",
+    "foodindustrial:flowing_swallowroot_extract",
+    {
+      "id": "#forge:swallowroot_extract",
+      "required": false
+    },
+    {
+      "id": "#c:swallowroot_extract",
+      "required": false
+    }
+  ]
+}

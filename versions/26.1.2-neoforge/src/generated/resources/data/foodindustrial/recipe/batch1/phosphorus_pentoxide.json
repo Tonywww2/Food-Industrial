@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/white_phosphorus"
+    }
+  ],
+  "mode": "burning",
+  "outputs": [
+    {
+      "item": "foodindustrial:phosphorus_pentoxide"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

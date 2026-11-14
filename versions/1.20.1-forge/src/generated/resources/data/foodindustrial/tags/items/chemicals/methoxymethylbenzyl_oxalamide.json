@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxymethylbenzyl_oxalamide",
+    {
+      "id": "#forge:dusts/methoxymethylbenzyl_oxalamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methoxymethylbenzyl_oxalamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methoxymethylbenzyl_oxalamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methoxymethylbenzyl_oxalamide",
+      "required": false
+    }
+  ]
+}

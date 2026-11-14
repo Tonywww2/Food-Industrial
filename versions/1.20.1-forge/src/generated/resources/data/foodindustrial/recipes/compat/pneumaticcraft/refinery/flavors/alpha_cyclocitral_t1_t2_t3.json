@@ -1,0 +1,38 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:cyclocitral"
+  },
+  "results": [
+    {
+      "amount": 400,
+      "fluid": "foodindustrial:alpha_cyclocitral",
+      "nbt": "{Purity:16b}"
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:cyclocitral",
+      "nbt": "{Purity:33b}"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

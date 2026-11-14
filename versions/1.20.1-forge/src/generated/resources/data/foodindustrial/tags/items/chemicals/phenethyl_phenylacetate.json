@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenethyl_phenylacetate",
+    {
+      "id": "#forge:dusts/phenethyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phenethyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/phenethyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenethyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

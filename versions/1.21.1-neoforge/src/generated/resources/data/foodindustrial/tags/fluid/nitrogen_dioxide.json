@@ -4,6 +4,10 @@
     "foodindustrial:nitrogen_dioxide",
     "foodindustrial:flowing_nitrogen_dioxide",
     {
+      "id": "#forge:nitrogen_dioxide",
+      "required": false
+    },
+    {
       "id": "#c:nitrogen_dioxide",
       "required": false
     }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_vinyl_ketone",
+    "foodindustrial:flowing_methyl_vinyl_ketone",
+    {
+      "id": "#forge:methyl_vinyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_vinyl_ketone",
+      "required": false
+    }
+  ]
+}

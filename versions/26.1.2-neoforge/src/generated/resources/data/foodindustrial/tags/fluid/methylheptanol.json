@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylheptanol",
+    "foodindustrial:flowing_methylheptanol",
+    {
+      "id": "#forge:methylheptanol",
+      "required": false
+    },
+    {
+      "id": "#c:methylheptanol",
+      "required": false
+    }
+  ]
+}

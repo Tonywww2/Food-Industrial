@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:civet_concrete",
+    {
+      "id": "#forge:dusts/civet_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/civet_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/civet_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/civet_concrete",
+      "required": false
+    }
+  ]
+}

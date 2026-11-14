@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_arabinose",
+    {
+      "id": "#forge:dusts/l_arabinose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_arabinose",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/l_arabinose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_arabinose",
+      "required": false
+    }
+  ]
+}

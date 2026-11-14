@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamyl_formate",
+    "foodindustrial:flowing_cinnamyl_formate",
+    {
+      "id": "#forge:cinnamyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:cinnamyl_formate",
+      "required": false
+    }
+  ]
+}

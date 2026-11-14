@@ -1,0 +1,41 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/aspergillus_niger",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/glucose"
+    },
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:chemicals/calcium_carbonate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "shallow_tray",
+  "outputs": [
+    {
+      "item": "foodindustrial:calcium_citrate",
+      "purity": {
+        "mode": "source",
+        "value": 85
+      }
+    },
+    {
+      "item": "foodindustrial:fungal_mycelium"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 24000
+}

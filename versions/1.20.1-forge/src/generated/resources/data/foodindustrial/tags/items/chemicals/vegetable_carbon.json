@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/vegetable_carbon",
       "required": false
+    },
+    {
+      "id": "#c:dusts/vegetable_carbon",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vegetable_carbon",
+      "required": false
     }
   ]
 }

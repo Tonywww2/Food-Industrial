@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylpropionyl",
+    "foodindustrial:flowing_acetylpropionyl",
+    {
+      "id": "#forge:acetylpropionyl",
+      "required": false
+    },
+    {
+      "id": "#c:acetylpropionyl",
+      "required": false
+    }
+  ]
+}

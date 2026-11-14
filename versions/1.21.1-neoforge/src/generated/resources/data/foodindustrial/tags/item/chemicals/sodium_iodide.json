@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_iodide",
+    {
+      "id": "#forge:dusts/sodium_iodide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_iodide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_iodide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_iodide",
+      "required": false
+    }
+  ]
+}

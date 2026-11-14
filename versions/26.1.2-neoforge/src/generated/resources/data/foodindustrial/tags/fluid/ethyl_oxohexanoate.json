@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_oxohexanoate",
+    "foodindustrial:flowing_ethyl_oxohexanoate",
+    {
+      "id": "#forge:ethyl_oxohexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_oxohexanoate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zingerone",
+    {
+      "id": "#forge:dusts/zingerone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zingerone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zingerone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zingerone",
+      "required": false
+    }
+  ]
+}

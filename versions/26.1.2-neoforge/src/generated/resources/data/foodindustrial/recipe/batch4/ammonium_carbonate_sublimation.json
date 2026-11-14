@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/ammonium_carbonate"
+    }
+  ],
+  "mode": "sublimation",
+  "outputs": [
+    {
+      "item": "foodindustrial:ammonium_carbonate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

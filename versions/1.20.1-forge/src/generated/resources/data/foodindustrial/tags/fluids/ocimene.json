@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ocimene",
+    "foodindustrial:flowing_ocimene",
+    {
+      "id": "#forge:ocimene",
+      "required": false
+    },
+    {
+      "id": "#c:ocimene",
+      "required": false
+    }
+  ]
+}

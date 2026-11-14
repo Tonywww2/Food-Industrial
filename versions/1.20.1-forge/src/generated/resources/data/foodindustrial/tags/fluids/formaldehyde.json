@@ -6,6 +6,10 @@
     {
       "id": "#forge:formaldehyde",
       "required": false
+    },
+    {
+      "id": "#c:formaldehyde",
+      "required": false
     }
   ]
 }

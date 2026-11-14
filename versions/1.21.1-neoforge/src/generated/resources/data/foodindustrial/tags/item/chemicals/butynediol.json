@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butynediol",
+    {
+      "id": "#forge:dusts/butynediol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/butynediol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/butynediol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/butynediol",
+      "required": false
+    }
+  ]
+}

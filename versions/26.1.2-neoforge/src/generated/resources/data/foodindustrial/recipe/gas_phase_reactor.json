@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "foodindustrial:refractory_bricks",
+    "F": "foodindustrial:chemical_frame",
+    "R": "#c:dusts/redstone",
+    "T": "foodindustrial:furnace_tube"
+  },
+  "pattern": [
+    "BTB",
+    "RFR",
+    "BTB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:gas_phase_reactor"
+  }
+}

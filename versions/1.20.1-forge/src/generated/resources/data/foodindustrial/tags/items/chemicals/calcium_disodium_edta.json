@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_disodium_edta",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_disodium_edta",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_disodium_edta",
+      "required": false
     }
   ]
 }

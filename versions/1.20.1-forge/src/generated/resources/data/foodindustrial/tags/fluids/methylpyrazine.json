@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylpyrazine",
+    "foodindustrial:flowing_methylpyrazine",
+    {
+      "id": "#forge:methylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:methylpyrazine",
+      "required": false
+    }
+  ]
+}

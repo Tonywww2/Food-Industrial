@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:guaiac_wood_oil",
+    {
+      "id": "#forge:dusts/guaiac_wood_oil",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/guaiac_wood_oil",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/guaiac_wood_oil",
+      "required": false
+    },
+    {
+      "id": "#c:gems/guaiac_wood_oil",
+      "required": false
+    }
+  ]
+}

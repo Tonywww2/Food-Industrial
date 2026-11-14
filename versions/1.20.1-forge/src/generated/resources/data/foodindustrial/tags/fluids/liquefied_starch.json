@@ -6,6 +6,10 @@
     {
       "id": "#forge:liquefied_starch",
       "required": false
+    },
+    {
+      "id": "#c:liquefied_starch",
+      "required": false
     }
   ]
 }

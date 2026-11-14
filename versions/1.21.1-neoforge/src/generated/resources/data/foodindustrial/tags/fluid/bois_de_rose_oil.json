@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bois_de_rose_oil",
+    "foodindustrial:flowing_bois_de_rose_oil",
+    {
+      "id": "#forge:bois_de_rose_oil",
+      "required": false
+    },
+    {
+      "id": "#c:bois_de_rose_oil",
+      "required": false
+    }
+  ]
+}

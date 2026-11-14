@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:camphene",
+    "foodindustrial:flowing_camphene",
+    {
+      "id": "#forge:camphene",
+      "required": false
+    },
+    {
+      "id": "#c:camphene",
+      "required": false
+    }
+  ]
+}

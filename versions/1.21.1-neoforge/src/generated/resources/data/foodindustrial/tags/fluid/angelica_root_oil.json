@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:angelica_root_oil",
+    "foodindustrial:flowing_angelica_root_oil",
+    {
+      "id": "#forge:angelica_root_oil",
+      "required": false
+    },
+    {
+      "id": "#c:angelica_root_oil",
+      "required": false
+    }
+  ]
+}

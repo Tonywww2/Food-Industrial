@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:absorbing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/coal"
+      }
+    }
+  ],
+  "mode": "combustion",
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:nitrogen",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

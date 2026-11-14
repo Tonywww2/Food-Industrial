@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_phenethyl_carbinol",
+    "foodindustrial:flowing_methyl_phenethyl_carbinol",
+    {
+      "id": "#forge:methyl_phenethyl_carbinol",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_phenethyl_carbinol",
+      "required": false
+    }
+  ]
+}

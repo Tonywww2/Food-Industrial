@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexadecanedione",
+    {
+      "id": "#forge:dusts/hexadecanedione",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hexadecanedione",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hexadecanedione",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hexadecanedione",
+      "required": false
+    }
+  ]
+}

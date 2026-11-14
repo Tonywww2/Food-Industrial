@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitric_acid",
+    "foodindustrial:flowing_nitric_acid",
+    {
+      "id": "#forge:nitric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:nitric_acid",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/citrated_monoglycerides",
       "required": false
+    },
+    {
+      "id": "#c:dusts/citrated_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/citrated_monoglycerides",
+      "required": false
     }
   ]
 }

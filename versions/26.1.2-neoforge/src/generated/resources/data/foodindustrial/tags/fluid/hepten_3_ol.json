@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hepten_3_ol",
+    "foodindustrial:flowing_hepten_3_ol",
+    {
+      "id": "#forge:hepten_3_ol",
+      "required": false
+    },
+    {
+      "id": "#c:hepten_3_ol",
+      "required": false
+    }
+  ]
+}

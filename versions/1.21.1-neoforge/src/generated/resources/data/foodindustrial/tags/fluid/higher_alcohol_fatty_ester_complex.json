@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:higher_alcohol_fatty_ester_complex",
+    "foodindustrial:flowing_higher_alcohol_fatty_ester_complex",
+    {
+      "id": "#forge:higher_alcohol_fatty_ester_complex",
+      "required": false
+    },
+    {
+      "id": "#c:higher_alcohol_fatty_ester_complex",
+      "required": false
+    }
+  ]
+}

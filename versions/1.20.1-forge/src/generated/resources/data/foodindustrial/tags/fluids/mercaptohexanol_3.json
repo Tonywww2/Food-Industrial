@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercaptohexanol_3",
+    "foodindustrial:flowing_mercaptohexanol_3",
+    {
+      "id": "#forge:mercaptohexanol_3",
+      "required": false
+    },
+    {
+      "id": "#c:mercaptohexanol_3",
+      "required": false
+    }
+  ]
+}

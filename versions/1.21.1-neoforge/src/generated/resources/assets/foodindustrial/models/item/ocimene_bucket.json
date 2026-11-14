@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ocimene",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:white_pepper_oleoresin",
+  "loader": "neoforge:fluid_container"
+}

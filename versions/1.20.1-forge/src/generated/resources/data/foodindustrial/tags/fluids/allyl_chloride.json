@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_chloride",
+    "foodindustrial:flowing_allyl_chloride",
+    {
+      "id": "#forge:allyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_chloride",
+      "required": false
+    }
+  ]
+}

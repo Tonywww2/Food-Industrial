@@ -8,6 +8,10 @@
     {
       "id": "#forge:feathers",
       "required": false
+    },
+    {
+      "id": "#c:feathers",
+      "required": false
     }
   ]
 }

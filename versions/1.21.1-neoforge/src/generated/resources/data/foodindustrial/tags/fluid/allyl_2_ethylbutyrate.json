@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_2_ethylbutyrate",
+    "foodindustrial:flowing_allyl_2_ethylbutyrate",
+    {
+      "id": "#forge:allyl_2_ethylbutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_2_ethylbutyrate",
+      "required": false
+    }
+  ]
+}

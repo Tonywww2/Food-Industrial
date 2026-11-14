@@ -1,0 +1,36 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/tallow_fatty_acids"
+    },
+    {
+      "tag": "foodindustrial:chemicals/tallow_fatty_acids"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:stearic_acid",
+      "nbt": "{Purity:25b}"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:oleic_acid",
+      "nbt": "{Purity:25b}"
+    }
+  ]
+}

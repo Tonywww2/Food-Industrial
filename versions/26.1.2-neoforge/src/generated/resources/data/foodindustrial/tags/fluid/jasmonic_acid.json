@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jasmonic_acid",
+    "foodindustrial:flowing_jasmonic_acid",
+    {
+      "id": "#forge:jasmonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:jasmonic_acid",
+      "required": false
+    }
+  ]
+}

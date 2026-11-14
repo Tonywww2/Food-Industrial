@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_laurate",
+    "foodindustrial:flowing_ethyl_laurate",
+    {
+      "id": "#forge:ethyl_laurate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_laurate",
+      "required": false
+    }
+  ]
+}

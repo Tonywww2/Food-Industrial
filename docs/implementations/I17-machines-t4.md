@@ -2,12 +2,12 @@
 
 | 项 | 内容 |
 | --- | --- |
-| 状态 | 未开始 |
+| 状态 | 已完成 |
 | 阶段 | D 设备 |
 | 依赖 | I16 |
 | 原文档 | [additives/06 §T4 生物 / 精细](../additives/06-machines.md)、[machines/03 §3](../machines/03-io-layout.md)、[additives/15 §机器](../additives/15-batch-4.md)、[additives/08 §C 菌种与酶](../additives/08-raw-materials.md) |
 | 节点 | 1.20.1-forge、1.21.1-neoforge、26.1.2-neoforge |
-| 代码位置 | `machine.bio` |
+| 代码位置 | `machine.bio`、`gui`、`recipe` |
 
 ## 目标
 
@@ -20,21 +20,51 @@
 
 ## 任务
 
-- [ ] M29：在位灭菌、双菌种、染菌只减产或报废（[additives/06 §T4 生物 / 精细](../additives/06-machines.md)，[additives/10 §6](../additives/10-purity-jei-ae2.md)）
-- [ ] M30：分离、纯化、扩培、诱变、基因重组的交互界面（`CultureBenchBlockEntity`）；基因重组模式（T4，2026-11-05）：宿主菌种 + 供体样本 + 表达载体 → 工程菌种，表达载体 `cultures/expression_vector` 是耗材，每次消耗 1 个，不带纯度；工程菌种的配方随第四批内容（[machines/02 §4](../machines/02-architecture.md)）
-- [ ] M31：四种膜模式，膜组件耗材（[additives/06 §T4 生物 / 精细](../additives/06-machines.md)）
+- [x] M29：在位灭菌、双菌种、染菌只减产（中断后恢复的批次 30% 概率主产物减半，2026-11-11 用户定）；罐体每层一份并行（2026-11-11 用户定）（[additives/06 §T4 生物 / 精细](../additives/06-machines.md)，[additives/10 §6](../additives/10-purity-jei-ae2.md)）
+- [x] M30：分离、纯化、扩培、诱变、基因重组的交互界面（`CultureBenchBlockEntity`，2026-11-11 用户定：专用界面，培养后挑菌落；纯化平板目标菌落比例 = 纯度；菌落要鉴定才显示名称，外观固定可盲选；平板等玩家挑取）；基因重组模式（T4，2026-11-05）：宿主菌种 + 供体样本 + 表达载体 → 工程菌种，表达载体作输入，每次消耗 1 个；输入槽由 2 改为 4；工程菌种的配方随第四批内容（[machines/02 §4](../machines/02-architecture.md)）
+- [x] M31：四种膜模式，膜组件耗材（[additives/06 §T4 生物 / 精细](../additives/06-machines.md)）
+- [x] 洁净框架、无菌罐壁、膜组件；T4 模块（紫外灯、冷冻干燥单元、超临界单元、分子蒸馏组件）的合成
 
 ## 节点差异
 
 | 项 | 1.20.1-forge | 1.21.1-neoforge | 26.1.2-neoforge |
 | --- | --- | --- | --- |
-| 差异 | 无 | 无 | 无 |
+| 差异 | 无（全部经 platform） | 无 | 无 |
 
 ## 验收
 
-- [ ] 三个节点 `compileJava` 通过，platform 以外的自检无结果（[CONVENTIONS §7](../../CONVENTIONS.md)）
-- [ ] M29–M31 每台至少跑通一条第一批配方，界面、侧面配置、AE2 推送正常
-- [ ] 性能：睡眠与运行状态符合 [machines/02 §6](../machines/02-architecture.md)
+- [x] 三个节点 `compileJava` 通过，platform 以外的自检无结果（[CONVENTIONS §7](../../CONVENTIONS.md)）
+- [x] M29–M31 每台至少跑通一条配方（第一批没有 R16 无菌、R18 平板、R15 膜的现成配方，用开发测试配方），界面、侧面配置正常；AE2 推送在 I24 验证
+- [x] 性能：睡眠与运行状态符合 [machines/02 §6](../machines/02-architecture.md)（等待接种、平板待挑取都睡眠，按钮与输入变化唤醒）
+
+## 实现记录
+
+- 已定（2026-11-11，用户确认）：M29 只在发酵中断后恢复时染菌，罐体每层多一份并行；M30 做专用界面，培养后挑菌落，纯化平板目标菌落比例等于纯度，菌落要先鉴定才显示名称、每种菌外观固定可盲选，平板等玩家挑取。规格写入 [additives/06 §T4 生物 / 精细：操作与实现规格（I17）](../additives/06-machines.md)
+- 代码：`machine.bio`（`BioMachines` 三台机器、无菌罐壁、洁净框架、膜组件；`SterileFermenterBlockEntity`；`CultureBenchBlockEntity`；`ColonyLook` 菌落外观；`BioData` 模型、方块状态、掉落、挖掘标签与合成）；界面 `gui.client.PlateWidget`（培养皿、菌落、四个按钮）
+- 配方新增字段 `plate`（`recipe.Plate`：`colonies`、`weights`、`by_purity`），只用于要写模式的 R18 平板配方，只收发物品（[machines/01 §3.1](../machines/01-recipe-types.md)）
+- M29：每批开头在位灭菌 100 tick（计入进度，状态“在位灭菌”）；运转中途断电、缺空气、红石停机或结构不成形，本批记为中断，完成时 30% 概率染菌，主产物减半、纯度不变，信息面板显示“上一批：染菌，主产物减半”；配方放弃（原料拿走）时中断记录清除
+- M30：
+  - 平板操作（平板分离、纯化、诱变、基因重组）：点“接种”按当前操作找配方（有 `plate` 的 R18 配方，条件最多的一条），消耗输入，算好产物与菌落，按配方时长培养（耗电）；长成后状态“平板待挑取”
+  - 菌落外观：材料表的菌种按 ID 的散列取颜色（16 种）与色块（8 种），冲突时按 ID 顺序取下一个，保证各不相同；其他物品（杂菌等）按散列
+  - 鉴定 200 tick、40 FE/t（乘档次与升级）；之后悬停显示名称与纯度。不鉴定也能挑（盲选）
+  - 挑取进任一个放得下的产物槽；“弃去”丢掉平板；平板待挑取期间扩培也暂停
+  - 扩培照常按配方自动运转，可自动化
+- M31：四种模式给“膜”，双极膜电渗析另给“电渗析”；膜组件放催化剂槽
+- 工艺条件词表新增 10 个模式词（密闭发酵沿用 M05 的 `sealed`）
+- 机器（ID、槽位、相位、能力、模式）：
+  - M29 `sterile_fermenter` 无菌发酵罐：I2 O1 FI3 FO2 C2 U4，相位 3，无菌，进气口；通气发酵（要空气）/ 密闭发酵；3 × 3，罐体 1–4 层，无菌罐壁
+  - M30 `culture_bench` 菌种工作台：I4 O2 U4，相位 3，无菌；平板分离 / 纯化 / 诱变 / 基因重组 / 扩培
+  - M31 `membrane_separator` 膜分离机：FI2 FO2 C1 U4，相位 2；超滤 / 纳滤 / 反渗透 / 双极膜电渗析
+- 验证：三个节点开发命令实测（`/fidev machine x y z set culture inoculate|identify|pick n|discard`）：
+  - 无菌发酵罐：每批先“在位灭菌”；罐体 1 层一次一份，加到 4 层后一次四份（蔗糖 ×8 两次做完，乙醇 4,000 mB）；中途断电再恢复的批次部分染菌（乙醇 250 mB，纯度仍 81%，信息显示染菌），不中断的批次 500 mB 且染菌标记清除
+  - 菌种工作台：泥土 + 琼脂平板分离（权重 1 : 3）长出谷氨酸棒杆菌 20% 与杂菌；20% 菌种纯化平板多为杂菌，目标菌 95.9%；96% 菌种纯化平板全是目标菌 99.95%（与 07 一致）；基因重组（大肠杆菌 + 鳕鱼 + 表达载体 + 琼脂）长出工程菌与宿主菌，挑取进第二个产物槽；扩培自动出 2 个
+  - 膜分离机：反渗透模式盐水 → 蒸馏水 600 + 浓盐水 400 mB，膜组件计数 1
+  - 1.20.1 客户端：菌种工作台的培养皿、菌落（橙色斑点的工程菌、青色十字的大肠杆菌、灰色的杂菌）、选中框与四个按钮正常，悬停“杂菌”；无菌发酵罐信息面板“进度 496 / 500 tick”（含灭菌 100）、能耗 10 FE/t
+
+- 完成后用户确认（2026-11-11，“全部批准”）：
+  - 规格中由实现方拟定的部分（[additives/06 §T4 生物 / 精细：操作与实现规格（I17）](../additives/06-machines.md)）：在位灭菌 100 tick；染菌 30%、主产物减半；中断的判定（断电、缺空气、红石、结构不成形）；M29 的结构与模式；M30 的界面与按钮、4 个菌落、鉴定 200 tick 与 40 FE/t、平板配方字段写法、平板待挑取时扩培暂停；菌落外观按 ID 散列分配；M31 的模式与能力
+  - 名称与描述（Aseptic Fermenter、Culture Bench、Membrane Separator、Clean Frame、Sterile Vessel Wall、Membrane Module；模式词英文；界面文字）
+  - 合成配方（含 T4 模块）、占位贴图；膜组件的物品标签 `foodindustrial:catalysts/membrane`；03 的 M30 输入槽由 2 改为 4
 
 ## 待定
 

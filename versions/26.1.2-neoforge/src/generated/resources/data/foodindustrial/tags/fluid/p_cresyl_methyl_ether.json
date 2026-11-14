@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_cresyl_methyl_ether",
+    "foodindustrial:flowing_p_cresyl_methyl_ether",
+    {
+      "id": "#forge:p_cresyl_methyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:p_cresyl_methyl_ether",
+      "required": false
+    }
+  ]
+}

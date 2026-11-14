@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rum_concrete",
+    {
+      "id": "#forge:dusts/rum_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rum_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/rum_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rum_concrete",
+      "required": false
+    }
+  ]
+}

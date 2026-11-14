@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_dichromate",
+    {
+      "id": "#forge:dusts/sodium_dichromate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_dichromate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_dichromate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_dichromate",
+      "required": false
+    }
+  ]
+}

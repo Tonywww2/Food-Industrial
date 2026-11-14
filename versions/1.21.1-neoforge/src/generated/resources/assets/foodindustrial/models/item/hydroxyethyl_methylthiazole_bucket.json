@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hydroxyethyl_methylthiazole",
+  "loader": "neoforge:fluid_container"
+}

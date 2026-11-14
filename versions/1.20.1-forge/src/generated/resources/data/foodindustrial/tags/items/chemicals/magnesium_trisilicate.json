@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_trisilicate",
+    {
+      "id": "#forge:dusts/magnesium_trisilicate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_trisilicate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_trisilicate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_trisilicate",
+      "required": false
+    }
+  ]
+}

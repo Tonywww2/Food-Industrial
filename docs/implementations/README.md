@@ -10,6 +10,7 @@
 4. **验收至少包含三节点编译与 platform 自检**（[CONVENTIONS §7](../../CONVENTIONS.md)）。
 5. **任务完成就勾选**；整份计划验收通过后把状态改为“已完成”，再运行 `plan.py index`。
 6. **不确定的内容不臆测**：执行计划时遇到不确定的问题，按 [CONVENTIONS §8](../../CONVENTIONS.md) 先求证或向用户提问，结论写回原文档，再更新计划；等待期间把受影响的任务标为“待确认”。
+7. **开发中无法完整验证的项**经用户同意后移入[最终验收测试](../final-acceptance.md)，项目完成后先由 Claude 测、再由玩家测；计划里写明已移入。
 
 ## 阶段与里程碑
 
@@ -28,6 +29,8 @@
 | M-B 第一批可玩 | I05–I07、I10、I12–I14、I18、I22 | 第一批 30 项在 T0–T1 可做，JEI 可查 |
 | M-C 工业线 | I11、I15–I17、I19、I24 | 第二批可做，AE2 自动化测试通过 |
 | M-D 全内容与联动 | I20、I21、I23、I25–I27 | 第三批、成品名称、手册、联动、性能基准完成 |
+| M-E 第四、五批 | I30、I31 | 第四批中原料齐全的路线都能做出；第五批 424–584 与香料 1,845 条按 17–19 能做出（11 问题 34 涉及的条目除外） |
+| M-F 代谢 | I34–I36 | 吃喝原版与农夫乐事的食物计入代谢，各档效果、配置与显示在三个节点生效 |
 
 ## 计划索引
 
@@ -45,24 +48,31 @@
 | [I09](I09-machine-framework.md) | 机器框架 | C 框架 | 已完成 | I01、I08 |
 | [I10](I10-machine-gui.md) | 机器界面与配置器 | C 框架 | 已完成 | I09、I04 |
 | [I11](I11-logistics-blocks.md) | 辅助物流方块 | C 框架 | 已完成 | I09 |
-| [I12](I12-t0-manual-devices.md) | T0 手工工具、被动设备与世界交互 | D 设备 | 未开始 | I08、I09、I07、I29 |
-| [I13](I13-vanilla-device-bridge.md) | 原版设备桥接 | D 设备 | 未开始 | I08、I01 |
-| [I14](I14-machines-t1.md) | T1 作坊机器（M01–M10） | D 设备 | 未开始 | I09、I10、I08 |
-| [I15](I15-machines-t2.md) | T2 机器（M11、M12、M14、M15、M17–M21） | D 设备 | 未开始 | I14、I29 |
-| [I16](I16-machines-t3.md) | T3 化工机器（M22–M28） | D 设备 | 未开始 | I15 |
-| [I17](I17-machines-t4.md) | T4 生物与精细机器（M29–M31） | D 设备 | 未开始 | I16 |
-| [I18](I18-content-batch-1.md) | 第一批添加剂内容（1–30） | E 内容 | 未开始 | I05、I06、I12、I13、I14 |
-| [I19](I19-content-batch-2.md) | 第二批添加剂内容（31–78） | E 内容 | 未开始 | I18、I15、I16 |
-| [I20](I20-content-batch-3.md) | 第三批添加剂内容（79–139） | E 内容 | 未开始 | I19、I17 |
-| [I21](I21-finished-products.md) | 成品物品（名称阶段） | E 内容 | 未开始 | I05、I04 |
-| [I22](I22-jei.md) | JEI 集成 | F 联动与验证 | 未开始 | I08、I13、I14 |
-| [I23](I23-patchouli.md) | Patchouli 手册与多方块预览 | F 联动与验证 | 未开始 | I14、I04 |
-| [I24](I24-ae2.md) | AE2 兼容验证 | F 联动与验证 | 未开始 | I15 |
-| [I25](I25-mod-integrations.md) | 他模组联动 | F 联动与验证 | 未开始 | I06、I08 |
-| [I26](I26-gtceu.md) | GTCEu 材料联动 | F 联动与验证 | 未开始 | I05、I06 |
-| [I27](I27-performance.md) | 性能基准与回归 | F 联动与验证 | 未开始 | I09、I16 |
+| [I12](I12-t0-manual-devices.md) | T0 手工工具、被动设备与世界交互 | D 设备 | 已完成 | I08、I09、I07、I29 |
+| [I13](I13-vanilla-device-bridge.md) | 原版设备桥接 | D 设备 | 已完成 | I08、I01 |
+| [I14](I14-machines-t1.md) | T1 作坊机器（M01–M10） | D 设备 | 已完成 | I09、I10、I08 |
+| [I15](I15-machines-t2.md) | T2 机器（M11、M12、M14、M15、M17–M21） | D 设备 | 已完成 | I14、I29 |
+| [I16](I16-machines-t3.md) | T3 化工机器（M22–M28） | D 设备 | 已完成 | I15 |
+| [I17](I17-machines-t4.md) | T4 生物与精细机器（M29–M31） | D 设备 | 已完成 | I16 |
+| [I18](I18-content-batch-1.md) | 第一批添加剂内容（1–30） | E 内容 | 已完成 | I05、I06、I12、I13、I14 |
+| [I19](I19-content-batch-2.md) | 第二批添加剂内容（31–78） | E 内容 | 已完成 | I18、I15、I16 |
+| [I20](I20-content-batch-3.md) | 第三批添加剂内容（79–139） | E 内容 | 已完成 | I19、I17 |
+| [I21](I21-finished-products.md) | 成品物品（名称阶段） | E 内容 | 已完成 | I05、I04 |
+| [I22](I22-jei.md) | JEI 集成 | F 联动与验证 | 已完成 | I08、I13、I14 |
+| [I23](I23-patchouli.md) | Patchouli 手册与多方块预览 | F 联动与验证 | 已完成 | I14、I04 |
+| [I24](I24-ae2.md) | AE2 兼容验证 | F 联动与验证 | 已完成 | I15 |
+| [I25](I25-mod-integrations.md) | 他模组联动 | F 联动与验证 | 已完成 | I06、I08 |
+| [I26](I26-gtceu.md) | GTCEu 材料联动 | F 联动与验证 | 已完成 | I05、I06 |
+| [I27](I27-performance.md) | 性能基准与回归 | F 联动与验证 | 已完成 | I09、I16 |
 | [I28](I28-purity-model-v2.md) | 纯度模型 v2 | A 基础 | 已完成 | I02、I03、I05 |
 | [I29](I29-purity-caps-compound.md) | 纯度补充：手工上限、复配产品、规范化与不带纯度的物料 | A 基础 | 已完成 | I28、I08 |
+| [I30](I30-content-batch-4.md) | 第四批添加剂内容（140–423） | E 内容 | 已完成 | I20、I29 |
+| [I31](I31-content-batch-5.md) | 第五批内容（香料、加工助剂、营养强化剂、胶基物质、表 A.1 补漏） | E 内容 | 已完成 | I30 |
+| [I32](I32-jade.md) | Jade 显示 | F 联动与验证 | 已完成 | I09、I10、I12 |
+| [I33](I33-chemical-textures.md) | 物料与成品贴图重制 | B 物料 | 进行中 | I05、I21 |
+| [I34](I34-nutrition-data.md) | 营养数据：数据包、命令与数据生成 | E 内容 | 已完成 | I01、I04 |
+| [I35](I35-metabolism.md) | 代谢系统 | E 内容 | 进行中 | I34、I01、I04 |
+| [I36](I36-vanilla-nutrition.md) | 原版与农夫乐事营养数据 | E 内容 | 已完成 | I34 |
 <!-- plan-index:end -->
 
 ## 设计文档 → 计划
@@ -72,26 +82,36 @@
 <!-- doc-map:start -->
 | 设计文档 | 引用它的计划 |
 | --- | --- |
-| [CONVENTIONS.md](../../CONVENTIONS.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I04](I04-text-and-lang.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I26](I26-gtceu.md)、[I27](I27-performance.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
+| [CONVENTIONS.md](../../CONVENTIONS.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I04](I04-text-and-lang.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I26](I26-gtceu.md)、[I27](I27-performance.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md)、[I32](I32-jade.md)、[I33](I33-chemical-textures.md)、[I34](I34-nutrition-data.md)、[I35](I35-metabolism.md) |
 | [docs/additives/02-gb2760-additive-list.md](../additives/02-gb2760-additive-list.md) | [I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md) |
 | [docs/additives/03-first-batch.md](../additives/03-first-batch.md) | [I18](I18-content-batch-1.md) |
-| [docs/additives/04-production-routes.md](../additives/04-production-routes.md) | [I18](I18-content-batch-1.md) |
-| [docs/additives/05-processes.md](../additives/05-processes.md) | [I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md) |
-| [docs/additives/06-machines.md](../additives/06-machines.md) | [I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I23](I23-patchouli.md)、[I25](I25-mod-integrations.md) |
-| [docs/additives/07-manual-crafting.md](../additives/07-manual-crafting.md) | [I07](I07-worldgen-and-crops.md)、[I12](I12-t0-manual-devices.md)、[I18](I18-content-batch-1.md)、[I23](I23-patchouli.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
-| [docs/additives/08-raw-materials.md](../additives/08-raw-materials.md) | [I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I17](I17-machines-t4.md)、[I20](I20-content-batch-3.md)、[I25](I25-mod-integrations.md)、[I29](I29-purity-caps-compound.md) |
-| [docs/additives/09-chemical-formulas.md](../additives/09-chemical-formulas.md) | [I05](I05-materials-registry.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I26](I26-gtceu.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
-| [docs/additives/10-purity-jei-ae2.md](../additives/10-purity-jei-ae2.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I12](I12-t0-manual-devices.md)、[I17](I17-machines-t4.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I26](I26-gtceu.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
-| [docs/additives/11-roadmap.md](../additives/11-roadmap.md) | [I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I09](I09-machine-framework.md)、[I11](I11-logistics-blocks.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I28](I28-purity-model-v2.md) |
-| [docs/additives/12-finished-products.md](../additives/12-finished-products.md) | [I21](I21-finished-products.md) |
-| [docs/additives/13-batch-2.md](../additives/13-batch-2.md) | [I19](I19-content-batch-2.md) |
-| [docs/additives/14-batch-3.md](../additives/14-batch-3.md) | [I20](I20-content-batch-3.md) |
-| [docs/additives/15-batch-4.md](../additives/15-batch-4.md) | [I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md) |
-| [docs/machines/01-recipe-types.md](../machines/01-recipe-types.md) | [I08](I08-recipe-framework.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I24](I24-ae2.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
-| [docs/machines/02-architecture.md](../machines/02-architecture.md) | [I01](I01-platform-api.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I23](I23-patchouli.md)、[I27](I27-performance.md) |
+| [docs/additives/04-production-routes.md](../additives/04-production-routes.md) | [I18](I18-content-batch-1.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/05-processes.md](../additives/05-processes.md) | [I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/06-machines.md](../additives/06-machines.md) | [I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I23](I23-patchouli.md)、[I25](I25-mod-integrations.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/07-manual-crafting.md](../additives/07-manual-crafting.md) | [I07](I07-worldgen-and-crops.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I23](I23-patchouli.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md) |
+| [docs/additives/08-raw-materials.md](../additives/08-raw-materials.md) | [I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I08](I08-recipe-framework.md)、[I17](I17-machines-t4.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I25](I25-mod-integrations.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md)、[I33](I33-chemical-textures.md) |
+| [docs/additives/09-chemical-formulas.md](../additives/09-chemical-formulas.md) | [I05](I05-materials-registry.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I26](I26-gtceu.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md)、[I33](I33-chemical-textures.md) |
+| [docs/additives/10-purity-jei-ae2.md](../additives/10-purity-jei-ae2.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I03](I03-purity-ingredients.md)、[I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I12](I12-t0-manual-devices.md)、[I17](I17-machines-t4.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I24](I24-ae2.md)、[I25](I25-mod-integrations.md)、[I26](I26-gtceu.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/11-roadmap.md](../additives/11-roadmap.md) | [I05](I05-materials-registry.md)、[I06](I06-tags-and-external-rules.md)、[I07](I07-worldgen-and-crops.md)、[I09](I09-machine-framework.md)、[I11](I11-logistics-blocks.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I28](I28-purity-model-v2.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md)、[I34](I34-nutrition-data.md)、[I35](I35-metabolism.md) |
+| [docs/additives/12-finished-products.md](../additives/12-finished-products.md) | [I21](I21-finished-products.md)、[I30](I30-content-batch-4.md)、[I33](I33-chemical-textures.md) |
+| [docs/additives/13-batch-2.md](../additives/13-batch-2.md) | [I19](I19-content-batch-2.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/14-batch-3.md](../additives/14-batch-3.md) | [I20](I20-content-batch-3.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/15-batch-4.md](../additives/15-batch-4.md) | [I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/16-batch-5-backlog.md](../additives/16-batch-5-backlog.md) | [I31](I31-content-batch-5.md) |
+| [docs/additives/17-batch-5.md](../additives/17-batch-5.md) | [I31](I31-content-batch-5.md) |
+| [docs/additives/18-batch-5-flavors.md](../additives/18-batch-5-flavors.md) | [I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md) |
+| [docs/additives/19-batch-5-synthetic-flavors.md](../additives/19-batch-5-synthetic-flavors.md) | [I31](I31-content-batch-5.md) |
+| [docs/additives/README.md](../additives/README.md) | [I30](I30-content-batch-4.md) |
+| [docs/final-acceptance.md](../final-acceptance.md) | [I24](I24-ae2.md)、[I35](I35-metabolism.md) |
+| [docs/foods/01-overview.md](../foods/01-overview.md) | [I34](I34-nutrition-data.md)、[I35](I35-metabolism.md) |
+| [docs/foods/02-metabolism.md](../foods/02-metabolism.md) | [I34](I34-nutrition-data.md)、[I35](I35-metabolism.md) |
+| [docs/foods/03-nutrition-data.md](../foods/03-nutrition-data.md) | [I34](I34-nutrition-data.md)、[I35](I35-metabolism.md)、[I36](I36-vanilla-nutrition.md) |
+| [docs/foods/agents/food-nutrition-data.md](../foods/agents/food-nutrition-data.md) | [I34](I34-nutrition-data.md)、[I36](I36-vanilla-nutrition.md) |
+| [docs/machines/01-recipe-types.md](../machines/01-recipe-types.md) | [I08](I08-recipe-framework.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I18](I18-content-batch-1.md)、[I19](I19-content-batch-2.md)、[I20](I20-content-batch-3.md)、[I21](I21-finished-products.md)、[I22](I22-jei.md)、[I24](I24-ae2.md)、[I28](I28-purity-model-v2.md)、[I29](I29-purity-caps-compound.md)、[I30](I30-content-batch-4.md)、[I31](I31-content-batch-5.md) |
+| [docs/machines/02-architecture.md](../machines/02-architecture.md) | [I01](I01-platform-api.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I12](I12-t0-manual-devices.md)、[I13](I13-vanilla-device-bridge.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md)、[I23](I23-patchouli.md)、[I27](I27-performance.md)、[I34](I34-nutrition-data.md)、[I35](I35-metabolism.md) |
 | [docs/machines/03-io-layout.md](../machines/03-io-layout.md) | [I01](I01-platform-api.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I17](I17-machines-t4.md) |
-| [docs/machines/04-gui.md](../machines/04-gui.md) | [I01](I01-platform-api.md)、[I04](I04-text-and-lang.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I15](I15-machines-t2.md)、[I22](I22-jei.md) |
-| [docs/text-standard.md](../text-standard.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I04](I04-text-and-lang.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I28](I28-purity-model-v2.md) |
+| [docs/machines/04-gui.md](../machines/04-gui.md) | [I01](I01-platform-api.md)、[I04](I04-text-and-lang.md)、[I09](I09-machine-framework.md)、[I10](I10-machine-gui.md)、[I11](I11-logistics-blocks.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I22](I22-jei.md)、[I32](I32-jade.md) |
+| [docs/text-standard.md](../text-standard.md) | [I01](I01-platform-api.md)、[I02](I02-purity-core.md)、[I04](I04-text-and-lang.md)、[I05](I05-materials-registry.md)、[I08](I08-recipe-framework.md)、[I14](I14-machines-t1.md)、[I15](I15-machines-t2.md)、[I16](I16-machines-t3.md)、[I22](I22-jei.md)、[I23](I23-patchouli.md)、[I28](I28-purity-model-v2.md)、[I31](I31-content-batch-5.md)、[I34](I34-nutrition-data.md)、[I35](I35-metabolism.md) |
 <!-- doc-map:end -->
 
 ## 依赖图
@@ -128,6 +148,13 @@ flowchart LR
   I27["I27 性能基准与回归"]
   I28["I28 纯度模型 v2"]
   I29["I29 纯度补充：手工上限、复配产品、规范化与不带纯度的物料"]
+  I30["I30 第四批添加剂内容（140–423）"]
+  I31["I31 第五批内容（香料、加工助剂、营养强化剂、胶基物质、表 A.1 补漏）"]
+  I32["I32 Jade 显示"]
+  I33["I33 物料与成品贴图重制"]
+  I34["I34 营养数据：数据包、命令与数据生成"]
+  I35["I35 代谢系统"]
+  I36["I36 原版与农夫乐事营养数据"]
   I01 --> I02
   I02 --> I03
   I01 --> I04
@@ -185,6 +212,20 @@ flowchart LR
   I05 --> I28
   I28 --> I29
   I08 --> I29
+  I20 --> I30
+  I29 --> I30
+  I30 --> I31
+  I09 --> I32
+  I10 --> I32
+  I12 --> I32
+  I05 --> I33
+  I21 --> I33
+  I01 --> I34
+  I04 --> I34
+  I34 --> I35
+  I01 --> I35
+  I04 --> I35
+  I34 --> I36
 ```
 <!-- dep-graph:end -->
 

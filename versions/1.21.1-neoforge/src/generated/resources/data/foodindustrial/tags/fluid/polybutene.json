@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polybutene",
+    "foodindustrial:flowing_polybutene",
+    {
+      "id": "#forge:polybutene",
+      "required": false
+    },
+    {
+      "id": "#c:polybutene",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:violet_leaf_concrete",
+  "loader": "neoforge:fluid_container"
+}

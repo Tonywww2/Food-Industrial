@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:menthyl_ethylene_glycol_carbonate",
+  "loader": "forge:fluid_container"
+}

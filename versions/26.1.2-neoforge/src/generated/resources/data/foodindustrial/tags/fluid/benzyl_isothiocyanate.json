@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_isothiocyanate",
+    "foodindustrial:flowing_benzyl_isothiocyanate",
+    {
+      "id": "#forge:benzyl_isothiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_isothiocyanate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_butyl_ketone",
+    "foodindustrial:flowing_ethyl_butyl_ketone",
+    {
+      "id": "#forge:ethyl_butyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_butyl_ketone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chicle",
+    {
+      "id": "#forge:dusts/chicle",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chicle",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/chicle",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chicle",
+      "required": false
+    }
+  ]
+}

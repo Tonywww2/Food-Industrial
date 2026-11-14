@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_alpha_tocopherol",
+    "foodindustrial:flowing_dl_alpha_tocopherol",
+    {
+      "id": "#forge:dl_alpha_tocopherol",
+      "required": false
+    },
+    {
+      "id": "#c:dl_alpha_tocopherol",
+      "required": false
+    }
+  ]
+}

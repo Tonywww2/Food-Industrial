@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:agar",
+    {
+      "id": "#forge:dusts/agar",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/agar",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/agar",
+      "required": false
+    },
+    {
+      "id": "#c:gems/agar",
+      "required": false
+    }
+  ]
+}

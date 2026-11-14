@@ -6,6 +6,10 @@
     {
       "id": "#forge:methylpyridine",
       "required": false
+    },
+    {
+      "id": "#c:methylpyridine",
+      "required": false
     }
   ]
 }

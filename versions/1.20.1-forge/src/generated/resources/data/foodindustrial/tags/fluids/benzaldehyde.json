@@ -6,6 +6,10 @@
     {
       "id": "#forge:benzaldehyde",
       "required": false
+    },
+    {
+      "id": "#c:benzaldehyde",
+      "required": false
     }
   ]
 }

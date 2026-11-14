@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_valerate",
+    "foodindustrial:flowing_isoamyl_valerate",
+    {
+      "id": "#forge:isoamyl_valerate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_valerate",
+      "required": false
+    }
+  ]
+}

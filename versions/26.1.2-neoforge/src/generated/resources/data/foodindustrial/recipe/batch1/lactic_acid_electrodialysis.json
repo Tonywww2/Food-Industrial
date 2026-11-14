@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:purifying",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/membrane",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:lactic_acid"
+      }
+    }
+  ],
+  "mode": "bipolar_electrodialysis",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:lactic_acid"
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:ammonia",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "membrane",
+      "electrodialysis"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

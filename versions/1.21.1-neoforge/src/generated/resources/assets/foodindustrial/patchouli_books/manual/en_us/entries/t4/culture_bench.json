@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t4",
+  "icon": "foodindustrial:culture_bench",
+  "name": "book.foodindustrial.manual.entry.culture_bench",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:culture_bench",
+      "text": "book.foodindustrial.manual.entry.culture_bench.text"
+    }
+  ],
+  "sortnum": 1
+}

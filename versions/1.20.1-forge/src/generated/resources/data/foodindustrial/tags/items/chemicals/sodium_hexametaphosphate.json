@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_hexametaphosphate",
+    {
+      "id": "#forge:dusts/sodium_hexametaphosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_hexametaphosphate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_hexametaphosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_hexametaphosphate",
+      "required": false
+    }
+  ]
+}

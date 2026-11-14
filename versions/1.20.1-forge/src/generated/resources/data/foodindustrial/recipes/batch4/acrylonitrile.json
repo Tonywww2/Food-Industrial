@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/bismuth_molybdate"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:propene"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:ammonia"
+      }
+    }
+  ],
+  "mode": "gas_catalysis",
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:acrylonitrile"
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:acetonitrile",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

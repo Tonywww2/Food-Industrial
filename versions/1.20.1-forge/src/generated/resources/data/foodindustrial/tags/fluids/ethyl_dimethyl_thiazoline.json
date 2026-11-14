@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_dimethyl_thiazoline",
+    "foodindustrial:flowing_ethyl_dimethyl_thiazoline",
+    {
+      "id": "#forge:ethyl_dimethyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_dimethyl_thiazoline",
+      "required": false
+    }
+  ]
+}

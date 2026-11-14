@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/lutein",
       "required": false
+    },
+    {
+      "id": "#c:dusts/lutein",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lutein",
+      "required": false
     }
   ]
 }

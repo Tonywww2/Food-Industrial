@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethylhexanol",
+    "foodindustrial:flowing_trimethylhexanol",
+    {
+      "id": "#forge:trimethylhexanol",
+      "required": false
+    },
+    {
+      "id": "#c:trimethylhexanol",
+      "required": false
+    }
+  ]
+}

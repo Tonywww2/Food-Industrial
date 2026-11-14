@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:petitgrain_lemon_oil",
+    "foodindustrial:flowing_petitgrain_lemon_oil",
+    {
+      "id": "#forge:petitgrain_lemon_oil",
+      "required": false
+    },
+    {
+      "id": "#c:petitgrain_lemon_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_crotonate",
+    "foodindustrial:flowing_isobutyl_crotonate",
+    {
+      "id": "#forge:isobutyl_crotonate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_crotonate",
+      "required": false
+    }
+  ]
+}

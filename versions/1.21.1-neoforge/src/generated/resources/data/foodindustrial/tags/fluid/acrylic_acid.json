@@ -4,6 +4,10 @@
     "foodindustrial:acrylic_acid",
     "foodindustrial:flowing_acrylic_acid",
     {
+      "id": "#forge:acrylic_acid",
+      "required": false
+    },
+    {
       "id": "#c:acrylic_acid",
       "required": false
     }

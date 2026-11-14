@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/glass_bottle"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "foodindustrial:raw_citrus_juice"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "foodindustrial:citrus_juice"
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:bismuth_molybdate_catalyst",
     {
+      "id": "#forge:dusts/bismuth_molybdate_catalyst",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/bismuth_molybdate_catalyst",
+      "required": false
+    },
+    {
       "id": "#c:dusts/bismuth_molybdate_catalyst",
       "required": false
     },

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_3_furanthiol",
+    "foodindustrial:flowing_methyl_3_furanthiol",
+    {
+      "id": "#forge:methyl_3_furanthiol",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_3_furanthiol",
+      "required": false
+    }
+  ]
+}

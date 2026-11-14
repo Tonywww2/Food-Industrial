@@ -4,6 +4,10 @@
     "foodindustrial:polysorbate_60",
     "foodindustrial:flowing_polysorbate_60",
     {
+      "id": "#forge:polysorbate_60",
+      "required": false
+    },
+    {
       "id": "#c:polysorbate_60",
       "required": false
     }

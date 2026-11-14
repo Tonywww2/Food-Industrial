@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:betanidin",
     {
+      "id": "#forge:dusts/betanidin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/betanidin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/betanidin",
       "required": false
     },

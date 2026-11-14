@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_menth_1_en_9_al",
+    "foodindustrial:flowing_p_menth_1_en_9_al",
+    {
+      "id": "#forge:p_menth_1_en_9_al",
+      "required": false
+    },
+    {
+      "id": "#c:p_menth_1_en_9_al",
+      "required": false
+    }
+  ]
+}

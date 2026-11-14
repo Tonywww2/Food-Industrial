@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:phenylethyl_anthranilate",
+  "loader": "forge:fluid_container"
+}

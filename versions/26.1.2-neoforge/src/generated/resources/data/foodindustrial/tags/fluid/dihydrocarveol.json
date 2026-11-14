@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydrocarveol",
+    "foodindustrial:flowing_dihydrocarveol",
+    {
+      "id": "#forge:dihydrocarveol",
+      "required": false
+    },
+    {
+      "id": "#c:dihydrocarveol",
+      "required": false
+    }
+  ]
+}

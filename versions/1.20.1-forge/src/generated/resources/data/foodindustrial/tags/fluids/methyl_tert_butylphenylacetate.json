@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_tert_butylphenylacetate",
+    "foodindustrial:flowing_methyl_tert_butylphenylacetate",
+    {
+      "id": "#forge:methyl_tert_butylphenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_tert_butylphenylacetate",
+      "required": false
+    }
+  ]
+}

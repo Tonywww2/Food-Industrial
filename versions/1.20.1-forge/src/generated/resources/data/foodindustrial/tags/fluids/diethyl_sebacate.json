@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_sebacate",
+    "foodindustrial:flowing_diethyl_sebacate",
+    {
+      "id": "#forge:diethyl_sebacate",
+      "required": false
+    },
+    {
+      "id": "#c:diethyl_sebacate",
+      "required": false
+    }
+  ]
+}

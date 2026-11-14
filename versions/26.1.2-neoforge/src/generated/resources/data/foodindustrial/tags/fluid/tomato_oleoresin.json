@@ -4,6 +4,10 @@
     "foodindustrial:tomato_oleoresin",
     "foodindustrial:flowing_tomato_oleoresin",
     {
+      "id": "#forge:tomato_oleoresin",
+      "required": false
+    },
+    {
       "id": "#c:tomato_oleoresin",
       "required": false
     }

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:soda_ash",
     {
+      "id": "#forge:dusts/soda_ash",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/soda_ash",
+      "required": false
+    },
+    {
       "id": "#c:dusts/soda_ash",
       "required": false
     },

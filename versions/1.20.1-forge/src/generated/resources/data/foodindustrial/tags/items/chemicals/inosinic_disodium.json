@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/inosinic_disodium",
       "required": false
+    },
+    {
+      "id": "#c:dusts/inosinic_disodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/inosinic_disodium",
+      "required": false
     }
   ]
 }

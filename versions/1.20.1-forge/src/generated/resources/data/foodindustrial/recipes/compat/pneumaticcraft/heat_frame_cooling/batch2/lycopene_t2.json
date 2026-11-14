@@ -1,0 +1,27 @@
+{
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:tomato_oleoresin"
+  },
+  "max_temp": 273,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:lycopene",
+    "nbt": "{Purity:-36b}"
+  }
+}

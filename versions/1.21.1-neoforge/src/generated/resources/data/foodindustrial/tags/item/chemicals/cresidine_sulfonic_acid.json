@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:cresidine_sulfonic_acid",
     {
+      "id": "#forge:dusts/cresidine_sulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cresidine_sulfonic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/cresidine_sulfonic_acid",
       "required": false
     },

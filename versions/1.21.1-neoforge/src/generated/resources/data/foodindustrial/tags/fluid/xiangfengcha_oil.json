@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:xiangfengcha_oil",
+    "foodindustrial:flowing_xiangfengcha_oil",
+    {
+      "id": "#forge:xiangfengcha_oil",
+      "required": false
+    },
+    {
+      "id": "#c:xiangfengcha_oil",
+      "required": false
+    }
+  ]
+}

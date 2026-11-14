@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/karaya_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/karaya_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/karaya_gum",
+      "required": false
     }
   ]
 }

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:disodium_succinate",
     {
+      "id": "#forge:dusts/disodium_succinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/disodium_succinate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/disodium_succinate",
       "required": false
     },

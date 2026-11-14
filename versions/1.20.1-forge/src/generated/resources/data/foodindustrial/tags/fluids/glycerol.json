@@ -6,6 +6,10 @@
     {
       "id": "#forge:glycerol",
       "required": false
+    },
+    {
+      "id": "#c:glycerol",
+      "required": false
     }
   ]
 }

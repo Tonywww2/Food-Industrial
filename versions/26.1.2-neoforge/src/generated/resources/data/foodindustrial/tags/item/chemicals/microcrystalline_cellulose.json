@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:microcrystalline_cellulose",
     {
+      "id": "#forge:dusts/microcrystalline_cellulose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/microcrystalline_cellulose",
+      "required": false
+    },
+    {
       "id": "#c:dusts/microcrystalline_cellulose",
       "required": false
     },

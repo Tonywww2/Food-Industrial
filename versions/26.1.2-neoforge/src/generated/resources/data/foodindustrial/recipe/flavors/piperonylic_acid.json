@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/piperonal"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:piperonylic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

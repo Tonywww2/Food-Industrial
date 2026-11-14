@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dioctyl_adipate",
+    "foodindustrial:flowing_dioctyl_adipate",
+    {
+      "id": "#forge:dioctyl_adipate",
+      "required": false
+    },
+    {
+      "id": "#c:dioctyl_adipate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylphenylcarbinyl_propionate",
+    "foodindustrial:flowing_methylphenylcarbinyl_propionate",
+    {
+      "id": "#forge:methylphenylcarbinyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:methylphenylcarbinyl_propionate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menaquinone_7",
+    {
+      "id": "#forge:dusts/menaquinone_7",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/menaquinone_7",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/menaquinone_7",
+      "required": false
+    },
+    {
+      "id": "#c:gems/menaquinone_7",
+      "required": false
+    }
+  ]
+}

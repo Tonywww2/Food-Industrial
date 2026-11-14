@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronellyl_propionate",
+    "foodindustrial:flowing_citronellyl_propionate",
+    {
+      "id": "#forge:citronellyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:citronellyl_propionate",
+      "required": false
+    }
+  ]
+}

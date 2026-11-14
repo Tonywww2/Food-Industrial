@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenyl_salicylate",
+    {
+      "id": "#forge:dusts/phenyl_salicylate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phenyl_salicylate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/phenyl_salicylate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenyl_salicylate",
+      "required": false
+    }
+  ]
+}

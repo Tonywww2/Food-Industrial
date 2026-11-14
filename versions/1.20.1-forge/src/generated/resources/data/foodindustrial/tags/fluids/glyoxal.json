@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glyoxal",
+    "foodindustrial:flowing_glyoxal",
+    {
+      "id": "#forge:glyoxal",
+      "required": false
+    },
+    {
+      "id": "#c:glyoxal",
+      "required": false
+    }
+  ]
+}

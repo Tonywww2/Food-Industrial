@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:soda_lye"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:soda_ash",
+      "nbt": "{Purity:-3b}"
+    }
+  ]
+}

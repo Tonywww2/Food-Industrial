@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonadienoic_acid",
+    "foodindustrial:flowing_nonadienoic_acid",
+    {
+      "id": "#forge:nonadienoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:nonadienoic_acid",
+      "required": false
+    }
+  ]
+}

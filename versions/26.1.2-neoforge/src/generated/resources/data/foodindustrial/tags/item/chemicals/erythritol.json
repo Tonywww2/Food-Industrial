@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:erythritol",
     {
+      "id": "#forge:dusts/erythritol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/erythritol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/erythritol",
       "required": false
     },

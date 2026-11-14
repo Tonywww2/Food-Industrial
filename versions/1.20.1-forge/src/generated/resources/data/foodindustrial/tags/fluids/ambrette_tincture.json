@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambrette_tincture",
+    "foodindustrial:flowing_ambrette_tincture",
+    {
+      "id": "#forge:ambrette_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:ambrette_tincture",
+      "required": false
+    }
+  ]
+}

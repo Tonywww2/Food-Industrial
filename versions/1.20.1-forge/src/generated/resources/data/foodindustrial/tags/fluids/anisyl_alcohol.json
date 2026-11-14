@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisyl_alcohol",
+    "foodindustrial:flowing_anisyl_alcohol",
+    {
+      "id": "#forge:anisyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:anisyl_alcohol",
+      "required": false
+    }
+  ]
+}

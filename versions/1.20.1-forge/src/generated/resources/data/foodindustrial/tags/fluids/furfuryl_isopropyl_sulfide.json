@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_isopropyl_sulfide",
+    "foodindustrial:flowing_furfuryl_isopropyl_sulfide",
+    {
+      "id": "#forge:furfuryl_isopropyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_isopropyl_sulfide",
+      "required": false
+    }
+  ]
+}

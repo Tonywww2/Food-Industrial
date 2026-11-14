@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethyl_trans_4_decenoate",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "thermal:pyrolyzer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "energy": 16000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/tannin_source"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:maltol",
+      "nbt": "{Purity:-9b}"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:charcoal"
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:wood_vinegar"
+    }
+  ]
+}

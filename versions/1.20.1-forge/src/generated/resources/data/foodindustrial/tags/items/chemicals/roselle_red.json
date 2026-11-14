@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/roselle_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/roselle_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/roselle_red",
+      "required": false
     }
   ]
 }

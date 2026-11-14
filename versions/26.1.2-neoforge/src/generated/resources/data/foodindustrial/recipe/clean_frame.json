@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": "#c:gems/diamond",
+    "F": "foodindustrial:chemical_frame",
+    "G": "minecraft:glass",
+    "Q": "#c:gems/quartz"
+  },
+  "pattern": [
+    "QDQ",
+    "GFG",
+    "QDQ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:clean_frame"
+  }
+}

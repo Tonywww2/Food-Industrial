@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cetyl_alcohol",
+    {
+      "id": "#forge:dusts/cetyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cetyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cetyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cetyl_alcohol",
+      "required": false
+    }
+  ]
+}

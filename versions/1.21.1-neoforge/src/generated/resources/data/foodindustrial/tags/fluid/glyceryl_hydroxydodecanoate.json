@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glyceryl_hydroxydodecanoate",
+    "foodindustrial:flowing_glyceryl_hydroxydodecanoate",
+    {
+      "id": "#forge:glyceryl_hydroxydodecanoate",
+      "required": false
+    },
+    {
+      "id": "#c:glyceryl_hydroxydodecanoate",
+      "required": false
+    }
+  ]
+}

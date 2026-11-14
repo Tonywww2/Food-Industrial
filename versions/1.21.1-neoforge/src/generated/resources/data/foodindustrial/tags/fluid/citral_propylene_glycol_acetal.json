@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citral_propylene_glycol_acetal",
+    "foodindustrial:flowing_citral_propylene_glycol_acetal",
+    {
+      "id": "#forge:citral_propylene_glycol_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:citral_propylene_glycol_acetal",
+      "required": false
+    }
+  ]
+}

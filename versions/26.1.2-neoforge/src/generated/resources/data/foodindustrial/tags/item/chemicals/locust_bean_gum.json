@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:locust_bean_gum",
     {
+      "id": "#forge:dusts/locust_bean_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/locust_bean_gum",
+      "required": false
+    },
+    {
       "id": "#c:dusts/locust_bean_gum",
       "required": false
     },

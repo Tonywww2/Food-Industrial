@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_aspartate",
+    {
+      "id": "#forge:dusts/calcium_aspartate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_aspartate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_aspartate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_aspartate",
+      "required": false
+    }
+  ]
+}

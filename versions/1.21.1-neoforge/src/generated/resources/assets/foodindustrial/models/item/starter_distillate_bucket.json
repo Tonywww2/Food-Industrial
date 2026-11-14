@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:starter_distillate",
+  "loader": "neoforge:fluid_container"
+}

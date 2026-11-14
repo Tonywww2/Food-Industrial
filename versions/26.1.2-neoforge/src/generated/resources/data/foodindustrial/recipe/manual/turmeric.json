@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/dried_turmeric"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:turmeric",
+      "purity": {
+        "mode": "source",
+        "value": 3
+      }
+    }
+  ],
+  "time": 200
+}

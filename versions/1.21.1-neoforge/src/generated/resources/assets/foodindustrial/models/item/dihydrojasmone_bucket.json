@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dihydrojasmone",
+  "loader": "neoforge:fluid_container"
+}

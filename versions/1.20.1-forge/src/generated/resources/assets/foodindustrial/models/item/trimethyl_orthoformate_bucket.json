@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:trimethyl_orthoformate",
+  "loader": "forge:fluid_container"
+}

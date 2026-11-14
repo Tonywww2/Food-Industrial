@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxymethyl_octanone",
+    "foodindustrial:flowing_hydroxymethyl_octanone",
+    {
+      "id": "#forge:hydroxymethyl_octanone",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxymethyl_octanone",
+      "required": false
+    }
+  ]
+}

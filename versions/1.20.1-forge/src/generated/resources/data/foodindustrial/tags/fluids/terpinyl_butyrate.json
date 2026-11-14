@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpinyl_butyrate",
+    "foodindustrial:flowing_terpinyl_butyrate",
+    {
+      "id": "#forge:terpinyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:terpinyl_butyrate",
+      "required": false
+    }
+  ]
+}

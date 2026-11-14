@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_sulfoxide",
+    "foodindustrial:flowing_dimethyl_sulfoxide",
+    {
+      "id": "#forge:dimethyl_sulfoxide",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_sulfoxide",
+      "required": false
+    }
+  ]
+}

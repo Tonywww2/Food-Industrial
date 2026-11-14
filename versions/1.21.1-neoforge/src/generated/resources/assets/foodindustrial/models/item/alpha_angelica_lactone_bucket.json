@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:alpha_angelica_lactone",
+  "loader": "neoforge:fluid_container"
+}

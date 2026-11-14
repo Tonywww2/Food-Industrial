@@ -40,6 +40,15 @@ class ConditionsTest {
     }
 
     @Test
+    void machineModesGoInTheModeField() {
+        // I14: modes are vocabulary words, but recipes name them with "mode", not in requirements
+        assertTrue(Conditions.CODEC.parse(JsonOps.INSTANCE, JsonParser.parseString("{\"mode\":\"wet_grinding\"}")).result().isEmpty());
+        assertEquals(Set.of("mode.wet_grinding"), Capabilities.of("mode.wet_grinding").keys());
+        assertThrows(IllegalArgumentException.class, () -> Capabilities.of("mode.teleporting"));
+        assertTrue(parse("{\"methods\":[\"oil_separation\"]}").requires("method.oil_separation"));
+    }
+
+    @Test
     void capabilitiesCoverRequirements() {
         Capabilities device = Capabilities.of("temperature.heated", "temperature.high", "method.open_flame", "pressure.vacuum");
         assertTrue(device.covers(parse("{\"temperature\":\"high\",\"methods\":[\"open_flame\"]}").required()));

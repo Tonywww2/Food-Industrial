@@ -3,11 +3,35 @@
   "values": [
     "foodindustrial:ferric_chloride",
     {
+      "id": "#forge:dusts/ferric_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferric_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/iron_iii_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/iron_iii_chloride",
+      "required": false
+    },
+    {
       "id": "#c:dusts/ferric_chloride",
       "required": false
     },
     {
       "id": "#c:gems/ferric_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/iron_iii_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/iron_iii_chloride",
       "required": false
     }
   ]

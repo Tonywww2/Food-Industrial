@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thienyl_disulfide",
+    {
+      "id": "#forge:dusts/thienyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thienyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/thienyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thienyl_disulfide",
+      "required": false
+    }
+  ]
+}

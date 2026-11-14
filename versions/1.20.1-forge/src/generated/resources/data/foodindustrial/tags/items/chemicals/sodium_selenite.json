@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_selenite",
+    {
+      "id": "#forge:dusts/sodium_selenite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_selenite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_selenite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_selenite",
+      "required": false
+    }
+  ]
+}

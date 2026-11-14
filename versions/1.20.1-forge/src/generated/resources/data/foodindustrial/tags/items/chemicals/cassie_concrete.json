@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cassie_concrete",
+    {
+      "id": "#forge:dusts/cassie_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cassie_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cassie_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cassie_concrete",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:pot_still",
+  "name": "book.foodindustrial.manual.entry.pot_still",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:pot_still",
+      "text": "book.foodindustrial.manual.entry.pot_still.text"
+    }
+  ],
+  "sortnum": 7
+}

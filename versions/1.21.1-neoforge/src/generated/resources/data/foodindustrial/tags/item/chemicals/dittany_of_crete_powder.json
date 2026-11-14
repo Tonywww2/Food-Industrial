@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dittany_of_crete_powder",
+    {
+      "id": "#forge:dusts/dittany_of_crete_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dittany_of_crete_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dittany_of_crete_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dittany_of_crete_powder",
+      "required": false
+    }
+  ]
+}

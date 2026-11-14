@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/atractylodes_rhizome"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "steam_distillation",
+  "outputs": [
+    {
+      "item": "foodindustrial:atractylodes_oil"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "oil_separation"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethyl_nitrite"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:ethyl_nitrite"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "multi_fraction"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,33 @@
+{
+  "type": "thermal:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "energy": 3000,
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid_tag": "foodindustrial:saltpeter_liquor"
+    },
+    {
+      "tag": "foodindustrial:chemicals/wood_ash"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:potassium_nitrate",
+      "nbt": "{Purity:34b}"
+    }
+  ]
+}

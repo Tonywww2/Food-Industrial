@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:iodine",
     {
+      "id": "#forge:dusts/iodine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/iodine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/iodine",
       "required": false
     },

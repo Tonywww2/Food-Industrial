@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:kiln",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/electrode",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/ilmenite"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/coke"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:titanium_slag"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_monoxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "extreme"
+  },
+  "time": 400
+}

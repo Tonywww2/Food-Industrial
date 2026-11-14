@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_methoxyphenylacetone",
+    "foodindustrial:flowing_p_methoxyphenylacetone",
+    {
+      "id": "#forge:p_methoxyphenylacetone",
+      "required": false
+    },
+    {
+      "id": "#c:p_methoxyphenylacetone",
+      "required": false
+    }
+  ]
+}

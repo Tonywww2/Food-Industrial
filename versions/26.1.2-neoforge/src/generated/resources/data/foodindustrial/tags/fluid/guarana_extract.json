@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:guarana_extract",
+    "foodindustrial:flowing_guarana_extract",
+    {
+      "id": "#forge:guarana_extract",
+      "required": false
+    },
+    {
+      "id": "#c:guarana_extract",
+      "required": false
+    }
+  ]
+}

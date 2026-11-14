@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bornyl_formate",
+    "foodindustrial:flowing_bornyl_formate",
+    {
+      "id": "#forge:bornyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:bornyl_formate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionylthiazole",
+    "foodindustrial:flowing_propionylthiazole",
+    {
+      "id": "#forge:propionylthiazole",
+      "required": false
+    },
+    {
+      "id": "#c:propionylthiazole",
+      "required": false
+    }
+  ]
+}

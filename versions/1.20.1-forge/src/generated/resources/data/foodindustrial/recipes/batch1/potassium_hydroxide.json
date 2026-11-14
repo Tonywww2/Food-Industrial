@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:electrolyzing",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/electrode"
+    }
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_chloride"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "chlor_alkali",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:potassium_hydroxide"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:chlorine"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

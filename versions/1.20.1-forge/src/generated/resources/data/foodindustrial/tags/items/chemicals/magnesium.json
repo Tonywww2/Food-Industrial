@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium",
+    {
+      "id": "#forge:dusts/magnesium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium",
+      "required": false
+    }
+  ]
+}

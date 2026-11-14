@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyridinylethyl_menthanecarboxamide",
+    {
+      "id": "#forge:dusts/pyridinylethyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pyridinylethyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pyridinylethyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pyridinylethyl_menthanecarboxamide",
+      "required": false
+    }
+  ]
+}

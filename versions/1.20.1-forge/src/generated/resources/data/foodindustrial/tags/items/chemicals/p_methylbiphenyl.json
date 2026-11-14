@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_methylbiphenyl",
+    {
+      "id": "#forge:dusts/p_methylbiphenyl",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_methylbiphenyl",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_methylbiphenyl",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_methylbiphenyl",
+      "required": false
+    }
+  ]
+}

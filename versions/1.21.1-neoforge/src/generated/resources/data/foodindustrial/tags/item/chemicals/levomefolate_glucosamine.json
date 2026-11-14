@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:levomefolate_glucosamine",
+    {
+      "id": "#forge:dusts/levomefolate_glucosamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/levomefolate_glucosamine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/levomefolate_glucosamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/levomefolate_glucosamine",
+      "required": false
+    }
+  ]
+}

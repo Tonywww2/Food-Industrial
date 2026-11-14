@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:valencene",
+    "foodindustrial:flowing_valencene",
+    {
+      "id": "#forge:valencene",
+      "required": false
+    },
+    {
+      "id": "#c:valencene",
+      "required": false
+    }
+  ]
+}

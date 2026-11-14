@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dibutyl_sulfide",
+    "foodindustrial:flowing_dibutyl_sulfide",
+    {
+      "id": "#forge:dibutyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:dibutyl_sulfide",
+      "required": false
+    }
+  ]
+}

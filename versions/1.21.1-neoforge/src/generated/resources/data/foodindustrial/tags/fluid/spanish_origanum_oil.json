@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:spanish_origanum_oil",
+    "foodindustrial:flowing_spanish_origanum_oil",
+    {
+      "id": "#forge:spanish_origanum_oil",
+      "required": false
+    },
+    {
+      "id": "#c:spanish_origanum_oil",
+      "required": false
+    }
+  ]
+}

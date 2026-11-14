@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamyl_alcohol",
+    {
+      "id": "#forge:dusts/cinnamyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cinnamyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cinnamyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cinnamyl_alcohol",
+      "required": false
+    }
+  ]
+}

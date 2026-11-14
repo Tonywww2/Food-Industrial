@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:hexylresorcinol",
     {
+      "id": "#forge:dusts/hexylresorcinol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hexylresorcinol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/hexylresorcinol",
       "required": false
     },

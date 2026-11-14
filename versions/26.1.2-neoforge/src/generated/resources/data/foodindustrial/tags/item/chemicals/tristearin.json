@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:tristearin",
     {
+      "id": "#forge:dusts/tristearin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tristearin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/tristearin",
       "required": false
     },

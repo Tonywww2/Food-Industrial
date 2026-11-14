@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wood_rosin_glycerol_ester",
+    {
+      "id": "#forge:dusts/wood_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/wood_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/wood_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#c:gems/wood_rosin_glycerol_ester",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_ascorbate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_ascorbate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_ascorbate",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dichlorobutane",
+    "foodindustrial:flowing_dichlorobutane",
+    {
+      "id": "#forge:dichlorobutane",
+      "required": false
+    },
+    {
+      "id": "#c:dichlorobutane",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pine_tar_oil",
+    "foodindustrial:flowing_pine_tar_oil",
+    {
+      "id": "#forge:pine_tar_oil",
+      "required": false
+    },
+    {
+      "id": "#c:pine_tar_oil",
+      "required": false
+    }
+  ]
+}

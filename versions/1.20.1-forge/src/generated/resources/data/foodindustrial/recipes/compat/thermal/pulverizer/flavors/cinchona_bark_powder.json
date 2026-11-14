@@ -1,0 +1,24 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 2,
+    "tag": "foodindustrial:materials/cinchona_bark"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:cinchona_bark_powder"
+    }
+  ]
+}

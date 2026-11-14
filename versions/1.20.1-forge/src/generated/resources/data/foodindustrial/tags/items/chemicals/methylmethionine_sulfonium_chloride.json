@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylmethionine_sulfonium_chloride",
+    {
+      "id": "#forge:dusts/methylmethionine_sulfonium_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylmethionine_sulfonium_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylmethionine_sulfonium_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylmethionine_sulfonium_chloride",
+      "required": false
+    }
+  ]
+}

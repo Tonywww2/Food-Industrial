@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butane_2_3_diol",
+    "foodindustrial:flowing_butane_2_3_diol",
+    {
+      "id": "#forge:butane_2_3_diol",
+      "required": false
+    },
+    {
+      "id": "#c:butane_2_3_diol",
+      "required": false
+    }
+  ]
+}

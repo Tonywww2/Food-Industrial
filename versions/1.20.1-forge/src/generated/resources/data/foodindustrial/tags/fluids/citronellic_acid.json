@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronellic_acid",
+    "foodindustrial:flowing_citronellic_acid",
+    {
+      "id": "#forge:citronellic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:citronellic_acid",
+      "required": false
+    }
+  ]
+}

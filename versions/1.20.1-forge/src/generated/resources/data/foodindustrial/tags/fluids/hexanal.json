@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexanal",
+    "foodindustrial:flowing_hexanal",
+    {
+      "id": "#forge:hexanal",
+      "required": false
+    },
+    {
+      "id": "#c:hexanal",
+      "required": false
+    }
+  ]
+}

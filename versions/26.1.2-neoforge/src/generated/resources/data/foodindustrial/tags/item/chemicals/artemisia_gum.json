@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:artemisia_gum",
     {
+      "id": "#forge:dusts/artemisia_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/artemisia_gum",
+      "required": false
+    },
+    {
       "id": "#c:dusts/artemisia_gum",
       "required": false
     },

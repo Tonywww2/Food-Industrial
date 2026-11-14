@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "tag": "foodindustrial:materials/bamboo"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "foodindustrial:potash_lye"
+    }
+  ],
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": -1
+      },
+      "count": 1,
+      "id": "foodindustrial:cellulose"
+    }
+  ]
+}

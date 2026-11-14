@@ -1,0 +1,50 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:enzymes/naringinase"
+      },
+      "runs": 16
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:enzymes/cgtase"
+      },
+      "runs": 16
+    }
+  ],
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/rutin"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/starch"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "item": "foodindustrial:enzymatically_modified_isoquercitrin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

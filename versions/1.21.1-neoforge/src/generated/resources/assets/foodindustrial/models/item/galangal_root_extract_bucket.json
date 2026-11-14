@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:galangal_root_extract",
+  "loader": "neoforge:fluid_container"
+}

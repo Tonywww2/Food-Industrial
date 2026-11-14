@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethylene",
       "required": false
+    },
+    {
+      "id": "#c:ethylene",
+      "required": false
     }
   ]
 }

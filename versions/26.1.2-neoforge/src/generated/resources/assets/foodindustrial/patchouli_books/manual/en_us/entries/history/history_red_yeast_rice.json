@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:koji_tray",
+  "name": "book.foodindustrial.manual.entry.history_red_yeast_rice",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:koji_tray",
+      "text": "book.foodindustrial.manual.entry.history_red_yeast_rice.text"
+    }
+  ],
+  "sortnum": 4
+}

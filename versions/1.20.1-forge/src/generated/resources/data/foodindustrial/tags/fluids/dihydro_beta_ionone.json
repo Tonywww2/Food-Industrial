@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydro_beta_ionone",
+    "foodindustrial:flowing_dihydro_beta_ionone",
+    {
+      "id": "#forge:dihydro_beta_ionone",
+      "required": false
+    },
+    {
+      "id": "#c:dihydro_beta_ionone",
+      "required": false
+    }
+  ]
+}

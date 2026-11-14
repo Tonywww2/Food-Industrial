@@ -4,6 +4,10 @@
     "foodindustrial:resin",
     "foodindustrial:flowing_resin",
     {
+      "id": "#forge:resin",
+      "required": false
+    },
+    {
       "id": "#c:resin",
       "required": false
     }

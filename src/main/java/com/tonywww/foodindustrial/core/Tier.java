@@ -37,6 +37,20 @@ public enum Tier {
         return null;
     }
 
+    /**
+     * Colour of the tier wherever it is named: tooltips, JEI and the stage names of the handbook
+     * (docs/text-standard.md §3.4; 2026-11-11). Mid tones, readable on dark tooltips and light pages.
+     */
+    public int color() {
+        return switch (this) {
+            case T0 -> 0xA67C52;
+            case T1 -> 0x5E9E3A;
+            case T2 -> 0x3F7FC4;
+            case T3 -> 0xD0703A;
+            case T4 -> 0xA35FC4;
+        };
+    }
+
     public boolean atLeast(Tier other) {
         return ordinal() >= other.ordinal();
     }

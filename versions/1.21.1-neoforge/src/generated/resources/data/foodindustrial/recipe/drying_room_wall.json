@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:brick"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "BPB",
+    "PIP",
+    "BPB"
+  ],
+  "result": {
+    "count": 8,
+    "id": "foodindustrial:drying_room_wall"
+  }
+}

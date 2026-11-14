@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzeneacetonitrile_menthanecarboxamide",
+    {
+      "id": "#forge:dusts/benzeneacetonitrile_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzeneacetonitrile_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzeneacetonitrile_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzeneacetonitrile_menthanecarboxamide",
+      "required": false
+    }
+  ]
+}

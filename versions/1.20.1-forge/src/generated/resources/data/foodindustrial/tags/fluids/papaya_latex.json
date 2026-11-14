@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:papaya_latex",
+    "foodindustrial:flowing_papaya_latex",
+    {
+      "id": "#forge:papaya_latex",
+      "required": false
+    },
+    {
+      "id": "#c:papaya_latex",
+      "required": false
+    }
+  ]
+}

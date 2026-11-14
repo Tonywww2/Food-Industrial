@@ -8,12 +8,12 @@
 1. **只写有用信息。** 删掉不改变含义的词。禁用词：可以、能够、一种、各种、非常、十分、重要的、神奇的、你、我们、请、感叹号、表情符号。
 2. **同一事物只用一个名字。** 名称以第 2 节为准，全项目不换说法。有日常名称或俗称的，一律写作 **专业名称（日常名称）**，如 氯化钠（盐）、谷氨酸钠（味精）。
 3. **短句。** Tooltip 与 JEI 单行不写句号；Patchouli 与文档段落用完整句。
-4. **标点。** 中文用全角标点；范围用短横线“–”（U+2013，不用连字符“-”；例 40%–73%）；流程用“→”；结晶水用“·”。化学名称内部的半角括号照标准名书写，不改全角：聚合度（“聚氧乙烯(20)山梨醇酐单硬脂酸酯”）与位次后的取代基（“3-(3-羟基-4-甲氧基苯基)丙醛”）（2026-11-05 定）。
-5. **空格。** 中文与英文、数字之间加一个半角空格（“T2 机械化”“1000 mB”）；数字与 % 之间不加空格；数字与其他单位之间加空格（“150 °C”“32 FE/t”）。
+4. **标点。** 中文用全角标点；范围用短横线“–”（U+2013，不用连字符“-”；例 40%–73%）；流程用“→”；结晶水用“·”。化学名称内部的半角括号照标准名书写，不改全角：聚合度（“聚氧乙烯(20)山梨醇酐单硬脂酸酯”）与位次后的取代基（“3-(3-羟基-4-甲氧基苯基)丙醛”）（2026-11-05 定）。物料名称照 GB 2760 原文书写（2026-11-11 定，I31）：名称内部的半角括号（取代基“双(2-甲基-3-呋喃基)二硫醚”、构型“(+/-)-”“(E)-”、可选位次“3,5(或6)-”）与描述符之间的半角逗号（“对,α-二甲基苄醇”“反式,反式-2,4-己二烯醛”）照写；只有名称末尾、内容全是汉字的限定括号改全角，算名称本身，不是日常名称（“丁香花蕾酊（提取物）”）。
+5. **空格。** 中文与英文、数字之间加一个半角空格（“T2 机械化”“1000 mB”）；物料名称中紧挨汉字的位次与构型描述符不加空格（“丁酸3-丁酮-2-醇酯”“乳酸l-薄荷酯”“5和6-癸烯酸”，2026-11-11 定，I31）；数字与 % 之间不加空格；数字与其他单位之间加空格（“150 °C”“32 FE/t”）。
 6. **数字。** 一律阿拉伯数字。纯度按下列精度向下截断显示，不四舍五入，显示值不高于实际值：低于 1% 保留两位小数，不足 0.01% 写“<0.01%”；1%–10% 一位；10%–90% 整数；90%–99.9% 一位；99.9% 及以上两位。只有 byte −128、127 显示为 0%、100%（换算见设计文档 10 第 1.2 节）。
 7. **单位。** 流体 mB；能量 FE、FE/t；时间 tick（玩家可见处换算为秒，保留一位小数）；温度 °C；压力 MPa。
 8. **化学式。** 数据与文档中用 ASCII 数字（`Na2CO3`）；游戏内显示时把元素和括号后的数字渲染为下标（Na₂CO₃、Ca(OH)₂、CaSO₄·2H₂O、(C₆H₇NaO₆)ₙ），结晶水前的系数不下标。化学式不翻译、不本地化。
-9. **英文本地化。** 规则相同：句首大写，其余小写，不加句号；英文 Tooltip 单行不超过 60 个字符。
+9. **英文本地化。** 规则相同：句首大写，其余小写，不加句号；英文 Tooltip 单行不超过 60 个字符；物料的英文专业名称（Shift 描述行）照名称书写，不受此限（2026-11-11 定，I31）。
 10. **默认简洁，详情才展开。** 物品名、默认 Tooltip、界面主窗口与状态行、聊天提示、JEI 配方页只放必要信息；精细描述只放在 Shift Tooltip、界面信息面板、JEI 信息页、Patchouli 手册。同一信息只在一处展开（`CONVENTIONS.md` 第 9 节）。
 
 ## 2 术语来源
@@ -36,7 +36,8 @@
 - 缩写（GDL、BHT、CMC-Na 等）不作名称使用。
 - 标准名已带限定括号的（焦糖色（普通法））不再追加；日常名称与专业名称相同的不追加。
 - 菌种、酶等 08 物料名称里的括号是限定语（工程菌（漆酶）、橘青霉（不产毒株）），属于名称本身，不是日常名称；日常名称只出现在化学品名称中（2026-11-05 定）。
-- 英文写作 `Sodium Chloride (Salt)`、`Monosodium Glutamate (MSG)`，单词首字母大写；虚词（of、and、on、in、for、with、the）与化学前缀（l-、d-、dl-、n-、o-、m-、p-、cis-、trans-、sec-、tert-）小写，如 `Cultures and Enzymes`、`l-Menthol`（实现方拟定，待审）。
+- 英文写作 `Sodium Chloride (Salt)`、`Monosodium Glutamate (MSG)`，单词首字母大写；虚词（of、and、on、in、for、with、the、or、from）与化学前缀（n-、o-、m-、p-、cis-、trans-、sec-、tert-，物料名称另有希腊字母 alpha-、γ- 等及其组合 p,α-、trans,trans-，2026-11-11 定）小写，如 `Cultures and Enzymes`、`sec-Butyl Acetate`。
+- 构型前缀分两种写（2026-11-12 定，11 问题 43）：**费歇尔构型（氨基酸、糖、羟基酸等）的 D、L、DL 大写**，如 `L-Lysine`、`DL-Methionine`、`D-Ribose`、`Calcium D-Pantothenate`；**旋光方向的 d、l、dl 小写**，如 `d-Limonene`、`l-Menthol`、`dl-Camphor`、`d,l-Isomenthone`、`d-alpha-Tocopherol`。中文名取自国标，不随英文改（`d-核糖` 的英文为 `D-Ribose`）。
 
 第一批与常用中间体的标准写法：
 
@@ -100,7 +101,7 @@
 | 镍催化剂 | Ni | 加氢催化剂，在机器内按次数消耗 |
 | 海带（原版） | 不追加 | 不追加 |
 
-> 原版与他模组物品不加本模组 Tooltip；它们在配方中按劣质计（外部默认值，设计文档 10 第 1.6 节），只在 JEI 输入槽提示“按劣质计”。
+> 原版与他模组物品不加本模组 Tooltip（营养成分行除外，见第 3.3 节）；它们在配方中按劣质计（外部默认值，设计文档 10 第 1.6 节），只在 JEI 输入槽提示“按劣质计”。
 
 ### 3.2 机器类
 
@@ -124,7 +125,38 @@
 
 ### 3.3 其他类别
 
-食品成品、工具（刀、铲等）、方块装饰的 Tooltip 规则待成品效果设计时补充，在此之前不加附加行。
+食品成品、工具（刀、铲等）、方块装饰的其余 Tooltip 规则待成品效果设计时补充，在此之前除下面的营养成分组件外不加附加行。
+
+营养成分组件（2026-11-13 定，设计文档 foods/02 第 8 节；同日改为图标组件，用户在样版中选定“默认简要 · Shift 展开”）：Tooltip 末尾（他模组放在最后的模组名行之前）追加一个图标组件，列每份所含的非零代谢成分，按咖啡因、酒精、快吸收糖、维生素 C、维生素 B1、维生素 D 的顺序；不列饱食度与饱和度。
+
+| 状态 | 内容 | 颜色 |
+| --- | --- | --- |
+| 默认 | 图标行：每项为成分图标（8 × 8）+“含量 单位”，一行放不下时按项折行 | 含量按成分着色（见下） |
+| 按住 Shift | 换成表格：每项一行，依次为图标、成分名、“含量 单位”、注；注只用于营养素（“日需 75%”，每份含量 ÷ 每日需要量，取整，不足 1% 写“<1%”）与酒精（“≈ 0.033%”，每份折合的血液酒精浓度，三位小数） | 成分名按成分着色，含量白色，注灰色 §7 |
+
+带杂质的食物（营养数据的 `impurity`，2026-11-13 用户要求）在快吸收糖之后加一项杂质：图标为杂质图标，含量只写数字、不写单位，表格中不加注。
+
+成分颜色（2026-11-13 用户确认）：咖啡因 `#C9A27E`、酒精 `#7FD3E6`、快吸收糖 `#F5B3D0`、维生素 C `#FF7A33`、维生素 B1 `#A8D26E`、维生素 D `#FFF07A`；杂质 `#B4A7C6`（拟定，与杂质图标同为紫灰色）。
+
+- 适用于有营养数据的全部物品，含原版与他模组的食物（数据见设计文档 foods/03）；没有非零成分、也没有杂质时不追加。
+- 单位为 mg、g、µg，数字与单位之间加空格（第 1 节第 5 条）。含量的精度：100 起取整，1–100 一位小数，1 以下两位小数，四舍五入、去掉末尾的 0，低于 0.01 写“<0.01”（2026-11-13 批准）。
+
+### 3.4 档次（2026-11-11 定）
+
+- 档次直接写 `T2`，不加“档次：”之类的标签。
+- 每个档次一种颜色，凡提到档次的地方（Tooltip、JEI、机器描述）都用这个颜色；色值见 `core.Tier#color`。
+- JEI 配方页的摘要行只写“能耗 · 耗时”（手工工具末尾加操作次数），不写档次；设备的 Tooltip 依次为设备名、档次、能耗 · 耗时、产率。
+- 工艺手册不写 T 级，也不用“档次”一词，只写各档次对应的阶段名，阶段名用该档次的颜色。
+
+| 档次 | 阶段 | 颜色 |
+| --- | --- | --- |
+| T0 | 手工与世界 | 土褐 `#A67C52` |
+| T1 | 作坊 | 绿 `#5E9E3A` |
+| T2 | 工业 | 蓝 `#3F7FC4` |
+| T3 | 化工 | 橙 `#D0703A` |
+| T4 | 生物与精细 | 紫 `#A35FC4` |
+
+颜色取中等明度，在深色 Tooltip 与手册的浅色纸面上都能看清；纯度档位用的是原版亮色（§3.1），两套颜色明度不同。色值由实现方拟定，2026-11-11 用户确认。
 
 ## 4 本地化键
 
@@ -179,6 +211,10 @@
 | | 膜 | `membrane` | Membrane |
 | | 电渗析 | `electrodialysis` | Electrodialysis |
 | | 多馏分 | `multi_fraction` | Multiple fractions |
+| | 油水分层 | `oil_separation` | Oil separation |
+| | 铅室 | `lead_chamber` | Lead chamber |
+| | 乳化 | `emulsifying` | Emulsifying |
+| | 分子蒸馏 | `molecular_distillation` | Molecular distillation |
 | 热敏（`heat_sensitivity`） | 普通 | `normal` | Normal |
 | | 热敏 | `sensitive` | Heat sensitive |
 | | 极热敏 | `very_sensitive` | Highly heat sensitive |
@@ -187,6 +223,84 @@
 | | 寒冷群系 | `cold_biome` | Cold biome |
 | | 炎热群系 | `hot_biome` | Hot biome |
 | | 海洋群系 | `ocean_biome` | Ocean biome |
+| | 不露天 | `sheltered` | Sheltered |
+| | 淋雨 | `rain` | In the rain |
+| | 白天 | `daytime` | Daytime |
+| | 非寒冷群系 | `non_cold_biome` | Non-cold biome |
+| | 丛林群系 | `jungle_biome` | Jungle biome |
+| | 竹林 | `bamboo_biome` | Bamboo jungle |
+| 模式（`mode`） | 干磨 | `dry_grinding` | Dry grinding |
+| | 湿磨 | `wet_grinding` | Wet grinding |
+| | 开口 | `open` | Open |
+| | 密闭 | `sealed` | Sealed |
+| | 厌氧消化 | `anaerobic` | Anaerobic digestion |
+| | 曲盘 | `koji_tray` | Koji trays |
+| | 浅盘 | `shallow_tray` | Shallow trays |
+| | 煅烧 | `calcining` | Calcining |
+| | 烧灰 | `ashing` | Ashing |
+| | 干馏 | `dry_distillation` | Dry distillation |
+| | 蒸馏 | `distillation` | Distillation |
+| | 水蒸气蒸馏 | `steam_distillation` | Steam distillation |
+| | 升华 | `sublimation` | Sublimation |
+| | 冷却结晶 | `cooling_crystallization` | Cooling crystallization |
+| | 晾晒结晶 | `sun_crystallization` | Sun crystallization |
+| | 烘干 | `drying` | Drying |
+| | 烟熏 | `smoking` | Smoking |
+| | 燃硫 | `sulfur_burning` | Sulfur burning |
+| | 常压反应 | `reaction` | Reaction |
+| | 聚合 | `polymerization` | Polymerization |
+| | 浓缩 | `concentration` | Concentration |
+| | 蒸发结晶 | `evaporative_crystallization` | Evaporative crystallization |
+| | 等电点 | `isoelectric` | Isoelectric precipitation |
+| | 冷冻 | `freezing` | Freezing |
+| | 滚筒 | `drum_drying` | Drum drying |
+| | 气流 | `flash_drying` | Flash drying |
+| | 溶剂浸提 | `solvent_extraction` | Solvent extraction |
+| | 液液萃取 | `liquid_extraction` | Liquid-liquid extraction |
+| | 吸收 | `absorption` | Absorption |
+| | 碳化 | `carbonation` | Carbonation |
+| | 燃烧除氧 | `combustion` | Combustion |
+| | 焙烧 | `roasting` | Roasting |
+| | 缩合 | `condensation` | Condensation |
+| | 熔融 | `melting` | Melting |
+| | 碱熔 | `alkali_fusion` | Alkali fusion |
+| | 活化 | `activation` | Activation |
+| | 氯化 | `chlorination` | Chlorination |
+| | 配料 | `blending` | Blending |
+| | 均质 | `homogenizing` | Homogenizing |
+| | 归一 | `normalizing` | Normalizing |
+| | 常压精馏 | `atmospheric_distillation` | Atmospheric distillation |
+| | 减压精馏 | `vacuum_distillation` | Vacuum distillation |
+| | 深冷分离 | `cryogenic_separation` | Cryogenic separation |
+| | 汽提 | `stripping` | Stripping |
+| | 加氢 | `hydrogenation` | Hydrogenation |
+| | 羰基化 | `carbonylation` | Carbonylation |
+| | 合成氨 | `ammonia_synthesis` | Ammonia synthesis |
+| | 加压氧化 | `pressure_oxidation` | Pressure oxidation |
+| | 环氧化 | `epoxidation` | Epoxidation |
+| | 乙氧基化 | `ethoxylation` | Ethoxylation |
+| | 氯碱 | `chlor_alkali` | Chlor-alkali |
+| | 电解还原 | `electroreduction` | Electroreduction |
+| | 电解氧化 | `electrooxidation` | Electrooxidation |
+| | 电解水 | `water_electrolysis` | Water electrolysis |
+| | 熔盐电解 | `molten_salt` | Molten salt electrolysis |
+| | 吸附 | `adsorption` | Adsorption |
+| | 分级 | `fractionation` | Fractionation |
+| | 再生 | `regeneration` | Regeneration |
+| | 燃烧 | `burning` | Burning |
+| | 气相催化 | `gas_catalysis` | Gas-phase catalysis |
+| | 裂解 | `cracking` | Cracking |
+| | 流化床 | `fluidized_bed` | Fluidized bed |
+| | 通气发酵 | `aerated` | Aerated fermentation |
+| | 平板分离 | `isolation` | Plate isolation |
+| | 纯化 | `purification` | Purification |
+| | 扩培 | `expansion` | Expansion |
+| | 诱变 | `mutagenesis` | Mutagenesis |
+| | 基因重组 | `recombination` | Genetic recombination |
+| | 超滤 | `ultrafiltration` | Ultrafiltration |
+| | 纳滤 | `nanofiltration` | Nanofiltration |
+| | 反渗透 | `reverse_osmosis` | Reverse osmosis |
+| | 双极膜电渗析 | `bipolar_electrodialysis` | Bipolar membrane electrodialysis |
 | 纯度方式（`purity_mode`） | 来源 | `source` | Source |
 | | 除杂 | `removal` | Impurity removal |
 | | 保持 | `keep` | Keep |
@@ -194,7 +308,8 @@
 | 随机（`random`） | 纯度随机（只用于红曲米） | `purity` | Random purity |
 | | 概率产出 | `chance` | Chance output |
 
-- 环境类中 machines/01 §3 列出的“时间”条件尚无取值，出现时在本表补充。
+- 模式类与“油水分层”由 I14 新增（2026-11-10），T2 机器的模式与“铅室”“乳化”由 I15 新增，T3、T4 机器的模式与“分子蒸馏”由 I16、I17 新增（2026-11-11；“再生”只用于 M25 的再生配方），取值是机器的模式名（additives/06 §T1 作坊：操作与实现规格），配方用 `"mode"` 字段指定，不写在 `requirements` 里。
+- 环境类中 machines/01 §3 列出的“时间”条件尚无取值，出现时在本表补充。不露天、淋雨、白天、非寒冷群系、丛林群系、竹林由 I12 新增（2026-11-10 定），判定见 additives/07 §操作与实现规格。
 - JEI 中每个条件显示为图标，悬停显示词表中的词，不加解释句。
 
 ## 6 检查清单

@@ -6,6 +6,10 @@
     {
       "id": "#forge:methyl_chloride",
       "required": false
+    },
+    {
+      "id": "#c:methyl_chloride",
+      "required": false
     }
   ]
 }

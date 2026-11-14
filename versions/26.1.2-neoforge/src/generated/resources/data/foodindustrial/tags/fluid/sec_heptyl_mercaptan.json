@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sec_heptyl_mercaptan",
+    "foodindustrial:flowing_sec_heptyl_mercaptan",
+    {
+      "id": "#forge:sec_heptyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:sec_heptyl_mercaptan",
+      "required": false
+    }
+  ]
+}

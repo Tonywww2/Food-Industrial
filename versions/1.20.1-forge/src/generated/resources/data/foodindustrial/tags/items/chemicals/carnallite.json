@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/carnallite",
       "required": false
+    },
+    {
+      "id": "#c:dusts/carnallite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carnallite",
+      "required": false
     }
   ]
 }

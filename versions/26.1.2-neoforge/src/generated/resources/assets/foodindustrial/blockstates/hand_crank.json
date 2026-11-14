@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "turn=0": {
+      "model": "foodindustrial:block/hand_crank"
+    },
+    "turn=1": {
+      "model": "foodindustrial:block/hand_crank",
+      "y": 90
+    },
+    "turn=2": {
+      "model": "foodindustrial:block/hand_crank",
+      "y": 180
+    },
+    "turn=3": {
+      "model": "foodindustrial:block/hand_crank",
+      "y": 270
+    }
+  }
+}

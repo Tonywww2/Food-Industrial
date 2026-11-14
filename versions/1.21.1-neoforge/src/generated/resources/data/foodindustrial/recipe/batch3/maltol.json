@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/tannin_source"
+      }
+    }
+  ],
+  "mode": "dry_distillation",
+  "outputs": [
+    {
+      "item": "foodindustrial:maltol",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "minecraft:charcoal"
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:wood_vinegar"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

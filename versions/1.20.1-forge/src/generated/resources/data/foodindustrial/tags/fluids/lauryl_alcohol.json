@@ -6,6 +6,10 @@
     {
       "id": "#forge:lauryl_alcohol",
       "required": false
+    },
+    {
+      "id": "#c:lauryl_alcohol",
+      "required": false
     }
   ]
 }

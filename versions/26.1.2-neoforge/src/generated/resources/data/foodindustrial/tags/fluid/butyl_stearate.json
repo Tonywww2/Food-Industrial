@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_stearate",
+    "foodindustrial:flowing_butyl_stearate",
+    {
+      "id": "#forge:butyl_stearate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_stearate",
+      "required": false
+    }
+  ]
+}

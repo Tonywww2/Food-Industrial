@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:talc",
+    {
+      "id": "#forge:dusts/talc",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/talc",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/talc",
+      "required": false
+    },
+    {
+      "id": "#c:gems/talc",
+      "required": false
+    }
+  ]
+}

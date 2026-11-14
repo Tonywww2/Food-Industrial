@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:mortar",
+  "name": "book.foodindustrial.manual.entry.mortar",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:mortar",
+      "text": "book.foodindustrial.manual.entry.mortar.text",
+      "title": "book.foodindustrial.manual.entry.mortar"
+    }
+  ],
+  "sortnum": 0
+}

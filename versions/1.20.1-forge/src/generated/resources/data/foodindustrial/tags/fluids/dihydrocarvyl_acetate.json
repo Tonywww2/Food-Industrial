@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydrocarvyl_acetate",
+    "foodindustrial:flowing_dihydrocarvyl_acetate",
+    {
+      "id": "#forge:dihydrocarvyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dihydrocarvyl_acetate",
+      "required": false
+    }
+  ]
+}

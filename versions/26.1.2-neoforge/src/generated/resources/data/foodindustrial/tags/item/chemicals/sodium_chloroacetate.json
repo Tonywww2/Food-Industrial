@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_chloroacetate",
     {
+      "id": "#forge:dusts/sodium_chloroacetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_chloroacetate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_chloroacetate",
       "required": false
     },

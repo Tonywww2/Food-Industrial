@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/pectin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/pectin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pectin",
+      "required": false
     }
   ]
 }

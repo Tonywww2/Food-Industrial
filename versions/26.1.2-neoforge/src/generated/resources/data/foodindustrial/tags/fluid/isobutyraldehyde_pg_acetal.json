@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyraldehyde_pg_acetal",
+    "foodindustrial:flowing_isobutyraldehyde_pg_acetal",
+    {
+      "id": "#forge:isobutyraldehyde_pg_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyraldehyde_pg_acetal",
+      "required": false
+    }
+  ]
+}

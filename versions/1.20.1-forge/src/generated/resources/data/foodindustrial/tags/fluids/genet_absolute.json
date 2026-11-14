@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:genet_absolute",
+    "foodindustrial:flowing_genet_absolute",
+    {
+      "id": "#forge:genet_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:genet_absolute",
+      "required": false
+    }
+  ]
+}

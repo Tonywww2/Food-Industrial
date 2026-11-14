@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:vanilla_smoking",
+  "recipe": {
+    "type": "foodindustrial:drying",
+    "inputs": [
+      {
+        "ingredient": "#foodindustrial:materials/boiled_turmeric"
+      }
+    ],
+    "outputs": [
+      {
+        "item": "foodindustrial:dried_turmeric"
+      }
+    ],
+    "requirements": {
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace",
+      "smoker"
+    ]
+  }
+}

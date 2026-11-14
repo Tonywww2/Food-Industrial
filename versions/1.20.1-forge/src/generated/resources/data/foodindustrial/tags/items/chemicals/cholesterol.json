@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/cholesterol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/cholesterol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cholesterol",
+      "required": false
     }
   ]
 }

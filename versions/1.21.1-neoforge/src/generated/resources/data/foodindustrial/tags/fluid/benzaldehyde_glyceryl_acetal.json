@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzaldehyde_glyceryl_acetal",
+    "foodindustrial:flowing_benzaldehyde_glyceryl_acetal",
+    {
+      "id": "#forge:benzaldehyde_glyceryl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:benzaldehyde_glyceryl_acetal",
+      "required": false
+    }
+  ]
+}

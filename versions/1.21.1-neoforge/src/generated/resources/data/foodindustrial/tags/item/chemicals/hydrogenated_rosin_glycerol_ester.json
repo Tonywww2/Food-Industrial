@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydrogenated_rosin_glycerol_ester",
+    {
+      "id": "#forge:dusts/hydrogenated_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydrogenated_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydrogenated_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydrogenated_rosin_glycerol_ester",
+      "required": false
+    }
+  ]
+}

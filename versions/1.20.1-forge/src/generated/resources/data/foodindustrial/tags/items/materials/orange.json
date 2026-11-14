@@ -4,6 +4,10 @@
     {
       "id": "#forge:fruits/orange",
       "required": false
+    },
+    {
+      "id": "#c:fruits/orange",
+      "required": false
     }
   ]
 }

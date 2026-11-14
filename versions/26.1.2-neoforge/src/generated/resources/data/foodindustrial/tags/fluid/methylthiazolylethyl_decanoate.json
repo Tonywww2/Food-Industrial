@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiazolylethyl_decanoate",
+    "foodindustrial:flowing_methylthiazolylethyl_decanoate",
+    {
+      "id": "#forge:methylthiazolylethyl_decanoate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiazolylethyl_decanoate",
+      "required": false
+    }
+  ]
+}

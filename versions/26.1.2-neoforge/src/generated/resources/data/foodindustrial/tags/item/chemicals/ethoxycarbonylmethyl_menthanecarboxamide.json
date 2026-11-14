@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethoxycarbonylmethyl_menthanecarboxamide",
+    {
+      "id": "#forge:dusts/ethoxycarbonylmethyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ethoxycarbonylmethyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ethoxycarbonylmethyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethoxycarbonylmethyl_menthanecarboxamide",
+      "required": false
+    }
+  ]
+}

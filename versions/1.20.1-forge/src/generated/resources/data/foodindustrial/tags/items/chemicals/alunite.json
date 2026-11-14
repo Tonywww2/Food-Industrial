@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/alunite",
       "required": false
+    },
+    {
+      "id": "#c:dusts/alunite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alunite",
+      "required": false
     }
   ]
 }

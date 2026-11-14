@@ -6,6 +6,10 @@
     {
       "id": "#forge:octene",
       "required": false
+    },
+    {
+      "id": "#c:octene",
+      "required": false
     }
   ]
 }

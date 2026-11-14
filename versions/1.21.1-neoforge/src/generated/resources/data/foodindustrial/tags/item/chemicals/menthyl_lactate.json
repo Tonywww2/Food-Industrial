@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthyl_lactate",
+    {
+      "id": "#forge:dusts/menthyl_lactate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/menthyl_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/menthyl_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/menthyl_lactate",
+      "required": false
+    }
+  ]
+}

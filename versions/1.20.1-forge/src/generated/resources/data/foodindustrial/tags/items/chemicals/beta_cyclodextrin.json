@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/beta_cyclodextrin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/beta_cyclodextrin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/beta_cyclodextrin",
+      "required": false
     }
   ]
 }

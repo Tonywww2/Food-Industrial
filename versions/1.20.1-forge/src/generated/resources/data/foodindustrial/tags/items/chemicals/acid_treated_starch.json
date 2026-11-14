@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acid_treated_starch",
+    {
+      "id": "#forge:dusts/acid_treated_starch",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acid_treated_starch",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acid_treated_starch",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acid_treated_starch",
+      "required": false
+    }
+  ]
+}

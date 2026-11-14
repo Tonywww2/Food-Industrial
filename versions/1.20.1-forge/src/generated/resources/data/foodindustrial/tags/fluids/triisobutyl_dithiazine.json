@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:triisobutyl_dithiazine",
+    "foodindustrial:flowing_triisobutyl_dithiazine",
+    {
+      "id": "#forge:triisobutyl_dithiazine",
+      "required": false
+    },
+    {
+      "id": "#c:triisobutyl_dithiazine",
+      "required": false
+    }
+  ]
+}

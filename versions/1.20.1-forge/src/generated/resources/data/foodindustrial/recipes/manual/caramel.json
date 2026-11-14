@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 12
+  },
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:caramel",
+      "purity": {
+        "mode": "source",
+        "value": 30
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "open_flame"
+    ],
+    "temperature": "heated"
+  },
+  "time": 200
+}

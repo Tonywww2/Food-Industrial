@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:grains_of_paradise_extract",
+    "foodindustrial:flowing_grains_of_paradise_extract",
+    {
+      "id": "#forge:grains_of_paradise_extract",
+      "required": false
+    },
+    {
+      "id": "#c:grains_of_paradise_extract",
+      "required": false
+    }
+  ]
+}

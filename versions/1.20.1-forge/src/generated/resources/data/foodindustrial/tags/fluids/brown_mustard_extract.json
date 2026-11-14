@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:brown_mustard_extract",
+    "foodindustrial:flowing_brown_mustard_extract",
+    {
+      "id": "#forge:brown_mustard_extract",
+      "required": false
+    },
+    {
+      "id": "#c:brown_mustard_extract",
+      "required": false
+    }
+  ]
+}

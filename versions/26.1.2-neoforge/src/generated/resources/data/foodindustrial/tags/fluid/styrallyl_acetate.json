@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:styrallyl_acetate",
+    "foodindustrial:flowing_styrallyl_acetate",
+    {
+      "id": "#forge:styrallyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:styrallyl_acetate",
+      "required": false
+    }
+  ]
+}

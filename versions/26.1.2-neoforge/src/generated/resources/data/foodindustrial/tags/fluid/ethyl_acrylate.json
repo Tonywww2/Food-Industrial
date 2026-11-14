@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_acrylate",
+    "foodindustrial:flowing_ethyl_acrylate",
+    {
+      "id": "#forge:ethyl_acrylate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_acrylate",
+      "required": false
+    }
+  ]
+}

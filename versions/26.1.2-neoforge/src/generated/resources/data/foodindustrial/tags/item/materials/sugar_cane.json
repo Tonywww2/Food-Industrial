@@ -8,6 +8,10 @@
     {
       "id": "#c:crops/sugar_cane",
       "required": false
+    },
+    {
+      "id": "#forge:crops/sugar_cane",
+      "required": false
     }
   ]
 }

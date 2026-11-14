@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:pine_needle_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:l_limonene"
+    },
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:l_bornyl_acetate"
+    },
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:bornyl_acetate"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

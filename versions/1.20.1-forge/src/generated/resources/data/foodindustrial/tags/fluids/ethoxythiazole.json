@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethoxythiazole",
+    "foodindustrial:flowing_ethoxythiazole",
+    {
+      "id": "#forge:ethoxythiazole",
+      "required": false
+    },
+    {
+      "id": "#c:ethoxythiazole",
+      "required": false
+    }
+  ]
+}

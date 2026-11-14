@@ -58,13 +58,20 @@ public final class RecipeChecks {
         }
         boolean runnable = false;
         for (DeviceSpec device : devices) {
-            if (device.canRun(recipe)) {
+            // the development devices (devtest) are not in a released game
+            if (!device.id().contains(":dev_") && device.canRun(recipe)) {
                 runnable = true;
                 break;
             }
         }
         if (!runnable) {
             problems.add(new Problem(id, true, "no registered device can run it"));
+        }
+        for (VanillaDevice device : recipe.vanillaDevices()) {
+            String reason = device.spec() == null ? "not registered" : device.spec().whyNot(recipe);
+            if (reason != null) {
+                problems.add(new Problem(id, true, "vanilla device " + device.id() + " cannot run it: " + reason));
+            }
         }
         checkPurity(id, recipe, problems);
         checkPurityInputs(id, recipe, problems);
@@ -149,8 +156,10 @@ public final class RecipeChecks {
      * @throws IllegalStateException on a missing or too low threshold
      */
     public static void checkCraftingJson(String id, JsonElement json, DynamicOps<JsonElement> ops) {
+        // Only vanilla-format recipes: this mod's process recipes and the integration files for other
+        // mods' machines (I25) have their own checks.
         if (!json.isJsonObject() || json.getAsJsonObject().has("type")
-            && json.getAsJsonObject().get("type").getAsString().startsWith(FoodIndustrial.MOD_ID + ":")) {
+            && !json.getAsJsonObject().get("type").getAsString().startsWith("minecraft:")) {
             return;
         }
         String product = PlatformDatagen.recipeResultItem(json).flatMap(PlatformTags::item)

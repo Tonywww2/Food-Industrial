@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetyl_pyrroline",
+    "foodindustrial:flowing_acetyl_pyrroline",
+    {
+      "id": "#forge:acetyl_pyrroline",
+      "required": false
+    },
+    {
+      "id": "#c:acetyl_pyrroline",
+      "required": false
+    }
+  ]
+}

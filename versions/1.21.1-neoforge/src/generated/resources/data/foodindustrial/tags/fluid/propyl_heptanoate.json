@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_heptanoate",
+    "foodindustrial:flowing_propyl_heptanoate",
+    {
+      "id": "#forge:propyl_heptanoate",
+      "required": false
+    },
+    {
+      "id": "#c:propyl_heptanoate",
+      "required": false
+    }
+  ]
+}

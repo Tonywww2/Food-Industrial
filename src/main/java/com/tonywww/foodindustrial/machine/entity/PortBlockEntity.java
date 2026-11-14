@@ -56,8 +56,9 @@ public class PortBlockEntity extends FIBlockEntity implements StorageHost {
         invalidateStorage();
         markDirty();
         flushDirty();
-        if (controller != null) {
-            controller.wake();
+        if (level != null && !level.isClientSide()) {
+            // the direction decides whether the structure forms (2026-11-10)
+            MultiblockRegistry.memberChanged(level, worldPosition);
         }
     }
 

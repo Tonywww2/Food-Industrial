@@ -6,6 +6,10 @@
     {
       "id": "#forge:polydimethylsiloxane",
       "required": false
+    },
+    {
+      "id": "#c:polydimethylsiloxane",
+      "required": false
     }
   ]
 }

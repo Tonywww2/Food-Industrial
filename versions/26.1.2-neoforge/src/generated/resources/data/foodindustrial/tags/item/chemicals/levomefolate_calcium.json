@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:levomefolate_calcium",
+    {
+      "id": "#forge:dusts/levomefolate_calcium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/levomefolate_calcium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/levomefolate_calcium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/levomefolate_calcium",
+      "required": false
+    }
+  ]
+}

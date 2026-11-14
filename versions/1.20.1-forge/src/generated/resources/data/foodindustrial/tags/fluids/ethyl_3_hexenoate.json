@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_3_hexenoate",
+    "foodindustrial:flowing_ethyl_3_hexenoate",
+    {
+      "id": "#forge:ethyl_3_hexenoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_3_hexenoate",
+      "required": false
+    }
+  ]
+}

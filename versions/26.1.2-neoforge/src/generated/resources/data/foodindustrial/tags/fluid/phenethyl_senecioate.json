@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenethyl_senecioate",
+    "foodindustrial:flowing_phenethyl_senecioate",
+    {
+      "id": "#forge:phenethyl_senecioate",
+      "required": false
+    },
+    {
+      "id": "#c:phenethyl_senecioate",
+      "required": false
+    }
+  ]
+}

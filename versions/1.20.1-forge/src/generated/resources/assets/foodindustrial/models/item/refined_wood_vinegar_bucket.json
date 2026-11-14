@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:refined_wood_vinegar",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/p_ethylphenol"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:p_vinylphenol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

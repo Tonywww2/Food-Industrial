@@ -1,0 +1,26 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/gypsum"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:gypsum",
+    "nbt": "{Purity:28b}"
+  }
+}

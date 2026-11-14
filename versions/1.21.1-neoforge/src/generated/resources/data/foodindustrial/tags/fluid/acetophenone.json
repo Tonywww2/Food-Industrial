@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetophenone",
+    "foodindustrial:flowing_acetophenone",
+    {
+      "id": "#forge:acetophenone",
+      "required": false
+    },
+    {
+      "id": "#c:acetophenone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:caraway_seed_oil",
+    "foodindustrial:flowing_caraway_seed_oil",
+    {
+      "id": "#forge:caraway_seed_oil",
+      "required": false
+    },
+    {
+      "id": "#c:caraway_seed_oil",
+      "required": false
+    }
+  ]
+}

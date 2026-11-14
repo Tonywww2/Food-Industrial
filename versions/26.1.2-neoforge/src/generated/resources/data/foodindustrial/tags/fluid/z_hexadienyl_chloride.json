@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:z_hexadienyl_chloride",
+    "foodindustrial:flowing_z_hexadienyl_chloride",
+    {
+      "id": "#forge:z_hexadienyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:z_hexadienyl_chloride",
+      "required": false
+    }
+  ]
+}

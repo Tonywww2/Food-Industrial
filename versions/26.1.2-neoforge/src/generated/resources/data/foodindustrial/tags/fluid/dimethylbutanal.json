@@ -4,6 +4,10 @@
     "foodindustrial:dimethylbutanal",
     "foodindustrial:flowing_dimethylbutanal",
     {
+      "id": "#forge:dimethylbutanal",
+      "required": false
+    },
+    {
       "id": "#c:dimethylbutanal",
       "required": false
     }

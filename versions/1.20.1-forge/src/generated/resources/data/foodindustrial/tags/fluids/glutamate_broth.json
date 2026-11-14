@@ -6,6 +6,10 @@
     {
       "id": "#forge:glutamate_broth",
       "required": false
+    },
+    {
+      "id": "#c:glutamate_broth",
+      "required": false
     }
   ]
 }

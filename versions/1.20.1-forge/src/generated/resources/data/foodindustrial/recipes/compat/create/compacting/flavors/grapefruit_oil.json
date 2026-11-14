@@ -1,0 +1,45 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    },
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    },
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    },
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    },
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    },
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    },
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    },
+    {
+      "tag": "foodindustrial:materials/grapefruit"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:grapefruit_oil"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionitrile",
+    "foodindustrial:flowing_propionitrile",
+    {
+      "id": "#forge:propionitrile",
+      "required": false
+    },
+    {
+      "id": "#c:propionitrile",
+      "required": false
+    }
+  ]
+}

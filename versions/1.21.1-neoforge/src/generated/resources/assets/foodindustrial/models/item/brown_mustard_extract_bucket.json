@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:brown_mustard_extract",
+  "loader": "neoforge:fluid_container"
+}

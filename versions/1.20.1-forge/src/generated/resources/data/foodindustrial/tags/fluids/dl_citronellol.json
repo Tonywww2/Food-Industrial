@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_citronellol",
+    "foodindustrial:flowing_dl_citronellol",
+    {
+      "id": "#forge:dl_citronellol",
+      "required": false
+    },
+    {
+      "id": "#c:dl_citronellol",
+      "required": false
+    }
+  ]
+}

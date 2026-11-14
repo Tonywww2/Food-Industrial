@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:santalyl_acetate",
+    "foodindustrial:flowing_santalyl_acetate",
+    {
+      "id": "#forge:santalyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:santalyl_acetate",
+      "required": false
+    }
+  ]
+}

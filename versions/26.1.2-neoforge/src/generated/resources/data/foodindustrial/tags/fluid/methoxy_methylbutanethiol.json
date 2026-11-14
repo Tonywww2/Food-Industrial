@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxy_methylbutanethiol",
+    "foodindustrial:flowing_methoxy_methylbutanethiol",
+    {
+      "id": "#forge:methoxy_methylbutanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:methoxy_methylbutanethiol",
+      "required": false
+    }
+  ]
+}

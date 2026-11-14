@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyrrolidine",
+    "foodindustrial:flowing_pyrrolidine",
+    {
+      "id": "#forge:pyrrolidine",
+      "required": false
+    },
+    {
+      "id": "#c:pyrrolidine",
+      "required": false
+    }
+  ]
+}

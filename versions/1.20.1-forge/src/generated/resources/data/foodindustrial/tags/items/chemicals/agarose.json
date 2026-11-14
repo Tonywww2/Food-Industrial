@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/agarose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/agarose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/agarose",
+      "required": false
     }
   ]
 }

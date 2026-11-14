@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:petroleum_ether",
+    "foodindustrial:flowing_petroleum_ether",
+    {
+      "id": "#forge:petroleum_ether",
+      "required": false
+    },
+    {
+      "id": "#c:petroleum_ether",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/copper"
+    }
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/silicon"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:methyl_chloride"
+      }
+    }
+  ],
+  "mode": "fluidized_bed",
+  "outputs": [
+    {
+      "amount": 800,
+      "fluid": "foodindustrial:dimethyldichlorosilane"
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:methyltrichlorosilane"
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:trimethylchlorosilane"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillin_isobutyrate",
+    "foodindustrial:flowing_vanillin_isobutyrate",
+    {
+      "id": "#forge:vanillin_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:vanillin_isobutyrate",
+      "required": false
+    }
+  ]
+}

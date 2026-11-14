@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:green_cognac_oil",
+  "loader": "neoforge:fluid_container"
+}

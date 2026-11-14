@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_ethylbenzyl_alcohol",
+    "foodindustrial:flowing_alpha_ethylbenzyl_alcohol",
+    {
+      "id": "#forge:alpha_ethylbenzyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_ethylbenzyl_alcohol",
+      "required": false
+    }
+  ]
+}

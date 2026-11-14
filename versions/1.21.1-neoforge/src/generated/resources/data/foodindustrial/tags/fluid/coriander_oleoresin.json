@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coriander_oleoresin",
+    "foodindustrial:flowing_coriander_oleoresin",
+    {
+      "id": "#forge:coriander_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:coriander_oleoresin",
+      "required": false
+    }
+  ]
+}

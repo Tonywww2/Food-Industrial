@@ -4,6 +4,10 @@
     "foodindustrial:potash_lye",
     "foodindustrial:flowing_potash_lye",
     {
+      "id": "#forge:potash_lye",
+      "required": false
+    },
+    {
       "id": "#c:potash_lye",
       "required": false
     }

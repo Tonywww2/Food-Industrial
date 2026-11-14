@@ -50,6 +50,9 @@
 | `platform.machine` | `PlatformBlockEntity`（存取、同步、ticker、`onLoaded` / `onRemoved` / 邻居更新钩子）、`PlatformEntityBlock`、`PlatformMemberBlock`（无方块实体的成员方块的放置 / 移除钩子）、`PlatformMachineCapabilities`、`PlatformNeighborCache` |
 | `platform.recipe` | `PlatformRecipes`（业务 `MapCodec` 注册配方类型，`loaded`、`jsonOps`）、`PlatformIngredients`（纯度原料、原料编解码） |
 | `PlatformFuel` | 原版熔炉燃烧时间、燃烧后剩下的容器 |
+| `PlatformCommands` | 命令的物品参数（`itemArgument`、`item`）与 2 级权限（`gameMasters`）；带 `CommandBuildContext` 的注册用 `PlatformEvents.onRegisterCommands(CommandRegistrar)`（I34） |
+| `PlatformPlayerData`、`PlatformPlayerEvents`、`PlatformAttributes` | 随玩家存档的数据；玩家生命周期、吃喝、睡眠、交互拦截等事件；按语义属性加减带 ID 的临时修正（I35） |
+| `platform.client.PlatformHud` | 相机角度、全屏遮罩、生存背包右侧的面板与按钮、Apothic Attributes 面板中的修正图标（I35） |
 
 其余各类（`PlatformTags`、`PlatformFluids`、`PlatformDatagen` 等）见各实装计划的实现记录（I01–I09）。
 
@@ -115,10 +118,14 @@ public static ResourceLocation id(String path) { … }
   - `deps.jei=<版本>`：编译 JEI API，开发运行完整 JEI；
   - `deps.patchouli=<版本>`：编译 Patchouli API，开发运行完整 Patchouli；
   - `deps.mod.<名字>=<maven 坐标>`：编译 + 开发运行（Forge 节点自动走 Loom 重映射）。
+  - `deps.opt.<名字>=<maven 坐标>`：可选联动模组（2026-11-11）。总在编译类路径上；开发运行时只在 `-PfiWith=<名字>,…`（或 `all`）点名时加入，便于分别测试装与不装的情况。根 `gradle.properties` 的 `fi.devWith=<名字>,…` 列出每次开发运行都加入的可选模组（现为 Jade，2026-11-12 用户定，用于测试）；`-PfiWithout=<名字>,…` 临时去掉，测试不装的情况。
+  - `deps.dev.<名字>=<maven 坐标>`：只进开发运行时、不参与编译（2026-11-11），用于填充物料标签的模组（如潘马斯作物），让开发环境的 JEI 能显示用到这些标签的配方。
   - 某节点没有对应版本时删掉该键即可；源码中的联动代码必须用同样的条件排除。
+  - 数据生成运行时，构建脚本把 `deps.mod.*`、`deps.opt.*` 及其内嵌模组的 jar 列表写到 `build/fi-external-jars.txt`，经系统属性 `foodindustrial.externalJars` 传给数据生成，用来从联动配方中去掉与他模组自带配方重叠的输入（I25）。
 - 加依赖前先确认它对加载器版本的要求（例如 JEI 19.42+ 要求 NeoForge ≥ 21.1.238，所以 1.21.1 节点固定在 19.39.0.372）。
 - Modrinth 上 Fabric / NeoForge 共用同一版本号时，用 **版本 ID** 固定（例如 26.1 的 Patchouli 用 `2CsnFLom`）。
-- Forge 节点的依赖若用 Jar-in-Jar 内嵌其他模组（如 Thermal Foundation 内嵌 `thermal_core`），`build.gradle.kts` 会在配置阶段自动解出到 `versions/1.20.1-forge/build/jij/` 并加入开发运行时；无需手动处理。
+- Forge 节点的依赖若用 Jar-in-Jar 内嵌其他模组（如 Thermal Foundation 内嵌 `thermal_core`），`build.gradle.kts` 会在配置阶段自动解出到 `versions/1.20.1-forge/build/jij/` 并加入开发运行时；无需手动处理。解出的模组以 `jij:<文件名>` 模块（flatDir 仓库）加入，与外层模组同批重映射——否则外层模组调用内嵌模组的方法（GTCEu 调 Registrate）会留着 SRG 名而报 `NoSuchMethodError`；内嵌的游戏库（清单 `FMLModType: GAMELIBRARY`，如 `mixinextras-forge`、Registrate）按模组加入，FML 才会加载其 `MixinConfigs`、让它看得到原版类（2026-11-11）。
+- Loom 按坐标缓存重映射后的模组（项目根的 `.gradle/loom-cache/remapped_mods/`），类路径变了也不重做。开发运行时若出现带 SRG 名（`m_数字_`、`f_数字_`）的 `NoSuchMethodError` / `NoSuchFieldError`，删掉出错模组在该目录下的缓存后重新运行（2026-11-11，机械动力在内嵌模组改为同批重映射之前的缓存即如此）。
 - Mixin：配置文件 `foodindustrial.mixins.json`，包为 `com.tonywww.foodindustrial.platform.mixin`。Forge 开发环境由 Loom 的 `forge.mixinConfig` 加载，生产环境由 jar 清单的 `MixinConfigs` 加载；NeoForge 由 `neoforge.mods.toml` 的 `[[mixins]]` 加载。**不要在 json 里手写 `refmap`**——Forge 节点由 Loom 自动生成并写入，NeoForge 节点不需要。
 
 ## 7. 构建与验证（Windows PowerShell）

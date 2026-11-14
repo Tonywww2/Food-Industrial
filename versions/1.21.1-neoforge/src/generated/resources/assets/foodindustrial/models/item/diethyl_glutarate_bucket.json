@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:diethyl_glutarate",
+  "loader": "neoforge:fluid_container"
+}

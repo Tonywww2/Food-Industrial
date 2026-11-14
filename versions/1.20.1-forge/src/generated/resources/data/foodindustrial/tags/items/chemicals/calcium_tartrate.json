@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_tartrate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_tartrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_tartrate",
+      "required": false
     }
   ]
 }

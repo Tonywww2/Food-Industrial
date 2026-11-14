@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/bht",
       "required": false
+    },
+    {
+      "id": "#c:dusts/bht",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bht",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_gluconate",
+    {
+      "id": "#forge:dusts/magnesium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_gluconate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_gluconate",
+      "required": false
+    }
+  ]
+}

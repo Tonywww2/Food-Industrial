@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/urea"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:methylamine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dimethylurea"
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:ammonia"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

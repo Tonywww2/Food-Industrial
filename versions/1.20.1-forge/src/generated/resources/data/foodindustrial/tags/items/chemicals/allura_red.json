@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/allura_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/allura_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/allura_red",
+      "required": false
     }
   ]
 }

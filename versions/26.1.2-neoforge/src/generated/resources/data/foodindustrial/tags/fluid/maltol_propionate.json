@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maltol_propionate",
+    "foodindustrial:flowing_maltol_propionate",
+    {
+      "id": "#forge:maltol_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:maltol_propionate",
+      "required": false
+    }
+  ]
+}

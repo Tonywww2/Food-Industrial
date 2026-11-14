@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethyl_vinyl_tetrahydropyran",
+    "foodindustrial:flowing_trimethyl_vinyl_tetrahydropyran",
+    {
+      "id": "#forge:trimethyl_vinyl_tetrahydropyran",
+      "required": false
+    },
+    {
+      "id": "#c:trimethyl_vinyl_tetrahydropyran",
+      "required": false
+    }
+  ]
+}

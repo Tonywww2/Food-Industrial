@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/distarch_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/distarch_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/distarch_phosphate",
+      "required": false
     }
   ]
 }

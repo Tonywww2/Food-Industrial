@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:labdanum_extract",
+    {
+      "id": "#forge:dusts/labdanum_extract",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/labdanum_extract",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/labdanum_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gems/labdanum_extract",
+      "required": false
+    }
+  ]
+}

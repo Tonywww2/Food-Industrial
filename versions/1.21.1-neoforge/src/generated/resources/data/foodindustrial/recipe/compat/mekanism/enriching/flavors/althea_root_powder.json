@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 2,
+    "tag": "foodindustrial:materials/marshmallow_root"
+  },
+  "output": {
+    "count": 1,
+    "id": "foodindustrial:althea_root_powder"
+  }
+}

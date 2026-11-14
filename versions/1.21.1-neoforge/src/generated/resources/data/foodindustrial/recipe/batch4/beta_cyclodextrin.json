@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/beta_cd_toluene_complex"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "steam_distillation",
+  "outputs": [
+    {
+      "item": "foodindustrial:beta_cyclodextrin",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 150,
+      "fluid": "foodindustrial:toluene",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:vegetable_oil_extraction_solvent",
+  "loader": "neoforge:fluid_container"
+}

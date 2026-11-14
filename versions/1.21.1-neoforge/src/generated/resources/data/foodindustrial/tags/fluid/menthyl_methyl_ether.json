@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthyl_methyl_ether",
+    "foodindustrial:flowing_menthyl_methyl_ether",
+    {
+      "id": "#forge:menthyl_methyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:menthyl_methyl_ether",
+      "required": false
+    }
+  ]
+}

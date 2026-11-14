@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sarcodactylis_oil",
+    "foodindustrial:flowing_sarcodactylis_oil",
+    {
+      "id": "#forge:sarcodactylis_oil",
+      "required": false
+    },
+    {
+      "id": "#c:sarcodactylis_oil",
+      "required": false
+    }
+  ]
+}

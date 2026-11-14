@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_butyrate",
+    "foodindustrial:flowing_allyl_butyrate",
+    {
+      "id": "#forge:allyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_butyrate",
+      "required": false
+    }
+  ]
+}

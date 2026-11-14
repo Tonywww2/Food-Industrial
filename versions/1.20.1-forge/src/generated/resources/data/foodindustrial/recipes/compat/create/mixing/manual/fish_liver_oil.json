@@ -1,0 +1,34 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/fish_liver"
+    },
+    {
+      "tag": "foodindustrial:materials/fish_liver"
+    },
+    {
+      "tag": "foodindustrial:materials/fish_liver"
+    },
+    {
+      "tag": "foodindustrial:materials/fish_liver"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:fish_liver_oil"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:infant_rice_cereal",
+    "foodindustrial:protein_powder",
+    "foodindustrial:meal_replacement_powder",
+    "foodindustrial:energy_gel"
+  ]
+}

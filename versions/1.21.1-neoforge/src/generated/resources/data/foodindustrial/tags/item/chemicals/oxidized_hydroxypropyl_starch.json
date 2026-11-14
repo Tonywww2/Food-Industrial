@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:oxidized_hydroxypropyl_starch",
     {
+      "id": "#forge:dusts/oxidized_hydroxypropyl_starch",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/oxidized_hydroxypropyl_starch",
+      "required": false
+    },
+    {
       "id": "#c:dusts/oxidized_hydroxypropyl_starch",
       "required": false
     },

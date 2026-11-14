@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:ethyl_furfurylthiopropionate",
+  "loader": "forge:fluid_container"
+}

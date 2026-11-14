@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/polyisobutylene",
       "required": false
+    },
+    {
+      "id": "#c:dusts/polyisobutylene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyisobutylene",
+      "required": false
     }
   ]
 }

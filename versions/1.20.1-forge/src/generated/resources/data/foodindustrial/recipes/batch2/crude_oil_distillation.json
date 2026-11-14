@@ -1,0 +1,63 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:crude_oil"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 200,
+      "fluid": "foodindustrial:n_hexane",
+      "purity": {
+        "mode": "source",
+        "value": 80
+      }
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:benzene",
+      "purity": {
+        "mode": "source",
+        "value": 70
+      }
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:toluene",
+      "purity": {
+        "mode": "source",
+        "value": 70
+      }
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:butane",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:propane",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 200,
+      "fluid": "foodindustrial:light_naphtha"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "multi_fraction"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

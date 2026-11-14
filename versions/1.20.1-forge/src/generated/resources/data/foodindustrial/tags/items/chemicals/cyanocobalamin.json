@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyanocobalamin",
+    {
+      "id": "#forge:dusts/cyanocobalamin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cyanocobalamin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cyanocobalamin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyanocobalamin",
+      "required": false
+    }
+  ]
+}

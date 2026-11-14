@@ -1,0 +1,33 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/oil_palm_fruit"
+    },
+    {
+      "tag": "foodindustrial:materials/oil_palm_fruit"
+    },
+    {
+      "tag": "foodindustrial:materials/oil_palm_fruit"
+    },
+    {
+      "tag": "foodindustrial:materials/oil_palm_fruit"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:palm_oil"
+    }
+  ]
+}

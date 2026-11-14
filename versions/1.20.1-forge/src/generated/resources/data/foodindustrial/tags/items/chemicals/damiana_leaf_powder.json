@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:damiana_leaf_powder",
+    {
+      "id": "#forge:dusts/damiana_leaf_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/damiana_leaf_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/damiana_leaf_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/damiana_leaf_powder",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/magnesite",
       "required": false
+    },
+    {
+      "id": "#c:dusts/magnesite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesite",
+      "required": false
     }
   ]
 }

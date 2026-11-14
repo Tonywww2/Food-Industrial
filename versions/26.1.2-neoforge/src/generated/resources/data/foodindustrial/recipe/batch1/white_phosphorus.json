@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:kiln",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/electrode",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/fluorapatite"
+    },
+    {
+      "count": 6,
+      "ingredient": "#foodindustrial:materials/quartz"
+    },
+    {
+      "count": 5,
+      "ingredient": "#foodindustrial:materials/coal"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:white_phosphorus"
+    },
+    {
+      "count": 6,
+      "item": "foodindustrial:phosphorus_slag"
+    },
+    {
+      "amount": 5000,
+      "fluid": "foodindustrial:carbon_monoxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "extreme"
+  },
+  "time": 400
+}

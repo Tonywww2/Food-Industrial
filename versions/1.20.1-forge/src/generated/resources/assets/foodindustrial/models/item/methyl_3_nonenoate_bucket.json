@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methyl_3_nonenoate",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:homofuraneol",
+    "foodindustrial:flowing_homofuraneol",
+    {
+      "id": "#forge:homofuraneol",
+      "required": false
+    },
+    {
+      "id": "#c:homofuraneol",
+      "required": false
+    }
+  ]
+}

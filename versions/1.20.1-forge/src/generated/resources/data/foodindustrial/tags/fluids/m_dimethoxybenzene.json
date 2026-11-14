@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:m_dimethoxybenzene",
+    "foodindustrial:flowing_m_dimethoxybenzene",
+    {
+      "id": "#forge:m_dimethoxybenzene",
+      "required": false
+    },
+    {
+      "id": "#c:m_dimethoxybenzene",
+      "required": false
+    }
+  ]
+}

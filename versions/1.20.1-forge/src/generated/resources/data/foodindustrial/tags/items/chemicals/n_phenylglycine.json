@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/n_phenylglycine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/n_phenylglycine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/n_phenylglycine",
+      "required": false
     }
   ]
 }

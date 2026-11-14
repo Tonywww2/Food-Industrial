@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dinitrotoluene",
+    {
+      "id": "#forge:dusts/dinitrotoluene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dinitrotoluene",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dinitrotoluene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dinitrotoluene",
+      "required": false
+    }
+  ]
+}

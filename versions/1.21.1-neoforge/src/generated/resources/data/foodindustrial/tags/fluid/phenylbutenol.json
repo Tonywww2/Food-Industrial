@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylbutenol",
+    "foodindustrial:flowing_phenylbutenol",
+    {
+      "id": "#forge:phenylbutenol",
+      "required": false
+    },
+    {
+      "id": "#c:phenylbutenol",
+      "required": false
+    }
+  ]
+}

@@ -12,6 +12,14 @@
     {
       "id": "#c:vegetables/beetroot",
       "required": false
+    },
+    {
+      "id": "#forge:crops/beetroot",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/beetroot",
+      "required": false
     }
   ]
 }

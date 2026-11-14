@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:tert_butyl_dimethylindane",
+  "loader": "neoforge:fluid_container"
+}

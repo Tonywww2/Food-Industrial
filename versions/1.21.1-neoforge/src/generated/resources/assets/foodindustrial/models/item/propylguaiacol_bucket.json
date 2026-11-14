@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:propylguaiacol",
+  "loader": "neoforge:fluid_container"
+}

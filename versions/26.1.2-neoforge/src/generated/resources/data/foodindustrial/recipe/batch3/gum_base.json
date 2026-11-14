@@ -1,0 +1,61 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:chemicals/polyvinyl_acetate",
+        "min_purity": "food"
+      }
+    },
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:chemicals/polyisobutylene",
+        "min_purity": "food"
+      }
+    },
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:chemicals/rosin_glycerol_ester",
+        "min_purity": "food"
+      }
+    },
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:chemicals/beeswax",
+        "min_purity": "food"
+      }
+    },
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:chemicals/glyceryl_monostearate",
+        "min_purity": "food"
+      }
+    },
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:chemicals/calcium_carbonate",
+        "min_purity": "food"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 6,
+      "item": "foodindustrial:gum_base"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "internal_mixing"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_propyl_ketone",
+    "foodindustrial:flowing_ethyl_propyl_ketone",
+    {
+      "id": "#forge:ethyl_propyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_propyl_ketone",
+      "required": false
+    }
+  ]
+}

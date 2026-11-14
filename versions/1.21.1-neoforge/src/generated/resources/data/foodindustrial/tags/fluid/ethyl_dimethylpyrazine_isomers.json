@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_dimethylpyrazine_isomers",
+    "foodindustrial:flowing_ethyl_dimethylpyrazine_isomers",
+    {
+      "id": "#forge:ethyl_dimethylpyrazine_isomers",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_dimethylpyrazine_isomers",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:higher_alcohol_fatty_ester_complex",
+  "loader": "neoforge:fluid_container"
+}

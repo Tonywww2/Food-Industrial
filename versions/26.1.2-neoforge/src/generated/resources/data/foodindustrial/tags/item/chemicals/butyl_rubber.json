@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_rubber",
+    {
+      "id": "#forge:dusts/butyl_rubber",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/butyl_rubber",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/butyl_rubber",
+      "required": false
+    },
+    {
+      "id": "#c:gems/butyl_rubber",
+      "required": false
+    }
+  ]
+}

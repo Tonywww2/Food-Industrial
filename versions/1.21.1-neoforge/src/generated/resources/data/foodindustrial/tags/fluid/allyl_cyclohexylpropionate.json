@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_cyclohexylpropionate",
+    "foodindustrial:flowing_allyl_cyclohexylpropionate",
+    {
+      "id": "#forge:allyl_cyclohexylpropionate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_cyclohexylpropionate",
+      "required": false
+    }
+  ]
+}

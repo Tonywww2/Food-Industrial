@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:erythrosine",
     {
+      "id": "#forge:dusts/erythrosine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/erythrosine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/erythrosine",
       "required": false
     },

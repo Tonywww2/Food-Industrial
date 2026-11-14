@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:mercapto_4_methyl_2_pentanol",
+  "loader": "forge:fluid_container"
+}

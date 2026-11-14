@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "foodindustrial:materials/magnesite"
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": 31
+    },
+    "count": 1,
+    "id": "foodindustrial:magnesite"
+  }
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/oxidized_starch",
       "required": false
+    },
+    {
+      "id": "#c:dusts/oxidized_starch",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oxidized_starch",
+      "required": false
     }
   ]
 }

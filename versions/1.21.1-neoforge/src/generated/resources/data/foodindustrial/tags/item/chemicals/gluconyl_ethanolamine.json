@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gluconyl_ethanolamine",
+    {
+      "id": "#forge:dusts/gluconyl_ethanolamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gluconyl_ethanolamine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/gluconyl_ethanolamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gluconyl_ethanolamine",
+      "required": false
+    }
+  ]
+}

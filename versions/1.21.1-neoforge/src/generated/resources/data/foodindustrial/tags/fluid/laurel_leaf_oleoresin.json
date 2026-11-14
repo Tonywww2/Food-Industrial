@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:laurel_leaf_oleoresin",
+    "foodindustrial:flowing_laurel_leaf_oleoresin",
+    {
+      "id": "#forge:laurel_leaf_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:laurel_leaf_oleoresin",
+      "required": false
+    }
+  ]
+}

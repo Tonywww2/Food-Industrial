@@ -6,6 +6,10 @@
     {
       "id": "#forge:gluconic_acid",
       "required": false
+    },
+    {
+      "id": "#c:gluconic_acid",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoeugenyl_benzyl_ether",
+    {
+      "id": "#forge:dusts/isoeugenyl_benzyl_ether",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isoeugenyl_benzyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/isoeugenyl_benzyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:gems/isoeugenyl_benzyl_ether",
+      "required": false
+    }
+  ]
+}

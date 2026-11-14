@@ -9,6 +9,8 @@ import com.tonywww.foodindustrial.gui.MachineView;
 import com.tonywww.foodindustrial.gui.MenuActions;
 import com.tonywww.foodindustrial.gui.PortMenu;
 import com.tonywww.foodindustrial.machine.component.SideConfig;
+import com.tonywww.foodindustrial.machine.component.SlotRole;
+import com.tonywww.foodindustrial.machine.component.VentMode;
 import com.tonywww.foodindustrial.machine.definition.IoLayout;
 import com.tonywww.foodindustrial.machine.entity.PortBlockEntity;
 import com.tonywww.foodindustrial.platform.Platform;
@@ -20,13 +22,15 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
 
+import org.jetbrains.annotations.Nullable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Port screen (machines/04 §5): the controller's slots, tanks or energy that the port connects, at the
- * positions of the controller's window, and two buttons: direction (input, output, off) and automatic
- * output.
+ * Port screen (machines/04 §5): the controller's slots (with the fuel flame), tanks (with the venting
+ * switches) or energy that the port connects, at the positions a single-block window has them, and two
+ * buttons: direction (input, output, off) and automatic output.
  */
 public class PortScreen extends PlatformScreen<PortMenu> {
     private static final SideConfig.Mode[] DIRECTIONS = {SideConfig.Mode.INPUT, SideConfig.Mode.OUTPUT, SideConfig.Mode.OFF};
@@ -63,10 +67,13 @@ public class PortScreen extends PlatformScreen<PortMenu> {
         canvas.push();
         canvas.translate(leftPos, topPos);
         Widgets.window(canvas, 0, 0, imageWidth, imageHeight);
-        for (Slot slot : menu.slots) {
-            Widgets.slot(canvas, Widgets.SlotKind.NORMAL, slot.x - 1, slot.y - 1);
-        }
         GuiLayout layout = menu.layout();
+        for (int i = 0; i < menu.slots.size(); i++) {
+            Slot slot = menu.slots.get(i);
+            boolean catalyst = menu.controller() != null && menu.kind() == PortBlockEntity.Kind.ITEM
+                && i < menu.controller().layout().itemSlots() && menu.controller().layout().roleOf(i) == SlotRole.CATALYST;
+            Widgets.slot(canvas, catalyst ? Widgets.SlotKind.CATALYST : Widgets.SlotKind.NORMAL, slot.x - 1, slot.y - 1);
+        }
         if (layout == null || menu.controller() == null) {
             canvas.text(Component.translatable(GuiText.key("port", "unattached")), 8, 24, 0xFFB71C1C, false);
         } else if (menu.kind() == PortBlockEntity.Kind.FLUID) {
@@ -78,7 +85,17 @@ public class PortScreen extends PlatformScreen<PortMenu> {
                 if (i == dumpTank && System.currentTimeMillis() < dumpUntil) {
                     canvas.outline(box.x(), box.y(), box.w(), box.h(), 0xFFFF4040);
                 }
+                GuiLayout.Box vent = layout.vent(i);
+                if (vent != null) {
+                    int ventMode = i < view.tankVents.length ? view.tankVents[i] : 0;
+                    Widgets.button(canvas, vent.x(), vent.y(), vent.w(), vent.h(), vent.contains(mx, my), ventMode != 0);
+                    Widgets.vent(canvas, ventMode, vent.x() + (vent.w() - 8) / 2, vent.y() + (vent.h() - 8) / 2);
+                }
             }
+        } else if (menu.kind() == PortBlockEntity.Kind.ITEM && layout.flame() != null) {
+            GuiLayout.Box flame = layout.flame();
+            int lit = view.burnTotal > 0 && view.burnLeft > 0 ? Math.max(1, view.burnLeft * 14 / view.burnTotal) : 0;
+            Widgets.flame(canvas, flame.x(), flame.y(), lit);
         } else if (menu.kind() == PortBlockEntity.Kind.ENERGY && layout.energy() != null) {
             GuiLayout.Box box = layout.energy();
             Widgets.energy(canvas, box.x(), box.y(), box.w(), box.h(), view.energy, view.energyCapacity);
@@ -109,19 +126,37 @@ public class PortScreen extends PlatformScreen<PortMenu> {
                 for (int i = 0; i < menu.controller().layout().tanks(); i++) {
                     if (layout.tank(i).contains(mx, my)) {
                         FluidAmount fluid = i < view.tanks.length ? view.tanks[i] : FluidAmount.EMPTY;
+                        Component role = Component.translatable(GuiText.key("tank", i < menu.controller().layout().fluidIn() ? "input" : "output"));
                         if (fluid.isEmpty()) {
-                            lines.add(Component.translatable(GuiText.key("tank", "empty")));
+                            lines.add(role);
+                            lines.add(Component.translatable(GuiText.key("tank", "empty")).withStyle(ChatFormatting.GRAY));
                         } else {
                             lines.add(PlatformFluids.displayName(fluid));
                             if (Purity.bears(fluid.fluid())) {
                                 Tooltips.purityLine(Purity.materialOf(fluid.fluid()), Purity.get(fluid), lines);
                             }
+                            lines.add(role.copy().withStyle(ChatFormatting.GRAY));
                         }
                         lines.add(Component.translatable(GuiText.key("tank", "amount"), String.valueOf(fluid.amount()), String.valueOf(view.tankCapacity))
                             .withStyle(ChatFormatting.GRAY));
                         if (i == dumpTank && System.currentTimeMillis() < dumpUntil) {
                             lines.add(Component.translatable(GuiText.key("tank", "dump")).withStyle(ChatFormatting.RED));
                         }
+                    }
+                    GuiLayout.Box vent = layout.vent(i);
+                    if (vent != null && vent.contains(mx, my)) {
+                        int ventMode = i < view.tankVents.length ? view.tankVents[i] : 0;
+                        lines.add(Component.translatable(GuiText.key("vent", "title"),
+                            Component.translatable(GuiText.key("vent", VentMode.byIndex(ventMode).id()))));
+                        lines.add(Component.translatable(GuiText.key("vent", "gas_only")).withStyle(ChatFormatting.GRAY));
+                    }
+                }
+            } else if (menu.kind() == PortBlockEntity.Kind.ITEM) {
+                Slot slot = hoveredSlot();
+                if (slot != null && !slot.hasItem()) {
+                    Component name = slotName(slot.index);
+                    if (name != null) {
+                        lines.add(name);
                     }
                 }
             } else if (menu.kind() == PortBlockEntity.Kind.ENERGY && layout.energy() != null && layout.energy().contains(mx, my)) {
@@ -130,6 +165,25 @@ public class PortScreen extends PlatformScreen<PortMenu> {
         }
         if (!lines.isEmpty()) {
             canvas.tooltip(lines, mouseX, mouseY);
+        }
+    }
+
+    /** Name of the controller's slot {@code index} (2026-11-11), or {@code null} for the player's slots. */
+    @Nullable
+    private Component slotName(int index) {
+        if (menu.controller() == null || menu.kind() != PortBlockEntity.Kind.ITEM || index >= menu.controller().layout().itemSlots()) {
+            return null;
+        }
+        IoLayout io = menu.controller().layout();
+        SlotRole role = io.roleOf(index);
+        return Component.translatable(menu.controller().slotName(role, index - io.start(role)));
+    }
+
+    @Override
+    protected void appendSlotTooltip(Slot slot, List<Component> lines) {
+        Component name = slotName(slot.index);
+        if (name != null && !name.getString().equals(slot.getItem().getHoverName().getString())) {
+            lines.add(name.copy().withStyle(ChatFormatting.GRAY));
         }
     }
 
@@ -156,6 +210,12 @@ public class PortScreen extends PlatformScreen<PortMenu> {
         GuiLayout layout = menu.layout();
         if (layout != null && menu.controller() != null && menu.kind() == PortBlockEntity.Kind.FLUID) {
             for (int i = 0; i < menu.controller().layout().tanks(); i++) {
+                GuiLayout.Box vent = layout.vent(i);
+                if (vent != null && vent.contains(mx, my)) {
+                    int ventMode = i < view.tankVents.length ? view.tankVents[i] : 0;
+                    menu.send(MenuActions.VENT, i, VentMode.byIndex(ventMode).cycle(button != 1).ordinal());
+                    return true;
+                }
                 if (layout.tank(i).contains(mx, my)) {
                     if (button == 1 && Platform.isShiftDown()) {
                         long now = System.currentTimeMillis();

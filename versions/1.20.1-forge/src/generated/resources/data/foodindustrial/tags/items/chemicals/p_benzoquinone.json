@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/p_benzoquinone",
       "required": false
+    },
+    {
+      "id": "#c:dusts/p_benzoquinone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_benzoquinone",
+      "required": false
     }
   ]
 }

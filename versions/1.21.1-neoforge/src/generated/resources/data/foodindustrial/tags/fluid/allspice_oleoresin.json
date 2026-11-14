@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allspice_oleoresin",
+    "foodindustrial:flowing_allspice_oleoresin",
+    {
+      "id": "#forge:allspice_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:allspice_oleoresin",
+      "required": false
+    }
+  ]
+}

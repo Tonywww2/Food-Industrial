@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisic_acid",
+    {
+      "id": "#forge:dusts/anisic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/anisic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/anisic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/anisic_acid",
+      "required": false
+    }
+  ]
+}

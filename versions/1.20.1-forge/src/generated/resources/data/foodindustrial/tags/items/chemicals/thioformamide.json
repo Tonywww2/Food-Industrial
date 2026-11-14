@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thioformamide",
+    {
+      "id": "#forge:dusts/thioformamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/thioformamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/thioformamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thioformamide",
+      "required": false
+    }
+  ]
+}

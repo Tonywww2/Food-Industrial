@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:orris_concrete",
+    {
+      "id": "#forge:dusts/orris_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/orris_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/orris_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/orris_concrete",
+      "required": false
+    }
+  ]
+}

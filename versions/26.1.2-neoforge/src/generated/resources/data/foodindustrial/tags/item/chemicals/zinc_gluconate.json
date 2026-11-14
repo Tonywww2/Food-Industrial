@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:zinc_gluconate",
     {
+      "id": "#forge:dusts/zinc_gluconate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_gluconate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/zinc_gluconate",
       "required": false
     },

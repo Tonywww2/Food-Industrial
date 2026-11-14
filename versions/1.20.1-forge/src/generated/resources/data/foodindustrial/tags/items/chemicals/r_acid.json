@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/r_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/r_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/r_acid",
+      "required": false
     }
   ]
 }

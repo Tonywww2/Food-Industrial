@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "input": {
+    "amount": 4,
+    "ingredient": {
+      "tag": "foodindustrial:materials/cassia_seed"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:cassia_gum",
+    "nbt": "{Purity:-4b}"
+  }
+}

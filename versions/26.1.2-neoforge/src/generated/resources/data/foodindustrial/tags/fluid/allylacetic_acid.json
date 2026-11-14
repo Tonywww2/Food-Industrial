@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allylacetic_acid",
+    "foodindustrial:flowing_allylacetic_acid",
+    {
+      "id": "#forge:allylacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:allylacetic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzylamine",
+    "foodindustrial:flowing_benzylamine",
+    {
+      "id": "#forge:benzylamine",
+      "required": false
+    },
+    {
+      "id": "#c:benzylamine",
+      "required": false
+    }
+  ]
+}

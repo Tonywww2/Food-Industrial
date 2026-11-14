@@ -3,6 +3,7 @@ package com.tonywww.foodindustrial.core.text;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -45,7 +46,36 @@ public final class TextChecks {
      * Word of an English name: letters start upper case, except chemical prefixes (l-, dl-, n-, …) and the
      * short words English title case keeps lower case (Plaster of Paris, Palladium on Carbon).
      */
-    private static final Pattern EN_NAME_WORD_OK = Pattern.compile("^(?:[^A-Za-z]|[A-Z]|(?:l|d|dl|n|o|m|p|cis|trans|sec|tert)-|(?:of|and|on|in|for|with|the)$).*");
+    private static final Pattern EN_NAME_WORD_OK = Pattern.compile("^(?:[^A-Za-z]|[A-Z]|(?:l|d|dl|n|o|m|p|cis|trans|sec|tert)-|(?:of|and|on|in|for|with|the|or|from)$).*");
+    /**
+     * Chemical names as GB 2760 writes them (I31, 2026-11-11): a half-width group inside a name (a substituent
+     * 双(2-甲基-3-呋喃基)、二(甲硫基)甲烷, a descriptor (+/-)-、(E)-, an alternative locant 3,5(或6)-), i.e. one whose
+     * content has a digit, Latin letter or sign, or that starts with 或, or that is followed by more of the name.
+     * Only a trailing group of Chinese words is a qualifier and must be full-width (丁香花蕾酊（提取物）).
+     */
+    private static final Pattern CHEMICAL_NAME_GROUP = Pattern.compile(
+        "\\((?:[^()（）]*[0-9A-Za-z+±/,αβγδεω-][^()（）]*|或[^()（）]*)\\)|\\([^()（）]*\\)(?=.)");
+    /** Locants written against Chinese text in GB names (丁酸3-丁酮-2-醇酯、3,5(或6)-), masked before the space check. */
+    private static final Pattern LOCANT = Pattern.compile("[A-Za-z0-9]+(?:[(),][A-Za-z0-9]+\\)?)*(?=-)|\\d+(?=[)或和])|(?<=[(或和])\\d+");
+    /** Commas of a chemical name between descriptors (对,α-、反式,反式-、(48%),亚麻酸), masked before the punctuation check. */
+    private static final Pattern NAME_COMMA = Pattern.compile("(?<=\\S),(?=\\S)");
+    /**
+     * Configuration prefixes (text-standard §2.1, 2026-11-12): Fischer configuration of amino acids, sugars and
+     * hydroxy acids in capitals ({@code L-Lysine}, {@code D-Ribose}), optical rotation of terpenes and tocopherols
+     * in lower case ({@code d-Limonene}, {@code l-Menthol}). The stems tell which a name is.
+     */
+    private static final Pattern FISCHER_LOWER = Pattern.compile("(?<![A-Za-z])(?:d|l|dl)-(?i:alanin|arginin|asparagin|aspart|"
+        + "cystein|cystin|glutam|glycer|histidin|isoleucin|leucin|lysin|methionin|phenylalanin|prolin|serin|threon|tryptophan|tyrosin|"
+        + "valin|carnitin|theanin|ornithin|citrullin|selenocystein|methylselenocystein|homocystein|ribos|rhamnos|xylos|arabinos|glucos|"
+        + "fructos|galactos|mannos|tagatos|allulos|psicos|fucos|sorbos|glucon|glucuron|lact|malic|malate|tartar|tartrat|pantothen|"
+        + "pantolacton|pantoic|ascorb|sorbit|mannit|xylit|erythrit)");
+    private static final Pattern OPTICAL_UPPER = Pattern.compile("(?<![A-Za-z])(?:D|L|DL)-(?i:limonen|menthol|menthon|isomenthon|"
+        + "carvon|camphor|borne|pinen|linalo|citronell|fench|terpine|piperiton|pulegon|carvyl|isopulegol|nootkaton|camphen|tocopher|"
+        + "alpha-tocopher)");
+    /** Chemical prefixes of English names: l-, dl-, alpha-, p,alpha-, trans,trans-, and isomer lists (o, m, p). */
+    private static final String CHEM_PREFIX = "(?:l|d|dl|n|o|m|p|cis|trans|sec|tert|alpha|beta|gamma|delta|epsilon|omega|[αβγδεω])";
+    private static final Pattern EN_CHEMICAL_WORD = Pattern.compile(
+        "^(?:" + CHEM_PREFIX + "(?:[,/]" + CHEM_PREFIX + ")*-.*|" + CHEM_PREFIX + "(?:[,/]" + CHEM_PREFIX + ")*[,)]?)$");
 
     private TextChecks() {
     }
@@ -55,13 +85,13 @@ public final class TextChecks {
      *
      * @throws IllegalStateException listing all problems
      */
-    public static void checkAll(Map<String, String> zh, Map<String, String> en, Map<String, String> commonNames) {
+    public static void checkAll(Map<String, String> zh, Map<String, String> en, Map<String, String> commonNames, Set<String> chemical) {
         List<String> problems = new ArrayList<>();
         if (!zh.keySet().equals(en.keySet())) {
             problems.add("zh_cn and en_us keys differ");
         }
-        zh.forEach((key, value) -> checkZh(key, value, problems));
-        en.forEach((key, value) -> checkEn(key, value, problems));
+        zh.forEach((key, value) -> checkZh(key, plain(key, value), chemical.contains(key), problems));
+        en.forEach((key, value) -> checkEn(key, plain(key, value), chemical.contains(key), problems));
         Map<String, String> names = new TreeMap<>();
         zh.forEach((key, value) -> {
             if (isName(key)) {
@@ -74,7 +104,20 @@ public final class TextChecks {
         }
     }
 
+    /** Patchouli formatting codes ({@code $(br2)}, {@code $(l)} …) in book texts are markup, not text (I23). */
+    private static final Pattern BOOK_CODE = Pattern.compile("\\$\\([^)]*\\)");
+
+    /** The text a reader sees: book texts without their formatting codes, line breaks as spaces. */
+    static String plain(String key, String value) {
+        return key.startsWith("book.") ? BOOK_CODE.matcher(value).replaceAll(" ").replaceAll(" {2,}", " ").trim() : value;
+    }
+
     static void checkZh(String key, String value, List<String> problems) {
+        checkZh(key, value, false, problems);
+    }
+
+    /** {@code chemical}: the entry is the name of a material, written as its standard name (I31). */
+    static void checkZh(String key, String value, boolean chemical, List<String> problems) {
         if (value.isBlank()) {
             problems.add(key + ": empty");
             return;
@@ -87,8 +130,10 @@ public final class TextChecks {
         if (value.contains("！") || value.contains("!") || EMOJI.matcher(value).find()) {
             problems.add(key + ": exclamation mark or emoji in \"" + value + "\"");
         }
-        find(MISSING_SPACE, key, value, "missing space between Chinese and Latin / digits", problems);
-        find(HALF_WIDTH, key, CHEMICAL_GROUP.matcher(value).replaceAll(""), "half-width punctuation", problems);
+        find(MISSING_SPACE, key, chemical ? LOCANT.matcher(value).replaceAll("-") : value,
+            "missing space between Chinese and Latin / digits", problems);
+        String groups = chemical ? NAME_COMMA.matcher(CHEMICAL_NAME_GROUP.matcher(value).replaceAll("0")).replaceAll("0") : value;
+        find(HALF_WIDTH, key, CHEMICAL_GROUP.matcher(groups).replaceAll(""), "half-width punctuation", problems);
         find(RANGE_HYPHEN, key, value, "range written with '-' instead of '–'", problems);
         find(PERCENT_SPACE, key, value, "space before %", problems);
         find(UNIT, key, value, "unit spacing or case", problems);
@@ -107,6 +152,11 @@ public final class TextChecks {
     }
 
     static void checkEn(String key, String value, List<String> problems) {
+        checkEn(key, value, false, problems);
+    }
+
+    /** {@code chemical}: a material name; chemical prefixes may start it and its length is not limited (I31). */
+    static void checkEn(String key, String value, boolean chemical, List<String> problems) {
         if (value.isBlank()) {
             problems.add(key + ": empty");
             return;
@@ -119,16 +169,19 @@ public final class TextChecks {
         if (isLine(key) && value.endsWith(".")) {
             problems.add(key + ": single line ends with \".\"");
         }
-        if (isLine(key) && startsInLowerCase(value)) {
+        if (isLine(key) && startsInLowerCase(value) && !(chemical && EN_CHEMICAL_WORD.matcher(value.split(" ", 2)[0]).matches())) {
             problems.add(key + ": English line starts in lower case");
         }
-        if (key.startsWith("tooltip.") && value.length() > MAX_EN_TOOLTIP) {
+        if (key.startsWith("tooltip.") && value.length() > MAX_EN_TOOLTIP && !chemical) {
             problems.add(key + ": English tooltip has " + value.length() + " characters (max " + MAX_EN_TOOLTIP + ")");
         }
         if (isName(key)) {
+            find(FISCHER_LOWER, key, value, "Fischer configuration prefix in lower case (D-, L-, DL-)", problems);
+            find(OPTICAL_UPPER, key, value, "optical rotation prefix in capitals (d-, l-, dl-)", problems);
             for (String word : value.split(" ")) {
                 String bare = word.startsWith("(") ? word.substring(1) : word;
-                if (!bare.isEmpty() && !EN_NAME_WORD_OK.matcher(bare).matches()) {
+                if (!bare.isEmpty() && !EN_NAME_WORD_OK.matcher(bare).matches()
+                    && !(chemical && EN_CHEMICAL_WORD.matcher(bare).matches())) {
                     problems.add(key + ": English name word \"" + word + "\" not capitalised");
                 }
             }

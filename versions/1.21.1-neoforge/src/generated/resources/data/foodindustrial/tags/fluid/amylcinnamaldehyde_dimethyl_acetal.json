@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amylcinnamaldehyde_dimethyl_acetal",
+    "foodindustrial:flowing_amylcinnamaldehyde_dimethyl_acetal",
+    {
+      "id": "#forge:amylcinnamaldehyde_dimethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:amylcinnamaldehyde_dimethyl_acetal",
+      "required": false
+    }
+  ]
+}

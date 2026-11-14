@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexenyl_isothiocyanate",
+    "foodindustrial:flowing_hexenyl_isothiocyanate",
+    {
+      "id": "#forge:hexenyl_isothiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:hexenyl_isothiocyanate",
+      "required": false
+    }
+  ]
+}

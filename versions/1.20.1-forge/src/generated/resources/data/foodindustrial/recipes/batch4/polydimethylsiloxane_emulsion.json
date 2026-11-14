@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "foodindustrial:purity",
+        "base": {
+          "tag": "foodindustrial:chemicals/sorbitan_monostearate"
+        },
+        "min_purity": "food"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "min_purity": "food",
+        "tag": "foodindustrial:polydimethylsiloxane"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:polydimethylsiloxane_emulsion"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "emulsifying"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 100
+}

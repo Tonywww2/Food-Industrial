@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:activated_clay",
+    {
+      "id": "#forge:dusts/activated_clay",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/activated_clay",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/activated_clay",
+      "required": false
+    },
+    {
+      "id": "#c:gems/activated_clay",
+      "required": false
+    }
+  ]
+}

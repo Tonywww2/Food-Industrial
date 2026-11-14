@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyltridecanal",
+    "foodindustrial:flowing_methyltridecanal",
+    {
+      "id": "#forge:methyltridecanal",
+      "required": false
+    },
+    {
+      "id": "#c:methyltridecanal",
+      "required": false
+    }
+  ]
+}

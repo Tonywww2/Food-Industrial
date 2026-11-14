@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:refined_wood_vinegar",
+  "loader": "neoforge:fluid_container"
+}

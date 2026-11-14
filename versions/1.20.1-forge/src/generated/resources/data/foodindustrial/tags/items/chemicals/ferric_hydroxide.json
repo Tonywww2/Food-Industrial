@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ferric_hydroxide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ferric_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferric_hydroxide",
+      "required": false
     }
   ]
 }

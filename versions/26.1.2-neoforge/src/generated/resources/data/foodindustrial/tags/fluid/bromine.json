@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bromine",
+    "foodindustrial:flowing_bromine",
+    {
+      "id": "#forge:bromine",
+      "required": false
+    },
+    {
+      "id": "#c:bromine",
+      "required": false
+    }
+  ]
+}

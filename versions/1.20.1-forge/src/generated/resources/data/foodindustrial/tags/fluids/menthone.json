@@ -6,6 +6,10 @@
     {
       "id": "#forge:menthone",
       "required": false
+    },
+    {
+      "id": "#c:menthone",
+      "required": false
     }
   ]
 }

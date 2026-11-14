@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:star_anise_oil",
+    "foodindustrial:flowing_star_anise_oil",
+    {
+      "id": "#forge:star_anise_oil",
+      "required": false
+    },
+    {
+      "id": "#c:star_anise_oil",
+      "required": false
+    }
+  ]
+}

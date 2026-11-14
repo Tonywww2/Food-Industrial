@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyridylethylamine",
+    "foodindustrial:flowing_pyridylethylamine",
+    {
+      "id": "#forge:pyridylethylamine",
+      "required": false
+    },
+    {
+      "id": "#c:pyridylethylamine",
+      "required": false
+    }
+  ]
+}

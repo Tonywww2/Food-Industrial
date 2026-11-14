@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hickory_bark_extract",
+    "foodindustrial:flowing_hickory_bark_extract",
+    {
+      "id": "#forge:hickory_bark_extract",
+      "required": false
+    },
+    {
+      "id": "#c:hickory_bark_extract",
+      "required": false
+    }
+  ]
+}

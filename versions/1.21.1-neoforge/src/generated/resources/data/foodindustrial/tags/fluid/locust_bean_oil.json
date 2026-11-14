@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:locust_bean_oil",
+    "foodindustrial:flowing_locust_bean_oil",
+    {
+      "id": "#forge:locust_bean_oil",
+      "required": false
+    },
+    {
+      "id": "#c:locust_bean_oil",
+      "required": false
+    }
+  ]
+}

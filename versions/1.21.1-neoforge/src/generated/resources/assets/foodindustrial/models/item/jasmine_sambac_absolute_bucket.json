@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:jasmine_sambac_absolute",
+  "loader": "neoforge:fluid_container"
+}

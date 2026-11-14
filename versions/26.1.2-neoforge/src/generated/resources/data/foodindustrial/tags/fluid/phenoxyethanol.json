@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenoxyethanol",
+    "foodindustrial:flowing_phenoxyethanol",
+    {
+      "id": "#forge:phenoxyethanol",
+      "required": false
+    },
+    {
+      "id": "#c:phenoxyethanol",
+      "required": false
+    }
+  ]
+}

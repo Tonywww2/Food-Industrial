@@ -1,0 +1,46 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:samples/mold"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/agar"
+      }
+    }
+  ],
+  "mode": "isolation",
+  "outputs": [
+    {
+      "item": "foodindustrial:aspergillus_niger",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:penicillium_citrinum",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "plate": {
+    "weights": [
+      1,
+      1,
+      2
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

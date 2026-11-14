@@ -1,0 +1,22 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/gardenia"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:crushed_gardenia"
+  }
+}

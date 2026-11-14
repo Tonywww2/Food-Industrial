@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sage_oleoresin",
+    "foodindustrial:flowing_sage_oleoresin",
+    {
+      "id": "#forge:sage_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:sage_oleoresin",
+      "required": false
+    }
+  ]
+}

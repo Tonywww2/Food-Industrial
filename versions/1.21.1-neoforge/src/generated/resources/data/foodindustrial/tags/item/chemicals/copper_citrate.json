@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:copper_citrate",
+    {
+      "id": "#forge:dusts/copper_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/copper_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/copper_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper_citrate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/titanium_slag"
+    },
+    {
+      "tag": "foodindustrial:materials/coke"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "item": "foodindustrial:chlorination_charge"
+    }
+  ]
+}

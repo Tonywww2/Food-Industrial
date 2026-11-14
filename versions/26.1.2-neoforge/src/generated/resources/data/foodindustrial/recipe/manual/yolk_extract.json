@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/cooked_egg_yolk"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:fruit_wine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:yolk_extract"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight"
+  },
+  "time": 24000
+}

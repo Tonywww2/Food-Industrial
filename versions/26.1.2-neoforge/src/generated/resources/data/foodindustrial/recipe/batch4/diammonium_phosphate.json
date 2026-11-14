@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:absorbing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/monoammonium_phosphate"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ammonia"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:diammonium_phosphate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

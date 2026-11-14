@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/bismuth_molybdate"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:propene"
+      }
+    }
+  ],
+  "mode": "gas_catalysis",
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:acrylic_acid"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

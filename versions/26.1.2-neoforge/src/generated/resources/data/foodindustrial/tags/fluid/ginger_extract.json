@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ginger_extract",
+    "foodindustrial:flowing_ginger_extract",
+    {
+      "id": "#forge:ginger_extract",
+      "required": false
+    },
+    {
+      "id": "#c:ginger_extract",
+      "required": false
+    }
+  ]
+}

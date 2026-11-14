@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wasabi"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "steam_distillation",
+  "outputs": [
+    {
+      "amount": 50,
+      "fluid": "foodindustrial:hexenyl_isothiocyanate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 30,
+      "fluid": "foodindustrial:methylthiohexyl_isothiocyanate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "oil_separation"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

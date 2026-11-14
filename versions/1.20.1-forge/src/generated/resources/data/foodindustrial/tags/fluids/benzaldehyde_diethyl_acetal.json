@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzaldehyde_diethyl_acetal",
+    "foodindustrial:flowing_benzaldehyde_diethyl_acetal",
+    {
+      "id": "#forge:benzaldehyde_diethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:benzaldehyde_diethyl_acetal",
+      "required": false
+    }
+  ]
+}

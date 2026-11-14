@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethanol",
       "required": false
+    },
+    {
+      "id": "#c:ethanol",
+      "required": false
     }
   ]
 }

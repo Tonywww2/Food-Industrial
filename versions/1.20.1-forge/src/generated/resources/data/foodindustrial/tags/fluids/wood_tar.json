@@ -10,6 +10,14 @@
     {
       "id": "#forge:creosote",
       "required": false
+    },
+    {
+      "id": "#c:wood_tar",
+      "required": false
+    },
+    {
+      "id": "#c:creosote",
+      "required": false
     }
   ]
 }

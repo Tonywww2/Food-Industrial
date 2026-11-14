@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_decadienoate",
+    "foodindustrial:flowing_propyl_decadienoate",
+    {
+      "id": "#forge:propyl_decadienoate",
+      "required": false
+    },
+    {
+      "id": "#c:propyl_decadienoate",
+      "required": false
+    }
+  ]
+}

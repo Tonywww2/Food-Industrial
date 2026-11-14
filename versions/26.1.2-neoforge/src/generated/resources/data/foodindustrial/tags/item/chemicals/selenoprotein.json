@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:selenoprotein",
+    {
+      "id": "#forge:dusts/selenoprotein",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/selenoprotein",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/selenoprotein",
+      "required": false
+    },
+    {
+      "id": "#c:gems/selenoprotein",
+      "required": false
+    }
+  ]
+}

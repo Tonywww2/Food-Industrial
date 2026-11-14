@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_methylphenylglycidate",
+    "foodindustrial:flowing_ethyl_methylphenylglycidate",
+    {
+      "id": "#forge:ethyl_methylphenylglycidate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_methylphenylglycidate",
+      "required": false
+    }
+  ]
+}

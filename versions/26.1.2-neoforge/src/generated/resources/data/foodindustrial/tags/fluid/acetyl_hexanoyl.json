@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetyl_hexanoyl",
+    "foodindustrial:flowing_acetyl_hexanoyl",
+    {
+      "id": "#forge:acetyl_hexanoyl",
+      "required": false
+    },
+    {
+      "id": "#c:acetyl_hexanoyl",
+      "required": false
+    }
+  ]
+}

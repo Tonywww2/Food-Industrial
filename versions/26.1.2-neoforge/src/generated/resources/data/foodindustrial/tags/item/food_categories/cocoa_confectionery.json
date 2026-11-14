@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dark_chocolate",
+    "foodindustrial:milk_chocolate",
+    "foodindustrial:white_chocolate",
+    "foodindustrial:chocolate_chips",
+    "foodindustrial:coated_chocolate_beans",
+    "foodindustrial:liqueur_chocolate",
+    "foodindustrial:hard_candy",
+    "foodindustrial:mint_candy",
+    "foodindustrial:throat_lozenge",
+    "foodindustrial:gummy_candy",
+    "foodindustrial:pectin_jelly_candy",
+    "foodindustrial:marshmallow",
+    "foodindustrial:nougat",
+    "foodindustrial:toffee",
+    "foodindustrial:caramel_candy",
+    "foodindustrial:milk_candy",
+    "foodindustrial:chewing_gum",
+    "foodindustrial:sugar_free_gum",
+    "foodindustrial:lollipop",
+    "foodindustrial:tanghulu",
+    "foodindustrial:dragon_beard_candy",
+    "foodindustrial:sesame_brittle",
+    "foodindustrial:peanut_brittle",
+    "foodindustrial:popping_candy"
+  ]
+}

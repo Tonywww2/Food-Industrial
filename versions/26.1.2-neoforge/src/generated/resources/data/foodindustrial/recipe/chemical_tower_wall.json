@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "#c:ingots/gold",
+    "I": "#c:ingots/iron",
+    "W": "foodindustrial:tower_wall"
+  },
+  "pattern": [
+    "IWI",
+    "WGW",
+    "IWI"
+  ],
+  "result": {
+    "count": 8,
+    "id": "foodindustrial:chemical_tower_wall"
+  }
+}

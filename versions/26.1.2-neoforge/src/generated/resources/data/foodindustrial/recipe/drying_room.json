@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "minecraft:furnace",
+    "R": "foodindustrial:drying_rack",
+    "W": "foodindustrial:drying_room_wall"
+  },
+  "pattern": [
+    "WRW",
+    "WFW",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:drying_room"
+  }
+}

@@ -22,7 +22,11 @@ class ConditionVocabularyTest {
     @Test
     void tableOfTextStandard() {
         assertEquals(6, ConditionVocabulary.category("temperature").size());
-        assertEquals(15, ConditionVocabulary.category("method").size());
+        assertEquals(19, ConditionVocabulary.category("method").size());
+        // machine modes (I14–I17): one word per mode of M01–M31, shared modes once, and M25's regeneration
+        assertEquals(73, ConditionVocabulary.category("mode").size());
+        assertEquals("晾晒结晶", ConditionVocabulary.find("mode", "sun_crystallization").orElseThrow().zh());
+        assertTrue(ConditionVocabulary.isConditionCategory("mode"));
         assertEquals("极高温", ConditionVocabulary.find("temperature", "extreme").orElseThrow().zh());
         assertEquals("condition.foodindustrial.pressure.vacuum", ConditionVocabulary.find("pressure", "vacuum").orElseThrow().translationKey());
         assertTrue(ConditionVocabulary.find("method", "vacuum").isPresent());

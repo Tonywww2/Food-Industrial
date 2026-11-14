@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:materials/red_radish"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/citric_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "mode": "solvent_extraction",
+  "outputs": [
+    {
+      "item": "foodindustrial:radish_red",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:ethanol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

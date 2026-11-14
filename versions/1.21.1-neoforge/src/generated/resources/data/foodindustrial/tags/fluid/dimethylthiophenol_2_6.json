@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylthiophenol_2_6",
+    "foodindustrial:flowing_dimethylthiophenol_2_6",
+    {
+      "id": "#forge:dimethylthiophenol_2_6",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylthiophenol_2_6",
+      "required": false
+    }
+  ]
+}

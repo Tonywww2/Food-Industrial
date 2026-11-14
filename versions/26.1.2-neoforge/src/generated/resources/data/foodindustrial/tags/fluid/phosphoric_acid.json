@@ -4,6 +4,10 @@
     "foodindustrial:phosphoric_acid",
     "foodindustrial:flowing_phosphoric_acid",
     {
+      "id": "#forge:phosphoric_acid",
+      "required": false
+    },
+    {
       "id": "#c:phosphoric_acid",
       "required": false
     }

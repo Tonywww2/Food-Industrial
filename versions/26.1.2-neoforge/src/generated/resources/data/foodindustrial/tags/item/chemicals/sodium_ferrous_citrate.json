@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_ferrous_citrate",
+    {
+      "id": "#forge:dusts/sodium_ferrous_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_ferrous_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_ferrous_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_ferrous_citrate",
+      "required": false
+    }
+  ]
+}

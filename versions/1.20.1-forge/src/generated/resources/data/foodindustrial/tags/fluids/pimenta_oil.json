@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pimenta_oil",
+    "foodindustrial:flowing_pimenta_oil",
+    {
+      "id": "#forge:pimenta_oil",
+      "required": false
+    },
+    {
+      "id": "#c:pimenta_oil",
+      "required": false
+    }
+  ]
+}

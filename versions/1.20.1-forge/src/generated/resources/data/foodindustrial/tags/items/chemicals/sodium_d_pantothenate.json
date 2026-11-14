@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_d_pantothenate",
+    {
+      "id": "#forge:dusts/sodium_d_pantothenate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_d_pantothenate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_d_pantothenate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_d_pantothenate",
+      "required": false
+    }
+  ]
+}

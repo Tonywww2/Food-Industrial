@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/l_cystine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/l_cystine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_cystine",
+      "required": false
     }
   ]
 }

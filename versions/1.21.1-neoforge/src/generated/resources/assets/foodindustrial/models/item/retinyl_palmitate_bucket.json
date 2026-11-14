@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:retinyl_palmitate",
+  "loader": "neoforge:fluid_container"
+}

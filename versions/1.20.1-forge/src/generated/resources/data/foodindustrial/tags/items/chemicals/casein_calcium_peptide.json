@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:casein_calcium_peptide",
+    {
+      "id": "#forge:dusts/casein_calcium_peptide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/casein_calcium_peptide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/casein_calcium_peptide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/casein_calcium_peptide",
+      "required": false
+    }
+  ]
+}

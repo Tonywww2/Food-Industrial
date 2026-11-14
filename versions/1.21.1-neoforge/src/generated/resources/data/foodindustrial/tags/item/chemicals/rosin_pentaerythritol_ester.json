@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:rosin_pentaerythritol_ester",
     {
+      "id": "#forge:dusts/rosin_pentaerythritol_ester",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rosin_pentaerythritol_ester",
+      "required": false
+    },
+    {
       "id": "#c:dusts/rosin_pentaerythritol_ester",
       "required": false
     },

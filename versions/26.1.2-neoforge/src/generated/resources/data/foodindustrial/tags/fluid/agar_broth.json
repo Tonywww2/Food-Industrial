@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:agar_broth",
+    "foodindustrial:flowing_agar_broth",
+    {
+      "id": "#forge:agar_broth",
+      "required": false
+    },
+    {
+      "id": "#c:agar_broth",
+      "required": false
+    }
+  ]
+}

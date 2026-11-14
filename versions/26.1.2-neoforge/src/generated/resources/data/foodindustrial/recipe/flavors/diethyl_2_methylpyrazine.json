@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:acetylpropionyl"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:butanediamine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:diethyl_3_methylpyrazine_2_5",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:diethyl_2_methylpyrazine",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

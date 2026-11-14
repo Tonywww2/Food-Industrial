@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_methylvaleric_acid",
+    "foodindustrial:flowing_alpha_methylvaleric_acid",
+    {
+      "id": "#forge:alpha_methylvaleric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_methylvaleric_acid",
+      "required": false
+    }
+  ]
+}

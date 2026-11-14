@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hops_tincture",
+    "foodindustrial:flowing_hops_tincture",
+    {
+      "id": "#forge:hops_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:hops_tincture",
+      "required": false
+    }
+  ]
+}

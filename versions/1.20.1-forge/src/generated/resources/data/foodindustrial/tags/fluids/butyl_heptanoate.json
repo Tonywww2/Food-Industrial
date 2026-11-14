@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_heptanoate",
+    "foodindustrial:flowing_butyl_heptanoate",
+    {
+      "id": "#forge:butyl_heptanoate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_heptanoate",
+      "required": false
+    }
+  ]
+}

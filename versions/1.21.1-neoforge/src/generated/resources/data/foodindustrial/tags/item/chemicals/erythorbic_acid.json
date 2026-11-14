@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:erythorbic_acid",
     {
+      "id": "#forge:dusts/erythorbic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/erythorbic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/erythorbic_acid",
       "required": false
     },

@@ -1,0 +1,47 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t1",
+        "t2"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "type": "foodindustrial:purity",
+      "base": {
+        "tag": "foodindustrial:chemicals/sodium_bicarbonate"
+      },
+      "min_purity": "food"
+    },
+    {
+      "type": "foodindustrial:purity",
+      "base": {
+        "tag": "foodindustrial:chemicals/sodium_acid_pyrophosphate"
+      },
+      "min_purity": "food"
+    },
+    {
+      "type": "foodindustrial:purity",
+      "base": {
+        "tag": "foodindustrial:chemicals/starch"
+      },
+      "min_purity": "food"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "item": "foodindustrial:baking_powder",
+      "nbt": "{Purity:33b}"
+    }
+  ]
+}

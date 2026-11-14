@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:palmarosa_oil",
+    "foodindustrial:flowing_palmarosa_oil",
+    {
+      "id": "#forge:palmarosa_oil",
+      "required": false
+    },
+    {
+      "id": "#c:palmarosa_oil",
+      "required": false
+    }
+  ]
+}

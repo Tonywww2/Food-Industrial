@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:agar_jelly",
     {
+      "id": "#forge:dusts/agar_jelly",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/agar_jelly",
+      "required": false
+    },
+    {
       "id": "#c:dusts/agar_jelly",
       "required": false
     },

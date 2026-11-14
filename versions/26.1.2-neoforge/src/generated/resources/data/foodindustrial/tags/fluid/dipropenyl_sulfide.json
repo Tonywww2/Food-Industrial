@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dipropenyl_sulfide",
+    "foodindustrial:flowing_dipropenyl_sulfide",
+    {
+      "id": "#forge:dipropenyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:dipropenyl_sulfide",
+      "required": false
+    }
+  ]
+}

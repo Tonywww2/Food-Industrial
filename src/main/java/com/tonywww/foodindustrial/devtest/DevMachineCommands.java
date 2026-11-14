@@ -43,6 +43,10 @@ final class DevMachineCommands {
                 .executes(DevMachineCommands::show)
                 .then(Commands.literal("energy").then(Commands.argument("fe", IntegerArgumentType.integer(0)).executes(DevMachineCommands::energy)))
                 .then(Commands.literal("set").then(Commands.argument("args", StringArgumentType.greedyString()).executes(DevMachineCommands::set))))));
+        dispatcher.register(Commands.literal("fidev").then(Commands.literal("bench")
+            .then(Commands.argument("running", IntegerArgumentType.integer(0, 4096))
+                .then(Commands.argument("sleeping", IntegerArgumentType.integer(0, 4096)).executes(DevMachineCommands::bench)))));
+        dispatcher.register(Commands.literal("fidev").then(Commands.literal("benchfill").executes(DevMachineCommands::benchFill)));
         dispatcher.register(Commands.literal("foodindustrial").then(Commands.literal("perf")
             .then(Commands.literal("start").executes(context -> {
                 MachinePerf.start(context.getSource().getLevel().getGameTime());
@@ -94,14 +98,49 @@ final class DevMachineCommands {
             if (processing.processor().missing() != null) {
                 line.append(" missing=").append(processing.processor().missing());
             }
+            if (processing.processor().runs() > 1) {
+                line.append(" runs=").append(processing.processor().runs());
+            }
+            var job = processing.job();
+            if (job != null && current == null) {
+                line.append(" job=").append(job.item().getCount()).append("x").append(job.item().getItem()).append(" progress=").append(job.progress());
+            }
+        }
+        if (machine.definition().airIntake()) {
+            line.append(" air=").append(machine.airOpen());
+        }
+        line.append(" speed=").append(machine.speedPermille());
+        if (machine instanceof com.tonywww.foodindustrial.machine.bio.CultureBenchBlockEntity bench) {
+            line.append(" plate=").append(bench.stage()).append(" inoculable=").append(bench.canInoculate()).append(" colonies=").append(bench.colonies().size());
+        }
+        if (machine.lastBatchContaminated()) {
+            line.append(" contaminated");
+        }
+        for (int i = 0; i < machine.inventory().count(com.tonywww.foodindustrial.machine.component.SlotRole.CATALYST); i++) {
+            if (machine.catalysts().used(i) > 0 || machine.catalystSaturated(i)) {
+                line.append(" cat").append(i).append("=").append(machine.catalysts().used(i)).append(machine.catalystSaturated(i) ? "(saturated)" : "");
+            }
         }
         if (machine instanceof MultiblockControllerBlockEntity controller) {
-            line.append(" formed=").append(controller.formed()).append(" ports=").append(controller.ports().size())
+            line.append(" formed=").append(controller.formed()).append(" layers=").append(controller.layers()).append(" ports=").append(controller.ports().size())
                 .append(" wrong=").append(controller.wrongBlocks().size());
+            if (!controller.missingPorts().isEmpty()) {
+                line.append(" needs=").append(controller.missingPorts());
+            }
         }
         if (machine.energy() != null) {
             line.append(" energy=").append(machine.energy().getEnergy());
         }
+        if (machine.definition().power() == com.tonywww.foodindustrial.machine.definition.PowerKind.MANUAL) {
+            line.append(" manual=").append(machine.manualPower());
+        }
+        if (machine.lacking() != null) {
+            line.append(" lacking=").append(machine.lacking());
+        }
+        if (machine.definition().climate() != null) {
+            line.append(" warm=").append(machine.warm()).append(" humid=").append(machine.humid());
+        }
+        line.append(" caps=").append(machine.capabilities().keys());
         if (machine.heat() != null) {
             line.append(" burn=").append(machine.heat().burnLeft()).append('/').append(machine.heat().burnTotal());
         }
@@ -153,6 +192,63 @@ final class DevMachineCommands {
         return 0;
     }
 
+    // ---- benchmark world (I27, machines/02 §6.4 rule 15) ----
+
+    private static final java.util.List<BlockPos> BENCH_RUNNING = new java.util.ArrayList<>();
+
+    /**
+     * {@code /fidev bench <running> <sleeping>}: crushers (M11) in rows of 32 east and south of the
+     * caller, one block apart: the first {@code running} get 64 gypsum ore and full energy and run, the
+     * rest stay empty and sleep. A stone floor goes under each row.
+     */
+    private static int bench(CommandContext<CommandSourceStack> context) {
+        int running = IntegerArgumentType.getInteger(context, "running");
+        int sleeping = IntegerArgumentType.getInteger(context, "sleeping");
+        net.minecraft.server.level.ServerLevel level = context.getSource().getLevel();
+        BlockPos origin = BlockPos.containing(context.getSource().getPosition()).offset(2, 0, 2);
+        net.minecraft.world.level.block.Block crusher = PlatformTags.block("foodindustrial:crusher").orElseThrow();
+        net.minecraft.world.level.block.Block floor = net.minecraft.world.level.block.Blocks.STONE;
+        BENCH_RUNNING.clear();
+        int total = running + sleeping;
+        for (int i = 0; i < total; i++) {
+            BlockPos pos = origin.offset((i % 32) * 2, 0, (i / 32) * 2);
+            level.setBlock(pos.below(), floor.defaultBlockState(), 2);
+            level.setBlock(pos, crusher.defaultBlockState(), 3);
+            if (i < running) {
+                BENCH_RUNNING.add(pos.immutable());
+            }
+        }
+        int filled = fill(level);
+        reply(context, "bench: " + total + " crushers from " + origin.toShortString() + ", " + filled + " running");
+        return total;
+    }
+
+    /** {@code /fidev benchfill}: refills the running bench machines (ore and energy). */
+    private static int benchFill(CommandContext<CommandSourceStack> context) {
+        int filled = fill(context.getSource().getLevel());
+        reply(context, "bench: refilled " + filled);
+        return filled;
+    }
+
+    private static int fill(net.minecraft.server.level.ServerLevel level) {
+        int filled = 0;
+        net.minecraft.world.item.Item ore = PlatformTags.item("foodindustrial:gypsum_ore").orElseThrow();
+        for (BlockPos pos : BENCH_RUNNING) {
+            if (level.getBlockEntity(pos) instanceof MachineBlockEntity machine) {
+                machine.inventory().set(0, new ItemStack(ore, 64));
+                for (int slot = 1; slot < machine.inventory().size(); slot++) {
+                    machine.inventory().set(slot, ItemStack.EMPTY);
+                }
+                if (machine.energy() != null) {
+                    machine.energy().setEnergy(Integer.MAX_VALUE);
+                }
+                machine.wake();
+                filled++;
+            }
+        }
+        return filled;
+    }
+
     /** {@code side <face> <item|fluid> <off|input|output|both>}, {@code auto <in|out> <item|fluid> <on|off>}, {@code port <mode> <on|off>}, {@code redstone <mode>}. */
     private static int set(CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
         String[] args = StringArgumentType.getString(context, "args").trim().split("\\s+");
@@ -200,6 +296,44 @@ final class DevMachineCommands {
                 return 1;
             }
             case "mode" -> machine.setMode(Integer.parseInt(args[1]));
+            case "run" -> {
+                // run <batches>: that many 4-tick batches at once
+                machine.runBatches(Integer.parseInt(args[1]));
+                reply(context, "ran " + args[1] + " batches, status " + machine.status().id());
+                return 1;
+            }
+            case "culture" -> {
+                // culture <inoculate|identify|pick|discard> [colony]: a button of the M30 window
+                if (!(machine instanceof com.tonywww.foodindustrial.machine.bio.CultureBenchBlockEntity bench)) {
+                    reply(context, "not a culture bench");
+                    return 0;
+                }
+                int action = java.util.List.of("inoculate", "identify", "pick", "discard").indexOf(args[1]);
+                bench.action(action, args.length > 2 ? Integer.parseInt(args[2]) : -1);
+                StringBuilder plate = new StringBuilder("plate " + bench.stage() + " identified=" + bench.identified() + " colonies:");
+                for (ItemStack colony : bench.colonies()) {
+                    int b = Purity.get(colony);
+                    plate.append(' ').append(PlatformTags.itemId(colony.getItem())).append(b == Purity.NONE ? "" : "@" + PurityScale.format(b) + "%")
+                        .append("/look").append(com.tonywww.foodindustrial.machine.bio.ColonyLook.of(colony.getItem()));
+                }
+                reply(context, plate.toString());
+                return 1;
+            }
+            case "crank" -> {
+                reply(context, "crank " + machine.crank() + " -> " + machine.manualPower());
+                return 1;
+            }
+            case "recipes" -> {
+                // the recipes this machine's device entry can run
+                java.util.List<String> ids = new java.util.ArrayList<>();
+                for (com.tonywww.foodindustrial.recipe.RecipeIndex.Entry entry : com.tonywww.foodindustrial.recipe.RecipeIndex.get(machine.getLevel()).all()) {
+                    if (entry.runsOn(machine.definition().spec())) {
+                        ids.add(entry.id());
+                    }
+                }
+                reply(context, machine.definition().id() + " runs " + ids.size() + ": " + String.join(" ", ids));
+                return 1;
+            }
             default -> {
                 reply(context, "unknown setting " + args[0]);
                 return 0;

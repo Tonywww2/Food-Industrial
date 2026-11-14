@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:pressing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/peanut"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:crude_peanut_oil"
+    },
+    {
+      "item": "foodindustrial:peanut_skin"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

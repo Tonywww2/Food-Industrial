@@ -4,6 +4,10 @@
     "foodindustrial:chlorobenzene",
     "foodindustrial:flowing_chlorobenzene",
     {
+      "id": "#forge:chlorobenzene",
+      "required": false
+    },
+    {
       "id": "#c:chlorobenzene",
       "required": false
     }

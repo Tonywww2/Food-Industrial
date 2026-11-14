@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/benzaldehyde_2_sulfonic_acid"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/ethyl_sulfobenzyl_aniline"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:sulfuric_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:brilliant_blue"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

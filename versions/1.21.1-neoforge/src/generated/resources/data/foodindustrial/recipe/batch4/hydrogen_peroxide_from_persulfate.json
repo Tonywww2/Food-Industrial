@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/ammonium_persulfate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:hydrogen_peroxide"
+    },
+    {
+      "count": 2,
+      "item": "foodindustrial:ammonium_bisulfate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "vacuum",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_linoleate_linolenate",
+    "foodindustrial:flowing_methyl_linoleate_linolenate",
+    {
+      "id": "#forge:methyl_linoleate_linolenate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_linoleate_linolenate",
+      "required": false
+    }
+  ]
+}

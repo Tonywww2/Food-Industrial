@@ -6,6 +6,10 @@
     {
       "id": "#forge:sodium_isethionate",
       "required": false
+    },
+    {
+      "id": "#c:sodium_isethionate",
+      "required": false
     }
   ]
 }

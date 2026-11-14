@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_linalyl_ether",
+    "foodindustrial:flowing_ethyl_linalyl_ether",
+    {
+      "id": "#forge:ethyl_linalyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_linalyl_ether",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/reduced_iron"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 5000,
+        "tag": "foodindustrial:carbon_monoxide"
+      }
+    }
+  ],
+  "mode": "carbonylation",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:iron_pentacarbonyl",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "pressurized",
+    "temperature": "heated"
+  },
+  "time": 200
+}

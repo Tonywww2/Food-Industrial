@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyrazine_ethanethiol",
+    "foodindustrial:flowing_pyrazine_ethanethiol",
+    {
+      "id": "#forge:pyrazine_ethanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:pyrazine_ethanethiol",
+      "required": false
+    }
+  ]
+}

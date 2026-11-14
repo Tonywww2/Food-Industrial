@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:dl_alpha_tocopherol"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/succinic_anhydride"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dl_alpha_tocopheryl_succinate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

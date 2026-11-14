@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexyl_phenylacetate",
+    "foodindustrial:flowing_hexyl_phenylacetate",
+    {
+      "id": "#forge:hexyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:hexyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

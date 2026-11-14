@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:scansmoke_sef_7525",
+  "loader": "neoforge:fluid_container"
+}

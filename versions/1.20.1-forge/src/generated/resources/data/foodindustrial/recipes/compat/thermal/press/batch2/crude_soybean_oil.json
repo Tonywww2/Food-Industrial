@@ -1,0 +1,28 @@
+{
+  "type": "thermal:press",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/soybean"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:okara"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:crude_soybean_oil"
+    }
+  ]
+}

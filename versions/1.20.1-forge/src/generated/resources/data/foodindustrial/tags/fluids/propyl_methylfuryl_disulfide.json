@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_methylfuryl_disulfide",
+    "foodindustrial:flowing_propyl_methylfuryl_disulfide",
+    {
+      "id": "#forge:propyl_methylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:propyl_methylfuryl_disulfide",
+      "required": false
+    }
+  ]
+}

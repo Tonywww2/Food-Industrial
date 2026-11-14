@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_dimethyldihydrodithiazine",
+    "foodindustrial:flowing_ethyl_dimethyldihydrodithiazine",
+    {
+      "id": "#forge:ethyl_dimethyldihydrodithiazine",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_dimethyldihydrodithiazine",
+      "required": false
+    }
+  ]
+}

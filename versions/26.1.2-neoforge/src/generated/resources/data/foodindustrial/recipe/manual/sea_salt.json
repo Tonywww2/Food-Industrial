@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "environment_factors": {
+    "hot_biome": {
+      "time": 0.5,
+      "yield": 1.5
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:seawater"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:bittern"
+    },
+    {
+      "item": "foodindustrial:salt",
+      "purity": {
+        "mode": "source",
+        "value": 83
+      }
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "open_sky",
+      "clear_weather",
+      "daytime"
+    ]
+  },
+  "time": 24000
+}

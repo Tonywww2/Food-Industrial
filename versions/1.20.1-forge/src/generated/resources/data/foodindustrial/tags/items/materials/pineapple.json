@@ -4,6 +4,10 @@
     {
       "id": "#forge:fruits/pineapple",
       "required": false
+    },
+    {
+      "id": "#c:fruits/pineapple",
+      "required": false
     }
   ]
 }

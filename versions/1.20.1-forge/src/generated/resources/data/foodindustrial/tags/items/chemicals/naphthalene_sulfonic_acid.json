@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:naphthalene_sulfonic_acid",
+    {
+      "id": "#forge:dusts/naphthalene_sulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/naphthalene_sulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/naphthalene_sulfonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naphthalene_sulfonic_acid",
+      "required": false
+    }
+  ]
+}

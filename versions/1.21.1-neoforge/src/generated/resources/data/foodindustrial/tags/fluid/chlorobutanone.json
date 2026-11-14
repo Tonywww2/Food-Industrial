@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorobutanone",
+    "foodindustrial:flowing_chlorobutanone",
+    {
+      "id": "#forge:chlorobutanone",
+      "required": false
+    },
+    {
+      "id": "#c:chlorobutanone",
+      "required": false
+    }
+  ]
+}

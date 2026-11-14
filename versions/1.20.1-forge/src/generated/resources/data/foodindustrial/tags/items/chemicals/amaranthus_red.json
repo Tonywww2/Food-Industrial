@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/amaranthus_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/amaranthus_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/amaranthus_red",
+      "required": false
     }
   ]
 }

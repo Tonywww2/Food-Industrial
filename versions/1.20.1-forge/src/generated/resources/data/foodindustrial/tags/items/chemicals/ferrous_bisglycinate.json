@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_bisglycinate",
+    {
+      "id": "#forge:dusts/ferrous_bisglycinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_bisglycinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferrous_bisglycinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferrous_bisglycinate",
+      "required": false
+    }
+  ]
+}

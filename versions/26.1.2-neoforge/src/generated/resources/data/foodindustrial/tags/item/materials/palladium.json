@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:ingots/palladium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/palladium",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/palladium",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/palladium",
+      "required": false
+    }
+  ]
+}

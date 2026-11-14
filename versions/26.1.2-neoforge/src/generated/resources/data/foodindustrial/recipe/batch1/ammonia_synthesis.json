@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/iron"
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:nitrogen"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "ammonia_synthesis",
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:ammonia"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "high",
+    "temperature": "high"
+  },
+  "time": 200
+}

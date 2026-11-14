@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ferrous_sulfate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ferrous_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferrous_sulfate",
+      "required": false
     }
   ]
 }

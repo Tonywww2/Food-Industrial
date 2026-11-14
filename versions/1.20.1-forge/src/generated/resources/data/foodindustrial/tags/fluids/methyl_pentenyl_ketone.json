@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_pentenyl_ketone",
+    "foodindustrial:flowing_methyl_pentenyl_ketone",
+    {
+      "id": "#forge:methyl_pentenyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_pentenyl_ketone",
+      "required": false
+    }
+  ]
+}

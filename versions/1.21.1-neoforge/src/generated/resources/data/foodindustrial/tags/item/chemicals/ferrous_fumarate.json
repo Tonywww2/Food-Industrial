@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_fumarate",
+    {
+      "id": "#forge:dusts/ferrous_fumarate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_fumarate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferrous_fumarate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferrous_fumarate",
+      "required": false
+    }
+  ]
+}

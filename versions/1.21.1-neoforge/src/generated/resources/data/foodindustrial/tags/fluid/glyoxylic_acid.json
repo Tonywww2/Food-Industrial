@@ -4,6 +4,10 @@
     "foodindustrial:glyoxylic_acid",
     "foodindustrial:flowing_glyoxylic_acid",
     {
+      "id": "#forge:glyoxylic_acid",
+      "required": false
+    },
+    {
       "id": "#c:glyoxylic_acid",
       "required": false
     }

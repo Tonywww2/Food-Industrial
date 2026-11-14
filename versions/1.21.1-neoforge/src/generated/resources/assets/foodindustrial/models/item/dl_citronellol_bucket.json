@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dl_citronellol",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/glutamic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/urea"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:aniline"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:carbon_dioxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:folic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 80
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t3",
+    "temperature": "heated"
+  },
+  "time": 200
+}

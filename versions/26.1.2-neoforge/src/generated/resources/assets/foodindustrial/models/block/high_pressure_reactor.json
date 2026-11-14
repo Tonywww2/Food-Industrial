@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/high_pressure_reactor_front",
+    "side": "foodindustrial:block/high_pressure_reactor_side",
+    "top": "foodindustrial:block/high_pressure_reactor_top"
+  }
+}

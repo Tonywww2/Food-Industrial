@@ -8,6 +8,14 @@
     {
       "id": "#c:seeds/soybean",
       "required": false
+    },
+    {
+      "id": "#forge:crops/soybean",
+      "required": false
+    },
+    {
+      "id": "#forge:seeds/soybean",
+      "required": false
     }
   ]
 }

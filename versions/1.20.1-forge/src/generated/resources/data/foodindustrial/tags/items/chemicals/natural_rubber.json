@@ -9,6 +9,30 @@
     {
       "id": "#forge:gems/natural_rubber",
       "required": false
+    },
+    {
+      "id": "#forge:dusts/rubber",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rubber",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/natural_rubber",
+      "required": false
+    },
+    {
+      "id": "#c:gems/natural_rubber",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/rubber",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rubber",
+      "required": false
     }
   ]
 }

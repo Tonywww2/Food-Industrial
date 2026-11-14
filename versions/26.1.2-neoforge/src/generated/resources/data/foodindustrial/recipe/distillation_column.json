@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "foodindustrial:chemical_frame",
+    "R": "#c:dusts/redstone",
+    "S": "foodindustrial:pot_still",
+    "W": "foodindustrial:chemical_tower_wall"
+  },
+  "pattern": [
+    "WSW",
+    "RFR",
+    "WRW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:distillation_column"
+  }
+}

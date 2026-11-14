@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hyssop_oil",
+    "foodindustrial:flowing_hyssop_oil",
+    {
+      "id": "#forge:hyssop_oil",
+      "required": false
+    },
+    {
+      "id": "#c:hyssop_oil",
+      "required": false
+    }
+  ]
+}

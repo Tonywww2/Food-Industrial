@@ -1,0 +1,54 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:samples/dairy"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/agar"
+      }
+    }
+  ],
+  "mode": "isolation",
+  "outputs": [
+    {
+      "item": "foodindustrial:propionibacterium",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:lactococcus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:kluyveromyces",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "plate": {
+    "weights": [
+      1,
+      1,
+      1,
+      3
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myrrh_oil",
+    "foodindustrial:flowing_myrrh_oil",
+    {
+      "id": "#forge:myrrh_oil",
+      "required": false
+    },
+    {
+      "id": "#c:myrrh_oil",
+      "required": false
+    }
+  ]
+}

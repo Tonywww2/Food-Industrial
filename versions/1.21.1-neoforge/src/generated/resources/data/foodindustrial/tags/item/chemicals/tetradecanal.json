@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tetradecanal",
+    {
+      "id": "#forge:dusts/tetradecanal",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tetradecanal",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tetradecanal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tetradecanal",
+      "required": false
+    }
+  ]
+}

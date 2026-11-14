@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_hydroxybenzaldehyde",
+    {
+      "id": "#forge:dusts/p_hydroxybenzaldehyde",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_hydroxybenzaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_hydroxybenzaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_hydroxybenzaldehyde",
+      "required": false
+    }
+  ]
+}

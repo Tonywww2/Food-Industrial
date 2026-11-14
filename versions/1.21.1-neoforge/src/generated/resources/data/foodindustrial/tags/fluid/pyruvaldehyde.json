@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyruvaldehyde",
+    "foodindustrial:flowing_pyruvaldehyde",
+    {
+      "id": "#forge:pyruvaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:pyruvaldehyde",
+      "required": false
+    }
+  ]
+}

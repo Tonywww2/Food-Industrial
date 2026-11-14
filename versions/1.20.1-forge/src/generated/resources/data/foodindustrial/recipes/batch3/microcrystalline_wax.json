@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:crude_oil"
+      }
+    }
+  ],
+  "mode": "vacuum_distillation",
+  "outputs": [
+    {
+      "item": "foodindustrial:microcrystalline_wax",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:vacuum_gas_oil"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

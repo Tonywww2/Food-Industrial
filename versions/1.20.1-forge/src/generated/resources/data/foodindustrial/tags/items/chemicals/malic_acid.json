@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/malic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/malic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/malic_acid",
+      "required": false
     }
   ]
 }

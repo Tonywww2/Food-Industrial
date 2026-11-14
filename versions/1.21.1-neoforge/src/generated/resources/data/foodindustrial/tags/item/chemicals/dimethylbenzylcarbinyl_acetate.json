@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylbenzylcarbinyl_acetate",
+    {
+      "id": "#forge:dusts/dimethylbenzylcarbinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethylbenzylcarbinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimethylbenzylcarbinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethylbenzylcarbinyl_acetate",
+      "required": false
+    }
+  ]
+}

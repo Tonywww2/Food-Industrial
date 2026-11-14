@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/thiamine_hydrochloride",
       "required": false
+    },
+    {
+      "id": "#c:dusts/thiamine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/thiamine_hydrochloride",
+      "required": false
     }
   ]
 }

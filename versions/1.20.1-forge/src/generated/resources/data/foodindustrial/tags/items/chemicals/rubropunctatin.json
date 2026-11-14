@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/rubropunctatin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/rubropunctatin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rubropunctatin",
+      "required": false
     }
   ]
 }

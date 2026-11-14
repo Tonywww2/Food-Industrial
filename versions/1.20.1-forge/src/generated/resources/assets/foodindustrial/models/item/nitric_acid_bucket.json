@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:nitric_acid",
+  "loader": "forge:fluid_container"
+}

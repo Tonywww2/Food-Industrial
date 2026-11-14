@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/acesulfame_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/acesulfame_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acesulfame_acid",
+      "required": false
     }
   ]
 }

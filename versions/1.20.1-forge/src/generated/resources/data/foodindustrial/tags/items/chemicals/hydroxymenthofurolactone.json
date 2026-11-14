@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxymenthofurolactone",
+    {
+      "id": "#forge:dusts/hydroxymenthofurolactone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxymenthofurolactone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxymenthofurolactone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxymenthofurolactone",
+      "required": false
+    }
+  ]
+}

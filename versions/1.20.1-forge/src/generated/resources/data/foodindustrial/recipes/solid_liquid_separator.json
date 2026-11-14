@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "P": {
+      "item": "foodindustrial:screw_press"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "IPI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:solid_liquid_separator"
+  }
+}

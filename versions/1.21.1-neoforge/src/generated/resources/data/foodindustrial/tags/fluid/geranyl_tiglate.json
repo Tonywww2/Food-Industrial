@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_tiglate",
+    "foodindustrial:flowing_geranyl_tiglate",
+    {
+      "id": "#forge:geranyl_tiglate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_tiglate",
+      "required": false
+    }
+  ]
+}

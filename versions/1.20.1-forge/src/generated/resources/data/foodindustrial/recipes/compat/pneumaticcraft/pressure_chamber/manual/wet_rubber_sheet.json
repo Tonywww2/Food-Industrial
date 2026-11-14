@@ -1,0 +1,25 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "foodindustrial:materials/rubber_coagulum"
+    }
+  ],
+  "pressure": 2.0,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:wet_rubber_sheet"
+    }
+  ]
+}

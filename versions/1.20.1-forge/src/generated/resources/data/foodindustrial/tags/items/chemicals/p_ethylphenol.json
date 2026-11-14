@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_ethylphenol",
+    {
+      "id": "#forge:dusts/p_ethylphenol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_ethylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_ethylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_ethylphenol",
+      "required": false
+    }
+  ]
+}

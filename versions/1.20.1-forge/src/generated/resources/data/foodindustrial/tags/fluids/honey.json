@@ -4,6 +4,10 @@
     {
       "id": "#forge:honey",
       "required": false
+    },
+    {
+      "id": "#c:honey",
+      "required": false
     }
   ]
 }

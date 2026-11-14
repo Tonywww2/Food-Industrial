@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinchona_bark_powder",
+    {
+      "id": "#forge:dusts/cinchona_bark_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cinchona_bark_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cinchona_bark_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cinchona_bark_powder",
+      "required": false
+    }
+  ]
+}

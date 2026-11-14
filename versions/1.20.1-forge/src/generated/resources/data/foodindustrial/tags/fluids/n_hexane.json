@@ -6,6 +6,10 @@
     {
       "id": "#forge:n_hexane",
       "required": false
+    },
+    {
+      "id": "#c:n_hexane",
+      "required": false
     }
   ]
 }

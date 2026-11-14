@@ -1,0 +1,47 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/marigold_oleoresin"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/potassium_hydroxide"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:propylene_glycol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:lutein",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "count": 2,
+      "item": "foodindustrial:potassium_palmitate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:propylene_glycol",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

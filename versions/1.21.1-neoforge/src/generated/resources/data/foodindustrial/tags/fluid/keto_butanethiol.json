@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:keto_butanethiol",
+    "foodindustrial:flowing_keto_butanethiol",
+    {
+      "id": "#forge:keto_butanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:keto_butanethiol",
+      "required": false
+    }
+  ]
+}

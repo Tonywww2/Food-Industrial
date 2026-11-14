@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myrcene",
+    "foodindustrial:flowing_myrcene",
+    {
+      "id": "#forge:myrcene",
+      "required": false
+    },
+    {
+      "id": "#c:myrcene",
+      "required": false
+    }
+  ]
+}

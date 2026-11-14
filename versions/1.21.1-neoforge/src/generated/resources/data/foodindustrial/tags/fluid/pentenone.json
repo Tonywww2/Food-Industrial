@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentenone",
+    "foodindustrial:flowing_pentenone",
+    {
+      "id": "#forge:pentenone",
+      "required": false
+    },
+    {
+      "id": "#c:pentenone",
+      "required": false
+    }
+  ]
+}

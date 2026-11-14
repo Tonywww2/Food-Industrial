@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:spike_lavender_oil",
+    "foodindustrial:flowing_spike_lavender_oil",
+    {
+      "id": "#forge:spike_lavender_oil",
+      "required": false
+    },
+    {
+      "id": "#c:spike_lavender_oil",
+      "required": false
+    }
+  ]
+}

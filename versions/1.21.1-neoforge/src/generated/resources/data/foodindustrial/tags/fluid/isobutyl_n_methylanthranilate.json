@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_n_methylanthranilate",
+    "foodindustrial:flowing_isobutyl_n_methylanthranilate",
+    {
+      "id": "#forge:isobutyl_n_methylanthranilate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_n_methylanthranilate",
+      "required": false
+    }
+  ]
+}

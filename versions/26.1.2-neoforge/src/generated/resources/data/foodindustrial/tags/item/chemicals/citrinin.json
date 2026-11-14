@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:citrinin",
     {
+      "id": "#forge:dusts/citrinin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/citrinin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/citrinin",
       "required": false
     },

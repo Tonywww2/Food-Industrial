@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:lactose",
     {
+      "id": "#forge:dusts/lactose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lactose",
+      "required": false
+    },
+    {
       "id": "#c:dusts/lactose",
       "required": false
     },

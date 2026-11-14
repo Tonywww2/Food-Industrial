@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:d_fenchone",
+    "foodindustrial:flowing_d_fenchone",
+    {
+      "id": "#forge:d_fenchone",
+      "required": false
+    },
+    {
+      "id": "#c:d_fenchone",
+      "required": false
+    }
+  ]
+}

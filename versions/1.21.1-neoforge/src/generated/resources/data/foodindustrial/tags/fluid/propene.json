@@ -4,6 +4,10 @@
     "foodindustrial:propene",
     "foodindustrial:flowing_propene",
     {
+      "id": "#forge:propene",
+      "required": false
+    },
+    {
       "id": "#c:propene",
       "required": false
     }

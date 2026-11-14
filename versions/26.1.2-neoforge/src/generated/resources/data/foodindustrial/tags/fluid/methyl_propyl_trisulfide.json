@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_propyl_trisulfide",
+    "foodindustrial:flowing_methyl_propyl_trisulfide",
+    {
+      "id": "#forge:methyl_propyl_trisulfide",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_propyl_trisulfide",
+      "required": false
+    }
+  ]
+}

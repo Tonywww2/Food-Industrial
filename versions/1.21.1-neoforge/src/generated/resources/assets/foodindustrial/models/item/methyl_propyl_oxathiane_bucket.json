@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methyl_propyl_oxathiane",
+  "loader": "neoforge:fluid_container"
+}

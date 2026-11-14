@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptyl_piperonylamide",
+    {
+      "id": "#forge:dusts/heptyl_piperonylamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/heptyl_piperonylamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/heptyl_piperonylamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/heptyl_piperonylamide",
+      "required": false
+    }
+  ]
+}

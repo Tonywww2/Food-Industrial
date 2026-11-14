@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carbethoxypropyl_tpp_bromide",
+    {
+      "id": "#forge:dusts/carbethoxypropyl_tpp_bromide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carbethoxypropyl_tpp_bromide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/carbethoxypropyl_tpp_bromide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carbethoxypropyl_tpp_bromide",
+      "required": false
+    }
+  ]
+}

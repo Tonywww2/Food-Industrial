@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:flint_knife",
+  "name": "book.foodindustrial.manual.entry.history_papain",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:flint_knife",
+      "text": "book.foodindustrial.manual.entry.history_papain.text"
+    }
+  ],
+  "sortnum": 13
+}

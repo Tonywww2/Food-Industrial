@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octan_2_ol",
+    "foodindustrial:flowing_octan_2_ol",
+    {
+      "id": "#forge:octan_2_ol",
+      "required": false
+    },
+    {
+      "id": "#c:octan_2_ol",
+      "required": false
+    }
+  ]
+}

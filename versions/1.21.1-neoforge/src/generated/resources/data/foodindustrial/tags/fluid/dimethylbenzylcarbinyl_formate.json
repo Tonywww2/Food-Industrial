@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylbenzylcarbinyl_formate",
+    "foodindustrial:flowing_dimethylbenzylcarbinyl_formate",
+    {
+      "id": "#forge:dimethylbenzylcarbinyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylbenzylcarbinyl_formate",
+      "required": false
+    }
+  ]
+}

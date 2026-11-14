@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclohexanecarboxylic_acid",
+    {
+      "id": "#forge:dusts/cyclohexanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cyclohexanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cyclohexanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyclohexanecarboxylic_acid",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/xylitan_monostearate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/xylitan_monostearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/xylitan_monostearate",
+      "required": false
     }
   ]
 }

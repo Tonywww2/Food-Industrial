@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:grape_seed_extract",
+    {
+      "id": "#forge:dusts/grape_seed_extract",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/grape_seed_extract",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/grape_seed_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gems/grape_seed_extract",
+      "required": false
+    }
+  ]
+}

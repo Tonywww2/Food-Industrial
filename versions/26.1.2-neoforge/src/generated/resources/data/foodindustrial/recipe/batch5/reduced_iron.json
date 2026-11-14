@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/iron_oxide_black"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/coke"
+    }
+  ],
+  "mode": "reduction",
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:reduced_iron",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 400
+}

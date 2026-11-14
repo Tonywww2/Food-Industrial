@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:capsicum_orange",
     {
+      "id": "#forge:dusts/capsicum_orange",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/capsicum_orange",
+      "required": false
+    },
+    {
       "id": "#c:dusts/capsicum_orange",
       "required": false
     },

@@ -14,6 +14,15 @@
     "foodindustrial:rubber_trapdoor",
     "foodindustrial:rubber_pressure_plate",
     "foodindustrial:rubber_button",
-    "foodindustrial:wooden_tank"
+    "foodindustrial:koji_room_wall",
+    "foodindustrial:hand_crank",
+    "foodindustrial:screw_press",
+    "foodindustrial:steeping_vat",
+    "foodindustrial:koji_room",
+    "foodindustrial:wooden_tank",
+    "foodindustrial:leach_barrel",
+    "foodindustrial:drying_rack",
+    "foodindustrial:koji_tray",
+    "foodindustrial:fumigation_box"
   ]
 }

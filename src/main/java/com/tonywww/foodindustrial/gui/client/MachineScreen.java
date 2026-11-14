@@ -8,9 +8,11 @@ import com.tonywww.foodindustrial.core.text.Tooltips;
 import com.tonywww.foodindustrial.gui.GuiLayout;
 import com.tonywww.foodindustrial.gui.GuiText;
 import com.tonywww.foodindustrial.gui.MachineMenu;
+import com.tonywww.foodindustrial.gui.MachineTexts;
 import com.tonywww.foodindustrial.gui.MachineView;
 import com.tonywww.foodindustrial.gui.MenuActions;
 import com.tonywww.foodindustrial.machine.ModMachines;
+import com.tonywww.foodindustrial.machine.bio.CultureBenchBlockEntity;
 import com.tonywww.foodindustrial.machine.block.MachineBlock;
 import com.tonywww.foodindustrial.machine.component.RedstoneControl;
 import com.tonywww.foodindustrial.machine.component.SideConfig;
@@ -20,7 +22,6 @@ import com.tonywww.foodindustrial.machine.definition.IoLayout;
 import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
 import com.tonywww.foodindustrial.machine.definition.MachineMode;
 import com.tonywww.foodindustrial.machine.definition.PowerKind;
-import com.tonywww.foodindustrial.machine.processing.MachineStatus;
 import com.tonywww.foodindustrial.platform.Platform;
 import com.tonywww.foodindustrial.platform.PlatformFluids;
 import com.tonywww.foodindustrial.platform.client.gui.Canvas;
@@ -40,9 +41,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.Supplier;
 
 /**
@@ -115,6 +118,11 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     private final List<Panel> panels = new ArrayList<>();
     /** Face shown in the advanced options of the input/output panel, or -1. */
     private int advancedFace = -1;
+    /** The culture plate of M30 (I17), or {@code null}. */
+    @Nullable
+    private final PlateWidget plate;
+    private int selectedColony = -1;
+    private int shownPlateStage = -1;
     private int dumpTank = -1;
     private long dumpUntil;
 
@@ -122,6 +130,15 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         super(menu, inventory, title, GuiLayout.WIDTH, menu.layout().height());
         this.definition = menu.definition();
         this.layout = menu.layout();
+        PlateWidget widget = null;
+        if (CultureBenchBlockEntity.ID.equals(definition.id())) {
+            for (GuiLayout.Zone zone : layout.zones()) {
+                if (zone.kind() == GuiLayout.ZoneKind.PROCESSING) {
+                    widget = new PlateWidget(zone.frame());
+                }
+            }
+        }
+        this.plate = widget;
         panels.add(Panel.INFO);
         if (definition.layout().upgrades() + definition.layout().modules() > 0) {
             panels.add(Panel.UPGRADES);
@@ -305,7 +322,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         }
         for (int i = 0; i < menu.machineSlots(); i++) {
             SlotRole role = io.roleOf(i);
-            if (role == SlotRole.UPGRADE || role == SlotRole.MODULE) {
+            if (role == SlotRole.UPGRADE || role == SlotRole.MODULE || definition.isMultiblock()) {
                 continue;
             }
             GuiLayout.Box box = layout.slot(i);
@@ -325,7 +342,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             int lit = view.burnTotal > 0 && view.burnLeft > 0 ? Math.max(1, view.burnLeft * 14 / view.burnTotal) : 0;
             Widgets.flame(canvas, flame.x(), flame.y(), lit);
         }
-        for (int i = 0; i < io.tanks(); i++) {
+        for (int i = 0; i < shownTanks(); i++) {
             GuiLayout.Box box = layout.tank(i);
             FluidAmount fluid = i < view.tanks.length ? view.tanks[i] : FluidAmount.EMPTY;
             Widgets.tank(canvas, box.x(), box.y(), box.w(), box.h(), fluid, view.tankCapacity);
@@ -345,16 +362,24 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
                 Widgets.vent(canvas, mode, vent.x() + (vent.w() - 8) / 2, vent.y() + (vent.h() - 8) / 2);
             }
         }
-        GuiLayout.Box arrow = layout.arrow();
-        int done = view.total > 0 ? (int) Math.min(GuiLayout.ARROW_W, (long) view.progress * GuiLayout.ARROW_W / view.total) : 0;
-        Widgets.arrow(canvas, arrow.x(), arrow.y(), done);
-        GuiLayout.Box purityBox = layout.purity();
-        Widgets.zoneFrame(canvas, purityBox);
-        Component purity = productPurity(true);
-        if (purity != null) {
-            int room = purityBox.w() - 4;
-            int width = Math.min(room, canvas.width(purity));
-            Widgets.fitText(canvas, purity, purityBox.x() + (purityBox.w() - width) / 2, purityBox.y() + 2, room, 0xFFFFFFFF, true);
+        if (plate != null) {
+            if (view.plateStage != shownPlateStage) {
+                shownPlateStage = view.plateStage;
+                selectedColony = -1;
+            }
+            plate.draw(canvas, view, selectedColony, mx, my);
+        } else {
+            GuiLayout.Box arrow = layout.arrow();
+            int done = view.total > 0 ? (int) Math.min(GuiLayout.ARROW_W, (long) view.progress * GuiLayout.ARROW_W / view.total) : 0;
+            Widgets.arrow(canvas, arrow.x(), arrow.y(), done);
+            GuiLayout.Box purityBox = layout.purity();
+            Widgets.zoneFrame(canvas, purityBox);
+            Component purity = productPurity(true);
+            if (purity != null) {
+                int room = purityBox.w() - 4;
+                int width = Math.min(room, canvas.width(purity));
+                Widgets.fitText(canvas, purity, purityBox.x() + (purityBox.w() - width) / 2, purityBox.y() + 2, room, 0xFFFFFFFF, true);
+            }
         }
         Widgets.fitText(canvas, statusText(), 8, layout.statusY(), GuiLayout.WIDTH - 16, statusColor(), false);
     }
@@ -380,6 +405,11 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         canvas.pop();
     }
 
+    /** Tanks the window shows: none on a multiblock controller, whose fluids are in the fluid ports (2026-11-10). */
+    private int shownTanks() {
+        return definition.isMultiblock() ? 0 : definition.layout().tanks();
+    }
+
     private GuiLayout.Box modeButton() {
         return new GuiLayout.Box(GuiLayout.WIDTH - 22, 2, 14, 14);
     }
@@ -395,7 +425,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         }
         MachineView view = view();
         IoLayout io = definition.layout();
-        for (int i = 0; i < io.itemIn(); i++) {
+        for (int i = 0; i < (definition.isMultiblock() ? 0 : io.itemIn()); i++) {
             int index = io.start(SlotRole.INPUT) + i;
             ItemStack lock = index < view.slotLocks.length ? view.slotLocks[index] : ItemStack.EMPTY;
             if (lock.isEmpty()) {
@@ -689,6 +719,22 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         canvas.text(Component.translatable(GuiText.key("structure", view.formed ? "formed" : "unformed")), 8, y,
             view.formed ? 0xFF2E7D32 : 0xFFB71C1C, false);
         y += 11;
+        if (view.layers > 0) {
+            canvas.text(Component.translatable(GuiText.key("structure", "layers"), String.valueOf(view.layers)), 8, y, Widgets.TEXT, false);
+            y += 10;
+        }
+        if (!view.missingPorts.isEmpty()) {
+            // ports set to each direction the machine needs (2026-11-10)
+            MutableComponent names = Component.empty();
+            for (int i = 0; i < view.missingPorts.size(); i++) {
+                if (i > 0) {
+                    names.append(Component.translatable(GuiText.key("manual", "separator")));
+                }
+                names.append(Component.translatable(GuiText.key("port_need", view.missingPorts.get(i))));
+            }
+            Widgets.fitText(canvas, Component.translatable(GuiText.key("structure", "needs_ports"), names), 8, y, GuiLayout.WIDTH - 16, Widgets.TEXT, false);
+            y += 10;
+        }
         int rows = Math.max(1, (layout.statusY() - 6 - y) / 10);
         int shown = view.wrong.size() <= rows ? view.wrong.size() : rows - 1;
         for (int i = 0; i < shown; i++) {
@@ -717,30 +763,14 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     // ---- texts ----
 
     private Component statusText() {
-        MachineView view = view();
-        MachineStatus status = view.status;
-        if (status == MachineStatus.MISSING) {
-            MutableComponent conditions = Component.empty();
-            String[] keys = view.missing.isEmpty() ? new String[0] : view.missing.split(",");
-            for (int i = 0; i < keys.length; i++) {
-                if (i > 0) {
-                    conditions.append("、");
-                }
-                conditions.append(keys[i].equals("catalyst") ? Component.translatable(GuiText.key("status", "catalyst"))
-                    : Component.translatable(Lang.condition(keys[i])));
-            }
-            return Component.translatable(GuiText.key("status", "missing"), conditions);
-        }
-        if (status == MachineStatus.NO_POWER && definition.power() == PowerKind.FUEL) {
-            return Component.translatable(GuiText.key("status", "no_fuel"));
-        }
-        return Component.translatable(GuiText.key("status", status.id()));
+        return MachineTexts.status(view(), definition);
     }
 
     private int statusColor() {
-        return switch (view().status) {
-            case RUNNING -> 0xFF2E7D32;
-            case WAITING -> 0xFF505050;
+        return switch (MachineTexts.tone(view().status)) {
+            case GOOD -> 0xFF2E7D32;
+            case NORMAL -> 0xFF505050;
+            case INFO -> 0xFF1565C0;
             default -> 0xFFB71C1C;
         };
     }
@@ -803,6 +833,18 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         if (view.total > 0) {
             lines.add(Component.translatable(GuiText.key("info", "yield"), String.valueOf(view.yieldPermille / 10)));
         }
+        if (view.contaminated) {
+            lines.add(Component.translatable(GuiText.key("info", "contaminated")).withStyle(ChatFormatting.RED));
+        }
+        if (definition.climate() != null) {
+            String climate = switch (view.climate) {
+                case 3 -> "met";
+                case 1 -> "warm";
+                case 2 -> "humid";
+                default -> "none";
+            };
+            lines.add(Component.translatable(GuiText.key("info", "climate"), Component.translatable(GuiText.key("climate", climate))));
+        }
         List<Component> capabilities = capabilityNames(view.capabilities);
         if (!capabilities.isEmpty()) {
             lines.add(Component.translatable(GuiText.key("info", "capabilities")));
@@ -817,6 +859,9 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         lines.add(Component.translatable(GuiText.key("upgrades", "speed"), String.format(Locale.ROOT, "%.2f", view.speedPermille / 1000.0)));
         lines.add(Component.translatable(GuiText.key("upgrades", "energy"), String.format(Locale.ROOT, "%.2f", view.energyPermille / 1000.0)));
         lines.add(Component.translatable(GuiText.key("upgrades", "parallel"), String.valueOf(view.parallel)));
+        if (view.normalizing) {
+            lines.add(Component.translatable(GuiText.key("upgrades", "normalizing")));
+        }
         List<Component> added = capabilityNames(view.moduleCapabilities);
         if (!added.isEmpty()) {
             lines.add(Component.translatable(GuiText.key("upgrades", "adds")));
@@ -825,11 +870,16 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         return lines;
     }
 
+    /** Names of the capabilities, without modes; words shared by two categories (vacuum) appear once. */
     private static List<Component> capabilityNames(List<String> keys) {
         List<Component> names = new ArrayList<>();
+        Set<String> seen = new HashSet<>();
         for (String key : keys) {
             if (!key.startsWith("mode.")) {
-                names.add(Component.literal("· ").append(Component.translatable(Lang.condition(key))));
+                Component name = Component.translatable(Lang.condition(key));
+                if (seen.add(name.getString())) {
+                    names.add(Component.literal("· ").append(name));
+                }
             }
         }
         return names;
@@ -843,6 +893,44 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             areas.add(new int[]{leftPos + box.x, topPos + box.y, box.w, box.h});
         }
         return areas;
+    }
+
+    /** Progress arrow in screen coordinates (x, y, w, h), or {@code null} on the structure page (JEI click area, I22). */
+    @Nullable
+    public int[] arrowArea() {
+        if (structurePage()) {
+            return null;
+        }
+        GuiLayout.Box arrow = layout.arrow();
+        return new int[]{arrow.x(), arrow.y(), arrow.w(), arrow.h()};
+    }
+
+    /** Input slots a JEI ingredient can be dropped on to lock: {slot, x, y} relative to the window (I22). */
+    public List<int[]> lockSlots() {
+        List<int[]> targets = new ArrayList<>();
+        if (structurePage()) {
+            return targets;
+        }
+        for (int i = 0; i < menu.machineSlots(); i++) {
+            Slot slot = menu.slots.get(i);
+            if (definition.layout().roleOf(i) == SlotRole.INPUT && slot.isActive()) {
+                targets.add(new int[]{i, slot.x - 1, slot.y - 1});
+            }
+        }
+        return targets;
+    }
+
+    /** Input tanks a JEI fluid can be dropped on to lock: {tank, x, y, w, h} relative to the window (I22). */
+    public List<int[]> lockTanks() {
+        List<int[]> targets = new ArrayList<>();
+        if (structurePage() || definition.isMultiblock()) {
+            return targets;
+        }
+        for (int i = 0; i < definition.layout().fluidIn(); i++) {
+            GuiLayout.Box box = layout.tank(i);
+            targets.add(new int[]{i, box.x(), box.y(), box.w(), box.h()});
+        }
+        return targets;
     }
 
     // ---- tooltips ----
@@ -878,9 +966,26 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         if (structurePage()) {
             return lines;
         }
+        if (plate != null) {
+            int colony = plate.colonyAt(view, mx, my);
+            if (colony >= 0) {
+                PlateWidget.colonyTooltip(view, colony, lines);
+                return lines;
+            }
+            int action = plate.buttonAt(mx, my);
+            if (action >= 0) {
+                PlateWidget.buttonTooltip(action, lines);
+                return lines;
+            }
+        }
         GuiLayout.Box energy = layout.energy();
         if (energy != null && energy.contains(mx, my)) {
-            lines.add(Component.translatable(GuiText.key("energy", "amount"), String.valueOf(view.energy), String.valueOf(view.energyCapacity)));
+            if (definition.power() == PowerKind.MANUAL) {
+                lines.add(Component.translatable(GuiText.key("energy", "manual"), String.format(Locale.ROOT, "%.1f", view.energy / 20.0),
+                    String.format(Locale.ROOT, "%.0f", view.energyCapacity / 20.0)));
+            } else {
+                lines.add(Component.translatable(GuiText.key("energy", "amount"), String.valueOf(view.energy), String.valueOf(view.energyCapacity)));
+            }
             return lines;
         }
         GuiLayout.Box flame = layout.flame();
@@ -895,7 +1000,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             }
             return lines;
         }
-        for (int i = 0; i < definition.layout().tanks(); i++) {
+        for (int i = 0; i < shownTanks(); i++) {
             if (layout.tank(i).contains(mx, my)) {
                 tankTooltip(i, lines);
                 return lines;
@@ -922,9 +1027,10 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         }
         Slot slot = hoveredSlot();
         if (slot != null && !slot.hasItem() && slot.index < definition.layout().itemSlots()) {
+            lines.add(slotName(slot.index));
             ItemStack lock = slot.index < view.slotLocks.length ? view.slotLocks[slot.index] : ItemStack.EMPTY;
             if (!lock.isEmpty()) {
-                lines.add(Component.translatable(GuiText.key("slot", "locked"), lock.getHoverName()));
+                lines.add(Component.translatable(GuiText.key("slot", "locked"), lock.getHoverName()).withStyle(ChatFormatting.GOLD));
             }
         }
         return lines;
@@ -933,13 +1039,16 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     private void tankTooltip(int tank, List<Component> lines) {
         MachineView view = view();
         FluidAmount fluid = tank < view.tanks.length ? view.tanks[tank] : FluidAmount.EMPTY;
+        Component role = Component.translatable(GuiText.key("tank", tank < definition.layout().fluidIn() ? "input" : "output"));
         if (fluid.isEmpty()) {
-            lines.add(Component.translatable(GuiText.key("tank", "empty")));
+            lines.add(role);
+            lines.add(Component.translatable(GuiText.key("tank", "empty")).withStyle(ChatFormatting.GRAY));
         } else {
             lines.add(PlatformFluids.displayName(fluid));
             if (Purity.bears(fluid.fluid())) {
                 Tooltips.purityLine(Purity.materialOf(fluid.fluid()), Purity.get(fluid), lines);
             }
+            lines.add(role.copy().withStyle(ChatFormatting.GRAY));
         }
         lines.add(Component.translatable(GuiText.key("tank", "amount"), String.valueOf(fluid.amount()), String.valueOf(view.tankCapacity))
             .withStyle(ChatFormatting.GRAY));
@@ -1012,6 +1121,13 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         return Component.translatable(GuiText.key("io", key));
     }
 
+    /** The slot's name: the machine's own word or its role (2026-11-11). */
+    private Component slotName(int index) {
+        IoLayout io = definition.layout();
+        SlotRole role = io.roleOf(index);
+        return Component.translatable(definition.slotName(role, index - io.start(role)));
+    }
+
     @Override
     protected void appendSlotTooltip(Slot slot, List<Component> lines) {
         if (slot.index >= menu.machineSlots()) {
@@ -1020,10 +1136,17 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         IoLayout io = definition.layout();
         SlotRole role = io.roleOf(slot.index);
         MachineView view = view();
+        Component name = slotName(slot.index);
+        // an item named like its slot (an expression vector in the vector slot) would repeat the same line
+        if (!name.getString().equals(slot.getItem().getHoverName().getString())) {
+            lines.add(name.copy().withStyle(ChatFormatting.GRAY));
+        }
         if (role == SlotRole.CATALYST) {
             int index = slot.index - io.start(SlotRole.CATALYST);
             if (index < view.catalystLeft.length && view.catalystLeft[index] > 0) {
                 lines.add(Component.translatable(GuiText.key("slot", "uses"), String.valueOf(view.catalystLeft[index])).withStyle(ChatFormatting.GRAY));
+            } else if (index < view.catalystLeft.length && view.catalystLeft[index] < 0) {
+                lines.add(Component.translatable(GuiText.key("slot", "saturated")).withStyle(ChatFormatting.GOLD));
             }
         } else if (role == SlotRole.INPUT && slot.index < view.slotLocks.length && !view.slotLocks[slot.index].isEmpty()) {
             lines.add(Component.translatable(GuiText.key("slot", "locked"), view.slotLocks[slot.index].getHoverName()).withStyle(ChatFormatting.GOLD));
@@ -1058,7 +1181,21 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             }
             return false;
         }
-        for (int i = 0; i < definition.layout().tanks(); i++) {
+        if (plate != null) {
+            int colony = plate.colonyAt(view(), mx, my);
+            if (colony >= 0) {
+                selectedColony = colony;
+                return true;
+            }
+            int action = plate.buttonAt(mx, my);
+            if (action >= 0) {
+                if (PlateWidget.enabled(view(), action, selectedColony)) {
+                    menu.send(MenuActions.CULTURE, action, selectedColony);
+                }
+                return true;
+            }
+        }
+        for (int i = 0; i < shownTanks(); i++) {
             if (layout.tank(i).contains(mx, my)) {
                 clickTank(i, button);
                 return true;

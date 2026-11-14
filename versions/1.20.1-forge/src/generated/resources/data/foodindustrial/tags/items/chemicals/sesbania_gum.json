@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sesbania_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sesbania_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sesbania_gum",
+      "required": false
     }
   ]
 }

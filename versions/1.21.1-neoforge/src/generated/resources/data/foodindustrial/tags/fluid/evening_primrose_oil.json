@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:evening_primrose_oil",
+    "foodindustrial:flowing_evening_primrose_oil",
+    {
+      "id": "#forge:evening_primrose_oil",
+      "required": false
+    },
+    {
+      "id": "#c:evening_primrose_oil",
+      "required": false
+    }
+  ]
+}

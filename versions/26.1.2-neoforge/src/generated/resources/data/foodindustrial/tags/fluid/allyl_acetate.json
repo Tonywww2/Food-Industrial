@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_acetate",
+    "foodindustrial:flowing_allyl_acetate",
+    {
+      "id": "#forge:allyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_acetate",
+      "required": false
+    }
+  ]
+}

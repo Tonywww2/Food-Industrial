@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nutmeg_oil",
+    "foodindustrial:flowing_nutmeg_oil",
+    {
+      "id": "#forge:nutmeg_oil",
+      "required": false
+    },
+    {
+      "id": "#c:nutmeg_oil",
+      "required": false
+    }
+  ]
+}

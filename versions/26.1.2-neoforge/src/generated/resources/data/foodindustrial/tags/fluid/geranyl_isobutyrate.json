@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_isobutyrate",
+    "foodindustrial:flowing_geranyl_isobutyrate",
+    {
+      "id": "#forge:geranyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

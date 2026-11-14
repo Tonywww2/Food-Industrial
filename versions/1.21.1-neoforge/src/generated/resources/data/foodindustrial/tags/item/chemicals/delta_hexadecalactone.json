@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:delta_hexadecalactone",
+    {
+      "id": "#forge:dusts/delta_hexadecalactone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/delta_hexadecalactone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/delta_hexadecalactone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/delta_hexadecalactone",
+      "required": false
+    }
+  ]
+}

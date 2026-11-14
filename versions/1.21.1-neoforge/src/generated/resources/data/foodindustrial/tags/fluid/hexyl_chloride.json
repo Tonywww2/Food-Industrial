@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexyl_chloride",
+    "foodindustrial:flowing_hexyl_chloride",
+    {
+      "id": "#forge:hexyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:hexyl_chloride",
+      "required": false
+    }
+  ]
+}

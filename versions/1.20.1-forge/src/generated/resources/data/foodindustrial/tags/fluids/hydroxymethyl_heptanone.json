@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxymethyl_heptanone",
+    "foodindustrial:flowing_hydroxymethyl_heptanone",
+    {
+      "id": "#forge:hydroxymethyl_heptanone",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxymethyl_heptanone",
+      "required": false
+    }
+  ]
+}

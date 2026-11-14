@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambrette_seed_absolute",
+    "foodindustrial:flowing_ambrette_seed_absolute",
+    {
+      "id": "#forge:ambrette_seed_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:ambrette_seed_absolute",
+      "required": false
+    }
+  ]
+}

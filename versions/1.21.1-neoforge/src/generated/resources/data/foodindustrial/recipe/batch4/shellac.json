@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/seedlac"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:shellac",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/levomefolic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/calcium_chloride"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sodium_hydroxide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:levomefolate_calcium",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "count": 2,
+      "item": "foodindustrial:salt",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

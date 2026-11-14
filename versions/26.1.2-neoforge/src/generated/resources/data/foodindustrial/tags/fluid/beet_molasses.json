@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beet_molasses",
+    "foodindustrial:flowing_beet_molasses",
+    {
+      "id": "#forge:beet_molasses",
+      "required": false
+    },
+    {
+      "id": "#c:beet_molasses",
+      "required": false
+    }
+  ]
+}

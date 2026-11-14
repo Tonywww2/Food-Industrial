@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:spearmint_extract",
+    "foodindustrial:flowing_spearmint_extract",
+    {
+      "id": "#forge:spearmint_extract",
+      "required": false
+    },
+    {
+      "id": "#c:spearmint_extract",
+      "required": false
+    }
+  ]
+}

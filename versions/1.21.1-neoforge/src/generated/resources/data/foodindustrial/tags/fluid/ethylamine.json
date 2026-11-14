@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylamine",
+    "foodindustrial:flowing_ethylamine",
+    {
+      "id": "#forge:ethylamine",
+      "required": false
+    },
+    {
+      "id": "#c:ethylamine",
+      "required": false
+    }
+  ]
+}

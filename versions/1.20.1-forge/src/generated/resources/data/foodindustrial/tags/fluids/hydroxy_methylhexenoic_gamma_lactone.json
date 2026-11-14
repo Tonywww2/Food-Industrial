@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxy_methylhexenoic_gamma_lactone",
+    "foodindustrial:flowing_hydroxy_methylhexenoic_gamma_lactone",
+    {
+      "id": "#forge:hydroxy_methylhexenoic_gamma_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxy_methylhexenoic_gamma_lactone",
+      "required": false
+    }
+  ]
+}

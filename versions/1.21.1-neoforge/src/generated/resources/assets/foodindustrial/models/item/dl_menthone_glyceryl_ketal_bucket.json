@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dl_menthone_glyceryl_ketal",
+  "loader": "neoforge:fluid_container"
+}

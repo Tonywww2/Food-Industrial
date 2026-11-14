@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/genipin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/genipin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/genipin",
+      "required": false
     }
   ]
 }

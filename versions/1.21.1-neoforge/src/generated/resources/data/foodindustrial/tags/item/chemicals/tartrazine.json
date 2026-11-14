@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:tartrazine",
     {
+      "id": "#forge:dusts/tartrazine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tartrazine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/tartrazine",
       "required": false
     },

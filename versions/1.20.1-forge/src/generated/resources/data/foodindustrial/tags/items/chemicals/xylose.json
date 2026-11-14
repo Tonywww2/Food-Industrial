@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/xylose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/xylose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/xylose",
+      "required": false
     }
   ]
 }

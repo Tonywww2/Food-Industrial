@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fruit_jelly",
+    "foodindustrial:agar_jelly_dessert",
+    "foodindustrial:gelatin_jelly",
+    "foodindustrial:almond_tofu",
+    "foodindustrial:caramel_custard",
+    "foodindustrial:guilinggao",
+    "foodindustrial:popping_boba",
+    "foodindustrial:nata_de_coco",
+    "foodindustrial:potato_chips",
+    "foodindustrial:prawn_crackers",
+    "foodindustrial:corn_chips",
+    "foodindustrial:popcorn",
+    "foodindustrial:guoba",
+    "foodindustrial:puffed_rice_cracker",
+    "foodindustrial:flavored_tea",
+    "foodindustrial:collagen_casing",
+    "foodindustrial:dry_yeast"
+  ]
+}

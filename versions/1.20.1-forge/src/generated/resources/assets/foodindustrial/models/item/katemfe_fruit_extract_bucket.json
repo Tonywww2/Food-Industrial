@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:katemfe_fruit_extract",
+  "loader": "forge:fluid_container"
+}

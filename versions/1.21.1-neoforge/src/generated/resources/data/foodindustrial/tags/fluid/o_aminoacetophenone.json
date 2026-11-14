@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_aminoacetophenone",
+    "foodindustrial:flowing_o_aminoacetophenone",
+    {
+      "id": "#forge:o_aminoacetophenone",
+      "required": false
+    },
+    {
+      "id": "#c:o_aminoacetophenone",
+      "required": false
+    }
+  ]
+}

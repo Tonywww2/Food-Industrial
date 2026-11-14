@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ascorbyl_palmitate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ascorbyl_palmitate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ascorbyl_palmitate",
+      "required": false
     }
   ]
 }

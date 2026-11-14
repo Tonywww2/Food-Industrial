@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:safranal",
+    "foodindustrial:flowing_safranal",
+    {
+      "id": "#forge:safranal",
+      "required": false
+    },
+    {
+      "id": "#c:safranal",
+      "required": false
+    }
+  ]
+}

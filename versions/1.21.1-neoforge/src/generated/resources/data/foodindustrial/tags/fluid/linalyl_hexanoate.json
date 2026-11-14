@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_hexanoate",
+    "foodindustrial:flowing_linalyl_hexanoate",
+    {
+      "id": "#forge:linalyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_hexanoate",
+      "required": false
+    }
+  ]
+}

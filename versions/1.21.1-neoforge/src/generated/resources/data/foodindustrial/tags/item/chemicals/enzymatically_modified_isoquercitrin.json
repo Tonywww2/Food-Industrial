@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:enzymatically_modified_isoquercitrin",
+    {
+      "id": "#forge:dusts/enzymatically_modified_isoquercitrin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/enzymatically_modified_isoquercitrin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/enzymatically_modified_isoquercitrin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/enzymatically_modified_isoquercitrin",
+      "required": false
+    }
+  ]
+}

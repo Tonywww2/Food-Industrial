@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:keto_butanethiol",
+  "loader": "forge:fluid_container"
+}

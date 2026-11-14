@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furyl_acetone",
+    "foodindustrial:flowing_furyl_acetone",
+    {
+      "id": "#forge:furyl_acetone",
+      "required": false
+    },
+    {
+      "id": "#c:furyl_acetone",
+      "required": false
+    }
+  ]
+}

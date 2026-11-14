@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:prenol",
+    "foodindustrial:flowing_prenol",
+    {
+      "id": "#forge:prenol",
+      "required": false
+    },
+    {
+      "id": "#c:prenol",
+      "required": false
+    }
+  ]
+}

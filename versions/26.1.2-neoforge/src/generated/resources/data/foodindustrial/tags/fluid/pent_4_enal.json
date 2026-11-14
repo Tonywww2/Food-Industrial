@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pent_4_enal",
+    "foodindustrial:flowing_pent_4_enal",
+    {
+      "id": "#forge:pent_4_enal",
+      "required": false
+    },
+    {
+      "id": "#c:pent_4_enal",
+      "required": false
+    }
+  ]
+}

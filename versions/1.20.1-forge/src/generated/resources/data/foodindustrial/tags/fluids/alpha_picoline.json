@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_picoline",
+    "foodindustrial:flowing_alpha_picoline",
+    {
+      "id": "#forge:alpha_picoline",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_picoline",
+      "required": false
+    }
+  ]
+}

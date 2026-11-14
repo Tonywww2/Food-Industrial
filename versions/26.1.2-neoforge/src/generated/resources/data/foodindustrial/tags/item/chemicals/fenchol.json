@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fenchol",
+    {
+      "id": "#forge:dusts/fenchol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fenchol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/fenchol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fenchol",
+      "required": false
+    }
+  ]
+}

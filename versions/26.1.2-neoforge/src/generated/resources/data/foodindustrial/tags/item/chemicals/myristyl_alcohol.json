@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myristyl_alcohol",
+    {
+      "id": "#forge:dusts/myristyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/myristyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/myristyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/myristyl_alcohol",
+      "required": false
+    }
+  ]
+}

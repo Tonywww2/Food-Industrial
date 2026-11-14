@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carveol",
+    "foodindustrial:flowing_carveol",
+    {
+      "id": "#forge:carveol",
+      "required": false
+    },
+    {
+      "id": "#c:carveol",
+      "required": false
+    }
+  ]
+}

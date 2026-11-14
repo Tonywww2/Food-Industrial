@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:salt_pan",
+  "name": "book.foodindustrial.manual.entry.salt_pan",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:salt_pan",
+      "text": "book.foodindustrial.manual.entry.salt_pan.text",
+      "title": "book.foodindustrial.manual.entry.salt_pan"
+    }
+  ],
+  "sortnum": 7
+}

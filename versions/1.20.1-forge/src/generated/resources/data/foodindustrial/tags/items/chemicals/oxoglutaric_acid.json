@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oxoglutaric_acid",
+    {
+      "id": "#forge:dusts/oxoglutaric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/oxoglutaric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/oxoglutaric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/oxoglutaric_acid",
+      "required": false
+    }
+  ]
+}

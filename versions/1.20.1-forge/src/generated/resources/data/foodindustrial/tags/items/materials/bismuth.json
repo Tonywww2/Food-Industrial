@@ -8,6 +8,14 @@
     {
       "id": "#forge:ingots/bismuth",
       "required": false
+    },
+    {
+      "id": "#c:dusts/bismuth",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/bismuth",
+      "required": false
     }
   ]
 }

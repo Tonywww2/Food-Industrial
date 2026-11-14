@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nardostachys_oil",
+    "foodindustrial:flowing_nardostachys_oil",
+    {
+      "id": "#forge:nardostachys_oil",
+      "required": false
+    },
+    {
+      "id": "#c:nardostachys_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/rock_salt"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:salt",
+      "nbt": "{Purity:18b}"
+    }
+  ]
+}

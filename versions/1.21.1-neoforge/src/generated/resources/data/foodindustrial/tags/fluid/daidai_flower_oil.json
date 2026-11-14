@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:daidai_flower_oil",
+    "foodindustrial:flowing_daidai_flower_oil",
+    {
+      "id": "#forge:daidai_flower_oil",
+      "required": false
+    },
+    {
+      "id": "#c:daidai_flower_oil",
+      "required": false
+    }
+  ]
+}

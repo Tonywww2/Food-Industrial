@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambrettolide",
+    "foodindustrial:flowing_ambrettolide",
+    {
+      "id": "#forge:ambrettolide",
+      "required": false
+    },
+    {
+      "id": "#c:ambrettolide",
+      "required": false
+    }
+  ]
+}

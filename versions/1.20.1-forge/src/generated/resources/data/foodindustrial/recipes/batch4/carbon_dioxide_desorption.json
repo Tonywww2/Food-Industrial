@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_bicarbonate"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:potassium_carbonate"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

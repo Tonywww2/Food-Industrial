@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_dithionite",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_dithionite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_dithionite",
+      "required": false
     }
   ]
 }

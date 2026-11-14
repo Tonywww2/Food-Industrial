@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cedrenol",
+    "foodindustrial:flowing_cedrenol",
+    {
+      "id": "#forge:cedrenol",
+      "required": false
+    },
+    {
+      "id": "#c:cedrenol",
+      "required": false
+    }
+  ]
+}

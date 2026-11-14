@@ -4,6 +4,10 @@
     "foodindustrial:sodium_hypochlorite",
     "foodindustrial:flowing_sodium_hypochlorite",
     {
+      "id": "#forge:sodium_hypochlorite",
+      "required": false
+    },
+    {
       "id": "#c:sodium_hypochlorite",
       "required": false
     }

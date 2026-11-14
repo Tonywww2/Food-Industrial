@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tbhq",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tbhq",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tbhq",
+      "required": false
     }
   ]
 }

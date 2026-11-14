@@ -6,6 +6,10 @@
     {
       "id": "#forge:sulfur_dioxide",
       "required": false
+    },
+    {
+      "id": "#c:sulfur_dioxide",
+      "required": false
     }
   ]
 }

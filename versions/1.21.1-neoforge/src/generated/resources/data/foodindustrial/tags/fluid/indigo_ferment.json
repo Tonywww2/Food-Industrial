@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:indigo_ferment",
+    "foodindustrial:flowing_indigo_ferment",
+    {
+      "id": "#forge:indigo_ferment",
+      "required": false
+    },
+    {
+      "id": "#c:indigo_ferment",
+      "required": false
+    }
+  ]
+}

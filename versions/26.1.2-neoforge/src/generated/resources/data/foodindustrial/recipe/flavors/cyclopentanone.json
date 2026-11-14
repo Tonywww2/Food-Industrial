@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/adipic_acid"
+    }
+  ],
+  "mode": "condensation",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:cyclopentanone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

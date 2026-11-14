@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_dodecalactone",
+    "foodindustrial:flowing_gamma_dodecalactone",
+    {
+      "id": "#forge:gamma_dodecalactone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_dodecalactone",
+      "required": false
+    }
+  ]
+}

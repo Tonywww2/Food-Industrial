@@ -192,6 +192,48 @@
    ]
   },
   {
+   "tag": "materials/vegetables",
+   "kind": "item",
+   "forge": [
+    "minecraft:carrot",
+    "minecraft:beetroot",
+    "minecraft:potato",
+    "#forge:vegetables"
+   ],
+   "c": [
+    "minecraft:carrot",
+    "minecraft:beetroot",
+    "minecraft:potato",
+    "#c:foods/vegetable"
+   ]
+  },
+  {
+   "tag": "edible_oils",
+   "kind": "fluid",
+   "forge": [
+    "#foodindustrial:vegetable_oil",
+    "foodindustrial:crude_soybean_oil",
+    "foodindustrial:fish_liver_oil"
+   ],
+   "c": [
+    "#foodindustrial:vegetable_oil",
+    "foodindustrial:crude_soybean_oil",
+    "foodindustrial:fish_liver_oil"
+   ]
+  },
+  {
+   "tag": "molasses",
+   "kind": "fluid",
+   "forge": [
+    "foodindustrial:cane_molasses",
+    "foodindustrial:beet_molasses"
+   ],
+   "c": [
+    "foodindustrial:cane_molasses",
+    "foodindustrial:beet_molasses"
+   ]
+  },
+  {
    "tag": "milk",
    "kind": "fluid",
    "forge": [
@@ -556,6 +598,26 @@
    ]
   },
   {
+   "tag": "materials/lingonberry",
+   "kind": "item",
+   "forge": [
+    "minecraft:sweet_berries"
+   ],
+   "c": [
+    "minecraft:sweet_berries"
+   ]
+  },
+  {
+   "tag": "materials/glass_bottle",
+   "kind": "item",
+   "forge": [
+    "minecraft:glass_bottle"
+   ],
+   "c": [
+    "minecraft:glass_bottle"
+   ]
+  },
+  {
    "tag": "materials/rice",
    "kind": "item",
    "forge": [
@@ -753,6 +815,16 @@
    "c": []
   },
   {
+   "tag": "animal_blood",
+   "kind": "fluid",
+   "forge": [
+    "#forge:blood"
+   ],
+   "c": [
+    "#c:blood"
+   ]
+  },
+  {
    "tag": "materials/tin",
    "kind": "item",
    "forge": [
@@ -838,10 +910,22 @@
    "tag": "materials/chili",
    "kind": "item",
    "forge": [
+    "foodindustrial:chili_pepper",
     "#forge:crops/chilipepper"
    ],
    "c": [
+    "foodindustrial:chili_pepper",
     "#c:crops/chilipepper"
+   ]
+  },
+  {
+   "tag": "materials/turmeric",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:turmeric_rhizome"
+   ],
+   "c": [
+    "foodindustrial:turmeric_rhizome"
    ]
   },
   {
@@ -1069,6 +1153,66 @@
    ]
   },
   {
+   "tag": "materials/cobalt",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/cobalt",
+    "#forge:dusts/cobalt"
+   ],
+   "c": [
+    "#c:ingots/cobalt",
+    "#c:dusts/cobalt"
+   ]
+  },
+  {
+   "tag": "materials/platinum",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/platinum",
+    "#forge:dusts/platinum"
+   ],
+   "c": [
+    "#c:ingots/platinum",
+    "#c:dusts/platinum"
+   ]
+  },
+  {
+   "tag": "materials/rhodium",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/rhodium",
+    "#forge:dusts/rhodium"
+   ],
+   "c": [
+    "#c:ingots/rhodium",
+    "#c:dusts/rhodium"
+   ]
+  },
+  {
+   "tag": "materials/palladium",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/palladium",
+    "#forge:dusts/palladium"
+   ],
+   "c": [
+    "#c:ingots/palladium",
+    "#c:dusts/palladium"
+   ]
+  },
+  {
+   "tag": "materials/vanadium",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/vanadium",
+    "#forge:dusts/vanadium"
+   ],
+   "c": [
+    "#c:ingots/vanadium",
+    "#c:dusts/vanadium"
+   ]
+  },
+  {
    "tag": "materials/molybdenum",
    "kind": "item",
    "forge": [
@@ -1085,6 +1229,28 @@
     "#forge:ingots/bismuth"
    ],
    "c": []
+  },
+  {
+   "tag": "materials/selenium",
+   "kind": "item",
+   "forge": [
+    "#forge:dusts/selenium"
+   ],
+   "c": [
+    "#c:dusts/selenium"
+   ]
+  },
+  {
+   "tag": "materials/chromium",
+   "kind": "item",
+   "forge": [
+    "#forge:ingots/chrome",
+    "#forge:dusts/chrome"
+   ],
+   "c": [
+    "#c:ingots/chrome",
+    "#c:dusts/chrome"
+   ]
   },
   {
    "tag": "materials/red_algae",
@@ -1124,6 +1290,16 @@
    ],
    "c": [
     "foodindustrial:indigo_plant"
+   ]
+  },
+  {
+   "tag": "materials/paddy",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:paddy"
+   ],
+   "c": [
+    "foodindustrial:paddy"
    ]
   },
   {
@@ -1220,6 +1396,28 @@
    ]
   },
   {
+   "tag": "materials/selenium_ore",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:selenium_ore"
+   ],
+   "c": [
+    "foodindustrial:selenium_ore"
+   ]
+  },
+  {
+   "tag": "materials/chromite",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:chromite_ore",
+    "#forge:ores/chromite"
+   ],
+   "c": [
+    "foodindustrial:chromite_ore",
+    "#c:ores/chromite"
+   ]
+  },
+  {
    "tag": "catalysts/nickel",
    "kind": "item",
    "forge": [
@@ -1227,6 +1425,16 @@
    ],
    "c": [
     "foodindustrial:nickel_catalyst"
+   ]
+  },
+  {
+   "tag": "catalysts/cobalt",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:cobalt_acetate"
+   ],
+   "c": [
+    "foodindustrial:cobalt_acetate"
    ]
   },
   {
@@ -1328,6 +1536,114 @@
    "c": [
     "foodindustrial:immobilized_sucrose_isomerase"
    ]
+  },
+  {
+   "tag": "catalysts/attapulgite",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:attapulgite_clay"
+   ],
+   "c": [
+    "foodindustrial:attapulgite_clay"
+   ]
+  },
+  {
+   "tag": "catalysts/pvpp",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:pvpp"
+   ],
+   "c": [
+    "foodindustrial:pvpp"
+   ]
+  },
+  {
+   "tag": "catalysts/activated_clay",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:activated_clay"
+   ],
+   "c": [
+    "foodindustrial:activated_clay"
+   ]
+  },
+  {
+   "tag": "catalysts/polystyrene",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:polystyrene"
+   ],
+   "c": [
+    "foodindustrial:polystyrene"
+   ]
+  },
+  {
+   "tag": "catalysts/bentonite",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:bentonite"
+   ],
+   "c": [
+    "foodindustrial:bentonite"
+   ]
+  },
+  {
+   "tag": "catalysts/perlite",
+   "kind": "item",
+   "forge": [
+    "foodindustrial:perlite"
+   ],
+   "c": [
+    "foodindustrial:perlite"
+   ]
+  },
+  {
+   "tag": "materials/red_rice",
+   "kind": "item",
+   "forge": [],
+   "c": []
+  },
+  {
+   "tag": "materials/red_radish",
+   "kind": "item",
+   "forge": [],
+   "c": []
+  },
+  {
+   "tag": "materials/red_amaranth",
+   "kind": "item",
+   "forge": [],
+   "c": []
+  },
+  {
+   "tag": "materials/purple_sweet_potato",
+   "kind": "item",
+   "forge": [],
+   "c": []
+  },
+  {
+   "tag": "materials/ilmenite",
+   "kind": "item",
+   "forge": [],
+   "c": []
+  },
+  {
+   "tag": "materials/pyrolusite",
+   "kind": "item",
+   "forge": [],
+   "c": []
+  },
+  {
+   "tag": "materials/barley",
+   "kind": "item",
+   "forge": [],
+   "c": []
+  },
+  {
+   "tag": "materials/jerusalem_artichoke",
+   "kind": "item",
+   "forge": [],
+   "c": []
   }
  ]
 }

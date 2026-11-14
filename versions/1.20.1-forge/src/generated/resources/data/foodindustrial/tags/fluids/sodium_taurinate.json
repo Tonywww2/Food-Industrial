@@ -6,6 +6,10 @@
     {
       "id": "#forge:sodium_taurinate",
       "required": false
+    },
+    {
+      "id": "#c:sodium_taurinate",
+      "required": false
     }
   ]
 }

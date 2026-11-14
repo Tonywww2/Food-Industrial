@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:leach_barrel",
+  "name": "book.foodindustrial.manual.entry.leach_barrel",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:leach_barrel",
+      "text": "book.foodindustrial.manual.entry.leach_barrel.text",
+      "title": "book.foodindustrial.manual.entry.leach_barrel"
+    }
+  ],
+  "sortnum": 6
+}

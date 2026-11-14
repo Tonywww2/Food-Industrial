@@ -9,6 +9,30 @@
     {
       "id": "#forge:gems/calcium_carbonate",
       "required": false
+    },
+    {
+      "id": "#forge:dusts/calcite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcite",
+      "required": false
     }
   ]
 }

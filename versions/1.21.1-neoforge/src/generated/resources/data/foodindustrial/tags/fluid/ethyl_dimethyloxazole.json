@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_dimethyloxazole",
+    "foodindustrial:flowing_ethyl_dimethyloxazole",
+    {
+      "id": "#forge:ethyl_dimethyloxazole",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_dimethyloxazole",
+      "required": false
+    }
+  ]
+}

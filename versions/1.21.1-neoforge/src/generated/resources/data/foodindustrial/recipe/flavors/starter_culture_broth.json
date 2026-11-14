@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:cultures/lactococcus"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/milk"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/citric_acid"
+      }
+    }
+  ],
+  "mode": "sealed",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:starter_culture_broth"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 12000
+}

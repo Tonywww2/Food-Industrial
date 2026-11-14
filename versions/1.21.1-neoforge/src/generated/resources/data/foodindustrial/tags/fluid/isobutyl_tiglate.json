@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_tiglate",
+    "foodindustrial:flowing_isobutyl_tiglate",
+    {
+      "id": "#forge:isobutyl_tiglate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_tiglate",
+      "required": false
+    }
+  ]
+}

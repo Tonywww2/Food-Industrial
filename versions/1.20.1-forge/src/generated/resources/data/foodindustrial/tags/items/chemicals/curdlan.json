@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/curdlan",
       "required": false
+    },
+    {
+      "id": "#c:dusts/curdlan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/curdlan",
+      "required": false
     }
   ]
 }

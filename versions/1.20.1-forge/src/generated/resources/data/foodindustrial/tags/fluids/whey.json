@@ -6,6 +6,10 @@
     {
       "id": "#forge:whey",
       "required": false
+    },
+    {
+      "id": "#c:whey",
+      "required": false
     }
   ]
 }

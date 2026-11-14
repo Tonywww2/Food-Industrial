@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_alpha_ionone",
+    "foodindustrial:flowing_allyl_alpha_ionone",
+    {
+      "id": "#forge:allyl_alpha_ionone",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_alpha_ionone",
+      "required": false
+    }
+  ]
+}

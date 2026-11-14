@@ -6,6 +6,10 @@
     {
       "id": "#forge:chlorosulfonic_acid",
       "required": false
+    },
+    {
+      "id": "#c:chlorosulfonic_acid",
+      "required": false
     }
   ]
 }

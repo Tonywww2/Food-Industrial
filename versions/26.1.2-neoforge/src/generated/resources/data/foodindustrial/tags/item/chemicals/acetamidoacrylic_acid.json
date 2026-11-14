@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetamidoacrylic_acid",
+    {
+      "id": "#forge:dusts/acetamidoacrylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetamidoacrylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetamidoacrylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetamidoacrylic_acid",
+      "required": false
+    }
+  ]
+}

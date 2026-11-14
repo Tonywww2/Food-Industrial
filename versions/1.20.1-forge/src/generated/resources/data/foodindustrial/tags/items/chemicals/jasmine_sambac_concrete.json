@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jasmine_sambac_concrete",
+    {
+      "id": "#forge:dusts/jasmine_sambac_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/jasmine_sambac_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/jasmine_sambac_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/jasmine_sambac_concrete",
+      "required": false
+    }
+  ]
+}

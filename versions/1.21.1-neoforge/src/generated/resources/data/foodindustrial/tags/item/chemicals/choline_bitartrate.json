@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:choline_bitartrate",
+    {
+      "id": "#forge:dusts/choline_bitartrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/choline_bitartrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/choline_bitartrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/choline_bitartrate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:thermo_plant",
+  "inputs": {
+    "item": {
+      "tag": "foodindustrial:chemicals/partially_dimerized_rosin"
+    }
+  },
+  "outputs": {
+    "fluid_output": {
+      "amount": 1000,
+      "id": "foodindustrial:molten_partially_dimerized_rosin"
+    }
+  },
+  "temperature": {
+    "min": 373
+  }
+}

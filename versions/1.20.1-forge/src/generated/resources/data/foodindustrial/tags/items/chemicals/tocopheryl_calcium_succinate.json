@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tocopheryl_calcium_succinate",
+    {
+      "id": "#forge:dusts/tocopheryl_calcium_succinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tocopheryl_calcium_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tocopheryl_calcium_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tocopheryl_calcium_succinate",
+      "required": false
+    }
+  ]
+}

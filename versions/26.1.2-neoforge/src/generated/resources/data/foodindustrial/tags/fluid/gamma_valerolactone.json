@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_valerolactone",
+    "foodindustrial:flowing_gamma_valerolactone",
+    {
+      "id": "#forge:gamma_valerolactone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_valerolactone",
+      "required": false
+    }
+  ]
+}

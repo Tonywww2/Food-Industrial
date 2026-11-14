@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_benzoate",
+    "foodindustrial:flowing_linalyl_benzoate",
+    {
+      "id": "#forge:linalyl_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_benzoate",
+      "required": false
+    }
+  ]
+}

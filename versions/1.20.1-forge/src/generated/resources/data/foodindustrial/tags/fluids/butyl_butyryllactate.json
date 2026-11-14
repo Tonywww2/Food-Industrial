@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_butyryllactate",
+    "foodindustrial:flowing_butyl_butyryllactate",
+    {
+      "id": "#forge:butyl_butyryllactate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_butyryllactate",
+      "required": false
+    }
+  ]
+}

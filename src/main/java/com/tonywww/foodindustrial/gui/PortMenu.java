@@ -5,9 +5,12 @@ import com.tonywww.foodindustrial.core.data.DataWriter;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import com.tonywww.foodindustrial.machine.component.SideConfig;
 import com.tonywww.foodindustrial.machine.component.SlotRole;
+import com.tonywww.foodindustrial.machine.component.VentMode;
+import com.tonywww.foodindustrial.machine.definition.IoLayout;
 import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
 import com.tonywww.foodindustrial.machine.entity.MultiblockControllerBlockEntity;
 import com.tonywww.foodindustrial.machine.entity.PortBlockEntity;
+import com.tonywww.foodindustrial.platform.PlatformFuel;
 import com.tonywww.foodindustrial.platform.PlatformItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -20,10 +23,11 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * The small window of a multiblock port (machines/04 §5): the controller's item input and output
- * slots, tanks or energy that the port connects, at the positions of the controller's window; the
- * port's direction (input, output, off) and automatic output switch. Without a formed structure only
- * the settings are shown.
+ * The small window of a multiblock port (machines/04 §5): the controller's item slots (inputs, products,
+ * catalysts and fuel), tanks with the venting switches, or energy that the port connects, at the
+ * positions a single-block window has them; the port's direction (input, output, off) and automatic
+ * output switch. The controller's own window shows no slots or tanks, so contents are handled here
+ * (2026-11-10). Without a formed structure only the settings are shown.
  */
 public class PortMenu extends FIMenu {
     private static final int GROUPS = MachineView.PORT | MachineView.POWER | MachineView.TANKS | MachineView.STATUS;
@@ -58,11 +62,12 @@ public class PortMenu extends FIMenu {
         this.pos = pos;
         this.port = port;
         this.controller = controller;
-        this.layout = controller == null ? null : GuiLayout.of(controller);
+        this.layout = controller == null ? null : GuiLayout.full(controller);
         int count = 0;
         if (controller != null && kind == PortBlockEntity.Kind.ITEM) {
             Container slots = container != null ? container : new SimpleContainer(controller.layout().itemSlots());
-            int last = controller.layout().itemIn() + controller.layout().itemOut();
+            IoLayout io = controller.layout();
+            int last = io.itemIn() + io.itemOut() + io.catalyst() + io.fuel();
             for (int i = 0; i < last; i++) {
                 GuiLayout.Box box = layout.slot(i);
                 SlotRole role = controller.layout().roleOf(i);
@@ -139,12 +144,20 @@ public class PortMenu extends FIMenu {
 
         @Override
         public boolean mayPlace(ItemStack stack) {
-            if (role != SlotRole.INPUT) {
+            MachineDefinition controller = controller();
+            if (controller != null && !controller.slotAccepts(role, getContainerSlot() - controller.layout().start(role), stack)) {
                 return false;
             }
-            MultiblockControllerBlockEntity attached = port != null ? port.controller() : null;
-            ItemStack lock = attached != null ? attached.inventory().lock(getContainerSlot()) : ItemStack.EMPTY;
-            return lock.isEmpty() || PlatformItems.sameItemSameData(lock, stack);
+            return switch (role) {
+                case INPUT -> {
+                    MultiblockControllerBlockEntity attached = port != null ? port.controller() : null;
+                    ItemStack lock = attached != null ? attached.inventory().lock(getContainerSlot()) : ItemStack.EMPTY;
+                    yield lock.isEmpty() || PlatformItems.sameItemSameData(lock, stack);
+                }
+                case CATALYST -> true;
+                case FUEL -> PlatformFuel.burnTime(player.level(), stack) > 0;
+                default -> false;
+            };
         }
 
         @Override
@@ -165,9 +178,7 @@ public class PortMenu extends FIMenu {
         if (index < portSlots) {
             moved = moveItemStackTo(stack, portSlots, portSlots + 36, true);
         } else {
-            int inputs = controller != null && kind == PortBlockEntity.Kind.ITEM ? controller.layout().itemIn() : 0;
-            moved = (inputs > 0 && slots.get(0).mayPlace(stack) && moveItemStackTo(stack, 0, inputs, false))
-                || moveWithinPlayer(stack, index, portSlots);
+            moved = moveIntoPort(stack) || moveWithinPlayer(stack, index, portSlots);
         }
         if (!moved) {
             return ItemStack.EMPTY;
@@ -182,6 +193,38 @@ public class PortMenu extends FIMenu {
         }
         slot.onTake(player, stack);
         return original;
+    }
+
+    /**
+     * Shift-click from the player's inventory: fuel that no recipe of the machine uses goes only to the
+     * fuel slots (the server decides); anything else to the inputs, then the catalyst and fuel slots.
+     */
+    private boolean moveIntoPort(ItemStack stack) {
+        if (controller == null || kind != PortBlockEntity.Kind.ITEM) {
+            return false;
+        }
+        MultiblockControllerBlockEntity attached = port != null ? port.controller() : null;
+        SlotRole[] order = attached != null && attached.fuelOnly(stack)
+            ? new SlotRole[]{SlotRole.FUEL}
+            : new SlotRole[]{SlotRole.INPUT, SlotRole.CATALYST, SlotRole.FUEL};
+        IoLayout io = controller.layout();
+        boolean moved = false;
+        for (SlotRole role : order) {
+            int start = io.start(role);
+            int count = switch (role) {
+                case INPUT -> io.itemIn();
+                case CATALYST -> io.catalyst();
+                case FUEL -> io.fuel();
+                default -> 0;
+            };
+            if (count > 0 && slots.get(start).mayPlace(stack)) {
+                moved |= moveItemStackTo(stack, start, start + count, false);
+                if (stack.isEmpty()) {
+                    return true;
+                }
+            }
+        }
+        return moved;
     }
 
     @Override
@@ -204,6 +247,13 @@ public class PortMenu extends FIMenu {
             case MenuActions.TANK_CLICK -> {
                 if (attached != null && attached.formed() && kind == PortBlockEntity.Kind.FLUID) {
                     MachineMenu.clickTank(sender, attached.tanks(), a, this);
+                    attached.settingsApplied();
+                }
+            }
+            case MenuActions.VENT -> {
+                if (attached != null && attached.formed() && kind == PortBlockEntity.Kind.FLUID && a >= attached.tanks().inputs()
+                    && a < attached.tanks().size() && b >= 0 && b < VentMode.values().length) {
+                    attached.setVent(a, VentMode.values()[b]);
                     attached.settingsApplied();
                 }
             }

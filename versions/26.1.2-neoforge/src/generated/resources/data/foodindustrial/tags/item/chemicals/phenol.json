@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:phenol",
     {
+      "id": "#forge:dusts/phenol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phenol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/phenol",
       "required": false
     },

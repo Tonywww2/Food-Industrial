@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mesifurane",
+    "foodindustrial:flowing_mesifurane",
+    {
+      "id": "#forge:mesifurane",
+      "required": false
+    },
+    {
+      "id": "#c:mesifurane",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/fluorapatite",
       "required": false
+    },
+    {
+      "id": "#c:dusts/fluorapatite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fluorapatite",
+      "required": false
     }
   ]
 }

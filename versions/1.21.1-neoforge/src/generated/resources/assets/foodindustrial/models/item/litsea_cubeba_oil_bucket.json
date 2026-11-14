@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:litsea_cubeba_oil",
+  "loader": "neoforge:fluid_container"
+}

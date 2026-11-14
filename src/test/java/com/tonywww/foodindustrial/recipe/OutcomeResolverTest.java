@@ -195,4 +195,12 @@ class OutcomeResolverTest {
         assertEquals(1250, DeviceProfile.standard(com.tonywww.foodindustrial.core.Tier.T4).yieldPermille());
         assertEquals(1000, DeviceProfile.standard(com.tonywww.foodindustrial.core.Tier.T1).yieldPermille());
     }
+
+    @Test
+    void upperHalfOfARange() {
+        // M06 warm and humid (I14): the result comes from the upper half of purity_range
+        assertEquals(15, OutcomeResolver.upperHalf(10, 20));
+        assertEquals(16, OutcomeResolver.upperHalf(10, 21));
+        assertEquals(30, OutcomeResolver.upperHalf(30, 30));
+    }
 }

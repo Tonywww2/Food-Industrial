@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:guaiacyl_phenylacetate",
+    {
+      "id": "#forge:dusts/guaiacyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/guaiacyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/guaiacyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/guaiacyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:naphthylamine",
     {
+      "id": "#forge:dusts/naphthylamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/naphthylamine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/naphthylamine",
       "required": false
     },

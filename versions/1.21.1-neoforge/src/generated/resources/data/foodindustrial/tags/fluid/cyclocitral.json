@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclocitral",
+    "foodindustrial:flowing_cyclocitral",
+    {
+      "id": "#forge:cyclocitral",
+      "required": false
+    },
+    {
+      "id": "#c:cyclocitral",
+      "required": false
+    }
+  ]
+}

@@ -315,7 +315,10 @@ public final class PurityRules {
                 throw new IllegalArgumentException("invalid id \"" + entry + "\"");
             }
             if (!entry.startsWith("#") && !exists(id, items)) {
-                FoodIndustrial.LOGGER.warn("Purity rule {}: unknown {} {}, ignored", source, items ? "item" : "fluid", id);
+                // Entries of mods that are not installed (the integrations' rules, I25) are skipped quietly.
+                if (com.tonywww.foodindustrial.platform.Platform.isModLoaded(id.contains(":") ? id.substring(0, id.indexOf(':')) : "minecraft")) {
+                    FoodIndustrial.LOGGER.warn("Purity rule {}: unknown {} {}, ignored", source, items ? "item" : "fluid", id);
+                }
                 continue;
             }
             result.add(entry);

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:thermo_plant",
+  "inputs": {
+    "item": {
+      "tag": "foodindustrial:chemicals/glyceryl_monostearate"
+    }
+  },
+  "outputs": {
+    "fluid_output": {
+      "amount": 1000,
+      "components": {
+        "foodindustrial:purity": -23
+      },
+      "id": "foodindustrial:molten_glyceryl_monostearate"
+    }
+  },
+  "temperature": {
+    "min": 373
+  }
+}

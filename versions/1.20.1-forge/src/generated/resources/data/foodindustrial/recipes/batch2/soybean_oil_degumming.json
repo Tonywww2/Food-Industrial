@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:crude_soybean_oil"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:refined_soybean_oil"
+    },
+    {
+      "item": "foodindustrial:lecithin",
+      "purity": {
+        "mode": "source",
+        "value": 60
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "centrifuge"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 100
+}

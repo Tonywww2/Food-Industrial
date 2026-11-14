@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glutamyl_valyl_glycine",
+    {
+      "id": "#forge:dusts/glutamyl_valyl_glycine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glutamyl_valyl_glycine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/glutamyl_valyl_glycine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glutamyl_valyl_glycine",
+      "required": false
+    }
+  ]
+}

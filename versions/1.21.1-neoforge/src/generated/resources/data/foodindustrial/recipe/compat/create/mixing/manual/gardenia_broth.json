@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/crushed_gardenia"
+    },
+    {
+      "tag": "foodindustrial:materials/crushed_gardenia"
+    },
+    {
+      "tag": "foodindustrial:materials/crushed_gardenia"
+    },
+    {
+      "tag": "foodindustrial:materials/crushed_gardenia"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "foodindustrial:gardenia_broth"
+    }
+  ]
+}

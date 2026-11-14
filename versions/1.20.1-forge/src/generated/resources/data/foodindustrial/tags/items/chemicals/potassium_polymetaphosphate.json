@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_polymetaphosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_polymetaphosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_polymetaphosphate",
+      "required": false
     }
   ]
 }

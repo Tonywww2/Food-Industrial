@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_cyclopropanecarboxamide",
+    "foodindustrial:flowing_geranyl_cyclopropanecarboxamide",
+    {
+      "id": "#forge:geranyl_cyclopropanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_cyclopropanecarboxamide",
+      "required": false
+    }
+  ]
+}

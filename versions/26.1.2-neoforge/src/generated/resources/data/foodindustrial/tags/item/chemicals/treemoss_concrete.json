@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:treemoss_concrete",
+    {
+      "id": "#forge:dusts/treemoss_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/treemoss_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/treemoss_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/treemoss_concrete",
+      "required": false
+    }
+  ]
+}

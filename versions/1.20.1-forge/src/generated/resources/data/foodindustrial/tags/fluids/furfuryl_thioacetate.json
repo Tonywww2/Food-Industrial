@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfuryl_thioacetate",
+    "foodindustrial:flowing_furfuryl_thioacetate",
+    {
+      "id": "#forge:furfuryl_thioacetate",
+      "required": false
+    },
+    {
+      "id": "#c:furfuryl_thioacetate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_alcohol",
+    "foodindustrial:flowing_allyl_alcohol",
+    {
+      "id": "#forge:allyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_alcohol",
+      "required": false
+    }
+  ]
+}

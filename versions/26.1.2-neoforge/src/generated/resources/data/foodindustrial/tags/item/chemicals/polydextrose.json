@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:polydextrose",
     {
+      "id": "#forge:dusts/polydextrose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polydextrose",
+      "required": false
+    },
+    {
       "id": "#c:dusts/polydextrose",
       "required": false
     },

@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/glass_bottle"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:raw_citrus_juice"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:citrus_juice"
+    }
+  ]
+}

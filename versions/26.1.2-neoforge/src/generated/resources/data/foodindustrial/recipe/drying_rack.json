@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": "#c:rods/wooden",
+    "P": "#minecraft:planks"
+  },
+  "pattern": [
+    "PPP",
+    "K K",
+    "K K"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:drying_rack"
+  }
+}

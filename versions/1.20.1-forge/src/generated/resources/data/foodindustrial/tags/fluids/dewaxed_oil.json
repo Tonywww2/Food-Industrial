@@ -6,6 +6,10 @@
     {
       "id": "#forge:dewaxed_oil",
       "required": false
+    },
+    {
+      "id": "#c:dewaxed_oil",
+      "required": false
     }
   ]
 }

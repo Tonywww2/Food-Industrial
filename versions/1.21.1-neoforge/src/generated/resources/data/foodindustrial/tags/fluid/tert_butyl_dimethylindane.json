@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tert_butyl_dimethylindane",
+    "foodindustrial:flowing_tert_butyl_dimethylindane",
+    {
+      "id": "#forge:tert_butyl_dimethylindane",
+      "required": false
+    },
+    {
+      "id": "#c:tert_butyl_dimethylindane",
+      "required": false
+    }
+  ]
+}

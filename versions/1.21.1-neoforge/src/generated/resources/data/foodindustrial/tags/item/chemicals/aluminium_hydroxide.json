@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:aluminium_hydroxide",
     {
+      "id": "#forge:dusts/aluminium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aluminium_hydroxide",
+      "required": false
+    },
+    {
       "id": "#c:dusts/aluminium_hydroxide",
       "required": false
     },

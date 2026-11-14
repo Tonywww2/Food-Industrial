@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gamma_cyclodextrin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gamma_cyclodextrin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gamma_cyclodextrin",
+      "required": false
     }
   ]
 }

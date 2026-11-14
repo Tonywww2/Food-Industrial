@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronellyloxyacetaldehyde",
+    "foodindustrial:flowing_citronellyloxyacetaldehyde",
+    {
+      "id": "#forge:citronellyloxyacetaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:citronellyloxyacetaldehyde",
+      "required": false
+    }
+  ]
+}

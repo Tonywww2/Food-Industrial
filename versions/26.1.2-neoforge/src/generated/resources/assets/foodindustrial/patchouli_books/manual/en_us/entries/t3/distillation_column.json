@@ -1,0 +1,50 @@
+{
+  "category": "foodindustrial:t3",
+  "icon": "foodindustrial:distillation_column",
+  "name": "book.foodindustrial.manual.entry.distillation_column",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:distillation_column",
+      "text": "book.foodindustrial.manual.entry.distillation_column.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:distillation_column[facing=south]",
+          "A": "foodindustrial:chemical_tower_wall"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "A0A"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.distillation_column"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.distillation_column.structure"
+    }
+  ],
+  "sortnum": 0
+}

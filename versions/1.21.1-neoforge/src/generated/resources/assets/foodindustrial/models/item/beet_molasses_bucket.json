@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:beet_molasses",
+  "loader": "neoforge:fluid_container"
+}

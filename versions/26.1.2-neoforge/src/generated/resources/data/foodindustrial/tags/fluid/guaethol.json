@@ -4,6 +4,10 @@
     "foodindustrial:guaethol",
     "foodindustrial:flowing_guaethol",
     {
+      "id": "#forge:guaethol",
+      "required": false
+    },
+    {
       "id": "#c:guaethol",
       "required": false
     }

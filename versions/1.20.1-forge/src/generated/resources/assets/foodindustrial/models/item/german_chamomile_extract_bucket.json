@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:german_chamomile_extract",
+  "loader": "forge:fluid_container"
+}

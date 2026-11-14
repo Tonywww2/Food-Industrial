@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pulegone",
+    "foodindustrial:flowing_pulegone",
+    {
+      "id": "#forge:pulegone",
+      "required": false
+    },
+    {
+      "id": "#c:pulegone",
+      "required": false
+    }
+  ]
+}

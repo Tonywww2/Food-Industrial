@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:green_tea_tincture",
+    "foodindustrial:flowing_green_tea_tincture",
+    {
+      "id": "#forge:green_tea_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:green_tea_tincture",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_3_hexenyl_acetate",
+    "foodindustrial:flowing_cis_3_hexenyl_acetate",
+    {
+      "id": "#forge:cis_3_hexenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:cis_3_hexenyl_acetate",
+      "required": false
+    }
+  ]
+}

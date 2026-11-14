@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phytol",
+    "foodindustrial:flowing_phytol",
+    {
+      "id": "#forge:phytol",
+      "required": false
+    },
+    {
+      "id": "#c:phytol",
+      "required": false
+    }
+  ]
+}

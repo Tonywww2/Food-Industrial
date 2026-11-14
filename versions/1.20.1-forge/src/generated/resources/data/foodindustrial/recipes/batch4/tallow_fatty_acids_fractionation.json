@@ -1,0 +1,51 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/tallow_fatty_acids"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:acetone"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:stearic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "item": "foodindustrial:palmitic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:oleic_acid",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:acetone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

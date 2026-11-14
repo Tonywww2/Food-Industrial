@@ -4,6 +4,10 @@
     "foodindustrial:sorbitan_monooleate",
     "foodindustrial:flowing_sorbitan_monooleate",
     {
+      "id": "#forge:sorbitan_monooleate",
+      "required": false
+    },
+    {
       "id": "#c:sorbitan_monooleate",
       "required": false
     }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexenal_propylene_glycol_acetal",
+    "foodindustrial:flowing_hexenal_propylene_glycol_acetal",
+    {
+      "id": "#forge:hexenal_propylene_glycol_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:hexenal_propylene_glycol_acetal",
+      "required": false
+    }
+  ]
+}

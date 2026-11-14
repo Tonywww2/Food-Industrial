@@ -1,0 +1,34 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:vegetable_oil_extraction_solvent"
+  },
+  "result": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:n_hexane",
+      "nbt": "{Purity:16b}"
+    },
+    {
+      "amount": 450,
+      "fluid": "foodindustrial:vegetable_oil_extraction_solvent"
+    }
+  ]
+}

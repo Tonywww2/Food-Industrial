@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:yellow_mustard_oleoresin",
+  "loader": "forge:fluid_container"
+}

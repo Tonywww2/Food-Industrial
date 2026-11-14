@@ -6,6 +6,10 @@
     {
       "id": "#forge:phosphoric_acid",
       "required": false
+    },
+    {
+      "id": "#c:phosphoric_acid",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_benzoate",
+    "foodindustrial:flowing_methyl_benzoate",
+    {
+      "id": "#forge:methyl_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_benzoate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_2_cis_6_nonadienol",
+    "foodindustrial:flowing_trans_2_cis_6_nonadienol",
+    {
+      "id": "#forge:trans_2_cis_6_nonadienol",
+      "required": false
+    },
+    {
+      "id": "#c:trans_2_cis_6_nonadienol",
+      "required": false
+    }
+  ]
+}

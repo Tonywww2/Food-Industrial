@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/bismuth_molybdate_catalyst",
       "required": false
+    },
+    {
+      "id": "#c:dusts/bismuth_molybdate_catalyst",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bismuth_molybdate_catalyst",
+      "required": false
     }
   ]
 }

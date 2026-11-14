@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_alpha_damascone",
+    "foodindustrial:flowing_trans_alpha_damascone",
+    {
+      "id": "#forge:trans_alpha_damascone",
+      "required": false
+    },
+    {
+      "id": "#c:trans_alpha_damascone",
+      "required": false
+    }
+  ]
+}

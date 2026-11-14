@@ -4,6 +4,10 @@
     "foodindustrial:coconut_oil",
     "foodindustrial:flowing_coconut_oil",
     {
+      "id": "#forge:coconut_oil",
+      "required": false
+    },
+    {
       "id": "#c:coconut_oil",
       "required": false
     }

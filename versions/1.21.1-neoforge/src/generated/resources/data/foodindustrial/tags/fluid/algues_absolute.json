@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:algues_absolute",
+    "foodindustrial:flowing_algues_absolute",
+    {
+      "id": "#forge:algues_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:algues_absolute",
+      "required": false
+    }
+  ]
+}

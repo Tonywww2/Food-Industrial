@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/bone"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/potassium_carbonate"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/iron"
+    }
+  ],
+  "mode": "melting",
+  "outputs": [
+    {
+      "item": "foodindustrial:potassium_ferrocyanide",
+      "purity": {
+        "mode": "source",
+        "value": 50
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

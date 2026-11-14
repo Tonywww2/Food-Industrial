@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethoxybenzyl_oxalamide",
+    {
+      "id": "#forge:dusts/dimethoxybenzyl_oxalamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethoxybenzyl_oxalamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimethoxybenzyl_oxalamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethoxybenzyl_oxalamide",
+      "required": false
+    }
+  ]
+}

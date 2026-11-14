@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:abe_broth",
+    "foodindustrial:flowing_abe_broth",
+    {
+      "id": "#forge:abe_broth",
+      "required": false
+    },
+    {
+      "id": "#c:abe_broth",
+      "required": false
+    }
+  ]
+}

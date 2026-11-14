@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/steamed_rice"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:aspergillus_oryzae",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "sheltered"
+    ]
+  },
+  "time": 48000
+}

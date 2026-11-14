@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylbenzyl_acetate",
+    "foodindustrial:flowing_methylbenzyl_acetate",
+    {
+      "id": "#forge:methylbenzyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:methylbenzyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -8,6 +8,10 @@
     {
       "id": "#c:fruits/apple",
       "required": false
+    },
+    {
+      "id": "#forge:fruits/apple",
+      "required": false
     }
   ]
 }

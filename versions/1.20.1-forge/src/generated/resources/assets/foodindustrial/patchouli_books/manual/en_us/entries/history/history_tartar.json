@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:wooden_tank",
+  "name": "book.foodindustrial.manual.entry.history_tartar",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:wooden_tank",
+      "text": "book.foodindustrial.manual.entry.history_tartar.text"
+    }
+  ],
+  "sortnum": 8
+}

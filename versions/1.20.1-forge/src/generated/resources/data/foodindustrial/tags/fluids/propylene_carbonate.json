@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propylene_carbonate",
+    "foodindustrial:flowing_propylene_carbonate",
+    {
+      "id": "#forge:propylene_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:propylene_carbonate",
+      "required": false
+    }
+  ]
+}

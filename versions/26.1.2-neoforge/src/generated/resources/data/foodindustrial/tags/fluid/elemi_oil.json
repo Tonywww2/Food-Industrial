@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:elemi_oil",
+    "foodindustrial:flowing_elemi_oil",
+    {
+      "id": "#forge:elemi_oil",
+      "required": false
+    },
+    {
+      "id": "#c:elemi_oil",
+      "required": false
+    }
+  ]
+}

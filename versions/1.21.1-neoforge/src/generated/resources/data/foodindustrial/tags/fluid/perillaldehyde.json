@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:perillaldehyde",
+    "foodindustrial:flowing_perillaldehyde",
+    {
+      "id": "#forge:perillaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:perillaldehyde",
+      "required": false
+    }
+  ]
+}

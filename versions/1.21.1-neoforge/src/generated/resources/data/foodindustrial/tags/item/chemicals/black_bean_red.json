@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:black_bean_red",
     {
+      "id": "#forge:dusts/black_bean_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/black_bean_red",
+      "required": false
+    },
+    {
       "id": "#c:dusts/black_bean_red",
       "required": false
     },

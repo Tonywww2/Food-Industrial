@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_phenylacetate",
+    "foodindustrial:flowing_ethyl_phenylacetate",
+    {
+      "id": "#forge:ethyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

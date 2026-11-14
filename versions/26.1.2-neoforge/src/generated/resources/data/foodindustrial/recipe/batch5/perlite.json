@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/perlite"
+    }
+  ],
+  "mode": "calcining",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:perlite"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 400
+}

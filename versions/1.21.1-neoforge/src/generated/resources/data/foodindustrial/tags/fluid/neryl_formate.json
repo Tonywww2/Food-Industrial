@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:neryl_formate",
+    "foodindustrial:flowing_neryl_formate",
+    {
+      "id": "#forge:neryl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:neryl_formate",
+      "required": false
+    }
+  ]
+}

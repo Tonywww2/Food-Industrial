@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/metatitanic_acid"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:metatitanic_acid"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 100
+}

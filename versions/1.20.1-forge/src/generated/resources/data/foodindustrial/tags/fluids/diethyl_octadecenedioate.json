@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_octadecenedioate",
+    "foodindustrial:flowing_diethyl_octadecenedioate",
+    {
+      "id": "#forge:diethyl_octadecenedioate",
+      "required": false
+    },
+    {
+      "id": "#c:diethyl_octadecenedioate",
+      "required": false
+    }
+  ]
+}

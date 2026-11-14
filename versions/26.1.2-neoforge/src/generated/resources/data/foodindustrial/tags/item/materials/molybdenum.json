@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:dusts/molybdenum",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/molybdenum",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/molybdenum",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/molybdenum",
+      "required": false
+    }
+  ]
+}

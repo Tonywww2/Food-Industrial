@@ -4,6 +4,10 @@
     "foodindustrial:soda_lye",
     "foodindustrial:flowing_soda_lye",
     {
+      "id": "#forge:soda_lye",
+      "required": false
+    },
+    {
       "id": "#c:soda_lye",
       "required": false
     }

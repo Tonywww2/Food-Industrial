@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/alpha_cd_cyclohexane_complex"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "steam_distillation",
+  "outputs": [
+    {
+      "item": "foodindustrial:alpha_cyclodextrin",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 150,
+      "fluid": "foodindustrial:cyclohexane",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

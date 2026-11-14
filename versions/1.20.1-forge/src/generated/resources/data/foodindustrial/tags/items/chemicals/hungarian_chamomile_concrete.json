@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hungarian_chamomile_concrete",
+    {
+      "id": "#forge:dusts/hungarian_chamomile_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hungarian_chamomile_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hungarian_chamomile_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hungarian_chamomile_concrete",
+      "required": false
+    }
+  ]
+}

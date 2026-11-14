@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maple_concrete",
+    {
+      "id": "#forge:dusts/maple_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/maple_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/maple_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maple_concrete",
+      "required": false
+    }
+  ]
+}

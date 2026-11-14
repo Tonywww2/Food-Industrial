@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_octalactone",
+    "foodindustrial:flowing_gamma_octalactone",
+    {
+      "id": "#forge:gamma_octalactone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_octalactone",
+      "required": false
+    }
+  ]
+}

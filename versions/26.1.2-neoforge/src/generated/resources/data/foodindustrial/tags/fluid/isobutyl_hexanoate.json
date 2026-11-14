@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_hexanoate",
+    "foodindustrial:flowing_isobutyl_hexanoate",
+    {
+      "id": "#forge:isobutyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_hexanoate",
+      "required": false
+    }
+  ]
+}

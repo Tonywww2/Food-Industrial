@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:coal_block"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "pattern": [
+    "C",
+    "I",
+    "C"
+  ],
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:graphite_electrode"
+  }
+}

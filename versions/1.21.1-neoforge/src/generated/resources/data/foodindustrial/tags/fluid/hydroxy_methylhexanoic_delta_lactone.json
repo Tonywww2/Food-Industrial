@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxy_methylhexanoic_delta_lactone",
+    "foodindustrial:flowing_hydroxy_methylhexanoic_delta_lactone",
+    {
+      "id": "#forge:hydroxy_methylhexanoic_delta_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxy_methylhexanoic_delta_lactone",
+      "required": false
+    }
+  ]
+}

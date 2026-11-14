@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:prickly_ash_extract",
+    "foodindustrial:flowing_prickly_ash_extract",
+    {
+      "id": "#forge:prickly_ash_extract",
+      "required": false
+    },
+    {
+      "id": "#c:prickly_ash_extract",
+      "required": false
+    }
+  ]
+}

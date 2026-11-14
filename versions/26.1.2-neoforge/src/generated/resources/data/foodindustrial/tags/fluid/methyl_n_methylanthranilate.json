@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_n_methylanthranilate",
+    "foodindustrial:flowing_methyl_n_methylanthranilate",
+    {
+      "id": "#forge:methyl_n_methylanthranilate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_n_methylanthranilate",
+      "required": false
+    }
+  ]
+}

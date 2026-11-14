@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fischer_tropsch_wax",
+    {
+      "id": "#forge:dusts/fischer_tropsch_wax",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/fischer_tropsch_wax",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/fischer_tropsch_wax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fischer_tropsch_wax",
+      "required": false
+    }
+  ]
+}

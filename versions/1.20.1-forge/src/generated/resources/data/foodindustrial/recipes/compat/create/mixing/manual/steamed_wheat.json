@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "tag": "foodindustrial:materials/wheat"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:steamed_wheat"
+    }
+  ]
+}

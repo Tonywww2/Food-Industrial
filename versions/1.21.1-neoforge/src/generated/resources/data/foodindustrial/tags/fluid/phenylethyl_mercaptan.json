@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylethyl_mercaptan",
+    "foodindustrial:flowing_phenylethyl_mercaptan",
+    {
+      "id": "#forge:phenylethyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:phenylethyl_mercaptan",
+      "required": false
+    }
+  ]
+}

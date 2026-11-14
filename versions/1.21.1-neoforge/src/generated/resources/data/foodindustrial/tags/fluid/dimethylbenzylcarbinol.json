@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylbenzylcarbinol",
+    "foodindustrial:flowing_dimethylbenzylcarbinol",
+    {
+      "id": "#forge:dimethylbenzylcarbinol",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylbenzylcarbinol",
+      "required": false
+    }
+  ]
+}

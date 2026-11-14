@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:potassium_polyaspartate",
     {
+      "id": "#forge:dusts/potassium_polyaspartate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/potassium_polyaspartate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/potassium_polyaspartate",
       "required": false
     },

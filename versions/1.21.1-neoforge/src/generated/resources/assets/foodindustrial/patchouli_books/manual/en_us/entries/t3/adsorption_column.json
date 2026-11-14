@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t3",
+  "icon": "foodindustrial:adsorption_column",
+  "name": "book.foodindustrial.manual.entry.adsorption_column",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:adsorption_column",
+      "text": "book.foodindustrial.manual.entry.adsorption_column.text"
+    }
+  ],
+  "sortnum": 3
+}

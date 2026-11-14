@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butylcyclopentanone",
+    "foodindustrial:flowing_butylcyclopentanone",
+    {
+      "id": "#forge:butylcyclopentanone",
+      "required": false
+    },
+    {
+      "id": "#c:butylcyclopentanone",
+      "required": false
+    }
+  ]
+}

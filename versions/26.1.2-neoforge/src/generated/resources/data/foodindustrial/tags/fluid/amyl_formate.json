@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amyl_formate",
+    "foodindustrial:flowing_amyl_formate",
+    {
+      "id": "#forge:amyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:amyl_formate",
+      "required": false
+    }
+  ]
+}

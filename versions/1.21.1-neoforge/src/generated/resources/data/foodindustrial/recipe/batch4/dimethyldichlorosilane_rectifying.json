@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:dimethyldichlorosilane"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:dimethyldichlorosilane"
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:methyltrichlorosilane"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

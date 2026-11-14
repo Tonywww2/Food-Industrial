@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_acetate",
+    "foodindustrial:flowing_butyl_acetate",
+    {
+      "id": "#forge:butyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_acetate",
+      "required": false
+    }
+  ]
+}

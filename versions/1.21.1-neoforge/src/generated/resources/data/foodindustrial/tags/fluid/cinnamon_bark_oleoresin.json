@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamon_bark_oleoresin",
+    "foodindustrial:flowing_cinnamon_bark_oleoresin",
+    {
+      "id": "#forge:cinnamon_bark_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:cinnamon_bark_oleoresin",
+      "required": false
+    }
+  ]
+}

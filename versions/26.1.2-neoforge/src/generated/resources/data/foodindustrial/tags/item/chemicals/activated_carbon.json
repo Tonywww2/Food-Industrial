@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:activated_carbon",
     {
+      "id": "#forge:dusts/activated_carbon",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/activated_carbon",
+      "required": false
+    },
+    {
       "id": "#c:dusts/activated_carbon",
       "required": false
     },

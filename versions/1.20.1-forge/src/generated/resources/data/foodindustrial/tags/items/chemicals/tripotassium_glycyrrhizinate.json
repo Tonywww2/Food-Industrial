@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tripotassium_glycyrrhizinate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tripotassium_glycyrrhizinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tripotassium_glycyrrhizinate",
+      "required": false
     }
   ]
 }

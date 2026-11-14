@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leaf_crotonate",
+    "foodindustrial:flowing_leaf_crotonate",
+    {
+      "id": "#forge:leaf_crotonate",
+      "required": false
+    },
+    {
+      "id": "#c:leaf_crotonate",
+      "required": false
+    }
+  ]
+}

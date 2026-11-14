@@ -6,6 +6,10 @@
     {
       "id": "#forge:polyglycerol",
       "required": false
+    },
+    {
+      "id": "#c:polyglycerol",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/menthol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/menthol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/menthol",
+      "required": false
     }
   ]
 }

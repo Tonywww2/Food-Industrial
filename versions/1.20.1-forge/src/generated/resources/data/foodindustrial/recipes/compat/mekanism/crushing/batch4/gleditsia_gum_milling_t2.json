@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "input": {
+    "amount": 4,
+    "ingredient": {
+      "tag": "foodindustrial:materials/gleditsia_seed"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:gleditsia_gum",
+    "nbt": "{Purity:-1b}"
+  }
+}

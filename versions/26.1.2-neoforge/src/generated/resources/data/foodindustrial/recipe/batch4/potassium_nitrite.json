@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/potassium_nitrate"
+    }
+  ],
+  "mode": "melting",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:potassium_nitrite"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:oxygen"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 400
+}

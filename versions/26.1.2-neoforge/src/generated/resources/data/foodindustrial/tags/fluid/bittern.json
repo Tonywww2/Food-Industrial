@@ -4,6 +4,10 @@
     "foodindustrial:bittern",
     "foodindustrial:flowing_bittern",
     {
+      "id": "#forge:bittern",
+      "required": false
+    },
+    {
       "id": "#c:bittern",
       "required": false
     }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/iron",
+    "P": "#minecraft:planks",
+    "X": "minecraft:piston"
+  },
+  "pattern": [
+    "PPP",
+    "IXI",
+    "P P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:screw_press"
+  }
+}

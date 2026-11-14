@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:attapulgite_clay",
+    {
+      "id": "#forge:dusts/attapulgite_clay",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/attapulgite_clay",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/attapulgite_clay",
+      "required": false
+    },
+    {
+      "id": "#c:gems/attapulgite_clay",
+      "required": false
+    }
+  ]
+}

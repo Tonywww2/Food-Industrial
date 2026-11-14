@@ -186,47 +186,50 @@ public final class RecipeIndex {
     }
 
     /**
-     * First recipe the device can run with its current capabilities whose inputs are all present.
-     * Call only when the contents changed (machines/02 §6.3 rule 8).
+     * The recipe the device runs with its current capabilities on these contents: of those whose inputs cover
+     * the contents, the one with the most conditions (catalysts count), ties by the smallest id — the rule of the
+     * machines ({@code RecipeProcessor}, machines/01 §3.2). Call only when the contents changed (machines/02 §6.3 rule 8).
      *
      * @param current capabilities right now (mode and modules), within {@link DeviceSpec#capabilities()}
      */
     @Nullable
     public Found find(DeviceSpec device, Capabilities current, List<ItemStack> items, List<FluidAmount> fluids) {
+        Found best = null;
         for (ProcessType type : ProcessTypes.recipeTypes()) {
             if (!device.types().contains(type)) {
                 continue;
             }
             for (ItemStack stack : items) {
                 if (!stack.isEmpty()) {
-                    Found found = first(candidates(type, stack.getItem()), device, current, items, fluids);
-                    if (found != null) {
-                        return found;
-                    }
+                    best = better(best, candidates(type, stack.getItem()), device, current, items, fluids);
                 }
             }
             for (FluidAmount fluid : fluids) {
                 if (!fluid.isEmpty()) {
-                    Found found = first(candidates(type, fluid.fluid()), device, current, items, fluids);
-                    if (found != null) {
-                        return found;
-                    }
+                    best = better(best, candidates(type, fluid.fluid()), device, current, items, fluids);
                 }
             }
         }
-        return null;
+        return best;
     }
 
     @Nullable
-    private static Found first(List<Entry> entries, DeviceSpec device, Capabilities current, List<ItemStack> items, List<FluidAmount> fluids) {
+    private static Found better(@Nullable Found best, List<Entry> entries, DeviceSpec device, Capabilities current, List<ItemStack> items,
+                                List<FluidAmount> fluids) {
         for (Entry entry : entries) {
+            if (best != null) {
+                int order = Integer.compare(entry.recipe.specificity(), best.entry().recipe.specificity());
+                if (order < 0 || (order == 0 && entry.id().compareTo(best.entry().id()) >= 0)) {
+                    continue;
+                }
+            }
             if (entry.runsOn(device) && current.covers(entry.recipe.required())) {
                 ProcessRecipe.Match match = entry.recipe.match(items, fluids);
                 if (match != null) {
-                    return new Found(entry, match);
+                    best = new Found(entry, match);
                 }
             }
         }
-        return null;
+        return best;
     }
 }

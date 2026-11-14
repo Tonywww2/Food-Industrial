@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_caprylate",
+    "foodindustrial:flowing_ethyl_caprylate",
+    {
+      "id": "#forge:ethyl_caprylate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_caprylate",
+      "required": false
+    }
+  ]
+}

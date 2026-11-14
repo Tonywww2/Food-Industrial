@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/earth_kiln_front",
+    "side": "foodindustrial:block/earth_kiln_side",
+    "top": "foodindustrial:block/earth_kiln_top"
+  }
+}

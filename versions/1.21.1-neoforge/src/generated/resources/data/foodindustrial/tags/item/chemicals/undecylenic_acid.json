@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecylenic_acid",
+    {
+      "id": "#forge:dusts/undecylenic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/undecylenic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/undecylenic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/undecylenic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decyl_acetate",
+    "foodindustrial:flowing_decyl_acetate",
+    {
+      "id": "#forge:decyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:decyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:prenyl_mercaptan",
+    "foodindustrial:flowing_prenyl_mercaptan",
+    {
+      "id": "#forge:prenyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:prenyl_mercaptan",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptanal_dimethyl_acetal",
+    "foodindustrial:flowing_heptanal_dimethyl_acetal",
+    {
+      "id": "#forge:heptanal_dimethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:heptanal_dimethyl_acetal",
+      "required": false
+    }
+  ]
+}

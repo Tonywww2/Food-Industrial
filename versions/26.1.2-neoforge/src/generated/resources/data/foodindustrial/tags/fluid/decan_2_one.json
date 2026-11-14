@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decan_2_one",
+    "foodindustrial:flowing_decan_2_one",
+    {
+      "id": "#forge:decan_2_one",
+      "required": false
+    },
+    {
+      "id": "#c:decan_2_one",
+      "required": false
+    }
+  ]
+}

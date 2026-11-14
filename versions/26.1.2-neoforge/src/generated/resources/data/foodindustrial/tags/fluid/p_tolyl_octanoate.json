@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_tolyl_octanoate",
+    "foodindustrial:flowing_p_tolyl_octanoate",
+    {
+      "id": "#forge:p_tolyl_octanoate",
+      "required": false
+    },
+    {
+      "id": "#c:p_tolyl_octanoate",
+      "required": false
+    }
+  ]
+}

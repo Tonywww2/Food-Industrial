@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gellan_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gellan_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gellan_gum",
+      "required": false
     }
   ]
 }

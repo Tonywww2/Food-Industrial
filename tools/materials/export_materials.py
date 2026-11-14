@@ -18,7 +18,8 @@ bears a stored purity when it has a category other than K0, or K0 with a source 
 (additives/10 §1.3).
 
 tag_imports.json (I06): the 08 §A/§B tables (one tag per row, per-node content columns) plus the
-catalyst tags of 09 chemicals listed in the 08 §C catalyst table. Only backticked entries are
+catalyst tags of 09 chemicals listed in the 08 §C catalyst table, and an empty tag for each crop or ore
+of 08 §C that has no source yet (I30), so recipes can already name it. Only backticked entries are
 exported; "本模组……" entries come from the master table at data generation.
 
 Usage: python3 tools/materials/export_materials.py   (from the repository root)
@@ -28,6 +29,10 @@ import pathlib
 import re
 import sys
 
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / 'textures'))
+import groups  # noqa: E402  (tools/textures: texture kinds, I33)
+
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DOCS = ROOT / 'docs' / 'additives'
 OUT = ROOT / 'src' / 'main' / 'resources' / 'foodindustrial' / 'materials.json'
@@ -36,7 +41,45 @@ CATEGORIES_OUT = OUT.parent / 'purity_categories.json'
 
 STATES = {'固': 'solid', '液': 'liquid', '气': 'gas', '溶液': 'solution', '物品': 'solid', '流体': 'liquid'}
 CATEGORIES = {'化学品': 'chemical', '催化剂': 'catalyst', '原料': 'raw', '菌种': 'culture', '酶': 'enzyme', '耗材': 'consumable',
-              '原版': 'vanilla'}
+              '原版': 'vanilla', '香料': 'flavor'}
+# Fluid colours left blank in 09 and 08 §C (batch 5, the implementation chooses them, I31, pending review): by a
+# kind named in the name, else by state (single substances nearly colourless).
+FLAVOR_COLOURS = (('血', '#7A1414'), ('胶乳', '#F4F0E4'), ('糖蜜', '#3A2410'), ('发酵液', '#C8B070'), ('酶解液', '#D8C8A0'),
+                  ('石脑油', '#F0ECD8'), ('石油醚', '#ECEEF0'), ('溴', '#8A2A10'), ('酊', '#C89850'), ('浸膏', '#8A5A2B'), ('净油', '#A8783A'), ('油树脂', '#9A4A20'), ('香脂', '#7A4A22'),
+                  ('提取物', '#B08850'), ('浓缩液', '#B08850'), ('馏出液', '#E8E4D8'), ('蒸馏物', '#E8E4D8'), ('烟熏液', '#8A4A20'),
+                  ('油', '#F0DC90'))
+
+
+# 09 颜色的取值顺序 ② (11 问题 42): natural flavours by product form, the template of their route (18 §2, 19 §5).
+FORM_COLOURS = {'NT1': '#F2E3A0', 'NT2': '#F2E3A0', 'NT12': '#F2E3A0', 'NT4': '#5C4A2E', 'NT5': '#8A5A24', 'NT6': '#5A3418',
+                'NT3': '#7A4E26', 'NT7': '#7A4E26', 'NT8': '#9A6A30'}
+
+
+def natural_forms():
+    """Material id -> the form template (NT1–NT8, NT12) its route names first, for natural flavours and concretes."""
+    result = {}
+    for _, rows in tables(DOCS / '18-batch-5-flavors.md', '| 编码 |', '物料 ID'):
+        for row in rows:
+            found = [t for t in re.findall(r'\b(NT\d+)\b', row['模板']) if t in FORM_COLOURS]
+            if found:
+                result.setdefault(row['物料 ID'].strip('`'), found[0])
+    for _, rows in tables(DOCS / '19-batch-5-synthetic-flavors.md', '| 建议 ID |', '路线'):
+        for row in rows:
+            match = re.match(r'^(NT\d+)', row['路线'])
+            if match and match.group(1) in FORM_COLOURS:
+                result.setdefault(row['建议 ID'].strip('`'), match.group(1))
+    return result
+
+
+def flavor_colour(zh, state, purity_category):
+    if state == 'gas':
+        return '#ECECF4'
+    if purity_category is None:
+        for key, colour in FLAVOR_COLOURS:
+            if key in zh:
+                return colour
+        return '#D8C088'
+    return '#F2EFE2'
 # Purity categories of additives/10 §1.4 and §4.7.
 PURITY_CATEGORY_IDS = {
     'K0': 'k0_raw', 'K1': 'k1_inorganic', 'K2': 'k2_sugar', 'K3': 'k3_organic_solid',
@@ -185,8 +228,9 @@ def ticks(cell):
 TAG_ENTRY = re.compile(r'#?[a-z0-9_.-]+:[a-z0-9_./-]+')
 
 
-def tag_imports(eight):
-    """08 §A/§B rows and the catalyst tags of 09 chemicals (08 §C)."""
+def tag_imports(eight, declared=()):
+    """08 §A/§B rows, the catalyst tags of 09 chemicals (08 §C) and the declared empty tags of the crops
+    and ores that have no source yet (08 §C, I30): those are written empty, for packs to fill."""
     merged = {}
 
     def add(tag, kind, forge, c):
@@ -211,13 +255,30 @@ def tag_imports(eight):
             if '见 09' in row['ID']:
                 item = 'foodindustrial:' + row['ID'].split('（')[0]
                 add(ticks(row['配方引用标签'])[0], 'item', [item], [item])
-    return [entry for entry in merged.values() if entry['forge'] or entry['c']]
+    for tag in declared:
+        add(tag, 'item', [], [])
+    return [entry for entry in merged.values() if entry['forge'] or entry['c'] or entry['tag'] in declared]
+
+
+QUALIFIER = re.compile(r'\(([^()（）]*)\)$')
+
+
+def full_width_qualifier(zh):
+    """A trailing half-width group of Chinese words in a GB name is a qualifier, not a common name (丁香花蕾酊(提取物)):
+    it stays part of the name and is written full-width (text standard §1.4, I31 2026-11-11)."""
+    match = QUALIFIER.search(zh)
+    if match and HAN.search(match.group(1)) and not re.search(r'[0-9A-Za-z+±/,αβγδεω-]', match.group(1)) \
+            and not match.group(1).startswith('或'):
+        return zh[:match.start()] + '（' + match.group(1) + '）'
+    return zh
 
 
 def material(mid, zh, en, state, category, color, formula_text, gtceu, tag, source, purity_category=None, split=True):
     """split: whether a trailing parenthesis can be a common name (09 rows); in 08 it is part of the name."""
     category = CATEGORIES[category]
     professional, common = split_common(zh, en) if split else ({'zh': zh, 'en': en}, None)
+    zh = full_width_qualifier(zh)
+    professional = {'zh': full_width_qualifier(professional['zh']), 'en': professional['en']}
     if purity_category is not None and purity_category not in PURITY_CATEGORY_IDS:
         sys.exit(f'Unknown purity category of {mid}: {purity_category}')
     return {
@@ -237,32 +298,66 @@ def material(mid, zh, en, state, category, color, formula_text, gtceu, tag, sour
     }
 
 
+def deferred_codes():
+    """Flavours put off by the designer (11 问题 36): rows of 18 / 19 whose source cell says 暂缓."""
+    codes = set()
+    for name in ('18-batch-5-flavors.md', '19-batch-5-synthetic-flavors.md'):
+        for _, rows in tables(DOCS / name, '| 编码 |', '物料 ID'):
+            codes.update(row['编码'] for row in rows if '暂缓' in row['原料'])
+    return codes
+
+
+def only_deferred(note, deferred):
+    """A batch-5 row used only by put-off flavours: neither it nor its own intermediates are registered (I31)."""
+    if '第五批' not in note:
+        return False
+    codes = set(re.findall(r'\b[NS]\d{3,4}\b', note))
+    others = re.findall(r'`[a-z0-9_]+`|\b\d{3}\b', note)
+    return bool(codes) and codes <= deferred and not others
+
+
 def main():
     materials = []
+    deferred = deferred_codes()
+    forms = natural_forms()
     for _, rows in tables(DOCS / '09-chemical-formulas.md', '| 建议 ID |', '纯度类别'):
         for row in rows:
             mid = row['建议 ID'].strip('`')
             category = row['分类']
-            if category == '原版':
+            if category == '原版' or only_deferred(row['备注'], deferred):
                 continue
             state = STATES[row['状态']]
             gt = row['GTCEu 材料']
             gtceu = None if gt.startswith('—') else re.split(r'[（ /]', gt)[0]
             tag = f'chemicals/{mid}' if state == 'solid' else mid
             purity_category = None if row['纯度类别'] == '—' else row['纯度类别']
-            materials.append(material(mid, row['名称'], row['英文名（待审）'], state, category, row['颜色'],
+            colour = row['颜色']
+            if colour in ('—', '') and mid in forms and category == '香料':
+                colour = FORM_COLOURS[forms[mid]]
+            elif state != 'solid' and colour in ('—', ''):
+                colour = flavor_colour(row['名称'], state, purity_category)
+            materials.append(material(mid, row['名称'], row['英文名（待审）'], state, category, colour,
                                       formula(row['化学式 / 组成']), gtceu, tag, '09', purity_category))
     eight = DOCS / '08-raw-materials.md'
+    declared = []  # crops and ores without a source yet: empty tags, so recipes can name them (I30)
+    no_source = []  # every raw material without a source yet (08 §C); the purity report lists their routes apart (I30)
     for _, rows in tables(eight, '| 原料 | 配方引用标签 |'):
         for row in rows:
             mid = row['ID']
-            if '见 09' in mid or mid.startswith('（'):
-                continue
+            if '见 09' in mid or mid.startswith('（') or row['配方引用标签'].startswith('`foods/'):
+                continue  # described in 09, or a finished product of foods.json (I21)
+            if '暂无来源' in row['获取']:
+                no_source.append(re.search(r'`([^`]+)`', row['配方引用标签']).group(1))
             if row['类型'] not in ('物品', '流体'):
+                if '暂无来源' in row['获取']:
+                    declared.append(re.search(r'`([^`]+)`', row['配方引用标签']).group(1))
                 continue  # ores, crops, plants and trees: blocks registered by I07 code
             state = STATES[row['类型']]
             tag = re.search(r'`([^`]+)`', row['配方引用标签']).group(1)
-            materials.append(material(mid, row['原料'], row['英文名（待审）'], state, row['分类'], row['颜色'],
+            colour = row['颜色']
+            if state != 'solid' and colour in ('—', ''):
+                colour = flavor_colour(row['原料'], state, None)
+            materials.append(material(mid, row['原料'], row['英文名（待审）'], state, row['分类'], colour,
                                       None, None, tag, '08 §C', split=False))
     for _, rows in tables(eight, '| 菌种 / 酶 | 配方引用标签 |'):
         for row in rows:
@@ -310,12 +405,16 @@ def main():
         m['purity'] = data
         m['bearer'] = key != UNGRADED or source is not None
     for m in materials:
+        # texture kind (I33): fluids liquid, viscous or gas; solids the template their item texture is drawn from
+        m['texture'] = groups.material(m)['kind']
+    for m in materials:
         if not re.fullmatch(r'[a-z0-9_]+', m['id']):
             sys.exit(f'Invalid id: {m["id"]}')
         if m['state'] != 'solid' and m['color'] is None:
             sys.exit(f'Fluid without colour: {m["id"]}')
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps({'materials': materials}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    OUT.write_text(json.dumps({'materials': materials, 'pending_sources': sorted(set(no_source))}, ensure_ascii=False, indent=1) + '\n',
+                   encoding='utf-8')
     categories = purity_categories()
     CATEGORIES_OUT.write_text(json.dumps({'categories': categories}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     print(f'{len(categories)} purity categories -> {CATEGORIES_OUT.relative_to(ROOT)}')
@@ -326,7 +425,7 @@ def main():
     for m in materials:
         key = (m['category'] + ('*' if m['bearer'] else ''), m['state'])
         counts[key] = counts.get(key, 0) + 1
-    imports = tag_imports(eight)
+    imports = tag_imports(eight, declared)
     # foodindustrial: entries may also be I07 blocks; data generation checks that they exist.
     TAGS_OUT.write_text(json.dumps({'tags': imports}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     print(f'{len(imports)} tags -> {TAGS_OUT.relative_to(ROOT)}')

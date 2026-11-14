@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_carvacrol",
+    "foodindustrial:flowing_ethyl_carvacrol",
+    {
+      "id": "#forge:ethyl_carvacrol",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_carvacrol",
+      "required": false
+    }
+  ]
+}

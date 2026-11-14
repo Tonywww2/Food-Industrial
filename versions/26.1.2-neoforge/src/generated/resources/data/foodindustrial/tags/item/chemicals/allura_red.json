@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:allura_red",
     {
+      "id": "#forge:dusts/allura_red",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/allura_red",
+      "required": false
+    },
+    {
       "id": "#c:dusts/allura_red",
       "required": false
     },

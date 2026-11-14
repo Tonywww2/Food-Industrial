@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_permanganate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_permanganate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_permanganate",
+      "required": false
     }
   ]
 }

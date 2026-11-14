@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hydroxy_methylhexanoic_delta_lactone",
+  "loader": "neoforge:fluid_container"
+}

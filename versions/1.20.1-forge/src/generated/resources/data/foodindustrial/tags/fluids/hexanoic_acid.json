@@ -6,6 +6,10 @@
     {
       "id": "#forge:hexanoic_acid",
       "required": false
+    },
+    {
+      "id": "#c:hexanoic_acid",
+      "required": false
     }
   ]
 }

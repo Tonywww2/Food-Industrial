@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:peach_leaf_concrete",
+    {
+      "id": "#forge:dusts/peach_leaf_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/peach_leaf_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/peach_leaf_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/peach_leaf_concrete",
+      "required": false
+    }
+  ]
+}

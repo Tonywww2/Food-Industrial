@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:fumigation_box",
+  "name": "book.foodindustrial.manual.entry.fumigation_box",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:fumigation_box",
+      "text": "book.foodindustrial.manual.entry.fumigation_box.text",
+      "title": "book.foodindustrial.manual.entry.fumigation_box"
+    }
+  ],
+  "sortnum": 10
+}

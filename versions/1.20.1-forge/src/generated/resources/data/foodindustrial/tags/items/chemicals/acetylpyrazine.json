@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylpyrazine",
+    {
+      "id": "#forge:dusts/acetylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetylpyrazine",
+      "required": false
+    }
+  ]
+}

@@ -10,6 +10,10 @@
     {
       "id": "#gtceu:rubber_logs",
       "required": false
+    },
+    {
+      "id": "#c:rubberwood_logs",
+      "required": false
     }
   ]
 }

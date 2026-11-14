@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:boiling_stove",
+  "name": "book.foodindustrial.manual.entry.boiling_stove",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:boiling_stove",
+      "text": "book.foodindustrial.manual.entry.boiling_stove.text"
+    }
+  ],
+  "sortnum": 2
+}

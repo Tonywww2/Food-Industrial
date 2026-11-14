@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:elderflower_absolute",
+  "loader": "neoforge:fluid_container"
+}

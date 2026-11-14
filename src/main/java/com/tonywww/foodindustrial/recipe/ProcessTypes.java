@@ -86,5 +86,6 @@ public final class ProcessTypes {
         }
         RecipeIndex.bootstrap();
         RecipeGen.bootstrap();
+        VanillaCookingBridge.bootstrap();
     }
 }

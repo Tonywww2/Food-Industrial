@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sunset_yellow",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sunset_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sunset_yellow",
+      "required": false
     }
   ]
 }

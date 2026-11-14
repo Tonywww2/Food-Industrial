@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_dihydrocyclopentapyrazine",
+    "foodindustrial:flowing_methyl_dihydrocyclopentapyrazine",
+    {
+      "id": "#forge:methyl_dihydrocyclopentapyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_dihydrocyclopentapyrazine",
+      "required": false
+    }
+  ]
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:ketogluconic_acid",
       "required": false
+    },
+    {
+      "id": "#c:ketogluconic_acid",
+      "required": false
     }
   ]
 }

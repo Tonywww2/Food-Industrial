@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:davana_oil",
+    "foodindustrial:flowing_davana_oil",
+    {
+      "id": "#forge:davana_oil",
+      "required": false
+    },
+    {
+      "id": "#c:davana_oil",
+      "required": false
+    }
+  ]
+}

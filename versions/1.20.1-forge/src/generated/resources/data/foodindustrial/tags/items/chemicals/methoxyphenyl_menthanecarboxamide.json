@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxyphenyl_menthanecarboxamide",
+    {
+      "id": "#forge:dusts/methoxyphenyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methoxyphenyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methoxyphenyl_menthanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methoxyphenyl_menthanecarboxamide",
+      "required": false
+    }
+  ]
+}

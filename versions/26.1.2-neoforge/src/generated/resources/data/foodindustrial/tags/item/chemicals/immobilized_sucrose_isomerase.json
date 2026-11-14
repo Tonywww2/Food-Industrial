@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:immobilized_sucrose_isomerase",
     {
+      "id": "#forge:dusts/immobilized_sucrose_isomerase",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/immobilized_sucrose_isomerase",
+      "required": false
+    },
+    {
       "id": "#c:dusts/immobilized_sucrose_isomerase",
       "required": false
     },

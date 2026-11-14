@@ -8,6 +8,18 @@
     {
       "id": "#c:foods/raw_pork",
       "required": false
+    },
+    {
+      "id": "#forge:raw_pork",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/raw_pork",
+      "required": false
+    },
+    {
+      "id": "#c:raw_pork",
+      "required": false
     }
   ]
 }

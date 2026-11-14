@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranium_oil",
+    "foodindustrial:flowing_geranium_oil",
+    {
+      "id": "#forge:geranium_oil",
+      "required": false
+    },
+    {
+      "id": "#c:geranium_oil",
+      "required": false
+    }
+  ]
+}

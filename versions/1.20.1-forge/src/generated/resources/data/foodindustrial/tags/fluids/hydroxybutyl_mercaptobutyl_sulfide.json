@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxybutyl_mercaptobutyl_sulfide",
+    "foodindustrial:flowing_hydroxybutyl_mercaptobutyl_sulfide",
+    {
+      "id": "#forge:hydroxybutyl_mercaptobutyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxybutyl_mercaptobutyl_sulfide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthyl_cyclopropanecarboxamide",
+    {
+      "id": "#forge:dusts/menthyl_cyclopropanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/menthyl_cyclopropanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/menthyl_cyclopropanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/menthyl_cyclopropanecarboxamide",
+      "required": false
+    }
+  ]
+}

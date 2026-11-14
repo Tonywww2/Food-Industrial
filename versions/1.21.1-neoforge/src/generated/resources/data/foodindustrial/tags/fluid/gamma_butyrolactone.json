@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_butyrolactone",
+    "foodindustrial:flowing_gamma_butyrolactone",
+    {
+      "id": "#forge:gamma_butyrolactone",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_butyrolactone",
+      "required": false
+    }
+  ]
+}

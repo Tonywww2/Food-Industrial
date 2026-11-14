@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 16,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/glucose"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sorbitol"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/citric_acid"
+      }
+    }
+  ],
+  "mode": "polymerization",
+  "outputs": [
+    {
+      "count": 16,
+      "item": "foodindustrial:polydextrose"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "vacuum",
+    "temperature": "heated"
+  },
+  "time": 200
+}

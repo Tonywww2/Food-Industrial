@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:phthalic_anhydride",
     {
+      "id": "#forge:dusts/phthalic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phthalic_anhydride",
+      "required": false
+    },
+    {
       "id": "#c:dusts/phthalic_anhydride",
       "required": false
     },

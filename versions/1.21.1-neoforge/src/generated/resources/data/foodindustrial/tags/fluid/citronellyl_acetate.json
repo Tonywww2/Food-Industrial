@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronellyl_acetate",
+    "foodindustrial:flowing_citronellyl_acetate",
+    {
+      "id": "#forge:citronellyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:citronellyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/nitratine"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_nitrate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

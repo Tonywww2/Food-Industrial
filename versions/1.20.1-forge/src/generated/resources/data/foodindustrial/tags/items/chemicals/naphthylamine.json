@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/naphthylamine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/naphthylamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naphthylamine",
+      "required": false
     }
   ]
 }

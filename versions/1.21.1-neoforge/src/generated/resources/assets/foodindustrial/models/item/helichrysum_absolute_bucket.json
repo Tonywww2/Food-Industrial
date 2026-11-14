@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:helichrysum_absolute",
+  "loader": "neoforge:fluid_container"
+}

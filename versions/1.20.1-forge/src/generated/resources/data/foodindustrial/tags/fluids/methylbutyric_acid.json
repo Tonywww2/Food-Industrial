@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylbutyric_acid",
+    "foodindustrial:flowing_methylbutyric_acid",
+    {
+      "id": "#forge:methylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:methylbutyric_acid",
+      "required": false
+    }
+  ]
+}

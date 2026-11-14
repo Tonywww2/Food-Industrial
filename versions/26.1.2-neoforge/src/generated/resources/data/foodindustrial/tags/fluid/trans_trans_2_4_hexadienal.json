@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_trans_2_4_hexadienal",
+    "foodindustrial:flowing_trans_trans_2_4_hexadienal",
+    {
+      "id": "#forge:trans_trans_2_4_hexadienal",
+      "required": false
+    },
+    {
+      "id": "#c:trans_trans_2_4_hexadienal",
+      "required": false
+    }
+  ]
+}

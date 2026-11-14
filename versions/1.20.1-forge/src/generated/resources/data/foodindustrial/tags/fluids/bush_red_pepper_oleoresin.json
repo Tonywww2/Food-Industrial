@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bush_red_pepper_oleoresin",
+    "foodindustrial:flowing_bush_red_pepper_oleoresin",
+    {
+      "id": "#forge:bush_red_pepper_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:bush_red_pepper_oleoresin",
+      "required": false
+    }
+  ]
+}

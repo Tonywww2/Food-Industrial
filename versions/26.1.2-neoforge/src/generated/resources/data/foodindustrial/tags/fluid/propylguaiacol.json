@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propylguaiacol",
+    "foodindustrial:flowing_propylguaiacol",
+    {
+      "id": "#forge:propylguaiacol",
+      "required": false
+    },
+    {
+      "id": "#c:propylguaiacol",
+      "required": false
+    }
+  ]
+}

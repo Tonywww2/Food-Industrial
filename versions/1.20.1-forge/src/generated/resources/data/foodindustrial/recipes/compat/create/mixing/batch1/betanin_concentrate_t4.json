@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 2000,
+      "fluidTag": "foodindustrial:beetroot_juice"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:betanin",
+      "nbt": "{Purity:-74b}"
+    }
+  ]
+}

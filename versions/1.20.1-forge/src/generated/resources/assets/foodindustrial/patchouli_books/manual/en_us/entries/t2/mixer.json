@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:mixer",
+  "name": "book.foodindustrial.manual.entry.mixer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:mixer",
+      "text": "book.foodindustrial.manual.entry.mixer.text"
+    }
+  ],
+  "sortnum": 8
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:p_ethylbenzaldehyde",
+  "loader": "neoforge:fluid_container"
+}

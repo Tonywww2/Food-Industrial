@@ -4,6 +4,10 @@
     "foodindustrial:retinol",
     "foodindustrial:flowing_retinol",
     {
+      "id": "#forge:retinol",
+      "required": false
+    },
+    {
       "id": "#c:retinol",
       "required": false
     }

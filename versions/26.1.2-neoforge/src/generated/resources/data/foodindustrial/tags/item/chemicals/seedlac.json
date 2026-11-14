@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:seedlac",
     {
+      "id": "#forge:dusts/seedlac",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/seedlac",
+      "required": false
+    },
+    {
       "id": "#c:dusts/seedlac",
       "required": false
     },

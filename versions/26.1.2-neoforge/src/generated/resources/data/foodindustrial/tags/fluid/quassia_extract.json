@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:quassia_extract",
+    "foodindustrial:flowing_quassia_extract",
+    {
+      "id": "#forge:quassia_extract",
+      "required": false
+    },
+    {
+      "id": "#c:quassia_extract",
+      "required": false
+    }
+  ]
+}

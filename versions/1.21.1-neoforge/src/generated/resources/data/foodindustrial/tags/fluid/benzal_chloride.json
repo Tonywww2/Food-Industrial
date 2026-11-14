@@ -4,6 +4,10 @@
     "foodindustrial:benzal_chloride",
     "foodindustrial:flowing_benzal_chloride",
     {
+      "id": "#forge:benzal_chloride",
+      "required": false
+    },
+    {
       "id": "#c:benzal_chloride",
       "required": false
     }

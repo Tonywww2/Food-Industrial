@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:yuzu_peel_oil",
+    "foodindustrial:flowing_yuzu_peel_oil",
+    {
+      "id": "#forge:yuzu_peel_oil",
+      "required": false
+    },
+    {
+      "id": "#c:yuzu_peel_oil",
+      "required": false
+    }
+  ]
+}

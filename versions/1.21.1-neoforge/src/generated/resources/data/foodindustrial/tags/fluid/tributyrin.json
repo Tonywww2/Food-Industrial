@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tributyrin",
+    "foodindustrial:flowing_tributyrin",
+    {
+      "id": "#forge:tributyrin",
+      "required": false
+    },
+    {
+      "id": "#c:tributyrin",
+      "required": false
+    }
+  ]
+}

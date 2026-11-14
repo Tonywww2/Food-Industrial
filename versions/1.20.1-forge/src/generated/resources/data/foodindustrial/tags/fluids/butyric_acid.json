@@ -6,6 +6,10 @@
     {
       "id": "#forge:butyric_acid",
       "required": false
+    },
+    {
+      "id": "#c:butyric_acid",
+      "required": false
     }
   ]
 }

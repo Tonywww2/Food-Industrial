@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polyacrylamide",
+    {
+      "id": "#forge:dusts/polyacrylamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polyacrylamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polyacrylamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyacrylamide",
+      "required": false
+    }
+  ]
+}

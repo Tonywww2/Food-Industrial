@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/epsilon_polylysine_hydrochloride"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:epsilon_polylysine_hydrochloride"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "sensitive",
+    "min_tier": "t1"
+  },
+  "time": 200
+}

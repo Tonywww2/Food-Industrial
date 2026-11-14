@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:michelia_alba_concrete",
+    {
+      "id": "#forge:dusts/michelia_alba_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/michelia_alba_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/michelia_alba_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/michelia_alba_concrete",
+      "required": false
+    }
+  ]
+}

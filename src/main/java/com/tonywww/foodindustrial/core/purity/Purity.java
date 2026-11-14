@@ -159,6 +159,28 @@ public final class Purity {
 
     // ---- materials ----
 
+    /**
+     * This mod's item of {@code material}: the first registered bearer, or {@code null} (M21
+     * normalizing turns foreign items of the material's tag into it, I15).
+     */
+    @Nullable
+    public static Item itemOf(@Nullable String material) {
+        if (material == null) {
+            return null;
+        }
+        for (Map.Entry<Supplier<? extends Item>, String> entry : ITEM_BEARERS) {
+            if (entry.getValue().equals(material)) {
+                return entry.getKey().get();
+            }
+        }
+        return null;
+    }
+
+    /** Whether {@code item} belongs to this mod. */
+    public static boolean isOwn(Item item) {
+        return isOwn(PlatformTags.itemId(item));
+    }
+
     /** Whether stacks of {@code item} carry a stored purity. */
     public static boolean bears(Item item) {
         return itemBearers().containsKey(item);

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/naphthalene",
       "required": false
+    },
+    {
+      "id": "#c:dusts/naphthalene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naphthalene",
+      "required": false
     }
   ]
 }

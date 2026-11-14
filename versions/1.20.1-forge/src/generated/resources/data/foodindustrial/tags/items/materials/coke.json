@@ -8,6 +8,14 @@
     {
       "id": "#forge:gems/coke",
       "required": false
+    },
+    {
+      "id": "#c:coal_coke",
+      "required": false
+    },
+    {
+      "id": "#c:gems/coke",
+      "required": false
     }
   ]
 }

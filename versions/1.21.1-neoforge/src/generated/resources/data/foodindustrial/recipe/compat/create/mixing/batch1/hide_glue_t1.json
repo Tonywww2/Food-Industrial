@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/hide"
+    },
+    {
+      "tag": "foodindustrial:materials/hide"
+    },
+    {
+      "tag": "foodindustrial:materials/hide"
+    },
+    {
+      "tag": "foodindustrial:materials/hide"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 2000,
+      "tag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": -9
+      },
+      "count": 1,
+      "id": "foodindustrial:gelatin"
+    }
+  ]
+}

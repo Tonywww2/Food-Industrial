@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dehydrozingerone",
+    {
+      "id": "#forge:dusts/dehydrozingerone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dehydrozingerone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dehydrozingerone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dehydrozingerone",
+      "required": false
+    }
+  ]
+}

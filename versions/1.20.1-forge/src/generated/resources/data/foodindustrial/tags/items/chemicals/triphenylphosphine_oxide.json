@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/triphenylphosphine_oxide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/triphenylphosphine_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/triphenylphosphine_oxide",
+      "required": false
     }
   ]
 }

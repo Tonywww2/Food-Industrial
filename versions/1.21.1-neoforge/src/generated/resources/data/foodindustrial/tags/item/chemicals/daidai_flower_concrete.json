@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:daidai_flower_concrete",
+    {
+      "id": "#forge:dusts/daidai_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/daidai_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/daidai_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/daidai_flower_concrete",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:brown_mustard_extract",
+  "loader": "forge:fluid_container"
+}

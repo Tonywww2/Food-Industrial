@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sec_butylcyclohexanone",
+  "loader": "neoforge:fluid_container"
+}

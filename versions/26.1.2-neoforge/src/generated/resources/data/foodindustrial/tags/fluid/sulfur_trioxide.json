@@ -4,6 +4,10 @@
     "foodindustrial:sulfur_trioxide",
     "foodindustrial:flowing_sulfur_trioxide",
     {
+      "id": "#forge:sulfur_trioxide",
+      "required": false
+    },
+    {
       "id": "#c:sulfur_trioxide",
       "required": false
     }

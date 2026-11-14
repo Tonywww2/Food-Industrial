@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/triphenylphosphine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/triphenylphosphine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/triphenylphosphine",
+      "required": false
     }
   ]
 }

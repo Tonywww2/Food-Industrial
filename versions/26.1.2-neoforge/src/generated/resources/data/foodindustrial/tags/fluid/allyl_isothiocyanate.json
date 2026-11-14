@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_isothiocyanate",
+    "foodindustrial:flowing_allyl_isothiocyanate",
+    {
+      "id": "#forge:allyl_isothiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_isothiocyanate",
+      "required": false
+    }
+  ]
+}

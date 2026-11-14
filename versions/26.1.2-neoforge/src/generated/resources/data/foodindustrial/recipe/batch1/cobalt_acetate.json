@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/cobalt"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "min_purity": 90,
+        "tag": "foodindustrial:acetic_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:cobalt_acetate"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

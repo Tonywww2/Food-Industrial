@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chloropropanal",
+    "foodindustrial:flowing_chloropropanal",
+    {
+      "id": "#forge:chloropropanal",
+      "required": false
+    },
+    {
+      "id": "#c:chloropropanal",
+      "required": false
+    }
+  ]
+}

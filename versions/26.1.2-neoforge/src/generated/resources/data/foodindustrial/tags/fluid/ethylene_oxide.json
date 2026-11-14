@@ -4,6 +4,10 @@
     "foodindustrial:ethylene_oxide",
     "foodindustrial:flowing_ethylene_oxide",
     {
+      "id": "#forge:ethylene_oxide",
+      "required": false
+    },
+    {
       "id": "#c:ethylene_oxide",
       "required": false
     }

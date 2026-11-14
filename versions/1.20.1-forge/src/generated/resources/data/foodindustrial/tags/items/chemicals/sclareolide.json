@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sclareolide",
+    {
+      "id": "#forge:dusts/sclareolide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sclareolide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sclareolide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sclareolide",
+      "required": false
+    }
+  ]
+}

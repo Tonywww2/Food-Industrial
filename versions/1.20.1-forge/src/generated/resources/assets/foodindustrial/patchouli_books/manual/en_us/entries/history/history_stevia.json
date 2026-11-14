@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:stevia",
+  "name": "book.foodindustrial.manual.entry.history_stevia",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:stevia",
+      "text": "book.foodindustrial.manual.entry.history_stevia.text"
+    }
+  ],
+  "sortnum": 9
+}

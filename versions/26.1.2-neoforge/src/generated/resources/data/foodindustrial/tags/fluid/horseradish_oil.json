@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:horseradish_oil",
+    "foodindustrial:flowing_horseradish_oil",
+    {
+      "id": "#forge:horseradish_oil",
+      "required": false
+    },
+    {
+      "id": "#c:horseradish_oil",
+      "required": false
+    }
+  ]
+}

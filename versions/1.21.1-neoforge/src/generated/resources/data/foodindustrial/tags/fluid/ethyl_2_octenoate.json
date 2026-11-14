@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_2_octenoate",
+    "foodindustrial:flowing_ethyl_2_octenoate",
+    {
+      "id": "#forge:ethyl_2_octenoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_2_octenoate",
+      "required": false
+    }
+  ]
+}

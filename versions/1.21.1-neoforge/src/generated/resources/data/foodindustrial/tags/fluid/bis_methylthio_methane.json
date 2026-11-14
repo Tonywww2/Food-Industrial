@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bis_methylthio_methane",
+    "foodindustrial:flowing_bis_methylthio_methane",
+    {
+      "id": "#forge:bis_methylthio_methane",
+      "required": false
+    },
+    {
+      "id": "#c:bis_methylthio_methane",
+      "required": false
+    }
+  ]
+}

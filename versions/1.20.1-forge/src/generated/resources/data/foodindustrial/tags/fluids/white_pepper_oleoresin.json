@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:white_pepper_oleoresin",
+    "foodindustrial:flowing_white_pepper_oleoresin",
+    {
+      "id": "#forge:white_pepper_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:white_pepper_oleoresin",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:pullulan",
     {
+      "id": "#forge:dusts/pullulan",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pullulan",
+      "required": false
+    },
+    {
       "id": "#c:dusts/pullulan",
       "required": false
     },

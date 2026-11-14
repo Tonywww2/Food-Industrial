@@ -1,5 +1,7 @@
 package com.tonywww.foodindustrial.machine.block;
 
+import com.tonywww.foodindustrial.core.text.Lang;
+import com.tonywww.foodindustrial.core.text.Tooltips;
 import com.tonywww.foodindustrial.gui.GuiText;
 import com.tonywww.foodindustrial.machine.entity.MachineBlockEntity;
 import com.tonywww.foodindustrial.platform.PlatformBlockItem;
@@ -11,7 +13,10 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.List;
 
-/** Item of a machine: says when it carries settings from a dismantled machine (machines/04 §4). */
+/**
+ * Item of a machine: the Shift description (text standard §3.2) and whether it carries settings from a
+ * dismantled machine (machines/04 §4).
+ */
 public class MachineBlockItem extends PlatformBlockItem {
     public MachineBlockItem(Block block, Properties properties) {
         super(block, properties);
@@ -19,6 +24,9 @@ public class MachineBlockItem extends PlatformBlockItem {
 
     @Override
     protected void appendTooltip(ItemStack stack, List<Component> lines, boolean shiftDown) {
+        if (getBlock() instanceof MachineBlock machine && machine.definition().described()) {
+            Tooltips.machine(Lang.description(machine.definition().id()), lines, shiftDown);
+        }
         if (PlatformItemData.has(stack, MachineBlockEntity.CONFIG_ITEM_KEY)) {
             lines.add(Component.translatable(GuiText.key("machine", "configured")).withStyle(ChatFormatting.GRAY));
         }

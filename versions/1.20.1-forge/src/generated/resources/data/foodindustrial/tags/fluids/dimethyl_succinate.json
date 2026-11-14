@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_succinate",
+    "foodindustrial:flowing_dimethyl_succinate",
+    {
+      "id": "#forge:dimethyl_succinate",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_succinate",
+      "required": false
+    }
+  ]
+}

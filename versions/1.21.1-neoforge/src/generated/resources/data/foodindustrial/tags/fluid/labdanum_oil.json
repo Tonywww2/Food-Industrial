@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:labdanum_oil",
+    "foodindustrial:flowing_labdanum_oil",
+    {
+      "id": "#forge:labdanum_oil",
+      "required": false
+    },
+    {
+      "id": "#c:labdanum_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menadiol",
+    {
+      "id": "#forge:dusts/menadiol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/menadiol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/menadiol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/menadiol",
+      "required": false
+    }
+  ]
+}

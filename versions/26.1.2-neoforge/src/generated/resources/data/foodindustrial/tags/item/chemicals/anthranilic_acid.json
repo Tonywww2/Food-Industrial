@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anthranilic_acid",
+    {
+      "id": "#forge:dusts/anthranilic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/anthranilic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/anthranilic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/anthranilic_acid",
+      "required": false
+    }
+  ]
+}

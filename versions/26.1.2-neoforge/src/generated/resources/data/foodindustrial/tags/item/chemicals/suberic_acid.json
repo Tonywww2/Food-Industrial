@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:suberic_acid",
+    {
+      "id": "#forge:dusts/suberic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/suberic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/suberic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/suberic_acid",
+      "required": false
+    }
+  ]
+}

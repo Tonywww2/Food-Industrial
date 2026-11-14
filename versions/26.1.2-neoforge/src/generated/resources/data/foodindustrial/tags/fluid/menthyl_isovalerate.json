@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthyl_isovalerate",
+    "foodindustrial:flowing_menthyl_isovalerate",
+    {
+      "id": "#forge:menthyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:menthyl_isovalerate",
+      "required": false
+    }
+  ]
+}

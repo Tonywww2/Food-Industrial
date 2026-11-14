@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/metatitanic_acid"
+      }
+    }
+  ],
+  "mode": "calcining",
+  "outputs": [
+    {
+      "item": "foodindustrial:titanium_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 400
+}

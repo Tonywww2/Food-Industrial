@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:valeric_acid",
+    "foodindustrial:flowing_valeric_acid",
+    {
+      "id": "#forge:valeric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:valeric_acid",
+      "required": false
+    }
+  ]
+}

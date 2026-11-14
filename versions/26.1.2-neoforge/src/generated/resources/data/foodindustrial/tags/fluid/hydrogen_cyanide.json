@@ -4,6 +4,10 @@
     "foodindustrial:hydrogen_cyanide",
     "foodindustrial:flowing_hydrogen_cyanide",
     {
+      "id": "#forge:hydrogen_cyanide",
+      "required": false
+    },
+    {
       "id": "#c:hydrogen_cyanide",
       "required": false
     }

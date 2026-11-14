@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:thermo_plant",
+  "inputs": {
+    "fluid": {
+      "amount": 1000,
+      "tag": "foodindustrial:soda_lye"
+    }
+  },
+  "outputs": {
+    "item_output": {
+      "components": {
+        "foodindustrial:purity": -3
+      },
+      "count": 1,
+      "id": "foodindustrial:soda_ash"
+    }
+  },
+  "temperature": {
+    "min": 373
+  }
+}

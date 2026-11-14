@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:syringol",
+    {
+      "id": "#forge:dusts/syringol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/syringol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/syringol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/syringol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonadiene",
+    "foodindustrial:flowing_nonadiene",
+    {
+      "id": "#forge:nonadiene",
+      "required": false
+    },
+    {
+      "id": "#c:nonadiene",
+      "required": false
+    }
+  ]
+}

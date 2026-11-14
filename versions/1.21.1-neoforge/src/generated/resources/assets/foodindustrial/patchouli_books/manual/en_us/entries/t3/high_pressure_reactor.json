@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t3",
+  "icon": "foodindustrial:high_pressure_reactor",
+  "name": "book.foodindustrial.manual.entry.high_pressure_reactor",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:high_pressure_reactor",
+      "text": "book.foodindustrial.manual.entry.high_pressure_reactor.text"
+    }
+  ],
+  "sortnum": 1
+}

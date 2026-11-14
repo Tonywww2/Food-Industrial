@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cubeb_oil",
+    "foodindustrial:flowing_cubeb_oil",
+    {
+      "id": "#forge:cubeb_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cubeb_oil",
+      "required": false
+    }
+  ]
+}

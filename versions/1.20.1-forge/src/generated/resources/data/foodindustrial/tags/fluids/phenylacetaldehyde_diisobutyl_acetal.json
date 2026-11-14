@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylacetaldehyde_diisobutyl_acetal",
+    "foodindustrial:flowing_phenylacetaldehyde_diisobutyl_acetal",
+    {
+      "id": "#forge:phenylacetaldehyde_diisobutyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:phenylacetaldehyde_diisobutyl_acetal",
+      "required": false
+    }
+  ]
+}

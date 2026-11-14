@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vegetable_oil_extraction_solvent",
+    "foodindustrial:flowing_vegetable_oil_extraction_solvent",
+    {
+      "id": "#forge:vegetable_oil_extraction_solvent",
+      "required": false
+    },
+    {
+      "id": "#c:vegetable_oil_extraction_solvent",
+      "required": false
+    }
+  ]
+}

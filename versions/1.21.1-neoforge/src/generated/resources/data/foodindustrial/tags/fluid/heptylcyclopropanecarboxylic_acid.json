@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptylcyclopropanecarboxylic_acid",
+    "foodindustrial:flowing_heptylcyclopropanecarboxylic_acid",
+    {
+      "id": "#forge:heptylcyclopropanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:heptylcyclopropanecarboxylic_acid",
+      "required": false
+    }
+  ]
+}

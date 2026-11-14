@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:crafting_table"
+    },
+    "F": {
+      "item": "foodindustrial:clean_frame"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "S": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "pattern": [
+    "GSG",
+    "RFR",
+    "GCG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:culture_bench"
+  }
+}

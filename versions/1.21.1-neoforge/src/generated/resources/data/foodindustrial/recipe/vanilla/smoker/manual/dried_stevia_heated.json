@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:vanilla_smoking",
+  "recipe": {
+    "type": "foodindustrial:drying",
+    "inputs": [
+      {
+        "ingredient": {
+          "tag": "foodindustrial:materials/stevia"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "item": "foodindustrial:dried_stevia"
+      }
+    ],
+    "requirements": {
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace",
+      "smoker"
+    ]
+  }
+}

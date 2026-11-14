@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:selenium_yeast",
+    {
+      "id": "#forge:dusts/selenium_yeast",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/selenium_yeast",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/selenium_yeast",
+      "required": false
+    },
+    {
+      "id": "#c:gems/selenium_yeast",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:crotonaldehyde",
     "foodindustrial:flowing_crotonaldehyde",
     {
+      "id": "#forge:crotonaldehyde",
+      "required": false
+    },
+    {
       "id": "#c:crotonaldehyde",
       "required": false
     }

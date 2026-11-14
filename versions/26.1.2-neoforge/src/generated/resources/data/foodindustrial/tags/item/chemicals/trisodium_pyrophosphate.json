@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:trisodium_pyrophosphate",
     {
+      "id": "#forge:dusts/trisodium_pyrophosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/trisodium_pyrophosphate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/trisodium_pyrophosphate",
       "required": false
     },

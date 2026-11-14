@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ethyl_paraben",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ethyl_paraben",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_paraben",
+      "required": false
     }
   ]
 }

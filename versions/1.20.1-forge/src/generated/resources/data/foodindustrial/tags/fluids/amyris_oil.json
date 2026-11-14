@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amyris_oil",
+    "foodindustrial:flowing_amyris_oil",
+    {
+      "id": "#forge:amyris_oil",
+      "required": false
+    },
+    {
+      "id": "#c:amyris_oil",
+      "required": false
+    }
+  ]
+}

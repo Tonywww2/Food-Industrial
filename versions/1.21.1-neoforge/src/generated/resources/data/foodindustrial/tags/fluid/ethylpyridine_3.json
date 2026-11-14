@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylpyridine_3",
+    "foodindustrial:flowing_ethylpyridine_3",
+    {
+      "id": "#forge:ethylpyridine_3",
+      "required": false
+    },
+    {
+      "id": "#c:ethylpyridine_3",
+      "required": false
+    }
+  ]
+}

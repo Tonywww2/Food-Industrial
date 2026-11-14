@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/berries"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dried_berries"
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "open_sky",
+      "clear_weather"
+    ]
+  },
+  "time": 24000
+}

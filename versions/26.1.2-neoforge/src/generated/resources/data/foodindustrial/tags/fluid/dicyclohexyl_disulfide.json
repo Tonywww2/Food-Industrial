@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dicyclohexyl_disulfide",
+    "foodindustrial:flowing_dicyclohexyl_disulfide",
+    {
+      "id": "#forge:dicyclohexyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:dicyclohexyl_disulfide",
+      "required": false
+    }
+  ]
+}

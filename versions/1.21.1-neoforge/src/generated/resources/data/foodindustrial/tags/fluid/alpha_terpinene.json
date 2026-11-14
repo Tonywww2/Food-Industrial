@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_terpinene",
+    "foodindustrial:flowing_alpha_terpinene",
+    {
+      "id": "#forge:alpha_terpinene",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_terpinene",
+      "required": false
+    }
+  ]
+}

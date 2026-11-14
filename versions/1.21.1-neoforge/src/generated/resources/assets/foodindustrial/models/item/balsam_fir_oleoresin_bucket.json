@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:balsam_fir_oleoresin",
+  "loader": "neoforge:fluid_container"
+}

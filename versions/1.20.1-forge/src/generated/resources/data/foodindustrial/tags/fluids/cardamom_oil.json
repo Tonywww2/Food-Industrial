@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cardamom_oil",
+    "foodindustrial:flowing_cardamom_oil",
+    {
+      "id": "#forge:cardamom_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cardamom_oil",
+      "required": false
+    }
+  ]
+}

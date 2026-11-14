@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanilla_oleoresin",
+    "foodindustrial:flowing_vanilla_oleoresin",
+    {
+      "id": "#forge:vanilla_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:vanilla_oleoresin",
+      "required": false
+    }
+  ]
+}

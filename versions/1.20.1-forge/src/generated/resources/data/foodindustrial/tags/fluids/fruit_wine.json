@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fruit_wine",
+    "foodindustrial:flowing_fruit_wine",
+    {
+      "id": "#forge:fruit_wine",
+      "required": false
+    },
+    {
+      "id": "#c:fruit_wine",
+      "required": false
+    }
+  ]
+}

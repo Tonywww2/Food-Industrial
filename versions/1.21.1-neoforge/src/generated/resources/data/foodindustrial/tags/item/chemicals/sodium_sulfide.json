@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_sulfide",
     {
+      "id": "#forge:dusts/sodium_sulfide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_sulfide",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_sulfide",
       "required": false
     },

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_mercaptopropionate_3",
+    "foodindustrial:flowing_ethyl_mercaptopropionate_3",
+    {
+      "id": "#forge:ethyl_mercaptopropionate_3",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_mercaptopropionate_3",
+      "required": false
+    }
+  ]
+}

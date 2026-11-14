@@ -4,6 +4,10 @@
     "foodindustrial:sulfur_dichloride",
     "foodindustrial:flowing_sulfur_dichloride",
     {
+      "id": "#forge:sulfur_dichloride",
+      "required": false
+    },
+    {
       "id": "#c:sulfur_dichloride",
       "required": false
     }

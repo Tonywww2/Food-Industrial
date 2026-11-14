@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:h_acid",
     {
+      "id": "#forge:dusts/h_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/h_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/h_acid",
       "required": false
     },

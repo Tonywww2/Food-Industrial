@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:monomenthyl_glutarate",
+    "foodindustrial:flowing_monomenthyl_glutarate",
+    {
+      "id": "#forge:monomenthyl_glutarate",
+      "required": false
+    },
+    {
+      "id": "#c:monomenthyl_glutarate",
+      "required": false
+    }
+  ]
+}

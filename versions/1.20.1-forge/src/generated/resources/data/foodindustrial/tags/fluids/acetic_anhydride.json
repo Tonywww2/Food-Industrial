@@ -6,6 +6,10 @@
     {
       "id": "#forge:acetic_anhydride",
       "required": false
+    },
+    {
+      "id": "#c:acetic_anhydride",
+      "required": false
     }
   ]
 }

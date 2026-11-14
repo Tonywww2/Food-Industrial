@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tragacanth_gum",
+    {
+      "id": "#forge:dusts/tragacanth_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tragacanth_gum",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tragacanth_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tragacanth_gum",
+      "required": false
+    }
+  ]
+}

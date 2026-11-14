@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:purifying",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ice_structuring_protein"
+      }
+    }
+  ],
+  "mode": "ultrafiltration",
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:ice_structuring_protein"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -4,6 +4,10 @@
     "foodindustrial:acetone",
     "foodindustrial:flowing_acetone",
     {
+      "id": "#forge:acetone",
+      "required": false
+    },
+    {
       "id": "#c:acetone",
       "required": false
     }

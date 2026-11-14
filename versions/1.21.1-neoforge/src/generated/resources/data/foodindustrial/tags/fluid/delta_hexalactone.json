@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:delta_hexalactone",
+    "foodindustrial:flowing_delta_hexalactone",
+    {
+      "id": "#forge:delta_hexalactone",
+      "required": false
+    },
+    {
+      "id": "#c:delta_hexalactone",
+      "required": false
+    }
+  ]
+}

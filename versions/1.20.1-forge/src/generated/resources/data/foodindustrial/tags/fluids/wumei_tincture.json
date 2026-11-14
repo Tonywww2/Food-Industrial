@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wumei_tincture",
+    "foodindustrial:flowing_wumei_tincture",
+    {
+      "id": "#forge:wumei_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:wumei_tincture",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_alginate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_alginate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_alginate",
+      "required": false
     }
   ]
 }

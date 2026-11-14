@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:menthyl_propylene_glycol_carbonate",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:syringaldehyde",
+    {
+      "id": "#forge:dusts/syringaldehyde",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/syringaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/syringaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/syringaldehyde",
+      "required": false
+    }
+  ]
+}

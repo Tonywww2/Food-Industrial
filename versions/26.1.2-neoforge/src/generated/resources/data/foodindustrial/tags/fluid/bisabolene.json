@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bisabolene",
+    "foodindustrial:flowing_bisabolene",
+    {
+      "id": "#forge:bisabolene",
+      "required": false
+    },
+    {
+      "id": "#c:bisabolene",
+      "required": false
+    }
+  ]
+}

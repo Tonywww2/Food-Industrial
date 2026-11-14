@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glutaric_anhydride",
+    {
+      "id": "#forge:dusts/glutaric_anhydride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glutaric_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/glutaric_anhydride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glutaric_anhydride",
+      "required": false
+    }
+  ]
+}

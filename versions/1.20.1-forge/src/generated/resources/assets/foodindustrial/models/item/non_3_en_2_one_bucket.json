@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:non_3_en_2_one",
+  "loader": "forge:fluid_container"
+}

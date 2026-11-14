@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/pentaerythritol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/pentaerythritol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pentaerythritol",
+      "required": false
     }
   ]
 }

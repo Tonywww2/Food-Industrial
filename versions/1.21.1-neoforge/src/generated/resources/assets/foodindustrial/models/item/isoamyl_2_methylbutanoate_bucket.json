@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:isoamyl_2_methylbutanoate",
+  "loader": "neoforge:fluid_container"
+}

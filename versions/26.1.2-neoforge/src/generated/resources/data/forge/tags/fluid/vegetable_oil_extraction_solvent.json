@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vegetable_oil_extraction_solvent",
+    "foodindustrial:flowing_vegetable_oil_extraction_solvent"
+  ]
+}

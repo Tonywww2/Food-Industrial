@@ -4,6 +4,10 @@
     "foodindustrial:sulfite_spent_liquor",
     "foodindustrial:flowing_sulfite_spent_liquor",
     {
+      "id": "#forge:sulfite_spent_liquor",
+      "required": false
+    },
+    {
       "id": "#c:sulfite_spent_liquor",
       "required": false
     }

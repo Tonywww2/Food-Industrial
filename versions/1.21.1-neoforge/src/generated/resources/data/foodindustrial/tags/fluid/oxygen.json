@@ -4,6 +4,10 @@
     "foodindustrial:oxygen",
     "foodindustrial:flowing_oxygen",
     {
+      "id": "#forge:oxygen",
+      "required": false
+    },
+    {
       "id": "#c:oxygen",
       "required": false
     }

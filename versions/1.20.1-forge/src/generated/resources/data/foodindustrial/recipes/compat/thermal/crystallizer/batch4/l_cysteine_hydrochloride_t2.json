@@ -1,0 +1,33 @@
+{
+  "type": "thermal:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "energy": 3000,
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid_tag": "foodindustrial:hydrochloric_acid"
+    },
+    {
+      "tag": "foodindustrial:chemicals/l_cysteine"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:l_cysteine_hydrochloride",
+      "nbt": "{Purity:17b}"
+    }
+  ]
+}

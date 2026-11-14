@@ -167,28 +167,46 @@ public final class GuiLayout {
         return PANEL_TOP + TAB + PANEL_GAP;
     }
 
-    /** Builds the automatic layout of a machine. */
+    /**
+     * Builds the window of a machine. A multiblock controller shows no item slots or tanks (2026-11-10):
+     * only the energy bar or the fuel flame, the progress and the product purity; its upgrade and module
+     * slots stay in the upgrades panel.
+     */
     public static GuiLayout of(MachineDefinition definition) {
-        return of(definition.layout(), definition.power());
+        return of(definition.layout(), definition.power(), definition.isMultiblock());
     }
 
+    /** Positions of every slot and tank of a machine, as a single-block window has them (port windows). */
+    public static GuiLayout full(MachineDefinition definition) {
+        return of(definition.layout(), definition.power(), false);
+    }
+
+    /** Where hidden slots and tanks of a controller window sit: outside the window. */
+    private static final Box HIDDEN = new Box(-10000, -10000, SLOT, SLOT);
+
     /** Tank widths tried in turn until the zones fit. */
-    private static final int[] TANK_WIDTHS = {18, 16, 14, 12, 10, 8};
+    private static final int[] TANK_WIDTHS = {18, 16, 14, 12, 10, 8, 7, 6};
 
     /** Builds the automatic layout for slot counts and a power kind. */
     public static GuiLayout of(IoLayout io, PowerKind power) {
+        return of(io, power, false);
+    }
+
+    /** Builds the automatic layout; {@code controller}: a multiblock controller window without slots or tanks. */
+    public static GuiLayout of(IoLayout io, PowerKind power, boolean controller) {
         int rows = ROWS;
         int area = rows * SLOT;
-        int energyContent = power == PowerKind.ENERGY ? ENERGY_W : io.fuel() > 0 ? SLOT : 0;
-        int processingContent = Math.max(Math.max(ARROW_W, PURITY_W), io.catalyst() * SLOT);
+        boolean bar = power == PowerKind.ENERGY || power == PowerKind.MANUAL;
+        int energyContent = bar ? ENERGY_W : io.fuel() > 0 ? SLOT : 0;
+        int processingContent = Math.max(Math.max(ARROW_W, PURITY_W), controller ? 0 : io.catalyst() * SLOT);
         int tankWidth = TANK_WIDTHS[0];
         int[] contents = new int[4];
         for (int width : TANK_WIDTHS) {
             tankWidth = width;
             contents[0] = energyContent;
-            contents[1] = columns(io.itemIn(), rows) * SLOT + io.fluidIn() * width;
+            contents[1] = controller ? 0 : columns(io.itemIn(), rows) * SLOT + io.fluidIn() * width;
             contents[2] = processingContent;
-            contents[3] = columns(io.itemOut(), rows) * SLOT + io.fluidOut() * width;
+            contents[3] = controller ? 0 : columns(io.itemOut(), rows) * SLOT + io.fluidOut() * width;
             if (naturalWidth(contents) <= AREA_RIGHT - AREA_LEFT) {
                 break;
             }
@@ -213,12 +231,14 @@ public final class GuiLayout {
             int x = frameX + ZONE_PAD;
             switch (kind) {
                 case ENERGY -> {
-                    if (power == PowerKind.ENERGY) {
+                    if (bar) {
+                        // FE, or the hand crank's stored running time (I14)
                         energy = new Box(x, TOP, ENERGY_W, area);
                     } else {
-                        int y = TOP + (area - (1 + io.fuel()) * SLOT) / 2;
+                        int shownFuel = controller ? 0 : io.fuel();
+                        int y = TOP + (area - (1 + shownFuel) * SLOT) / 2;
                         flame = new Box(x + 2, y + 2, 14, 14);
-                        for (int i = 0; i < io.fuel(); i++) {
+                        for (int i = 0; i < shownFuel; i++) {
                             slots[io.start(SlotRole.FUEL) + i] = new Box(x, y + (1 + i) * SLOT, SLOT, SLOT);
                         }
                     }
@@ -234,7 +254,7 @@ public final class GuiLayout {
                     arrow = new Box(x + (content - ARROW_W) / 2, TOP, ARROW_W, ARROW_H);
                     purity = new Box(x + (content - PURITY_W) / 2, TOP + SLOT + (SLOT - PURITY_H) / 2, PURITY_W, PURITY_H);
                     int catalystX = x + (content - io.catalyst() * SLOT) / 2;
-                    for (int i = 0; i < io.catalyst(); i++) {
+                    for (int i = 0; i < (controller ? 0 : io.catalyst()); i++) {
                         slots[io.start(SlotRole.CATALYST) + i] = new Box(catalystX + i * SLOT, TOP + 2 * SLOT, SLOT, SLOT);
                     }
                 }
@@ -248,6 +268,14 @@ public final class GuiLayout {
                 }
             }
             frameX += content + 2 * ZONE_PAD + ZONE_GAP;
+        }
+        if (controller) {
+            for (int i = 0; i < io.start(SlotRole.UPGRADE); i++) {
+                slots[i] = HIDDEN;
+            }
+            for (int i = 0; i < tanks.length; i++) {
+                tanks[i] = HIDDEN;
+            }
         }
         int panelTop = upgradesPanelTop() + PANEL_HEADER;
         int panelLeft = -UPGRADES_WIDTH + 8;

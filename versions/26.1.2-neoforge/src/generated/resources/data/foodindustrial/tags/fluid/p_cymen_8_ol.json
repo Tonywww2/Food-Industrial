@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_cymen_8_ol",
+    "foodindustrial:flowing_p_cymen_8_ol",
+    {
+      "id": "#forge:p_cymen_8_ol",
+      "required": false
+    },
+    {
+      "id": "#c:p_cymen_8_ol",
+      "required": false
+    }
+  ]
+}

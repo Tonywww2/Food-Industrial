@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecatriene",
+    "foodindustrial:flowing_undecatriene",
+    {
+      "id": "#forge:undecatriene",
+      "required": false
+    },
+    {
+      "id": "#c:undecatriene",
+      "required": false
+    }
+  ]
+}

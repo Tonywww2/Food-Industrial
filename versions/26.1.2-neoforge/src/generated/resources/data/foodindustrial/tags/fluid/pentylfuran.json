@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentylfuran",
+    "foodindustrial:flowing_pentylfuran",
+    {
+      "id": "#forge:pentylfuran",
+      "required": false
+    },
+    {
+      "id": "#c:pentylfuran",
+      "required": false
+    }
+  ]
+}

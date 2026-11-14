@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:cholesterol",
     {
+      "id": "#forge:dusts/cholesterol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cholesterol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/cholesterol",
       "required": false
     },

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bitter_almond_oil",
+    "foodindustrial:flowing_bitter_almond_oil",
+    {
+      "id": "#forge:bitter_almond_oil",
+      "required": false
+    },
+    {
+      "id": "#c:bitter_almond_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:helichrysum_absolute",
+    "foodindustrial:flowing_helichrysum_absolute",
+    {
+      "id": "#forge:helichrysum_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:helichrysum_absolute",
+      "required": false
+    }
+  ]
+}

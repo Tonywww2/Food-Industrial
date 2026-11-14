@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylmercaptohexyl_acetate",
+    "foodindustrial:flowing_acetylmercaptohexyl_acetate",
+    {
+      "id": "#forge:acetylmercaptohexyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:acetylmercaptohexyl_acetate",
+      "required": false
+    }
+  ]
+}

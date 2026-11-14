@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:massaranduba_balata",
+    {
+      "id": "#forge:dusts/massaranduba_balata",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/massaranduba_balata",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/massaranduba_balata",
+      "required": false
+    },
+    {
+      "id": "#c:gems/massaranduba_balata",
+      "required": false
+    }
+  ]
+}

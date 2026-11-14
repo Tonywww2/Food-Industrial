@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethyl_orthoformate",
+    "foodindustrial:flowing_trimethyl_orthoformate",
+    {
+      "id": "#forge:trimethyl_orthoformate",
+      "required": false
+    },
+    {
+      "id": "#c:trimethyl_orthoformate",
+      "required": false
+    }
+  ]
+}

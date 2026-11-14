@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bone_powder",
+    {
+      "id": "#forge:dusts/bone_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/bone_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/bone_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bone_powder",
+      "required": false
+    }
+  ]
+}

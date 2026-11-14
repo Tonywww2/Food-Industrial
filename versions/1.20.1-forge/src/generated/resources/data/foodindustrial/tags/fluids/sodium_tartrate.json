@@ -6,6 +6,10 @@
     {
       "id": "#forge:sodium_tartrate",
       "required": false
+    },
+    {
+      "id": "#c:sodium_tartrate",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:molten_glyceryl_monocaprylate"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:glyceryl_monocaprylate",
+      "purity": {
+        "mode": "keep"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfurylidene_acetone",
+    {
+      "id": "#forge:dusts/furfurylidene_acetone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/furfurylidene_acetone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/furfurylidene_acetone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/furfurylidene_acetone",
+      "required": false
+    }
+  ]
+}

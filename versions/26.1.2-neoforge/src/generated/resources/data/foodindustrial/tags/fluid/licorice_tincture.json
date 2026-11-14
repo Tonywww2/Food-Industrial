@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:licorice_tincture",
+    "foodindustrial:flowing_licorice_tincture",
+    {
+      "id": "#forge:licorice_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:licorice_tincture",
+      "required": false
+    }
+  ]
+}

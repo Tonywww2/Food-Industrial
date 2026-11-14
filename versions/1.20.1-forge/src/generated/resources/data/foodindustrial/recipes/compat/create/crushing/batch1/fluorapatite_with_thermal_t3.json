@@ -1,0 +1,39 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "type": "forge:difference",
+      "base": {
+        "tag": "foodindustrial:materials/apatite"
+      },
+      "subtracted": {
+        "item": "thermal:apatite_ore"
+      }
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:fluorapatite",
+      "nbt": "{Purity:31b}"
+    }
+  ]
+}

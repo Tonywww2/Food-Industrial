@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dehydromenthofurolactone",
+    "foodindustrial:flowing_dehydromenthofurolactone",
+    {
+      "id": "#forge:dehydromenthofurolactone",
+      "required": false
+    },
+    {
+      "id": "#c:dehydromenthofurolactone",
+      "required": false
+    }
+  ]
+}

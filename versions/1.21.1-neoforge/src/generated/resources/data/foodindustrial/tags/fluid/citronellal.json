@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:citronellal",
+    "foodindustrial:flowing_citronellal",
+    {
+      "id": "#forge:citronellal",
+      "required": false
+    },
+    {
+      "id": "#c:citronellal",
+      "required": false
+    }
+  ]
+}

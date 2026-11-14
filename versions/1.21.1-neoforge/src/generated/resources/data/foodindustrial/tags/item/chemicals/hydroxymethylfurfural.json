@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxymethylfurfural",
+    {
+      "id": "#forge:dusts/hydroxymethylfurfural",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxymethylfurfural",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxymethylfurfural",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxymethylfurfural",
+      "required": false
+    }
+  ]
+}

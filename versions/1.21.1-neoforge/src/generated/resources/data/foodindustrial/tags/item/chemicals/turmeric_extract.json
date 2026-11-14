@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:turmeric_extract",
+    {
+      "id": "#forge:dusts/turmeric_extract",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/turmeric_extract",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/turmeric_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gems/turmeric_extract",
+      "required": false
+    }
+  ]
+}

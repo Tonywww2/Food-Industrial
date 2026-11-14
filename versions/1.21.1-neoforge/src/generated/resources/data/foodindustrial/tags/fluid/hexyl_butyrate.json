@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexyl_butyrate",
+    "foodindustrial:flowing_hexyl_butyrate",
+    {
+      "id": "#forge:hexyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:hexyl_butyrate",
+      "required": false
+    }
+  ]
+}

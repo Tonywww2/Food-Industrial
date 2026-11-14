@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_anisidine",
+    {
+      "id": "#forge:dusts/p_anisidine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_anisidine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_anisidine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_anisidine",
+      "required": false
+    }
+  ]
+}

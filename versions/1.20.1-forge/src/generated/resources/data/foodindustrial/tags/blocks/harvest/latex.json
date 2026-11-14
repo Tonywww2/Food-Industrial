@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:rubber_logs",
+    {
+      "id": "#forge:logs/rubber",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyloctanal_6",
+    "foodindustrial:flowing_methyloctanal_6",
+    {
+      "id": "#forge:methyloctanal_6",
+      "required": false
+    },
+    {
+      "id": "#c:methyloctanal_6",
+      "required": false
+    }
+  ]
+}

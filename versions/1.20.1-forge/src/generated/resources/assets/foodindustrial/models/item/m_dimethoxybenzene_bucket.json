@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:m_dimethoxybenzene",
+  "loader": "forge:fluid_container"
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sorbitan_tristearate",
     {
+      "id": "#forge:dusts/sorbitan_tristearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sorbitan_tristearate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sorbitan_tristearate",
       "required": false
     },

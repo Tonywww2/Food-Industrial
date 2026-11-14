@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:cultures/aspergillus_niger"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_wheat"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "koji_tray",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:beta_glucosidase"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 24000
+}

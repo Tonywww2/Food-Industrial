@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:octen_3_yl_butyrate",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/sprouted_wheat"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:malt"
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200,
+  "vanilla_devices": [
+    "campfire",
+    "furnace",
+    "smoker"
+  ]
+}

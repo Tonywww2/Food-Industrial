@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:gardenia_blue",
     {
+      "id": "#forge:dusts/gardenia_blue",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/gardenia_blue",
+      "required": false
+    },
+    {
       "id": "#c:dusts/gardenia_blue",
       "required": false
     },

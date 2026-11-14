@@ -4,6 +4,10 @@
     "foodindustrial:carbon_dioxide",
     "foodindustrial:flowing_carbon_dioxide",
     {
+      "id": "#forge:carbon_dioxide",
+      "required": false
+    },
+    {
       "id": "#c:carbon_dioxide",
       "required": false
     }

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "input": {
+    "fluid": {
+      "amount": 1000,
+      "tag": "foodindustrial:tomato_oleoresin"
+    }
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": -39
+    },
+    "count": 1,
+    "id": "foodindustrial:lycopene"
+  },
+  "temperature": 273
+}

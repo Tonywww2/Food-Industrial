@@ -1,0 +1,54 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": [
+    {
+      "ingredient": {
+        "type": "foodindustrial:purity",
+        "base": {
+          "tag": "foodindustrial:cultures/ketogulonicigenium"
+        },
+        "min_purity": "food"
+      },
+      "runs": 8
+    },
+    {
+      "ingredient": {
+        "type": "foodindustrial:purity",
+        "base": {
+          "tag": "foodindustrial:cultures/bacillus_megaterium"
+        },
+        "min_purity": "food"
+      },
+      "runs": 8
+    }
+  ],
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/l_sorbose"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "item": "foodindustrial:ketogulonic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 95
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

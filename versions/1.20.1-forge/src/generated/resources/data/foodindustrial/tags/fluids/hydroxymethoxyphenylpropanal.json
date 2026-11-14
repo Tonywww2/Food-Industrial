@@ -6,6 +6,10 @@
     {
       "id": "#forge:hydroxymethoxyphenylpropanal",
       "required": false
+    },
+    {
+      "id": "#c:hydroxymethoxyphenylpropanal",
+      "required": false
     }
   ]
 }

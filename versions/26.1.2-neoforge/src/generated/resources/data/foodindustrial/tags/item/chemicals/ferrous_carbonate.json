@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_carbonate",
+    {
+      "id": "#forge:dusts/ferrous_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferrous_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferrous_carbonate",
+      "required": false
+    }
+  ]
+}

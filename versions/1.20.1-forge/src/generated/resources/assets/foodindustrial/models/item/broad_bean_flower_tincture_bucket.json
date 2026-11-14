@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:broad_bean_flower_tincture",
+  "loader": "forge:fluid_container"
+}

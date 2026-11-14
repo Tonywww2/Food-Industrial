@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_dihydrocarvone",
+    "foodindustrial:flowing_cis_dihydrocarvone",
+    {
+      "id": "#forge:cis_dihydrocarvone",
+      "required": false
+    },
+    {
+      "id": "#c:cis_dihydrocarvone",
+      "required": false
+    }
+  ]
+}

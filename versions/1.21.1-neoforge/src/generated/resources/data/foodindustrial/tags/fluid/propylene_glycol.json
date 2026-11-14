@@ -4,6 +4,10 @@
     "foodindustrial:propylene_glycol",
     "foodindustrial:flowing_propylene_glycol",
     {
+      "id": "#forge:propylene_glycol",
+      "required": false
+    },
+    {
       "id": "#c:propylene_glycol",
       "required": false
     }

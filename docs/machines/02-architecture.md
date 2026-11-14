@@ -123,7 +123,7 @@ classDiagram
 
 | 类 | 用于 |
 | --- | --- |
-| `HomogenizeRule` | M21 的均质与归一（按标签自动生成配方，供 JEI 显示） |
+| `HomogenizeRule` | M21 的均质与归一（按标签自动生成配方，供 JEI 显示；I15 先在 `MixerBlockEntity` 里按输入槽算出作业，JEI 显示随 I22） |
 | `BlockTransformRecipe` | W01 方块转化（随机刻驱动） |
 | `HarvestRecipe` | W02 割取（玩家交互驱动） |
 
@@ -200,10 +200,11 @@ classDiagram
 | `PlatformBlockEntity`（platform） | 各节点的存取签名、客户端同步、ticker 接线 | 业务层只覆写它暴露的稳定方法 |
 | `FIBlockEntity` | 脏标记、同步节流 | — |
 | `MachineBlockEntity` | 持有组件；4 tick 调度入口；侧面配置；红石控制 | 抽象类，不直接实例化 |
-| `ProcessingMachineBlockEntity` | 配方驱动的通用机器 | 除 M21、M30 外的单方块机器（17 台）直接用它，差异全部来自 `MachineDefinition` |
-| `MultiblockControllerBlockEntity` | 结构校验、仓口登记 | 10 台多方块（M06、M07、M10、M19、M20、M22、M26、M27、M28、M29）共用；结构由定义中的图样描述 |
-| `MixerBlockEntity` | M21：均质、归一、密炼 | 覆写选配方一步 |
-| `CultureBenchBlockEntity` | M30：分离、纯化、诱变、基因重组的交互流程 | 不走通用配方流程 |
+| `ProcessingMachineBlockEntity` | 配方驱动的通用机器 | 除 M21、M25、M30 外的单方块机器直接用它，差异全部来自 `MachineDefinition` |
+| `MultiblockControllerBlockEntity` | 结构校验、仓口登记 | 10 台多方块（M06、M07、M10、M19、M20、M22、M26、M27、M28、M29）共用；结构由定义中的图样描述；M22（塔板数限制馏分数）、M27（炉管段数定裂解产率）、M29（罐高定并行、在位灭菌、染菌）各有子类（I16、I17） |
+| `AdsorptionColumnBlockEntity` | M25：吸附剂饱和与自动再生 | 覆写催化剂磨损、可做的配方与完成后的处理（I16） |
+| `MixerBlockEntity` | M21：均质、归一 | 配料模式照常走配方；均质、归一模式不查配方，按输入槽算出作业（I15，additives/06 §T2 机械化）；密炼是模块，走配方 |
+| `CultureBenchBlockEntity` | M30：分离、纯化、诱变、基因重组的交互流程 | 平板操作不走通用配方流程：接种 → 培养 → 鉴定 → 挑菌落（2026-11-11）；扩培照常走配方 |
 | `PortBlockEntity` | 多方块的物品 / 流体 / 能量仓 | 不 tick，读写转发给控制器 |
 | `Device`（接口） | 让机器、手工工具、被动设备都能执行 `ProcessRecipe` | 手工工具由 `ManualProcess` 实现 |
 
@@ -261,7 +262,7 @@ stateDiagram-v2
 
 1. 睡眠中直接返回（一次分支判断）。
 2. 红石控制不允许 → 进入睡眠，等红石变化唤醒。
-3. 没有当前配方：输入脏标记为真才查 `RecipeIndex`；查不到 → 睡眠。
+3. 没有当前配方：输入脏标记为真才查 `RecipeIndex`；能做的配方中取条件最多的一条（催化剂也算），一样多时取原料（输入）多的一条（2026-11-11 补：用到全部内容的配方优先于只用一部分的），再一样按配方 ID（与 additives/07 的被动设备相同，2026-11-11 用户确认）；查不到 → 睡眠。
 4. 检查输出空间（按本次完成时的最大产出预留），放不下 → `Blocked`。
 5. 扣除本批能量 `能耗 × 4`；不足 → `Starved`，不扣部分能量。
 6. 进度 `+= 4 × 速率`；达到配方时长时：消耗输入、结算纯度与产率、写入输出、催化剂计数加一、进度减去时长（余量保留到下一次）。

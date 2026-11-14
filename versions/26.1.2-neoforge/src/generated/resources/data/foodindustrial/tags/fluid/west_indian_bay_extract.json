@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:west_indian_bay_extract",
+    "foodindustrial:flowing_west_indian_bay_extract",
+    {
+      "id": "#forge:west_indian_bay_extract",
+      "required": false
+    },
+    {
+      "id": "#c:west_indian_bay_extract",
+      "required": false
+    }
+  ]
+}

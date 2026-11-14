@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:foods/apple_juice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:folded_apple_essence"
+    }
+  ]
+}

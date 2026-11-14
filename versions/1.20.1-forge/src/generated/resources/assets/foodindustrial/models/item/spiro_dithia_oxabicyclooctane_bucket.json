@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:spiro_dithia_oxabicyclooctane",
+  "loader": "forge:fluid_container"
+}

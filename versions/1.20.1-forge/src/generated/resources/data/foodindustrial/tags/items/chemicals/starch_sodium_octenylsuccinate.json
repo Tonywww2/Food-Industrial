@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/starch_sodium_octenylsuccinate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/starch_sodium_octenylsuccinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/starch_sodium_octenylsuccinate",
+      "required": false
     }
   ]
 }

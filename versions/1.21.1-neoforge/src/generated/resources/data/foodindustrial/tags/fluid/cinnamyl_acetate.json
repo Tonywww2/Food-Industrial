@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinnamyl_acetate",
+    "foodindustrial:flowing_cinnamyl_acetate",
+    {
+      "id": "#forge:cinnamyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:cinnamyl_acetate",
+      "required": false
+    }
+  ]
+}

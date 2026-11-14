@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylquinoxaline_5",
+    "foodindustrial:flowing_methylquinoxaline_5",
+    {
+      "id": "#forge:methylquinoxaline_5",
+      "required": false
+    },
+    {
+      "id": "#c:methylquinoxaline_5",
+      "required": false
+    }
+  ]
+}

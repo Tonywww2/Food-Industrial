@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lemon_balm_powder",
+    {
+      "id": "#forge:dusts/lemon_balm_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lemon_balm_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lemon_balm_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lemon_balm_powder",
+      "required": false
+    }
+  ]
+}

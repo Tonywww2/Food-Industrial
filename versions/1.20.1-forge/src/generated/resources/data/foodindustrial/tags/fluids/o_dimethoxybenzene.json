@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_dimethoxybenzene",
+    "foodindustrial:flowing_o_dimethoxybenzene",
+    {
+      "id": "#forge:o_dimethoxybenzene",
+      "required": false
+    },
+    {
+      "id": "#c:o_dimethoxybenzene",
+      "required": false
+    }
+  ]
+}

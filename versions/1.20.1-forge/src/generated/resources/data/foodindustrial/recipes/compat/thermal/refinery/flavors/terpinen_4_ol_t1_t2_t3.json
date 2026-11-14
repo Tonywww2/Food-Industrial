@@ -1,0 +1,40 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:tea_tree_oil"
+  },
+  "result": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:alpha_terpinene",
+      "nbt": "{Purity:16b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:gamma_terpinene",
+      "nbt": "{Purity:16b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:terpinen_4_ol",
+      "nbt": "{Purity:16b}"
+    }
+  ]
+}

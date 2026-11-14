@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferulic_acid",
+    {
+      "id": "#forge:dusts/ferulic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferulic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferulic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferulic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "S": {
+      "item": "minecraft:shears"
+    }
+  },
+  "pattern": [
+    " I ",
+    "RSR",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:emulsifying_head"
+  }
+}

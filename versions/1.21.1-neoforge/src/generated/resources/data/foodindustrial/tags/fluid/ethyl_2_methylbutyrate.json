@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_2_methylbutyrate",
+    "foodindustrial:flowing_ethyl_2_methylbutyrate",
+    {
+      "id": "#forge:ethyl_2_methylbutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_2_methylbutyrate",
+      "required": false
+    }
+  ]
+}

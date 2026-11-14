@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:osmanthus_absolute",
+    "foodindustrial:flowing_osmanthus_absolute",
+    {
+      "id": "#forge:osmanthus_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:osmanthus_absolute",
+      "required": false
+    }
+  ]
+}

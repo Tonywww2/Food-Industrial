@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydratropyl_alcohol",
+    "foodindustrial:flowing_hydratropyl_alcohol",
+    {
+      "id": "#forge:hydratropyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:hydratropyl_alcohol",
+      "required": false
+    }
+  ]
+}

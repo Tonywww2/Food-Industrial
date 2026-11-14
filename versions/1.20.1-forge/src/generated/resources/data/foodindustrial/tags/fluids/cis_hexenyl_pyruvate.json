@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_hexenyl_pyruvate",
+    "foodindustrial:flowing_cis_hexenyl_pyruvate",
+    {
+      "id": "#forge:cis_hexenyl_pyruvate",
+      "required": false
+    },
+    {
+      "id": "#c:cis_hexenyl_pyruvate",
+      "required": false
+    }
+  ]
+}

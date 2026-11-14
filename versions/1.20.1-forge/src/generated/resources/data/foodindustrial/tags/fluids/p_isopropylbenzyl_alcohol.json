@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_isopropylbenzyl_alcohol",
+    "foodindustrial:flowing_p_isopropylbenzyl_alcohol",
+    {
+      "id": "#forge:p_isopropylbenzyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:p_isopropylbenzyl_alcohol",
+      "required": false
+    }
+  ]
+}

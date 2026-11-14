@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylpropyl_tetrahydrofuran",
+    "foodindustrial:flowing_phenylpropyl_tetrahydrofuran",
+    {
+      "id": "#forge:phenylpropyl_tetrahydrofuran",
+      "required": false
+    },
+    {
+      "id": "#c:phenylpropyl_tetrahydrofuran",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:boronia_absolute",
+    "foodindustrial:flowing_boronia_absolute",
+    {
+      "id": "#forge:boronia_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:boronia_absolute",
+      "required": false
+    }
+  ]
+}

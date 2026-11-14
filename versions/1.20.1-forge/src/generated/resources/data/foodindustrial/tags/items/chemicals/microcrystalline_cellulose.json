@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/microcrystalline_cellulose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/microcrystalline_cellulose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/microcrystalline_cellulose",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/chitosan",
       "required": false
+    },
+    {
+      "id": "#c:dusts/chitosan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chitosan",
+      "required": false
     }
   ]
 }

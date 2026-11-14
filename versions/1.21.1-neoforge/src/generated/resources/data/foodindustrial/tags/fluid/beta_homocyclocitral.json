@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_homocyclocitral",
+    "foodindustrial:flowing_beta_homocyclocitral",
+    {
+      "id": "#forge:beta_homocyclocitral",
+      "required": false
+    },
+    {
+      "id": "#c:beta_homocyclocitral",
+      "required": false
+    }
+  ]
+}

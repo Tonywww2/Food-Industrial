@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/tragacanth_lump"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:tragacanth_gum",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

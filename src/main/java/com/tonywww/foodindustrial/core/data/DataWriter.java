@@ -22,6 +22,11 @@ public interface DataWriter {
 
     void putIntArray(String key, int[] value);
 
+    /** Writes a double. */
+    default void putDouble(String key, double value) {
+        putCodec(key, Codec.DOUBLE, value);
+    }
+
     /** Writes an item stack; empty stacks are written as absent. */
     void putItem(String key, ItemStack stack);
 

@@ -4,6 +4,10 @@
     "foodindustrial:oleic_acid",
     "foodindustrial:flowing_oleic_acid",
     {
+      "id": "#forge:oleic_acid",
+      "required": false
+    },
+    {
       "id": "#c:oleic_acid",
       "required": false
     }

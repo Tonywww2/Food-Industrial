@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenethyl_cinnamate",
+    {
+      "id": "#forge:dusts/phenethyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phenethyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/phenethyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenethyl_cinnamate",
+      "required": false
+    }
+  ]
+}

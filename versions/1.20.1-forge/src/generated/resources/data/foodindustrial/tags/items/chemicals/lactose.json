@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/lactose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/lactose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lactose",
+      "required": false
     }
   ]
 }

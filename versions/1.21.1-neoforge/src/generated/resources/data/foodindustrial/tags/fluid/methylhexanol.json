@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylhexanol",
+    "foodindustrial:flowing_methylhexanol",
+    {
+      "id": "#forge:methylhexanol",
+      "required": false
+    },
+    {
+      "id": "#c:methylhexanol",
+      "required": false
+    }
+  ]
+}

@@ -18,11 +18,13 @@ import java.util.Locale;
  * @param color    ARGB tint of fluids, {@code 0} for solids
  * @param tag      recipe tag path ({@code chemicals/salt} for items, {@code sulfuric_acid} for fluids)
  * @param hazards  reserved hazard flags (machines/02 §8), no behaviour yet
+ * @param texture  texture kind (I33): for fluids {@code liquid}, {@code viscous} or {@code gas}; for solids the template
+ *                 their item texture was drawn from
  */
 public record MaterialDef(String id, String nameZh, String nameEn, String professionalZh, String professionalEn,
                           @Nullable String commonZh, @Nullable String commonEn, @Nullable String formula,
                           State state, String category, boolean bearer, @Nullable JsonObject purity, int color,
-                          @Nullable String gtceu, String tag, List<String> hazards) {
+                          @Nullable String gtceu, String tag, List<String> hazards, @Nullable String texture) {
     /** Physical state column of the table. */
     public enum State {
         SOLID, LIQUID, GAS, SOLUTION;

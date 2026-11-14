@@ -64,7 +64,34 @@ final class DevRecipeCommands {
                 .then(Commands.argument("args", StringArgumentType.greedyString()).executes(DevRecipeCommands::process)))
             .then(Commands.literal("findrecipe")
                 .then(Commands.argument("args", StringArgumentType.greedyString()).executes(DevRecipeCommands::find)))
-            .then(Commands.literal("purityreport").executes(DevRecipeCommands::report)));
+            .then(Commands.literal("purityreport").executes(DevRecipeCommands::report))
+            .then(Commands.literal("catalysts").executes(DevRecipeCommands::catalysts)));
+    }
+
+    /** JEI catalysts (I22): every device with the item JEI shows for it, and the devices per recipe type. */
+    private static int catalysts(CommandContext<CommandSourceStack> context) {
+        int shown = 0;
+        for (DeviceSpec spec : DeviceSpec.all()) {
+            ItemStack icon = com.tonywww.foodindustrial.gui.client.recipe.RecipeDevices.icon(spec);
+            String kind = spec.vanilla() != null ? "vanilla" : com.tonywww.foodindustrial.gui.client.recipe.RecipeDevices.machine(spec) != null ? "machine" : spec.manual() ? "tool" : "other";
+            line(context, spec.id() + " " + kind + " " + spec.tier().id() + " icon=" + (icon.isEmpty() ? "-" : PlatformTags.itemId(icon.getItem()))
+                + " types=" + spec.types().stream().map(ProcessType::code).sorted().toList());
+            if (!icon.isEmpty()) {
+                shown++;
+            }
+        }
+        for (ProcessType type : com.tonywww.foodindustrial.recipe.ProcessTypes.recipeTypes()) {
+            line(context, "type " + type.code() + " " + type.id() + ": "
+                + com.tonywww.foodindustrial.gui.client.recipe.RecipeDevices.of(type).stream().map(DeviceSpec::id).toList());
+        }
+        line(context, shown + " of " + DeviceSpec.all().size() + " devices shown");
+        return shown;
+    }
+
+    /** Replies and logs (long listings do not fit an rcon reply). */
+    private static void line(CommandContext<CommandSourceStack> context, String text) {
+        FoodIndustrial.LOGGER.info("[catalysts] {}", text);
+        reply(context, text);
     }
 
     private static int recipes(CommandContext<CommandSourceStack> context) {

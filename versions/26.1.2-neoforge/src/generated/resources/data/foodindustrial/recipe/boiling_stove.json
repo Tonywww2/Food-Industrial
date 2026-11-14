@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:brick",
+    "F": "minecraft:furnace",
+    "O": "foodindustrial:iron_pot"
+  },
+  "pattern": [
+    "BOB",
+    "BFB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:boiling_stove"
+  }
+}

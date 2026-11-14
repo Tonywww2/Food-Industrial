@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sarsaparilla_extract",
+    "foodindustrial:flowing_sarsaparilla_extract",
+    {
+      "id": "#forge:sarsaparilla_extract",
+      "required": false
+    },
+    {
+      "id": "#c:sarsaparilla_extract",
+      "required": false
+    }
+  ]
+}

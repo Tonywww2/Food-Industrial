@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/monopotassium_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/monopotassium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/monopotassium_phosphate",
+      "required": false
     }
   ]
 }

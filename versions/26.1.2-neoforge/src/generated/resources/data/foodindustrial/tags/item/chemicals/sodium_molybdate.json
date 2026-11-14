@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_molybdate",
+    {
+      "id": "#forge:dusts/sodium_molybdate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_molybdate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_molybdate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_molybdate",
+      "required": false
+    }
+  ]
+}

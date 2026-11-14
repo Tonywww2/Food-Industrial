@@ -1,0 +1,23 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "amount": 4,
+    "ingredient": {
+      "tag": "foodindustrial:materials/lemon_balm"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:lemon_balm_powder"
+  }
+}

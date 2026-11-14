@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:rubropunctatin",
     {
+      "id": "#forge:dusts/rubropunctatin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rubropunctatin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/rubropunctatin",
       "required": false
     },

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nerolidol",
+    "foodindustrial:flowing_nerolidol",
+    {
+      "id": "#forge:nerolidol",
+      "required": false
+    },
+    {
+      "id": "#c:nerolidol",
+      "required": false
+    }
+  ]
+}

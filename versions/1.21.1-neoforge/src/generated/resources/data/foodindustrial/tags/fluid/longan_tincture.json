@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:longan_tincture",
+    "foodindustrial:flowing_longan_tincture",
+    {
+      "id": "#forge:longan_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:longan_tincture",
+      "required": false
+    }
+  ]
+}

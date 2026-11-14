@@ -6,6 +6,18 @@
     {
       "id": "#forge:seawater",
       "required": false
+    },
+    {
+      "id": "#forge:salt_water",
+      "required": false
+    },
+    {
+      "id": "#c:seawater",
+      "required": false
+    },
+    {
+      "id": "#c:salt_water",
+      "required": false
     }
   ]
 }

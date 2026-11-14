@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/vanillylmandelic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/vanillylmandelic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vanillylmandelic_acid",
+      "required": false
     }
   ]
 }

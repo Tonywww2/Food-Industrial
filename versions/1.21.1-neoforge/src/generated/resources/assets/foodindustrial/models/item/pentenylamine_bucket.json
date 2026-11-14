@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:pentenylamine",
+  "loader": "neoforge:fluid_container"
+}

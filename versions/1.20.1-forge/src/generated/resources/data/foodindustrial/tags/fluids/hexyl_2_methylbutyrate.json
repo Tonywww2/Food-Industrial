@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexyl_2_methylbutyrate",
+    "foodindustrial:flowing_hexyl_2_methylbutyrate",
+    {
+      "id": "#forge:hexyl_2_methylbutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:hexyl_2_methylbutyrate",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:inosinic_acid",
     {
+      "id": "#forge:dusts/inosinic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/inosinic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/inosinic_acid",
       "required": false
     },

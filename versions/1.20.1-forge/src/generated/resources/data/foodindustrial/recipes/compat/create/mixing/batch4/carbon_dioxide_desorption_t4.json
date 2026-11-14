@@ -1,0 +1,37 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/potassium_bicarbonate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/potassium_bicarbonate"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:potassium_carbonate",
+      "nbt": "{Purity:34b}"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "nbt": "{Purity:34b}"
+    }
+  ]
+}

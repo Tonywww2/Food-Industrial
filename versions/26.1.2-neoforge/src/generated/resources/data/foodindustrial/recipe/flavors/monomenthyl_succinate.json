@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/menthol"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/succinic_anhydride"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:monomenthyl_succinate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

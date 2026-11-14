@@ -63,6 +63,9 @@ public final class Conditions {
                 continue;
             }
             String category = categoryOf(name);
+            if (category.equals("mode")) {
+                return DataResult.error(() -> "A machine mode goes in the recipe's \"mode\" field, not in requirements");
+            }
             List<String> values = new ArrayList<>();
             value.ifLeft(flag -> {
                 if (flag) {

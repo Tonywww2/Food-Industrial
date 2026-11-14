@@ -4,6 +4,10 @@
     "foodindustrial:polyglycerol_polyricinoleate",
     "foodindustrial:flowing_polyglycerol_polyricinoleate",
     {
+      "id": "#forge:polyglycerol_polyricinoleate",
+      "required": false
+    },
+    {
       "id": "#c:polyglycerol_polyricinoleate",
       "required": false
     }

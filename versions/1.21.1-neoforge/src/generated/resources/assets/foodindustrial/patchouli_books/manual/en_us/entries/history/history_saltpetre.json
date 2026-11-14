@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:nitre_soil",
+  "name": "book.foodindustrial.manual.entry.history_saltpetre",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:nitre_soil",
+      "text": "book.foodindustrial.manual.entry.history_saltpetre.text"
+    }
+  ],
+  "sortnum": 5
+}

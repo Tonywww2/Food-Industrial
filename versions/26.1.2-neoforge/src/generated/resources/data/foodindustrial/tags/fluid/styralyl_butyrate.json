@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:styralyl_butyrate",
+    "foodindustrial:flowing_styralyl_butyrate",
+    {
+      "id": "#forge:styralyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:styralyl_butyrate",
+      "required": false
+    }
+  ]
+}

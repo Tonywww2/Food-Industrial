@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:triphenylphosphine",
     {
+      "id": "#forge:dusts/triphenylphosphine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/triphenylphosphine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/triphenylphosphine",
       "required": false
     },

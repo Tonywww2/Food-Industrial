@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:campholenic_aldehyde",
+    "foodindustrial:flowing_campholenic_aldehyde",
+    {
+      "id": "#forge:campholenic_aldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:campholenic_aldehyde",
+      "required": false
+    }
+  ]
+}

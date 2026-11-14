@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octanal_dimethyl_acetal",
+    "foodindustrial:flowing_octanal_dimethyl_acetal",
+    {
+      "id": "#forge:octanal_dimethyl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:octanal_dimethyl_acetal",
+      "required": false
+    }
+  ]
+}

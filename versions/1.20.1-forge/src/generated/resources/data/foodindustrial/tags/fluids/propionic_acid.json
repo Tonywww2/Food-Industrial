@@ -6,6 +6,10 @@
     {
       "id": "#forge:propionic_acid",
       "required": false
+    },
+    {
+      "id": "#c:propionic_acid",
+      "required": false
     }
   ]
 }

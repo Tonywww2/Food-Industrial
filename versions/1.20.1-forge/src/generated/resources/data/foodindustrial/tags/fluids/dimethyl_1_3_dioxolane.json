@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_1_3_dioxolane",
+    "foodindustrial:flowing_dimethyl_1_3_dioxolane",
+    {
+      "id": "#forge:dimethyl_1_3_dioxolane",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_1_3_dioxolane",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:cultures/e_coli"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/agar"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/abomasum"
+    },
+    {
+      "ingredient": "#foodindustrial:cultures/expression_vector"
+    }
+  ],
+  "mode": "recombination",
+  "outputs": [
+    {
+      "item": "foodindustrial:engineered_chymosin",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:e_coli"
+    }
+  ],
+  "plate": {
+    "weights": [
+      1,
+      1
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

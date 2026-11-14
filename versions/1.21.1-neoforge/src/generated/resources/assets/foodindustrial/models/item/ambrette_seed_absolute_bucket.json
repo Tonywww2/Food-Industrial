@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ambrette_seed_absolute",
+  "loader": "neoforge:fluid_container"
+}

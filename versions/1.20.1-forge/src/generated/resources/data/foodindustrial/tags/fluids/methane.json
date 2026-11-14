@@ -6,6 +6,10 @@
     {
       "id": "#forge:methane",
       "required": false
+    },
+    {
+      "id": "#c:methane",
+      "required": false
     }
   ]
 }

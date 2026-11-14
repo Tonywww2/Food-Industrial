@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Appends the stages of additives/03, 13 and 14 to the purity report written by the data run.
+"""Appends the stages of additives/03, 13, 14, 15 and 17 to the purity report written by the data run.
 
 The data run writes versions/<node>/build/reports/foodindustrial/purity_report.md (I08, machines/01
 §1.1): the highest purity each material reaches with T0 … T0–T4 devices. The designers compare it
@@ -15,7 +15,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DOCS = ROOT / 'docs' / 'additives'
 MARK = '\n## 文档中的阶段\n'
-SOURCES = ['03-first-batch.md', '13-batch-2.md', '14-batch-3.md']
+SOURCES = ['03-first-batch.md', '13-batch-2.md', '14-batch-3.md', '15-batch-4.md', '17-batch-5.md']
 STAGE_COLUMNS = ['最早', '最终', '阶段']
 
 
@@ -50,7 +50,7 @@ def main():
     if not report.exists():
         sys.exit(f'{report} not found; run :{node}:runData first')
     text = report.read_text(encoding='utf-8').split(MARK)[0].rstrip('\n') + '\n'
-    lines = [MARK.strip('\n'), '', '按 additives/03、13、14 原样列出，供与上表人工对照。', '',
+    lines = [MARK.strip('\n'), '', '按 additives/03、13、14、15、17 原样列出，供与上表人工对照。', '',
              '| 文档 | # | 名称 | 阶段 |', '| --- | --- | --- | --- |']
     for source in SOURCES:
         for number, name, stages in rows(DOCS / source):

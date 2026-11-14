@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/ghatti_lump"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:ghatti_gum",
+      "purity": {
+        "mode": "source",
+        "value": 40
+      }
+    }
+  ],
+  "time": 200
+}

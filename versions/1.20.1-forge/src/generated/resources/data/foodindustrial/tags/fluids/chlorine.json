@@ -6,6 +6,10 @@
     {
       "id": "#forge:chlorine",
       "required": false
+    },
+    {
+      "id": "#c:chlorine",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cedar_leaf_oil",
+    "foodindustrial:flowing_cedar_leaf_oil",
+    {
+      "id": "#forge:cedar_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cedar_leaf_oil",
+      "required": false
+    }
+  ]
+}

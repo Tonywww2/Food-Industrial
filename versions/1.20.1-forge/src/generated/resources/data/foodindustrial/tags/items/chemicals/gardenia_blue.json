@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gardenia_blue",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gardenia_blue",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gardenia_blue",
+      "required": false
     }
   ]
 }

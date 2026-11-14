@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:levomefolic_acid",
+    {
+      "id": "#forge:dusts/levomefolic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/levomefolic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/levomefolic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/levomefolic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:sec_butylphenol",
+  "loader": "forge:fluid_container"
+}

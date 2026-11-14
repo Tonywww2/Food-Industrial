@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furfurylthiol_formate",
+    "foodindustrial:flowing_furfurylthiol_formate",
+    {
+      "id": "#forge:furfurylthiol_formate",
+      "required": false
+    },
+    {
+      "id": "#c:furfurylthiol_formate",
+      "required": false
+    }
+  ]
+}

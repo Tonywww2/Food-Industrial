@@ -1,0 +1,28 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:p_tolyl_isobutyrate"
+  },
+  "result": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:p_tolyl_isobutyrate",
+      "nbt": "{Purity:26b}"
+    }
+  ]
+}

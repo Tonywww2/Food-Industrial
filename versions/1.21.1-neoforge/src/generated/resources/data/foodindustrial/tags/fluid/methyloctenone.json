@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyloctenone",
+    "foodindustrial:flowing_methyloctenone",
+    {
+      "id": "#forge:methyloctenone",
+      "required": false
+    },
+    {
+      "id": "#c:methyloctenone",
+      "required": false
+    }
+  ]
+}

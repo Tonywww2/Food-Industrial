@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/propylene_glycol_monostearate"
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:molten_propylene_glycol_monostearate",
+      "purity": {
+        "mode": "keep"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

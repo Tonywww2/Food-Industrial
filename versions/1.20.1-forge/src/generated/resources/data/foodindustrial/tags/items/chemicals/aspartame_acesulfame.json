@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/aspartame_acesulfame",
       "required": false
+    },
+    {
+      "id": "#c:dusts/aspartame_acesulfame",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aspartame_acesulfame",
+      "required": false
     }
   ]
 }

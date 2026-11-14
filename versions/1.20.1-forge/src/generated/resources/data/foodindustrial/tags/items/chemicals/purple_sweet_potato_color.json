@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/purple_sweet_potato_color",
       "required": false
+    },
+    {
+      "id": "#c:dusts/purple_sweet_potato_color",
+      "required": false
+    },
+    {
+      "id": "#c:gems/purple_sweet_potato_color",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_menthone_glyceryl_ketal",
+    "foodindustrial:flowing_dl_menthone_glyceryl_ketal",
+    {
+      "id": "#forge:dl_menthone_glyceryl_ketal",
+      "required": false
+    },
+    {
+      "id": "#c:dl_menthone_glyceryl_ketal",
+      "required": false
+    }
+  ]
+}

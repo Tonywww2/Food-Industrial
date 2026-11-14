@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:anethole",
+  "loader": "forge:fluid_container"
+}

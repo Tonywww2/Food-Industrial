@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ergocalciferol",
+    {
+      "id": "#forge:dusts/ergocalciferol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ergocalciferol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ergocalciferol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ergocalciferol",
+      "required": false
+    }
+  ]
+}

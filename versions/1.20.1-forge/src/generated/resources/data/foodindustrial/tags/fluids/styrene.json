@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:styrene",
+    "foodindustrial:flowing_styrene",
+    {
+      "id": "#forge:styrene",
+      "required": false
+    },
+    {
+      "id": "#c:styrene",
+      "required": false
+    }
+  ]
+}

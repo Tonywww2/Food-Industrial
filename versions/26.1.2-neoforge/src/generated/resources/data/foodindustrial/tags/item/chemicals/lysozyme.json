@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:lysozyme",
     {
+      "id": "#forge:dusts/lysozyme",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lysozyme",
+      "required": false
+    },
+    {
       "id": "#c:dusts/lysozyme",
       "required": false
     },

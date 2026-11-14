@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cryptone",
+    "foodindustrial:flowing_cryptone",
+    {
+      "id": "#forge:cryptone",
+      "required": false
+    },
+    {
+      "id": "#c:cryptone",
+      "required": false
+    }
+  ]
+}

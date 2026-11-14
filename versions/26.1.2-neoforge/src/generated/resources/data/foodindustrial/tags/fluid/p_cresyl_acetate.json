@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_cresyl_acetate",
+    "foodindustrial:flowing_p_cresyl_acetate",
+    {
+      "id": "#forge:p_cresyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:p_cresyl_acetate",
+      "required": false
+    }
+  ]
+}

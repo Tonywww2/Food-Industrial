@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:farnesol",
+    "foodindustrial:flowing_farnesol",
+    {
+      "id": "#forge:farnesol",
+      "required": false
+    },
+    {
+      "id": "#c:farnesol",
+      "required": false
+    }
+  ]
+}

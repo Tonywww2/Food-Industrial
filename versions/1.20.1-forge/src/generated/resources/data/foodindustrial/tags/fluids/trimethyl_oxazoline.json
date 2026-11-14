@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethyl_oxazoline",
+    "foodindustrial:flowing_trimethyl_oxazoline",
+    {
+      "id": "#forge:trimethyl_oxazoline",
+      "required": false
+    },
+    {
+      "id": "#c:trimethyl_oxazoline",
+      "required": false
+    }
+  ]
+}

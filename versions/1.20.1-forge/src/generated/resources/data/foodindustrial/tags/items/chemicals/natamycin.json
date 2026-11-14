@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/natamycin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/natamycin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/natamycin",
+      "required": false
     }
   ]
 }

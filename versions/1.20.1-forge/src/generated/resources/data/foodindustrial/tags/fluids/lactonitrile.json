@@ -6,6 +6,10 @@
     {
       "id": "#forge:lactonitrile",
       "required": false
+    },
+    {
+      "id": "#c:lactonitrile",
+      "required": false
     }
   ]
 }

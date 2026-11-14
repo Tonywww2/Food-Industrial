@@ -6,6 +6,10 @@
     {
       "id": "#forge:thionyl_chloride",
       "required": false
+    },
+    {
+      "id": "#c:thionyl_chloride",
+      "required": false
     }
   ]
 }

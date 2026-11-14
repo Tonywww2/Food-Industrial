@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethyl_formylalaninate",
+  "loader": "neoforge:fluid_container"
+}

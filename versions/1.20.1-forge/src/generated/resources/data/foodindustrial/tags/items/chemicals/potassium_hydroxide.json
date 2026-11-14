@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_hydroxide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_hydroxide",
+      "required": false
     }
   ]
 }

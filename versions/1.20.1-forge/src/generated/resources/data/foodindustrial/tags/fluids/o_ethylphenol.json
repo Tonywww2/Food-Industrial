@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_ethylphenol",
+    "foodindustrial:flowing_o_ethylphenol",
+    {
+      "id": "#forge:o_ethylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:o_ethylphenol",
+      "required": false
+    }
+  ]
+}

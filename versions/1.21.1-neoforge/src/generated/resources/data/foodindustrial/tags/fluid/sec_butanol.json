@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sec_butanol",
+    "foodindustrial:flowing_sec_butanol",
+    {
+      "id": "#forge:sec_butanol",
+      "required": false
+    },
+    {
+      "id": "#c:sec_butanol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lime_oil",
+    "foodindustrial:flowing_lime_oil",
+    {
+      "id": "#forge:lime_oil",
+      "required": false
+    },
+    {
+      "id": "#c:lime_oil",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:phytic_acid",
     "foodindustrial:flowing_phytic_acid",
     {
+      "id": "#forge:phytic_acid",
+      "required": false
+    },
+    {
       "id": "#c:phytic_acid",
       "required": false
     }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_alum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_alum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_alum",
+      "required": false
     }
   ]
 }

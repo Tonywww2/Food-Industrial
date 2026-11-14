@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_benzyl_ether",
+    "foodindustrial:flowing_ethyl_benzyl_ether",
+    {
+      "id": "#forge:ethyl_benzyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_benzyl_ether",
+      "required": false
+    }
+  ]
+}

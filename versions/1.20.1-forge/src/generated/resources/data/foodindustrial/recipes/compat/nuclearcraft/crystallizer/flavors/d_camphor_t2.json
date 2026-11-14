@@ -1,0 +1,32 @@
+{
+  "type": "nuclearcraft:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "inputFluids": [
+    {
+      "amount": 1000,
+      "tag": "foodindustrial:crude_camphor_oil"
+    }
+  ],
+  "output": [
+    {
+      "type": "forge:nbt",
+      "item": "foodindustrial:d_camphor",
+      "nbt": "{Purity:28b}"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

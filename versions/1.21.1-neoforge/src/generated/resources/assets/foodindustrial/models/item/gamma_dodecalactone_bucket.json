@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:gamma_dodecalactone",
+  "loader": "neoforge:fluid_container"
+}

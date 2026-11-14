@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_sulfide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_sulfide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_sulfide",
+      "required": false
     }
   ]
 }

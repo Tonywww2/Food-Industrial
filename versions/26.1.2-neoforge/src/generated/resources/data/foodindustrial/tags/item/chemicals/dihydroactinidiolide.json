@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydroactinidiolide",
+    {
+      "id": "#forge:dusts/dihydroactinidiolide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dihydroactinidiolide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dihydroactinidiolide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dihydroactinidiolide",
+      "required": false
+    }
+  ]
+}

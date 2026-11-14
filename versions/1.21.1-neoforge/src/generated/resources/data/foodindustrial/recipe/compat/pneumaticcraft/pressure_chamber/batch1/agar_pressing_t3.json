@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "count": 2,
+      "tag": "foodindustrial:chemicals/agar_jelly"
+    }
+  ],
+  "pressure": 2.0,
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": 26
+      },
+      "count": 1,
+      "id": "foodindustrial:agar"
+    }
+  ]
+}

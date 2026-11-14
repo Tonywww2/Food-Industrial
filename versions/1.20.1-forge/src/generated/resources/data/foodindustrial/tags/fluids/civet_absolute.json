@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:civet_absolute",
+    "foodindustrial:flowing_civet_absolute",
+    {
+      "id": "#forge:civet_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:civet_absolute",
+      "required": false
+    }
+  ]
+}

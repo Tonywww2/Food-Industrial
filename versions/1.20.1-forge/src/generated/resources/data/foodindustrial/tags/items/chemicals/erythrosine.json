@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/erythrosine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/erythrosine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/erythrosine",
+      "required": false
     }
   ]
 }

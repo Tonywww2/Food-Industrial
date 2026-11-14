@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decadienoic_acid",
+    {
+      "id": "#forge:dusts/decadienoic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/decadienoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/decadienoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/decadienoic_acid",
+      "required": false
+    }
+  ]
+}

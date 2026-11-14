@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:lanolin",
     {
+      "id": "#forge:dusts/lanolin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lanolin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/lanolin",
       "required": false
     },

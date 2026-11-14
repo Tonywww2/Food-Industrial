@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/capric_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/capric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/capric_acid",
+      "required": false
     }
   ]
 }

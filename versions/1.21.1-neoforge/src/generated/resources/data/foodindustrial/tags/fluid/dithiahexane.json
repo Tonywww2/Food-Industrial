@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dithiahexane",
+    "foodindustrial:flowing_dithiahexane",
+    {
+      "id": "#forge:dithiahexane",
+      "required": false
+    },
+    {
+      "id": "#c:dithiahexane",
+      "required": false
+    }
+  ]
+}

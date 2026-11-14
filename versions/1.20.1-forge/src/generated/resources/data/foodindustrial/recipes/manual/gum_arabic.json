@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/acacia_lump"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:gum_arabic",
+      "purity": {
+        "mode": "source",
+        "value": 40
+      }
+    }
+  ],
+  "time": 200
+}

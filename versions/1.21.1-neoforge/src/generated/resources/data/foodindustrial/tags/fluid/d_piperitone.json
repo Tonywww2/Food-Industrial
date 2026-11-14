@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:d_piperitone",
+    "foodindustrial:flowing_d_piperitone",
+    {
+      "id": "#forge:d_piperitone",
+      "required": false
+    },
+    {
+      "id": "#c:d_piperitone",
+      "required": false
+    }
+  ]
+}

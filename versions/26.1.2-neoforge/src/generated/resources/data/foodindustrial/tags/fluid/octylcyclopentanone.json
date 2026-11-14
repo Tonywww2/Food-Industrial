@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octylcyclopentanone",
+    "foodindustrial:flowing_octylcyclopentanone",
+    {
+      "id": "#forge:octylcyclopentanone",
+      "required": false
+    },
+    {
+      "id": "#c:octylcyclopentanone",
+      "required": false
+    }
+  ]
+}

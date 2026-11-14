@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:fruit_wine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:acetobacter",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:acetic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 4
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "environment": [
+      "non_cold_biome"
+    ]
+  },
+  "time": 72000
+}

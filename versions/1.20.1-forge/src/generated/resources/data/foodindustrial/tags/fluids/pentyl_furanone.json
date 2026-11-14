@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pentyl_furanone",
+    "foodindustrial:flowing_pentyl_furanone",
+    {
+      "id": "#forge:pentyl_furanone",
+      "required": false
+    },
+    {
+      "id": "#c:pentyl_furanone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_benzoate",
+    "foodindustrial:flowing_benzyl_benzoate",
+    {
+      "id": "#forge:benzyl_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_benzoate",
+      "required": false
+    }
+  ]
+}

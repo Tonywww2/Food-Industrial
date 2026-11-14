@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:galactooligosaccharides",
+    {
+      "id": "#forge:dusts/galactooligosaccharides",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/galactooligosaccharides",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/galactooligosaccharides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/galactooligosaccharides",
+      "required": false
+    }
+  ]
+}

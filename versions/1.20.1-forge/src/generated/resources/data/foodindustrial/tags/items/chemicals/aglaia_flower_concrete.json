@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aglaia_flower_concrete",
+    {
+      "id": "#forge:dusts/aglaia_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aglaia_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/aglaia_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aglaia_flower_concrete",
+      "required": false
+    }
+  ]
+}

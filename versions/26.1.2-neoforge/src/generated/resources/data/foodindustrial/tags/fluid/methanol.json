@@ -4,6 +4,10 @@
     "foodindustrial:methanol",
     "foodindustrial:flowing_methanol",
     {
+      "id": "#forge:methanol",
+      "required": false
+    },
+    {
       "id": "#c:methanol",
       "required": false
     }

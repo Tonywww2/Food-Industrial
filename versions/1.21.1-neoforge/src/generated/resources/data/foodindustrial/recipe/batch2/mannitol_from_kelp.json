@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:kelp_extract"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:mannitol",
+      "purity": {
+        "mode": "source",
+        "value": 60
+      }
+    },
+    {
+      "chance": 0.25,
+      "item": "foodindustrial:iodine",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "amount": 200,
+      "fluid": "foodindustrial:ethanol"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

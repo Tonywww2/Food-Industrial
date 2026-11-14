@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/diacetyltartaric_monoglycerides",
       "required": false
+    },
+    {
+      "id": "#c:dusts/diacetyltartaric_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diacetyltartaric_monoglycerides",
+      "required": false
     }
   ]
 }

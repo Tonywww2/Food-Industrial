@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:raspberry_ketone",
+    {
+      "id": "#forge:dusts/raspberry_ketone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/raspberry_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/raspberry_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/raspberry_ketone",
+      "required": false
+    }
+  ]
+}

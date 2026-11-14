@@ -1,0 +1,25 @@
+{
+  "type": "mekanism:evaporating",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "input": {
+    "amount": 2000,
+    "tag": "foodindustrial:phosphoric_acid"
+  },
+  "output": {
+    "amount": 1000,
+    "fluid": "foodindustrial:phosphoric_acid",
+    "nbt": "{Purity:-2b}"
+  }
+}

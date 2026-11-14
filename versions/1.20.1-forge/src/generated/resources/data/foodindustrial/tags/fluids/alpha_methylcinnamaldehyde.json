@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_methylcinnamaldehyde",
+    "foodindustrial:flowing_alpha_methylcinnamaldehyde",
+    {
+      "id": "#forge:alpha_methylcinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_methylcinnamaldehyde",
+      "required": false
+    }
+  ]
+}

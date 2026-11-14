@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lovage_oil",
+    "foodindustrial:flowing_lovage_oil",
+    {
+      "id": "#forge:lovage_oil",
+      "required": false
+    },
+    {
+      "id": "#c:lovage_oil",
+      "required": false
+    }
+  ]
+}

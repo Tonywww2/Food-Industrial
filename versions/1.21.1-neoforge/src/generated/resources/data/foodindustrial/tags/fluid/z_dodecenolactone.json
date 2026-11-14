@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:z_dodecenolactone",
+    "foodindustrial:flowing_z_dodecenolactone",
+    {
+      "id": "#forge:z_dodecenolactone",
+      "required": false
+    },
+    {
+      "id": "#c:z_dodecenolactone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_vinylphenol",
+    {
+      "id": "#forge:dusts/p_vinylphenol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_vinylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_vinylphenol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_vinylphenol",
+      "required": false
+    }
+  ]
+}

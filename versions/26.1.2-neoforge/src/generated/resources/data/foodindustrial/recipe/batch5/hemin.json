@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 4000,
+        "tag": "foodindustrial:animal_blood"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "min_purity": 90,
+        "tag": "foodindustrial:acetic_acid"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/salt"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:hemin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

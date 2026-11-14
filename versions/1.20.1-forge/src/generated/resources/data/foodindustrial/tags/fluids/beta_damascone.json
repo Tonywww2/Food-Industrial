@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_damascone",
+    "foodindustrial:flowing_beta_damascone",
+    {
+      "id": "#forge:beta_damascone",
+      "required": false
+    },
+    {
+      "id": "#c:beta_damascone",
+      "required": false
+    }
+  ]
+}

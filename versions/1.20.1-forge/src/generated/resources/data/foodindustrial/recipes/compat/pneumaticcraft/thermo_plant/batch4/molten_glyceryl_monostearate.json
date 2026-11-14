@@ -1,0 +1,28 @@
+{
+  "type": "pneumaticcraft:thermo_plant",
+  "air_use_multiplier": 1.0,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "exothermic": false,
+  "fluid_output": {
+    "amount": 1000,
+    "fluid": "foodindustrial:molten_glyceryl_monostearate",
+    "nbt": "{Purity:-23b}"
+  },
+  "item_input": {
+    "tag": "foodindustrial:chemicals/glyceryl_monostearate"
+  },
+  "pressure": 0.0,
+  "speed": 1.0,
+  "temperature": {
+    "min_temp": 373
+  }
+}

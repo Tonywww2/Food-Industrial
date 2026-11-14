@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_z5_octenoate",
+    "foodindustrial:flowing_methyl_z5_octenoate",
+    {
+      "id": "#forge:methyl_z5_octenoate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_z5_octenoate",
+      "required": false
+    }
+  ]
+}

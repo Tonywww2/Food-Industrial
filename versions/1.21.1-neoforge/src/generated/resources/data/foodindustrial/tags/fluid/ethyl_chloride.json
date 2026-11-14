@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_chloride",
+    "foodindustrial:flowing_ethyl_chloride",
+    {
+      "id": "#forge:ethyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_chloride",
+      "required": false
+    }
+  ]
+}

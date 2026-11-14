@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylpyridylethylamine",
+    "foodindustrial:flowing_methylpyridylethylamine",
+    {
+      "id": "#forge:methylpyridylethylamine",
+      "required": false
+    },
+    {
+      "id": "#c:methylpyridylethylamine",
+      "required": false
+    }
+  ]
+}

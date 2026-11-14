@@ -4,6 +4,10 @@
     "foodindustrial:palm_oil",
     "foodindustrial:flowing_palm_oil",
     {
+      "id": "#forge:palm_oil",
+      "required": false
+    },
+    {
       "id": "#c:palm_oil",
       "required": false
     }

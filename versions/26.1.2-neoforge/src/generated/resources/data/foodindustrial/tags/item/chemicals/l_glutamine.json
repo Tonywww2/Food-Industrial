@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_glutamine",
+    {
+      "id": "#forge:dusts/l_glutamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_glutamine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/l_glutamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_glutamine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pimento_leaf_oil",
+    "foodindustrial:flowing_pimento_leaf_oil",
+    {
+      "id": "#forge:pimento_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:pimento_leaf_oil",
+      "required": false
+    }
+  ]
+}

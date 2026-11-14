@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vinyl_chloride",
+    "foodindustrial:flowing_vinyl_chloride",
+    {
+      "id": "#forge:vinyl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:vinyl_chloride",
+      "required": false
+    }
+  ]
+}

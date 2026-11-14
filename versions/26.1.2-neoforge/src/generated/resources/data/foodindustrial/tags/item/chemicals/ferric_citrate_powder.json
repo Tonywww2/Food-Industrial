@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferric_citrate_powder",
+    {
+      "id": "#forge:dusts/ferric_citrate_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferric_citrate_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferric_citrate_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferric_citrate_powder",
+      "required": false
+    }
+  ]
+}

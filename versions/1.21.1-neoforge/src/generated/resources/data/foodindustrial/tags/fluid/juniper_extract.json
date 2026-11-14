@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:juniper_extract",
+    "foodindustrial:flowing_juniper_extract",
+    {
+      "id": "#forge:juniper_extract",
+      "required": false
+    },
+    {
+      "id": "#c:juniper_extract",
+      "required": false
+    }
+  ]
+}

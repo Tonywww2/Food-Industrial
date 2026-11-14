@@ -12,6 +12,14 @@
     {
       "id": "#c:vegetables/potato",
       "required": false
+    },
+    {
+      "id": "#forge:crops/potato",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/potato",
+      "required": false
     }
   ]
 }

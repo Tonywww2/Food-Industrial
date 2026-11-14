@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyltetrahydrofuran",
+    "foodindustrial:flowing_diethyltetrahydrofuran",
+    {
+      "id": "#forge:diethyltetrahydrofuran",
+      "required": false
+    },
+    {
+      "id": "#c:diethyltetrahydrofuran",
+      "required": false
+    }
+  ]
+}

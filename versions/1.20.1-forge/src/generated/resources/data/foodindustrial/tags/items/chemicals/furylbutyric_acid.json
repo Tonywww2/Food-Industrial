@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:furylbutyric_acid",
+    {
+      "id": "#forge:dusts/furylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/furylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/furylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/furylbutyric_acid",
+      "required": false
+    }
+  ]
+}

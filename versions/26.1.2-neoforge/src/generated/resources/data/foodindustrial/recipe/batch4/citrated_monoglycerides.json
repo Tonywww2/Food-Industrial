@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/glyceryl_monostearate"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/citric_acid"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:citrated_monoglycerides"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

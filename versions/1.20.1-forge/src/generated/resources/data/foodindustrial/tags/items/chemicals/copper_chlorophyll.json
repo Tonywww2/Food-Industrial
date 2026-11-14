@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/copper_chlorophyll",
       "required": false
+    },
+    {
+      "id": "#c:dusts/copper_chlorophyll",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper_chlorophyll",
+      "required": false
     }
   ]
 }

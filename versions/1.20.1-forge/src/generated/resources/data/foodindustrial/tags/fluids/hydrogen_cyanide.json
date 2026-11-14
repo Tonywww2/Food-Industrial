@@ -6,6 +6,10 @@
     {
       "id": "#forge:hydrogen_cyanide",
       "required": false
+    },
+    {
+      "id": "#c:hydrogen_cyanide",
+      "required": false
     }
   ]
 }

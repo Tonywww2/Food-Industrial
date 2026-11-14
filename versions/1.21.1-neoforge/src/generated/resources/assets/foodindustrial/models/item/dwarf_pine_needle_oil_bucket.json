@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dwarf_pine_needle_oil",
+  "loader": "neoforge:fluid_container"
+}

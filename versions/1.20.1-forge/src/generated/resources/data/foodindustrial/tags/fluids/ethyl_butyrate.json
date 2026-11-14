@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethyl_butyrate",
       "required": false
+    },
+    {
+      "id": "#c:ethyl_butyrate",
+      "required": false
     }
   ]
 }

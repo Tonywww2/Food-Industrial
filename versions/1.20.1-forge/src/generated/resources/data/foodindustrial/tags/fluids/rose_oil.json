@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rose_oil",
+    "foodindustrial:flowing_rose_oil",
+    {
+      "id": "#forge:rose_oil",
+      "required": false
+    },
+    {
+      "id": "#c:rose_oil",
+      "required": false
+    }
+  ]
+}

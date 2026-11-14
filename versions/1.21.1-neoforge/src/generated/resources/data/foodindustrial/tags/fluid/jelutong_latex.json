@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jelutong_latex",
+    "foodindustrial:flowing_jelutong_latex",
+    {
+      "id": "#forge:jelutong_latex",
+      "required": false
+    },
+    {
+      "id": "#c:jelutong_latex",
+      "required": false
+    }
+  ]
+}

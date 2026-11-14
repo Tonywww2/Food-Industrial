@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_stearate",
+    {
+      "id": "#forge:dusts/ethyl_stearate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ethyl_stearate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ethyl_stearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_stearate",
+      "required": false
+    }
+  ]
+}

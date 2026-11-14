@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_cinnamate",
+    "foodindustrial:flowing_isobutyl_cinnamate",
+    {
+      "id": "#forge:isobutyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:isobutyl_cinnamate",
+      "required": false
+    }
+  ]
+}

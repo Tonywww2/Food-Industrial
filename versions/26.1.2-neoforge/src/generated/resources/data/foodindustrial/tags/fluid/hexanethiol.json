@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexanethiol",
+    "foodindustrial:flowing_hexanethiol",
+    {
+      "id": "#forge:hexanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:hexanethiol",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/glyceryl_monostearate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/glyceryl_monostearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glyceryl_monostearate",
+      "required": false
     }
   ]
 }

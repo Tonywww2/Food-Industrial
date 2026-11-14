@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:riboflavin_phosphate_sodium",
+    {
+      "id": "#forge:dusts/riboflavin_phosphate_sodium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/riboflavin_phosphate_sodium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/riboflavin_phosphate_sodium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/riboflavin_phosphate_sodium",
+      "required": false
+    }
+  ]
+}

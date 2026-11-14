@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hawthorn_kernel_smoke_flavoring_1",
+  "loader": "neoforge:fluid_container"
+}

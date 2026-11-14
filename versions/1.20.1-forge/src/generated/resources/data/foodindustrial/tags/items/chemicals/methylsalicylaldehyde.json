@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylsalicylaldehyde",
+    {
+      "id": "#forge:dusts/methylsalicylaldehyde",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylsalicylaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylsalicylaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylsalicylaldehyde",
+      "required": false
+    }
+  ]
+}

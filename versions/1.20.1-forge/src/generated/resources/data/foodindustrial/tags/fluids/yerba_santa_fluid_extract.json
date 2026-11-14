@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:yerba_santa_fluid_extract",
+    "foodindustrial:flowing_yerba_santa_fluid_extract",
+    {
+      "id": "#forge:yerba_santa_fluid_extract",
+      "required": false
+    },
+    {
+      "id": "#c:yerba_santa_fluid_extract",
+      "required": false
+    }
+  ]
+}

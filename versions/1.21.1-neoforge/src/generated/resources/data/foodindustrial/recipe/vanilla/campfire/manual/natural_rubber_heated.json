@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:vanilla_campfire_cooking",
+  "recipe": {
+    "type": "foodindustrial:drying",
+    "inputs": [
+      {
+        "ingredient": {
+          "tag": "foodindustrial:materials/wet_rubber_sheet"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "item": "foodindustrial:natural_rubber",
+        "purity": {
+          "mode": "source",
+          "value": 90
+        }
+      }
+    ],
+    "requirements": {
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace",
+      "smoker"
+    ]
+  }
+}

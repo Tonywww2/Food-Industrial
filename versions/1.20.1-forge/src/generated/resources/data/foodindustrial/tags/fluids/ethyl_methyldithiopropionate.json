@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_methyldithiopropionate",
+    "foodindustrial:flowing_ethyl_methyldithiopropionate",
+    {
+      "id": "#forge:ethyl_methyldithiopropionate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_methyldithiopropionate",
+      "required": false
+    }
+  ]
+}

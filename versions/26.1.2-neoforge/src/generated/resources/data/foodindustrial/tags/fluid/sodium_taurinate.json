@@ -4,6 +4,10 @@
     "foodindustrial:sodium_taurinate",
     "foodindustrial:flowing_sodium_taurinate",
     {
+      "id": "#forge:sodium_taurinate",
+      "required": false
+    },
+    {
       "id": "#c:sodium_taurinate",
       "required": false
     }

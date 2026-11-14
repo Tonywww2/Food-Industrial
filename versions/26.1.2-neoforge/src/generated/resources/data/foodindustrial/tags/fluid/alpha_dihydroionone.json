@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_dihydroionone",
+    "foodindustrial:flowing_alpha_dihydroionone",
+    {
+      "id": "#forge:alpha_dihydroionone",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_dihydroionone",
+      "required": false
+    }
+  ]
+}

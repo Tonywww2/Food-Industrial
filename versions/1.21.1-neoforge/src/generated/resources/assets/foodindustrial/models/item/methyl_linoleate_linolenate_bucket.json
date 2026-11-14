@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methyl_linoleate_linolenate",
+  "loader": "neoforge:fluid_container"
+}

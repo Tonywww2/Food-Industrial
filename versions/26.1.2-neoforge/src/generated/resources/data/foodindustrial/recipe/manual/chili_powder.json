@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/dried_chili"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:chili_powder"
+    }
+  ],
+  "time": 200
+}

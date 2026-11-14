@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:cyanopyridine",
     {
+      "id": "#forge:dusts/cyanopyridine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cyanopyridine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/cyanopyridine",
       "required": false
     },

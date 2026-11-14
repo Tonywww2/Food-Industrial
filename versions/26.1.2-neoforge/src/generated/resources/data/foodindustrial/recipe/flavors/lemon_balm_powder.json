@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/lemon_balm"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:lemon_balm_powder"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

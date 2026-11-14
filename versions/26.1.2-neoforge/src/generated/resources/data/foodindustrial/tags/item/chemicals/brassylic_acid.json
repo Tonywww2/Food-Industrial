@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:brassylic_acid",
+    {
+      "id": "#forge:dusts/brassylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/brassylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/brassylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/brassylic_acid",
+      "required": false
+    }
+  ]
+}

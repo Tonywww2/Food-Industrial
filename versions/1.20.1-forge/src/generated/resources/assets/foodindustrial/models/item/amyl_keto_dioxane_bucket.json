@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:amyl_keto_dioxane",
+  "loader": "forge:fluid_container"
+}

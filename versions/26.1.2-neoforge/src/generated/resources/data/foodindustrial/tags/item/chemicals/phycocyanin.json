@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:phycocyanin",
     {
+      "id": "#forge:dusts/phycocyanin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phycocyanin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/phycocyanin",
       "required": false
     },

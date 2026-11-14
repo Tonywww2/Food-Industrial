@@ -1,0 +1,16 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/soaked_wheat"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:sprouted_wheat"
+    }
+  ],
+  "time": 48000
+}

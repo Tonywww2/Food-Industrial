@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sapodilla_latex",
+    "foodindustrial:flowing_sapodilla_latex",
+    {
+      "id": "#forge:sapodilla_latex",
+      "required": false
+    },
+    {
+      "id": "#c:sapodilla_latex",
+      "required": false
+    }
+  ]
+}

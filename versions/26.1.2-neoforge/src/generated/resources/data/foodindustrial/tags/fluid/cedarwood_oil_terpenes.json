@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cedarwood_oil_terpenes",
+    "foodindustrial:flowing_cedarwood_oil_terpenes",
+    {
+      "id": "#forge:cedarwood_oil_terpenes",
+      "required": false
+    },
+    {
+      "id": "#c:cedarwood_oil_terpenes",
+      "required": false
+    }
+  ]
+}

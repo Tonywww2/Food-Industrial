@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:diallyl_disulfide",
+  "loader": "forge:fluid_container"
+}

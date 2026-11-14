@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:n_hexanol",
+    "foodindustrial:flowing_n_hexanol",
+    {
+      "id": "#forge:n_hexanol",
+      "required": false
+    },
+    {
+      "id": "#c:n_hexanol",
+      "required": false
+    }
+  ]
+}

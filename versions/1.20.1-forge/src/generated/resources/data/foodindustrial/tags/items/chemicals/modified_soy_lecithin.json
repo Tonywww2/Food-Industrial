@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/modified_soy_lecithin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/modified_soy_lecithin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/modified_soy_lecithin",
+      "required": false
     }
   ]
 }

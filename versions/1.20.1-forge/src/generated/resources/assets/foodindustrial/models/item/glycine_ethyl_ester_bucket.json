@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:glycine_ethyl_ester",
+  "loader": "forge:fluid_container"
+}

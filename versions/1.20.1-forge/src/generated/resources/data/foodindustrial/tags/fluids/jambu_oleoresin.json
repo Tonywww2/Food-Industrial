@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jambu_oleoresin",
+    "foodindustrial:flowing_jambu_oleoresin",
+    {
+      "id": "#forge:jambu_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:jambu_oleoresin",
+      "required": false
+    }
+  ]
+}

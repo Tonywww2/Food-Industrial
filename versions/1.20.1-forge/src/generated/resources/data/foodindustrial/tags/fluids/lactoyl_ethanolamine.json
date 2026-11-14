@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactoyl_ethanolamine",
+    "foodindustrial:flowing_lactoyl_ethanolamine",
+    {
+      "id": "#forge:lactoyl_ethanolamine",
+      "required": false
+    },
+    {
+      "id": "#c:lactoyl_ethanolamine",
+      "required": false
+    }
+  ]
+}

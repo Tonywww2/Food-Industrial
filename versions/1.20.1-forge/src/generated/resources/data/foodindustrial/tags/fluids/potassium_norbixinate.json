@@ -6,6 +6,10 @@
     {
       "id": "#forge:potassium_norbixinate",
       "required": false
+    },
+    {
+      "id": "#c:potassium_norbixinate",
+      "required": false
     }
   ]
 }

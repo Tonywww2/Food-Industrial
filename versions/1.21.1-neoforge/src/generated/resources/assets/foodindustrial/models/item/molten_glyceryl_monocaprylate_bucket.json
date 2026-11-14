@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:molten_glyceryl_monocaprylate",
+  "loader": "neoforge:fluid_container"
+}

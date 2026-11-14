@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nerol",
+    "foodindustrial:flowing_nerol",
+    {
+      "id": "#forge:nerol",
+      "required": false
+    },
+    {
+      "id": "#c:nerol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:turpentine",
+    "foodindustrial:flowing_turpentine",
+    {
+      "id": "#forge:turpentine",
+      "required": false
+    },
+    {
+      "id": "#c:turpentine",
+      "required": false
+    }
+  ]
+}

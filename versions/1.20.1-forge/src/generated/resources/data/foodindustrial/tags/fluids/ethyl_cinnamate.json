@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_cinnamate",
+    "foodindustrial:flowing_ethyl_cinnamate",
+    {
+      "id": "#forge:ethyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_cinnamate",
+      "required": false
+    }
+  ]
+}

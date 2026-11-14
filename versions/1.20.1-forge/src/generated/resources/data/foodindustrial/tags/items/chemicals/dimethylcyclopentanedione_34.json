@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylcyclopentanedione_34",
+    {
+      "id": "#forge:dusts/dimethylcyclopentanedione_34",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethylcyclopentanedione_34",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimethylcyclopentanedione_34",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethylcyclopentanedione_34",
+      "required": false
+    }
+  ]
+}

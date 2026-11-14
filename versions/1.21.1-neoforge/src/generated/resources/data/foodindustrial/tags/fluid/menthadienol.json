@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthadienol",
+    "foodindustrial:flowing_menthadienol",
+    {
+      "id": "#forge:menthadienol",
+      "required": false
+    },
+    {
+      "id": "#c:menthadienol",
+      "required": false
+    }
+  ]
+}

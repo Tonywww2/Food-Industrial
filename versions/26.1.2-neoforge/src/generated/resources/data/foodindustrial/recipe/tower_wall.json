@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:brick",
+    "C": "#c:ingots/copper",
+    "I": "#c:ingots/iron"
+  },
+  "pattern": [
+    "IBI",
+    "BCB",
+    "IBI"
+  ],
+  "result": {
+    "count": 8,
+    "id": "foodindustrial:tower_wall"
+  }
+}

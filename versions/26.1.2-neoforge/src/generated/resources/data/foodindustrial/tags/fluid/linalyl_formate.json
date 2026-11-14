@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_formate",
+    "foodindustrial:flowing_linalyl_formate",
+    {
+      "id": "#forge:linalyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_formate",
+      "required": false
+    }
+  ]
+}

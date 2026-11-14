@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sec_butyl_dimethyl_thiazoline",
+    "foodindustrial:flowing_sec_butyl_dimethyl_thiazoline",
+    {
+      "id": "#forge:sec_butyl_dimethyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#c:sec_butyl_dimethyl_thiazoline",
+      "required": false
+    }
+  ]
+}

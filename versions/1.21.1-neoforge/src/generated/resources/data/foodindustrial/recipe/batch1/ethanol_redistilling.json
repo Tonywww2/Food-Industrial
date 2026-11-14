@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:ethanol"
+      }
+    }
+  ],
+  "mode": "distillation",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:ethanol"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

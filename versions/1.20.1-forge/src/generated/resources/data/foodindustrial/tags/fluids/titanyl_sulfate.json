@@ -6,6 +6,10 @@
     {
       "id": "#forge:titanyl_sulfate",
       "required": false
+    },
+    {
+      "id": "#c:titanyl_sulfate",
+      "required": false
     }
   ]
 }

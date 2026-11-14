@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methialdol",
+    "foodindustrial:flowing_methialdol",
+    {
+      "id": "#forge:methialdol",
+      "required": false
+    },
+    {
+      "id": "#c:methialdol",
+      "required": false
+    }
+  ]
+}

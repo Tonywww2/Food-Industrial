@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenyl_furyl_propenal",
+    {
+      "id": "#forge:dusts/phenyl_furyl_propenal",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phenyl_furyl_propenal",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/phenyl_furyl_propenal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenyl_furyl_propenal",
+      "required": false
+    }
+  ]
+}

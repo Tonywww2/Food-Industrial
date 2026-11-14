@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sanzan_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sanzan_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sanzan_gum",
+      "required": false
     }
   ]
 }

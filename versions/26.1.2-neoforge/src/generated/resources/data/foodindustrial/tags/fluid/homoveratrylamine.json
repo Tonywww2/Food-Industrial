@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:homoveratrylamine",
+    "foodindustrial:flowing_homoveratrylamine",
+    {
+      "id": "#forge:homoveratrylamine",
+      "required": false
+    },
+    {
+      "id": "#c:homoveratrylamine",
+      "required": false
+    }
+  ]
+}

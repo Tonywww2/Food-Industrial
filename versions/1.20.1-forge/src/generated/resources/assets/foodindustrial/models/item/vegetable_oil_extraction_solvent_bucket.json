@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:vegetable_oil_extraction_solvent",
+  "loader": "forge:fluid_container"
+}

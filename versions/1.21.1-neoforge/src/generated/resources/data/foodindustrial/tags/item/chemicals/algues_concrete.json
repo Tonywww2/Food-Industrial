@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:algues_concrete",
+    {
+      "id": "#forge:dusts/algues_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/algues_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/algues_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/algues_concrete",
+      "required": false
+    }
+  ]
+}

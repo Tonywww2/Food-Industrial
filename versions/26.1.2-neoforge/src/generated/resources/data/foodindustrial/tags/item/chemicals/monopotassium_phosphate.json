@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:monopotassium_phosphate",
     {
+      "id": "#forge:dusts/monopotassium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/monopotassium_phosphate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/monopotassium_phosphate",
       "required": false
     },

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_bicarbonate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_bicarbonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_bicarbonate",
+      "required": false
     }
   ]
 }

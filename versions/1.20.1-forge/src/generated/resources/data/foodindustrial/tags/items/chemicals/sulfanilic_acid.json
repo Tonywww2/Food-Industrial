@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sulfanilic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sulfanilic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sulfanilic_acid",
+      "required": false
     }
   ]
 }

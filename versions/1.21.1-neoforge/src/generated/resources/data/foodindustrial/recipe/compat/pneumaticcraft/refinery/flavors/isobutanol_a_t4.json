@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:fusel_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:active_amyl_alcohol"
+    },
+    {
+      "amount": 1000,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:isobutanol"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

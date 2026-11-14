@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:glyceryl_tripropanoate",
+  "loader": "neoforge:fluid_container"
+}

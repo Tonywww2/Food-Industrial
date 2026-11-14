@@ -4,6 +4,10 @@
     "foodindustrial:caprylic_acid",
     "foodindustrial:flowing_caprylic_acid",
     {
+      "id": "#forge:caprylic_acid",
+      "required": false
+    },
+    {
       "id": "#c:caprylic_acid",
       "required": false
     }

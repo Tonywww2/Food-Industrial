@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:calcium_tartrate",
     {
+      "id": "#forge:dusts/calcium_tartrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_tartrate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/calcium_tartrate",
       "required": false
     },

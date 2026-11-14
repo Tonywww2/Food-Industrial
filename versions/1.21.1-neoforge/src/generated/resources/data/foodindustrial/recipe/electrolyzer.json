@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:storage_blocks/copper"
+    },
+    "E": {
+      "item": "foodindustrial:graphite_electrode"
+    },
+    "F": {
+      "item": "foodindustrial:chemical_frame"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "CEC",
+    "RFR",
+    "CEC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:electrolyzer"
+  }
+}

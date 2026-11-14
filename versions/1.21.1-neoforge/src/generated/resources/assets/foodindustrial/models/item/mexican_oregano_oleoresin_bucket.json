@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:mexican_oregano_oleoresin",
+  "loader": "neoforge:fluid_container"
+}

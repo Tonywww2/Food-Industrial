@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:blue_ice",
+    "C": "#c:ingots/copper",
+    "I": "#c:ingots/iron",
+    "R": "#c:dusts/redstone"
+  },
+  "pattern": [
+    "IBI",
+    "CRC",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:cryo_jacket"
+  }
+}

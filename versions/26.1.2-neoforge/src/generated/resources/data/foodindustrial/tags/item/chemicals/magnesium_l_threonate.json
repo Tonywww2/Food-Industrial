@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:magnesium_l_threonate",
+    {
+      "id": "#forge:dusts/magnesium_l_threonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/magnesium_l_threonate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_l_threonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_l_threonate",
+      "required": false
+    }
+  ]
+}

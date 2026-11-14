@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lemon_extract",
+    "foodindustrial:flowing_lemon_extract",
+    {
+      "id": "#forge:lemon_extract",
+      "required": false
+    },
+    {
+      "id": "#c:lemon_extract",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylbutyl_acetate",
+    "foodindustrial:flowing_ethylbutyl_acetate",
+    {
+      "id": "#forge:ethylbutyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:ethylbutyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:stabilized_chlorine_dioxide",
       "required": false
+    },
+    {
+      "id": "#c:stabilized_chlorine_dioxide",
+      "required": false
     }
   ]
 }

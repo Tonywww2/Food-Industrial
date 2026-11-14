@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:earth_kiln",
+  "name": "book.foodindustrial.manual.entry.history_hartshorn",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:earth_kiln",
+      "text": "book.foodindustrial.manual.entry.history_hartshorn.text"
+    }
+  ],
+  "sortnum": 7
+}

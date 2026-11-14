@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:casein_phosphopeptide",
+    {
+      "id": "#forge:dusts/casein_phosphopeptide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/casein_phosphopeptide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/casein_phosphopeptide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/casein_phosphopeptide",
+      "required": false
+    }
+  ]
+}

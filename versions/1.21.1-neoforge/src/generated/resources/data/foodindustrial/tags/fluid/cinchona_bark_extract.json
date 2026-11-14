@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cinchona_bark_extract",
+    "foodindustrial:flowing_cinchona_bark_extract",
+    {
+      "id": "#forge:cinchona_bark_extract",
+      "required": false
+    },
+    {
+      "id": "#c:cinchona_bark_extract",
+      "required": false
+    }
+  ]
+}

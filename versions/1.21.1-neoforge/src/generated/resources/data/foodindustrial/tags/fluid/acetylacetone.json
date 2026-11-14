@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylacetone",
+    "foodindustrial:flowing_acetylacetone",
+    {
+      "id": "#forge:acetylacetone",
+      "required": false
+    },
+    {
+      "id": "#c:acetylacetone",
+      "required": false
+    }
+  ]
+}

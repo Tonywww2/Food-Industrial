@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:roman_chamomile_absolute",
+    "foodindustrial:flowing_roman_chamomile_absolute",
+    {
+      "id": "#forge:roman_chamomile_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:roman_chamomile_absolute",
+      "required": false
+    }
+  ]
+}

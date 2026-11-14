@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:dimethyldichlorosilane"
+  },
+  "outputs": [
+    {
+      "amount": 900,
+      "components": {
+        "foodindustrial:purity": 29
+      },
+      "id": "foodindustrial:dimethyldichlorosilane"
+    },
+    {
+      "amount": 100,
+      "components": {
+        "foodindustrial:purity": 29
+      },
+      "id": "foodindustrial:methyltrichlorosilane"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

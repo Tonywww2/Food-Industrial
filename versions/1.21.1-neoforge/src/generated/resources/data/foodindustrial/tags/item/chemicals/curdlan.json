@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:curdlan",
     {
+      "id": "#forge:dusts/curdlan",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/curdlan",
+      "required": false
+    },
+    {
       "id": "#c:dusts/curdlan",
       "required": false
     },

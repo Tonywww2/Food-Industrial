@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/l_aspartic_acid"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/d_alanine"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:tetramethylthietanamine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:alitame"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

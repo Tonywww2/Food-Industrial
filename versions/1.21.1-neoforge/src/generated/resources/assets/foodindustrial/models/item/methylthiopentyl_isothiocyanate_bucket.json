@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methylthiopentyl_isothiocyanate",
+  "loader": "neoforge:fluid_container"
+}

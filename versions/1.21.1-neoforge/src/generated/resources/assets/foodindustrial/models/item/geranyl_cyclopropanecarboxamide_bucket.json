@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:geranyl_cyclopropanecarboxamide",
+  "loader": "neoforge:fluid_container"
+}

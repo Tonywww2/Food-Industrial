@@ -6,6 +6,10 @@
     {
       "id": "#forge:calcium_ferrocyanide",
       "required": false
+    },
+    {
+      "id": "#c:calcium_ferrocyanide",
+      "required": false
     }
   ]
 }

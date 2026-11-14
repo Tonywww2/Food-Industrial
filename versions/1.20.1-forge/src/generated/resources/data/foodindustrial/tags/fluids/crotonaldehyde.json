@@ -6,6 +6,10 @@
     {
       "id": "#forge:crotonaldehyde",
       "required": false
+    },
+    {
+      "id": "#c:crotonaldehyde",
+      "required": false
     }
   ]
 }

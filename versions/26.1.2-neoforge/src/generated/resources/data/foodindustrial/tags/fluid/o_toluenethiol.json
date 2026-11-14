@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_toluenethiol",
+    "foodindustrial:flowing_o_toluenethiol",
+    {
+      "id": "#forge:o_toluenethiol",
+      "required": false
+    },
+    {
+      "id": "#c:o_toluenethiol",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_acetate",
     {
+      "id": "#forge:dusts/sodium_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_acetate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_acetate",
       "required": false
     },

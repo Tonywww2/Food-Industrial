@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:cis_5_octenyl_chloride",
+  "loader": "neoforge:fluid_container"
+}

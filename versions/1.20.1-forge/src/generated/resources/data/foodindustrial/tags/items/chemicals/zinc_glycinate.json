@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_glycinate",
+    {
+      "id": "#forge:dusts/zinc_glycinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_glycinate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_glycinate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_glycinate",
+      "required": false
+    }
+  ]
+}

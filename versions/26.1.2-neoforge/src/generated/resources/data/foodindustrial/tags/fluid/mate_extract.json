@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mate_extract",
+    "foodindustrial:flowing_mate_extract",
+    {
+      "id": "#forge:mate_extract",
+      "required": false
+    },
+    {
+      "id": "#c:mate_extract",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "thermal:pyrolyzer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "energy": 16000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/bone"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:ammonium_carbonate",
+      "nbt": "{Purity:5b}"
+    },
+    {
+      "count": 2,
+      "item": "foodindustrial:hydroxyapatite",
+      "nbt": "{Purity:25b}"
+    }
+  ]
+}

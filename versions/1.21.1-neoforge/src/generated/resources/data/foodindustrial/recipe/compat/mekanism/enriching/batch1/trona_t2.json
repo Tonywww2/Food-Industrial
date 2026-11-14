@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "foodindustrial:materials/trona"
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": 28
+    },
+    "count": 1,
+    "id": "foodindustrial:trona"
+  }
+}

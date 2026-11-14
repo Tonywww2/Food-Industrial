@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_cyclamate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_cyclamate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_cyclamate",
+      "required": false
     }
   ]
 }

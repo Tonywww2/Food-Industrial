@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_mercaptobutyrate",
+    "foodindustrial:flowing_ethyl_mercaptobutyrate",
+    {
+      "id": "#forge:ethyl_mercaptobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_mercaptobutyrate",
+      "required": false
+    }
+  ]
+}

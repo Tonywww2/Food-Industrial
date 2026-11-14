@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_isothiocyanate",
+    "foodindustrial:flowing_isoamyl_isothiocyanate",
+    {
+      "id": "#forge:isoamyl_isothiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_isothiocyanate",
+      "required": false
+    }
+  ]
+}

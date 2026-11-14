@@ -4,6 +4,10 @@
     "foodindustrial:maltitol_syrup",
     "foodindustrial:flowing_maltitol_syrup",
     {
+      "id": "#forge:maltitol_syrup",
+      "required": false
+    },
+    {
       "id": "#c:maltitol_syrup",
       "required": false
     }

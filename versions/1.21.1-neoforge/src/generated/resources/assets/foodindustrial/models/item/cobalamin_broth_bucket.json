@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:cobalamin_broth",
+  "loader": "neoforge:fluid_container"
+}

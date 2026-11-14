@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutanol",
+    "foodindustrial:flowing_isobutanol",
+    {
+      "id": "#forge:isobutanol",
+      "required": false
+    },
+    {
+      "id": "#c:isobutanol",
+      "required": false
+    }
+  ]
+}

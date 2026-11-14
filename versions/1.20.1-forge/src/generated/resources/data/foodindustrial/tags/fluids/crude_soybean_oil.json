@@ -6,6 +6,10 @@
     {
       "id": "#forge:crude_soybean_oil",
       "required": false
+    },
+    {
+      "id": "#c:crude_soybean_oil",
+      "required": false
     }
   ]
 }

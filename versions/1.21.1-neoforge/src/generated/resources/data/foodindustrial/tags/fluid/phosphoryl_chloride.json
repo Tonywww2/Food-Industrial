@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phosphoryl_chloride",
+    "foodindustrial:flowing_phosphoryl_chloride",
+    {
+      "id": "#forge:phosphoryl_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:phosphoryl_chloride",
+      "required": false
+    }
+  ]
+}

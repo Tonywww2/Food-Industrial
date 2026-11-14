@@ -6,6 +6,10 @@
     {
       "id": "#forge:m_cresol",
       "required": false
+    },
+    {
+      "id": "#c:m_cresol",
+      "required": false
     }
   ]
 }

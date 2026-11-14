@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetonitrile",
+    "foodindustrial:flowing_acetonitrile",
+    {
+      "id": "#forge:acetonitrile",
+      "required": false
+    },
+    {
+      "id": "#c:acetonitrile",
+      "required": false
+    }
+  ]
+}

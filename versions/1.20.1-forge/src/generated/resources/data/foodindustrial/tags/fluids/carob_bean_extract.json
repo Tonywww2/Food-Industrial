@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:carob_bean_extract",
+    "foodindustrial:flowing_carob_bean_extract",
+    {
+      "id": "#forge:carob_bean_extract",
+      "required": false
+    },
+    {
+      "id": "#c:carob_bean_extract",
+      "required": false
+    }
+  ]
+}

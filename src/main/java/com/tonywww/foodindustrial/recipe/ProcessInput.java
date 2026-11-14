@@ -63,7 +63,7 @@ public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInpu
 
         /** The stack matches the ingredient (purity threshold included) and holds enough items. */
         public boolean test(ItemStack stack) {
-            return !stack.isEmpty() && stack.getCount() >= count && ingredient.test(stack);
+            return !stack.isEmpty() && stack.getCount() >= count && PlatformIngredients.fresh(ingredient).test(stack);
         }
 
         /** Effective purity of a consumed stack, or {@link Purity#NONE}. */

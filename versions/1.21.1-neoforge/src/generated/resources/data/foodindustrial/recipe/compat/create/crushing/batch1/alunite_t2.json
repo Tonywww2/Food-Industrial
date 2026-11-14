@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/alunite"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": 28
+      },
+      "count": 1,
+      "id": "foodindustrial:alunite"
+    }
+  ]
+}

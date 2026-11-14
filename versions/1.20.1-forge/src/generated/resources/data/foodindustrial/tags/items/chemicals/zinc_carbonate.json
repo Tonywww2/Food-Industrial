@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_carbonate",
+    {
+      "id": "#forge:dusts/zinc_carbonate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_carbonate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_carbonate",
+      "required": false
+    }
+  ]
+}

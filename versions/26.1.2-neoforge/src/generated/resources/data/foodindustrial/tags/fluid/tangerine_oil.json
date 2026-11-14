@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tangerine_oil",
+    "foodindustrial:flowing_tangerine_oil",
+    {
+      "id": "#forge:tangerine_oil",
+      "required": false
+    },
+    {
+      "id": "#c:tangerine_oil",
+      "required": false
+    }
+  ]
+}

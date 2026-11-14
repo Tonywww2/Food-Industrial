@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myristic_acid",
+    {
+      "id": "#forge:dusts/myristic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/myristic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/myristic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/myristic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_2_cis_6_dodecadienal",
+    "foodindustrial:flowing_trans_2_cis_6_dodecadienal",
+    {
+      "id": "#forge:trans_2_cis_6_dodecadienal",
+      "required": false
+    },
+    {
+      "id": "#c:trans_2_cis_6_dodecadienal",
+      "required": false
+    }
+  ]
+}

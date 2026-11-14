@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pinanyl_mercaptan",
+    "foodindustrial:flowing_pinanyl_mercaptan",
+    {
+      "id": "#forge:pinanyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:pinanyl_mercaptan",
+      "required": false
+    }
+  ]
+}

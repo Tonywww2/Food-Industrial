@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercaptothiophene",
+    "foodindustrial:flowing_mercaptothiophene",
+    {
+      "id": "#forge:mercaptothiophene",
+      "required": false
+    },
+    {
+      "id": "#c:mercaptothiophene",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butenediol",
+    "foodindustrial:flowing_butenediol",
+    {
+      "id": "#forge:butenediol",
+      "required": false
+    },
+    {
+      "id": "#c:butenediol",
+      "required": false
+    }
+  ]
+}

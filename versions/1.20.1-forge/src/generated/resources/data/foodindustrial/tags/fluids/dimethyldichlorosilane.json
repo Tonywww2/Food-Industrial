@@ -6,6 +6,10 @@
     {
       "id": "#forge:dimethyldichlorosilane",
       "required": false
+    },
+    {
+      "id": "#c:dimethyldichlorosilane",
+      "required": false
     }
   ]
 }

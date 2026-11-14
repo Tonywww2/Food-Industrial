@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:maltol_propionate",
+  "loader": "forge:fluid_container"
+}

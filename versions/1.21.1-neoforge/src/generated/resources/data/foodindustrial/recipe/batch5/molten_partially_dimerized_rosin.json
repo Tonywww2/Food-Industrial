@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/partially_dimerized_rosin"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:molten_partially_dimerized_rosin"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

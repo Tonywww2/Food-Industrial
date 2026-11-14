@@ -4,6 +4,10 @@
     "foodindustrial:naphthalene_trisulfonic_acid",
     "foodindustrial:flowing_naphthalene_trisulfonic_acid",
     {
+      "id": "#forge:naphthalene_trisulfonic_acid",
+      "required": false
+    },
+    {
       "id": "#c:naphthalene_trisulfonic_acid",
       "required": false
     }

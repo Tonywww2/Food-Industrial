@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:kelp_extract",
+  "loader": "forge:fluid_container"
+}

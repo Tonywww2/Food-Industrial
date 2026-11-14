@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butanethiol",
+    "foodindustrial:flowing_butanethiol",
+    {
+      "id": "#forge:butanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:butanethiol",
+      "required": false
+    }
+  ]
+}

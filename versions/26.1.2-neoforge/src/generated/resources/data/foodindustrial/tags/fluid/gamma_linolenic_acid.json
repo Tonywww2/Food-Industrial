@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_linolenic_acid",
+    "foodindustrial:flowing_gamma_linolenic_acid",
+    {
+      "id": "#forge:gamma_linolenic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_linolenic_acid",
+      "required": false
+    }
+  ]
+}

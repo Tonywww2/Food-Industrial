@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/dried_kelp"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:kelp_ash"
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200,
+  "vanilla_devices": [
+    "campfire",
+    "furnace"
+  ]
+}

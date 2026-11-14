@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "K": {
+      "item": "foodindustrial:kiln_brick"
+    },
+    "N": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "pattern": [
+    "KNK",
+    "NIN",
+    "KNK"
+  ],
+  "result": {
+    "count": 8,
+    "id": "foodindustrial:refractory_bricks"
+  }
+}

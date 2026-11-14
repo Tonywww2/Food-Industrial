@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butylidenephthalide",
+    "foodindustrial:flowing_butylidenephthalide",
+    {
+      "id": "#forge:butylidenephthalide",
+      "required": false
+    },
+    {
+      "id": "#c:butylidenephthalide",
+      "required": false
+    }
+  ]
+}

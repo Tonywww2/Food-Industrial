@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_propylanisole",
+    "foodindustrial:flowing_p_propylanisole",
+    {
+      "id": "#forge:p_propylanisole",
+      "required": false
+    },
+    {
+      "id": "#c:p_propylanisole",
+      "required": false
+    }
+  ]
+}

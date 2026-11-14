@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxy_heptanethiol",
+    "foodindustrial:flowing_methoxy_heptanethiol",
+    {
+      "id": "#forge:methoxy_heptanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:methoxy_heptanethiol",
+      "required": false
+    }
+  ]
+}

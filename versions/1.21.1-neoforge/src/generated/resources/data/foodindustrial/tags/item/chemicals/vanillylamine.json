@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillylamine",
+    {
+      "id": "#forge:dusts/vanillylamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vanillylamine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/vanillylamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vanillylamine",
+      "required": false
+    }
+  ]
+}

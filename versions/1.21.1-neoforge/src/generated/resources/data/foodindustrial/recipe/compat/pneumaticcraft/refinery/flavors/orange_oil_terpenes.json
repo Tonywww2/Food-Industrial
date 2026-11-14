@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:cold_pressed_orange_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "id": "foodindustrial:terpeneless_orange_peel_oil"
+    },
+    {
+      "amount": 250,
+      "id": "foodindustrial:orange_oil_terpenes"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

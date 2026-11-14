@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tristearin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tristearin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tristearin",
+      "required": false
     }
   ]
 }

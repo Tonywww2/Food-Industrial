@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:nonylcyclopentanone",
+  "loader": "forge:fluid_container"
+}

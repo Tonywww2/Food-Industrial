@@ -1,0 +1,40 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:pine_needle_oil"
+  },
+  "result": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:l_limonene",
+      "nbt": "{Purity:16b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:l_bornyl_acetate",
+      "nbt": "{Purity:16b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:bornyl_acetate",
+      "nbt": "{Purity:16b}"
+    }
+  ]
+}

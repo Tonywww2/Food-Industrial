@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ethyl_maltol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ethyl_maltol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_maltol",
+      "required": false
     }
   ]
 }

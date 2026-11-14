@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonadienol_2_4",
+    "foodindustrial:flowing_nonadienol_2_4",
+    {
+      "id": "#forge:nonadienol_2_4",
+      "required": false
+    },
+    {
+      "id": "#c:nonadienol_2_4",
+      "required": false
+    }
+  ]
+}

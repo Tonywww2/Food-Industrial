@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 5,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/calcium_l_threonate"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/magnesium_carbonate"
+      }
+    },
+    {
+      "count": 5,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/oxalic_acid"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "item": "foodindustrial:magnesium_l_threonate",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "count": 5,
+      "item": "foodindustrial:calcium_oxalate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

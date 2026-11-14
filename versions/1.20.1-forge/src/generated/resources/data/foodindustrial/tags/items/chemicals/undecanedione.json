@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecanedione",
+    {
+      "id": "#forge:dusts/undecanedione",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/undecanedione",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/undecanedione",
+      "required": false
+    },
+    {
+      "id": "#c:gems/undecanedione",
+      "required": false
+    }
+  ]
+}

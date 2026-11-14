@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menadione",
+    {
+      "id": "#forge:dusts/menadione",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/menadione",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/menadione",
+      "required": false
+    },
+    {
+      "id": "#c:gems/menadione",
+      "required": false
+    }
+  ]
+}

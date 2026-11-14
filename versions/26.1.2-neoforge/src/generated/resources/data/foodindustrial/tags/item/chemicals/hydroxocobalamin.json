@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxocobalamin",
+    {
+      "id": "#forge:dusts/hydroxocobalamin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxocobalamin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxocobalamin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxocobalamin",
+      "required": false
+    }
+  ]
+}

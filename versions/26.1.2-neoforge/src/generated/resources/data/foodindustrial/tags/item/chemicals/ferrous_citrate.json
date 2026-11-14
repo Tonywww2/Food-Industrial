@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ferrous_citrate",
+    {
+      "id": "#forge:dusts/ferrous_citrate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ferrous_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ferrous_citrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ferrous_citrate",
+      "required": false
+    }
+  ]
+}

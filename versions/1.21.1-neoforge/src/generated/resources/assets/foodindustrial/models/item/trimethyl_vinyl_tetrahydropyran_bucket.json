@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:trimethyl_vinyl_tetrahydropyran",
+  "loader": "neoforge:fluid_container"
+}

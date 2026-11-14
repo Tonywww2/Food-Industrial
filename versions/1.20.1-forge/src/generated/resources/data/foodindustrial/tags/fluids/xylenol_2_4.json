@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:xylenol_2_4",
+    "foodindustrial:flowing_xylenol_2_4",
+    {
+      "id": "#forge:xylenol_2_4",
+      "required": false
+    },
+    {
+      "id": "#c:xylenol_2_4",
+      "required": false
+    }
+  ]
+}

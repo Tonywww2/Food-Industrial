@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:myo_inositol",
+    {
+      "id": "#forge:dusts/myo_inositol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/myo_inositol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/myo_inositol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/myo_inositol",
+      "required": false
+    }
+  ]
+}

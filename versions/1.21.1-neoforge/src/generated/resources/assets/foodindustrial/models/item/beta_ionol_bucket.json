@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:beta_ionol",
+  "loader": "neoforge:fluid_container"
+}

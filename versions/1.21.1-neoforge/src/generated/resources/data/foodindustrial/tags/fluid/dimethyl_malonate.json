@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_malonate",
+    "foodindustrial:flowing_dimethyl_malonate",
+    {
+      "id": "#forge:dimethyl_malonate",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_malonate",
+      "required": false
+    }
+  ]
+}

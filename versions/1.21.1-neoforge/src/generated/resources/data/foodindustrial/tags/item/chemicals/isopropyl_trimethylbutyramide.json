@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopropyl_trimethylbutyramide",
+    {
+      "id": "#forge:dusts/isopropyl_trimethylbutyramide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isopropyl_trimethylbutyramide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/isopropyl_trimethylbutyramide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/isopropyl_trimethylbutyramide",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/lignin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/lignin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lignin",
+      "required": false
     }
   ]
 }

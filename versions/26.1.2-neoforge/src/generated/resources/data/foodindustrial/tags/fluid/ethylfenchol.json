@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylfenchol",
+    "foodindustrial:flowing_ethylfenchol",
+    {
+      "id": "#forge:ethylfenchol",
+      "required": false
+    },
+    {
+      "id": "#c:ethylfenchol",
+      "required": false
+    }
+  ]
+}

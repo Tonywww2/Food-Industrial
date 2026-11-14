@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "foodindustrial:fish_liver_oil"
+    }
+  ],
+  "results": [
+    {
+      "amount": 750,
+      "id": "foodindustrial:fish_liver_oil"
+    }
+  ]
+}

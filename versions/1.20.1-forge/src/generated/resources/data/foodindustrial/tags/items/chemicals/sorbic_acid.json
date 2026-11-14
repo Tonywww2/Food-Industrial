@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sorbic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sorbic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sorbic_acid",
+      "required": false
     }
   ]
 }

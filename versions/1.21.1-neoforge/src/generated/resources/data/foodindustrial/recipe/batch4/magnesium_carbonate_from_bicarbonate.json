@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 5000,
+        "tag": "foodindustrial:magnesium_bicarbonate"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:magnesium_carbonate"
+    },
+    {
+      "amount": 6000,
+      "fluid": "foodindustrial:carbon_dioxide"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

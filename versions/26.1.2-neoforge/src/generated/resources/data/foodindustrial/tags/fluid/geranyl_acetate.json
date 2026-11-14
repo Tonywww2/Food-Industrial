@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_acetate",
+    "foodindustrial:flowing_geranyl_acetate",
+    {
+      "id": "#forge:geranyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_acetate",
+      "required": false
+    }
+  ]
+}

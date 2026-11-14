@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylfuranone",
+    "foodindustrial:flowing_dimethylfuranone",
+    {
+      "id": "#forge:dimethylfuranone",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylfuranone",
+      "required": false
+    }
+  ]
+}

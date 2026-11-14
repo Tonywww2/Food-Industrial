@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/stannous_chloride",
       "required": false
+    },
+    {
+      "id": "#c:dusts/stannous_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/stannous_chloride",
+      "required": false
     }
   ]
 }

@@ -39,20 +39,28 @@ public final class ModWorldgen {
     private static void generate(PlatformDatagen.Sink sink) {
         ore(sink, ModWorldBlocks.GYPSUM_ORE.id(), 12, 8, 0, 80, DESERTS, null);
         ore(sink, ModWorldBlocks.ALUNITE_ORE.id(), 9, 6, 32, 160, MOUNTAINS, null);
-        ore(sink, ModWorldBlocks.ROCK_SALT.id(), 24, 3, 0, 48, OVERWORLD, null);
+        // 2026-11-12 (user: lower; was size 24 × 3, about 100 blocks a chunk)
+        ore(sink, ModWorldBlocks.ROCK_SALT.id(), 16, 2, 0, 48, OVERWORLD, null);
         ore(sink, ModWorldBlocks.MAGNESITE_ORE.id(), 9, 4, 0, 64, OVERWORLD, null);
         ore(sink, ModWorldBlocks.APATITE_ORE.id(), 9, 4, 0, 64, OVERWORLD, Fallbacks.APATITE);
         ore(sink, ModWorldBlocks.SULFUR_ORE.id(), 7, 5, 0, 32, OVERWORLD, Fallbacks.SULFUR);
+        ore(sink, ModWorldBlocks.SELENIUM_ORE.id(), 6, 2, 0, 48, OVERWORLD, null);
+        ore(sink, ModWorldBlocks.CHROMITE_ORE.id(), 8, 3, 0, 64, MOUNTAINS, null);
         crust(sink, ModWorldBlocks.TRONA_ORE.id(), 20, 6);
         crust(sink, ModWorldBlocks.NITRATINE.id(), 16, 10);
 
         List<String> plains = List.of("minecraft:plains", "minecraft:sunflower_plains");
         patch(sink, "wild_stevia", state("wild_stevia", null), 24, join(plains, List.of("minecraft:savanna", "minecraft:savanna_plateau")), null);
         patch(sink, "wild_mint", state("wild_mint", null), 24, join(plains, List.of("minecraft:meadow")), null);
+        // I12 (2026-11-10, numbers to review): turmeric in jungles and savannas, chili in savannas and plains
+        patch(sink, "wild_turmeric_rhizome", state("wild_turmeric_rhizome", null), 24,
+            join(JUNGLES, List.of("minecraft:savanna", "minecraft:savanna_plateau")), null);
+        patch(sink, "wild_chili_pepper", state("wild_chili_pepper", null), 24, join(plains, List.of("minecraft:savanna", "minecraft:savanna_plateau")), null);
         patch(sink, "wild_rosemary", state("wild_rosemary", null), 24,
             List.of("minecraft:meadow", "minecraft:windswept_hills", "minecraft:windswept_gravelly_hills", "minecraft:windswept_forest"), null);
         patch(sink, "wild_indigo_plant", state("wild_indigo_plant", null), 16, List.of("minecraft:river", "minecraft:swamp"), null);
-        patch(sink, "wild_rice", state("wild_rice", null), 16, List.of("minecraft:swamp", "minecraft:mangrove_swamp", "minecraft:river"), Fallbacks.RICE);
+        // wild paddy on every node since 2026-11-12 (11 问题 43: paddy apart from the milled rice, no longer a fallback)
+        patch(sink, "wild_paddy", state("wild_paddy", null), 16, List.of("minecraft:swamp", "minecraft:mangrove_swamp", "minecraft:river"), null);
         patch(sink, "gardenia_bush", state("gardenia_bush", "age", "3"), 32, JUNGLES, null);
         vanillaPods(sink);
         seaPlant(sink, "gelidium", 8, List.of("minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:deep_lukewarm_ocean"));

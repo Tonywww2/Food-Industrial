@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leucinamide",
+    {
+      "id": "#forge:dusts/leucinamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/leucinamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/leucinamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/leucinamide",
+      "required": false
+    }
+  ]
+}

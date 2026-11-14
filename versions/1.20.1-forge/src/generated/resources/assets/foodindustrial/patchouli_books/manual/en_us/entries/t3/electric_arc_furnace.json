@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t3",
+  "icon": "foodindustrial:electric_arc_furnace",
+  "name": "book.foodindustrial.manual.entry.electric_arc_furnace",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:electric_arc_furnace",
+      "text": "book.foodindustrial.manual.entry.electric_arc_furnace.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:electric_arc_furnace[facing=south]",
+          "A": "foodindustrial:refractory_bricks"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.electric_arc_furnace"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.electric_arc_furnace.structure"
+    }
+  ],
+  "sortnum": 4
+}

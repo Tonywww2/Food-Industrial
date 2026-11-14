@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:hex_3_enyl_2_methylbutanoate",
+  "loader": "forge:fluid_container"
+}

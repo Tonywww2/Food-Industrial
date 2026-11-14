@@ -1,0 +1,51 @@
+{
+  "category": "foodindustrial:t3",
+  "icon": "foodindustrial:gas_phase_reactor",
+  "name": "book.foodindustrial.manual.entry.gas_phase_reactor",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:gas_phase_reactor",
+      "text": "book.foodindustrial.manual.entry.gas_phase_reactor.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:gas_phase_reactor[facing=south]",
+          "A": "foodindustrial:furnace_tube",
+          "B": "foodindustrial:refractory_bricks"
+        },
+        "pattern": [
+          [
+            "   ",
+            " A ",
+            "   "
+          ],
+          [
+            "BBB",
+            "BBB",
+            "BBB"
+          ],
+          [
+            "BBB",
+            "B B",
+            "B0B"
+          ],
+          [
+            "BBB",
+            "BBB",
+            "BBB"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.gas_phase_reactor"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.gas_phase_reactor.structure"
+    }
+  ],
+  "sortnum": 5
+}

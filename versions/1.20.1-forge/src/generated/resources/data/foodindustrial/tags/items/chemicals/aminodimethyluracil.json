@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/aminodimethyluracil",
       "required": false
+    },
+    {
+      "id": "#c:dusts/aminodimethyluracil",
+      "required": false
+    },
+    {
+      "id": "#c:gems/aminodimethyluracil",
+      "required": false
     }
   ]
 }

@@ -6,6 +6,10 @@
     {
       "id": "#forge:sulfuric_acid",
       "required": false
+    },
+    {
+      "id": "#c:sulfuric_acid",
+      "required": false
     }
   ]
 }

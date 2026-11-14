@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/p_methoxyphenol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/p_methoxyphenol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_methoxyphenol",
+      "required": false
     }
   ]
 }

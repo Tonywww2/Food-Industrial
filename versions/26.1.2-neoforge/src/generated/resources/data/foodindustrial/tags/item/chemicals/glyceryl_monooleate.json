@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glyceryl_monooleate",
+    {
+      "id": "#forge:dusts/glyceryl_monooleate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glyceryl_monooleate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/glyceryl_monooleate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/glyceryl_monooleate",
+      "required": false
+    }
+  ]
+}

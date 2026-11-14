@@ -8,6 +8,10 @@
     {
       "id": "#c:ingots/copper",
       "required": false
+    },
+    {
+      "id": "#forge:ingots/copper",
+      "required": false
     }
   ]
 }

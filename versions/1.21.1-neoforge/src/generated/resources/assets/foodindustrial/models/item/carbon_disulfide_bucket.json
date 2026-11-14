@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:carbon_disulfide",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:acetylthio_methylfuran",
+  "loader": "forge:fluid_container"
+}

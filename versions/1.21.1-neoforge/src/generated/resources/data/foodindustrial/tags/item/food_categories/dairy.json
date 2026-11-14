@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:yogurt",
+    "foodindustrial:flavored_yogurt",
+    "foodindustrial:fruit_yogurt",
+    "foodindustrial:sour_cream",
+    "foodindustrial:mozzarella",
+    "foodindustrial:cheddar_cheese",
+    "foodindustrial:cream_cheese",
+    "foodindustrial:processed_cheese_slice",
+    "foodindustrial:condensed_milk",
+    "foodindustrial:milk_powder",
+    "foodindustrial:formula_milk_powder",
+    "foodindustrial:butter",
+    "foodindustrial:whipping_cream",
+    "foodindustrial:milk_tablet",
+    "foodindustrial:double_skin_milk",
+    "foodindustrial:ginger_milk_curd",
+    "foodindustrial:milk_tofu"
+  ]
+}

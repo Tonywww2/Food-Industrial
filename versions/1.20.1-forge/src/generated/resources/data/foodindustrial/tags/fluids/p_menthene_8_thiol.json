@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_menthene_8_thiol",
+    "foodindustrial:flowing_p_menthene_8_thiol",
+    {
+      "id": "#forge:p_menthene_8_thiol",
+      "required": false
+    },
+    {
+      "id": "#c:p_menthene_8_thiol",
+      "required": false
+    }
+  ]
+}

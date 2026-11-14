@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_formate",
+    "foodindustrial:flowing_ethyl_formate",
+    {
+      "id": "#forge:ethyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_formate",
+      "required": false
+    }
+  ]
+}

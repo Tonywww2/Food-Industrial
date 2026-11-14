@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:yerba_santa_fluid_extract",
+  "loader": "forge:fluid_container"
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:succinic_anhydride",
     {
+      "id": "#forge:dusts/succinic_anhydride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/succinic_anhydride",
+      "required": false
+    },
+    {
       "id": "#c:dusts/succinic_anhydride",
       "required": false
     },

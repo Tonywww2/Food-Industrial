@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:neryl_acetate",
+    "foodindustrial:flowing_neryl_acetate",
+    {
+      "id": "#forge:neryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:neryl_acetate",
+      "required": false
+    }
+  ]
+}

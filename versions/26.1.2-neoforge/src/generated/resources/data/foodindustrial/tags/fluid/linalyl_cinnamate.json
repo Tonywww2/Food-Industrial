@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:linalyl_cinnamate",
+    "foodindustrial:flowing_linalyl_cinnamate",
+    {
+      "id": "#forge:linalyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:linalyl_cinnamate",
+      "required": false
+    }
+  ]
+}

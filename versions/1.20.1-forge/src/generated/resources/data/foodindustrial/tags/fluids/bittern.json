@@ -6,6 +6,10 @@
     {
       "id": "#forge:bittern",
       "required": false
+    },
+    {
+      "id": "#c:bittern",
+      "required": false
     }
   ]
 }

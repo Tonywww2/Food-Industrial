@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:heptyl_methyl_dihydrofuranone",
+  "loader": "neoforge:fluid_container"
+}

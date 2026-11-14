@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetamide",
+    {
+      "id": "#forge:dusts/acetamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetamide",
+      "required": false
+    }
+  ]
+}

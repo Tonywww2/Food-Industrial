@@ -4,6 +4,10 @@
     "foodindustrial:ethylene_glycol",
     "foodindustrial:flowing_ethylene_glycol",
     {
+      "id": "#forge:ethylene_glycol",
+      "required": false
+    },
+    {
       "id": "#c:ethylene_glycol",
       "required": false
     }

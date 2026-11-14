@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gum_base",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gum_base",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gum_base",
+      "required": false
     }
   ]
 }

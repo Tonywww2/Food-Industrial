@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glyceryl_tripropanoate",
+    "foodindustrial:flowing_glyceryl_tripropanoate",
+    {
+      "id": "#forge:glyceryl_tripropanoate",
+      "required": false
+    },
+    {
+      "id": "#c:glyceryl_tripropanoate",
+      "required": false
+    }
+  ]
+}

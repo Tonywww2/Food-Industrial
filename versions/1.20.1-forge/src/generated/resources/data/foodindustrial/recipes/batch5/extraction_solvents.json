@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrotreated_naphtha"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 600,
+      "fluid": "foodindustrial:vegetable_oil_extraction_solvent"
+    },
+    {
+      "amount": 300,
+      "fluid": "foodindustrial:petroleum_ether"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "multi_fraction"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

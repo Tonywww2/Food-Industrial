@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glycerophosphoric_acid",
+    "foodindustrial:flowing_glycerophosphoric_acid",
+    {
+      "id": "#forge:glycerophosphoric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:glycerophosphoric_acid",
+      "required": false
+    }
+  ]
+}

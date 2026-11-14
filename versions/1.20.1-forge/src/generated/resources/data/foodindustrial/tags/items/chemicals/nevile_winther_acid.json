@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/nevile_winther_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/nevile_winther_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/nevile_winther_acid",
+      "required": false
     }
   ]
 }

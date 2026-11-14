@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:sieve",
+  "name": "book.foodindustrial.manual.entry.sieve",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:sieve",
+      "text": "book.foodindustrial.manual.entry.sieve.text",
+      "title": "book.foodindustrial.manual.entry.sieve"
+    }
+  ],
+  "sortnum": 1
+}

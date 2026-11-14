@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:cocoa_shell_color",
     {
+      "id": "#forge:dusts/cocoa_shell_color",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cocoa_shell_color",
+      "required": false
+    },
+    {
       "id": "#c:dusts/cocoa_shell_color",
       "required": false
     },

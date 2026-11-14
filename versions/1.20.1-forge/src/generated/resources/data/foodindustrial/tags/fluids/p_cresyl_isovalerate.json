@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_cresyl_isovalerate",
+    "foodindustrial:flowing_p_cresyl_isovalerate",
+    {
+      "id": "#forge:p_cresyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:p_cresyl_isovalerate",
+      "required": false
+    }
+  ]
+}

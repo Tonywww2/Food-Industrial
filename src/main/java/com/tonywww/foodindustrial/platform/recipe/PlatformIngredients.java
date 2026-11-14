@@ -114,7 +114,7 @@ public final class PlatformIngredients {
     public static List<Item> candidateItems(Ingredient ingredient) {
         Set<Item> items = new LinkedHashSet<>();
         //? if forge {
-        Ingredient base = ingredient instanceof ForgePurityIngredient purity ? purity.base() : ingredient;
+        Ingredient base = fresh(ingredient instanceof ForgePurityIngredient purity ? purity.base() : ingredient);
         for (ItemStack stack : base.getItems()) {
             items.add(stack.getItem());
         }
@@ -132,13 +132,37 @@ public final class PlatformIngredients {
         return new ArrayList<>(items);
     }
 
-    /** Stacks to show for an ingredient (purity ingredients list their qualifying purity variants). */
+    /**
+     * The ingredient with its item list rebuilt if tags changed since it was built (Forge 1.20.1 caches
+     * the list of a tag ingredient for good); cheap when nothing changed. Other nodes: unchanged.
+     */
+    public static Ingredient fresh(Ingredient ingredient) {
+        //? if forge {
+        if (ingredient instanceof ForgePurityIngredient purity) {
+            purity.base().getStackingIds();
+        }
+        ingredient.getStackingIds();
+        //?}
+        return ingredient;
+    }
+
+    /**
+     * Stacks to show for an ingredient (purity ingredients list their qualifying purity variants); empty
+     * when its tag has no items in this pack.
+     */
     public static List<ItemStack> displayStacks(Ingredient ingredient) {
         //? if forge {
-        return Arrays.asList(ingredient.getItems());
+        List<ItemStack> stacks = Arrays.asList(fresh(ingredient).getItems());
         //?} else {
-        /*return NeoPurityIngredient.displayStacks(ingredient);
+        /*List<ItemStack> stacks = NeoPurityIngredient.displayStacks(ingredient);
         *///?}
+        return stacks.stream().anyMatch(PlatformIngredients::emptyTagMarker)
+            ? stacks.stream().filter(stack -> !emptyTagMarker(stack)).toList() : stacks;
+    }
+
+    /** The barrier named "Empty Tag: …" that the loader shows for a tag without items (I22, 2026-11-11). */
+    private static boolean emptyTagMarker(ItemStack stack) {
+        return stack.is(net.minecraft.world.item.Items.BARRIER) && stack.getHoverName().getString().startsWith("Empty Tag: ");
     }
 
     /** Codec of a non-empty ingredient in the node's JSON format (custom types included). */
@@ -168,6 +192,10 @@ public final class PlatformIngredients {
                 CraftingHelper.register(PlatformIdentifier.id("purity"), ForgePurityIngredient.SERIALIZER);
             }
         });
+        // Forge 1.20.1 keeps an ingredient's item list once built; tag ingredients a client decodes from
+        // the mod's recipes before the tags arrive would stay empty (I22). Every ingredient rebuilds once
+        // after a tag update, the next time fresh() sees it.
+        com.tonywww.foodindustrial.platform.PlatformEvents.onTagsUpdated(Ingredient::invalidateAll);
         //?} else {
         /*NeoPurityIngredient.bootstrap();
         *///?}

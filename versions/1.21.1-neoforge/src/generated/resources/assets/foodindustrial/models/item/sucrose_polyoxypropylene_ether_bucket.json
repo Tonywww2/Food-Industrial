@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sucrose_polyoxypropylene_ether",
+  "loader": "neoforge:fluid_container"
+}

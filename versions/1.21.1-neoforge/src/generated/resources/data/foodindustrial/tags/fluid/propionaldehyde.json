@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionaldehyde",
+    "foodindustrial:flowing_propionaldehyde",
+    {
+      "id": "#forge:propionaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:propionaldehyde",
+      "required": false
+    }
+  ]
+}

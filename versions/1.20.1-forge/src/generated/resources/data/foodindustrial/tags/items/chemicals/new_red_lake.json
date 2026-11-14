@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/new_red_lake",
       "required": false
+    },
+    {
+      "id": "#c:dusts/new_red_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/new_red_lake",
+      "required": false
     }
   ]
 }

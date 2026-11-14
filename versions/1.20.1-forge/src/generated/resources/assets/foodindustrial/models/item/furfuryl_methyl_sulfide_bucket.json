@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:furfuryl_methyl_sulfide",
+  "loader": "forge:fluid_container"
+}

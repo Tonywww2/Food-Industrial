@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:ingots/copper"
+    },
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "V": {
+      "item": "foodindustrial:steeping_vat"
+    }
+  },
+  "pattern": [
+    "CVC",
+    "RFR",
+    "CRC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:extraction_tank"
+  }
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:chlorodimethylbutane",
       "required": false
+    },
+    {
+      "id": "#c:chlorodimethylbutane",
+      "required": false
     }
   ]
 }

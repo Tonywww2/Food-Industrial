@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:schinus_molle_oil",
+    "foodindustrial:flowing_schinus_molle_oil",
+    {
+      "id": "#forge:schinus_molle_oil",
+      "required": false
+    },
+    {
+      "id": "#c:schinus_molle_oil",
+      "required": false
+    }
+  ]
+}

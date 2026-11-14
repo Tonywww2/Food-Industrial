@@ -4,6 +4,10 @@
     "foodindustrial:diisopropyl_ketone",
     "foodindustrial:flowing_diisopropyl_ketone",
     {
+      "id": "#forge:diisopropyl_ketone",
+      "required": false
+    },
+    {
       "id": "#c:diisopropyl_ketone",
       "required": false
     }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyridoxine_hydrochloride",
+    {
+      "id": "#forge:dusts/pyridoxine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pyridoxine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pyridoxine_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pyridoxine_hydrochloride",
+      "required": false
+    }
+  ]
+}

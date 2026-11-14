@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cineole_1_8",
+    "foodindustrial:flowing_cineole_1_8",
+    {
+      "id": "#forge:cineole_1_8",
+      "required": false
+    },
+    {
+      "id": "#c:cineole_1_8",
+      "required": false
+    }
+  ]
+}

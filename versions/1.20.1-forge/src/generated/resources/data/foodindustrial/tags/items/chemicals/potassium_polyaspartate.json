@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_polyaspartate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_polyaspartate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_polyaspartate",
+      "required": false
     }
   ]
 }

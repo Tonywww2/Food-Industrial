@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "foodindustrial:block/furnace_tube_top",
+    "side": "foodindustrial:block/furnace_tube_side"
+  }
+}

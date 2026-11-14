@@ -1,0 +1,45 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": [
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:cultures/lactobacillus",
+        "min_purity": "food"
+      },
+      "runs": 8
+    },
+    {
+      "ingredient": {
+        "neoforge:ingredient_type": "foodindustrial:purity",
+        "base": "#foodindustrial:cultures/yarrowia",
+        "min_purity": "food"
+      },
+      "runs": 8
+    }
+  ],
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:linoleic_acid"
+      }
+    }
+  ],
+  "mode": "aerated",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:z_dodecenolactone",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

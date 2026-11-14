@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/ascorbic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/ascorbic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ascorbic_acid",
+      "required": false
     }
   ]
 }

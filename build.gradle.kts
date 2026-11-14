@@ -9,6 +9,9 @@ plugins {
 
 fun prop(name: String): String = project.property(name).toString()
 fun optProp(name: String): String? = project.findProperty(name)?.toString()?.takeIf { it.isNotBlank() }
+fun names(value: String?): Set<String> = value?.split(',')?.map { it.trim() }?.filter { it.isNotEmpty() }?.toSet() ?: emptySet()
+/** Optional mods in the dev runtime: fi.devWith (always), plus -PfiWith, minus -PfiWithout. */
+fun devRuntimeMods(): Set<String> = names(optProp("fi.devWith")) + names(optProp("fiWith")) - names(optProp("fiWithout"))
 
 val modId = prop("mod.id")
 val loader = prop("loom.platform")
@@ -44,6 +47,9 @@ run {
     }
 }
 
+// Jars of the integrated mods (deps.mod.*, deps.opt.* and what they nest), listed for the data run.
+val externalJarList: File = layout.buildDirectory.file("fi-external-jars.txt").get().asFile
+
 loom {
     silentMojangMappingsLicense()
 
@@ -62,6 +68,10 @@ loom {
                 "--output", generatedResources.absolutePath,
                 "--existing", rootProject.file("src/main/resources").absolutePath,
             )
+            // The other mods' jars, so integration recipes that clash with their own are left out (I25).
+            property("foodindustrial.externalJars", externalJarList.absolutePath)
+            // Hand-made nutrition data of vanilla and the bundled mods' foods, input of the data run (I34).
+            property("foodindustrial.nutritionInputs", rootProject.file("tools/nutrition").absolutePath)
         }
         configureEach {
             runDir("../../run/$nodeName")
@@ -92,6 +102,13 @@ repositories {
         forRepository { maven("https://api.modrinth.com/maven") { name = "Modrinth" } }
         filter { includeGroup("maven.modrinth") }
     }
+    // Nested mods extracted from the dependency mods (see below), as modules: Loom remaps the mods of one
+    // configuration together only when they are modules, and a mod calling into its nested mod (GTCEu into
+    // Registrate) needs that one on the remap classpath, or the calls keep their SRG names (2026-11-11).
+    exclusiveContent {
+        forRepository { flatDir { name = "JiJ"; dirs(layout.buildDirectory.dir("jij")) } }
+        filter { includeGroup("jij") }
+    }
 }
 
 dependencies {
@@ -116,11 +133,33 @@ dependencies {
     }
     val modCoordinates = project.properties.keys.filter { it.startsWith("deps.mod.") }.sorted().map { prop(it) }
     modCoordinates.forEach { "modImplementation"(it) }
+    // Dev runtime only (deps.dev.<name>): mods that fill material tags for the dev runs, never compiled against.
+    project.properties.keys.filter { it.startsWith("deps.dev.") }.sorted().forEach { "modLocalRuntime"(prop(it)) }
+    // Optional mods (deps.opt.<name>): compiled against always, in the dev runtime only when named in
+    // -PfiWith=<name>,… (or "all"), so runs with and without each mod are possible (I24–I27, 2026-11-11).
+    // fi.devWith names those in every dev run (Jade, 2026-11-12, user); -PfiWithout=<name>,… leaves them out.
+    val withMods = devRuntimeMods()
+    val optionalRuntime = mutableListOf<String>()
+    project.properties.keys.filter { it.startsWith("deps.opt.") }.sorted().forEach { key ->
+        "modCompileOnly"(prop(key))
+        val name = key.removePrefix("deps.opt.")
+        if (name in withMods || "all" in withMods && name !in names(optProp("fiWithout"))) {
+            "modLocalRuntime"(prop(key))
+            optionalRuntime += prop(key)
+        }
+    }
+    // Mods whose Jar-in-Jar contents the dev runtime needs: the deps.mod.* mods, the optional mods in
+    // the runtime and JEI (15.20+ bundles its config library mezz_config). The nested mods of every
+    // optional mod also join the compile classpath: code against Create's kinetic blocks needs the
+    // Flywheel and Ponder classes Create bundles (I25, 2026-11-11).
+    val optionalCoordinates = project.properties.keys.filter { it.startsWith("deps.opt.") }.sorted().map { prop(it) }
+    val jijRuntime = (modCoordinates + optionalRuntime + listOfNotNull(optProp("deps.jei")?.let { "mezz.jei:jei-$mcVersion-$loader:$it" })).toSet()
+    val jijCoordinates = jijRuntime + optionalCoordinates
 
     // Loom dev does not unpack Jar-in-Jar contents (META-INF/jarjar) of dependency mods, e.g. Thermal
     // Foundation bundles thermal_core (mod id "thermal"). Extract them once here: nested mods are remapped
-    // like any other mod, nested plain libraries join the Forge runtime classpath. Dev runtime only.
-    if (modCoordinates.isNotEmpty()) {
+    // like any other mod, nested plain libraries join the Forge runtime classpath.
+    if (jijCoordinates.isNotEmpty()) {
         val jijDir = layout.buildDirectory.dir("jij").get().asFile
         // Resolve through the root project: resolving in this project before Loom finishes its setup
         // locks Loom's local repositories ("Cannot mutate content repository descriptor ...").
@@ -134,13 +173,26 @@ dependencies {
                     forRepository { maven("https://api.modrinth.com/maven") { name = "JiJ Modrinth" } }
                     filter { includeGroup("maven.modrinth") }
                 }
+                exclusiveContent {
+                    forRepository { maven("https://maven.blamejared.com/") { name = "JiJ BlameJared" } }
+                    filter { includeGroup("mezz.jei") }
+                }
                 mavenCentral()
             }
         }
-        val modJars = rootProject.configurations
-            .detachedConfiguration(*modCoordinates.map { rootProject.dependencies.create(it) }.toTypedArray())
-            .apply { isTransitive = false }
-        modJars.files.forEach { modJar ->
+        // Nested jars by coordinate; a nested mod bundled by several mods (or twice, NuclearCraft ships two
+        // Flywheels) is used once, in its highest version.
+        data class Nested(val coordinate: String, val file: File, val modId: String?)
+        val nestedJars = mutableListOf<Nested>()
+        val externalJars = mutableListOf<File>()
+        jijCoordinates.forEach { coordinate ->
+            val modJar = rootProject.configurations
+                .detachedConfiguration(rootProject.dependencies.create(coordinate))
+                .apply { isTransitive = false }
+                .singleFile
+            if (coordinate in modCoordinates || coordinate in optionalCoordinates) {
+                externalJars += modJar
+            }
             ZipFile(modJar).use { zip ->
                 zip.entries().asSequence()
                     .filter { it.name.startsWith("META-INF/jarjar/") && it.name.endsWith(".jar") }
@@ -150,9 +202,58 @@ dependencies {
                             nested.parentFile.mkdirs()
                             zip.getInputStream(entry).use { input -> nested.outputStream().use { input.copyTo(it) } }
                         }
-                        val isMod = ZipFile(nested).use { it.getEntry("META-INF/mods.toml") != null }
-                        if (isMod) "modLocalRuntime"(files(nested)) else "forgeRuntimeLibrary"(files(nested))
+                        // A mod's id from mods.toml; a game library (FMLModType: GAMELIBRARY, e.g. mixinextras-forge)
+                        // counts as a mod under its module name, so FML loads it and applies its MixinConfigs:
+                        // as a plain runtime library MixinExtras never starts and GTCEu's @Local mixins fail.
+                        val modId = ZipFile(nested).use { inner ->
+                            inner.getEntry("META-INF/mods.toml")?.let { toml ->
+                                inner.getInputStream(toml).bufferedReader().readText()
+                                    .let { Regex("""modId\s*=\s*"([^"]+)"""").find(it)?.groupValues?.get(1) ?: "?" }
+                            } ?: inner.getEntry("META-INF/MANIFEST.MF")?.let { manifest ->
+                                val text = inner.getInputStream(manifest).bufferedReader().readText()
+                                if (Regex("""FMLModType:\s*GAMELIBRARY""").containsMatchIn(text)) {
+                                    Regex("""Automatic-Module-Name:\s*(\S+)""").find(text)?.groupValues?.get(1)
+                                        ?: Regex("""^(.*?)-\d[^-]*$""").find(nested.nameWithoutExtension)?.groupValues?.get(1) ?: nested.name
+                                } else null
+                            }
+                        }
+                        nestedJars += Nested(coordinate, nested, modId)
+                        if (modId != null && (coordinate in modCoordinates || coordinate in optionalCoordinates)) {
+                            externalJars += nested
+                        }
                     }
+            }
+        }
+        externalJarList.parentFile.mkdirs()
+        externalJarList.writeText(externalJars.joinToString("\n") { it.absolutePath })
+        fun versionKey(file: File): List<Int> = Regex("\\d+").findAll(file.name.substringAfter("1.20.1")).map { it.value.toInt() }.toList()
+        val versionOrder = Comparator<File> { a, b ->
+            val x = versionKey(a)
+            val y = versionKey(b)
+            (0 until maxOf(x.size, y.size)).map { (x.getOrElse(it) { 0 }).compareTo(y.getOrElse(it) { 0 }) }.firstOrNull { it != 0 } ?: 0
+        }
+        // The highest version of each nested mod, chosen separately among the jars the runtime takes and
+        // among those compiled against (the runtime may hold only some of the optional mods).
+        // Libraries without a mod id (Registrate) go by their file name without the version: Create and
+        // GTCEu nest different Registrates, and two of them on the module path cannot both load.
+        fun key(jar: Nested): String = jar.modId ?: Regex("""^(.*?)-\d[^-]*$""").find(jar.file.nameWithoutExtension)?.groupValues?.get(1)
+            ?: jar.file.nameWithoutExtension
+        fun highest(jars: List<Nested>): Map<String, File> = jars.groupBy { key(it) }
+            .mapValues { (_, group) -> group.map { it.file }.maxWith(versionOrder) }
+        val chosenRuntime = highest(nestedJars.filter { it.coordinate in jijRuntime })
+        val chosenCompile = highest(nestedJars.filter { it.coordinate in optionalCoordinates })
+        nestedJars.forEach { jar ->
+            val isMod = jar.modId != null
+            val module = "jij:${jar.file.nameWithoutExtension}"
+            if (jar.coordinate in jijRuntime && chosenRuntime[key(jar)] == jar.file) {
+                // A bundled mixinextras-forge (Create, GTCEu) needs the common MixinExtras classes beside it in dev.
+                Regex("""mixinextras-forge-(.+)\.jar""").matchEntire(jar.file.name)?.let { match ->
+                    "forgeRuntimeLibrary"("io.github.llamalad7:mixinextras-common:${match.groupValues[1]}")
+                }
+                if (isMod) "modLocalRuntime"(module) else "forgeRuntimeLibrary"(files(jar.file))
+            }
+            if (jar.coordinate in optionalCoordinates && isMod && chosenCompile[key(jar)] == jar.file) {
+                "modCompileOnly"(module)
             }
         }
     }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sodium_2_naphtholate",
+    {
+      "id": "#forge:dusts/sodium_2_naphtholate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_2_naphtholate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_2_naphtholate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_2_naphtholate",
+      "required": false
+    }
+  ]
+}

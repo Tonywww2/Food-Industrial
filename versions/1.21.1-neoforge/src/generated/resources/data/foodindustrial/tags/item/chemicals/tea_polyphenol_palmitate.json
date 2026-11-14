@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tea_polyphenol_palmitate",
+    {
+      "id": "#forge:dusts/tea_polyphenol_palmitate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tea_polyphenol_palmitate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tea_polyphenol_palmitate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tea_polyphenol_palmitate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:whiskey_lactone",
+    "foodindustrial:flowing_whiskey_lactone",
+    {
+      "id": "#forge:whiskey_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:whiskey_lactone",
+      "required": false
+    }
+  ]
+}

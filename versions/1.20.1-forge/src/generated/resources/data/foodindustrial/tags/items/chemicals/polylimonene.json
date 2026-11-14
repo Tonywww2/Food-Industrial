@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polylimonene",
+    {
+      "id": "#forge:dusts/polylimonene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polylimonene",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polylimonene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polylimonene",
+      "required": false
+    }
+  ]
+}

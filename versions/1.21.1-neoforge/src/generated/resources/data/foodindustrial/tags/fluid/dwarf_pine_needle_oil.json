@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dwarf_pine_needle_oil",
+    "foodindustrial:flowing_dwarf_pine_needle_oil",
+    {
+      "id": "#forge:dwarf_pine_needle_oil",
+      "required": false
+    },
+    {
+      "id": "#c:dwarf_pine_needle_oil",
+      "required": false
+    }
+  ]
+}

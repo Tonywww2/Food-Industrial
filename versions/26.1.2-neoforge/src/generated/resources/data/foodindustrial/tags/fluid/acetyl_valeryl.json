@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetyl_valeryl",
+    "foodindustrial:flowing_acetyl_valeryl",
+    {
+      "id": "#forge:acetyl_valeryl",
+      "required": false
+    },
+    {
+      "id": "#c:acetyl_valeryl",
+      "required": false
+    }
+  ]
+}

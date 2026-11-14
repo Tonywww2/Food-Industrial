@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoeugenyl_methyl_ether",
+    "foodindustrial:flowing_isoeugenyl_methyl_ether",
+    {
+      "id": "#forge:isoeugenyl_methyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:isoeugenyl_methyl_ether",
+      "required": false
+    }
+  ]
+}

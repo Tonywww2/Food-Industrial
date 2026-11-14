@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/maltol"
+    }
+  ],
+  "mode": "sublimation",
+  "outputs": [
+    {
+      "item": "foodindustrial:maltol"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

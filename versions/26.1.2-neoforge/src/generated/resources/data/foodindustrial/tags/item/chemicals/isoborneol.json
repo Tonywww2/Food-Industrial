@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoborneol",
+    {
+      "id": "#forge:dusts/isoborneol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isoborneol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/isoborneol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/isoborneol",
+      "required": false
+    }
+  ]
+}

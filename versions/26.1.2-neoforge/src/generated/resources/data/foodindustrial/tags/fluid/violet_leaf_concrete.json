@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:violet_leaf_concrete",
+    "foodindustrial:flowing_violet_leaf_concrete",
+    {
+      "id": "#forge:violet_leaf_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:violet_leaf_concrete",
+      "required": false
+    }
+  ]
+}

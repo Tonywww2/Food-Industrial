@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dehydroxy_linalool_oxide",
+    "foodindustrial:flowing_dehydroxy_linalool_oxide",
+    {
+      "id": "#forge:dehydroxy_linalool_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:dehydroxy_linalool_oxide",
+      "required": false
+    }
+  ]
+}

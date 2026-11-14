@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_anthranilate",
+    "foodindustrial:flowing_ethyl_anthranilate",
+    {
+      "id": "#forge:ethyl_anthranilate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_anthranilate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_3_hexenyl_butyrate",
+    "foodindustrial:flowing_cis_3_hexenyl_butyrate",
+    {
+      "id": "#forge:cis_3_hexenyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:cis_3_hexenyl_butyrate",
+      "required": false
+    }
+  ]
+}

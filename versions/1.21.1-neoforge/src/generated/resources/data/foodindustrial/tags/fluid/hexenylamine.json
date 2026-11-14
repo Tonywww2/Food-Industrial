@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexenylamine",
+    "foodindustrial:flowing_hexenylamine",
+    {
+      "id": "#forge:hexenylamine",
+      "required": false
+    },
+    {
+      "id": "#c:hexenylamine",
+      "required": false
+    }
+  ]
+}

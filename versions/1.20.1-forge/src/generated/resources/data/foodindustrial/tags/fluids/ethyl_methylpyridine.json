@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_methylpyridine",
+    "foodindustrial:flowing_ethyl_methylpyridine",
+    {
+      "id": "#forge:ethyl_methylpyridine",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_methylpyridine",
+      "required": false
+    }
+  ]
+}

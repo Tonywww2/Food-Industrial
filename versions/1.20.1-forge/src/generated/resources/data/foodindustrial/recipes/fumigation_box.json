@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "P P",
+    "PIP"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:fumigation_box"
+  }
+}

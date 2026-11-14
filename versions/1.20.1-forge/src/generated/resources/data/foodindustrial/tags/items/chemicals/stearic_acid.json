@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/stearic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/stearic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/stearic_acid",
+      "required": false
     }
   ]
 }

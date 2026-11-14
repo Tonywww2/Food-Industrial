@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylbenzene",
+    "foodindustrial:flowing_ethylbenzene",
+    {
+      "id": "#forge:ethylbenzene",
+      "required": false
+    },
+    {
+      "id": "#c:ethylbenzene",
+      "required": false
+    }
+  ]
+}

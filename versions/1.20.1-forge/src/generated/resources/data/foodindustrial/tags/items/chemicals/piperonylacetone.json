@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperonylacetone",
+    {
+      "id": "#forge:dusts/piperonylacetone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/piperonylacetone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/piperonylacetone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/piperonylacetone",
+      "required": false
+    }
+  ]
+}

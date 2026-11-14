@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:hydroxyethyl_methylthiazole",
+  "loader": "forge:fluid_container"
+}

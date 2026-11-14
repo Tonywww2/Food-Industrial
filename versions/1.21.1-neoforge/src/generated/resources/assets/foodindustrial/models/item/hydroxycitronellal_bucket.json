@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hydroxycitronellal",
+  "loader": "neoforge:fluid_container"
+}

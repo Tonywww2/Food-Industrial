@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beeswax_absolute",
+    {
+      "id": "#forge:dusts/beeswax_absolute",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/beeswax_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/beeswax_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:gems/beeswax_absolute",
+      "required": false
+    }
+  ]
+}

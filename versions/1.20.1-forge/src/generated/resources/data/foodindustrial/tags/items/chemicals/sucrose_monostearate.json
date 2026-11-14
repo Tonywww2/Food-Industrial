@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sucrose_monostearate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sucrose_monostearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sucrose_monostearate",
+      "required": false
     }
   ]
 }

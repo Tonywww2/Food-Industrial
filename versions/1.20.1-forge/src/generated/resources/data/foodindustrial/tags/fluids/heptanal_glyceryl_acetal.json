@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptanal_glyceryl_acetal",
+    "foodindustrial:flowing_heptanal_glyceryl_acetal",
+    {
+      "id": "#forge:heptanal_glyceryl_acetal",
+      "required": false
+    },
+    {
+      "id": "#c:heptanal_glyceryl_acetal",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:polyisobutylene",
     {
+      "id": "#forge:dusts/polyisobutylene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polyisobutylene",
+      "required": false
+    },
+    {
       "id": "#c:dusts/polyisobutylene",
       "required": false
     },

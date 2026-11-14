@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:saffron_extract",
+    "foodindustrial:flowing_saffron_extract",
+    {
+      "id": "#forge:saffron_extract",
+      "required": false
+    },
+    {
+      "id": "#c:saffron_extract",
+      "required": false
+    }
+  ]
+}

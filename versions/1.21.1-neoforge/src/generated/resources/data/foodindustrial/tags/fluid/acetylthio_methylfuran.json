@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylthio_methylfuran",
+    "foodindustrial:flowing_acetylthio_methylfuran",
+    {
+      "id": "#forge:acetylthio_methylfuran",
+      "required": false
+    },
+    {
+      "id": "#c:acetylthio_methylfuran",
+      "required": false
+    }
+  ]
+}

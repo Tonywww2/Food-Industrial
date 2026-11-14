@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpeneless_lemon_oil",
+    "foodindustrial:flowing_terpeneless_lemon_oil",
+    {
+      "id": "#forge:terpeneless_lemon_oil",
+      "required": false
+    },
+    {
+      "id": "#c:terpeneless_lemon_oil",
+      "required": false
+    }
+  ]
+}

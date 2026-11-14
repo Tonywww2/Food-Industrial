@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bornyl_acetate",
+    "foodindustrial:flowing_bornyl_acetate",
+    {
+      "id": "#forge:bornyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:bornyl_acetate",
+      "required": false
+    }
+  ]
+}

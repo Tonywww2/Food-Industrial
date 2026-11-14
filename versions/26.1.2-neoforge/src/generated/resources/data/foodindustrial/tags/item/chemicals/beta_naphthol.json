@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:beta_naphthol",
     {
+      "id": "#forge:dusts/beta_naphthol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/beta_naphthol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/beta_naphthol",
       "required": false
     },

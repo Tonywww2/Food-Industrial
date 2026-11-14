@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gpe_polyether",
+    "foodindustrial:flowing_gpe_polyether",
+    {
+      "id": "#forge:gpe_polyether",
+      "required": false
+    },
+    {
+      "id": "#c:gpe_polyether",
+      "required": false
+    }
+  ]
+}

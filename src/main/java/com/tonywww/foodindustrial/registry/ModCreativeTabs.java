@@ -21,6 +21,7 @@ public final class ModCreativeTabs {
         CHEMICALS("chemicals", "化学品", "Chemicals"),
         RAW_MATERIALS("raw_materials", "矿物与原料", "Minerals and Raw Materials"),
         CULTURES("cultures", "菌种与酶", "Cultures and Enzymes"),
+        FLAVORS("flavors", "香料", "Flavorings"),
         MACHINES("machines", "机器", "Machines"),
         PRODUCTS("products", "成品", "Products");
 

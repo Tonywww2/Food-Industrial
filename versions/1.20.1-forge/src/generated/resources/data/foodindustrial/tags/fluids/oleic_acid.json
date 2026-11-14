@@ -6,6 +6,10 @@
     {
       "id": "#forge:oleic_acid",
       "required": false
+    },
+    {
+      "id": "#c:oleic_acid",
+      "required": false
     }
   ]
 }

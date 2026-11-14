@@ -4,6 +4,10 @@
     "foodindustrial:potassium_lactate",
     "foodindustrial:flowing_potassium_lactate",
     {
+      "id": "#forge:potassium_lactate",
+      "required": false
+    },
+    {
       "id": "#c:potassium_lactate",
       "required": false
     }

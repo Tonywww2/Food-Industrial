@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperine",
+    {
+      "id": "#forge:dusts/piperine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/piperine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/piperine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/piperine",
+      "required": false
+    }
+  ]
+}

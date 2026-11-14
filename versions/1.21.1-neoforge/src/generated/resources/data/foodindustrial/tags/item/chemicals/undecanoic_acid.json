@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecanoic_acid",
+    {
+      "id": "#forge:dusts/undecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/undecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/undecanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/undecanoic_acid",
+      "required": false
+    }
+  ]
+}

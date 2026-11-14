@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cedryl_acetate",
+    {
+      "id": "#forge:dusts/cedryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cedryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cedryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cedryl_acetate",
+      "required": false
+    }
+  ]
+}

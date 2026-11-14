@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:roman_chamomile_oil",
+    "foodindustrial:flowing_roman_chamomile_oil",
+    {
+      "id": "#forge:roman_chamomile_oil",
+      "required": false
+    },
+    {
+      "id": "#c:roman_chamomile_oil",
+      "required": false
+    }
+  ]
+}

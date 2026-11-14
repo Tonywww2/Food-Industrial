@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 4,
+    "tag": "foodindustrial:materials/damiana_leaf"
+  },
+  "output": {
+    "count": 1,
+    "id": "foodindustrial:damiana_leaf_powder"
+  }
+}

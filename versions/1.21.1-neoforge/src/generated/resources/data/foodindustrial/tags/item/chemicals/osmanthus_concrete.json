@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:osmanthus_concrete",
+    {
+      "id": "#forge:dusts/osmanthus_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/osmanthus_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/osmanthus_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/osmanthus_concrete",
+      "required": false
+    }
+  ]
+}

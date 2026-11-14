@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/rosin"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/pentaerythritol"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:rosin_pentaerythritol_ester"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sec_butyl_isothiocyanate",
+    "foodindustrial:flowing_sec_butyl_isothiocyanate",
+    {
+      "id": "#forge:sec_butyl_isothiocyanate",
+      "required": false
+    },
+    {
+      "id": "#c:sec_butyl_isothiocyanate",
+      "required": false
+    }
+  ]
+}

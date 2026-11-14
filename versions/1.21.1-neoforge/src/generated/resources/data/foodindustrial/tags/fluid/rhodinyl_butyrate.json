@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rhodinyl_butyrate",
+    "foodindustrial:flowing_rhodinyl_butyrate",
+    {
+      "id": "#forge:rhodinyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#c:rhodinyl_butyrate",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/manganese_sulfate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/manganese_sulfate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/manganese_sulfate",
+      "required": false
     }
   ]
 }

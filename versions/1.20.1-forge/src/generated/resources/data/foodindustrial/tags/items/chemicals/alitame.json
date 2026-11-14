@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/alitame",
       "required": false
+    },
+    {
+      "id": "#c:dusts/alitame",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alitame",
+      "required": false
     }
   ]
 }

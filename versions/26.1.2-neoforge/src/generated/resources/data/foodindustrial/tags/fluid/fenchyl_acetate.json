@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fenchyl_acetate",
+    "foodindustrial:flowing_fenchyl_acetate",
+    {
+      "id": "#forge:fenchyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:fenchyl_acetate",
+      "required": false
+    }
+  ]
+}

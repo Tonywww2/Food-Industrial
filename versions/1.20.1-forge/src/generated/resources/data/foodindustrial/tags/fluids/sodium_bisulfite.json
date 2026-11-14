@@ -6,6 +6,10 @@
     {
       "id": "#forge:sodium_bisulfite",
       "required": false
+    },
+    {
+      "id": "#c:sodium_bisulfite",
+      "required": false
     }
   ]
 }

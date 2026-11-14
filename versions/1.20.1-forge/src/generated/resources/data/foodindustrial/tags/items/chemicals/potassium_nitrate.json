@@ -11,6 +11,30 @@
       "required": false
     },
     {
+      "id": "#forge:dusts/saltpeter",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/saltpeter",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_nitrate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/saltpeter",
+      "required": false
+    },
+    {
+      "id": "#c:gems/saltpeter",
+      "required": false
+    },
+    {
       "id": "#forge:dusts/niter",
       "required": false
     },
@@ -19,7 +43,11 @@
       "required": false
     },
     {
-      "id": "#forge:dusts/saltpeter",
+      "id": "#c:dusts/niter",
+      "required": false
+    },
+    {
+      "id": "#c:gems/niter",
       "required": false
     }
   ]

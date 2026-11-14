@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isobutyl_decadienamide",
+    {
+      "id": "#forge:dusts/isobutyl_decadienamide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/isobutyl_decadienamide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/isobutyl_decadienamide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/isobutyl_decadienamide",
+      "required": false
+    }
+  ]
+}

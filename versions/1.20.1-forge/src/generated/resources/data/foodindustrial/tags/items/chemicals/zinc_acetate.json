@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_acetate",
+    {
+      "id": "#forge:dusts/zinc_acetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_acetate",
+      "required": false
+    }
+  ]
+}

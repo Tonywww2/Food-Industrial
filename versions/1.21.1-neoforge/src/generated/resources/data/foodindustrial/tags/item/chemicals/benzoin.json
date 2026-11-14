@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzoin",
+    {
+      "id": "#forge:dusts/benzoin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzoin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzoin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzoin",
+      "required": false
+    }
+  ]
+}

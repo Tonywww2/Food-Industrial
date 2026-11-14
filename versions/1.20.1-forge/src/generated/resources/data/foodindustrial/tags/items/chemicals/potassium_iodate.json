@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_iodate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_iodate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_iodate",
+      "required": false
     }
   ]
 }

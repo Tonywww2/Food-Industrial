@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_propenyl_disulfide",
+    "foodindustrial:flowing_allyl_propenyl_disulfide",
+    {
+      "id": "#forge:allyl_propenyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_propenyl_disulfide",
+      "required": false
+    }
+  ]
+}

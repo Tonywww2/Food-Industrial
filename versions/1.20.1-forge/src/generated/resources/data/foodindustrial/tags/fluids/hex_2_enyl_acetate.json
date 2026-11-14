@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hex_2_enyl_acetate",
+    "foodindustrial:flowing_hex_2_enyl_acetate",
+    {
+      "id": "#forge:hex_2_enyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:hex_2_enyl_acetate",
+      "required": false
+    }
+  ]
+}

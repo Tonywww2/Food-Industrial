@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_terpineol",
+    {
+      "id": "#forge:dusts/alpha_terpineol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/alpha_terpineol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/alpha_terpineol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/alpha_terpineol",
+      "required": false
+    }
+  ]
+}

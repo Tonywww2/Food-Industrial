@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:atractylodes_oil",
+    {
+      "id": "#forge:dusts/atractylodes_oil",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/atractylodes_oil",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/atractylodes_oil",
+      "required": false
+    },
+    {
+      "id": "#c:gems/atractylodes_oil",
+      "required": false
+    }
+  ]
+}

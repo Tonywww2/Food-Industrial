@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/red_algae"
+    },
+    {
+      "tag": "foodindustrial:materials/red_algae"
+    },
+    {
+      "tag": "foodindustrial:materials/red_algae"
+    },
+    {
+      "tag": "foodindustrial:materials/red_algae"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:agar_broth"
+    }
+  ]
+}

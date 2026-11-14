@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_rice"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:rhizopus",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "sheltered",
+      "bamboo_biome"
+    ]
+  },
+  "time": 48000
+}

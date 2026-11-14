@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": "foodindustrial:cryo_jacket",
+    "D": "#c:gems/diamond",
+    "I": "#c:ingots/iron",
+    "V": "foodindustrial:vacuum_pump"
+  },
+  "pattern": [
+    "III",
+    "CDV",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:freeze_dryer"
+  }
+}

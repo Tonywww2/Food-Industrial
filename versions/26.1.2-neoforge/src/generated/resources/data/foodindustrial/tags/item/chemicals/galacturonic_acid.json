@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:galacturonic_acid",
     {
+      "id": "#forge:dusts/galacturonic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/galacturonic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/galacturonic_acid",
       "required": false
     },

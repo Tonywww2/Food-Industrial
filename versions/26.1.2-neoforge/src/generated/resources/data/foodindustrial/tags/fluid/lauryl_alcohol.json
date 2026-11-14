@@ -4,6 +4,10 @@
     "foodindustrial:lauryl_alcohol",
     "foodindustrial:flowing_lauryl_alcohol",
     {
+      "id": "#forge:lauryl_alcohol",
+      "required": false
+    },
+    {
       "id": "#c:lauryl_alcohol",
       "required": false
     }

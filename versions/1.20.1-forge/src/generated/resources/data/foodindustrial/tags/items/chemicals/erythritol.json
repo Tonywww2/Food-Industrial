@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/erythritol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/erythritol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/erythritol",
+      "required": false
     }
   ]
 }

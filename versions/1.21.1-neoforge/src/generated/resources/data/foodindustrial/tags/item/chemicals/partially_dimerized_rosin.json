@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:partially_dimerized_rosin",
+    {
+      "id": "#forge:dusts/partially_dimerized_rosin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/partially_dimerized_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/partially_dimerized_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/partially_dimerized_rosin",
+      "required": false
+    }
+  ]
+}

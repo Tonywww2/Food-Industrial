@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cajeput_oil",
+    "foodindustrial:flowing_cajeput_oil",
+    {
+      "id": "#forge:cajeput_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cajeput_oil",
+      "required": false
+    }
+  ]
+}

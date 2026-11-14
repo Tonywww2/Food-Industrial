@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimerized_rosin_glycerol_ester",
+    {
+      "id": "#forge:dusts/dimerized_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimerized_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimerized_rosin_glycerol_ester",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimerized_rosin_glycerol_ester",
+      "required": false
+    }
+  ]
+}

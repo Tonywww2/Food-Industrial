@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:disodium_resorcinolate",
+    {
+      "id": "#forge:dusts/disodium_resorcinolate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/disodium_resorcinolate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/disodium_resorcinolate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/disodium_resorcinolate",
+      "required": false
+    }
+  ]
+}

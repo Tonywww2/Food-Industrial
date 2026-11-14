@@ -6,6 +6,10 @@
     {
       "id": "#forge:diisopropyl_ketone",
       "required": false
+    },
+    {
+      "id": "#c:diisopropyl_ketone",
+      "required": false
     }
   ]
 }

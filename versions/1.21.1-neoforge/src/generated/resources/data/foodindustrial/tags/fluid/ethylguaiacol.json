@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylguaiacol",
+    "foodindustrial:flowing_ethylguaiacol",
+    {
+      "id": "#forge:ethylguaiacol",
+      "required": false
+    },
+    {
+      "id": "#c:ethylguaiacol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thyme_oil",
+    "foodindustrial:flowing_thyme_oil",
+    {
+      "id": "#forge:thyme_oil",
+      "required": false
+    },
+    {
+      "id": "#c:thyme_oil",
+      "required": false
+    }
+  ]
+}

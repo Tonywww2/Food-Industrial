@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzoylanthranilic_acid",
+    {
+      "id": "#forge:dusts/benzoylanthranilic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/benzoylanthranilic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/benzoylanthranilic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/benzoylanthranilic_acid",
+      "required": false
+    }
+  ]
+}

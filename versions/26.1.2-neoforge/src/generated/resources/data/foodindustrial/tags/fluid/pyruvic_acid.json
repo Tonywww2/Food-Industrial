@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyruvic_acid",
+    "foodindustrial:flowing_pyruvic_acid",
+    {
+      "id": "#forge:pyruvic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:pyruvic_acid",
+      "required": false
+    }
+  ]
+}

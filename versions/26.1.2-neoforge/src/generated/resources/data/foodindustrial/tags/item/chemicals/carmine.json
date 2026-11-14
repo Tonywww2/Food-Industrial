@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:carmine",
     {
+      "id": "#forge:dusts/carmine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carmine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/carmine",
       "required": false
     },

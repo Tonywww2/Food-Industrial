@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclopropanecarboxylic_acid",
+    "foodindustrial:flowing_cyclopropanecarboxylic_acid",
+    {
+      "id": "#forge:cyclopropanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:cyclopropanecarboxylic_acid",
+      "required": false
+    }
+  ]
+}

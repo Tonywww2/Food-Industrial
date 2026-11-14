@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_nitroacetophenone",
+    "foodindustrial:flowing_o_nitroacetophenone",
+    {
+      "id": "#forge:o_nitroacetophenone",
+      "required": false
+    },
+    {
+      "id": "#c:o_nitroacetophenone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propanethiol",
+    "foodindustrial:flowing_propanethiol",
+    {
+      "id": "#forge:propanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:propanethiol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:l_tyrosine",
+    {
+      "id": "#forge:dusts/l_tyrosine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/l_tyrosine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/l_tyrosine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/l_tyrosine",
+      "required": false
+    }
+  ]
+}

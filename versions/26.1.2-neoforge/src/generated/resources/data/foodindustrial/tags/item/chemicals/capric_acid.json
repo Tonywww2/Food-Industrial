@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:capric_acid",
     {
+      "id": "#forge:dusts/capric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/capric_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/capric_acid",
       "required": false
     },

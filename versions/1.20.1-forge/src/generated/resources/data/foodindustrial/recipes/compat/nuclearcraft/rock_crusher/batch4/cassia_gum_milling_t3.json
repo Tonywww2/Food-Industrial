@@ -1,0 +1,32 @@
+{
+  "type": "nuclearcraft:rock_crusher",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "input": [
+    {
+      "count": 4,
+      "tag": "foodindustrial:materials/cassia_seed"
+    }
+  ],
+  "output": [
+    {
+      "type": "forge:nbt",
+      "item": "foodindustrial:cassia_gum",
+      "nbt": "{Purity:2b}"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

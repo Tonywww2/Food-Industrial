@@ -4,6 +4,10 @@
     "foodindustrial:isoamyl_alcohol",
     "foodindustrial:flowing_isoamyl_alcohol",
     {
+      "id": "#forge:isoamyl_alcohol",
+      "required": false
+    },
+    {
       "id": "#c:isoamyl_alcohol",
       "required": false
     }

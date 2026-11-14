@@ -62,7 +62,14 @@ public final class ConditionVocabulary {
             "ion_exchange", "离子交换", "Ion exchange",
             "membrane", "膜", "Membrane",
             "electrodialysis", "电渗析", "Electrodialysis",
-            "multi_fraction", "多馏分", "Multiple fractions");
+            "multi_fraction", "多馏分", "Multiple fractions",
+            // M08 essential oil separator module (I14, 2026-11-10)
+            "oil_separation", "油水分层", "Oil separation",
+            // T2 modules (I15, additives/06 §T2 机械化：操作与实现规格, 2026-11-11)
+            "lead_chamber", "铅室", "Lead chamber",
+            "emulsifying", "乳化", "Emulsifying",
+            // M22 module (I16, additives/06 §T3 化工：操作与实现规格, 2026-11-11)
+            "molecular_distillation", "分子蒸馏", "Molecular distillation");
         category("heat_sensitivity",
             "normal", "普通", "Normal",
             "sensitive", "热敏", "Heat sensitive",
@@ -72,11 +79,101 @@ public final class ConditionVocabulary {
             "clear_weather", "晴天", "Clear weather",
             "cold_biome", "寒冷群系", "Cold biome",
             "hot_biome", "炎热群系", "Hot biome",
-            "ocean_biome", "海洋群系", "Ocean biome");
+            "ocean_biome", "海洋群系", "Ocean biome",
+            // T0 devices (I12, additives/07 §操作与实现规格, 2026-11-10)
+            "sheltered", "不露天", "Sheltered",
+            "rain", "淋雨", "In the rain",
+            "daytime", "白天", "Daytime",
+            "non_cold_biome", "非寒冷群系", "Non-cold biome",
+            "jungle_biome", "丛林群系", "Jungle biome",
+            "bamboo_biome", "竹林", "Bamboo jungle");
+        // machine modes (I14, additives/06 §T1 作坊：操作与实现规格, 2026-11-10); recipes name them with "mode"
+        category("mode",
+            "dry_grinding", "干磨", "Dry grinding",
+            "wet_grinding", "湿磨", "Wet grinding",
+            "open", "开口", "Open",
+            "sealed", "密闭", "Sealed",
+            "anaerobic", "厌氧消化", "Anaerobic digestion",
+            "koji_tray", "曲盘", "Koji trays",
+            "shallow_tray", "浅盘", "Shallow trays",
+            "calcining", "煅烧", "Calcining",
+            "ashing", "烧灰", "Ashing",
+            "dry_distillation", "干馏", "Dry distillation",
+            "distillation", "蒸馏", "Distillation",
+            "steam_distillation", "水蒸气蒸馏", "Steam distillation",
+            "sublimation", "升华", "Sublimation",
+            "cooling_crystallization", "冷却结晶", "Cooling crystallization",
+            "sun_crystallization", "晾晒结晶", "Sun crystallization",
+            "drying", "烘干", "Drying",
+            "smoking", "烟熏", "Smoking",
+            "sulfur_burning", "燃硫", "Sulfur burning",
+            // T2 machine modes (I15, additives/06 §T2 机械化：操作与实现规格, 2026-11-11)
+            "reaction", "常压反应", "Reaction",
+            "polymerization", "聚合", "Polymerization",
+            "concentration", "浓缩", "Concentration",
+            "evaporative_crystallization", "蒸发结晶", "Evaporative crystallization",
+            "isoelectric", "等电点", "Isoelectric precipitation",
+            "freezing", "冷冻", "Freezing",
+            "drum_drying", "滚筒", "Drum drying",
+            "flash_drying", "气流", "Flash drying",
+            "solvent_extraction", "溶剂浸提", "Solvent extraction",
+            "liquid_extraction", "液液萃取", "Liquid-liquid extraction",
+            "absorption", "吸收", "Absorption",
+            "carbonation", "碳化", "Carbonation",
+            "combustion", "燃烧除氧", "Combustion",
+            "roasting", "焙烧", "Roasting",
+            "condensation", "缩合", "Condensation",
+            "melting", "熔融", "Melting",
+            "alkali_fusion", "碱熔", "Alkali fusion",
+            "activation", "活化", "Activation",
+            "chlorination", "氯化", "Chlorination",
+            "reduction", "还原", "Reduction",
+            "blending", "配料", "Blending",
+            "homogenizing", "均质", "Homogenizing",
+            "normalizing", "归一", "Normalizing",
+            // T3 machine modes (I16, additives/06 §T3 化工：操作与实现规格, 2026-11-11)
+            "atmospheric_distillation", "常压精馏", "Atmospheric distillation",
+            "vacuum_distillation", "减压精馏", "Vacuum distillation",
+            "cryogenic_separation", "深冷分离", "Cryogenic separation",
+            "stripping", "汽提", "Stripping",
+            "hydrogenation", "加氢", "Hydrogenation",
+            "carbonylation", "羰基化", "Carbonylation",
+            "ammonia_synthesis", "合成氨", "Ammonia synthesis",
+            "pressure_oxidation", "加压氧化", "Pressure oxidation",
+            "epoxidation", "环氧化", "Epoxidation",
+            "ethoxylation", "乙氧基化", "Ethoxylation",
+            "chlor_alkali", "氯碱", "Chlor-alkali",
+            "electroreduction", "电解还原", "Electroreduction",
+            "electrooxidation", "电解氧化", "Electrooxidation",
+            "water_electrolysis", "电解水", "Water electrolysis",
+            "molten_salt", "熔盐电解", "Molten salt electrolysis",
+            "adsorption", "吸附", "Adsorption",
+            "fractionation", "分级", "Fractionation",
+            "regeneration", "再生", "Regeneration",
+            "burning", "燃烧", "Burning",
+            "gas_catalysis", "气相催化", "Gas-phase catalysis",
+            "cracking", "裂解", "Cracking",
+            "fluidized_bed", "流化床", "Fluidized bed",
+            // T4 machine modes (I17, additives/06 §T4 生物 / 精细：操作与实现规格, 2026-11-11)
+            "aerated", "通气发酵", "Aerated fermentation",
+            "isolation", "平板分离", "Plate isolation",
+            "purification", "纯化", "Purification",
+            "expansion", "扩培", "Expansion",
+            "mutagenesis", "诱变", "Mutagenesis",
+            "recombination", "基因重组", "Genetic recombination",
+            "ultrafiltration", "超滤", "Ultrafiltration",
+            "nanofiltration", "纳滤", "Nanofiltration",
+            "reverse_osmosis", "反渗透", "Reverse osmosis",
+            "bipolar_electrodialysis", "双极膜电渗析", "Bipolar membrane electrodialysis");
         category("manual_purity",
             "fixed", "定值", "Fixed",
             "refine", "提纯", "Refine",
             "keep", "保持", "Keep");
+        category("purity_mode",
+            "source", "来源", "Source",
+            "removal", "除杂", "Impurity removal",
+            "keep", "保持", "Keep",
+            "degrade", "劣化", "Degradation");
         category("random",
             "purity", "纯度随机（只用于红曲米）", "Random purity",
             "chance", "概率产出", "Chance output");
@@ -93,7 +190,7 @@ public final class ConditionVocabulary {
     }
 
     /** Categories that only label JEI and book entries and are never recipe conditions. */
-    private static final Set<String> DISPLAY_ONLY = Set.of("manual_purity", "random");
+    private static final Set<String> DISPLAY_ONLY = Set.of("manual_purity", "purity_mode", "random");
 
     /**
      * Whether recipes may require values of {@code category} and devices may offer them

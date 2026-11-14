@@ -4,6 +4,10 @@
     "foodindustrial:o_toluenesulfonyl_chloride",
     "foodindustrial:flowing_o_toluenesulfonyl_chloride",
     {
+      "id": "#forge:o_toluenesulfonyl_chloride",
+      "required": false
+    },
+    {
       "id": "#c:o_toluenesulfonyl_chloride",
       "required": false
     }

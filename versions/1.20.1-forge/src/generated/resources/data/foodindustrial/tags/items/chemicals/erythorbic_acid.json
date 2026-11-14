@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/erythorbic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/erythorbic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/erythorbic_acid",
+      "required": false
     }
   ]
 }

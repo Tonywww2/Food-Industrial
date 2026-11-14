@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ferric_citrate"
+      }
+    }
+  ],
+  "mode": "drum_drying",
+  "outputs": [
+    {
+      "item": "foodindustrial:ferric_citrate_powder",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/bixin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/bixin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bixin",
+      "required": false
     }
   ]
 }

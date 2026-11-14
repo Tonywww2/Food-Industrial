@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexenyl_propionate_mixture",
+    "foodindustrial:flowing_hexenyl_propionate_mixture",
+    {
+      "id": "#forge:hexenyl_propionate_mixture",
+      "required": false
+    },
+    {
+      "id": "#c:hexenyl_propionate_mixture",
+      "required": false
+    }
+  ]
+}

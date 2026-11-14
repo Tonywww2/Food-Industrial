@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:molten_propylene_glycol_monostearate",
+    "foodindustrial:flowing_molten_propylene_glycol_monostearate",
+    {
+      "id": "#forge:molten_propylene_glycol_monostearate",
+      "required": false
+    },
+    {
+      "id": "#c:molten_propylene_glycol_monostearate",
+      "required": false
+    }
+  ]
+}

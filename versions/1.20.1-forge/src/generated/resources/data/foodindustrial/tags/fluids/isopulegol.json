@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopulegol",
+    "foodindustrial:flowing_isopulegol",
+    {
+      "id": "#forge:isopulegol",
+      "required": false
+    },
+    {
+      "id": "#c:isopulegol",
+      "required": false
+    }
+  ]
+}

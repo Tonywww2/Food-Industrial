@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:catalysts/noble_metal"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/activated_carbon"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:palladium_on_carbon"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

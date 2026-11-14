@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jiuniang",
+    "foodindustrial:huangjiu",
+    "foodindustrial:baijiu",
+    "foodindustrial:beer",
+    "foodindustrial:cider",
+    "foodindustrial:berry_wine",
+    "foodindustrial:grape_wine",
+    "foodindustrial:sparkling_wine",
+    "foodindustrial:mead",
+    "foodindustrial:brandy",
+    "foodindustrial:whisky",
+    "foodindustrial:rum",
+    "foodindustrial:vodka",
+    "foodindustrial:plum_liqueur",
+    "foodindustrial:mint_liqueur",
+    "foodindustrial:vanilla_liqueur",
+    "foodindustrial:red_yeast_rice_wine"
+  ]
+}

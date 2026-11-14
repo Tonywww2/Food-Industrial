@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_bitartrate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_bitartrate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_bitartrate",
+      "required": false
     }
   ]
 }

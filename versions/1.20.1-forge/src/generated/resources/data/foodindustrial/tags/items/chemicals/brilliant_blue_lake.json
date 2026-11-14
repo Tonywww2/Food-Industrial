@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/brilliant_blue_lake",
       "required": false
+    },
+    {
+      "id": "#c:dusts/brilliant_blue_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/brilliant_blue_lake",
+      "required": false
     }
   ]
 }

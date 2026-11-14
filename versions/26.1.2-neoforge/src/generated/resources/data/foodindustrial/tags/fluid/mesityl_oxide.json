@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mesityl_oxide",
+    "foodindustrial:flowing_mesityl_oxide",
+    {
+      "id": "#forge:mesityl_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:mesityl_oxide",
+      "required": false
+    }
+  ]
+}

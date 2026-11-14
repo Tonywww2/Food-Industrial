@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:dioleoyl_palmitoyl_glycerol",
+  "loader": "neoforge:fluid_container"
+}

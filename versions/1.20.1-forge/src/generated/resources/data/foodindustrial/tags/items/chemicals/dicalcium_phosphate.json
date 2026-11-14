@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/dicalcium_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/dicalcium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dicalcium_phosphate",
+      "required": false
     }
   ]
 }

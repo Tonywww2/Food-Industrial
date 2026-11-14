@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoeugenol",
+    "foodindustrial:flowing_isoeugenol",
+    {
+      "id": "#forge:isoeugenol",
+      "required": false
+    },
+    {
+      "id": "#c:isoeugenol",
+      "required": false
+    }
+  ]
+}

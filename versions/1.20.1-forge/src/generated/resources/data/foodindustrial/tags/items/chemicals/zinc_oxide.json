@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:zinc_oxide",
+    {
+      "id": "#forge:dusts/zinc_oxide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/zinc_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zinc_oxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc_oxide",
+      "required": false
+    }
+  ]
+}

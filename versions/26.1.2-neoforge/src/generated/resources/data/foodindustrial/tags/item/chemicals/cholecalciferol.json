@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:cholecalciferol",
     {
+      "id": "#forge:dusts/cholecalciferol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cholecalciferol",
+      "required": false
+    },
+    {
       "id": "#c:dusts/cholecalciferol",
       "required": false
     },

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sec_butylcyclohexanone",
+    "foodindustrial:flowing_sec_butylcyclohexanone",
+    {
+      "id": "#forge:sec_butylcyclohexanone",
+      "required": false
+    },
+    {
+      "id": "#c:sec_butylcyclohexanone",
+      "required": false
+    }
+  ]
+}

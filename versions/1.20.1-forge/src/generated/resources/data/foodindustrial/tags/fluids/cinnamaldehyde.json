@@ -6,6 +6,10 @@
     {
       "id": "#forge:cinnamaldehyde",
       "required": false
+    },
+    {
+      "id": "#c:cinnamaldehyde",
+      "required": false
     }
   ]
 }

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:nicotinic_acid",
     {
+      "id": "#forge:dusts/nicotinic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nicotinic_acid",
+      "required": false
+    },
+    {
       "id": "#c:dusts/nicotinic_acid",
       "required": false
     },

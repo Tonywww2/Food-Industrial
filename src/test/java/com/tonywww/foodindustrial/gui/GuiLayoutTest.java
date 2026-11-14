@@ -17,9 +17,9 @@ class GuiLayoutTest {
     /** Layouts of machines/03 §3 that stress the automatic layout. */
     private static final IoLayout[] LAYOUTS = {
         IoLayout.of(1, 2, 0, 0).withUpgrades(2),                                   // M11
-        IoLayout.of(3, 2, 3, 2).withCatalyst(1).withUpgrades(2).withModules(3),    // M14
-        IoLayout.of(6, 2, 2, 1).withUpgrades(2).withModules(1),                    // M21
-        IoLayout.of(2, 2, 1, 1).withFuel(1),                                       // M03
+        IoLayout.of(3, 2, 6, 3).withCatalyst(1).withUpgrades(2).withModules(3),    // M14 (six input, three output tanks, I31)
+        IoLayout.of(6, 2, 3, 1).withUpgrades(2).withModules(1),                    // M21 (three input tanks, I31)
+        IoLayout.of(2, 2, 2, 1).withFuel(1),                                       // M03 (two input tanks, I31)
         IoLayout.of(4, 4, 0, 1).withFuel(1),                                       // M10
         IoLayout.of(0, 0, 2, 2).withCatalyst(1).withUpgrades(4),                   // M31
         IoLayout.of(1, 1, 2, 3).withCatalyst(1).withUpgrades(3),                   // M24
@@ -31,6 +31,7 @@ class GuiLayoutTest {
         IoLayout.of(2, 1, 3, 2).withCatalyst(2).withUpgrades(4),                   // M29
         IoLayout.of(0, 1, 2, 6).withUpgrades(3),                                   // M22
         IoLayout.of(2, 2, 2, 1),                                                   // M04 (no power)
+        IoLayout.of(2, 2, 5, 2).withCatalyst(1).withUpgrades(3),                   // M23 (five input tanks, I31)
     };
 
     private static PowerKind power(IoLayout io) {
@@ -217,5 +218,35 @@ class GuiLayoutTest {
 
     private static boolean overlap(GuiLayout.Box a, GuiLayout.Box b) {
         return a.x() < b.x() + b.w() && b.x() < a.x() + a.w() && a.y() < b.y() + b.h() && b.y() < a.y() + a.h();
+    }
+
+    @Test
+    void manualMachinesShowTheCrankPowerAsABar() {
+        // M01 (I14): the hand crank's stored running time uses the energy bar
+        GuiLayout layout = GuiLayout.of(IoLayout.of(1, 2, 1, 1), PowerKind.MANUAL);
+        assertTrue(layout.energy() != null);
+        assertTrue(layout.flame() == null);
+        assertEquals(GuiLayout.ZoneKind.ENERGY, layout.zones().get(0).kind());
+        GuiLayout room = GuiLayout.of(IoLayout.of(2, 2, 1, 0).withCatalyst(1).withFuel(1), PowerKind.NONE);
+        assertTrue(room.flame() != null, "optional fuel (M06) still shows the flame and fuel slot");
+    }
+
+    @Test
+    void controllerWindowsShowNoSlotsOrTanks() {
+        // multiblock controllers (2026-11-10): items and fluids go through the ports
+        IoLayout kiln = IoLayout.of(2, 3, 0, 2).withFuel(1);
+        GuiLayout controller = GuiLayout.of(kiln, PowerKind.FUEL, true);
+        for (int i = 0; i < kiln.itemSlots(); i++) {
+            assertTrue(controller.slot(i).x() < 0, "slot " + i + " hidden");
+        }
+        for (int i = 0; i < kiln.tanks(); i++) {
+            assertTrue(controller.tank(i).x() < 0, "tank " + i + " hidden");
+            assertTrue(controller.vent(i) == null);
+        }
+        assertTrue(controller.flame() != null);
+        assertEquals(List.of(GuiLayout.ZoneKind.ENERGY, GuiLayout.ZoneKind.PROCESSING),
+            controller.zones().stream().map(GuiLayout.Zone::kind).toList());
+        GuiLayout port = GuiLayout.of(kiln, PowerKind.FUEL);
+        assertTrue(port.slot(kiln.start(SlotRole.FUEL)).x() > 0, "port windows keep the positions");
     }
 }

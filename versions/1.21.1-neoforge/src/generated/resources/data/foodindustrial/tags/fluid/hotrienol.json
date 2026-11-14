@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hotrienol",
+    "foodindustrial:flowing_hotrienol",
+    {
+      "id": "#forge:hotrienol",
+      "required": false
+    },
+    {
+      "id": "#c:hotrienol",
+      "required": false
+    }
+  ]
+}

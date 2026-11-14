@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:german_chamomile_extract",
+    "foodindustrial:flowing_german_chamomile_extract",
+    {
+      "id": "#forge:german_chamomile_extract",
+      "required": false
+    },
+    {
+      "id": "#c:german_chamomile_extract",
+      "required": false
+    }
+  ]
+}

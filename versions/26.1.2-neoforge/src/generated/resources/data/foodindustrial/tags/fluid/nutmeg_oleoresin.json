@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nutmeg_oleoresin",
+    "foodindustrial:flowing_nutmeg_oleoresin",
+    {
+      "id": "#forge:nutmeg_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:nutmeg_oleoresin",
+      "required": false
+    }
+  ]
+}

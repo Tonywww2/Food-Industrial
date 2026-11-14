@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/succinylated_monoglycerides",
       "required": false
+    },
+    {
+      "id": "#c:dusts/succinylated_monoglycerides",
+      "required": false
+    },
+    {
+      "id": "#c:gems/succinylated_monoglycerides",
+      "required": false
     }
   ]
 }

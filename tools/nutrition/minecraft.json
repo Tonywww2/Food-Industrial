@@ -1,0 +1,1256 @@
+{
+  "mod": "minecraft",
+  "entries": [
+    {
+      "items": [
+        "minecraft:apple"
+      ],
+      "serving_g": 182,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 8.372,
+        "vitamin_b1_mg": 0.03094,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "苹果（生，带皮）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171688 Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)：每 100 g 维生素 C 4.6 mg、硫胺素 0.017 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 171688 “1 medium (3\" dia)” = 182 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:melon_slice"
+      ],
+      "serving_g": 50,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 4.05,
+        "vitamin_b1_mg": 0.0165,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "西瓜（生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 167765 Watermelon, raw：每 100 g 维生素 C 8.1 mg、硫胺素 0.033 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份 50 g：使农夫乐事的西瓜汁（4 片西瓜 + 1 份糖 50 g）恰为一瓶 250 mL，按 250 g 计；原先取 FDC 167765 “1 wedge (approx 1/16 of melon)” = 286 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "西瓜片一份由 286 g 改为 50 g，与农夫乐事西瓜汁一瓶 250 mL 一致（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:sweet_berries"
+      ],
+      "serving_g": 100,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 14.0,
+        "vitamin_b1_mg": 0.012,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "蔓越莓（生），作为甜浆果的参照",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171722 Cranberries, raw：每 100 g 维生素 C 14.0 mg、硫胺素 0.012 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 171722 “1 cup, whole” = 100 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "甜浆果参照蔓越莓（用户指定，2026-11-13）",
+          "一份取 1 cup, whole = 100 g（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:carrot"
+      ],
+      "serving_g": 61,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 3.599,
+        "vitamin_b1_mg": 0.04026,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "胡萝卜（生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 170393 Carrots, raw：每 100 g 维生素 C 5.9 mg、硫胺素 0.066 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 170393 “1 medium” = 61 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:potato"
+      ],
+      "serving_g": 213,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 41.96,
+        "vitamin_b1_mg": 0.1725,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "马铃薯（生，带皮）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 170026 Potatoes, flesh and skin, raw：每 100 g 维生素 C 19.7 mg、硫胺素 0.081 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 170026 “1 Potato medium (2-1/4\" to 3-1/4\" dia)” = 213 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:baked_potato"
+      ],
+      "serving_g": 173,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 16.61,
+        "vitamin_b1_mg": 0.1107,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "烤马铃薯（带皮，不加盐）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 170093 Potatoes, baked, flesh and skin, without salt：每 100 g 维生素 C 9.6 mg、硫胺素 0.064 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 170093 “1 potato medium” = 173 g"
+        ],
+        "processing": "烤制；直接取烤制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:poisonous_potato"
+      ],
+      "serving_g": 213,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 41.96,
+        "vitamin_b1_mg": 0.1725,
+        "vitamin_d_ug": 0
+      },
+      "impurity": 5,
+      "basis": {
+        "food": "马铃薯（生，带皮），毒马铃薯按马铃薯计",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 170026 Potatoes, flesh and skin, raw：每 100 g 维生素 C 19.7 mg、硫胺素 0.081 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 170026 “1 Potato medium (2-1/4\" to 3-1/4\" dia)” = 213 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "毒马铃薯按马铃薯计算（用户指定，2026-11-13）",
+          "杂质每份 5 单位：原版设定中吃了可能中毒（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:beetroot"
+      ],
+      "serving_g": 82,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 4.018,
+        "vitamin_b1_mg": 0.02542,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "甜菜根（生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169145 Beets, raw：每 100 g 维生素 C 4.9 mg、硫胺素 0.031 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 169145 “1 beet (2\" dia)” = 82 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:dried_kelp"
+      ],
+      "serving_g": 14,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.93,
+        "vitamin_b1_mg": 0.05425,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "干海带：约 1 米长的海带晒干",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 168457 Seaweed, kelp, raw：每 100 g 维生素 C 3.0 mg、硫胺素 0.05 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：约 1 米长的海带晒干后的重量（用户指定的标准，2026-11-13）：鲜重按来源表 3 在 12 月（十个品种平均体长 68.9 cm、鲜质量 0.105 kg）与 1 月（156.6 cm、0.247 kg）之间按体长线性插值，100 cm 约 155 g；鲜干比取表 5 中 4 月的十个品种平均 11.3，干重约 14 g",
+          "来源：《威海桑沟湾海域不同海带品种/系的生长状况研究》，大连海洋大学学报 2020，表 3（体长、鲜质量，12 月至 6 月）、表 5（鲜干比，4–6 月），https://xuebao.dlou.edu.cn/article/2020/2095-1388/202001013.html"
+        ],
+        "processing": "晒干：USDA Table of Nutrient Retention Factors Release 6 没有蔬菜（海藻）干制的条目，按最接近的 FRUITS,DRIED（代码 0158）计：维生素 C 保留 20%、硫胺素保留 70%；成分按 155 g 鲜海带的含量计；维生素 D 按不损失计（03 第 5 节第 3 条）",
+        "assumptions": [
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "一份 14 g（干重）与按 155 g 鲜海带计营养（建议值，用户批准，2026-11-13）",
+          "晒干保留率按 FRUITS,DRIED（建议值，用户批准，2026-11-13）",
+          "USDA 生海带含水 81.6%，来源的鲜干比对应含水约 89–91%，两者不一致，已告知用户"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:beef"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.08475,
+        "vitamin_d_ug": 0.113
+      },
+      "basis": {
+        "food": "牛肉（各零售部位综合，生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169485 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, raw：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.075 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.1 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：FDC 169485 “4 oz” = 113 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cooked_beef"
+      ],
+      "serving_g": 85,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.05695,
+        "vitamin_d_ug": 0.085
+      },
+      "basis": {
+        "food": "牛肉（各零售部位综合，熟），对应牛排",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 169486 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, cooked：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.067 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.1 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：FDC 169486 “3 oz” = 85 g"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "牛排用综合部位的熟肉条目：西冷牛排条目（FDC 168728/168729）没有维生素 D（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:porkchop"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.5481,
+        "vitamin_d_ug": 0.565
+      },
+      "basis": {
+        "food": "猪里脊中段带骨排（生，肥瘦同取）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 168238 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.485 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.5 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：FDC 168238 “4 oz” = 113 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cooked_porkchop"
+      ],
+      "serving_g": 85,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.5091,
+        "vitamin_d_ug": 0.68
+      },
+      "basis": {
+        "food": "猪里脊中段带骨排（烤，肥瘦同取）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 167827 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.599 (Based on physical composition; Derived from analytical data; Known physical composition) mg、维生素 D 0.8 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
+          "一份：FDC 167827 “3 oz” = 85 g"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:mutton"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.1356,
+        "vitamin_d_ug": 0.113
+      },
+      "basis": {
+        "food": "羊肉（各零售部位综合，生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 172545 Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, raw：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.12 (Based on physical composition; Derived from analytical data; Estimated physical composition) mg，无维生素 D 数据",
+          "一份：4 oz = 113 g（FDC 172545 只列 “1 oz” = 28.35 g，按 4 × 28.35 g 取整）",
+          "维生素 D 借用 USDA FDC 174370 Lamb, ground, raw：每 100 g 0.1 µg"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "该条目没有维生素 D，借用 FDC 174370 的值（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cooked_mutton"
+      ],
+      "serving_g": 85,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.085,
+        "vitamin_d_ug": 0.085
+      },
+      "basis": {
+        "food": "羊肉（各零售部位综合，熟）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 172546 Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, cooked：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.1 (Based on physical composition; Derived from analytical data; Estimated physical composition) mg，无维生素 D 数据",
+          "一份：FDC 172546 “3 oz” = 85 g",
+          "维生素 D 借用 USDA FDC 172544 Lamb, ground, cooked, broiled：每 100 g 0.1 µg"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "该条目没有维生素 D，借用 FDC 172544 的值（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:chicken"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 1.808,
+        "vitamin_b1_mg": 0.0678,
+        "vitamin_d_ug": 0.226
+      },
+      "impurity": 2,
+      "basis": {
+        "food": "整鸡（带皮，生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171447 Chicken, broilers or fryers, meat and skin, raw：每 100 g 维生素 C 1.6 mg、硫胺素 0.06 mg、维生素 D 0.2 (Based on physical composition; Derived from imputed data; Known physical composition) µg",
+          "一份：FDC 171447 “4 oz” = 113 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "杂质每份 2 单位：原版设定中吃了有负面效果（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cooked_chicken"
+      ],
+      "serving_g": 85,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.05355,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "整鸡（带皮，烤）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171450 Chicken, broilers or fryers, meat and skin, cooked, roasted：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.063 mg、维生素 D 0.0 µg",
+          "一份：FDC 171450 “3 oz” = 85 g"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:rabbit"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.113,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "家兔（各部位综合，生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 172521 Game meat, rabbit, domesticated, composite of cuts, raw：每 100 g 维生素 C 0.0 mg、硫胺素 0.1 mg，无维生素 D 数据",
+          "一份：4 oz = 113 g（FDC 172521 只列 “1 oz” = 28.35 g，按 4 × 28.35 g 取整）"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "家兔条目没有维生素 D，记 0（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cooked_rabbit"
+      ],
+      "serving_g": 85,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0765,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "家兔（各部位综合，烤）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 172522 Game meat, rabbit, domesticated, composite of cuts, cooked, roasted：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.09 mg，无维生素 D 数据",
+          "一份：FDC 172522 “3 oz” = 85 g"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "家兔条目没有维生素 D，记 0（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:rotten_flesh"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0,
+        "vitamin_d_ug": 0
+      },
+      "impurity": 5,
+      "basis": {
+        "food": "腐肉（僵尸掉落）",
+        "sources": [
+          "无现实对应（幻想食物），各成分按 0 计（用户决定，2026-11-13）"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "腐肉无现实对应，营养全部记 0",
+          "一份 113 g 只是占位，不影响游戏（用户决定，2026-11-13）",
+          "杂质每份 5 单位：原版设定中是“不健康”的食物（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:spider_eye"
+      ],
+      "serving_g": 10,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0,
+        "vitamin_d_ug": 0
+      },
+      "impurity": 5,
+      "basis": {
+        "food": "蜘蛛眼",
+        "sources": [
+          "无现实对应（幻想食物），各成分按 0 计（用户决定，2026-11-13）"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "蜘蛛眼无现实对应，营养全部记 0",
+          "一份 10 g 只是占位，不影响游戏（用户决定，2026-11-13）",
+          "杂质每份 5 单位：原版设定中是“不健康”的食物（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cod"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 1.13,
+        "vitamin_b1_mg": 0.08588,
+        "vitamin_d_ug": 1.017
+      },
+      "basis": {
+        "food": "大西洋鳕（生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171955 Fish, cod, Atlantic, raw：每 100 g 维生素 C 1.0 mg、硫胺素 0.076 mg、维生素 D 0.9 µg",
+          "一份：FDC 171955 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cooked_cod"
+      ],
+      "serving_g": 85,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0.85,
+        "vitamin_b1_mg": 0.0748,
+        "vitamin_d_ug": 1.02
+      },
+      "basis": {
+        "food": "大西洋鳕（干热烹调）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171956 Fish, cod, Atlantic, cooked, dry heat：每 100 g 维生素 C 1.0 mg、硫胺素 0.088 mg、维生素 D 1.2 µg",
+          "一份：FDC 171956 “3 oz” = 85 g"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:salmon"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.1492,
+        "vitamin_d_ug": 15.93
+      },
+      "basis": {
+        "food": "红鲑（野生，生）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 173691 Fish, salmon, sockeye, raw：每 100 g 维生素 C 0.0（Analytical） mg、硫胺素 0.132（Analytical） mg、维生素 D 14.1 µg",
+          "一份：FDC 173691 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cooked_salmon"
+      ],
+      "serving_g": 85,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.1335,
+        "vitamin_d_ug": 14.2
+      },
+      "basis": {
+        "food": "红鲑（干热烹调）",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 173692 Fish, salmon, sockeye, cooked, dry heat：每 100 g 维生素 C 0.0（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） mg、硫胺素 0.157（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） mg、维生素 D 16.7（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） µg",
+          "一份：FDC 173692 “3 oz” = 85 g"
+        ],
+        "processing": "熟制：直接取熟制品的条目，不另乘保留率",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:tropical_fish"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 1.808,
+        "vitamin_b1_mg": 0.05198,
+        "vitamin_d_ug": 11.53
+      },
+      "basis": {
+        "food": "鲷鱼（多品种混合，生），作为热带鱼的参照",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 173698 Fish, snapper, mixed species, raw：每 100 g 维生素 C 1.6 mg、硫胺素 0.046 mg、维生素 D 10.2 µg",
+          "一份：FDC 173698 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "热带鱼参照鲷鱼：USDA 没有对应的小型礁石鱼条目（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:pufferfish"
+      ],
+      "serving_g": 113,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 1.13,
+        "vitamin_b1_mg": 0.08588,
+        "vitamin_d_ug": 1.017
+      },
+      "impurity": 10,
+      "basis": {
+        "food": "大西洋鳕（生），作为河豚的参照",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171955 Fish, cod, Atlantic, raw：每 100 g 维生素 C 1.0 mg、硫胺素 0.076 mg、维生素 D 0.9 µg",
+          "一份：FDC 171955 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "河豚参照生鳕鱼：USDA 没有河豚的条目（用户决定，2026-11-13）",
+          "杂质每份 10 单位：原版设定中吃了中毒、反胃（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:bread"
+      ],
+      "serving_g": 72,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 3.024,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.2815,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "全麦面包",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2707709 Bread, whole wheat（食物编号 51300110）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 0 mg、硫胺素 0.391 mg、维生素 D 0 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 51300110：每 100 g 1.0 茶匙当量 = 4.2 g",
+          "一份：FDC 2707709 “1 medium or regular slice” = 36 g，取 2 片 = 72 g"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）",
+          "用全麦面包：美国白面包为强化面粉，硫胺素偏高（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cookie"
+      ],
+      "serving_g": 30,
+      "per_serving": {
+        "caffeine_mg": 3.3,
+        "alcohol_g": 0,
+        "fast_sugar_g": 9.45,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0876,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "巧克力豆曲奇",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2707909 Cookie, chocolate chip（食物编号 53206000）：每 100 g 咖啡因 11 mg、酒精 0 g、维生素 C 0 mg、硫胺素 0.292 mg、维生素 D 0 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53206000：每 100 g 7.5 茶匙当量 = 31.5 g",
+          "一份：FDC 2707909 “1 medium cookie” = 30 g"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:pumpkin_pie"
+      ],
+      "serving_g": 150,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 33.39,
+        "vitamin_c_mg": 3.3,
+        "vitamin_b1_mg": 0.1425,
+        "vitamin_d_ug": 0.45
+      },
+      "basis": {
+        "food": "南瓜派（一块）",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2708011 Pie, pumpkin（食物编号 53347000）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 2.2 mg、硫胺素 0.095 mg、维生素 D 0.3 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53347000：每 100 g 5.3 茶匙当量 = 22.26 g",
+          "一份：FDC 2708011 “1 regular slice” = 150 g"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）",
+          "游戏里一次吃掉整个派，按一块计（整个 1200 g 过多）（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:cake"
+      ],
+      "serving_g": 115,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 46.85,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.0759,
+        "vitamin_d_ug": 0.345
+      },
+      "basis": {
+        "food": "白蛋糕，白色糖霜（一口为一块）",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2707891 Cake or cupcake, white with white icing, bakery（食物编号 53120270）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 0 mg、硫胺素 0.066 mg、维生素 D 0.3 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53120270：每 100 g 9.7 茶匙当量 = 40.74 g",
+          "一份：FDC 2707891 “1 regular or small piece/slice, 1 layer cake” = 115 g；放置后分口吃，一口为一份（共 7 口）"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:mushroom_stew"
+      ],
+      "serving_g": 155,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 3.41,
+        "vitamin_b1_mg": 0.09145,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "煮蘑菇（不加油）",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2709937 Mushrooms, fresh, cooked, no added fat（食物编号 75219011）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 2.2 mg、硫胺素 0.059 mg、维生素 D 0 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 75219011：每 100 g 0.0 茶匙当量 = 0 g",
+          "一份：FDC 2709937 “1 cup” = 155 g"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:beetroot_soup"
+      ],
+      "serving_g": 245,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 8.575,
+        "vitamin_b1_mg": 0.0343,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "罗宋汤",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2710105 Soup, borscht（食物编号 75601100）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 3.5 mg、硫胺素 0.014 mg、维生素 D 0 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 75601100：每 100 g 0.0 茶匙当量 = 0 g",
+          "一份：FDC 2710105 “1 cup” = 245 g"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:suspicious_stew"
+      ],
+      "serving_g": 155,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 3.41,
+        "vitamin_b1_mg": 0.09145,
+        "vitamin_d_ug": 0
+      },
+      "impurity": 1,
+      "basis": {
+        "food": "煮蘑菇（不加油），迷之炖菜营养同蘑菇煲，花不计",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2709937 Mushrooms, fresh, cooked, no added fat（食物编号 75219011）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 2.2 mg、硫胺素 0.059 mg、维生素 D 0 µg",
+          "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 75219011：每 100 g 0.0 茶匙当量 = 0 g",
+          "一份：FDC 2709937 “1 cup” = 155 g"
+        ],
+        "processing": "取成品（熟制）条目，不另乘保留率",
+        "assumptions": [
+          "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
+          "一份取建议值（用户批准，2026-11-13）",
+          "迷之炖菜营养同蘑菇煲；原版吃了随机得到状态效果，配杂质（用户决定，2026-11-13）",
+          "杂质每份 1 单位（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:rabbit_stew"
+      ],
+      "serving_g": 339,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 18.48,
+        "vitamin_b1_mg": 0.2312,
+        "vitamin_d_ug": 0.02
+      },
+      "basis": {
+        "food": "兔肉煲：按游戏配方（熟兔肉、胡萝卜、烤马铃薯、蘑菇各一份）计算",
+        "sources": [
+          "熟兔肉 85 g：USDA FoodData Central SR Legacy FDC 172522，每 100 g 维生素 C 0 mg、硫胺素 0.09 mg、维生素 D 0 µg",
+          "胡萝卜（生） 61 g：USDA FoodData Central SR Legacy FDC 170393，每 100 g 维生素 C 5.9 mg、硫胺素 0.066 mg、维生素 D 0 µg",
+          "烤马铃薯 173 g：USDA FoodData Central SR Legacy FDC 170093，每 100 g 维生素 C 9.6 mg、硫胺素 0.064 mg、维生素 D 0 µg",
+          "棕蘑菇（生，crimini） 20 g：USDA FoodData Central SR Legacy FDC 168434，每 100 g 维生素 C 0 mg、硫胺素 0.095 mg、维生素 D 0.1 µg",
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）"
+        ],
+        "processing": "熟兔肉按 LAMB,REHEATED（1074） 计：维生素 C 95%、硫胺素 95%；胡萝卜（生）按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；烤马铃薯按 POTATOES,REHEATED（3379） 计：维生素 C 95%、硫胺素 95%；棕蘑菇（生，crimini）按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）",
+        "assumptions": [
+          "按游戏配方计算，每种配料取它自己的一份（熟兔肉 85 g、胡萝卜 61 g、烤马铃薯 173 g 同已配数据）（用户决定，2026-11-13）",
+          "蘑菇取褐蘑菇（crimini）FDC 168434 “1 piece whole” = 20 g；红、棕蘑菇两种配方按同一组数（用户批准，2026-11-13）",
+          "已熟的兔肉、马铃薯按再加热计；USDA 表没有兔肉，取同组的羊肉再加热（用户批准，2026-11-13）",
+          "一碗的重量只把配料重量相加，汤水不计（用户批准，2026-11-13）",
+          "咖啡因、酒精、快吸收糖为 0：配料都不含"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:honey_bottle"
+      ],
+      "serving_g": 338.1,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 278.4,
+        "vitamin_c_mg": 1.691,
+        "vitamin_b1_mg": 0,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "蜂蜜，一瓶 250 mL",
+        "sources": [
+          "USDA FoodData Central，Survey (FNDDS)，FDC 2710281 Honey（食物编号 91302010）：每 100 g 维生素 C 0.5 mg、硫胺素 0 mg、维生素 D 0 µg、咖啡因 0 mg、酒精 0 g",
+          "快吸收糖：USDA FPED 2021–2023 ADD_SUGARS，食物编号 91302010：每 100 g 19.6 茶匙当量 × 4.2 g = 82.32 g（FPED 把蜂蜜算作添加糖，与 WHO 游离糖一致）",
+          "密度：FDC 2710281 “1 cup” = 320 g，1 美制杯 = 236.588 mL"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "一瓶 250 mL（用户决定，2026-11-13），按密度折合 338.1 g"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:milk_bucket"
+      ],
+      "serving_g": 1031.0,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0.4744,
+        "vitamin_d_ug": 1.031
+      },
+      "basis": {
+        "food": "全脂牛奶（未强化），一桶 1 L",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg",
+          "密度：FDC 172217 “1 quart” = 976 g，1 美制夸脱 = 946.353 mL"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "一桶 1 L（用户决定，2026-11-13），按密度折合 1031.3 g",
+          "用未强化牛奶（用户决定，2026-11-13）",
+          "快吸收糖为 0：乳中天然的糖不计（02 第 4.3 节）；咖啡因、酒精为 0"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:potion"
+      ],
+      "serving_g": 250,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "水（所有药水与水瓶共用这个物品 ID）",
+        "sources": [
+          "药水按水计，各成分全部记 0（建议值，用户批准，2026-11-13）"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "一瓶 250 mL，按 250 g 计（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:ominous_bottle"
+      ],
+      "serving_g": 250,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "不祥之瓶",
+        "sources": [
+          "无现实对应（幻想饮品），各成分全部记 0（建议值，用户批准，2026-11-13）"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "一瓶 250 mL，按 250 g 计（用户决定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      },
+      "only_on": [
+        "1.21.1",
+        "26.1.2"
+      ]
+    },
+    {
+      "items": [
+        "minecraft:glow_berries"
+      ],
+      "serving_g": 100,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 14.0,
+        "vitamin_b1_mg": 0.012,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "蔓越莓（生），与甜浆果同一组数，作为发光浆果的参照",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171722 Cranberries, raw：每 100 g 维生素 C 14.0 mg、硫胺素 0.012 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 171722 “1 cup, whole” = 100 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "发光浆果同甜浆果：原版两者饱食度、饱和度相同（2 / 0.4）（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "甜浆果参照蔓越莓（用户指定，2026-11-13）",
+          "一份取 1 cup, whole = 100 g（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:golden_apple",
+        "minecraft:enchanted_golden_apple"
+      ],
+      "serving_g": 182,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 8.372,
+        "vitamin_b1_mg": 0.03094,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "苹果（生，带皮），金不计",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 171688 Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)：每 100 g 维生素 C 4.6 mg、硫胺素 0.017 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 171688 “1 medium (3\" dia)” = 182 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "金苹果、附魔金苹果按苹果计，金不计（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:golden_carrot"
+      ],
+      "serving_g": 61,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 3.599,
+        "vitamin_b1_mg": 0.04026,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "胡萝卜（生），金粒不计",
+        "sources": [
+          "USDA FoodData Central，SR Legacy，FDC 170393 Carrots, raw：每 100 g 维生素 C 5.9 mg、硫胺素 0.066 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
+          "一份：FDC 170393 “1 medium” = 61 g"
+        ],
+        "processing": "生食，无加工",
+        "assumptions": [
+          "金胡萝卜按胡萝卜计，金粒不计（建议值，用户批准，2026-11-13）",
+          "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
+          "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
+          "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    },
+    {
+      "items": [
+        "minecraft:chorus_fruit"
+      ],
+      "serving_g": 182,
+      "per_serving": {
+        "caffeine_mg": 0,
+        "alcohol_g": 0,
+        "fast_sugar_g": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_b1_mg": 0,
+        "vitamin_d_ug": 0
+      },
+      "basis": {
+        "food": "紫颂果",
+        "sources": [
+          "无现实对应（幻想食物，原版吃了随机传送），各成分全部记 0（建议值，用户批准，2026-11-13）"
+        ],
+        "processing": "无",
+        "assumptions": [
+          "一份 182 g 为占位，同苹果：原版两者饱食度、饱和度相同（4 / 2.4）（建议值，用户批准，2026-11-13）"
+        ],
+        "confirmed": "2026-11-13"
+      }
+    }
+  ]
+}

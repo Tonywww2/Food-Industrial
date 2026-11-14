@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_phenylacetate",
+    "foodindustrial:flowing_geranyl_phenylacetate",
+    {
+      "id": "#forge:geranyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

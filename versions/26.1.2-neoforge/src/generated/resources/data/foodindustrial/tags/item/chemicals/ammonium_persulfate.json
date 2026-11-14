@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:ammonium_persulfate",
     {
+      "id": "#forge:dusts/ammonium_persulfate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_persulfate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/ammonium_persulfate",
       "required": false
     },

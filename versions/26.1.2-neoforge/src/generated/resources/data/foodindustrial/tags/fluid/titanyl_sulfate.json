@@ -4,6 +4,10 @@
     "foodindustrial:titanyl_sulfate",
     "foodindustrial:flowing_titanyl_sulfate",
     {
+      "id": "#forge:titanyl_sulfate",
+      "required": false
+    },
+    {
       "id": "#c:titanyl_sulfate",
       "required": false
     }

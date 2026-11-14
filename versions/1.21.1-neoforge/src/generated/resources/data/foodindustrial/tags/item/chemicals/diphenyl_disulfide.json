@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diphenyl_disulfide",
+    {
+      "id": "#forge:dusts/diphenyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/diphenyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/diphenyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diphenyl_disulfide",
+      "required": false
+    }
+  ]
+}

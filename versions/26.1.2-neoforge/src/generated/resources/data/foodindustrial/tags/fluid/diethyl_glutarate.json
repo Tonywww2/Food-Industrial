@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_glutarate",
+    "foodindustrial:flowing_diethyl_glutarate",
+    {
+      "id": "#forge:diethyl_glutarate",
+      "required": false
+    },
+    {
+      "id": "#c:diethyl_glutarate",
+      "required": false
+    }
+  ]
+}

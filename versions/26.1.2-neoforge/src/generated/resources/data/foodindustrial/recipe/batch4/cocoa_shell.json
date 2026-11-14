@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/cocoa_beans"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:cocoa_nibs"
+    },
+    {
+      "item": "foodindustrial:cocoa_shell"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

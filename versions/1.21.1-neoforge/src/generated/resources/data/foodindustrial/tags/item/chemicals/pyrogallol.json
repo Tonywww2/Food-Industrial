@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyrogallol",
+    {
+      "id": "#forge:dusts/pyrogallol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pyrogallol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pyrogallol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pyrogallol",
+      "required": false
+    }
+  ]
+}

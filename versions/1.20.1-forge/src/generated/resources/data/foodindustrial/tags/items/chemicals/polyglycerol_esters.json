@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/polyglycerol_esters",
       "required": false
+    },
+    {
+      "id": "#c:dusts/polyglycerol_esters",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyglycerol_esters",
+      "required": false
     }
   ]
 }

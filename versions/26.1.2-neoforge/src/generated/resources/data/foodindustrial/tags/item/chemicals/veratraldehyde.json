@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:veratraldehyde",
+    {
+      "id": "#forge:dusts/veratraldehyde",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/veratraldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/veratraldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/veratraldehyde",
+      "required": false
+    }
+  ]
+}

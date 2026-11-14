@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:alitame",
     {
+      "id": "#forge:dusts/alitame",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/alitame",
+      "required": false
+    },
+    {
       "id": "#c:dusts/alitame",
       "required": false
     },

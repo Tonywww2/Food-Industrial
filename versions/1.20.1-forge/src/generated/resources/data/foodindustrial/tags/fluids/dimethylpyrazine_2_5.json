@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylpyrazine_2_5",
+    "foodindustrial:flowing_dimethylpyrazine_2_5",
+    {
+      "id": "#forge:dimethylpyrazine_2_5",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylpyrazine_2_5",
+      "required": false
+    }
+  ]
+}

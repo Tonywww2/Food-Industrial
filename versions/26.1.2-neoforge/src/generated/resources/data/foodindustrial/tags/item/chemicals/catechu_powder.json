@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:catechu_powder",
+    {
+      "id": "#forge:dusts/catechu_powder",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/catechu_powder",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/catechu_powder",
+      "required": false
+    },
+    {
+      "id": "#c:gems/catechu_powder",
+      "required": false
+    }
+  ]
+}

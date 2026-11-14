@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chicory_concrete",
+    {
+      "id": "#forge:dusts/chicory_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chicory_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/chicory_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chicory_concrete",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:diacetone_sorbose",
     {
+      "id": "#forge:dusts/diacetone_sorbose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/diacetone_sorbose",
+      "required": false
+    },
+    {
       "id": "#c:dusts/diacetone_sorbose",
       "required": false
     },

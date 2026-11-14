@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sorghum_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sorghum_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sorghum_red",
+      "required": false
     }
   ]
 }

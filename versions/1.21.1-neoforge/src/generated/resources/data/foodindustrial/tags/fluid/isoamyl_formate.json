@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_formate",
+    "foodindustrial:flowing_isoamyl_formate",
+    {
+      "id": "#forge:isoamyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_formate",
+      "required": false
+    }
+  ]
+}

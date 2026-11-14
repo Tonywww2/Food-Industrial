@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylselenocysteine",
+    {
+      "id": "#forge:dusts/methylselenocysteine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methylselenocysteine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methylselenocysteine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methylselenocysteine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanillyl_alcohol",
+    {
+      "id": "#forge:dusts/vanillyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/vanillyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/vanillyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/vanillyl_alcohol",
+      "required": false
+    }
+  ]
+}

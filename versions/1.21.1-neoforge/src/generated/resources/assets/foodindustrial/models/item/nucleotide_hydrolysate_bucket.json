@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:nucleotide_hydrolysate",
+  "loader": "neoforge:fluid_container"
+}

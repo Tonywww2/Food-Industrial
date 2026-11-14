@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ocimenyl_acetate",
+    "foodindustrial:flowing_ocimenyl_acetate",
+    {
+      "id": "#forge:ocimenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:ocimenyl_acetate",
+      "required": false
+    }
+  ]
+}

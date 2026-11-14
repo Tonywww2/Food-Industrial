@@ -67,6 +67,11 @@ public final class ModTags {
         }
     }
 
+    /** Planned item or fluid tags on the running node by id (data generation only). */
+    public static Map<String, List<TagPlan.Value>> planned(boolean fluid) {
+        return fluid ? plan().fluids() : plan().items();
+    }
+
     /** Tag contents on the running node (data generation only). */
     private static TagPlan.Result plan() {
         if (plan != null) {
@@ -83,8 +88,7 @@ public final class ModTags {
                         fluid.bucket() == null ? null : PlatformTags.itemId(fluid.bucket().get())));
             }
         }
-        TagPlan.Conventions conventions = new TagPlan.Conventions(PlatformDatagen.commonTagNamespace(),
-                PlatformDatagen.gaseousFluidTag(), PlatformDatagen::bucketTag);
+        TagPlan.Conventions conventions = new TagPlan.Conventions(PlatformDatagen.commonTagNamespace());
         plan = TagPlan.build(materials, TagImports.load(), conventions,
                 id -> PlatformTags.item(id).isPresent(), id -> PlatformTags.fluid(id).isPresent());
         return plan;

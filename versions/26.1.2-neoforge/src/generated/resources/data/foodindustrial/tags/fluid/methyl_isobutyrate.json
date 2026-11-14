@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_isobutyrate",
+    "foodindustrial:flowing_methyl_isobutyrate",
+    {
+      "id": "#forge:methyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

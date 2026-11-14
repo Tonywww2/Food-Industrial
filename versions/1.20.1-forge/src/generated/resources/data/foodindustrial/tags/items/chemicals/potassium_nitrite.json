@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/potassium_nitrite",
       "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_nitrite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_nitrite",
+      "required": false
     }
   ]
 }

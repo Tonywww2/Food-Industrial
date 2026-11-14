@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:sabinene_hydrate",
+  "loader": "neoforge:fluid_container"
+}

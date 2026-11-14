@@ -13,7 +13,14 @@ import net.minecraft.world.item.Item;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiConsumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
+import com.mojang.datafixers.util.Either;
+import net.minecraft.network.chat.FormattedText;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
 //? if forge {
 import net.minecraftforge.client.event.RegisterItemDecorationsEvent;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
@@ -152,6 +159,54 @@ public final class PlatformClient {
     *///?}
 
     private static final List<Runnable> CLIENT_TICK = new ArrayList<>();
+    private static final List<BiConsumer<ItemStack, List<Component>>> TOOLTIPS = new ArrayList<>();
+
+    /**
+     * Adds lines to the tooltip of every item stack (marks on foreign items, e.g. sulfured food). Call
+     * during mod construction from client-only code.
+     */
+    public static void onItemTooltip(BiConsumer<ItemStack, List<Component>> hook) {
+        TOOLTIPS.add(hook);
+    }
+
+    private static void tooltip(ItemStack stack, List<Component> lines) {
+        for (BiConsumer<ItemStack, List<Component>> hook : TOOLTIPS) {
+            hook.accept(stack, lines);
+        }
+    }
+
+    private static final List<Function<ItemStack, TooltipRows>> TOOLTIP_ROWS = new ArrayList<>();
+
+    /**
+     * Adds a {@link TooltipRows} part at the end of every item stack's tooltip ({@code hook} returns {@code null}
+     * for none). Read every frame the tooltip shows. Call during mod construction from client-only code.
+     */
+    public static void onTooltipRows(Function<ItemStack, TooltipRows> hook) {
+        TOOLTIP_ROWS.add(hook);
+    }
+
+    /** Adds the parts before the mod-name line that tooltip mods put last, or at the end when there is none. */
+    private static void gatherRows(ItemStack stack, List<Either<FormattedText, TooltipComponent>> elements) {
+        if (stack.isEmpty() || TOOLTIP_ROWS.isEmpty()) {
+            return;
+        }
+        int at = elements.size();
+        if (at > 1) {
+            String modName = com.tonywww.foodindustrial.platform.Platform.modName(
+                net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).getNamespace());
+            boolean last = modName != null && elements.get(at - 1).left()
+                .map(text -> modName.equals(net.minecraft.ChatFormatting.stripFormatting(text.getString()))).orElse(false);
+            if (last) {
+                at--;
+            }
+        }
+        for (Function<ItemStack, TooltipRows> hook : TOOLTIP_ROWS) {
+            TooltipRows rows = hook.apply(stack);
+            if (rows != null) {
+                elements.add(at++, Either.right(rows));
+            }
+        }
+    }
 
     /** Runs at the end of every client tick. Call during mod construction from client-only code. */
     public static void onClientTick(Runnable task) {
@@ -176,6 +231,27 @@ public final class PlatformClient {
         /*net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.client.event.ClientTickEvent.Post event) -> clientTick());
         *///?}
         //? if forge {
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS.addListener((net.minecraftforge.event.entity.player.ItemTooltipEvent event) ->
+            tooltip(event.getItemStack(), event.getToolTip()));
+        //?} else {
+        /*net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.player.ItemTooltipEvent event) ->
+            tooltip(event.getItemStack(), event.getToolTip()));
+        *///?}
+        //? if forge {
+        // lowest priority: tooltip mods that append the mod-name line in this event have run, so the part goes before it
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS.addListener(net.minecraftforge.eventbus.api.EventPriority.LOWEST,
+            (net.minecraftforge.client.event.RenderTooltipEvent.GatherComponents event) ->
+            gatherRows(event.getItemStack(), event.getTooltipElements()));
+        modBus.addListener((net.minecraftforge.client.event.RegisterClientTooltipComponentFactoriesEvent event) ->
+            event.register(TooltipRows.class, TooltipRowsRenderer::new));
+        //?} else {
+        /*net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.bus.api.EventPriority.LOWEST,
+            (net.neoforged.neoforge.client.event.RenderTooltipEvent.GatherComponents event) ->
+            gatherRows(event.getItemStack(), event.getTooltipElements()));
+        modBus.addListener((net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent event) ->
+            event.register(TooltipRows.class, TooltipRowsRenderer::new));
+        *///?}
+        //? if forge {
         modBus.addListener((FMLClientSetupEvent event) -> event.enqueueWork(() -> SCREEN_ENTRIES.forEach(PlatformClient::registerVanilla)));
         //?} else {
         /*modBus.addListener((RegisterMenuScreensEvent event) -> SCREEN_ENTRIES.forEach(entry -> registerEvent(event, entry)));
@@ -188,6 +264,7 @@ public final class PlatformClient {
         //?}
         modBus.addListener(PlatformClient::registerItemDecorations);
         PlatformBlockRenderers.bind(modBus);
+        PlatformHud.bind();
         //? if >=26.1 {
         /*modBus.addListener(PlatformClient::registerFluidModels);
         *///?}

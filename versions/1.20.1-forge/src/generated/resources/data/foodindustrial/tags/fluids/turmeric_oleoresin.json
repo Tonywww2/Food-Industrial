@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:turmeric_oleoresin",
+    "foodindustrial:flowing_turmeric_oleoresin",
+    {
+      "id": "#forge:turmeric_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:turmeric_oleoresin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oak_chips_extract",
+    "foodindustrial:flowing_oak_chips_extract",
+    {
+      "id": "#forge:oak_chips_extract",
+      "required": false
+    },
+    {
+      "id": "#c:oak_chips_extract",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hex_3_enoic_acid",
+    "foodindustrial:flowing_hex_3_enoic_acid",
+    {
+      "id": "#forge:hex_3_enoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:hex_3_enoic_acid",
+      "required": false
+    }
+  ]
+}

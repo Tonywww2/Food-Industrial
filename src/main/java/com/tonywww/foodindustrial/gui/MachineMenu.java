@@ -1,8 +1,10 @@
 package com.tonywww.foodindustrial.gui;
 
+import com.tonywww.foodindustrial.platform.PlatformTags;
 import com.tonywww.foodindustrial.core.data.DataReader;
 import com.tonywww.foodindustrial.core.data.DataWriter;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
+import com.tonywww.foodindustrial.machine.bio.CultureBenchBlockEntity;
 import com.tonywww.foodindustrial.machine.component.RedstoneControl;
 import com.tonywww.foodindustrial.machine.component.SideConfig;
 import com.tonywww.foodindustrial.machine.component.SlotRole;
@@ -113,7 +115,8 @@ public class MachineMenu extends FIMenu {
 
     @Override
     protected int syncGroups() {
-        return definition.isMultiblock() ? BASE_GROUPS | MachineView.STRUCTURE : BASE_GROUPS;
+        int groups = definition.isMultiblock() ? BASE_GROUPS | MachineView.STRUCTURE : BASE_GROUPS;
+        return machine instanceof CultureBenchBlockEntity || CultureBenchBlockEntity.ID.equals(definition.id()) ? groups | MachineView.PLATE : groups;
     }
 
     @Override
@@ -129,15 +132,26 @@ public class MachineMenu extends FIMenu {
 
     // ---- slots ----
 
+    /**
+     * Whether the window holds slots of {@code role}: a multiblock controller holds only its upgrade and
+     * module slots; items and fluids go through the ports (2026-11-10).
+     */
+    private boolean holds(SlotRole role) {
+        return !definition.isMultiblock() || role == SlotRole.UPGRADE || role == SlotRole.MODULE;
+    }
+
     private boolean mayPlace(int slot, SlotRole role, ItemStack stack) {
+        if (!holds(role)) {
+            return false;
+        }
         return switch (role) {
             case INPUT -> {
                 ItemStack lock = machine != null ? machine.inventory().lock(slot)
                     : slot < view().slotLocks.length ? view().slotLocks[slot] : ItemStack.EMPTY;
-                yield lock.isEmpty() || PlatformItems.sameItemSameData(lock, stack);
+                yield (lock.isEmpty() || PlatformItems.sameItemSameData(lock, stack)) && filtered(slot, role, stack);
             }
             case OUTPUT -> false;
-            case CATALYST -> true;
+            case CATALYST -> filtered(slot, role, stack);
             case FUEL -> PlatformFuel.burnTime(player.level(), stack) > 0;
             case UPGRADE -> Upgrade.of(stack.getItem()) != null;
             case MODULE -> {
@@ -147,7 +161,15 @@ public class MachineMenu extends FIMenu {
         };
     }
 
+    /** The slot's tag filter (2026-11-11, M30). */
+    private boolean filtered(int slot, SlotRole role, ItemStack stack) {
+        return definition.slotAccepts(role, slot - definition.layout().start(role), stack);
+    }
+
     private boolean active(SlotRole role) {
+        if (!holds(role)) {
+            return false;
+        }
         if (machine != null) {
             return true;
         }
@@ -177,6 +199,11 @@ public class MachineMenu extends FIMenu {
         @Override
         public int getMaxStackSize() {
             return role == SlotRole.UPGRADE || role == SlotRole.MODULE ? 1 : 64;
+        }
+
+        @Override
+        public boolean mayPickup(Player player) {
+            return holds(role);
         }
 
         @Override
@@ -220,10 +247,14 @@ public class MachineMenu extends FIMenu {
 
     private boolean moveIntoMachine(ItemStack stack) {
         boolean moved = false;
-        for (SlotRole role : new SlotRole[]{SlotRole.INPUT, SlotRole.CATALYST, SlotRole.FUEL, SlotRole.UPGRADE, SlotRole.MODULE}) {
+        // fuel that no recipe of the machine uses goes only to the fuel slots (server decides, I14)
+        SlotRole[] order = machine != null && machine.fuelOnly(stack)
+            ? new SlotRole[]{SlotRole.FUEL}
+            : new SlotRole[]{SlotRole.INPUT, SlotRole.CATALYST, SlotRole.FUEL, SlotRole.UPGRADE, SlotRole.MODULE};
+        for (SlotRole role : order) {
             int start = definition.layout().start(role);
             int count = countOf(role);
-            if (count > 0 && mayPlace(start, role, stack)) {
+            if (count > 0 && holds(role) && mayPlace(start, role, stack)) {
                 moved |= moveItemStackTo(stack, start, start + count, false);
                 if (stack.isEmpty()) {
                     return true;
@@ -245,6 +276,37 @@ public class MachineMenu extends FIMenu {
     }
 
     // ---- actions (server) ----
+
+    /** JEI transfer: moves up to {@code count} items from inventory menu slot {@code from} into input slot {@code to}. */
+    private void transfer(int from, int to, int count) {
+        if (from < machineSlots || from >= slots.size() || to < 0 || to >= machineSlots || count <= 0
+            || definition.layout().roleOf(to) != SlotRole.INPUT) {
+            return;
+        }
+        Slot source = slots.get(from);
+        Slot target = slots.get(to);
+        ItemStack stack = source.getItem();
+        if (stack.isEmpty() || !target.mayPlace(stack)) {
+            return;
+        }
+        ItemStack current = target.getItem();
+        if (!current.isEmpty() && !PlatformItems.sameItemSameData(current, stack)) {
+            return;
+        }
+        int move = Math.min(count, Math.min(stack.getCount(), target.getMaxStackSize(stack) - current.getCount()));
+        if (move <= 0) {
+            return;
+        }
+        ItemStack moved = source.remove(move);
+        if (current.isEmpty()) {
+            target.set(moved);
+        } else {
+            current.grow(moved.getCount());
+            target.set(current);
+        }
+        source.setChanged();
+        target.setChanged();
+    }
 
     @Override
     protected void handleAction(ServerPlayer sender, int action, int a, int b) {
@@ -301,24 +363,49 @@ public class MachineMenu extends FIMenu {
                 }
             }
             case MenuActions.LOCK_SLOT -> {
-                if (a >= 0 && a < machineSlots) {
+                if (a >= 0 && a < machineSlots && holds(definition.layout().roleOf(a))) {
                     machine.toggleSlotLock(a, getCarried());
                 }
             }
             case MenuActions.LOCK_TANK -> {
-                if (a >= 0 && a < machine.tanks().size()) {
+                if (a >= 0 && a < machine.tanks().size() && !definition.isMultiblock()) {
                     machine.toggleTankLock(a, PlatformFluidContainers.contained(getCarried()));
                 }
             }
-            case MenuActions.TANK_CLICK -> clickTank(sender, machine.tanks(), a);
+            case MenuActions.LOCK_SLOT_ITEM -> {
+                if (a >= 0 && a < machineSlots && definition.layout().roleOf(a) == SlotRole.INPUT) {
+                    PlatformTags.itemByRawId(b).ifPresent(item -> machine.lockSlotTo(a, new ItemStack(item)));
+                }
+            }
+            case MenuActions.LOCK_TANK_FLUID -> {
+                if (a >= 0 && a < definition.layout().fluidIn() && !definition.isMultiblock()) {
+                    PlatformTags.fluidByRawId(b).ifPresent(fluid -> machine.lockTankTo(a, FluidAmount.of(fluid, 1)));
+                }
+            }
+            case MenuActions.TRANSFER -> transfer(a, b >> 8, b & 0xFF);
+            case MenuActions.CLEAR_SLOT -> {
+                if (a >= 0 && a < machineSlots && definition.layout().roleOf(a) == SlotRole.INPUT) {
+                    quickMoveStack(sender, a);
+                }
+            }
+            case MenuActions.TANK_CLICK -> {
+                if (!definition.isMultiblock()) {
+                    clickTank(sender, machine.tanks(), a);
+                }
+            }
             case MenuActions.VENT -> {
-                if (a >= machine.tanks().inputs() && a < machine.tanks().size() && b >= 0 && b < VentMode.values().length) {
+                if (!definition.isMultiblock() && a >= machine.tanks().inputs() && a < machine.tanks().size() && b >= 0 && b < VentMode.values().length) {
                     machine.setVent(a, VentMode.values()[b]);
                 }
             }
             case MenuActions.TANK_DUMP -> {
-                if (a >= 0 && a < machine.tanks().size()) {
+                if (a >= 0 && a < machine.tanks().size() && !definition.isMultiblock()) {
                     machine.tanks().set(a, FluidAmount.EMPTY);
+                }
+            }
+            case MenuActions.CULTURE -> {
+                if (machine instanceof CultureBenchBlockEntity bench) {
+                    bench.action(a, b);
                 }
             }
             default -> {

@@ -1,6 +1,11 @@
 package com.tonywww.foodindustrial.platform.machine;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -26,7 +31,11 @@ import java.util.function.Supplier;
 *///?}
 //? if >=26.1 {
 /*import net.minecraft.world.level.redstone.Orientation;
-*///?}
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.util.RandomSource;
+*///?} else {
+import net.minecraft.world.level.LevelAccessor;
+//?}
 //? if >=1.21 && <26.1 {
 /*import net.minecraft.world.ItemInteractionResult;
 *///?}
@@ -101,6 +110,53 @@ public abstract class PlatformEntityBlock extends BaseEntityBlock {
         return adjustDrops(state, params.getOptionalParameter(LootContextParams.BLOCK_ENTITY), super.getDrops(state, params));
     }
     *///?}
+
+    /** Outline and collision shape; default a full block. */
+    protected VoxelShape shape(BlockState state) {
+        return Shapes.block();
+    }
+
+    /**
+     * The state after the neighbour towards {@code direction} changed (connected textures); default
+     * unchanged. Called on placement updates of the neighbour, never with block entity access needs.
+     */
+    protected BlockState onNeighborShape(BlockState state, Direction direction, BlockState neighbor, BlockGetter level, BlockPos pos) {
+        return state;
+    }
+
+    //? if >=1.21 {
+    /*@Override
+    protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return shape(state);
+    }
+    *///?} else {
+    @Override
+    @SuppressWarnings("deprecation")
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return shape(state);
+    }
+    //?}
+
+    //? if >=26.1 {
+    /*@Override
+    protected BlockState updateShape(BlockState state, LevelReader level, ScheduledTickAccess ticks, BlockPos pos, Direction direction,
+                                     BlockPos neighborPos, BlockState neighbor, RandomSource random) {
+        return onNeighborShape(state, direction, neighbor, level, pos);
+    }
+    *///?}
+    //? if >=1.21 && <26.1 {
+    /*@Override
+    protected BlockState updateShape(BlockState state, Direction direction, BlockState neighbor, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+        return onNeighborShape(state, direction, neighbor, level, pos);
+    }
+    *///?}
+    //? if <1.21 {
+    @Override
+    @SuppressWarnings("deprecation")
+    public BlockState updateShape(BlockState state, Direction direction, BlockState neighbor, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+        return onNeighborShape(state, direction, neighbor, level, pos);
+    }
+    //?}
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos pos, BlockState state) {

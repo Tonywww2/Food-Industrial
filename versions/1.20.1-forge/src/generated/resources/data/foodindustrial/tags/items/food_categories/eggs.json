@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:century_egg",
+    "foodindustrial:salted_egg",
+    "foodindustrial:braised_egg",
+    "foodindustrial:tea_egg",
+    "foodindustrial:wine_preserved_egg",
+    "foodindustrial:ramen_egg",
+    "foodindustrial:egg_pudding",
+    "foodindustrial:egg_white_powder"
+  ]
+}

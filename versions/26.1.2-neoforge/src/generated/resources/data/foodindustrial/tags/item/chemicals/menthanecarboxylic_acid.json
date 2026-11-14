@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthanecarboxylic_acid",
+    {
+      "id": "#forge:dusts/menthanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/menthanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/menthanecarboxylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/menthanecarboxylic_acid",
+      "required": false
+    }
+  ]
+}

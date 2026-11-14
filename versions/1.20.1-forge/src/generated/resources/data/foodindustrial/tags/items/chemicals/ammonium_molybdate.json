@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ammonium_molybdate",
+    {
+      "id": "#forge:dusts/ammonium_molybdate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ammonium_molybdate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ammonium_molybdate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ammonium_molybdate",
+      "required": false
+    }
+  ]
+}

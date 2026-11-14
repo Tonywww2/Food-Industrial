@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxybutanone",
+    "foodindustrial:flowing_hydroxybutanone",
+    {
+      "id": "#forge:hydroxybutanone",
+      "required": false
+    },
+    {
+      "id": "#c:hydroxybutanone",
+      "required": false
+    }
+  ]
+}

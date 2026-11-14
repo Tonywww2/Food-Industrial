@@ -6,6 +6,10 @@
     {
       "id": "#forge:acetone",
       "required": false
+    },
+    {
+      "id": "#c:acetone",
+      "required": false
     }
   ]
 }

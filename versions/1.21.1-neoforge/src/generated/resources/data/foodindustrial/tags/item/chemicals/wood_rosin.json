@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wood_rosin",
+    {
+      "id": "#forge:dusts/wood_rosin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/wood_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/wood_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/wood_rosin",
+      "required": false
+    }
+  ]
+}

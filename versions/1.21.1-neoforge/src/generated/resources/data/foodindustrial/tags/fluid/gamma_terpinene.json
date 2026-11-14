@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gamma_terpinene",
+    "foodindustrial:flowing_gamma_terpinene",
+    {
+      "id": "#forge:gamma_terpinene",
+      "required": false
+    },
+    {
+      "id": "#c:gamma_terpinene",
+      "required": false
+    }
+  ]
+}

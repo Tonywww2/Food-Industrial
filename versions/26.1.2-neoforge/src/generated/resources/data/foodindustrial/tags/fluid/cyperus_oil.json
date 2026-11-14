@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyperus_oil",
+    "foodindustrial:flowing_cyperus_oil",
+    {
+      "id": "#forge:cyperus_oil",
+      "required": false
+    },
+    {
+      "id": "#c:cyperus_oil",
+      "required": false
+    }
+  ]
+}

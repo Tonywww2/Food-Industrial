@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:ethoxy_dimethylfuranone",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sophora_flower_concrete",
+    {
+      "id": "#forge:dusts/sophora_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sophora_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sophora_flower_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sophora_flower_concrete",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "foodindustrial:crock"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "T": {
+      "item": "foodindustrial:wooden_tank"
+    }
+  },
+  "pattern": [
+    "ICI",
+    " T "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:fermentation_vat"
+  }
+}

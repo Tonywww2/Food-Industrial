@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:crude_peanut_oil"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:materials/glass_bottle"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "item": "foodindustrial:peanut_oil"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -9,6 +9,30 @@
     {
       "id": "#forge:gems/potassium_chloride",
       "required": false
+    },
+    {
+      "id": "#forge:dusts/rock_salt",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rock_salt",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/potassium_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/potassium_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/rock_salt",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rock_salt",
+      "required": false
     }
   ]
 }

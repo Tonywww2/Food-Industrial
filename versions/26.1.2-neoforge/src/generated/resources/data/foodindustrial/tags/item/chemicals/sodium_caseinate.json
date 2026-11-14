@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_caseinate",
     {
+      "id": "#forge:dusts/sodium_caseinate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_caseinate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_caseinate",
       "required": false
     },

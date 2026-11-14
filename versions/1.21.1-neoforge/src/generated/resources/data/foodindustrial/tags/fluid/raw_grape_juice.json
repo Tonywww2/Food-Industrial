@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:raw_grape_juice",
+    "foodindustrial:flowing_raw_grape_juice",
+    {
+      "id": "#forge:raw_grape_juice",
+      "required": false
+    },
+    {
+      "id": "#c:raw_grape_juice",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hangzhou_chrysanthemum_extract",
+    "foodindustrial:flowing_hangzhou_chrysanthemum_extract",
+    {
+      "id": "#forge:hangzhou_chrysanthemum_extract",
+      "required": false
+    },
+    {
+      "id": "#c:hangzhou_chrysanthemum_extract",
+      "required": false
+    }
+  ]
+}

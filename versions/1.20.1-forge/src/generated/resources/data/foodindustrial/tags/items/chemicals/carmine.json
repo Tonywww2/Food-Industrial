@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/carmine",
       "required": false
+    },
+    {
+      "id": "#c:dusts/carmine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carmine",
+      "required": false
     }
   ]
 }

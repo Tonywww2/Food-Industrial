@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "foodindustrial:dryer"
+    },
+    "F": {
+      "item": "foodindustrial:chemical_frame"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "W": {
+      "item": "foodindustrial:chemical_tower_wall"
+    }
+  },
+  "pattern": [
+    "WDW",
+    "RFR",
+    "WRW"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:spray_dryer"
+  }
+}

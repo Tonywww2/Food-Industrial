@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/carnauba_powder"
+    },
+    {
+      "tag": "foodindustrial:materials/carnauba_powder"
+    },
+    {
+      "tag": "foodindustrial:materials/carnauba_powder"
+    },
+    {
+      "tag": "foodindustrial:materials/carnauba_powder"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": 34
+      },
+      "count": 1,
+      "id": "foodindustrial:carnauba_wax"
+    }
+  ]
+}

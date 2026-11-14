@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydroxyacetone",
+    {
+      "id": "#forge:dusts/dihydroxyacetone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dihydroxyacetone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dihydroxyacetone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dihydroxyacetone",
+      "required": false
+    }
+  ]
+}

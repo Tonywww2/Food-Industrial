@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": "minecraft:ice",
+    "I": "#c:ingots/iron",
+    "R": "#c:dusts/redstone"
+  },
+  "pattern": [
+    "III",
+    "ERE",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:chill_roll"
+  }
+}

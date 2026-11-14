@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:immobilized_aspartate_decarboxylase",
+    {
+      "id": "#forge:dusts/immobilized_aspartate_decarboxylase",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/immobilized_aspartate_decarboxylase",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/immobilized_aspartate_decarboxylase",
+      "required": false
+    },
+    {
+      "id": "#c:gems/immobilized_aspartate_decarboxylase",
+      "required": false
+    }
+  ]
+}

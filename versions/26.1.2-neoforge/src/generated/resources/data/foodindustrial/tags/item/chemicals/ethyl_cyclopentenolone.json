@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_cyclopentenolone",
+    {
+      "id": "#forge:dusts/ethyl_cyclopentenolone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ethyl_cyclopentenolone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ethyl_cyclopentenolone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ethyl_cyclopentenolone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_8_tetradecenal",
+    "foodindustrial:flowing_cis_8_tetradecenal",
+    {
+      "id": "#forge:cis_8_tetradecenal",
+      "required": false
+    },
+    {
+      "id": "#c:cis_8_tetradecenal",
+      "required": false
+    }
+  ]
+}

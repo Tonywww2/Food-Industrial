@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/cyclamic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/cyclamic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyclamic_acid",
+      "required": false
     }
   ]
 }

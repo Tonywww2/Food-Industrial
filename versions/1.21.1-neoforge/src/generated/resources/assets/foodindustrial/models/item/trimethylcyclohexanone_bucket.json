@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:trimethylcyclohexanone",
+  "loader": "neoforge:fluid_container"
+}

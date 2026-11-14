@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimercaptomethane",
+    "foodindustrial:flowing_dimercaptomethane",
+    {
+      "id": "#forge:dimercaptomethane",
+      "required": false
+    },
+    {
+      "id": "#c:dimercaptomethane",
+      "required": false
+    }
+  ]
+}

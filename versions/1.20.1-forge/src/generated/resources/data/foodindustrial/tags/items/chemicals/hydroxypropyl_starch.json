@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydroxypropyl_starch",
+    {
+      "id": "#forge:dusts/hydroxypropyl_starch",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxypropyl_starch",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/hydroxypropyl_starch",
+      "required": false
+    },
+    {
+      "id": "#c:gems/hydroxypropyl_starch",
+      "required": false
+    }
+  ]
+}

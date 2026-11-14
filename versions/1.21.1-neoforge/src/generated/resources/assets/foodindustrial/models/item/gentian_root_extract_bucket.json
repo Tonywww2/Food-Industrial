@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:gentian_root_extract",
+  "loader": "neoforge:fluid_container"
+}

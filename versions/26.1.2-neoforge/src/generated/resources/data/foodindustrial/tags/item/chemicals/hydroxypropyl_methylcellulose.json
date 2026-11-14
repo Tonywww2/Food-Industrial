@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:hydroxypropyl_methylcellulose",
     {
+      "id": "#forge:dusts/hydroxypropyl_methylcellulose",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/hydroxypropyl_methylcellulose",
+      "required": false
+    },
+    {
       "id": "#c:dusts/hydroxypropyl_methylcellulose",
       "required": false
     },

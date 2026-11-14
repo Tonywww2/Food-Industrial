@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_isobutyl_thiazoline",
+    "foodindustrial:flowing_dimethyl_isobutyl_thiazoline",
+    {
+      "id": "#forge:dimethyl_isobutyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_isobutyl_thiazoline",
+      "required": false
+    }
+  ]
+}

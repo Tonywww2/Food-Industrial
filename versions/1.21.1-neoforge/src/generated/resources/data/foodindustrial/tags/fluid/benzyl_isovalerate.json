@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_isovalerate",
+    "foodindustrial:flowing_benzyl_isovalerate",
+    {
+      "id": "#forge:benzyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_isovalerate",
+      "required": false
+    }
+  ]
+}

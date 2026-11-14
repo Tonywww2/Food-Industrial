@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sandalwood_oil",
+    "foodindustrial:flowing_sandalwood_oil",
+    {
+      "id": "#forge:sandalwood_oil",
+      "required": false
+    },
+    {
+      "id": "#c:sandalwood_oil",
+      "required": false
+    }
+  ]
+}

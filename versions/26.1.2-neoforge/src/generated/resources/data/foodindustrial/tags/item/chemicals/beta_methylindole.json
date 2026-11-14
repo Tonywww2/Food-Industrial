@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:beta_methylindole",
+    {
+      "id": "#forge:dusts/beta_methylindole",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/beta_methylindole",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/beta_methylindole",
+      "required": false
+    },
+    {
+      "id": "#c:gems/beta_methylindole",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptyne",
+    "foodindustrial:flowing_heptyne",
+    {
+      "id": "#forge:heptyne",
+      "required": false
+    },
+    {
+      "id": "#c:heptyne",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methoxymethylbenzylamine",
+    "foodindustrial:flowing_methoxymethylbenzylamine",
+    {
+      "id": "#forge:methoxymethylbenzylamine",
+      "required": false
+    },
+    {
+      "id": "#c:methoxymethylbenzylamine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:enzymes/phytase"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:phytic_acid"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 6000,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/slaked_lime"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:myo_inositol",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "count": 3,
+      "item": "foodindustrial:tricalcium_phosphate",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

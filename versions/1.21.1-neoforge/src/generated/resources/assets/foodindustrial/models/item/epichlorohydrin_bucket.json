@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:epichlorohydrin",
+  "loader": "neoforge:fluid_container"
+}

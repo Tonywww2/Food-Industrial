@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dichloromethane",
+    "foodindustrial:flowing_dichloromethane",
+    {
+      "id": "#forge:dichloromethane",
+      "required": false
+    },
+    {
+      "id": "#c:dichloromethane",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:undecenol",
+    "foodindustrial:flowing_undecenol",
+    {
+      "id": "#forge:undecenol",
+      "required": false
+    },
+    {
+      "id": "#c:undecenol",
+      "required": false
+    }
+  ]
+}

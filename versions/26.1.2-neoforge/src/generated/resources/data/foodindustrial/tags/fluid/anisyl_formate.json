@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisyl_formate",
+    "foodindustrial:flowing_anisyl_formate",
+    {
+      "id": "#forge:anisyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:anisyl_formate",
+      "required": false
+    }
+  ]
+}

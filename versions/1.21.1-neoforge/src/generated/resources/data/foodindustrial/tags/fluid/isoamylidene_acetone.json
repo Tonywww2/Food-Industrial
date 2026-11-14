@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamylidene_acetone",
+    "foodindustrial:flowing_isoamylidene_acetone",
+    {
+      "id": "#forge:isoamylidene_acetone",
+      "required": false
+    },
+    {
+      "id": "#c:isoamylidene_acetone",
+      "required": false
+    }
+  ]
+}

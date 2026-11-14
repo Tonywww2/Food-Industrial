@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tiglic_acid",
+    {
+      "id": "#forge:dusts/tiglic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tiglic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tiglic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tiglic_acid",
+      "required": false
+    }
+  ]
+}

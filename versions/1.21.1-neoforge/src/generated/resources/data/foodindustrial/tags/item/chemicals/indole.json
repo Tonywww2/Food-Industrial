@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:indole",
+    {
+      "id": "#forge:dusts/indole",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/indole",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/indole",
+      "required": false
+    },
+    {
+      "id": "#c:gems/indole",
+      "required": false
+    }
+  ]
+}

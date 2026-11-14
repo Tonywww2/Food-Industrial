@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:polymerized_rosin",
+    {
+      "id": "#forge:dusts/polymerized_rosin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/polymerized_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polymerized_rosin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polymerized_rosin",
+      "required": false
+    }
+  ]
+}

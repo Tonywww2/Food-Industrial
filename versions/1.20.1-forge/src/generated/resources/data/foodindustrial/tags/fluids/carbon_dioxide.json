@@ -6,6 +6,10 @@
     {
       "id": "#forge:carbon_dioxide",
       "required": false
+    },
+    {
+      "id": "#c:carbon_dioxide",
+      "required": false
     }
   ]
 }

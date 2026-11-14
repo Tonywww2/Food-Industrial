@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:orange_flower_absolute",
+    "foodindustrial:flowing_orange_flower_absolute",
+    {
+      "id": "#forge:orange_flower_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:orange_flower_absolute",
+      "required": false
+    }
+  ]
+}

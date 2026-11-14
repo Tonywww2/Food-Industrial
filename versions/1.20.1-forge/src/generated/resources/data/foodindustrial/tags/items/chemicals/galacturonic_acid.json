@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/galacturonic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/galacturonic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/galacturonic_acid",
+      "required": false
     }
   ]
 }

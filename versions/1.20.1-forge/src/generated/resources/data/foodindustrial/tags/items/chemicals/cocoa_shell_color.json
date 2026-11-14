@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/cocoa_shell_color",
       "required": false
+    },
+    {
+      "id": "#c:dusts/cocoa_shell_color",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cocoa_shell_color",
+      "required": false
     }
   ]
 }

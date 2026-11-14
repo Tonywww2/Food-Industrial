@@ -4,6 +4,10 @@
     {
       "id": "#forge:ingots/silver",
       "required": false
+    },
+    {
+      "id": "#c:ingots/silver",
+      "required": false
     }
   ]
 }

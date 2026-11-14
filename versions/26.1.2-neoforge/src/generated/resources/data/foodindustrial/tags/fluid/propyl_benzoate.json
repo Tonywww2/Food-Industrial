@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propyl_benzoate",
+    "foodindustrial:flowing_propyl_benzoate",
+    {
+      "id": "#forge:propyl_benzoate",
+      "required": false
+    },
+    {
+      "id": "#c:propyl_benzoate",
+      "required": false
+    }
+  ]
+}

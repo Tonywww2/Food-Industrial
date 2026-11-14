@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:vanilla_bean_tincture",
+    "foodindustrial:flowing_vanilla_bean_tincture",
+    {
+      "id": "#forge:vanilla_bean_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:vanilla_bean_tincture",
+      "required": false
+    }
+  ]
+}

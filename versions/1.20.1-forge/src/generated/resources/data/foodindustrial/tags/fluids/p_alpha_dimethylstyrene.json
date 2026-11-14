@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_alpha_dimethylstyrene",
+    "foodindustrial:flowing_p_alpha_dimethylstyrene",
+    {
+      "id": "#forge:p_alpha_dimethylstyrene",
+      "required": false
+    },
+    {
+      "id": "#c:p_alpha_dimethylstyrene",
+      "required": false
+    }
+  ]
+}

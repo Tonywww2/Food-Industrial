@@ -4,6 +4,10 @@
     "foodindustrial:acetic_anhydride",
     "foodindustrial:flowing_acetic_anhydride",
     {
+      "id": "#forge:acetic_anhydride",
+      "required": false
+    },
+    {
       "id": "#c:acetic_anhydride",
       "required": false
     }

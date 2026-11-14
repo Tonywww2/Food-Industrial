@@ -1,0 +1,52 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:enzymes/nuclease"
+      },
+      "runs": 16
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:enzymes/deaminase"
+      },
+      "runs": 16
+    }
+  ],
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/spent_yeast"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/salt"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:inosinic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 60
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t1",
+    "sterile": true
+  },
+  "time": 12000
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranyl_formate",
+    "foodindustrial:flowing_geranyl_formate",
+    {
+      "id": "#forge:geranyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:geranyl_formate",
+      "required": false
+    }
+  ]
+}

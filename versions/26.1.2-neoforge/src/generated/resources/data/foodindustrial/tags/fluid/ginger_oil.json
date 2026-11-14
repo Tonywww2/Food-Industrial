@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ginger_oil",
+    "foodindustrial:flowing_ginger_oil",
+    {
+      "id": "#forge:ginger_oil",
+      "required": false
+    },
+    {
+      "id": "#c:ginger_oil",
+      "required": false
+    }
+  ]
+}

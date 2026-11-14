@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiomethyl_hexanoate",
+    "foodindustrial:flowing_methylthiomethyl_hexanoate",
+    {
+      "id": "#forge:methylthiomethyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiomethyl_hexanoate",
+      "required": false
+    }
+  ]
+}

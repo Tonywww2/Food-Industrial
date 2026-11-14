@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": "foodindustrial:adsorption_column",
+    "F": "foodindustrial:clean_frame",
+    "M": "foodindustrial:membrane_module",
+    "P": "minecraft:piston",
+    "R": "#c:dusts/redstone"
+  },
+  "pattern": [
+    "MCM",
+    "RFR",
+    "MPM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:membrane_separator"
+  }
+}

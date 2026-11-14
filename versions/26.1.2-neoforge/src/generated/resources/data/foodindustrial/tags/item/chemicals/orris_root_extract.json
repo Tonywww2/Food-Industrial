@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:orris_root_extract",
+    {
+      "id": "#forge:dusts/orris_root_extract",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/orris_root_extract",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/orris_root_extract",
+      "required": false
+    },
+    {
+      "id": "#c:gems/orris_root_extract",
+      "required": false
+    }
+  ]
+}

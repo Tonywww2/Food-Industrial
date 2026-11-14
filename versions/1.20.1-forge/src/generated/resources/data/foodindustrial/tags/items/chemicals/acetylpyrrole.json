@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylpyrrole",
+    {
+      "id": "#forge:dusts/acetylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetylpyrrole",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rutin",
+    {
+      "id": "#forge:dusts/rutin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/rutin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/rutin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/rutin",
+      "required": false
+    }
+  ]
+}

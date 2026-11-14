@@ -6,6 +6,10 @@
     {
       "id": "#forge:trimethylpyrazine",
       "required": false
+    },
+    {
+      "id": "#c:trimethylpyrazine",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:borneol",
+    {
+      "id": "#forge:dusts/borneol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/borneol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/borneol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/borneol",
+      "required": false
+    }
+  ]
+}

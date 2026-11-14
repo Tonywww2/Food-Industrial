@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/artemisia_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/artemisia_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/artemisia_gum",
+      "required": false
     }
   ]
 }

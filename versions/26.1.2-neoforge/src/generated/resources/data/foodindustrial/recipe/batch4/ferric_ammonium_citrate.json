@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ferric_citrate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ammonia"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:ferric_ammonium_citrate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "vacuum"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexan_3_ol",
+    "foodindustrial:flowing_hexan_3_ol",
+    {
+      "id": "#forge:hexan_3_ol",
+      "required": false
+    },
+    {
+      "id": "#c:hexan_3_ol",
+      "required": false
+    }
+  ]
+}

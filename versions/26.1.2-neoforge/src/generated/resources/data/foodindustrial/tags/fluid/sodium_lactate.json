@@ -4,6 +4,10 @@
     "foodindustrial:sodium_lactate",
     "foodindustrial:flowing_sodium_lactate",
     {
+      "id": "#forge:sodium_lactate",
+      "required": false
+    },
+    {
       "id": "#c:sodium_lactate",
       "required": false
     }

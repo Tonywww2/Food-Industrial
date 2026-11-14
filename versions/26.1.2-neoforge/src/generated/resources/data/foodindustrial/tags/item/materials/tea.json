@@ -4,6 +4,10 @@
     {
       "id": "#c:crops/tealeaf",
       "required": false
+    },
+    {
+      "id": "#forge:crops/tealeaf",
+      "required": false
     }
   ]
 }

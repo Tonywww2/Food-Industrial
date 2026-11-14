@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:animal_blood",
+    "foodindustrial:flowing_animal_blood",
+    {
+      "id": "#forge:animal_blood",
+      "required": false
+    },
+    {
+      "id": "#c:animal_blood",
+      "required": false
+    },
+    {
+      "id": "#c:blood",
+      "required": false
+    },
+    {
+      "id": "#forge:blood",
+      "required": false
+    }
+  ]
+}

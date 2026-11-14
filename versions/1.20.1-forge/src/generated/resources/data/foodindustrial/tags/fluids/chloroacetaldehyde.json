@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chloroacetaldehyde",
+    "foodindustrial:flowing_chloroacetaldehyde",
+    {
+      "id": "#forge:chloroacetaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:chloroacetaldehyde",
+      "required": false
+    }
+  ]
+}

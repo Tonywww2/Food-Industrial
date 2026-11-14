@@ -26,6 +26,16 @@ public final class MenuActions {
     public static final int TANK_DUMP = 11;
     /** {@code a} output tank; {@code b} venting switch ({@code VentMode} ordinal). */
     public static final int VENT = 12;
+    /** Culture bench (M30): {@code a} button (inoculate, identify, pick, discard); {@code b} colony to pick. */
+    public static final int CULTURE = 13;
+    /** JEI drop on an input slot (I22): {@code a} slot; {@code b} raw id of the item to lock it to. */
+    public static final int LOCK_SLOT_ITEM = 14;
+    /** JEI drop on an input tank (I22): {@code a} tank; {@code b} raw id of the fluid to lock it to. */
+    public static final int LOCK_TANK_FLUID = 15;
+    /** JEI transfer (I22): {@code a} inventory menu slot; {@code b} machine input slot × 256 + count. */
+    public static final int TRANSFER = 16;
+    /** JEI transfer (I22): {@code a} machine input slot, moved back into the inventory. */
+    public static final int CLEAR_SLOT = 17;
     /** Port: {@code a} direction (input, output, off). */
     public static final int PORT_MODE = 20;
     /** Port: {@code b} automatic output on. */

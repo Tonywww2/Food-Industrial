@@ -6,6 +6,10 @@
     {
       "id": "#forge:hydrochloric_acid",
       "required": false
+    },
+    {
+      "id": "#c:hydrochloric_acid",
+      "required": false
     }
   ]
 }

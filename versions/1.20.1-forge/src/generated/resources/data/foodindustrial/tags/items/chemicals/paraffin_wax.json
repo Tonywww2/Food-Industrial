@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/paraffin_wax",
       "required": false
+    },
+    {
+      "id": "#c:dusts/paraffin_wax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/paraffin_wax",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "type": "thermal:press",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/copra"
+  },
+  "result": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:coconut_oil"
+    }
+  ]
+}

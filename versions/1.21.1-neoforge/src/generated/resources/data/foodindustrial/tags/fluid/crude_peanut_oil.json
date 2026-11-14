@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:crude_peanut_oil",
+    "foodindustrial:flowing_crude_peanut_oil",
+    {
+      "id": "#forge:crude_peanut_oil",
+      "required": false
+    },
+    {
+      "id": "#c:crude_peanut_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "minecraft:kelp",
+  "name": "book.foodindustrial.manual.entry.history_kelp_ash",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:kelp",
+      "text": "book.foodindustrial.manual.entry.history_kelp_ash.text"
+    }
+  ],
+  "sortnum": 0
+}

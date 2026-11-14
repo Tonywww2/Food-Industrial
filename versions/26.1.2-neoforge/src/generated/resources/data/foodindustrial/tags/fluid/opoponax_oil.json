@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:opoponax_oil",
+    "foodindustrial:flowing_opoponax_oil",
+    {
+      "id": "#forge:opoponax_oil",
+      "required": false
+    },
+    {
+      "id": "#c:opoponax_oil",
+      "required": false
+    }
+  ]
+}

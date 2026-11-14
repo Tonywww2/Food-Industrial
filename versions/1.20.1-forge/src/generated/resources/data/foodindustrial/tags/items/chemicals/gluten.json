@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/gluten",
       "required": false
+    },
+    {
+      "id": "#c:dusts/gluten",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gluten",
+      "required": false
     }
   ]
 }

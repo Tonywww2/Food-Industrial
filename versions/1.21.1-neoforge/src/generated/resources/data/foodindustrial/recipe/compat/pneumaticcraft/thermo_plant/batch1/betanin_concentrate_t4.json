@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:thermo_plant",
+  "inputs": {
+    "fluid": {
+      "amount": 2000,
+      "tag": "foodindustrial:beetroot_juice"
+    }
+  },
+  "outputs": {
+    "item_output": {
+      "components": {
+        "foodindustrial:purity": -74
+      },
+      "count": 1,
+      "id": "foodindustrial:betanin"
+    }
+  },
+  "temperature": {
+    "min": 373
+  }
+}

@@ -4,6 +4,10 @@
     "foodindustrial:phenylalanine_methyl_ester",
     "foodindustrial:flowing_phenylalanine_methyl_ester",
     {
+      "id": "#forge:phenylalanine_methyl_ester",
+      "required": false
+    },
+    {
       "id": "#c:phenylalanine_methyl_ester",
       "required": false
     }

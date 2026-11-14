@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:gardenia_broth",
+    "foodindustrial:flowing_gardenia_broth",
+    {
+      "id": "#forge:gardenia_broth",
+      "required": false
+    },
+    {
+      "id": "#c:gardenia_broth",
+      "required": false
+    }
+  ]
+}

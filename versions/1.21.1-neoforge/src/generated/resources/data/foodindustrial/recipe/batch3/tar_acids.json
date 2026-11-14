@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_hydroxide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:coal_tar"
+      }
+    }
+  ],
+  "mode": "liquid_extraction",
+  "outputs": [
+    {
+      "item": "foodindustrial:phenol",
+      "purity": {
+        "mode": "source",
+        "value": 80
+      }
+    },
+    {
+      "item": "foodindustrial:p_cresol",
+      "purity": {
+        "mode": "source",
+        "value": 80
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

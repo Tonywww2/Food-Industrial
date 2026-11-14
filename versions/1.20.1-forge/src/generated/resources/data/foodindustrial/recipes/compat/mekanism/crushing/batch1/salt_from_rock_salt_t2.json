@@ -1,0 +1,26 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/rock_salt"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:salt",
+    "nbt": "{Purity:21b}"
+  }
+}

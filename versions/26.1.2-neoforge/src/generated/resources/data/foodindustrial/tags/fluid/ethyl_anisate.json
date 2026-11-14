@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_anisate",
+    "foodindustrial:flowing_ethyl_anisate",
+    {
+      "id": "#forge:ethyl_anisate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_anisate",
+      "required": false
+    }
+  ]
+}

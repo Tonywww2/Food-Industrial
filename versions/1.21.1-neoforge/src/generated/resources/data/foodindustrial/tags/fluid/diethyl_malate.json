@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethyl_malate",
+    "foodindustrial:flowing_diethyl_malate",
+    {
+      "id": "#forge:diethyl_malate",
+      "required": false
+    },
+    {
+      "id": "#c:diethyl_malate",
+      "required": false
+    }
+  ]
+}

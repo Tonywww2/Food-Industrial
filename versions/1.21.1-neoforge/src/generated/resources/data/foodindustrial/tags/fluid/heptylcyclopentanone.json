@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptylcyclopentanone",
+    "foodindustrial:flowing_heptylcyclopentanone",
+    {
+      "id": "#forge:heptylcyclopentanone",
+      "required": false
+    },
+    {
+      "id": "#c:heptylcyclopentanone",
+      "required": false
+    }
+  ]
+}

@@ -22,6 +22,8 @@ import com.tonywww.foodindustrial.machine.component.SlotRole;
 import com.tonywww.foodindustrial.machine.component.TankSet;
 import com.tonywww.foodindustrial.machine.component.UpgradeSet;
 import com.tonywww.foodindustrial.machine.component.VentMode;
+import com.tonywww.foodindustrial.machine.definition.Climate;
+import com.tonywww.foodindustrial.machine.definition.GasSupply;
 import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
 import com.tonywww.foodindustrial.machine.definition.MachineMode;
 import com.tonywww.foodindustrial.machine.definition.PowerKind;
@@ -29,13 +31,17 @@ import com.tonywww.foodindustrial.machine.definition.TickPhase;
 import com.tonywww.foodindustrial.machine.processing.MachineStatus;
 import com.tonywww.foodindustrial.platform.PlatformFuel;
 import com.tonywww.foodindustrial.platform.PlatformItems;
+import com.tonywww.foodindustrial.platform.PlatformTags;
 import com.tonywww.foodindustrial.recipe.Capabilities;
+import com.tonywww.foodindustrial.recipe.Environment;
+import com.tonywww.foodindustrial.recipe.ProcessRecipe;
 import com.tonywww.foodindustrial.recipe.ProcessType;
 import com.tonywww.foodindustrial.recipe.RecipeIndex;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Fluids;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -66,6 +72,24 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
     private int mode;
     private boolean powered;
     private Capabilities capabilities;
+    /** Running ticks stored by the hand crank (manual machines). */
+    private int manualPower;
+    /** Environment of the position while in an outdoors mode, and when to look again. */
+    private Capabilities environment = Capabilities.NONE;
+    private long environmentDue;
+    /** Translation key of what the machine lacks to run (a {@code MachineRequirement}), or {@code null}. */
+    @Nullable
+    protected String lacking;
+    /** Climate of a fermentation room while it runs (M06). */
+    private boolean warm;
+    private boolean humid;
+    /** Running ticks since the room last used water. */
+    private int climateTicks;
+    /** The air intake is open (machines/03 §1): the back face of a single block, an intake of a multiblock. */
+    private boolean airOpen;
+    /** An input tank holds the machine's gas supply (M14 nitrogen), and running ticks since the last use. */
+    private boolean gasPresent;
+    private int gasTicks;
 
     private MachineStatus status = MachineStatus.WAITING;
     private boolean sleeping;
@@ -86,7 +110,7 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         this.tanks = new TankSet(definition.layout().fluidIn(), definition.layout().fluidOut(), definition.tankCapacity(), this::tanksChanged);
         this.energy = definition.power() == PowerKind.ENERGY
             ? new EnergyBuffer(definition.energyCapacity(), Math.max(1, definition.energyCapacity() / 20), this::energyReceived) : null;
-        this.heat = definition.power() == PowerKind.FUEL ? new HeatSource() : null;
+        this.heat = definition.layout().fuel() > 0 ? new HeatSource() : null;
         this.catalysts = new CatalystCounters(definition.layout().catalyst());
         this.capabilities = definition.capabilities();
         recomputeCapabilities();
@@ -156,6 +180,27 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         return mode;
     }
 
+    /** Running ticks the hand crank has stored (manual machines). */
+    public int manualPower() {
+        return manualPower;
+    }
+
+    /** Translation key of what the machine lacks to run, or {@code null}. */
+    @Nullable
+    public String lacking() {
+        return lacking;
+    }
+
+    /** Whether fuel burns while the room runs (M06: warm). */
+    public boolean warm() {
+        return warm;
+    }
+
+    /** Whether water is used while the room runs (M06: humid). */
+    public boolean humid() {
+        return humid;
+    }
+
     /** Capabilities right now: the machine's own, the mode's and the installed modules'. */
     public Capabilities capabilities() {
         return capabilities;
@@ -179,6 +224,7 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
             return;
         }
         mode = Math.floorMod(index, definition.modes().size());
+        environmentDue = 0;
         recomputeCapabilities();
         modeChanged();
         settingsChanged();
@@ -205,13 +251,264 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
     protected void modeChanged() {
     }
 
-    private void recomputeCapabilities() {
+    protected final void recomputeCapabilities() {
         Capabilities result = definition.capabilities();
+        if (definition.airIntake() && airOpen) {
+            result = result.with(Capabilities.of(MachineDefinition.AIR));
+        }
+        if (definition.gas() != null && gasPresent) {
+            result = result.with(Capabilities.of(definition.gas().capability()));
+        }
         MachineMode current = mode();
         if (current != null) {
             result = result.with(current.capabilities());
+            if (current.outdoors()) {
+                result = result.with(environment);
+            }
         }
-        capabilities = result.with(upgrades.moduleCapabilities());
+        capabilities = result.with(upgrades.moduleCapabilities()).with(extraCapabilities());
+    }
+
+    /** Capabilities a machine class adds now (computed with the others; call {@link #recomputeCapabilities} when they change). */
+    protected Capabilities extraCapabilities() {
+        return Capabilities.NONE;
+    }
+
+    // ---- hooks of machines with their own rules (I16, I17) ----
+
+    /**
+     * Whether the machine takes {@code recipe} at all right now; recipes it does not take are passed
+     * over without a message (M25: only regeneration recipes while the adsorbent is saturated).
+     */
+    public boolean offers(ProcessRecipe recipe) {
+        return true;
+    }
+
+    /**
+     * Translation key of what the machine lacks for {@code recipe} besides capabilities (M22: trays for
+     * the fractions), or {@code null}.
+     */
+    @Nullable
+    public String recipeLacking(ProcessRecipe recipe) {
+        return null;
+    }
+
+    /** Copies the structure allows per parallel copy of the upgrades (M29: one per vessel layer). */
+    public int structureParallel() {
+        return 1;
+    }
+
+    /** Ticks at speed ×1 in front of every run (M29: sterilization in place). */
+    public int setupTicks() {
+        return 0;
+    }
+
+    /** Amount of output {@code index} of the completion being made, per mille (M27 cracking, M29 contamination). */
+    public int outputPermille(ProcessRecipe recipe, int index) {
+        return 1000;
+    }
+
+    /** A completion of {@code recipe} is about to be made. */
+    public void completing(ProcessRecipe recipe) {
+    }
+
+    /** A completion of {@code recipe} was made with the catalysts in {@code catalystSlots}. */
+    public void completed(ProcessRecipe recipe, int[] catalystSlots) {
+    }
+
+    /** One use of the catalyst in catalyst slot {@code index}: at {@code runs} uses one item is used up. */
+    public void wearCatalyst(int index, int runs) {
+        if (catalysts.wear(index, runs)) {
+            inventory.shrink(inventory.slot(SlotRole.CATALYST, index), 1);
+        }
+    }
+
+    /** Whether the last batch was contaminated (M29, info panel). */
+    public boolean lastBatchContaminated() {
+        return false;
+    }
+
+    /** Whether the catalyst in slot {@code index} is spent but kept for regeneration (M25 adsorbents). */
+    public boolean catalystSaturated(int index) {
+        return false;
+    }
+
+    /** The catalyst slot {@code index} was emptied: its count starts over. */
+    protected void catalystEmptied(int index) {
+        catalysts.reset(index);
+    }
+
+    /**
+     * In an outdoors mode, looks at the environment of the position again every 20 ticks (as the T0
+     * passive devices); a change re-matches the recipe.
+     */
+    private void refreshEnvironment(long time) {
+        MachineMode current = mode();
+        if (current == null || !current.outdoors() || time < environmentDue) {
+            return;
+        }
+        environmentDue = time + TickPhase.PASSIVE_BATCH;
+        Capabilities now = Environment.at(level, worldPosition);
+        if (!now.equals(environment)) {
+            environment = now;
+            recomputeCapabilities();
+            inputsChanged();
+        }
+    }
+
+    // ---- air, gas and speed (I15) ----
+
+    /** Speed multiplier of the upgrades and, for a tall multiblock, its height (per mille). */
+    public int speedPermille() {
+        return (int) Math.min(Integer.MAX_VALUE, (long) upgrades.speedPermille() * structureSpeedPermille() / 1000L);
+    }
+
+    /** Speed from the structure (variable-height multiblocks), per mille. */
+    protected int structureSpeedPermille() {
+        return 1000;
+    }
+
+    /** Whether the machine has air now (machines/03 §1). */
+    public boolean airOpen() {
+        return airOpen;
+    }
+
+    /** Whether an input tank holds the machine's gas supply now (M14 nitrogen). */
+    public boolean gasPresent() {
+        return gasPresent;
+    }
+
+    /** Single block: whether the block behind the machine lets air in. */
+    protected boolean checkAir() {
+        return level != null && level.getBlockState(worldPosition.relative(facing().getOpposite())).isAir();
+    }
+
+    /** Looks at the air intake again; a change re-matches the recipe. */
+    protected final void refreshAir() {
+        if (!definition.airIntake() || level == null || level.isClientSide()) {
+            return;
+        }
+        boolean now = checkAir();
+        if (now != airOpen) {
+            airOpen = now;
+            recomputeCapabilities();
+            inputsChanged();
+            markDirty();
+            wake();
+        }
+    }
+
+    private void refreshGas() {
+        GasSupply supply = definition.gas();
+        if (supply == null) {
+            return;
+        }
+        boolean now = gasTank(supply) >= 0;
+        if (now != gasPresent) {
+            gasPresent = now;
+            recomputeCapabilities();
+        }
+    }
+
+    private int gasTank(GasSupply supply) {
+        for (int tank = 0; tank < tanks.inputs(); tank++) {
+            FluidAmount fluid = tanks.get(tank);
+            if (!fluid.isEmpty() && fluid.amount() >= supply.amount()
+                && PlatformTags.fluidId(fluid.fluid()).equals(supply.fluid())) {
+                return tank;
+            }
+        }
+        return -1;
+    }
+
+    /** A running batch of a recipe that needs the gas's capability: uses gas every interval. */
+    public void gasBatch(int delta) {
+        GasSupply supply = definition.gas();
+        if (supply == null) {
+            return;
+        }
+        gasTicks += delta;
+        if (gasTicks >= supply.interval()) {
+            gasTicks -= supply.interval();
+            int tank = gasTank(supply);
+            if (tank >= 0) {
+                tanks.drain(tank, supply.amount());
+            }
+        }
+    }
+
+    // ---- manual power and climate (I14) ----
+
+    /**
+     * One turn of the hand crank: stores {@link PowerKind#MANUAL_PER_TURN} running ticks, up to
+     * {@link PowerKind#MANUAL_MAX}; returns whether anything was stored.
+     */
+    public boolean crank() {
+        if (definition.power() != PowerKind.MANUAL || manualPower >= PowerKind.MANUAL_MAX) {
+            return false;
+        }
+        manualPower = Math.min(PowerKind.MANUAL_MAX, manualPower + PowerKind.MANUAL_PER_TURN);
+        markDirty();
+        wake();
+        flushDirty();
+        return true;
+    }
+
+    /**
+     * Speed of a drive by Create's transmission interface on top (I25, 2026-11-11), per mille of the hand
+     * crank: 32 RPM runs as fast as cranking, faster shafts faster, at most ×4; 0 without a turning
+     * interface (or with the Create integration switched off).
+     */
+    public int drivePermille() {
+        if (definition.power() != PowerKind.MANUAL || level == null || !com.tonywww.foodindustrial.integration.Integrations.enabled("create")) {
+            return 0;
+        }
+        float rpm = com.tonywww.foodindustrial.platform.PlatformKinetics.speedAt(level, worldPosition.above());
+        return rpm <= 0 ? 0 : (int) Math.min(4000L, Math.round(rpm * 1000.0 / 32.0));
+    }
+
+    /** Takes up to {@code ticks} of stored manual power for a run; returns the ticks taken. */
+    public int takeManualPower(int ticks) {
+        int taken = Math.min(ticks, manualPower);
+        if (taken > 0) {
+            manualPower -= taken;
+            markUnsaved();
+        }
+        return taken;
+    }
+
+    /**
+     * A running batch of {@code delta} ticks of a fermentation room (M06): optional fuel is lit as in a
+     * furnace; water in an input tank makes it humid and is used every {@link Climate#interval()} ticks;
+     * returns whether the room is warm and humid.
+     */
+    public boolean climateBatch(int delta) {
+        Climate climate = definition.climate();
+        if (climate == null) {
+            return false;
+        }
+        boolean wasWarm = warm;
+        boolean wasHumid = humid;
+        warm = fireForRecipe();
+        int waterTank = -1;
+        for (int tank = 0; tank < tanks.inputs() && waterTank < 0; tank++) {
+            FluidAmount fluid = tanks.get(tank);
+            if (!fluid.isEmpty() && fluid.fluid() == Fluids.WATER && fluid.amount() >= climate.water()) {
+                waterTank = tank;
+            }
+        }
+        humid = waterTank >= 0;
+        climateTicks += delta;
+        if (climateTicks >= climate.interval()) {
+            climateTicks -= climate.interval();
+            if (humid) {
+                tanks.drain(waterTank, climate.water());
+            }
+        }
+        if (warm != wasWarm || humid != wasHumid) {
+            markDirty();
+        }
+        return warm && humid;
     }
 
     // ---- events (machines/02 §6.2 rule 6) ----
@@ -224,7 +521,15 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
     private void slotsChanged(SlotRole role) {
         markDirty();
         switch (role) {
-            case INPUT, CATALYST -> inputsChanged();
+            case INPUT -> inputsChanged();
+            case CATALYST -> {
+                for (int i = 0; i < inventory.count(SlotRole.CATALYST); i++) {
+                    if (inventory.get(SlotRole.CATALYST, i).isEmpty()) {
+                        catalystEmptied(i);
+                    }
+                }
+                inputsChanged();
+            }
             case OUTPUT -> {
                 outputsChanged();
                 pushItems.reset();
@@ -243,6 +548,7 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
     private void tanksChanged(SlotRole role) {
         markDirty();
         if (role == SlotRole.INPUT) {
+            refreshGas();
             inputsChanged();
         } else {
             outputsChanged();
@@ -275,6 +581,10 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
             powered = now;
             wake();
         }
+        if (definition.watchesNeighbours()) {
+            wake();
+        }
+        refreshAir();
     }
 
     @Override
@@ -282,6 +592,8 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         if (level != null && !level.isClientSide()) {
             powered = level.hasNeighborSignal(worldPosition);
             upgrades.recompute(inventory);
+            airOpen = definition.airIntake() && checkAir();
+            gasPresent = definition.gas() != null && gasTank(definition.gas()) >= 0;
             recomputeCapabilities();
             wake();
         }
@@ -289,6 +601,7 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
 
     /** Placed by a player (after the block entity exists). */
     public void onPlaced() {
+        refreshAir();
         wake();
     }
 
@@ -314,10 +627,16 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
 
     private void batch(long time) {
         sleeping = false;
+        refreshEnvironment(time);
         boolean vented = redstone.allows(isPowered()) && vent(VentMode.ALL);
         status = tickBatch(TickPhase.BATCH, time);
-        if (status == MachineStatus.RUNNING) {
+        if (status.running()) {
             lastRunning = time;
+        } else if (warm || humid) {
+            // the climate of a fermentation room counts only while it runs
+            warm = false;
+            humid = false;
+            markDirty();
         }
         if (status == MachineStatus.OUTPUT_FULL && outputFluidsBlocked()) {
             vented |= vent(VentMode.OVERFLOW);
@@ -332,6 +651,14 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         if (status.sleeps() && (heat == null || !heat.lit()) && !vented) {
             sleeping = true;
             wakeAt = nextTimer(time);
+        }
+    }
+
+    /** Development: runs {@code count} batches at once, as if that many 4-tick cycles passed. */
+    public void runBatches(int count) {
+        long time = level.getGameTime();
+        for (int i = 0; i < count; i++) {
+            batch(time);
         }
     }
 
@@ -380,6 +707,10 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
 
     private long nextTimer(long time) {
         long next = Long.MAX_VALUE;
+        MachineMode current = mode();
+        if (current != null && current.outdoors() && status == MachineStatus.MISSING) {
+            next = Math.min(next, environmentDue);
+        }
         if (getBlockState().getValue(MachineBlock.ACTIVE)) {
             next = Math.min(next, lastRunning + ACTIVE_LINGER);
         }
@@ -398,7 +729,7 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
             return;
         }
         boolean active = state.getValue(MachineBlock.ACTIVE);
-        boolean running = status == MachineStatus.RUNNING || (heat != null && heat.lit());
+        boolean running = status.running() || (heat != null && heat.lit());
         if (running && !active) {
             level.setBlock(worldPosition, state.setValue(MachineBlock.ACTIVE, true), 3);
         } else if (!running && active && time - lastRunning >= ACTIVE_LINGER) {
@@ -635,6 +966,23 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         return false;
     }
 
+    /**
+     * Whether automation should put {@code stack} only into the fuel slots: the machine burns fuel and
+     * no recipe of the machine uses the item (I14: an item port also takes fuel).
+     */
+    public boolean fuelOnly(ItemStack stack) {
+        if (inventory.count(SlotRole.FUEL) == 0 || PlatformFuel.burnTime(level, stack) <= 0) {
+            return false;
+        }
+        RecipeIndex index = RecipeIndex.get(level);
+        for (ProcessType type : definition.types()) {
+            if (index.usesItem(type, stack.getItem())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     /** Room for {@code stack} in the input slots. */
     protected int roomFor(ItemStack stack) {
         int room = 0;
@@ -756,8 +1104,11 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
             if (!mode.inputs() || !role.automationInserts()) {
                 return false;
             }
+            if (!definition.slotAccepts(role, slot - definition.layout().start(role), stack)) {
+                return false;
+            }
             return switch (role) {
-                case INPUT -> inventory.allowedByLock(slot, stack);
+                case INPUT -> inventory.allowedByLock(slot, stack) && (!inventory.lock(slot).isEmpty() || !fuelOnly(stack));
                 case FUEL -> PlatformFuel.burnTime(level, stack) > 0;
                 default -> true;
             };
@@ -836,6 +1187,9 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         if (heat != null) {
             heat.save(out);
         }
+        if (manualPower > 0) {
+            out.putInt("ManualPower", manualPower);
+        }
         catalysts.save(out);
         saveConfig(out);
     }
@@ -850,6 +1204,7 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         if (heat != null) {
             heat.load(in);
         }
+        manualPower = Math.max(0, Math.min(PowerKind.MANUAL_MAX, in.getInt("ManualPower", 0)));
         catalysts.load(in);
         loadConfig(in);
         java.util.Arrays.fill(itemViews, null);
@@ -919,6 +1274,26 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         flushDirty();
     }
 
+    /** Locks input slot {@code slot} to {@code item} (JEI drop, I22). */
+    public void lockSlotTo(int slot, ItemStack item) {
+        if (slot < 0 || slot >= inventory.size() || inventory.role(slot) != SlotRole.INPUT || item.isEmpty()) {
+            return;
+        }
+        ItemStack lock = item.copy();
+        lock.setCount(1);
+        inventory.setLock(slot, lock);
+        flushDirty();
+    }
+
+    /** Locks tank {@code tank} to {@code fluid} (JEI drop, I22). */
+    public void lockTankTo(int tank, FluidAmount fluid) {
+        if (tank < 0 || tank >= tanks.size() || fluid.isEmpty()) {
+            return;
+        }
+        tanks.setLock(tank, fluid);
+        flushDirty();
+    }
+
     /** Alt + click on a tank: unlocks, or locks to its contents or to {@code carried} when empty. */
     public void toggleTankLock(int tank, FluidAmount carried) {
         if (tank < 0 || tank >= tanks.size()) {
@@ -940,6 +1315,7 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
             return;
         }
         level.setBlock(worldPosition, state.rotate(net.minecraft.world.level.block.Rotation.CLOCKWISE_90), 3);
+        refreshAir();
         sidesChanged();
         flushDirty();
     }

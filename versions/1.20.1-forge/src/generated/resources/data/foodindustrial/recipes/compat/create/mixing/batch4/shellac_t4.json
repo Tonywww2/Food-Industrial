@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/seedlac"
+    },
+    {
+      "tag": "foodindustrial:chemicals/seedlac"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "foodindustrial:shellac",
+      "nbt": "{Purity:-15b}"
+    }
+  ]
+}

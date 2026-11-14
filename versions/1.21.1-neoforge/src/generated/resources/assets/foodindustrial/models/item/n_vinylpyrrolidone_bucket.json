@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:n_vinylpyrrolidone",
+  "loader": "neoforge:fluid_container"
+}

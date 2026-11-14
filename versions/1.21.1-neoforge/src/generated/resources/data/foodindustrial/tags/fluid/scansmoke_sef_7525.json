@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:scansmoke_sef_7525",
+    "foodindustrial:flowing_scansmoke_sef_7525",
+    {
+      "id": "#forge:scansmoke_sef_7525",
+      "required": false
+    },
+    {
+      "id": "#c:scansmoke_sef_7525",
+      "required": false
+    }
+  ]
+}

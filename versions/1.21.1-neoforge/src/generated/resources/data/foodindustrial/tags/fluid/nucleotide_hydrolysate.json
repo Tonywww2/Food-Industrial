@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nucleotide_hydrolysate",
+    "foodindustrial:flowing_nucleotide_hydrolysate",
+    {
+      "id": "#forge:nucleotide_hydrolysate",
+      "required": false
+    },
+    {
+      "id": "#c:nucleotide_hydrolysate",
+      "required": false
+    }
+  ]
+}

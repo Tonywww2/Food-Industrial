@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/koji_room_front_active",
+    "side": "foodindustrial:block/koji_room_side",
+    "top": "foodindustrial:block/koji_room_top"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpeneless_orange_oil",
+    "foodindustrial:flowing_terpeneless_orange_oil",
+    {
+      "id": "#forge:terpeneless_orange_oil",
+      "required": false
+    },
+    {
+      "id": "#c:terpeneless_orange_oil",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/titanium_dioxide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/titanium_dioxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/titanium_dioxide",
+      "required": false
     }
   ]
 }

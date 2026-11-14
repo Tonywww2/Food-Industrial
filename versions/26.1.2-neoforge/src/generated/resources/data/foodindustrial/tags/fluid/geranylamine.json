@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:geranylamine",
+    "foodindustrial:flowing_geranylamine",
+    {
+      "id": "#forge:geranylamine",
+      "required": false
+    },
+    {
+      "id": "#c:geranylamine",
+      "required": false
+    }
+  ]
+}

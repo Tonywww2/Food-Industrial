@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:summer_savory_oil",
+  "loader": "neoforge:fluid_container"
+}

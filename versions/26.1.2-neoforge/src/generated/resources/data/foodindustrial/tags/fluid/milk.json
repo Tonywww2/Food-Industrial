@@ -4,6 +4,10 @@
     {
       "id": "#c:milk",
       "required": false
+    },
+    {
+      "id": "#forge:milk",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/methyl_ketogluconate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_ketogluconate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_ketogluconate",
+      "required": false
     }
   ]
 }

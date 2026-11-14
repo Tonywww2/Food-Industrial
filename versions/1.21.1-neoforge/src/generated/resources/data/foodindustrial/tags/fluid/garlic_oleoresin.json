@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:garlic_oleoresin",
+    "foodindustrial:flowing_garlic_oleoresin",
+    {
+      "id": "#forge:garlic_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:garlic_oleoresin",
+      "required": false
+    }
+  ]
+}

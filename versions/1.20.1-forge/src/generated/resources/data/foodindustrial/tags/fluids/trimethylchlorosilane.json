@@ -6,6 +6,10 @@
     {
       "id": "#forge:trimethylchlorosilane",
       "required": false
+    },
+    {
+      "id": "#c:trimethylchlorosilane",
+      "required": false
     }
   ]
 }

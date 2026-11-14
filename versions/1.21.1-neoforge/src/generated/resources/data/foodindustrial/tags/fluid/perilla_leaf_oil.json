@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:perilla_leaf_oil",
+    "foodindustrial:flowing_perilla_leaf_oil",
+    {
+      "id": "#forge:perilla_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:perilla_leaf_oil",
+      "required": false
+    }
+  ]
+}

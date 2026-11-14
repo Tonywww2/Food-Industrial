@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpene_resin",
+    {
+      "id": "#forge:dusts/terpene_resin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/terpene_resin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/terpene_resin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/terpene_resin",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:biphenyl",
+    {
+      "id": "#forge:dusts/biphenyl",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/biphenyl",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/biphenyl",
+      "required": false
+    },
+    {
+      "id": "#c:gems/biphenyl",
+      "required": false
+    }
+  ]
+}

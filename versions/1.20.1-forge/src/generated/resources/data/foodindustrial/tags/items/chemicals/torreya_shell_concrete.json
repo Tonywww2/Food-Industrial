@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:torreya_shell_concrete",
+    {
+      "id": "#forge:dusts/torreya_shell_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/torreya_shell_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/torreya_shell_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/torreya_shell_concrete",
+      "required": false
+    }
+  ]
+}

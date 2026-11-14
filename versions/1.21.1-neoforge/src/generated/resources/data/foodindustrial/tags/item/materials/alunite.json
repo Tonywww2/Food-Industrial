@@ -5,6 +5,10 @@
     {
       "id": "#c:ores/alunite",
       "required": false
+    },
+    {
+      "id": "#forge:ores/alunite",
+      "required": false
     }
   ]
 }

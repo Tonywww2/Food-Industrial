@@ -6,6 +6,10 @@
     {
       "id": "#forge:phenylalanine_methyl_ester",
       "required": false
+    },
+    {
+      "id": "#c:phenylalanine_methyl_ester",
+      "required": false
     }
   ]
 }

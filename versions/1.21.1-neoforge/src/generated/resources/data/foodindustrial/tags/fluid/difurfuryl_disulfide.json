@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:difurfuryl_disulfide",
+    "foodindustrial:flowing_difurfuryl_disulfide",
+    {
+      "id": "#forge:difurfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:difurfuryl_disulfide",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_butyl_carbinol",
+    "foodindustrial:flowing_ethyl_butyl_carbinol",
+    {
+      "id": "#forge:ethyl_butyl_carbinol",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_butyl_carbinol",
+      "required": false
+    }
+  ]
+}

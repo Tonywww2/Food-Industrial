@@ -1,0 +1,23 @@
+{
+  "type": "thermal:press",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 2000,
+  "ingredient": {
+    "tag": "foodindustrial:materials/rubber_coagulum"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:wet_rubber_sheet"
+    }
+  ]
+}

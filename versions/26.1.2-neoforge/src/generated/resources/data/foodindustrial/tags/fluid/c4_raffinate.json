@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:c4_raffinate",
+    "foodindustrial:flowing_c4_raffinate",
+    {
+      "id": "#forge:c4_raffinate",
+      "required": false
+    },
+    {
+      "id": "#c:c4_raffinate",
+      "required": false
+    }
+  ]
+}

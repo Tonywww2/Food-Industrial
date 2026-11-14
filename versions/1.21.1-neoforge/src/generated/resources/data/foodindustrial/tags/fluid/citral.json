@@ -4,6 +4,10 @@
     "foodindustrial:citral",
     "foodindustrial:flowing_citral",
     {
+      "id": "#forge:citral",
+      "required": false
+    },
+    {
       "id": "#c:citral",
       "required": false
     }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lactisole",
+    {
+      "id": "#forge:dusts/lactisole",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lactisole",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lactisole",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lactisole",
+      "required": false
+    }
+  ]
+}

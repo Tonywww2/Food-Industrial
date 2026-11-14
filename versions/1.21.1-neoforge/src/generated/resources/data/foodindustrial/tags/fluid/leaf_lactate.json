@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leaf_lactate",
+    "foodindustrial:flowing_leaf_lactate",
+    {
+      "id": "#forge:leaf_lactate",
+      "required": false
+    },
+    {
+      "id": "#c:leaf_lactate",
+      "required": false
+    }
+  ]
+}

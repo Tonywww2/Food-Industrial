@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethyl_4_heptenoate",
+    "foodindustrial:flowing_ethyl_4_heptenoate",
+    {
+      "id": "#forge:ethyl_4_heptenoate",
+      "required": false
+    },
+    {
+      "id": "#c:ethyl_4_heptenoate",
+      "required": false
+    }
+  ]
+}

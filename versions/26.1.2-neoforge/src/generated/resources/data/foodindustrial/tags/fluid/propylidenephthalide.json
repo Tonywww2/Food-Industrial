@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propylidenephthalide",
+    "foodindustrial:flowing_propylidenephthalide",
+    {
+      "id": "#forge:propylidenephthalide",
+      "required": false
+    },
+    {
+      "id": "#c:propylidenephthalide",
+      "required": false
+    }
+  ]
+}

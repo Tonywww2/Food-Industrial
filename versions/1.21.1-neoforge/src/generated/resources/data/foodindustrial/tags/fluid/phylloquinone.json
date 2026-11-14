@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phylloquinone",
+    "foodindustrial:flowing_phylloquinone",
+    {
+      "id": "#forge:phylloquinone",
+      "required": false
+    },
+    {
+      "id": "#c:phylloquinone",
+      "required": false
+    }
+  ]
+}

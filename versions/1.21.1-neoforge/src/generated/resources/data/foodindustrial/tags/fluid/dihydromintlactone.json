@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydromintlactone",
+    "foodindustrial:flowing_dihydromintlactone",
+    {
+      "id": "#forge:dihydromintlactone",
+      "required": false
+    },
+    {
+      "id": "#c:dihydromintlactone",
+      "required": false
+    }
+  ]
+}

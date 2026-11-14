@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercapto_p_menthan_3_one_1",
+    "foodindustrial:flowing_mercapto_p_menthan_3_one_1",
+    {
+      "id": "#forge:mercapto_p_menthan_3_one_1",
+      "required": false
+    },
+    {
+      "id": "#c:mercapto_p_menthan_3_one_1",
+      "required": false
+    }
+  ]
+}

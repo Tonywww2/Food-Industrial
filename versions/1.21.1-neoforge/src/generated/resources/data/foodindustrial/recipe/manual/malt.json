@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/sprouted_wheat"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:malt"
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "open_sky",
+      "clear_weather"
+    ]
+  },
+  "time": 24000
+}

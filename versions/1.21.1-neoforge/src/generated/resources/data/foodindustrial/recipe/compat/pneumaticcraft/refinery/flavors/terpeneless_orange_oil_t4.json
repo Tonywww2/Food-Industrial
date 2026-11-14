@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:orange_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:valencene"
+    },
+    {
+      "amount": 250,
+      "components": {
+        "foodindustrial:purity": 19
+      },
+      "id": "foodindustrial:beta_sinensal"
+    },
+    {
+      "amount": 250,
+      "id": "foodindustrial:terpeneless_orange_oil"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

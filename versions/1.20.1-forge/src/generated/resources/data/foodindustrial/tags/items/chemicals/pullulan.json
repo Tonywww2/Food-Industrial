@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/pullulan",
       "required": false
+    },
+    {
+      "id": "#c:dusts/pullulan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pullulan",
+      "required": false
     }
   ]
 }

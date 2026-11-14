@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpinyl_formate",
+    "foodindustrial:flowing_terpinyl_formate",
+    {
+      "id": "#forge:terpinyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:terpinyl_formate",
+      "required": false
+    }
+  ]
+}

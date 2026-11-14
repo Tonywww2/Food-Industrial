@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenoxyacetic_acid",
+    {
+      "id": "#forge:dusts/phenoxyacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phenoxyacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/phenoxyacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenoxyacetic_acid",
+      "required": false
+    }
+  ]
+}

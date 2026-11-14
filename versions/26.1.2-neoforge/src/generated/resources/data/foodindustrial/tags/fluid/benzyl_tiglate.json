@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:benzyl_tiglate",
+    "foodindustrial:flowing_benzyl_tiglate",
+    {
+      "id": "#forge:benzyl_tiglate",
+      "required": false
+    },
+    {
+      "id": "#c:benzyl_tiglate",
+      "required": false
+    }
+  ]
+}

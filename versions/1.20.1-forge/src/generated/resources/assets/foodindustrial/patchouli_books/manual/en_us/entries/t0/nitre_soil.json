@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:nitre_soil",
+  "name": "book.foodindustrial.manual.entry.nitre_soil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:nitre_soil",
+      "text": "book.foodindustrial.manual.entry.nitre_soil.text"
+    }
+  ],
+  "sortnum": 13
+}

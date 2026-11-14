@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ginger_oleoresin",
+    "foodindustrial:flowing_ginger_oleoresin",
+    {
+      "id": "#forge:ginger_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:ginger_oleoresin",
+      "required": false
+    }
+  ]
+}

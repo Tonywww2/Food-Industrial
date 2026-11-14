@@ -58,7 +58,8 @@ public final class MaterialTable {
                 color(string(json, "color")),
                 string(json, "gtceu"),
                 json.get("tag").getAsString(),
-                Collections.unmodifiableList(hazards)));
+                Collections.unmodifiableList(hazards),
+                string(json, "texture")));
         }
         return Collections.unmodifiableList(result);
     }

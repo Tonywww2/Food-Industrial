@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:copper_catalyst",
     {
+      "id": "#forge:dusts/copper_catalyst",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/copper_catalyst",
+      "required": false
+    },
+    {
       "id": "#c:dusts/copper_catalyst",
       "required": false
     },

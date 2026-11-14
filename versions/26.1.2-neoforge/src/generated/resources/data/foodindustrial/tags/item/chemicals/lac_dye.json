@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:lac_dye",
     {
+      "id": "#forge:dusts/lac_dye",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/lac_dye",
+      "required": false
+    },
+    {
       "id": "#c:dusts/lac_dye",
       "required": false
     },

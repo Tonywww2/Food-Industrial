@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydrocoumarin",
+    "foodindustrial:flowing_dihydrocoumarin",
+    {
+      "id": "#forge:dihydrocoumarin",
+      "required": false
+    },
+    {
+      "id": "#c:dihydrocoumarin",
+      "required": false
+    }
+  ]
+}

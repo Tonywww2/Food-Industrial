@@ -4,6 +4,10 @@
     "foodindustrial:cyclohexane",
     "foodindustrial:flowing_cyclohexane",
     {
+      "id": "#forge:cyclohexane",
+      "required": false
+    },
+    {
       "id": "#c:cyclohexane",
       "required": false
     }

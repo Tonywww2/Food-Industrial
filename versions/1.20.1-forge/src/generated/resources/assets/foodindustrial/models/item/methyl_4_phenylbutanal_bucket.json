@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methyl_4_phenylbutanal",
+  "loader": "forge:fluid_container"
+}

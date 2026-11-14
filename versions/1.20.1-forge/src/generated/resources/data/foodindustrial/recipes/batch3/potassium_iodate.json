@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:electrolyzing",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:catalysts/electrode"
+    }
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_iodide"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "electrooxidation",
+  "outputs": [
+    {
+      "item": "foodindustrial:potassium_iodate"
+    },
+    {
+      "amount": 3000,
+      "fluid": "foodindustrial:hydrogen",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

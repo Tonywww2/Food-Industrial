@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cytidylic_acid",
+    {
+      "id": "#forge:dusts/cytidylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cytidylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cytidylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cytidylic_acid",
+      "required": false
+    }
+  ]
+}

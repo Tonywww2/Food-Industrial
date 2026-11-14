@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tea_tree_oil",
+    "foodindustrial:flowing_tea_tree_oil",
+    {
+      "id": "#forge:tea_tree_oil",
+      "required": false
+    },
+    {
+      "id": "#c:tea_tree_oil",
+      "required": false
+    }
+  ]
+}

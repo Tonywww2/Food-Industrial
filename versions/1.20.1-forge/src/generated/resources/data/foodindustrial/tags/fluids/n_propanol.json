@@ -6,6 +6,10 @@
     {
       "id": "#forge:n_propanol",
       "required": false
+    },
+    {
+      "id": "#c:n_propanol",
+      "required": false
     }
   ]
 }

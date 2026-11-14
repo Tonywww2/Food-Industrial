@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoamyl_furylbutyrate",
+    "foodindustrial:flowing_isoamyl_furylbutyrate",
+    {
+      "id": "#forge:isoamyl_furylbutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:isoamyl_furylbutyrate",
+      "required": false
+    }
+  ]
+}

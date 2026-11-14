@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/electrolytic_iron"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:hydrogen"
+      }
+    }
+  ],
+  "mode": "fluidized_bed",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:electrolytic_iron"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

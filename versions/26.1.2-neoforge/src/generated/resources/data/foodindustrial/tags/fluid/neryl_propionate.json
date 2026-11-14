@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:neryl_propionate",
+    "foodindustrial:flowing_neryl_propionate",
+    {
+      "id": "#forge:neryl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:neryl_propionate",
+      "required": false
+    }
+  ]
+}

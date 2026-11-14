@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:menthyl_hydroxybutyrate",
+    "foodindustrial:flowing_menthyl_hydroxybutyrate",
+    {
+      "id": "#forge:menthyl_hydroxybutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:menthyl_hydroxybutyrate",
+      "required": false
+    }
+  ]
+}

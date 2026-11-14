@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiogeraniol",
+    "foodindustrial:flowing_thiogeraniol",
+    {
+      "id": "#forge:thiogeraniol",
+      "required": false
+    },
+    {
+      "id": "#c:thiogeraniol",
+      "required": false
+    }
+  ]
+}

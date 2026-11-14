@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/l_methionine"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/glycine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:methionylglycine",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

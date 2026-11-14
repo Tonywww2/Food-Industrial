@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_isopropylphenylacetaldehyde",
+    "foodindustrial:flowing_p_isopropylphenylacetaldehyde",
+    {
+      "id": "#forge:p_isopropylphenylacetaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:p_isopropylphenylacetaldehyde",
+      "required": false
+    }
+  ]
+}

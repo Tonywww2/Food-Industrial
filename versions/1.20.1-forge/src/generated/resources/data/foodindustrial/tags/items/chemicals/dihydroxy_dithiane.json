@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dihydroxy_dithiane",
+    {
+      "id": "#forge:dusts/dihydroxy_dithiane",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dihydroxy_dithiane",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dihydroxy_dithiane",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dihydroxy_dithiane",
+      "required": false
+    }
+  ]
+}

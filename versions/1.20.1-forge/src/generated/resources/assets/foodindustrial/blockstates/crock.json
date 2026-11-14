@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "sealed=false": {
+      "model": "foodindustrial:block/crock"
+    },
+    "sealed=true": {
+      "model": "foodindustrial:block/crock_sealed"
+    }
+  }
+}

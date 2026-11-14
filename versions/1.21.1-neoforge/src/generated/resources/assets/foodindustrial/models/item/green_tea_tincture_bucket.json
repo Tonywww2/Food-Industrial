@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:green_tea_tincture",
+  "loader": "neoforge:fluid_container"
+}

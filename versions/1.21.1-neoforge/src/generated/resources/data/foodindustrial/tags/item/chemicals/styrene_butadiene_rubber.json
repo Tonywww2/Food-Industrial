@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:styrene_butadiene_rubber",
+    {
+      "id": "#forge:dusts/styrene_butadiene_rubber",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/styrene_butadiene_rubber",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/styrene_butadiene_rubber",
+      "required": false
+    },
+    {
+      "id": "#c:gems/styrene_butadiene_rubber",
+      "required": false
+    }
+  ]
+}

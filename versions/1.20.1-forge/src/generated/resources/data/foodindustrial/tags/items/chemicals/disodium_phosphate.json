@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/disodium_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/disodium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/disodium_phosphate",
+      "required": false
     }
   ]
 }

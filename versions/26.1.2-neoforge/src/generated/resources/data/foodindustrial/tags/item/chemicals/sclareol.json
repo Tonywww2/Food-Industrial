@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sclareol",
+    {
+      "id": "#forge:dusts/sclareol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sclareol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sclareol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sclareol",
+      "required": false
+    }
+  ]
+}

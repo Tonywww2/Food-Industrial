@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:white_cognac_oil",
+    "foodindustrial:flowing_white_cognac_oil",
+    {
+      "id": "#forge:white_cognac_oil",
+      "required": false
+    },
+    {
+      "id": "#c:white_cognac_oil",
+      "required": false
+    }
+  ]
+}

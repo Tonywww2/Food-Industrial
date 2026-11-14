@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mimosa_absolute",
+    "foodindustrial:flowing_mimosa_absolute",
+    {
+      "id": "#forge:mimosa_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:mimosa_absolute",
+      "required": false
+    }
+  ]
+}

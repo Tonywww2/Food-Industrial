@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methoxy_isopropylpyrazine",
+  "loader": "forge:fluid_container"
+}

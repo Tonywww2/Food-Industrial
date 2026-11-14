@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopropylamine",
+    "foodindustrial:flowing_isopropylamine",
+    {
+      "id": "#forge:isopropylamine",
+      "required": false
+    },
+    {
+      "id": "#c:isopropylamine",
+      "required": false
+    }
+  ]
+}

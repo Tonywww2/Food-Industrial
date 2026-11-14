@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:blast_furnace",
+    "F": "foodindustrial:machine_frame",
+    "R": "#c:dusts/redstone",
+    "S": "foodindustrial:kiln_shell"
+  },
+  "pattern": [
+    "SBS",
+    "RFR",
+    "SRS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:rotary_kiln"
+  }
+}

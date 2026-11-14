@@ -1,0 +1,41 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:abe_broth"
+  },
+  "results": [
+    {
+      "amount": 60,
+      "fluid": "foodindustrial:acetone",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 120,
+      "fluid": "foodindustrial:n_butanol",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 20,
+      "fluid": "foodindustrial:ethanol",
+      "nbt": "{Purity:19b}"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

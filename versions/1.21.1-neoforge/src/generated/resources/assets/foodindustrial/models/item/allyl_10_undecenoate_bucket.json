@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:allyl_10_undecenoate",
+  "loader": "neoforge:fluid_container"
+}

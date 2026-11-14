@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_10_undecenoate",
+    "foodindustrial:flowing_allyl_10_undecenoate",
+    {
+      "id": "#forge:allyl_10_undecenoate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_10_undecenoate",
+      "required": false
+    }
+  ]
+}

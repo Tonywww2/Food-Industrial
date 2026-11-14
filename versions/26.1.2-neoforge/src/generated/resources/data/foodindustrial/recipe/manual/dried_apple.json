@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/apple"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dried_apple"
+    }
+  ],
+  "requirements": {
+    "environment": [
+      "open_sky",
+      "clear_weather"
+    ]
+  },
+  "time": 24000
+}

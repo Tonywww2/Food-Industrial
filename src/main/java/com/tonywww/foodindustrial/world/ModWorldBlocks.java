@@ -3,6 +3,7 @@ package com.tonywww.foodindustrial.world;
 import com.tonywww.foodindustrial.core.text.Lang;
 import com.tonywww.foodindustrial.material.ModMaterials;
 import com.tonywww.foodindustrial.platform.PlatformBlocks;
+import com.tonywww.foodindustrial.platform.PlatformCompost;
 import com.tonywww.foodindustrial.platform.PlatformEvents;
 import com.tonywww.foodindustrial.platform.PlatformRegistry;
 import com.tonywww.foodindustrial.platform.world.PlatformPlants;
@@ -29,7 +30,7 @@ import java.util.function.Supplier;
 /**
  * The I07 world blocks (additives/08 §C): mineral ores and crusts, crops with their wild plants, the
  * gardenia bush, vanilla pods, sea plants, nitre soil and the rubber wood set, plus the fallback
- * sulfur and apatite ores and paddy rice.
+ * sulfur and apatite ores.
  */
 public final class ModWorldBlocks {
     /** How a block looks and drops; data generation keys off it. */
@@ -59,15 +60,22 @@ public final class ModWorldBlocks {
     public static final Entry ROCK_SALT = block("rock_salt", Kind.ORE, "岩盐", "Rock Salt", Block::new, Blocks.STONE);
     public static final Entry APATITE_ORE = block("apatite_ore", Kind.ORE, "磷灰石矿石", "Apatite Ore", Block::new, Blocks.COAL_ORE);
     public static final Entry SULFUR_ORE = block("sulfur_ore", Kind.ORE, "硫矿石", "Sulfur Ore", PlatformBlocks.experienceDropping(0, 2), Blocks.COAL_ORE);
+    /** I31 (additives/08 世界生成表, values to review): sources of 509 B and of the chromium salts. */
+    public static final Entry SELENIUM_ORE = block("selenium_ore", Kind.ORE, "硒矿石", "Selenium Ore", Block::new, Blocks.COAL_ORE);
+    public static final Entry CHROMITE_ORE = block("chromite_ore", Kind.ORE, "铬铁矿石", "Chromite Ore", Block::new, Blocks.IRON_ORE);
     public static final Entry TRONA_ORE = block("trona_ore", Kind.CRUST, "天然碱矿", "Trona Ore", Block::new, Blocks.SAND);
     public static final Entry NITRATINE = block("nitratine", Kind.CRUST, "钠硝石矿", "Nitratine Ore", Block::new, Blocks.SAND);
     public static final Entry NITRE_SOIL = block("nitre_soil", Kind.SOIL, "硝土", "Nitre Soil", Block::new, Blocks.DIRT);
 
     public static final Crop STEVIA = crop("stevia", "甜菊", "Stevia");
+    /** I12 (2026-11-10): sources of 07 chains 60 and 61. */
+    public static final Crop TURMERIC = crop("turmeric_rhizome", "姜黄根茎", "Turmeric Rhizome");
+    public static final Crop CHILI = crop("chili_pepper", "辣椒", "Chili Pepper");
     public static final Crop MINT = crop("mint", "薄荷", "Mint");
     public static final Crop ROSEMARY = crop("rosemary", "迷迭香", "Rosemary");
     public static final Crop INDIGO_PLANT = crop("indigo_plant", "蓼蓝", "Indigo Plant");
-    public static final Crop RICE = crop("rice", "稻谷", "Paddy Rice");
+    /** Paddy, apart from the milled rice ({@code materials/rice}) since 2026-11-12 (11 问题 43); grows wild on every node. */
+    public static final Crop PADDY = crop("paddy", "稻谷", "Paddy");
 
     private static final Supplier<Item>[] GARDENIA_FRUIT = holder();
     public static final Entry GARDENIA_BUSH = plant("gardenia_bush", Kind.BUSH, "栀子丛", "Gardenia Bush",
@@ -134,6 +142,22 @@ public final class ModWorldBlocks {
         return result;
     }
 
+    /**
+     * The vanilla composter takes the crops and plants (I07, 2026-11-12, chances set by the implementer after
+     * the vanilla table): harvests as wheat, carrots and cocoa beans (0.65), the gardenia fruit as sweet
+     * berries, the seaweeds as seagrass and kelp, the rubber sapling and leaves as other saplings and leaves (0.3).
+     */
+    private static void registerCompostables() {
+        for (Crop crop : CROPS) {
+            PlatformCompost.register(crop.produce(), 0.65F);
+        }
+        PlatformCompost.register(VANILLA_POD[0], 0.65F);
+        PlatformCompost.register(GARDENIA_FRUIT[0], 0.3F);
+        for (Entry entry : List.of(GELIDIUM, EUCHEUMA, RUBBER_SAPLING, RUBBER_LEAVES)) {
+            PlatformCompost.register(entry.item(), 0.3F);
+        }
+    }
+
     private static Entry put(Entry entry) {
         BY_ID.put(entry.id(), entry);
         return entry;
@@ -163,6 +187,7 @@ public final class ModWorldBlocks {
             }
         });
         PlatformEvents.onCommonSetup(ModWorldBlocks::setFlammability);
+        registerCompostables();
         PlatformEvents.onAxeStrip((level, pos, original) -> {
             if (Fallbacks.TREE_BARK.enabled()) {
                 Block.popResource(level, pos, new ItemStack(ModMaterials.get("tree_bark").item().get()));

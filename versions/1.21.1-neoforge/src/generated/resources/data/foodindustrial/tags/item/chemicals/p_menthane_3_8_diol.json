@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_menthane_3_8_diol",
+    {
+      "id": "#forge:dusts/p_menthane_3_8_diol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/p_menthane_3_8_diol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/p_menthane_3_8_diol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/p_menthane_3_8_diol",
+      "required": false
+    }
+  ]
+}

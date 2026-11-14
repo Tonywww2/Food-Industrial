@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    },
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    },
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    },
+    {
+      "tag": "foodindustrial:materials/raw_pork"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "foodindustrial:animal_fat"
+    }
+  ]
+}

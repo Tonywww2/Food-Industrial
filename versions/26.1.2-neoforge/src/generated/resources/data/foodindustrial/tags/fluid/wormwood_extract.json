@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wormwood_extract",
+    "foodindustrial:flowing_wormwood_extract",
+    {
+      "id": "#forge:wormwood_extract",
+      "required": false
+    },
+    {
+      "id": "#c:wormwood_extract",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octadienone",
+    "foodindustrial:flowing_octadienone",
+    {
+      "id": "#forge:octadienone",
+      "required": false
+    },
+    {
+      "id": "#c:octadienone",
+      "required": false
+    }
+  ]
+}

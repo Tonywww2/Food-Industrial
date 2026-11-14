@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aglaia_flower_oil",
+    "foodindustrial:flowing_aglaia_flower_oil",
+    {
+      "id": "#forge:aglaia_flower_oil",
+      "required": false
+    },
+    {
+      "id": "#c:aglaia_flower_oil",
+      "required": false
+    }
+  ]
+}

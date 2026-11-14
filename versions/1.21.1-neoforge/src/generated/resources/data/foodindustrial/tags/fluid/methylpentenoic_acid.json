@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylpentenoic_acid",
+    "foodindustrial:flowing_methylpentenoic_acid",
+    {
+      "id": "#forge:methylpentenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:methylpentenoic_acid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:vinyl_laurate",
+  "loader": "neoforge:fluid_container"
+}

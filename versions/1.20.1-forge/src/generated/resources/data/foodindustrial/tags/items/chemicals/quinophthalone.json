@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/quinophthalone",
       "required": false
+    },
+    {
+      "id": "#c:dusts/quinophthalone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quinophthalone",
+      "required": false
     }
   ]
 }

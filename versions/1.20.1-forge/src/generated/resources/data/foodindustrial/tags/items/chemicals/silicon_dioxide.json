@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/silicon_dioxide",
       "required": false
+    },
+    {
+      "id": "#c:dusts/silicon_dioxide",
+      "required": false
+    },
+    {
+      "id": "#c:gems/silicon_dioxide",
+      "required": false
     }
   ]
 }

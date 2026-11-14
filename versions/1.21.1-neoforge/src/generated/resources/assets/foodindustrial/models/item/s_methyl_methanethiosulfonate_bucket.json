@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:s_methyl_methanethiosulfonate",
+  "loader": "neoforge:fluid_container"
+}

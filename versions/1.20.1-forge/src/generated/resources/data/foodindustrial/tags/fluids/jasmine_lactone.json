@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:jasmine_lactone",
+    "foodindustrial:flowing_jasmine_lactone",
+    {
+      "id": "#forge:jasmine_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:jasmine_lactone",
+      "required": false
+    }
+  ]
+}

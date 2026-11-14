@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercaptobutanol",
+    "foodindustrial:flowing_mercaptobutanol",
+    {
+      "id": "#forge:mercaptobutanol",
+      "required": false
+    },
+    {
+      "id": "#c:mercaptobutanol",
+      "required": false
+    }
+  ]
+}

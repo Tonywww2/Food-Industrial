@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:common_jasmine_concrete",
+    {
+      "id": "#forge:dusts/common_jasmine_concrete",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/common_jasmine_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/common_jasmine_concrete",
+      "required": false
+    },
+    {
+      "id": "#c:gems/common_jasmine_concrete",
+      "required": false
+    }
+  ]
+}

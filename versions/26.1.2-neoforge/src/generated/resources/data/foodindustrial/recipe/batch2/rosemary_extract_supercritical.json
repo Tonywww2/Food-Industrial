@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/rosemary"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:carbon_dioxide"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:carnosic_acid",
+      "purity": {
+        "mode": "source",
+        "value": 30
+      }
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:carbon_dioxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "supercritical"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mercapto_3_methylbutanol",
+    "foodindustrial:flowing_mercapto_3_methylbutanol",
+    {
+      "id": "#forge:mercapto_3_methylbutanol",
+      "required": false
+    },
+    {
+      "id": "#c:mercapto_3_methylbutanol",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tolu_balsam_gum",
+    {
+      "id": "#forge:dusts/tolu_balsam_gum",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tolu_balsam_gum",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tolu_balsam_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tolu_balsam_gum",
+      "required": false
+    }
+  ]
+}

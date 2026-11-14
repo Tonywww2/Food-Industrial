@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/betanin",
       "required": false
+    },
+    {
+      "id": "#c:dusts/betanin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/betanin",
+      "required": false
     }
   ]
 }

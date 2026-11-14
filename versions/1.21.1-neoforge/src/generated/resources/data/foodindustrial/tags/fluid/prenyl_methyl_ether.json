@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:prenyl_methyl_ether",
+    "foodindustrial:flowing_prenyl_methyl_ether",
+    {
+      "id": "#forge:prenyl_methyl_ether",
+      "required": false
+    },
+    {
+      "id": "#c:prenyl_methyl_ether",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:glycine",
     {
+      "id": "#forge:dusts/glycine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/glycine",
+      "required": false
+    },
+    {
       "id": "#c:dusts/glycine",
       "required": false
     },

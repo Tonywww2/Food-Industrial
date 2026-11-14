@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chromium_chloride",
+    {
+      "id": "#forge:dusts/chromium_chloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chromium_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/chromium_chloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chromium_chloride",
+      "required": false
+    }
+  ]
+}

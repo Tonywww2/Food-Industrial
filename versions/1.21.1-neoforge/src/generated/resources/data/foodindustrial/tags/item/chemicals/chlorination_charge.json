@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chlorination_charge",
+    {
+      "id": "#forge:dusts/chlorination_charge",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chlorination_charge",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/chlorination_charge",
+      "required": false
+    },
+    {
+      "id": "#c:gems/chlorination_charge",
+      "required": false
+    }
+  ]
+}

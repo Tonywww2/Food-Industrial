@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_caprylate",
+    "foodindustrial:flowing_methyl_caprylate",
+    {
+      "id": "#forge:methyl_caprylate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_caprylate",
+      "required": false
+    }
+  ]
+}

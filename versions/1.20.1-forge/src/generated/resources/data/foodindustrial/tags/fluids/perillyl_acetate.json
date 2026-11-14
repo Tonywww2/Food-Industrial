@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:perillyl_acetate",
+    "foodindustrial:flowing_perillyl_acetate",
+    {
+      "id": "#forge:perillyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:perillyl_acetate",
+      "required": false
+    }
+  ]
+}

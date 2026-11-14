@@ -6,6 +6,10 @@
     {
       "id": "#forge:phosgene",
       "required": false
+    },
+    {
+      "id": "#c:phosgene",
+      "required": false
     }
   ]
 }

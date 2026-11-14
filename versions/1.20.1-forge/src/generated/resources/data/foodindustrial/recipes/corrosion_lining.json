@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "pattern": [
+    "ICI",
+    "CGC",
+    "ICI"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:corrosion_lining"
+  }
+}

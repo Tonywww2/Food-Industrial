@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isovaleric_acid",
+    "foodindustrial:flowing_isovaleric_acid",
+    {
+      "id": "#forge:isovaleric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:isovaleric_acid",
+      "required": false
+    }
+  ]
+}

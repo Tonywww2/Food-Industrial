@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leek_oil",
+    "foodindustrial:flowing_leek_oil",
+    {
+      "id": "#forge:leek_oil",
+      "required": false
+    },
+    {
+      "id": "#c:leek_oil",
+      "required": false
+    }
+  ]
+}

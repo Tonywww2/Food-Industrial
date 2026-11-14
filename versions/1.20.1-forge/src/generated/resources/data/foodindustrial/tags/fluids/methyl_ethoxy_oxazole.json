@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_ethoxy_oxazole",
+    "foodindustrial:flowing_methyl_ethoxy_oxazole",
+    {
+      "id": "#forge:methyl_ethoxy_oxazole",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_ethoxy_oxazole",
+      "required": false
+    }
+  ]
+}

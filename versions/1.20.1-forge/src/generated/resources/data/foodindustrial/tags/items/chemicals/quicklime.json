@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/quicklime",
       "required": false
+    },
+    {
+      "id": "#c:dusts/quicklime",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quicklime",
+      "required": false
     }
   ]
 }

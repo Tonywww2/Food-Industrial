@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/magnesium_hydroxide"
+    }
+  ],
+  "mode": "calcining",
+  "outputs": [
+    {
+      "item": "foodindustrial:magnesium_oxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 400
+}

@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:refined_soybean_oil"
+      }
+    }
+  ],
+  "mode": "stripping",
+  "outputs": [
+    {
+      "amount": 980,
+      "fluid": "foodindustrial:refined_soybean_oil"
+    },
+    {
+      "amount": 20,
+      "fluid": "foodindustrial:alpha_tocopherol",
+      "purity": {
+        "mode": "source",
+        "value": 10
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

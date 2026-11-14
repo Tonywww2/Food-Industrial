@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/chili"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dried_chili"
+    }
+  ],
+  "requirements": {
+    "temperature": "heated"
+  },
+  "time": 200,
+  "vanilla_devices": [
+    "campfire",
+    "furnace",
+    "smoker"
+  ]
+}

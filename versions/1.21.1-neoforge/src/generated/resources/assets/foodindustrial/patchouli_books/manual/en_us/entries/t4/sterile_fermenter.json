@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t4",
+  "icon": "foodindustrial:sterile_fermenter",
+  "name": "book.foodindustrial.manual.entry.sterile_fermenter",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:sterile_fermenter",
+      "text": "book.foodindustrial.manual.entry.sterile_fermenter.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:sterile_fermenter[facing=south]",
+          "A": "foodindustrial:sterile_vessel_wall"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "A0A"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.sterile_fermenter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.sterile_fermenter.structure"
+    }
+  ],
+  "sortnum": 0
+}

@@ -1,0 +1,28 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 4,
+    "tag": "foodindustrial:materials/paddy"
+  },
+  "result": [
+    {
+      "count": 3,
+      "item": "foodindustrial:rice"
+    },
+    {
+      "count": 1,
+      "item": "foodindustrial:rice_bran"
+    }
+  ]
+}

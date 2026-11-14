@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "foodindustrial:drying_rack"
+    },
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "IDI",
+    "RFR",
+    "IDI"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:dryer"
+  }
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:ethoxyquin",
       "required": false
+    },
+    {
+      "id": "#c:ethoxyquin",
+      "required": false
     }
   ]
 }

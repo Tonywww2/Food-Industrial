@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:distilling",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": "#foodindustrial:materials/citrus"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "steam_distillation",
+  "outputs": [
+    {
+      "amount": 50,
+      "fluid": "foodindustrial:citral",
+      "purity": {
+        "mode": "source",
+        "value": 60
+      }
+    },
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:limonene",
+      "purity": {
+        "mode": "source",
+        "value": 70
+      }
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "oil_separation"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 200
+}

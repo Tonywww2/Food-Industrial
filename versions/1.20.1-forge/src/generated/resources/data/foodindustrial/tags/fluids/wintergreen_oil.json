@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wintergreen_oil",
+    "foodindustrial:flowing_wintergreen_oil",
+    {
+      "id": "#forge:wintergreen_oil",
+      "required": false
+    },
+    {
+      "id": "#c:wintergreen_oil",
+      "required": false
+    }
+  ]
+}

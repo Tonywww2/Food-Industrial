@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:butyl_undecylenate",
+    "foodindustrial:flowing_butyl_undecylenate",
+    {
+      "id": "#forge:butyl_undecylenate",
+      "required": false
+    },
+    {
+      "id": "#c:butyl_undecylenate",
+      "required": false
+    }
+  ]
+}

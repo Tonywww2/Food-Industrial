@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyanocobalamin_hydrochloride",
+    {
+      "id": "#forge:dusts/cyanocobalamin_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cyanocobalamin_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cyanocobalamin_hydrochloride",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cyanocobalamin_hydrochloride",
+      "required": false
+    }
+  ]
+}

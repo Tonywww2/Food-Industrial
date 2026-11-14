@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/steeping_vat_front_active",
+    "side": "foodindustrial:block/steeping_vat_side",
+    "top": "foodindustrial:block/steeping_vat_top"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decenoic_acid_4",
+    "foodindustrial:flowing_decenoic_acid_4",
+    {
+      "id": "#forge:decenoic_acid_4",
+      "required": false
+    },
+    {
+      "id": "#c:decenoic_acid_4",
+      "required": false
+    }
+  ]
+}

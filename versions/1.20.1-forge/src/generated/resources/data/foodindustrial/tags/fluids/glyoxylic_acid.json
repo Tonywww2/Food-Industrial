@@ -6,6 +6,10 @@
     {
       "id": "#forge:glyoxylic_acid",
       "required": false
+    },
+    {
+      "id": "#c:glyoxylic_acid",
+      "required": false
     }
   ]
 }

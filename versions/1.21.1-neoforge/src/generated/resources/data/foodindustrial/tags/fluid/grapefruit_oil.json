@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:grapefruit_oil",
+    "foodindustrial:flowing_grapefruit_oil",
+    {
+      "id": "#forge:grapefruit_oil",
+      "required": false
+    },
+    {
+      "id": "#c:grapefruit_oil",
+      "required": false
+    }
+  ]
+}

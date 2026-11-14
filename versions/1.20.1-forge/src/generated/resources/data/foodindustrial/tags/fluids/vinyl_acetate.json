@@ -6,6 +6,10 @@
     {
       "id": "#forge:vinyl_acetate",
       "required": false
+    },
+    {
+      "id": "#c:vinyl_acetate",
+      "required": false
     }
   ]
 }

@@ -6,6 +6,10 @@
     {
       "id": "#forge:lactic_acid",
       "required": false
+    },
+    {
+      "id": "#c:lactic_acid",
+      "required": false
     }
   ]
 }

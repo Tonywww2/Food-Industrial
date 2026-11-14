@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_amylcinnamyl_alcohol",
+    "foodindustrial:flowing_alpha_amylcinnamyl_alcohol",
+    {
+      "id": "#forge:alpha_amylcinnamyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_amylcinnamyl_alcohol",
+      "required": false
+    }
+  ]
+}

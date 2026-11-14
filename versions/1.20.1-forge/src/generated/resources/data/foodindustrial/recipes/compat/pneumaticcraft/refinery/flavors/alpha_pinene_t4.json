@@ -1,0 +1,41 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:turpentine"
+  },
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:carene_3",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:beta_pinene",
+      "nbt": "{Purity:19b}"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:alpha_pinene",
+      "nbt": "{Purity:19b}"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

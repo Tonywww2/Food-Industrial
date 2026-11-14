@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetyl_isobutyryl",
+    "foodindustrial:flowing_acetyl_isobutyryl",
+    {
+      "id": "#forge:acetyl_isobutyryl",
+      "required": false
+    },
+    {
+      "id": "#c:acetyl_isobutyryl",
+      "required": false
+    }
+  ]
+}

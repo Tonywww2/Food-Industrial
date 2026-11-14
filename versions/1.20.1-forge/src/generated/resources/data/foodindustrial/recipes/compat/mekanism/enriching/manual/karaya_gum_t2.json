@@ -1,0 +1,26 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/karaya_lump"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:karaya_gum",
+    "nbt": "{Purity:2b}"
+  }
+}

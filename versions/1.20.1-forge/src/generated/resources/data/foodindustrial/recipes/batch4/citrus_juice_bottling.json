@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:raw_citrus_juice"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/glass_bottle"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "item": "foodindustrial:citrus_juice"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

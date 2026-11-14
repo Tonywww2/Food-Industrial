@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_menthan_2_ol",
+    "foodindustrial:flowing_p_menthan_2_ol",
+    {
+      "id": "#forge:p_menthan_2_ol",
+      "required": false
+    },
+    {
+      "id": "#c:p_menthan_2_ol",
+      "required": false
+    }
+  ]
+}

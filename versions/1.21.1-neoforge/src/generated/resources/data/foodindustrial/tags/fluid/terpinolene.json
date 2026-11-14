@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terpinolene",
+    "foodindustrial:flowing_terpinolene",
+    {
+      "id": "#forge:terpinolene",
+      "required": false
+    },
+    {
+      "id": "#c:terpinolene",
+      "required": false
+    }
+  ]
+}

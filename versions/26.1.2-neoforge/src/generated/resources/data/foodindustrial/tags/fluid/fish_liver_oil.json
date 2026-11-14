@@ -4,6 +4,10 @@
     "foodindustrial:fish_liver_oil",
     "foodindustrial:flowing_fish_liver_oil",
     {
+      "id": "#forge:fish_liver_oil",
+      "required": false
+    },
+    {
       "id": "#c:fish_liver_oil",
       "required": false
     }

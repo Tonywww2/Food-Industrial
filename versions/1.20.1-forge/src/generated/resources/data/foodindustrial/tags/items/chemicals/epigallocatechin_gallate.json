@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/epigallocatechin_gallate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/epigallocatechin_gallate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/epigallocatechin_gallate",
+      "required": false
     }
   ]
 }

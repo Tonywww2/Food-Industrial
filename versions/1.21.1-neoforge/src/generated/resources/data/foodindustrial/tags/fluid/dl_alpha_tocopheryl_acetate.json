@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dl_alpha_tocopheryl_acetate",
+    "foodindustrial:flowing_dl_alpha_tocopheryl_acetate",
+    {
+      "id": "#forge:dl_alpha_tocopheryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dl_alpha_tocopheryl_acetate",
+      "required": false
+    }
+  ]
+}

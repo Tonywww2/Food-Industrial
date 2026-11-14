@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/cholecalciferol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/cholecalciferol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cholecalciferol",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_menthenyl_acetate",
+    "foodindustrial:flowing_p_menthenyl_acetate",
+    {
+      "id": "#forge:p_menthenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:p_menthenyl_acetate",
+      "required": false
+    }
+  ]
+}

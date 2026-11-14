@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/fumaric_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/fumaric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/fumaric_acid",
+      "required": false
     }
   ]
 }

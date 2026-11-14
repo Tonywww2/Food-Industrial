@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:delta_damascone",
+    "foodindustrial:flowing_delta_damascone",
+    {
+      "id": "#forge:delta_damascone",
+      "required": false
+    },
+    {
+      "id": "#c:delta_damascone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_acetoxyethyl_thiazole",
+    "foodindustrial:flowing_methyl_acetoxyethyl_thiazole",
+    {
+      "id": "#forge:methyl_acetoxyethyl_thiazole",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_acetoxyethyl_thiazole",
+      "required": false
+    }
+  ]
+}

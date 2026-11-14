@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_delta_ionone",
+    "foodindustrial:flowing_methyl_delta_ionone",
+    {
+      "id": "#forge:methyl_delta_ionone",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_delta_ionone",
+      "required": false
+    }
+  ]
+}

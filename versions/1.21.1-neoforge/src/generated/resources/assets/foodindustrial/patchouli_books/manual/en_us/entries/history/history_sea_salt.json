@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "foodindustrial:salt_pan",
+  "name": "book.foodindustrial.manual.entry.history_sea_salt",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:salt_pan",
+      "text": "book.foodindustrial.manual.entry.history_sea_salt.text"
+    }
+  ],
+  "sortnum": 2
+}

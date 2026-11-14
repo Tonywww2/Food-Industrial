@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_propionate",
+    "foodindustrial:flowing_allyl_propionate",
+    {
+      "id": "#forge:allyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_propionate",
+      "required": false
+    }
+  ]
+}

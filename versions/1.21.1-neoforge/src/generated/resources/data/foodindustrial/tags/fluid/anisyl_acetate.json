@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:anisyl_acetate",
+    "foodindustrial:flowing_anisyl_acetate",
+    {
+      "id": "#forge:anisyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:anisyl_acetate",
+      "required": false
+    }
+  ]
+}

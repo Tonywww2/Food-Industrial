@@ -4,6 +4,10 @@
     "foodindustrial:vacuum_gas_oil",
     "foodindustrial:flowing_vacuum_gas_oil",
     {
+      "id": "#forge:vacuum_gas_oil",
+      "required": false
+    },
+    {
       "id": "#c:vacuum_gas_oil",
       "required": false
     }

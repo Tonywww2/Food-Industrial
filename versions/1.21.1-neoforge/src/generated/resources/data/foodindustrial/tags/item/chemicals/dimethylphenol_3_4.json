@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylphenol_3_4",
+    {
+      "id": "#forge:dusts/dimethylphenol_3_4",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/dimethylphenol_3_4",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/dimethylphenol_3_4",
+      "required": false
+    },
+    {
+      "id": "#c:gems/dimethylphenol_3_4",
+      "required": false
+    }
+  ]
+}

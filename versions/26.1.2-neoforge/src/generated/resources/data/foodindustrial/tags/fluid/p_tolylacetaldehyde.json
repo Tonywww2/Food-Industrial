@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_tolylacetaldehyde",
+    "foodindustrial:flowing_p_tolylacetaldehyde",
+    {
+      "id": "#forge:p_tolylacetaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:p_tolylacetaldehyde",
+      "required": false
+    }
+  ]
+}

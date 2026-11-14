@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:onion_oleoresin",
+    "foodindustrial:flowing_onion_oleoresin",
+    {
+      "id": "#forge:onion_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:onion_oleoresin",
+      "required": false
+    }
+  ]
+}

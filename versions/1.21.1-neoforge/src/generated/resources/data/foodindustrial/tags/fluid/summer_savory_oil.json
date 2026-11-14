@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:summer_savory_oil",
+    "foodindustrial:flowing_summer_savory_oil",
+    {
+      "id": "#forge:summer_savory_oil",
+      "required": false
+    },
+    {
+      "id": "#c:summer_savory_oil",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:saltpeter_liquor",
     "foodindustrial:flowing_saltpeter_liquor",
     {
+      "id": "#forge:saltpeter_liquor",
+      "required": false
+    },
+    {
       "id": "#c:saltpeter_liquor",
       "required": false
     }

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/polyethylene_glycol",
       "required": false
+    },
+    {
+      "id": "#c:dusts/polyethylene_glycol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/polyethylene_glycol",
+      "required": false
     }
   ]
 }

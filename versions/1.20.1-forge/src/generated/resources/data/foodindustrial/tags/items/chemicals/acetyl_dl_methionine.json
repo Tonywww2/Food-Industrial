@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetyl_dl_methionine",
+    {
+      "id": "#forge:dusts/acetyl_dl_methionine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/acetyl_dl_methionine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/acetyl_dl_methionine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetyl_dl_methionine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:chloro_methyl_tetrahydropyran",
+  "loader": "forge:fluid_container"
+}

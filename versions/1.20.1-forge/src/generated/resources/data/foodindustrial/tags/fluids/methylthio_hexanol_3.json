@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthio_hexanol_3",
+    "foodindustrial:flowing_methylthio_hexanol_3",
+    {
+      "id": "#forge:methylthio_hexanol_3",
+      "required": false
+    },
+    {
+      "id": "#c:methylthio_hexanol_3",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coconut_acid_ethyl_esters",
+    "foodindustrial:flowing_coconut_acid_ethyl_esters",
+    {
+      "id": "#forge:coconut_acid_ethyl_esters",
+      "required": false
+    },
+    {
+      "id": "#c:coconut_acid_ethyl_esters",
+      "required": false
+    }
+  ]
+}

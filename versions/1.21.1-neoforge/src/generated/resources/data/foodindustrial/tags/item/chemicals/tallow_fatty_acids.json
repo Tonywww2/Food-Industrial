@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:tallow_fatty_acids",
     {
+      "id": "#forge:dusts/tallow_fatty_acids",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tallow_fatty_acids",
+      "required": false
+    },
+    {
       "id": "#c:dusts/tallow_fatty_acids",
       "required": false
     },

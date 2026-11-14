@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_isovalerate",
+    "foodindustrial:flowing_allyl_isovalerate",
+    {
+      "id": "#forge:allyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_isovalerate",
+      "required": false
+    }
+  ]
+}

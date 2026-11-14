@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylthiazole_4_5",
+    "foodindustrial:flowing_dimethylthiazole_4_5",
+    {
+      "id": "#forge:dimethylthiazole_4_5",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylthiazole_4_5",
+      "required": false
+    }
+  ]
+}

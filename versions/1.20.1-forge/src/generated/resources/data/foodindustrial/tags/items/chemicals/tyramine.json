@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tyramine",
+    {
+      "id": "#forge:dusts/tyramine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tyramine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tyramine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tyramine",
+      "required": false
+    }
+  ]
+}

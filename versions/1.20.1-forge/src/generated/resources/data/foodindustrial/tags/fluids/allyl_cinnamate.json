@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_cinnamate",
+    "foodindustrial:flowing_allyl_cinnamate",
+    {
+      "id": "#forge:allyl_cinnamate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_cinnamate",
+      "required": false
+    }
+  ]
+}

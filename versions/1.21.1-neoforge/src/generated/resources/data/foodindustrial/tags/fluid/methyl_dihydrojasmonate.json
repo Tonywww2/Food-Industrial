@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_dihydrojasmonate",
+    "foodindustrial:flowing_methyl_dihydrojasmonate",
+    {
+      "id": "#forge:methyl_dihydrojasmonate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_dihydrojasmonate",
+      "required": false
+    }
+  ]
+}

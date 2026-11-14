@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:coconut_acid_ethyl_esters",
+  "loader": "neoforge:fluid_container"
+}

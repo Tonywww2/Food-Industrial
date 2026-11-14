@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fleabane_oil",
+    "foodindustrial:flowing_fleabane_oil",
+    {
+      "id": "#forge:fleabane_oil",
+      "required": false
+    },
+    {
+      "id": "#c:fleabane_oil",
+      "required": false
+    }
+  ]
+}

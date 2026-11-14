@@ -6,6 +6,10 @@
     {
       "id": "#forge:palm_fatty_acids",
       "required": false
+    },
+    {
+      "id": "#c:palm_fatty_acids",
+      "required": false
     }
   ]
 }

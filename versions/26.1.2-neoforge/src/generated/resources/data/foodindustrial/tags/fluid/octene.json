@@ -4,6 +4,10 @@
     "foodindustrial:octene",
     "foodindustrial:flowing_octene",
     {
+      "id": "#forge:octene",
+      "required": false
+    },
+    {
       "id": "#c:octene",
       "required": false
     }

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cycloionone",
+    "foodindustrial:flowing_cycloionone",
+    {
+      "id": "#forge:cycloionone",
+      "required": false
+    },
+    {
+      "id": "#c:cycloionone",
+      "required": false
+    }
+  ]
+}

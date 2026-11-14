@@ -6,6 +6,10 @@
     {
       "id": "#forge:polyricinoleic_acid",
       "required": false
+    },
+    {
+      "id": "#c:polyricinoleic_acid",
+      "required": false
     }
   ]
 }

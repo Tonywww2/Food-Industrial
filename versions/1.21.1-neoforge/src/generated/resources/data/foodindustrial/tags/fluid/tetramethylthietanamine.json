@@ -4,6 +4,10 @@
     "foodindustrial:tetramethylthietanamine",
     "foodindustrial:flowing_tetramethylthietanamine",
     {
+      "id": "#forge:tetramethylthietanamine",
+      "required": false
+    },
+    {
       "id": "#c:tetramethylthietanamine",
       "required": false
     }

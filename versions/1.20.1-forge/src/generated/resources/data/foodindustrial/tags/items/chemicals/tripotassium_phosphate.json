@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tripotassium_phosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tripotassium_phosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tripotassium_phosphate",
+      "required": false
     }
   ]
 }

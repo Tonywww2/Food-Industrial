@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/indigo_carmine_lake",
       "required": false
+    },
+    {
+      "id": "#c:dusts/indigo_carmine_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/indigo_carmine_lake",
+      "required": false
     }
   ]
 }

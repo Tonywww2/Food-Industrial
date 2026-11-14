@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:heptan_2_ol",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:white_thyme_oil",
+  "loader": "forge:fluid_container"
+}

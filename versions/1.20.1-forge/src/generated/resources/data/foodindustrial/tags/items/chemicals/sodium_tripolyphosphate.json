@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sodium_tripolyphosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sodium_tripolyphosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sodium_tripolyphosphate",
+      "required": false
     }
   ]
 }

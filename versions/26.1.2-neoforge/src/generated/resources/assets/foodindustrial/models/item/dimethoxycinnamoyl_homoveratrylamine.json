@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodindustrial:item/dimethoxycinnamoyl_homoveratrylamine"
+  }
+}

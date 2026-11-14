@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "type": "pneumaticcraft:thermo_plant",
+  "inputs": {
+    "fluid": {
+      "amount": 1000,
+      "tag": "foodindustrial:sorva_latex"
+    }
+  },
+  "outputs": {
+    "item_output": {
+      "components": {
+        "foodindustrial:purity": 5
+      },
+      "count": 1,
+      "id": "foodindustrial:leche_caspi"
+    }
+  }
+}

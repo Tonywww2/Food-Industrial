@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nitrotoluene",
+    {
+      "id": "#forge:dusts/nitrotoluene",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/nitrotoluene",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/nitrotoluene",
+      "required": false
+    },
+    {
+      "id": "#c:gems/nitrotoluene",
+      "required": false
+    }
+  ]
+}

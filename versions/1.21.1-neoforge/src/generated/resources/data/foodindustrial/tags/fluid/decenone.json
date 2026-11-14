@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:decenone",
+    "foodindustrial:flowing_decenone",
+    {
+      "id": "#forge:decenone",
+      "required": false
+    },
+    {
+      "id": "#c:decenone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pseudoionone",
+    "foodindustrial:flowing_pseudoionone",
+    {
+      "id": "#forge:pseudoionone",
+      "required": false
+    },
+    {
+      "id": "#c:pseudoionone",
+      "required": false
+    }
+  ]
+}

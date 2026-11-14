@@ -4,6 +4,10 @@
     "foodindustrial:calcium_ferrocyanide",
     "foodindustrial:flowing_calcium_ferrocyanide",
     {
+      "id": "#forge:calcium_ferrocyanide",
+      "required": false
+    },
+    {
       "id": "#c:calcium_ferrocyanide",
       "required": false
     }

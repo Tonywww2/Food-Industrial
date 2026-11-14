@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tara_gum",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tara_gum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tara_gum",
+      "required": false
     }
   ]
 }

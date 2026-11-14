@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_methylanisole",
+    "foodindustrial:flowing_o_methylanisole",
+    {
+      "id": "#forge:o_methylanisole",
+      "required": false
+    },
+    {
+      "id": "#c:o_methylanisole",
+      "required": false
+    }
+  ]
+}

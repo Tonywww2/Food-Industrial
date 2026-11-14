@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:clove_bud_oleoresin",
+    "foodindustrial:flowing_clove_bud_oleoresin",
+    {
+      "id": "#forge:clove_bud_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:clove_bud_oleoresin",
+      "required": false
+    }
+  ]
+}

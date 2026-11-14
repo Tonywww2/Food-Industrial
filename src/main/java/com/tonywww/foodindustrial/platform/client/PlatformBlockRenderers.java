@@ -9,6 +9,8 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -40,6 +42,8 @@ import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.client.renderer.item.ItemModelResolver;
+import net.minecraft.client.renderer.item.ItemStackRenderState;
 *///?}
 
 /**
@@ -71,17 +75,66 @@ public final class PlatformBlockRenderers {
         ENTRIES.add(new Entry<>(type, content));
     }
 
+    /**
+     * An item drawn in a block: centre in block coordinates, size (1 = a full block), lying flat or
+     * standing, and a turn about the vertical axis in degrees.
+     */
+    public record ItemPlacement(ItemStack stack, float x, float y, float z, float size, boolean flat, float yaw) {
+    }
+
+    /** A fluid cuboid (or {@code null}) and items drawn in a block. */
+    public record Contents(@Nullable FluidBox fluid, List<ItemPlacement> items) {
+        public static final Contents NONE = new Contents(null, List.of());
+    }
+
+    /** What to draw for a block entity. */
+    @FunctionalInterface
+    public interface ContentsProvider<T extends BlockEntity> {
+        Contents contents(T blockEntity);
+    }
+
+    private record ContentsEntry<T extends BlockEntity>(Supplier<? extends BlockEntityType<? extends T>> type, ContentsProvider<T> provider) {
+    }
+
+    private static final List<ContentsEntry<?>> CONTENTS = new ArrayList<>();
+
+    /** Draws a fluid cuboid and items in the blocks of {@code type} (T0 devices). */
+    public static <T extends BlockEntity> void registerContents(Supplier<? extends BlockEntityType<? extends T>> type, ContentsProvider<T> provider) {
+        CONTENTS.add(new ContentsEntry<>(type, provider));
+    }
+
     /** Called by {@link PlatformClient#bind}. */
     static void bind(IEventBus modBus) {
         modBus.addListener((EntityRenderersEvent.RegisterRenderers event) -> {
             for (Entry<?> entry : ENTRIES) {
                 register(event, entry);
             }
+            for (ContentsEntry<?> entry : CONTENTS) {
+                registerContents(event, entry);
+            }
         });
     }
 
     private static <T extends BlockEntity> void register(EntityRenderersEvent.RegisterRenderers event, Entry<T> entry) {
         event.registerBlockEntityRenderer(entry.type().get(), context -> new FluidBoxRenderer<>(entry.content()));
+    }
+
+    private static <T extends BlockEntity> void registerContents(EntityRenderersEvent.RegisterRenderers event, ContentsEntry<T> entry) {
+        //? if >=26.1 {
+        /*event.registerBlockEntityRenderer(entry.type().get(), context -> new ContentsRenderer<>(entry.provider(), context.itemModelResolver()));
+        *///?} else {
+        event.registerBlockEntityRenderer(entry.type().get(), context -> new ContentsRenderer<>(entry.provider()));
+        //?}
+    }
+
+    /** Moves the pose to an item placement (FIXED display: a full-size flat item faces +z). */
+    private static void place(PoseStack poseStack, ItemPlacement item) {
+        poseStack.translate(item.x(), item.y(), item.z());
+        poseStack.mulPose(com.mojang.math.Axis.YP.rotationDegrees(item.yaw()));
+        if (item.flat()) {
+            poseStack.mulPose(com.mojang.math.Axis.XP.rotationDegrees(90.0F));
+        }
+        poseStack.scale(item.size(), item.size(), item.size());
     }
 
     // ---- drawing ----
@@ -155,6 +208,36 @@ public final class PlatformBlockRenderers {
     }
 
     //? if <26.1 {
+    private static final class ContentsRenderer<T extends BlockEntity> implements BlockEntityRenderer<T> {
+        private final ContentsProvider<T> provider;
+
+        ContentsRenderer(ContentsProvider<T> provider) {
+            this.provider = provider;
+        }
+
+        @Override
+        public void render(T blockEntity, float partialTick, PoseStack poseStack, MultiBufferSource buffers, int light, int overlay) {
+            Contents contents = provider.contents(blockEntity);
+            FluidBox box = contents.fluid();
+            if (box != null && !box.fluid().isEmpty()) {
+                VertexConsumer buffer = buffers.getBuffer(RenderType.entityTranslucentCull(InventoryMenu.BLOCK_ATLAS));
+                cuboid(poseStack.last(), buffer, box, sprite(box.fluid()), tint(box.fluid()), light);
+            }
+            int seed = (int) blockEntity.getBlockPos().asLong();
+            for (int i = 0; i < contents.items().size(); i++) {
+                ItemPlacement item = contents.items().get(i);
+                if (item.stack().isEmpty()) {
+                    continue;
+                }
+                poseStack.pushPose();
+                place(poseStack, item);
+                Minecraft.getInstance().getItemRenderer().renderStatic(item.stack(), ItemDisplayContext.FIXED, light, OverlayTexture.NO_OVERLAY,
+                    poseStack, buffers, blockEntity.getLevel(), seed + i);
+                poseStack.popPose();
+            }
+        }
+    }
+
     private static final class FluidBoxRenderer<T extends BlockEntity> implements BlockEntityRenderer<T> {
         private final FluidContent<T> content;
 
@@ -173,7 +256,76 @@ public final class PlatformBlockRenderers {
         }
     }
     //?} else {
-    /*private static final class FluidBoxState extends BlockEntityRenderState {
+    /*private static final class ContentsState extends BlockEntityRenderState {
+        @Nullable
+        FluidBox box;
+        @Nullable
+        TextureAtlasSprite sprite;
+        int tint;
+        final List<ItemPlacement> placements = new ArrayList<>();
+        final List<ItemStackRenderState> items = new ArrayList<>();
+    }
+
+    private static final class ContentsRenderer<T extends BlockEntity> implements BlockEntityRenderer<T, ContentsState> {
+        private final ContentsProvider<T> provider;
+        private final ItemModelResolver resolver;
+
+        ContentsRenderer(ContentsProvider<T> provider, ItemModelResolver resolver) {
+            this.provider = provider;
+            this.resolver = resolver;
+        }
+
+        @Override
+        public ContentsState createRenderState() {
+            return new ContentsState();
+        }
+
+        @Override
+        public void extractRenderState(T blockEntity, ContentsState state, float partialTicks, Vec3 cameraPosition,
+                                       ModelFeatureRenderer.@org.jspecify.annotations.Nullable CrumblingOverlay breakProgress) {
+            BlockEntityRenderer.super.extractRenderState(blockEntity, state, partialTicks, cameraPosition, breakProgress);
+            Contents contents = provider.contents(blockEntity);
+            FluidBox box = contents.fluid();
+            state.box = box == null || box.fluid().isEmpty() ? null : box;
+            if (state.box != null) {
+                state.sprite = sprite(box.fluid());
+                state.tint = tint(box.fluid());
+            }
+            state.placements.clear();
+            state.items.clear();
+            int seed = (int) blockEntity.getBlockPos().asLong();
+            for (int i = 0; i < contents.items().size(); i++) {
+                ItemPlacement item = contents.items().get(i);
+                if (item.stack().isEmpty()) {
+                    continue;
+                }
+                ItemStackRenderState itemState = new ItemStackRenderState();
+                resolver.updateForTopItem(itemState, item.stack(), ItemDisplayContext.FIXED, blockEntity.getLevel(), null, seed + i);
+                state.placements.add(item);
+                state.items.add(itemState);
+            }
+        }
+
+        @Override
+        public void submit(ContentsState state, PoseStack poseStack, SubmitNodeCollector collector, CameraRenderState camera) {
+            if (state.box != null && state.sprite != null) {
+                FluidBox box = state.box;
+                TextureAtlasSprite sprite = state.sprite;
+                int tint = state.tint;
+                int light = state.lightCoords;
+                collector.submitCustomGeometry(poseStack, RenderTypes.entityTranslucent(TextureAtlas.LOCATION_BLOCKS),
+                    (pose, buffer) -> cuboid(pose, buffer, box, sprite, tint, light));
+            }
+            for (int i = 0; i < state.items.size(); i++) {
+                poseStack.pushPose();
+                place(poseStack, state.placements.get(i));
+                state.items.get(i).submit(poseStack, collector, state.lightCoords, OverlayTexture.NO_OVERLAY, 0);
+                poseStack.popPose();
+            }
+        }
+    }
+
+    private static final class FluidBoxState extends BlockEntityRenderState {
         @Nullable
         FluidBox box;
         @Nullable

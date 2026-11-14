@@ -51,7 +51,7 @@ public final class ModMaterials {
                 Purity.registerPlainMaterial(material, def.isFluid() ? null : tag, def.isFluid() ? tag : null);
             }
             if (def.isFluid()) {
-                PlatformFluids.Spec spec = def.state() == MaterialDef.State.GAS ? PlatformFluids.Spec.gas(def.color()) : PlatformFluids.Spec.liquid(def.color());
+                PlatformFluids.Spec spec = textured(def);
                 if (def.bearer()) {
                     spec = spec.withPurity(() -> Purity.missingValue(material));
                 }
@@ -74,6 +74,18 @@ public final class ModMaterials {
     }
 
     private ModMaterials() {
+    }
+
+    /** The fluid's spec with the textures of its kind (I33): viscous liquids also flow slower in the world. */
+    private static PlatformFluids.Spec textured(MaterialDef def) {
+        if (def.state() == MaterialDef.State.GAS || "gas".equals(def.texture())) {
+            return PlatformFluids.Spec.gas(def.color()).withTextures("block/fluid_gas_still", "block/fluid_gas_flowing");
+        }
+        PlatformFluids.Spec spec = PlatformFluids.Spec.liquid(def.color());
+        if ("viscous".equals(def.texture())) {
+            spec = spec.withTextures("block/fluid_viscous_still", "block/fluid_viscous_flowing").withViscosity(4000);
+        }
+        return spec;
     }
 
     static {
@@ -121,9 +133,11 @@ public final class ModMaterials {
         ModCreativeTabs.add(ModCreativeTabs.Tab.CHEMICALS, output -> tabEntries(output, "chemical", "catalyst"));
         ModCreativeTabs.add(ModCreativeTabs.Tab.RAW_MATERIALS, output -> tabEntries(output, "raw"));
         ModCreativeTabs.add(ModCreativeTabs.Tab.CULTURES, output -> tabEntries(output, "culture", "enzyme", "consumable"));
+        ModCreativeTabs.add(ModCreativeTabs.Tab.FLAVORS, output -> tabEntries(output, "flavor"));
         ModCreativeTabs.icon(ModCreativeTabs.Tab.CHEMICALS, () -> icon("salt"));
         ModCreativeTabs.icon(ModCreativeTabs.Tab.RAW_MATERIALS, () -> icon("tomato_pomace"));
         ModCreativeTabs.icon(ModCreativeTabs.Tab.CULTURES, () -> icon("acetobacter"));
+        ModCreativeTabs.icon(ModCreativeTabs.Tab.FLAVORS, () -> icon("vanillin"));
         PlatformDatagen.register("materials", ModMaterials::generate);
         if (Platform.isPhysicalClient()) {
             MaterialLabels.register(BY_ID.values());
@@ -134,15 +148,17 @@ public final class ModMaterials {
         if (def.commonZh() != null) {
             Lang.addCommonName(def.professionalZh(), def.commonZh());
         }
-        Lang.add(Lang.description(def.id()), def.professionalZh(), def.professionalEn());
+        Lang.addName(Lang.description(def.id()), def.professionalZh(), def.professionalEn());
         if (!def.isFluid()) {
-            Lang.add(Lang.item(def.id()), def.nameZh(), def.nameEn());
+            Lang.addName(Lang.item(def.id()), def.nameZh(), def.nameEn());
             return;
         }
-        Lang.add(Lang.fluid(def.id()), def.nameZh(), def.nameEn());
+        Lang.addName(Lang.fluid(def.id()), def.nameZh(), def.nameEn());
         if (def.state() != MaterialDef.State.GAS) {
-            Lang.add(Lang.block(def.id()), def.nameZh(), def.nameEn());
-            Lang.add(Lang.item(def.id() + "_bucket"), def.nameZh() + "桶", def.nameEn() + " Bucket");
+            Lang.addName(Lang.block(def.id()), def.nameZh(), def.nameEn());
+            String name = def.nameZh();
+            boolean latinEnd = !name.isEmpty() && name.charAt(name.length() - 1) < 128 && Character.isLetterOrDigit(name.charAt(name.length() - 1));
+            Lang.addName(Lang.item(def.id() + "_bucket"), name + (latinEnd ? " 桶" : "桶"), def.nameEn() + " Bucket");
         }
     }
 

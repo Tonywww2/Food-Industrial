@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:bis_methylfuryl_disulfide",
+    "foodindustrial:flowing_bis_methylfuryl_disulfide",
+    {
+      "id": "#forge:bis_methylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#c:bis_methylfuryl_disulfide",
+      "required": false
+    }
+  ]
+}

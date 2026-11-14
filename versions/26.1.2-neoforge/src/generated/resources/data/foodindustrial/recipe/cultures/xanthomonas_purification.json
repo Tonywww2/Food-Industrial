@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:cultures/xanthomonas"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/agar"
+    }
+  ],
+  "mode": "purification",
+  "outputs": [
+    {
+      "item": "foodindustrial:xanthomonas"
+    },
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "plate": {
+    "by_purity": true
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

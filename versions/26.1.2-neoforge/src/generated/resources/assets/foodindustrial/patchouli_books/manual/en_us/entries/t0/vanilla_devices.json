@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "minecraft:furnace",
+  "name": "book.foodindustrial.manual.entry.vanilla_devices",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:furnace",
+      "text": "book.foodindustrial.manual.entry.vanilla_devices.text"
+    }
+  ],
+  "sortnum": 11
+}

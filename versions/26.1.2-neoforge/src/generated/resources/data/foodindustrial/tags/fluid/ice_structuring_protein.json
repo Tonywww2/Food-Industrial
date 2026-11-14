@@ -4,6 +4,10 @@
     "foodindustrial:ice_structuring_protein",
     "foodindustrial:flowing_ice_structuring_protein",
     {
+      "id": "#forge:ice_structuring_protein",
+      "required": false
+    },
+    {
       "id": "#c:ice_structuring_protein",
       "required": false
     }

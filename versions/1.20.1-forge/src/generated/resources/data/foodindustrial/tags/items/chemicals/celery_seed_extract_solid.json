@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:celery_seed_extract_solid",
+    {
+      "id": "#forge:dusts/celery_seed_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/celery_seed_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/celery_seed_extract_solid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/celery_seed_extract_solid",
+      "required": false
+    }
+  ]
+}

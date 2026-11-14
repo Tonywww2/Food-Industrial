@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/citrus_yellow",
       "required": false
+    },
+    {
+      "id": "#c:dusts/citrus_yellow",
+      "required": false
+    },
+    {
+      "id": "#c:gems/citrus_yellow",
+      "required": false
     }
   ]
 }

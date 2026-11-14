@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t1"
+      ]
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "foodindustrial:materials/dried_turmeric"
+  },
+  "output": {
+    "components": {
+      "foodindustrial:purity": -35
+    },
+    "count": 1,
+    "id": "foodindustrial:turmeric"
+  }
+}

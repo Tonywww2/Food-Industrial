@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:michelia_alba_absolute",
+    "foodindustrial:flowing_michelia_alba_absolute",
+    {
+      "id": "#forge:michelia_alba_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:michelia_alba_absolute",
+      "required": false
+    }
+  ]
+}

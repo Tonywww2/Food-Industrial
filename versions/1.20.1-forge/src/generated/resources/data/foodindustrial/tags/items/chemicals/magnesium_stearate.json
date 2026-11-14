@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/magnesium_stearate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/magnesium_stearate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/magnesium_stearate",
+      "required": false
     }
   ]
 }

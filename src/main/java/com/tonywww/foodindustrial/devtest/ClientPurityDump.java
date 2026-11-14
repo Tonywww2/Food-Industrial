@@ -29,6 +29,16 @@ final class ClientPurityDump {
     }
 
     static void dump() {
+        try {
+            dumpAll();
+        } catch (RuntimeException e) {
+            // 26.1: an integrated server's data reload runs before item components are bound, so no
+            // ItemStack can be made yet; the sync to the joining player runs this again afterwards.
+            FoodIndustrial.LOGGER.info("[purity dump] skipped: {}", e.getMessage());
+        }
+    }
+
+    private static void dumpAll() {
         FoodIndustrial.LOGGER.info("[purity dump] {} rules", PurityRules.rules().size());
         ItemStack plain = new ItemStack(DevTestContent.PURITY_TEST_ITEM.get());
         log("sugar", new ItemStack(Items.SUGAR));

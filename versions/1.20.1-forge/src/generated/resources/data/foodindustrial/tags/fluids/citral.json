@@ -6,6 +6,10 @@
     {
       "id": "#forge:citral",
       "required": false
+    },
+    {
+      "id": "#c:citral",
+      "required": false
     }
   ]
 }

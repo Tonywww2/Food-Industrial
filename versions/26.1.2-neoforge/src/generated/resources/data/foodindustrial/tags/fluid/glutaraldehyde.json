@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glutaraldehyde",
+    "foodindustrial:flowing_glutaraldehyde",
+    {
+      "id": "#forge:glutaraldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:glutaraldehyde",
+      "required": false
+    }
+  ]
+}

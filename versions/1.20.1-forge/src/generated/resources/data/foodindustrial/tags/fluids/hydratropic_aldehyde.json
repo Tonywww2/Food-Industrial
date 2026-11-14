@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hydratropic_aldehyde",
+    "foodindustrial:flowing_hydratropic_aldehyde",
+    {
+      "id": "#forge:hydratropic_aldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:hydratropic_aldehyde",
+      "required": false
+    }
+  ]
+}

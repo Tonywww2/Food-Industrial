@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:alpha_methylcinnamaldehyde",
+  "loader": "forge:fluid_container"
+}

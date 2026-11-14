@@ -6,6 +6,10 @@
     {
       "id": "#forge:caprylic_acid",
       "required": false
+    },
+    {
+      "id": "#c:caprylic_acid",
+      "required": false
     }
   ]
 }

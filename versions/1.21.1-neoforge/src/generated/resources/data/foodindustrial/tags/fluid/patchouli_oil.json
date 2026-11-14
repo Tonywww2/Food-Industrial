@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:patchouli_oil",
+    "foodindustrial:flowing_patchouli_oil",
+    {
+      "id": "#forge:patchouli_oil",
+      "required": false
+    },
+    {
+      "id": "#c:patchouli_oil",
+      "required": false
+    }
+  ]
+}

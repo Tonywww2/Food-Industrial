@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:history",
+  "icon": "minecraft:oak_log",
+  "name": "book.foodindustrial.manual.entry.history_potash",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:oak_log",
+      "text": "book.foodindustrial.manual.entry.history_potash.text"
+    }
+  ],
+  "sortnum": 1
+}

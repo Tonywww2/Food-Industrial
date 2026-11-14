@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:carnauba_wax",
     {
+      "id": "#forge:dusts/carnauba_wax",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carnauba_wax",
+      "required": false
+    },
+    {
       "id": "#c:dusts/carnauba_wax",
       "required": false
     },

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/grape_skin_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/grape_skin_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/grape_skin_red",
+      "required": false
     }
   ]
 }

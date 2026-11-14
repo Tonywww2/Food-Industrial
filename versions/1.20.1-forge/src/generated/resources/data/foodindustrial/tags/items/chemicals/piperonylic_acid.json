@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperonylic_acid",
+    {
+      "id": "#forge:dusts/piperonylic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/piperonylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/piperonylic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/piperonylic_acid",
+      "required": false
+    }
+  ]
+}

@@ -11,11 +11,23 @@
       "required": false
     },
     {
+      "id": "#c:dusts/sucrose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sucrose",
+      "required": false
+    },
+    {
       "id": "minecraft:sugar",
       "required": false
     },
     {
       "id": "#forge:sugar",
+      "required": false
+    },
+    {
+      "id": "#c:sugar",
       "required": false
     }
   ]

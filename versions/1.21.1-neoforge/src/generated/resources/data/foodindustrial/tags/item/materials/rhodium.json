@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:ingots/rhodium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/rhodium",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/rhodium",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/rhodium",
+      "required": false
+    }
+  ]
+}

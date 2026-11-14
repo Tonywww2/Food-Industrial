@@ -1,0 +1,24 @@
+{
+  "type": "thermal:press",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 8,
+    "tag": "foodindustrial:materials/pummelo"
+  },
+  "result": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:pummelo_peel_oil"
+    }
+  ]
+}

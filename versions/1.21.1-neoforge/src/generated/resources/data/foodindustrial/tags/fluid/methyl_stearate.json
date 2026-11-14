@@ -4,6 +4,10 @@
     "foodindustrial:methyl_stearate",
     "foodindustrial:flowing_methyl_stearate",
     {
+      "id": "#forge:methyl_stearate",
+      "required": false
+    },
+    {
       "id": "#c:methyl_stearate",
       "required": false
     }

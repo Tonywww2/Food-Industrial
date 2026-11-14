@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propiophenone",
+    "foodindustrial:flowing_propiophenone",
+    {
+      "id": "#forge:propiophenone",
+      "required": false
+    },
+    {
+      "id": "#c:propiophenone",
+      "required": false
+    }
+  ]
+}

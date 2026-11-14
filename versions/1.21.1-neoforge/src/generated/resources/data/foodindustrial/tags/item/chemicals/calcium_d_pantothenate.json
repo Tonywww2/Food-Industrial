@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_d_pantothenate",
+    {
+      "id": "#forge:dusts/calcium_d_pantothenate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_d_pantothenate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_d_pantothenate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_d_pantothenate",
+      "required": false
+    }
+  ]
+}

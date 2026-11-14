@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:parsley_leaf_oil",
+    "foodindustrial:flowing_parsley_leaf_oil",
+    {
+      "id": "#forge:parsley_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:parsley_leaf_oil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage0"
+    },
+    "age=1": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage0"
+    },
+    "age=2": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage1"
+    },
+    "age=3": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage1"
+    },
+    "age=4": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage2"
+    },
+    "age=5": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage2"
+    },
+    "age=6": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage2"
+    },
+    "age=7": {
+      "model": "foodindustrial:block/turmeric_rhizome_stage3"
+    }
+  }
+}

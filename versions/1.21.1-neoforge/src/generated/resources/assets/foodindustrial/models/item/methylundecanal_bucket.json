@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:methylundecanal",
+  "loader": "neoforge:fluid_container"
+}

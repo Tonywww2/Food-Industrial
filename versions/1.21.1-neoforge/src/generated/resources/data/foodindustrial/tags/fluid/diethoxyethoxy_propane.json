@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:diethoxyethoxy_propane",
+    "foodindustrial:flowing_diethoxyethoxy_propane",
+    {
+      "id": "#forge:diethoxyethoxy_propane",
+      "required": false
+    },
+    {
+      "id": "#c:diethoxyethoxy_propane",
+      "required": false
+    }
+  ]
+}

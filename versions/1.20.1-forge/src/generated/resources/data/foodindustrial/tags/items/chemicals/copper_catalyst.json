@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/copper_catalyst",
       "required": false
+    },
+    {
+      "id": "#c:dusts/copper_catalyst",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper_catalyst",
+      "required": false
     }
   ]
 }

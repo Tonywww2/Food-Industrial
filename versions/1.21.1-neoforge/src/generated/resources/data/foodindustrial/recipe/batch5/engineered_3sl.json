@@ -1,0 +1,51 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:cultures/e_coli"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/agar"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:samples/leaf"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:cultures/expression_vector"
+      }
+    }
+  ],
+  "mode": "recombination",
+  "outputs": [
+    {
+      "item": "foodindustrial:engineered_3sl",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
+    },
+    {
+      "item": "foodindustrial:e_coli",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "plate": {
+    "weights": [
+      1,
+      1
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

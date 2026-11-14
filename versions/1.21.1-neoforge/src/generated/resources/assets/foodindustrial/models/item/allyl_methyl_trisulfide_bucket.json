@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:allyl_methyl_trisulfide",
+  "loader": "neoforge:fluid_container"
+}

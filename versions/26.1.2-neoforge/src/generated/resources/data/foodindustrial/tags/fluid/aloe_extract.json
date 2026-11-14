@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:aloe_extract",
+    "foodindustrial:flowing_aloe_extract",
+    {
+      "id": "#forge:aloe_extract",
+      "required": false
+    },
+    {
+      "id": "#c:aloe_extract",
+      "required": false
+    }
+  ]
+}

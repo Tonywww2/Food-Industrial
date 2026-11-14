@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trans_trans_2_6_octadienal",
+    "foodindustrial:flowing_trans_trans_2_6_octadienal",
+    {
+      "id": "#forge:trans_trans_2_6_octadienal",
+      "required": false
+    },
+    {
+      "id": "#c:trans_trans_2_6_octadienal",
+      "required": false
+    }
+  ]
+}

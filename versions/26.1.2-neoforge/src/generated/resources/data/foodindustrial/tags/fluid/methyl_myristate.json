@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_myristate",
+    "foodindustrial:flowing_methyl_myristate",
+    {
+      "id": "#forge:methyl_myristate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_myristate",
+      "required": false
+    }
+  ]
+}

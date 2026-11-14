@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heme_iron",
+    {
+      "id": "#forge:dusts/heme_iron",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/heme_iron",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/heme_iron",
+      "required": false
+    },
+    {
+      "id": "#c:gems/heme_iron",
+      "required": false
+    }
+  ]
+}

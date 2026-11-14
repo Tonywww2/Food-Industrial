@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:acetylmethylfuran",
+    "foodindustrial:flowing_acetylmethylfuran",
+    {
+      "id": "#forge:acetylmethylfuran",
+      "required": false
+    },
+    {
+      "id": "#c:acetylmethylfuran",
+      "required": false
+    }
+  ]
+}

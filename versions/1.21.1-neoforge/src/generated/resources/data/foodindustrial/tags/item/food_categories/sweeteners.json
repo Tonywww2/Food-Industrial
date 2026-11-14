@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:soft_white_sugar",
+    "foodindustrial:brown_sugar",
+    "foodindustrial:rock_sugar",
+    "foodindustrial:sugar_cube",
+    "foodindustrial:icing_sugar",
+    "foodindustrial:maltose_syrup",
+    "foodindustrial:glucose_syrup",
+    "foodindustrial:high_fructose_syrup",
+    "foodindustrial:caramel_syrup",
+    "foodindustrial:tabletop_sweetener"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_acetate",
+    "foodindustrial:flowing_methyl_acetate",
+    {
+      "id": "#forge:methyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:methyl_acetate",
+      "required": false
+    }
+  ]
+}

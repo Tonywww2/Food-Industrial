@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/maleic_acid",
       "required": false
+    },
+    {
+      "id": "#c:dusts/maleic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/maleic_acid",
+      "required": false
     }
   ]
 }

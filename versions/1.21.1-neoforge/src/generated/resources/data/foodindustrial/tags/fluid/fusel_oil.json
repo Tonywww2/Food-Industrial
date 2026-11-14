@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fusel_oil",
+    "foodindustrial:flowing_fusel_oil",
+    {
+      "id": "#forge:fusel_oil",
+      "required": false
+    },
+    {
+      "id": "#c:fusel_oil",
+      "required": false
+    }
+  ]
+}

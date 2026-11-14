@@ -6,6 +6,10 @@
     {
       "id": "#forge:diethanolamine",
       "required": false
+    },
+    {
+      "id": "#c:diethanolamine",
+      "required": false
     }
   ]
 }

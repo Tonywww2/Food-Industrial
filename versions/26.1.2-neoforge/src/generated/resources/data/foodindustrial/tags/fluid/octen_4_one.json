@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octen_4_one",
+    "foodindustrial:flowing_octen_4_one",
+    {
+      "id": "#forge:octen_4_one",
+      "required": false
+    },
+    {
+      "id": "#c:octen_4_one",
+      "required": false
+    }
+  ]
+}

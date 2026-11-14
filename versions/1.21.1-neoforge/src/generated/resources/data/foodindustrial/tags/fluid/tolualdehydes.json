@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:tolualdehydes",
+    "foodindustrial:flowing_tolualdehydes",
+    {
+      "id": "#forge:tolualdehydes",
+      "required": false
+    },
+    {
+      "id": "#c:tolualdehydes",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:limonene",
+    "foodindustrial:flowing_limonene",
+    {
+      "id": "#forge:limonene",
+      "required": false
+    },
+    {
+      "id": "#c:limonene",
+      "required": false
+    }
+  ]
+}

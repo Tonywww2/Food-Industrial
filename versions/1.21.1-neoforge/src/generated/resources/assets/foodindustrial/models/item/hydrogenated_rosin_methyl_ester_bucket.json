@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hydrogenated_rosin_methyl_ester",
+  "loader": "neoforge:fluid_container"
+}

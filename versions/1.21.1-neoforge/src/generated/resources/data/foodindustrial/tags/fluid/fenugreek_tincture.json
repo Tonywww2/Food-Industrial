@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fenugreek_tincture",
+    "foodindustrial:flowing_fenugreek_tincture",
+    {
+      "id": "#forge:fenugreek_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:fenugreek_tincture",
+      "required": false
+    }
+  ]
+}

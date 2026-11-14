@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_4_decenyl_acetate",
+    "foodindustrial:flowing_cis_4_decenyl_acetate",
+    {
+      "id": "#forge:cis_4_decenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:cis_4_decenyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 3000,
+        "tag": "foodindustrial:isopropanol"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/aluminium_chloride"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:aluminium_isopropoxide",
+      "purity": {
+        "mode": "source"
+      }
+    },
+    {
+      "count": 3,
+      "item": "foodindustrial:salt",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "atmosphere": "inert",
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

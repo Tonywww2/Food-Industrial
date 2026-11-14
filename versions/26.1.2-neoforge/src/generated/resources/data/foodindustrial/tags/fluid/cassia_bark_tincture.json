@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cassia_bark_tincture",
+    "foodindustrial:flowing_cassia_bark_tincture",
+    {
+      "id": "#forge:cassia_bark_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:cassia_bark_tincture",
+      "required": false
+    }
+  ]
+}

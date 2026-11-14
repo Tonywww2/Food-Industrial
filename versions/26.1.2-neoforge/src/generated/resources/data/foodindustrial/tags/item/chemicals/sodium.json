@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium",
     {
+      "id": "#forge:dusts/sodium",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium",
       "required": false
     },

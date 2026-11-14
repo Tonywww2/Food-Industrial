@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:spiro_dithia_oxabicyclooctane",
+    "foodindustrial:flowing_spiro_dithia_oxabicyclooctane",
+    {
+      "id": "#forge:spiro_dithia_oxabicyclooctane",
+      "required": false
+    },
+    {
+      "id": "#c:spiro_dithia_oxabicyclooctane",
+      "required": false
+    }
+  ]
+}

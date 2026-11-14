@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyridoxal",
+    {
+      "id": "#forge:dusts/pyridoxal",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pyridoxal",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pyridoxal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pyridoxal",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methionylglycine",
+    {
+      "id": "#forge:dusts/methionylglycine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methionylglycine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methionylglycine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methionylglycine",
+      "required": false
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:tetrasodium_pyrophosphate",
     {
+      "id": "#forge:dusts/tetrasodium_pyrophosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tetrasodium_pyrophosphate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/tetrasodium_pyrophosphate",
       "required": false
     },

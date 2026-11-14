@@ -1,0 +1,26 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/pyrolusite"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:manganese_dioxide",
+    "nbt": "{Purity:34b}"
+  }
+}

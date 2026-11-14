@@ -71,6 +71,8 @@ public final class PlatformDatagen {
         BLOCK_TAG,
         /** Fluid tag. */
         FLUID_TAG,
+        /** Entity type tag. */
+        ENTITY_TAG,
         /** Block loot table ({@code path} without {@code blocks/}). */
         BLOCK_LOOT,
         /** Recipe. */
@@ -192,30 +194,6 @@ public final class PlatformDatagen {
         return "forge";
         //?} else {
         /*return "c";
-        *///?}
-    }
-
-    /**
-     * The loader's common fluid tag for gases: NeoForge's {@code c:gaseous} from 1.21 on. Forge 1.20.1
-     * has no such tag, so the result is empty there.
-     */
-    public static Optional<String> gaseousFluidTag() {
-        //? if <1.21 {
-        return Optional.empty();
-        //?} else {
-        /*return Optional.of("c:gaseous");
-        *///?}
-    }
-
-    /**
-     * The common item tag for buckets of the fluid {@code name}: {@code c:buckets/<name>} from 1.21 on
-     * (the convention of NeoForge and its mods). 1.20.1 has no bucket tags, so the result is empty there.
-     */
-    public static Optional<String> bucketTag(String name) {
-        //? if <1.21 {
-        return Optional.empty();
-        //?} else {
-        /*return Optional.of("c:buckets/" + name);
         *///?}
     }
 
@@ -397,6 +375,7 @@ public final class PlatformDatagen {
             case ITEM_TAG -> "data/" + namespace + "/tags/" + (plural ? "items/" : "item/") + path + ".json";
             case BLOCK_TAG -> "data/" + namespace + "/tags/" + (plural ? "blocks/" : "block/") + path + ".json";
             case FLUID_TAG -> "data/" + namespace + "/tags/" + (plural ? "fluids/" : "fluid/") + path + ".json";
+            case ENTITY_TAG -> "data/" + namespace + "/tags/" + (plural ? "entity_types/" : "entity_type/") + path + ".json";
             case BLOCK_LOOT -> "data/" + namespace + "/" + (plural ? "loot_tables" : "loot_table") + "/blocks/" + path + ".json";
             case RECIPE -> "data/" + namespace + "/" + (plural ? "recipes/" : "recipe/") + path + ".json";
             case WORLDGEN -> "data/" + namespace + "/worldgen/" + path + ".json";

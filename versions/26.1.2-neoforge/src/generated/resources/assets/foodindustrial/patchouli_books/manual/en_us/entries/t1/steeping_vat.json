@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:steeping_vat",
+  "name": "book.foodindustrial.manual.entry.steeping_vat",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:steeping_vat",
+      "text": "book.foodindustrial.manual.entry.steeping_vat.text"
+    }
+  ],
+  "sortnum": 3
+}

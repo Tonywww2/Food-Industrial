@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ambradiol",
+    {
+      "id": "#forge:dusts/ambradiol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/ambradiol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/ambradiol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/ambradiol",
+      "required": false
+    }
+  ]
+}

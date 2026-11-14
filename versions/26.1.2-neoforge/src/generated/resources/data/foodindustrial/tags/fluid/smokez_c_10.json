@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:smokez_c_10",
+    "foodindustrial:flowing_smokez_c_10",
+    {
+      "id": "#forge:smokez_c_10",
+      "required": false
+    },
+    {
+      "id": "#c:smokez_c_10",
+      "required": false
+    }
+  ]
+}

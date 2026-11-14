@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ethylbutyric_acid",
+    "foodindustrial:flowing_ethylbutyric_acid",
+    {
+      "id": "#forge:ethylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:ethylbutyric_acid",
+      "required": false
+    }
+  ]
+}

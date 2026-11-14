@@ -1,0 +1,31 @@
+{
+  "type": "pneumaticcraft:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:cold_pressed_orange_oil"
+  },
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:terpeneless_orange_peel_oil"
+    },
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:orange_oil_terpenes"
+    }
+  ],
+  "temperature": {
+    "min_temp": 373
+  }
+}

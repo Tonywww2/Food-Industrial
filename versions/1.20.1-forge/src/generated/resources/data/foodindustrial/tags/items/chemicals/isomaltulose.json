@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/isomaltulose",
       "required": false
+    },
+    {
+      "id": "#c:dusts/isomaltulose",
+      "required": false
+    },
+    {
+      "id": "#c:gems/isomaltulose",
+      "required": false
     }
   ]
 }

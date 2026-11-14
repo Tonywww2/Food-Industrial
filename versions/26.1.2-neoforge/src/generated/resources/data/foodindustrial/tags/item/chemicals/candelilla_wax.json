@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:candelilla_wax",
+    {
+      "id": "#forge:dusts/candelilla_wax",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/candelilla_wax",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/candelilla_wax",
+      "required": false
+    },
+    {
+      "id": "#c:gems/candelilla_wax",
+      "required": false
+    }
+  ]
+}

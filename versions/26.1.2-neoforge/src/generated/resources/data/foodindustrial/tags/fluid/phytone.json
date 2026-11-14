@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phytone",
+    "foodindustrial:flowing_phytone",
+    {
+      "id": "#forge:phytone",
+      "required": false
+    },
+    {
+      "id": "#c:phytone",
+      "required": false
+    }
+  ]
+}

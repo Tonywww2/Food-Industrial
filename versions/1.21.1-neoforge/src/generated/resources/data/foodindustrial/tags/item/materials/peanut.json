@@ -4,6 +4,10 @@
     {
       "id": "#c:crops/peanut",
       "required": false
+    },
+    {
+      "id": "#forge:crops/peanut",
+      "required": false
     }
   ]
 }

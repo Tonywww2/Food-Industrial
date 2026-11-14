@@ -6,6 +6,10 @@
     {
       "id": "#forge:caprylic_capric_triglyceride",
       "required": false
+    },
+    {
+      "id": "#c:caprylic_capric_triglyceride",
+      "required": false
     }
   ]
 }

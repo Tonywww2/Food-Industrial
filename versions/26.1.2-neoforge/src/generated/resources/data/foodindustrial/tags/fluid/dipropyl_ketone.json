@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dipropyl_ketone",
+    "foodindustrial:flowing_dipropyl_ketone",
+    {
+      "id": "#forge:dipropyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:dipropyl_ketone",
+      "required": false
+    }
+  ]
+}

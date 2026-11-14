@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethylphenethylcarbinyl_acetate",
+    "foodindustrial:flowing_dimethylphenethylcarbinyl_acetate",
+    {
+      "id": "#forge:dimethylphenethylcarbinyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dimethylphenethylcarbinyl_acetate",
+      "required": false
+    }
+  ]
+}

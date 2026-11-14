@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiophene_carboxaldehyde",
+    "foodindustrial:flowing_methylthiophene_carboxaldehyde",
+    {
+      "id": "#forge:methylthiophene_carboxaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiophene_carboxaldehyde",
+      "required": false
+    }
+  ]
+}

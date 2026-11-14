@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:phenylpropyl_pyridine",
+  "loader": "neoforge:fluid_container"
+}

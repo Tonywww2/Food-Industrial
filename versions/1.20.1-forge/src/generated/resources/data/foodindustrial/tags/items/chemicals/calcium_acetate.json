@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/calcium_acetate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_acetate",
+      "required": false
     }
   ]
 }

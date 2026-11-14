@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/acetylated_distarch_adipate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/acetylated_distarch_adipate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/acetylated_distarch_adipate",
+      "required": false
     }
   ]
 }

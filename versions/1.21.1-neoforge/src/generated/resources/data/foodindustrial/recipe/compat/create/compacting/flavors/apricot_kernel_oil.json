@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/apricot_kernel"
+    },
+    {
+      "tag": "foodindustrial:materials/apricot_kernel"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "foodindustrial:apricot_kernel_oil"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t2"
+      ]
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "type": "forge:difference",
+    "base": {
+      "tag": "foodindustrial:materials/apatite"
+    },
+    "subtracted": [
+      {
+        "tag": "forge:gems/apatite"
+      },
+      {
+        "tag": "forge:ores/apatite"
+      }
+    ]
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:fluorapatite",
+      "nbt": "{Purity:28b}"
+    }
+  ]
+}

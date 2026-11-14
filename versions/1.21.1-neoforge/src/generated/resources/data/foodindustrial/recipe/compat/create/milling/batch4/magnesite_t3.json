@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/magnesite"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "components": {
+        "foodindustrial:purity": 31
+      },
+      "count": 1,
+      "id": "foodindustrial:magnesite"
+    }
+  ]
+}

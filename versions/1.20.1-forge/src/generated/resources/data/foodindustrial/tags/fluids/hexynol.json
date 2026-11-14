@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hexynol",
+    "foodindustrial:flowing_hexynol",
+    {
+      "id": "#forge:hexynol",
+      "required": false
+    },
+    {
+      "id": "#c:hexynol",
+      "required": false
+    }
+  ]
+}

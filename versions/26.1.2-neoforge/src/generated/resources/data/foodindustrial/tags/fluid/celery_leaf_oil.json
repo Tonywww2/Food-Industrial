@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:celery_leaf_oil",
+    "foodindustrial:flowing_celery_leaf_oil",
+    {
+      "id": "#forge:celery_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#c:celery_leaf_oil",
+      "required": false
+    }
+  ]
+}

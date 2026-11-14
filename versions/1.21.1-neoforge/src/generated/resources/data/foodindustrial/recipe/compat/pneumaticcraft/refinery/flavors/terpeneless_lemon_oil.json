@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:refinery",
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:lemon_oil"
+  },
+  "outputs": [
+    {
+      "amount": 250,
+      "id": "foodindustrial:lemon_oil_terpenes"
+    },
+    {
+      "amount": 250,
+      "id": "foodindustrial:terpeneless_lemon_oil"
+    }
+  ],
+  "temperature": {
+    "min": 373
+  }
+}

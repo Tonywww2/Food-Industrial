@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dodecyl_acetate",
+    "foodindustrial:flowing_dodecyl_acetate",
+    {
+      "id": "#forge:dodecyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:dodecyl_acetate",
+      "required": false
+    }
+  ]
+}

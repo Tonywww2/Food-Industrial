@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:phenethyl_senecioate",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:folded_apple_essence",
+  "loader": "neoforge:fluid_container"
+}

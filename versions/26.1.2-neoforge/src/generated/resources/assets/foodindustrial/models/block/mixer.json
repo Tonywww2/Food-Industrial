@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/mixer_front",
+    "side": "foodindustrial:block/mixer_side",
+    "top": "foodindustrial:block/mixer_top"
+  }
+}

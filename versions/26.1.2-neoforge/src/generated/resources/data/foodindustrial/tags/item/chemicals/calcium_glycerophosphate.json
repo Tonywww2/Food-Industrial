@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:calcium_glycerophosphate",
+    {
+      "id": "#forge:dusts/calcium_glycerophosphate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/calcium_glycerophosphate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/calcium_glycerophosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/calcium_glycerophosphate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "#c:storage_blocks/iron",
+    "I": "#c:ingots/iron",
+    "P": "minecraft:piston",
+    "R": "#c:dusts/redstone"
+  },
+  "pattern": [
+    "IPI",
+    "BRB",
+    "IPI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:internal_mixer"
+  }
+}

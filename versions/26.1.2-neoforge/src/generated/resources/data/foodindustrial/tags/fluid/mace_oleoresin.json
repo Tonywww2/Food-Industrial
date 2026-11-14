@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mace_oleoresin",
+    "foodindustrial:flowing_mace_oleoresin",
+    {
+      "id": "#forge:mace_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:mace_oleoresin",
+      "required": false
+    }
+  ]
+}

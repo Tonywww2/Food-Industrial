@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:thiazole",
+    "foodindustrial:flowing_thiazole",
+    {
+      "id": "#forge:thiazole",
+      "required": false
+    },
+    {
+      "id": "#c:thiazole",
+      "required": false
+    }
+  ]
+}

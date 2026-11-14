@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:galbanum_oil",
+    "foodindustrial:flowing_galbanum_oil",
+    {
+      "id": "#forge:galbanum_oil",
+      "required": false
+    },
+    {
+      "id": "#c:galbanum_oil",
+      "required": false
+    }
+  ]
+}

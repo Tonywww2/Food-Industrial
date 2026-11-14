@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trimethyl_dithiazine",
+    {
+      "id": "#forge:dusts/trimethyl_dithiazine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/trimethyl_dithiazine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/trimethyl_dithiazine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/trimethyl_dithiazine",
+      "required": false
+    }
+  ]
+}

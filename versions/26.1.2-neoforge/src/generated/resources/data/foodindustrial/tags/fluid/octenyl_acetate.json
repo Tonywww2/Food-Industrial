@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:octenyl_acetate",
+    "foodindustrial:flowing_octenyl_acetate",
+    {
+      "id": "#forge:octenyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:octenyl_acetate",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     "foodindustrial:hydrogen",
     "foodindustrial:flowing_hydrogen",
     {
+      "id": "#forge:hydrogen",
+      "required": false
+    },
+    {
       "id": "#c:hydrogen",
       "required": false
     }

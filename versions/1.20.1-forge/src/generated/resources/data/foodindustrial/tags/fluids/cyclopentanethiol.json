@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cyclopentanethiol",
+    "foodindustrial:flowing_cyclopentanethiol",
+    {
+      "id": "#forge:cyclopentanethiol",
+      "required": false
+    },
+    {
+      "id": "#c:cyclopentanethiol",
+      "required": false
+    }
+  ]
+}

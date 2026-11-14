@@ -1,0 +1,32 @@
+{
+  "type": "nuclearcraft:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "inputFluids": [
+    {
+      "amount": 1000,
+      "tag": "foodindustrial:tomato_oleoresin"
+    }
+  ],
+  "output": [
+    {
+      "type": "forge:nbt",
+      "item": "foodindustrial:lycopene",
+      "nbt": "{Purity:-33b}"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

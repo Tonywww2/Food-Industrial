@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/lithospermum_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/lithospermum_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lithospermum_red",
+      "required": false
     }
   ]
 }

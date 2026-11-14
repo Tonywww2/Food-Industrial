@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:biotin_lactone",
+    {
+      "id": "#forge:dusts/biotin_lactone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/biotin_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/biotin_lactone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/biotin_lactone",
+      "required": false
+    }
+  ]
+}

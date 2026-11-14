@@ -8,6 +8,10 @@
       "required": false
     },
     {
+      "id": "#c:latex",
+      "required": false
+    },
+    {
       "id": "thermal:latex",
       "required": false
     }

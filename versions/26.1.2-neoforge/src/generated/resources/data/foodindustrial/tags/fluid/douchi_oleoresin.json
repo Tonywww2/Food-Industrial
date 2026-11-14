@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:douchi_oleoresin",
+    "foodindustrial:flowing_douchi_oleoresin",
+    {
+      "id": "#forge:douchi_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#c:douchi_oleoresin",
+      "required": false
+    }
+  ]
+}

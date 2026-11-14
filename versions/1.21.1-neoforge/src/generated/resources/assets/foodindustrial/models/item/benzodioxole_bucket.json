@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:benzodioxole",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:dryer",
+  "name": "book.foodindustrial.manual.entry.dryer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:dryer",
+      "text": "book.foodindustrial.manual.entry.dryer.text"
+    }
+  ],
+  "sortnum": 4
+}

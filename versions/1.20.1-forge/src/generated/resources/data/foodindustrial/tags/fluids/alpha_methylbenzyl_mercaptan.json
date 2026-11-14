@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alpha_methylbenzyl_mercaptan",
+    "foodindustrial:flowing_alpha_methylbenzyl_mercaptan",
+    {
+      "id": "#forge:alpha_methylbenzyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#c:alpha_methylbenzyl_mercaptan",
+      "required": false
+    }
+  ]
+}

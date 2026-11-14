@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cocoa_husk_tincture",
+    "foodindustrial:flowing_cocoa_husk_tincture",
+    {
+      "id": "#forge:cocoa_husk_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:cocoa_husk_tincture",
+      "required": false
+    }
+  ]
+}

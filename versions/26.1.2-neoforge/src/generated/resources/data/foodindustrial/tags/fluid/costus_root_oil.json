@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:costus_root_oil",
+    "foodindustrial:flowing_costus_root_oil",
+    {
+      "id": "#forge:costus_root_oil",
+      "required": false
+    },
+    {
+      "id": "#c:costus_root_oil",
+      "required": false
+    }
+  ]
+}

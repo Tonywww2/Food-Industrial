@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:enzymes",
     {
+      "id": "#forge:dusts/enzymes",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/enzymes",
+      "required": false
+    },
+    {
       "id": "#c:dusts/enzymes",
       "required": false
     },

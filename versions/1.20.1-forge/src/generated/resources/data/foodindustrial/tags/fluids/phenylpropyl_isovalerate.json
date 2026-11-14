@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylpropyl_isovalerate",
+    "foodindustrial:flowing_phenylpropyl_isovalerate",
+    {
+      "id": "#forge:phenylpropyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#c:phenylpropyl_isovalerate",
+      "required": false
+    }
+  ]
+}

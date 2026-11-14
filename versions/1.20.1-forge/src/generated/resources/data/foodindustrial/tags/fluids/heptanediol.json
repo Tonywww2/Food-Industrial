@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:heptanediol",
+    "foodindustrial:flowing_heptanediol",
+    {
+      "id": "#forge:heptanediol",
+      "required": false
+    },
+    {
+      "id": "#c:heptanediol",
+      "required": false
+    }
+  ]
+}

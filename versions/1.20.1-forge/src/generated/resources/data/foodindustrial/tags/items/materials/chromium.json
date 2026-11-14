@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chromium",
+    {
+      "id": "#forge:ingots/chrome",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts/chrome",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/chrome",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/chrome",
+      "required": false
+    }
+  ]
+}

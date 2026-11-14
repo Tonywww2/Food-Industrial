@@ -6,6 +6,10 @@
     {
       "id": "#forge:hydrogen_peroxide",
       "required": false
+    },
+    {
+      "id": "#c:hydrogen_peroxide",
+      "required": false
     }
   ]
 }

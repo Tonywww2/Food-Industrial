@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:cedarwood_oil_terpenes",
+  "loader": "neoforge:fluid_container"
+}

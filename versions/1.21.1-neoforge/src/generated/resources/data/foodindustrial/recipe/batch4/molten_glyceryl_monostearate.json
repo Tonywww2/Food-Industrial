@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/glyceryl_monostearate"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:molten_glyceryl_monostearate",
+      "purity": {
+        "mode": "keep"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

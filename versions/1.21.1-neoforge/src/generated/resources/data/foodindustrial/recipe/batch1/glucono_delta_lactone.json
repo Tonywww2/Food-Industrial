@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:gluconic_acid"
+      }
+    }
+  ],
+  "mode": "evaporative_crystallization",
+  "outputs": [
+    {
+      "item": "foodindustrial:glucono_delta_lactone"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "pressure": "vacuum"
+  },
+  "time": 200
+}

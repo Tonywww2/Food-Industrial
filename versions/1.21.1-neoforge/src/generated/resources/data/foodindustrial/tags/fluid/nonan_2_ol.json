@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nonan_2_ol",
+    "foodindustrial:flowing_nonan_2_ol",
+    {
+      "id": "#forge:nonan_2_ol",
+      "required": false
+    },
+    {
+      "id": "#c:nonan_2_ol",
+      "required": false
+    }
+  ]
+}

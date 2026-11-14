@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "foodindustrial:chemical_frame",
+    "I": "#c:storage_blocks/iron",
+    "R": "#c:dusts/redstone",
+    "S": "foodindustrial:stirred_reactor"
+  },
+  "pattern": [
+    "ISI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:high_pressure_reactor"
+  }
+}

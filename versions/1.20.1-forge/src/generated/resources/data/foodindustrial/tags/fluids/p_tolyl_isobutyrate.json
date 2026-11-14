@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_tolyl_isobutyrate",
+    "foodindustrial:flowing_p_tolyl_isobutyrate",
+    {
+      "id": "#forge:p_tolyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#c:p_tolyl_isobutyrate",
+      "required": false
+    }
+  ]
+}

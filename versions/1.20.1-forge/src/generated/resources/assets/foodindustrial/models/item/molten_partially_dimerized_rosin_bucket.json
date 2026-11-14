@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:molten_partially_dimerized_rosin",
+  "loader": "forge:fluid_container"
+}

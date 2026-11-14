@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_methylacetophenone",
+    "foodindustrial:flowing_p_methylacetophenone",
+    {
+      "id": "#forge:p_methylacetophenone",
+      "required": false
+    },
+    {
+      "id": "#c:p_methylacetophenone",
+      "required": false
+    }
+  ]
+}

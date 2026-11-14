@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:propionylpyrrole",
+    {
+      "id": "#forge:dusts/propionylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/propionylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/propionylpyrrole",
+      "required": false
+    },
+    {
+      "id": "#c:gems/propionylpyrrole",
+      "required": false
+    }
+  ]
+}

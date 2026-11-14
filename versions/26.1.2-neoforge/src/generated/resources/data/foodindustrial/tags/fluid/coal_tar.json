@@ -4,6 +4,10 @@
     "foodindustrial:coal_tar",
     "foodindustrial:flowing_coal_tar",
     {
+      "id": "#forge:coal_tar",
+      "required": false
+    },
+    {
       "id": "#c:coal_tar",
       "required": false
     }

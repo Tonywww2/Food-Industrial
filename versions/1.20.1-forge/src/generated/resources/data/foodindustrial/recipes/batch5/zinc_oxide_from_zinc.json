@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:gas_reacting",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/zinc"
+      }
+    }
+  ],
+  "mode": "burning",
+  "outputs": [
+    {
+      "item": "foodindustrial:zinc_oxide",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

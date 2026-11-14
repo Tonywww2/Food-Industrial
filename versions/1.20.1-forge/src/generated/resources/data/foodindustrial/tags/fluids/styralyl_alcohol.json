@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:styralyl_alcohol",
+    "foodindustrial:flowing_styralyl_alcohol",
+    {
+      "id": "#forge:styralyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#c:styralyl_alcohol",
+      "required": false
+    }
+  ]
+}

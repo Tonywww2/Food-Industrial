@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyrazine",
+    {
+      "id": "#forge:dusts/pyrazine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pyrazine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pyrazine",
+      "required": false
+    }
+  ]
+}

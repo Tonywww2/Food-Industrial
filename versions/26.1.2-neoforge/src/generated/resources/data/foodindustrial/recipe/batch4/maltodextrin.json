@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:liquefied_starch"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:maltodextrin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 200
+}

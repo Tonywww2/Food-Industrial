@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/sunset_yellow_lake",
       "required": false
+    },
+    {
+      "id": "#c:dusts/sunset_yellow_lake",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sunset_yellow_lake",
+      "required": false
     }
   ]
 }

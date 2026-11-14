@@ -4,6 +4,10 @@
     "foodindustrial:diacetyl",
     "foodindustrial:flowing_diacetyl",
     {
+      "id": "#forge:diacetyl",
+      "required": false
+    },
+    {
       "id": "#c:diacetyl",
       "required": false
     }

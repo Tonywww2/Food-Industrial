@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isopropyl_formate",
+    "foodindustrial:flowing_isopropyl_formate",
+    {
+      "id": "#forge:isopropyl_formate",
+      "required": false
+    },
+    {
+      "id": "#c:isopropyl_formate",
+      "required": false
+    }
+  ]
+}

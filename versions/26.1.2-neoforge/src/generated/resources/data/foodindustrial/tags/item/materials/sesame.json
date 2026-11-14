@@ -4,6 +4,10 @@
     {
       "id": "#c:crops/sesameseeds",
       "required": false
+    },
+    {
+      "id": "#forge:crops/sesameseeds",
+      "required": false
     }
   ]
 }

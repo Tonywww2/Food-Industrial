@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cis_4_decenal",
+    "foodindustrial:flowing_cis_4_decenal",
+    {
+      "id": "#forge:cis_4_decenal",
+      "required": false
+    },
+    {
+      "id": "#c:cis_4_decenal",
+      "required": false
+    }
+  ]
+}

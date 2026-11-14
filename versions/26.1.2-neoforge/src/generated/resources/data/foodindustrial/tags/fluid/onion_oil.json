@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:onion_oil",
+    "foodindustrial:flowing_onion_oil",
+    {
+      "id": "#forge:onion_oil",
+      "required": false
+    },
+    {
+      "id": "#c:onion_oil",
+      "required": false
+    }
+  ]
+}

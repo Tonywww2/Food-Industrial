@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:broad_bean_flower_tincture",
+    "foodindustrial:flowing_broad_bean_flower_tincture",
+    {
+      "id": "#forge:broad_bean_flower_tincture",
+      "required": false
+    },
+    {
+      "id": "#c:broad_bean_flower_tincture",
+      "required": false
+    }
+  ]
+}

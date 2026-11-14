@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:homoeriodictyol",
+    {
+      "id": "#forge:dusts/homoeriodictyol",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/homoeriodictyol",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/homoeriodictyol",
+      "required": false
+    },
+    {
+      "id": "#c:gems/homoeriodictyol",
+      "required": false
+    }
+  ]
+}

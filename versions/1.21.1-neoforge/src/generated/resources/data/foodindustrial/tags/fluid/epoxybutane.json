@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:epoxybutane",
+    "foodindustrial:flowing_epoxybutane",
+    {
+      "id": "#forge:epoxybutane",
+      "required": false
+    },
+    {
+      "id": "#c:epoxybutane",
+      "required": false
+    }
+  ]
+}

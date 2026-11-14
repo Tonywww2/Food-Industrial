@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyridine",
+    "foodindustrial:flowing_pyridine",
+    {
+      "id": "#forge:pyridine",
+      "required": false
+    },
+    {
+      "id": "#c:pyridine",
+      "required": false
+    }
+  ]
+}

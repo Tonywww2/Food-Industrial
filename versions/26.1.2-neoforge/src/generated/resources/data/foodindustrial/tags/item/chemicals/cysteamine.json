@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cysteamine",
+    {
+      "id": "#forge:dusts/cysteamine",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/cysteamine",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cysteamine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/cysteamine",
+      "required": false
+    }
+  ]
+}

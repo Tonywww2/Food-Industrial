@@ -1,0 +1,28 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "energy": 6000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:linalool_oxide"
+  },
+  "result": [
+    {
+      "amount": 750,
+      "fluid": "foodindustrial:linalool_oxide",
+      "nbt": "{Purity:29b}"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:amylcinnamaldehyde",
+    "foodindustrial:flowing_amylcinnamaldehyde",
+    {
+      "id": "#forge:amylcinnamaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:amylcinnamaldehyde",
+      "required": false
+    }
+  ]
+}

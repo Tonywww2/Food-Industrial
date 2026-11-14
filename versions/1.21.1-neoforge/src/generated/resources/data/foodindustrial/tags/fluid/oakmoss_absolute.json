@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oakmoss_absolute",
+    "foodindustrial:flowing_oakmoss_absolute",
+    {
+      "id": "#forge:oakmoss_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:oakmoss_absolute",
+      "required": false
+    }
+  ]
+}

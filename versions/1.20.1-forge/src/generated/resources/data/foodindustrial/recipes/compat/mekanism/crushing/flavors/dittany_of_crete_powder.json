@@ -1,0 +1,23 @@
+{
+  "type": "mekanism:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "amount": 4,
+    "ingredient": {
+      "tag": "foodindustrial:materials/dittany_of_crete"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:dittany_of_crete_powder"
+  }
+}

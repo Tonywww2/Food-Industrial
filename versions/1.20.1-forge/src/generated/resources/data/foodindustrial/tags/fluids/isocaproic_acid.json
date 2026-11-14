@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isocaproic_acid",
+    "foodindustrial:flowing_isocaproic_acid",
+    {
+      "id": "#forge:isocaproic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:isocaproic_acid",
+      "required": false
+    }
+  ]
+}

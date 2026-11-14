@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:piperitol",
+    "foodindustrial:flowing_piperitol",
+    {
+      "id": "#forge:piperitol",
+      "required": false
+    },
+    {
+      "id": "#c:piperitol",
+      "required": false
+    }
+  ]
+}

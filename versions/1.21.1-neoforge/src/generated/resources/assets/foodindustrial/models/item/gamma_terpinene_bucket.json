@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:gamma_terpinene",
+  "loader": "neoforge:fluid_container"
+}

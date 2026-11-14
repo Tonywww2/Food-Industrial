@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methylthiazolylethyl_propionate",
+    "foodindustrial:flowing_methylthiazolylethyl_propionate",
+    {
+      "id": "#forge:methylthiazolylethyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#c:methylthiazolylethyl_propionate",
+      "required": false
+    }
+  ]
+}

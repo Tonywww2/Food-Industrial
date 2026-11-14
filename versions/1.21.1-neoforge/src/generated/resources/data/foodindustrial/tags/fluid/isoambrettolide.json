@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:isoambrettolide",
+    "foodindustrial:flowing_isoambrettolide",
+    {
+      "id": "#forge:isoambrettolide",
+      "required": false
+    },
+    {
+      "id": "#c:isoambrettolide",
+      "required": false
+    }
+  ]
+}

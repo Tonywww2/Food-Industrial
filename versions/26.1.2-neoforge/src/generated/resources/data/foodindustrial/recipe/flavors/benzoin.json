@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:benzaldehyde"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/thiamine_hydrochloride"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:benzoin",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:allyl_phenylacetate",
+    "foodindustrial:flowing_allyl_phenylacetate",
+    {
+      "id": "#forge:allyl_phenylacetate",
+      "required": false
+    },
+    {
+      "id": "#c:allyl_phenylacetate",
+      "required": false
+    }
+  ]
+}

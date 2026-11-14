@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:leaf_tiglate",
+    "foodindustrial:flowing_leaf_tiglate",
+    {
+      "id": "#forge:leaf_tiglate",
+      "required": false
+    },
+    {
+      "id": "#c:leaf_tiglate",
+      "required": false
+    }
+  ]
+}

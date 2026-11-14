@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:dehydrodihydroionone",
+  "loader": "forge:fluid_container"
+}

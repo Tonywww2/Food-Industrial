@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dimethyl_3_furanthiol",
+    "foodindustrial:flowing_dimethyl_3_furanthiol",
+    {
+      "id": "#forge:dimethyl_3_furanthiol",
+      "required": false
+    },
+    {
+      "id": "#c:dimethyl_3_furanthiol",
+      "required": false
+    }
+  ]
+}

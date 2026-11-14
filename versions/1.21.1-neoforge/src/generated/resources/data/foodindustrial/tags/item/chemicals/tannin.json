@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:tannin",
     {
+      "id": "#forge:dusts/tannin",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/tannin",
+      "required": false
+    },
+    {
       "id": "#c:dusts/tannin",
       "required": false
     },

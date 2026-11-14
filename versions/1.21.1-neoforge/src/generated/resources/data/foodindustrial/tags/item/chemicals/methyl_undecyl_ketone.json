@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:methyl_undecyl_ketone",
+    {
+      "id": "#forge:dusts/methyl_undecyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/methyl_undecyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/methyl_undecyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/methyl_undecyl_ketone",
+      "required": false
+    }
+  ]
+}

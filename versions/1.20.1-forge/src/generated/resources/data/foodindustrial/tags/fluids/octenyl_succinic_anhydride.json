@@ -6,6 +6,10 @@
     {
       "id": "#forge:octenyl_succinic_anhydride",
       "required": false
+    },
+    {
+      "id": "#c:octenyl_succinic_anhydride",
+      "required": false
     }
   ]
 }

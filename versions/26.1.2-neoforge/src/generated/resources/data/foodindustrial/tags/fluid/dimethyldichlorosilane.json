@@ -4,6 +4,10 @@
     "foodindustrial:dimethyldichlorosilane",
     "foodindustrial:flowing_dimethyldichlorosilane",
     {
+      "id": "#forge:dimethyldichlorosilane",
+      "required": false
+    },
+    {
       "id": "#c:dimethyldichlorosilane",
       "required": false
     }

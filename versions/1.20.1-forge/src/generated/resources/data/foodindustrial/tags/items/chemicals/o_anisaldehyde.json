@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:o_anisaldehyde",
+    {
+      "id": "#forge:dusts/o_anisaldehyde",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/o_anisaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/o_anisaldehyde",
+      "required": false
+    },
+    {
+      "id": "#c:gems/o_anisaldehyde",
+      "required": false
+    }
+  ]
+}

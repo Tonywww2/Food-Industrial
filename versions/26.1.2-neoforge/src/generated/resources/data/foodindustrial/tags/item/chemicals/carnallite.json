@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:carnallite",
     {
+      "id": "#forge:dusts/carnallite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/carnallite",
+      "required": false
+    },
+    {
       "id": "#c:dusts/carnallite",
       "required": false
     },

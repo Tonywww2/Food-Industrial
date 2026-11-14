@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pyrroline",
+    "foodindustrial:flowing_pyrroline",
+    {
+      "id": "#forge:pyrroline",
+      "required": false
+    },
+    {
+      "id": "#c:pyrroline",
+      "required": false
+    }
+  ]
+}

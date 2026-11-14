@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/membrane_separator_front_active",
+    "side": "foodindustrial:block/membrane_separator_side",
+    "top": "foodindustrial:block/membrane_separator_top"
+  }
+}

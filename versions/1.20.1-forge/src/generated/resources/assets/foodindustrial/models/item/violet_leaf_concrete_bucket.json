@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:violet_leaf_concrete",
+  "loader": "forge:fluid_container"
+}

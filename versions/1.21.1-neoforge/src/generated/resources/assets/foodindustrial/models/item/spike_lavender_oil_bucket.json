@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:spike_lavender_oil",
+  "loader": "neoforge:fluid_container"
+}

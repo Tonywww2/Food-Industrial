@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:lavandin_oil",
+    "foodindustrial:flowing_lavandin_oil",
+    {
+      "id": "#forge:lavandin_oil",
+      "required": false
+    },
+    {
+      "id": "#c:lavandin_oil",
+      "required": false
+    }
+  ]
+}

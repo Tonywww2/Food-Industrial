@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/carrageenan",
       "required": false
+    },
+    {
+      "id": "#c:dusts/carrageenan",
+      "required": false
+    },
+    {
+      "id": "#c:gems/carrageenan",
+      "required": false
     }
   ]
 }

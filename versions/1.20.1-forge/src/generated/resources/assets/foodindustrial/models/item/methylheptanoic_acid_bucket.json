@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:methylheptanoic_acid",
+  "loader": "forge:fluid_container"
+}

@@ -6,6 +6,10 @@
     {
       "id": "#forge:nitrobenzene",
       "required": false
+    },
+    {
+      "id": "#c:nitrobenzene",
+      "required": false
     }
   ]
 }

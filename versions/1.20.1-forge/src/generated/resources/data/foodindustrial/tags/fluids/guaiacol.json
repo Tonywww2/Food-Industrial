@@ -6,6 +6,10 @@
     {
       "id": "#forge:guaiacol",
       "required": false
+    },
+    {
+      "id": "#c:guaiacol",
+      "required": false
     }
   ]
 }

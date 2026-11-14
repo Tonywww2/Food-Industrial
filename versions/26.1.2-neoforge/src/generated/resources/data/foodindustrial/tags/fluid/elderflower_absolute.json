@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:elderflower_absolute",
+    "foodindustrial:flowing_elderflower_absolute",
+    {
+      "id": "#forge:elderflower_absolute",
+      "required": false
+    },
+    {
+      "id": "#c:elderflower_absolute",
+      "required": false
+    }
+  ]
+}

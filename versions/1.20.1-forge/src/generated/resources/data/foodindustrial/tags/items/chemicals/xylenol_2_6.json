@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:xylenol_2_6",
+    {
+      "id": "#forge:dusts/xylenol_2_6",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/xylenol_2_6",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/xylenol_2_6",
+      "required": false
+    },
+    {
+      "id": "#c:gems/xylenol_2_6",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:kiln",
+  "inputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/monosodium_phosphate"
+      }
+    }
+  ],
+  "mode": "calcining",
+  "outputs": [
+    {
+      "item": "foodindustrial:sodium_trimetaphosphate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "high"
+  },
+  "time": 400
+}

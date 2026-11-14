@@ -1,0 +1,33 @@
+{
+  "type": "thermal:centrifuge",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "count": 2,
+    "tag": "foodindustrial:chemicals/tallow_fatty_acids"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:stearic_acid",
+      "nbt": "{Purity:31b}"
+    },
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:oleic_acid",
+      "nbt": "{Purity:31b}"
+    }
+  ]
+}

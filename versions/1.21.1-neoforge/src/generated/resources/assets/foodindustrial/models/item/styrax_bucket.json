@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:styrax",
+  "loader": "neoforge:fluid_container"
+}

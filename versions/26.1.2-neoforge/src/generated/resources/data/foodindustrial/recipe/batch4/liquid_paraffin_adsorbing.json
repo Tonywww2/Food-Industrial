@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:purifying",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/diatomite",
+    "runs": 4
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:liquid_paraffin"
+      }
+    }
+  ],
+  "mode": "adsorption",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:liquid_paraffin"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

@@ -1,0 +1,14 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:iron_pot",
+  "name": "book.foodindustrial.manual.entry.iron_pot",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:iron_pot",
+      "text": "book.foodindustrial.manual.entry.iron_pot.text",
+      "title": "book.foodindustrial.manual.entry.iron_pot"
+    }
+  ],
+  "sortnum": 4
+}

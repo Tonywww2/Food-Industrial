@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:farnesyl_acetate",
+    "foodindustrial:flowing_farnesyl_acetate",
+    {
+      "id": "#forge:farnesyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#c:farnesyl_acetate",
+      "required": false
+    }
+  ]
+}

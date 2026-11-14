@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sucrose_octaacetate",
+    {
+      "id": "#forge:dusts/sucrose_octaacetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sucrose_octaacetate",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sucrose_octaacetate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sucrose_octaacetate",
+      "required": false
+    }
+  ]
+}

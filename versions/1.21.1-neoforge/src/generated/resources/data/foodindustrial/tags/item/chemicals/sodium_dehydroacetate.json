@@ -3,6 +3,14 @@
   "values": [
     "foodindustrial:sodium_dehydroacetate",
     {
+      "id": "#forge:dusts/sodium_dehydroacetate",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/sodium_dehydroacetate",
+      "required": false
+    },
+    {
       "id": "#c:dusts/sodium_dehydroacetate",
       "required": false
     },

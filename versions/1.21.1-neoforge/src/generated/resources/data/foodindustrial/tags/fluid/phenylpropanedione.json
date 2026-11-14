@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylpropanedione",
+    "foodindustrial:flowing_phenylpropanedione",
+    {
+      "id": "#forge:phenylpropanedione",
+      "required": false
+    },
+    {
+      "id": "#c:phenylpropanedione",
+      "required": false
+    }
+  ]
+}

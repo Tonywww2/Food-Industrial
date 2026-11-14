@@ -1,0 +1,33 @@
+{
+  "type": "pneumaticcraft:thermo_plant",
+  "air_use_multiplier": 1.0,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft",
+      "tiers": [
+        "t3"
+      ]
+    }
+  ],
+  "exothermic": false,
+  "fluid_input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:potash_lye"
+  },
+  "item_output": {
+    "count": 1,
+    "item": "foodindustrial:potassium_carbonate",
+    "nbt": "{Purity:9b}"
+  },
+  "pressure": 0.0,
+  "speed": 1.0,
+  "temperature": {
+    "min_temp": 373
+  }
+}

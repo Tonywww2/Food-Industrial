@@ -6,6 +6,10 @@
     {
       "id": "#forge:sodium_hypochlorite",
       "required": false
+    },
+    {
+      "id": "#c:sodium_hypochlorite",
+      "required": false
     }
   ]
 }

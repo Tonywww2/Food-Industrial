@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/tetrapotassium_pyrophosphate",
       "required": false
+    },
+    {
+      "id": "#c:dusts/tetrapotassium_pyrophosphate",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tetrapotassium_pyrophosphate",
+      "required": false
     }
   ]
 }

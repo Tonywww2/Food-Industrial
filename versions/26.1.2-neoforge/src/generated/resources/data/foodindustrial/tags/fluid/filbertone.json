@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:filbertone",
+    "foodindustrial:flowing_filbertone",
+    {
+      "id": "#forge:filbertone",
+      "required": false
+    },
+    {
+      "id": "#c:filbertone",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,14 @@
     {
       "id": "#forge:gems/radish_red",
       "required": false
+    },
+    {
+      "id": "#c:dusts/radish_red",
+      "required": false
+    },
+    {
+      "id": "#c:gems/radish_red",
+      "required": false
     }
   ]
 }

@@ -43,6 +43,23 @@ public final class ProcessType {
         return yieldScalable;
     }
 
+    /**
+     * FE/t of a recipe of this type that writes no {@code energy}, on FE machines before the tier's
+     * energy factor (machines/01 §2, 2026-11-11); 0 for world interactions.
+     */
+    public int defaultEnergy() {
+        return switch (code) {
+            case "R01", "R02", "R03", "R08", "R18", "R19" -> 10;
+            case "R04", "R06", "R12", "R15" -> 15;
+            case "R05", "R07", "R11" -> 20;
+            case "R10" -> 30;
+            case "R09", "R13" -> 40;
+            case "R14" -> 80;
+            case "R16", "R17" -> 5;
+            default -> 0;
+        };
+    }
+
     /** World interaction types (W01, W02); their recipe format comes with I12. */
     public boolean isWorldInteraction() {
         return code.startsWith("W");

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:valerylfuran",
+    "foodindustrial:flowing_valerylfuran",
+    {
+      "id": "#forge:valerylfuran",
+      "required": false
+    },
+    {
+      "id": "#c:valerylfuran",
+      "required": false
+    }
+  ]
+}

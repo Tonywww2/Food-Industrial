@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:phenylbutyric_acid",
+    {
+      "id": "#forge:dusts/phenylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/phenylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/phenylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/phenylbutyric_acid",
+      "required": false
+    }
+  ]
+}
