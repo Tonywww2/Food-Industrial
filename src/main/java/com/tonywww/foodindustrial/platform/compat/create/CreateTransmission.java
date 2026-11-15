@@ -1,7 +1,6 @@
 package com.tonywww.foodindustrial.platform.compat.create;
 //? if <26.1 {
 
-import com.simibubi.create.api.stress.BlockStressValues;
 import com.tonywww.foodindustrial.machine.workshop.DescribedBlockItem;
 import com.tonywww.foodindustrial.platform.Platform;
 import com.tonywww.foodindustrial.platform.PlatformKinetics;
@@ -11,6 +10,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -27,7 +27,14 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 /**
  * Create's transmission interface (I25, 2026-11-11): registered only with Create installed. It sits on
  * top of the stone mill or the screw press instead of the hand crank, takes a shaft from above and
- * costs {@link PlatformKinetics#STRESS_PER_RPM} stress units per RPM. Only this package touches Create.
+ * costs {@link PlatformKinetics#STRESS_PER_RPM} stress units per RPM. Only this package and
+ * {@code compat.create05} touch Create.
+ * <p>
+ * The block and its block entity use API that Create 6 and Create 0.5.1 share. The stress impact and the
+ * rendering differ: with Flywheel 1.x (Create 6) this package registers them; with Flywheel 0.x (Create
+ * 0.5.1, still common in 1.20.1 packs) the 1.20.1 Forge jar carries {@code compat.create05}, compiled
+ * against Create 0.5.1 and called here by reflection (2026-11-14, user: keep Flywheel rendering, choose by
+ * Flywheel's version).
  */
 public final class CreateTransmission {
     static Supplier<TransmissionInterfaceBlock> block;
@@ -45,10 +52,41 @@ public final class CreateTransmission {
             new Item.Properties());
         type = PlatformRegistry.blockEntity(id, (pos, state) -> new TransmissionInterfaceBlockEntity(type.get(), pos, state), block);
         ModCreativeTabs.add(ModCreativeTabs.Tab.MACHINES, output -> output.accept(new ItemStack(item.get())));
-        modBus.addListener((FMLCommonSetupEvent event) -> event.enqueueWork(
-            () -> BlockStressValues.IMPACTS.register(block.get(), () -> PlatformKinetics.STRESS_PER_RPM)));
+        boolean legacy = legacyFlywheel();
+        modBus.addListener((FMLCommonSetupEvent event) -> event.enqueueWork(() -> {
+            if (legacy) {
+                legacy("registerStress", new Class<?>[] {Block.class, double.class}, block.get(), PlatformKinetics.STRESS_PER_RPM);
+            } else {
+                CreateStress.register(block.get(), PlatformKinetics.STRESS_PER_RPM);
+            }
+        }));
         if (Platform.isPhysicalClient()) {
-            CreateTransmissionClient.bind(modBus);
+            if (legacy) {
+                legacy("bindClient", new Class<?>[] {IEventBus.class}, modBus);
+            } else {
+                CreateTransmissionClient.bind(modBus);
+            }
+        }
+    }
+
+    /** The interface's block entity type (for {@code compat.create05}). */
+    public static BlockEntityType<TransmissionInterfaceBlockEntity> blockEntityType() {
+        return type.get();
+    }
+
+    /** Whether the installed Flywheel is 0.x, the one Create 0.5.1 bundles (Create 6 bundles 1.x). */
+    private static boolean legacyFlywheel() {
+        String version = Platform.modVersion("flywheel");
+        return version != null && version.startsWith("0.");
+    }
+
+    /** Calls a static method of {@code compat.create05.LegacyCreate}, which only the 1.20.1 Forge jar carries. */
+    private static void legacy(String method, Class<?>[] types, Object... args) {
+        String name = "com.tonywww.foodindustrial.platform.compat.create05.LegacyCreate";
+        try {
+            Class.forName(name).getMethod(method, types).invoke(null, args);
+        } catch (ReflectiveOperationException e) {
+            throw new IllegalStateException("Create 0.5.1 support (" + name + "." + method + ") is missing from this jar", e);
         }
     }
 

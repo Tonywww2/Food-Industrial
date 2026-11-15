@@ -21,7 +21,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 *///?}
 
-/** Client side of the transmission interface (I25): the half shaft on top turns, with or without Flywheel. */
+/** Client side of the transmission interface on Create 6 (I25): the half shaft on top turns, with Flywheel 1.x visuals or without. */
 final class CreateTransmissionClient {
     private CreateTransmissionClient() {
     }

@@ -23,8 +23,11 @@ val splitDatagen = stonecutter.current.parsed >= "1.21.4"
 
 // Per-node datagen output (datapack layouts differ between Minecraft versions).
 val generatedResources = file("src/generated/resources")
+// Files written while configuring, kept outside build/ so that `clean` does not delete them after they were
+// checked and before the tasks that need them run (`clean build` failed to compile, 2026-11-13).
+val configureOutput: File = rootProject.file(".gradle/foodindustrial/$nodeName")
 // Jars of the integrated mods (deps.mod.*, deps.opt.* and what they nest), listed for the data run.
-val externalJarList: File = layout.buildDirectory.file("fi-external-jars.txt").get().asFile
+val externalJarList: File = configureOutput.resolve("external-jars.txt")
 sourceSets.main { resources.srcDir(generatedResources) }
 // Plain JUnit tests need the game classes (no game bootstrap); ModDevGradle only puts them on main.
 sourceSets.test {
@@ -133,7 +136,7 @@ dependencies {
             .singleFile
     }
     if (optionalCoordinates.isNotEmpty()) {
-        val jijDir = layout.buildDirectory.dir("jij").get().asFile
+        val jijDir = configureOutput.resolve("jij")
         optionalCoordinates.forEach { coordinate ->
             val modJar = configurations.detachedConfiguration(project.dependencies.create(coordinate))
                 .apply { isTransitive = false }
@@ -158,8 +161,9 @@ dependencies {
     externalJarList.writeText(externalJars.joinToString("\n") { it.absolutePath })
 }
 
+// No sources jar: the mod is not published as a library, and on the Forge node remapping it was the slowest,
+// most memory-hungry step of `build` (about 50 s; user, 2026-11-13).
 java {
-    withSourcesJar()
     toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
 }
 

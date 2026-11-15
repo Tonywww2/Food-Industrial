@@ -13,7 +13,7 @@
 
 ## 机器清单
 
-“配方类型”一栏的编号见 ../machines/01 第 2 节。
+“配方类型”一栏的编号见 ../machines/01 第 2 节。成品线的食品加工设备（M38 起）见 [../foods/05](../foods/05-equipment.md)、[../foods/07](../foods/07-machine-basic-design.md)；本页 M03、M05、M14、M21 为成品线新增的能力与模式见 07 第 6 节。
 
 ### T1 作坊
 

@@ -40,7 +40,13 @@ public final class Platform {
         return ModList.get().isLoaded(modId);
     }
 
-    /** The display name of a loaded mod ({@code minecraft} included), or {@code null}. */
+    /** The version of a loaded mod as its mods.toml gives it (for example {@code "0.6.11-13"}), or {@code null}. */
+    @org.jetbrains.annotations.Nullable
+    public static String modVersion(String modId) {
+        return ModList.get().getModContainerById(modId).map(container -> container.getModInfo().getVersion().toString()).orElse(null);
+    }
+
+        /** The display name of a loaded mod ({@code minecraft} included), or {@code null}. */
     @org.jetbrains.annotations.Nullable
     public static String modName(String modId) {
         return ModList.get().getModContainerById(modId).map(container -> container.getModInfo().getDisplayName()).orElse(null);

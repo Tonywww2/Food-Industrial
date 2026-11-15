@@ -28,6 +28,20 @@ base.archivesName = "$modId-$loader"
 val generatedResources = file("src/generated/resources")
 sourceSets.main { resources.srcDir(generatedResources) }
 
+// Create 0.5.1 support (deps.create05, 2026-11-14): the transmission interface's stress and Flywheel 0.6
+// rendering for packs still on Create 0.5.1. Its classes (src/create05/java, no Stonecutter conditions: this
+// node only) compile against Create 0.5.1 instead of the Create 6 the main code uses, go into the same jar
+// and are called by reflection when Flywheel's version is 0.x. -PfiCreate05 runs the dev game with Create
+// 0.5.1 instead of Create 6.
+val create05Coordinate = optProp("deps.create05")
+val create05Runtime = create05Coordinate != null && optProp("fiCreate05") != null
+val create05: SourceSet? = create05Coordinate?.let {
+    sourceSets.create("create05") {
+        java.setSrcDirs(listOf(rootProject.file("src/create05/java")))
+        resources.setSrcDirs(listOf<File>())
+    }
+}
+
 // Loom holds a configuration lock per project while it sets up Minecraft ("Waiting for lock to be
 // released ... held by pid"). A Gradle process killed during that setup leaves the lock behind; Loom
 // waits for its pid for up to an hour, and on Windows that pid is soon reused by unrelated programs.
@@ -47,11 +61,25 @@ run {
     }
 }
 
+// Files written while configuring, kept outside build/ so that `clean` does not delete them after they were
+// checked and before the tasks that need them run (`clean build` failed to compile, 2026-11-13).
+val configureOutput: File = rootProject.file(".gradle/foodindustrial/$nodeName")
 // Jars of the integrated mods (deps.mod.*, deps.opt.* and what they nest), listed for the data run.
-val externalJarList: File = layout.buildDirectory.file("fi-external-jars.txt").get().asFile
+val externalJarList: File = configureOutput.resolve("external-jars.txt")
+// Nested mods extracted from the dependency mods (see below).
+val jijDir: File = configureOutput.resolve("jij")
 
 loom {
     silentMojangMappingsLicense()
+
+    // One mod made of the main classes and, with Create 0.5.1 support, its source set.
+    mods {
+        create(modId) {
+            sourceSet(sourceSets.main.get())
+            create05?.let { sourceSet(it) }
+        }
+    }
+    create05?.let { createRemapConfigurations(it) }
 
     mixin { defaultRefmapName = "$modId.refmap.json" }
     // Loom's Forge runs do NOT read [[mixins]] from mods.toml: register the config here.
@@ -106,7 +134,7 @@ repositories {
     // configuration together only when they are modules, and a mod calling into its nested mod (GTCEu into
     // Registrate) needs that one on the remap classpath, or the calls keep their SRG names (2026-11-11).
     exclusiveContent {
-        forRepository { flatDir { name = "JiJ"; dirs(layout.buildDirectory.dir("jij")) } }
+        forRepository { flatDir { name = "JiJ"; dirs(jijDir) } }
         filter { includeGroup("jij") }
     }
 }
@@ -139,11 +167,13 @@ dependencies {
     // -PfiWith=<name>,… (or "all"), so runs with and without each mod are possible (I24–I27, 2026-11-11).
     // fi.devWith names those in every dev run (Jade, 2026-11-12, user); -PfiWithout=<name>,… leaves them out.
     val withMods = devRuntimeMods()
+    // With -PfiCreate05 the dev game runs Create 0.5.1, never also Create 6.
+    val withoutMods = names(optProp("fiWithout")) + (if (create05Runtime) setOf("create") else emptySet())
     val optionalRuntime = mutableListOf<String>()
     project.properties.keys.filter { it.startsWith("deps.opt.") }.sorted().forEach { key ->
         "modCompileOnly"(prop(key))
         val name = key.removePrefix("deps.opt.")
-        if (name in withMods || "all" in withMods && name !in names(optProp("fiWithout"))) {
+        if ((name in withMods || "all" in withMods) && name !in withoutMods) {
             "modLocalRuntime"(prop(key))
             optionalRuntime += prop(key)
         }
@@ -153,14 +183,20 @@ dependencies {
     // optional mod also join the compile classpath: code against Create's kinetic blocks needs the
     // Flywheel and Ponder classes Create bundles (I25, 2026-11-11).
     val optionalCoordinates = project.properties.keys.filter { it.startsWith("deps.opt.") }.sorted().map { prop(it) }
+    create05Coordinate?.let { coordinate ->
+        "modCreate05CompileOnly"(coordinate)
+        if (create05Runtime) {
+            "modLocalRuntime"(coordinate)
+            optionalRuntime += coordinate
+        }
+    }
     val jijRuntime = (modCoordinates + optionalRuntime + listOfNotNull(optProp("deps.jei")?.let { "mezz.jei:jei-$mcVersion-$loader:$it" })).toSet()
-    val jijCoordinates = jijRuntime + optionalCoordinates
+    val jijCoordinates = jijRuntime + optionalCoordinates + listOfNotNull(create05Coordinate)
 
     // Loom dev does not unpack Jar-in-Jar contents (META-INF/jarjar) of dependency mods, e.g. Thermal
     // Foundation bundles thermal_core (mod id "thermal"). Extract them once here: nested mods are remapped
     // like any other mod, nested plain libraries join the Forge runtime classpath.
     if (jijCoordinates.isNotEmpty()) {
-        val jijDir = layout.buildDirectory.dir("jij").get().asFile
         // Resolve through the root project: resolving in this project before Loom finishes its setup
         // locks Loom's local repositories ("Cannot mutate content repository descriptor ...").
         with(rootProject.repositories) {
@@ -255,12 +291,17 @@ dependencies {
             if (jar.coordinate in optionalCoordinates && isMod && chosenCompile[key(jar)] == jar.file) {
                 "modCompileOnly"(module)
             }
+            // Create 0.5.1's Flywheel 0.6 for the create05 classes only (main compiles against Create 6's Flywheel 1).
+            if (jar.coordinate == create05Coordinate && jar.modId == "flywheel") {
+                "modCreate05CompileOnly"(module)
+            }
         }
     }
 }
 
+// No sources jar: the mod is not published as a library, and on the Forge node remapping it was the slowest,
+// most memory-hungry step of `build` (about 50 s; user, 2026-11-13).
 java {
-    withSourcesJar()
     toolchain.languageVersion = JavaLanguageVersion.of(javaVersion)
 }
 
@@ -272,6 +313,18 @@ tasks {
         options.encoding = "UTF-8"
         options.release = javaVersion
         dependsOn("stonecutterGenerate")
+    }
+
+    // The Create 0.5.1 classes see the main classes and the main classpath without Create 6 and what it
+    // bundles (Flywheel 1, Ponder); Loom adds the remapped Create 0.5.1 and Flywheel 0.6. Their classes go
+    // into the main jar.
+    create05?.let { set ->
+        val main = sourceSets.main.get()
+        set.compileClasspath += main.output + main.compileClasspath.filter { file ->
+            val path = file.invariantSeparatorsPath
+            "/LNytGWDc-" !in path && "/jij/Ponder-" !in path && "/jij/flywheel-" !in path
+        }
+        jar { from(set.output) }
     }
 
     test {

@@ -120,11 +120,12 @@ public static ResourceLocation id(String path) { … }
   - `deps.mod.<名字>=<maven 坐标>`：编译 + 开发运行（Forge 节点自动走 Loom 重映射）。
   - `deps.opt.<名字>=<maven 坐标>`：可选联动模组（2026-11-11）。总在编译类路径上；开发运行时只在 `-PfiWith=<名字>,…`（或 `all`）点名时加入，便于分别测试装与不装的情况。根 `gradle.properties` 的 `fi.devWith=<名字>,…` 列出每次开发运行都加入的可选模组（现为 Jade，2026-11-12 用户定，用于测试）；`-PfiWithout=<名字>,…` 临时去掉，测试不装的情况。
   - `deps.dev.<名字>=<maven 坐标>`：只进开发运行时、不参与编译（2026-11-11），用于填充物料标签的模组（如潘马斯作物），让开发环境的 JEI 能显示用到这些标签的配方。
+  - `deps.create05=<maven 坐标>`（只在 1.20.1-forge，2026-11-14）：机械动力 0.5.1（内嵌 Flywheel 0.6）。传动接口的应力与 Flywheel 渲染在 0.5.1 与 6 上写法不同：`platform.compat.create` 对着机械动力 6 编译；对着 0.5.1 的部分放在单独的源码集 `src/create05/java`（包 `platform.compat.create05`，只这一个节点，不写 Stonecutter 条件），编译类路径是主代码加去掉机械动力 6、Flywheel 1、Ponder 后的主类路径再加 0.5.1，类打进同一个 jar；运行时按 Flywheel 的版本（`0.` 开头）用反射调用它。`-PfiCreate05` 让开发运行改用机械动力 0.5.1（同时不加载机械动力 6）。
   - 某节点没有对应版本时删掉该键即可；源码中的联动代码必须用同样的条件排除。
-  - 数据生成运行时，构建脚本把 `deps.mod.*`、`deps.opt.*` 及其内嵌模组的 jar 列表写到 `build/fi-external-jars.txt`，经系统属性 `foodindustrial.externalJars` 传给数据生成，用来从联动配方中去掉与他模组自带配方重叠的输入（I25）。
+  - 数据生成运行时，构建脚本把 `deps.mod.*`、`deps.opt.*` 及其内嵌模组的 jar 列表写到 `.gradle/foodindustrial/<节点>/external-jars.txt`，经系统属性 `foodindustrial.externalJars` 传给数据生成，用来从联动配方中去掉与他模组自带配方重叠的输入（I25）。
 - 加依赖前先确认它对加载器版本的要求（例如 JEI 19.42+ 要求 NeoForge ≥ 21.1.238，所以 1.21.1 节点固定在 19.39.0.372）。
 - Modrinth 上 Fabric / NeoForge 共用同一版本号时，用 **版本 ID** 固定（例如 26.1 的 Patchouli 用 `2CsnFLom`）。
-- Forge 节点的依赖若用 Jar-in-Jar 内嵌其他模组（如 Thermal Foundation 内嵌 `thermal_core`），`build.gradle.kts` 会在配置阶段自动解出到 `versions/1.20.1-forge/build/jij/` 并加入开发运行时；无需手动处理。解出的模组以 `jij:<文件名>` 模块（flatDir 仓库）加入，与外层模组同批重映射——否则外层模组调用内嵌模组的方法（GTCEu 调 Registrate）会留着 SRG 名而报 `NoSuchMethodError`；内嵌的游戏库（清单 `FMLModType: GAMELIBRARY`，如 `mixinextras-forge`、Registrate）按模组加入，FML 才会加载其 `MixinConfigs`、让它看得到原版类（2026-11-11）。
+- Forge 节点的依赖若用 Jar-in-Jar 内嵌其他模组（如 Thermal Foundation 内嵌 `thermal_core`），`build.gradle.kts` 会在配置阶段自动解出到 `.gradle/foodindustrial/1.20.1-forge/jij/`（NeoForge 节点同理，只加入编译类路径）并加入开发运行时；无需手动处理。这些配置阶段写出的文件不放在 `build/` 下，否则 `clean build` 会在检查过它们之后、编译之前把它们删掉（2026-11-13）。解出的模组以 `jij:<文件名>` 模块（flatDir 仓库）加入，与外层模组同批重映射——否则外层模组调用内嵌模组的方法（GTCEu 调 Registrate）会留着 SRG 名而报 `NoSuchMethodError`；内嵌的游戏库（清单 `FMLModType: GAMELIBRARY`，如 `mixinextras-forge`、Registrate）按模组加入，FML 才会加载其 `MixinConfigs`、让它看得到原版类（2026-11-11）。
 - Loom 按坐标缓存重映射后的模组（项目根的 `.gradle/loom-cache/remapped_mods/`），类路径变了也不重做。开发运行时若出现带 SRG 名（`m_数字_`、`f_数字_`）的 `NoSuchMethodError` / `NoSuchFieldError`，删掉出错模组在该目录下的缓存后重新运行（2026-11-11，机械动力在内嵌模组改为同批重映射之前的缓存即如此）。
 - Mixin：配置文件 `foodindustrial.mixins.json`，包为 `com.tonywww.foodindustrial.platform.mixin`。Forge 开发环境由 Loom 的 `forge.mixinConfig` 加载，生产环境由 jar 清单的 `MixinConfigs` 加载；NeoForge 由 `neoforge.mods.toml` 的 `[[mixins]]` 加载。**不要在 json 里手写 `refmap`**——Forge 节点由 Loom 自动生成并写入，NeoForge 节点不需要。
 
@@ -143,6 +144,7 @@ public static ResourceLocation id(String path) { … }
 - 新增 `.java` 文件后若出现类缺失，执行一次 `.\gradlew.bat :<节点>:compileJava --rerun-tasks`（Stonecutter 有时不会立即重新生成）。
 - 切换 IDE 中的激活节点：使用 Gradle 任务组 `stonecutter` 里的 “Set active project to …”；提交前执行 “Reset active project”。产物位于 `versions\<节点>\build\libs\`，文件名带 Minecraft 版本（如 `foodindustrial-forge-0.0.0+1.20.1.jar`）。
 - 同时开多个 Gradle 命令（2026-11-04）：`gradle.properties` 开启了按需配置（`org.gradle.configureondemand`），带节点路径的命令只配置该节点。1.20.1-forge 由 Architectury Loom 构建，Loom 在配置阶段持有每个项目的配置锁，另一个进程同时配置 1.20.1-forge 时会显示 “Waiting for lock to be released … held by pid …”，等对方配置完（通常几十秒；对方在重建 Loom 缓存时要几分钟）。NeoForge 节点的命令不配置 1.20.1-forge，不受这把锁影响；IDE 导入与不带节点路径的命令（如 `build`）仍配置全部节点。被强行结束的构建会留下锁文件，若锁上的 pid 已被其他非 Java 程序占用，`build.gradle.kts` 会把锁标为放弃，Loom 随后重建缓存（需要联网）；若持锁的是仍在运行的 Java 进程，在任务管理器里按 pid 找到并结束它。
+- 构建耗时与内存（2026-11-13 实测，云端 2 核）：不带节点路径的 `build` 依次构建三个节点，clean build 约 2 分钟，峰值内存约 3.4 GB（Gradle 进程最多 3 GB，另有每个 Java 版本一个编译进程）。只要某个节点的 jar 时用 `:<节点>:build`。不产出源码 jar（Forge 节点重映射它要约 50 秒、峰值多约 0.6 GB，用户定）。Windows 上生成资源有三万余个小文件，实时防护会逐个扫描复制、打包的文件，可把项目目录与 `%USERPROFILE%\.gradle` 加入 Microsoft Defender 的排除项。
 - 同一节点的客户端与服务端共用 `run\<节点>\`：先等服务端启动完成再开客户端，同时启动会争写 `config\` 下的模组配置文件，可能把文件写坏。
 
 提交前的自检（`platform` 以外必须没有任何结果）：
