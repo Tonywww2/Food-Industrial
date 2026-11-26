@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:foods/cream_cheese"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/egg"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "cheesecake|filling"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "thickener"
+        ],
+        "item": "state"
+      },
+      {
+        "accepts": [
+          "sweet_flavoring"
+        ],
+        "item": "taste"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

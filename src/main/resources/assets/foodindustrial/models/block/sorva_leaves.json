@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "foodindustrial:block/sorva_leaves"
+  },
+  "render_type": "minecraft:cutout_mipped"
+}

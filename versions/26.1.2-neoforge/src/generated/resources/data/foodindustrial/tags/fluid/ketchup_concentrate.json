@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ketchup_concentrate",
+    "foodindustrial:flowing_ketchup_concentrate",
+    {
+      "id": "#forge:ketchup_concentrate",
+      "required": false
+    },
+    {
+      "id": "#c:ketchup_concentrate",
+      "required": false
+    }
+  ]
+}

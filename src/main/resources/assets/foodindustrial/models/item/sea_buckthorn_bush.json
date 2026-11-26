@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodindustrial:block/sea_buckthorn_bush_stage3"
+  }
+}

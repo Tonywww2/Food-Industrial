@@ -80,6 +80,7 @@ public final class ChemicalMachines {
             .where('#', Lang.block("chemical_tower_wall"), true, CHEMICAL_TOWER_WALL)
             .build())
         .entity(DistillationColumnBlockEntity::new)
+        .shaped()
         .register();
 
     /** M23 (I 2, O 2, FI 5, FO 2, C 1, U 3; phase 3; five input tanks from I31, 2026-11-11). */
@@ -97,6 +98,7 @@ public final class ChemicalMachines {
             MachineMode.of("polymerization", Capabilities.of("method.polymerization")))
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REACTION)
+        .shaped()
         .register();
 
     /** M24 (I 1, O 1, FI 2, FO 3, C 1 electrode, U 3; phase 2). */
@@ -112,6 +114,7 @@ public final class ChemicalMachines {
             MachineMode.of("molten_salt", Capabilities.of("temperature.high")))
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REFINING)
+        .shaped()
         .register();
 
     /** M25 (FI 2, FO 2, C 1 adsorbent, U 3; phase 2): saturated adsorbents regenerate. */
@@ -127,6 +130,7 @@ public final class ChemicalMachines {
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REFINING)
         .entity(AdsorptionColumnBlockEntity::new)
+        .shaped()
         .register();
 
     /** M26 (I 3, O 2, FO 2, C 1 electrode, U 3; phase 1; multiblock 3 × 3 × 3 of refractory bricks). */
@@ -141,6 +145,7 @@ public final class ChemicalMachines {
         .power(PowerKind.ENERGY)
         .phase(TickPhase.HEATING)
         .structure(room())
+        .shaped()
         .register();
 
     /**
@@ -168,6 +173,7 @@ public final class ChemicalMachines {
             .where('T', Lang.block("furnace_tube"), false, FURNACE_TUBE)
             .build())
         .entity(GasPhaseReactorBlockEntity::new)
+        .shaped()
         .register();
 
     /** M28 (I 1, O 1, FI 1, U 3; phase 2; multiblock 3 × 3 × 4): heat-sensitive drying. */
@@ -187,6 +193,7 @@ public final class ChemicalMachines {
             .layer("###", "###", "###")
             .where('#', Lang.block("chemical_tower_wall"), true, CHEMICAL_TOWER_WALL)
             .build())
+        .shaped()
         .register();
 
     private ChemicalMachines() {

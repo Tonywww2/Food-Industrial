@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "caramel_syrup|molten_sugar"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "open_flame"
+    ],
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

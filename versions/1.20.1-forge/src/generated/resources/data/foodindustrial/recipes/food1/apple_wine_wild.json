@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:fermenting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:raw_apple_juice"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:apple_wine"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t0"
+  },
+  "time": 48000
+}

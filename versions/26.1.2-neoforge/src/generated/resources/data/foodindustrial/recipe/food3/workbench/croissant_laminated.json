@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "semi_finished": "croissant|dough"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:foods/butter"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "semi_finished": "croissant|laminated"
+  }
+}

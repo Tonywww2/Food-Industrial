@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/stone_mill_shape",
   "textures": {
     "front": "foodindustrial:block/stone_mill_front_active",
     "side": "foodindustrial:block/stone_mill_side",

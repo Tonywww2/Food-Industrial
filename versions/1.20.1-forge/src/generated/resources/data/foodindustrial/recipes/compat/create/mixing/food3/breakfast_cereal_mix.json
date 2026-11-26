@@ -1,0 +1,42 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/corn"
+    },
+    {
+      "tag": "foodindustrial:materials/corn"
+    },
+    {
+      "tag": "foodindustrial:materials/corn"
+    },
+    {
+      "tag": "foodindustrial:materials/corn"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sucrose"
+    },
+    {
+      "tag": "foodindustrial:enzymes/malt"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:semi_finished"
+    }
+  ]
+}

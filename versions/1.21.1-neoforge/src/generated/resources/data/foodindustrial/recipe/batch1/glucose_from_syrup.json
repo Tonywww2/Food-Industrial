@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:glucose_syrup"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:glucose",
+      "purity": {
+        "mode": "source",
+        "value": 95
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

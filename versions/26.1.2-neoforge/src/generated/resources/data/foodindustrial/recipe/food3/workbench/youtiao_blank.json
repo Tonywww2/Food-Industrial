@@ -1,0 +1,16 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "youtiao|proofed_dough"
+    }
+  ],
+  "process": "cutting",
+  "result": {
+    "count": 2,
+    "semi_finished": "youtiao|blank"
+  },
+  "tools": [
+    "#foodindustrial:knives"
+  ]
+}

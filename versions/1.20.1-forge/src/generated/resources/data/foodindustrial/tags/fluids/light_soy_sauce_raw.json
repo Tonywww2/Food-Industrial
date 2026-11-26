@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:light_soy_sauce_raw",
+    "foodindustrial:flowing_light_soy_sauce_raw",
+    {
+      "id": "#forge:light_soy_sauce_raw",
+      "required": false
+    },
+    {
+      "id": "#c:light_soy_sauce_raw",
+      "required": false
+    }
+  ]
+}

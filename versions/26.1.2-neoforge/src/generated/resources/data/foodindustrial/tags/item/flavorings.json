@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fruity_flavoring",
+    "foodindustrial:dairy_flavoring",
+    "foodindustrial:sweet_flavoring",
+    "foodindustrial:nutty_roasted_flavoring",
+    "foodindustrial:savory_flavoring",
+    "foodindustrial:spicy_flavoring",
+    "foodindustrial:green_flavoring",
+    "foodindustrial:alcoholic_flavoring",
+    "foodindustrial:floral_flavoring",
+    "foodindustrial:cooling_flavoring",
+    "foodindustrial:smoky_flavoring"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/cake_mold"
+    }
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "cheesecake|filling"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/biscuits"
+      }
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "cheesecake|baked"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:light_soy_sauce_raw",
+  "loader": "neoforge:fluid_container"
+}

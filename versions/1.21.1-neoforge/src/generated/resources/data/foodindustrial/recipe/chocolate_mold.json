@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "pattern": [
+    "N N",
+    "NNN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:chocolate_mold"
+  }
+}

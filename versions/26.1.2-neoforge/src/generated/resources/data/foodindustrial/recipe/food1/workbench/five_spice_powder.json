@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:materials/sichuan_pepper"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/star_anise"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/cinnamon"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/clove_bud"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/fennel_seed"
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 5,
+    "item": "foodindustrial:five_spice_powder"
+  }
+}

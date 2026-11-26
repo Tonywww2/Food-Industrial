@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draws the metabolism icons (I35): one 16 x 16 icon per substance for the body panel and Apothic Attributes'
+"""Draws the metabolism icons (I35, I46): one 16 x 16 icon per substance for the body panel and Apothic Attributes'
 panel, and the 8 x 8 icon of the panel's button, into assets/foodindustrial/textures/gui/metabolism/.
 
 Each icon is an ASCII grid; '.' is transparent and every other letter a colour of PALETTE.
@@ -21,6 +21,11 @@ PALETTE = {
     'h': (222, 196, 140), 'H': (180, 150, 96), 'e': (120, 160, 60),         # grain
     'u': (255, 210, 40), 'U': (240, 160, 20), 'v': (255, 240, 140),         # sun
     'm': (200, 60, 60), 'M': (140, 30, 30),                                 # button
+    'n': (122, 62, 40), 'N': (82, 38, 26), 'x': (168, 98, 70),              # nitrite: chocolate-brown blood
+    'i': (250, 246, 222), 'I': (222, 214, 176),                             # nitrite: pale yellow crystals
+    'd': (240, 128, 32), 'D': (190, 88, 20), 'j': (255, 186, 96), 'E': (80, 120, 40),  # vitamin A: carrot (I46)
+    'R': (150, 24, 30), 'z': (200, 40, 44), 'Z': (228, 96, 96),             # iron: red blood cell
+    'C': (170, 176, 184), 'F': (118, 124, 134), 'J': (236, 230, 218),       # zinc: oyster
 }
 
 ICONS = {
@@ -77,6 +82,24 @@ ICONS = {
         'kSSSSSSTk.......',
         'kkkkkkkk........',
         '................',
+    ],
+    'nitrite': [
+        '................',
+        '.....kk.........',
+        '....kxnk........',
+        '....kxnk........',
+        '...kxnnnk.......',
+        '...knnnnk.......',
+        '..kxnnnnNk......',
+        '..knnnnnNk......',
+        '..knnnnNNk......',
+        '...kNNNNk..kk...',
+        '....kkkk..kiik..',
+        '.........kiIiik.',
+        '......kk.kIiiIk.',
+        '.....kiikkiiIiik',
+        '....kiIiIkIiiIik',
+        '....kkkkkkkkkkkk',
     ],
     'impurity': [
         '................',
@@ -149,6 +172,79 @@ ICONS = {
         '..U....U....U...',
         '.......U........',
         '................',
+    ],
+    # I46 (2026-11-19): carrot, bone (calcium), red blood cell (iron), oyster (zinc)
+    'vitamin_a': [
+        '.............e..',
+        '..........e.eE..',
+        '...........eEe.e',
+        '.........kkkEeE.',
+        '........kjjdkEe.',
+        '.......kjddddk..',
+        '......kjdddDDk..',
+        '......kjddDDk...',
+        '.....kjdddDk....',
+        '.....kjdDDk.....',
+        '....kjddDk......',
+        '....kjdDk.......',
+        '...kjdDk........',
+        '...kdDk.........',
+        '..kDk...........',
+        '...k............',
+    ],
+    'calcium': [
+        '..........kk....',
+        '.........kwwk...',
+        '........kwwwwk..',
+        '........kwwwwgk.',
+        '.........kwwgggk',
+        '........kwwggggk',
+        '.......kwwgkggk.',
+        '......kwwgk.kk..',
+        '..kk.kwwgk......',
+        '.kwwkwwgk.......',
+        'kwwwwwgk........',
+        'kwwwwggk........',
+        '.kwwgggk........',
+        '..kggggk........',
+        '...kggk.........',
+        '....kk..........',
+    ],
+    'iron': [
+        '................',
+        '................',
+        '......kkkk......',
+        '....kkRRRRkk....',
+        '...kRzRRRRRRk...',
+        '..kRzzzzzzzRRk..',
+        '.kRzzzzzzzzzRRk.',
+        '.kRzzzZZZZzzzRk.',
+        'kRRzzzZZZZzzzRRk',
+        '.kRzzzZZZZzzzRk.',
+        '.kRRzzzzzzzzRRk.',
+        '..kRRzzzzzzRRk..',
+        '...kRRRRRRRRk...',
+        '....kkRRRRkk....',
+        '......kkkk......',
+        '................',
+    ],
+    'zinc': [
+        '................',
+        '................',
+        '.......kk.......',
+        '....kkkCCkkk....',
+        '..kkCCCCCCCCkk..',
+        '.kCCCCCFCCCCCCk.',
+        '.kCCFCCCCCFCCCk.',
+        'kCCCCCCCCCCCCCCk',
+        'kCCCJJJJJJJJCCCk',
+        'kFFJJJJJJffJJFFk',
+        'kFFJJJJJJffJJFFk',
+        '.kFFJJJJJffJFFk.',
+        '.kFFFFJJJJFFFFk.',
+        '..kkFFFFFFFFkk..',
+        '....kkkFFkkk....',
+        '.......kk.......',
     ],
 }
 

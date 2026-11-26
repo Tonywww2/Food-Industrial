@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "foodindustrial:civet"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "foodindustrial:entities/civet"
+}

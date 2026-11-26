@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "alkaline_noodles|wet_noodles"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/plastic_bag"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:alkaline_noodles"
+  }
+}

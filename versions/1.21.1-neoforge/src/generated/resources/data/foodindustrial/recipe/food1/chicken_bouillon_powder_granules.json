@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "chicken_bouillon_powder|wet_granules"
+    }
+  ],
+  "outputs": [
+    {
+      "semi_finished": "chicken_bouillon_powder|granules"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

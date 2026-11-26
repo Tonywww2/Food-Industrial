@@ -33,7 +33,12 @@ public final class ContentRecipe {
         Map.entry(ProcessTypes.DISTILLING, 200), Map.entry(ProcessTypes.REACTING, 200), Map.entry(ProcessTypes.ABSORBING, 200),
         Map.entry(ProcessTypes.GAS_REACTING, 200), Map.entry(ProcessTypes.ELECTROLYZING, 200), Map.entry(ProcessTypes.PURIFYING, 200),
         Map.entry(ProcessTypes.FERMENTING, 12000), Map.entry(ProcessTypes.SOLID_FERMENTING, 24000), Map.entry(ProcessTypes.CULTURING, 1200),
-        Map.entry(ProcessTypes.MIXING, 100));
+        Map.entry(ProcessTypes.MIXING, 100),
+        // finished-food line (I38, values to review): R20–R29
+        Map.entry(ProcessTypes.FORMING, 100), Map.entry(ProcessTypes.STERILIZING, 200), Map.entry(ProcessTypes.COOKING, 200),
+        Map.entry(ProcessTypes.BAKING, 200), Map.entry(ProcessTypes.FRYING, 100), Map.entry(ProcessTypes.CURING, 12000),
+        Map.entry(ProcessTypes.CUTTING, 100), Map.entry(ProcessTypes.CONFECTIONERY, 200), Map.entry(ProcessTypes.CHILLING, 400),
+        Map.entry(ProcessTypes.PACKAGING, 40));
 
     private final RecipeGen.Output out;
     private final String prefix;
@@ -43,6 +48,7 @@ public final class ContentRecipe {
     private final JsonObject body = new JsonObject();
     private final JsonObject requirements = new JsonObject();
     private final JsonArray catalysts = new JsonArray();
+    private String condition;
 
     private ContentRecipe(RecipeGen.Output out, String prefix, ProcessType type) {
         this.out = out;
@@ -103,7 +109,29 @@ public final class ContentRecipe {
         return this;
     }
 
+    /** The semi-finished item of a product's stage ({@code product|stage}, foods/08 §3). */
+    public ContentRecipe semi(String key, int count) {
+        JsonObject input = new JsonObject();
+        input.addProperty("semi_finished", key);
+        if (count != 1) {
+            input.addProperty("count", count);
+        }
+        inputs.add(input);
+        return this;
+    }
+
     // ---- outputs ----
+
+    /** A semi-finished output ({@code product|stage}). */
+    public ContentRecipe sout(String key, int count) {
+        JsonObject output = new JsonObject();
+        output.addProperty("semi_finished", key);
+        if (count != 1) {
+            output.addProperty("count", count);
+        }
+        outputs.add(output);
+        return this;
+    }
 
     public ContentRecipe out(String item, int count) {
         JsonObject output = new JsonObject();
@@ -125,6 +153,18 @@ public final class ContentRecipe {
 
     private JsonObject last() {
         return outputs.get(outputs.size() - 1).getAsJsonObject();
+    }
+
+    /** Dosage form of the last output, a flavouring (I48, foods/11 §4). */
+    public ContentRecipe form(String dosage) {
+        last().addProperty("form", dosage);
+        return this;
+    }
+
+    /** The last input takes only flavourings of the dosage form {@code dosage} (I48: the emulsion for spray drying). */
+    public ContentRecipe inputForm(String dosage) {
+        inputs.get(inputs.size() - 1).getAsJsonObject().addProperty("form", dosage);
+        return this;
     }
 
     /** Chance (0–1) of the last output, a byproduct. */
@@ -281,6 +321,63 @@ public final class ContentRecipe {
         return this;
     }
 
+    /**
+     * The ingredient step of a finished product (foods/05 §2): the evaluated quality items, each a bare id
+     * ({@code color}) or {@code id:accepted,accepted} (function classes or materials), and the purity the inputs need.
+     */
+    public ContentRecipe quality(String minGrade, String... items) {
+        JsonObject quality = new JsonObject();
+        JsonArray list = new JsonArray();
+        for (String item : items) {
+            int colon = item.indexOf(':');
+            if (colon < 0) {
+                list.add(item);
+                continue;
+            }
+            JsonObject slot = new JsonObject();
+            slot.addProperty("item", item.substring(0, colon));
+            JsonArray accepts = new JsonArray();
+            for (String accepted : item.substring(colon + 1).split(",")) {
+                accepts.add(accepted);
+            }
+            slot.add("accepts", accepts);
+            list.add(slot);
+        }
+        quality.add("items", list);
+        if (minGrade != null && !minGrade.equals("food")) {
+            quality.addProperty("min_grade", minGrade);
+        }
+        body.add("quality", quality);
+        return this;
+    }
+
+    /** Stirs of a pot or actions of a hand tool (the T0 hand devices); machines keep the recipe's time. */
+    public ContentRecipe manual(int actions) {
+        JsonObject manual = new JsonObject();
+        manual.addProperty("actions", actions);
+        body.add("manual", manual);
+        return this;
+    }
+
+    /** Vanilla blocks that also run it ({@code campfire}, {@code furnace}, {@code smoker}, {@code blast_furnace}; machines/01 §5). */
+    public ContentRecipe vanilla(String... devices) {
+        JsonArray list = new JsonArray();
+        for (String device : devices) {
+            list.add(device);
+        }
+        body.add("vanilla_devices", list);
+        return this;
+    }
+
+    /**
+     * Loads the recipe only while the item tag {@code tag} (this mod's path) has entries (I49: a product whose raw material only
+     * other mods give, such as oats, has no recipes without them).
+     */
+    public ContentRecipe whenTag(String tag) {
+        condition = tag.contains(":") ? tag : NS + ":" + tag;
+        return this;
+    }
+
     public ContentRecipe time(int ticks) {
         body.addProperty("time", ticks);
         return this;
@@ -310,5 +407,8 @@ public final class ContentRecipe {
             json.add("catalyst", catalysts.size() == 1 ? catalysts.get(0) : catalysts);
         }
         out.add(prefix + "/" + name, out.parse(type, json));
+        if (condition != null) {
+            RecipeGen.whenTagNotEmpty(prefix + "/" + name, condition);
+        }
     }
 }

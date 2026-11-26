@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:maltose_syrup_wort",
+  "loader": "forge:fluid_container"
+}

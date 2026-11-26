@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "non_dairy_creamer|powder"
+    },
+    {
+      "ingredient": "#foodindustrial:containers/paper_bag"
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:non_dairy_creamer"
+  }
+}

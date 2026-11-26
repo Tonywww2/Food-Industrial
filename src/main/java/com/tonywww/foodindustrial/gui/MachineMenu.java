@@ -15,7 +15,6 @@ import com.tonywww.foodindustrial.machine.definition.MachineModule;
 import com.tonywww.foodindustrial.machine.definition.Upgrade;
 import com.tonywww.foodindustrial.machine.entity.MachineBlockEntity;
 import com.tonywww.foodindustrial.platform.PlatformFluidContainers;
-import com.tonywww.foodindustrial.platform.PlatformFuel;
 import com.tonywww.foodindustrial.platform.PlatformItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -44,6 +43,8 @@ public class MachineMenu extends FIMenu {
     private final GuiLayout layout;
     private final int machineSlots;
     private boolean upgradesOpen;
+    /** Whether the additives panel is open in the screen (I41): the additive slots are shown only then. */
+    private boolean additivesOpen;
     private boolean structurePage;
 
     /** Server side. */
@@ -104,6 +105,10 @@ public class MachineMenu extends FIMenu {
     }
 
     /** Client: the upgrades panel is open, so its slots take clicks. */
+    public void setAdditivesOpen(boolean open) {
+        additivesOpen = open;
+    }
+
     public void setUpgradesOpen(boolean open) {
         upgradesOpen = open;
     }
@@ -152,12 +157,13 @@ public class MachineMenu extends FIMenu {
             }
             case OUTPUT -> false;
             case CATALYST -> filtered(slot, role, stack);
-            case FUEL -> PlatformFuel.burnTime(player.level(), stack) > 0;
+            case FUEL -> definition.fuelAccepts(player.level(), slot - definition.layout().start(role), stack);
             case UPGRADE -> Upgrade.of(stack.getItem()) != null;
             case MODULE -> {
                 MachineModule module = MachineModule.of(stack.getItem());
                 yield module != null && definition.modules().contains(module);
             }
+            case ADDITIVE -> com.tonywww.foodindustrial.food.quality.QualityRules.material(stack) != null && filtered(slot, role, stack);
         };
     }
 
@@ -175,6 +181,9 @@ public class MachineMenu extends FIMenu {
         }
         if (structurePage) {
             return false;
+        }
+        if (role == SlotRole.ADDITIVE) {
+            return additivesOpen;
         }
         return (role != SlotRole.UPGRADE && role != SlotRole.MODULE) || upgradesOpen;
     }
@@ -254,7 +263,7 @@ public class MachineMenu extends FIMenu {
         for (SlotRole role : order) {
             int start = definition.layout().start(role);
             int count = countOf(role);
-            if (count > 0 && holds(role) && mayPlace(start, role, stack)) {
+            if (count > 0 && holds(role) && anyPlace(start, count, role, stack)) {
                 moved |= moveItemStackTo(stack, start, start + count, false);
                 if (stack.isEmpty()) {
                     return true;
@@ -262,6 +271,16 @@ public class MachineMenu extends FIMenu {
             }
         }
         return moved;
+    }
+
+    /** Whether a slot of the role takes {@code stack} (slots of one role may have filters of their own: M50's ice and salt). */
+    private boolean anyPlace(int start, int count, SlotRole role, ItemStack stack) {
+        for (int i = 0; i < count; i++) {
+            if (mayPlace(start + i, role, stack)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private int countOf(SlotRole role) {
@@ -272,6 +291,7 @@ public class MachineMenu extends FIMenu {
             case FUEL -> definition.layout().fuel();
             case UPGRADE -> definition.layout().upgrades();
             case MODULE -> definition.layout().modules();
+            case ADDITIVE -> definition.layout().additives();
         };
     }
 
@@ -319,7 +339,9 @@ public class MachineMenu extends FIMenu {
         switch (action) {
             case MenuActions.SIDE -> {
                 int mode = b & 15;
-                if (faceOk && mode < SideConfig.Mode.values().length) {
+                boolean additive = mode == SideConfig.Mode.ADDITIVE.ordinal();
+                if (faceOk && mode < SideConfig.Mode.values().length
+                    && (!additive || (b >> 4) == 0 && definition.layout().additives() > 0)) {
                     if ((b >> 4) == 0) {
                         sides.setItems(faces[a], SideConfig.Mode.values()[mode]);
                     } else {
@@ -357,6 +379,7 @@ public class MachineMenu extends FIMenu {
                     machine.setRedstone(RedstoneControl.values()[a]);
                 }
             }
+            case MenuActions.FLAVOR_TARGET -> machine.setFlavorTarget(a);
             case MenuActions.MODE -> {
                 if (a >= 0 && a < definition.modes().size()) {
                     machine.setMode(a);
@@ -390,7 +413,7 @@ public class MachineMenu extends FIMenu {
             }
             case MenuActions.TANK_CLICK -> {
                 if (!definition.isMultiblock()) {
-                    clickTank(sender, machine.tanks(), a);
+                    clickTank(sender, machine.tanks(), a, this, b == 1);
                 }
             }
             case MenuActions.VENT -> {
@@ -419,7 +442,13 @@ public class MachineMenu extends FIMenu {
      * A click with a fluid container on a tank (machines/04 §1): a full container pours into an input
      * tank that takes its fluid; an empty one is filled from any tank.
      */
-    static void clickTank(Player player, TankSet tanks, int tank, FIMenu menu) {
+    /**
+     * A click on a tank with a fluid container on the cursor (2026-11-19, user): a left click pours the container into
+     * an input tank, a right click fills the container from any tank. As much moves as both sides allow (a bucket all or
+     * nothing, a tank item part of it), only the same fluid, and a locked tank only its fluid; one container of a stack
+     * at a time, the changed one going to the inventory.
+     */
+    static void clickTank(Player player, TankSet tanks, int tank, FIMenu menu, boolean take) {
         if (tank < 0 || tank >= tanks.size()) {
             return;
         }
@@ -427,28 +456,37 @@ public class MachineMenu extends FIMenu {
         if (carried.isEmpty()) {
             return;
         }
-        FluidAmount held = PlatformFluidContainers.contained(carried);
-        if (!held.isEmpty()) {
-            if (tanks.role(tank) == SlotRole.INPUT && tanks.allows(tank, held) && tanks.space(tank, held) >= held.amount()) {
-                ItemStack emptied = PlatformFluidContainers.drained(carried);
-                if (!emptied.isEmpty() || carried.getCount() == 1) {
-                    tanks.set(tank, tanks.joined(tank, held, held.amount()));
-                    menu.replaceOneCarried(player, emptied);
-                }
+        // the tank blocks' items keep their fluid themselves; buckets, bottles and cylinders through the loaders
+        boolean tankItem = carried.getItem() instanceof com.tonywww.foodindustrial.logistics.TankBlockItem;
+        net.minecraft.core.HolderLookup.Provider registries = player.level().registryAccess();
+        FluidAmount held = tankItem ? com.tonywww.foodindustrial.logistics.TankBlockItem.fluid(carried) : PlatformFluidContainers.contained(carried);
+        if (!take) {
+            if (held.isEmpty() || tanks.role(tank) != SlotRole.INPUT || !tanks.allows(tank, held)) {
+                return;
             }
+            int room = Math.min(tanks.space(tank, held), held.amount());
+            PlatformFluidContainers.Transfer poured = tankItem
+                ? com.tonywww.foodindustrial.logistics.TankBlockItem.drain(carried, room, registries)
+                : PlatformFluidContainers.drain(carried, room);
+            FluidAmount moved = poured.moved();
+            if (!poured.done() || !tanks.allows(tank, moved) || tanks.space(tank, moved) < moved.amount()) {
+                return;
+            }
+            tanks.set(tank, tanks.joined(tank, moved, moved.amount()));
+            menu.replaceOneCarried(player, poured.container());
             return;
         }
         FluidAmount current = tanks.get(tank);
-        if (current.amount() >= 1000) {
-            ItemStack filled = PlatformFluidContainers.filled(carried, current.withAmount(1000));
-            if (!filled.isEmpty()) {
-                tanks.drain(tank, 1000);
-                menu.replaceOneCarried(player, filled);
-            }
+        if (current.isEmpty() || !held.isEmpty() && !held.joins(current)) {
+            return;
         }
-    }
-
-    private void clickTank(ServerPlayer sender, TankSet tanks, int tank) {
-        clickTank(sender, tanks, tank, this);
+        PlatformFluidContainers.Transfer filled = tankItem
+            ? com.tonywww.foodindustrial.logistics.TankBlockItem.fill(carried, current, registries)
+            : PlatformFluidContainers.fill(carried, current);
+        if (!filled.done() || filled.moved().amount() > current.amount()) {
+            return;
+        }
+        tanks.drain(tank, filled.moved().amount());
+        menu.replaceOneCarried(player, filled.container());
     }
 }

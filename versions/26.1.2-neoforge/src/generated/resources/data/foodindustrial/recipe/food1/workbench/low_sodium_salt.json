@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 6,
+      "ingredient": "#foodindustrial:salt_position"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/potassium_chloride"
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      "state"
+    ]
+  },
+  "result": {
+    "count": 8,
+    "item": "foodindustrial:low_sodium_salt"
+  }
+}

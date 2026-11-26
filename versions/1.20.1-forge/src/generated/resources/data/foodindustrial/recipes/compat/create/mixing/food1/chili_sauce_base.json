@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:chili_sauce_base"
+    }
+  ]
+}

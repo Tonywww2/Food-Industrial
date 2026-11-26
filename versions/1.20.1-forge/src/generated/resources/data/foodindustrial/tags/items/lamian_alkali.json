@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:chemicals/wood_ash",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:chemicals/potassium_carbonate",
+      "required": false
+    }
+  ]
+}

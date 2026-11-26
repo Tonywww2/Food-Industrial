@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:chili_sauce_base",
+    "foodindustrial:flowing_chili_sauce_base",
+    {
+      "id": "#forge:chili_sauce_base",
+      "required": false
+    },
+    {
+      "id": "#c:chili_sauce_base",
+      "required": false
+    }
+  ]
+}

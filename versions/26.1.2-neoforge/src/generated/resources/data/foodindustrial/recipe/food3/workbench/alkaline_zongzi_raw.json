@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "semi_finished": "alkaline_zongzi|lye_rice"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/zongzi_leaf"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "alkaline_zongzi|raw_zongzi"
+  },
+  "tools": [
+    "#foodindustrial:molds/filling_mold"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:cutting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:knives"
+    }
+  },
+  "inputs": [
+    {
+      "semi_finished": "liangpi|dough_sheet"
+    }
+  ],
+  "mode": "slicing",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:liangpi"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -1,0 +1,73 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "parts": "foodindustrial:block/fermentation_vat_parts"
+  },
+  "elements": [
+    {
+      "name": "vat",
+      "from": [0, 0, 0],
+      "to": [16, 15, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 1, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 1, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 1, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 1, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#top"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "lid",
+      "from": [2, 15, 2],
+      "to": [14, 16, 14],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 6, 0.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [0, 0, 6, 0.5],
+          "texture": "#parts"
+        },
+        "south": {
+          "uv": [0, 0, 6, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [0, 0, 6, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [2, 2, 14, 14],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    }
+  ]
+}

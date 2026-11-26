@@ -1,0 +1,26 @@
+{
+  "type": "nuclearcraft:rock_crusher",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft"
+    }
+  ],
+  "input": [
+    {
+      "tag": "foodindustrial:materials/glutinous_rice"
+    }
+  ],
+  "output": [
+    {
+      "item": "foodindustrial:glutinous_rice_flour"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

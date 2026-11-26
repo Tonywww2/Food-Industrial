@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:chili_sauce_base"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:chili_sauce"
+    }
+  ]
+}

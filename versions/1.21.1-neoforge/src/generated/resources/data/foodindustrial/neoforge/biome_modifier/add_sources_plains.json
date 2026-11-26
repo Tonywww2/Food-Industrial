@@ -1,0 +1,22 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:meadow"
+  ],
+  "features": [
+    "foodindustrial:dog_rose_bush",
+    "foodindustrial:wild_coreopsis",
+    "foodindustrial:wild_orris",
+    "foodindustrial:wild_horehound",
+    "foodindustrial:wild_german_chamomile",
+    "foodindustrial:wild_red_clover",
+    "foodindustrial:wild_canadian_fleabane",
+    "foodindustrial:wild_wormwood",
+    "foodindustrial:wild_evening_primrose",
+    "foodindustrial:wild_mung_bean",
+    "foodindustrial:wild_adzuki_bean"
+  ],
+  "step": "vegetal_decoration"
+}

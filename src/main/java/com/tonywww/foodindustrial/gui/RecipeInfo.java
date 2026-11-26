@@ -45,6 +45,13 @@ public final class RecipeInfo {
         add(ModWorldBlocks.CHROMITE_ORE.id(), "生成在山地与风袭丘陵 0–64 层", "Found in mountains and windswept hills at Y 0–64");
         add(ModWorldBlocks.APATITE_ORE.id(), "未装热力时生成在主世界 0–64 层", "Found at Y 0–64 when Thermal is not installed");
         add(ModWorldBlocks.SULFUR_ORE.id(), "未装热力时生成在主世界 0–32 层，挖掘掉落硫", "Found at Y 0–32 when Thermal is not installed; drops sulfur");
+        // I44 (08 §C 矿类)
+        add(ModWorldBlocks.ILMENITE.id(), "生成在主世界 0–48 层", "Found all over the Overworld at Y 0–48");
+        add(ModWorldBlocks.PYROLUSITE.id(), "生成在主世界 0–64 层", "Found all over the Overworld at Y 0–64");
+        add("attapulgite", "挖掘沙漠与恶地 40–80 层的凹凸棒石黏土矿层得到", "Dug from attapulgite deposits under deserts and badlands at Y 40–80");
+        add("bentonite_ore", "挖掘沙漠与恶地 32–80 层的膨润土矿层得到", "Dug from bentonite deposits under deserts and badlands at Y 32–80");
+        add("perlite_ore", "挖掘山地 32–160 层的珍珠岩矿层得到", "Mined from perlite deposits in mountains at Y 32–160");
+        add("talc_ore", "挖掘山地 0–96 层的滑石矿层得到", "Mined from talc deposits in mountains at Y 0–96");
         add(ModWorldBlocks.TRONA_ORE.id(), "生成在沙漠地表的沙层里", "Found in the sand of desert surfaces");
         add(ModWorldBlocks.NITRATINE.id(), "生成在沙漠地表的沙层里", "Found in the sand of desert surfaces");
         add(ModWorldBlocks.NITRE_SOIL.id(), "不露天的泥土在牲畜附近或随时间变成硝土", "Sheltered dirt turns into it near livestock or over time");
@@ -54,15 +61,20 @@ public final class RecipeInfo {
         crop(ModWorldBlocks.CHILI, "野生于平原与热带草原，种下可栽培", "Grows wild in plains and savannas; can be planted");
         crop(ModWorldBlocks.ROSEMARY, "野生于草甸与风袭丘陵，种下可栽培", "Grows wild in meadows and windswept hills; can be planted");
         crop(ModWorldBlocks.INDIGO_PLANT, "野生于河流与沼泽，种下可栽培", "Grows wild by rivers and in swamps; can be planted");
-        crop(ModWorldBlocks.PADDY, "野生于沼泽与河流，种下可栽培；碾米得大米与米糠", "Grows wild in swamps and by rivers; can be planted; milled into rice and rice bran");
+        crop(ModWorldBlocks.PADDY, "野生于沼泽与河流，种下可栽培；收获时另得稻草，碾米得大米与米糠",
+            "Grows wild in swamps and by rivers; can be planted; the harvest gives straw too; milled into rice and rice bran");
         produce(ModWorldBlocks.GARDENIA_BUSH, "丛林中的栀子丛结果，右键采摘", "Gardenia bushes in jungles bear fruit; right-click to pick");
         produce(ModWorldBlocks.VANILLA, "长在丛林树干上，成熟后采摘", "Grows on jungle tree trunks; pick when ripe");
         block(ModWorldBlocks.GELIDIUM, "生成在暖水与温水海洋的海底", "Grows on the floor of warm and lukewarm oceans");
         block(ModWorldBlocks.EUCHEUMA, "生成在暖水海洋的海底", "Grows on the floor of warm oceans");
+        block(ModWorldBlocks.LAVER, "生成在冷水与温水海洋的海底", "Grows on the floor of cold and lukewarm oceans");
+        block(ModWorldBlocks.OYSTER_REEF, "生成在暖水与温水海洋的海底；破坏得蚝，精准采集或剪刀取下整块", "On the floor of warm and lukewarm oceans; "
+            + "break it for oysters, Silk Touch or shears keep it");
+        page("oyster", "破坏暖水与温水海洋海底的蚝礁得到；钓鱼时偶尔钓到", "From oyster reefs on warm and lukewarm ocean floors; now and then fished up");
         block(ModWorldBlocks.RUBBER_LOG, "丛林中的橡胶树；用刀割取可得乳胶", "Rubber trees grow in jungles; cut with a knife for latex");
         block(ModWorldBlocks.RUBBER_SAPLING, "丛林中的橡胶树树叶掉落", "Dropped by rubber tree leaves in jungles");
         add("potassium_bitartrate", "木桶罐装葡萄酒放在寒冷处或冰旁，罐壁结出酒石，用刀刮下", "Wine in a wooden tank kept cold or by ice deposits it; scrape it off with a knife");
-        add("seawater_bucket", "在海洋或沙滩群系用水桶装水得到海水", "A water bucket filled in an ocean or beach biome holds seawater");
+        add("seawater_bucket", "在海洋或沙滩群系的水边用海水泵抽取", "Pumped by a seawater pump beside water in an ocean or beach biome");
         // I31: materials that are also GB 2760 flavorings (18 ST26, 一物一号): the flavoring code is only an alias
         for (com.google.gson.JsonElement element : com.tonywww.foodindustrial.content.flavors.FlavorRecipes.read().getAsJsonArray("aliases")) {
             com.google.gson.JsonObject alias = element.getAsJsonObject();
@@ -75,6 +87,14 @@ public final class RecipeInfo {
 
     private static void crop(ModWorldBlocks.Crop crop, String zh, String en) {
         add(crop.id(), crop.produce(), zh, en);
+    }
+
+    /**
+     * Adds an information page for the item {@code foodindustrial:<item>} with the text keyed {@code jei.foodindustrial.info.<item>}
+     * (I44: where the plants' parts come from). Call during mod construction.
+     */
+    public static void page(String item, String zh, String en) {
+        add(item, zh, en);
     }
 
     private static void produce(ModWorldBlocks.Entry entry, String zh, String en) {

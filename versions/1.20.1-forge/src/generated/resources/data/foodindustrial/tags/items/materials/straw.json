@@ -4,6 +4,7 @@
     {
       "id": "farmersdelight:straw",
       "required": false
-    }
+    },
+    "foodindustrial:straw"
   ]
 }

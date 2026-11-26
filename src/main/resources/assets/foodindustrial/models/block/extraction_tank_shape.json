@@ -1,0 +1,538 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "parts": "foodindustrial:block/extraction_tank_parts"
+  },
+  "elements": [
+    {
+      "name": "tank",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "gauge_a_a",
+      "from": [9, 10, -1],
+      "to": [14, 13, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 0.5, 2.5, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_a_b",
+      "from": [10, 9, -1],
+      "to": [13, 14, 0],
+      "faces": {
+        "north": {
+          "uv": [0.5, 0, 2, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_a_needle",
+      "from": [11, 11, -2],
+      "to": [12, 13, -1],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [11.5, 11.5, -1.5]
+      },
+      "faces": {
+        "north": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b_a",
+      "from": [2, 10, -1],
+      "to": [7, 13, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 0.5, 2.5, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b_b",
+      "from": [3, 9, -1],
+      "to": [6, 14, 0],
+      "faces": {
+        "north": {
+          "uv": [0.5, 0, 2, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b_needle",
+      "from": [4, 11, -2],
+      "to": [5, 13, -1],
+      "rotation": {
+        "angle": -45,
+        "axis": "z",
+        "origin": [4.5, 11.5, -1.5]
+      },
+      "faces": {
+        "north": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim0",
+      "from": [9, 1, -2],
+      "to": [12, 2, -1],
+      "faces": {
+        "north": {
+          "uv": [8.5, 0, 10, 0.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [8.5, 0, 10, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [8.5, 0, 10, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim1",
+      "from": [9, 7, -2],
+      "to": [12, 8, -1],
+      "faces": {
+        "north": {
+          "uv": [10.5, 0, 12, 0.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [10.5, 0, 12, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [10.5, 0, 12, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim2",
+      "from": [7, 3, -2],
+      "to": [8, 6, -1],
+      "faces": {
+        "north": {
+          "uv": [12.5, 0, 13, 1.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [12.5, 0, 13, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [12.5, 0, 13, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim3",
+      "from": [13, 3, -2],
+      "to": [14, 6, -1],
+      "faces": {
+        "north": {
+          "uv": [13, 0, 13.5, 1.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [13, 0, 13.5, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [13, 0, 13.5, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim4",
+      "from": [8, 2, -2],
+      "to": [9, 3, -1],
+      "faces": {
+        "north": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [10, 0, 10.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim5",
+      "from": [12, 2, -2],
+      "to": [13, 3, -1],
+      "faces": {
+        "north": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim6",
+      "from": [8, 6, -2],
+      "to": [9, 7, -1],
+      "faces": {
+        "north": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_rim7",
+      "from": [12, 6, -2],
+      "to": [13, 7, -1],
+      "faces": {
+        "north": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [12, 0, 12.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_spoke_h",
+      "from": [8, 4, -2],
+      "to": [13, 5, -1],
+      "faces": {
+        "north": {
+          "uv": [0, 2.5, 2.5, 3],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0, 2.5, 2.5, 3],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0, 2.5, 2.5, 3],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_spoke_v",
+      "from": [10, 2, -2],
+      "to": [11, 7, -1],
+      "faces": {
+        "north": {
+          "uv": [2.5, 2.5, 3, 5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [2.5, 2.5, 3, 5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [2.5, 2.5, 3, 5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_hub",
+      "from": [10, 4, -3],
+      "to": [11, 5, -2],
+      "faces": {
+        "north": {
+          "uv": [3, 2.5, 3.5, 3],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [3, 2.5, 3.5, 3],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [3, 2.5, 3.5, 3],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [3, 2.5, 3.5, 3],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [3, 2.5, 3.5, 3],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "wheel_stem",
+      "from": [10, 4, -1],
+      "to": [11, 5, 0],
+      "faces": {
+        "east": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [13.5, 0, 14, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

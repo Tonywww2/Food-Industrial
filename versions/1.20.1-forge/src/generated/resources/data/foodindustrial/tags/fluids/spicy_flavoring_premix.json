@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:spicy_flavoring_premix",
+    "foodindustrial:flowing_spicy_flavoring_premix",
+    {
+      "id": "#forge:spicy_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:spicy_flavoring_premix",
+      "required": false
+    }
+  ]
+}

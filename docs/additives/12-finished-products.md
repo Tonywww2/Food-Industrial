@@ -6,8 +6,9 @@
 - 原料按 08 的标签约定引用，他模组作物（潘马斯等）只走标签。
 - 建议 ID 统一 `foodindustrial:<id>`，小写下划线；每种成品同时加入标签 `foodindustrial:foods/<id>`，被其他成品或农夫乐事配方引用时一律用标签。
 - 实现（I21，2026-11-11，待审）：本表是成品主表，`tools/foods/export_foods.py` 导出为 `src/main/resources/foodindustrial/foods.json`，注册时读取；新增成品只改表。除标签 `foods/<id>` 外，每种成品还进所属大类的标签 `foodindustrial:food_categories/<大类>`（`dairy`、`fats_oils`、`frozen_desserts`、`fruits_vegetables`、`cocoa_confectionery`、`cereals`、`bakery`、`meat`、`aquatic`、`eggs`、`sweeteners`、`condiments`、`special_dietary`、`beverages`、`alcoholic`、`other`，依次对应 01–16）。成品暂不能食用（不设饱食度），食物属性随成品效果一起设计；I12 已有的苹果干、浆果干保留原值。“英文名”由实现方拟定，待审。
+- 食物属性（2026-11-19 起，I45）：占位值已由每份营养算出的饱食度与饱和度取代，能否食用以 foods/13–22 卡片的“食用”一栏为准（婴儿米粉、蛋白粉、代餐粉能吃，调味茶包不直接食用）；下面的占位规定只作历史记录。
 - 占位食物属性（2026-11-12 定，11 问题 43、44）：成品效果设计之前先给占位值，便于试玩，效果设计时整批替换。
-  - **不能食用**：第 02（脂肪、油和乳化脂肪制品）、11（甜味料）、12（调味品）三个大类；配料类成品自发粉、蛋清粉、鱼露、虾酱、肠衣、干酵母；要烧过才能吃的生面与生坯挂面、米粉、河粉、粉丝、粉条、珍珠粉圆、速冻饺子、速冻汤圆；要冲调的婴儿米粉、蛋白粉、代餐粉。
+  - **不能食用**：第 02（脂肪、油和乳化脂肪制品）、11（甜味料）、12（调味品）三个大类；配料类成品自发粉、蛋清粉、鱼露、虾酱、肠衣、干酵母；要烧过才能吃的生面与生坯挂面、米粉、河粉、粉丝、粉条、珍珠粉圆、速冻饺子、速冻汤圆，以及碱水面、鸡蛋面（2026-11-17 补，11 问题 63，见 foods/13）；要冲调的婴儿米粉、蛋白粉、代餐粉。
   - **2 点饱食度、0.1 饱和度**：第 14（饮料类）、15（酒类）两个大类与调味茶包。
   - **4 点饱食度、0.3 饱和度**：其余成品。
 - 新增（2026-11-12，11 问题 43）：葡萄汁、柑橘汁（第 14 节），作为 15 第 226 号葡萄皮渣、第 231 号柑橘皮的主产物，压榨配方一条出主副产物。
@@ -242,29 +243,29 @@
 
 | 成品 | 建议 ID | 英文名（待审） | 主要原料 | 添加剂 |
 | --- | --- | --- | --- | --- |
-| 腊肉 | larou | Cured Pork Belly | 猪肉、盐 | 24 |
+| 腊肉 | la_rou | Cured Pork Belly | 猪肉、盐 | 24 |
 | 腊肠 | lap_cheong | Lap Cheong | 猪肉、糖、酒 | 21, 24 |
 | 咸肉 | salted_pork | Salted Pork | 猪肉、盐 | 24 |
-| 板鸭 | pressed_salted_duck | Pressed Salted Duck | 鸭（标签）、盐 | 24 |
-| 中式火腿 | chinese_ham | Chinese Ham | 猪腿 | 24 |
+| 板鸭 | salted_duck | Pressed Salted Duck | 鸭（标签）、盐 | 24 |
+| 金华火腿 | jinhua_ham | Jinhua Ham | 猪腿 | 24 |
 | 西式火腿 | western_ham | Western Ham | 猪肉 | 10, 24 |
 | 培根 | bacon | Bacon | 猪肉 | 10, 24 |
-| 热狗肠 | hot_dog | Hot Dog Sausage | 猪肉、牛肉 | 10, 24 |
+| 热狗肠 | frankfurter | Hot Dog Sausage | 猪肉、牛肉 | 10, 24 |
 | 午餐肉罐头 | luncheon_meat | Canned Luncheon Meat | 猪肉、淀粉 | 10, 24 |
 | 火腿肠 | ham_sausage | Ham Sausage | 猪肉、淀粉 | 10, 21, 24 |
 | 叉烧 | char_siu | Char Siu | 猪肉、糖 | 18, 21 |
 | 烤鸭 | roast_duck | Roast Duck | 鸭、麦芽糖浆 | 18 |
-| 卤牛肉 | braised_beef | Braised Beef | 牛肉、卤汁 | 18 |
+| 卤牛肉 | braised_beef_shank | Braised Beef | 牛肉、卤汁 | 18 |
 | 酱鸭 | soy_braised_duck | Soy-Braised Duck | 鸭、酱油 | 18 |
 | 白切鸡 | white_cut_chicken | White-Cut Chicken | 鸡肉 | — |
-| 红烧肉 | braised_pork_belly | Braised Pork Belly | 猪肉、糖、酱油 | 18 |
+| 红烧肉 | red_braised_pork | Braised Pork Belly | 猪肉、糖、酱油 | 18 |
 | 东坡肉 | dongpo_pork | Dongpo Pork | 猪肉、黄酒 | 18 |
 | 肉松 | pork_floss | Pork Floss | 猪肉 | 18 |
 | 牛肉干 | beef_jerky | Beef Jerky | 牛肉 | 23, 24 |
-| 猪肉脯 | pork_jerky_sheet | Pork Jerky Sheet | 猪肉、糖 | 21 |
-| 肉丸 | meatballs | Meatballs | 肉、淀粉 | 10 |
-| 狮子头 | lions_head_meatball | Lion's Head Meatball | 猪肉 | — |
-| 肉冻 | meat_aspic | Meat Aspic | 猪皮、肉汤 | 17 |
+| 猪肉脯 | pork_jerky | Pork Jerky Sheet | 猪肉、糖 | 21 |
+| 肉丸 | pork_balls | Meatballs | 肉、淀粉 | 10 |
+| 狮子头 | lions_head | Lion's Head Meatball | 猪肉 | — |
+| 肉冻 | pork_skin_jelly | Meat Aspic | 猪皮、肉汤 | 17 |
 | 卤鸡爪 | braised_chicken_feet | Braised Chicken Feet | 鸡（标签） | 18 |
 
 ## 09 水产及其制品
@@ -272,13 +273,13 @@
 | 成品 | 建议 ID | 英文名（待审） | 主要原料 | 添加剂 |
 | --- | --- | --- | --- | --- |
 | 鱼丸 | fish_balls | Fish Balls | 鳕鱼 | 10 |
-| 蟹肉棒 | crab_stick | Crab Stick | 鱼糜 | 10, 21 |
+| 蟹肉棒 | crab_sticks | Crab Stick | 鱼糜 | 10, 21 |
 | 鱼豆腐 | fish_tofu | Fish Tofu | 鱼糜、淀粉 | 10 |
 | 咸鱼 | salted_fish | Salted Fish | 鳕鱼、盐 | — |
-| 鱼干 | dried_fish | Dried Fish | 鳕鱼 / 鲑鱼 | — |
-| 熏鱼 | smoked_fish | Smoked Fish | 鲑鱼、糖 | 18 |
+| 鱼干 | stockfish | Dried Fish | 鳕鱼 / 鲑鱼 | — |
+| 熏鱼 | smoked_salmon | Smoked Fish | 鲑鱼、糖 | 18 |
 | 鱼罐头 | canned_fish | Canned Fish | 鲑鱼 | 3 |
-| 豆豉鲮鱼罐头 | fried_dace_with_black_beans | Canned Dace with Black Beans | 鱼、豆豉 | — |
+| 豆豉鲮鱼罐头 | fried_dace_black_bean | Canned Dace with Black Beans | 鱼、豆豉 | — |
 | 糖醋鱼 | sweet_sour_fish | Sweet and Sour Fish | 鳕鱼、醋、糖 | 1, 18 |
 | 腌三文鱼 | gravlax | Gravlax | 鲑鱼、盐、糖 | — |
 | 鱼皮冻 | fish_skin_jelly | Fish Skin Jelly | 鱼皮 | 17 |
@@ -404,23 +405,23 @@
 
 | 成品 | 建议 ID | 英文名（待审） | 主要原料 | 添加剂 |
 | --- | --- | --- | --- | --- |
-| 甜米酒 | jiuniang | Sweet Rice Wine | 糯米、酒曲 | — |
+| 甜米酒 | sweet_rice_wine | Sweet Rice Wine | 糯米、酒曲 | — |
 | 黄酒 | huangjiu | Huangjiu | 大米、麦曲 | 18 |
 | 白酒 | baijiu | Baijiu | 高粱、大曲 | — |
 | 啤酒 | beer | Beer | 大麦（标签）/ 小麦、啤酒花（标签） | — |
-| 苹果酒 | cider | Cider | 苹果 | 25 |
+| 苹果酒 | apple_wine | Cider | 苹果 | 25 |
 | 浆果酒 | berry_wine | Berry Wine | 甜浆果 | 25 |
-| 葡萄酒 | grape_wine | Grape Wine | 葡萄（标签） | 25 |
+| 葡萄酒 | wine | Grape Wine | 葡萄（标签） | 25 |
 | 起泡酒 | sparkling_wine | Sparkling Wine | 葡萄酒、CO2 | 25 |
 | 蜂蜜酒 | mead | Mead | 蜂蜜 | — |
 | 白兰地 | brandy | Brandy | 果酒 | 18 |
 | 威士忌 | whisky | Whisky | 大麦 / 小麦 | 18 |
 | 朗姆酒 | rum | Rum | 甘蔗 | 18 |
 | 伏特加 | vodka | Vodka | 马铃薯 | — |
-| 青梅酒 | plum_liqueur | Plum Liqueur | 梅子、白酒 | — |
+| 青梅酒 | plum_wine | Plum Liqueur | 梅子、白酒 | — |
 | 薄荷利口酒 | mint_liqueur | Mint Liqueur | 薄荷、乙醇 | 22, 29 |
-| 香草利口酒 | vanilla_liqueur | Vanilla Liqueur | 香荚兰、乙醇 | 30 |
-| 红曲酒 | red_yeast_rice_wine | Red Yeast Rice Wine | 大米、红曲 | 21 |
+| 草本药酒 | herbal_liqueur | Herbal Liqueur | 草本（标签）、乙醇 | 30 |
+| 红曲酒 | red_yeast_wine | Red Yeast Rice Wine | 大米、红曲 | 21 |
 
 ## 16 其他类
 
@@ -431,16 +432,16 @@
 | 明胶果冻 | gelatin_jelly | Gelatin Jelly | 明胶、果汁 | 17 |
 | 杏仁豆腐 | almond_tofu | Almond Tofu | 杏仁（标签）、牛奶 | 14 |
 | 焦糖布丁 | caramel_custard | Caramel Custard | 鸡蛋、牛奶 | 17, 18 |
-| 龟苓膏 | guilinggao | Guilinggao | 草本（标签）、淀粉 | — |
+| 龟苓膏 | herbal_jelly | Guilinggao | 草本（标签）、淀粉 | — |
 | 爆爆珠 | popping_boba | Popping Boba | 果汁、氯化钙 | 3, 15 |
 | 椰果 | nata_de_coco | Coconut Gel | 椰汁（标签）、醋酸菌 | 1 |
 | 马铃薯片 | potato_chips | Potato Chips | 马铃薯、油 | 25, 27 |
-| 虾片 | prawn_crackers | Prawn Crackers | 淀粉、虾 | 9 |
-| 玉米片 | corn_chips | Corn Chips | 玉米 | 7 |
+| 虾片 | shrimp_chips | Prawn Crackers | 淀粉、虾 | 9 |
+| 玉米片 | corn_flakes | Corn Flakes | 玉米 | 7 |
 | 爆米花 | popcorn | Popcorn | 玉米、糖 | 18 |
-| 锅巴 | guoba | Guoba | 大米 | — |
-| 膨化米饼 | puffed_rice_cracker | Puffed Rice Cracker | 大米 | 6 |
-| 调味茶包 | flavored_tea | Flavored Tea Bag | 茶叶 | 29, 30 |
+| 锅巴 | rice_crust | Guoba | 大米 | — |
+| 膨化米饼 | rice_cracker | Puffed Rice Cracker | 大米 | 6 |
+| 调味茶包 | flavoured_tea_bag | Flavored Tea Bag | 茶叶 | 29, 30 |
 | 胶原蛋白肠衣 | collagen_casing | Collagen Casing | 皮革 | 17 |
 | 干酵母 | dry_yeast | Dry Yeast | 酵母 | — |
 | 复配膨松剂（泡打粉） | 即化学品 `baking_powder`（K12 复配产品，带纯度），不另设成品物品（2026-11-11） | — | 碳酸氢钠、淀粉 | 6, 10 |

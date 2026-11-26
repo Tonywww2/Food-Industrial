@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_dough"
+      }
+    }
+  ],
+  "mode": "proofing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "sanzi|dough_strands"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

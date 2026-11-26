@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/wild_immortelle_stage0"
+  },
+  "render_type": "minecraft:cutout"
+}

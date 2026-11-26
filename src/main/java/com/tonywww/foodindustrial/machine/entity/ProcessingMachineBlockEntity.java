@@ -51,7 +51,7 @@ public class ProcessingMachineBlockEntity extends MachineBlockEntity {
         DeviceProfile profile = definition.profile();
         long energy = profile.energyPerTick(recipe) * upgrades().energyPermille() / 1000L * Math.max(1, processor.runs());
         return new Job(processor.progressTicks(), processor.totalTicks(), energy, processor.plannedItem(), processor.plannedFluid(),
-            recipe.type().yieldScalable() ? profile.yieldPermille() : 1000);
+            recipe.scalesYield() ? profile.yieldPermille() : 1000);
     }
 
     @Override

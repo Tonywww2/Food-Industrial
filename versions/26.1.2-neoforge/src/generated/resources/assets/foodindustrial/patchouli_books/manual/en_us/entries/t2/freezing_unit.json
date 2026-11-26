@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:freezing_unit",
+  "name": "book.foodindustrial.manual.entry.freezing_unit",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:freezing_unit",
+      "text": "book.foodindustrial.manual.entry.freezing_unit.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:freezing_unit[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.freezing_unit"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.freezing_unit.structure"
+    }
+  ],
+  "sortnum": 16
+}

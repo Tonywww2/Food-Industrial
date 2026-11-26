@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:coconut",
+    {
+      "id": "#c:crops/coconut",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/coconut",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "pretzel|blank"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:soda_lye"
+      }
+    }
+  ],
+  "mode": "marinating",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "pretzel|lye_dipped"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "semi_finished": "fagao|risen_batter"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "steaming",
+  "outputs": [
+    {
+      "count": 6,
+      "item": "foodindustrial:fagao"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

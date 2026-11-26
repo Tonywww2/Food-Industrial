@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/wild_spanish_sage_stage3"
+  },
+  "render_type": "minecraft:cutout"
+}

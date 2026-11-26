@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pet",
+    {
+      "id": "#forge:dusts/pet",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pet",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pet",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pet",
+      "required": false
+    }
+  ]
+}

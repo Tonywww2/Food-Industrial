@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/leavened_dough"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/meat_filling"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 2,
+    "semi_finished": "baozi|blank"
+  },
+  "tools": [
+    "#foodindustrial:molds/filling_mold"
+  ]
+}

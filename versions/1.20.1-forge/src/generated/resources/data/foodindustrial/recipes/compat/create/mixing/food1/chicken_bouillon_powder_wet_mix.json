@@ -1,0 +1,46 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:chemicals/starch"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:meat_stock"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:semi_finished"
+    }
+  ]
+}

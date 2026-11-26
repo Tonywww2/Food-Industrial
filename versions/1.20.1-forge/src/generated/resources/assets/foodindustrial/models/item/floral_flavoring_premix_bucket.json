@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:floral_flavoring_premix",
+  "loader": "forge:fluid_container"
+}

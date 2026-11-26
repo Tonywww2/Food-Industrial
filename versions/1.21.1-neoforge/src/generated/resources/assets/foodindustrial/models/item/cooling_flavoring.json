@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "foodindustrial:item/cooling_flavoring_paste",
+      "predicate": {
+        "custom_model_data": 1
+      }
+    },
+    {
+      "model": "foodindustrial:item/cooling_flavoring_powder",
+      "predicate": {
+        "custom_model_data": 2
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "foodindustrial:item/cooling_flavoring"
+  }
+}

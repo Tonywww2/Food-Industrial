@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "dried_noodles|wet_noodles"
+    }
+  ],
+  "outputs": [
+    {
+      "semi_finished": "dried_noodles|dry_noodles"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

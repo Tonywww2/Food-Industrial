@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "aged_vinegar|vinegar_grains"
+    },
+    {
+      "count": 2,
+      "semi_finished": "aged_vinegar|smoked_grains"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:aged_vinegar"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

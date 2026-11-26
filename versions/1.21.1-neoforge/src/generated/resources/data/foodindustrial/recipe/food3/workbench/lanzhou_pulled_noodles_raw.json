@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "lanzhou_pulled_noodles|dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "lanzhou_pulled_noodles|raw_noodles"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/stretching_mold"
+    }
+  ]
+}

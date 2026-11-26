@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "semi_finished": "dorayaki|pancake"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/red_bean_paste"
+      }
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "item": "foodindustrial:dorayaki"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/filling_mold"
+    }
+  ]
+}

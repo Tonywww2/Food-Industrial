@@ -1,0 +1,231 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "inner": "foodindustrial:block/meat_grinder_inner",
+    "parts": "foodindustrial:block/meat_grinder_parts"
+  },
+  "elements": [
+    {
+      "name": "body0",
+      "from": [0, 0, 0],
+      "to": [16, 16, 3],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [13, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#inner"
+        },
+        "west": {
+          "uv": [0, 0, 3, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 3],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [0, 13, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "body1",
+      "from": [0, 0, 3],
+      "to": [16, 10, 16],
+      "faces": {
+        "east": {
+          "uv": [0, 6, 13, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 6, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [3, 6, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 3, 16, 16],
+          "texture": "#top"
+        },
+        "down": {
+          "uv": [0, 0, 16, 13],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "body2",
+      "from": [0, 10, 3],
+      "to": [3, 16, 16],
+      "faces": {
+        "east": {
+          "uv": [0, 0, 13, 6],
+          "texture": "#inner"
+        },
+        "south": {
+          "uv": [0, 0, 3, 6],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [3, 0, 16, 6],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 3, 3, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body3",
+      "from": [13, 10, 3],
+      "to": [16, 16, 16],
+      "faces": {
+        "east": {
+          "uv": [0, 0, 13, 6],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [13, 0, 16, 6],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [3, 0, 16, 6],
+          "texture": "#inner"
+        },
+        "up": {
+          "uv": [13, 3, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body4",
+      "from": [3, 10, 13],
+      "to": [13, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 0, 13, 6],
+          "texture": "#inner"
+        },
+        "south": {
+          "uv": [3, 0, 13, 6],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "up": {
+          "uv": [3, 13, 13, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "plate_a",
+      "from": [6, 7, -1],
+      "to": [13, 10, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 1, 3.5, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [3.5, 0, 4, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [3.5, 0, 4, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [4, 0, 7.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [4, 0, 7.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "plate_b",
+      "from": [7, 6, -1],
+      "to": [12, 11, 0],
+      "faces": {
+        "north": {
+          "uv": [0.5, 0.5, 3, 3],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [7.5, 0, 8, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [7.5, 0, 8, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [8, 0, 10.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [8, 0, 10.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "plate_c",
+      "from": [8, 5, -1],
+      "to": [11, 12, 0],
+      "faces": {
+        "north": {
+          "uv": [1, 0, 2.5, 3.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [10.5, 0, 11, 3.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [10.5, 0, 11, 3.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [11, 0, 12.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [11, 0, 12.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

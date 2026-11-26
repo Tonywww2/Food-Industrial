@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:noodle_press",
+  "name": "book.foodindustrial.manual.entry.noodle_press",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:noodle_press",
+      "text": "book.foodindustrial.manual.entry.noodle_press.text"
+    }
+  ],
+  "sortnum": 11
+}

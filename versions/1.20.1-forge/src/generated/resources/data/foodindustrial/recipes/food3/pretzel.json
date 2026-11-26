@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:baking",
+  "inputs": [
+    {
+      "semi_finished": "pretzel|lye_dipped"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "item": "foodindustrial:pretzel"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

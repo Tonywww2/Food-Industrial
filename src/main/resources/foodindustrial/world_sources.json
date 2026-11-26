@@ -1,0 +1,6418 @@
+{
+ "biomes": {
+  "plains": {
+   "biomes": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:meadow"
+   ],
+   "zh": "平原与草甸",
+   "en": "plains and meadows"
+  },
+  "forest": {
+   "biomes": [
+    "minecraft:forest",
+    "minecraft:flower_forest",
+    "minecraft:birch_forest",
+    "minecraft:old_growth_birch_forest"
+   ],
+   "zh": "森林",
+   "en": "forests"
+  },
+  "dark_forest": {
+   "biomes": [
+    "minecraft:dark_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga"
+   ],
+   "zh": "黑森林与原始针叶林",
+   "en": "dark forests and old growth taigas"
+  },
+  "taiga": {
+   "biomes": [
+    "minecraft:taiga",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga"
+   ],
+   "zh": "针叶林",
+   "en": "taigas"
+  },
+  "alpine": {
+   "biomes": [
+    "minecraft:meadow",
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_forest"
+   ],
+   "zh": "草甸与风袭丘陵",
+   "en": "meadows and windswept hills"
+  },
+  "jungle": {
+   "biomes": [
+    "minecraft:jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:bamboo_jungle"
+   ],
+   "zh": "丛林",
+   "en": "jungles"
+  },
+  "savanna": {
+   "biomes": [
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna"
+   ],
+   "zh": "热带草原",
+   "en": "savannas"
+  },
+  "desert": {
+   "biomes": [
+    "minecraft:desert",
+    "minecraft:badlands",
+    "minecraft:eroded_badlands"
+   ],
+   "zh": "沙漠与恶地",
+   "en": "deserts and badlands"
+  },
+  "arid": {
+   "biomes": [
+    "minecraft:desert",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau"
+   ],
+   "zh": "沙漠、恶地与热带草原",
+   "en": "deserts, badlands and savannas"
+  },
+  "wetland": {
+   "biomes": [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:river"
+   ],
+   "zh": "沼泽与河流",
+   "en": "swamps and rivers"
+  },
+  "mediterranean": {
+   "biomes": [
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "minecraft:meadow"
+   ],
+   "zh": "风袭丘陵与热带高原",
+   "en": "windswept hills and savanna plateaus"
+  },
+  "east_asia": {
+   "biomes": [
+    "minecraft:cherry_grove",
+    "minecraft:forest",
+    "minecraft:flower_forest"
+   ],
+   "zh": "樱花树林与森林",
+   "en": "cherry groves and forests"
+  },
+  "subtropical": {
+   "biomes": [
+    "minecraft:bamboo_jungle",
+    "minecraft:cherry_grove",
+    "minecraft:sparse_jungle"
+   ],
+   "zh": "竹林与樱花树林",
+   "en": "bamboo jungles and cherry groves"
+  },
+  "beach": {
+   "biomes": [
+    "minecraft:beach"
+   ],
+   "zh": "沙滩",
+   "en": "beaches"
+  }
+ },
+ "villages": {
+  "temperate": [
+   "chests/village/village_plains_house",
+   "chests/village/village_taiga_house"
+  ],
+  "cold": [
+   "chests/village/village_taiga_house",
+   "chests/village/village_snowy_house"
+  ],
+  "arid": [
+   "chests/village/village_desert_house"
+  ],
+  "tropical": [
+   "chests/village/village_savanna_house"
+  ]
+ },
+ "items": {
+  "red_rice": {
+   "zh": "红米",
+   "en": "Red Rice",
+   "tag": "red_rice",
+   "texture": "grain",
+   "colour": "#8C2E2A"
+  },
+  "red_radish": {
+   "zh": "红心萝卜",
+   "en": "Red Radish",
+   "tag": "red_radish",
+   "texture": "root",
+   "colour": "#C8365A"
+  },
+  "red_amaranth": {
+   "zh": "红苋菜",
+   "en": "Red Amaranth",
+   "tag": "red_amaranth",
+   "texture": "leaf",
+   "colour": "#A02848"
+  },
+  "purple_sweet_potato": {
+   "zh": "紫甘薯",
+   "en": "Purple Sweet Potato",
+   "tag": "purple_sweet_potato",
+   "texture": "root",
+   "colour": "#5E2C6E"
+  },
+  "barley": {
+   "zh": "大麦",
+   "en": "Barley",
+   "tag": "barley",
+   "texture": "grain",
+   "colour": "#D8BE78"
+  },
+  "jerusalem_artichoke": {
+   "zh": "菊芋块茎",
+   "en": "Jerusalem Artichoke",
+   "tag": "jerusalem_artichoke",
+   "texture": "root",
+   "colour": "#B89A70"
+  },
+  "glutinous_paddy": {
+   "zh": "糯稻",
+   "en": "Glutinous Paddy",
+   "tag": "glutinous_paddy",
+   "texture": "grain",
+   "colour": "#E2CF98"
+  },
+  "mung_bean": {
+   "zh": "绿豆",
+   "en": "Mung Bean",
+   "tag": "mung_bean",
+   "texture": "seed",
+   "colour": "#5C9A40"
+  },
+  "adzuki_bean": {
+   "zh": "赤豆",
+   "en": "Adzuki Bean",
+   "tag": "adzuki_bean",
+   "texture": "seed",
+   "colour": "#8E2A26"
+  },
+  "black_soybean": {
+   "zh": "黑豆",
+   "en": "Black Soybean",
+   "tag": "black_soybean",
+   "texture": "seed",
+   "colour": "#2A2428"
+  },
+  "mustard_green": {
+   "zh": "芥菜",
+   "en": "Mustard Green",
+   "tag": "mustard_green",
+   "texture": "leaf",
+   "colour": "#4E8C3A"
+  },
+  "broad_bean": {
+   "zh": "蚕豆",
+   "en": "Broad Bean",
+   "tag": "broad_bean",
+   "texture": "seed",
+   "colour": "#8CB060"
+  },
+  "sorghum": {
+   "zh": "高粱",
+   "en": "Sorghum",
+   "tag": "sorghum",
+   "texture": "grain",
+   "colour": "#9E4A2A"
+  },
+  "plum": {
+   "zh": "梅子",
+   "en": "Ume Plum",
+   "tag": "plum",
+   "texture": "fruit",
+   "colour": "#B8C450"
+  },
+  "pork_skin": {
+   "zh": "猪皮",
+   "en": "Pork Skin",
+   "tag": "pork_skin",
+   "texture": "tissue",
+   "colour": "#E8B8A8"
+  },
+  "pork_hind_leg": {
+   "zh": "猪后腿",
+   "en": "Pork Hind Leg",
+   "tag": "pork_hind_leg",
+   "texture": "tissue",
+   "colour": "#D88A80"
+  },
+  "small_intestine": {
+   "zh": "小肠",
+   "en": "Small Intestine",
+   "tag": "small_intestine",
+   "texture": "tissue",
+   "colour": "#E0A8A0"
+  },
+  "chicken_feet": {
+   "zh": "鸡爪",
+   "en": "Chicken Feet",
+   "tag": "chicken_feet",
+   "texture": "tissue",
+   "colour": "#E8C890"
+  },
+  "zongzi_leaf": {
+   "zh": "粽叶",
+   "en": "Zongzi Leaf",
+   "tag": "zongzi_leaf",
+   "texture": "leaf",
+   "colour": "#5A8A3A"
+  },
+  "soybean": {
+   "zh": "大豆",
+   "en": "Soybean",
+   "tag": "soybean",
+   "texture": "seed",
+   "colour": "#D8C27A"
+  },
+  "sesame": {
+   "zh": "芝麻",
+   "en": "Sesame",
+   "tag": "sesame",
+   "texture": "seed",
+   "colour": "#EDE3CC"
+  },
+  "tomato": {
+   "zh": "番茄",
+   "en": "Tomato",
+   "tag": "tomato",
+   "texture": "fruit",
+   "colour": "#D8382A"
+  },
+  "amomum": {
+   "zh": "砂仁",
+   "en": "Amomum",
+   "tag": "amomum",
+   "texture": "seed",
+   "colour": "#7A5A3C"
+  },
+  "corn": {
+   "zh": "玉米",
+   "en": "Corn",
+   "tag": "corn",
+   "texture": "grain",
+   "colour": "#E8C030"
+  },
+  "oats": {
+   "zh": "燕麦",
+   "en": "Oats",
+   "tag": "oats",
+   "texture": "grain",
+   "colour": "#D9CB97"
+  },
+  "onion": {
+   "zh": "洋葱",
+   "en": "Onion",
+   "tag": "onion",
+   "texture": "root",
+   "colour": "#C89058"
+  },
+  "scallion": {
+   "zh": "大葱",
+   "en": "Scallion",
+   "tag": "scallion",
+   "texture": "leaf",
+   "colour": "#6AA040"
+  },
+  "cabbage": {
+   "zh": "卷心菜",
+   "en": "Cabbage",
+   "tag": "cabbage",
+   "texture": "leaf",
+   "colour": "#9AC870"
+  },
+  "napa_cabbage": {
+   "zh": "白菜",
+   "en": "Napa Cabbage",
+   "tag": "napa_cabbage",
+   "texture": "leaf",
+   "colour": "#D8E8B0"
+  },
+  "spinach": {
+   "zh": "菠菜",
+   "en": "Spinach",
+   "tag": "spinach",
+   "texture": "leaf",
+   "colour": "#3E7A30"
+  },
+  "peanut": {
+   "zh": "花生",
+   "en": "Peanut",
+   "tag": "peanut",
+   "texture": "seed",
+   "colour": "#C8A070"
+  },
+  "cucumber": {
+   "zh": "黄瓜",
+   "en": "Cucumber",
+   "tag": "cucumber",
+   "texture": "fruit",
+   "colour": "#4E8A30"
+  },
+  "pineapple": {
+   "zh": "菠萝",
+   "en": "Pineapple",
+   "tag": "pineapple",
+   "texture": "fruit",
+   "colour": "#E8B830"
+  },
+  "cassia_bark": {
+   "zh": "桂皮",
+   "en": "Cassia Bark",
+   "tag": "cinnamon",
+   "texture": "bark",
+   "colour": "#7A4A2A"
+  },
+  "walnut": {
+   "zh": "核桃",
+   "en": "Walnut",
+   "tag": "walnut",
+   "texture": "seed",
+   "colour": "#A07850"
+  },
+  "orange": {
+   "zh": "橙",
+   "en": "Orange",
+   "tag": "orange",
+   "texture": "fruit",
+   "colour": "#F08A20"
+  },
+  "lemon": {
+   "zh": "柠檬",
+   "en": "Lemon",
+   "tag": "lemon",
+   "texture": "fruit",
+   "colour": "#F0E040"
+  },
+  "papaya": {
+   "zh": "木瓜",
+   "en": "Papaya",
+   "tag": "papaya",
+   "texture": "fruit",
+   "colour": "#F0A040"
+  },
+  "grape": {
+   "zh": "葡萄",
+   "en": "Grape",
+   "tag": "grape",
+   "texture": "fruit",
+   "colour": "#6A2A6A"
+  },
+  "tea_leaf": {
+   "zh": "茶叶",
+   "en": "Tea Leaves",
+   "tag": "tea",
+   "texture": "leaf",
+   "colour": "#4E7A3A"
+  },
+  "coconut": {
+   "zh": "椰子",
+   "en": "Coconut",
+   "tag": "coconut",
+   "texture": "fruit",
+   "colour": "#8A6A40"
+  },
+  "oyster": {
+   "zh": "蚝",
+   "en": "Oyster",
+   "tag": "oyster",
+   "texture": "lump",
+   "colour": "#B8B0A0"
+  },
+  "shrimp": {
+   "zh": "虾",
+   "en": "Shrimp",
+   "tag": "shrimp",
+   "texture": "fish",
+   "colour": "#E89070"
+  },
+  "raw_duck": {
+   "zh": "生鸭肉",
+   "en": "Raw Duck",
+   "tag": "duck",
+   "texture": "poultry",
+   "colour": "#E8B0A0"
+  },
+  "duck_egg": {
+   "zh": "鸭蛋",
+   "en": "Duck Egg",
+   "tag": "duck_egg",
+   "texture": "egg",
+   "colour": "#D8E8E0"
+  },
+  "lemongrass": {
+   "zh": "柠檬草",
+   "en": "Lemongrass",
+   "tag": "lemongrass",
+   "texture": "leaf",
+   "colour": "#A0C058"
+  },
+  "caraway_seed": {
+   "zh": "葛缕籽",
+   "en": "Caraway Seed",
+   "tag": "caraway",
+   "texture": "seed",
+   "colour": "#7A5A38"
+  },
+  "litsea_berry": {
+   "zh": "山苍子",
+   "en": "Litsea Berry",
+   "tag": "litsea",
+   "texture": "seed",
+   "colour": "#4A4030"
+  },
+  "straw": {
+   "zh": "稻草",
+   "en": "Straw",
+   "tag": "straw",
+   "texture": "bark",
+   "colour": "#D8C078"
+  }
+ },
+ "extra_tags": {
+  "hawthorn": [
+   "hawthorn_fruit"
+  ],
+  "ilmenite": [
+   "ilmenite"
+  ],
+  "pyrolusite": [
+   "pyrolusite"
+  ],
+  "leafy_greens": [
+   "cabbage",
+   "napa_cabbage",
+   "spinach"
+  ],
+  "nuts": [
+   "walnut"
+  ],
+  "citrus": [
+   "orange",
+   "lemon"
+  ],
+  "radish": [
+   "red_radish"
+  ],
+  "laver": [
+   "laver"
+  ]
+ },
+ "crops": [
+  {
+   "id": "safflower",
+   "zh": "红花",
+   "en": "Safflower",
+   "drops": [
+    [
+     "safflower",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#E8501A",
+   "level": 2,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "red_rice",
+   "zh": "红米",
+   "en": "Red Rice",
+   "drops": [
+    [
+     "red_rice",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#8C2E2A",
+   "level": 1,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "sorghum",
+   "zh": "高粱",
+   "en": "Sorghum",
+   "drops": [
+    [
+     "sorghum",
+     1,
+     3
+    ],
+    [
+     "sorghum_husk",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#9E4A2A",
+   "level": 1,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "red_radish",
+   "zh": "红心萝卜",
+   "en": "Red Radish",
+   "drops": [
+    [
+     "red_radish",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C8365A",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "roselle",
+   "zh": "玫瑰茄",
+   "en": "Roselle",
+   "drops": [
+    [
+     "roselle",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#A01830",
+   "level": 2,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "red_amaranth",
+   "zh": "红苋菜",
+   "en": "Red Amaranth",
+   "drops": [
+    [
+     "red_amaranth",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7A3040",
+   "colour": "#A02848",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "marigold",
+   "zh": "万寿菊",
+   "en": "Marigold",
+   "drops": [
+    [
+     "marigold",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#F0A020",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "purple_sweet_potato",
+   "zh": "紫甘薯",
+   "en": "Purple Sweet Potato",
+   "drops": [
+    [
+     "purple_sweet_potato",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#5E2C6E",
+   "level": 1,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "flax",
+   "zh": "亚麻",
+   "en": "Flax",
+   "drops": [
+    [
+     "flaxseed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#8A5A30",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "sesbania",
+   "zh": "田菁",
+   "en": "Sesbania",
+   "drops": [
+    [
+     "sesbania_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#6E5A3A",
+   "level": 2,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "guar",
+   "zh": "瓜尔豆",
+   "en": "Guar",
+   "drops": [
+    [
+     "guar_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C8C0A0",
+   "level": 2,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "sicklepod",
+   "zh": "决明",
+   "en": "Sicklepod",
+   "drops": [
+    [
+     "cassia_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#6A5030",
+   "level": 2,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "monk_fruit",
+   "zh": "罗汉果",
+   "en": "Monk Fruit",
+   "drops": [
+    [
+     "monk_fruit",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#6A4A2A",
+   "level": 3,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "barley",
+   "zh": "大麦",
+   "en": "Barley",
+   "drops": [
+    [
+     "barley",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#D8BE78",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "jerusalem_artichoke",
+   "zh": "菊芋",
+   "en": "Jerusalem Artichoke",
+   "drops": [
+    [
+     "jerusalem_artichoke",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#B89A70",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "black_mustard",
+   "zh": "黑芥",
+   "en": "Black Mustard",
+   "drops": [
+    [
+     "mustard_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#3A2A20",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "wasabi",
+   "zh": "山葵",
+   "en": "Wasabi",
+   "drops": [
+    [
+     "wasabi",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#8CB070",
+   "level": 3,
+   "climate": "cold",
+   "wild": null
+  },
+  {
+   "id": "clary_sage",
+   "zh": "香紫苏",
+   "en": "Clary Sage",
+   "drops": [
+    [
+     "clary_sage_herb",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7A9070",
+   "colour": "#B0A0D0",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "rape",
+   "zh": "油菜",
+   "en": "Rape",
+   "drops": [
+    [
+     "rapeseed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#3A2A24",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "basil",
+   "zh": "罗勒",
+   "en": "Basil",
+   "drops": [
+    [
+     "basil",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3E9A40",
+   "colour": "#3E9A40",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "patchouli",
+   "zh": "广藿香",
+   "en": "Patchouli",
+   "drops": [
+    [
+     "patchouli_leaf",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#4A6A30",
+   "level": 3,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "cardamom",
+   "zh": "小豆蔻",
+   "en": "Cardamom",
+   "drops": [
+    [
+     "cardamom",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#8AA060",
+   "level": 4,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "sweet_fennel",
+   "zh": "甜茴香",
+   "en": "Sweet Fennel",
+   "drops": [
+    [
+     "sweet_fennel_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#9A9A50",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "garlic",
+   "zh": "大蒜",
+   "en": "Garlic",
+   "drops": [
+    [
+     "garlic",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#EAE2D0",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "costus",
+   "zh": "云木香",
+   "en": "Costus",
+   "drops": [
+    [
+     "costus_root",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#8A6440",
+   "level": 3,
+   "climate": "cold",
+   "wild": null
+  },
+  {
+   "id": "angelica_dahurica",
+   "zh": "白芷",
+   "en": "Angelica Dahurica",
+   "drops": [
+    [
+     "angelica_dahurica_root",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#D8CCAA",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "coriander",
+   "zh": "芫荽",
+   "en": "Coriander",
+   "drops": [
+    [
+     "coriander_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#B09A60",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "celery",
+   "zh": "芹菜",
+   "en": "Celery",
+   "drops": [
+    [
+     "celery_seed",
+     1,
+     2
+    ],
+    [
+     "celery_leaf",
+     1,
+     2
+    ],
+    [
+     "celery_flower",
+     0,
+     1
+    ]
+   ],
+   "leaf": "#6AA848",
+   "colour": "#E8E8C8",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "chrysanthemum",
+   "zh": "杭白菊",
+   "en": "Chrysanthemum",
+   "drops": [
+    [
+     "chrysanthemum_flower",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#F0EEDC",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "fenugreek",
+   "zh": "葫芦巴",
+   "en": "Fenugreek",
+   "drops": [
+    [
+     "fenugreek_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C89A40",
+   "level": 2,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "cumin",
+   "zh": "孜然",
+   "en": "Cumin",
+   "drops": [
+    [
+     "cumin_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#8A6A40",
+   "level": 2,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "rose_geranium",
+   "zh": "香叶天竺葵",
+   "en": "Rose Geranium",
+   "drops": [
+    [
+     "rose_geranium_leaf",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#E080A0",
+   "level": 3,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "chives",
+   "zh": "细香葱",
+   "en": "Chives",
+   "drops": [
+    [
+     "chives",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4A9A3A",
+   "colour": "#B080C0",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "hops",
+   "zh": "啤酒花",
+   "en": "Hops",
+   "drops": [
+    [
+     "hops",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#A8C858",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "broad_bean",
+   "zh": "蚕豆",
+   "en": "Broad Bean",
+   "drops": [
+    [
+     "broad_bean",
+     1,
+     3
+    ],
+    [
+     "broad_bean_flower",
+     0,
+     1
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#8CB060",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "chicory",
+   "zh": "菊苣",
+   "en": "Chicory",
+   "drops": [
+    [
+     "chicory_root",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#7090D0",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "tuberose",
+   "zh": "晚香玉",
+   "en": "Tuberose",
+   "drops": [
+    [
+     "tuberose_flower",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#F4F0E8",
+   "level": 3,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "sweet_violet",
+   "zh": "香堇菜",
+   "en": "Sweet Violet",
+   "drops": [
+    [
+     "violet_leaf",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#7040A0",
+   "level": 3,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "peppermint",
+   "zh": "椒样薄荷",
+   "en": "Peppermint",
+   "drops": [
+    [
+     "peppermint",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3E9A50",
+   "colour": "#3E9A50",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "crimson_glory_rose",
+   "zh": "墨红",
+   "en": "Crimson Glory Rose",
+   "drops": [
+    [
+     "crimson_glory_rose",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#8A1020",
+   "level": 3,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "lavender",
+   "zh": "薰衣草",
+   "en": "Lavender",
+   "drops": [
+    [
+     "lavender",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7A9A80",
+   "colour": "#8A70C0",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "thyme",
+   "zh": "百里香",
+   "en": "Thyme",
+   "drops": [
+    [
+     "thyme",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#5A7A50",
+   "colour": "#5A7A50",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "ginger",
+   "zh": "姜",
+   "en": "Ginger",
+   "drops": [
+    [
+     "ginger",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#D8B070",
+   "level": 1,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "tarragon",
+   "zh": "龙蒿",
+   "en": "Tarragon",
+   "drops": [
+    [
+     "tarragon",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#5A8A40",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "lavandin",
+   "zh": "杂薰衣草",
+   "en": "Lavandin",
+   "drops": [
+    [
+     "lavandin",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7A9A80",
+   "colour": "#7A60B8",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "galangal",
+   "zh": "高良姜",
+   "en": "Galangal",
+   "drops": [
+    [
+     "galangal_root",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C88A60",
+   "level": 2,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "fennel",
+   "zh": "小茴香",
+   "en": "Fennel",
+   "drops": [
+    [
+     "fennel_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#8A8A50",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "parsley",
+   "zh": "欧芹",
+   "en": "Parsley",
+   "drops": [
+    [
+     "parsley",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3E8E30",
+   "colour": "#3E8E30",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "citronella",
+   "zh": "香茅",
+   "en": "Citronella",
+   "drops": [
+    [
+     "citronella_grass",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#8AB050",
+   "colour": "#8AB050",
+   "level": 2,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "roman_chamomile",
+   "zh": "罗马春黄菊",
+   "en": "Roman Chamomile",
+   "drops": [
+    [
+     "roman_chamomile",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#F0F0D8",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "lovage",
+   "zh": "欧当归",
+   "en": "Lovage",
+   "drops": [
+    [
+     "lovage_root",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C8B080",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "dill",
+   "zh": "莳萝",
+   "en": "Dill",
+   "drops": [
+    [
+     "dill",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#C8C848",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "marjoram",
+   "zh": "甘牛至",
+   "en": "Marjoram",
+   "drops": [
+    [
+     "marjoram",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C090B0",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "ambrette",
+   "zh": "黄葵",
+   "en": "Ambrette",
+   "drops": [
+    [
+     "ambrette_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#F0D040",
+   "level": 3,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "pepper",
+   "zh": "胡椒",
+   "en": "Pepper",
+   "drops": [
+    [
+     "black_pepper",
+     1,
+     2
+    ],
+    [
+     "white_pepper",
+     0,
+     1
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#2A2420",
+   "level": 3,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "lemon_balm",
+   "zh": "香蜂花",
+   "en": "Lemon Balm",
+   "drops": [
+    [
+     "lemon_balm",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#7AB048",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "bird_eye_chili",
+   "zh": "小米辣",
+   "en": "Bird Eye Chili",
+   "drops": [
+    [
+     "bird_eye_chili",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#D82818",
+   "level": 1,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "anise",
+   "zh": "茴芹",
+   "en": "Anise",
+   "drops": [
+    [
+     "anise_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#A89A60",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "angelica",
+   "zh": "当归",
+   "en": "Angelica",
+   "drops": [
+    [
+     "angelica_seed",
+     1,
+     2
+    ],
+    [
+     "angelica_root",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#D8C8A0",
+   "level": 2,
+   "climate": "cold",
+   "wild": null
+  },
+  {
+   "id": "white_mustard",
+   "zh": "白芥",
+   "en": "White Mustard",
+   "drops": [
+    [
+     "yellow_mustard_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#E0C050",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "mustard",
+   "zh": "芥菜",
+   "en": "Mustard",
+   "drops": [
+    [
+     "brown_mustard_seed",
+     1,
+     2
+    ],
+    [
+     "mustard_green",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#4E8C3A",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "perilla",
+   "zh": "紫苏",
+   "en": "Perilla",
+   "drops": [
+    [
+     "perilla_leaf",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#6A3A6A",
+   "colour": "#6A3A6A",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "alfalfa",
+   "zh": "苜蓿",
+   "en": "Alfalfa",
+   "drops": [
+    [
+     "alfalfa",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#8A70C0",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "saffron",
+   "zh": "番红花",
+   "en": "Saffron Crocus",
+   "drops": [
+    [
+     "saffron",
+     1,
+     1
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C82010",
+   "level": 4,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "horseradish",
+   "zh": "辣根",
+   "en": "Horseradish",
+   "drops": [
+    [
+     "horseradish_root",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#E0D8C0",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "leek",
+   "zh": "韭葱",
+   "en": "Leek",
+   "drops": [
+    [
+     "leek",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#6A9A60",
+   "colour": "#E8F0D8",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "winter_savory",
+   "zh": "冬香薄荷",
+   "en": "Winter Savory",
+   "drops": [
+    [
+     "winter_savory",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#4A6A40",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "scotch_spearmint",
+   "zh": "苏格兰留兰香",
+   "en": "Scotch Spearmint",
+   "drops": [
+    [
+     "scotch_spearmint",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3E9A50",
+   "colour": "#3E9A50",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "spearmint",
+   "zh": "留兰香",
+   "en": "Spearmint",
+   "drops": [
+    [
+     "spearmint",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#48A848",
+   "colour": "#48A848",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "summer_savory",
+   "zh": "夏香薄荷",
+   "en": "Summer Savory",
+   "drops": [
+    [
+     "summer_savory",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#6A8A50",
+   "level": 2,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "grains_of_paradise",
+   "zh": "摩洛哥豆蔻",
+   "en": "Grains of Paradise",
+   "drops": [
+    [
+     "grains_of_paradise",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#8A3020",
+   "level": 4,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "aloe",
+   "zh": "芦荟",
+   "en": "Aloe",
+   "drops": [
+    [
+     "aloe",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#6A9A70",
+   "colour": "#6A9A70",
+   "level": 2,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "glutinous_paddy",
+   "zh": "糯稻",
+   "en": "Glutinous Paddy",
+   "drops": [
+    [
+     "glutinous_paddy",
+     1,
+     3
+    ],
+    [
+     "straw",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#E2CF98",
+   "level": 1,
+   "climate": "tropical",
+   "wild": "wetland"
+  },
+  {
+   "id": "mung_bean",
+   "zh": "绿豆",
+   "en": "Mung Bean",
+   "drops": [
+    [
+     "mung_bean",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#5C9A40",
+   "level": 1,
+   "climate": "temperate",
+   "wild": "plains"
+  },
+  {
+   "id": "adzuki_bean",
+   "zh": "赤豆",
+   "en": "Adzuki Bean",
+   "drops": [
+    [
+     "adzuki_bean",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#8E2A26",
+   "level": 1,
+   "climate": "temperate",
+   "wild": "plains"
+  },
+  {
+   "id": "black_soybean",
+   "zh": "黑豆",
+   "en": "Black Soybean",
+   "drops": [
+    [
+     "black_soybean",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#2A2428",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "soybean",
+   "zh": "大豆",
+   "en": "Soybean",
+   "drops": [
+    [
+     "soybean",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#D8C27A",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "sesame",
+   "zh": "芝麻",
+   "en": "Sesame",
+   "drops": [
+    [
+     "sesame",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#EDE3CC",
+   "level": 2,
+   "climate": "arid",
+   "wild": null
+  },
+  {
+   "id": "tomato",
+   "zh": "番茄",
+   "en": "Tomato",
+   "drops": [
+    [
+     "tomato",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#D8382A",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "amomum",
+   "zh": "砂仁",
+   "en": "Amomum",
+   "drops": [
+    [
+     "amomum",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#7A5A3C",
+   "level": 3,
+   "climate": "tropical",
+   "wild": "jungle"
+  },
+  {
+   "id": "corn",
+   "zh": "玉米",
+   "en": "Corn",
+   "drops": [
+    [
+     "corn",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#E8C030",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "oats",
+   "zh": "燕麦",
+   "en": "Oats",
+   "drops": [
+    [
+     "oats",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#D9CB97",
+   "level": 1,
+   "climate": "cold",
+   "wild": null
+  },
+  {
+   "id": "onion",
+   "zh": "洋葱",
+   "en": "Onion",
+   "drops": [
+    [
+     "onion",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C89058",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "scallion",
+   "zh": "大葱",
+   "en": "Scallion",
+   "drops": [
+    [
+     "scallion",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#6AA040",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "cabbage",
+   "zh": "卷心菜",
+   "en": "Cabbage",
+   "drops": [
+    [
+     "cabbage",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#9AC870",
+   "level": 1,
+   "climate": "cold",
+   "wild": null
+  },
+  {
+   "id": "napa_cabbage",
+   "zh": "白菜",
+   "en": "Napa Cabbage",
+   "drops": [
+    [
+     "napa_cabbage",
+     1,
+     2
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#D8E8B0",
+   "level": 1,
+   "climate": "cold",
+   "wild": null
+  },
+  {
+   "id": "spinach",
+   "zh": "菠菜",
+   "en": "Spinach",
+   "drops": [
+    [
+     "spinach",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#3E7A30",
+   "level": 1,
+   "climate": "cold",
+   "wild": null
+  },
+  {
+   "id": "peanut",
+   "zh": "花生",
+   "en": "Peanut",
+   "drops": [
+    [
+     "peanut",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#C8A070",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "cucumber",
+   "zh": "黄瓜",
+   "en": "Cucumber",
+   "drops": [
+    [
+     "cucumber",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#4E8C3A",
+   "colour": "#4E8A30",
+   "level": 1,
+   "climate": "temperate",
+   "wild": null
+  },
+  {
+   "id": "pineapple",
+   "zh": "菠萝",
+   "en": "Pineapple",
+   "drops": [
+    [
+     "pineapple",
+     1,
+     1
+    ]
+   ],
+   "leaf": "#3A6E34",
+   "colour": "#E8B830",
+   "level": 2,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "lemongrass",
+   "zh": "柠檬草",
+   "en": "Lemongrass",
+   "drops": [
+    [
+     "lemongrass",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#9AB858",
+   "colour": "#A0C058",
+   "level": 2,
+   "climate": "tropical",
+   "wild": null
+  },
+  {
+   "id": "caraway",
+   "zh": "葛缕子",
+   "en": "Caraway",
+   "drops": [
+    [
+     "caraway_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": "#7AA048",
+   "colour": "#7A5A38",
+   "level": 2,
+   "climate": "cold",
+   "wild": null
+  }
+ ],
+ "wild": [
+  {
+   "id": "coreopsis",
+   "zh": "剑叶金鸡菊",
+   "en": "Coreopsis",
+   "drops": [
+    [
+     "coreopsis",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#4E8C3A",
+   "colour": "#F0C020",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "gromwell",
+   "zh": "紫草",
+   "en": "Gromwell",
+   "drops": [
+    [
+     "gromwell_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "alpine",
+   "leaf": "#4E8C3A",
+   "colour": "#6A1A40",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "sand_sagebrush",
+   "zh": "沙蒿",
+   "en": "Sand Sagebrush",
+   "drops": [
+    [
+     "artemisia_seed",
+     1,
+     2
+    ]
+   ],
+   "biome": "desert",
+   "leaf": "#9AA890",
+   "colour": "#8A7A50",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "licorice",
+   "zh": "甘草",
+   "en": "Licorice",
+   "drops": [
+    [
+     "licorice_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "arid",
+   "leaf": "#4E8C3A",
+   "colour": "#C8A050",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "katemfe",
+   "zh": "西非竹芋",
+   "en": "Katemfe",
+   "drops": [
+    [
+     "katemfe_fruit",
+     1,
+     2
+    ]
+   ],
+   "biome": "jungle",
+   "leaf": "#3A6E34",
+   "colour": "#C83020",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "shiitake",
+   "zh": "香菇",
+   "en": "Shiitake",
+   "drops": [
+    [
+     "shiitake",
+     1,
+     2
+    ]
+   ],
+   "biome": "dark_forest",
+   "leaf": "#8A6040",
+   "colour": "#7A5030",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "nardostachys",
+   "zh": "甘松",
+   "en": "Spikenard",
+   "drops": [
+    [
+     "nardostachys_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "alpine",
+   "leaf": "#4E8C3A",
+   "colour": "#8A5A40",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "davana",
+   "zh": "印蒿",
+   "en": "Davana",
+   "drops": [
+    [
+     "davana_herb",
+     1,
+     2
+    ]
+   ],
+   "biome": "savanna",
+   "leaf": "#90A080",
+   "colour": "#E0C060",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "atractylodes",
+   "zh": "苍术",
+   "en": "Atractylodes",
+   "drops": [
+    [
+     "atractylodes_rhizome",
+     1,
+     2
+    ]
+   ],
+   "biome": "forest",
+   "leaf": "#3A6E34",
+   "colour": "#A88A60",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "orris",
+   "zh": "鸢尾",
+   "en": "Orris",
+   "drops": [
+    [
+     "orris_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#6A9A80",
+   "colour": "#8A70C8",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "tree_moss",
+   "zh": "树苔",
+   "en": "Tree Moss",
+   "drops": [
+    [
+     "tree_moss",
+     1,
+     2
+    ]
+   ],
+   "biome": "taiga",
+   "leaf": "#A8B090",
+   "colour": "#A8B090",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "rabdosia",
+   "zh": "香茶菜",
+   "en": "Rabdosia",
+   "drops": [
+    [
+     "rabdosia_herb",
+     1,
+     2
+    ]
+   ],
+   "biome": "forest",
+   "leaf": "#4E8C3A",
+   "colour": "#9A80C0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "vetiver",
+   "zh": "香根草",
+   "en": "Vetiver",
+   "drops": [
+    [
+     "vetiver_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "jungle",
+   "leaf": "#7AA050",
+   "colour": "#8A6A40",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "nutgrass",
+   "zh": "香附子",
+   "en": "Nutgrass",
+   "drops": [
+    [
+     "cyperus_rhizome",
+     1,
+     2
+    ]
+   ],
+   "biome": "wetland",
+   "leaf": "#6A9A40",
+   "colour": "#5A4030",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "valerian",
+   "zh": "缬草",
+   "en": "Valerian",
+   "drops": [
+    [
+     "valerian_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "forest",
+   "leaf": "#4E8C3A",
+   "colour": "#E8D0E0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "conehead_thyme",
+   "zh": "头状百里香",
+   "en": "Conehead Thyme",
+   "drops": [
+    [
+     "conehead_thyme",
+     1,
+     2
+    ]
+   ],
+   "biome": "mediterranean",
+   "leaf": "#6A7A50",
+   "colour": "#C080B0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "spanish_sage",
+   "zh": "西班牙鼠尾草",
+   "en": "Spanish Sage",
+   "drops": [
+    [
+     "spanish_sage",
+     1,
+     2
+    ]
+   ],
+   "biome": "mediterranean",
+   "leaf": "#8A9A80",
+   "colour": "#8A80C0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "asafoetida",
+   "zh": "阿魏",
+   "en": "Asafoetida",
+   "drops": [
+    [
+     "asafoetida",
+     1,
+     2
+    ]
+   ],
+   "biome": "desert",
+   "leaf": "#8AA050",
+   "colour": "#C8A060",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "palmarosa",
+   "zh": "玫瑰草",
+   "en": "Palmarosa",
+   "drops": [
+    [
+     "palmarosa",
+     1,
+     2
+    ]
+   ],
+   "biome": "savanna",
+   "leaf": "#8AB050",
+   "colour": "#8AB050",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "pennyroyal",
+   "zh": "胡薄荷",
+   "en": "Pennyroyal",
+   "drops": [
+    [
+     "pennyroyal",
+     1,
+     2
+    ]
+   ],
+   "biome": "wetland",
+   "leaf": "#4A8A50",
+   "colour": "#A080C8",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "horehound",
+   "zh": "欧夏至草",
+   "en": "Horehound",
+   "drops": [
+    [
+     "horehound",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#9AA890",
+   "colour": "#E8E8E0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "yucca",
+   "zh": "丝兰",
+   "en": "Yucca",
+   "drops": [
+    [
+     "yucca_trunk",
+     1,
+     1
+    ]
+   ],
+   "biome": "desert",
+   "leaf": "#7A9A70",
+   "colour": "#A08860",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "hyssop",
+   "zh": "海索草",
+   "en": "Hyssop",
+   "drops": [
+    [
+     "hyssop",
+     1,
+     2
+    ]
+   ],
+   "biome": "mediterranean",
+   "leaf": "#4E8C3A",
+   "colour": "#5060C0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "galbanum",
+   "zh": "格蓬",
+   "en": "Galbanum",
+   "drops": [
+    [
+     "galbanum",
+     1,
+     2
+    ]
+   ],
+   "biome": "desert",
+   "leaf": "#8AA050",
+   "colour": "#C8B070",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "gentian",
+   "zh": "黄龙胆",
+   "en": "Yellow Gentian",
+   "drops": [
+    [
+     "gentian_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "alpine",
+   "leaf": "#4E8C3A",
+   "colour": "#F0C030",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "immortelle",
+   "zh": "蜡菊",
+   "en": "Immortelle",
+   "drops": [
+    [
+     "immortelle_flower",
+     1,
+     2
+    ]
+   ],
+   "biome": "mediterranean",
+   "leaf": "#A0A890",
+   "colour": "#F0C030",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "spike_lavender",
+   "zh": "穗薰衣草",
+   "en": "Spike Lavender",
+   "drops": [
+    [
+     "spike_lavender",
+     1,
+     2
+    ]
+   ],
+   "biome": "mediterranean",
+   "leaf": "#8AA090",
+   "colour": "#9080C8",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "jambu",
+   "zh": "金钮扣",
+   "en": "Jambu",
+   "drops": [
+    [
+     "jambu",
+     1,
+     2
+    ]
+   ],
+   "biome": "jungle",
+   "leaf": "#4E8C3A",
+   "colour": "#F0C020",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "sage",
+   "zh": "药鼠尾草",
+   "en": "Sage",
+   "drops": [
+    [
+     "sage",
+     1,
+     2
+    ]
+   ],
+   "biome": "mediterranean",
+   "leaf": "#8A9A88",
+   "colour": "#8A9A88",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "german_chamomile",
+   "zh": "母菊",
+   "en": "German Chamomile",
+   "drops": [
+    [
+     "german_chamomile",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#7AA048",
+   "colour": "#F0F0E0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "red_clover",
+   "zh": "红三叶草",
+   "en": "Red Clover",
+   "drops": [
+    [
+     "red_clover",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#4E8C3A",
+   "colour": "#D05080",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "canadian_fleabane",
+   "zh": "加拿大飞蓬",
+   "en": "Canadian Fleabane",
+   "drops": [
+    [
+     "canadian_fleabane",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#7AA048",
+   "colour": "#F0F0E0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "rue",
+   "zh": "芸香",
+   "en": "Rue",
+   "drops": [
+    [
+     "rue",
+     1,
+     2
+    ]
+   ],
+   "biome": "mediterranean",
+   "leaf": "#7A9A90",
+   "colour": "#E0D040",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "sarsaparilla",
+   "zh": "菝葜",
+   "en": "Sarsaparilla",
+   "drops": [
+    [
+     "sarsaparilla_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "jungle",
+   "leaf": "#3A6E34",
+   "colour": "#9A6040",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "wormwood",
+   "zh": "苦艾",
+   "en": "Wormwood",
+   "drops": [
+    [
+     "wormwood",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#A0A898",
+   "colour": "#C8C080",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "damiana",
+   "zh": "达迷草",
+   "en": "Damiana",
+   "drops": [
+    [
+     "damiana_leaf",
+     1,
+     2
+    ]
+   ],
+   "biome": "arid",
+   "leaf": "#4E8C3A",
+   "colour": "#F0D030",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "opoponax",
+   "zh": "甜没药",
+   "en": "Opoponax",
+   "drops": [
+    [
+     "opoponax",
+     1,
+     2
+    ]
+   ],
+   "biome": "desert",
+   "leaf": "#8AA050",
+   "colour": "#C89040",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "mexican_oregano",
+   "zh": "墨西哥牛至",
+   "en": "Mexican Oregano",
+   "drops": [
+    [
+     "mexican_oregano",
+     1,
+     2
+    ]
+   ],
+   "biome": "arid",
+   "leaf": "#6A8A50",
+   "colour": "#E8E8D0",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "dittany_of_crete",
+   "zh": "白藓牛至",
+   "en": "Dittany of Crete",
+   "drops": [
+    [
+     "dittany_of_crete",
+     1,
+     2
+    ]
+   ],
+   "biome": "alpine",
+   "leaf": "#A8B0A0",
+   "colour": "#D080A0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "oakmoss",
+   "zh": "橡苔",
+   "en": "Oakmoss",
+   "drops": [
+    [
+     "oakmoss",
+     1,
+     2
+    ]
+   ],
+   "biome": "forest",
+   "leaf": "#A0B090",
+   "colour": "#A0B090",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "canadian_snakeroot",
+   "zh": "加拿大细辛",
+   "en": "Canadian Snakeroot",
+   "drops": [
+    [
+     "canadian_snakeroot",
+     1,
+     2
+    ]
+   ],
+   "biome": "dark_forest",
+   "leaf": "#3A6E34",
+   "colour": "#7A3030",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "tragacanth",
+   "zh": "黄蓍",
+   "en": "Tragacanth",
+   "drops": [
+    [
+     "tragacanth_lump",
+     1,
+     2
+    ]
+   ],
+   "biome": "desert",
+   "leaf": "#9AA890",
+   "colour": "#F0E8D0",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "marshmallow",
+   "zh": "药蜀葵",
+   "en": "Marshmallow",
+   "drops": [
+    [
+     "marshmallow_root",
+     1,
+     2
+    ]
+   ],
+   "biome": "wetland",
+   "leaf": "#4E8C3A",
+   "colour": "#F0D0E0",
+   "rarity": 24,
+   "sand": false
+  },
+  {
+   "id": "candelilla",
+   "zh": "小烛树",
+   "en": "Candelilla",
+   "drops": [
+    [
+     "candelilla_stem",
+     1,
+     2
+    ]
+   ],
+   "biome": "desert",
+   "leaf": "#8AA080",
+   "colour": "#8AA080",
+   "rarity": 24,
+   "sand": true
+  },
+  {
+   "id": "evening_primrose",
+   "zh": "月见草",
+   "en": "Evening Primrose",
+   "drops": [
+    [
+     "evening_primrose_seed",
+     1,
+     2
+    ]
+   ],
+   "biome": "plains",
+   "leaf": "#4E8C3A",
+   "colour": "#F0E040",
+   "rarity": 24,
+   "sand": false
+  }
+ ],
+ "trees": [
+  {
+   "id": "blackcurrant",
+   "zh": "黑加仑",
+   "en": "Blackcurrant",
+   "biome": "taiga",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "blackcurrant",
+     1,
+     3
+    ]
+   ],
+   "leaf": [
+    [
+     "blackcurrant_bud",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#2A1830",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "sea_buckthorn",
+   "zh": "沙棘",
+   "en": "Sea Buckthorn",
+   "biome": "alpine",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "sea_buckthorn",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#8A9A80",
+   "bloom": "#F0F0F0",
+   "colour": "#F09020",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "cherokee_rose",
+   "zh": "金樱子",
+   "en": "Cherokee Rose",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "rosa_laevigata",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#D07020",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "haskap",
+   "zh": "蓝锭果",
+   "en": "Haskap",
+   "biome": "taiga",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "haskap",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#3A3A80",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "annatto",
+   "zh": "胭脂树",
+   "en": "Annatto",
+   "biome": "jungle",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "annatto_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C82818",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "tara",
+   "zh": "刺云实",
+   "en": "Tara",
+   "biome": "savanna",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "tara_seed",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C87030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "coffee",
+   "zh": "咖啡",
+   "en": "Coffee",
+   "biome": "jungle",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "coffee_bean",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#B02020",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "murraya",
+   "zh": "九里香",
+   "en": "Orange Jasmine",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "jasmin_orange_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "buchu",
+   "zh": "布枯",
+   "en": "Buchu",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "buchu_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#5A7A40",
+   "bloom": "#E0B0E0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "wintergreen",
+   "zh": "平铺白珠",
+   "en": "Wintergreen",
+   "biome": "taiga",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "wintergreen_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C82030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "juniper",
+   "zh": "杜松",
+   "en": "Juniper",
+   "biome": "taiga",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "juniper_berry",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4A6A5A",
+   "bloom": "#F0F0F0",
+   "colour": "#3A4A70",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "vitex",
+   "zh": "牡荆",
+   "en": "Vitex",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "vitex_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#9A80D0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "rockrose",
+   "zh": "岩蔷薇",
+   "en": "Rockrose",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "rockrose_twig",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#5A6A40",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "cassie",
+   "zh": "金合欢",
+   "en": "Cassie",
+   "biome": "savanna",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "cassie_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0D020",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "jasmine_grandiflorum",
+   "zh": "大花茉莉",
+   "en": "Spanish Jasmine",
+   "biome": "savanna",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "jasmine_grandiflorum_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "jasmine_sambac",
+   "zh": "茉莉",
+   "en": "Arabian Jasmine",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "jasmine_sambac_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "jasmine_officinale",
+   "zh": "素方花",
+   "en": "Common Jasmine",
+   "biome": "alpine",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "jasmine_officinale_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "aglaia",
+   "zh": "米仔兰",
+   "en": "Aglaia",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "aglaia_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0E040",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "wild_rose",
+   "zh": "野蔷薇",
+   "en": "Multiflora Rose",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "wild_rose_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0D0E0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "dog_rose",
+   "zh": "犬蔷薇",
+   "en": "Dog Rose",
+   "biome": "plains",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "rose_hip",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0B0C8",
+   "colour": "#D03020",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "boronia",
+   "zh": "波罗尼亚",
+   "en": "Brown Boronia",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "boronia_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#8A4020",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "cubeb",
+   "zh": "荜澄茄",
+   "en": "Cubeb",
+   "biome": "jungle",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "cubeb",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#3A2A20",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "elder",
+   "zh": "接骨木",
+   "en": "Elder",
+   "biome": "forest",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "elderflower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0EEDC",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "broom",
+   "zh": "鹰爪豆",
+   "en": "Spanish Broom",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [
+    [
+     "genet_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#6A8A40",
+   "bloom": "#F0D020",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "guarana",
+   "zh": "瓜拉纳",
+   "en": "Guarana",
+   "biome": "jungle",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "guarana_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C82018",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "yerba_santa",
+   "zh": "圣草",
+   "en": "Yerba Santa",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "yerba_santa",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#6A7A50",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "sichuan_pepper",
+   "zh": "花椒",
+   "en": "Sichuan Pepper",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "sichuan_pepper",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#A02818",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "mountain_pine",
+   "zh": "欧洲山松",
+   "en": "Mountain Pine",
+   "biome": "alpine",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "dwarf_pine_needles",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "mulberry",
+   "zh": "桑树",
+   "en": "Mulberry",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "mulberry",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#4A1A3A",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "bayberry",
+   "zh": "杨梅",
+   "en": "Chinese Bayberry",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "bayberry",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#9A1830",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "coconut",
+   "zh": "椰子树",
+   "en": "Coconut Palm",
+   "biome": "beach",
+   "trunk": "jungle",
+   "form": "palm",
+   "flower": [],
+   "fruit": [
+    [
+     "copra",
+     1,
+     2
+    ],
+    [
+     "coconut",
+     0,
+     1
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#8A6A40",
+   "bark": null,
+   "rarity": 4
+  },
+  {
+   "id": "oil_palm",
+   "zh": "油棕",
+   "en": "Oil Palm",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "palm",
+   "flower": [],
+   "fruit": [
+    [
+     "oil_palm_fruit",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C83018",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "carnauba",
+   "zh": "巴西棕榈",
+   "en": "Carnauba Palm",
+   "biome": "savanna",
+   "trunk": "acacia",
+   "form": "palm",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "carnauba_powder",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#7A9A70",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "tamarind",
+   "zh": "酸角",
+   "en": "Tamarind",
+   "biome": "savanna",
+   "trunk": "acacia",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "tamarind_pulp",
+     1,
+     2
+    ],
+    [
+     "tamarind_seed",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#7A5030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "carob",
+   "zh": "角豆树",
+   "en": "Carob",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "carob_pod",
+     1,
+     2
+    ],
+    [
+     "carob_seed",
+     1,
+     1
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#5A3020",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "honeylocust",
+   "zh": "皂荚",
+   "en": "Chinese Honeylocust",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "gleditsia_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#4A2A1A",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "tallow_tree",
+   "zh": "乌桕",
+   "en": "Tallow Tree",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "tallow_tree_seed",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#F0F0E8",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "malania",
+   "zh": "蒜头果",
+   "en": "Malania",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "malania_seed",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#7A8A40",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "broadleaf_peppermint",
+   "zh": "宽叶薄荷桉",
+   "en": "Broad-leaved Peppermint",
+   "biome": "savanna",
+   "trunk": "birch",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "eucalyptus_dives",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#7A9A80",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "clove",
+   "zh": "丁香",
+   "en": "Clove",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "tree",
+   "flower": [
+    [
+     "clove_bud",
+     1,
+     2
+    ],
+    [
+     "clove_stem",
+     0,
+     1
+    ]
+   ],
+   "fruit": [],
+   "leaf": [
+    [
+     "clove_leaf",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#C04030",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "star_anise",
+   "zh": "八角",
+   "en": "Star Anise",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "star_anise",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#7A3A20",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "hawthorn",
+   "zh": "山楂",
+   "en": "Hawthorn",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "hawthorn_fruit",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C82020",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "ume",
+   "zh": "梅",
+   "en": "Ume",
+   "biome": "east_asia",
+   "trunk": "cherry",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "plum",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0C0D0",
+   "colour": "#B8C450",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "michelia",
+   "zh": "白兰",
+   "en": "White Champaca",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [
+    [
+     "michelia_alba_flower",
+     1,
+     2
+    ]
+   ],
+   "fruit": [],
+   "leaf": [
+    [
+     "michelia_alba_leaf",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F8F4E8",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "nutmeg",
+   "zh": "肉豆蔻",
+   "en": "Nutmeg",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "nutmeg",
+     1,
+     2
+    ],
+    [
+     "mace",
+     0,
+     1
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#D0A040",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "jujube",
+   "zh": "枣",
+   "en": "Jujube",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "jujube",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#8A1A18",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "fingered_citron",
+   "zh": "佛手",
+   "en": "Fingered Citron",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "fingered_citron",
+     1,
+     1
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#E8C830",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "pummelo",
+   "zh": "柚",
+   "en": "Pummelo",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "pummelo",
+     1,
+     1
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#D8D850",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "thuja",
+   "zh": "北美香柏",
+   "en": "Northern White Cedar",
+   "biome": "taiga",
+   "trunk": "spruce",
+   "form": "conifer",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "thuja_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#3A6A3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "lemon",
+   "zh": "柠檬",
+   "en": "Lemon",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "lemon",
+     1,
+     3
+    ]
+   ],
+   "leaf": [
+    [
+     "lemon_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#F0E040",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "bergamot",
+   "zh": "香柠檬",
+   "en": "Bergamot",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "bergamot",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C8D040",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "torreya",
+   "zh": "香榧",
+   "en": "Chinese Nutmeg Yew",
+   "biome": "east_asia",
+   "trunk": "spruce",
+   "form": "conifer",
+   "flower": [],
+   "fruit": [
+    [
+     "torreya_shell",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#6A4A2A",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "blue_gum",
+   "zh": "蓝桉",
+   "en": "Blue Gum",
+   "biome": "savanna",
+   "trunk": "birch",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "eucalyptus_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#7A9AA0",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "osmanthus",
+   "zh": "桂花",
+   "en": "Osmanthus",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [
+    [
+     "osmanthus_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0B030",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "longan",
+   "zh": "龙眼",
+   "en": "Longan",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "longan",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#B08A50",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "pagoda_tree",
+   "zh": "槐",
+   "en": "Pagoda Tree",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [
+    [
+     "sophora_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0D0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "bitter_orange",
+   "zh": "酸橙",
+   "en": "Bitter Orange",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [
+    [
+     "bitter_orange_flower",
+     1,
+     2
+    ]
+   ],
+   "fruit": [
+    [
+     "bitter_orange",
+     1,
+     2
+    ]
+   ],
+   "leaf": [
+    [
+     "bitter_orange_leaf",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#E87020",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "daidai",
+   "zh": "玳玳",
+   "en": "Daidai",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "daidai_fruit",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#E88020",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "kola",
+   "zh": "可乐树",
+   "en": "Kola",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "kola_nut",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C87050",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "peruvian_pepper",
+   "zh": "加州胡椒树",
+   "en": "Peruvian Pepper",
+   "biome": "savanna",
+   "trunk": "acacia",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "peruvian_pepper_berry",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#6A8A50",
+   "bloom": "#F0F0F0",
+   "colour": "#D03050",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "ylang_ylang",
+   "zh": "依兰",
+   "en": "Ylang-ylang",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "tree",
+   "flower": [
+    [
+     "ylang_ylang_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#E8E040",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "cananga",
+   "zh": "卡南伽",
+   "en": "Cananga",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "tree",
+   "flower": [
+    [
+     "cananga_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#D8D850",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "bay_laurel",
+   "zh": "月桂",
+   "en": "Bay Laurel",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "laurel_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "pimento",
+   "zh": "众香",
+   "en": "Pimento",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "allspice",
+     1,
+     3
+    ]
+   ],
+   "leaf": [
+    [
+     "pimento_leaf",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#5A3A2A",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "mandarin",
+   "zh": "橘",
+   "en": "Mandarin",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "mandarin",
+     1,
+     2
+    ]
+   ],
+   "leaf": [
+    [
+     "mandarin_leaf",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#F08020",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "tangerine",
+   "zh": "红橘",
+   "en": "Tangerine",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "tangerine",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#E85A18",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "apricot",
+   "zh": "杏",
+   "en": "Apricot",
+   "biome": "east_asia",
+   "trunk": "cherry",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "apricot_kernel",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F8E0E8",
+   "colour": "#F0A040",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "bitter_almond",
+   "zh": "苦扁桃",
+   "en": "Bitter Almond",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "bitter_almond",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F8E8F0",
+   "colour": "#B08A60",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "mimosa",
+   "zh": "银荆",
+   "en": "Silver Wattle",
+   "biome": "mediterranean",
+   "trunk": "acacia",
+   "form": "tree",
+   "flower": [
+    [
+     "mimosa_flower",
+     1,
+     3
+    ]
+   ],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#7A9A90",
+   "bloom": "#F0E020",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "mate",
+   "zh": "巴拉圭冬青",
+   "en": "Yerba Mate",
+   "biome": "jungle",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "mate_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "west_indian_bay",
+   "zh": "西印度月桂",
+   "en": "West Indian Bay",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "west_indian_bay_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "tea_tree",
+   "zh": "互叶白千层",
+   "en": "Tea Tree",
+   "biome": "wetland",
+   "trunk": "birch",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "tea_tree_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#5A8A50",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "tangelo",
+   "zh": "橘柚",
+   "en": "Tangelo",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "tangelo",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#F07020",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "american_chestnut",
+   "zh": "美国栗",
+   "en": "American Chestnut",
+   "biome": "forest",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "chestnut_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "yuzu",
+   "zh": "香橙",
+   "en": "Yuzu",
+   "biome": "east_asia",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "yuzu",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#F0C820",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "peach",
+   "zh": "桃",
+   "en": "Peach",
+   "biome": "east_asia",
+   "trunk": "cherry",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "peach_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0A0C0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "cajeput",
+   "zh": "白千层",
+   "en": "Cajeput",
+   "biome": "wetland",
+   "trunk": "birch",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "cajeput_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#5A8A50",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "quillaja",
+   "zh": "皂树",
+   "en": "Soapbark",
+   "biome": "mediterranean",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "quillaja_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A5A4A",
+   "rarity": 8
+  },
+  {
+   "id": "gum_ghatti",
+   "zh": "达瓦树",
+   "en": "Axlewood",
+   "biome": "savanna",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "ghatti_lump",
+    "item",
+    1
+   ],
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A6A58",
+   "rarity": 8
+  },
+  {
+   "id": "karaya",
+   "zh": "刺梧桐",
+   "en": "Karaya",
+   "biome": "savanna",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "karaya_lump",
+    "item",
+    1
+   ],
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#9A8A78",
+   "rarity": 8
+  },
+  {
+   "id": "gum_arabic",
+   "zh": "阿拉伯胶树",
+   "en": "Gum Arabic Tree",
+   "biome": "savanna",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "acacia_lump",
+    "item",
+    1
+   ],
+   "leaves": "#6A8A50",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#5A4A3A",
+   "rarity": 8
+  },
+  {
+   "id": "fig",
+   "zh": "无花果",
+   "en": "Fig",
+   "biome": "mediterranean",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "ficus_latex",
+    "fluid",
+    250
+   ],
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#8A8A80",
+   "rarity": 8
+  },
+  {
+   "id": "camphor",
+   "zh": "樟",
+   "en": "Camphor Tree",
+   "biome": "subtropical",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "borneol_camphor_leaf",
+     1,
+     2
+    ]
+   ],
+   "strip": [],
+   "wood": [
+    [
+     "camphor_wood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#5A4A3A",
+   "rarity": 8
+  },
+  {
+   "id": "chinese_cypress",
+   "zh": "柏木",
+   "en": "Chinese Weeping Cypress",
+   "biome": "east_asia",
+   "trunk": "own",
+   "form": "conifer",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [
+    [
+     "cedarwood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#3A5A3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A5A40",
+   "rarity": 8
+  },
+  {
+   "id": "tolu",
+   "zh": "吐鲁香脂树",
+   "en": "Tolu Balsam Tree",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "tolu_balsam",
+    "item",
+    1
+   ],
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A5040",
+   "rarity": 8
+  },
+  {
+   "id": "sugar_maple",
+   "zh": "糖槭",
+   "en": "Sugar Maple",
+   "biome": "forest",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "maple_syrup",
+    "bottled",
+    1
+   ],
+   "leaves": "#5A8A3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A5A4A",
+   "rarity": 8
+  },
+  {
+   "id": "guaiac",
+   "zh": "愈疮木",
+   "en": "Palo Santo",
+   "biome": "savanna",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [
+    [
+     "guaiac_wood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A6A50",
+   "rarity": 8
+  },
+  {
+   "id": "sandalwood",
+   "zh": "檀香",
+   "en": "Sandalwood",
+   "biome": "savanna",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [
+    [
+     "sandalwood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#5A4030",
+   "rarity": 8
+  },
+  {
+   "id": "cascarilla",
+   "zh": "卡黎",
+   "en": "Cascarilla",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "cascarilla_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#8A7A6A",
+   "rarity": 8
+  },
+  {
+   "id": "oriental_sweetgum",
+   "zh": "苏合香树",
+   "en": "Oriental Sweetgum",
+   "biome": "mediterranean",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "styrax_resin",
+    "item",
+    1
+   ],
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#5A4A3A",
+   "rarity": 8
+  },
+  {
+   "id": "frankincense",
+   "zh": "乳香树",
+   "en": "Frankincense",
+   "biome": "desert",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "olibanum",
+    "item",
+    1
+   ],
+   "leaves": "#6A8A50",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#A89A88",
+   "rarity": 16
+  },
+  {
+   "id": "myrrh",
+   "zh": "没药树",
+   "en": "Myrrh",
+   "biome": "desert",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "myrrh",
+    "item",
+    1
+   ],
+   "leaves": "#6A8A50",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#8A8070",
+   "rarity": 16
+  },
+  {
+   "id": "pine",
+   "zh": "松树",
+   "en": "Pine",
+   "biome": "taiga",
+   "trunk": "own",
+   "form": "conifer",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "pine_needles",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [
+    [
+     "pine_stump",
+     1,
+     1
+    ]
+   ],
+   "tap": null,
+   "leaves": "#2E5A3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A4A30",
+   "rarity": 8
+  },
+  {
+   "id": "rosewood",
+   "zh": "玫瑰木",
+   "en": "Rosewood",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [
+    [
+     "rosewood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A4A30",
+   "rarity": 8
+  },
+  {
+   "id": "balsam_fir",
+   "zh": "香脂冷杉",
+   "en": "Balsam Fir",
+   "biome": "taiga",
+   "trunk": "own",
+   "form": "conifer",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "abies_needles",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "canada_balsam",
+    "item",
+    1
+   ],
+   "leaves": "#2E4A3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#5A5A50",
+   "rarity": 8
+  },
+  {
+   "id": "cascara",
+   "zh": "药鼠李",
+   "en": "Cascara Buckthorn",
+   "biome": "forest",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "cascara_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A5A50",
+   "rarity": 8
+  },
+  {
+   "id": "peru_balsam",
+   "zh": "秘鲁香脂树",
+   "en": "Peru Balsam Tree",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "crude_peru_balsam",
+    "item",
+    1
+   ],
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#5A4030",
+   "rarity": 8
+  },
+  {
+   "id": "amyris",
+   "zh": "脂檀",
+   "en": "Amyris",
+   "biome": "savanna",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [
+    [
+     "amyris_wood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#8A7A60",
+   "rarity": 8
+  },
+  {
+   "id": "black_cherry",
+   "zh": "野黑樱桃",
+   "en": "Black Cherry",
+   "biome": "forest",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "wild_cherry_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F8F8F0",
+   "colour": "#C04030",
+   "bark": "#3A2A28",
+   "rarity": 8
+  },
+  {
+   "id": "elemi",
+   "zh": "吕宋橄榄",
+   "en": "Elemi Tree",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "elemi",
+    "item",
+    1
+   ],
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#8A8070",
+   "rarity": 8
+  },
+  {
+   "id": "hickory",
+   "zh": "山核桃",
+   "en": "Shagbark Hickory",
+   "biome": "forest",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "hickory_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#5A5048",
+   "rarity": 8
+  },
+  {
+   "id": "benzoin",
+   "zh": "越南安息香",
+   "en": "Siam Benzoin",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "benzoin_resin",
+    "item",
+    1
+   ],
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A6A5A",
+   "rarity": 8
+  },
+  {
+   "id": "quassia",
+   "zh": "苦木",
+   "en": "Quassia",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [
+    [
+     "quassia_wood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#9A8A70",
+   "rarity": 8
+  },
+  {
+   "id": "cinchona",
+   "zh": "金鸡纳树",
+   "en": "Cinchona",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "cinchona_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#8A5A40",
+   "rarity": 8
+  },
+  {
+   "id": "mountain_maple",
+   "zh": "穗花槭",
+   "en": "Mountain Maple",
+   "biome": "forest",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "mountain_maple_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A5A50",
+   "rarity": 8
+  },
+  {
+   "id": "copaiba",
+   "zh": "古巴香脂树",
+   "en": "Copaiba",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "copaiba_balsam",
+    "item",
+    1
+   ],
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A6048",
+   "rarity": 8
+  },
+  {
+   "id": "catechu",
+   "zh": "儿茶",
+   "en": "Catechu",
+   "biome": "savanna",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [
+    [
+     "catechu_heartwood",
+     1,
+     2
+    ]
+   ],
+   "tap": null,
+   "leaves": "#6A8A50",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#4A3A30",
+   "rarity": 8
+  },
+  {
+   "id": "angostura",
+   "zh": "安古树",
+   "en": "Angostura",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "angostura_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A6A58",
+   "rarity": 8
+  },
+  {
+   "id": "ceylon_cinnamon",
+   "zh": "锡兰肉桂",
+   "en": "Ceylon Cinnamon",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "ceylon_cinnamon_leaf",
+     1,
+     2
+    ]
+   ],
+   "strip": [
+    [
+     "ceylon_cinnamon_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#8A5A38",
+   "rarity": 8
+  },
+  {
+   "id": "massoia",
+   "zh": "香厚壳桂",
+   "en": "Massoia",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "massoia_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#9A7A58",
+   "rarity": 8
+  },
+  {
+   "id": "cassia",
+   "zh": "肉桂",
+   "en": "Cassia",
+   "biome": "subtropical",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [
+    [
+     "cassia_bark",
+     1,
+     2
+    ]
+   ],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A4A30",
+   "rarity": 8
+  },
+  {
+   "id": "walnut",
+   "zh": "核桃",
+   "en": "Walnut",
+   "biome": "forest",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "walnut",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#8AA050",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "orange",
+   "zh": "甜橙",
+   "en": "Sweet Orange",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "tree",
+   "flower": [],
+   "fruit": [
+    [
+     "orange",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#F08A20",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "papaya",
+   "zh": "番木瓜",
+   "en": "Papaya",
+   "biome": "jungle",
+   "trunk": "jungle",
+   "form": "palm",
+   "flower": [],
+   "fruit": [
+    [
+     "papaya",
+     1,
+     2
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#F0A040",
+   "bark": null,
+   "rarity": 8
+  },
+  {
+   "id": "grape",
+   "zh": "葡萄",
+   "en": "Grape",
+   "biome": "mediterranean",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "grape",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#6A2A6A",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "tea",
+   "zh": "茶",
+   "en": "Tea",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [],
+   "leaf": [
+    [
+     "tea_leaf",
+     1,
+     3
+    ]
+   ],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0E0",
+   "colour": "#C04030",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "litsea",
+   "zh": "山鸡椒",
+   "en": "Litsea",
+   "biome": "subtropical",
+   "trunk": "oak",
+   "form": "bush",
+   "flower": [],
+   "fruit": [
+    [
+     "litsea_berry",
+     1,
+     3
+    ]
+   ],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": null,
+   "leaves": "#4E8C3A",
+   "bloom": "#F0E8B0",
+   "colour": "#3A3A28",
+   "bark": null,
+   "rarity": 32
+  },
+  {
+   "id": "balata",
+   "zh": "巴拉塔树",
+   "en": "Bulletwood",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "balata_latex",
+    "fluid",
+    250
+   ],
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A4A38",
+   "rarity": 8
+  },
+  {
+   "id": "jelutong",
+   "zh": "节路顿",
+   "en": "Jelutong",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "jelutong_latex",
+    "fluid",
+    250
+   ],
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#9A9080",
+   "rarity": 8
+  },
+  {
+   "id": "sorva",
+   "zh": "来开欧",
+   "en": "Sorva",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "sorva_latex",
+    "fluid",
+    250
+   ],
+   "leaves": "#4E8C3A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#7A7060",
+   "rarity": 8
+  },
+  {
+   "id": "sapodilla",
+   "zh": "人心果",
+   "en": "Sapodilla",
+   "biome": "jungle",
+   "trunk": "own",
+   "form": "tree",
+   "flower": [],
+   "fruit": [],
+   "leaf": [],
+   "strip": [],
+   "wood": [],
+   "tap": [
+    "sapodilla_latex",
+    "fluid",
+    250
+   ],
+   "leaves": "#2E5A2A",
+   "bloom": "#F0F0F0",
+   "colour": "#C04030",
+   "bark": "#6A5040",
+   "rarity": 8
+  }
+ ],
+ "gardenia": {
+  "flower": [
+   [
+    "gardenia_flower",
+    1,
+    2
+   ]
+  ],
+  "fruit": [
+   [
+    "gardenia_fruit",
+    1,
+    3
+   ]
+  ]
+ },
+ "vanilla_drops": [
+  {
+   "table": "blocks/oak_leaves",
+   "item": "acorn_shell",
+   "chance": 0.02,
+   "zh": "橡树树叶",
+   "en": "oak leaves"
+  },
+  {
+   "table": "blocks/dark_oak_leaves",
+   "item": "acorn_shell",
+   "chance": 0.02,
+   "zh": "深色橡树树叶",
+   "en": "dark oak leaves"
+  },
+  {
+   "table": "blocks/carrots",
+   "item": "carrot_seed",
+   "chance": 0.25,
+   "age": 7,
+   "block": "minecraft:carrots",
+   "zh": "成熟的胡萝卜",
+   "en": "ripe carrots"
+  }
+ ],
+ "smoked": [
+  {
+   "input": "plum",
+   "result": "smoked_plum"
+  }
+ ],
+ "loot": [
+  {
+   "table": "gameplay/fishing",
+   "item": "ambergris",
+   "chance": 0.01
+  },
+  {
+   "table": "gameplay/fishing/fish",
+   "item": "shrimp",
+   "chance": 0.2,
+   "zh": "钓鱼钓到鱼时有时一并钓到",
+   "en": "Sometimes fished up with a fish"
+  },
+  {
+   "table": "gameplay/fishing/fish",
+   "item": "oyster",
+   "chance": 0.05,
+   "zh": "",
+   "en": ""
+  },
+  {
+   "table": "chests/shipwreck_treasure",
+   "item": "ambergris",
+   "chance": 0.15
+  },
+  {
+   "table": "chests/shipwreck_supply",
+   "item": "ambergris",
+   "chance": 0.05
+  }
+ ],
+ "linked": {
+  "coconut": {
+   "common": [
+    "crops/coconut"
+   ]
+  },
+  "walnut": {
+   "common": [
+    "crops/walnut",
+    "nuts/walnut"
+   ]
+  },
+  "nuts": {
+   "common": [
+    "nuts"
+   ]
+  },
+  "radish": {
+   "common": [
+    "crops/radish",
+    "vegetables/radish"
+   ]
+  },
+  "cucumber": {
+   "common": [
+    "crops/cucumber",
+    "vegetables/cucumber"
+   ]
+  },
+  "oats": {
+   "common": [
+    "crops/oats",
+    "crops/oat",
+    "grain/oats"
+   ]
+  },
+  "beetroot": {
+   "items": [
+    "minecraft:beetroot"
+   ],
+   "common": [
+    "crops/beetroot"
+   ]
+  },
+  "leafy_greens": {
+   "common": [
+    "crops/cabbage",
+    "crops/lettuce",
+    "crops/spinach",
+    "crops/kale",
+    "crops/bokchoy"
+   ]
+  },
+  "duck": {
+   "common": [
+    "raw_duck",
+    "foods/raw_duck"
+   ]
+  },
+  "duck_egg": {
+   "common": [
+    "eggs/duck"
+   ]
+  },
+  "shrimp": {
+   "common": [
+    "raw_shrimp",
+    "foods/raw_shrimp"
+   ]
+  },
+  "laver": {
+   "common": [
+    "crops/laver",
+    "foods/laver"
+   ]
+  },
+  "cowhide": {
+   "items": [
+    "minecraft:leather"
+   ],
+   "forge": [
+    "#forge:leather"
+   ],
+   "c": [
+    "#c:leathers"
+   ]
+  },
+  "wheat_flour": {
+   "common": [
+    "flour/wheat",
+    "flours/wheat"
+   ]
+  },
+  "herbs": {
+   "own": [
+    "materials/licorice_root",
+    "materials/german_chamomile",
+    "materials/roman_chamomile",
+    "materials/chrysanthemum_flower",
+    "materials/mint",
+    "materials/rosemary",
+    "materials/peppermint",
+    "materials/monk_fruit",
+    "materials/perilla_leaf",
+    "materials/angelica_root",
+    "materials/angelica_dahurica_root",
+    "materials/atractylodes_rhizome",
+    "materials/sage"
+   ]
+  },
+  "melon": {
+   "items": [
+    "minecraft:melon_slice"
+   ]
+  },
+  "oak_log": {
+   "own": [],
+   "items": [
+    "#minecraft:oak_logs"
+   ]
+  },
+  "dandelion": {
+   "items": [
+    "minecraft:dandelion"
+   ]
+  },
+  "mushroom": {
+   "items": [
+    "minecraft:brown_mushroom"
+   ]
+  },
+  "rose_flower": {
+   "items": [
+    "minecraft:rose_bush"
+   ]
+  },
+  "fir_needles": {
+   "items": [
+    "minecraft:spruce_leaves"
+   ]
+  },
+  "lime": {
+   "common": [
+    "fruits/lime"
+   ]
+  },
+  "grapefruit": {
+   "common": [
+    "fruits/grapefruit"
+   ]
+  },
+  "ginger": {
+   "common": [
+    "crops/ginger"
+   ]
+  },
+  "barley": {
+   "common": [
+    "crops/barley"
+   ]
+  },
+  "garlic": {
+   "common": [
+    "crops/garlic"
+   ]
+  },
+  "leek": {
+   "common": [
+    "crops/leek"
+   ]
+  },
+  "mustard_seed": {
+   "common": [
+    "crops/mustardseeds"
+   ]
+  },
+  "sorghum": {
+   "common": [
+    "crops/sorghum"
+   ]
+  },
+  "alfalfa": {
+   "common": [
+    "crops/alfalfa"
+   ]
+  },
+  "mulberry": {
+   "common": [
+    "crops/mulberry"
+   ]
+  },
+  "juniper_berry": {
+   "common": [
+    "crops/juniperberry"
+   ]
+  },
+  "coffee_bean": {
+   "common": [
+    "crops/coffeebean"
+   ]
+  }
+ },
+ "scrape": [
+  {
+   "item": "sticklac",
+   "blocks": [
+    "minecraft:jungle_leaves"
+   ],
+   "zh": "丛林树叶",
+   "en": "jungle leaves"
+  },
+  {
+   "item": "dried_cochineal",
+   "blocks": [
+    "minecraft:cactus"
+   ],
+   "zh": "仙人掌",
+   "en": "cacti"
+  }
+ ],
+ "organs": {
+  "minecraft:cow": [
+   [
+    "abomasum",
+    1
+   ],
+   [
+    "liver",
+    1
+   ]
+  ],
+  "minecraft:mooshroom": [
+   [
+    "abomasum",
+    1
+   ],
+   [
+    "liver",
+    1
+   ]
+  ],
+  "minecraft:pig": [
+   [
+    "pork_skin",
+    1
+   ],
+   [
+    "pork_hind_leg",
+    2
+   ],
+   [
+    "small_intestine",
+    1
+   ],
+   [
+    "gastric_mucosa",
+    1
+   ],
+   [
+    "pancreas",
+    1
+   ],
+   [
+    "liver",
+    1
+   ]
+  ],
+  "minecraft:chicken": [
+   [
+    "chicken_feet",
+    2
+   ]
+  ],
+  "minecraft:sheep": [
+   [
+    "small_intestine",
+    1
+   ]
+  ]
+ },
+ "animals": [
+  {
+   "id": "civet",
+   "body": "OCELOT",
+   "zh": "灵猫",
+   "en": "Civet",
+   "drop": [
+    "civet",
+    1,
+    1
+   ],
+   "biomes": [
+    "jungle",
+    "savanna"
+   ],
+   "weight": 4,
+   "min": 1,
+   "max": 2,
+   "colour": "#8A8270",
+   "marks": "#2A2622"
+  },
+  {
+   "id": "beaver",
+   "body": "FOX",
+   "zh": "河狸",
+   "en": "Beaver",
+   "drop": [
+    "castoreum",
+    1,
+    1
+   ],
+   "biomes": [
+    "wetland"
+   ],
+   "weight": 6,
+   "min": 1,
+   "max": 3,
+   "colour": "#6A4A32",
+   "marks": "#3A281C"
+  },
+  {
+   "id": "duck",
+   "body": "CHICKEN",
+   "zh": "鸭",
+   "en": "Duck",
+   "drop": [
+    "raw_duck",
+    1,
+    1
+   ],
+   "biomes": [
+    "wetland"
+   ],
+   "weight": 10,
+   "min": 2,
+   "max": 4,
+   "colour": "#8A6A4A",
+   "marks": "#3A2E22",
+   "lays": "duck_egg"
+  }
+ ],
+ "deposits": {
+  "ilmenite": "ilmenite",
+  "pyrolusite": "pyrolusite",
+  "attapulgite_deposit": "attapulgite",
+  "bentonite_deposit": "bentonite_ore",
+  "perlite_deposit": "perlite_ore",
+  "talc_deposit": "talc_ore"
+ },
+ "info": {
+  "straw": {
+   "zh": "收获成熟的稻谷、糯稻时一并得到",
+   "en": "Comes with a ripe paddy or glutinous paddy harvest"
+  }
+ }
+}

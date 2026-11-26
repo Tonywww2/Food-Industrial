@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:foods/butter"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/egg"
+    }
+  ],
+  "mode": "sheeting",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "egg_tart|tart_shell"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

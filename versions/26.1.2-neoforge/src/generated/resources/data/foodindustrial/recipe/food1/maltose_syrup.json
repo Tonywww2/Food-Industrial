@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:maltose_syrup_wort"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:maltose_syrup"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

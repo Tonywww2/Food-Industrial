@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/egg"
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "leavening"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "mahua|dough"
+  }
+}

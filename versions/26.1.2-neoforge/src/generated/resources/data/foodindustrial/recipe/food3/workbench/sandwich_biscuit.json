@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "semi_finished": "sandwich_biscuit|biscuit"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:foods/shortening"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:sandwich_biscuit"
+  },
+  "tools": [
+    "#foodindustrial:molds/filling_mold"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "T": {
+      "item": "foodindustrial:wooden_tank"
+    }
+  },
+  "pattern": [
+    " P ",
+    "ITI",
+    "I I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:seawater_pump"
+  }
+}

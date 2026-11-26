@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:shortening_blend",
+  "loader": "neoforge:fluid_container"
+}

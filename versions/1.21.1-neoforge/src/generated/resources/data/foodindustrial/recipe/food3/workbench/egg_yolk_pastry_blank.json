@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "semi_finished": "egg_yolk_pastry|pastry"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/red_bean_paste"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/salted_egg_yolk"
+      }
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 2,
+    "semi_finished": "egg_yolk_pastry|blank"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/filling_mold"
+    }
+  ]
+}

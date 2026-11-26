@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:chilling",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/cake_mold"
+    }
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:mousse_cake_mix"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/cake_base"
+      }
+    }
+  ],
+  "mode": "chilling",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:mousse_cake"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 400
+}

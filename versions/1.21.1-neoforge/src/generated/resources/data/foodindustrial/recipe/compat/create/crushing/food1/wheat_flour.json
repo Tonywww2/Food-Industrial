@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/wheat"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "count": 1,
+      "id": "foodindustrial:wheat_flour"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "id": "foodindustrial:wheat_bran"
+    }
+  ]
+}

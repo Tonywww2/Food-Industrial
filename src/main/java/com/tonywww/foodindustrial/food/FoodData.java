@@ -4,7 +4,7 @@ import com.google.gson.JsonObject;
 import com.tonywww.foodindustrial.FoodIndustrial;
 import com.tonywww.foodindustrial.platform.datagen.PlatformDatagen;
 
-/** Generated item models (and 26.1 item definitions) of the finished products (I21). */
+/** Generated item models (and 26.1 item definitions) of the finished products (I21) and the semi-finished item (I38). */
 final class FoodData {
     private static final String NS = FoodIndustrial.MOD_ID;
 
@@ -16,7 +16,9 @@ final class FoodData {
     }
 
     private static void generate(PlatformDatagen.Sink sink) {
-        for (String id : FinishedFoods.ownIds()) {
+        java.util.List<String> ids = new java.util.ArrayList<>(FinishedFoods.ownIds());
+        ids.add("semi_finished");
+        for (String id : ids) {
             JsonObject model = new JsonObject();
             model.addProperty("parent", "minecraft:item/generated");
             JsonObject textures = new JsonObject();

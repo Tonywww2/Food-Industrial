@@ -16,6 +16,7 @@
     {
       "id": "#c:crops/lemon",
       "required": false
-    }
+    },
+    "foodindustrial:lemon"
   ]
 }

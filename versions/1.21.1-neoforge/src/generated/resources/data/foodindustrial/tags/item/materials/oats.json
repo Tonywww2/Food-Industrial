@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oats",
+    {
+      "id": "#c:crops/oats",
+      "required": false
+    },
+    {
+      "id": "#c:crops/oat",
+      "required": false
+    },
+    {
+      "id": "#c:grain/oats",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/oats",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/oat",
+      "required": false
+    },
+    {
+      "id": "#forge:grain/oats",
+      "required": false
+    }
+  ]
+}

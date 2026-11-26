@@ -117,7 +117,7 @@ public final class Batch4Emulsifiers extends Batch {
         // 254: A direct esterification; B interesterification with fat (as 27 A)
         r(REACTING).in("chemicals/stearic_acid", 1).fin("propylene_glycol", B).fin("sulfuric_acid", 50)
             .out("propylene_glycol_monostearate", 1).src(50).inert().temp("heated").add("propylene_glycol_monostearate");
-        r(REACTING).in("chemicals/animal_fat", 1).in("chemicals/sodium_hydroxide", 1).fin("propylene_glycol", 3 * B)
+        r(REACTING).in("animal_fats", 1).in("chemicals/sodium_hydroxide", 1).fin("propylene_glycol", 3 * B)
             .out("propylene_glycol_monostearate", 3).src(45).fout("glycerol", B).src().inert().temp("heated")
             .add("propylene_glycol_monostearate_interesterification");
         // 255, 261: polyglycerol (P58); polyricinoleic acid by self-condensation; their esters
@@ -134,7 +134,7 @@ public final class Batch4Emulsifiers extends Batch {
         // 259 A: triacetin, interesterified with fat; B: monoglyceride with acetic anhydride
         r(REACTING).fin("glycerol", B).fin("acetic_acid", 3 * B).fin("sulfuric_acid", 50).fout("triacetin", B).temp("heated")
             .add("triacetin");
-        r(REACTING).in("chemicals/animal_fat", 1).in("chemicals/sodium_hydroxide", 1).fin("triacetin", 2 * B)
+        r(REACTING).in("animal_fats", 1).in("chemicals/sodium_hydroxide", 1).fin("triacetin", 2 * B)
             .fout("acetylated_monoglycerides", 3 * B).inert().temp("heated").add("acetylated_monoglycerides");
         r(REACTING).in("chemicals/glyceryl_monostearate", 1).fin("acetic_anhydride", 2 * B).fout("acetylated_monoglycerides", B)
             .fout("acetic_acid", 2 * B).src(30).add("acetylated_monoglycerides_by_anhydride");
@@ -185,7 +185,7 @@ public final class Batch4Emulsifiers extends Batch {
         r(REACTING).in("chemicals/ammonium_persulfate", 1).fin("water", 2 * B).fout("hydrogen_peroxide", B).out("ammonium_bisulfate", 2)
             .pressure("vacuum").temp("heated").add("hydrogen_peroxide_from_persulfate");
         // 260 A: fat boiled with potash lye (soft soap, crude); B: stearic acid neutralized
-        r(REACTING).in("chemicals/animal_fat", 1).in("chemicals/potassium_hydroxide", 3).fin("water", B).out("potassium_stearate", 3).src()
+        r(REACTING).in("animal_fats", 1).in("chemicals/potassium_hydroxide", 3).fin("water", B).out("potassium_stearate", 3).src()
             .fout("glycerol", B).src().temp("heated").add("potassium_stearate_by_saponification");
         r(REACTING).in("chemicals/stearic_acid", 1).in("chemicals/potassium_hydroxide", 1).fin("water", B).out("potassium_stearate", 1)
             .tier(2).add("potassium_stearate");

@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/acetobacter",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:rice_vinegar_wine_mash"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:rice_vinegar_acetic_mash"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

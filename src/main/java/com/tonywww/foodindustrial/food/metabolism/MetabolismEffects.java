@@ -42,7 +42,10 @@ public final class MetabolismEffects {
         PlatformAttributes.declare(UNCONSCIOUS_JUMP);
     }
 
-    /** The substance a modifier id belongs to (the lock while unconscious belongs to alcohol), or {@code null}. */
+    /**
+     * The substance a modifier id belongs to (the lock while unconscious belongs to alcohol, which nitrite shares), or
+     * {@code null}.
+     */
     public static Substance substanceOf(String id) {
         String[] parts = id.split("/");
         if (parts.length != 3 || !parts[0].equals("metabolism")) {
@@ -81,6 +84,15 @@ public final class MetabolismEffects {
             case FAST_SUGAR -> {
                 // exhaustion only (not an attribute)
             }
+            case NITRITE -> {
+                if (tier >= 1) {
+                    attackDamage = NITRITE_MILD_ATTACK_DAMAGE;
+                    movement = tier >= 2 ? NITRITE_MODERATE_MOVEMENT : NITRITE_MILD_MOVEMENT;
+                }
+                if (tier >= 2) {
+                    attackSpeed = NITRITE_MODERATE_ATTACK_SPEED;
+                }
+            }
             case IMPURITY -> {
                 if (tier >= 1) {
                     attackDamage = IMPURITY_ATTACK_DAMAGE;
@@ -116,6 +128,41 @@ public final class MetabolismEffects {
                     attackDamage = VITAMIN_D_ATTACK_DAMAGE;
                 }
             }
+            // tiers 1–2 deficiency, 3–4 excess (foods/02 §5.6); vitamin A's darkened view is drawn by the client
+            case VITAMIN_A -> {
+                if (tier == 2) {
+                    maxHealth = VITAMIN_A_MAX_HEALTH;
+                } else if (tier >= 3) {
+                    mining = VITAMIN_A_EXCESS_MINING;
+                    maxHealth = tier >= 4 ? VITAMIN_A_EXCESS_MAX_HEALTH : 0;
+                }
+            }
+            case CALCIUM -> {
+                if (tier == 1 || tier == 2) {
+                    fall = CALCIUM_FALL_DAMAGE;
+                    maxHealth = tier == 2 ? CALCIUM_MAX_HEALTH : 0;
+                } else if (tier >= 3) {
+                    movement = CALCIUM_EXCESS_MOVEMENT;
+                }
+            }
+            case IRON -> {
+                if (tier == 1 || tier == 2) {
+                    maxHealth = IRON_MAX_HEALTH;
+                    attackDamage = IRON_ATTACK_DAMAGE;
+                    movement = tier == 2 ? IRON_MOVEMENT : 0;
+                } else if (tier >= 4) {
+                    // damage taken comes from damageTaken()
+                    maxHealth = IRON_EXCESS_MAX_HEALTH;
+                }
+            }
+            case ZINC -> {
+                if (tier == 1 || tier == 2) {
+                    healing = ZINC_HEALING;
+                    attackDamage = tier == 2 ? ZINC_ATTACK_DAMAGE : 0;
+                } else if (tier >= 3) {
+                    maxHealth = ZINC_EXCESS_MAX_HEALTH;
+                }
+            }
         }
         String[] ids = IDS[substance.ordinal()];
         PlatformAttributes.set(player, Stat.ATTACK_DAMAGE, ids[Stat.ATTACK_DAMAGE.ordinal()], Mode.MULTIPLY_BASE, attackDamage);
@@ -126,6 +173,16 @@ public final class MetabolismEffects {
         PlatformAttributes.set(player, Stat.JUMP_STRENGTH, ids[Stat.JUMP_STRENGTH.ordinal()], Mode.MULTIPLY_BASE, jump);
         PlatformAttributes.set(player, Stat.FALL_DAMAGE, ids[Stat.FALL_DAMAGE.ordinal()], Mode.MULTIPLY_BASE, fall);
         PlatformAttributes.set(player, Stat.HEALING, ids[Stat.HEALING.ordinal()], Mode.MULTIPLY_BASE, healing);
+    }
+
+    /** Extra share of damage taken at the applied tiers (by substance ordinal): iron excess +10 % (foods/02 §5.6.2). */
+    static double damageTaken(int[] tiers) {
+        return tiers[Substance.IRON.ordinal()] >= 3 ? IRON_EXCESS_DAMAGE_TAKEN : 0;
+    }
+
+    /** Whether the applied tier darkens the view: nitrite from tier 2, vitamin A deficiency (night blindness). */
+    public static boolean darkens(Substance substance, int tier) {
+        return substance == Substance.NITRITE ? tier >= 2 : substance == Substance.VITAMIN_A && (tier == 1 || tier == 2);
     }
 
     /** Locks or frees walking and jumping (unconscious, when the configuration says so). */

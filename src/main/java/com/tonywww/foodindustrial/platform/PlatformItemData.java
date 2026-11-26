@@ -73,6 +73,30 @@ public final class PlatformItemData {
         //?}
     }
 
+    /**
+     * Sets one string field of the data under {@code key}, keeping its other fields; needs no registry access, so it
+     * works where none is at hand (creative tabs, recipe outputs; 26.1's {@link #write} needs it, 2026-11-25).
+     */
+    public static void putString(ItemStack stack, String key, String field, String value) {
+        //? if >=26.1 {
+        /*CustomData.update(DataComponents.CUSTOM_DATA, stack, tag -> {
+            CompoundTag data = tag.getCompoundOrEmpty(key);
+            data.putString(field, value);
+            tag.put(key, data);
+        });
+        *///?} else if >=1.21 {
+        /*CustomData.update(DataComponents.CUSTOM_DATA, stack, tag -> {
+            CompoundTag data = tag.getCompound(key);
+            data.putString(field, value);
+            tag.put(key, data);
+        });
+        *///?} else {
+        CompoundTag data = stack.getOrCreateTag().getCompound(key);
+        data.putString(field, value);
+        stack.getOrCreateTag().put(key, data);
+        //?}
+    }
+
     /** Replaces the data under {@code key}; when {@code body} writes nothing the key is removed. */
     public static void write(ItemStack stack, String key, @Nullable HolderLookup.Provider registries, Consumer<DataWriter> body) {
         CompoundTag data = PlatformData.writeCompound(registries, body);

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:materials/raw_chicken",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/raw_pork",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/raw_beef",
+      "required": false
+    }
+  ]
+}

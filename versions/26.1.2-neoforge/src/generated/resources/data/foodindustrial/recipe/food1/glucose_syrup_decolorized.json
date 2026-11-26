@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:purifying",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/activated_carbon",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:glucose_syrup_saccharified"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:glucose_syrup_decolorized"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

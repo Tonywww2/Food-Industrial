@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:materials/starch_dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "starch_noodles|raw_strips"
+  }
+}

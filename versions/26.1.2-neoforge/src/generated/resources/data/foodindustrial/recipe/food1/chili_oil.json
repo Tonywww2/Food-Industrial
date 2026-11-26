@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:foods/cooking_oil"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/dried_chili"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:chili_oil"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "open_flame"
+    ],
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

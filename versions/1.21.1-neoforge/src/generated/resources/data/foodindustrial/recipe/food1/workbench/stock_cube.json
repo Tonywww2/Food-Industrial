@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "stock_cube|mix"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "item": "foodindustrial:stock_cube"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/tablet_die"
+    }
+  ]
+}

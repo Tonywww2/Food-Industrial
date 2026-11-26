@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sucrose"
+    },
+    {
+      "tag": "foodindustrial:foods/lard"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "foodindustrial:red_bean_paste"
+    }
+  ]
+}

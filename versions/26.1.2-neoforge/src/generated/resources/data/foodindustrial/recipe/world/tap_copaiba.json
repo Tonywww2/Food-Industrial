@@ -1,0 +1,10 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:copaiba_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:copaiba_balsam"
+  },
+  "tool": "#foodindustrial:knives"
+}

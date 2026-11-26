@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:separating",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:pasteurized_milk"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 100,
+      "fluid": "foodindustrial:cream"
+    },
+    {
+      "amount": 900,
+      "fluid": "foodindustrial:skim_milk"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 100
+}

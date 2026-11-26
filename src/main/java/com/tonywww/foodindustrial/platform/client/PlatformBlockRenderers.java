@@ -112,6 +112,7 @@ public final class PlatformBlockRenderers {
             for (ContentsEntry<?> entry : CONTENTS) {
                 registerContents(event, entry);
             }
+            PlatformPanels.register(event);
         });
     }
 
@@ -139,7 +140,7 @@ public final class PlatformBlockRenderers {
 
     // ---- drawing ----
 
-    private static TextureAtlasSprite sprite(FluidAmount fluid) {
+    static TextureAtlasSprite sprite(FluidAmount fluid) {
         //? if >=26.1 {
         /*FluidModel model = Minecraft.getInstance().getModelManager().getFluidStateModelSet().get(fluid.fluid().defaultFluidState());
         return model.stillMaterial().sprite();
@@ -149,7 +150,7 @@ public final class PlatformBlockRenderers {
         //?}
     }
 
-    private static int tint(FluidAmount fluid) {
+    static int tint(FluidAmount fluid) {
         //? if >=26.1 {
         /*FluidModel model = Minecraft.getInstance().getModelManager().getFluidStateModelSet().get(fluid.fluid().defaultFluidState());
         return model.fluidTintSource() == null ? 0xFFFFFFFF : model.fluidTintSource().colorAsStack(PlatformFluids.toStack(fluid)) | 0xFF000000;
@@ -188,7 +189,7 @@ public final class PlatformBlockRenderers {
     }
 
     /** {@code TextureAtlasSprite.getU} takes 0–16 before 1.21 and 0–1 from 1.21 on. */
-    private static float spriteScale() {
+    static float spriteScale() {
         //? if <1.21 {
         return 16.0F;
         //?} else {
@@ -196,7 +197,7 @@ public final class PlatformBlockRenderers {
         *///?}
     }
 
-    private static void vertex(PoseStack.Pose pose, VertexConsumer buffer, float x, float y, float z, float u, float v, int argb, int light,
+    static void vertex(PoseStack.Pose pose, VertexConsumer buffer, float x, float y, float z, float u, float v, int argb, int light,
                                float nx, float ny, float nz) {
         //? if <1.21 {
         buffer.vertex(pose.pose(), x, y, z).color((argb >> 16) & 255, (argb >> 8) & 255, argb & 255, (argb >>> 24) & 255)

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:glucose_syrup_saccharified",
+  "loader": "neoforge:fluid_container"
+}

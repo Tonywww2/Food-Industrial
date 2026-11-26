@@ -18,8 +18,8 @@ class GuiLayoutTest {
     private static final IoLayout[] LAYOUTS = {
         IoLayout.of(1, 2, 0, 0).withUpgrades(2),                                   // M11
         IoLayout.of(3, 2, 6, 3).withCatalyst(1).withUpgrades(2).withModules(3),    // M14 (six input, three output tanks, I31)
-        IoLayout.of(6, 2, 3, 1).withUpgrades(2).withModules(1),                    // M21 (three input tanks, I31)
-        IoLayout.of(2, 2, 2, 1).withFuel(1),                                       // M03 (two input tanks, I31)
+        IoLayout.of(9, 2, 3, 1).withUpgrades(2).withModules(1).withAdditives(8),   // M21 (three input tanks, I31; nine inputs, I47.5)
+        IoLayout.of(4, 2, 3, 1).withCatalyst(1).withFuel(1),                       // M03 (I47.5)
         IoLayout.of(4, 4, 0, 1).withFuel(1),                                       // M10
         IoLayout.of(0, 0, 2, 2).withCatalyst(1).withUpgrades(4),                   // M31
         IoLayout.of(1, 1, 2, 3).withCatalyst(1).withUpgrades(3),                   // M24
@@ -34,13 +34,27 @@ class GuiLayoutTest {
         IoLayout.of(2, 2, 5, 2).withCatalyst(1).withUpgrades(3),                   // M23 (five input tanks, I31)
     };
 
+    /** The hand-cranked ones of I47.5: the ingredient-step devices with nine inputs, and M50 with its coolant beside the bar. */
+    private static final IoLayout[] CRANKED = {
+        IoLayout.of(9, 2, 3, 1).withCatalyst(1).withAdditives(8),                  // M38
+        IoLayout.of(9, 2, 3, 1).withAdditives(8),                                  // M41
+        IoLayout.of(3, 2, 2, 0).withCatalyst(1).withFuel(2),                       // M50 (coolant in the fuel slots)
+        IoLayout.of(4, 2, 2, 0).withCatalyst(1),                                   // M52
+    };
+
     private static PowerKind power(IoLayout io) {
+        for (IoLayout cranked : CRANKED) {
+            if (io == cranked) {
+                return PowerKind.MANUAL;
+            }
+        }
         return io.fuel() > 0 ? PowerKind.FUEL : io == MORE[3] ? PowerKind.NONE : PowerKind.ENERGY;
     }
 
     private static List<IoLayout> all() {
         List<IoLayout> all = new ArrayList<>(List.of(LAYOUTS));
         all.addAll(List.of(MORE));
+        all.addAll(List.of(CRANKED));
         return all;
     }
 
@@ -53,7 +67,7 @@ class GuiLayoutTest {
             for (int i = 0; i < io.itemSlots(); i++) {
                 SlotRole role = io.roleOf(i);
                 GuiLayout.Box box = layout.slot(i);
-                if (role == SlotRole.UPGRADE || role == SlotRole.MODULE) {
+                if (role == SlotRole.UPGRADE || role == SlotRole.MODULE || role == SlotRole.ADDITIVE) {
                     assertTrue(box.x() < 0 && box.x() + box.w() <= 0, io + " panel slot " + i);
                     continue;
                 }
@@ -86,7 +100,7 @@ class GuiLayoutTest {
             for (int i = 0; i < boxes.size(); i++) {
                 GuiLayout.Box box = boxes.get(i);
                 GuiLayout.Box frame = zone(layout, owners.get(i)).frame();
-                int pad = GuiLayout.ZONE_PAD;
+                int pad = layout.pad();
                 assertTrue(box.x() >= frame.x() + pad && box.x() + box.w() <= frame.x() + frame.w() - pad
                     && box.y() >= frame.y() + pad && box.y() + box.h() <= frame.y() + frame.h() - pad, io + " " + owners.get(i) + " " + box);
             }
@@ -113,7 +127,7 @@ class GuiLayoutTest {
                 GuiLayout.Box a = zones.get(i - 1).frame();
                 GuiLayout.Box b = zones.get(i).frame();
                 assertTrue(zones.get(i - 1).kind().ordinal() < zones.get(i).kind().ordinal(), io.toString());
-                assertEquals(a.x() + a.w() + GuiLayout.ZONE_GAP, b.x(), io.toString());
+                assertEquals(a.x() + a.w() + layout.gap(), b.x(), io.toString());
                 assertEquals(a.y(), b.y(), io + " frames share the top");
                 assertEquals(a.h(), b.h(), io + " frames share the bottom");
             }
@@ -248,5 +262,33 @@ class GuiLayoutTest {
             controller.zones().stream().map(GuiLayout.Zone::kind).toList());
         GuiLayout port = GuiLayout.of(kiln, PowerKind.FUEL);
         assertTrue(port.slot(kiln.start(SlotRole.FUEL)).x() > 0, "port windows keep the positions");
+    }
+
+    /** I47.5: nine inputs and three input tanks fit by closing up the zones; the normal spacing stays where it fits. */
+    @Test
+    void ingredientStepDevicesCloseUpTheZones() {
+        for (IoLayout io : new IoLayout[]{LAYOUTS[2], CRANKED[0], CRANKED[1]}) {
+            GuiLayout layout = GuiLayout.of(io, power(io));
+            assertTrue(GuiLayout.fits(layout), io.toString());
+            assertEquals(GuiLayout.COMPACT_PAD, layout.pad(), io.toString());
+            assertEquals(GuiLayout.COMPACT_GAP, layout.gap(), io.toString());
+            assertTrue(layout.tank(0).w() >= 8, io + " tanks no narrower than 8");
+        }
+        GuiLayout stove = GuiLayout.of(LAYOUTS[3], PowerKind.FUEL);
+        assertEquals(GuiLayout.ZONE_PAD, stove.pad());
+        assertEquals(GuiLayout.ZONE_GAP, stove.gap());
+    }
+
+    /** I47.5: M50's ice and salt slots sit beside the crank bar, inside the energy zone, without a flame. */
+    @Test
+    void coolantSlotsSitBesideTheBar() {
+        IoLayout io = CRANKED[2];
+        GuiLayout layout = GuiLayout.of(io, PowerKind.MANUAL);
+        assertTrue(layout.energy() != null && layout.flame() == null);
+        GuiLayout.Box energy = layout.energy();
+        for (int i = 0; i < io.fuel(); i++) {
+            GuiLayout.Box slot = layout.slot(io.start(SlotRole.FUEL) + i);
+            assertTrue(slot.x() >= energy.x() + energy.w(), "coolant slot " + i + " right of the bar");
+        }
     }
 }

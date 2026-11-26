@@ -1,0 +1,51 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_bicarbonate"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:wafer_batter"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "emulsifier"
+        ],
+        "item": "state"
+      },
+      {
+        "accepts": [
+          "sweet_flavoring"
+        ],
+        "item": "taste"
+      },
+      "color"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

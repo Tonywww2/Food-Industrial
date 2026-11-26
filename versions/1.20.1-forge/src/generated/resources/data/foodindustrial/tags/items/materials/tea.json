@@ -8,6 +8,7 @@
     {
       "id": "#c:crops/tealeaf",
       "required": false
-    }
+    },
+    "foodindustrial:tea_leaf"
   ]
 }

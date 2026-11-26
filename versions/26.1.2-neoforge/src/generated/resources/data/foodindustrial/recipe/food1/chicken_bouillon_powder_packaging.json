@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:packaging",
+  "inputs": [
+    {
+      "semi_finished": "chicken_bouillon_powder|granules"
+    },
+    {
+      "ingredient": "#foodindustrial:containers/paper_bag"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:chicken_bouillon_powder"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 40
+}

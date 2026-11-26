@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/wonton_wrapper"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/meat_filling"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "semi_finished": "wontons|raw"
+  },
+  "tools": [
+    "#foodindustrial:molds/filling_mold"
+  ]
+}

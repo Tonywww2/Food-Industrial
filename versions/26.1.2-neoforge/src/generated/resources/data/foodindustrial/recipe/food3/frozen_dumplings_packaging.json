@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:packaging",
+  "inputs": [
+    {
+      "count": 8,
+      "semi_finished": "frozen_dumplings|frozen_dumpling"
+    },
+    {
+      "ingredient": "#foodindustrial:containers/plastic_bag"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:frozen_dumplings"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 40
+}

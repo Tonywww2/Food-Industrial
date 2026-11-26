@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/glutinous_rice"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:glutinous_rice_flour"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 100
+}

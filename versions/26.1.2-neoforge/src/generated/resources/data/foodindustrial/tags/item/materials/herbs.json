@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:materials/licorice_root",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/german_chamomile",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/roman_chamomile",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/chrysanthemum_flower",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/mint",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/rosemary",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/peppermint",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/monk_fruit",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/perilla_leaf",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/angelica_root",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/angelica_dahurica_root",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/atractylodes_rhizome",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/sage",
+      "required": false
+    }
+  ]
+}

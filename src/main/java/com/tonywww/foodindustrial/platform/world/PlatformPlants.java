@@ -67,6 +67,11 @@ public final class PlatformPlants {
 
     /** A sapling growing the configured feature {@code foodindustrial:<treeFeature>}. */
     public static Function<BlockBehaviour.Properties, Block> sapling(String treeFeature) {
+        return sapling(treeFeature, false);
+    }
+
+    /** I44: a sapling that may also stand on sand ({@code #minecraft:sand}) when {@code sand}: palms on beaches, desert trees. */
+    public static Function<BlockBehaviour.Properties, Block> sapling(String treeFeature, boolean sand) {
         ResourceKey<ConfiguredFeature<?, ?>> key = PlatformIdentifier.key(Registries.CONFIGURED_FEATURE, treeFeature);
         //? if forge {
         AbstractTreeGrower grower = new AbstractTreeGrower() {
@@ -78,6 +83,15 @@ public final class PlatformPlants {
         //?} else {
         /*TreeGrower grower = new TreeGrower(FoodIndustrial.MOD_ID + ":" + treeFeature, Optional.empty(), Optional.of(key), Optional.empty());
         *///?}
+        if (sand) {
+            return properties -> new SaplingBlock(grower, properties) {
+                @Override
+                public boolean mayPlaceOn(net.minecraft.world.level.block.state.BlockState state, net.minecraft.world.level.BlockGetter level,
+                                          net.minecraft.core.BlockPos pos) {
+                    return super.mayPlaceOn(state, level, pos) || state.is(net.minecraft.tags.BlockTags.SAND);
+                }
+            };
+        }
         return properties -> new SaplingBlock(grower, properties);
     }
 
@@ -88,6 +102,21 @@ public final class PlatformPlants {
         *///?} else {
         return LeavesBlock::new;
         //?}
+    }
+
+    /** I44: a shrub (bush shape) or wild herb (small shape) picked as {@code harvest} says; {@code sand}: also grows on sand. */
+    public static Function<BlockBehaviour.Properties, Block> harvestPlant(PlantHarvest harvest, boolean herb, boolean sand) {
+        return properties -> new HarvestPlantBlock(properties, harvest, herb, sand);
+    }
+
+    /** I44: leaves that ripen (age 0–3) and are picked as {@code harvest} says. */
+    public static Function<BlockBehaviour.Properties, Block> fruitLeaves(PlantHarvest harvest) {
+        return properties -> new FruitLeavesBlock(properties, harvest);
+    }
+
+    /** A plain log (axis property), not strippable. */
+    public static Function<BlockBehaviour.Properties, Block> log() {
+        return net.minecraft.world.level.block.RotatedPillarBlock::new;
     }
 
     /** A log or wood block that an axe strips into {@code stripped}. */

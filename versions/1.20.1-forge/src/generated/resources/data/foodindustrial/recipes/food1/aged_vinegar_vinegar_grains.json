@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:cultures/acetobacter"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "aged_vinegar|fermented_grains"
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_bran"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "aged_vinegar|vinegar_grains"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 24000
+}

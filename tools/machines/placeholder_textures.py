@@ -51,12 +51,28 @@ MACHINES = {
     'sterile_fermenter': (215, 220, 225),
     'culture_bench': (225, 230, 235),
     'membrane_separator': (180, 200, 215),
+    # I43
+    'seawater_pump': (90, 130, 160),
+    # T1 finished-food line (I41)
+    'noodle_press': (170, 170, 175),
+    'mixing_churn': (150, 115, 75),
+    'brick_oven': (160, 80, 60),
+    'meat_grinder': (150, 155, 165),
+    'candy_table': (200, 195, 185),
+    'ice_salt_freezer': (120, 95, 65),
+    'filling_sealer': (140, 150, 160),
+    # T2 finished-food lines (I42)
+    'forming_line': (205, 210, 215), 'homogenizing_sterilizer': (200, 215, 225), 'baking_line': (215, 190, 160),
+    'cooker_fryer': (210, 200, 185), 'aging_cellar': (170, 140, 105), 'cutting_station': (200, 205, 210),
+    'confectionery_line': (215, 185, 175), 'freezing_unit': (185, 215, 235), 'filling_retort_line': (195, 205, 200),
 }
 PORTS = {'item_port': (176, 140, 80), 'fluid_port': (80, 120, 176), 'energy_port': (176, 60, 60)}
 CASINGS = {'koji_room_wall': (170, 140, 90), 'kiln_brick': (125, 65, 45), 'drying_room_wall': (145, 95, 75),
            'tower_wall': (130, 140, 135), 'kiln_shell': (150, 100, 80),
            # I16, I17
-           'chemical_tower_wall': (150, 160, 170), 'refractory_bricks': (170, 120, 90), 'sterile_vessel_wall': (215, 220, 225)}
+           'chemical_tower_wall': (150, 160, 170), 'refractory_bricks': (170, 120, 90), 'sterile_vessel_wall': (215, 220, 225),
+           # I42
+           'food_machine_casing': (205, 210, 214)}
 # T2 items (I15): upgrades are boards with a coloured chip, modules a part with an accent colour
 UPGRADES = {'speed_upgrade': (230, 190, 60), 'efficiency_upgrade': (200, 120, 80), 'parallel_upgrade': (150, 110, 70),
             'standardization_module': (180, 60, 60)}

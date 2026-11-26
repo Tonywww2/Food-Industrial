@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/glutinous_rice_flour"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": []
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "raw_tangyuan|rice_dough"
+  }
+}

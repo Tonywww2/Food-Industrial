@@ -34,6 +34,18 @@ public final class PlatformFluidContainers {
     private PlatformFluidContainers() {
     }
 
+    /**
+     * A partial transfer with one container (2026-11-19, user: the machine window's tanks): what moved, and the
+     * container afterwards; {@link #NONE} when nothing moved.
+     */
+    public record Transfer(FluidAmount moved, ItemStack container) {
+        public static final Transfer NONE = new Transfer(FluidAmount.EMPTY, ItemStack.EMPTY);
+
+        public boolean done() {
+            return !moved.isEmpty();
+        }
+    }
+
     //? if <26.1 {
     /** Fluid held by an item container, or {@link FluidAmount#EMPTY}. */
     public static FluidAmount contained(ItemStack container) {
@@ -59,6 +71,28 @@ public final class PlatformFluidContainers {
         return FluidUtil.getFluidHandler(container.copyWithCount(1)).map(handler ->
             handler.drain(Integer.MAX_VALUE, IFluidHandler.FluidAction.EXECUTE).isEmpty() ? ItemStack.EMPTY : handler.getContainer()
         ).orElse(ItemStack.EMPTY);
+    }
+
+    /** Drains at most {@code max} mB from one {@code container} (as much as it gives: a bucket all or nothing). */
+    public static Transfer drain(ItemStack container, int max) {
+        if (container.isEmpty() || max <= 0) {
+            return Transfer.NONE;
+        }
+        return FluidUtil.getFluidHandler(container.copyWithCount(1)).map(handler -> {
+            FluidStack drained = handler.drain(max, IFluidHandler.FluidAction.EXECUTE);
+            return drained.isEmpty() ? Transfer.NONE : new Transfer(PlatformFluids.fromStack(drained), handler.getContainer());
+        }).orElse(Transfer.NONE);
+    }
+
+    /** Fills one {@code container} with as much of {@code fluid} as it takes (an empty bucket exactly 1,000 mB). */
+    public static Transfer fill(ItemStack container, FluidAmount fluid) {
+        if (container.isEmpty() || fluid.isEmpty()) {
+            return Transfer.NONE;
+        }
+        return FluidUtil.getFluidHandler(container.copyWithCount(1)).map(handler -> {
+            int filled = handler.fill(PlatformFluids.toStack(fluid), IFluidHandler.FluidAction.EXECUTE);
+            return filled <= 0 ? Transfer.NONE : new Transfer(fluid.withAmount(filled), handler.getContainer());
+        }).orElse(Transfer.NONE);
     }
     //?} else {
     /*/^* Fluid held by an item container, or {@link FluidAmount#EMPTY}. ^/
@@ -89,6 +123,43 @@ public final class PlatformFluidContainers {
             }
             return false;
         });
+    }
+
+    /^* Drains at most {@code max} mB from one {@code container} (as much as it gives: a bucket all or nothing). ^/
+    public static Transfer drain(ItemStack container, int max) {
+        if (container.isEmpty() || max <= 0) {
+            return Transfer.NONE;
+        }
+        FluidAmount[] moved = {FluidAmount.EMPTY};
+        ItemStack after = transact(container, (handler, transaction) -> {
+            for (int index = 0; index < handler.size(); index++) {
+                FluidResource resource = handler.getResource(index);
+                if (resource.isEmpty()) {
+                    continue;
+                }
+                int taken = handler.extract(index, resource, max, transaction);
+                if (taken > 0) {
+                    moved[0] = PlatformFluids.fromResource(resource, taken);
+                    return true;
+                }
+            }
+            return false;
+        });
+        return moved[0].isEmpty() ? Transfer.NONE : new Transfer(moved[0], after);
+    }
+
+    /^* Fills one {@code container} with as much of {@code fluid} as it takes (an empty bucket exactly 1,000 mB). ^/
+    public static Transfer fill(ItemStack container, FluidAmount fluid) {
+        if (container.isEmpty() || fluid.isEmpty()) {
+            return Transfer.NONE;
+        }
+        FluidResource resource = PlatformFluids.toResource(fluid);
+        int[] filled = {0};
+        ItemStack after = transact(container, (handler, transaction) -> {
+            filled[0] = handler.insert(resource, fluid.amount(), transaction);
+            return filled[0] > 0;
+        });
+        return filled[0] <= 0 ? Transfer.NONE : new Transfer(fluid.withAmount(filled[0]), after);
     }
 
     private static ItemStack transact(ItemStack container, BiPredicate<ResourceHandler<FluidResource>, TransactionContext> action) {

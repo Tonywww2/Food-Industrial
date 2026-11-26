@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:juniper_berry"
+    "foodindustrial:juniper_berry",
+    {
+      "id": "#c:crops/juniperberry",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/juniperberry",
+      "required": false
+    }
   ]
 }

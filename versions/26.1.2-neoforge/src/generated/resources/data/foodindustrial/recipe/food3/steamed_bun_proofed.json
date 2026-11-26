@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "steamed_bun|blank"
+    }
+  ],
+  "mode": "proofing",
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "steamed_bun|proofed_blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

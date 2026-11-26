@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "X": {
+      "item": "minecraft:piston"
+    }
+  },
+  "pattern": [
+    "ISI",
+    "IXI",
+    "I I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:filling_sealer"
+  }
+}

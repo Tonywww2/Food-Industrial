@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:river"
+  ],
+  "features": [
+    "foodindustrial:tea_tree_tree",
+    "foodindustrial:cajeput_tree",
+    "foodindustrial:wild_nutgrass",
+    "foodindustrial:wild_pennyroyal",
+    "foodindustrial:wild_marshmallow",
+    "foodindustrial:wild_glutinous_paddy"
+  ],
+  "step": "vegetal_decoration"
+}

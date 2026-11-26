@@ -53,6 +53,8 @@ public final class FoodIndustrial {
         ModLogistics.bootstrap();
         T0Devices.bootstrap();
         FinishedFoods.bootstrap();
+        com.tonywww.foodindustrial.food.tool.FoodTools.bootstrap();
+        com.tonywww.foodindustrial.food.FoodLine.bootstrap();
         com.tonywww.foodindustrial.food.nutrition.Nutrition.bootstrap();
         com.tonywww.foodindustrial.food.metabolism.Metabolism.bootstrap();
         ModContent.bootstrap();

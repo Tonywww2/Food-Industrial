@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/forming_line_front",
+    "side": "foodindustrial:block/forming_line_side",
+    "top": "foodindustrial:block/forming_line_top"
+  }
+}

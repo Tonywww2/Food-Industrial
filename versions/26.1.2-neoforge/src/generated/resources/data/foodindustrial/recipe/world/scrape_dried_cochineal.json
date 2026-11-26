@@ -1,0 +1,9 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "#foodindustrial:harvest/dried_cochineal",
+  "cooldown": 6000,
+  "result": {
+    "item": "foodindustrial:dried_cochineal"
+  },
+  "tool": "#foodindustrial:knives"
+}

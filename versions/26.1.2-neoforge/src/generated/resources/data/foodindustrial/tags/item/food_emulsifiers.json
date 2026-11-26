@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:chemicals/glyceryl_monostearate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:chemicals/lecithin",
+      "required": false
+    }
+  ]
+}

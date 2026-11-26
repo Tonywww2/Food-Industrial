@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "flower_roll|blank"
+    }
+  ],
+  "mode": "proofing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "flower_roll|proofed_blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

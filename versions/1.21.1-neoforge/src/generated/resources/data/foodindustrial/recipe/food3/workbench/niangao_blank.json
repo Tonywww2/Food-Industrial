@@ -1,0 +1,14 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_rice_dough"
+      }
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "niangao|cake_blank"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "rice_vermicelli|dry_vermicelli"
+    },
+    {
+      "ingredient": "#foodindustrial:containers/paper_bag"
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:rice_vermicelli"
+  }
+}

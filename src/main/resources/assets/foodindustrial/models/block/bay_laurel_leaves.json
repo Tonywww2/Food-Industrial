@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "foodindustrial:block/bay_laurel_leaves"
+  },
+  "render_type": "minecraft:cutout_mipped"
+}

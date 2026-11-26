@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:hotpot_base_melt",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:non_dairy_creamer_homogenized",
+  "loader": "forge:fluid_container"
+}

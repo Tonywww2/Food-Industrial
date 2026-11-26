@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/fermentation_vat_shape",
   "textures": {
     "front": "foodindustrial:block/fermentation_vat_front_active",
     "side": "foodindustrial:block/fermentation_vat_side",

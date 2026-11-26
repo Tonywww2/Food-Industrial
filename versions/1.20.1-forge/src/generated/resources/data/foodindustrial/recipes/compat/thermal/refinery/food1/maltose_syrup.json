@@ -1,0 +1,24 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 4000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:maltose_syrup_wort"
+  },
+  "result": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:maltose_syrup"
+    }
+  ]
+}

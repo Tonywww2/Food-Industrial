@@ -5,6 +5,9 @@ import com.tonywww.foodindustrial.core.data.DataReader;
 import com.tonywww.foodindustrial.core.data.DataWriter;
 import com.tonywww.foodindustrial.core.purity.Purity;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
+import com.tonywww.foodindustrial.food.FoodLine;
+import com.tonywww.foodindustrial.food.quality.FoodQuality;
+import com.tonywww.foodindustrial.food.quality.QualityRules;
 import com.tonywww.foodindustrial.machine.component.MachineInventory;
 import com.tonywww.foodindustrial.machine.component.SlotRole;
 import com.tonywww.foodindustrial.machine.component.TankSet;
@@ -72,6 +75,10 @@ public final class RecipeProcessor {
     private int runs = 1;
     /** Setup ticks of the machine in front of every run (M29 sterilization), taken at planning. */
     private int setup;
+    /** Food quality of the planned products (I38), {@code 0} for none. */
+    private int plannedQuality;
+    /** Items one run takes from each additive slot (the ingredient step, foods/05 §3). */
+    private int[] additiveTake = new int[0];
 
     public void inputsChanged() {
         inputsDirty = true;
@@ -267,7 +274,7 @@ public final class RecipeProcessor {
      */
     private static String missing(MachineBlockEntity machine, ProcessRecipe recipe) {
         String keys = String.join(",", machine.capabilities().missing(recipe.required()));
-        String lacking = machine.recipeLacking(recipe);
+        String lacking = lacking(machine, recipe);
         if (lacking == null) {
             return keys;
         }
@@ -333,7 +340,87 @@ public final class RecipeProcessor {
     private static boolean takes(MachineBlockEntity machine, RecipeIndex.Entry candidate, Capabilities capabilities, boolean strict) {
         ProcessRecipe recipe = candidate.recipe();
         return candidate.runsOn(machine.definition().spec()) && machine.allows(recipe.type()) && capabilities.covers(recipe.required())
-            && machine.offers(recipe) && (!strict || machine.recipeLacking(recipe) == null);
+            && machine.offers(recipe) && (!strict || lacking(machine, recipe) == null);
+    }
+
+    /** What the machine lacks for {@code recipe}: its own checks, then the additives of an ingredient step. */
+    @Nullable
+    private static String lacking(MachineBlockEntity machine, ProcessRecipe recipe) {
+        String own = machine.recipeLacking(recipe);
+        if (own != null || recipe.quality().isEmpty()) {
+            return own;
+        }
+        List<ItemStack> additives = additives(machine.inventory());
+        if (additives.stream().allMatch(ItemStack::isEmpty)) {
+            return null;
+        }
+        QualityRules.Outcome outcome = QualityRules.ingredient(recipe.quality().get(), recipe.outputs().get(0).id(), additives, List.of());
+        return outcome.refused() ? "gui.foodindustrial.need." + outcome.refusal() : null;
+    }
+
+    private static List<ItemStack> additives(MachineInventory inventory) {
+        int count = inventory.count(SlotRole.ADDITIVE);
+        List<ItemStack> list = new ArrayList<>(count);
+        for (int i = 0; i < count; i++) {
+            list.add(inventory.get(SlotRole.ADDITIVE, i));
+        }
+        return list;
+    }
+
+    /**
+     * Quality of the products of the next run (I38, foods/05 §2): an ingredient step fixes it from the additives and
+     * the inputs and notes in {@link #additiveTake} what it takes; any other step carries the inputs' quality over.
+     */
+    private int quality(MachineBlockEntity machine, ProcessRecipe recipe) {
+        additiveTake = new int[0];
+        if (recipe.quality().isPresent()) {
+            List<QualityRules.Input> inputs = new ArrayList<>(recipe.inputs().size());
+            for (int i = 0; i < recipe.inputs().size(); i++) {
+                ProcessInput input = recipe.inputs().get(i);
+                if (input instanceof ProcessInput.ItemInput item) {
+                    ItemStack stack = machine.inventory().get(SlotRole.INPUT, match.slots()[i]);
+                    String material = QualityRules.material(stack);
+                    boolean asSalt = material != null && QualityRules.NITRITES.contains(material) && FoodLine.isSaltPosition(item);
+                    inputs.add(new QualityRules.Input(Purity.grade(stack).orElse(null), FoodLine.quality(stack), material, asSalt));
+                } else {
+                    FluidAmount fluid = machine.tanks().get(match.tanks()[i]);
+                    inputs.add(new QualityRules.Input(Purity.grade(fluid).orElse(null), fluid.quality(),
+                        QualityRules.plain(Purity.materialOf(fluid.fluid())), false));
+                }
+            }
+            QualityRules.Outcome outcome = QualityRules.ingredient(recipe.quality().get(), recipe.outputs().get(0).id(),
+                additives(machine.inventory()), inputs);
+            if (outcome.refused()) {
+                return 0;
+            }
+            additiveTake = outcome.take();
+            return outcome.code();
+        }
+        int code = 0;
+        for (int i = 0; i < recipe.inputs().size(); i++) {
+            int value;
+            if (recipe.inputs().get(i) instanceof ProcessInput.ItemInput item) {
+                ItemStack stack = machine.inventory().get(SlotRole.INPUT, match.slots()[i]);
+                value = FoodLine.quality(stack);
+                // nitrite in any product recipe's salt position is noted, ingredient step or not (foods/02 §4.4, I47)
+                if (FoodLine.isSaltPosition(item) && QualityRules.isNitrite(QualityRules.material(stack))) {
+                    value |= FoodQuality.NITRITE_MISUSE;
+                }
+            } else {
+                value = machine.tanks().get(match.tanks()[i]).quality();
+            }
+            code = FoodQuality.merge(code, value);
+        }
+        return code;
+    }
+
+    /** The product with the run's quality: the main product always, others when they carry quality (I38). */
+    private static ItemStack stamped(ItemStack stack, int code, boolean main) {
+        return code != 0 && (main || FoodLine.carries(stack.getItem())) ? FoodLine.withQuality(stack, code) : stack;
+    }
+
+    private static FluidAmount stamped(FluidAmount fluid, int code, boolean main) {
+        return code != 0 && (main || FoodLine.carries(fluid.fluid())) ? fluid.withQuality(code) : fluid;
     }
 
     /** Tanks a recipe need not take: the machine's own gas supply (the nitrogen of the inert stirred reactor). */
@@ -413,26 +500,27 @@ public final class RecipeProcessor {
         List<FluidAmount> fluids = new ArrayList<>();
         int main = -1;
         RandomSource fixed = RandomSource.create(0L);
+        plannedQuality = quality(machine, recipe);
         for (int index = 0; index < recipe.outputs().size(); index++) {
             ProcessOutput output = recipe.outputs().get(index);
             if (!output.producedAt(tier)) {
                 continue;
             }
             int amount = output.amount();
-            if (index == 0 && recipe.type().yieldScalable()) {
+            if (index == 0 && recipe.scalesYield()) {
                 amount += OutcomeResolver.extra(amount, machine.definition().profile().yieldPermille(), 0);
             }
             int b = index == 0 && recipe.purityRange().isPresent() ? OutcomeResolver.NONE
                 : OutcomeResolver.purity(recipe, index, profile(machine), baseTier(), values, amounts, fixed);
             if (output.isFluid()) {
                 FluidAmount fluid = output.fluidAmount(amount);
-                fluids.add(b == OutcomeResolver.NONE ? fluid : fluid.withPurity(b));
+                fluids.add(stamped(b == OutcomeResolver.NONE ? fluid : fluid.withPurity(b), plannedQuality, index == 0));
             } else {
                 ItemStack stack = output.stack(amount);
                 if (index == 0) {
                     main = items.size();
                 }
-                items.add(b == OutcomeResolver.NONE ? stack : Purity.with(stack, b));
+                items.add(stamped(b == OutcomeResolver.NONE ? stack : Purity.with(stack, b), plannedQuality, index == 0));
             }
         }
         plannedMain = main;
@@ -449,6 +537,11 @@ public final class RecipeProcessor {
      */
     private int parallelLimit(MachineBlockEntity machine, ProcessRecipe recipe) {
         int limit = machine.upgrades().parallel() * Math.max(1, machine.structureParallel());
+        for (int slot = 0; slot < additiveTake.length && limit > 1; slot++) {
+            if (additiveTake[slot] > 0) {
+                limit = Math.min(limit, machine.inventory().get(SlotRole.ADDITIVE, slot).getCount() / additiveTake[slot]);
+            }
+        }
         for (int i = 0; i < recipe.inputs().size() && limit > 1; i++) {
             ProcessInput input = recipe.inputs().get(i);
             if (input instanceof ProcessInput.ItemInput item) {
@@ -522,6 +615,8 @@ public final class RecipeProcessor {
         ProcessRecipe.Match used = match;
         int[] usedCatalysts = catalystSlots;
         int copies = Math.max(1, runs);
+        int code = quality(machine, recipe);
+        int[] take = additiveTake;
         machine.completing(recipe);
         for (int i = 0; i < recipe.inputs().size(); i++) {
             ProcessInput input = recipe.inputs().get(i);
@@ -548,10 +643,16 @@ public final class RecipeProcessor {
             int b = OutcomeResolver.purity(recipe, index, profile, base, values, amounts, random, climate);
             if (output.isFluid()) {
                 FluidAmount fluid = output.fluidAmount(amount);
-                machine.tanks().fillOutput(b == OutcomeResolver.NONE ? fluid : fluid.withPurity(b), false);
+                machine.tanks().fillOutput(stamped(b == OutcomeResolver.NONE ? fluid : fluid.withPurity(b), code, index == 0), false);
             } else {
                 ItemStack stack = output.stack(amount);
-                machine.inventory().insertOutput(b == OutcomeResolver.NONE ? stack : Purity.with(stack, b), index == 0, false);
+                machine.inventory().insertOutput(stamped(b == OutcomeResolver.NONE ? stack : Purity.with(stack, b), code, index == 0),
+                    index == 0, false);
+            }
+        }
+        for (int slot = 0; slot < take.length; slot++) {
+            if (take[slot] > 0) {
+                machine.inventory().shrink(machine.inventory().slot(SlotRole.ADDITIVE, slot), take[slot] * copies);
             }
         }
         for (int i = 0; i < recipe.catalysts().size(); i++) {

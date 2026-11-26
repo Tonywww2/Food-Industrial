@@ -20,6 +20,49 @@ public final class ModTags {
     }
 
     private static TagPlan.Result plan;
+    /** Tags whose content other code adds (I44: the world code's raw items), merged with tag_imports.json: forge, c entries. */
+    private static final java.util.Map<String, List<List<String>>> EXTRA = new java.util.LinkedHashMap<>();
+
+    /**
+     * Adds {@code entry} (an item id or {@code #tag}) to the mod's item tag {@code tag} (path, e.g.
+     * {@code materials/barley}) on every node. Call during mod construction.
+     */
+    public static void extra(String tag, String entry) {
+        List<List<String>> lists = EXTRA.computeIfAbsent(tag, key -> List.of(new ArrayList<>(), new ArrayList<>()));
+        lists.get(0).add(entry);
+        lists.get(1).add(entry);
+    }
+
+    /** Fluid tags whose content other code adds (I47: the bulk fluids of the products and their groups). */
+    private static final java.util.Map<String, List<String>> EXTRA_FLUIDS = new java.util.LinkedHashMap<>();
+
+    /** Adds {@code entry} (a fluid id or {@code #tag}) to the mod's fluid tag {@code tag} (path) on every node. */
+    public static void extraFluid(String tag, String entry) {
+        EXTRA_FLUIDS.computeIfAbsent(tag, key -> new ArrayList<>()).add(entry);
+    }
+
+    /** Declares the mod's item tag {@code tag} (path), empty unless something adds to it: a raw material with no source yet. */
+    public static void declare(String tag) {
+        EXTRA.computeIfAbsent(tag, key -> List.of(new ArrayList<>(), new ArrayList<>()));
+    }
+
+    /** Adds {@code forgeEntry} on 1.20.1 and {@code cEntry} from 1.21 on to {@code tag}. */
+    public static void extra(String tag, String forgeEntry, String cEntry) {
+        List<List<String>> lists = EXTRA.computeIfAbsent(tag, key -> List.of(new ArrayList<>(), new ArrayList<>()));
+        if (forgeEntry != null) {
+            lists.get(0).add(forgeEntry);
+        }
+        if (cEntry != null) {
+            lists.get(1).add(cEntry);
+        }
+    }
+
+    /** Adds the common tag {@code #forge:<path>} (1.20.1) or {@code #c:<path>} (1.21 on) to {@code tag}, optional. */
+    public static void extraCommon(String tag, String path) {
+        List<List<String>> lists = EXTRA.computeIfAbsent(tag, key -> List.of(new ArrayList<>(), new ArrayList<>()));
+        lists.get(0).add("#forge:" + path);
+        lists.get(1).add("#c:" + path);
+    }
 
     public static void bootstrap() {
         PlatformDatagen.register("tags", ModTags::generate);
@@ -89,7 +132,10 @@ public final class ModTags {
             }
         }
         TagPlan.Conventions conventions = new TagPlan.Conventions(PlatformDatagen.commonTagNamespace());
-        plan = TagPlan.build(materials, TagImports.load(), conventions,
+        List<TagImports.Entry> imports = new ArrayList<>(TagImports.load());
+        EXTRA.forEach((tag, entries) -> imports.add(new TagImports.Entry(tag, false, entries.get(0), entries.get(1))));
+        EXTRA_FLUIDS.forEach((tag, entries) -> imports.add(new TagImports.Entry(tag, true, entries, entries)));
+        plan = TagPlan.build(materials, imports, conventions,
                 id -> PlatformTags.item(id).isPresent(), id -> PlatformTags.fluid(id).isPresent());
         return plan;
     }

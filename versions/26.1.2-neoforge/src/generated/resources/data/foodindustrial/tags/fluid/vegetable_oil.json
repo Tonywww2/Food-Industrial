@@ -8,6 +8,7 @@
     {
       "id": "#forge:plantoil",
       "required": false
-    }
+    },
+    "foodindustrial:refined_soybean_oil"
   ]
 }

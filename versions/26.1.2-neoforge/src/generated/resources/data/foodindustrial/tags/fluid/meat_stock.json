@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:meat_stock",
+    "foodindustrial:flowing_meat_stock",
+    {
+      "id": "#forge:meat_stock",
+      "required": false
+    },
+    {
+      "id": "#c:meat_stock",
+      "required": false
+    }
+  ]
+}

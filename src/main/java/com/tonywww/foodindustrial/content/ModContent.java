@@ -16,8 +16,9 @@ import com.tonywww.foodindustrial.content.batch5.Batch5Nutrients;
 import com.tonywww.foodindustrial.content.batch5.Batch5Refining;
 import com.tonywww.foodindustrial.content.batch5.Batch5Vitamins;
 import com.tonywww.foodindustrial.content.flavors.FlavorRecipes;
+import com.tonywww.foodindustrial.content.food1.Food1Recipes;
 
-/** The additive content batches (I18–I20, I30): their recipes by data generation. */
+/** The additive content batches (I18–I20, I30) and the finished-product batches (I47 on): their recipes by data generation. */
 public final class ModContent {
     private ModContent() {
     }
@@ -41,5 +42,10 @@ public final class ModContent {
         Batch5Refining.bootstrap();
         FlavorRecipes.bootstrap();
         Cultures.bootstrap();
+        Food1Recipes.bootstrap();
+        com.tonywww.foodindustrial.content.food2.Food2Recipes.bootstrap();
+        com.tonywww.foodindustrial.content.food3.Food3Recipes.bootstrap();
+        FoodTiers.bootstrap();
+        SlotFit.bootstrap();
     }
 }

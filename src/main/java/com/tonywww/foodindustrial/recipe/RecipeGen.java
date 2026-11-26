@@ -50,6 +50,9 @@ public final class RecipeGen {
          * {@link #ingredient}. Fails the data run on errors.
          */
         ProcessRecipe parse(ProcessType type, JsonObject body);
+
+        /** The data run's sink, for generators that also write other recipe types (I47: the crafting-table steps). */
+        PlatformDatagen.Sink sink();
     }
 
     /**
@@ -66,6 +69,20 @@ public final class RecipeGen {
      */
     public static void addFollower(java.util.function.BiConsumer<PlatformDatagen.Sink, Map<String, ProcessRecipe>> follower) {
         FOLLOWERS.add(follower);
+    }
+
+    /** Item tag (full id) that must have entries for a recipe to load, by recipe path (I49). */
+    private static final Map<String, String> TAG_CONDITIONS = new java.util.HashMap<>();
+
+    /** Loads recipe {@code foodindustrial:<path>} (and its vanilla bridges) only while item tag {@code tag} has entries. */
+    public static void whenTagNotEmpty(String path, String tag) {
+        TAG_CONDITIONS.put(path, tag);
+    }
+
+    /** The item tag recipe {@code path} needs to load, or {@code null}. */
+    @org.jetbrains.annotations.Nullable
+    public static String tagCondition(String path) {
+        return TAG_CONDITIONS.get(path);
     }
 
     /** Registers a recipe generator; it runs once per data run. */
@@ -99,6 +116,8 @@ public final class RecipeGen {
             JsonObject input = element.getAsJsonObject();
             if (input.has("ingredient")) {
                 inputs.add("item " + canonical(base(input.get("ingredient"))));
+            } else if (input.has("semi_finished")) {
+                inputs.add("semi " + input.get("semi_finished").getAsString());
             } else {
                 JsonObject fluid = input.getAsJsonObject("fluid").deepCopy();
                 fluid.remove("amount");
@@ -182,7 +201,7 @@ public final class RecipeGen {
         List<ProcessInput> rebuilt = new ArrayList<>();
         int item = 0;
         for (ProcessInput input : parsed.inputs()) {
-            rebuilt.add(input instanceof ProcessInput.ItemInput itemInput
+            rebuilt.add(input instanceof ProcessInput.ItemInput itemInput && !itemInput.isSemi()
                 ? ProcessInput.ItemInput.of(ingredient(sink, inputs.get(item++)), itemInput.count()) : input);
         }
         List<Catalyst> rebuiltCatalysts = new ArrayList<>();
@@ -191,14 +210,14 @@ public final class RecipeGen {
         }
         return new ProcessRecipe(type, rebuilt, parsed.outputs(), parsed.puritySources(), parsed.purityRange(), parsed.time(),
             parsed.energy(), parsed.conditions(), parsed.mode(), parsed.manualActions(), parsed.vanillaDevices(), rebuiltCatalysts,
-            parsed.environmentFactors(), parsed.plate());
+            parsed.environmentFactors(), parsed.plate(), parsed.quality());
     }
 
     /**
      * A written item ingredient: an item id or {@code #tag}, optionally followed by {@code |} and a
      * {@code min_purity} (grade name or percentage) that wraps it in a purity ingredient (additives/10 §4.1).
      */
-    private static Ingredient ingredient(PlatformDatagen.Sink sink, String written) {
+    public static Ingredient ingredient(PlatformDatagen.Sink sink, String written) {
         int bar = written.indexOf('|');
         if (bar < 0) {
             return sink.ingredient(written);
@@ -324,6 +343,11 @@ public final class RecipeGen {
             public ProcessRecipe parse(ProcessType type, JsonObject body) {
                 return RecipeGen.parse(sink, type, body);
             }
+
+            @Override
+            public PlatformDatagen.Sink sink() {
+                return sink;
+            }
         };
         GENERATORS.forEach(generator -> generator.accept(output));
 
@@ -337,10 +361,13 @@ public final class RecipeGen {
             JsonObject written = toJson(recipe, sink.ops());
             writtenByPath.put(path, written);
             byKey.computeIfAbsent(uniquenessKey(written), key -> new ArrayList<>()).add(path);
-            sink.json(PlatformDatagen.Kind.RECIPE, FoodIndustrial.MOD_ID, path, written);
+            String condition = TAG_CONDITIONS.get(path);
+            sink.json(PlatformDatagen.Kind.RECIPE, FoodIndustrial.MOD_ID, path, condition == null ? written
+                : com.tonywww.foodindustrial.platform.recipe.PlatformRecipeConditions.whenTagNotEmpty(written, condition));
             for (VanillaDevice device : recipe.vanillaDevices()) {
-                sink.json(PlatformDatagen.Kind.RECIPE, FoodIndustrial.MOD_ID, "vanilla/" + device.id() + "/" + path,
-                    VanillaCookingBridge.bridgeJson(recipe, device, sink.ops()));
+                JsonObject bridge = VanillaCookingBridge.bridgeJson(recipe, device, sink.ops());
+                sink.json(PlatformDatagen.Kind.RECIPE, FoodIndustrial.MOD_ID, "vanilla/" + device.id() + "/" + path, condition == null ? bridge
+                    : com.tonywww.foodindustrial.platform.recipe.PlatformRecipeConditions.whenTagNotEmpty(bridge, condition));
             }
             loaded.add(new PlatformRecipes.Loaded<>(id, recipe));
             for (RecipeChecks.Problem problem : RecipeChecks.check(id, recipe, devices)) {

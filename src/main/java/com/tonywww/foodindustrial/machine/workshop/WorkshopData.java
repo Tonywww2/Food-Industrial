@@ -250,6 +250,8 @@ final class WorkshopData {
         shaped(sink, "pot_still", 1, keys('C', copper, 'T', tank, 'F', furnace), "CTC", "CFC", " C ");
         shaped(sink, "crystallizing_tank", 1, keys('B', brick, 'T', tank), "BTB", "BBB");
         shaped(sink, "drying_room", 1, keys('W', NS + ":drying_room_wall", 'R', NS + ":drying_rack", 'F', furnace), "WRW", "WFW", " R ");
+        // M54 (I43, additives/06): iron ingot ×4 + piston ×1 + wooden tank ×1
+        shaped(sink, "seawater_pump", 1, keys('I', iron, 'P', "minecraft:piston", 'T', NS + ":wooden_tank"), " P ", "ITI", "I I");
         shaped(sink, HandCrankBlock.ID, 1, keys('K', stick, 'P', planks), "KK", "K ", "P ");
         shaped(sink, "condenser", 1, keys('C', copper, 'T', tank), " C ", "CTC", " C ");
         shaped(sink, "essential_oil_separator", 1, keys('G', "minecraft:glass", 'C', copper), "GCG", "GCG");

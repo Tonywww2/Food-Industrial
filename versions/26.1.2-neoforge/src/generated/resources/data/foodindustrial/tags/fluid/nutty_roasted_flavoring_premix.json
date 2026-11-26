@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:nutty_roasted_flavoring_premix",
+    "foodindustrial:flowing_nutty_roasted_flavoring_premix",
+    {
+      "id": "#forge:nutty_roasted_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:nutty_roasted_flavoring_premix",
+      "required": false
+    }
+  ]
+}

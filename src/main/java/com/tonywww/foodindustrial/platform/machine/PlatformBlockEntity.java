@@ -47,6 +47,8 @@ public abstract class PlatformBlockEntity extends BlockEntity {
     Object[] forgeOptionals;
     @Nullable
     PlatformNeighborCache neighborCache;
+    @Nullable
+    private net.minecraft.world.phys.AABB renderBounds;
 
     protected PlatformBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
@@ -58,6 +60,25 @@ public abstract class PlatformBlockEntity extends BlockEntity {
 
     /** Reads persistent data. Missing keys must fall back to defaults. */
     protected void loadData(DataReader in) {
+    }
+
+    /**
+     * How far beyond the block what is drawn for this block entity may reach, in blocks: that far to each
+     * side and twice that far upwards (the panel above a machine, I37). 0: only the block.
+     */
+    protected int renderReach() {
+        return 0;
+    }
+
+    /** The box that culling tests before drawing this block entity. */
+    public final net.minecraft.world.phys.AABB renderBounds() {
+        net.minecraft.world.phys.AABB bounds = renderBounds;
+        if (bounds == null) {
+            int reach = renderReach();
+            bounds = new net.minecraft.world.phys.AABB(worldPosition).inflate(reach, 0, reach).expandTowards(0, 2 * reach, 0);
+            renderBounds = bounds;
+        }
+        return bounds;
     }
 
     /** Writes the data clients need (rendering, block state independent visuals). Default: nothing. */
@@ -279,6 +300,12 @@ public abstract class PlatformBlockEntity extends BlockEntity {
     public void invalidateCaps() {
         super.invalidateCaps();
         PlatformMachineCapabilities.invalidate(this);
+    }
+
+    /** Forge asks the block entity; NeoForge asks the renderer ({@code PlatformPanels}). */
+    @Override
+    public net.minecraft.world.phys.AABB getRenderBoundingBox() {
+        return renderReach() > 0 ? renderBounds() : super.getRenderBoundingBox();
     }
     //?}
 }

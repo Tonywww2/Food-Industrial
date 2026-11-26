@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/apple"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "thickener"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "apple_pie|filling"
+  }
+}

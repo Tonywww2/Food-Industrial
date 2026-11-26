@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/crystallizing_tank_shape",
   "textures": {
     "front": "foodindustrial:block/crystallizing_tank_front_active",
     "side": "foodindustrial:block/crystallizing_tank_side",

@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:chilling",
+  "inputs": [
+    {
+      "semi_finished": "curry_roux|mix"
+    }
+  ],
+  "mode": "chilling",
+  "outputs": [
+    {
+      "item": "foodindustrial:curry_roux"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "cooling"
+  },
+  "time": 400
+}

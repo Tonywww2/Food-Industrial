@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:fir_needles"
+    "foodindustrial:fir_needles",
+    {
+      "id": "minecraft:spruce_leaves",
+      "required": false
+    }
   ]
 }

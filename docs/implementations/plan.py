@@ -22,7 +22,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 README = os.path.join(HERE, "README.md")
-PLAN_RE = re.compile(r"^I(\d{2,3})-[a-z0-9-]+\.md$")
+PLAN_RE = re.compile(r"^I(\d{2,3})(?:\.(\d))?-[a-z0-9-]+\.md$")  # 允许半号，如 I47.5
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)#\s]+)(#[^)]*)?\)")
 STATUSES = ("未开始", "进行中", "已完成", "搁置", "阻塞")
 STAGES = ("A 基础", "B 物料", "C 框架", "D 设备", "E 内容", "F 联动与验证")
@@ -43,8 +43,13 @@ def write(path, text):
         f.write(text)
 
 
+def plan_order(name):
+    m = PLAN_RE.match(name)
+    return (int(m.group(1)), int(m.group(2) or 0), name)
+
+
 def plan_files():
-    return sorted(f for f in os.listdir(HERE) if PLAN_RE.match(f))
+    return sorted((f for f in os.listdir(HERE) if PLAN_RE.match(f)), key=plan_order)
 
 
 def parse_plan(name):
@@ -59,7 +64,7 @@ def parse_plan(name):
         m = re.match(r"^\|\s*([^|]+?)\s*\|\s*(.*?)\s*\|\s*$", line)
         if m and m.group(1) not in ("项", "---"):
             header[m.group(1)] = m.group(2)
-    deps = re.findall(r"I\d{2,3}", header.get("依赖", ""))
+    deps = re.findall(r"I\d{2,3}(?:\.\d)?", header.get("依赖", ""))
     docs = [href for _, href, _ in LINK_RE.findall(header.get("原文档", ""))]
     body = re.sub(r"```.*?```", "", text, flags=re.S)
     body = re.sub(r"`[^`\n]*`", "", body)
@@ -112,13 +117,17 @@ def build_doc_map(plans):
     return "\n".join(rows)
 
 
+def node_id(plan_id):
+    return plan_id.replace(".", "_")  # mermaid 的节点名不带点
+
+
 def build_graph(plans):
     lines = ["```mermaid", "flowchart LR"]
     for p in plans:
-        lines.append(f"  {p['id']}[\"{p['id']} {p['title']}\"]")
+        lines.append(f"  {node_id(p['id'])}[\"{p['id']} {p['title']}\"]")
     for p in plans:
         for d in p["deps"]:
-            lines.append(f"  {d} --> {p['id']}")
+            lines.append(f"  {node_id(d)} --> {node_id(p['id'])}")
     lines.append("```")
     return "\n".join(lines)
 
@@ -138,7 +147,7 @@ def cmd_check(_args=None):
     problems = []
     ids = {}
     for p in plans:
-        if not re.fullmatch(r"I\d{2,3}", p["id"]) or not p["file"].startswith(p["id"] + "-"):
+        if not re.fullmatch(r"I\d{2,3}(?:\.\d)?", p["id"]) or not p["file"].startswith(p["id"] + "-"):
             problems.append(f"{p['file']}：标题编号与文件名不一致")
         if p["id"] in ids:
             problems.append(f"{p['file']}：编号与 {ids[p['id']]} 重复")

@@ -46,6 +46,7 @@ public final class NutritionCommands {
         Lang.add(KEY + "missing_keys", "缺键：%s", "Missing keys: %s");
         Lang.add(KEY + "energy", "能量 %s kcal", "Energy %s kcal");
         Lang.add(KEY + "impurity", "杂质 %s", "Impurity %s");
+        Lang.add(KEY + "nitrite_extra", "放护色剂时亚硝酸盐 +%s mg；误用亚硝酸盐时 +%s mg", "Nitrite +%s mg with a colour-retention agent; +%s mg when misused for salt");
         Lang.add(KEY + "missing", "缺营养数据的食物 %s 种，清单已写入 %s", "%s foods lack nutrition data; list written to %s");
         Lang.add(KEY + "missing_mod", "%s：%s", "%s: %s");
         Lang.add(KEY + "missing_none", "可吃、可喝的物品都有完整的营养数据", "Every edible or drinkable item has complete nutrition data");
@@ -82,6 +83,10 @@ public final class NutritionCommands {
         }
         if (data.impurity() > 0) {
             reply(command, net.minecraft.network.chat.Component.translatable(KEY + "impurity", plain(data.impurity())));
+        }
+        if (data.curingNitrite() > 0 || data.misuseNitrite() > 0) {
+            reply(command, net.minecraft.network.chat.Component.translatable(KEY + "nitrite_extra", plain(data.curingNitrite()),
+                plain(data.misuseNitrite())));
         }
         if (data.energyKcal() != null) {
             reply(command, net.minecraft.network.chat.Component.translatable(KEY + "energy", plain(data.energyKcal())));

@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/berries"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "berry_pie|filling"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "thickener"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

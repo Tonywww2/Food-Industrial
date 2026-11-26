@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cane_juice",
+    "foodindustrial:flowing_cane_juice",
+    {
+      "id": "#forge:cane_juice",
+      "required": false
+    },
+    {
+      "id": "#c:cane_juice",
+      "required": false
+    }
+  ]
+}

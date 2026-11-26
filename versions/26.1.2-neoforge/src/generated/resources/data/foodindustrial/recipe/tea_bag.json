@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper"
+  ],
+  "result": {
+    "count": 8,
+    "id": "foodindustrial:tea_bag"
+  }
+}

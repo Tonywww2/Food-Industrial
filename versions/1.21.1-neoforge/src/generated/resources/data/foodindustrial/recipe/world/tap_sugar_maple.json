@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:sugar_maple_log",
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:maple_syrup"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

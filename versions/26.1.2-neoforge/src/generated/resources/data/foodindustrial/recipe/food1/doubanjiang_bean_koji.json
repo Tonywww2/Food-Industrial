@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/aspergillus_oryzae",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/broad_bean"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "doubanjiang|bean_koji"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 24000
+}

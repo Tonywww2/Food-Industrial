@@ -1,0 +1,627 @@
+{
+ "id": "membrane_separator",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\membrane_separator_front.png",
+  "inner": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\membrane_separator_inner.png",
+  "parts": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\membrane_separator_parts.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\membrane_separator_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\membrane_separator_top.png"
+ },
+ "elements": [
+  {
+   "name": "body0",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    4,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body1",
+   "from": [
+    0,
+    4,
+    0
+   ],
+   "to": [
+    7,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      9,
+      0,
+      16,
+      12
+     ]
+    },
+    "east": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      7,
+      12
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      7,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body2",
+   "from": [
+    14,
+    4,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      2,
+      12
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      14,
+      0,
+      16,
+      12
+     ]
+    },
+    "west": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      14,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body3",
+   "from": [
+    7,
+    12,
+    0
+   ],
+   "to": [
+    14,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      2,
+      0,
+      9,
+      4
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      7,
+      0,
+      14,
+      4
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      7,
+      0,
+      14,
+      16
+     ]
+    },
+    "down": {
+     "texture": "inner",
+     "uv": [
+      7,
+      0,
+      14,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body4",
+   "from": [
+    7,
+    4,
+    3
+   ],
+   "to": [
+    14,
+    12,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      2,
+      4,
+      9,
+      12
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      7,
+      4,
+      14,
+      12
+     ]
+    }
+   }
+  },
+  {
+   "name": "tube0",
+   "from": [
+    7,
+    10,
+    1
+   ],
+   "to": [
+    14,
+    12,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "name": "tube1",
+   "from": [
+    7,
+    7,
+    1
+   ],
+   "to": [
+    14,
+    9,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "name": "tube2",
+   "from": [
+    7,
+    4,
+    1
+   ],
+   "to": [
+    14,
+    6,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      3.5,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_a",
+   "from": [
+    1.0,
+    10.0,
+    -1
+   ],
+   "to": [
+    6.0,
+    13.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      3.5,
+      0.5,
+      6.0,
+      2.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      6.0,
+      0.0,
+      6.5,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      6.0,
+      0.0,
+      6.5,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      6.5,
+      0.0,
+      9.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      6.5,
+      0.0,
+      9.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_b",
+   "from": [
+    2.0,
+    9.0,
+    -1
+   ],
+   "to": [
+    5.0,
+    14.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      4.0,
+      0.0,
+      5.5,
+      2.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      9.0,
+      0.0,
+      9.5,
+      2.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      9.0,
+      0.0,
+      9.5,
+      2.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      9.5,
+      0.0,
+      11.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      9.5,
+      0.0,
+      11.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_needle",
+   "from": [
+    3.0,
+    11.0,
+    -2
+   ],
+   "to": [
+    4.0,
+    13.0,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      11.0,
+      0.0,
+      11.5,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      11.0,
+      0.0,
+      11.5,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      11.0,
+      0.0,
+      11.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      11.5,
+      0.0,
+      12.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      11.5,
+      0.0,
+      12.0,
+      0.5
+     ]
+    }
+   },
+   "rotation": [
+    0,
+    0,
+    20
+   ],
+   "origin": [
+    3.5,
+    11.5,
+    -1.5
+   ]
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}

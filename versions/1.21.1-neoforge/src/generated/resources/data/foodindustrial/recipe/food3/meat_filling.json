@@ -1,0 +1,56 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/minced_pork"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/leafy_greens"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:light_soy_sauce"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:meat_filling"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "flavor_enhancer"
+        ],
+        "item": "taste"
+      },
+      {
+        "accepts": [
+          "thickener"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

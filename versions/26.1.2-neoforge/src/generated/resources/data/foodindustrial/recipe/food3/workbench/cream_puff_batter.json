@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "semi_finished": "cream_puff|choux_paste"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/egg"
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "leavening"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "cream_puff|batter"
+  }
+}

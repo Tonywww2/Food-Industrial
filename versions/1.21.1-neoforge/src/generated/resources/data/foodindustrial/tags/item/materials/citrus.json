@@ -32,6 +32,8 @@
     {
       "id": "#forge:fruits/grapefruit",
       "required": false
-    }
+    },
+    "foodindustrial:orange",
+    "foodindustrial:lemon"
   ]
 }

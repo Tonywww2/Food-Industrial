@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/screw_press_shape",
   "textures": {
     "front": "foodindustrial:block/screw_press_front_active",
     "side": "foodindustrial:block/screw_press_side",

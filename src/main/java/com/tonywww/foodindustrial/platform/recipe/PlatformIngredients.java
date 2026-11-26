@@ -34,7 +34,7 @@ import net.neoforged.bus.api.IEventBus;
  * Registration and use of the purity ingredient {@code foodindustrial:purity} with each loader's
  * ingredient system: Forge {@code AbstractIngredient} + {@code IIngredientSerializer} on 1.20.1,
  * NeoForge {@code ICustomIngredient} + {@code IngredientType} from 1.21. Business code uses
- * {@code api.purity.PurityIngredient}.
+ * {@code api.purity.PurityIngredient}. Also {@code foodindustrial:matching} ({@link #matching}), built at run time.
  */
 public final class PlatformIngredients {
     private PlatformIngredients() {
@@ -46,6 +46,20 @@ public final class PlatformIngredients {
         return new ForgePurityIngredient(base, threshold);
         //?} else {
         /*return new NeoPurityIngredient(base, threshold).toVanilla();
+        *///?}
+    }
+
+    /**
+     * An ingredient that matches what {@code test} accepts and shows the stacks {@code stacks} supplies (asked again
+     * whenever shown, so tags bound later count), for a recipe's ingredient list when no item or tag says enough: a
+     * semi-finished stage, a flavouring's form, a container holding enough of a fluid (2026-11-25). Written out as those
+     * stacks; a copy read back matches their items with at least their data.
+     */
+    public static Ingredient matching(java.util.function.Predicate<ItemStack> test, java.util.function.Supplier<List<ItemStack>> stacks) {
+        //? if forge {
+        return new ForgeMatchingIngredient(test, stacks);
+        //?} else {
+        /*return new NeoMatchingIngredient(test, stacks).toVanilla();
         *///?}
     }
 
@@ -190,6 +204,7 @@ public final class PlatformIngredients {
         modBus.addListener((RegisterEvent event) -> {
             if (event.getRegistryKey().equals(ForgeRegistries.Keys.RECIPE_SERIALIZERS)) {
                 CraftingHelper.register(PlatformIdentifier.id("purity"), ForgePurityIngredient.SERIALIZER);
+                CraftingHelper.register(ForgeMatchingIngredient.ID, ForgeMatchingIngredient.SERIALIZER);
             }
         });
         // Forge 1.20.1 keeps an ingredient's item list once built; tag ingredients a client decodes from
@@ -198,6 +213,7 @@ public final class PlatformIngredients {
         com.tonywww.foodindustrial.platform.PlatformEvents.onTagsUpdated(Ingredient::invalidateAll);
         //?} else {
         /*NeoPurityIngredient.bootstrap();
+        NeoMatchingIngredient.bootstrap();
         *///?}
     }
 }

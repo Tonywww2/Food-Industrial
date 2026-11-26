@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:karaya_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:karaya_lump"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

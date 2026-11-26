@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:packaging",
+  "inputs": [
+    {
+      "semi_finished": "dried_noodles|dry_noodles"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/paper_bag"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:dried_noodles"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 40
+}

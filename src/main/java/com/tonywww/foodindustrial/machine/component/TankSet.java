@@ -108,7 +108,7 @@ public final class TankSet {
     /** Whether {@code fluid} can share the tank with its current contents. */
     public boolean joins(int tank, FluidAmount fluid) {
         FluidAmount current = tanks[tank];
-        return current.isEmpty() || current.fluid() == fluid.fluid();
+        return current.isEmpty() || current.joins(fluid);
     }
 
     /** Contents after {@code amount} mB of {@code fluid} joined the tank. */
@@ -141,7 +141,7 @@ public final class TankSet {
 
     private int outputTankFor(FluidAmount fluid) {
         for (int tank = inputs; tank < tanks.length; tank++) {
-            if (!tanks[tank].isEmpty() && tanks[tank].fluid() == fluid.fluid() && allows(tank, fluid)) {
+            if (!tanks[tank].isEmpty() && tanks[tank].joins(fluid) && allows(tank, fluid)) {
                 return tank;
             }
         }
@@ -221,18 +221,28 @@ public final class TankSet {
         return false;
     }
 
+    /**
+     * Key of a tank by its role and its place within the role ({@code TankO0}, I47.5): a machine that gains input tanks keeps
+     * what its output tanks hold. Data written before keyed the tanks by their place among all tanks ({@code Tank2}), read
+     * when the new key is absent.
+     */
+    private String key(String prefix, int tank) {
+        return prefix + SlotKeys.code(role(tank)) + (tank < inputs ? tank : tank - inputs);
+    }
+
     /** Venting switches are settings: saved with the configuration. */
     public void saveVents(DataWriter out) {
         for (int i = 0; i < vents.length; i++) {
             if (vents[i] != VentMode.OFF) {
-                out.putByte("TankVent" + i, (byte) vents[i].ordinal());
+                out.putByte(key("TankVent", i), (byte) vents[i].ordinal());
             }
         }
     }
 
     public void loadVents(DataReader in) {
         for (int i = 0; i < vents.length; i++) {
-            vents[i] = role(i) == SlotRole.OUTPUT ? VentMode.byIndex(in.getByte("TankVent" + i, (byte) 0)) : VentMode.OFF;
+            vents[i] = role(i) == SlotRole.OUTPUT
+                ? VentMode.byIndex(in.getByte(key("TankVent", i), in.getByte("TankVent" + i, (byte) 0))) : VentMode.OFF;
         }
     }
 
@@ -250,14 +260,17 @@ public final class TankSet {
     public void saveLocks(DataWriter out) {
         for (int i = 0; i < locks.length; i++) {
             if (!locks[i].isEmpty()) {
-                out.putFluid("TankLock" + i, locks[i]);
+                out.putFluid(key("TankLock", i), locks[i]);
             }
         }
     }
 
     public void loadLocks(DataReader in) {
         for (int i = 0; i < locks.length; i++) {
-            FluidAmount lock = in.getFluid("TankLock" + i);
+            FluidAmount lock = in.getFluid(key("TankLock", i));
+            if (lock.isEmpty()) {
+                lock = in.getFluid("TankLock" + i);
+            }
             locks[i] = lock.isEmpty() ? FluidAmount.EMPTY : lock.withAmount(1);
         }
     }
@@ -265,18 +278,19 @@ public final class TankSet {
     public void save(DataWriter out) {
         for (int i = 0; i < tanks.length; i++) {
             if (!tanks[i].isEmpty()) {
-                out.putFluid("Tank" + i, tanks[i]);
+                out.putFluid(key("Tank", i), tanks[i]);
             }
             if (phases[i] != Phase.BOTH) {
-                out.putByte("TankPhase" + i, (byte) phases[i].ordinal());
+                out.putByte(key("TankPhase", i), (byte) phases[i].ordinal());
             }
         }
     }
 
     public void load(DataReader in) {
         for (int i = 0; i < tanks.length; i++) {
-            tanks[i] = in.getFluid("Tank" + i);
-            int phase = in.getByte("TankPhase" + i, (byte) Phase.BOTH.ordinal());
+            FluidAmount fluid = in.getFluid(key("Tank", i));
+            tanks[i] = fluid.isEmpty() ? in.getFluid("Tank" + i) : fluid;
+            int phase = in.getByte(key("TankPhase", i), in.getByte("TankPhase" + i, (byte) Phase.BOTH.ordinal()));
             phases[i] = Phase.values()[Math.max(0, Math.min(Phase.values().length - 1, phase))];
         }
     }

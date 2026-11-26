@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:homogenizing_sterilizer",
+  "name": "book.foodindustrial.manual.entry.homogenizing_sterilizer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:homogenizing_sterilizer",
+      "text": "book.foodindustrial.manual.entry.homogenizing_sterilizer.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:homogenizing_sterilizer[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.homogenizing_sterilizer"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.homogenizing_sterilizer.structure"
+    }
+  ],
+  "sortnum": 10
+}

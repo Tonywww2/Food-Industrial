@@ -19215,6 +19215,56 @@
    "texture": "gas"
   },
   {
+   "id": "trichloroethane",
+   "name": {
+    "zh": "1,1,2-三氯乙烷",
+    "en": "1,1,2-Trichloroethane"
+   },
+   "professional": {
+    "zh": "1,1,2-三氯乙烷",
+    "en": "1,1,2-Trichloroethane"
+   },
+   "common": null,
+   "formula": "C2H3Cl3",
+   "state": "liquid",
+   "category": "chemical",
+   "color": "#F2EFE2",
+   "gtceu": null,
+   "tag": "trichloroethane",
+   "hazards": [],
+   "source": "09",
+   "purity": {
+    "category": "foodindustrial:k4_organic_liquid"
+   },
+   "bearer": true,
+   "texture": "liquid"
+  },
+  {
+   "id": "vinylidene_chloride",
+   "name": {
+    "zh": "偏二氯乙烯",
+    "en": "Vinylidene Chloride"
+   },
+   "professional": {
+    "zh": "偏二氯乙烯",
+    "en": "Vinylidene Chloride"
+   },
+   "common": null,
+   "formula": "C2H2Cl2",
+   "state": "liquid",
+   "category": "chemical",
+   "color": "#F2EFE2",
+   "gtceu": null,
+   "tag": "vinylidene_chloride",
+   "hazards": [],
+   "source": "09",
+   "purity": {
+    "category": "foodindustrial:k4_organic_liquid"
+   },
+   "bearer": true,
+   "texture": "liquid"
+  },
+  {
    "id": "vinylpyridine",
    "name": {
     "zh": "2-乙烯基吡啶",
@@ -23134,6 +23184,56 @@
    "source": "09",
    "purity": null,
    "bearer": false,
+   "texture": "powder"
+  },
+  {
+   "id": "p_xylene",
+   "name": {
+    "zh": "对二甲苯",
+    "en": "p-Xylene"
+   },
+   "professional": {
+    "zh": "对二甲苯",
+    "en": "p-Xylene"
+   },
+   "common": null,
+   "formula": "C8H10",
+   "state": "liquid",
+   "category": "chemical",
+   "color": "#F2EFE2",
+   "gtceu": null,
+   "tag": "p_xylene",
+   "hazards": [],
+   "source": "09",
+   "purity": {
+    "category": "foodindustrial:k4_organic_liquid"
+   },
+   "bearer": true,
+   "texture": "liquid"
+  },
+  {
+   "id": "terephthalic_acid",
+   "name": {
+    "zh": "对苯二甲酸",
+    "en": "Terephthalic Acid"
+   },
+   "professional": {
+    "zh": "对苯二甲酸",
+    "en": "Terephthalic Acid"
+   },
+   "common": null,
+   "formula": "C8H6O4",
+   "state": "solid",
+   "category": "chemical",
+   "color": null,
+   "gtceu": null,
+   "tag": "chemicals/terephthalic_acid",
+   "hazards": [],
+   "source": "09",
+   "purity": {
+    "category": "foodindustrial:k3_organic_solid"
+   },
+   "bearer": true,
    "texture": "powder"
   },
   {
@@ -30095,6 +30195,31 @@
    "texture": "pellets"
   },
   {
+   "id": "pvdc",
+   "name": {
+    "zh": "聚偏二氯乙烯",
+    "en": "Polyvinylidene Chloride (PVDC)"
+   },
+   "professional": {
+    "zh": "聚偏二氯乙烯",
+    "en": "Polyvinylidene Chloride (PVDC)"
+   },
+   "common": null,
+   "formula": "(C2H2Cl2)n(C2H3Cl)m",
+   "state": "solid",
+   "category": "chemical",
+   "color": null,
+   "gtceu": null,
+   "tag": "chemicals/pvdc",
+   "hazards": [],
+   "source": "09",
+   "purity": {
+    "category": "foodindustrial:k3_organic_solid"
+   },
+   "bearer": true,
+   "texture": "powder"
+  },
+  {
    "id": "butyl_rubber",
    "name": {
     "zh": "异丁烯-异戊二烯共聚物（丁基橡胶）",
@@ -30420,6 +30545,31 @@
    "purity": null,
    "bearer": false,
    "texture": "gas"
+  },
+  {
+   "id": "pet",
+   "name": {
+    "zh": "聚对苯二甲酸乙二醇酯",
+    "en": "Polyethylene Terephthalate"
+   },
+   "professional": {
+    "zh": "聚对苯二甲酸乙二醇酯",
+    "en": "Polyethylene Terephthalate"
+   },
+   "common": null,
+   "formula": "(C10H8O4)n",
+   "state": "solid",
+   "category": "chemical",
+   "color": null,
+   "gtceu": null,
+   "tag": "chemicals/pet",
+   "hazards": [],
+   "source": "09",
+   "purity": {
+    "category": "foodindustrial:k7_fat"
+   },
+   "bearer": true,
+   "texture": "flakes"
   },
   {
    "id": "clove_leaf_oil",
@@ -74788,6 +74938,52 @@
    "texture": "liquid"
   },
   {
+   "id": "premix_vitamin_mineral",
+   "name": {
+    "zh": "维生素矿物质预混",
+    "en": "Vitamin and Mineral Premix"
+   },
+   "professional": {
+    "zh": "维生素矿物质预混",
+    "en": "Vitamin and Mineral Premix"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "raw",
+   "color": null,
+   "gtceu": null,
+   "tag": "premix_vitamin_mineral",
+   "hazards": [],
+   "source": "08 §C",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "premix_vitamin_b",
+   "name": {
+    "zh": "维生素 B 族预混",
+    "en": "Vitamin B Premix"
+   },
+   "professional": {
+    "zh": "维生素 B 族预混",
+    "en": "Vitamin B Premix"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "raw",
+   "color": null,
+   "gtceu": null,
+   "tag": "premix_vitamin_b",
+   "hazards": [],
+   "source": "08 §C",
+   "purity": null,
+   "bearer": false,
+   "texture": "pieces"
+  },
+  {
    "id": "tree_bark",
    "name": {
     "zh": "树皮",
@@ -82667,6 +82863,56 @@
    "texture": "culture_mold"
   },
   {
+   "id": "actinomucor",
+   "name": {
+    "zh": "雅致放射毛霉",
+    "en": "Actinomucor Elegans"
+   },
+   "professional": {
+    "zh": "雅致放射毛霉",
+    "en": "Actinomucor Elegans"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "culture",
+   "color": null,
+   "gtceu": null,
+   "tag": "cultures/actinomucor",
+   "hazards": [],
+   "source": "08 §C",
+   "purity": {
+    "category": "foodindustrial:k11_culture"
+   },
+   "bearer": true,
+   "texture": "culture_mold"
+  },
+  {
+   "id": "bacillus_natto",
+   "name": {
+    "zh": "纳豆枯草芽孢杆菌",
+    "en": "Bacillus Subtilis Natto"
+   },
+   "professional": {
+    "zh": "纳豆枯草芽孢杆菌",
+    "en": "Bacillus Subtilis Natto"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "culture",
+   "color": null,
+   "gtceu": null,
+   "tag": "cultures/bacillus_natto",
+   "hazards": [],
+   "source": "08 §C",
+   "purity": {
+    "category": "foodindustrial:k11_culture"
+   },
+   "bearer": true,
+   "texture": "culture_bacteria"
+  },
+  {
    "id": "corynebacterium",
    "name": {
     "zh": "谷氨酸棒杆菌",
@@ -86641,282 +86887,1801 @@
    "purity": null,
    "bearer": false,
    "texture": "beads"
+  },
+  {
+   "id": "cane_juice",
+   "name": {
+    "zh": "甘蔗汁",
+    "en": "Cane Juice"
+   },
+   "professional": {
+    "zh": "甘蔗汁",
+    "en": "Cane Juice"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#C8C878",
+   "gtceu": null,
+   "tag": "cane_juice",
+   "hazards": [],
+   "source": "foods/09 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "invert_syrup",
+   "name": {
+    "zh": "转化糖浆",
+    "en": "Invert Syrup"
+   },
+   "professional": {
+    "zh": "转化糖浆",
+    "en": "Invert Syrup"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E8C880",
+   "gtceu": null,
+   "tag": "invert_syrup",
+   "hazards": [],
+   "source": "foods/09 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "roasted_sesame",
+   "name": {
+    "zh": "熟芝麻",
+    "en": "Roasted Sesame"
+   },
+   "professional": {
+    "zh": "熟芝麻",
+    "en": "Roasted Sesame"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#A07848",
+   "gtceu": null,
+   "tag": "materials/roasted_sesame",
+   "hazards": [],
+   "source": "foods/09 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "seed"
+  },
+  {
+   "id": "soaked_soybean",
+   "name": {
+    "zh": "泡发大豆",
+    "en": "Soaked Soybeans"
+   },
+   "professional": {
+    "zh": "泡发大豆",
+    "en": "Soaked Soybeans"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#E8D8A0",
+   "gtceu": null,
+   "tag": "materials/soaked_soybean",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "seed"
+  },
+  {
+   "id": "steamed_soybean",
+   "name": {
+    "zh": "蒸豆",
+    "en": "Steamed Soybeans"
+   },
+   "professional": {
+    "zh": "蒸豆",
+    "en": "Steamed Soybeans"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#C8A060",
+   "gtceu": null,
+   "tag": "materials/steamed_soybean",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "seed"
+  },
+  {
+   "id": "wheat_flour",
+   "name": {
+    "zh": "面粉",
+    "en": "Wheat Flour"
+   },
+   "professional": {
+    "zh": "面粉",
+    "en": "Wheat Flour"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F4F0E6",
+   "gtceu": null,
+   "tag": "materials/wheat_flour",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "powder"
+  },
+  {
+   "id": "wheat_bran",
+   "name": {
+    "zh": "麸皮",
+    "en": "Wheat Bran"
+   },
+   "professional": {
+    "zh": "麸皮",
+    "en": "Wheat Bran"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#C8945A",
+   "gtceu": null,
+   "tag": "materials/wheat_bran",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "flakes"
+  },
+  {
+   "id": "soy_koji",
+   "name": {
+    "zh": "酱曲",
+    "en": "Soy Koji"
+   },
+   "professional": {
+    "zh": "酱曲",
+    "en": "Soy Koji"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#B8B060",
+   "gtceu": null,
+   "tag": "materials/soy_koji",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "seed"
+  },
+  {
+   "id": "steamed_sorghum",
+   "name": {
+    "zh": "蒸高粱",
+    "en": "Steamed Sorghum"
+   },
+   "professional": {
+    "zh": "蒸高粱",
+    "en": "Steamed Sorghum"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#A0503A",
+   "gtceu": null,
+   "tag": "materials/steamed_sorghum",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "grain"
+  },
+  {
+   "id": "daqu",
+   "name": {
+    "zh": "大曲",
+    "en": "Daqu"
+   },
+   "professional": {
+    "zh": "大曲",
+    "en": "Daqu"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#D8C8A0",
+   "gtceu": null,
+   "tag": "materials/daqu",
+   "hazards": [],
+   "source": "foods/10 §1 (2026-11-19: barley 3 + wheat 1)",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "raw_apple_juice",
+   "name": {
+    "zh": "苹果原汁",
+    "en": "Raw Apple Juice"
+   },
+   "professional": {
+    "zh": "苹果原汁",
+    "en": "Raw Apple Juice"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E8D070",
+   "gtceu": null,
+   "tag": "raw_apple_juice",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "meat_stock",
+   "name": {
+    "zh": "肉汤",
+    "en": "Meat Stock"
+   },
+   "professional": {
+    "zh": "肉汤",
+    "en": "Meat Stock"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#D8B878",
+   "gtceu": null,
+   "tag": "meat_stock",
+   "hazards": [],
+   "source": "foods/10 §1",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "ginger_juice",
+   "name": {
+    "zh": "姜汁",
+    "en": "Ginger Juice"
+   },
+   "professional": {
+    "zh": "姜汁",
+    "en": "Ginger Juice"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E8C870",
+   "gtceu": null,
+   "tag": "ginger_juice",
+   "hazards": [],
+   "source": "foods/08 §4.5, foods/15 §2 (first used by cooking wine)",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "margarine_emulsion",
+   "name": {
+    "zh": "人造黄油（乳液）",
+    "en": "Margarine (Emulsion)"
+   },
+   "professional": {
+    "zh": "人造黄油（乳液）",
+    "en": "Margarine (Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F0E070",
+   "gtceu": null,
+   "tag": "margarine_emulsion",
+   "hazards": [],
+   "source": "foods/09 §3.6",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "shortening_blend",
+   "name": {
+    "zh": "起酥油（调和油）",
+    "en": "Shortening (Blend)"
+   },
+   "professional": {
+    "zh": "起酥油（调和油）",
+    "en": "Shortening (Blend)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F0E8C0",
+   "gtceu": null,
+   "tag": "shortening_blend",
+   "hazards": [],
+   "source": "foods/09 §3.7",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "non_dairy_creamer_emulsion",
+   "name": {
+    "zh": "植脂末（乳液）",
+    "en": "Non-dairy Creamer (Emulsion)"
+   },
+   "professional": {
+    "zh": "植脂末（乳液）",
+    "en": "Non-dairy Creamer (Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F4F0E8",
+   "gtceu": null,
+   "tag": "non_dairy_creamer_emulsion",
+   "hazards": [],
+   "source": "foods/09 §3.8",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "non_dairy_creamer_homogenized",
+   "name": {
+    "zh": "植脂末（均质乳液）",
+    "en": "Non-dairy Creamer (Homogenized)"
+   },
+   "professional": {
+    "zh": "植脂末（均质乳液）",
+    "en": "Non-dairy Creamer (Homogenized)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F6F2EC",
+   "gtceu": null,
+   "tag": "non_dairy_creamer_homogenized",
+   "hazards": [],
+   "source": "foods/09 §3.8",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "rock_sugar_liquor",
+   "name": {
+    "zh": "冰糖（糖液）",
+    "en": "Rock Sugar (Syrup)"
+   },
+   "professional": {
+    "zh": "冰糖（糖液）",
+    "en": "Rock Sugar (Syrup)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F0ECD8",
+   "gtceu": null,
+   "tag": "rock_sugar_liquor",
+   "hazards": [],
+   "source": "foods/09 §4.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "maltose_syrup_wort",
+   "name": {
+    "zh": "麦芽糖浆（糖化液）",
+    "en": "Maltose Syrup (Saccharified)"
+   },
+   "professional": {
+    "zh": "麦芽糖浆（糖化液）",
+    "en": "Maltose Syrup (Saccharified)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#D8B870",
+   "gtceu": null,
+   "tag": "maltose_syrup_wort",
+   "hazards": [],
+   "source": "foods/09 §4.6",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "glucose_syrup_saccharified",
+   "name": {
+    "zh": "葡萄糖浆（糖化液）",
+    "en": "Glucose Syrup (Saccharified)"
+   },
+   "professional": {
+    "zh": "葡萄糖浆（糖化液）",
+    "en": "Glucose Syrup (Saccharified)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E8E0C0",
+   "gtceu": null,
+   "tag": "glucose_syrup_saccharified",
+   "hazards": [],
+   "source": "foods/09 §4.7, §5",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "glucose_syrup_decolorized",
+   "name": {
+    "zh": "葡萄糖浆（脱色糖液）",
+    "en": "Glucose Syrup (Decolorized)"
+   },
+   "professional": {
+    "zh": "葡萄糖浆（脱色糖液）",
+    "en": "Glucose Syrup (Decolorized)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F4F0E0",
+   "gtceu": null,
+   "tag": "glucose_syrup_decolorized",
+   "hazards": [],
+   "source": "foods/09 §4.7",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "high_fructose_syrup_isomerized",
+   "name": {
+    "zh": "果葡糖浆（异构液）",
+    "en": "High-fructose Syrup (Isomerized)"
+   },
+   "professional": {
+    "zh": "果葡糖浆（异构液）",
+    "en": "High-fructose Syrup (Isomerized)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E8E0C0",
+   "gtceu": null,
+   "tag": "high_fructose_syrup_isomerized",
+   "hazards": [],
+   "source": "foods/09 §4.8",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "high_fructose_syrup_decolorized",
+   "name": {
+    "zh": "果葡糖浆（脱色异构液）",
+    "en": "High-fructose Syrup (Decolorized)"
+   },
+   "professional": {
+    "zh": "果葡糖浆（脱色异构液）",
+    "en": "High-fructose Syrup (Decolorized)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F4F0E0",
+   "gtceu": null,
+   "tag": "high_fructose_syrup_decolorized",
+   "hazards": [],
+   "source": "foods/09 §4.8",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "light_soy_sauce_moromi",
+   "name": {
+    "zh": "生抽（酱醅）",
+    "en": "Light Soy Sauce (Moromi)"
+   },
+   "professional": {
+    "zh": "生抽（酱醅）",
+    "en": "Light Soy Sauce (Moromi)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#6A3A18",
+   "gtceu": null,
+   "tag": "light_soy_sauce_moromi",
+   "hazards": [],
+   "source": "foods/10 §3.1",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "light_soy_sauce_raw",
+   "name": {
+    "zh": "生抽（生酱油）",
+    "en": "Light Soy Sauce (Raw)"
+   },
+   "professional": {
+    "zh": "生抽（生酱油）",
+    "en": "Light Soy Sauce (Raw)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#5A2A10",
+   "gtceu": null,
+   "tag": "light_soy_sauce_raw",
+   "hazards": [],
+   "source": "foods/10 §3.1",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "dark_soy_sauce_base",
+   "name": {
+    "zh": "老抽（原液）",
+    "en": "Dark Soy Sauce (Base)"
+   },
+   "professional": {
+    "zh": "老抽（原液）",
+    "en": "Dark Soy Sauce (Base)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#3A1A0A",
+   "gtceu": null,
+   "tag": "dark_soy_sauce_base",
+   "hazards": [],
+   "source": "foods/10 §3.2",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "rice_vinegar_wine_mash",
+   "name": {
+    "zh": "米醋（酒醪）",
+    "en": "Rice Vinegar (Wine Mash)"
+   },
+   "professional": {
+    "zh": "米醋（酒醪）",
+    "en": "Rice Vinegar (Wine Mash)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E8E0C8",
+   "gtceu": null,
+   "tag": "rice_vinegar_wine_mash",
+   "hazards": [],
+   "source": "foods/10 §3.4",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "rice_vinegar_acetic_mash",
+   "name": {
+    "zh": "米醋（醋醪）",
+    "en": "Rice Vinegar (Vinegar Mash)"
+   },
+   "professional": {
+    "zh": "米醋（醋醪）",
+    "en": "Rice Vinegar (Vinegar Mash)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#D0B070",
+   "gtceu": null,
+   "tag": "rice_vinegar_acetic_mash",
+   "hazards": [],
+   "source": "foods/10 §3.4",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "doubanjiang_sweet_mash",
+   "name": {
+    "zh": "豆瓣酱（甜瓣子）",
+    "en": "Doubanjiang (Sweet Bean Mash)"
+   },
+   "professional": {
+    "zh": "豆瓣酱（甜瓣子）",
+    "en": "Doubanjiang (Sweet Bean Mash)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#9A5A2A",
+   "gtceu": null,
+   "tag": "doubanjiang_sweet_mash",
+   "hazards": [],
+   "source": "foods/10 §4.1",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "ketchup_puree",
+   "name": {
+    "zh": "番茄酱（番茄浆）",
+    "en": "Ketchup (Tomato Pulp)"
+   },
+   "professional": {
+    "zh": "番茄酱（番茄浆）",
+    "en": "Ketchup (Tomato Pulp)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#D04030",
+   "gtceu": null,
+   "tag": "ketchup_puree",
+   "hazards": [],
+   "source": "foods/10 §5.1",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "ketchup_concentrate",
+   "name": {
+    "zh": "番茄酱（浓浆）",
+    "en": "Ketchup (Concentrate)"
+   },
+   "professional": {
+    "zh": "番茄酱（浓浆）",
+    "en": "Ketchup (Concentrate)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#B82818",
+   "gtceu": null,
+   "tag": "ketchup_concentrate",
+   "hazards": [],
+   "source": "foods/10 §5.1",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "chili_sauce_base",
+   "name": {
+    "zh": "辣椒酱（原浆）",
+    "en": "Chili Sauce (Base)"
+   },
+   "professional": {
+    "zh": "辣椒酱（原浆）",
+    "en": "Chili Sauce (Base)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#B0281A",
+   "gtceu": null,
+   "tag": "chili_sauce_base",
+   "hazards": [],
+   "source": "foods/10 §5.5",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "oyster_sauce_extract",
+   "name": {
+    "zh": "蚝油（蚝汁）",
+    "en": "Oyster Sauce (Oyster Extract)"
+   },
+   "professional": {
+    "zh": "蚝油（蚝汁）",
+    "en": "Oyster Sauce (Oyster Extract)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#8A7A60",
+   "gtceu": null,
+   "tag": "oyster_sauce_extract",
+   "hazards": [],
+   "source": "foods/10 §5.6",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "oyster_sauce_base",
+   "name": {
+    "zh": "蚝油（原液）",
+    "en": "Oyster Sauce (Base)"
+   },
+   "professional": {
+    "zh": "蚝油（原液）",
+    "en": "Oyster Sauce (Base)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#5A4030",
+   "gtceu": null,
+   "tag": "oyster_sauce_base",
+   "hazards": [],
+   "source": "foods/10 §5.6",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "master_stock_raw",
+   "name": {
+    "zh": "卤汁（生料）",
+    "en": "Master Stock (Raw)"
+   },
+   "professional": {
+    "zh": "卤汁（生料）",
+    "en": "Master Stock (Raw)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#6A3A1A",
+   "gtceu": null,
+   "tag": "master_stock_raw",
+   "hazards": [],
+   "source": "foods/10 §5.10",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "hotpot_base_melt",
+   "name": {
+    "zh": "火锅底料（熔料）",
+    "en": "Hotpot Base (Melt)"
+   },
+   "professional": {
+    "zh": "火锅底料（熔料）",
+    "en": "Hotpot Base (Melt)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#A0201A",
+   "gtceu": null,
+   "tag": "hotpot_base_melt",
+   "hazards": [],
+   "source": "foods/10 §5.12",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "spray_carrier_solution",
+   "name": {
+    "zh": "喷干载体液",
+    "en": "Spray Carrier Solution"
+   },
+   "professional": {
+    "zh": "喷干载体液",
+    "en": "Spray Carrier Solution"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F0EAD8",
+   "gtceu": null,
+   "tag": "spray_carrier_solution",
+   "hazards": [],
+   "source": "foods/11 §5.7",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "fruity_flavoring_premix",
+   "name": {
+    "zh": "果香香精（粗乳液）",
+    "en": "Fruity Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "果香香精（粗乳液）",
+    "en": "Fruity Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F2B070",
+   "gtceu": null,
+   "tag": "fruity_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "dairy_flavoring_premix",
+   "name": {
+    "zh": "乳香香精（粗乳液）",
+    "en": "Dairy Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "乳香香精（粗乳液）",
+    "en": "Dairy Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F5EBD0",
+   "gtceu": null,
+   "tag": "dairy_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "sweet_flavoring_premix",
+   "name": {
+    "zh": "甜香香精（粗乳液）",
+    "en": "Sweet Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "甜香香精（粗乳液）",
+    "en": "Sweet Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E0B070",
+   "gtceu": null,
+   "tag": "sweet_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "nutty_roasted_flavoring_premix",
+   "name": {
+    "zh": "坚果与焙烤香精（粗乳液）",
+    "en": "Nutty and Roasted Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "坚果与焙烤香精（粗乳液）",
+    "en": "Nutty and Roasted Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#C09060",
+   "gtceu": null,
+   "tag": "nutty_roasted_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "savory_flavoring_premix",
+   "name": {
+    "zh": "肉味与咸味香精（粗乳液）",
+    "en": "Savory Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "肉味与咸味香精（粗乳液）",
+    "en": "Savory Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#C89070",
+   "gtceu": null,
+   "tag": "savory_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "spicy_flavoring_premix",
+   "name": {
+    "zh": "辛香香精（粗乳液）",
+    "en": "Spicy Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "辛香香精（粗乳液）",
+    "en": "Spicy Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E08070",
+   "gtceu": null,
+   "tag": "spicy_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "green_flavoring_premix",
+   "name": {
+    "zh": "蔬菜与青香香精（粗乳液）",
+    "en": "Green Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "蔬菜与青香香精（粗乳液）",
+    "en": "Green Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#A8D090",
+   "gtceu": null,
+   "tag": "green_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "alcoholic_flavoring_premix",
+   "name": {
+    "zh": "酒香香精（粗乳液）",
+    "en": "Alcoholic Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "酒香香精（粗乳液）",
+    "en": "Alcoholic Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#C890A8",
+   "gtceu": null,
+   "tag": "alcoholic_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "floral_flavoring_premix",
+   "name": {
+    "zh": "花香香精（粗乳液）",
+    "en": "Floral Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "花香香精（粗乳液）",
+    "en": "Floral Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F0B8DC",
+   "gtceu": null,
+   "tag": "floral_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "cooling_flavoring_premix",
+   "name": {
+    "zh": "清凉香精（粗乳液）",
+    "en": "Cooling Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "清凉香精（粗乳液）",
+    "en": "Cooling Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#B8EADF",
+   "gtceu": null,
+   "tag": "cooling_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "smoky_flavoring_premix",
+   "name": {
+    "zh": "烟熏香精（粗乳液）",
+    "en": "Smoky Flavoring (Coarse Emulsion)"
+   },
+   "professional": {
+    "zh": "烟熏香精（粗乳液）",
+    "en": "Smoky Flavoring (Coarse Emulsion)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#A8A8A8",
+   "gtceu": null,
+   "tag": "smoky_flavoring_premix",
+   "hazards": [],
+   "source": "foods/11 §5.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "glutinous_rice",
+   "name": {
+    "zh": "糯米",
+    "en": "Glutinous Rice"
+   },
+   "professional": {
+    "zh": "糯米",
+    "en": "Glutinous Rice"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F2EEDF",
+   "gtceu": null,
+   "tag": "materials/glutinous_rice",
+   "hazards": [],
+   "source": "foods/13 §1.1",
+   "purity": null,
+   "bearer": false,
+   "texture": "grain"
+  },
+  {
+   "id": "glutinous_rice_flour",
+   "name": {
+    "zh": "糯米粉",
+    "en": "Glutinous Rice Flour"
+   },
+   "professional": {
+    "zh": "糯米粉",
+    "en": "Glutinous Rice Flour"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F6F4EC",
+   "gtceu": null,
+   "tag": "materials/glutinous_rice_flour",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "powder"
+  },
+  {
+   "id": "rice_slurry",
+   "name": {
+    "zh": "米浆",
+    "en": "Rice Slurry"
+   },
+   "professional": {
+    "zh": "米浆",
+    "en": "Rice Slurry"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#EEEAE0",
+   "gtceu": null,
+   "tag": "rice_slurry",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "steamed_glutinous_rice",
+   "name": {
+    "zh": "蒸糯米",
+    "en": "Steamed Glutinous Rice"
+   },
+   "professional": {
+    "zh": "蒸糯米",
+    "en": "Steamed Glutinous Rice"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F0EBDA",
+   "gtceu": null,
+   "tag": "materials/steamed_glutinous_rice",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "grain"
+  },
+  {
+   "id": "minced_pork",
+   "name": {
+    "zh": "猪肉糜",
+    "en": "Minced Pork"
+   },
+   "professional": {
+    "zh": "猪肉糜",
+    "en": "Minced Pork"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#D88A86",
+   "gtceu": null,
+   "tag": "materials/minced_pork",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "meat"
+  },
+  {
+   "id": "meat_filling",
+   "name": {
+    "zh": "肉馅",
+    "en": "Meat Filling"
+   },
+   "professional": {
+    "zh": "肉馅",
+    "en": "Meat Filling"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#B07A62",
+   "gtceu": null,
+   "tag": "materials/meat_filling",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "paste"
+  },
+  {
+   "id": "dumpling_wrapper",
+   "name": {
+    "zh": "饺子皮",
+    "en": "Dumpling Wrapper"
+   },
+   "professional": {
+    "zh": "饺子皮",
+    "en": "Dumpling Wrapper"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#EEE6D2",
+   "gtceu": null,
+   "tag": "materials/dumpling_wrapper",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "flakes"
+  },
+  {
+   "id": "wonton_wrapper",
+   "name": {
+    "zh": "馄饨皮",
+    "en": "Wonton Wrapper"
+   },
+   "professional": {
+    "zh": "馄饨皮",
+    "en": "Wonton Wrapper"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F0DDA8",
+   "gtceu": null,
+   "tag": "materials/wonton_wrapper",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "flakes"
+  },
+  {
+   "id": "raw_dumplings",
+   "name": {
+    "zh": "生饺子",
+    "en": "Raw Dumplings"
+   },
+   "professional": {
+    "zh": "生饺子",
+    "en": "Raw Dumplings"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#EDE5D0",
+   "gtceu": null,
+   "tag": "materials/raw_dumplings",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "bun"
+  },
+  {
+   "id": "wheat_dough",
+   "name": {
+    "zh": "面团",
+    "en": "Wheat Dough"
+   },
+   "professional": {
+    "zh": "面团",
+    "en": "Wheat Dough"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#EADBB8",
+   "gtceu": null,
+   "tag": "materials/wheat_dough",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "starch_dough",
+   "name": {
+    "zh": "淀粉团",
+    "en": "Starch Dough"
+   },
+   "professional": {
+    "zh": "淀粉团",
+    "en": "Starch Dough"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F2F0EA",
+   "gtceu": null,
+   "tag": "materials/starch_dough",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "steamed_rice_dough",
+   "name": {
+    "zh": "蒸米粉团",
+    "en": "Steamed Rice Dough"
+   },
+   "professional": {
+    "zh": "蒸米粉团",
+    "en": "Steamed Rice Dough"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F4F2EC",
+   "gtceu": null,
+   "tag": "materials/steamed_rice_dough",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "leavened_dough",
+   "name": {
+    "zh": "发面团",
+    "en": "Leavened Dough"
+   },
+   "professional": {
+    "zh": "发面团",
+    "en": "Leavened Dough"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#EEDFC0",
+   "gtceu": null,
+   "tag": "materials/leavened_dough",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "raw_tangyuan",
+   "name": {
+    "zh": "生汤圆",
+    "en": "Raw Tangyuan"
+   },
+   "professional": {
+    "zh": "生汤圆",
+    "en": "Raw Tangyuan"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#F6F4EE",
+   "gtceu": null,
+   "tag": "materials/raw_tangyuan",
+   "hazards": [],
+   "source": "foods/13 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "pellets"
+  },
+  {
+   "id": "liangpi_batter",
+   "name": {
+    "zh": "凉皮（面浆）",
+    "en": "Liangpi (Starch Batter)"
+   },
+   "professional": {
+    "zh": "凉皮（面浆）",
+    "en": "Liangpi (Starch Batter)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#EDE8DA",
+   "gtceu": null,
+   "tag": "liangpi_batter",
+   "hazards": [],
+   "source": "foods/13 §5.6",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "whole_wheat_flour",
+   "name": {
+    "zh": "全麦粉",
+    "en": "Whole Wheat Flour"
+   },
+   "professional": {
+    "zh": "全麦粉",
+    "en": "Whole Wheat Flour"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#CDB48A",
+   "gtceu": null,
+   "tag": "materials/whole_wheat_flour",
+   "hazards": [],
+   "source": "foods/14 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "powder"
+  },
+  {
+   "id": "cream",
+   "name": {
+    "zh": "稀奶油",
+    "en": "Cream"
+   },
+   "professional": {
+    "zh": "稀奶油",
+    "en": "Cream"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F6F0DC",
+   "gtceu": null,
+   "tag": "cream",
+   "hazards": [],
+   "source": "foods/14 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "red_bean_paste",
+   "name": {
+    "zh": "红豆沙",
+    "en": "Red Bean Paste"
+   },
+   "professional": {
+    "zh": "红豆沙",
+    "en": "Red Bean Paste"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#6A2A24",
+   "gtceu": null,
+   "tag": "materials/red_bean_paste",
+   "hazards": [],
+   "source": "foods/14 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "paste"
+  },
+  {
+   "id": "mooncake_dough",
+   "name": {
+    "zh": "月饼皮",
+    "en": "Mooncake Dough"
+   },
+   "professional": {
+    "zh": "月饼皮",
+    "en": "Mooncake Dough"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#D8B070",
+   "gtceu": null,
+   "tag": "materials/mooncake_dough",
+   "hazards": [],
+   "source": "foods/14 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "pie_crust",
+   "name": {
+    "zh": "派皮",
+    "en": "Pie Crust"
+   },
+   "professional": {
+    "zh": "派皮",
+    "en": "Pie Crust"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#E4C890",
+   "gtceu": null,
+   "tag": "materials/pie_crust",
+   "hazards": [],
+   "source": "foods/14 §2",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "mousse_cake_mix",
+   "name": {
+    "zh": "慕斯蛋糕（慕斯液）",
+    "en": "Mousse Cake (Mousse Mix)"
+   },
+   "professional": {
+    "zh": "慕斯蛋糕（慕斯液）",
+    "en": "Mousse Cake (Mousse Mix)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F2B8C0",
+   "gtceu": null,
+   "tag": "mousse_cake_mix",
+   "hazards": [],
+   "source": "foods/14 §4.4",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "wafer_batter",
+   "name": {
+    "zh": "威化饼干（威化浆）",
+    "en": "Wafer (Batter)"
+   },
+   "professional": {
+    "zh": "威化饼干（威化浆）",
+    "en": "Wafer (Batter)"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#EEDDB0",
+   "gtceu": null,
+   "tag": "wafer_batter",
+   "hazards": [],
+   "source": "foods/14 §6.3",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "pasteurized_milk",
+   "name": {
+    "zh": "巴氏杀菌乳",
+    "en": "Pasteurized Milk"
+   },
+   "professional": {
+    "zh": "巴氏杀菌乳",
+    "en": "Pasteurized Milk"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F8F6EE",
+   "gtceu": null,
+   "tag": "pasteurized_milk",
+   "hazards": [],
+   "source": "foods/15 §2 (first used by the cream of batch 3)",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "skim_milk",
+   "name": {
+    "zh": "脱脂乳",
+    "en": "Skim Milk"
+   },
+   "professional": {
+    "zh": "脱脂乳",
+    "en": "Skim Milk"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#EEF0F2",
+   "gtceu": null,
+   "tag": "skim_milk",
+   "hazards": [],
+   "source": "foods/15 §2 (by-product of the cream of batch 3)",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "buttermilk",
+   "name": {
+    "zh": "酪乳",
+    "en": "Buttermilk"
+   },
+   "professional": {
+    "zh": "酪乳",
+    "en": "Buttermilk"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F2EEDC",
+   "gtceu": null,
+   "tag": "buttermilk",
+   "hazards": [],
+   "source": "foods/15 §2 (by-product of batch 4's butter; used by batch 3)",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "egg_custard_mix",
+   "name": {
+    "zh": "蛋奶液",
+    "en": "Egg Custard Mix"
+   },
+   "professional": {
+    "zh": "蛋奶液",
+    "en": "Egg Custard Mix"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#F4DC90",
+   "gtceu": null,
+   "tag": "egg_custard_mix",
+   "hazards": [],
+   "source": "foods/16 §2 (first used by the egg tart of batch 3)",
+   "purity": null,
+   "bearer": false,
+   "texture": "liquid"
+  },
+  {
+   "id": "salted_egg_yolk",
+   "name": {
+    "zh": "咸蛋黄",
+    "en": "Salted Egg Yolk"
+   },
+   "professional": {
+    "zh": "咸蛋黄",
+    "en": "Salted Egg Yolk"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#E88A20",
+   "gtceu": null,
+   "tag": "materials/salted_egg_yolk",
+   "hazards": [],
+   "source": "foods/16 §2 (made from batch 4; used by batch 3)",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "wheat_qu",
+   "name": {
+    "zh": "麦曲",
+    "en": "Wheat Qu"
+   },
+   "professional": {
+    "zh": "麦曲",
+    "en": "Wheat Qu"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#D8BE88",
+   "gtceu": null,
+   "tag": "materials/wheat_qu",
+   "hazards": [],
+   "source": "foods/08 §4.1, foods/23 §6 (huangjiu brought forward)",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
+  },
+  {
+   "id": "huangjiu_mash",
+   "name": {
+    "zh": "黄酒醪",
+    "en": "Huangjiu Mash"
+   },
+   "professional": {
+    "zh": "黄酒醪",
+    "en": "Huangjiu Mash"
+   },
+   "common": null,
+   "formula": null,
+   "state": "liquid",
+   "category": "food",
+   "color": "#E0CC98",
+   "gtceu": null,
+   "tag": "huangjiu_mash",
+   "hazards": [],
+   "source": "foods/22 §2.2, foods/23 §6",
+   "purity": null,
+   "bearer": false,
+   "texture": "viscous"
+  },
+  {
+   "id": "vinasse",
+   "name": {
+    "zh": "酒糟",
+    "en": "Vinasse"
+   },
+   "professional": {
+    "zh": "酒糟",
+    "en": "Vinasse"
+   },
+   "common": null,
+   "formula": null,
+   "state": "solid",
+   "category": "food",
+   "color": "#C8B490",
+   "gtceu": null,
+   "tag": "materials/vinasse",
+   "hazards": [],
+   "source": "foods/08 §4.5, foods/23 §6 (by-product of huangjiu pressing)",
+   "purity": null,
+   "bearer": false,
+   "texture": "lump"
   }
  ],
- "pending_sources": [
-  "balata_latex",
-  "ficus_latex",
-  "jelutong_latex",
-  "materials/abies_needles",
-  "materials/abomasum",
-  "materials/acacia_lump",
-  "materials/acorn_shell",
-  "materials/aglaia_flower",
-  "materials/alfalfa",
-  "materials/allspice",
-  "materials/aloe",
-  "materials/ambergris",
-  "materials/ambrette_seed",
-  "materials/amyris_wood",
-  "materials/angelica_dahurica_root",
-  "materials/angelica_root",
-  "materials/angelica_seed",
-  "materials/angostura_bark",
-  "materials/anise_seed",
-  "materials/annatto_seed",
-  "materials/apricot_kernel",
-  "materials/artemisia_seed",
-  "materials/asafoetida",
-  "materials/atractylodes_rhizome",
-  "materials/attapulgite",
-  "materials/barley",
-  "materials/basil",
-  "materials/bayberry",
-  "materials/bentonite",
-  "materials/benzoin",
-  "materials/bergamot",
-  "materials/bird_eye_chili",
-  "materials/bitter_almond",
-  "materials/bitter_orange",
-  "materials/bitter_orange_flower",
-  "materials/bitter_orange_leaf",
-  "materials/black_pepper",
-  "materials/black_soybean_hull",
-  "materials/blackcurrant",
-  "materials/blackcurrant_bud",
-  "materials/borneol_camphor_leaf",
-  "materials/boronia_flower",
-  "materials/broad_bean_flower",
-  "materials/brown_mustard_seed",
-  "materials/buchu_leaf",
-  "materials/cajeput_leaf",
-  "materials/camphor_wood",
-  "materials/canada_balsam",
-  "materials/canadian_fleabane",
-  "materials/canadian_snakeroot",
-  "materials/cananga_flower",
-  "materials/candelilla_stem",
-  "materials/cardamom",
-  "materials/carnauba_powder",
-  "materials/carob_pod",
-  "materials/carob_seed",
-  "materials/carrot_seed",
-  "materials/cascara_bark",
-  "materials/cascarilla_bark",
-  "materials/cassia_seed",
-  "materials/cassie_flower",
-  "materials/castoreum",
-  "materials/catechu_heartwood",
-  "materials/cedarwood",
-  "materials/celery_flower",
-  "materials/celery_leaf",
-  "materials/celery_seed",
-  "materials/ceylon_cinnamon_bark",
-  "materials/ceylon_cinnamon_leaf",
-  "materials/chestnut_leaf",
-  "materials/chicory_root",
-  "materials/chives",
-  "materials/chrysanthemum_flower",
-  "materials/cinchona_bark",
-  "materials/citronella_grass",
-  "materials/civet",
-  "materials/clary_sage_herb",
-  "materials/clove_bud",
-  "materials/clove_leaf",
-  "materials/clove_stem",
-  "materials/coffee_bean",
-  "materials/conehead_thyme",
-  "materials/copaiba_balsam",
-  "materials/copra",
-  "materials/coreopsis",
-  "materials/coriander_seed",
-  "materials/costus_root",
-  "materials/crimson_glory_rose",
-  "materials/crude_peru_balsam",
-  "materials/crustacean_shell",
-  "materials/cubeb",
-  "materials/cumin_seed",
-  "materials/cyperus_rhizome",
-  "materials/daidai_fruit",
-  "materials/damiana_leaf",
-  "materials/davana_herb",
-  "materials/dill",
-  "materials/dittany_of_crete",
-  "materials/dried_cochineal",
-  "materials/dunaliella",
-  "materials/dwarf_pine_needles",
-  "materials/elderflower",
-  "materials/elemi",
-  "materials/eucalyptus_dives",
-  "materials/eucalyptus_leaf",
-  "materials/evening_primrose_seed",
-  "materials/fennel_seed",
-  "materials/fenugreek_seed",
-  "materials/fingered_citron",
-  "materials/flaxseed",
-  "materials/galangal_root",
-  "materials/galbanum",
-  "materials/gardenia_flower",
-  "materials/garlic",
-  "materials/gastric_mucosa",
-  "materials/genet_flower",
-  "materials/gentian_root",
-  "materials/german_chamomile",
-  "materials/ghatti_lump",
-  "materials/ginger",
-  "materials/gleditsia_seed",
-  "materials/grains_of_paradise",
-  "materials/gromwell_root",
-  "materials/guaiac_wood",
-  "materials/guar_seed",
-  "materials/guarana_seed",
-  "materials/haskap",
-  "materials/hawthorn_fruit",
-  "materials/hickory_bark",
-  "materials/hops",
-  "materials/horehound",
-  "materials/horseradish_root",
-  "materials/hyssop",
-  "materials/ilmenite",
-  "materials/immortelle_flower",
-  "materials/jambu",
-  "materials/jasmin_orange_flower",
-  "materials/jasmine_grandiflorum_flower",
-  "materials/jasmine_officinale_flower",
-  "materials/jasmine_sambac_flower",
-  "materials/jerusalem_artichoke",
-  "materials/jujube",
-  "materials/juniper_berry",
-  "materials/karaya_lump",
-  "materials/katemfe_fruit",
-  "materials/kola_nut",
-  "materials/laurel_leaf",
-  "materials/lavandin",
-  "materials/lavender",
-  "materials/leek",
-  "materials/lemon_balm",
-  "materials/lemon_leaf",
-  "materials/licorice_root",
-  "materials/liver",
-  "materials/longan",
-  "materials/lovage_root",
-  "materials/mace",
-  "materials/malania_seed",
-  "materials/mandarin",
-  "materials/mandarin_leaf",
-  "materials/maple_syrup",
-  "materials/marigold",
-  "materials/marjoram",
-  "materials/marshmallow_root",
-  "materials/massoia_bark",
-  "materials/mate_leaf",
-  "materials/mexican_oregano",
-  "materials/michelia_alba_flower",
-  "materials/michelia_alba_leaf",
-  "materials/mimosa_flower",
-  "materials/monk_fruit",
-  "materials/mountain_maple_bark",
-  "materials/mulberry",
-  "materials/mustard_seed",
-  "materials/myrrh",
-  "materials/nardostachys_root",
-  "materials/nutmeg",
-  "materials/oakmoss",
-  "materials/oil_palm_fruit",
-  "materials/olibanum",
-  "materials/opoponax",
-  "materials/orris_root",
-  "materials/osmanthus_flower",
-  "materials/palmarosa",
-  "materials/pancreas",
-  "materials/parsley",
-  "materials/patchouli_leaf",
-  "materials/peach_leaf",
-  "materials/pennyroyal",
-  "materials/peppermint",
-  "materials/perilla_leaf",
-  "materials/perlite",
-  "materials/peruvian_pepper_berry",
-  "materials/pimento_leaf",
-  "materials/pine_needles",
-  "materials/pine_stump",
-  "materials/pummelo",
-  "materials/purple_sweet_potato",
-  "materials/pyrolusite",
-  "materials/quassia_wood",
-  "materials/quillaja_bark",
-  "materials/rabdosia_herb",
-  "materials/rapeseed",
-  "materials/red_amaranth",
-  "materials/red_clover",
-  "materials/red_radish",
-  "materials/red_rice",
-  "materials/rockrose_twig",
-  "materials/roman_chamomile",
-  "materials/rosa_laevigata",
-  "materials/rose_geranium_leaf",
-  "materials/rose_hip",
-  "materials/roselle",
-  "materials/rosewood",
-  "materials/rue",
-  "materials/safflower",
-  "materials/saffron",
-  "materials/sage",
-  "materials/sandalwood",
-  "materials/sarsaparilla_root",
-  "materials/scotch_spearmint",
-  "materials/sea_buckthorn",
-  "materials/sesbania_seed",
-  "materials/shiitake",
-  "materials/sichuan_pepper",
-  "materials/smoked_plum",
-  "materials/sophora_flower",
-  "materials/sorghum_husk",
-  "materials/spanish_sage",
-  "materials/spearmint",
-  "materials/spike_lavender",
-  "materials/spirulina",
-  "materials/star_anise",
-  "materials/sticklac",
-  "materials/styrax",
-  "materials/summer_savory",
-  "materials/swallowroot",
-  "materials/sweet_fennel_seed",
-  "materials/talc",
-  "materials/tallow_tree_seed",
-  "materials/tamarind_pulp",
-  "materials/tamarind_seed",
-  "materials/tangelo",
-  "materials/tangerine",
-  "materials/tara_seed",
-  "materials/tarragon",
-  "materials/tea_tree_leaf",
-  "materials/thuja_leaf",
-  "materials/thyme",
-  "materials/tolu_balsam",
-  "materials/torreya_shell",
-  "materials/tragacanth_lump",
-  "materials/tree_moss",
-  "materials/tuberose_flower",
-  "materials/valerian_root",
-  "materials/vetiver_root",
-  "materials/violet_leaf",
-  "materials/vitex_leaf",
-  "materials/walnut_hull",
-  "materials/wasabi",
-  "materials/west_indian_bay_leaf",
-  "materials/white_pepper",
-  "materials/wild_cherry_bark",
-  "materials/wild_rose_flower",
-  "materials/winter_savory",
-  "materials/wintergreen_leaf",
-  "materials/wormwood",
-  "materials/yellow_mustard_seed",
-  "materials/yerba_santa",
-  "materials/ylang_ylang_flower",
-  "materials/yucca_trunk",
-  "materials/yuzu",
-  "sapodilla_latex",
-  "sorva_latex"
- ]
+ "pending_sources": []
 }

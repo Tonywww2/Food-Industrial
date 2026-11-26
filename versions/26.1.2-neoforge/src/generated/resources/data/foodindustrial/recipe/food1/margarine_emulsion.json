@@ -1,0 +1,51 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:refined_soybean_oil"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/hardened_oil"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    },
+    {
+      "ingredient": "#foodindustrial:food_emulsifiers"
+    }
+  ],
+  "mode": "whipping",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:margarine_emulsion"
+    }
+  ],
+  "quality": {
+    "items": [
+      "color",
+      {
+        "accepts": [
+          "dairy_flavoring"
+        ],
+        "item": "taste"
+      },
+      "preservation"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

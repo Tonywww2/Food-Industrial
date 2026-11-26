@@ -183,6 +183,10 @@ final class FluidContainers {
             if (!stack.isEmpty() && purity != PlatformPurity.NONE) {
                 PlatformFluids.setStackPurity(stack, (byte) purity);
             }
+            int quality = com.tonywww.foodindustrial.platform.food.PlatformFoodData.quality(container);
+            if (!stack.isEmpty() && quality != 0) {
+                PlatformFluids.setStackQuality(stack, quality);
+            }
             return stack;
         }
 
@@ -192,6 +196,11 @@ final class FluidContainers {
             int purity = PlatformFluids.stackPurity(stack);
             if (!stack.isEmpty() && purity != FluidAmount.NO_PURITY) {
                 PlatformPurity.set(container, (byte) purity);
+            }
+            // food quality rides along with the fluid (I47: liquid products in buckets)
+            int quality = stack.isEmpty() ? 0 : PlatformFluids.stackQuality(stack);
+            if (quality != 0) {
+                com.tonywww.foodindustrial.platform.food.PlatformFoodData.setQuality(container, quality);
             }
         }
     }
@@ -209,7 +218,9 @@ final class FluidContainers {
             }
             FluidResource resource = FluidResource.of(bucket.content);
             Byte purity = access.get(PlatformPurity.COMPONENT.get());
-            return purity == null ? resource : resource.with(PlatformPurity.COMPONENT.get(), purity);
+            resource = purity == null ? resource : resource.with(PlatformPurity.COMPONENT.get(), purity);
+            Integer quality = access.get(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get());
+            return quality == null || quality == 0 ? resource : resource.with(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get(), quality);
         }
 
         @Override
@@ -228,7 +239,9 @@ final class FluidContainers {
             FluidStack stack = resource.toStack(amount);
             ItemResource bucket = ItemResource.of(stack.getFluidType().getBucket(stack));
             Byte purity = resource.get(PlatformPurity.COMPONENT.get());
-            return purity == null ? bucket : bucket.with(PlatformPurity.COMPONENT.get(), purity);
+            bucket = purity == null ? bucket : bucket.with(PlatformPurity.COMPONENT.get(), purity);
+            Integer quality = resource.get(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get());
+            return quality == null || quality == 0 ? bucket : bucket.with(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get(), quality);
         }
 
         @Override

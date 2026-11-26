@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wafer_batter",
+    "foodindustrial:flowing_wafer_batter",
+    {
+      "id": "#forge:wafer_batter",
+      "required": false
+    },
+    {
+      "id": "#c:wafer_batter",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "minecraft:jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna"
+  ],
+  "spawners": [
+    {
+      "type": "foodindustrial:civet",
+      "maxCount": 2,
+      "minCount": 1,
+      "weight": 4
+    }
+  ]
+}

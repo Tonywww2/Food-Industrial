@@ -31,6 +31,7 @@ public final class ModEntrypoint {
     /*public ModEntrypoint(IEventBus modBus, ModContainer container) {
     *///?}
         PlatformEvents.bind(modBus);
+        com.tonywww.foodindustrial.platform.world.PlatformAnimals.bind(modBus);
         PlatformPlayerData.bind();
         PlatformPlayerEvents.bind();
         PlatformAttributes.bind(modBus);
@@ -41,12 +42,14 @@ public final class ModEntrypoint {
             PlatformClient.bind(modBus);
         }
         PlatformPurity.bootstrap();
+        com.tonywww.foodindustrial.platform.food.PlatformFoodData.bootstrap();
         PlatformIngredients.bind(modBus);
         com.tonywww.foodindustrial.platform.recipe.PlatformRecipeConditions.bind();
         PlatformKinetics.bind(modBus);
         PlatformRecipes.bindSync();
         PlatformFluids.bind(modBus);
         PlatformTankItem.bind(modBus);
+        PlatformPackagedFluids.bind(modBus);
         PlatformWorldgen.bind();
         FoodIndustrial.init();
         //? if forge {

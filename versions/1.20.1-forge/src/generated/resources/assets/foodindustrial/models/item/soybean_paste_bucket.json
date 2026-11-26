@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:soybean_paste",
+  "loader": "forge:fluid_container"
+}

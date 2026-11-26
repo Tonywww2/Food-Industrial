@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "foodindustrial:block/food_machine_casing"
+    }
+  }
+}

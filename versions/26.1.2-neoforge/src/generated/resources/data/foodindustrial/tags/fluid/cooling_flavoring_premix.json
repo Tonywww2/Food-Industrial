@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cooling_flavoring_premix",
+    "foodindustrial:flowing_cooling_flavoring_premix",
+    {
+      "id": "#forge:cooling_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:cooling_flavoring_premix",
+      "required": false
+    }
+  ]
+}

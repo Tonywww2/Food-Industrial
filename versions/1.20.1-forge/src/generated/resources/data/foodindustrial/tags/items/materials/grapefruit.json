@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:grapefruit"
+    "foodindustrial:grapefruit",
+    {
+      "id": "#forge:fruits/grapefruit",
+      "required": false
+    },
+    {
+      "id": "#c:fruits/grapefruit",
+      "required": false
+    }
   ]
 }

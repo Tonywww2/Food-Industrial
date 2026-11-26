@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:non_dairy_creamer_emulsion"
+      }
+    }
+  ],
+  "mode": "high_pressure_homogenizing",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:non_dairy_creamer_homogenized"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2"
+  },
+  "time": 100
+}

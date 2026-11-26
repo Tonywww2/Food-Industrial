@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "amount": 750,
+      "fluidTag": "foodindustrial:huangjiu"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:ginger_juice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:cooking_wine"
+    }
+  ]
+}

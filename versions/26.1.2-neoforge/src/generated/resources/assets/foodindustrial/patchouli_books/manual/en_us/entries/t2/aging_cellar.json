@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:aging_cellar",
+  "name": "book.foodindustrial.manual.entry.aging_cellar",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:aging_cellar",
+      "text": "book.foodindustrial.manual.entry.aging_cellar.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:aging_cellar[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.aging_cellar"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.aging_cellar.structure"
+    }
+  ],
+  "sortnum": 13
+}

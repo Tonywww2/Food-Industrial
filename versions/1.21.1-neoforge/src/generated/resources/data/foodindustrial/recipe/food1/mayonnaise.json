@@ -1,0 +1,47 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 750,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg_yolk"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 50,
+        "tag": "foodindustrial:foods/vinegar"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    }
+  ],
+  "mode": "whipping",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:mayonnaise"
+    }
+  ],
+  "quality": {
+    "items": [
+      "taste",
+      "preservation"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

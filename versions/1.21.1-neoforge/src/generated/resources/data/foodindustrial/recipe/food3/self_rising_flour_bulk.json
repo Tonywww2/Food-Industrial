@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_bicarbonate"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_acid_pyrophosphate"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 8,
+      "semi_finished": "self_rising_flour|bulk"
+    }
+  ],
+  "quality": {},
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "foodindustrial:block/filling_sealer_shape",
+  "textures": {
+    "front": "foodindustrial:block/filling_sealer_front",
+    "side": "foodindustrial:block/filling_sealer_side",
+    "top": "foodindustrial:block/filling_sealer_top"
+  }
+}

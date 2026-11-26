@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:mustard_seed"
+    "foodindustrial:mustard_seed",
+    {
+      "id": "#forge:crops/mustardseeds",
+      "required": false
+    },
+    {
+      "id": "#c:crops/mustardseeds",
+      "required": false
+    }
   ]
 }

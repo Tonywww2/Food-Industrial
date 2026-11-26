@@ -55,12 +55,12 @@ public final class WorkshopMachines {
 
     static {
         describedBlockItem(HandCrankBlock.ID, HAND_CRANK, "手摇柄", "Hand Crank",
-            "装在石磨或压榨机顶上，空手右键摇动", "Goes on a stone mill or screw press; right-click to turn");
+            "装在人力机器顶上，空手右键摇动", "Goes on a hand-cranked machine; right-click to turn");
         // Create's transmission interface (I25, 2026-11-11): registered only with Create; texts and assets always.
         com.tonywww.foodindustrial.platform.PlatformKinetics.registerInterface();
         Lang.add(Lang.block(com.tonywww.foodindustrial.platform.PlatformKinetics.INTERFACE_ID), "传动接口", "Transmission Interface");
-        Lang.add(Lang.description(com.tonywww.foodindustrial.platform.PlatformKinetics.INTERFACE_ID), "装在石磨或压榨机顶上，接机械动力传动轴",
-            "Goes on a stone mill or screw press; takes a Create shaft");
+        Lang.add(Lang.description(com.tonywww.foodindustrial.platform.PlatformKinetics.INTERFACE_ID), "装在人力机器顶上，接机械动力传动轴",
+            "Goes on a hand-cranked machine; takes a Create shaft");
         com.tonywww.foodindustrial.platform.PlatformKinetics.onSpeedChanged((level, pos) -> {
             if (level.getBlockEntity(pos.below()) instanceof com.tonywww.foodindustrial.machine.entity.MachineBlockEntity machine) {
                 machine.wake();
@@ -76,41 +76,55 @@ public final class WorkshopMachines {
 
     // ---- machines ----
 
-    /** M01 (machines/03 §3: I 1, O 2, FI 1, FO 1; hand crank; phase 0). */
+    /** M01 (machines/03 §3: I 2 from I47.5, O 2, FI 1, FO 1; hand crank; phase 0). */
     public static final MachineDefinition STONE_MILL = MachineDefinition.builder("stone_mill")
         .name("石磨", "Stone Mill")
         .description("人力研磨，可干磨或加水湿磨", "Hand-cranked grinding, dry or wet with water")
         .tier(Tier.T1)
         .types(ProcessTypes.GRINDING)
-        .layout(IoLayout.of(1, 2, 1, 1))
+        .layout(IoLayout.of(2, 2, 1, 1))
         .modes(MachineMode.of("dry_grinding", Capabilities.NONE), MachineMode.of("wet_grinding", Capabilities.NONE))
         .power(PowerKind.MANUAL)
         .phase(TickPhase.MECHANICAL)
         .properties(BlockBehaviour.Properties.of().strength(2.0F, 6.0F).requiresCorrectToolForDrops())
+        .shaped()
         .register();
 
-    /** M02 (I 1, O 1, FO 1; hand crank; phase 0). */
+    /** M02 (I 1, O 1, FI 1 from I47.5 for fluid mashes, FO 1; hand crank; phase 0). */
     public static final MachineDefinition SCREW_PRESS = MachineDefinition.builder("screw_press")
         .name("螺旋压榨机", "Screw Press")
         .description("人力压榨：取汁、取油、凝胶脱水", "Hand-cranked pressing: juice, oil, gel dewatering")
         .tier(Tier.T1)
         .types(ProcessTypes.PRESSING)
-        .layout(IoLayout.of(1, 1, 0, 1))
+        .layout(IoLayout.of(1, 1, 1, 1))
         .power(PowerKind.MANUAL)
         .phase(TickPhase.MECHANICAL)
         .properties(wood())
+        .shaped()
         .register();
 
-    /** M03 (I 2, O 2, FI 2, FO 1, F 1; fuel; phase 1); also heated extraction and crystallization (2026-11-10); two input tanks from I31 (2026-11-12). */
+    /**
+     * M03 (I 4, O 2, FI 3, FO 1, F 1, C 1; fuel; phase 1); also heated extraction and crystallization (2026-11-10); two input
+     * tanks from I31 (2026-11-12); four inputs, three input tanks and a catalyst slot from I47.5 (2026-11-19).
+     */
     public static final MachineDefinition BOILING_STOVE = MachineDefinition.builder("boiling_stove")
         .name("熬煮灶", "Boiling Stove")
         .description("烧燃料熬煮、蒸发、热浸提与重结晶", "Fuel-fired boiling, hot extraction and recrystallizing")
         .tier(Tier.T1)
-        .types(ProcessTypes.BOILING, ProcessTypes.REACTING, ProcessTypes.EXTRACTING, ProcessTypes.CRYSTALLIZING)
-        .layout(IoLayout.of(2, 2, 2, 1).withFuel(1))
+        .types(ProcessTypes.BOILING, ProcessTypes.REACTING, ProcessTypes.EXTRACTING, ProcessTypes.CRYSTALLIZING,
+            ProcessTypes.STERILIZING, ProcessTypes.COOKING, ProcessTypes.BAKING, ProcessTypes.FRYING)
+        .layout(IoLayout.of(4, 2, 3, 1).withCatalyst(1).withFuel(1))
         .capabilities(Capabilities.of("temperature.heated", "method.open_flame"))
+        // finished-food line (I41, machines/05 §2.3): the old recipes stay in simmering
+        .modes(MachineMode.of("simmering", Capabilities.of("mode.coagulating", "mode.curdling", "mode.enzymolysis"),
+                ProcessTypes.BOILING, ProcessTypes.REACTING, ProcessTypes.EXTRACTING, ProcessTypes.CRYSTALLIZING),
+            MachineMode.of("cooking", Capabilities.of("mode.water_boiling", "mode.steaming", "mode.braising"), ProcessTypes.COOKING),
+            MachineMode.of("frying", Capabilities.NONE, ProcessTypes.FRYING),
+            MachineMode.of("pan_roasting", Capabilities.NONE, ProcessTypes.BAKING),
+            MachineMode.of("sterilizing", Capabilities.of("mode.pasteurizing", "mode.retorting"), ProcessTypes.STERILIZING))
         .power(PowerKind.FUEL)
         .phase(TickPhase.HEATING)
+        .shaped()
         .register();
 
     /** M04 (I 2, O 2, FI 2 — water or solvent, the gas let in —, FO 1; no power; phase 0); settling and filtration (2026-11-10). */
@@ -123,20 +137,26 @@ public final class WorkshopMachines {
         .capabilities(Capabilities.of("method.settling", "method.filtration"))
         .phase(TickPhase.MECHANICAL)
         .properties(wood())
+        .shaped()
         .register();
 
-    /** M05 (I 2, O 1, FI 1, FO 2 — broth, CO2 or biogas —, C 1 culture; no power; phase 3). */
+    /** M05 (I 6, O 1, FI 2, FO 2 — broth, CO2 or biogas —, C 2 — a culture and a second catalyst —; no power; phase 3; I 6, FI 2, C 2 from I47.5). */
     public static final MachineDefinition FERMENTATION_VAT = MachineDefinition.builder("fermentation_vat")
         .name("发酵缸", "Fermentation Vat")
         .description("液态发酵，可开口、密闭或厌氧", "Liquid fermentation: open, sealed or anaerobic")
         .tier(Tier.T1)
-        .types(ProcessTypes.FERMENTING)
-        .layout(IoLayout.of(2, 1, 1, 2).withCatalyst(1))
+        .types(ProcessTypes.FERMENTING, ProcessTypes.CURING)
+        .layout(IoLayout.of(6, 1, 2, 2).withCatalyst(2))
         .slotNames(SlotRole.CATALYST, "culture")
-        .modes(MachineMode.of("open", Capabilities.of("atmosphere.air")),
-            MachineMode.of("sealed", Capabilities.of("atmosphere.airtight")),
-            MachineMode.of("anaerobic", Capabilities.of("atmosphere.airtight")))
+        .modes(MachineMode.of("open", Capabilities.of("atmosphere.air"), ProcessTypes.FERMENTING),
+            MachineMode.of("sealed", Capabilities.of("atmosphere.airtight"), ProcessTypes.FERMENTING),
+            MachineMode.of("anaerobic", Capabilities.of("atmosphere.airtight"), ProcessTypes.FERMENTING),
+            // finished-food line (I41): R25 proofing, marinating, aging (the oak barrel in the catalyst slot)
+            MachineMode.of("proofing", Capabilities.NONE, ProcessTypes.CURING),
+            MachineMode.of("marinating", Capabilities.NONE, ProcessTypes.CURING),
+            MachineMode.of("aging", Capabilities.NONE, ProcessTypes.CURING))
         .phase(TickPhase.REACTION)
+        .shaped()
         .register();
 
     /** M06 (I 2, O 2, FI 1 water, C 1 culture, F 1 brazier; optional fuel; phase 3; multiblock). */
@@ -152,6 +172,7 @@ public final class WorkshopMachines {
         .phase(TickPhase.REACTION)
         .structure(room(KOJI_ROOM_WALL, "koji_room_wall"))
         .properties(wood())
+        .shaped()
         .register();
 
     /** M07 (I 2, O 3 — product, ash, charcoal —, FO 2 — condensate, gas —, F 1; fuel; phase 1; multiblock). */
@@ -168,6 +189,7 @@ public final class WorkshopMachines {
         .power(PowerKind.FUEL)
         .phase(TickPhase.HEATING)
         .structure(room(KILN_BRICK, "kiln_brick"))
+        .shaped()
         .register();
 
     /** M08 (I 1, O 1 residue, FI 1, FO 2 — distillate, residual liquid —, F 1, X 1; fuel; phase 1). */
@@ -184,6 +206,7 @@ public final class WorkshopMachines {
         .requires(MachineRequirement.blockAbove(CONDENSER, Lang.block("condenser")))
         .power(PowerKind.FUEL)
         .phase(TickPhase.HEATING)
+        .shaped()
         .register();
 
     /** M09 (I 1 seed or modifier, O 1, FI 1, FO 1 mother liquor; no power; phase 2). */
@@ -196,6 +219,7 @@ public final class WorkshopMachines {
         .modes(MachineMode.of("cooling_crystallization", Capabilities.of("temperature.cooling")),
             MachineMode.outdoors("sun_crystallization"))
         .phase(TickPhase.REFINING)
+        .shaped()
         .register();
 
     /** M10 (I 4, O 4, FO 1 flue gas, F 1; fuel; phase 1; multiblock). */
@@ -212,15 +236,33 @@ public final class WorkshopMachines {
         .power(PowerKind.FUEL)
         .phase(TickPhase.HEATING)
         .structure(room(DRYING_ROOM_WALL, "drying_room_wall"))
+        .shaped()
         .register();
 
     private WorkshopMachines() {
     }
 
     /** The ten machines in M01–M10 order. */
+    /** M54 (I43, additives/07 §M54: FO 1 of 4,000 mB, 10 FE/t; W03 every 40 ticks on the coast). */
+    public static final MachineDefinition SEAWATER_PUMP = MachineDefinition.builder("seawater_pump")
+        .name("电动海水泵", "Seawater Pump")
+        .description("放在海边水旁，通电抽海水", "Set by the sea; pumps seawater on power")
+        .tier(Tier.T1)
+        .types(ProcessTypes.PUMPING)
+        .layout(IoLayout.of(0, 0, 0, 1))
+        .tankCapacity(4000)
+        // T1 machines have no FE buffer by default; 4,000 FE is 400 ticks of pumping (I43)
+        .energyCapacity(4_000)
+        .mayHave(Capabilities.of("environment.coastal"))
+        .power(PowerKind.ENERGY)
+        .phase(TickPhase.MECHANICAL)
+        .entity(SeawaterPumpBlockEntity::new)
+        .shaped()
+        .register();
+
     public static List<MachineDefinition> machines() {
         return List.of(STONE_MILL, SCREW_PRESS, BOILING_STOVE, STEEPING_VAT, FERMENTATION_VAT, KOJI_ROOM, EARTH_KILN, POT_STILL,
-            CRYSTALLIZING_TANK, DRYING_ROOM);
+            CRYSTALLIZING_TANK, DRYING_ROOM, SEAWATER_PUMP);
     }
 
     /** Casing block ids. */

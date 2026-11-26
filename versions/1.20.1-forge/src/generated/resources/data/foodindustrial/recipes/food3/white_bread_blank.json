@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "white_bread|dough"
+    }
+  ],
+  "mode": "proofing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "white_bread|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

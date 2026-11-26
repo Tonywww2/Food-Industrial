@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "minecraft:iron_bars",
+    "I": "#c:ingots/iron"
+  },
+  "pattern": [
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:extrusion_die"
+  }
+}

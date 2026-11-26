@@ -10,7 +10,6 @@ import com.tonywww.foodindustrial.machine.definition.IoLayout;
 import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
 import com.tonywww.foodindustrial.machine.entity.MultiblockControllerBlockEntity;
 import com.tonywww.foodindustrial.machine.entity.PortBlockEntity;
-import com.tonywww.foodindustrial.platform.PlatformFuel;
 import com.tonywww.foodindustrial.platform.PlatformItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -72,6 +71,13 @@ public class PortMenu extends FIMenu {
                 GuiLayout.Box box = layout.slot(i);
                 SlotRole role = controller.layout().roleOf(i);
                 addSlot(new PortSlot(slots, i, box.x() + 1, box.y() + 1, role));
+                count++;
+            }
+            // additive slots A (I42): in a panel left of the window, as on a single-block machine
+            for (int i = 0; i < io.additives(); i++) {
+                int index = io.start(SlotRole.ADDITIVE) + i;
+                GuiLayout.Box box = layout.slot(index);
+                addSlot(new PortSlot(slots, index, box.x() + 1, box.y() + 1, SlotRole.ADDITIVE));
                 count++;
             }
         }
@@ -154,8 +160,8 @@ public class PortMenu extends FIMenu {
                     ItemStack lock = attached != null ? attached.inventory().lock(getContainerSlot()) : ItemStack.EMPTY;
                     yield lock.isEmpty() || PlatformItems.sameItemSameData(lock, stack);
                 }
-                case CATALYST -> true;
-                case FUEL -> PlatformFuel.burnTime(player.level(), stack) > 0;
+                case CATALYST, ADDITIVE -> true;
+                case FUEL -> controller != null && controller.fuelAccepts(player.level(), getContainerSlot() - controller.layout().start(role), stack);
                 default -> false;
             };
         }
@@ -217,7 +223,11 @@ public class PortMenu extends FIMenu {
                 case FUEL -> io.fuel();
                 default -> 0;
             };
-            if (count > 0 && slots.get(start).mayPlace(stack)) {
+            boolean takes = false;
+            for (int i = 0; i < count && !takes; i++) {
+                takes = slots.get(start + i).mayPlace(stack);
+            }
+            if (takes) {
                 moved |= moveItemStackTo(stack, start, start + count, false);
                 if (stack.isEmpty()) {
                     return true;
@@ -235,7 +245,10 @@ public class PortMenu extends FIMenu {
         MultiblockControllerBlockEntity attached = port.controller();
         switch (action) {
             case MenuActions.PORT_MODE -> {
-                if (a == SideConfig.Mode.OFF.ordinal() || a == SideConfig.Mode.INPUT.ordinal() || a == SideConfig.Mode.OUTPUT.ordinal()) {
+                boolean additive = a == SideConfig.Mode.ADDITIVE.ordinal() && kind == PortBlockEntity.Kind.ITEM
+                    && controller != null && controller.layout().additives() > 0;
+                if (a == SideConfig.Mode.OFF.ordinal() || a == SideConfig.Mode.INPUT.ordinal() || a == SideConfig.Mode.OUTPUT.ordinal()
+                    || additive) {
                     port.configure(SideConfig.Mode.values()[a], port.autoOutput());
                 }
             }
@@ -246,7 +259,7 @@ public class PortMenu extends FIMenu {
             }
             case MenuActions.TANK_CLICK -> {
                 if (attached != null && attached.formed() && kind == PortBlockEntity.Kind.FLUID) {
-                    MachineMenu.clickTank(sender, attached.tanks(), a, this);
+                    MachineMenu.clickTank(sender, attached.tanks(), a, this, b == 1);
                     attached.settingsApplied();
                 }
             }

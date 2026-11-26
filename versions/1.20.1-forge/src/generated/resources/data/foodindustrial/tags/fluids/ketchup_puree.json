@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:ketchup_puree",
+    "foodindustrial:flowing_ketchup_puree",
+    {
+      "id": "#forge:ketchup_puree",
+      "required": false
+    },
+    {
+      "id": "#c:ketchup_puree",
+      "required": false
+    }
+  ]
+}

@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:coffee_bean"
+    "foodindustrial:coffee_bean",
+    {
+      "id": "#forge:crops/coffeebean",
+      "required": false
+    },
+    {
+      "id": "#c:crops/coffeebean",
+      "required": false
+    }
   ]
 }

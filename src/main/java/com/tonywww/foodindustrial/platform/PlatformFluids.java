@@ -163,6 +163,11 @@ public final class PlatformFluids {
         if (!bucket.isEmpty() && purity != FluidAmount.NO_PURITY) {
             PlatformPurity.set(bucket, (byte) purity);
         }
+        // and its food quality (I47: liquid products in buckets)
+        int quality = stackQuality(stack);
+        if (!bucket.isEmpty() && quality != 0) {
+            com.tonywww.foodindustrial.platform.food.PlatformFoodData.setQuality(bucket, quality);
+        }
         return bucket;
     }
 
@@ -171,7 +176,7 @@ public final class PlatformFluids {
         if (stack.isEmpty()) {
             return FluidAmount.EMPTY;
         }
-        return FluidAmount.of(stack.getFluid(), stack.getAmount(), stackPurity(stack));
+        return FluidAmount.of(stack.getFluid(), stack.getAmount(), stackPurity(stack)).withQuality(stackQuality(stack));
     }
 
     /** Converts to a loader stack carrying the purity. */
@@ -182,6 +187,9 @@ public final class PlatformFluids {
         FluidStack stack = new FluidStack(fluid.fluid(), fluid.amount());
         if (fluid.hasPurity()) {
             setStackPurity(stack, (byte) fluid.purity());
+        }
+        if (fluid.quality() != 0) {
+            setStackQuality(stack, fluid.quality());
         }
         return stack;
     }
@@ -290,9 +298,23 @@ public final class PlatformFluids {
         stack.getOrCreateTag().putByte(PlatformPurity.TAG_KEY, purity);
     }
 
-    /** Attaches fluid handlers to the mod buckets. Called by the mod entrypoint. */
+    static int stackQuality(FluidStack stack) {
+        CompoundTag tag = stack.getTag();
+        String key = com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY_TAG;
+        return tag != null && tag.contains(key, net.minecraft.nbt.Tag.TAG_INT) ? tag.getInt(key) : 0;
+    }
+
+    static void setStackQuality(FluidStack stack, int code) {
+        stack.getOrCreateTag().putInt(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY_TAG, code);
+    }
+
+    /**
+     * Attaches fluid handlers to the mod buckets and turns on the loader's milk fluid (I49: the food line pours milk, foods/15
+     * §1, {@code #forge:milk}; the milk bucket then holds it). Called by the mod entrypoint.
+     */
     public static void bind(IEventBus modBus) {
         // Forge: buckets provide their handler through Item#initCapabilities.
+        net.minecraftforge.common.ForgeMod.enableMilkFluid();
     }
     //?} else {
     /*private static net.minecraft.resources.ResourceKey<net.minecraft.core.Registry<FluidType>> fluidTypeRegistry() {
@@ -336,8 +358,18 @@ public final class PlatformFluids {
         stack.set(PlatformPurity.COMPONENT.get(), purity);
     }
 
-    /^* Attaches fluid handlers to the mod buckets. Called by the mod entrypoint. ^/
+    static int stackQuality(FluidStack stack) {
+        Integer value = stack.get(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get());
+        return value == null ? 0 : value;
+    }
+
+    static void setStackQuality(FluidStack stack, int code) {
+        stack.set(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get(), code);
+    }
+
+    /^* Attaches fluid handlers to the mod buckets and turns on the loader's milk fluid (I49). Called by the mod entrypoint. ^/
     public static void bind(IEventBus modBus) {
+        net.neoforged.neoforge.common.NeoForgeMod.enableMilkFluid();
         modBus.addListener((RegisterCapabilitiesEvent event) -> {
             for (Registered fluid : REGISTERED) {
                 if (fluid.bucket() != null) {
@@ -366,7 +398,10 @@ public final class PlatformFluids {
             return FluidResource.EMPTY;
         }
         FluidResource resource = FluidResource.of(fluid.fluid());
-        return fluid.hasPurity() ? resource.with(PlatformPurity.COMPONENT.get(), (byte) fluid.purity()) : resource;
+        if (fluid.hasPurity()) {
+            resource = resource.with(PlatformPurity.COMPONENT.get(), (byte) fluid.purity());
+        }
+        return fluid.quality() != 0 ? resource.with(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get(), fluid.quality()) : resource;
     }
 
     public static FluidAmount fromResource(FluidResource resource, int amount) {
@@ -374,7 +409,8 @@ public final class PlatformFluids {
             return FluidAmount.EMPTY;
         }
         Byte value = resource.getComponents().get(PlatformPurity.COMPONENT.get());
-        return FluidAmount.of(resource.getFluid(), amount, value == null ? FluidAmount.NO_PURITY : value);
+        Integer quality = resource.getComponents().get(com.tonywww.foodindustrial.platform.food.PlatformFoodData.QUALITY.get());
+        return FluidAmount.of(resource.getFluid(), amount, value == null ? FluidAmount.NO_PURITY : value).withQuality(quality == null ? 0 : quality);
     }
     *///?}
 }

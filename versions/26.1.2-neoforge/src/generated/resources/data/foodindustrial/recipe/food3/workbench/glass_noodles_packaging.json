@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "glass_noodles|dry_strands"
+    },
+    {
+      "ingredient": "#foodindustrial:containers/paper_bag"
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:glass_noodles"
+  }
+}

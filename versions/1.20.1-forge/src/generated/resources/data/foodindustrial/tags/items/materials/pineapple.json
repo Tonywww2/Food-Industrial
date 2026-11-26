@@ -8,6 +8,7 @@
     {
       "id": "#c:fruits/pineapple",
       "required": false
-    }
+    },
+    "foodindustrial:pineapple"
   ]
 }

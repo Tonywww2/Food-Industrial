@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:barrel",
+    "I": "#c:ingots/iron",
+    "K": "#c:rods/wooden"
+  },
+  "pattern": [
+    " K ",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:hand_seawater_pump"
+  }
+}

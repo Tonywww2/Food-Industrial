@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "semi_finished": "breakfast_cereal|mix"
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "semi_finished": "breakfast_cereal|puffed"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "high"
+  },
+  "time": 100
+}

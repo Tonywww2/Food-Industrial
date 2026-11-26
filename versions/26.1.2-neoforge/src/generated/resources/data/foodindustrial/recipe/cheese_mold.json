@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": "#c:nuggets/iron",
+    "P": "#minecraft:planks"
+  },
+  "pattern": [
+    "P P",
+    "PNP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:cheese_mold"
+  }
+}

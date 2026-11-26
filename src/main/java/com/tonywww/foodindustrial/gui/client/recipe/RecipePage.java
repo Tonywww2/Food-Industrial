@@ -178,7 +178,7 @@ public final class RecipePage {
     public List<ItemStack> inputItems(int index) {
         ProcessInput.ItemInput input = (ProcessInput.ItemInput) recipe.inputs().get(index);
         List<ItemStack> stacks = new ArrayList<>();
-        for (ItemStack stack : PlatformIngredients.displayStacks(input.ingredient())) {
+        for (ItemStack stack : input.displayStacks()) {
             ItemStack copy = stack.copy();
             copy.setCount(input.count());
             stacks.add(copy);
@@ -326,7 +326,7 @@ public final class RecipePage {
             lines.add(RecipeDevices.icon(device).getHoverName());
             lines.add(TierText.tier(device.tier()));
             lines.add(deviceSummary(device).copy().withStyle(ChatFormatting.GRAY));
-            int yield = recipe.type().yieldScalable() ? device.profile().yieldPermille() : 1000;
+            int yield = recipe.scalesYield() ? device.profile().yieldPermille() : 1000;
             lines.add(Component.translatable(RecipeText.key("yield"), trim(yield / 1000.0)).withStyle(ChatFormatting.GRAY));
             lines.add(Component.translatable(RecipeText.key(index == selected ? "selected" : "select")).withStyle(ChatFormatting.DARK_GRAY));
         }
@@ -353,7 +353,7 @@ public final class RecipePage {
         return lines;
     }
 
-    private static void inputLines(ProcessInput input, List<Component> lines) {
+    static void inputLines(ProcessInput input, List<Component> lines) {
         String tag = tagOf(input);
         if (tag != null) {
             lines.add(Component.translatable(RecipeText.key("tag"), "#" + tag).withStyle(ChatFormatting.DARK_GRAY));

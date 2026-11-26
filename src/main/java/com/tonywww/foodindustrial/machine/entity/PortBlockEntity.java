@@ -49,7 +49,10 @@ public class PortBlockEntity extends FIBlockEntity implements StorageHost {
         return autoOutput;
     }
 
-    /** Sets direction (input, output or off; "both" counts as input) and the automatic output switch. */
+    /**
+     * Sets direction (input, output, additive or off; "both" counts as input) and the automatic output switch.
+     * Additive (I42) is for item ports: automation inserts into the controller's additive slots only.
+     */
     public void configure(SideConfig.Mode value, boolean auto) {
         mode = value == SideConfig.Mode.BOTH ? SideConfig.Mode.INPUT : value;
         autoOutput = auto;
@@ -121,7 +124,7 @@ public class PortBlockEntity extends FIBlockEntity implements StorageHost {
 
     @Override
     protected void loadData(DataReader in) {
-        mode = SideConfig.Mode.values()[Math.floorMod(in.getByte("Mode", (byte) SideConfig.Mode.INPUT.ordinal()), 4)];
+        mode = SideConfig.Mode.values()[Math.floorMod(in.getByte("Mode", (byte) SideConfig.Mode.INPUT.ordinal()), SideConfig.Mode.values().length)];
         autoOutput = in.getBoolean("AutoOutput", false);
     }
 }

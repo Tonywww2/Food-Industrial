@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:bucket",
+    "I": "#c:ingots/iron",
+    "P": "#minecraft:planks"
+  },
+  "pattern": [
+    "PIP",
+    "PBP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:ice_salt_freezer"
+  }
+}

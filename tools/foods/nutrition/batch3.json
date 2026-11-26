@@ -1,0 +1,1318 @@
+{
+ "batch": 3,
+ "doc": "foods/13 §8、foods/14 §9",
+ "notes": [
+  "单位换算按 USDA FDC 的份量：白糖 1 茶匙 4.2 g、1 汤匙 12.5 g；盐 1 茶匙 6 g；泡打粉、小苏打 1 茶匙 4.6 g；干酵母 1 茶匙 4 g；鸡蛋 50 g/个（蛋黄 17 g、蛋白 33 g）；蜂蜜 1 汤匙 21 g；油 1 汤匙 13.6 g；黄油 1 汤匙 14.2 g；水 1 汤匙 14.8 g；香草精 1 茶匙 4.2 g；牛奶 1 杯 244 g；重奶油 1 杯 238 g；糖粉 1 杯 120 g"
+ ],
+ "entries": [
+  {
+   "id": "lanzhou_pulled_noodles",
+   "name": "兰州拉面",
+   "card": "foods/13",
+   "serving_g": 140.0,
+   "energy_kcal": 221.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 5.8,
+    "fat_g": 0.93,
+    "carb_g": 30.9
+   },
+   "composition": "fdc:169737",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.56,
+   "misuse_note": "误用（卡片）：0.56 g（18%）：盐 ¼ 茶匙 6 g/汤匙 ÷ 3 = 1.5 g / 原料 376.5 g；煮面吸水，每份实际低于此值"
+  },
+  {
+   "id": "instant_noodles",
+   "name": "方便面",
+   "card": "foods/13",
+   "serving_g": 55.0,
+   "energy_kcal": 261.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 9.5,
+    "fat_g": 21.1,
+    "carb_g": 61.6
+   },
+   "composition": "cn:1291",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "卡片的配比没有加糖",
+   "misuse_salt_g": 1.6,
+   "misuse_note": "误用（卡片）：1.60 g（53%）：来源未给加盐量，按表值钠 1,144.0 mg × 2.54 折算；钠还含碳酸钠带入的，实际加盐量低于此值"
+  },
+  {
+   "id": "knife_cut_noodles",
+   "name": "刀削面",
+   "card": "foods/13",
+   "serving_g": 140.0,
+   "energy_kcal": 221.0,
+   "hunger": 7,
+   "macros_100g": {},
+   "composition": "fdc:169737",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "dumplings",
+   "name": "饺子",
+   "card": "foods/13",
+   "serving_g": 85.0,
+   "energy_kcal": 191.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 7.5,
+    "fat_g": 10.8,
+    "carb_g": 26.0
+   },
+   "composition": "cn:1330",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      32
+     ]
+    ],
+    "total_g": 962
+   },
+   "misuse_salt_g": 0.46,
+   "misuse_note": "误用（卡片）：0.46 g（15%）：生抽 32 g 含盐 5.18 g / 原料 962 g"
+  },
+  {
+   "id": "wontons",
+   "name": "馄饨",
+   "card": "foods/13",
+   "serving_g": 85.0,
+   "energy_kcal": 151.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 9.1,
+    "fat_g": 4.3,
+    "carb_g": 26.5
+   },
+   "composition": "cn:1311",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "shumai",
+   "name": "烧麦",
+   "card": "foods/13",
+   "serving_g": 85.0,
+   "energy_kcal": 231.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 6.9,
+    "fat_g": 10.1,
+    "carb_g": 38.2
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:285",
+      350,
+      {
+       "retention": "retn:0432"
+      }
+     ],
+     [
+      "water",
+      287
+     ],
+     [
+      "cn:779",
+      125,
+      {
+       "retention": "retn:1405"
+      }
+     ],
+     [
+      "cn:806",
+      75
+     ],
+     [
+      "cn:1611",
+      15
+     ],
+     [
+      "cn:1581",
+      10
+     ],
+     [
+      "cn:1500",
+      20,
+      {
+       "fill": "fdc:171410"
+      }
+     ],
+     [
+      "cn:1508",
+      9,
+      {
+       "fill": "fdc:171016"
+      }
+     ],
+     [
+      "fdc:172802",
+      300,
+      {
+       "retention": "retn:0302"
+      }
+     ]
+    ]
+   },
+   "composition_note": "配比同卡片（糯米 350 g 蒸后按 637 g，多出的 287 g 为吸水）；保留率：糯米按 0432 米饭（水不倒），猪肉末按 1405 猪绞肉煮，馄饨皮按 0302 面粉蒸煮；腊肉、酱油、油不计损失",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      15
+     ],
+     [
+      "dark_soy_sauce",
+      10
+     ]
+    ],
+    "total_g": 1191
+   },
+   "misuse_salt_g": 0.3,
+   "misuse_note": "误用（卡片）：0.30 g（10%）：生抽 15 g、老抽 10 g 含盐 4.19 g / 原料 1,191 g"
+  },
+  {
+   "id": "tangyuan",
+   "name": "汤圆",
+   "card": "foods/13",
+   "serving_g": 85.0,
+   "energy_kcal": 268.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 4.4,
+    "fat_g": 13.8,
+    "carb_g": 44.2
+   },
+   "composition": "cn:1220",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      100,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1273
+   },
+   "free_sugar_note": "生汤圆（foods/13 §2）：糯米粉 500 g、水 2 杯按 473 g；黑芝麻、糖、猪油各 100 g"
+  },
+  {
+   "id": "niangao",
+   "name": "年糕",
+   "card": "foods/13",
+   "serving_g": 140.0,
+   "energy_kcal": 221.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 3.3,
+    "fat_g": 0.6,
+    "carb_g": 34.7
+   },
+   "composition": "cn:1211",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "liangpi",
+   "name": "凉皮",
+   "card": "foods/13",
+   "serving_g": 140.0,
+   "energy_kcal": 187.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 0.8,
+    "fat_g": 0.7,
+    "carb_g": 30.7
+   },
+   "composition": null,
+   "composition_note": "营养取实测淀粉浆成分（程增辉等 2024），来源没有维生素与矿物质，留空",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "starch_jelly",
+   "name": "凉粉",
+   "card": "foods/13",
+   "serving_g": 140.0,
+   "energy_kcal": 54.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.2,
+    "fat_g": 0.3,
+    "carb_g": 8.9
+   },
+   "composition": "cn:1206",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "alkaline_zongzi",
+   "name": "碱水粽",
+   "card": "foods/13",
+   "serving_g": 370.0,
+   "energy_kcal": 359.0,
+   "hunger": 8,
+   "macros_100g": {
+    "protein_g": 2.02,
+    "fat_g": 0.19,
+    "carb_g": 21.1
+   },
+   "composition": "fdc:169711",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "youtiao",
+   "name": "油条",
+   "card": "foods/13",
+   "serving_g": 55.0,
+   "energy_kcal": 214.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 6.9,
+    "fat_g": 17.6,
+    "carb_g": 51.0
+   },
+   "composition": "cn:277",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.94,
+   "misuse_note": "误用（卡片）：0.94 g（31%）：盐 1 茶匙 6 g / 原料 352 g；油炸吸油，每份实际低于此值"
+  },
+  {
+   "id": "mahua",
+   "name": "麻花",
+   "card": "foods/13",
+   "serving_g": 30.0,
+   "energy_kcal": 158.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.3,
+    "fat_g": 31.5,
+    "carb_g": 53.4
+   },
+   "composition": "cn:1241",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      40,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 250.3
+   },
+   "free_sugar_note": "面粉 150 g、糖 40 g、鸡蛋 1 个按 50 g、水 ½ 汤匙 7.4 g、泡打粉 ½ 茶匙 2.3 g、小苏打 ⅛ 茶匙 0.6 g；油炸吸油、失水不计"
+  },
+  {
+   "id": "sanzi",
+   "name": "馓子",
+   "card": "foods/13",
+   "serving_g": 30.0,
+   "energy_kcal": 148.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 8.2,
+    "fat_g": 24.7,
+    "carb_g": 59.7
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:260",
+      500,
+      {
+       "retention": "retn:0305"
+      }
+     ],
+     [
+      "cn:1565",
+      7,
+      {
+       "fill": "fdc:173468"
+      }
+     ],
+     [
+      "cn:1516",
+      150,
+      {
+       "fill": "fdc:171411"
+      }
+     ]
+    ],
+    "yield_g": 629.37
+   },
+   "composition_note": "卡片的计算：面粉 500 g（条目 260，水分 12.7%）、盐 7 g、吸油 150 g，冷水蒸干，成品含水 5.7%（条目 1203 焦圈）；保留率按 0305 面粉炒（保留率表没有油炸面食）",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "steamed_bun",
+   "name": "馒头",
+   "card": "foods/13",
+   "serving_g": 63.0,
+   "energy_kcal": 143.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 7.0,
+    "fat_g": 1.1,
+    "carb_g": 47.0
+   },
+   "composition": "cn:272",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      12.5,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 396.5
+   },
+   "free_sugar_note": "发面团（foods/13 §2）：中筋面粉 250 g、温水 130 g、即发干酵母 1 茶匙、糖 1 汤匙"
+  },
+  {
+   "id": "baozi",
+   "name": "包子",
+   "card": "foods/13",
+   "serving_g": 62.0,
+   "energy_kcal": 143.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 7.3,
+    "fat_g": 10.0,
+    "carb_g": 28.6
+   },
+   "composition": "cn:1339",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      4.2,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 821.0
+   },
+   "free_sugar_note": "面粉 300 g、温水 140 g、干酵母 1 茶匙、糖 1 茶匙、油 1 汤匙；馅猪肉末 150 g、胡萝卜 150 g、水 4 汤匙"
+  },
+  {
+   "id": "flower_roll",
+   "name": "花卷",
+   "card": "foods/13",
+   "serving_g": 95.0,
+   "energy_kcal": 206.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 6.4,
+    "fat_g": 1.0,
+    "carb_g": 45.6
+   },
+   "composition": "cn:269",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      12.5,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 757.1
+   },
+   "free_sugar_note": "面粉 360 g、牛奶 180 g、干酵母 2 茶匙、糖 1 汤匙、泡打粉 1 茶匙、盐 2 茶匙、油 80 g、葱花 2 杯按 100 g（FDC 170005 每杯 100 g）",
+   "misuse_salt_g": 2.02,
+   "misuse_note": "误用（卡片）：2.02 g（67%）：盐 2 茶匙 12 g / 面团 564.4 g（葱油未计入分母，实际偏低）；表值钠 95.0 mg 折盐只 0.23 g，来源的家常配方偏咸"
+  },
+  {
+   "id": "fagao",
+   "name": "发糕",
+   "card": "foods/13",
+   "serving_g": 27.0,
+   "energy_kcal": 67.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 3.7,
+    "fat_g": 0.4,
+    "carb_g": 56.9
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:280",
+      250,
+      {
+       "retention": "retn:0302"
+      }
+     ],
+     [
+      "cn:260",
+      50,
+      {
+       "retention": "retn:0302"
+      }
+     ],
+     [
+      "cn:1448",
+      135,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1569",
+      5
+     ],
+     [
+      "water",
+      210
+     ]
+    ]
+   },
+   "composition_note": "卡片的计算：米粉按稻米条目 280 计 250 g、面粉 50 g、糖 135 g、干酵母 5 g、水 210 mL，蒸后质量不变；保留率按 0302 面粉蒸煮",
+   "free_sugar": {
+    "per100g": 20.9
+   },
+   "free_sugar_note": "卡片给出游离糖约 20.9 g/100 g"
+  },
+  {
+   "id": "oat_flakes",
+   "name": "燕麦片",
+   "card": "foods/13",
+   "serving_g": 40.0,
+   "energy_kcal": 152.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 15.0,
+    "fat_g": 6.7,
+    "carb_g": 66.9
+   },
+   "composition": "cn:1274",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "breakfast_cereal",
+   "name": "早餐谷物",
+   "card": "foods/13",
+   "serving_g": 40.0,
+   "energy_kcal": 151.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 7.0,
+    "fat_g": 0.8,
+    "carb_g": 86.0
+   },
+   "composition": "cn:1289",
+   "free_sugar": {
+    "per100g": 9.5
+   },
+   "free_sugar_note": "卡片：商品玉米片每 100 g 含糖 9.5 g（FDC 品牌条目 758082），配料的糖为添加糖，全部计入",
+   "misuse_salt_g": 0.8,
+   "misuse_note": "误用（卡片）：0.80 g（26%）：来源给盐不超过 2%，按 2% 算；表值钠 725.0 mg × 2.54 折盐 1.84%，与此相符"
+  },
+  {
+   "id": "rice_pudding",
+   "name": "米布丁",
+   "card": "foods/13",
+   "serving_g": 92.0,
+   "energy_kcal": 99.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 3.23,
+    "fat_g": 2.15,
+    "carb_g": 18.4
+   },
+   "composition": "fdc:168782",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      25.0,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 847.2
+   },
+   "free_sugar_note": "米 100 g、牛奶 600 mL 按 618 g、重奶油 100 mL 按 100 g、糖 2 汤匙、香草 1 茶匙；熬煮失水不计"
+  },
+  {
+   "id": "white_bread",
+   "name": "白面包",
+   "card": "foods/14",
+   "serving_g": 50.0,
+   "energy_kcal": 158.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.3,
+    "fat_g": 5.1,
+    "carb_g": 58.6
+   },
+   "composition": "cn:1316",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      25,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 703.5
+   },
+   "free_sugar_note": "面粉 360 g、牛奶 113 g、热水 113–152 g 取中值 132.5 g、黄油 57 g、糖 25 g、盐 8 g、酵母 2 茶匙；烘烤失水不计"
+  },
+  {
+   "id": "whole_wheat_bread",
+   "name": "全麦面包",
+   "card": "foods/14",
+   "serving_g": 50.0,
+   "energy_kcal": 126.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 12.4,
+    "fat_g": 3.5,
+    "carb_g": 42.7
+   },
+   "composition": "fdc:172688",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      35,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 776.0
+   }
+  },
+  {
+   "id": "toast_loaf",
+   "name": "吐司",
+   "card": "foods/14",
+   "serving_g": 50.0,
+   "energy_kcal": 166.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 7.9,
+    "fat_g": 8.7,
+    "carb_g": 55.6
+   },
+   "composition": "cn:1319",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      35,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1119.0
+   }
+  },
+  {
+   "id": "baguette",
+   "name": "法棍",
+   "card": "foods/14",
+   "serving_g": 50.0,
+   "energy_kcal": 136.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 10.8,
+    "fat_g": 2.42,
+    "carb_g": 51.9
+   },
+   "composition": "fdc:172675",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.65,
+   "misuse_note": "误用（卡片）：0.65 g（22%）：盐 12 g / 原料 920 g；烤后失水，每份实际略高（表值钠 602 mg × 2.54 折盐 1.53%）"
+  },
+  {
+   "id": "croissant",
+   "name": "牛角包",
+   "card": "foods/14",
+   "serving_g": 55.0,
+   "energy_kcal": 209.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.4,
+    "fat_g": 14.3,
+    "carb_g": 54.6
+   },
+   "composition": "cn:1317",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      50,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1788.0
+   },
+   "free_sugar_note": "鸡蛋加水 454 g、面粉 660–720 g 取中值 690 g、奶粉 56 g、糖 50 g、盐 16 g、黄油 28 + 425 g、拌入面粉 60 g、酵母 2¼ 茶匙"
+  },
+  {
+   "id": "bagel",
+   "name": "贝果",
+   "card": "foods/14",
+   "serving_g": 110.0,
+   "energy_kcal": 290.0,
+   "hunger": 8,
+   "macros_100g": {
+    "protein_g": 10.6,
+    "fat_g": 1.32,
+    "carb_g": 52.4
+   },
+   "composition": "fdc:174899",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "麦芽粉或红糖只在煮面圈的水里，不计入成品",
+   "misuse_salt_g": 1.36,
+   "misuse_note": "误用（卡片）：1.36 g（45%）：盐 11 g / 原料 891 g（水浴的麦芽粉不计）；表值钠 422 mg × 2.54 折盐 1.07%"
+  },
+  {
+   "id": "pretzel",
+   "name": "碱水结",
+   "card": "foods/14",
+   "serving_g": 50.0,
+   "energy_kcal": 169.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.2,
+    "fat_g": 3.1,
+    "carb_g": 69.4
+   },
+   "composition": "fdc:169064",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.26,
+   "misuse_note": "误用（卡片）：0.26 g（9%）：来源只写撒粗盐没给用量，按表值钠 203 mg × 2.54 折算；钠还含碱液带入的"
+  },
+  {
+   "id": "donut",
+   "name": "甜甜圈",
+   "card": "foods/14",
+   "serving_g": 55.0,
+   "energy_kcal": 232.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 6.14,
+    "fat_g": 22.7,
+    "carb_g": 47.9
+   },
+   "composition": "fdc:172758",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      50,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 726.0
+   },
+   "free_sugar_note": "面粉 360 g、牛奶 227 g、黄油 28 g、糖 50 g、鸡蛋 1 个、盐 ½ 茶匙、酵母 2 茶匙；油炸吸油不计"
+  },
+  {
+   "id": "sponge_cake",
+   "name": "海绵蛋糕",
+   "card": "foods/14",
+   "serving_g": 55.0,
+   "energy_kcal": 160.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 5.4,
+    "fat_g": 2.7,
+    "carb_g": 61.0
+   },
+   "composition": "fdc:2707886",
+   "free_sugar": {
+    "parts": [
+     [
+      "细砂糖",
+      125,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 475.0
+   }
+  },
+  {
+   "id": "chiffon_cake",
+   "name": "戚风蛋糕",
+   "card": "foods/14",
+   "serving_g": 55.0,
+   "energy_kcal": 193.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.6,
+    "fat_g": 5.1,
+    "carb_g": 67.1
+   },
+   "composition": "cn:1224",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      298,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1174.5
+   },
+   "free_sugar_note": "塔塔粉 ½ 茶匙按 1.5 g"
+  },
+  {
+   "id": "cheesecake",
+   "name": "芝士蛋糕",
+   "card": "foods/14",
+   "serving_g": 125.0,
+   "energy_kcal": 401.0,
+   "hunger": 9,
+   "macros_100g": {
+    "protein_g": 5.5,
+    "fat_g": 22.5,
+    "carb_g": 25.5
+   },
+   "composition": "fdc:172711",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖粉",
+      28,
+      "fdc:169656"
+     ],
+     [
+      "细砂糖",
+      133,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 952.2
+   },
+   "free_sugar_note": "消化饼干屑 150 g 自带的糖未计（偏低）"
+  },
+  {
+   "id": "mousse_cake",
+   "name": "慕斯蛋糕",
+   "card": "foods/14",
+   "serving_g": 80.0,
+   "energy_kcal": 170.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 4.2,
+    "fat_g": 15.12,
+    "carb_g": 16.23
+   },
+   "composition": "fdc:2705698",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖粉",
+      60.0,
+      "fdc:169656"
+     ]
+    ],
+    "total_g": 834.756
+   },
+   "free_sugar_note": "重奶油 1¾ 杯、草莓泥 1⅓ 杯（FDC 167762 草莓泥每杯 232 g）、糖粉 ½ 杯、明胶 7 g、泡明胶的水 42 g；草莓泥是整果打浆，不算游离糖；饼干底未计"
+  },
+  {
+   "id": "cream_cake",
+   "name": "奶油蛋糕",
+   "card": "foods/14",
+   "serving_g": 80.0,
+   "energy_kcal": 243.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 4.7,
+    "fat_g": 10.2,
+    "carb_g": 48.9
+   },
+   "composition": {
+    "mix": [
+     [
+      "fdc:2707886",
+      75
+     ],
+     [
+      "fdc:170859",
+      22.52
+     ],
+     [
+      "cn:1448",
+      2.48,
+      {
+       "fill": "fdc:169655"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片：海绵蛋糕坯（FDC 2707886）与打发奶油按重量 3:1，奶油为重奶油 454 g（FDC 170859）加糖 50 g",
+   "free_sugar": {
+    "per100g": 22.194783834586467
+   },
+   "free_sugar_note": "坯按海绵蛋糕的配比（糖 125 g ÷ 原料 475 g）占 3/4，打发奶油（糖 50 g ÷ 504 g）占 1/4"
+  },
+  {
+   "id": "cantonese_mooncake",
+   "name": "广式月饼",
+   "card": "foods/14",
+   "serving_g": 50.0,
+   "energy_kcal": 207.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.2,
+    "fat_g": 13.6,
+    "carb_g": 65.6
+   },
+   "composition": "cn:1227",
+   "free_sugar": {
+    "per100g": 19.700000000000003
+   },
+   "free_sugar_note": "皮馅比 4:6；馅按步骤用红豆沙（卡片写莲蓉加咸蛋黄，蛋黄不计）。月饼皮的游离糖按 foods/14 §2：转化糖浆 150 g（含糖按 FDC 167743 Syrup, Cane 的 73.2% 代用，待审）÷ 面粉 220 + 糖浆 150 + 油 50 + 枧水 2.5 g ≈ 26%；红豆沙的游离糖按 foods/14 §2 的配方：白糖 2 汤匙 25 g、红糖 2 汤匙 27.6 g 对赤豆 200 g + 糖 + 黄油 80 g（煮豆的水不计，豆沙实际含水，偏高）≈ 15.5%"
+  },
+  {
+   "id": "wuren_mooncake",
+   "name": "五仁月饼",
+   "card": "foods/14",
+   "serving_g": 50.0,
+   "energy_kcal": 213.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 8.0,
+    "fat_g": 16.0,
+    "carb_g": 64.0
+   },
+   "composition": "cn:1228",
+   "free_sugar": {
+    "per100g": 22.760719322990127
+   },
+   "free_sugar_note": "皮馅比 4:6。月饼皮的游离糖按 foods/14 §2：转化糖浆 150 g（含糖按 FDC 167743 Syrup, Cane 的 73.2% 代用，待审）÷ 面粉 220 + 糖浆 150 + 油 50 + 枧水 2.5 g ≈ 26%；馅：坚果与瓜子各 30 g、冬瓜糖 25 g（按 FDC 167781 Candied fruit 糖 80.68% 代用，待审）、蔓越莓干 25 g（FDC 171723 加糖蔓越莓干 72.56%）、黑白芝麻 30 g、蜂蜜 20 g（条目 1487，75.6%）、香油 15 mL 按 13.6 g、糖 5 g、熟糯米粉 30 g、水 15 g"
+  },
+  {
+   "id": "egg_yolk_pastry",
+   "name": "蛋黄酥",
+   "card": "foods/14",
+   "serving_g": 125.0,
+   "energy_kcal": 503.0,
+   "hunger": 10,
+   "macros_100g": {
+    "protein_g": 6.0,
+    "fat_g": 20.0,
+    "carb_g": 50.2
+   },
+   "composition": "cn:1230",
+   "free_sugar": {
+    "per100g": 10.0784903891233
+   },
+   "free_sugar_note": "每个：水油皮 10 g（糖粉 12 g ÷ 皮料 177.75 g）、油酥 10 g、红豆沙 25 g（400 g ÷ 16 个）；咸蛋黄的重量未给，不计入分母（偏高）。红豆沙的游离糖按 foods/14 §2 的配方：白糖 2 汤匙 25 g、红糖 2 汤匙 27.6 g 对赤豆 200 g + 糖 + 黄油 80 g（煮豆的水不计，豆沙实际含水，偏高）≈ 15.5%"
+  },
+  {
+   "id": "taosu",
+   "name": "桃酥",
+   "card": "foods/14",
+   "serving_g": 30.0,
+   "energy_kcal": 145.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 7.1,
+    "fat_g": 21.8,
+    "carb_g": 65.1
+   },
+   "composition": "cn:1244",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      73,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 544.9
+   }
+  },
+  {
+   "id": "dorayaki",
+   "name": "铜锣烧",
+   "card": "foods/14",
+   "serving_g": 60.0,
+   "energy_kcal": 130.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 6.67,
+    "fat_g": 3.33,
+    "carb_g": 58.3
+   },
+   "composition": "fdc:2070999",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      140,
+      "cn:1448"
+     ],
+     [
+      "蜂蜜",
+      42.0,
+      "cn:1487"
+     ],
+     [
+      "红豆沙",
+      500,
+      0.155
+     ]
+    ],
+    "total_g": 1068.8
+   },
+   "free_sugar_note": "饼：鸡蛋 4 个、糖 140 g、蜂蜜 2 汤匙、面粉 160 g、泡打粉 1 茶匙、水 1½ 汤匙；夹红豆沙约 500 g。红豆沙的游离糖按 foods/14 §2 的配方：白糖 2 汤匙 25 g、红糖 2 汤匙 27.6 g 对赤豆 200 g + 糖 + 黄油 80 g（煮豆的水不计，豆沙实际含水，偏高）≈ 15.5%"
+  },
+  {
+   "id": "soda_cracker",
+   "name": "苏打饼干",
+   "card": "foods/14",
+   "serving_g": 15.0,
+   "energy_kcal": 62.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 8.4,
+    "fat_g": 7.7,
+    "carb_g": 76.2
+   },
+   "composition": "cn:1323",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "butter_cookie",
+   "name": "黄油曲奇",
+   "card": "foods/14",
+   "serving_g": 30.0,
+   "energy_kcal": 158.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 6.4,
+    "fat_g": 27.2,
+    "carb_g": 63.9
+   },
+   "composition": "cn:1328",
+   "free_sugar": {
+    "parts": [
+     [
+      "细砂糖",
+      100,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 645.4
+   }
+  },
+  {
+   "id": "wafer",
+   "name": "威化饼干",
+   "card": "foods/14",
+   "serving_g": 30.0,
+   "energy_kcal": 151.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 3.84,
+    "fat_g": 23.2,
+    "carb_g": 70.6
+   },
+   "composition": "fdc:172736",
+   "free_sugar": {
+    "from_source": "fdc:172736"
+   },
+   "free_sugar_note": "商品威化的糖全部为添加糖，取 FDC 172736 的总糖"
+  },
+  {
+   "id": "sandwich_biscuit",
+   "name": "夹心饼干",
+   "card": "foods/14",
+   "serving_g": 30.0,
+   "energy_kcal": 138.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 6.2,
+    "fat_g": 15.9,
+    "carb_g": 75.3
+   },
+   "composition": "cn:1325",
+   "free_sugar": {
+    "from_source": "fdc:1878769"
+   },
+   "free_sugar_note": "商品夹心饼干的糖（葡萄糖、糖、果葡糖浆）全部为添加糖，取卡片引用的 FDC 品牌条目 1878769 的总糖"
+  },
+  {
+   "id": "egg_roll",
+   "name": "蛋卷",
+   "card": "foods/14",
+   "serving_g": 30.0,
+   "energy_kcal": 162.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.1,
+    "fat_g": 35.3,
+    "carb_g": 53.7
+   },
+   "composition": "cn:1341",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      100,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 507.0
+   }
+  },
+  {
+   "id": "cream_puff",
+   "name": "泡芙",
+   "card": "foods/14",
+   "serving_g": 80.0,
+   "energy_kcal": 211.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 4.76,
+    "fat_g": 21.52,
+    "carb_g": 12.92
+   },
+   "composition": "fdc:2708030",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      50,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1196.25
+   },
+   "free_sugar_note": "泡芙壳烘烤失水不计（偏低）"
+  },
+  {
+   "id": "egg_tart",
+   "name": "蛋挞",
+   "card": "foods/14",
+   "serving_g": 125.0,
+   "energy_kcal": 262.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 5.5,
+    "fat_g": 11.6,
+    "carb_g": 20.8
+   },
+   "composition": "fdc:172783",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖粉",
+      55,
+      "fdc:169656"
+     ],
+     [
+      "细砂糖",
+      70,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 850.0
+   },
+   "free_sugar_note": "淡奶不加糖，天然乳糖不计"
+  },
+  {
+   "id": "apple_pie",
+   "name": "苹果派",
+   "card": "foods/14",
+   "serving_g": 125.0,
+   "energy_kcal": 296.0,
+   "hunger": 8,
+   "macros_100g": {
+    "protein_g": 1.9,
+    "fat_g": 11.0,
+    "carb_g": 34.0
+   },
+   "composition": "fdc:175011",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      149,
+      "cn:1448"
+     ],
+     [
+      "柠檬汁",
+      28,
+      "fdc:167747"
+     ]
+    ],
+    "total_g": 2555.5
+   },
+   "free_sugar_note": "派皮（foods/14 §2）：面粉 300 g、黄油 170 g、冰水 99–142 g 取中值 120.5 g；馅：苹果 3¾ 磅按 1,701 g、糖 149 g、面粉 40 g、香料 1½ 茶匙按 4 g、柠檬汁 28 g（果汁的糖计入，FDC 167747）、黄油 43 g"
+  },
+  {
+   "id": "berry_pie",
+   "name": "浆果派",
+   "card": "foods/14",
+   "serving_g": 125.0,
+   "energy_kcal": 290.0,
+   "hunger": 8,
+   "macros_100g": {
+    "protein_g": 1.8,
+    "fat_g": 10.0,
+    "carb_g": 34.9
+   },
+   "composition": "fdc:172778",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      99,
+      "cn:1448"
+     ],
+     [
+      "柠檬汁",
+      18,
+      "fdc:167747"
+     ]
+    ],
+    "total_g": 1225.6
+   },
+   "free_sugar_note": "起酥油 2 汤匙按 12.8 g/汤匙，冰水 57–85 g 取中值 71 g"
+  },
+  {
+   "id": "muffin",
+   "name": "玛芬",
+   "card": "foods/14",
+   "serving_g": 110.0,
+   "energy_kcal": 326.0,
+   "hunger": 8,
+   "macros_100g": {
+    "protein_g": 6.9,
+    "fat_g": 11.4,
+    "carb_g": 41.4
+   },
+   "composition": "fdc:172764",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      99,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 785.2
+   }
+  },
+  {
+   "id": "scone",
+   "name": "司康",
+   "card": "foods/14",
+   "serving_g": 55.0,
+   "energy_kcal": 210.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 6.67,
+    "fat_g": 18.35,
+    "carb_g": 48.07
+   },
+   "composition": "fdc:2707808",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      27.1,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 698.4
+   },
+   "free_sugar_note": "来源给糖 1 茶匙–4 汤匙、黄油 28–113 g 的范围，取中值（待审）"
+  },
+  {
+   "id": "waffle",
+   "name": "华夫饼",
+   "card": "foods/14",
+   "serving_g": 85.0,
+   "energy_kcal": 247.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 7.9,
+    "fat_g": 14.1,
+    "carb_g": 32.9
+   },
+   "composition": "fdc:175039",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      25,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 864.8
+   }
+  },
+  {
+   "id": "gingerbread",
+   "name": "姜饼",
+   "card": "foods/14",
+   "serving_g": 30.0,
+   "energy_kcal": 125.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 5.6,
+    "fat_g": 9.8,
+    "carb_g": 76.9
+   },
+   "composition": "fdc:174956",
+   "free_sugar": {
+    "parts": [
+     [
+      "红糖",
+      159,
+      "cn:1451"
+     ],
+     [
+      "糖蜜",
+      255,
+      "fdc:168820"
+     ]
+    ],
+    "total_g": 1101.1
+   },
+   "free_sugar_note": "姜粉 1 茶匙 1.8 g、肉桂 1 茶匙 2.6 g（FDC 份量）"
+  }
+ ]
+}

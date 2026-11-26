@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "red_bean_paste|bean_mash"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:foods/lard"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:red_bean_paste"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

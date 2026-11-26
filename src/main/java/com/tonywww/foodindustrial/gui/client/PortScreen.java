@@ -3,6 +3,7 @@ package com.tonywww.foodindustrial.gui.client;
 import com.tonywww.foodindustrial.core.purity.Purity;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import com.tonywww.foodindustrial.core.text.Tooltips;
+import com.tonywww.foodindustrial.food.quality.QualityText;
 import com.tonywww.foodindustrial.gui.GuiLayout;
 import com.tonywww.foodindustrial.gui.GuiText;
 import com.tonywww.foodindustrial.gui.MachineView;
@@ -34,6 +35,8 @@ import java.util.List;
  */
 public class PortScreen extends PlatformScreen<PortMenu> {
     private static final SideConfig.Mode[] DIRECTIONS = {SideConfig.Mode.INPUT, SideConfig.Mode.OUTPUT, SideConfig.Mode.OFF};
+    private static final SideConfig.Mode[] ADDITIVE_DIRECTIONS = {SideConfig.Mode.INPUT, SideConfig.Mode.ADDITIVE, SideConfig.Mode.OUTPUT,
+        SideConfig.Mode.OFF};
     private static final long DUMP_CONFIRM_MS = 2000;
 
     private int dumpTank = -1;
@@ -55,6 +58,12 @@ public class PortScreen extends PlatformScreen<PortMenu> {
         return new GuiLayout.Box(90, statusY() - 4, 78, 14);
     }
 
+    /** Item ports of machines with additive slots also have the additive direction (I42). */
+    private SideConfig.Mode[] directions() {
+        return menu.kind() == PortBlockEntity.Kind.ITEM && menu.controller() != null && menu.controller().layout().additives() > 0
+            ? ADDITIVE_DIRECTIONS : DIRECTIONS;
+    }
+
     private boolean hasAuto() {
         return menu.kind() != PortBlockEntity.Kind.ENERGY;
     }
@@ -68,6 +77,14 @@ public class PortScreen extends PlatformScreen<PortMenu> {
         canvas.translate(leftPos, topPos);
         Widgets.window(canvas, 0, 0, imageWidth, imageHeight);
         GuiLayout layout = menu.layout();
+        if (layout != null && menu.controller() != null && menu.kind() == PortBlockEntity.Kind.ITEM && menu.controller().layout().additives() > 0) {
+            // the additives panel (I42), drawn open like the one of a single-block machine
+            IoLayout io = menu.controller().layout();
+            int top = GuiLayout.additivesPanelTop(io);
+            Widgets.panel(canvas, Widgets.Color.GREEN, -GuiLayout.UPGRADES_WIDTH, top, GuiLayout.UPGRADES_WIDTH + 4,
+                GuiLayout.additivesSlotsBottom(io) + 6);
+            canvas.text(Component.translatable(GuiText.key("panel", "additives")), -GuiLayout.UPGRADES_WIDTH + 8, top + 6, 0xFFFFFFFF, true);
+        }
         for (int i = 0; i < menu.slots.size(); i++) {
             Slot slot = menu.slots.get(i);
             boolean catalyst = menu.controller() != null && menu.kind() == PortBlockEntity.Kind.ITEM
@@ -100,7 +117,7 @@ public class PortScreen extends PlatformScreen<PortMenu> {
             GuiLayout.Box box = layout.energy();
             Widgets.energy(canvas, box.x(), box.y(), box.w(), box.h(), view.energy, view.energyCapacity);
         }
-        SideConfig.Mode mode = SideConfig.Mode.values()[Math.floorMod(view.portMode, 4)];
+        SideConfig.Mode mode = SideConfig.Mode.of(view.portMode);
         GuiLayout.Box modeBox = modeButton();
         Widgets.textButton(canvas, modeBox.x(), modeBox.y(), modeBox.w(), modeBox.h(),
             Component.translatable(GuiText.key("port", "mode"), Component.translatable(GuiText.key("io", mode.name().toLowerCase(java.util.Locale.ROOT)))),
@@ -132,6 +149,7 @@ public class PortScreen extends PlatformScreen<PortMenu> {
                             lines.add(Component.translatable(GuiText.key("tank", "empty")).withStyle(ChatFormatting.GRAY));
                         } else {
                             lines.add(PlatformFluids.displayName(fluid));
+                            QualityText.append(fluid.quality(), Platform.isShiftDown(), lines);
                             if (Purity.bears(fluid.fluid())) {
                                 Tooltips.purityLine(Purity.materialOf(fluid.fluid()), Purity.get(fluid), lines);
                             }
@@ -193,14 +211,15 @@ public class PortScreen extends PlatformScreen<PortMenu> {
         double my = mouseY - topPos;
         MachineView view = menu.view();
         if (modeButton().contains(mx, my)) {
+            SideConfig.Mode[] directions = directions();
             int current = 0;
-            for (int i = 0; i < DIRECTIONS.length; i++) {
-                if (DIRECTIONS[i].ordinal() == view.portMode) {
+            for (int i = 0; i < directions.length; i++) {
+                if (directions[i].ordinal() == view.portMode) {
                     current = i;
                 }
             }
-            int next = Math.floorMod(current + (button == 1 ? -1 : 1), DIRECTIONS.length);
-            menu.send(MenuActions.PORT_MODE, DIRECTIONS[next].ordinal(), 0);
+            int next = Math.floorMod(current + (button == 1 ? -1 : 1), directions.length);
+            menu.send(MenuActions.PORT_MODE, directions[next].ordinal(), 0);
             return true;
         }
         if (hasAuto() && autoButton().contains(mx, my)) {
@@ -226,8 +245,9 @@ public class PortScreen extends PlatformScreen<PortMenu> {
                             dumpTank = i;
                             dumpUntil = now + DUMP_CONFIRM_MS;
                         }
-                    } else if (!menu.getCarried().isEmpty()) {
-                        menu.send(MenuActions.TANK_CLICK, i, 0);
+                    } else if (!menu.getCarried().isEmpty() && button <= 1) {
+                        // left: pour the container in; right: fill it from the tank (2026-11-19)
+                        menu.send(MenuActions.TANK_CLICK, i, button);
                     }
                     return true;
                 }

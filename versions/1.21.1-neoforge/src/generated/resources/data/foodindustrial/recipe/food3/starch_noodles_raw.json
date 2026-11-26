@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/starch_dough"
+      }
+    }
+  ],
+  "mode": "slitting",
+  "outputs": [
+    {
+      "semi_finished": "starch_noodles|raw_strips"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

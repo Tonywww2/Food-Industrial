@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:rose_flower"
+    "foodindustrial:rose_flower",
+    {
+      "id": "minecraft:rose_bush",
+      "required": false
+    }
   ]
 }

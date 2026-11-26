@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:thermo_plant",
+  "inputs": {
+    "fluid": {
+      "amount": 1000,
+      "tag": "foodindustrial:oyster_sauce_base"
+    }
+  },
+  "outputs": {
+    "fluid_output": {
+      "amount": 1000,
+      "id": "foodindustrial:oyster_sauce"
+    }
+  },
+  "temperature": {
+    "min": 373
+  }
+}

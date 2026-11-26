@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/dried_kelp"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:kombu_dashi"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

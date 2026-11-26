@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/starch"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": [
+      "state"
+    ]
+  },
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:starch_dough"
+  }
+}

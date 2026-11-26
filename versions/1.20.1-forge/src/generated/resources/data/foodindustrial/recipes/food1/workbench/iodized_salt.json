@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_iodate"
+      }
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      "state"
+    ]
+  },
+  "result": {
+    "count": 8,
+    "item": "foodindustrial:iodized_salt"
+  }
+}

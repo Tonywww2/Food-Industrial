@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:chilling",
+  "inputs": [
+    {
+      "semi_finished": "starch_jelly|starch_paste"
+    }
+  ],
+  "mode": "chilling",
+  "outputs": [
+    {
+      "semi_finished": "starch_jelly|jelly_block"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "cooling"
+  },
+  "time": 400
+}

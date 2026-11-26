@@ -8,6 +8,7 @@
     {
       "id": "#forge:fruits/pineapple",
       "required": false
-    }
+    },
+    "foodindustrial:pineapple"
   ]
 }

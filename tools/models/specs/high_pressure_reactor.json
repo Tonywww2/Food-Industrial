@@ -1,0 +1,356 @@
+{
+ "id": "high_pressure_reactor",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\high_pressure_reactor_front.png",
+  "parts": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\high_pressure_reactor_parts.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\high_pressure_reactor_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\high_pressure_reactor_top.png"
+ },
+ "elements": [
+  {
+   "name": "body",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_a",
+   "from": [
+    5.0,
+    8.0,
+    -1
+   ],
+   "to": [
+    13.0,
+    12.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      1.0,
+      4.0,
+      3.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      4.0,
+      0.0,
+      4.5,
+      2.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      4.0,
+      0.0,
+      4.5,
+      2.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      4.5,
+      0.0,
+      8.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      4.5,
+      0.0,
+      8.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_b",
+   "from": [
+    6.0,
+    7.0,
+    -1
+   ],
+   "to": [
+    12.0,
+    13.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.5,
+      0.5,
+      3.5,
+      3.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      8.5,
+      0.0,
+      9.0,
+      3.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      8.5,
+      0.0,
+      9.0,
+      3.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      9.0,
+      0.0,
+      12.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      9.0,
+      0.0,
+      12.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_c",
+   "from": [
+    7.0,
+    6.0,
+    -1
+   ],
+   "to": [
+    11.0,
+    14.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      3.0,
+      4.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      4.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      4.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      12.5,
+      0.0,
+      14.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      12.5,
+      0.0,
+      14.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_needle",
+   "from": [
+    9,
+    10,
+    -2
+   ],
+   "to": [
+    10,
+    13,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      14.5,
+      0.0,
+      15.0,
+      1.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      14.5,
+      0.0,
+      15.0,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      14.5,
+      0.0,
+      15.0,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      15.0,
+      0.0,
+      15.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      15.0,
+      0.0,
+      15.5,
+      0.5
+     ]
+    }
+   },
+   "rotation": [
+    0,
+    0,
+    40
+   ],
+   "origin": [
+    9,
+    10,
+    -1.5
+   ]
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}

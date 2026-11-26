@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:chemicals/gum_arabic",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:chemicals/starch_sodium_octenylsuccinate",
+      "required": false
+    }
+  ]
+}

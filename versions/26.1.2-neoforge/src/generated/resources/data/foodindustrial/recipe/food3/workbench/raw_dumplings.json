@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/dumpling_wrapper"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/meat_filling"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 2,
+    "item": "foodindustrial:raw_dumplings"
+  },
+  "tools": [
+    "#foodindustrial:molds/filling_mold"
+  ]
+}

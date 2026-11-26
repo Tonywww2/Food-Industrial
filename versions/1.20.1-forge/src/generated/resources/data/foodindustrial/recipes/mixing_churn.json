@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "T": {
+      "item": "foodindustrial:wooden_tank"
+    }
+  },
+  "pattern": [
+    " S ",
+    "ISI",
+    " T "
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:mixing_churn"
+  }
+}

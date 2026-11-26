@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:smoky_flavoring_premix",
+  "loader": "neoforge:fluid_container"
+}

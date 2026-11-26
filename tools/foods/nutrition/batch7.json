@@ -1,0 +1,1372 @@
+{
+ "batch": 7,
+ "doc": "foods/21 §8、foods/22 §6",
+ "notes": [
+  "单位换算按 USDA FDC 的份量：白糖 1 茶匙 4.2 g、1 汤匙 12.5 g；盐 1 茶匙 6 g；泡打粉、小苏打 1 茶匙 4.6 g；干酵母 1 茶匙 4 g；鸡蛋 50 g/个（蛋黄 17 g、蛋白 33 g）；蜂蜜 1 汤匙 21 g；油 1 汤匙 13.6 g；黄油 1 汤匙 14.2 g；水 1 汤匙 14.8 g；香草精 1 茶匙 4.2 g；牛奶 1 杯 244 g；重奶油 1 杯 238 g；糖粉 1 杯 120 g"
+ ],
+ "entries": [
+  {
+   "id": "apple_juice",
+   "name": "苹果汁",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 131.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.1,
+    "fat_g": 0.3,
+    "carb_g": 12.8
+   },
+   "composition": "cn:1369",
+   "free_sugar": {
+    "g": 31.0
+   }
+  },
+  {
+   "id": "berry_juice",
+   "name": "浆果汁",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 78.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 1.0,
+    "fat_g": 0.2,
+    "carb_g": 7.1
+   },
+   "composition": "cn:701",
+   "composition_note": "不加糖的鲜榨汁，按鲜草莓（条目 701）取值",
+   "free_sugar": {
+    "g": 17.0
+   }
+  },
+  {
+   "id": "carrot_juice",
+   "name": "胡萝卜汁",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 60.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.1,
+    "fat_g": 0.0,
+    "carb_g": 6.3
+   },
+   "composition": "cn:1378",
+   "free_sugar": {
+    "g": 15.0
+   }
+  },
+  {
+   "id": "beet_juice",
+   "name": "甜菜汁",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 211.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 1.0,
+    "fat_g": 0.1,
+    "carb_g": 23.5
+   },
+   "composition": "cn:384",
+   "composition_note": "按鲜甜菜根（条目 384）取值",
+   "free_sugar": {
+    "g": 56.0
+   }
+  },
+  {
+   "id": "watermelon_juice",
+   "name": "西瓜汁",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 63.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.6,
+    "fat_g": 0.1,
+    "carb_g": 5.8
+   },
+   "composition": "cn:739",
+   "composition_note": "按西瓜（条目 739）取值",
+   "free_sugar": {
+    "g": 14.0
+   }
+  },
+  {
+   "id": "grape_juice",
+   "name": "葡萄汁",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 144.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.37,
+    "fat_g": 0.13,
+    "carb_g": 14.8
+   },
+   "composition": "fdc:173041",
+   "free_sugar": {
+    "g": 36.0
+   }
+  },
+  {
+   "id": "citrus_juice",
+   "name": "柑橘汁",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 107.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.7,
+    "fat_g": 0.1,
+    "carb_g": 10.2
+   },
+   "composition": "cn:1576",
+   "free_sugar": {
+    "g": 24.0
+   }
+  },
+  {
+   "id": "lemonade",
+   "name": "柠檬水",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 34.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.04,
+    "carb_g": 3.59
+   },
+   "composition": "fdc:174859",
+   "free_sugar": {
+    "g": 8.6
+   }
+  },
+  {
+   "id": "lemon_soda",
+   "name": "柠檬汽水",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 148.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.09,
+    "fat_g": 0.0,
+    "carb_g": 10.4
+   },
+   "composition": "fdc:173205",
+   "free_sugar": {
+    "g": 37.0
+   }
+  },
+  {
+   "id": "cola",
+   "name": "可乐",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 158.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 0.1,
+    "fat_g": 0.0,
+    "carb_g": 10.7
+   },
+   "composition": "cn:1367",
+   "free_sugar": {
+    "g": 39.0
+   },
+   "caffeine_mg": 32.0
+  },
+  {
+   "id": "ginger_ale",
+   "name": "姜汁汽水",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 122.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carb_g": 8.76
+   },
+   "composition": "fdc:174846",
+   "free_sugar": {
+    "g": 32.0
+   }
+  },
+  {
+   "id": "orange_soda",
+   "name": "橙味汽水",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 173.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carb_g": 12.3
+   },
+   "composition": "fdc:174854",
+   "free_sugar": {
+    "g": 44.0
+   }
+  },
+  {
+   "id": "soda_water",
+   "name": "苏打水",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 0.0,
+   "hunger": 0,
+   "macros_100g": {},
+   "composition": "fdc:174842",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "sparkling_water",
+   "name": "气泡水",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 0.0,
+   "hunger": 0,
+   "macros_100g": {},
+   "composition": "fdc:174842",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "sports_drink",
+   "name": "运动饮料",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 94.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 6.43
+   },
+   "composition": "fdc:173660",
+   "free_sugar": {
+    "g": 23.0
+   },
+   "misuse_salt_g": 0.14,
+   "misuse_note": "误用（卡片）：0.14 g（5%）"
+  },
+  {
+   "id": "energy_drink",
+   "name": "能量饮料",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 162.0,
+   "hunger": 6,
+   "macros_100g": {
+    "carb_g": 11.3
+   },
+   "composition": "fdc:174108",
+   "free_sugar": {
+    "g": 41.0
+   },
+   "caffeine_mg": 47.0
+  },
+  {
+   "id": "vitamin_water",
+   "name": "维生素水",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 79.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 5.49
+   },
+   "composition": "fdc:174161",
+   "free_sugar": {
+    "g": 20.0
+   }
+  },
+  {
+   "id": "sour_plum_drink",
+   "name": "酸梅汤",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 118.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 11.0
+   },
+   "composition": null,
+   "composition_note": "营养取香港食物安全中心资料库的酸梅汤（只有能量与碳水化合物），维生素与矿物质留空",
+   "free_sugar": {
+    "g": 26.0
+   }
+  },
+  {
+   "id": "herbal_tea_drink",
+   "name": "凉茶",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 0.0,
+   "hunger": 0,
+   "macros_100g": {},
+   "composition": "fdc:171946",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "iced_black_tea",
+   "name": "冰红茶",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 126.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 8.61
+   },
+   "composition": "fdc:175090",
+   "free_sugar": {
+    "g": 31.0
+   },
+   "caffeine_mg": 72.0
+  },
+  {
+   "id": "green_tea_drink",
+   "name": "绿茶饮料",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 4.0,
+   "hunger": 1,
+   "macros_100g": {},
+   "composition": "fdc:171917",
+   "free_sugar": {
+    "g": 0
+   },
+   "caffeine_mg": 43.0
+  },
+  {
+   "id": "milk_tea",
+   "name": "奶茶",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 90.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 1.1,
+    "fat_g": 1.2,
+    "carb_g": 5.5
+   },
+   "composition": {
+    "mix": [
+     [
+      "fdc:173227",
+      150
+     ],
+     [
+      "cn:916",
+      90
+     ],
+     [
+      "cn:1448",
+      10,
+      {
+       "fill": "fdc:169655"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：茶汤 150 mL（FDC 173227）、牛乳 90 g（条目 916）、糖 10 g；一份 240 mL 按 1.0 g/mL",
+   "free_sugar": {
+    "g": 10.0
+   },
+   "caffeine_mg": 30.0
+  },
+  {
+   "id": "bubble_tea",
+   "name": "珍珠奶茶",
+   "card": "foods/21",
+   "serving_note": "240 mL + 50 g",
+   "energy_kcal": 151.0,
+   "hunger": 5,
+   "serving_g": 290,
+   "macros_100g": {},
+   "composition": {
+    "mix": [
+     [
+      "fdc:173227",
+      144.0
+     ],
+     [
+      "cn:916",
+      86.4
+     ],
+     [
+      "cn:1448",
+      9.6,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "fdc:169717",
+      17
+     ],
+     [
+      "water",
+      33
+     ]
+    ]
+   },
+   "composition_note": "卡片：奶茶 240 mL + 干粉圆 17 g 煮成 50 g（吸水 33 g）= 290 g；奶茶按奶茶卡片的配比折 240 g",
+   "free_sugar": {
+    "g": 17.0
+   },
+   "caffeine_mg": 30.0
+  },
+  {
+   "id": "canned_coffee",
+   "name": "罐装咖啡",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 71.0,
+   "hunger": 4,
+   "macros_100g": {},
+   "composition": {
+    "mix": [
+     [
+      "fdc:171890",
+      150
+     ],
+     [
+      "cn:916",
+      70
+     ],
+     [
+      "cn:1448",
+      8,
+      {
+       "fill": "fdc:169655"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：咖啡液 150 mL（FDC 171890）、牛乳 70 g（条目 916）、糖 8 g",
+   "free_sugar": {
+    "g": 8.0
+   },
+   "caffeine_mg": 60.0
+  },
+  {
+   "id": "instant_coffee",
+   "name": "速溶咖啡",
+   "card": "foods/21",
+   "serving_g": 3.6,
+   "serving_note": "3.6 g（冲 360 mL）",
+   "energy_kcal": 13.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 12.2,
+    "fat_g": 0.5,
+    "carb_g": 75.4
+   },
+   "composition": "fdc:171893",
+   "free_sugar": {
+    "g": 0
+   },
+   "caffeine_mg": 113.0,
+   "notes": [
+    "卡片原写饱食度 1，按 04 §5.2 的式子 13 kcal 得 round(1.61) = 2（卡片已于 2026-11-19 更正）"
+   ]
+  },
+  {
+   "id": "soy_milk",
+   "name": "豆奶",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 73.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 2.4,
+    "fat_g": 1.5,
+    "carb_g": 1.8
+   },
+   "composition": "cn:339",
+   "free_sugar": {
+    "g": 4.0
+   }
+  },
+  {
+   "id": "walnut_milk",
+   "name": "核桃露",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 105.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.8,
+    "fat_g": 2.1,
+    "carb_g": 5.4
+   },
+   "composition": "cn:1382",
+   "free_sugar": {
+    "g": 13.0
+   }
+  },
+  {
+   "id": "probiotic_milk_drink",
+   "name": "乳酸菌饮料",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 149.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 1.0,
+    "carb_g": 12.0
+   },
+   "composition": "fdc:2719414",
+   "free_sugar": {
+    "g": 30.0
+   }
+  },
+  {
+   "id": "yogurt_drink",
+   "name": "酸奶饮品",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 213.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 3.0,
+    "fat_g": 3.2,
+    "carb_g": 11.9
+   },
+   "composition": "cn:960",
+   "free_sugar": {
+    "g": 29.0
+   }
+  },
+  {
+   "id": "fruit_flavored_drink",
+   "name": "果味饮料",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 113.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 11.9
+   },
+   "composition": "fdc:174151",
+   "free_sugar": {
+    "g": 29.0
+   }
+  },
+  {
+   "id": "mint_drink",
+   "name": "薄荷饮料",
+   "card": "foods/21",
+   "serving_ml": 360.0,
+   "energy_kcal": 148.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 10.4
+   },
+   "composition": "fdc:173205",
+   "free_sugar": {
+    "g": 37.0
+   }
+  },
+  {
+   "id": "honey_lemon_tea",
+   "name": "蜂蜜柠檬茶",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 75.0,
+   "hunger": 4,
+   "macros_100g": {},
+   "composition": {
+    "mix": [
+     [
+      "fdc:173227",
+      200
+     ],
+     [
+      "cn:1487",
+      20
+     ],
+     [
+      "cn:712",
+      20
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：茶汤 200 mL、蜂蜜 20 g（条目 1487）、柠檬汁 20 mL 按柠檬（条目 712）",
+   "free_sugar": {
+    "g": 20.0
+   },
+   "caffeine_mg": 40.0
+  },
+  {
+   "id": "ginger_tea",
+   "name": "姜茶",
+   "card": "foods/21",
+   "serving_ml": 240.0,
+   "energy_kcal": 64.0,
+   "hunger": 4,
+   "macros_100g": {},
+   "composition": {
+    "mix": [
+     [
+      "cn:528",
+      10
+     ],
+     [
+      "cn:1451",
+      15
+     ],
+     [
+      "water",
+      215
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：生姜 10 g（条目 528）、红糖 15 g（条目 1451），冲成 240 g",
+   "free_sugar": {
+    "g": 15.0
+   }
+  },
+  {
+   "id": "fruit_drink_powder",
+   "name": "果味冲剂",
+   "card": "foods/21",
+   "serving_g": 30.0,
+   "serving_note": "30 g（冲 360 mL）",
+   "energy_kcal": 50.0,
+   "hunger": 3,
+   "macros_100g": {
+    "carb_g": 3.59
+   },
+   "composition": {
+    "mix": [
+     [
+      "fdc:174859",
+      360
+     ]
+    ],
+    "yield_g": 30
+   },
+   "composition_note": "卡片按冲好后取值：干粉 30 g 冲 360 mL（FDC 174859 Lemonade, powder, prepared with water），每份为 360 g 冲好的饮料",
+   "free_sugar": {
+    "g": 13.0
+   }
+  },
+  {
+   "id": "infant_rice_cereal",
+   "name": "婴儿米粉",
+   "card": "foods/21",
+   "serving_g": 20.0,
+   "energy_kcal": 78.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 6.65,
+    "fat_g": 2.19,
+    "carb_g": 83.1
+   },
+   "composition": "fdc:170969",
+   "free_sugar": {
+    "g": 0
+   },
+   "override": {
+    "vitamin_c_mg": 28,
+    "vitamin_b1_mg": 0.22,
+    "vitamin_d_ug": 1.6,
+    "vitamin_a_ug": 93,
+    "provitamin_a_ug": 0,
+    "calcium_mg": 90,
+    "iron_mg": 1.2,
+    "zinc_mg": 1.0
+   },
+   "override_note": "卡片代谢成分：按 GB 10769-2025 表 2 每 100 kJ 范围取中值，一份 326 kJ（I46 按卡片补上，强化的维生素 A 记为预成型）"
+  },
+  {
+   "id": "protein_powder",
+   "name": "蛋白粉",
+   "card": "foods/21",
+   "serving_g": 30.0,
+   "energy_kcal": 106.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 78.1,
+    "fat_g": 1.56,
+    "carb_g": 6.25
+   },
+   "composition": "fdc:173180",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "meal_replacement_powder",
+   "name": "代餐粉",
+   "card": "foods/21",
+   "serving_g": 40.0,
+   "serving_note": "40 g（冲 240 mL）",
+   "energy_kcal": 179.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 8.13,
+    "fat_g": 13.3,
+    "carb_g": 73.9
+   },
+   "composition": "fdc:173172",
+   "free_sugar": {
+    "g": 12.0
+   },
+   "override": {
+    "vitamin_c_mg": 30,
+    "vitamin_b1_mg": 0.42,
+    "vitamin_d_ug": 1.5,
+    "vitamin_a_ug": 240,
+    "provitamin_a_ug": 0,
+    "calcium_mg": 240,
+    "iron_mg": 4.5,
+    "zinc_mg": 4.5
+   },
+   "override_note": "卡片代谢成分：每份按 GB 28050-2011 NRV 的 30% 强化（维生素 C 100 mg、B1 1.4 mg、D 5 µg、A 800 µgRE、钙 800 mg、铁 15 mg、锌 15 mg；I46 按卡片补上，强化的维生素 A 记为预成型）"
+  },
+  {
+   "id": "energy_gel",
+   "name": "能量胶",
+   "card": "foods/21",
+   "serving_g": 32.0,
+   "energy_kcal": 91.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 76.8
+   },
+   "composition": "fdc:168837",
+   "free_sugar": {
+    "g": 25.0
+   },
+   "misuse_salt_g": 0.1,
+   "misuse_note": "误用（卡片）：0.10 g（3%）"
+  },
+  {
+   "id": "sweet_rice_wine",
+   "name": "甜米酒",
+   "card": "foods/22",
+   "serving_ml": 360.0,
+   "energy_kcal": 206.0,
+   "energy_kj": 863.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 1.6,
+    "carb_g": 12.1
+   },
+   "composition": "cn:1423",
+   "free_sugar": {
+    "g": 42.0
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 2.0
+  },
+  {
+   "id": "huangjiu",
+   "name": "黄酒",
+   "card": "foods/22",
+   "serving_ml": 148.0,
+   "energy_kcal": 123.0,
+   "energy_kj": 515.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 12.1
+   },
+   "composition": "cn:1424",
+   "free_sugar": {
+    "g": 0.4
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 17.5
+  },
+  {
+   "id": "baijiu",
+   "name": "白酒",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 119.0,
+   "energy_kj": 499.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 42.1
+   },
+   "composition": "cn:1590",
+   "free_sugar": {
+    "g": 0
+   },
+   "alcohol_note": "蒸馏酒密度按 foods/22 开头的三点拟合 ρ = 1.0141 − 0.00172 × 酒精度",
+   "density": 0.9288,
+   "alcohol_g": 17.2
+  },
+  {
+   "id": "beer",
+   "name": "啤酒",
+   "card": "foods/22",
+   "serving_ml": 355.0,
+   "energy_kcal": 134.0,
+   "energy_kj": 561.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.4,
+    "carb_g": 6.5
+   },
+   "composition": "cn:1407",
+   "free_sugar": {
+    "g": 0
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 12.0
+  },
+  {
+   "id": "apple_wine",
+   "name": "苹果酒",
+   "card": "foods/22",
+   "serving_ml": 148.0,
+   "energy_kcal": 77.0,
+   "energy_kj": 322.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 7.5
+   },
+   "composition": "cn:1441",
+   "free_sugar": {
+    "g": 0
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 11.1
+  },
+  {
+   "id": "berry_wine",
+   "name": "浆果酒",
+   "card": "foods/22",
+   "serving_ml": 148.0,
+   "energy_kcal": 81.0,
+   "energy_kj": 339.0,
+   "hunger": 4,
+   "macros_100g": {
+    "fat_g": 0.2,
+    "carb_g": 8.6
+   },
+   "composition": "cn:1419",
+   "free_sugar": {
+    "g": 3.4
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 9.3
+  },
+  {
+   "id": "wine",
+   "name": "葡萄酒",
+   "card": "foods/22",
+   "serving_ml": 148.0,
+   "energy_kcal": 105.0,
+   "energy_kj": 438.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.2,
+    "carb_g": 10.8
+   },
+   "composition": "cn:1416",
+   "free_sugar": {
+    "g": 2.6
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 13.4
+  },
+  {
+   "id": "sparkling_wine",
+   "name": "起泡酒",
+   "card": "foods/22",
+   "serving_ml": 148.0,
+   "energy_kcal": 109.0,
+   "energy_kj": 458.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.1,
+    "carb_g": 10.1
+   },
+   "composition": "cn:1413",
+   "free_sugar": {
+    "g": 2.5
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 14.2
+  },
+  {
+   "id": "mead",
+   "name": "蜂蜜酒",
+   "card": "foods/22",
+   "serving_ml": 148.0,
+   "energy_kcal": 146.0,
+   "energy_kj": 609.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 75.6
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:1487",
+      36
+     ],
+     [
+      "water",
+      64
+     ]
+    ]
+   },
+   "composition_note": "卡片：每 100 mL 用蜂蜜 36 g（条目 1487），其余为水；发酵的变化不计",
+   "free_sugar": {
+    "g": 8.0
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 16.3
+  },
+  {
+   "id": "brandy",
+   "name": "白兰地",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 95.0,
+   "energy_kj": 398.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 33.7
+   },
+   "composition": "cn:1438",
+   "free_sugar": {
+    "g": 0.9
+   },
+   "alcohol_note": "蒸馏酒密度按 foods/22 开头的三点拟合 ρ = 1.0141 − 0.00172 × 酒精度",
+   "density": 0.9487,
+   "alcohol_g": 13.2
+  },
+  {
+   "id": "whisky",
+   "name": "威士忌",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 96.0,
+   "energy_kj": 403.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 0.0
+   },
+   "composition": "jp:16016",
+   "free_sugar": {
+    "g": 0
+   },
+   "alcohol_note": "蒸馏酒密度按 foods/22 开头的三点拟合 ρ = 1.0141 − 0.00172 × 酒精度",
+   "density": 0.9453,
+   "alcohol_g": 13.9
+  },
+  {
+   "id": "vodka",
+   "name": "伏特加",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 96.0,
+   "energy_kj": 403.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 33.4
+   },
+   "composition": "cn:1439",
+   "free_sugar": {
+    "g": 0
+   },
+   "alcohol_note": "蒸馏酒密度按 foods/22 开头的三点拟合 ρ = 1.0141 − 0.00172 × 酒精度",
+   "density": 0.9453,
+   "alcohol_g": 13.9
+  },
+  {
+   "id": "rum",
+   "name": "朗姆酒",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 97.0,
+   "energy_kj": 406.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 0.1
+   },
+   "composition": "jp:16020",
+   "free_sugar": {
+    "g": 0.2
+   },
+   "alcohol_note": "蒸馏酒密度按 foods/22 开头的三点拟合 ρ = 1.0141 − 0.00172 × 酒精度",
+   "density": 0.9453,
+   "alcohol_g": 13.9
+  },
+  {
+   "id": "plum_wine",
+   "name": "青梅酒",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 68.0,
+   "energy_kj": 286.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 20.7
+   },
+   "composition": "jp:16022",
+   "free_sugar": {
+    "g": 9.1
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 4.5
+  },
+  {
+   "id": "mint_liqueur",
+   "name": "薄荷利口酒",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 133.0,
+   "energy_kj": 554.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 37.6
+   },
+   "composition": "jp:16030",
+   "free_sugar": {
+    "g": 16.6
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）（27% vol 的混成酒，卡片按 1.00 折酒精）",
+   "density": 1.0,
+   "alcohol_g": 9.4
+  },
+  {
+   "id": "herbal_liqueur",
+   "name": "草本药酒",
+   "card": "foods/22",
+   "serving_ml": 44.0,
+   "energy_kcal": 127.0,
+   "energy_kj": 533.0,
+   "hunger": 5,
+   "macros_100g": {
+    "carb_g": 49.3
+   },
+   "composition": "cn:1437",
+   "free_sugar": {
+    "g": 4.7
+   },
+   "alcohol_note": "蒸馏酒密度按 foods/22 开头的三点拟合 ρ = 1.0141 − 0.00172 × 酒精度",
+   "density": 0.9367,
+   "alcohol_g": 15.6
+  },
+  {
+   "id": "red_yeast_wine",
+   "name": "红曲酒",
+   "card": "foods/22",
+   "serving_ml": 148.0,
+   "energy_kcal": 181.0,
+   "energy_kj": 757.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 1.0,
+    "carb_g": 19.9
+   },
+   "composition": "cn:1425",
+   "free_sugar": {
+    "g": 10.2
+   },
+   "alcohol_note": "发酵酒与低度混成酒按 1.00 g/mL（foods/22 开头）",
+   "density": 1.0,
+   "alcohol_g": 19.3
+  },
+  {
+   "id": "fruit_jelly",
+   "name": "水果果冻",
+   "card": "foods/22",
+   "serving_g": 120.0,
+   "energy_kcal": 87.0,
+   "energy_kj": 362.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.1,
+    "fat_g": 0.2,
+    "carb_g": 17.2
+   },
+   "composition": "cn:1363",
+   "free_sugar": {
+    "g": 20.6
+   }
+  },
+  {
+   "id": "agar_jelly_dessert",
+   "name": "琼脂果冻",
+   "card": "foods/22",
+   "serving_g": 120.0,
+   "energy_kcal": 73.0,
+   "energy_kj": 306.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 18.0
+   },
+   "composition": {
+    "mix": [
+     [
+      "jp:09028",
+      85
+     ],
+     [
+      "cn:1448",
+      15,
+      {
+       "fill": "fdc:169655"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片：石花菜煮液加白砂糖 15%；煮液按日本食品標準成分表 09028「てんぐさ 寒天」取值",
+   "free_sugar": {
+    "g": 18.0
+   }
+  },
+  {
+   "id": "gelatin_jelly",
+   "name": "明胶果冻",
+   "card": "foods/22",
+   "serving_g": 120.0,
+   "energy_kcal": 96.0,
+   "energy_kj": 402.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 2.1,
+    "fat_g": 0.1,
+    "carb_g": 19.8
+   },
+   "composition": "jp:15087",
+   "free_sugar": {
+    "g": 23.8
+   }
+  },
+  {
+   "id": "almond_tofu",
+   "name": "杏仁豆腐",
+   "card": "foods/22",
+   "serving_g": 120.0,
+   "energy_kcal": 78.0,
+   "energy_kj": 328.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.7,
+    "fat_g": 2.1,
+    "carb_g": 6.8
+   },
+   "composition": "cn:1386",
+   "free_sugar": {
+    "g": 13.0
+   }
+  },
+  {
+   "id": "caramel_custard",
+   "name": "焦糖布丁",
+   "card": "foods/22",
+   "serving_g": 120.0,
+   "energy_kcal": 139.0,
+   "energy_kj": 582.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 5.7,
+    "fat_g": 5.5,
+    "carb_g": 14.0
+   },
+   "composition": "jp:15086",
+   "free_sugar": {
+    "g": 16.8
+   }
+  },
+  {
+   "id": "herbal_jelly",
+   "name": "龟苓膏",
+   "card": "foods/22",
+   "serving_g": 120.0,
+   "energy_kcal": 68.0,
+   "energy_kj": 286.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carb_g": 14.0
+   },
+   "composition": null,
+   "composition_note": "产品标签（中华老字号 龟苓膏 250 g）只给盐，本模组记的维生素与矿物质（I46）都没有，全部留空",
+   "free_sugar": {
+    "g": 9.6
+   }
+  },
+  {
+   "id": "popping_boba",
+   "name": "爆爆珠",
+   "card": "foods/22",
+   "serving_g": 30.0,
+   "energy_kcal": 24.0,
+   "energy_kj": 102.0,
+   "hunger": 2,
+   "macros_100g": {
+    "carb_g": 6.0
+   },
+   "composition": null,
+   "composition_note": "卡片按芯液的糖计算，没有维生素与矿物质的来源，留空",
+   "free_sugar": {
+    "g": 6.0
+   }
+  },
+  {
+   "id": "nata_de_coco",
+   "name": "椰果",
+   "card": "foods/22",
+   "serving_g": 120.0,
+   "energy_kcal": 96.0,
+   "energy_kj": 402.0,
+   "hunger": 4,
+   "macros_100g": {
+    "carb_g": 20.2
+   },
+   "composition": "jp:07170",
+   "free_sugar": {
+    "g": 24.2
+   }
+  },
+  {
+   "id": "potato_chips",
+   "name": "马铃薯片",
+   "card": "foods/22",
+   "serving_g": 30.0,
+   "energy_kcal": 166.0,
+   "energy_kj": 695.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 7.5,
+    "fat_g": 37.6,
+    "carb_g": 49.2
+   },
+   "composition": "cn:1353",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.39,
+   "misuse_note": "误用（卡片）：0.39 g（13%）"
+  },
+  {
+   "id": "shrimp_chips",
+   "name": "虾片",
+   "card": "foods/22",
+   "serving_g": 30.0,
+   "energy_kcal": 161.0,
+   "energy_kj": 673.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 5.3,
+    "fat_g": 30.9,
+    "carb_g": 59.5
+   },
+   "composition": "cn:1348",
+   "free_sugar": {
+    "g": 3.0
+   },
+   "misuse_salt_g": 0.31,
+   "misuse_note": "误用（卡片）：0.31 g（10%）"
+  },
+  {
+   "id": "corn_flakes",
+   "name": "玉米片",
+   "card": "foods/22",
+   "serving_g": 30.0,
+   "energy_kcal": 113.0,
+   "energy_kj": 474.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 7.0,
+    "fat_g": 0.8,
+    "carb_g": 86.0
+   },
+   "composition": "cn:1289",
+   "free_sugar": {
+    "g": 1.4
+   },
+   "misuse_salt_g": 0.55,
+   "misuse_note": "误用（卡片）：0.55 g（18%）"
+  },
+  {
+   "id": "popcorn",
+   "name": "爆米花",
+   "card": "foods/22",
+   "serving_g": 30.0,
+   "energy_kcal": 142.0,
+   "energy_kj": 592.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 10.2,
+    "fat_g": 22.8,
+    "carb_g": 59.6
+   },
+   "composition": "jp:01136",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.43,
+   "misuse_note": "误用（卡片）：0.43 g（14%）"
+  },
+  {
+   "id": "rice_crust",
+   "name": "锅巴",
+   "card": "foods/22",
+   "serving_g": 30.0,
+   "energy_kcal": 160.0,
+   "energy_kj": 670.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 7.6,
+    "fat_g": 30.6,
+    "carb_g": 59.2
+   },
+   "composition": "cn:1349",
+   "free_sugar": {
+    "g": 2.1
+   },
+   "misuse_salt_g": 0.18,
+   "misuse_note": "误用（卡片）：0.18 g（6%）"
+  },
+  {
+   "id": "rice_cracker",
+   "name": "膨化米饼",
+   "card": "foods/22",
+   "serving_g": 30.0,
+   "energy_kcal": 141.0,
+   "energy_kj": 590.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 5.5,
+    "fat_g": 17.6,
+    "carb_g": 73.5
+   },
+   "composition": "cn:1340",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.18,
+   "misuse_note": "误用（卡片）：0.18 g（6%）"
+  }
+ ]
+}

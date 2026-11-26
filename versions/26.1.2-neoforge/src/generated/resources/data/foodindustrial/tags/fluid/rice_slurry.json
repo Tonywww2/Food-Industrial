@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rice_slurry",
+    "foodindustrial:flowing_rice_slurry",
+    {
+      "id": "#forge:rice_slurry",
+      "required": false
+    },
+    {
+      "id": "#c:rice_slurry",
+      "required": false
+    }
+  ]
+}

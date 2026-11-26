@@ -14,6 +14,7 @@ import static com.tonywww.foodindustrial.recipe.ProcessTypes.GAS_REACTING;
 import static com.tonywww.foodindustrial.recipe.ProcessTypes.GRINDING;
 import static com.tonywww.foodindustrial.recipe.ProcessTypes.KILN;
 import static com.tonywww.foodindustrial.recipe.ProcessTypes.MIXING;
+import static com.tonywww.foodindustrial.recipe.ProcessTypes.PACKAGING;
 import static com.tonywww.foodindustrial.recipe.ProcessTypes.PRESSING;
 import static com.tonywww.foodindustrial.recipe.ProcessTypes.REACTING;
 import static com.tonywww.foodindustrial.recipe.ProcessTypes.SEPARATING;
@@ -64,13 +65,14 @@ public final class Batch4Colours extends Batch {
         // the finished juices and oil (12) bottled from the pressed fluids, a bottle a quarter bucket (pending review)
         bottle("raw_grape_juice", "grape_juice");
         bottle("raw_citrus_juice", "citrus_juice");
-        bottle("crude_peanut_oil", "peanut_oil");
+        // peanut oil: foods/09 §3.4 (I47, Food1Recipes)
         // 210: red rice milled white, the bran kept
         r(GRINDING).in("materials/red_rice", 4).out("rice", 3).out("red_rice_bran", 1).add("red_rice_bran");
     }
 
     private void bottle(String fluid, String product) {
-        r(MIXING).fin(fluid, 250).in("materials/glass_bottle", 1).out(product, 1).mode("blending").add(product + "_bottling");
+        // R29 filling into this mod's glass bottle (foods/09 §1, §5; machines/05 §4, I47)
+        r(PACKAGING).fin(fluid, 250).in("containers/glass_bottle", 1).out(product, 1).add(product + "_bottling");
     }
 
     // ---- 194–196, 199, 202 synthetic colours ----

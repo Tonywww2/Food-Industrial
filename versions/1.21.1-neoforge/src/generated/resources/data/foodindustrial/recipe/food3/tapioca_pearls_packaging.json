@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:packaging",
+  "inputs": [
+    {
+      "semi_finished": "tapioca_pearls|dry_pearls"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/paper_bag"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:tapioca_pearls"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 40
+}

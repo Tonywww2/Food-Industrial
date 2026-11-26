@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/stretching_mold"
+    }
+  },
+  "inputs": [
+    {
+      "semi_finished": "sanzi|dough_strands"
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "sanzi|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

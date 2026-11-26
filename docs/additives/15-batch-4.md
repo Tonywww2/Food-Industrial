@@ -3,7 +3,7 @@
 第四批共 **284 项**（编号 140–423）：GB 2760-2024 表 A.1 中前三批之外的全部 234 种添加剂（140–373），以及表 C.3 中尚未设计的 50 种酶制剂（374–423）。食品用香料、加工助剂、营养强化剂、胶基物质留到第五批，清单见 [16](16-batch-5-backlog.md)。
 
 - **复用优先**：路线尽量接现有中间体、添加剂（写编号）与机器；本批不新增独立机器，新工艺由现有机器的模式与模块承担（见“机器”）。
-- **缺原料时补原料本身**：植物、虫、动物来源的原料登记原料本身（如胭脂虫干、瓜尔豆），不登记生物源头；暂时没有获取途径的标“暂无来源”，见“新增原料”与 08 第 C 节。
+- **缺原料时补原料本身**：植物、虫、动物来源的原料登记原料本身（如胭脂虫干、瓜尔豆），不登记生物源头；暂时没有获取途径的标“暂无来源”，见“新增原料”与 08 第 C 节；这些原料 2026-11-18 已按 [08 §来源规则](08-raw-materials.md) 分到六类（问题 21）。
 - **阶段**：写本步工序所需设备的档次；上游原料要更高档次时在括号内注明，如“T2（28 为 T4）”。
 - **纯度**按配方类型的默认规则（[../machines/01-recipe-types.md](../machines/01-recipe-types.md) 第 1.1 节），不逐条注明。
 - 路线中“未确认”表示没有找到可核对的原文，“游戏简化”表示为玩法做的简化；来源链接见末尾“依据”。反应式已配平（核对方法见 09）。
@@ -474,81 +474,81 @@
 
 ## 新增原料
 
-“暂无来源”表示游戏里暂时没有获取途径，等以后加作物、生物或联动标签；在此之前对应路线做不出。已并入 08 第 C 节。
+“暂无来源”表示写这一批时游戏里没有获取途径；2026-11-18 按 [08 §来源规则](08-raw-materials.md) 分到六类（问题 21），本节保留当时的记录。已并入 08 第 C 节。
 
 | 原料 | 配方引用标签 | 现实来源 | 本模组来源 | 用于 |
 | --- | --- | --- | --- | --- |
 | 羽毛 | `materials/feather` | 禽类屠宰副产的羽毛（角蛋白） | 原版 `minecraft:feather`、`#forge:feathers`（1.21 起 `#c:feathers`）；羊毛 `materials/wool` 同样接受 | 181 |
 | 石英 | `materials/quartz` | 高纯脉石英、石英岩（硅铁、工业硅原料） | 原版 `minecraft:quartz`、`#forge:gems/quartz`；沙子 `materials/sand` 只作低纯度替代 | 163 |
 | 竹子 | `materials/bamboo` | 竹（中国传统竹纸原料） | 原版 `minecraft:bamboo` | 162、229、327 |
-| 红花干花 | `materials/safflower` | 红花 Carthamus tinctorius 管状花；新疆、河南 | 暂无来源 | 206 |
-| 紫胶原胶 | `materials/sticklac` | 紫胶虫 Kerria lacca 在寄主树枝上的分泌物；云南、印度、泰国 | 暂无来源 | 207、271、273 |
+| 红花干花 | `materials/safflower` | 红花 Carthamus tinctorius 管状花；新疆、河南 | 作物类（08 §来源规则） | 206 |
+| 紫胶原胶 | `materials/sticklac` | 紫胶虫 Kerria lacca 在寄主树枝上的分泌物；云南、印度、泰国 | 动物与虫类（08 §来源规则） | 207、271、273 |
 | 越橘 | `materials/lingonberry` | 越橘 Vaccinium vitis-idaea 果实；大兴安岭 | 原版 `minecraft:sweet_berries`（游戏简化：甜浆果生于针叶林，形似越橘） | 208 |
-| 红米 | `materials/red_rice` | 红色种皮稻 Oryza sativa；湖南、云南 | 暂无来源 | 210 |
+| 红米 | `materials/red_rice` | 红色种皮稻 Oryza sativa；湖南、云南 | 作物类（08 §来源规则） | 210 |
 | 红米糠 | `materials/red_rice_bran` | 红米碾米副产 | 红米经 M01 / M11 碾米，与大米同一配方（联产，2026-11-12） | 210 |
-| 剑叶金鸡菊花序 | `materials/coreopsis` | 剑叶金鸡菊 Coreopsis lanceolata 花序（GB 9991-88） | 暂无来源 | 211 |
-| 黑豆种皮 | `materials/black_soybean_hull` | 黑大豆 Glycine max 黑色种皮；东北 | 暂无来源 | 212 |
-| 高粱壳 | `materials/sorghum_husk` | 高粱 Sorghum bicolor 颖壳；东北、华北 | 暂无来源 | 213 |
+| 剑叶金鸡菊花序 | `materials/coreopsis` | 剑叶金鸡菊 Coreopsis lanceolata 花序（GB 9991-88） | 野生植物类（08 §来源规则） | 211 |
+| 黑豆种皮 | `materials/black_soybean_hull` | 黑大豆 Glycine max 黑色种皮；东北 | 黑豆脱皮的副产（08 §C） | 212 |
+| 高粱壳 | `materials/sorghum_husk` | 高粱 Sorghum bicolor 颖壳；东北、华北 | 作物类（08 §来源规则） | 213 |
 | 玉米蛋白粉 | `materials/corn_gluten_meal` | 玉米湿磨提淀粉的副产 | 玉米（`materials/corn`）M01 湿磨副产 | 214 |
-| 红心萝卜 | `materials/red_radish` | 红心萝卜 Raphanus sativus；四川、重庆 | 暂无来源（作物模组 `#forge:crops/radish` 待核对） | 215 |
+| 红心萝卜 | `materials/red_radish` | 红心萝卜 Raphanus sativus；四川、重庆 | 作物类（作物模组 `#forge:crops/radish` 待核对；08 §来源规则） | 215 |
 | 可可豆壳 | `materials/cocoa_shell` | 可可豆焙炒脱壳副产 | 可可豆（`materials/cocoa_beans`）焙炒、M11 破碎风选，与可可碎粒同一配方（联产，2026-11-12） | 216 |
-| 黑加仑 | `materials/blackcurrant` | 黑加仑 Ribes nigrum 果实；新疆、黑龙江 | 暂无来源 | 217 |
-| 沙棘果 | `materials/sea_buckthorn` | 沙棘 Hippophae rhamnoides 果实；内蒙古、山西、新疆 | 暂无来源 | 219 |
-| 玫瑰茄花萼 | `materials/roselle` | 玫瑰茄 Hibiscus sabdariffa 花萼；云南、广西、福建 | 暂无来源 | 220 |
-| 橡子壳 | `materials/acorn_shell` | 栎属 Quercus 坚果壳 | 暂无来源 | 221 |
-| 桑椹 | `materials/mulberry` | 桑 Morus alba 果实 | 暂无来源 | 222 |
-| 红苋菜 | `materials/red_amaranth` | 苋 Amaranthus tricolor 红色叶 | 暂无来源 | 223 |
-| 金樱子 | `materials/rosa_laevigata` | 金樱子 Rosa laevigata 果实；华南、西南 | 暂无来源 | 224 |
+| 黑加仑 | `materials/blackcurrant` | 黑加仑 Ribes nigrum 果实；新疆、黑龙江 | 树木类（08 §来源规则） | 217 |
+| 沙棘果 | `materials/sea_buckthorn` | 沙棘 Hippophae rhamnoides 果实；内蒙古、山西、新疆 | 树木类（08 §来源规则） | 219 |
+| 玫瑰茄花萼 | `materials/roselle` | 玫瑰茄 Hibiscus sabdariffa 花萼；云南、广西、福建 | 作物类（08 §来源规则） | 220 |
+| 橡子壳 | `materials/acorn_shell` | 栎属 Quercus 坚果壳 | 树木类（08 §来源规则） | 221 |
+| 桑椹 | `materials/mulberry` | 桑 Morus alba 果实 | 树木类（08 §来源规则） | 222 |
+| 红苋菜 | `materials/red_amaranth` | 苋 Amaranthus tricolor 红色叶 | 作物类（08 §来源规则） | 223 |
+| 金樱子 | `materials/rosa_laevigata` | 金樱子 Rosa laevigata 果实；华南、西南 | 树木类（08 §来源规则） | 224 |
 | 花生红衣 | `materials/peanut_skin` | 花生脱皮副产 | 花生（`materials/peanut`）M02 压榨，与花生油（12）同一配方（联产；脱红衣并入压榨，2026-11-12） | 225 |
 | 葡萄皮渣 | `materials/grape_pomace` | 葡萄压榨、酿酒副产 | 葡萄（`materials/grape`）M02 压榨，与葡萄汁（12）同一配方（联产）；葡萄酒压渣同样出皮渣（2026-11-12） | 226 |
-| 蓝锭果 | `materials/haskap` | 蓝靛果忍冬 Lonicera caerulea 果实；大兴安岭、长白山 | 暂无来源 | 227 |
-| 螺旋藻粉 | `materials/spirulina` | 钝顶螺旋藻 Arthrospira platensis 养殖干粉；云南程海、内蒙古鄂尔多斯 | 暂无来源 | 228 |
-| 紫草根 | `materials/gromwell_root` | 新疆紫草 Arnebia euchroma、紫草 Lithospermum erythrorhizon 根；新疆、东北 | 暂无来源 | 230 |
+| 蓝锭果 | `materials/haskap` | 蓝靛果忍冬 Lonicera caerulea 果实；大兴安岭、长白山 | 树木类（08 §来源规则） | 227 |
+| 螺旋藻粉 | `materials/spirulina` | 钝顶螺旋藻 Arthrospira platensis 养殖干粉；云南程海、内蒙古鄂尔多斯 | 菌藻类（08 §来源规则） | 228 |
+| 紫草根 | `materials/gromwell_root` | 新疆紫草 Arnebia euchroma、紫草 Lithospermum erythrorhizon 根；新疆、东北 | 野生植物类（08 §来源规则） | 230 |
 | 柑橘皮 | `materials/citrus_peel` | 柑橘榨汁副产 | 柑橘（`materials/citrus`）M02 压榨，与柑橘汁（12）同一配方（联产，2026-11-12） | 231（16 同用） |
-| 胭脂树籽 | `materials/annatto_seed` | 胭脂树 Bixa orellana 种子；秘鲁、巴西、肯尼亚 | 暂无来源 | 232 |
-| 胭脂虫干 | `materials/dried_cochineal` | 胭脂虫 Dactylopius coccus 雌虫干体；秘鲁、加那利群岛 | 暂无来源 | 233 |
-| 万寿菊干花 | `materials/marigold` | 万寿菊 Tagetes erecta 花；新疆、云南、内蒙古 | 暂无来源 | 234 |
-| 杨梅 | `materials/bayberry` | 杨梅 Morella rubra 果实；浙江、福建 | 暂无来源 | 237 |
-| 紫甘薯 | `materials/purple_sweet_potato` | 紫心甘薯 Ipomoea batatas；山东、四川 | 暂无来源 | 242 |
-| 盐藻粉 | `materials/dunaliella` | 杜氏盐藻 Dunaliella salina 养殖干粉；内蒙古、澳大利亚 | 暂无来源 | 197 |
-| 钛铁矿石 | `materials/ilmenite` | 钛铁矿 FeTiO3；四川攀枝花、澳大利亚、南非 | 暂无来源（GTCEu `#forge:ores/ilmenite`、`#forge:dusts/ilmenite` 待核对） | 198 |
-| 椰子干 | `materials/copra` | 椰子（Cocos nucifera）果肉晒干；菲律宾、印度尼西亚、印度 | 暂无来源（潘马斯果树的椰子标签待核对） | 252、256、257、324、325、342 |
-| 油棕果 | `materials/oil_palm_fruit` | 油棕（Elaeis guineensis）果实，取中果皮榨油；印度尼西亚、马来西亚 | 暂无来源 | 248、258 |
-| 皂树皮 | `materials/quillaja_bark` | 皂树（Quillaja saponaria）内皮及修剪枝干；智利中部 | 暂无来源 | 269 |
-| 达瓦树胶块 | `materials/ghatti_lump` | 印度胶树（Anogeissus latifolia）树干渗出物干块；印度、斯里兰卡 | 暂无来源 | 270 |
-| 巴西棕榈蜡粉 | `materials/carnauba_powder` | 巴西棕榈（Copernicia prunifera）叶片晒干后拍打所得蜡粉；巴西东北部 | 暂无来源 | 275、273 |
-| 刺梧桐胶块 | `materials/karaya_lump` | 刺梧桐（Sterculia urens）枝干渗出物干块，印度 | 暂无来源 | 283 |
-| 阿拉伯胶块 | `materials/acacia_lump` | 塞内加尔金合欢（Acacia senegal）、阿拉伯胶树（A. seyal）枝干渗出物，苏丹、乍得、尼日利亚等萨赫勒地区 | 暂无来源 | 288 |
-| 罗望子种子 | `materials/tamarind_seed` | 酸角（Tamarindus indica）果肉加工副产，印度、泰国 | 暂无来源 | 290 |
-| 亚麻籽 | `materials/flaxseed` | 亚麻（Linum usitatissimum），中国内蒙古、甘肃，加拿大 | 暂无来源 | 297 |
-| 田菁籽 | `materials/sesbania_seed` | 田菁（Sesbania cannabina），中国江苏、山东沿海盐碱地 | 暂无来源 | 298 |
-| 槐豆 | `materials/carob_seed` | 角豆树（Ceratonia siliqua）种子，西班牙、葡萄牙、意大利、摩洛哥 | 暂无来源 | 300 |
-| 瓜尔豆 | `materials/guar_seed` | 瓜尔豆（Cyamopsis tetragonoloba），印度拉贾斯坦邦、巴基斯坦 | 暂无来源 | 302 |
-| 皂荚籽 | `materials/gleditsia_seed` | 皂荚（Gleditsia sinensis），中国山西、河南、贵州等 | 暂无来源 | 305 |
-| 沙蒿籽 | `materials/artemisia_seed` | 沙蒿（Artemisia desertorum、A. sphaerocephala），中国内蒙古、宁夏、甘肃 | 暂无来源 | 311 |
-| 刺云实籽 | `materials/tara_seed` | 刺云实（Caesalpinia spinosa），秘鲁 | 暂无来源 | 312 |
-| 决明子 | `materials/cassia_seed` | 决明（Cassia tora、C. obtusifolia），中国、印度 | 暂无来源 | 316 |
-| 虾蟹壳 | `materials/crustacean_shell` | 虾、蟹加工下脚料，沿海水产加工区 | 暂无来源 | 296、303 |
+| 胭脂树籽 | `materials/annatto_seed` | 胭脂树 Bixa orellana 种子；秘鲁、巴西、肯尼亚 | 树木类（08 §来源规则） | 232 |
+| 胭脂虫干 | `materials/dried_cochineal` | 胭脂虫 Dactylopius coccus 雌虫干体；秘鲁、加那利群岛 | 动物与虫类（08 §来源规则） | 233 |
+| 万寿菊干花 | `materials/marigold` | 万寿菊 Tagetes erecta 花；新疆、云南、内蒙古 | 作物类（08 §来源规则） | 234 |
+| 杨梅 | `materials/bayberry` | 杨梅 Morella rubra 果实；浙江、福建 | 树木类（08 §来源规则） | 237 |
+| 紫甘薯 | `materials/purple_sweet_potato` | 紫心甘薯 Ipomoea batatas；山东、四川 | 作物类（08 §来源规则） | 242 |
+| 盐藻粉 | `materials/dunaliella` | 杜氏盐藻 Dunaliella salina 养殖干粉；内蒙古、澳大利亚 | 菌藻类（08 §来源规则） | 197 |
+| 钛铁矿石 | `materials/ilmenite` | 钛铁矿 FeTiO3；四川攀枝花、澳大利亚、南非 | 矿类（GTCEu `#forge:ores/ilmenite`、`#forge:dusts/ilmenite` 待核对；08 §来源规则） | 198 |
+| 椰子干 | `materials/copra` | 椰子（Cocos nucifera）果肉晒干；菲律宾、印度尼西亚、印度 | 树木类（潘马斯果树的椰子标签待核对；08 §来源规则） | 252、256、257、324、325、342 |
+| 油棕果 | `materials/oil_palm_fruit` | 油棕（Elaeis guineensis）果实，取中果皮榨油；印度尼西亚、马来西亚 | 树木类（08 §来源规则） | 248、258 |
+| 皂树皮 | `materials/quillaja_bark` | 皂树（Quillaja saponaria）内皮及修剪枝干；智利中部 | 树木类（08 §来源规则） | 269 |
+| 达瓦树胶块 | `materials/ghatti_lump` | 印度胶树（Anogeissus latifolia）树干渗出物干块；印度、斯里兰卡 | 树木类（08 §来源规则） | 270 |
+| 巴西棕榈蜡粉 | `materials/carnauba_powder` | 巴西棕榈（Copernicia prunifera）叶片晒干后拍打所得蜡粉；巴西东北部 | 树木类（08 §来源规则） | 275、273 |
+| 刺梧桐胶块 | `materials/karaya_lump` | 刺梧桐（Sterculia urens）枝干渗出物干块，印度 | 树木类（08 §来源规则） | 283 |
+| 阿拉伯胶块 | `materials/acacia_lump` | 塞内加尔金合欢（Acacia senegal）、阿拉伯胶树（A. seyal）枝干渗出物，苏丹、乍得、尼日利亚等萨赫勒地区 | 树木类（08 §来源规则） | 288 |
+| 罗望子种子 | `materials/tamarind_seed` | 酸角（Tamarindus indica）果肉加工副产，印度、泰国 | 树木类（08 §来源规则） | 290 |
+| 亚麻籽 | `materials/flaxseed` | 亚麻（Linum usitatissimum），中国内蒙古、甘肃，加拿大 | 作物类（08 §来源规则） | 297 |
+| 田菁籽 | `materials/sesbania_seed` | 田菁（Sesbania cannabina），中国江苏、山东沿海盐碱地 | 作物类（08 §来源规则） | 298 |
+| 槐豆 | `materials/carob_seed` | 角豆树（Ceratonia siliqua）种子，西班牙、葡萄牙、意大利、摩洛哥 | 树木类（08 §来源规则） | 300 |
+| 瓜尔豆 | `materials/guar_seed` | 瓜尔豆（Cyamopsis tetragonoloba），印度拉贾斯坦邦、巴基斯坦 | 作物类（08 §来源规则） | 302 |
+| 皂荚籽 | `materials/gleditsia_seed` | 皂荚（Gleditsia sinensis），中国山西、河南、贵州等 | 树木类（08 §来源规则） | 305 |
+| 沙蒿籽 | `materials/artemisia_seed` | 沙蒿（Artemisia desertorum、A. sphaerocephala），中国内蒙古、宁夏、甘肃 | 野生植物类（08 §来源规则） | 311 |
+| 刺云实籽 | `materials/tara_seed` | 刺云实（Caesalpinia spinosa），秘鲁 | 树木类（08 §来源规则） | 312 |
+| 决明子 | `materials/cassia_seed` | 决明（Cassia tora、C. obtusifolia），中国、印度 | 作物类（08 §来源规则） | 316 |
+| 虾蟹壳 | `materials/crustacean_shell` | 虾、蟹加工下脚料，沿海水产加工区 | 剥虾的副产（08 §C） | 296、303 |
 | 黑曲霉菌丝体 | `materials/fungal_mycelium` | 柠檬酸发酵的废菌丝 | 柠檬酸（3）B、C 路线发酵液过滤副产 | 296、303 |
 | 豆渣 | `materials/okara` | 豆浆、大豆分离蛋白生产副产 | 大豆（`materials/soybean`）湿磨（M01）过滤（M12）副产，与豆奶、豆腐共用 | 315 |
 | 钼 | `materials/molybdenum` | 辉钼矿冶炼 | 他模组标签 `#forge:dusts/molybdenum`、`#forge:ingots/molybdenum`（GTCEu，未核对） | 310（钼酸铋催化剂） |
 | 铋 | `materials/bismuth` | 铅锌冶炼副产 | 他模组标签 `#forge:ingots/bismuth`、`#forge:dusts/bismuth`（GTCEu，未核对） | 310（钼酸铋催化剂） |
 | 氧化铝（催化剂） | `catalysts/alumina` | 活性氧化铝 | 09 已有 `alumina`，同时进催化剂标签（08 规则 3） | 163、304、314（甲醇氢氯化制氯甲烷） |
-| 甘草根 | `materials/licorice_root` | 乌拉尔甘草（Glycyrrhiza uralensis）等的干燥根；主产山西、甘肃、新疆 | 暂无来源 | 321、352、353、362 |
-| 罗汉果干果 | `materials/monk_fruit` | 罗汉果（Siraitia grosvenorii）果实烘干；主产广西桂林 | 暂无来源 | 356 |
-| 西非竹芋果 | `materials/katemfe_fruit` | 西非竹芋（Thaumatococcus daniellii）果实，取假种皮；塞拉利昂至加蓬、刚果（金）的雨林 | 暂无来源 | 357 |
+| 甘草根 | `materials/licorice_root` | 乌拉尔甘草（Glycyrrhiza uralensis）等的干燥根；主产山西、甘肃、新疆 | 野生植物类（08 §来源规则） | 321、352、353、362 |
+| 罗汉果干果 | `materials/monk_fruit` | 罗汉果（Siraitia grosvenorii）果实烘干；主产广西桂林 | 作物类（08 §来源规则） | 356 |
+| 西非竹芋果 | `materials/katemfe_fruit` | 西非竹芋（Thaumatococcus daniellii）果实，取假种皮；塞拉利昂至加蓬、刚果（金）的雨林 | 野生植物类（08 §来源规则） | 357 |
 | 米糠 | `materials/rice_bran` | 稻谷碾米副产 | 稻谷（`materials/paddy`，2026-11-12 与大米分开）在 M01 / M11 碾米，与大米同一配方（联产） | 320、331 |
 | 蛋清 | `materials/egg_white` | 鸡蛋分离 | 鸡蛋（`materials/egg`）在工作台或 M12 分离，蛋黄供 69 | 346 |
-| 咖啡生豆 | `materials/coffee_bean` | 小粒咖啡（Coffea arabica）等的种子 | 暂无来源（潘马斯候选 `#forge:crops/coffeebean`，未核对） | 366 |
-| 软锰矿 | `materials/pyrolusite` | 二氧化锰矿石 | 暂无来源（GTCEu 候选 `#forge:ores/pyrolusite`、`#forge:dusts/pyrolusite`，未核对） | 364（92 的二氧化锰同样缺来源） |
-| 猪胰脏 | `materials/pancreas` | 猪、牛屠宰副产（胰腺） | 暂无来源 | 397、399、418、419 |
-| 猪胃黏膜 | `materials/gastric_mucosa` | 猪、小牛、小羊、禽类胃组织（屠宰副产） | 暂无来源 | 415 |
-| 肝脏 | `materials/liver` | 牛、猪或马肝脏（屠宰副产）；不含鱼肝 | 暂无来源 | 390 |
-| 无花果乳汁 | `ficus_latex`（流体） | 无花果属 Ficus spp. 枝干或未熟果割取 | 暂无来源；若作物模组提供无花果树，扩展 H15 割取 | 416 |
-| 大麦 | `materials/barley` | 大麦 Hordeum vulgare 籽粒 | 暂无来源（待定；潘马斯 `#forge:crops/barley` 未核对） | 402、378（诱导底物） |
-| 菊芋块茎 | `materials/jerusalem_artichoke` | 菊芋 Helianthus tuberosus 块茎，富含菊粉 | 暂无来源 | 395 |
-| 皱胃 | `materials/abomasum` | 小牛第四胃（屠宰副产） | 暂无来源 | 105 A、工程菌（凝乳酶）供体 |
-| 皱波角叉菜 | `materials/red_algae_carrageenan`（现有标签，追加物品） | 皱波角叉菜（爱尔兰苔）Chondrus crispus，北大西洋沿岸 | 暂无来源；标签内现有麒麟菜代用（游戏简化） | 394（基因供体）、42 |
+| 咖啡生豆 | `materials/coffee_bean` | 小粒咖啡（Coffea arabica）等的种子 | 树木类（潘马斯候选 `#forge:crops/coffeebean`，未核对；08 §来源规则） | 366 |
+| 软锰矿 | `materials/pyrolusite` | 二氧化锰矿石 | 矿类（GTCEu 候选 `#forge:ores/pyrolusite`、`#forge:dusts/pyrolusite`，未核对；08 §来源规则） | 364（92 的二氧化锰同样缺来源） |
+| 猪胰脏 | `materials/pancreas` | 猪、牛屠宰副产（胰腺） | 实体掉落（08 §C 胰脏） | 397、399、418、419 |
+| 猪胃黏膜 | `materials/gastric_mucosa` | 猪、小牛、小羊、禽类胃组织（屠宰副产） | 实体掉落（08 §C 胃黏膜） | 415 |
+| 肝脏 | `materials/liver` | 牛、猪或马肝脏（屠宰副产）；不含鱼肝 | 实体掉落（08 §C） | 390 |
+| 无花果乳汁 | `ficus_latex`（流体） | 无花果属 Ficus spp. 枝干或未熟果割取 | 树木类；若作物模组提供无花果树，扩展 H15 割取（08 §来源规则） | 416 |
+| 大麦 | `materials/barley` | 大麦 Hordeum vulgare 籽粒 | 作物类（08 §来源规则；潘马斯 `#forge:crops/barley` 未核对） | 402、378（诱导底物） |
+| 菊芋块茎 | `materials/jerusalem_artichoke` | 菊芋 Helianthus tuberosus 块茎，富含菊粉 | 作物类（08 §来源规则） | 395 |
+| 皱胃 | `materials/abomasum` | 小牛第四胃（屠宰副产） | 实体掉落（08 §C） | 105 A、工程菌（凝乳酶）供体 |
+| 皱波角叉菜 | `materials/red_algae_carrageenan`（现有标签，追加物品） | 皱波角叉菜（爱尔兰苔）Chondrus crispus，北大西洋沿岸 | 现有海洋植物（08 §C 麒麟菜）；标签内现有麒麟菜代用（游戏简化） | 394（基因供体）、42 |
 
 ## 新增菌种与酶
 
@@ -625,7 +625,7 @@
 - 197、203 的合成品（Wittig）未展开，需 C15 鏻盐（β-紫罗兰酮或假紫罗兰酮衍生），与 107 B 共用上游。
 - 氧化铁黑需要 M14 通空气；06 中 M14 只写“可通氮气”，建议把气体输入写成“指定气体”。
 - 下列项的具体溶剂、pH 按同类工艺拟定，未取得逐项来源，实装前对照 GB 1886 各品种标准：红花黄、高粱红、可可壳色、橡子壳棕、金樱子棕、沙棘黄、玉米黄、柑橘黄、紫草红、辣椒橙、红曲黄色素、叶绿素铜，以及各花青素品种的原料参数。
-- 越橘用原版甜浆果代替属游戏简化；红心萝卜、黑加仑、桑椹的作物模组标签未核对，暂写“暂无来源”。
+- 越橘用原版甜浆果代替属游戏简化；红心萝卜、黑加仑、桑椹的作物模组标签未核对。**已定（2026-11-18，问题 21）**：红心萝卜归作物类，黑加仑与桑椹归树木类（[08 §来源规则](08-raw-materials.md)），装有作物模组时优先用其标签。
 - 副产物一律与主产物写成一条联产配方（2026-11-12，11 问题 43）：可可豆出可可碎粒与可可豆壳，花生出花生油与花生红衣，葡萄出葡萄汁与葡萄皮渣，柑橘出柑橘汁与柑橘皮，稻谷出大米与米糠，红米出大米与红米糠；葡萄汁、柑橘汁为 12 新增的成品。
 - 藻蓝是蛋白质，热敏：T4 冷冻干燥纯度最高；是否允许 M28 低温喷雾干燥由设计定（2026-11-11 用户定：只许冷冻干燥）。
 - 盐藻、螺旋藻是光合藻类，本批只补干藻粉原料；若以后做养殖（光照水池），另设世界交互。
@@ -634,7 +634,7 @@
 ### C 组
 
 - 动物脂改为混合油脂（2026-11-05 定，`animal_fat`）：水解得动物脂脂肪酸，压榨分出油酸、精馏分出棕榈酸与硬脂酸，司盘 40、吐温 40 不再只靠油棕果；反应式仍以硬脂酸甘油三酯计。
-- 椰子干、油棕果暂无来源：未装作物模组时 248、252、256、257、258 做不出；需决定是否本模组自加椰子、油棕作物，或接受整合包补标签（248、258 另可用动物脂脂肪酸的棕榈酸，I30 已做）。
+- 椰子干、油棕果暂无来源：未装作物模组时 248、252、256、257、258 做不出；**已定（2026-11-18，问题 21）**：两者归树木类，本模组加椰子树与油棕树（[08 §来源规则](08-raw-materials.md)），装有作物模组时优先用其标签（248、258 另用动物脂脂肪酸的棕榈酸，I30 已做）。
 - 辛酸、棕榈酸、月桂酸由本节的油脂水解得到，单辛酸甘油酯（342）、抗坏血酸棕榈酸酯（323）、硫代二丙酸二月桂酯（324）同用；琥珀酸（178）与丁二酸酐（266）宜同链（马来酸酐加氢），本批两者分列。
 - 木糖醇酐单硬脂酸酯的工业条件未查到，按司盘的脱水酯化类推。
 - 254、342 与 27 C 的分子蒸馏：精馏塔只收流体（2026-11-11 用户定：单酯熔成熔融液，分子蒸馏后冷却结晶），新增熔融液流体 `molten_glyceryl_monostearate`、`molten_propylene_glycol_monostearate`、`molten_glyceryl_monocaprylate`。
@@ -649,7 +649,7 @@
 ### D 组
 
 - 09 已有 `edta`，但前三批没有它的制法（117 直接取用）；本批在 281 补乙二胺–甲醛–氢氰酸路线，117、328 取同一中间体；该路线列为可选路线（2026-11-05 定），另设 B 氯乙酸法。
-- 甲壳素 B 路线（黑曲霉菌丝体）为游戏简化：GB 2760 口径的甲壳素、壳聚糖以虾蟹壳为原料，欧盟批准的菌丝体产品是甲壳素–葡聚糖；虾蟹壳暂无来源，没有 B 路线时 296、303 在本模组做不出。
+- 甲壳素 B 路线（黑曲霉菌丝体）为游戏简化：GB 2760 口径的甲壳素、壳聚糖以虾蟹壳为原料，欧盟批准的菌丝体产品是甲壳素–葡聚糖；虾蟹壳由剥虾的副产给出（2026-11-18，11 问题 69，见 [../foods/18](../foods/18-batch5-aquatic.md)），296、303 两条路线都做得出。
 - γ-环状糊精不用络合剂的路线为游戏简化；现实工业多用环十二酮或酮–酚混合络合剂（US5550222、US4835105）。
 - α-环状糊精的络合剂取环己烷（US5326701）；更常见的 1-癸醇法未采用，以免新增脂肪醇链。
 - 种子胶提取线把去皮、分瓣并入研磨配方，不单设焙烤种子、胚乳片、种子粕；现实的种子粕（胚芽、种皮）作饲料。
@@ -685,7 +685,7 @@
 
 - 12 项只有重组来源（374、376、386、393、394、398、400、401、403、404、408、409），用 M30 基因重组模式与 12 个工程菌种；每次重组消耗 1 个表达载体（2026-11-05 定）；供体用环境样本代替属游戏简化。
 - 大麦麦芽：以 14 与 GB 2760 为准（2026-11-05 定），96、402 用大麦麦芽 `enzymes/barley_malt`；大麦列为待定来源；小麦麦芽 `enzymes/malt` 保留作 T1 糖化。
-- 105 凝乳酶覆盖表 C.3 第 39 项：新增大肠杆菌（`cultures/e_coli`）作宿主（2026-11-05 定），工程菌（凝乳酶）由大肠杆菌 + 皱胃样本重组；皱胃（`materials/abomasum`）暂无来源。181 B 同用大肠杆菌。
+- 105 凝乳酶覆盖表 C.3 第 39 项：新增大肠杆菌（`cultures/e_coli`）作宿主（2026-11-05 定），工程菌（凝乳酶）由大肠杆菌 + 皱胃样本重组；皱胃（`materials/abomasum`）由带“肢解”附魔的武器击杀成年牛掉落（2026-11-18，11 问题 69）。181 B 同用大肠杆菌。
 - 385、388、389 由 99 分级，390 B 由 98 分级，421 由 102 分级，均为游戏简化（现实多为专用菌株或专用培养基）。
 - 黑曲霉在 M29 中将对应十余条配方，按诱导底物区分（本表已逐项给出），实现时需核对无重复输入。
 - 377 的 Aspergillus fijiensis 中文名表中未给，“斐济曲霉”为暂译。

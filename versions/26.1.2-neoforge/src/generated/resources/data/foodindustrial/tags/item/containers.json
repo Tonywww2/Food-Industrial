@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:paper_bag",
+    "foodindustrial:glass_jar",
+    "foodindustrial:plastic_bag",
+    "foodindustrial:paper_cup",
+    "foodindustrial:tin_can",
+    "foodindustrial:plastic_casing",
+    "foodindustrial:glass_bottle",
+    "foodindustrial:aluminum_can",
+    "foodindustrial:pet_bottle",
+    "foodindustrial:tea_bag"
+  ]
+}

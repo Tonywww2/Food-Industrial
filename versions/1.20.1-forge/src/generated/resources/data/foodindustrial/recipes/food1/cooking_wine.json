@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 750,
+        "tag": "foodindustrial:huangjiu"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:ginger_juice"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:cooking_wine"
+    }
+  ],
+  "quality": {},
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

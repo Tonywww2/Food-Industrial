@@ -1,0 +1,310 @@
+{
+ "id": "crystallizing_tank",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crystallizing_tank_front.png",
+  "inner": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crystallizing_tank_inner.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crystallizing_tank_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crystallizing_tank_top.png"
+ },
+ "elements": [
+  {
+   "name": "body0",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      13,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      3,
+      16
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      16,
+      3
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      13,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body1",
+   "from": [
+    0,
+    0,
+    3
+   ],
+   "to": [
+    16,
+    12,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      4,
+      13,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      4,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      3,
+      4,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      3,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      13
+     ]
+    }
+   }
+  },
+  {
+   "name": "body2",
+   "from": [
+    0,
+    12,
+    3
+   ],
+   "to": [
+    3,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      13,
+      4
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      3,
+      4
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      3,
+      0,
+      16,
+      4
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      3,
+      3,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body3",
+   "from": [
+    13,
+    12,
+    3
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      13,
+      4
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      13,
+      0,
+      16,
+      4
+     ]
+    },
+    "west": {
+     "texture": "inner",
+     "uv": [
+      3,
+      0,
+      16,
+      4
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      13,
+      3,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body4",
+   "from": [
+    3,
+    12,
+    13
+   ],
+   "to": [
+    13,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "inner",
+     "uv": [
+      3,
+      0,
+      13,
+      4
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      3,
+      0,
+      13,
+      4
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      3,
+      13,
+      13,
+      16
+     ]
+    }
+   }
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}

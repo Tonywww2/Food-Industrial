@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:kansui"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": []
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "alkaline_noodles|dough"
+  }
+}

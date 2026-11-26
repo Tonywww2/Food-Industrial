@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/starch"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": [
+      "color"
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "tapioca_pearls|dough"
+  }
+}

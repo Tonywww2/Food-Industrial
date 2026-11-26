@@ -19,8 +19,17 @@ public final class GuiText {
     static void bootstrap() {
         add("panel", "info", "信息", "Info");
         add("panel", "upgrades", "升级与模块", "Upgrades and modules");
+        add("panel", "additives", "添加剂", "Additives");
         add("panel", "io", "I/O", "I/O");
         add("panel", "redstone", "红石", "Redstone");
+
+        add("display", "switch", "沉浸式展示：%s", "Immersive display: %s");
+        // the flavour type of the ingredient-step mixers (I48)
+        add("flavor", "target", "目标风味：%s", "Target flavor: %s");
+        add("flavor", "auto", "自动", "Automatic");
+        add("flavor", "auto_hint", "取输入里排在最前的香料的首项风味", "Takes the first flavor group of the first flavoring material in the inputs");
+        add("need", "flavor_target", "主香不属于目标风味", "Main note is not of the target flavor");
+        add("display", "hint", "在世界里显示所有机器的原料、进度和成品", "Shows every machine's inputs, progress and products in the world");
 
         add("status", "running", "运行中", "Running");
         add("status", "waiting", "等待原料", "Waiting for inputs");
@@ -40,6 +49,7 @@ public final class GuiText {
         add("io", "input", "输入", "Input");
         add("io", "output", "输出", "Output");
         add("io", "both", "输入 + 输出", "Input + output");
+        add("io", "additive", "添加剂", "Additives");
         add("io", "items", "物品：%s", "Items: %s");
         add("io", "fluids", "流体：%s", "Fluids: %s");
         add("io", "neighbour", "相邻：%s", "Next to: %s");
@@ -162,6 +172,10 @@ public final class GuiText {
         add("slot", "upgrade", "升级", "Upgrade");
         add("slot", "module", "模块", "Module");
         add("slot", "culture", "菌种", "Culture");
+        add("slot", "mold", "模具", "Mold");
+        add("slot", "tool", "刀具或灌肠嘴", "Knife or nozzle");
+        add("slot", "ice", "冰", "Ice");
+        add("slot", "salt", "盐", "Salt");
         add("slot", "sample", "样本或菌种", "Sample or culture");
         add("slot", "medium", "培养基", "Medium");
         add("slot", "donor", "供体样本", "Donor sample");
@@ -173,6 +187,10 @@ public final class GuiText {
         add("tank", "output", "输出储罐", "Output tank");
         // what a T3/T4 machine lacks for a recipe (I16, I17)
         add("need", "trays", "塔板层数", "Trays");
+        // the additive slots of an ingredient step (foods/05 §3, I38)
+        add("need", "additive_not_accepted", "配方不收的添加剂", "An additive the recipe does not take");
+        add("need", "additive_too_many", "同一品质项的添加剂多于两种", "More than two additives for one quality");
+        add("need", "additive_short", "添加剂数量不足", "Not enough additive");
         add("need", "regenerant", "再生液", "Regenerant");
         add("energy", "amount", "%s / %s FE", "%s / %s FE");
         add("energy", "manual", "人力：%s / %s s", "Crank power: %s / %s s");

@@ -1,0 +1,36 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/sichuan_pepper"
+    },
+    {
+      "tag": "foodindustrial:materials/star_anise"
+    },
+    {
+      "tag": "foodindustrial:materials/cinnamon"
+    },
+    {
+      "tag": "foodindustrial:materials/clove_bud"
+    },
+    {
+      "tag": "foodindustrial:materials/fennel_seed"
+    }
+  ],
+  "results": [
+    {
+      "count": 5,
+      "item": "foodindustrial:five_spice_powder"
+    }
+  ]
+}

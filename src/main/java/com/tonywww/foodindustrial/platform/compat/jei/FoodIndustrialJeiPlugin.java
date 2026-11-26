@@ -6,8 +6,14 @@ import com.tonywww.foodindustrial.gui.client.MachineScreen;
 import com.tonywww.foodindustrial.gui.client.recipe.RecipeDevices;
 import com.tonywww.foodindustrial.gui.client.recipe.RecipePage;
 import com.tonywww.foodindustrial.gui.client.recipe.WorldPage;
+import com.tonywww.foodindustrial.food.FoodCrafting;
+import com.tonywww.foodindustrial.food.SemiFinished;
+import com.tonywww.foodindustrial.food.flavor.DosageForm;
+import com.tonywww.foodindustrial.food.flavor.FlavorType;
+import com.tonywww.foodindustrial.food.flavor.Flavorings;
 import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
 import com.tonywww.foodindustrial.platform.PlatformIdentifier;
+import com.tonywww.foodindustrial.platform.recipe.PlatformCrafting;
 import com.tonywww.foodindustrial.platform.recipe.PlatformRecipes;
 import com.tonywww.foodindustrial.platform.recipe.PlatformVanillaCooking;
 import com.tonywww.foodindustrial.recipe.DeviceSpec;
@@ -16,6 +22,7 @@ import com.tonywww.foodindustrial.recipe.ProcessType;
 import com.tonywww.foodindustrial.recipe.ProcessTypes;
 import com.tonywww.foodindustrial.world.interaction.BlockTransformRecipe;
 import com.tonywww.foodindustrial.world.interaction.HarvestRecipe;
+import com.tonywww.foodindustrial.world.interaction.PumpingRecipe;
 import com.tonywww.foodindustrial.world.interaction.WorldInteractions;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -23,11 +30,13 @@ import mezz.jei.api.constants.RecipeTypes;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IRecipeManager;
 import mezz.jei.api.recipe.RecipeType;
+import mezz.jei.api.registration.IExtraIngredientRegistration;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.IRecipeTransferRegistration;
+import mezz.jei.api.registration.ISubtypeRegistration;
 import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
@@ -39,6 +48,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeSet;
 //? if >=26.1 {
 /*import net.minecraft.resources.Identifier;
 *///?} else {
@@ -46,11 +56,13 @@ import net.minecraft.resources.ResourceLocation;
 //?}
 
 /**
- * JEI integration (I22, additives/10 §5): one category per recipe type R01–R19, the two world
- * interactions and the multiblock structures; every device that runs a type is its catalyst; machine
+ * JEI integration (I22, additives/10 §5): one category per recipe type, the three world
+ * interactions (W03 pumping, I43) and the multiblock structures; every device that runs a type is its catalyst; machine
  * screens get the transfer button, the arrow click area, extra areas and drop-to-lock; information
  * pages say where raw materials come from; the bridge recipes on vanilla blocks are hidden from the
- * vanilla categories (they show in R07–R09 with the vanilla blocks as catalysts).
+ * vanilla categories (they show in R07–R09 with the vanilla blocks as catalysts). The food line's crafting-table
+ * steps show on JEI's crafting page ({@link WorkbenchExtension}); semi-finished products and flavourings have subtypes
+ * (by stage and by dosage form), and every semi-finished stage a recipe names is in the ingredient list (2026-11-20).
  */
 @JeiPlugin
 public final class FoodIndustrialJeiPlugin implements IModPlugin {
@@ -70,12 +82,16 @@ public final class FoodIndustrialJeiPlugin implements IModPlugin {
                 pending = null;
                 Minecraft.getInstance().execute(() -> plugin.addRecipes(current.getRecipeManager()));
             }
+            if (current != null) {
+                Minecraft.getInstance().execute(() -> ensureWorkbenchSteps(current.getRecipeManager()));
+            }
         });
     }
 
     private final Map<ProcessType, ProcessCategory> categories = new LinkedHashMap<>();
     private WorldCategory transforms;
     private WorldCategory harvests;
+    private WorldCategory pumps;
 
     //? if >=26.1 {
     /*@Override
@@ -116,7 +132,8 @@ public final class FoodIndustrialJeiPlugin implements IModPlugin {
         }
         transforms = new WorldCategory("block_transform", new ItemStack(Items.DIRT), gui);
         harvests = new WorldCategory("harvesting", new ItemStack(WorldInteractions.FLINT_KNIFE.get()), gui);
-        registration.addRecipeCategories(transforms, harvests);
+        pumps = new WorldCategory("pumping", new ItemStack(com.tonywww.foodindustrial.manual.T0Devices.HAND_PUMP.get()), gui);
+        registration.addRecipeCategories(transforms, harvests, pumps);
         MachineDefinition icon = null;
         for (MachineDefinition machine : MachineDefinition.all()) {
             if (machine.isMultiblock() && !machine.development()) {
@@ -157,6 +174,11 @@ public final class FoodIndustrialJeiPlugin implements IModPlugin {
             harvestPages.add(WorldPage.of(recipe));
         }
         result.put(harvests.getRecipeType(), harvestPages);
+        List<WorldPage> pumpingPages = new ArrayList<>();
+        for (PumpingRecipe recipe : PlatformRecipes.all(level, PumpingRecipe.KIND)) {
+            pumpingPages.add(WorldPage.of(recipe));
+        }
+        result.put(pumps.getRecipeType(), pumpingPages);
         FoodIndustrial.LOGGER.debug("JEI: left out {} recipes with an input no item or fluid fills: {}", incomplete.size(), incomplete);
         return result;
     }
@@ -165,6 +187,56 @@ public final class FoodIndustrialJeiPlugin implements IModPlugin {
     private void addRecipes(IRecipeManager manager) {
         recipes().forEach((type, list) -> manager.addRecipes((RecipeType) type, (List) list));
         FoodIndustrial.LOGGER.info("JEI: added the mod's recipes after the tags arrived");
+    }
+
+    /**
+     * Puts the crafting-table steps on JEI's crafting page when JEI's own collection left them out: with EMI installed JEI
+     * collects no crafting recipes (EMI reads the page from JEI and has its own), and on 1.20.1 JEI may collect them
+     * before the tags arrive. Needs bound tags; does nothing if the page already has them (2026-11-25).
+     */
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    private static void ensureWorkbenchSteps(IRecipeManager manager) {
+        Level level = Minecraft.getInstance().level;
+        if (level == null || !tagsBound()) {
+            return;
+        }
+        //? if <1.21 {
+        if (manager.createRecipeLookup(RecipeTypes.CRAFTING).includeHidden().get().anyMatch(recipe -> recipe instanceof PlatformCrafting.GridRecipe<?>)) {
+            return;
+        }
+        //?} else {
+        /*if (manager.createRecipeLookup(RecipeTypes.CRAFTING).includeHidden().get()
+            .anyMatch(holder -> holder.value() instanceof PlatformCrafting.GridRecipe<?>)) {
+            return;
+        }
+        *///?}
+        List steps = new ArrayList<>();
+        for (Object recipe : PlatformCrafting.recipeObjects(level, FoodCrafting.class)) {
+            if (WorkbenchExtension.handles(recipe)) {
+                steps.add(recipe);
+            }
+        }
+        if (!steps.isEmpty()) {
+            manager.addRecipes(RecipeTypes.CRAFTING, steps);
+            FoodIndustrial.LOGGER.info("JEI: put {} crafting-table steps on the crafting page", steps.size());
+        }
+    }
+
+    /**
+     * The food line's crafting-table steps on JEI's crafting page (2026-11-25). On 1.20.1 JEI collects crafting recipes
+     * before the tags arrive, so the extension takes them only once tags are bound; {@link #addRecipes} adds them then.
+     */
+    @Override
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    public void registerVanillaCategoryExtensions(mezz.jei.api.registration.IVanillaCategoryExtensionRegistration registration) {
+        //? if <1.21 {
+        registration.getCraftingCategory().addCategoryExtension(PlatformCrafting.GridRecipe.class,
+            recipe -> WorkbenchExtension.handles((PlatformCrafting.GridRecipe<?>) recipe, FoodIndustrialJeiPlugin::tagsBound),
+            recipe -> new WorkbenchExtension((PlatformCrafting.GridRecipe<?>) recipe));
+        //?} else {
+        /*registration.getCraftingCategory().addExtension((Class<PlatformCrafting.GridRecipe<?>>) (Class<?>) PlatformCrafting.GridRecipe.class,
+            new WorkbenchExtension(() -> true));
+        *///?}
     }
 
     @Override
@@ -198,6 +270,9 @@ public final class FoodIndustrialJeiPlugin implements IModPlugin {
             }
         }
         registration.addRecipeCatalyst(new ItemStack(WorldInteractions.FLINT_KNIFE.get()), harvests.getRecipeType());
+        registration.addRecipeCatalyst(new ItemStack(com.tonywww.foodindustrial.manual.T0Devices.HAND_PUMP.get()), pumps.getRecipeType());
+        registration.addRecipeCatalyst(new ItemStack(com.tonywww.foodindustrial.machine.workshop.WorkshopMachines.SEAWATER_PUMP.item()),
+            pumps.getRecipeType());
         for (MachineDefinition machine : MachineDefinition.all()) {
             if (machine.isMultiblock() && !machine.development()) {
                 registration.addRecipeCatalyst(new ItemStack(machine.item()), StructureCategory.TYPE);
@@ -209,6 +284,59 @@ public final class FoodIndustrialJeiPlugin implements IModPlugin {
     public void registerRecipeTransferHandlers(IRecipeTransferRegistration registration) {
         for (ProcessCategory category : categories.values()) {
             registration.addRecipeTransferHandler(new MachineTransfer(category, registration.getTransferHelper()), category.getRecipeType());
+        }
+    }
+
+    /** Semi-finished products by stage, flavourings by dosage form. */
+    @Override
+    public void registerItemSubtypes(ISubtypeRegistration registration) {
+        JeiSupport.subtypes(registration, SemiFinished.ITEM.get(), SemiFinished::keyOf);
+        for (FlavorType type : FlavorType.values()) {
+            JeiSupport.subtypes(registration, Flavorings.item(type), stack -> {
+                DosageForm form = Flavorings.form(stack);
+                return form == null ? "" : form.id();
+            });
+        }
+    }
+
+    /** Every semi-finished stage the loaded recipes make or take, so the list finds each one. */
+    @Override
+    public void registerExtraIngredients(IExtraIngredientRegistration registration) {
+        Level level = Minecraft.getInstance().level;
+        if (level == null) {
+            return;
+        }
+        TreeSet<String> keys = new TreeSet<>();
+        for (ProcessType type : ProcessTypes.recipeTypes()) {
+            for (ProcessRecipe recipe : PlatformRecipes.all(level, type.kind())) {
+                semiKeys(recipe.inputs(), recipe.outputs(), keys);
+            }
+        }
+        for (PlatformRecipes.Loaded<FoodCrafting> loaded : PlatformCrafting.loaded(level, FoodCrafting.class)) {
+            FoodCrafting recipe = loaded.data();
+            List<com.tonywww.foodindustrial.recipe.ProcessOutput> outputs = new ArrayList<>();
+            outputs.add(recipe.result());
+            recipe.byproduct().ifPresent(outputs::add);
+            semiKeys(recipe.ingredients(), outputs, keys);
+        }
+        List<ItemStack> stacks = new ArrayList<>();
+        for (String key : keys) {
+            stacks.add(SemiFinished.stack(key, 1));
+        }
+        registration.addExtraItemStacks(stacks);
+    }
+
+    private static void semiKeys(List<com.tonywww.foodindustrial.recipe.ProcessInput> inputs, List<com.tonywww.foodindustrial.recipe.ProcessOutput> outputs,
+                                 TreeSet<String> keys) {
+        for (com.tonywww.foodindustrial.recipe.ProcessInput input : inputs) {
+            if (input instanceof com.tonywww.foodindustrial.recipe.ProcessInput.ItemInput item && item.isSemi()) {
+                keys.add(item.semi());
+            }
+        }
+        for (com.tonywww.foodindustrial.recipe.ProcessOutput output : outputs) {
+            if (output.isSemi()) {
+                keys.add(output.semi());
+            }
         }
     }
 
@@ -228,6 +356,7 @@ public final class FoodIndustrialJeiPlugin implements IModPlugin {
             pending = null;
             addRecipes(manager);
         }
+        ensureWorkbenchSteps(manager);
         hideBridges(manager, RecipeTypes.SMELTING);
         hideBridges(manager, RecipeTypes.SMOKING);
         hideBridges(manager, RecipeTypes.BLASTING);

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sorghum",
+    {
+      "id": "#c:crops/sorghum",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/sorghum",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dark_soy_sauce_base",
+    "foodindustrial:flowing_dark_soy_sauce_base",
+    {
+      "id": "#forge:dark_soy_sauce_base",
+      "required": false
+    },
+    {
+      "id": "#c:dark_soy_sauce_base",
+      "required": false
+    }
+  ]
+}

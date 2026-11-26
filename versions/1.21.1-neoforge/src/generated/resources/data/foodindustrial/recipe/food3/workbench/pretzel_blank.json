@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "pretzel|dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "pretzel|blank"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/stretching_mold"
+    }
+  ]
+}

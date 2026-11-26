@@ -1,0 +1,24 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:forest",
+    "minecraft:flower_forest",
+    "minecraft:birch_forest",
+    "minecraft:old_growth_birch_forest"
+  ],
+  "features": [
+    "foodindustrial:elder_bush",
+    "foodindustrial:american_chestnut_tree",
+    "foodindustrial:sugar_maple_tree",
+    "foodindustrial:cascara_tree",
+    "foodindustrial:black_cherry_tree",
+    "foodindustrial:hickory_tree",
+    "foodindustrial:mountain_maple_tree",
+    "foodindustrial:walnut_tree",
+    "foodindustrial:wild_atractylodes",
+    "foodindustrial:wild_rabdosia",
+    "foodindustrial:wild_valerian",
+    "foodindustrial:wild_oakmoss"
+  ],
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/baking_iron"
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:wafer_batter"
+      }
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "wafer|wafer_sheet"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

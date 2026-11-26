@@ -118,7 +118,7 @@ final class MachineTransfer implements IRecipeTransferHandler<MachineMenu, Proce
             for (int i = machineSlots; i < menu.slots.size() && need > 0; i++) {
                 Slot from = menu.slots.get(i);
                 ItemStack stack = from.getItem();
-                if (stack.isEmpty() || left[i] <= 0 || !com.tonywww.foodindustrial.platform.recipe.PlatformIngredients.fresh(item.ingredient()).test(stack)
+                if (stack.isEmpty() || left[i] <= 0 || !item.accepts(stack)
                     || !menu.definition().slotAccepts(SlotRole.INPUT, target, stack)) {
                     continue;
                 }
@@ -160,7 +160,7 @@ final class MachineTransfer implements IRecipeTransferHandler<MachineMenu, Proce
         int total = 0;
         for (int i = menu.machineSlots(); i < menu.slots.size(); i++) {
             ItemStack stack = menu.slots.get(i).getItem();
-            if (!stack.isEmpty() && com.tonywww.foodindustrial.platform.recipe.PlatformIngredients.fresh(item.ingredient()).test(stack)) {
+            if (!stack.isEmpty() && item.accepts(stack)) {
                 total += left[i];
             }
         }

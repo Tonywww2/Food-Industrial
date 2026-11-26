@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:pumping",
+  "requirements": {
+    "environment": [
+      "coastal"
+    ]
+  },
+  "result": {
+    "amount": 1000,
+    "fluid": "foodindustrial:seawater"
+  }
+}

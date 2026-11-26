@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/granulating_screen"
+    }
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "chicken_bouillon_powder|wet_mix"
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "chicken_bouillon_powder|wet_granules"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

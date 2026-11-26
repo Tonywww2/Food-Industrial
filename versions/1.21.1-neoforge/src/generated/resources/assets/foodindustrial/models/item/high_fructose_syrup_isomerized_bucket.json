@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:high_fructose_syrup_isomerized",
+  "loader": "neoforge:fluid_container"
+}

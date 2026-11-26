@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:non_dairy_creamer_homogenized"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "non_dairy_creamer|powder"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "sensitive",
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

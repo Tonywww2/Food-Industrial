@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:flavor_notes/dairy"
+    },
+    {
+      "ingredient": "#foodindustrial:flavor_notes/all"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:flavor_carriers/water_soluble"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 8,
+      "form": "water_soluble",
+      "item": "foodindustrial:dairy_flavoring"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:flavor_notes/cooling"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:flavor_notes/all"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:flavor_carriers/powders"
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 8,
+    "form": "blended_powder",
+    "item": "foodindustrial:cooling_flavoring"
+  }
+}

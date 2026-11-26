@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:sesame_paste",
+  "loader": "forge:fluid_container"
+}

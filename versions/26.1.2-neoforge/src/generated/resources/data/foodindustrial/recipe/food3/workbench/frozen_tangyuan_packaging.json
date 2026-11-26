@@ -1,0 +1,16 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 8,
+      "semi_finished": "frozen_tangyuan|frozen"
+    },
+    {
+      "ingredient": "#foodindustrial:containers/plastic_bag"
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:frozen_tangyuan"
+  }
+}

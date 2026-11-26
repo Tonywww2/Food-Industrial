@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:rice_slurry"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:cultures/yeast"
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "leavening"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "fagao|batter"
+  }
+}

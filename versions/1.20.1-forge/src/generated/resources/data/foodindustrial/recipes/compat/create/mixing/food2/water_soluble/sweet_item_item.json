@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:flavor_notes/sweet"
+    },
+    {
+      "tag": "foodindustrial:flavor_notes/all"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:flavor_carriers/water_soluble"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "foodindustrial:sweet_flavoring"
+    }
+  ]
+}

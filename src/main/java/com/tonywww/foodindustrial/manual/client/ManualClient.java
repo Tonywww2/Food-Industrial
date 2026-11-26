@@ -25,6 +25,8 @@ import java.util.List;
 public final class ManualClient {
     /** Item positions on a rack or tray, in slot order. */
     private static final float[][] CORNERS = {{0.28F, 0.28F}, {0.72F, 0.28F}, {0.28F, 0.72F}, {0.72F, 0.72F}};
+    /** Item positions in a pot (four slots, I47.5), in slot order. */
+    private static final float[][] POT = {{0.4F, 0.4F}, {0.6F, 0.4F}, {0.4F, 0.6F}, {0.6F, 0.6F}};
 
     private ManualClient() {
     }
@@ -48,10 +50,17 @@ public final class ManualClient {
         FluidBox box = null;
         switch (device.kind()) {
             case CLAY_POT, IRON_POT -> {
-                box = level(contents.tank(0), contents.tankCapacity(), 3, 1, 13, 7);
+                // the fullest of the three tanks shows (I47.5)
+                FluidAmount shown = FluidAmount.EMPTY;
+                for (int i = 0; i < contents.tankCount(); i++) {
+                    if (contents.tank(i).amount() > shown.amount()) {
+                        shown = contents.tank(i);
+                    }
+                }
+                box = level(shown, contents.tankCapacity(), 3, 1, 13, 7);
                 float y = box == null ? 0.12F : Math.max(0.12F, box.y1() - 0.04F);
-                for (int i = 0; i < contents.itemSlots(); i++) {
-                    items.add(new ItemPlacement(contents.item(i), 0.4F + 0.2F * i, y, 0.5F, 0.35F, true, 30 * i));
+                for (int i = 0; i < Math.min(POT.length, contents.itemSlots()); i++) {
+                    items.add(new ItemPlacement(contents.item(i), POT[i][0], y, POT[i][1], 0.35F, true, 30 * i));
                 }
             }
             case LEACH_BARREL -> {

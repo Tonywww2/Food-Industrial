@@ -92,8 +92,9 @@ public final class Batch1Recipes extends Batch {
             .add("glucose_by_acid");
         r(REACTING).in("chemicals/starch", 4).fin("water", B).cat("enzymes/alpha_amylase", 16).fout("liquefied_starch", B).temp("heated")
             .tier(2).add("liquefied_starch");
-        r(REACTING).fin("liquefied_starch", B).cat("enzymes/glucoamylase", 16).out("glucose", 4).src(95).temp("heated").tier(2)
-            .add("glucose_by_enzymes");
+        // the saccharified liquid is the glucose syrup's (foods/09 §4.7, §5, I47: Food1Recipes); glucose crystallizes from the syrup,
+        // half a bucket of syrup for the four glucose the liquefied starch gave before
+        r(CRYSTALLIZING).fin("glucose_syrup", 500).out("glucose", 4).src(95).temp("cooling").add("glucose_from_syrup");
     }
 
     private void ethanol() {
@@ -173,11 +174,10 @@ public final class Batch1Recipes extends Batch {
     }
 
     private void oilsAndSoap() {
-        r(BOILING).in("materials/raw_pork", 4).out("animal_fat", 1).add("animal_fat_from_pork");
-        r(BOILING).in("materials/raw_beef", 4).out("animal_fat", 1).add("animal_fat_from_beef");
+        // pork and beef render to lard and tallow (foods/09 §5, I47: Food1Recipes); mutton still to animal fat
         r(BOILING).in("materials/raw_mutton", 4).out("animal_fat", 1).add("animal_fat_from_mutton");
         // saponification: C57H110O6 + 3 NaOH → 3 C18H35NaO2 + C3H8O3 (27)
-        r(REACTING).in("chemicals/animal_fat", 1).in("chemicals/sodium_hydroxide", 3).fin("water", B).out("sodium_stearate", 3).src()
+        r(REACTING).in("animal_fats", 1).in("chemicals/sodium_hydroxide", 3).fin("water", B).out("sodium_stearate", 3).src()
             .fout("glycerol", B).src().temp("heated").add("saponification");
         r(REACTING).in("chemicals/sodium_stearate", 2).fin("sulfuric_acid", B).out("stearic_acid", 2).out("sodium_sulfate", 1)
             .add("stearic_acid");
@@ -591,7 +591,7 @@ public final class Batch1Recipes extends Batch {
 
     private void monoglycerides() {
         // A: glycerolysis under nitrogen (T2): C57H110O6 + 2 C3H8O3 → 3 C21H42O4; B: direct esterification
-        r(REACTING).in("chemicals/animal_fat", 1).in("chemicals/sodium_hydroxide", 1).fin("glycerol", 2 * B)
+        r(REACTING).in("animal_fats", 1).in("chemicals/sodium_hydroxide", 1).fin("glycerol", 2 * B)
             .out("glyceryl_monostearate", 3).src(45).temp("heated").inert().add("glycerolysis");
         r(REACTING).in("chemicals/stearic_acid", 1).fin("glycerol", B).fin("sulfuric_acid", 100).out("glyceryl_monostearate", 1).src(50)
             .temp("heated").inert().add("monoglyceride_esterification");

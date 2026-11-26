@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "starch_noodles|cooked_strips"
+    }
+  ],
+  "outputs": [
+    {
+      "semi_finished": "starch_noodles|dry_strips"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

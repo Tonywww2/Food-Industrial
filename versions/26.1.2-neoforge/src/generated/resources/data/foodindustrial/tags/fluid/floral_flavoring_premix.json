@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:floral_flavoring_premix",
+    "foodindustrial:flowing_floral_flavoring_premix",
+    {
+      "id": "#forge:floral_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:floral_flavoring_premix",
+      "required": false
+    }
+  ]
+}

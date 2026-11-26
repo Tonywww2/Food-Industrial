@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/aluminum"
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:ingots/aluminum"
+    },
+    {
+      "tag": "forge:ingots/aluminum"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:aluminum_can"
+  }
+}

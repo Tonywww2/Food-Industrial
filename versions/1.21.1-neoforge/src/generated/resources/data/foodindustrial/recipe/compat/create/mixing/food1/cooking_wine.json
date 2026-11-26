@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 750,
+      "tag": "foodindustrial:huangjiu"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "foodindustrial:ginger_juice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "foodindustrial:cooking_wine"
+    }
+  ]
+}

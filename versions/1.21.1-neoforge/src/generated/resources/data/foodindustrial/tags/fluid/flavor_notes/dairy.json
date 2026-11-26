@@ -1,0 +1,821 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:green_cognac_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:vanilla_bean_tincture",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:starter_distillate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:oak_chips_extract",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:white_cognac_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butter_esters",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:rue_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:vanilla_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:linalool_oxide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:anisyl_alcohol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octan_3_ol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_trans_2_4_decadienol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:vanillyl_ethyl_ether",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isovaleraldehyde",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylvaleraldehyde",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_2_hexenal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylphenylhexenal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:cis_4_heptenal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_trans_2_4_undecadienal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_undecalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isobutyraldehyde",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_2_tridecenal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:vanillin_propylene_glycol_acetal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetoin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diacetyl",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_propyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetylpropionyl",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylhexenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dipropionyl",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_amyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_pentenyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylheptenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_heptyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_nonyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:tetrahydrothiophenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetylmethylfuran",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:phenylpropanedione",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_butyryl",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_butyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_hexyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_amyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiobutanal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyltetrahydrofuranone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_isobutyryl",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyloctenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_valeryl",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_hexanoyl",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propionic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butyric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isobutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethylbutyric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:valeric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:alpha_methylvaleric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isovaleric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hexanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hex_3_enoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:heptanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:caprylic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:nonanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:beta_methylvaleric_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylhexanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylheptanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyloctanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:decenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:lactic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isocaproic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:decyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:cis_3_hexenyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octyl_2_methylbutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octen_3_yl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butyl_butyryllactate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isoamyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_caprylate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_lactate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butyl_lactate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_oleate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_dihydrojasmonate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylbutyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:benzyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_undecanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_cyclohexanecarboxylate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isoamyl_laurate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:anisyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_4_methylvalerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dodecyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_hexalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_heptalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_octalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_nonalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_decalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_butyrolactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_hexalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_octalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_nonalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_decalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_undecalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_dodecalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:massoia_lactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mintlactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_tridecalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_tetradecalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentyl_pyrone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:jasmine_lactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:whiskey_lactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:gamma_methyldecalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dihydrocoumarin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:o_dimethoxybenzene",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthio_propionaldehyde",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylpyrazine_2_3",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:tetrahydroquinoxaline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_thiobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_thiofuroate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isopentylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthio_hexanal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_methylthio_furan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiopropyl_acetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:s_methyl_thioisovalerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_methylthiobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:s_methyl_thioacetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_dimethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_dimethyloxazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dihydromintlactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:nonan_2_ol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:decenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_hexanedione",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_pentenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:allyl_methyl_trisulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentylthiophene",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_laurate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_methylthioacetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hepten_3_ol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylfuranone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methionyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_z5_octenoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:triethylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetoin_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:p_methoxyphenylacetone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_isopropyl_carbinol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_isobutyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthioethyl_methyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_sulfoxide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_hexenyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isopropyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:s_methyl_hexanethioate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:cis_hexenyl_valerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dipropyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butyroin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:furfuryl_valerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isojasmone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:s_methyl_thiobenzoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isovaleraldehyde_pg_acetal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:e2_decenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_vanillin_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pyrroline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiomethyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylhexanal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:thiolactic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_4_pentenoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_undecenoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:triacetin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_vanillin_pg_acetal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isobutylbenzylcarbinol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:allylacetic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_tert_butylphenylacetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:undecane_2_3_dione",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:milk_lactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:vanillin_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:epsilon_dodecalactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octahydrocoumarin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:non_3_en_2_one",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_methylpentanal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_2_octenyl_butanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butyl_undecylenate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:glyceryl_hydroxydodecanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:tributyrin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:allyl_nonanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:glyceryl_hydroxydecanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:delta_undec_8_enolactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_1_3_dioxolane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:amylcinnamyl_formate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isoamyl_furylbutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butenolide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isopropyl_isovalerate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:farnesylacetone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiomethyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hydroxy_methyldecenoic_gamma_lactone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentyl_3h_furanone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dithiahexane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:heptyl_methyl_dihydrofuranone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octanedione_4_5",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetoxybutanone",
+      "required": false
+    }
+  ]
+}

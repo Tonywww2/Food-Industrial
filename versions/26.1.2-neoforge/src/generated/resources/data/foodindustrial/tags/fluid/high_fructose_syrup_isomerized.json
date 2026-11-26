@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:high_fructose_syrup_isomerized",
+    "foodindustrial:flowing_high_fructose_syrup_isomerized",
+    {
+      "id": "#forge:high_fructose_syrup_isomerized",
+      "required": false
+    },
+    {
+      "id": "#c:high_fructose_syrup_isomerized",
+      "required": false
+    }
+  ]
+}

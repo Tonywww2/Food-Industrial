@@ -1,0 +1,51 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:forming_line",
+  "name": "book.foodindustrial.manual.entry.forming_line",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:forming_line",
+      "text": "book.foodindustrial.manual.entry.forming_line.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:forming_line[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "A A",
+            "A A",
+            "A A",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.forming_line"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.forming_line.structure"
+    }
+  ],
+  "sortnum": 9
+}

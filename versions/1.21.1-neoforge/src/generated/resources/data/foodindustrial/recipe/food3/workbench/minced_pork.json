@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/raw_pork"
+      }
+    }
+  ],
+  "process": "cutting",
+  "result": {
+    "item": "foodindustrial:minced_pork"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:knives"
+    }
+  ]
+}

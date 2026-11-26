@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:materials/wheat_dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "dried_noodles|wet_noodles"
+  }
+}

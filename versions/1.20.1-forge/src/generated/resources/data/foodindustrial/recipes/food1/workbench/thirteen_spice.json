@@ -1,0 +1,48 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "thirteen_spice|spice_blend_a"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/cinnamon"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/ginger"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/hawthorn_fruit"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/licorice_root"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/amomum"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/clove_bud"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/angelica_dahurica_root"
+      }
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 8,
+    "item": "foodindustrial:thirteen_spice"
+  }
+}

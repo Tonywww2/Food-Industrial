@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/nuts"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/roasted_sesame"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/glutinous_rice_flour"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "wuren_mooncake|nut_filling"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

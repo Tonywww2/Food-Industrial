@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:sapodilla_log",
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cooldown": 6000,
+  "result": {
+    "amount": 250,
+    "fluid": "foodindustrial:sapodilla_latex"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

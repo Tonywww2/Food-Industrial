@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:flavor_notes/floral"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:flavor_notes/all"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:flavor_carriers/powders"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 8,
+      "form": "blended_powder",
+      "item": "foodindustrial:floral_flavoring"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

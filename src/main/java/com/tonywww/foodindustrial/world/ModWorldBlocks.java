@@ -35,7 +35,7 @@ import java.util.function.Supplier;
 public final class ModWorldBlocks {
     /** How a block looks and drops; data generation keys off it. */
     public enum Kind {
-        ORE, CRUST, SOIL, CROP, WILD_PLANT, BUSH, POD, SEA_PLANT,
+        ORE, CRUST, SOIL, DEPOSIT, CLAY_DEPOSIT, CROP, WILD_PLANT, BUSH, POD, SEA_PLANT, REEF,
         LOG, WOOD, PLANKS, STAIRS, SLAB, FENCE, FENCE_GATE, DOOR, TRAPDOOR, PRESSURE_PLATE, BUTTON, LEAVES, SAPLING
     }
 
@@ -63,6 +63,15 @@ public final class ModWorldBlocks {
     /** I31 (additives/08 世界生成表, values to review): sources of 509 B and of the chromium salts. */
     public static final Entry SELENIUM_ORE = block("selenium_ore", Kind.ORE, "硒矿石", "Selenium Ore", Block::new, Blocks.COAL_ORE);
     public static final Entry CHROMITE_ORE = block("chromite_ore", Kind.ORE, "铬铁矿石", "Chromite Ore", Block::new, Blocks.IRON_ORE);
+    /** I44 (08 §C 矿类, values to review): titanium and manganese ores, and four rocks and clays that drop their lumps. */
+    public static final Entry ILMENITE = block("ilmenite", Kind.ORE, "钛铁矿石", "Ilmenite Ore", Block::new, Blocks.IRON_ORE);
+    public static final Entry PYROLUSITE = block("pyrolusite", Kind.ORE, "软锰矿石", "Pyrolusite Ore", Block::new, Blocks.IRON_ORE);
+    public static final Entry ATTAPULGITE_DEPOSIT = deposit("attapulgite_deposit", Kind.CLAY_DEPOSIT, "凹凸棒石黏土矿层", "Attapulgite Deposit",
+        Blocks.CLAY, "attapulgite");
+    public static final Entry BENTONITE_DEPOSIT = deposit("bentonite_deposit", Kind.CLAY_DEPOSIT, "膨润土矿层", "Bentonite Deposit", Blocks.CLAY,
+        "bentonite_ore");
+    public static final Entry PERLITE_DEPOSIT = deposit("perlite_deposit", Kind.DEPOSIT, "珍珠岩矿层", "Perlite Deposit", Blocks.STONE, "perlite_ore");
+    public static final Entry TALC_DEPOSIT = deposit("talc_deposit", Kind.DEPOSIT, "滑石矿层", "Talc Deposit", Blocks.STONE, "talc_ore");
     public static final Entry TRONA_ORE = block("trona_ore", Kind.CRUST, "天然碱矿", "Trona Ore", Block::new, Blocks.SAND);
     public static final Entry NITRATINE = block("nitratine", Kind.CRUST, "钠硝石矿", "Nitratine Ore", Block::new, Blocks.SAND);
     public static final Entry NITRE_SOIL = block("nitre_soil", Kind.SOIL, "硝土", "Nitre Soil", Block::new, Blocks.DIRT);
@@ -79,13 +88,18 @@ public final class ModWorldBlocks {
 
     private static final Supplier<Item>[] GARDENIA_FRUIT = holder();
     public static final Entry GARDENIA_BUSH = plant("gardenia_bush", Kind.BUSH, "栀子丛", "Gardenia Bush",
-        PlatformPlants.fruitBush(() -> GARDENIA_FRUIT[0].get()), Blocks.SWEET_BERRY_BUSH, "gardenia_fruit", "栀子果", "Gardenia Fruit", GARDENIA_FRUIT);
+        PlatformPlants.harvestPlant(com.tonywww.foodindustrial.world.source.SourceBlocks.gardenia(() -> new ItemStack(GARDENIA_FRUIT[0].get())),
+            false, false), Blocks.SWEET_BERRY_BUSH, "gardenia_fruit", "栀子果", "Gardenia Fruit", GARDENIA_FRUIT);
     private static final Supplier<Item>[] VANILLA_POD = holder();
     public static final Entry VANILLA = plant("vanilla", Kind.POD, "香荚兰", "Vanilla",
         PlatformPlants.podOnJungleLog(), Blocks.COCOA, "vanilla_pod", "香荚兰豆", "Vanilla Pod", VANILLA_POD);
 
     public static final Entry GELIDIUM = block("gelidium", Kind.SEA_PLANT, "石花菜", "Gelidium", PlatformPlants.seaPlant(), Blocks.SEAGRASS);
     public static final Entry EUCHEUMA = block("eucheuma", Kind.SEA_PLANT, "麒麟菜", "Eucheuma", PlatformPlants.seaPlant(), Blocks.SEAGRASS);
+    /** Laver, the own fallback of {@code materials/laver} (foods/23 §5, 2026-11-25). */
+    public static final Entry LAVER = block("laver", Kind.SEA_PLANT, "紫菜", "Laver", PlatformPlants.seaPlant(), Blocks.SEAGRASS);
+    /** Oyster reef (foods/23 §5, 2026-11-25): breaking it gives oysters; Silk Touch or shears keep the block. */
+    public static final Entry OYSTER_REEF = reef("oyster_reef", "蚝礁", "Oyster Reef", "oyster");
 
     public static final Entry STRIPPED_RUBBER_LOG = block("stripped_rubber_log", Kind.LOG, "去皮橡胶木原木", "Stripped Rubber Log", RotatedPillarBlock::new, Blocks.STRIPPED_OAK_LOG);
     public static final Entry STRIPPED_RUBBER_WOOD = block("stripped_rubber_wood", Kind.WOOD, "去皮橡胶木", "Stripped Rubber Wood", RotatedPillarBlock::new, Blocks.STRIPPED_OAK_WOOD);
@@ -119,6 +133,14 @@ public final class ModWorldBlocks {
         return put(new Entry(id, kind, block, item, null, zh, en));
     }
 
+    /** A rock or clay block that drops the lump material {@code lump} (Silk Touch keeps the block). */
+    private static Entry deposit(String id, Kind kind, String zh, String en, Block like, String lump) {
+        Supplier<Block> block = PlatformRegistry.block(id, Block::new, PlatformBlocks.copy(like));
+        Supplier<? extends Item> item = PlatformRegistry.blockItem(id, block, new Item.Properties());
+        Supplier<Item> produce = () -> ModMaterials.get(lump).item().get();
+        return put(new Entry(id, kind, block, item, produce, zh, en));
+    }
+
     /** A plant placed with a separate, separately named item (bush fruit, vanilla pod). */
     private static Entry plant(String id, Kind kind, String zh, String en, Function<BlockBehaviour.Properties, ? extends Block> factory, Block like,
                                String itemId, String itemZh, String itemEn, Supplier<Item>[] itemHolder) {
@@ -127,6 +149,14 @@ public final class ModWorldBlocks {
         itemHolder[0] = item;
         Lang.add(Lang.item(itemId), itemZh, itemEn);
         return put(new Entry(id, kind, block, null, item, zh, en));
+    }
+
+    /** A sea-floor block like seagrass that drops {@code produce} (an I44 raw item) ×1–3. */
+    private static Entry reef(String id, String zh, String en, String produce) {
+        Supplier<Block> block = PlatformRegistry.block(id, PlatformPlants.seaPlant(), PlatformBlocks.copy(Blocks.SEAGRASS));
+        Supplier<? extends Item> item = PlatformRegistry.blockItem(id, block, new Item.Properties());
+        Supplier<Item> drop = () -> com.tonywww.foodindustrial.world.source.SourceBlocks.item(produce);
+        return put(new Entry(id, Kind.REEF, block, item, drop, zh, en));
     }
 
     private static Crop crop(String id, String zh, String en) {
@@ -153,7 +183,7 @@ public final class ModWorldBlocks {
         }
         PlatformCompost.register(VANILLA_POD[0], 0.65F);
         PlatformCompost.register(GARDENIA_FRUIT[0], 0.3F);
-        for (Entry entry : List.of(GELIDIUM, EUCHEUMA, RUBBER_SAPLING, RUBBER_LEAVES)) {
+        for (Entry entry : List.of(GELIDIUM, EUCHEUMA, LAVER, RUBBER_SAPLING, RUBBER_LEAVES)) {
             PlatformCompost.register(entry.item(), 0.3F);
         }
     }
@@ -195,6 +225,7 @@ public final class ModWorldBlocks {
         });
         ModWorldData.bootstrap();
         ModWorldgen.bootstrap();
+        com.tonywww.foodindustrial.world.source.SourceBlocks.bootstrap();
     }
 
     /** Vanilla's oak odds ({@code FireBlock.bootStrap}). */

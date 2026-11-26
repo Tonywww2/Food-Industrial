@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:vanilla_smoking",
+  "recipe": {
+    "type": "foodindustrial:fumigating",
+    "inputs": [
+      {
+        "ingredient": "#foodindustrial:materials/plum"
+      }
+    ],
+    "outputs": [
+      {
+        "item": "foodindustrial:smoked_plum"
+      }
+    ],
+    "requirements": {
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "smoker"
+    ]
+  }
+}

@@ -22,14 +22,34 @@ public final class Environment {
     public static final Capabilities ALL = Capabilities.of(
         "environment.open_sky", "environment.sheltered", "environment.clear_weather", "environment.rain", "environment.daytime",
         "environment.cold_biome", "environment.non_cold_biome", "environment.hot_biome", "environment.ocean_biome",
-        "environment.jungle_biome", "environment.bamboo_biome");
+        "environment.jungle_biome", "environment.bamboo_biome", "environment.coastal");
 
     private Environment() {
     }
 
     /** Environment capabilities at {@code pos}. */
     public static Capabilities at(Level level, BlockPos pos) {
-        return of(PlatformEnvironment.at(level, pos));
+        Capabilities here = of(PlatformEnvironment.at(level, pos));
+        return coastal(level, pos) ? here.with(COASTAL) : here;
+    }
+
+    private static final Capabilities COASTAL = Capabilities.of("environment.coastal");
+
+    /**
+     * Coastal (I43, additives/07 §H16): an ocean or beach biome, and water on one of the six sides. The seawater
+     * pumps need it.
+     */
+    public static boolean coastal(Level level, BlockPos pos) {
+        var biome = level.getBiome(pos);
+        if (!biome.is(net.minecraft.tags.BiomeTags.IS_OCEAN) && !biome.is(net.minecraft.tags.BiomeTags.IS_BEACH)) {
+            return false;
+        }
+        for (net.minecraft.core.Direction side : net.minecraft.core.Direction.values()) {
+            if (level.getFluidState(pos.relative(side)).is(net.minecraft.tags.FluidTags.WATER)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /** Capabilities from the facts of a position. */

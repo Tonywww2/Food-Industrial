@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rice_vinegar",
+    "foodindustrial:aged_vinegar",
+    "foodindustrial:apple_cider_vinegar",
+    "foodindustrial:white_vinegar"
+  ]
+}

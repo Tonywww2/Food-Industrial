@@ -15,7 +15,7 @@
 | [03-first-batch.md](03-first-batch.md) | 第一批 30 种：入选标准、清单、首个可用阶段 | 3 选出第一批 |
 | [04-production-routes.md](04-production-routes.md) | 30 种添加剂的手工 / 传统 / 工业制备路线与反应式 | 4 制备路线 |
 | [05-processes.md](05-processes.md) | 五批路线归纳出的全部 104 项工艺（单元操作 + 反应类型）；香料路线模板见 18 | 4 整理工艺 |
-| [06-machines.md](06-machines.md) | 29 台机器、每台机器的配方类型与覆盖工艺、他模组机器参与；合并方案与架构见 [../machines/](../machines/README.md) | 5 机器设计 |
+| [06-machines.md](06-machines.md) | 30 台机器、每台机器的配方类型与覆盖工艺、他模组机器参与；合并方案与架构见 [../machines/](../machines/README.md) | 5 机器设计 |
 | [07-manual-crafting.md](07-manual-crafting.md) | 手工工具 H01–H09、世界交互 H10–H15、对应的历史做法 | 6 人力制备 |
 | [08-raw-materials.md](08-raw-materials.md) | 原料清单：原版物品 / 他模组标签 / 本模组自制，含菌种、酶、催化剂 | 7 原料列表 |
 | [09-chemical-formulas.md](09-chemical-formulas.md) | 前三批 341 种（RDKit 核对）、第四批 362 种原料、中间体、产物的化学式与 GTCEu 对应；第五批中间体与产物 430 种、香料 1,801 种（第 E 节） | 8 化学式 / GT 联动 |

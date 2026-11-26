@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "tapioca_pearls|dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "tapioca_pearls|raw_pearls"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/granulating_screen"
+    }
+  ]
+}

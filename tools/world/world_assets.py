@@ -35,12 +35,18 @@ ORES = {
     'sulfur_ore': ((125, 125, 125), (224, 208, 60)),
     'selenium_ore': ((125, 125, 125), (170, 60, 50)),  # I31
     'chromite_ore': ((125, 125, 125), (40, 40, 44)),  # I31
+    'ilmenite': ((125, 125, 125), (30, 30, 34)),  # I44
+    'pyrolusite': ((125, 125, 125), (52, 46, 44)),  # I44
 }
 FULL_BLOCKS = {  # plain cube blocks: base colour, speck colour
     'rock_salt': ((214, 190, 190), (245, 236, 236)),
     'trona_ore': ((219, 207, 160), (246, 244, 236)),
     'nitratine': ((219, 207, 160), (238, 238, 246)),
     'nitre_soil': ((134, 96, 67), (232, 232, 224)),
+    'attapulgite_deposit': ((196, 186, 160), (226, 220, 200)),  # I44
+    'bentonite_deposit': ((186, 176, 150), (210, 200, 176)),  # I44
+    'perlite_deposit': ((176, 176, 180), (226, 226, 232)),  # I44
+    'talc_deposit': ((206, 214, 206), (236, 240, 236)),  # I44
 }
 CROPS = {  # produce id -> leaf colour, produce colour
     'stevia': ((70, 150, 60), (110, 180, 90)),
@@ -51,7 +57,7 @@ CROPS = {  # produce id -> leaf colour, produce colour
     'indigo_plant': ((60, 130, 70), (190, 80, 120)),
     'paddy': ((110, 160, 60), (220, 200, 120)),  # 2026-11-12: was 'rice' (11 问题 43)
 }
-SEA_PLANTS = {'gelidium': (170, 40, 60), 'eucheuma': (150, 110, 60)}
+SEA_PLANTS = {'gelidium': (170, 40, 60), 'eucheuma': (150, 110, 60), 'laver': (90, 40, 70), 'oyster_reef': (170, 164, 150)}  # foods/23
 
 
 def write_json(path, data):

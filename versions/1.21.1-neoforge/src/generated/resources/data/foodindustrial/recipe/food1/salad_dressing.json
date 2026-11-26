@@ -1,0 +1,60 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg_yolk"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:foods/vinegar"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/starch"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "whipping",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:salad_dressing"
+    }
+  ],
+  "quality": {
+    "items": [
+      "taste",
+      "state",
+      "preservation"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

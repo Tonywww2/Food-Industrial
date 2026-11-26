@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "#c:ingots/iron",
+    "P": "#minecraft:planks"
+  },
+  "pattern": [
+    "PIP",
+    "P P",
+    "PIP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:oak_barrel"
+  }
+}

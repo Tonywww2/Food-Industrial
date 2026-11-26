@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "starch_noodles|dry_strips"
+    },
+    {
+      "ingredient": "#foodindustrial:containers/paper_bag"
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:starch_noodles"
+  }
+}

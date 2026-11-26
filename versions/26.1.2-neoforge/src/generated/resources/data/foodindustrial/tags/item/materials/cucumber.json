@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cucumber",
+    {
+      "id": "#c:crops/cucumber",
+      "required": false
+    },
+    {
+      "id": "#c:vegetables/cucumber",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/cucumber",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/cucumber",
+      "required": false
+    }
+  ]
+}

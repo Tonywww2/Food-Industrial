@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/tablet_die"
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 50,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "sugar_cube|wet_cube"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

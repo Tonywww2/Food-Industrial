@@ -62,6 +62,10 @@ public final class CultureBenchSlots {
             "minecraft:rabbit"));
         NATURAL_SAMPLES.put("beetroot", List.of("minecraft:beetroot"));
         NATURAL_SAMPLES.put("mushroom", List.of("minecraft:brown_mushroom"));  // edible fungus tissue (I31)
+        // I44 (08 §C 菌藻类, game settings): soda-lake crust for spirulina, salt-lake brine for Dunaliella, cocoa for Lasiodiplodia
+        NATURAL_SAMPLES.put("alkaline_lake", List.of(NS + ":trona_ore"));
+        NATURAL_SAMPLES.put("brine", List.of(NS + ":rock_salt", NS + ":bittern_bucket"));
+        NATURAL_SAMPLES.put("cocoa", List.of("minecraft:cocoa_beans"));
         for (String slot : SLOTS) {
             ENTRIES.put(slot, new LinkedHashSet<>());
         }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:shrimp",
+    {
+      "id": "#c:raw_shrimp",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_shrimp",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_shrimp",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/raw_shrimp",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "alkaline_noodles|dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "alkaline_noodles|wet_noodles"
+  }
+}

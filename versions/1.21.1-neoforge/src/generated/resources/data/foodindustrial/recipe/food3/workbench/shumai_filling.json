@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_glutinous_rice"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/meat_filling"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:light_soy_sauce"
+      }
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "flavor_enhancer"
+        ],
+        "item": "taste"
+      },
+      {
+        "accepts": [
+          "thickener"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "shumai|filling"
+  }
+}

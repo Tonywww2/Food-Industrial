@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:foods/soy_sauce"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/star_anise"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/cinnamon"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 750,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:master_stock_raw"
+    }
+  ],
+  "quality": {
+    "items": [
+      "color"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

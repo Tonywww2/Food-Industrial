@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:baking",
+  "inputs": [
+    {
+      "semi_finished": "wuren_mooncake|blank"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg"
+      }
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:wuren_mooncake"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

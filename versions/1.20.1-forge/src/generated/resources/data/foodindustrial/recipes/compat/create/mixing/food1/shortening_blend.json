@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/hardened_oil"
+    },
+    {
+      "tag": "foodindustrial:chemicals/hardened_oil"
+    },
+    {
+      "amount": 500,
+      "fluidTag": "foodindustrial:refined_soybean_oil"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:shortening_blend"
+    }
+  ]
+}

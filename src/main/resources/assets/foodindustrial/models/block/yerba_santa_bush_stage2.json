@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/yerba_santa_bush_stage2"
+  },
+  "render_type": "minecraft:cutout"
+}

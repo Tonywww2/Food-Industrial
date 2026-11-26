@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "semi_finished": "soda_cracker|risen_dough"
+    }
+  ],
+  "mode": "sheeting",
+  "outputs": [
+    {
+      "semi_finished": "soda_cracker|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

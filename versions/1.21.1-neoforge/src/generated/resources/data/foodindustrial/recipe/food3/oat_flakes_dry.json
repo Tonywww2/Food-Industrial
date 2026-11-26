@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "oat_flakes|wet_flakes"
+    }
+  ],
+  "outputs": [
+    {
+      "semi_finished": "oat_flakes|dry_flakes"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

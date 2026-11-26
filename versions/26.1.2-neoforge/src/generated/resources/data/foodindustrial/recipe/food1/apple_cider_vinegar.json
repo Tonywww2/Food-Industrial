@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/acetobacter",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:apple_wine"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:apple_cider_vinegar"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

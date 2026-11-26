@@ -1,0 +1,42 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:invert_syrup"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:kansui"
+      }
+    }
+  ],
+  "mode": "dough_mixing",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:mooncake_dough"
+    }
+  ],
+  "quality": {},
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

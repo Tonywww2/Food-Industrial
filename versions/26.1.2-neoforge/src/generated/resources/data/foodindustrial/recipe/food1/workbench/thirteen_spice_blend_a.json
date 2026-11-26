@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:materials/star_anise"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/fennel_seed"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/sichuan_pepper"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/galangal_root"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/citrus_peel"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/black_pepper"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/nutmeg"
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "semi_finished": "thirteen_spice|spice_blend_a"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:chemicals/sorbitol"
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "sweetener"
+        ],
+        "item": "taste"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "tabletop_sweetener|powder"
+  }
+}

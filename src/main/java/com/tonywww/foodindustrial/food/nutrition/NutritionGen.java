@@ -32,7 +32,8 @@ import java.util.stream.Stream;
  * entries the finished-product batches register ({@link #addProducts}). Generated files are never edited by hand.
  * <p>
  * Inputs may restrict entries to some Minecraft versions with {@code only_on}; a mod that is not on the node
- * produces no file. Every written file is checked: all six component keys, {@code basis} with {@code food},
+ * produces no file. Every written file is checked: all required component keys (the mod's own products may leave
+ * out what their composition source lacks, I45), {@code basis} with {@code food},
  * {@code sources} and {@code confirmed} on hand-made entries, items that exist on the node, no item in two
  * entries; a failed check fails the data run. A report lists every item with its food values for comparison.
  */
@@ -98,8 +99,8 @@ public final class NutritionGen {
         for (Component component : Component.all()) {
             report.append(' ').append(component.key()).append(" |");
         }
-        report.append(" impurity | Source |\n|---|---|---|---|---|");
-        report.append("---|".repeat(Component.all().length + 1)).append("---|\n");
+        report.append(" impurity | curing nitrite | misuse nitrite | No data | Source |\n|---|---|---|---|---|");
+        report.append("---|".repeat(Component.all().length + 4)).append("---|\n");
         for (NutritionFile.Entry entry : file.entries()) {
             for (String id : entry.items()) {
                 Optional<Item> item = PlatformTags.item(id);
@@ -113,6 +114,9 @@ public final class NutritionGen {
                     report.append(' ').append(NutritionCommands.plain(entry.amount(component))).append(" |");
                 }
                 report.append(' ').append(NutritionCommands.plain(entry.impurity())).append(" |");
+                report.append(' ').append(NutritionCommands.plain(entry.curingNitrite())).append(" |");
+                report.append(' ').append(NutritionCommands.plain(entry.misuseNitrite())).append(" |");
+                report.append(' ').append(entry.missing() == 0 ? "–" : keys(entry.missing())).append(" |");
                 report.append(' ').append(source(entry)).append(" |\n");
             }
         }
@@ -174,7 +178,7 @@ public final class NutritionGen {
         return List.copyOf(files.values());
     }
 
-    /** Hand-made entries name all six keys and carry a basis with food, sources and confirmation. */
+    /** Hand-made entries name every required key and carry a basis with food, sources and confirmation. */
     private static void checkHandEntries(String source, NutritionFile file) {
         for (NutritionFile.Entry entry : file.entries()) {
             String first = entry.items().get(0);
@@ -209,7 +213,8 @@ public final class NutritionGen {
         }
         Set<String> items = new HashSet<>();
         for (NutritionFile.Entry entry : file.entries()) {
-            if (entry.missing() != 0) {
+            // the mod's products may leave out what their composition source does not give (I45: 留空, never 0)
+            if (entry.missing() != 0 && !name.equals(PRODUCTS)) {
                 throw new IllegalStateException("Generated nutrition data " + id + ": " + entry.items().get(0) + " lacks " + keys(entry.missing()));
             }
             for (String item : entry.items()) {

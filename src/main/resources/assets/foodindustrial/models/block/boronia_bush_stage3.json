@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/boronia_bush_stage3"
+  },
+  "render_type": "minecraft:cutout"
+}

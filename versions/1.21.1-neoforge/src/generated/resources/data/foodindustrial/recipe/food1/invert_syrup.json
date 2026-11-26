@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:boiling",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:chemicals/citric_acid"
+    },
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:invert_syrup"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

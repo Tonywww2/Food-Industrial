@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "croissant|dough"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:foods/butter"
+    }
+  ],
+  "mode": "sheeting",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "croissant|laminated"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

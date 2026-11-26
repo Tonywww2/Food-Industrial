@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:soda_lye",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:potash_lye",
+      "required": false
+    }
+  ]
+}

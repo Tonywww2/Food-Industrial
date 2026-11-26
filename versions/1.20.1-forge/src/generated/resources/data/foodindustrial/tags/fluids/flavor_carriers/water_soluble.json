@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:propylene_glycol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethanol",
+      "required": false
+    }
+  ]
+}

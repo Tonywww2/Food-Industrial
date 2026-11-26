@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "self_rising_flour|bulk"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/paper_bag"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:self_rising_flour"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:confectionery_line",
+  "name": "book.foodindustrial.manual.entry.confectionery_line",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:confectionery_line",
+      "text": "book.foodindustrial.manual.entry.confectionery_line.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:confectionery_line[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "A A",
+            "A A",
+            "A A",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.confectionery_line"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.confectionery_line.structure"
+    }
+  ],
+  "sortnum": 15
+}

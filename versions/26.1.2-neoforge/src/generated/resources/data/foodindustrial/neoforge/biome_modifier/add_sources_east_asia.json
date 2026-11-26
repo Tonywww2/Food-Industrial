@@ -1,0 +1,25 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:cherry_grove",
+    "minecraft:forest",
+    "minecraft:flower_forest"
+  ],
+  "features": [
+    "foodindustrial:vitex_bush",
+    "foodindustrial:wild_rose_bush",
+    "foodindustrial:sichuan_pepper_bush",
+    "foodindustrial:mulberry_tree",
+    "foodindustrial:honeylocust_tree",
+    "foodindustrial:hawthorn_tree",
+    "foodindustrial:ume_tree",
+    "foodindustrial:jujube_tree",
+    "foodindustrial:torreya_tree",
+    "foodindustrial:pagoda_tree_tree",
+    "foodindustrial:apricot_tree",
+    "foodindustrial:yuzu_tree",
+    "foodindustrial:peach_tree",
+    "foodindustrial:chinese_cypress_tree"
+  ],
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:foods/cooking_oil"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/sichuan_pepper"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:sichuan_pepper_oil"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

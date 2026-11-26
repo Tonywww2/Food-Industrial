@@ -16,6 +16,7 @@
     {
       "id": "#forge:crops/grape",
       "required": false
-    }
+    },
+    "foodindustrial:grape"
   ]
 }

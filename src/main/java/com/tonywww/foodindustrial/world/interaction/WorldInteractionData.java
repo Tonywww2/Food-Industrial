@@ -71,6 +71,19 @@ final class WorldInteractionData {
         nitre.add("requirements", requirements);
         sink.json(PlatformDatagen.Kind.RECIPE, NS, "world/nitre_soil", nitre);
 
+        // W03 (I43, additives/07 §H16, M54): a batch of seawater on the coast
+        JsonObject seawater = new JsonObject();
+        seawater.addProperty("type", NS + ":pumping");
+        JsonObject result = new JsonObject();
+        result.addProperty("fluid", NS + ":seawater");
+        result.addProperty("amount", 1000);
+        seawater.add("result", result);
+        JsonObject coast = new JsonObject();
+        JsonArray coastal = new JsonArray();
+        coastal.add("coastal");
+        coast.add("environment", coastal);
+        seawater.add("requirements", coast);
+        sink.json(PlatformDatagen.Kind.RECIPE, NS, "world/seawater", seawater);
         harvest(sink, "latex", "#" + NS + ":harvest/latex");
         harvest(sink, "resin", "#" + NS + ":harvest/resin");
     }

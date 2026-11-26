@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/mooncake_dough"
+    },
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:materials/red_bean_paste"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "semi_finished": "cantonese_mooncake|blank"
+  },
+  "tools": [
+    "#foodindustrial:molds/mooncake_mold"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "glass_noodles|cooked_strands"
+    }
+  ],
+  "outputs": [
+    {
+      "semi_finished": "glass_noodles|dry_strands"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

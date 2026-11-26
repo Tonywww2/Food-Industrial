@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "inputs": [
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:materials/barley"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/wheat"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:daqu"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 24000
+}

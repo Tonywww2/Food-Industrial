@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:baking",
+  "inputs": [
+    {
+      "semi_finished": "cantonese_mooncake|blank"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg"
+      }
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:cantonese_mooncake"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:mushroom"
+    "foodindustrial:mushroom",
+    {
+      "id": "minecraft:brown_mushroom",
+      "required": false
+    }
   ]
 }

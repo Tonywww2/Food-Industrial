@@ -109,8 +109,10 @@ dependencies {
     project.properties.keys.filter { it.startsWith("deps.mod.") }.sorted().forEach { key ->
         implementation(prop(key))
     }
-    // Dev runtime only (deps.dev.<name>): mods that fill material tags for the dev runs, never compiled against.
-    project.properties.keys.filter { it.startsWith("deps.dev.") }.sorted().forEach { key ->
+    // Dev runtime only (deps.dev.<name>): mods that fill material tags for the dev runs, and EMI; never compiled
+    // against. -PfiWithout=<name>,… leaves them out too (a JEI-only run: -PfiWithout=emi, 2026-11-25).
+    project.properties.keys.filter { it.startsWith("deps.dev.") && it.removePrefix("deps.dev.") !in names(optProp("fiWithout")) }
+        .sorted().forEach { key ->
         runtimeOnly(prop(key))
     }
     // Optional mods (deps.opt.<name>): compiled against always, in the dev runtime only when named in
@@ -195,6 +197,16 @@ tasks {
         filesMatching(listOf("META-INF/neoforge.mods.toml", "pack.mcmeta")) { expand(props) }
         // NeoForge ships META-INF/neoforge.mods.toml; the Forge metadata belongs to the 1.20.1 node.
         exclude("META-INF/mods.toml")
+    }
+
+    // Modstitch's task parses the processed neoforge.mods.toml and always writes it back, reformatted, even
+    // with nothing to add. That changed an output of processResources, so every build copied all the
+    // resources again (2026-11-18). It runs only when Modstitch was given something to append; the mixin
+    // config is listed in neoforge.mods.toml itself.
+    withType<dev.isxander.modstitch.base.AppendModMetadataTask>().configureEach {
+        onlyIf("Modstitch has mixin configs or class tweakers to append") {
+            mixins.get().isNotEmpty() || classTweakers.get().isNotEmpty()
+        }
     }
 
     withType<Jar>().configureEach {

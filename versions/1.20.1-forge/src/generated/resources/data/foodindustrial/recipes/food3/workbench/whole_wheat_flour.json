@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_bran"
+      }
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:whole_wheat_flour"
+  }
+}

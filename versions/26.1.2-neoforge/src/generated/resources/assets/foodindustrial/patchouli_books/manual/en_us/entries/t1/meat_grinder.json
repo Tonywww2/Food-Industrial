@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:meat_grinder",
+  "name": "book.foodindustrial.manual.entry.meat_grinder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:meat_grinder",
+      "text": "book.foodindustrial.manual.entry.meat_grinder.text"
+    }
+  ],
+  "sortnum": 14
+}

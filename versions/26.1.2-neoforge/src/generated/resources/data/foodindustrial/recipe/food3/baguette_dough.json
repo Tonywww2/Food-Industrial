@@ -1,0 +1,44 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "semi_finished": "baguette|poolish"
+    },
+    {
+      "count": 3,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    }
+  ],
+  "mode": "dough_mixing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "baguette|dough"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "flour_treatment",
+          "ascorbic_acid"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

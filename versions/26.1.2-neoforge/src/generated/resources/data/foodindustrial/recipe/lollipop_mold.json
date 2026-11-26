@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": "#c:nuggets/iron",
+    "S": "#c:rods/wooden"
+  },
+  "pattern": [
+    "NSN",
+    "N N"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:lollipop_mold"
+  }
+}

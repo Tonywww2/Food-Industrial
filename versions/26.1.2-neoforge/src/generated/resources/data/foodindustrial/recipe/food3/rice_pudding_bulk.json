@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "rice_pudding|congee"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:rice_pudding"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "thickener"
+        ],
+        "item": "state"
+      },
+      {
+        "accepts": [
+          "sweet_flavoring"
+        ],
+        "item": "taste"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

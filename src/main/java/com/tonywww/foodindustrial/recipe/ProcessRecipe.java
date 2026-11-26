@@ -67,6 +67,7 @@ public final class ProcessRecipe {
     private final List<VanillaDevice> vanillaDevices;
     private final Map<String, EnvironmentFactor> environmentFactors;
     private final Optional<Plate> plate;
+    private final Optional<com.tonywww.foodindustrial.food.quality.QualitySpec> quality;
 
     private final Capabilities required;
     private final int itemInputs;
@@ -90,6 +91,15 @@ public final class ProcessRecipe {
                          Optional<List<Double>> purityRange, int time, int energy, Conditions conditions, Optional<String> mode,
                          int manualActions, List<VanillaDevice> vanillaDevices, List<Catalyst> catalysts,
                          Map<String, EnvironmentFactor> environmentFactors, Optional<Plate> plate) {
+        this(type, inputs, outputs, puritySources, purityRange, time, energy, conditions, mode, manualActions, vanillaDevices, catalysts,
+            environmentFactors, plate, Optional.empty());
+    }
+
+    public ProcessRecipe(ProcessType type, List<ProcessInput> inputs, List<ProcessOutput> outputs, Optional<List<Integer>> puritySources,
+                         Optional<List<Double>> purityRange, int time, int energy, Conditions conditions, Optional<String> mode,
+                         int manualActions, List<VanillaDevice> vanillaDevices, List<Catalyst> catalysts,
+                         Map<String, EnvironmentFactor> environmentFactors, Optional<Plate> plate,
+                         Optional<com.tonywww.foodindustrial.food.quality.QualitySpec> quality) {
         this.type = type;
         this.inputs = List.copyOf(inputs);
         this.outputs = List.copyOf(outputs);
@@ -104,6 +114,7 @@ public final class ProcessRecipe {
         this.catalysts = List.copyOf(catalysts);
         this.environmentFactors = Map.copyOf(environmentFactors);
         this.plate = plate;
+        this.quality = quality;
         this.required = mode.map(m -> conditions.required().with(Capabilities.of("mode." + m))).orElse(conditions.required());
         int items = 0;
         for (ProcessInput input : inputs) {
@@ -130,9 +141,11 @@ public final class ProcessRecipe {
             StrictCodecs.optional("vanilla_devices", VanillaDevice.CODEC.listOf(), List.of()).forGetter(ProcessRecipe::vanillaDevices),
             StrictCodecs.optional("catalyst", Catalyst.ONE_OR_MORE, List.of()).forGetter(ProcessRecipe::catalysts),
             StrictCodecs.optional("environment_factors", EnvironmentFactor.MAP, Map.of()).forGetter(ProcessRecipe::environmentFactors),
-            StrictCodecs.optional("plate", Plate.CODEC).forGetter(ProcessRecipe::plate)
-        ).apply(instance, (inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts, factors, plate) ->
-            new ProcessRecipe(type, inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts, factors, plate)))
+            StrictCodecs.optional("plate", Plate.CODEC).forGetter(ProcessRecipe::plate),
+            StrictCodecs.optional("quality", com.tonywww.foodindustrial.food.quality.QualitySpec.CODEC).forGetter(ProcessRecipe::quality)
+        ).apply(instance, (inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts, factors, plate, quality) ->
+            new ProcessRecipe(type, inputs, outputs, sources, range, time, energy, conditions, mode, manual, vanilla, catalysts, factors, plate,
+                quality)))
             .flatXmap(ProcessRecipe::validate, DataResult::success);
     }
 
@@ -440,6 +453,26 @@ public final class ProcessRecipe {
     /** The culture plate of an M30 recipe (I17), if any. */
     public Optional<Plate> plate() {
         return plate;
+    }
+
+    /** The ingredient step of a finished product (foods/05 §2, I38), if this recipe is one. */
+    public Optional<com.tonywww.foodindustrial.food.quality.QualitySpec> quality() {
+        return quality;
+    }
+
+    /**
+     * Whether the main product grows with the device's yield: physical types, unless the main product is a finished
+     * product (foods/05 §4.2: ×1.0 on every tier).
+     */
+    public boolean scalesYield() {
+        if (!type.yieldScalable() || outputs.isEmpty()) {
+            return false;
+        }
+        ProcessOutput main = outputs.get(0);
+        if (main.isFluid()) {
+            return !com.tonywww.foodindustrial.food.FoodLine.isProduct(main.fluid());
+        }
+        return main.isSemi() || !com.tonywww.foodindustrial.food.FoodLine.isProduct(main.item());
     }
 
     /**

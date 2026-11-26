@@ -2,7 +2,8 @@
 
 | 项 | 内容 |
 | --- | --- |
-| 状态 | 已完成 |
+| 状态 | 进行中 |
+| 状态说明 | 成品线新增能力待随 I41 验收 |
 | 阶段 | D 设备 |
 | 依赖 | I16 |
 | 原文档 | [additives/06 §T4 生物 / 精细](../additives/06-machines.md)、[machines/03 §3](../machines/03-io-layout.md)、[additives/15 §机器](../additives/15-batch-4.md)、[additives/08 §C 菌种与酶](../additives/08-raw-materials.md) |
@@ -65,6 +66,8 @@
   - 规格中由实现方拟定的部分（[additives/06 §T4 生物 / 精细：操作与实现规格（I17）](../additives/06-machines.md)）：在位灭菌 100 tick；染菌 30%、主产物减半；中断的判定（断电、缺空气、红石、结构不成形）；M29 的结构与模式；M30 的界面与按钮、4 个菌落、鉴定 200 tick 与 40 FE/t、平板配方字段写法、平板待挑取时扩培暂停；菌落外观按 ID 散列分配；M31 的模式与能力
   - 名称与描述（Aseptic Fermenter、Culture Bench、Membrane Separator、Clean Frame、Sterile Vessel Wall、Membrane Module；模式词英文；界面文字）
   - 合成配方（含 T4 模块）、占位贴图；膜组件的物品标签 `foodindustrial:catalysts/membrane`；03 的 M30 输入槽由 2 改为 4
+
+- 成品线的新增能力（2026-11-19，[I41](I41-food-machines-t1.md)、[machines/05 §2.3](../machines/05-final-design.md)）：M29 新增酶解（R11）；随 I41 验收后改回“已完成”
 
 ## 待定
 

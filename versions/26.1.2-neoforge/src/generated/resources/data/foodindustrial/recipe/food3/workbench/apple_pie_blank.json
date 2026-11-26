@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/pie_crust"
+    },
+    {
+      "count": 2,
+      "semi_finished": "apple_pie|filling"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "apple_pie|blank"
+  },
+  "tools": [
+    "#foodindustrial:molds/filling_mold"
+  ]
+}

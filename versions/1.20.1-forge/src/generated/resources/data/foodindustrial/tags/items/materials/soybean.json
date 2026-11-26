@@ -16,6 +16,7 @@
     {
       "id": "#c:seeds/soybean",
       "required": false
-    }
+    },
+    "foodindustrial:soybean"
   ]
 }

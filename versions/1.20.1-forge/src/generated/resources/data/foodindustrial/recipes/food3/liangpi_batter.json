@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:extracting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:liangpi_batter"
+    },
+    {
+      "item": "foodindustrial:gluten",
+      "purity": {
+        "mode": "source"
+      }
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

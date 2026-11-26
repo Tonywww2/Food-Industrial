@@ -221,7 +221,7 @@ public final class TextChecks {
     }
 
     private static boolean isName(String key) {
-        return key.startsWith("item.") || key.startsWith("block.") || key.startsWith("fluid_type.");
+        return key.startsWith("item.") || key.startsWith("block.") || key.startsWith("fluid_type.") || key.startsWith("tag.");
     }
 
     /** Keys shown as single lines (tooltips, JEI, GUI, conditions, grades). */

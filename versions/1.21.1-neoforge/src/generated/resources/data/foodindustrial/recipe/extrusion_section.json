@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "foodindustrial:extrusion_die"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "IPI",
+    "RER",
+    "IPI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:extrusion_section"
+  }
+}

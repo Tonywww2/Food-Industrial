@@ -1,0 +1,44 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "amount": 500,
+      "fluidTag": "foodindustrial:water"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:foods/vinegar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:mustard"
+    }
+  ]
+}

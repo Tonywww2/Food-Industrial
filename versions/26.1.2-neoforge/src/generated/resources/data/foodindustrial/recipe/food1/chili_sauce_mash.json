@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": "#foodindustrial:materials/chili"
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    }
+  ],
+  "mode": "marinating",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "chili_sauce|chili_mash"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

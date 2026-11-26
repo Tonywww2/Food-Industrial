@@ -2,7 +2,8 @@
 
 | 项 | 内容 |
 | --- | --- |
-| 状态 | 已完成 |
+| 状态 | 进行中 |
+| 状态说明 | 成品线新增能力待随 I41 验收 |
 | 阶段 | D 设备 |
 | 依赖 | I08、I09、I07、I29 |
 | 原文档 | [additives/07](../additives/07-manual-crafting.md)、[machines/01 §2](../machines/01-recipe-types.md)、[additives/10 §2.1](../additives/10-purity-jei-ae2.md) |
@@ -75,6 +76,9 @@
     - 状态栏“缺少”列出条件最多、被挡住的那条配方缺的条件（如开口陶坛里的盐水腌菜显示“缺少：隔绝空气”）
   - 未做：H10 营火烧灰属 I13（2026-11-10 已在 I13 完成）；JEI 类别属 I22；H05 木炭层（07 §暂不做）
 
+- 成品线的新增能力（2026-11-19，[I41](I41-food-machines-t1.md)、[machines/05 §2.3](../machines/05-final-design.md)）：H03 陶锅、铁锅加 R21、R22、R24（铁锅另加 R23 焙炒），提供成品线的锅用模式；H04 陶坛加 R25 与 R28 冷却（寒冷群系或挨着冰）；H07 晾晒架加 R28 冷冻（寒冷群系露天）；随 I41 验收后改回“已完成”
+
 ## 待定
 
-- 无。操作与实现规格见 [additives/07 §操作与实现规格（I12）](../additives/07-manual-crafting.md)（2026-11-10 定）；H15 木瓜乳汁暂不做
+- 操作与实现规格见 [additives/07 §操作与实现规格（I12）](../additives/07-manual-crafting.md)（2026-11-10 定）；H15 木瓜乳汁暂不做
+- H16 手摇海水泵（W03 取水）为 2026-11-18 新增设计，规格见 [additives/07 §H16 手摇海水泵、M54 电动海水泵](../additives/07-manual-crafting.md)，已在 [I43](I43-seawater-pumps.md) 实装（2026-11-19）

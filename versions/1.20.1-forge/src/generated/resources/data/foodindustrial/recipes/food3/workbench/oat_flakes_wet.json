@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "oat_flakes|steamed_oats"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "oat_flakes|wet_flakes"
+  }
+}

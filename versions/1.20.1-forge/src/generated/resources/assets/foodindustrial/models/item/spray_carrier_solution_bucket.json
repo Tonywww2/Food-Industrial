@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:spray_carrier_solution",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:ketchup_puree"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:ketchup_concentrate"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

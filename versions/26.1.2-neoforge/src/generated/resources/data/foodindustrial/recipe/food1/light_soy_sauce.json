@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:sterilizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1500,
+        "tag": "foodindustrial:light_soy_sauce_raw"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "pasteurizing",
+  "outputs": [
+    {
+      "amount": 1500,
+      "fluid": "foodindustrial:light_soy_sauce"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

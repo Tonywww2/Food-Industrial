@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pvdc",
+    {
+      "id": "#forge:dusts/pvdc",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pvdc",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/pvdc",
+      "required": false
+    },
+    {
+      "id": "#c:gems/pvdc",
+      "required": false
+    }
+  ]
+}

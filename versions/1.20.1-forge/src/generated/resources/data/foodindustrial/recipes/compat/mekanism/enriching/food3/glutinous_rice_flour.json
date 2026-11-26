@@ -1,0 +1,22 @@
+{
+  "type": "mekanism:enriching",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "ingredient": {
+      "tag": "foodindustrial:materials/glutinous_rice"
+    }
+  },
+  "output": {
+    "count": 1,
+    "item": "foodindustrial:glutinous_rice_flour"
+  }
+}

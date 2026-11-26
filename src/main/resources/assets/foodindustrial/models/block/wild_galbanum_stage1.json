@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/wild_galbanum_stage1"
+  },
+  "render_type": "minecraft:cutout"
+}

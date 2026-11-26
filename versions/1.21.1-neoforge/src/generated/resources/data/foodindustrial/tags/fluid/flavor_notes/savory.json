@@ -1,0 +1,829 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:clove_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:clove_bud_tincture",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:clove_bud_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:douchi_tincture",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:cinnamon_bark_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:cinnamon_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pimento_leaf_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:kelp_extract",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:clove_stem_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pimenta_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:west_indian_bay_extract",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:west_indian_bay_oil",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:allspice_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:clove_bud_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:katsuobushi_co2_extract",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:douchi_oleoresin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:oct_1_en_3_ol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_2_nonenol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:cis_2_nonenol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_trans_2_4_decadienol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:eugenol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:guaiacol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethylguaiacol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propionaldehyde",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_trans_2_4_decadienal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_trans_2_4_undecadienal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trans_trans_2_4_dodecadienal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyltridecanal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:amyl_vinyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:tetrahydrothiophenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mesifurane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercaptobutanone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyloctenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetylthio_methylfuran",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylhexanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylnonanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_propionate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_succinate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_3_furanthiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_oleate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_isobutyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentylpyridine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propylidenephthalide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthio_propanol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_butanethiol_2_1",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hexanedithiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:furfuryl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_trisulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dibutyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:difurfuryl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:difurfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:o_methylthiophenol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthio_propionaldehyde",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:furfuryl_thioacetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trimethylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_trithiolane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylpyrazine_2_3",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylpyrazine_2_5",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_ethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_methylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylpyridine_2_6",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiazole_4",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hydroxyethyl_methylthiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_methylthiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isopropyl_methylthiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:benzothiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pyridine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentanethiol_2",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:o_toluenethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_furfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:bis_methylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylthiophenol_2_6",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_mercaptopropionate_3",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_thiobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_thiofuroate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_trithiane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:piperidine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:phenethylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_dithiolane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylthiazole_4_5",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercaptohexanol_3",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trithioacetone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylpyrazine_2_6",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_butanethiol_3_2",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyltetrahydrofuranthiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propane_1_3_dithiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:allyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_3_methylbutanol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_methylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_ethyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diallyl_trisulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diallyl_tetrasulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_methylthio_furan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_methylbutyl_formate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:s_methyl_thioacetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_dihydrocyclopentapyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pyrrolidine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ammonium_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_mercaptopropionate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylbenzofuran",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:z4_dodecenal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:decenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isopropyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_methylpentanone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethanedithiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:prenyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isobutyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:benzenethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentylthiophene",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_trithiolane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isoamyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_propyl_trisulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:thiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentenone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_methylthioacetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:triisobutyl_dithiazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methionyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:triethylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propionylthiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:alpha_methylbenzyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:bis_methylthio_methane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyloctanoic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:nonadienol_3e_6z",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthioethyl_methyl_ketone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercaptoacetone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isopentylidene_isopentylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hydrogen_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:allyl_propyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:benzyl_methyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methoxyeugenol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:o_methoxythiophenol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:sec_heptyl_mercaptan",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trimethyloxazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylfuran",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dipropenyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methialdol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butenyl_methyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diisopropyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hexanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butylamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:isopropanolamine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:tridecatrienal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pyrroline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propionyl_pyrroline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_tetrathiane_trithiolane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:furfurylthio_pentanone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:nonadiene",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_2_methylpyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiazolylethyl_hexanoate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiazolylethyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercaptobutanol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hydroxybutyl_mercaptobutyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_2_pentanone",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:thiolactic_acid",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_furylpropionate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:furfuryl_thiopropionate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:tetrahydrofurfuryl_acetate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_furfurylthio_pyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethoxythiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:acetyl_dimethylthiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butane_2_3_dithiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_methylthio_pyrazine",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_acetoxyethyl_thiazole",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_3_furanthiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:butane_1_2_dithiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:bis_dimethylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propyl_methylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dicyclohexyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:furfuryl_isopropyl_sulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:ethyl_dimethyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:sec_butyl_dimethyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pyrazine_ethanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:octane_1_8_dithiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethyl_thioacetoxyfuran",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_methylpentanal",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_2_methylbutanol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:keto_butanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiazolylethyl_isobutyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methyl_isopentyl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:geranyl_cyclopropanecarboxamide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:propionyl_thiazoline",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:mercapto_2_pentanone_4",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:trithiaheptane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimercaptomethane",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:pentanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:bis_methylfuryl_tetrasulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_3_methylpyrazine_2_5",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:dimethylthiazole_2_5",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthiomethyl_butyrate",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:methylthioethanol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:diethyl_trisulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:nonadienol_2_4",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:cyclopentanethiol",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:furfuryl_methylfuryl_disulfide",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:hexylpyridine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/leavened_dough"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/scallion"
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "semi_finished": "flower_roll|blank"
+  }
+}

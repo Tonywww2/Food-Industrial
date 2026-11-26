@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "semi_finished": "chicken_bouillon_powder|wet_mix"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "semi_finished": "chicken_bouillon_powder|wet_granules"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/granulating_screen"
+    }
+  ]
+}

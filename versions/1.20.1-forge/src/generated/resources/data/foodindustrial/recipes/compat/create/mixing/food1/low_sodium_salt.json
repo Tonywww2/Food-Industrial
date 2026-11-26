@@ -1,0 +1,45 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:chemicals/potassium_chloride"
+    },
+    {
+      "tag": "foodindustrial:chemicals/potassium_chloride"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "foodindustrial:low_sodium_salt"
+    }
+  ]
+}

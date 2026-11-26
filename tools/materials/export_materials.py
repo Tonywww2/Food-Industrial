@@ -17,6 +17,10 @@ against 10 §1.5), and the category bounds of 10 §1.4, exported to purity_categ
 bears a stored purity when it has a category other than K0, or K0 with a source purity
 (additives/10 §1.3).
 
+The food intermediates of the product batches (tools/foods/intermediates.json, category "food", I47) follow the additive
+materials in materials.json (2026-11-25, user: one material table; before, a separate food_intermediates.json). Their ids must
+not clash with a product of foods.json (tools/foods/export_foods.py) or another material.
+
 tag_imports.json (I06): the 08 §A/§B tables (one tag per row, per-node content columns) plus the
 catalyst tags of 09 chemicals listed in the 08 §C catalyst table, and an empty tag for each crop or ore
 of 08 §C that has no source yet (I30), so recipes can already name it. Only backticked entries are
@@ -38,6 +42,9 @@ DOCS = ROOT / 'docs' / 'additives'
 OUT = ROOT / 'src' / 'main' / 'resources' / 'foodindustrial' / 'materials.json'
 TAGS_OUT = OUT.parent / 'tag_imports.json'
 CATEGORIES_OUT = OUT.parent / 'purity_categories.json'
+FOODS = OUT.parent / 'foods.json'
+INTERMEDIATES = ROOT / 'tools' / 'foods' / 'intermediates.json'
+COLOUR = re.compile(r'^#[0-9A-F]{6}$')
 
 STATES = {'固': 'solid', '液': 'liquid', '气': 'gas', '溶液': 'solution', '物品': 'solid', '流体': 'liquid'}
 CATEGORIES = {'化学品': 'chemical', '催化剂': 'catalyst', '原料': 'raw', '菌种': 'culture', '酶': 'enzyme', '耗材': 'consumable',
@@ -316,6 +323,28 @@ def only_deferred(note, deferred):
     return bool(codes) and codes <= deferred and not others
 
 
+def food_intermediates(taken):
+    """tools/foods/intermediates.json -> rows of the material table (category food, no purity, I47)."""
+    products = {food['id'] for food in json.loads(FOODS.read_text(encoding='utf-8'))['foods']}
+    rows = []
+    for entry in json.loads(INTERMEDIATES.read_text(encoding='utf-8'))['intermediates']:
+        mid = entry['id']
+        if not re.fullmatch(r'[a-z][a-z0-9_]*', mid) or mid in products or mid in taken:
+            sys.exit(f'intermediates.json: bad id, or a product or material already has it: {mid}')
+        if not COLOUR.match(entry['color']):
+            sys.exit(f'intermediates.json: {mid}: bad colour')
+        solid = entry['state'] == 'solid'
+        if (entry['texture'] in ('liquid', 'viscous')) == solid:
+            sys.exit(f'intermediates.json: {mid}: texture {entry["texture"]} does not fit {entry["state"]}')
+        name = {'zh': entry['zh'], 'en': entry['en']}
+        rows.append({'id': mid, 'name': name, 'professional': dict(name), 'common': None, 'formula': None,
+                     'state': entry['state'], 'category': 'food', 'color': entry['color'], 'gtceu': None,
+                     'tag': f'materials/{mid}' if solid else mid, 'hazards': [], 'source': entry['doc'],
+                     'purity': None, 'bearer': False, 'texture': entry['texture']})
+        taken.add(mid)
+    return rows
+
+
 def main():
     materials = []
     deferred = deferred_codes()
@@ -412,6 +441,7 @@ def main():
             sys.exit(f'Invalid id: {m["id"]}')
         if m['state'] != 'solid' and m['color'] is None:
             sys.exit(f'Fluid without colour: {m["id"]}')
+    materials += food_intermediates({m['id'] for m in materials})
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({'materials': materials, 'pending_sources': sorted(set(no_source))}, ensure_ascii=False, indent=1) + '\n',
                    encoding='utf-8')

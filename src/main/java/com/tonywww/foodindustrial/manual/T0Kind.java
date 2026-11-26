@@ -18,16 +18,19 @@ import java.util.Set;
  */
 public enum T0Kind {
     CLAY_POT("clay_pot", "陶锅", "Clay Pot", "放在点燃的营火上熬煮，空手右键搅拌", "Boils over a lit campfire; stir with an empty hand",
-        2, 1, 4000, 0, false, true,
-        Set.of(ProcessTypes.EXTRACTING, ProcessTypes.BOILING, ProcessTypes.CRYSTALLIZING, ProcessTypes.KILN, ProcessTypes.REACTING),
-        Capabilities.of("temperature.heated")),
+        4, 3, 4000, 1, false, true,
+        Set.of(ProcessTypes.EXTRACTING, ProcessTypes.BOILING, ProcessTypes.CRYSTALLIZING, ProcessTypes.KILN, ProcessTypes.REACTING,
+            ProcessTypes.STERILIZING, ProcessTypes.COOKING, ProcessTypes.FRYING),
+        Capabilities.of("temperature.heated").with(potModes())),
     IRON_POT("iron_pot", "铁锅", "Iron Pot", "放在点燃的营火上熬煮、焦化，空手右键搅拌", "Boils and chars over a lit campfire; stir with an empty hand",
-        2, 1, 4000, 0, false, true,
-        Set.of(ProcessTypes.EXTRACTING, ProcessTypes.BOILING, ProcessTypes.CRYSTALLIZING, ProcessTypes.KILN, ProcessTypes.REACTING),
-        Capabilities.of("temperature.heated", "method.open_flame")),
+        4, 3, 4000, 1, false, true,
+        Set.of(ProcessTypes.EXTRACTING, ProcessTypes.BOILING, ProcessTypes.CRYSTALLIZING, ProcessTypes.KILN, ProcessTypes.REACTING,
+            ProcessTypes.STERILIZING, ProcessTypes.COOKING, ProcessTypes.FRYING, ProcessTypes.BAKING),
+        Capabilities.of("temperature.heated", "method.open_flame", "mode.pan_roasting").with(potModes())),
     CROCK("crock", "陶坛", "Crock", "静置发酵、腌渍、浸提，空手右键开口或封口", "Ferments, pickles and steeps; right-click to open or seal",
-        2, 2, 4000, 1, false, false,
-        Set.of(ProcessTypes.SEPARATING, ProcessTypes.EXTRACTING, ProcessTypes.REACTING, ProcessTypes.FERMENTING, ProcessTypes.CULTURING),
+        6, 2, 4000, 2, false, false,
+        Set.of(ProcessTypes.SEPARATING, ProcessTypes.EXTRACTING, ProcessTypes.REACTING, ProcessTypes.FERMENTING, ProcessTypes.CULTURING,
+            ProcessTypes.CURING, ProcessTypes.CHILLING),
         Capabilities.of("atmosphere.air", "atmosphere.airtight", "method.settling")),
     LEACH_BARREL("leach_barrel", "淋灰桶", "Leaching Barrel", "灰或硝土加水，浸出液从底部流出", "Water poured over ash or nitre soil; the liquor drains below",
         1, 2, 4000, 1, false, false,
@@ -37,13 +40,33 @@ public enum T0Kind {
         Set.of(ProcessTypes.CRYSTALLIZING), Capabilities.NONE),
     DRYING_RACK("drying_rack", "晾晒架", "Drying Rack", "摆上四份物料晾晒或冻融", "Holds four batches to dry or freeze-thaw",
         4, 0, 0, 0, true, false,
-        Set.of(ProcessTypes.DRYING, ProcessTypes.CRYSTALLIZING), Capabilities.NONE),
+        Set.of(ProcessTypes.DRYING, ProcessTypes.CRYSTALLIZING, ProcessTypes.CHILLING), Capabilities.NONE),
     KOJI_TRAY("koji_tray", "曲盘", "Koji Tray", "摊放四份谷物发芽、长曲", "Spreads four batches of grain to sprout or grow koji",
         4, 0, 0, 0, true, false,
         Set.of(ProcessTypes.SOLID_FERMENTING, ProcessTypes.CULTURING), Capabilities.of("atmosphere.air")),
     FUMIGATION_BOX("fumigation_box", "熏蒸箱", "Fumigation Box", "底部燃硫，给果干等食品加上硫熏标记", "Burns sulfur below to fumigate dried fruit and other food",
         4, 0, 0, 1, false, false,
         Set.of(ProcessTypes.FUMIGATING), Capabilities.NONE);
+
+    /**
+     * The pots have no mode switch (machines/05 §7 #1): they offer every food-line mode they can do, and a recipe is
+     * picked by its inputs and conditions (I41: R21 pasteurizing and boiling-water canning, R22, R11 setting).
+     * A method, not a field: the enum constants use it before static fields exist.
+     */
+    static Capabilities potModes() {
+        return Capabilities.of("mode.pasteurizing", "mode.retorting", "mode.water_boiling", "mode.steaming", "mode.braising",
+            "mode.coagulating", "mode.curdling", "mode.enzymolysis");
+    }
+
+    /** The crock's R25 modes and R28 chilling (I41); chilling needs cold, see {@code T0DeviceBlockEntity}. */
+    static Capabilities crockModes() {
+        return Capabilities.of("mode.proofing", "mode.marinating", "mode.aging", "mode.chilling");
+    }
+
+    /** What the drying rack offers out in the open in a cold biome (I41: R28 freezing). */
+    static Capabilities rackFreezing() {
+        return Capabilities.of("temperature.cooling", "temperature.freezing", "mode.quick_freezing");
+    }
 
     /** Batch length of passive devices, ticks (machines/02 §6.1 rule 3). */
     public static final int BATCH = 20;
@@ -132,9 +155,19 @@ public enum T0Kind {
         for (int i = 0; i < itemSlots; i++) {
             slots[i] = i;
         }
-        // the leaching barrel puts its liquor into the outlet tank (1) before the inlet tank (0)
-        int[] tankOrder = this == LEACH_BARREL ? new int[]{1, 0} : tanks == 2 ? new int[]{0, 1} : tanks == 1 ? new int[]{0} : new int[0];
-        return new InPlaceProcess.Unit[]{new InPlaceProcess.Unit(slots, tankOrder)};
+        return new InPlaceProcess.Unit[]{new InPlaceProcess.Unit(slots, tankOrder())};
+    }
+
+    /** The tanks in the order fluids go in and come out: the leaching barrel's outlet (1) before its inlet (0), else first to last. */
+    public int[] tankOrder() {
+        if (this == LEACH_BARREL) {
+            return new int[]{1, 0};
+        }
+        int[] order = new int[tanks];
+        for (int i = 0; i < tanks; i++) {
+            order[i] = i;
+        }
+        return order;
     }
 
     /** What the device runs; registered once. */
@@ -152,9 +185,23 @@ public enum T0Kind {
         for (T0Kind kind : values()) {
             int perUnitSlots = kind.positions ? 1 : kind.itemSlots;
             Capabilities capabilities = kind.manual ? kind.own : kind.own.with(Environment.ALL);
+            if (kind == CROCK) {
+                capabilities = capabilities.with(crockModes()).with(Capabilities.of("temperature.cooling"));
+            } else if (kind == DRYING_RACK) {
+                capabilities = capabilities.with(rackFreezing());
+            }
+            // the crock is open or sealed at one time, like a machine's modes (I47: soy sauce sealed, soybean paste open)
+            java.util.List<DeviceSpec.Configuration> configurations = java.util.List.of();
+            if (kind == CROCK) {
+                Capabilities base = Capabilities.of("method.settling").with(Environment.ALL).with(crockModes())
+                    .with(Capabilities.of("temperature.cooling"));
+                configurations = java.util.List.of(
+                    new DeviceSpec.Configuration(base.with(Capabilities.of("atmosphere.air")), java.util.Set.of()),
+                    new DeviceSpec.Configuration(base.with(Capabilities.of("atmosphere.airtight")), java.util.Set.of()));
+            }
             kind.spec = DeviceSpec.register(new DeviceSpec(FoodIndustrial.MOD_ID + ":" + kind.id, DeviceProfile.standard(Tier.T0), kind.types,
                 capabilities, new DeviceSpec.Slots(perUnitSlots, perUnitSlots, kind.tanks, kind.tanks, kind.catalystSlots),
-                kind.manual, !kind.manual, null));
+                kind.manual, !kind.manual, null, false, configurations));
         }
     }
 }

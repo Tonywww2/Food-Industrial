@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:mousse_cake_mix",
+  "loader": "forge:fluid_container"
+}

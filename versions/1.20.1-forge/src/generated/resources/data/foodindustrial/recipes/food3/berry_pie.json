@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/tart_pan"
+    }
+  },
+  "inputs": [
+    {
+      "semi_finished": "berry_pie|blank"
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:berry_pie"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "mahua|proofed_dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 2,
+    "semi_finished": "mahua|blank"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/stretching_mold"
+    }
+  ]
+}

@@ -13,17 +13,20 @@ import java.util.function.Supplier;
 
 /**
  * The mod's creative mode tabs (I05): chemicals, minerals and raw materials, cultures and enzymes,
- * machines, products. Content plans add their stacks with {@link #add}; empty tabs stay hidden.
+ * machines, products, molds, containers (I40). Content plans add their stacks with {@link #add}; empty tabs stay hidden.
  */
 public final class ModCreativeTabs {
     /** Tabs in display order. */
     public enum Tab {
         CHEMICALS("chemicals", "化学品", "Chemicals"),
         RAW_MATERIALS("raw_materials", "矿物与原料", "Minerals and Raw Materials"),
+        PLANTS("plants", "作物与植物", "Crops and Plants"),
         CULTURES("cultures", "菌种与酶", "Cultures and Enzymes"),
         FLAVORS("flavors", "香料", "Flavorings"),
         MACHINES("machines", "机器", "Machines"),
-        PRODUCTS("products", "成品", "Products");
+        PRODUCTS("products", "成品", "Products"),
+        MOLDS("molds", "模具", "Molds"),
+        CONTAINERS("containers", "容器与包装", "Containers and Packaging");
 
         final String id;
         final String zh;

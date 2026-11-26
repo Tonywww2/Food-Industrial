@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:frying",
+  "inputs": [
+    {
+      "semi_finished": "youtiao|blank"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 50,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:youtiao"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 100
+}

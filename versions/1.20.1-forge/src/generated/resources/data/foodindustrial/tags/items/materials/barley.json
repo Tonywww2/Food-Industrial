@@ -1,4 +1,14 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "foodindustrial:barley",
+    {
+      "id": "#forge:crops/barley",
+      "required": false
+    },
+    {
+      "id": "#c:crops/barley",
+      "required": false
+    }
+  ]
 }

@@ -1,0 +1,54 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/hardened_oil"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:glucose_syrup"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_caseinate"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:non_dairy_creamer_emulsion"
+    }
+  ],
+  "quality": {
+    "items": [
+      "state",
+      {
+        "accepts": [
+          "dairy_flavoring"
+        ],
+        "item": "taste"
+      }
+    ]
+  },
+  "requirements": {
+    "methods": [
+      "emulsifying"
+    ],
+    "min_tier": "t2"
+  },
+  "time": 100
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "foodindustrial:block/red_radish_crop_stage0"
+  },
+  "render_type": "minecraft:cutout"
+}

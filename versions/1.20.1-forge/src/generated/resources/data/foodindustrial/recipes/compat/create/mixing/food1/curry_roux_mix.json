@@ -1,0 +1,45 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "item": "foodindustrial:semi_finished"
+    },
+    {
+      "tag": "foodindustrial:materials/dried_turmeric"
+    },
+    {
+      "tag": "foodindustrial:materials/coriander_seed"
+    },
+    {
+      "tag": "foodindustrial:materials/cumin_seed"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:semi_finished"
+    }
+  ]
+}

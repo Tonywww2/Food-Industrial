@@ -1,0 +1,10 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:tolu_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:tolu_balsam"
+  },
+  "tool": "#foodindustrial:knives"
+}

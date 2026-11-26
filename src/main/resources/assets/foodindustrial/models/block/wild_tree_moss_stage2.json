@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/wild_tree_moss_stage2"
+  },
+  "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:shortening_blend",
+    "foodindustrial:flowing_shortening_blend",
+    {
+      "id": "#forge:shortening_blend",
+      "required": false
+    },
+    {
+      "id": "#c:shortening_blend",
+      "required": false
+    }
+  ]
+}

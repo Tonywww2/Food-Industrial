@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "sugar_cube|wet_cube"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:sugar_cube"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

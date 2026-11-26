@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:solid_fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:wheat_qu"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 24000
+}

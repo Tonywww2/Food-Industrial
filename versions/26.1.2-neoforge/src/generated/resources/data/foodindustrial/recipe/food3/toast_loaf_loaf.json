@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/loaf_pan"
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "toast_loaf|blank"
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "semi_finished": "toast_loaf|loaf"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

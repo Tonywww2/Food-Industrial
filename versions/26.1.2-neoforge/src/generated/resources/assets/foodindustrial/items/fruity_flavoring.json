@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "foodindustrial:item/fruity_flavoring_paste"
+        },
+        "threshold": 1.0
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "foodindustrial:item/fruity_flavoring_powder"
+        },
+        "threshold": 2.0
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "foodindustrial:item/fruity_flavoring"
+    },
+    "index": 0,
+    "property": "minecraft:custom_model_data"
+  }
+}

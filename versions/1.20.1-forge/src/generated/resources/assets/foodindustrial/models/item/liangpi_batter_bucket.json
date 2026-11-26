@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:liangpi_batter",
+  "loader": "forge:fluid_container"
+}

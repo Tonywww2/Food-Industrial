@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/nuts"
+    },
+    {
+      "tag": "foodindustrial:materials/nuts"
+    },
+    {
+      "tag": "foodindustrial:materials/roasted_sesame"
+    },
+    {
+      "tag": "foodindustrial:materials/glutinous_rice_flour"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sucrose"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "foodindustrial:semi_finished"
+    }
+  ]
+}

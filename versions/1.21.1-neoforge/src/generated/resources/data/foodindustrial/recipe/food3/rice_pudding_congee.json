@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/rice"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:milk"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "water_boiling",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "rice_pudding|congee"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

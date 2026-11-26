@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "tabletop_sweetener|powder"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "item": "foodindustrial:tabletop_sweetener"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/tablet_die"
+    }
+  ]
+}

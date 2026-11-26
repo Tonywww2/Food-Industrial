@@ -464,7 +464,7 @@ public final class Purity {
             return current.withAmount(total).withPurity(a != NONE ? a : b == NONE ? FluidAmount.NO_PURITY : b);
         }
         int merged = PurityScale.floorOf(PurityScale.weightedAverage(new int[]{a, b}, new long[]{current.amount(), added.amount()}));
-        return FluidAmount.of(current.fluid(), total, merged);
+        return FluidAmount.of(current.fluid(), total, merged).withQuality(current.quality());
     }
 
     /** Grade of the effective purity by the material's bounds; empty for K0 and items without purity. */

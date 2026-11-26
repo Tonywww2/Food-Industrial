@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:chemicals/salt",
+    "#foodindustrial:chemicals/sodium_nitrite",
+    "#foodindustrial:chemicals/potassium_nitrite"
+  ]
+}

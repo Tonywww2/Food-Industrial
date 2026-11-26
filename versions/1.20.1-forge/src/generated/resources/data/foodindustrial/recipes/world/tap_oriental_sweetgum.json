@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:oriental_sweetgum_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:styrax_resin"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

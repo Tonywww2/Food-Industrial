@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:invert_syrup",
+    "foodindustrial:flowing_invert_syrup",
+    {
+      "id": "#forge:invert_syrup",
+      "required": false
+    },
+    {
+      "id": "#c:invert_syrup",
+      "required": false
+    }
+  ]
+}

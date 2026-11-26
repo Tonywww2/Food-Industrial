@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:taiga",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga"
+  ],
+  "features": [
+    "foodindustrial:blackcurrant_bush",
+    "foodindustrial:haskap_bush",
+    "foodindustrial:wintergreen_bush",
+    "foodindustrial:juniper_bush",
+    "foodindustrial:thuja_tree",
+    "foodindustrial:pine_tree",
+    "foodindustrial:balsam_fir_tree",
+    "foodindustrial:wild_tree_moss"
+  ],
+  "step": "vegetal_decoration"
+}

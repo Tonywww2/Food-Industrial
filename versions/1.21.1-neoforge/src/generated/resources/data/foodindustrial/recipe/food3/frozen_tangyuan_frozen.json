@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:chilling",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "foodindustrial:materials/raw_tangyuan"
+      }
+    }
+  ],
+  "mode": "quick_freezing",
+  "outputs": [
+    {
+      "count": 8,
+      "semi_finished": "frozen_tangyuan|frozen"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "freezing"
+  },
+  "time": 400
+}

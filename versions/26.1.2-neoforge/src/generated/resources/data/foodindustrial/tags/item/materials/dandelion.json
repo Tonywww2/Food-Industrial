@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:dandelion"
+    "foodindustrial:dandelion",
+    {
+      "id": "minecraft:dandelion",
+      "required": false
+    }
   ]
 }

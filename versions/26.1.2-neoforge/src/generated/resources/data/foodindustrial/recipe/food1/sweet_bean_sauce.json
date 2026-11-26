@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "sweet_bean_sauce|koji_cake"
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:sweet_bean_sauce"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

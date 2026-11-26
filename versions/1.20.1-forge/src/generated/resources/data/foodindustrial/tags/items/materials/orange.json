@@ -8,6 +8,7 @@
     {
       "id": "#c:fruits/orange",
       "required": false
-    }
+    },
+    "foodindustrial:orange"
   ]
 }

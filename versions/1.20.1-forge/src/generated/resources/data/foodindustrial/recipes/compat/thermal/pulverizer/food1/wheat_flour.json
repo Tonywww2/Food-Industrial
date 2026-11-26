@@ -1,0 +1,28 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 1000,
+  "ingredient": {
+    "tag": "foodindustrial:materials/wheat"
+  },
+  "result": [
+    {
+      "count": 1,
+      "item": "foodindustrial:wheat_flour"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "item": "foodindustrial:wheat_bran"
+    }
+  ]
+}

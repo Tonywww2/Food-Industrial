@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 6,
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/potassium_chloride"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 8,
+      "item": "foodindustrial:low_sodium_salt"
+    }
+  ],
+  "quality": {
+    "items": [
+      "state"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

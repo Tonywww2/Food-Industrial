@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:skim_milk",
+    "foodindustrial:flowing_skim_milk",
+    {
+      "id": "#forge:skim_milk",
+      "required": false
+    },
+    {
+      "id": "#c:skim_milk",
+      "required": false
+    }
+  ]
+}

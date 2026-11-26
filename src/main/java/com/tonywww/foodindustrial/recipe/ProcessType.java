@@ -33,7 +33,7 @@ public final class ProcessType {
         return id;
     }
 
-    /** Design code ({@code R01}–{@code R19}, {@code W01}, {@code W02}). */
+    /** Design code ({@code R01}–{@code R29}, {@code W01}–{@code W03}). */
     public String code() {
         return code;
     }
@@ -45,22 +45,24 @@ public final class ProcessType {
 
     /**
      * FE/t of a recipe of this type that writes no {@code energy}, on FE machines before the tier's
-     * energy factor (machines/01 §2, 2026-11-11); 0 for world interactions.
+     * energy factor (machines/01 §2, 2026-11-11; R20–R29 machines/05 §1.1); 0 for world interactions.
      */
     public int defaultEnergy() {
         return switch (code) {
-            case "R01", "R02", "R03", "R08", "R18", "R19" -> 10;
+            case "R01", "R02", "R03", "R08", "R18", "R19", "R20", "R26", "R27", "R29" -> 10;
             case "R04", "R06", "R12", "R15" -> 15;
-            case "R05", "R07", "R11" -> 20;
+            case "R05", "R07", "R11", "R21", "R22", "R23", "R24", "R28" -> 20;
             case "R10" -> 30;
             case "R09", "R13" -> 40;
             case "R14" -> 80;
-            case "R16", "R17" -> 5;
+            case "R16", "R17", "R25" -> 5;
+            // W03: only the electric seawater pump uses energy (machines/01 §2, I43)
+            case "W03" -> 10;
             default -> 0;
         };
     }
 
-    /** World interaction types (W01, W02); their recipe format comes with I12. */
+    /** World interaction types (W01, W02 from I12; W03 pumping from I43). */
     public boolean isWorldInteraction() {
         return code.startsWith("W");
     }

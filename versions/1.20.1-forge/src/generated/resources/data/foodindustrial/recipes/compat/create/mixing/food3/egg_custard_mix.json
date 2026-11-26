@@ -1,0 +1,34 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/egg"
+    },
+    {
+      "tag": "foodindustrial:materials/egg"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sucrose"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:milk"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "foodindustrial:egg_custard_mix"
+    }
+  ]
+}

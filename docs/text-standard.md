@@ -131,22 +131,34 @@
 
 | 状态 | 内容 | 颜色 |
 | --- | --- | --- |
-| 默认 | 名称下一行：“品质档 · 标签”，如“优 · 特级”；只有一项时只写这一项；品质一般且没有标签时不显示 | 品质档：一般灰 §7、良好绿 §a、优金 §6；标签的颜色由实装拟定后列入待审 |
+| 默认 | 名称下一行：“品质档 · 标签”，如“优 · 特级”；只有一项时只写这一项；品质一般且没有标签时不显示 | 品质档：一般灰 §7、良好绿 §a、优金 §6；标签：特级淡紫 §d、土法黄 §e、劣质红 §c（2026-11-18 用户确认） |
 | 按住 Shift | 品质行之后追加一行：各评价项的档，写成“项名 档”，多项用“ · ”分隔，如“状态 优 · 保存性 良好” | 项名灰 §7，档同上 |
 
-营养成分组件（2026-11-13 定，设计文档 foods/02 第 8 节；同日改为图标组件，用户在样版中选定“默认简要 · Shift 展开”）：Tooltip 末尾（他模组放在最后的模组名行之前）追加一个图标组件，列每份所含的非零代谢成分，按咖啡因、酒精、快吸收糖、维生素 C、维生素 B1、维生素 D 的顺序；不列饱食度与饱和度。
+营养成分组件（2026-11-13 定，设计文档 foods/02 第 8 节；同日改为图标组件，用户在样版中选定“默认简要 · Shift 展开”）：Tooltip 末尾（他模组放在最后的模组名行之前）追加一个图标组件，列每份所含的非零代谢成分，按咖啡因、酒精、快吸收糖、亚硝酸盐、维生素 C、维生素 B1、维生素 D、维生素 A、钙、铁、锌的顺序（亚硝酸盐 2026-11-18 加，后四项 2026-11-19 加，I46）；不列饱食度与饱和度。维生素 A 写预成型与类胡萝卜素之和，“日需”按两者之和算；服务端配置停用的营养素与杂质不列（[foods/03](foods/03-nutrition-data.md) 第 3.1 节）。
 
 | 状态 | 内容 | 颜色 |
 | --- | --- | --- |
 | 默认 | 图标行：每项为成分图标（8 × 8）+“含量 单位”，一行放不下时按项折行 | 含量按成分着色（见下） |
 | 按住 Shift | 换成表格：每项一行，依次为图标、成分名、“含量 单位”、注；注只用于营养素（“日需 75%”，每份含量 ÷ 每日需要量，取整，不足 1% 写“<1%”）与酒精（“≈ 0.033%”，每份折合的血液酒精浓度，三位小数） | 成分名按成分着色，含量白色，注灰色 §7 |
 
-带杂质的食物（营养数据的 `impurity`，2026-11-13 用户要求）在快吸收糖之后加一项杂质：图标为杂质图标，含量只写数字、不写单位，表格中不加注。
+带杂质的食物（营养数据的 `impurity`，2026-11-13 用户要求）在快吸收糖与亚硝酸盐之后加一项杂质：图标为杂质图标，含量只写数字、不写单位，表格中不加注。
 
-成分颜色（2026-11-13 用户确认）：咖啡因 `#C9A27E`、酒精 `#7FD3E6`、快吸收糖 `#F5B3D0`、维生素 C `#FF7A33`、维生素 B1 `#A8D26E`、维生素 D `#FFF07A`；杂质 `#B4A7C6`（拟定，与杂质图标同为紫灰色）。
+成分颜色（2026-11-13 用户确认）：咖啡因 `#C9A27E`、酒精 `#7FD3E6`、快吸收糖 `#F5B3D0`、维生素 C `#FF7A33`、维生素 B1 `#A8D26E`、维生素 D `#FFF07A`；杂质 `#B4A7C6`（拟定，与杂质图标同为紫灰色）；亚硝酸盐 `#8C9CFF`（I45）；维生素 A `#F0A860`、钙 `#E6E0D2`、铁 `#D9625B`、锌 `#8FB8D6`（2026-11-19 用户确认，I46）。
 
 - 适用于有营养数据的全部物品，含原版与他模组的食物（数据见设计文档 foods/03）；没有非零成分、也没有杂质时不追加。
 - 单位为 mg、g、µg，数字与单位之间加空格（第 1 节第 5 条）。含量的精度：100 起取整，1–100 一位小数，1 以下两位小数，四舍五入、去掉末尾的 0，低于 0.01 写“<0.01”（2026-11-13 批准）。
+
+强制声明行（2026-11-18 定，GB 2760-2024 附录 A 表 A.1 脚注 3、脚注 9）：投入过天门冬酰苯丙氨酸甲酯（阿斯巴甜）或天门冬酰苯丙氨酸甲酯乙酰磺胺酸的本模组成品，Tooltip 在营养成分组件之前追加固定声明行。
+
+| 投入的添加剂 | 声明行 |
+| --- | --- |
+| 天门冬酰苯丙氨酸甲酯（阿斯巴甜） | 阿斯巴甜（含苯丙氨酸） |
+| 天门冬酰苯丙氨酸甲酯乙酰磺胺酸 | 天门冬酰苯丙氨酸甲酯乙酰磺胺酸（含苯丙氨酸） |
+
+- 颜色灰色 §7；默认状态显示，按住 Shift 不变。
+- 两种同时投入时各占一行，按上表顺序。
+- 判定按成品的物品数据：配方固定投入的恒显示；配料段添加剂槽临时投入的，由该段写进产物的物品数据后显示（foods/05 第 2、3 节），经后续加工段带到最终成品。
+- 投入量不设门槛，投入即声明。
 
 ### 3.4 档次（2026-11-11 定）
 
@@ -172,6 +184,7 @@
 | 物品名 | `item.foodindustrial.<id>` | 碳酸钠（纯碱） |
 | 方块名 | `block.foodindustrial.<id>` | 搅拌反应罐 |
 | 流体名 | `fluid_type.foodindustrial.<id>` | 苦卤 |
+| 标签名 | `tag.<类型>.<命名空间>.<路径>`（类型为 item 或 fluid，路径里的 / 换成 .；取名规则与表见 [tag-names](tag-names.md)，2026-11-25） | 面粉 |
 | Shift 描述 | `tooltip.foodindustrial.<id>.desc` | 面食用碱，由氨碱法或海藻灰制得 |
 | 纯度行 | `tooltip.foodindustrial.purity` | %s（%s%%）（参数依次为档位名、纯度） |
 | 含量行（K0） | `tooltip.foodindustrial.content` | 含量 %s%% |
@@ -236,6 +249,7 @@
 | | 非寒冷群系 | `non_cold_biome` | Non-cold biome |
 | | 丛林群系 | `jungle_biome` | Jungle biome |
 | | 竹林 | `bamboo_biome` | Bamboo jungle |
+| | 临海 | `coastal` | Coastal |
 | 模式（`mode`） | 干磨 | `dry_grinding` | Dry grinding |
 | | 湿磨 | `wet_grinding` | Wet grinding |
 | | 开口 | `open` | Open |
@@ -308,6 +322,40 @@
 | | 纳滤 | `nanofiltration` | Nanofiltration |
 | | 反渗透 | `reverse_osmosis` | Reverse osmosis |
 | | 双极膜电渗析 | `bipolar_electrodialysis` | Bipolar membrane electrodialysis |
+| | 和面 | `dough_mixing` | Dough mixing |
+| | 压延 | `sheeting` | Sheeting |
+| | 切条 | `slitting` | Slitting |
+| | 成型 | `molding` | Molding |
+| | 巴氏杀菌 | `pasteurizing` | Pasteurizing |
+| | 超高温灭菌 | `uht` | UHT sterilizing |
+| | 罐内灭菌 | `retorting` | In-container sterilizing |
+| | 煮 | `water_boiling` | Boiling |
+| | 蒸 | `steaming` | Steaming |
+| | 卤 | `braising` | Braising |
+| | 烘烤 | `baking` | Baking |
+| | 焙炒 | `pan_roasting` | Pan roasting |
+| | 醒发 | `proofing` | Proofing |
+| | 腌制 | `marinating` | Marinating |
+| | 陈酿 | `aging` | Aging |
+| | 切割 | `slicing` | Cutting |
+| | 斩拌 | `chopping` | Chopping |
+| | 灌肠 | `stuffing` | Stuffing |
+| | 调温 | `tempering` | Tempering |
+| | 浇注 | `depositing` | Depositing |
+| | 包衣 | `panning` | Panning |
+| | 冷却 | `chilling` | Chilling |
+| | 速冻 | `quick_freezing` | Quick freezing |
+| | 凝冻 | `churn_freezing` | Churn freezing |
+| | 凝固 | `coagulating` | Coagulating |
+| | 凝乳 | `curdling` | Curdling |
+| | 酶解 | `enzymolysis` | Enzymatic hydrolysis |
+| | 搅打 | `whipping` | Whipping |
+| | 搅乳 | `churning` | Churning |
+| | 高压均质 | `high_pressure_homogenizing` | High-pressure homogenizing |
+| | 熬煮 | `simmering` | Simmering |
+| | 蒸煮 | `cooking` | Cooking |
+| | 油炸 | `frying` | Frying |
+| | 杀菌 | `sterilizing` | Sterilizing |
 | 纯度方式（`purity_mode`） | 来源 | `source` | Source |
 | | 除杂 | `removal` | Impurity removal |
 | | 保持 | `keep` | Keep |
@@ -318,6 +366,8 @@
 - 模式类与“油水分层”由 I14 新增（2026-11-10），T2 机器的模式与“铅室”“乳化”由 I15 新增，T3、T4 机器的模式与“分子蒸馏”由 I16、I17 新增（2026-11-11；“再生”只用于 M25 的再生配方），取值是机器的模式名（additives/06 §T1 作坊：操作与实现规格），配方用 `"mode"` 字段指定，不写在 `requirements` 里。
 - 环境类中 machines/01 §3 列出的“时间”条件尚无取值，出现时在本表补充。不露天、淋雨、白天、非寒冷群系、丛林群系、竹林由 I12 新增（2026-11-10 定），判定见 additives/07 §操作与实现规格。
 - JEI 中每个条件显示为图标，悬停显示词表中的词，不加解释句。
+- 成品线的 30 个模式由 I38 新增（2026-11-18，[machines/05 §1.1、§1.2](machines/05-final-design.md)）。与已有词重名的改了英文 ID：R23 的烘烤与焙炒为 `baking`、`pan_roasting`（`roasting` 是 M20 的焙烧），R28 的冷却为 `chilling`（`cooling` 是温度条件、`freezing` 是 M15 的冷冻），R19 的高压均质为 `high_pressure_homogenizing`（`homogenizing` 是 M21 的均质），R26 的切割为 `slicing`，R22 的煮为 `water_boiling`。成型类的包馅、拉伸、挤压、压片、制粒、模压膨化不是模式，由模具（计次催化剂）区分；R10 的一次蒸馏与精馏沿用 `distillation` 与 `atmospheric_distillation`；R12 的常压通气、加压、高压用压力条件（`atmospheric`、`pressurized`、`high`），不另设模式。
+- 熬煮灶的四个模式（熬煮、蒸煮、油炸、杀菌）由 I41 新增（2026-11-19，[machines/05 §2.3](machines/05-final-design.md)）：熬煮留原有配方，蒸煮、油炸、焙炒、杀菌各跑对应的成品线配方。
 
 ## 6 检查清单
 
@@ -325,4 +375,5 @@
 - [ ] 材料、添加剂默认只有化学式与纯度两行
 - [ ] 机器默认无附加行
 - [ ] 每条 Shift 描述一句、≤ 24 个汉字、无句号、无禁用词
+- [ ] 投入阿斯巴甜或天门冬酰苯丙氨酸甲酯乙酰磺胺酸的成品带“含苯丙氨酸”声明行（第 3.3 节）
 - [ ] `zh_cn`、`en_us` 键一一对应

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bricks"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BFB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:brick_oven"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/corn"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:enzymes/malt"
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "breakfast_cereal|mix"
+    }
+  ],
+  "quality": {
+    "items": [
+      "color",
+      "preservation"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "chili_sauce|chili_mash"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:chili_sauce_base"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

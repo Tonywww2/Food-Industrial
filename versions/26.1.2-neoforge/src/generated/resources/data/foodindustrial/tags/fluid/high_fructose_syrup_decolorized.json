@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:high_fructose_syrup_decolorized",
+    "foodindustrial:flowing_high_fructose_syrup_decolorized",
+    {
+      "id": "#forge:high_fructose_syrup_decolorized",
+      "required": false
+    },
+    {
+      "id": "#c:high_fructose_syrup_decolorized",
+      "required": false
+    }
+  ]
+}

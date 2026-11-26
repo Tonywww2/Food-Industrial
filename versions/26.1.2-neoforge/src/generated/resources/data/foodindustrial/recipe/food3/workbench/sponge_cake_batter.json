@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/egg"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "emulsifier",
+          "leavening",
+          "sodium_acid_pyrophosphate"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "sponge_cake|batter"
+  }
+}

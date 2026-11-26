@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:enzymes/invertase",
+    "runs": 16
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "enzymolysis",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:invert_syrup"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

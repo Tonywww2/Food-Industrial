@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/baking_iron"
+    }
+  },
+  "inputs": [
+    {
+      "semi_finished": "egg_roll|batter"
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:egg_roll"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "foodindustrial:block/ice_salt_freezer_shape",
+  "textures": {
+    "front": "foodindustrial:block/ice_salt_freezer_front",
+    "side": "foodindustrial:block/ice_salt_freezer_side",
+    "top": "foodindustrial:block/ice_salt_freezer_top"
+  }
+}

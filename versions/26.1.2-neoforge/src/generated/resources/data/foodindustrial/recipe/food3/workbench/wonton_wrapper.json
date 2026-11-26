@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/egg_white"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 8,
+    "item": "foodindustrial:wonton_wrapper"
+  }
+}

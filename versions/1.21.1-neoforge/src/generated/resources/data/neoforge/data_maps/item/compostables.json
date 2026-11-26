@@ -1,9 +1,255 @@
 {
   "values": {
+    "foodindustrial:aglaia_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:american_chestnut_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:american_chestnut_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:amyris_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:amyris_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:angostura_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:angostura_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:annatto_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:apricot_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:apricot_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:balata_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:balata_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:balsam_fir_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:balsam_fir_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:bay_laurel_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:bay_laurel_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:bayberry_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:bayberry_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:benzoin_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:benzoin_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:bergamot_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:bergamot_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:bitter_almond_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:bitter_almond_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:bitter_orange_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:bitter_orange_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:black_cherry_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:black_cherry_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:blackcurrant_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:blue_gum_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:blue_gum_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:boronia_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:broadleaf_peppermint_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:broadleaf_peppermint_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:broom_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:buchu_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:cajeput_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:cajeput_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:camphor_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:camphor_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cananga_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:cananga_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:carnauba_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:carnauba_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:carob_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:carob_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cascara_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:cascara_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cascarilla_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:cascarilla_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cassia_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:cassia_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cassie_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:catechu_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:catechu_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:ceylon_cinnamon_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:ceylon_cinnamon_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cherokee_rose_bush": {
+      "chance": 0.3
+    },
     "foodindustrial:chili_pepper": {
       "chance": 0.65
     },
+    "foodindustrial:chinese_cypress_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:chinese_cypress_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cinchona_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:cinchona_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:clove_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:clove_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:coconut_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:coconut_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:coffee_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:copaiba_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:copaiba_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:cubeb_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:daidai_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:daidai_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:dog_rose_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:elder_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:elemi_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:elemi_sapling": {
+      "chance": 0.3
+    },
     "foodindustrial:eucheuma": {
+      "chance": 0.3
+    },
+    "foodindustrial:fig_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:fig_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:fingered_citron_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:fingered_citron_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:frankincense_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:frankincense_sapling": {
       "chance": 0.3
     },
     "foodindustrial:gardenia_fruit": {
@@ -12,17 +258,275 @@
     "foodindustrial:gelidium": {
       "chance": 0.3
     },
+    "foodindustrial:grape_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:guaiac_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:guaiac_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:guarana_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:gum_arabic_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:gum_arabic_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:gum_ghatti_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:gum_ghatti_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:haskap_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:hawthorn_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:hawthorn_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:hickory_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:hickory_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:honeylocust_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:honeylocust_sapling": {
+      "chance": 0.3
+    },
     "foodindustrial:indigo_plant": {
       "chance": 0.65
+    },
+    "foodindustrial:jasmine_grandiflorum_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:jasmine_officinale_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:jasmine_sambac_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:jelutong_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:jelutong_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:jujube_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:jujube_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:juniper_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:karaya_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:karaya_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:kola_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:kola_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:laver": {
+      "chance": 0.3
+    },
+    "foodindustrial:lemon_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:lemon_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:litsea_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:longan_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:longan_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:malania_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:malania_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:mandarin_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:mandarin_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:massoia_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:massoia_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:mate_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:mate_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:michelia_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:michelia_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:mimosa_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:mimosa_sapling": {
+      "chance": 0.3
     },
     "foodindustrial:mint": {
       "chance": 0.65
     },
+    "foodindustrial:mountain_maple_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:mountain_maple_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:mountain_pine_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:mulberry_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:mulberry_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:murraya_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:myrrh_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:myrrh_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:nutmeg_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:nutmeg_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:oil_palm_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:oil_palm_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:orange_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:orange_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:oriental_sweetgum_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:oriental_sweetgum_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:osmanthus_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:osmanthus_sapling": {
+      "chance": 0.3
+    },
     "foodindustrial:paddy": {
       "chance": 0.65
     },
+    "foodindustrial:pagoda_tree_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:pagoda_tree_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:papaya_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:papaya_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:peach_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:peach_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:peru_balsam_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:peru_balsam_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:peruvian_pepper_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:peruvian_pepper_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:pimento_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:pimento_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:pine_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:pine_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:pummelo_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:pummelo_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:quassia_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:quassia_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:quillaja_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:quillaja_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:rockrose_bush": {
+      "chance": 0.3
+    },
     "foodindustrial:rosemary": {
       "chance": 0.65
+    },
+    "foodindustrial:rosewood_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:rosewood_sapling": {
+      "chance": 0.3
     },
     "foodindustrial:rubber_leaves": {
       "chance": 0.3
@@ -30,14 +534,146 @@
     "foodindustrial:rubber_sapling": {
       "chance": 0.3
     },
+    "foodindustrial:sandalwood_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:sandalwood_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:sapodilla_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:sapodilla_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:sea_buckthorn_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:sichuan_pepper_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:sorva_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:sorva_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:star_anise_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:star_anise_sapling": {
+      "chance": 0.3
+    },
     "foodindustrial:stevia": {
       "chance": 0.65
+    },
+    "foodindustrial:sugar_maple_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:sugar_maple_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:tallow_tree_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:tallow_tree_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:tamarind_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:tamarind_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:tangelo_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:tangelo_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:tangerine_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:tangerine_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:tara_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:tea_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:tea_tree_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:tea_tree_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:thuja_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:thuja_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:tolu_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:tolu_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:torreya_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:torreya_sapling": {
+      "chance": 0.3
     },
     "foodindustrial:turmeric_rhizome": {
       "chance": 0.65
     },
+    "foodindustrial:ume_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:ume_sapling": {
+      "chance": 0.3
+    },
     "foodindustrial:vanilla_pod": {
       "chance": 0.65
+    },
+    "foodindustrial:vitex_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:walnut_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:walnut_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:west_indian_bay_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:west_indian_bay_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:wild_rose_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:wintergreen_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:yerba_santa_bush": {
+      "chance": 0.3
+    },
+    "foodindustrial:ylang_ylang_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:ylang_ylang_sapling": {
+      "chance": 0.3
+    },
+    "foodindustrial:yuzu_leaves": {
+      "chance": 0.3
+    },
+    "foodindustrial:yuzu_sapling": {
+      "chance": 0.3
     }
   }
 }

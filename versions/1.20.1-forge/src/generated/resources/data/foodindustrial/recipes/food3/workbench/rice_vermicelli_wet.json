@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_rice_dough"
+      }
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "rice_vermicelli|wet_vermicelli"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/extrusion_die"
+    }
+  ]
+}

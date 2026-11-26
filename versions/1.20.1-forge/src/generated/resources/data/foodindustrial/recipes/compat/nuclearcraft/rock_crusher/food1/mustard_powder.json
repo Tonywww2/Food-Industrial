@@ -1,0 +1,28 @@
+{
+  "type": "nuclearcraft:rock_crusher",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft"
+    }
+  ],
+  "input": [
+    {
+      "count": 4,
+      "tag": "foodindustrial:mustard_seeds"
+    }
+  ],
+  "output": [
+    {
+      "count": 4,
+      "item": "foodindustrial:semi_finished"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

@@ -76,14 +76,22 @@ final class DevMetabolismCommands {
         MetabolismState state = Metabolism.state(player);
         Metabolism.settle(player, state, true);
         StringBuilder text = new StringBuilder(player.getScoreboardName()).append(" clock ").append(state.clock());
-        text.append(String.format(Locale.ROOT, "%ncaffeine %.1f mg [%d] · alcohol %.4f %% [%d] · sugar %.1f g [%d]",
+        text.append(String.format(Locale.ROOT, "%ncaffeine %.1f mg [%d] · alcohol %.4f %% [%d] · sugar %.1f g [%d] · methemoglobin %.2f %% [%d] (today %.1f mg)",
             state.caffeine(), state.appliedTier(Substance.CAFFEINE), state.alcohol(), state.appliedTier(Substance.ALCOHOL),
-            state.sugarInWindow(), state.appliedTier(Substance.FAST_SUGAR)));
-        text.append(String.format(Locale.ROOT, "%nimpurity %.2f [%d] · C %.2f d [%d] · B1 %.2f d [%d] · D %.2f d [%d]",
-            state.impurity(), state.appliedTier(Substance.IMPURITY),
-            state.reserve(Substance.VITAMIN_C), state.appliedTier(Substance.VITAMIN_C),
-            state.reserve(Substance.VITAMIN_B1), state.appliedTier(Substance.VITAMIN_B1),
-            state.reserve(Substance.VITAMIN_D), state.appliedTier(Substance.VITAMIN_D)));
+            state.sugarInWindow(), state.appliedTier(Substance.FAST_SUGAR), state.methemoglobin(), state.appliedTier(Substance.NITRITE),
+            state.nitriteToday()));
+        text.append(String.format(Locale.ROOT, "%nimpurity %.2f [%d]", state.impurity(), state.appliedTier(Substance.IMPURITY)));
+        StringBuilder nutrients = new StringBuilder();
+        for (Substance substance : Substance.all()) {
+            if (substance.nutrient()) {
+                nutrients.append(nutrients.length() == 0 ? "" : " · ").append(String.format(Locale.ROOT, "%s %.2f d [%d]",
+                    substance.id(), state.reserve(substance), state.appliedTier(substance)));
+                if (substance.hasExcess()) {
+                    nutrients.append(String.format(Locale.ROOT, " (today %.2f)", state.today(substance)));
+                }
+            }
+        }
+        text.append('\n').append(nutrients);
         reply(command, text.toString());
         return 1;
     }

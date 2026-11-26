@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:chilling",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "cheesecake|baked"
+    }
+  ],
+  "mode": "chilling",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:cheesecake"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "cooling"
+  },
+  "time": 400
+}

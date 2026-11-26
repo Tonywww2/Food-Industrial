@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:cutting_station",
+  "name": "book.foodindustrial.manual.entry.cutting_station",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:cutting_station",
+      "text": "book.foodindustrial.manual.entry.cutting_station.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:cutting_station[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.cutting_station"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.cutting_station.structure"
+    }
+  ],
+  "sortnum": 14
+}

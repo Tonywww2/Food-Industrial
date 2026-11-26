@@ -5,6 +5,10 @@ import com.tonywww.foodindustrial.core.purity.PurityScale;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import com.tonywww.foodindustrial.core.text.Lang;
 import com.tonywww.foodindustrial.core.text.Tooltips;
+import com.tonywww.foodindustrial.food.quality.QualityText;
+import com.tonywww.foodindustrial.food.flavor.DosageForm;
+import com.tonywww.foodindustrial.food.flavor.FlavorType;
+import com.tonywww.foodindustrial.food.flavor.Flavorings;
 import com.tonywww.foodindustrial.gui.GuiLayout;
 import com.tonywww.foodindustrial.gui.GuiText;
 import com.tonywww.foodindustrial.gui.MachineMenu;
@@ -22,6 +26,7 @@ import com.tonywww.foodindustrial.machine.definition.IoLayout;
 import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
 import com.tonywww.foodindustrial.machine.definition.MachineMode;
 import com.tonywww.foodindustrial.machine.definition.PowerKind;
+import com.tonywww.foodindustrial.machine.display.client.ImmersiveDisplay;
 import com.tonywww.foodindustrial.platform.Platform;
 import com.tonywww.foodindustrial.platform.PlatformFluids;
 import com.tonywww.foodindustrial.platform.client.gui.Canvas;
@@ -75,6 +80,9 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     private enum Panel {
         INFO(true, Widgets.Color.BLUE, Widgets.Icon.INFO, null, "info"),
         UPGRADES(true, Widgets.Color.GREEN, Widgets.Icon.UPGRADES, null, "upgrades"),
+        /** Additive slots A (I41); tab icon: citric acid. */
+        ADDITIVES(true, Widgets.Color.GREEN, null, () -> com.tonywww.foodindustrial.platform.PlatformTags.item("foodindustrial:citric_acid")
+            .map(ItemStack::new).orElse(new ItemStack(Items.SUGAR)), "additives"),
         /** Tab icon: the device wrench (2026-11-05). */
         IO(false, Widgets.Color.ORANGE, null, () -> new ItemStack(ModMachines.DEVICE_WRENCH.get()), "io"),
         /** Tab icon: redstone dust (2026-11-05). */
@@ -143,6 +151,9 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         if (definition.layout().upgrades() + definition.layout().modules() > 0) {
             panels.add(Panel.UPGRADES);
         }
+        if (definition.layout().additives() > 0 && !definition.isMultiblock()) {
+            panels.add(Panel.ADDITIVES);
+        }
         if (!definition.isMultiblock()) {
             panels.add(Panel.IO);
         }
@@ -156,14 +167,19 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
 
     @Nullable
     private Panel open(boolean left) {
-        Panel panel = (left ? OPEN_LEFT : OPEN_RIGHT).get(definition.id());
+        Map<String, Panel> map = left ? OPEN_LEFT : OPEN_RIGHT;
+        if (left && !map.containsKey(definition.id()) && panels.contains(Panel.ADDITIVES)) {
+            // machines with additive slots open that panel until the player picks another (I41)
+            return Panel.ADDITIVES;
+        }
+        Panel panel = map.get(definition.id());
         return panel != null && panels.contains(panel) ? panel : null;
     }
 
     private void toggle(Panel panel) {
         Map<String, Panel> map = panel.left ? OPEN_LEFT : OPEN_RIGHT;
-        if (map.get(definition.id()) == panel) {
-            map.remove(definition.id());
+        if (open(panel.left) == panel) {
+            map.put(definition.id(), null);
         } else {
             map.put(definition.id(), panel);
         }
@@ -179,6 +195,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
 
     private void syncMenuState() {
         menu.setUpgradesOpen(open(true) == Panel.UPGRADES && !structurePage());
+        menu.setAdditivesOpen(open(true) == Panel.ADDITIVES && !structurePage());
         menu.setStructurePage(structurePage());
     }
 
@@ -207,7 +224,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     private int width(Panel panel) {
         return switch (panel) {
             case INFO -> 118;
-            case UPGRADES -> GuiLayout.UPGRADES_WIDTH - OVERLAP;
+            case UPGRADES, ADDITIVES -> GuiLayout.UPGRADES_WIDTH - OVERLAP;
             case IO -> ioContentWidth() + 10;
             case REDSTONE -> redstoneContentWidth() + 10;
         };
@@ -217,6 +234,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         return switch (panel) {
             case INFO -> GuiLayout.PANEL_HEADER + infoLines().size() * 10 + 4;
             case UPGRADES -> GuiLayout.upgradesSlotsBottom(definition.layout()) + 4 + upgradeLines().size() * 10 + 4;
+            case ADDITIVES -> GuiLayout.additivesSlotsBottom(definition.layout()) + 6;
             case IO -> GuiLayout.PANEL_HEADER + (advancedFace >= 0 ? advancedHeight() : 3 * CELL_PITCH - 1) + 5;
             case REDSTONE -> GuiLayout.PANEL_HEADER + Widgets.SMALL + 4 + 10 + 3;
         };
@@ -322,7 +340,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
         }
         for (int i = 0; i < menu.machineSlots(); i++) {
             SlotRole role = io.roleOf(i);
-            if (role == SlotRole.UPGRADE || role == SlotRole.MODULE || definition.isMultiblock()) {
+            if (role == SlotRole.UPGRADE || role == SlotRole.MODULE || role == SlotRole.ADDITIVE || definition.isMultiblock()) {
                 continue;
             }
             GuiLayout.Box box = layout.slot(i);
@@ -395,6 +413,29 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             Widgets.button(canvas, box.x(), box.y(), box.w(), box.h(), box.contains(mx, my), structurePage());
             smallIcon(canvas, Widgets.Icon.STRUCTURE, box.x() + 1, box.y() + 1);
         }
+        GuiLayout.Box box = displayButton();
+        Widgets.button(canvas, box.x(), box.y(), box.w(), box.h(), box.contains(mx, my), ImmersiveDisplay.enabled());
+        smallIcon(canvas, Widgets.Icon.DISPLAY, box.x() + 1, box.y() + 1);
+        if (definition.choosesFlavor()) {
+            GuiLayout.Box flavor = flavorButton();
+            int target = view().flavorTarget;
+            Widgets.button(canvas, flavor.x(), flavor.y(), flavor.w(), flavor.h(), flavor.contains(mx, my), target >= 0);
+            if (target >= 0 && target < FlavorType.values().length) {
+                canvas.push();
+                canvas.translate(flavor.x() + 1, flavor.y() + 1);
+                canvas.scale(0.75F);
+                canvas.item(Flavorings.stack(FlavorType.values()[target], DosageForm.WATER_SOLUBLE, 1), 0, 0);
+                canvas.pop();
+            } else {
+                canvas.text("A", flavor.x() + 4, flavor.y() + 3, 0xFF404040, false);
+            }
+        }
+    }
+
+    /** The flavour type of an ingredient-step mixer (I48): left of the immersive display switch. */
+    private GuiLayout.Box flavorButton() {
+        GuiLayout.Box display = displayButton();
+        return new GuiLayout.Box(display.x() - 16, display.y(), display.w(), display.h());
     }
 
     private static void smallIcon(Canvas canvas, Widgets.Icon icon, int x, int y) {
@@ -416,6 +457,12 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
 
     private GuiLayout.Box structureButton() {
         return new GuiLayout.Box(GuiLayout.WIDTH - 22 - (definition.modes().isEmpty() ? 0 : 16), 2, 14, 14);
+    }
+
+    /** The immersive display switch (machines/04 §9.1): left of the mode and structure buttons, on every machine. */
+    private GuiLayout.Box displayButton() {
+        int others = (definition.modes().isEmpty() ? 0 : 1) + (definition.isMultiblock() ? 1 : 0);
+        return new GuiLayout.Box(GuiLayout.WIDTH - 22 - 16 * others, 2, 14, 14);
     }
 
     @Override
@@ -475,6 +522,13 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
                 }
             }
             case UPGRADES -> drawUpgrades(canvas, box, cx);
+            case ADDITIVES -> {
+                IoLayout io = definition.layout();
+                for (int i = 0; i < io.additives(); i++) {
+                    GuiLayout.Box slot = layout.slot(io.start(SlotRole.ADDITIVE) + i);
+                    Widgets.slot(canvas, Widgets.SlotKind.NORMAL, slot.x(), slot.y());
+                }
+            }
             case IO -> drawIo(canvas, cx, cy, mx, my);
             case REDSTONE -> drawRedstone(canvas, cx, cy, mx, my);
         }
@@ -571,10 +625,11 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             canvas.fill(x, y, x + w, y + h, Widgets.CHANNEL_NONE);
             return;
         }
-        SideConfig.Mode value = SideConfig.Mode.values()[Math.floorMod(mode, 4)];
+        SideConfig.Mode value = SideConfig.Mode.of(mode);
         switch (value) {
             case OFF -> canvas.fill(x, y, x + w, y + h, Widgets.CHANNEL_OFF);
             case INPUT -> canvas.fill(x, y, x + w, y + h, Widgets.CHANNEL_INPUT);
+            case ADDITIVE -> canvas.fill(x, y, x + w, y + h, Widgets.CHANNEL_ADDITIVE);
             case OUTPUT -> canvas.fill(x, y, x + w, y + h, Widgets.CHANNEL_OUTPUT);
             case BOTH -> {
                 for (int row = 0; row < h; row++) {
@@ -963,6 +1018,22 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             lines.add(Component.translatable(GuiText.key("structure", structurePage() ? "main" : "tab")));
             return lines;
         }
+        if (definition.choosesFlavor() && flavorButton().contains(mx, my)) {
+            int target = view.flavorTarget;
+            boolean auto = target < 0 || target >= FlavorType.values().length;
+            lines.add(Component.translatable(GuiText.key("flavor", "target"), auto ? Component.translatable(GuiText.key("flavor", "auto"))
+                : Component.translatable(FlavorType.values()[target].key())));
+            if (auto) {
+                lines.add(Component.translatable(GuiText.key("flavor", "auto_hint")).withStyle(ChatFormatting.GRAY));
+            }
+            return lines;
+        }
+        if (displayButton().contains(mx, my)) {
+            lines.add(Component.translatable(GuiText.key("display", "switch"),
+                Component.translatable(GuiText.key("io", ImmersiveDisplay.enabled() ? "on" : "switched_off"))));
+            lines.add(Component.translatable(GuiText.key("display", "hint")).withStyle(ChatFormatting.GRAY));
+            return lines;
+        }
         if (structurePage()) {
             return lines;
         }
@@ -1045,9 +1116,11 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             lines.add(Component.translatable(GuiText.key("tank", "empty")).withStyle(ChatFormatting.GRAY));
         } else {
             lines.add(PlatformFluids.displayName(fluid));
+            lines.addAll(QualityText.lines(fluid.quality(), Platform.isShiftDown()));
             if (Purity.bears(fluid.fluid())) {
                 Tooltips.purityLine(Purity.materialOf(fluid.fluid()), Purity.get(fluid), lines);
             }
+            lines.addAll(QualityText.declarations(fluid.quality()));
             lines.add(role.copy().withStyle(ChatFormatting.GRAY));
         }
         lines.add(Component.translatable(GuiText.key("tank", "amount"), String.valueOf(fluid.amount()), String.valueOf(view.tankCapacity))
@@ -1112,11 +1185,12 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
     }
 
     private static Component modeName(int mode) {
-        String key = switch (SideConfig.Mode.values()[Math.floorMod(mode, 4)]) {
+        String key = switch (SideConfig.Mode.of(mode)) {
             case OFF -> "off";
             case INPUT -> "input";
             case OUTPUT -> "output";
             case BOTH -> "both";
+            case ADDITIVE -> "additive";
         };
         return Component.translatable(GuiText.key("io", key));
     }
@@ -1174,6 +1248,17 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
             syncMenuState();
             return true;
         }
+        if (displayButton().contains(mx, my)) {
+            ImmersiveDisplay.toggle();
+            return true;
+        }
+        if (definition.choosesFlavor() && flavorButton().contains(mx, my)) {
+            // automatic, then the eleven types; right-click goes back
+            int count = FlavorType.values().length + 1;
+            int next = Math.floorMod(view().flavorTarget + 1 + (button == 1 ? -1 : 1), count) - 1;
+            menu.send(MenuActions.FLAVOR_TARGET, next, 0);
+            return true;
+        }
         if (structurePage()) {
             if (!view().wrong.isEmpty() && highlightButton().contains(mx, my)) {
                 StructureHighlight.show(view().wrong);
@@ -1229,8 +1314,9 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
                 dumpTank = tank;
                 dumpUntil = now + DUMP_CONFIRM_MS;
             }
-        } else if (!menu.getCarried().isEmpty()) {
-            menu.send(MenuActions.TANK_CLICK, tank, 0);
+        } else if (!menu.getCarried().isEmpty() && button <= 1) {
+            // left: pour the container in; right: fill it from the tank (2026-11-19)
+            menu.send(MenuActions.TANK_CLICK, tank, button);
         }
     }
 
@@ -1254,7 +1340,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
                     }
                 }
             }
-            case UPGRADES -> {
+            case UPGRADES, ADDITIVES -> {
                 return false;
             }
             default -> {
@@ -1299,7 +1385,7 @@ public class MachineScreen extends PlatformScreen<MachineMenu> {
                 }
                 int current = fluid ? view.sideFluids[face.ordinal()] : view.sideItems[face.ordinal()];
                 SideConfig.Mode next = Platform.isShiftDown() && button == 0 ? SideConfig.Mode.OFF
-                    : SideConfig.Mode.values()[Math.floorMod(current, 4)].cycle(button != 1);
+                    : SideConfig.Mode.of(current).cycle(button != 1, !fluid && definition.layout().additives() > 0);
                 menu.send(MenuActions.SIDE, face.ordinal(), (fluid ? 16 : 0) | next.ordinal());
                 return;
             }

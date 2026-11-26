@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:foods/butter"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/egg"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "sweet_flavoring"
+        ],
+        "item": "taste"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "butter_cookie|batter"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:pasteurized_milk",
+    "foodindustrial:flowing_pasteurized_milk",
+    {
+      "id": "#forge:pasteurized_milk",
+      "required": false
+    },
+    {
+      "id": "#c:pasteurized_milk",
+      "required": false
+    }
+  ]
+}

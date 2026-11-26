@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "semi_finished": "shumai|blank"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "steaming",
+  "outputs": [
+    {
+      "item": "foodindustrial:shumai"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

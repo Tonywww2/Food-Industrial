@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:cultures/yeast"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_glutinous_rice"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_qu"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:huangjiu_mash"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

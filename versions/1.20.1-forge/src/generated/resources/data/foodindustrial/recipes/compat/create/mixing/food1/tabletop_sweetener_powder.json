@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/sorbitol"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sorbitol"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sorbitol"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sorbitol"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:semi_finished"
+    }
+  ]
+}

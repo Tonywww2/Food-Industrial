@@ -69,6 +69,35 @@ final class JeiSupport {
         return builder.addSlot(role, x, y).addIngredients(fluidType(), stacks).setFluidRenderer(capacity, false, 16, 16);
     }
 
+    /**
+     * Gives {@code item} subtypes by {@code key} (an empty key: no subtype), for the ingredient list and for recipe
+     * lookups alike (2026-11-20).
+     */
+    static void subtypes(mezz.jei.api.registration.ISubtypeRegistration registration, net.minecraft.world.item.Item item,
+                         java.util.function.Function<ItemStack, String> key) {
+        //? if >=26.1 {
+        /*registration.registerSubtypeInterpreter(item, (stack, context) -> {
+            String value = key.apply(stack);
+            return value.isEmpty() ? null : value;
+        });
+        *///?} else if >=1.21 {
+        /*registration.registerSubtypeInterpreter(item, new mezz.jei.api.ingredients.subtypes.ISubtypeInterpreter<ItemStack>() {
+            @Override
+            public Object getSubtypeData(ItemStack stack, mezz.jei.api.ingredients.subtypes.UidContext context) {
+                String value = key.apply(stack);
+                return value.isEmpty() ? null : value;
+            }
+
+            @Override
+            public String getLegacyStringSubtypeInfo(ItemStack stack, mezz.jei.api.ingredients.subtypes.UidContext context) {
+                return key.apply(stack);
+            }
+        });
+        *///?} else {
+        registration.registerSubtypeInterpreter(item, (stack, context) -> key.apply(stack));
+        //?}
+    }
+
     static IRecipeSlotBuilder items(IRecipeLayoutBuilder builder, RecipeIngredientRole role, int x, int y, List<ItemStack> items) {
         return builder.addSlot(role, x, y).addItemStacks(items);
     }

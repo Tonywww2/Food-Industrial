@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:doubanjiang_sweet_mash",
+  "loader": "neoforge:fluid_container"
+}

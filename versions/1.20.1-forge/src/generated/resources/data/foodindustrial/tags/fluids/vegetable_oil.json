@@ -12,6 +12,7 @@
     {
       "id": "#c:plantoil",
       "required": false
-    }
+    },
+    "foodindustrial:refined_soybean_oil"
   ]
 }

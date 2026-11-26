@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "doubanjiang|bean_koji"
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:doubanjiang_sweet_mash"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

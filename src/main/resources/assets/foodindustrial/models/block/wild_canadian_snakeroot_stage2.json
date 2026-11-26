@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/wild_canadian_snakeroot_stage2"
+  },
+  "render_type": "minecraft:cutout"
+}

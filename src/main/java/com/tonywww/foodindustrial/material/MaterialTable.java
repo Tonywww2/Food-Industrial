@@ -15,7 +15,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Reads {@code /foodindustrial/materials.json} from the mod jar. */
+/**
+ * Reads {@code /foodindustrial/materials.json} from the mod jar: the additive materials, then the food intermediates of the
+ * product batches (category {@code food}, I47; one table since 2026-11-25, {@code tools/materials/export_materials.py}).
+ */
 public final class MaterialTable {
     public static final String RESOURCE = "/foodindustrial/materials.json";
 
@@ -23,15 +26,19 @@ public final class MaterialTable {
     }
 
     public static List<MaterialDef> load() {
-        try (InputStream in = MaterialTable.class.getResourceAsStream(RESOURCE)) {
+        return Collections.unmodifiableList(new ArrayList<>(read(RESOURCE, "tools/materials/export_materials.py")));
+    }
+
+    private static List<MaterialDef> read(String resource, String tool) {
+        try (InputStream in = MaterialTable.class.getResourceAsStream(resource)) {
             if (in == null) {
-                throw new IllegalStateException("Missing " + RESOURCE + "; run tools/materials/export_materials.py");
+                throw new IllegalStateException("Missing " + resource + "; run " + tool);
             }
             try (Reader reader = new InputStreamReader(in, StandardCharsets.UTF_8)) {
                 return parse(JsonParser.parseReader(reader).getAsJsonObject());
             }
         } catch (IOException exception) {
-            throw new IllegalStateException("Cannot read " + RESOURCE, exception);
+            throw new IllegalStateException("Cannot read " + resource, exception);
         }
     }
 

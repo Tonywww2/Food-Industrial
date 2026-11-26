@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:walnut",
+    {
+      "id": "#forge:crops/walnut",
+      "required": false
+    },
+    {
+      "id": "#forge:nuts/walnut",
+      "required": false
+    },
+    {
+      "id": "#c:crops/walnut",
+      "required": false
+    },
+    {
+      "id": "#c:nuts/walnut",
+      "required": false
+    }
+  ]
+}

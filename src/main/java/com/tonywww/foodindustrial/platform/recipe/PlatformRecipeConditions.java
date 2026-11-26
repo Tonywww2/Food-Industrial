@@ -98,6 +98,31 @@ public final class PlatformRecipeConditions {
         return result;
     }
 
+    /**
+     * {@code recipe} loaded only while the item tag {@code tag} has entries (I40: tin cans and aluminum cans need
+     * another mod's ingots; no fallback, additives/11 问题 14).
+     */
+    public static JsonObject whenTagNotEmpty(JsonObject recipe, String tag) {
+        JsonObject empty = new JsonObject();
+        empty.addProperty("type", NS + ":tag_empty");
+        empty.addProperty("tag", tag);
+        JsonObject not = new JsonObject();
+        not.addProperty("type", NS + ":not");
+        not.add("value", empty);
+        JsonArray conditions = new JsonArray();
+        conditions.add(not);
+        JsonObject result = new JsonObject();
+        //? if forge {
+        result.add("conditions", conditions);
+        //?} else {
+        /*result.add("neoforge:conditions", conditions);
+        *///?}
+        for (Map.Entry<String, com.google.gson.JsonElement> entry : recipe.entrySet()) {
+            result.add(entry.getKey(), entry.getValue());
+        }
+        return result;
+    }
+
     //? if forge {
     private static final String NS = "forge";
     //?} else {

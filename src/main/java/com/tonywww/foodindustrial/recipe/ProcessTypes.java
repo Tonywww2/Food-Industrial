@@ -11,7 +11,8 @@ import java.util.Map;
 import java.util.function.Function;
 
 /**
- * The 19 general recipe types and the 2 world interaction types (machines/01 §2) with their default
+ * The 19 general recipe types, the 10 of the finished-food line (machines/05 §1.1) and the world interaction types
+ * (machines/01 §2) with their default
  * purity rules (machines/01 §1.1). Removal shares are game settings in four steps: ordinary 50%,
  * strong 75%, very strong 90%, pure culture 99%.
  */
@@ -49,8 +50,22 @@ public final class ProcessTypes {
     /** Compound products carry no purity; the same material mixed keeps the weighted average. */
     /** Compounding takes the product's food bound (machines/01 §1.1, 2026-11-05); homogenizing is a built-in M21 rule. */
     public static final ProcessType MIXING = add("mixing", "R19", false, false, conditions -> PurityRule.SOURCE_FOOD);
+    // The finished-food line (machines/05 §1.1, I38): products carry quality instead of purity (foods/05 §1 rule 3), the
+    // main product's amount does not grow with the tier (foods/05 §4.2), intermediates keep the purity of their inputs.
+    public static final ProcessType FORMING = add("forming", "R20", false, false, KEEP);
+    public static final ProcessType STERILIZING = add("sterilizing", "R21", false, false, KEEP);
+    public static final ProcessType COOKING = add("cooking", "R22", false, false, KEEP);
+    public static final ProcessType BAKING = add("baking", "R23", false, false, KEEP);
+    public static final ProcessType FRYING = add("frying", "R24", false, false, KEEP);
+    public static final ProcessType CURING = add("curing", "R25", false, false, KEEP);
+    public static final ProcessType CUTTING = add("cutting", "R26", false, false, KEEP);
+    public static final ProcessType CONFECTIONERY = add("confectionery", "R27", false, false, KEEP);
+    public static final ProcessType CHILLING = add("chilling", "R28", false, false, KEEP);
+    public static final ProcessType PACKAGING = add("packaging", "R29", false, false, KEEP);
     public static final ProcessType BLOCK_TRANSFORM = add("block_transform", "W01", false, true, KEEP);
     public static final ProcessType HARVESTING = add("harvesting", "W02", false, true, KEEP);
+    /** W03 pumping (I43, additives/07 §H16, M54): seawater from the hand and electric seawater pumps. */
+    public static final ProcessType PUMPING = add("pumping", "W03", false, true, KEEP);
 
     private static final List<ProcessType> RECIPE_TYPES = BY_ID.values().stream().filter(type -> !type.isWorldInteraction()).toList();
 
@@ -68,7 +83,7 @@ public final class ProcessTypes {
         return Collections.unmodifiableList(new ArrayList<>(BY_ID.values()));
     }
 
-    /** Types with a datapack recipe format (R01–R19), R01 first. */
+    /** Types with a datapack recipe format (R01–R29), R01 first. */
     public static List<ProcessType> recipeTypes() {
         return RECIPE_TYPES;
     }
@@ -79,7 +94,7 @@ public final class ProcessTypes {
         return BY_ID.get(id.startsWith("foodindustrial:") ? id.substring("foodindustrial:".length()) : id);
     }
 
-    /** Registers the recipe types and serializers of R01–R19. Called once during mod construction. */
+    /** Registers the recipe types and serializers of R01–R29. Called once during mod construction. */
     public static void bootstrap() {
         for (ProcessType type : recipeTypes()) {
             type.bind(PlatformRecipes.register(type.id(), ProcessRecipe.mapCodec(type)));

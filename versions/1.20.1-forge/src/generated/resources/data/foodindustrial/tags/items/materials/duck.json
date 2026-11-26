@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:raw_duck",
+    {
+      "id": "#forge:raw_duck",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/raw_duck",
+      "required": false
+    },
+    {
+      "id": "#c:raw_duck",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_duck",
+      "required": false
+    }
+  ]
+}

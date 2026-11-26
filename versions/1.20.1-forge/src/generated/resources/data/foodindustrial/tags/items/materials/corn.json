@@ -8,6 +8,7 @@
     {
       "id": "#c:crops/corn",
       "required": false
-    }
+    },
+    "foodindustrial:corn"
   ]
 }

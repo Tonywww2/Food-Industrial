@@ -16,6 +16,7 @@
     {
       "id": "#forge:vegetables/tomato",
       "required": false
-    }
+    },
+    "foodindustrial:tomato"
   ]
 }

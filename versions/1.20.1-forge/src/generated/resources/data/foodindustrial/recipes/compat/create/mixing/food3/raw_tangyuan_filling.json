@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/roasted_sesame"
+    },
+    {
+      "tag": "foodindustrial:materials/roasted_sesame"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sucrose"
+    },
+    {
+      "tag": "foodindustrial:foods/lard"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:semi_finished"
+    }
+  ]
+}

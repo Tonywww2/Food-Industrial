@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/oats"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "steaming",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "oat_flakes|steamed_oats"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

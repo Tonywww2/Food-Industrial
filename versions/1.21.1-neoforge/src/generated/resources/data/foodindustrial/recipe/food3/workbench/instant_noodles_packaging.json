@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "instant_noodles|noodle_cake"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/plastic_bag"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:instant_noodles"
+  }
+}

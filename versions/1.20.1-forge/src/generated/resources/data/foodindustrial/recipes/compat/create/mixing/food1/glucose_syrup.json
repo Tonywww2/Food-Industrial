@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:glucose_syrup_decolorized"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:glucose_syrup"
+    }
+  ]
+}

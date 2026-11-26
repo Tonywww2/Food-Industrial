@@ -12,7 +12,8 @@ import com.tonywww.foodindustrial.registry.SharedTags;
  * orientable block models, item models, loot tables (the block drops itself), the pickaxe tag and the
  * tools' crafting recipes. Textures are
  * {@code block/<id>_front}, {@code _front_active}, {@code _side}, {@code _top}; ports use one
- * {@code block/<id>} texture.
+ * {@code block/<id>} texture. A shaped machine's block models take its shape ({@code block/<id>_shape},
+ * tools/models) as parent, with the same textures.
  */
 final class MachineData {
     private static final String NS = FoodIndustrial.MOD_ID;
@@ -60,8 +61,8 @@ final class MachineData {
             JsonObject state = new JsonObject();
             state.add("variants", variants);
             sink.json(PlatformDatagen.Kind.BLOCKSTATE, NS, id, state);
-            sink.json(PlatformDatagen.Kind.MODEL, NS, "block/" + id, orientable(id, false));
-            sink.json(PlatformDatagen.Kind.MODEL, NS, "block/" + id + "_active", orientable(id, true));
+            sink.json(PlatformDatagen.Kind.MODEL, NS, "block/" + id, orientable(definition, false));
+            sink.json(PlatformDatagen.Kind.MODEL, NS, "block/" + id + "_active", orientable(definition, true));
             blockItem(sink, id);
             sink.json(PlatformDatagen.Kind.BLOCK_LOOT, NS, id, dropSelf(NS + ":" + id));
         }
@@ -128,9 +129,10 @@ final class MachineData {
         sink.json(PlatformDatagen.Kind.RECIPE, NS, com.tonywww.foodindustrial.machine.tool.RedprintItem.ID, redprint);
     }
 
-    private static JsonObject orientable(String id, boolean active) {
+    private static JsonObject orientable(MachineDefinition definition, boolean active) {
+        String id = definition.id();
         JsonObject model = new JsonObject();
-        model.addProperty("parent", "minecraft:block/orientable");
+        model.addProperty("parent", definition.shaped() ? NS + ":block/" + id + "_shape" : "minecraft:block/orientable");
         JsonObject textures = new JsonObject();
         textures.addProperty("front", NS + ":block/" + id + (active ? "_front_active" : "_front"));
         textures.addProperty("side", NS + ":block/" + id + "_side");

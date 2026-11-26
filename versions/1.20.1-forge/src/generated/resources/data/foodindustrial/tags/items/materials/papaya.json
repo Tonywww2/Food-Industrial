@@ -8,6 +8,7 @@
     {
       "id": "#c:fruits/papaya",
       "required": false
-    }
+    },
+    "foodindustrial:papaya"
   ]
 }

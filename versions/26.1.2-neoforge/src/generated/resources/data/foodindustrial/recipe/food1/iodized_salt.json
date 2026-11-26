@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 8,
+      "ingredient": "#foodindustrial:salt_position"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/potassium_iodate"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 8,
+      "item": "foodindustrial:iodized_salt"
+    }
+  ],
+  "quality": {
+    "items": [
+      "state"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

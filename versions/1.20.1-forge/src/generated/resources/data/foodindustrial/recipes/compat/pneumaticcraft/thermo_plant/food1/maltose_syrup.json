@@ -1,0 +1,29 @@
+{
+  "type": "pneumaticcraft:thermo_plant",
+  "air_use_multiplier": 1.0,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "exothermic": false,
+  "fluid_input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:maltose_syrup_wort"
+  },
+  "fluid_output": {
+    "amount": 500,
+    "fluid": "foodindustrial:maltose_syrup"
+  },
+  "pressure": 0.0,
+  "speed": 1.0,
+  "temperature": {
+    "min_temp": 373
+  }
+}

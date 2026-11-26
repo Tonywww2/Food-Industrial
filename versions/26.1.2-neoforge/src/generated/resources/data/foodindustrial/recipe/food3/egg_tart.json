@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/tart_pan"
+  },
+  "inputs": [
+    {
+      "semi_finished": "egg_tart|tart_shell"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:egg_custard_mix"
+      }
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:egg_tart"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

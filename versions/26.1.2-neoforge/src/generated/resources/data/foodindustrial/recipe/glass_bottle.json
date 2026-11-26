@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 3,
+      "ingredient": "minecraft:glass"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:glass_bottle"
+  },
+  "tools": [
+    "foodindustrial:blow_mold"
+  ]
+}

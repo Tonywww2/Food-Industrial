@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:stony_peaks",
+    "minecraft:jagged_peaks",
+    "minecraft:stony_shore"
+  ],
+  "features": [
+    "foodindustrial:swiftlet_nest_north",
+    "foodindustrial:swiftlet_nest_east",
+    "foodindustrial:swiftlet_nest_south",
+    "foodindustrial:swiftlet_nest_west"
+  ],
+  "step": "vegetal_decoration"
+}

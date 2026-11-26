@@ -1,0 +1,754 @@
+{
+ "fluid": {
+  "chemicals": {
+   "en": "Chemicals",
+   "zh": "化学品"
+  },
+  "edible_oils": {
+   "en": "Edible Oils for Extraction",
+   "zh": "浸提用食用油"
+  },
+  "flavor_carriers/oil_soluble": {
+   "en": "Oil-Soluble Flavoring Carriers",
+   "zh": "油溶性香精载体"
+  },
+  "flavor_carriers/water_soluble": {
+   "en": "Water-Soluble Flavoring Carriers",
+   "zh": "水溶性香精载体"
+  },
+  "flavor_notes/alcoholic": {
+   "en": "Alcoholic Flavorings",
+   "zh": "酒香香料"
+  },
+  "flavor_notes/all": {
+   "en": "Flavorings",
+   "zh": "香料"
+  },
+  "flavor_notes/cooling": {
+   "en": "Cooling Flavorings",
+   "zh": "清凉香料"
+  },
+  "flavor_notes/dairy": {
+   "en": "Dairy Flavorings",
+   "zh": "乳香香料"
+  },
+  "flavor_notes/floral": {
+   "en": "Floral Flavorings",
+   "zh": "花香香料"
+  },
+  "flavor_notes/fruity": {
+   "en": "Fruity Flavorings",
+   "zh": "果香香料"
+  },
+  "flavor_notes/green": {
+   "en": "Green Flavorings",
+   "zh": "蔬菜与青香香料"
+  },
+  "flavor_notes/nutty_roasted": {
+   "en": "Nutty and Roasted Flavorings",
+   "zh": "坚果与焙烤香料"
+  },
+  "flavor_notes/savory": {
+   "en": "Savory Flavorings",
+   "zh": "肉味与咸味香料"
+  },
+  "flavor_notes/smoky": {
+   "en": "Smoky Flavorings",
+   "zh": "烟熏香料"
+  },
+  "flavor_notes/spicy": {
+   "en": "Spicy Flavorings",
+   "zh": "辛香香料"
+  },
+  "flavor_notes/sweet": {
+   "en": "Sweet Flavorings",
+   "zh": "甜香香料"
+  },
+  "foods/cooking_oil": {
+   "en": "Cooking Oils",
+   "zh": "烹调油"
+  },
+  "foods/soy_sauce": {
+   "en": "Soy Sauces",
+   "zh": "酱油"
+  },
+  "foods/vinegar": {
+   "en": "Vinegars",
+   "zh": "食醋"
+  },
+  "heat_sources": {
+   "en": "Heat Source Fluids",
+   "zh": "热源流体"
+  },
+  "honey": {
+   "en": "Honey",
+   "zh": "蜂蜜"
+  },
+  "kansui": {
+   "en": "Kansui",
+   "zh": "枧水"
+  },
+  "milk": {
+   "en": "Milk",
+   "zh": "牛奶"
+  },
+  "molasses": {
+   "en": "Molasses",
+   "zh": "糖蜜"
+  },
+  "water": {
+   "en": "Water",
+   "zh": "水"
+  }
+ },
+ "item": {
+  "animal_fats": {
+   "en": "Animal Fats",
+   "zh": "动物脂肪"
+  },
+  "chemicals": {
+   "en": "Chemicals",
+   "zh": "化学品"
+  },
+  "containers": {
+   "en": "Containers and Packaging",
+   "zh": "容器与包装"
+  },
+  "cooking_fats": {
+   "en": "Rendered Fats",
+   "zh": "炼制油脂"
+  },
+  "coolants/ice": {
+   "en": "Cooling Ice",
+   "zh": "冷却用冰"
+  },
+  "culture_bench/donors": {
+   "en": "Donor Samples",
+   "zh": "供体样本"
+  },
+  "culture_bench/media": {
+   "en": "Culture Media",
+   "zh": "培养基"
+  },
+  "culture_bench/samples": {
+   "en": "Samples or Cultures",
+   "zh": "样本或菌种"
+  },
+  "culture_bench/vectors": {
+   "en": "Expression Vectors",
+   "zh": "表达载体"
+  },
+  "flavor_carriers/emulsifiers": {
+   "en": "Emulsion Flavoring Carriers",
+   "zh": "乳化香精载体"
+  },
+  "flavor_carriers/powders": {
+   "en": "Powder Flavoring Carriers",
+   "zh": "粉末香精载体"
+  },
+  "flavor_notes/alcoholic": {
+   "en": "Alcoholic Flavorings",
+   "zh": "酒香香料"
+  },
+  "flavor_notes/all": {
+   "en": "Flavorings",
+   "zh": "香料"
+  },
+  "flavor_notes/cooling": {
+   "en": "Cooling Flavorings",
+   "zh": "清凉香料"
+  },
+  "flavor_notes/dairy": {
+   "en": "Dairy Flavorings",
+   "zh": "乳香香料"
+  },
+  "flavor_notes/floral": {
+   "en": "Floral Flavorings",
+   "zh": "花香香料"
+  },
+  "flavor_notes/fruity": {
+   "en": "Fruity Flavorings",
+   "zh": "果香香料"
+  },
+  "flavor_notes/green": {
+   "en": "Green Flavorings",
+   "zh": "蔬菜与青香香料"
+  },
+  "flavor_notes/nutty_roasted": {
+   "en": "Nutty and Roasted Flavorings",
+   "zh": "坚果与焙烤香料"
+  },
+  "flavor_notes/savory": {
+   "en": "Savory Flavorings",
+   "zh": "肉味与咸味香料"
+  },
+  "flavor_notes/smoky": {
+   "en": "Smoky Flavorings",
+   "zh": "烟熏香料"
+  },
+  "flavor_notes/spicy": {
+   "en": "Spicy Flavorings",
+   "zh": "辛香香料"
+  },
+  "flavor_notes/sweet": {
+   "en": "Sweet Flavorings",
+   "zh": "甜香香料"
+  },
+  "flavorings": {
+   "en": "Flavoring Blends",
+   "zh": "香精"
+  },
+  "food_categories/alcoholic": {
+   "en": "Alcoholic Beverages",
+   "zh": "酒类"
+  },
+  "food_categories/aquatic": {
+   "en": "Aquatic Products",
+   "zh": "水产及其制品"
+  },
+  "food_categories/bakery": {
+   "en": "Bakery Products",
+   "zh": "焙烤食品"
+  },
+  "food_categories/beverages": {
+   "en": "Beverages",
+   "zh": "饮料类"
+  },
+  "food_categories/cereals": {
+   "en": "Cereals and Cereal Products",
+   "zh": "粮食和粮食制品"
+  },
+  "food_categories/cocoa_confectionery": {
+   "en": "Cocoa Products, Chocolate and Confectionery",
+   "zh": "可可制品、巧克力和巧克力制品以及糖果"
+  },
+  "food_categories/condiments": {
+   "en": "Condiments",
+   "zh": "调味品"
+  },
+  "food_categories/dairy": {
+   "en": "Dairy Products",
+   "zh": "乳及乳制品"
+  },
+  "food_categories/eggs": {
+   "en": "Eggs and Egg Products",
+   "zh": "蛋及蛋制品"
+  },
+  "food_categories/fats_oils": {
+   "en": "Fats, Oils and Fat Emulsions",
+   "zh": "脂肪、油和乳化脂肪制品"
+  },
+  "food_categories/frozen_desserts": {
+   "en": "Frozen Desserts",
+   "zh": "冷冻饮品"
+  },
+  "food_categories/fruits_vegetables": {
+   "en": "Fruits, Vegetables, Legumes, Fungi, Algae, Nuts and Seeds",
+   "zh": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+  },
+  "food_categories/meat": {
+   "en": "Meat and Meat Products",
+   "zh": "肉及肉制品"
+  },
+  "food_categories/other": {
+   "en": "Other Foods",
+   "zh": "其他类"
+  },
+  "food_categories/special_dietary": {
+   "en": "Foods for Special Dietary Uses",
+   "zh": "特殊膳食用食品"
+  },
+  "food_categories/sweeteners": {
+   "en": "Sweeteners",
+   "zh": "甜味料"
+  },
+  "food_emulsifiers": {
+   "en": "Food Emulsifiers",
+   "zh": "食品乳化剂"
+  },
+  "foods/biscuits": {
+   "en": "Biscuits",
+   "zh": "饼干"
+  },
+  "foods/cake_base": {
+   "en": "Cake Bases",
+   "zh": "蛋糕坯"
+  },
+  "foods/cooking_oil": {
+   "en": "Cooking Oils",
+   "zh": "烹调油"
+  },
+  "foods/soy_sauce": {
+   "en": "Soy Sauces",
+   "zh": "酱油"
+  },
+  "foods/vinegar": {
+   "en": "Vinegars",
+   "zh": "食醋"
+  },
+  "fumigatable": {
+   "en": "Fumigatable Foods",
+   "zh": "可熏蒸的食品"
+  },
+  "lamian_alkali": {
+   "en": "Lamian Alkali",
+   "zh": "拉面蓬灰"
+  },
+  "materials/amomum": {
+   "en": "Amomum",
+   "zh": "砂仁"
+  },
+  "materials/apple": {
+   "en": "Apple",
+   "zh": "苹果"
+  },
+  "materials/bamboo": {
+   "en": "Bamboo",
+   "zh": "竹子"
+  },
+  "materials/beetroot": {
+   "en": "Beetroot",
+   "zh": "甜菜根"
+  },
+  "materials/berries": {
+   "en": "Berries",
+   "zh": "浆果"
+  },
+  "materials/bismuth": {
+   "en": "Bismuth",
+   "zh": "铋"
+  },
+  "materials/bone": {
+   "en": "Bone",
+   "zh": "骨头"
+  },
+  "materials/bone_meal": {
+   "en": "Bone Meal",
+   "zh": "骨粉"
+  },
+  "materials/cabbage": {
+   "en": "Cabbage",
+   "zh": "卷心菜"
+  },
+  "materials/carrot": {
+   "en": "Carrot",
+   "zh": "胡萝卜"
+  },
+  "materials/cinnamon": {
+   "en": "Cassia Bark",
+   "zh": "桂皮"
+  },
+  "materials/citrus": {
+   "en": "Citrus",
+   "zh": "柑橘"
+  },
+  "materials/clay": {
+   "en": "Clay Ball",
+   "zh": "黏土球"
+  },
+  "materials/coal": {
+   "en": "Coal and Charcoal",
+   "zh": "煤炭与木炭"
+  },
+  "materials/cobalt": {
+   "en": "Cobalt",
+   "zh": "钴"
+  },
+  "materials/cocoa_beans": {
+   "en": "Cocoa Beans",
+   "zh": "可可豆"
+  },
+  "materials/coconut": {
+   "en": "Coconut",
+   "zh": "椰子"
+  },
+  "materials/coke": {
+   "en": "Coke",
+   "zh": "焦炭"
+  },
+  "materials/copper": {
+   "en": "Copper",
+   "zh": "铜"
+  },
+  "materials/corn": {
+   "en": "Corn",
+   "zh": "玉米"
+  },
+  "materials/cowhide": {
+   "en": "Cowhide",
+   "zh": "牛皮"
+  },
+  "materials/cucumber": {
+   "en": "Cucumber",
+   "zh": "黄瓜"
+  },
+  "materials/dried_kelp": {
+   "en": "Dried Kelp",
+   "zh": "干海带"
+  },
+  "materials/duck": {
+   "en": "Raw Duck",
+   "zh": "生鸭肉"
+  },
+  "materials/duck_egg": {
+   "en": "Duck Egg",
+   "zh": "鸭蛋"
+  },
+  "materials/egg": {
+   "en": "Egg",
+   "zh": "鸡蛋"
+  },
+  "materials/feather": {
+   "en": "Feather",
+   "zh": "羽毛"
+  },
+  "materials/glass_bottle": {
+   "en": "Glass Bottle",
+   "zh": "玻璃瓶"
+  },
+  "materials/gold": {
+   "en": "Gold",
+   "zh": "金"
+  },
+  "materials/grape": {
+   "en": "Grape",
+   "zh": "葡萄"
+  },
+  "materials/grass": {
+   "en": "Grass and Ferns",
+   "zh": "草与蕨"
+  },
+  "materials/hemicellulose": {
+   "en": "Birch Log",
+   "zh": "桦木原木"
+  },
+  "materials/herbs": {
+   "en": "Herbs",
+   "zh": "草本"
+  },
+  "materials/hide": {
+   "en": "Leather and Rabbit Hide",
+   "zh": "皮革与兔子皮"
+  },
+  "materials/honey": {
+   "en": "Honey",
+   "zh": "蜂蜜"
+  },
+  "materials/honeycomb": {
+   "en": "Honeycomb",
+   "zh": "蜜脾"
+  },
+  "materials/horn": {
+   "en": "Goat Horn",
+   "zh": "山羊角"
+  },
+  "materials/ice": {
+   "en": "Ice",
+   "zh": "冰"
+  },
+  "materials/iron": {
+   "en": "Iron",
+   "zh": "铁"
+  },
+  "materials/kelp": {
+   "en": "Kelp",
+   "zh": "海带"
+  },
+  "materials/laver": {
+   "en": "Laver",
+   "zh": "紫菜"
+  },
+  "materials/lead": {
+   "en": "Lead",
+   "zh": "铅"
+  },
+  "materials/leafy_greens": {
+   "en": "Leafy Greens",
+   "zh": "叶菜"
+  },
+  "materials/leaves": {
+   "en": "Leaves",
+   "zh": "树叶"
+  },
+  "materials/lemon": {
+   "en": "Lemon",
+   "zh": "柠檬"
+  },
+  "materials/limestone": {
+   "en": "Calcite and Dripstone",
+   "zh": "方解石与滴水石块"
+  },
+  "materials/logs": {
+   "en": "Logs",
+   "zh": "原木"
+  },
+  "materials/milk": {
+   "en": "Milk",
+   "zh": "牛奶"
+  },
+  "materials/molybdenum": {
+   "en": "Molybdenum",
+   "zh": "钼"
+  },
+  "materials/nickel": {
+   "en": "Nickel",
+   "zh": "镍"
+  },
+  "materials/nuts": {
+   "en": "Nuts",
+   "zh": "坚果"
+  },
+  "materials/oats": {
+   "en": "Oats",
+   "zh": "燕麦"
+  },
+  "materials/onion": {
+   "en": "Onion",
+   "zh": "洋葱"
+  },
+  "materials/orange": {
+   "en": "Orange",
+   "zh": "橙"
+  },
+  "materials/oyster": {
+   "en": "Oyster",
+   "zh": "蚝"
+  },
+  "materials/palladium": {
+   "en": "Palladium",
+   "zh": "钯"
+  },
+  "materials/papaya": {
+   "en": "Papaya",
+   "zh": "木瓜"
+  },
+  "materials/peanut": {
+   "en": "Peanut",
+   "zh": "花生"
+  },
+  "materials/pineapple": {
+   "en": "Pineapple",
+   "zh": "菠萝"
+  },
+  "materials/platinum": {
+   "en": "Platinum",
+   "zh": "铂"
+  },
+  "materials/potato": {
+   "en": "Potato",
+   "zh": "马铃薯"
+  },
+  "materials/quartz": {
+   "en": "Nether Quartz",
+   "zh": "下界石英"
+  },
+  "materials/radish": {
+   "en": "Radish",
+   "zh": "萝卜"
+  },
+  "materials/raw_beef": {
+   "en": "Raw Beef",
+   "zh": "生牛肉"
+  },
+  "materials/raw_chicken": {
+   "en": "Raw Chicken",
+   "zh": "生鸡肉"
+  },
+  "materials/raw_fish": {
+   "en": "Raw Fish",
+   "zh": "生鱼"
+  },
+  "materials/raw_mutton": {
+   "en": "Raw Mutton",
+   "zh": "生羊肉"
+  },
+  "materials/raw_pork": {
+   "en": "Raw Pork",
+   "zh": "生猪肉"
+  },
+  "materials/raw_rabbit": {
+   "en": "Raw Rabbit",
+   "zh": "生兔肉"
+  },
+  "materials/rhodium": {
+   "en": "Rhodium",
+   "zh": "铑"
+  },
+  "materials/rubber_log": {
+   "en": "Rubber Log",
+   "zh": "橡胶木原木"
+  },
+  "materials/saltbush": {
+   "en": "Dead Bush",
+   "zh": "枯萎的灌木"
+  },
+  "materials/sand": {
+   "en": "Sand",
+   "zh": "沙子"
+  },
+  "materials/seagrass": {
+   "en": "Seagrass",
+   "zh": "海草"
+  },
+  "materials/sesame": {
+   "en": "Sesame",
+   "zh": "芝麻"
+  },
+  "materials/shrimp": {
+   "en": "Shrimp",
+   "zh": "虾"
+  },
+  "materials/silver": {
+   "en": "Silver",
+   "zh": "银"
+  },
+  "materials/snow": {
+   "en": "Snow",
+   "zh": "雪"
+  },
+  "materials/soybean": {
+   "en": "Soybean",
+   "zh": "大豆"
+  },
+  "materials/straw": {
+   "en": "Straw",
+   "zh": "稻草"
+  },
+  "materials/sugar_cane": {
+   "en": "Sugar Cane",
+   "zh": "甘蔗"
+  },
+  "materials/tea": {
+   "en": "Tea Leaves",
+   "zh": "茶叶"
+  },
+  "materials/tin": {
+   "en": "Tin",
+   "zh": "锡"
+  },
+  "materials/tomato": {
+   "en": "Tomato",
+   "zh": "番茄"
+  },
+  "materials/tungsten": {
+   "en": "Tungsten",
+   "zh": "钨"
+  },
+  "materials/vanadium": {
+   "en": "Vanadium",
+   "zh": "钒"
+  },
+  "materials/vegetables": {
+   "en": "Vegetables",
+   "zh": "蔬菜"
+  },
+  "materials/walnut": {
+   "en": "Walnut",
+   "zh": "核桃"
+  },
+  "materials/wheat": {
+   "en": "Wheat",
+   "zh": "小麦"
+  },
+  "materials/wool": {
+   "en": "Wool",
+   "zh": "羊毛"
+  },
+  "materials/zinc": {
+   "en": "Zinc",
+   "zh": "锌"
+  },
+  "molds": {
+   "en": "Molds",
+   "zh": "模具"
+  },
+  "mortar_stones": {
+   "en": "Mortar Stones",
+   "zh": "研钵用石"
+  },
+  "mustard_seeds": {
+   "en": "Mustard Seeds",
+   "zh": "芥菜籽"
+  },
+  "rubber_logs": {
+   "en": "Rubber Wood",
+   "zh": "橡胶木"
+  },
+  "salt_position": {
+   "en": "Salt Slot",
+   "zh": "盐位"
+  },
+  "samples/aquatic_plant": {
+   "en": "Aquatic Plant Samples",
+   "zh": "水生植物样本"
+  },
+  "samples/beetroot": {
+   "en": "Beetroot Samples",
+   "zh": "甜菜根样本"
+  },
+  "samples/brine": {
+   "en": "Brine Samples",
+   "zh": "卤水样本"
+  },
+  "samples/cocoa": {
+   "en": "Cocoa Samples",
+   "zh": "可可样本"
+  },
+  "samples/compost": {
+   "en": "Compost Samples",
+   "zh": "堆肥样本"
+  },
+  "samples/dairy": {
+   "en": "Dairy Samples",
+   "zh": "乳品样本"
+  },
+  "samples/decaying_plant": {
+   "en": "Decaying Plant Samples",
+   "zh": "腐烂植物样本"
+  },
+  "samples/fruit": {
+   "en": "Fruit Samples",
+   "zh": "水果样本"
+  },
+  "samples/honey": {
+   "en": "Honey Samples",
+   "zh": "蜂蜜样本"
+  },
+  "samples/leaf": {
+   "en": "Leaf Samples",
+   "zh": "树叶样本"
+  },
+  "samples/marine": {
+   "en": "Marine Samples",
+   "zh": "海洋样本"
+  },
+  "samples/mushroom": {
+   "en": "Mushroom Samples",
+   "zh": "蘑菇样本"
+  },
+  "samples/raw_meat": {
+   "en": "Raw Meat Samples",
+   "zh": "生肉样本"
+  },
+  "samples/rotten_fat": {
+   "en": "Rotten Fat Samples",
+   "zh": "腐败脂肪样本"
+  },
+  "samples/rotten_wood": {
+   "en": "Rotten Wood Samples",
+   "zh": "朽木样本"
+  },
+  "samples/soil": {
+   "en": "Soil Samples",
+   "zh": "土壤样本"
+  },
+  "samples/straw": {
+   "en": "Straw Samples",
+   "zh": "稻草样本"
+  },
+  "stock_meats": {
+   "en": "Stock Meats",
+   "zh": "熬汤用肉"
+  }
+ }
+}

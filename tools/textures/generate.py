@@ -167,7 +167,7 @@ KIND_NAMES = {
     'block': '块状（规整）', 'bar': '条块', 'noodles': '面条', 'bun': '包点', 'bread': '面包', 'cake': '蛋糕', 'biscuit': '饼干',
     'fried_stick': '条状炸物', 'candy': '糖果', 'stick_treat': '签上', 'sausage': '肠', 'meat': '肉块', 'poultry': '禽',
     'fish': '鱼', 'egg': '蛋'}
-GROUP_NAMES = {'chemical': '化学品', 'flavor': '香料', 'culture': '菌种', 'enzyme': '酶', 'catalyst': '催化剂', 'consumable': '耗材',
+GROUP_NAMES = {'food': '食品中间体', 'chemical': '化学品', 'flavor': '香料', 'culture': '菌种', 'enzyme': '酶', 'catalyst': '催化剂', 'consumable': '耗材',
                'raw': '原料', 'product': '成品'}
 
 

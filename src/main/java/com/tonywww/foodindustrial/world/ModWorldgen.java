@@ -46,6 +46,13 @@ public final class ModWorldgen {
         ore(sink, ModWorldBlocks.SULFUR_ORE.id(), 7, 5, 0, 32, OVERWORLD, Fallbacks.SULFUR);
         ore(sink, ModWorldBlocks.SELENIUM_ORE.id(), 6, 2, 0, 48, OVERWORLD, null);
         ore(sink, ModWorldBlocks.CHROMITE_ORE.id(), 8, 3, 0, 64, MOUNTAINS, null);
+        // I44 (08 §C 矿类, values to review)
+        ore(sink, ModWorldBlocks.ILMENITE.id(), 8, 3, 0, 48, OVERWORLD, null);
+        ore(sink, ModWorldBlocks.PYROLUSITE.id(), 8, 3, 0, 64, OVERWORLD, null);
+        ore(sink, ModWorldBlocks.ATTAPULGITE_DEPOSIT.id(), 20, 2, 40, 80, DESERTS, null);
+        ore(sink, ModWorldBlocks.BENTONITE_DEPOSIT.id(), 20, 2, 32, 80, DESERTS, null);
+        ore(sink, ModWorldBlocks.PERLITE_DEPOSIT.id(), 16, 3, 32, 160, MOUNTAINS, null);
+        ore(sink, ModWorldBlocks.TALC_DEPOSIT.id(), 12, 3, 0, 96, MOUNTAINS, null);
         crust(sink, ModWorldBlocks.TRONA_ORE.id(), 20, 6);
         crust(sink, ModWorldBlocks.NITRATINE.id(), 16, 10);
 
@@ -65,6 +72,10 @@ public final class ModWorldgen {
         vanillaPods(sink);
         seaPlant(sink, "gelidium", 8, List.of("minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:deep_lukewarm_ocean"));
         seaPlant(sink, "eucheuma", 6, List.of("minecraft:warm_ocean"));
+        // foods/23 §5 (2026-11-25): laver in cold and lukewarm seas, oyster reefs in warm and lukewarm ones
+        seaPlant(sink, "laver", 6, List.of("minecraft:cold_ocean", "minecraft:deep_cold_ocean", "minecraft:lukewarm_ocean",
+            "minecraft:deep_lukewarm_ocean"));
+        seaPlant(sink, "oyster_reef", 4, List.of("minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:deep_lukewarm_ocean"));
         rubberTree(sink);
     }
 

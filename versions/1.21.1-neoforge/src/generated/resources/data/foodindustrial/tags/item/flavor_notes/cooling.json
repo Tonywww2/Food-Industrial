@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:chemicals/menthol",
+    "#foodindustrial:chemicals/cassie_concrete",
+    "#foodindustrial:chemicals/torreya_shell_concrete",
+    "#foodindustrial:chemicals/d_camphor",
+    "#foodindustrial:chemicals/fenchol",
+    "#foodindustrial:chemicals/borneol",
+    "#foodindustrial:chemicals/trimethylcyclohexanol",
+    "#foodindustrial:chemicals/thymol",
+    "#foodindustrial:chemicals/dl_camphor",
+    "#foodindustrial:chemicals/monomenthyl_succinate",
+    "#foodindustrial:chemicals/polylimonene",
+    "#foodindustrial:chemicals/isoborneol",
+    "#foodindustrial:chemicals/menthyl_lactate",
+    "#foodindustrial:chemicals/dimethoxycinnamoyl_homoveratrylamine",
+    "#foodindustrial:chemicals/isopropyl_trimethylbutyramide",
+    "#foodindustrial:chemicals/ethyl_menthanecarboxamide",
+    "#foodindustrial:chemicals/p_menthane_3_8_diol",
+    "#foodindustrial:chemicals/p_methylbiphenyl",
+    "#foodindustrial:chemicals/dihydroxyacetone",
+    "#foodindustrial:chemicals/benzoin",
+    "#foodindustrial:chemicals/ethoxycarbonylmethyl_menthanecarboxamide",
+    "#foodindustrial:chemicals/benzeneacetonitrile_menthanecarboxamide",
+    "#foodindustrial:chemicals/pyridinylethyl_menthanecarboxamide",
+    "#foodindustrial:chemicals/aminooxoethylphenyl_menthanecarboxamide",
+    "#foodindustrial:chemicals/menthyl_cyclopropanecarboxamide",
+    "#foodindustrial:chemicals/methoxyphenyl_menthanecarboxamide"
+  ]
+}

@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:ginger"
+    "foodindustrial:ginger",
+    {
+      "id": "#c:crops/ginger",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/ginger",
+      "required": false
+    }
   ]
 }

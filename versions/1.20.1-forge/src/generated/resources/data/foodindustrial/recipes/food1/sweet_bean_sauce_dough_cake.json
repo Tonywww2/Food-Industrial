@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "steaming",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "sweet_bean_sauce|dough_cake"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

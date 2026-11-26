@@ -1,0 +1,47 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/yeast",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/egg"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "dough_mixing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "croissant|dough"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "emulsifier"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

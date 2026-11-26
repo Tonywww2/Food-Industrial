@@ -236,6 +236,9 @@ public final class RecipeChecks {
         for (int i = 0; i < recipe.inputs().size(); i++) {
             ProcessInput input = recipe.inputs().get(i);
             if (input instanceof ProcessInput.ItemInput item) {
+                if (item.isSemi()) {
+                    continue; // the semi-finished item of a product's stage (foods/08 §3) names no tag
+                }
                 JsonElement references = PlatformIngredients.references(PlatformIngredients.unwrap(item.ingredient()));
                 if (!onlyOwnTags(references)) {
                     problems.add(new Problem(id, true, "input " + i + " must refer to " + TAG_PREFIX + "… tags only: " + references));

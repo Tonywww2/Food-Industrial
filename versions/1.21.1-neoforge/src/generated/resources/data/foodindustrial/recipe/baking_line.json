@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "X": {
+      "item": "foodindustrial:brick_oven"
+    }
+  },
+  "pattern": [
+    "IXI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:baking_line"
+  }
+}

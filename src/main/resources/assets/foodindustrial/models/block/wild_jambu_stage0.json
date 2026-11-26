@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/wild_jambu_stage0"
+  },
+  "render_type": "minecraft:cutout"
+}

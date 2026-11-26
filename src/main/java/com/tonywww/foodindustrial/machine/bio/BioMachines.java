@@ -63,12 +63,14 @@ public final class BioMachines {
         .name("无菌发酵罐", "Aseptic Fermenter")
         .description("无菌深层发酵，罐体越高一次做得越多", "Aseptic fermentation; a taller vessel makes more")
         .tier(Tier.T4)
-        .types(ProcessTypes.FERMENTING)
+        .types(ProcessTypes.FERMENTING, ProcessTypes.REACTING)
         .layout(IoLayout.of(2, 1, 3, 2).withCatalyst(2).withUpgrades(4))
         .slotNames(SlotRole.CATALYST, "culture", "culture")
         .capabilities(Capabilities.of("sterile.sterile"))
-        .modes(MachineMode.of("aerated", Capabilities.NONE).needing(AIR),
-            MachineMode.of("sealed", Capabilities.of("atmosphere.airtight")))
+        .modes(MachineMode.of("aerated", Capabilities.NONE, ProcessTypes.FERMENTING).needing(AIR),
+            MachineMode.of("sealed", Capabilities.of("atmosphere.airtight"), ProcessTypes.FERMENTING),
+            // finished-food line (I41): R11 enzymolysis (saccharifying wort), aseptic
+            MachineMode.of("enzymolysis", Capabilities.NONE, ProcessTypes.REACTING))
         .airIntake()
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REACTION)
@@ -79,6 +81,7 @@ public final class BioMachines {
             .where('#', Lang.block("sterile_vessel_wall"), true, STERILE_VESSEL_WALL, MechanicalMachines.AIR_INTAKE)
             .build())
         .entity(SterileFermenterBlockEntity::new)
+        .shaped()
         .register();
 
     /** M30 (I 4, O 2, U 4; phase 3): its own window with a culture plate (2026-11-11). */
@@ -97,6 +100,7 @@ public final class BioMachines {
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REACTION)
         .entity(CultureBenchBlockEntity::new)
+        .shaped()
         .register();
 
     /** M31 (FI 2, FO 2, C 1 membrane, U 4; phase 2). */
@@ -113,6 +117,7 @@ public final class BioMachines {
             MachineMode.of("bipolar_electrodialysis", Capabilities.of("method.membrane", "method.electrodialysis")))
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REFINING)
+        .shaped()
         .register();
 
     private BioMachines() {

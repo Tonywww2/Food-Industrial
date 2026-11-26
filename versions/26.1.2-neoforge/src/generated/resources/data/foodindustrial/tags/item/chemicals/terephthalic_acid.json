@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:terephthalic_acid",
+    {
+      "id": "#forge:dusts/terephthalic_acid",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/terephthalic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/terephthalic_acid",
+      "required": false
+    },
+    {
+      "id": "#c:gems/terephthalic_acid",
+      "required": false
+    }
+  ]
+}

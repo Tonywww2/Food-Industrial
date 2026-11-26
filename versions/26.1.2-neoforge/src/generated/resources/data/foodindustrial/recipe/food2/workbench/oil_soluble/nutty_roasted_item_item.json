@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:flavor_notes/nutty_roasted"
+    },
+    {
+      "ingredient": "#foodindustrial:flavor_notes/all"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:flavor_carriers/oil_soluble"
+      }
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 8,
+    "form": "oil_soluble",
+    "item": "foodindustrial:nutty_roasted_flavoring"
+  }
+}

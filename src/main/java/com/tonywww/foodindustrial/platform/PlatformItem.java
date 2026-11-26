@@ -47,6 +47,70 @@ public class PlatformItem extends Item {
         return false;
     }
 
+    /**
+     * Factor on the saturation of this stack (I39: finished products by quality grade, foods/04 §5.3). 1.20.1 asks
+     * the item per stack; from 1.21 on the food component of the stack itself is written
+     * ({@link com.tonywww.foodindustrial.platform.food.PlatformFoodData#scaleSaturation}).
+     */
+    protected float saturationFactor(ItemStack stack) {
+        return 1F;
+    }
+
+    /**
+     * The item left in the crafting grid after this item is used (I40: a glass jar or bottle given back when the
+     * product in it is poured out), or {@code null} for the vanilla behaviour. Asked lazily, so it may name an item
+     * registered after this one.
+     */
+    protected Item craftingRemainderItem() {
+        return null;
+    }
+
+    //? if >=26.1 {
+    /*@Override
+    public net.minecraft.world.item.ItemStackTemplate getCraftingRemainder(net.minecraft.world.item.ItemInstance instance) {
+        Item own = craftingRemainderItem();
+        return own != null ? new net.minecraft.world.item.ItemStackTemplate(own) : super.getCraftingRemainder(instance);
+    }
+    *///?} else {
+    @Override
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
+        return craftingRemainderItem() != null || super.hasCraftingRemainingItem(stack);
+    }
+
+    @Override
+    public ItemStack getCraftingRemainingItem(ItemStack stack) {
+        Item own = craftingRemainderItem();
+        return own != null ? new ItemStack(own) : super.getCraftingRemainingItem(stack);
+    }
+    //?}
+
+    //? if <1.21 {
+    @Override
+    @Nullable
+    public net.minecraft.world.food.FoodProperties getFoodProperties(ItemStack stack, @Nullable net.minecraft.world.entity.LivingEntity entity) {
+        net.minecraft.world.food.FoodProperties base = super.getFoodProperties(stack, entity);
+        float factor = saturationFactor(stack);
+        if (base == null || factor == 1F) {
+            return base;
+        }
+        net.minecraft.world.food.FoodProperties.Builder builder = new net.minecraft.world.food.FoodProperties.Builder()
+            .nutrition(base.getNutrition()).saturationMod(base.getSaturationModifier() * factor);
+        if (base.isMeat()) {
+            builder.meat();
+        }
+        if (base.canAlwaysEat()) {
+            builder.alwaysEat();
+        }
+        if (base.isFastFood()) {
+            builder.fast();
+        }
+        for (com.mojang.datafixers.util.Pair<net.minecraft.world.effect.MobEffectInstance, Float> effect : base.getEffects()) {
+            builder.effect(effect::getFirst, effect.getSecond());
+        }
+        return builder.build();
+    }
+    //?}
+
     //? if >=26.1 {
     /*@Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {

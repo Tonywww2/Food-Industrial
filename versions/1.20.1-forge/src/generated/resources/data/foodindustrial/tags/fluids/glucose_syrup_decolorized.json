@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glucose_syrup_decolorized",
+    "foodindustrial:flowing_glucose_syrup_decolorized",
+    {
+      "id": "#forge:glucose_syrup_decolorized",
+      "required": false
+    },
+    {
+      "id": "#c:glucose_syrup_decolorized",
+      "required": false
+    }
+  ]
+}

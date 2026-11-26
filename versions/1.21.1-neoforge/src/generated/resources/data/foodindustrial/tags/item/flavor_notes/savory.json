@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:chemicals/p_ethylphenol",
+    "#foodindustrial:chemicals/syringol",
+    "#foodindustrial:chemicals/xylenol_2_5",
+    "#foodindustrial:chemicals/p_vinylphenol",
+    "#foodindustrial:chemicals/tetradecanal",
+    "#foodindustrial:chemicals/methyl_undecyl_ketone",
+    "#foodindustrial:chemicals/furaneol",
+    "#foodindustrial:chemicals/l_cysteine",
+    "#foodindustrial:chemicals/glutamic_acid",
+    "#foodindustrial:chemicals/dl_methionine",
+    "#foodindustrial:chemicals/dithiane_1_4",
+    "#foodindustrial:chemicals/l_methionine",
+    "#foodindustrial:chemicals/trimethyl_dithiazine",
+    "#foodindustrial:chemicals/hydroxy_methylthienyl_ethanone",
+    "#foodindustrial:chemicals/gamma_aminobutyric_acid",
+    "#foodindustrial:chemicals/dihydroxy_dithiane",
+    "#foodindustrial:chemicals/tyramine",
+    "#foodindustrial:chemicals/s_allyl_cysteine",
+    "#foodindustrial:chemicals/dimethyl_dihydroxy_dithiane",
+    "#foodindustrial:chemicals/cyclohexane_1_2_dione",
+    "#foodindustrial:chemicals/diphenyl_disulfide",
+    "#foodindustrial:chemicals/thienyl_disulfide",
+    "#foodindustrial:chemicals/methionylglycine"
+  ]
+}

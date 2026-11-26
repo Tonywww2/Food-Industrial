@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/stretching_mold"
+  },
+  "inputs": [
+    {
+      "semi_finished": "pretzel|dough"
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "semi_finished": "pretzel|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:benzoin_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:benzoin_resin"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

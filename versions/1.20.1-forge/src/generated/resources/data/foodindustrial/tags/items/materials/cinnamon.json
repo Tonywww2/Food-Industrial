@@ -8,6 +8,7 @@
     {
       "id": "#c:crops/cinnamon",
       "required": false
-    }
+    },
+    "foodindustrial:cassia_bark"
   ]
 }

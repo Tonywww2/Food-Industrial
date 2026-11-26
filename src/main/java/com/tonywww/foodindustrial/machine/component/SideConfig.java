@@ -48,20 +48,30 @@ public final class SideConfig {
 
     /** State of one channel of one face. */
     public enum Mode {
-        OFF, INPUT, OUTPUT, BOTH;
+        /** ADDITIVE (items only): automation inserts into the additive slots and nowhere else (foods/05 §3, I38). */
+        OFF, INPUT, OUTPUT, BOTH, ADDITIVE;
 
         public boolean inputs() {
-            return this == INPUT || this == BOTH;
+            return this == INPUT || this == BOTH || this == ADDITIVE;
         }
 
         public boolean outputs() {
             return this == OUTPUT || this == BOTH;
         }
 
-        /** Next state when cycling forwards (left click) or backwards. */
+        /** Next state when cycling forwards (left click) or backwards; "additive" only where the machine has additive slots. */
+        public Mode cycle(boolean forwards, boolean additives) {
+            int count = additives ? 5 : 4;
+            return values()[Math.floorMod(Math.min(ordinal(), count - 1) + (forwards ? 1 : -1), count)];
+        }
+
         public Mode cycle(boolean forwards) {
-            Mode[] values = values();
-            return values[Math.floorMod(ordinal() + (forwards ? 1 : -1), values.length)];
+            return cycle(forwards, false);
+        }
+
+        /** Mode by ordinal, {@code OFF} when out of range. */
+        public static Mode of(int ordinal) {
+            return ordinal >= 0 && ordinal < values().length ? values()[ordinal] : OFF;
         }
     }
 
@@ -212,11 +222,20 @@ public final class SideConfig {
             return;
         }
         int[] packed = new int[2];
+        int additive = 0;
         for (int i = 0; i < 6; i++) {
-            packed[0] |= items[i].ordinal() << (i * 2);
-            packed[1] |= fluids[i].ordinal() << (i * 2);
+            // two bits per face as before; additive faces are written OFF there and listed in "Additive"
+            if (items[i] == Mode.ADDITIVE) {
+                additive |= 1 << i;
+            } else {
+                packed[0] |= items[i].ordinal() << (i * 2);
+            }
+            packed[1] |= (fluids[i] == Mode.ADDITIVE ? 0 : fluids[i].ordinal()) << (i * 2);
         }
         out.putIntArray("Sides", packed);
+        if (additive != 0) {
+            out.putByte("Additive", (byte) additive);
+        }
         out.putByte("Auto", (byte) ((autoInputItems ? 1 : 0) | (autoInputFluids ? 2 : 0) | (autoOutputItems ? 4 : 0) | (autoOutputFluids ? 8 : 0)));
         if (!defaultScopes()) {
             int[] scopes = new int[6];
@@ -230,8 +249,9 @@ public final class SideConfig {
     public void load(DataReader in) {
         int[] packed = in.getIntArray("Sides");
         if (packed.length == 2) {
+            int additive = in.getByte("Additive", (byte) 0);
             for (int i = 0; i < 6; i++) {
-                items[i] = Mode.values()[(packed[0] >> (i * 2)) & 3];
+                items[i] = (additive & (1 << i)) != 0 ? Mode.ADDITIVE : Mode.values()[(packed[0] >> (i * 2)) & 3];
                 fluids[i] = Mode.values()[(packed[1] >> (i * 2)) & 3];
             }
         } else {

@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:granulating_screen",
+    "foodindustrial:tablet_die",
+    "foodindustrial:filling_mold",
+    "foodindustrial:stretching_mold",
+    "foodindustrial:extrusion_die",
+    "foodindustrial:cake_mold",
+    "foodindustrial:loaf_pan",
+    "foodindustrial:tart_pan",
+    "foodindustrial:baking_iron",
+    "foodindustrial:mooncake_mold",
+    "foodindustrial:cheese_mold",
+    "foodindustrial:popsicle_mold",
+    "foodindustrial:stuffing_nozzle",
+    "foodindustrial:ham_mold",
+    "foodindustrial:tofu_mold",
+    "foodindustrial:chocolate_mold",
+    "foodindustrial:hard_candy_mold",
+    "foodindustrial:lollipop_mold",
+    "foodindustrial:starch_mogul",
+    "foodindustrial:panning_drum",
+    "foodindustrial:blow_mold",
+    "foodindustrial:oak_barrel"
+  ]
+}

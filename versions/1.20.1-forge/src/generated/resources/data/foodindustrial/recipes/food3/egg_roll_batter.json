@@ -1,0 +1,47 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/butter"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/roasted_sesame"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "egg_roll|batter"
+    }
+  ],
+  "quality": {
+    "items": [
+      "color"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

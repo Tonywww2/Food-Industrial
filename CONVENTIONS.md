@@ -43,16 +43,28 @@
 | `PlatformIdentifier` | `id(path)`、`id(ns, path)`、`vanilla(path)`、`parse(str)`、`key(registry, path)` |
 | `PlatformRegistry` | `register(registryKey, name, supplier)`、`item(...)`、`block(...)`、`blockItem(...)`、`placingItem(...)`（自有名称、放置方块的物品，如作物）、`doubleHighBlockItem(...)`（门）；1.21.2+ 自动设置物品/方块 ID 和方块物品描述前缀 |
 | `PlatformEvents` | `onCommonSetup(Runnable)`、`onClientSetup(Runnable)`（主线程执行）、`onAxeStrip(...)` 等游戏事件 |
-| `PlatformConfig` | `commonBoolean(section, name, comment, default)`：在 `FoodIndustrial.init()` 中声明 `config/foodindustrial-common.toml` 的选项 |
+| `PlatformConfig` | `commonBoolean(section, name, comment, default)`：在 `FoodIndustrial.init()` 中声明 `config/foodindustrial-common.toml` 的选项；`commonChoice(...)` 取一个允许值，`commonStringList(section, name, comment, default, allowed)` 取允许值组成的列表、可为空（I46）；`clientBoolean(...)`、`clientInt(section, name, comment, default, min, max)` 声明只在客户端读取的 `config/foodindustrial-client.toml` 的选项（I37） |
 | `PlatformWorldgen` | 放置过滤器 `foodindustrial:enabled` 的开关（`setSwitches`）；开发用的放置与统计 |
 | `platform.world` | `PlatformPlants`（作物、野生植株、果丛、海草类、树苗、树叶、可去皮原木）、`PlatformWood`（木制方块与可燃性） |
 
-| `platform.machine` | `PlatformBlockEntity`（存取、同步、ticker、`onLoaded` / `onRemoved` / 邻居更新钩子）、`PlatformEntityBlock`、`PlatformMemberBlock`（无方块实体的成员方块的放置 / 移除钩子）、`PlatformMachineCapabilities`、`PlatformNeighborCache` |
+| `platform.machine` | `PlatformBlockEntity`（存取、同步、ticker、`onLoaded` / `onRemoved` / 邻居更新钩子；`renderReach()` 让渲染器能画到方块外多少格，I37）、`PlatformEntityBlock`、`PlatformMemberBlock`（无方块实体的成员方块的放置 / 移除钩子）、`PlatformMachineCapabilities`、`PlatformNeighborCache` |
 | `platform.recipe` | `PlatformRecipes`（业务 `MapCodec` 注册配方类型，`loaded`、`jsonOps`）、`PlatformIngredients`（纯度原料、原料编解码） |
 | `PlatformFuel` | 原版熔炉燃烧时间、燃烧后剩下的容器 |
 | `PlatformCommands` | 命令的物品参数（`itemArgument`、`item`）与 2 级权限（`gameMasters`）；带 `CommandBuildContext` 的注册用 `PlatformEvents.onRegisterCommands(CommandRegistrar)`（I34） |
-| `PlatformPlayerData`、`PlatformPlayerEvents`、`PlatformAttributes` | 随玩家存档的数据；玩家生命周期、吃喝、睡眠、交互拦截等事件；按语义属性加减带 ID 的临时修正（I35） |
+| `PlatformPlayerData`、`PlatformPlayerEvents`、`PlatformAttributes` | 随玩家存档的数据；玩家生命周期、吃喝、睡眠、交互拦截等事件，受到的伤害按比例调整（`setDamageTakenScale`，I46）；按语义属性加减带 ID 的临时修正（I35） |
 | `platform.client.PlatformHud` | 相机角度、全屏遮罩、生存背包右侧的面板与按钮、Apothic Attributes 面板中的修正图标（I35） |
+| `platform.client.PlatformPanels` | 浮在方块旁、朝向相机的平面面板：业务代码每帧往 `Panel` 里填矩形、物品图标、流体方块和文字，三个节点的绘制在这里；`register(type, texture, textureSize, viewDistance, provider)`，可见距离为 0 时不产生任何逐方块开销（I37） |
+| `platform.food.PlatformFoodData` | 成品的品质码与半成品键（1.20.1 NBT，1.21 起数据组件）；`scaleSaturation` 按品质系数改写 1.21 起物品上的食物组件（I38、I39） |
+| `platform.recipe.PlatformCrafting` | 业务写的无序合成（`Grid`：匹配、产物、留在格里的工具与副产）包成三个节点的原版合成配方（I38 的 `food_crafting`） |
+| `PlatformItem#saturationFactor` | 1.20.1 按物品数据给出饱和度系数（成品的品质档，I39）；1.21 起不用 |
+| `PlatformItem#craftingRemainderItem`、`PlatformRecipeConditions.whenTagNotEmpty` | 物品自定的合成剩余物（装罐装瓶成品还回容器，I40）；配方只在某物品标签非空时加载（I40 的马口铁罐、铝罐；I49 起加工配方与工作台配方也可用，业务写 `ContentRecipe.whenTag`） |
+| `PlatformFluids.bind` 的牛奶流体 | 打开加载器的牛奶流体（Forge、NeoForge 的 `enableMilkFluid`），牛奶桶成为装 1,000 mB 牛奶的流体容器（I49） |
+| `PlatformItems#setModelVariant` | 物品模型的变体：原版自定义模型数据（1.20.1、1.21.1 由物品模型的 `custom_model_data` 覆写读，26.1 由 `minecraft:custom_model_data` 区间分派读第一个浮点数）；香精按剂型换贴图（I48） |
+| `PlatformPackagedFluids` | 瓶装、罐装的液体成品作只出不进的物品流体容器：`register(item, fluid, amount, container)`，被抽走后变回容器，流体带物品的品质（I47）；本模组的桶装流体也带品质 |
+| `platform.world` 的 `HarvestPlantBlock`、`FruitLeavesBlock`、`WallNestBlock`、`PlantHarvest` | 按年龄（0–3）右键或剪刀采摘的果丛与草本、会开花结果的树叶、贴墙的巢；采摘规则由业务的 `PlantHarvest` 给出（I44） |
+| `platform.world.PlatformAnimals`、`platform.client.PlatformAnimalRenderers` | 借原版体型（豹猫、狐狸）的新生物：实体类型、属性、刷新规则、渲染器换贴图（I44） |
+| `PlatformLoot`、`PlatformTrades`、`PlatformEnchantments` | 往原版战利品表加奖池（业务给原版 JSON；1.20.1 按 JSON 子集构建）；村民出售（1.21 起为 `villager_trade` 数据，`generate` 写出）；“肢解”附魔的注册（1.20.1 代码、1.21 起数据）与等级查询（I44） |
+| `PlatformEvents.onLivingDrops`、`PlatformPlants.sapling(feature, sand)`、`PlatformDatagen.Kind.ENTITY_LOOT` | 生物死亡时的额外掉落；可种在沙上的树苗；生物战利品表的数据路径（I44） |
 
 其余各类（`PlatformTags`、`PlatformFluids`、`PlatformDatagen` 等）见各实装计划的实现记录（I01–I09）。
 
@@ -109,7 +121,7 @@ public static ResourceLocation id(String path) { … }
 
 - `src/main/resources/META-INF/mods.toml` 只给 Forge 节点，`META-INF/neoforge.mods.toml` 只给 NeoForge 节点；构建脚本会排除另一个文件。两者和 `pack.mcmeta` 中的 `${...}` 由 `processResources` 按节点属性展开（`vers.loaderRange`、`vers.loaderDepRange`、`vers.minecraftRange`、`vers.packFormat`）。toml 中依赖表名必须写死 `[[dependencies.foodindustrial]]`。
 - 手写的、各版本通用的 assets 放 `src/main/resources`。
-- 数据生成输出按节点分开：`versions/<节点>/src/generated/resources`（该目录会自动加入对应节点的资源）。原因：1.21 起数据包目录改为单数（`recipe`、`loot_table`、`advancement`、`tags/item` 等），1.20.1 仍为复数；26.1 物品还需要 `assets/<ns>/items/*.json`。
+- 数据生成输出按节点分开：`versions/<节点>/src/generated/resources`（该目录会自动加入对应节点的资源）。原因：1.21 起数据包目录改为单数（`recipe`、`loot_table`、`advancement`、`tags/item` 等），1.20.1 仍为复数；26.1 物品还需要 `assets/<ns>/items/*.json`。1.20.1-forge 的开发运行直接读这个目录，不复制（2026-11-20）：它是一个没有源码的源码集 `generated` 的资源输出，与主源码集一起登记为本模组；打 jar 时由 `jar` 任务从这里装入（不含 `.cache`）。NeoForge 节点仍把它作为主资源目录复制。
 - `forge:` / `neoforge:` 前缀的数据（biome modifier、conditions 等）必须按加载器分开维护。
 
 ## 6. 依赖与 Mixin
@@ -119,7 +131,7 @@ public static ResourceLocation id(String path) { … }
   - `deps.patchouli=<版本>`：编译 Patchouli API，开发运行完整 Patchouli；
   - `deps.mod.<名字>=<maven 坐标>`：编译 + 开发运行（Forge 节点自动走 Loom 重映射）。
   - `deps.opt.<名字>=<maven 坐标>`：可选联动模组（2026-11-11）。总在编译类路径上；开发运行时只在 `-PfiWith=<名字>,…`（或 `all`）点名时加入，便于分别测试装与不装的情况。根 `gradle.properties` 的 `fi.devWith=<名字>,…` 列出每次开发运行都加入的可选模组（现为 Jade，2026-11-12 用户定，用于测试）；`-PfiWithout=<名字>,…` 临时去掉，测试不装的情况。
-  - `deps.dev.<名字>=<maven 坐标>`：只进开发运行时、不参与编译（2026-11-11），用于填充物料标签的模组（如潘马斯作物），让开发环境的 JEI 能显示用到这些标签的配方。
+  - `deps.dev.<名字>=<maven 坐标>`：只进开发运行时、不参与编译（2026-11-11），用于填充物料标签的模组（如潘马斯作物），让开发环境的 JEI 能显示用到这些标签的配方；EMI 也走这一项（1.20.1、1.21.1，2026-11-20，用户要求），它经自带的 JEI 桥接（JEMI）显示本模组的 JEI 类别，本模组不写 EMI 插件；26.1 没有 EMI。`-PfiWithout=<名字>,…` 也能去掉 `deps.dev.*` 的模组（只用 JEI 测试：`-PfiWithout=emi`，2026-11-25）。
   - `deps.create05=<maven 坐标>`（只在 1.20.1-forge，2026-11-14）：机械动力 0.5.1（内嵌 Flywheel 0.6）。传动接口的应力与 Flywheel 渲染在 0.5.1 与 6 上写法不同：`platform.compat.create` 对着机械动力 6 编译；对着 0.5.1 的部分放在单独的源码集 `src/create05/java`（包 `platform.compat.create05`，只这一个节点，不写 Stonecutter 条件），编译类路径是主代码加去掉机械动力 6、Flywheel 1、Ponder 后的主类路径再加 0.5.1，类打进同一个 jar；运行时按 Flywheel 的版本（`0.` 开头）用反射调用它。`-PfiCreate05` 让开发运行改用机械动力 0.5.1（同时不加载机械动力 6）。
   - 某节点没有对应版本时删掉该键即可；源码中的联动代码必须用同样的条件排除。
   - 数据生成运行时，构建脚本把 `deps.mod.*`、`deps.opt.*` 及其内嵌模组的 jar 列表写到 `.gradle/foodindustrial/<节点>/external-jars.txt`，经系统属性 `foodindustrial.externalJars` 传给数据生成，用来从联动配方中去掉与他模组自带配方重叠的输入（I25）。
@@ -145,6 +157,8 @@ public static ResourceLocation id(String path) { … }
 - 切换 IDE 中的激活节点：使用 Gradle 任务组 `stonecutter` 里的 “Set active project to …”；提交前执行 “Reset active project”。产物位于 `versions\<节点>\build\libs\`，文件名带 Minecraft 版本（如 `foodindustrial-forge-0.0.0+1.20.1.jar`）。
 - 同时开多个 Gradle 命令（2026-11-04）：`gradle.properties` 开启了按需配置（`org.gradle.configureondemand`），带节点路径的命令只配置该节点。1.20.1-forge 由 Architectury Loom 构建，Loom 在配置阶段持有每个项目的配置锁，另一个进程同时配置 1.20.1-forge 时会显示 “Waiting for lock to be released … held by pid …”，等对方配置完（通常几十秒；对方在重建 Loom 缓存时要几分钟）。NeoForge 节点的命令不配置 1.20.1-forge，不受这把锁影响；IDE 导入与不带节点路径的命令（如 `build`）仍配置全部节点。被强行结束的构建会留下锁文件，若锁上的 pid 已被其他非 Java 程序占用，`build.gradle.kts` 会把锁标为放弃，Loom 随后重建缓存（需要联网）；若持锁的是仍在运行的 Java 进程，在任务管理器里按 pid 找到并结束它。
 - 构建耗时与内存（2026-11-13 实测，云端 2 核）：不带节点路径的 `build` 依次构建三个节点，clean build 约 2 分钟，峰值内存约 3.4 GB（Gradle 进程最多 3 GB，另有每个 Java 版本一个编译进程）。只要某个节点的 jar 时用 `:<节点>:build`。不产出源码 jar（Forge 节点重映射它要约 50 秒、峰值多约 0.6 GB，用户定）。Windows 上生成资源有三万余个小文件，实时防护会逐个扫描复制、打包的文件，可把项目目录与 `%USERPROFILE%\.gradle` 加入 Microsoft Defender 的排除项。
+- 资源处理（2026-11-18）：资源没有变化时，`processResources` 会被跳过（显示 `UP-TO-DATE`）。任何一个资源文件变了，Gradle 都会把该节点的全部资源（约 3.3 万个文件、140 MB）重新复制一遍，这是 Gradle 复制任务的做法。NeoForge 节点原先每次构建都重新复制：ModStitch 的 `appendModMetadata` 任务每次都把处理后的 `neoforge.mods.toml` 重写一遍，使 `processResources` 的输出发生变化；现在该任务只在通过 ModStitch 登记了 mixin 配置或 class tweaker 时才运行。所以 NeoForge 的 mixin 配置要直接写在 `neoforge.mods.toml` 的 `[[mixins]]` 里（第 6 节），不要用 `modstitch { mixin { … } }` 登记。
+- 1.20.1-forge 开发运行的启动时间（2026-11-20，用户反映很慢）：用户机器上原先每次 `runClient` 编译约 1 分 50 秒、复制资源约 2 分 40 秒。现在 ① 命令里只有 `run…` 任务时（`runClient`、`runServer`、`runData`），`compileJava` 不跑 Mixin 注解处理器：它不支持增量编译，改一个类也要全部重编；开发环境用 Mojang 名运行，不需要 refmap。改一个类后重新启动，编译约 4 秒（云端实测）。之后跑 `build` 会带处理器全量编译一次，再跑 `runClient` 又全量编译一次。② 生成资源不再复制（第 5 节），`processResources` 只处理手写资源（约 4,900 个文件）。③ 控制台日志改为 info（完整日志仍在 `run\<节点>\logs\debug.log`）。仍慢时：把项目目录与 `%USERPROFILE%\.gradle` 加入 Defender 排除项，或在用户级 `%USERPROFILE%\.gradle\gradle.properties` 写 `org.gradle.daemon=true`（项目里的 `daemon=false` 是用户原有设置，不改）。
 - 同一节点的客户端与服务端共用 `run\<节点>\`：先等服务端启动完成再开客户端，同时启动会争写 `config\` 下的模组配置文件，可能把文件写坏。
 
 提交前的自检（`platform` 以外必须没有任何结果）：
@@ -177,3 +191,15 @@ Get-ChildItem src\main\java -Recurse -Filter *.java |
 1. **与用户的一切交流都用中文**：回复、提问（含选项文字）、进度消息、完成汇报、等待确认时的说明（2026-11-05 用户要求）。人和 AI 代理同样遵守；对话中途不得改用其他语言。
 2. 代码标识符、命令、文件路径、日志与报错原文保持原样，不翻译，在中文句子里引用。
 3. 本条只管与用户的交流；代码注释、提交说明等其他文字的语言不在本条范围内。
+
+## 11. 机器的方块贴图与立体模型
+
+2026-11-26 用户确认 4 台试做机器（螺旋压榨机、浸提桶、萃取罐、培养台），定为以后所有机器的规范。
+
+1. **16x 规范**：方块贴图 16×16，每个模型单位 1 像素；模型方块的坐标都是整数，最小的部件 1 单位；部件图集（`<id>_parts.png`，32×32）也是每单位 1 像素。
+2. **贴图用脚本画**（`tools/textures/draw/`），不从参考图缩小取样。按光照层级画：每种材质九级色阶，左上受光，边缘用两个像素过渡，边框与条带投下一行短阴影，凹处在上沿和左沿下最暗。
+3. **贴近参考图**：外形、布局、配色尽量与参考图一致。有原版对应物的材质照原版的配色与画法，例如木制机器照原版木桶：木板平涂、每块板一条亮线一条深缝、铁条两像素宽（向光一半是铁色，另一半近黑）、铁条下面一行木板在阴影里。图案自己画，不照抄原版贴图。
+4. **凸出的部件用方块搭**：参考图画成凸出的部件（阀门、龙头、仪表、手轮、螺杆、出料槽等）用方块搭成立体的，形状要一眼认得出，例如龙头由伸出的管、向下的出水嘴和把手组成。部件各面由 `tools/textures/draw/part_faces.py` 按面的实际大小单独画，与方块贴图用同一套色阶。搭出来的部件不再画在面上；参考图画成开口的部分向里凹。
+5. **流程**：`tools/models/machines.py` 写形状 → `preview.py` 本地预览，与参考图对照 → 在用户电脑的 Blockbench（MCP 插件）里建模、截图、导出 → `install.py` 核对导出与形状一致，写成 `<id>_shape.json` → 核对 Blockbench 工程内嵌的贴图与仓库一致 → 进游戏看。
+
+详细做法和各机器的记录见 `docs/texture-requirements.md` 的“脚本画的方块贴图”“立体模型（Blockbench）”两节。

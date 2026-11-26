@@ -60,7 +60,7 @@ public final class Batch2Recipes extends Batch {
         r(REACTING).fin("ethanol", B).fin("acetic_acid", B).fin("sulfuric_acid", 100).fout("ethyl_acetate", B).temp("heated")
             .add("ethyl_acetate");
         // fatty acids: animal fat split under pressure, the olein pressed out (71, 72)
-        r(REACTING).in("chemicals/animal_fat", 1).fin("water", 3 * B).out("tallow_fatty_acids", 3).fout("glycerol", B).src()
+        r(REACTING).in("animal_fats", 1).fin("water", 3 * B).out("tallow_fatty_acids", 3).fout("glycerol", B).src()
             .pressure("high").temp("high").add("fat_splitting");
         r(PRESSING).in("chemicals/tallow_fatty_acids", 2).out("stearic_acid", 1).src().fout("oleic_acid", B).src().add("olein_pressing");
         // soybean oil pressed (65, 69)
@@ -346,7 +346,7 @@ public final class Batch2Recipes extends Batch {
 
     private void emulsifiers() {
         // 70 A: fat methanolysis to the methyl ester, transesterified with sucrose under vacuum (T3)
-        r(REACTING).in("chemicals/animal_fat", 1).in("chemicals/sodium_methoxide", 1).fin("methanol", 3 * B).fout("methyl_stearate", 3 * B)
+        r(REACTING).in("animal_fats", 1).in("chemicals/sodium_methoxide", 1).fin("methanol", 3 * B).fout("methyl_stearate", 3 * B)
             .fout("glycerol", B).src().temp("heated").add("methyl_stearate");
         r(REACTING).in("chemicals/sucrose", 1).in("chemicals/potassium_carbonate", 1).fin("methyl_stearate", B)
             .out("sucrose_monostearate", 1).fout("methanol", B).src().temp("heated").pressure("vacuum").add("sucrose_esters");

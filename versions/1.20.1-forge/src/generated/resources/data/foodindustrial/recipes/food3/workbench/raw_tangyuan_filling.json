@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/roasted_sesame"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/lard"
+      }
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 4,
+    "semi_finished": "raw_tangyuan|sesame_filling"
+  }
+}

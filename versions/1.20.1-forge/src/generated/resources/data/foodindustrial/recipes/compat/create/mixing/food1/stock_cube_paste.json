@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:meat_stock"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "item": "foodindustrial:semi_finished"
+    }
+  ]
+}

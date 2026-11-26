@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:curing",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:cultures/yeast"
+    },
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "proofing",
+  "outputs": [
+    {
+      "semi_finished": "baguette|poolish"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

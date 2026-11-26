@@ -13,7 +13,7 @@
 | 混合物 | 写主成分 | 苦卤：MgCl2、MgSO4、KCl、NaCl |
 | 数字 | 不用下标，便于检索、写进 JSON、与 GTCEu 对照 | — |
 
-本表与 08 §C 是物料主表（2026-11-04 定）：`tools/materials/export_materials.py` 把两处的表导出为 `src/main/resources/foodindustrial/materials.json`，注册物品与流体时读取；新增物料只改表。“英文名”“颜色”由实现方拟定，待审；“分类”取 化学品 / 催化剂 / 原料 / 菌种 / 酶 / 原版（开放集合，可扩展），决定创造模式标签页和是否带纯度（化学品、菌种带纯度；酶、耗材不带，2026-11-05，见 10 §1.1）；“纯度类别”是带纯度物料的分档类别（K0–K12，界限见 [10](10-purity-jei-ae2.md) 第 1.4 节），“—”表示不带纯度（催化剂、原料、原版）；08 §C 中分类为菌种的物料一律为 K11，不另列；“颜色”是流体的着色。化学式一栏中反引号里的内容是 Tooltip 显示的化学式，没有反引号的只是组成描述，不显示。
+本表与 08 §C 是物料主表（2026-11-04 定）：`tools/materials/export_materials.py` 把两处的表导出为 `src/main/resources/foodindustrial/materials.json`，注册物品与流体时读取；新增物料只改表。成品线的食品中间体（[foods/08](../foods/08-recipe-format-and-intermediates.md) 第 1 节规则 3、4，分类“食品”）由同一脚本接在后面写进同一张表（2026-11-25 用户定，I47）。“英文名”“颜色”由实现方拟定，待审；“分类”取 化学品 / 催化剂 / 原料 / 菌种 / 酶 / 原版（开放集合，可扩展），决定创造模式标签页和是否带纯度（化学品、菌种带纯度；酶、耗材不带，2026-11-05，见 10 §1.1）；“纯度类别”是带纯度物料的分档类别（K0–K12，界限见 [10](10-purity-jei-ae2.md) 第 1.4 节），“—”表示不带纯度（催化剂、原料、原版）；08 §C 中分类为菌种的物料一律为 K11，不另列；“颜色”是流体的着色。化学式一栏中反引号里的内容是 Tooltip 显示的化学式，没有反引号的只是组成描述，不显示。
 
 **颜色的取值顺序**（2026-11-12，11 问题 42）：① 本表与 08 写明的颜色；② 现实外观：天然香料按产品形态取下表的默认色，外观鲜明的单列条目已写进各行的“颜色”栏；③ 实现方按类别、纯度给的默认色（流体按名称取色，香料按类别给色，纯度越低越深）。现实中多数单体香料是无色至淡黄的液体或白色结晶，按类别上色只为便于辨认。
 
@@ -54,6 +54,8 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 2. **标签互通**：本模组的粉、流体同时打上 GTCEu 会用到的 `forge:dusts/<材料名>` 等标签，让双方配方都能吃对方的物料。
 3. **材料互认**（可选依赖）：GTCEu 加载时本模组照常注册全部化学品，不删除重复项；GT 的盐酸、硫酸、氨等通过标签导入，按外部物品计（外部默认值，见 10 第 1.6 节），需经本模组的精制工序才能用于更高门槛的配方。这样纯度门槛在装与不装 GTCEu 时表现一致。
 
+三条方式全做（2026-11-18 定，问题 9）。煤焦油芳烃（2026-11-18 定，问题 13）：装有 GTCEu、通用机械等时按标签导入其苯、萘（下表的 GT 对应列已列二者），按外部物品计（劣质，10 第 1.6 节）；甲酚无对应材料，仍由 M07 干馏与 M27 裂解自产，两条自产路线都保留。
+
 **需要注意的不一致：**
 
 | GTCEu 材料 | GTCEu 组成 | 实际物质 | 处理 |
@@ -67,7 +69,7 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 | `magnesium_chloride` | MgCl2（无水） | 氯化镁（卤片）是 MgCl2·6H2O | 映射时注明结晶水 |
 | `salt_water` | Salt + Water | 海水还含镁、钾盐 | 只作近似映射，不能产出苦卤 |
 
-**计量建议**：沿用“1 份 = 1 个粉 = 1000 mB”，配方按化学计量比书写（04 的反应式均已配平，可直接换算）。GTCEu 分解类配方的计量习惯与此不同，接入 GT 机器时需对照其现有配方确定换算。
+**计量（2026-11-18 定，问题 2）**：沿用“1 份 = 1 个粉 = 1000 mB”，配方按化学计量比书写（04 的反应式均已配平，可直接换算）。GTCEu 分解类配方的计量习惯与此不同，接入 GT 机器时需对照其现有配方确定换算。
 
 ## 核对方法
 
@@ -271,7 +273,7 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 | `fructose` | 果糖 | `C6H12O6` | 固 | — | ✓ |  | Fructose | 化学品 | — | K2 |
 | `sucrose` | 蔗糖（白糖） | `C12H22O11` | 固 | —（不要映射到 GT sugar） | ✓ |  | Sucrose (White Sugar) | 化学品 | — | K2 |
 | `maltose` | 麦芽糖 | `C12H22O11` | 固 | — | ✓ |  | Maltose | 化学品 | — | K2 |
-| `ethanol` | 乙醇（酒精） | `C2H6O` | 液 | ethanol | ✓ |  | Ethanol (Alcohol) | 化学品 | #E8F0F8 | K4 |
+| `ethanol` | 乙醇（酒精） | `C2H6O` | 液 | ethanol | ✓ | 第七批：食品级的食用酒精用同一流体，伏特加、薄荷利口酒、草本药酒的基酒（[../foods/22](../foods/22-batch7-alcohol-snacks.md) 第 4 节） | Ethanol (Alcohol) | 化学品 | #E8F0F8 | K4 |
 | `methanol` | 甲醇 | `CH4O` | 液 | methanol | ✓ |  | Methanol | 化学品 | #E0F0F8 | K4 |
 | `acetone` | 丙酮 | `C3H6O` | 液 | acetone | ✓ |  | Acetone | 化学品 | #F0F0F8 | K4 |
 | `acetaldehyde` | 乙醛 | `C2H4O` | 液 | — | ✓ |  | Acetaldehyde | 化学品 | #F0F0E8 | K4 |
@@ -840,6 +842,8 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 | `hexynol` | 2-己炔-1-醇 | `C6H10O` | 液 | — | ✓ | 第五批：S1444 | 2-Hexyn-1-ol | 化学品 | — | K4 |
 | `chloropropanal` | 2-氯丙醛 | `C3H5ClO` | 液 | — | ✓ | 第五批：S1459 | 2-Chloropropanal | 化学品 | — | K4 |
 | `vinyl_chloride` | 氯乙烯 | `C2H3Cl` | 气 | — | ✓ | 第五批：S1489 | Vinyl Chloride | 化学品 | — | K9 |
+| `trichloroethane` | 1,1,2-三氯乙烷 | `C2H3Cl3` | 液 | — | ✓ | 食品第 5 批：塑料肠衣（[../foods/17](../foods/17-batch5-meat.md) 第 1.6 节）；氯乙烯与氯气加成，铁作催化剂 | 1,1,2-Trichloroethane | 化学品 | — | K4 |
+| `vinylidene_chloride` | 偏二氯乙烯 | `C2H2Cl2` | 液 | — | ✓ | 食品第 5 批：塑料肠衣（[../foods/17](../foods/17-batch5-meat.md) 第 1.6 节）；1,1,2-三氯乙烷与熟石灰乳脱氯化氢，副产氯化钙；沸点约 32 °C | Vinylidene Chloride | 化学品 | — | K4 |
 | `vinylpyridine` | 2-乙烯基吡啶 | `C7H7N` | 液 | — | ✓ | 第五批：`pyridylethylamine` | 2-Vinylpyridine | 化学品 | — | K4 |
 | `malononitrile` | 丙二腈 | `C3H2N2` | 固 | — | ✓ | 第五批：S1471 | Malononitrile | 化学品 | — | K3 |
 | `hydroxypivalic_acid` | 3-羟基-2,2-二甲基丙酸 | `C5H10O3` | 固 | — | ✓ | 第五批：S1472、S1485 | Hydroxypivalic Acid | 化学品 | — | K3 |
@@ -1005,6 +1009,8 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 | `acetyl_d_methylselenocysteine` | N-乙酰-D-硒甲基硒代半胱氨酸 | `C6H11NO3Se` | 固 | — | ✓ | 第五批：513（酶法拆分剩下的 D 体，消旋后回到拆分） | N-Acetyl-D-Se-methylselenocysteine | 化学品 | — | K3 |
 | `acetyl_d_methionine` | N-乙酰-D-蛋氨酸 | `C7H13NO3S` | 固 | — | ✓ | 第五批：545（酶法拆分剩下的 D 体，消旋后回到拆分） | N-Acetyl-D-methionine | 化学品 | — | K3 |
 | `cobalt_acetate` | 乙酸钴 | `C4H6CoO4·4H2O` | 固 | — | ✓ | 液相空气氧化催化剂（23、332 与香料的烯丙位氧化）；原为 08 §C 的“钴盐”（2026-11-12，11 问题 43） | Cobalt(II) Acetate Tetrahydrate | 催化剂 | #B04870 | — |
+| `p_xylene` | 对二甲苯 | `C8H10` | 液 | — |  | 第七批：PET 链的起点（[../foods/21](../foods/21-batch7-beverages.md) 第 1.3 节） | p-Xylene | 化学品 | — | K4 |
+| `terephthalic_acid` | 对苯二甲酸 | `C8H6O4` | 固 | — |  | 第七批：对二甲苯液相空气氧化（乙酸为溶剂、钴锰催化），PET 的单体（21 第 1.3 节） | Terephthalic Acid | 化学品 | — | K3 |
 
 ## C 高分子、天然混合物
 
@@ -1043,7 +1049,7 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 | `microcrystalline_wax` | 微晶蜡 | C30–C70 支链烷烃混合物 | 固 | — |  | 胶基蜡 | Microcrystalline Wax | 化学品 | — | K7 |
 | `lanolin` | 羊毛脂 | 甾醇与脂肪醇的脂肪酸酯混合物 | 固 | — |  | 胆固醇原料；多组分混合物，不带纯度（2026-11-05） | Lanolin | 化学品 | — | — |
 | `castor_oil` | 蓖麻油 | 蓖麻油酸甘油三酯为主 | 液 | — |  | γ-癸内酯原料；多组分混合物，不带纯度（2026-11-05） | Castor Oil | 化学品 | #E8D890 | — |
-| `gum_base` | 胶基 | 弹性体、树脂、蜡、软化剂、填料的混炼物 | 固 | — |  | 口香糖基料 | Gum Base | 化学品 | — | K12 |
+| `gum_base` | 胶基 | 弹性体、树脂、蜡、软化剂、填料的混炼物 | 固 | — |  | 口香糖基料；食品第 6 批：口香糖与无糖口香糖（[../foods/20](../foods/20-batch6-confectionery.md) 第 4.11 节），胶基占 12%–40% | Gum Base | 化学品 | — | K12 |
 | `baking_powder` | 复配膨松剂（泡打粉） | 碳酸氢钠、焦磷酸二氢二钠与淀粉的混合物 | 固 | — |  | 第一批 6 号的复配产品（2026-11-11 由 12 成品清单移入） | Baking Powder | 化学品 | — | K12 |
 | `glutamate_broth` | 谷氨酸发酵液 | 谷氨酸铵为主的发酵液，含菌体、残糖 | 液 | — |  | 等电结晶原料；多组分混合物，不带纯度（2026-11-05） | Glutamate Fermentation Broth | 化学品 | #C8B070 | — |
 | `kelp_ash` | 海藻灰 | 碳酸钠、氯化钠、硫酸盐等的混合物 | 固 | — |  | H10 烧灰（07 第 5 号）；I28 补；多组分混合物，不带纯度（2026-11-05） | Kelp Ash | 化学品 | — | — |
@@ -1288,6 +1294,7 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 | `styrene_butadiene_rubber` | 丁二烯-苯乙烯 75/25、50/50 橡胶（丁苯橡胶） | `(C4H6)n(C8H8)m` | 固 | — |  | 第五批 569 号 | Butadiene-Styrene Rubber 75/25, 50/50 (SBR) | 化学品 | — | K3 |
 | `polybutene` | 聚丁烯 | `(C4H8)n` | 液 | — |  | 第五批 570 号 | Polybutene | 化学品 | — | K3 |
 | `polyethylene` | 聚乙烯 | `(C2H4)n` | 固 | — |  | 第五批 571 号 | Polyethylene | 化学品 | — | K3 |
+| `pvdc` | 聚偏二氯乙烯 | `(C2H2Cl2)n(C2H3Cl)m` | 固 | — |  | 食品第 5 批：塑料肠衣（[../foods/17](../foods/17-batch5-meat.md) 第 1.6 节）；偏二氯乙烯与少量氯乙烯乳液共聚 | Polyvinylidene Chloride (PVDC) | 化学品 | — | K3 |
 | `butyl_rubber` | 异丁烯-异戊二烯共聚物（丁基橡胶） | `(C4H8)n(C5H8)m` | 固 | — |  | 第五批 572 号 | Isobutylene-Isoprene Copolymer (Butyl Rubber) | 化学品 | — | K3 |
 | `dimerized_rosin_glycerol_ester` | 部分二聚松香甘油酯 | 部分二聚松香与丙三醇的酯混合物 | 固 | — |  | 第五批 573 号 | Glycerol Ester of Partially Dimerized Rosin | 化学品 | — | K5 |
 | `hydrogenated_rosin_pentaerythritol_ester` | 部分氢化松香季戊四醇酯 | 氢化松香树脂酸与季戊四醇的酯混合物 | 固 | — |  | 第五批 575 号 | Pentaerythritol Ester of Partially Hydrogenated Rosin | 化学品 | — | K5 |
@@ -1301,6 +1308,7 @@ GTCEu（GregTech CEu Modern）用 `Material.Builder(...).components(...)` 定义
 | `ammonium_alginate` | 海藻酸铵 | `(C6H11NO6)n` | 固 | — |  | 第五批 584 号 | Ammonium Alginate | 化学品 | — | K6 |
 | `abe_broth` | 丙酮丁醇发酵液 | 丙酮、正丁醇、乙醇（质量比约 3 : 6 : 1）的稀水溶液 | 液 | — |  | 第五批：431 C | ABE Fermentation Broth | 化学品 | — | — |
 | `naphtha_cracked_gas` | 石脑油裂解气 | 乙烯、丙烯、碳四与碳五馏分、甲烷、氢气的混合物 | 气 | — |  | 第五批：569、570；S0987（`piperylene`） | Naphtha Cracked Gas | 化学品 | — | — |
+| `pet` | 聚对苯二甲酸乙二醇酯 | `(C10H8O4)n` | 固 | — |  | 第七批：对苯二甲酸与乙二醇酯化后熔融缩聚，PET 瓶的料（21 第 1.3 节） | Polyethylene Terephthalate | 化学品 | — | K7 |
 
 ## D 纯度数据（来源纯度与单个物料的覆盖）
 

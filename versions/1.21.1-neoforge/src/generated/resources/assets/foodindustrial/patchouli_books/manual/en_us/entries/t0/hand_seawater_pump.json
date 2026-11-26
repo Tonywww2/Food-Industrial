@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t0",
+  "icon": "foodindustrial:hand_seawater_pump",
+  "name": "book.foodindustrial.manual.entry.hand_seawater_pump",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:hand_seawater_pump",
+      "text": "book.foodindustrial.manual.entry.hand_seawater_pump.text"
+    }
+  ],
+  "sortnum": 11
+}

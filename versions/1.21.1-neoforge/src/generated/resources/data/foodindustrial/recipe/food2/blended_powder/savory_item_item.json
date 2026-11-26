@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/savory"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/all"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:flavor_carriers/powders"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 8,
+      "form": "blended_powder",
+      "item": "foodindustrial:savory_flavoring"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

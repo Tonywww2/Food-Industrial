@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:vanilla_smelting",
+  "recipe": {
+    "type": "foodindustrial:baking",
+    "inputs": [
+      {
+        "semi_finished": "dorayaki|batter"
+      }
+    ],
+    "mode": "baking",
+    "outputs": [
+      {
+        "count": 2,
+        "semi_finished": "dorayaki|pancake"
+      }
+    ],
+    "requirements": {
+      "min_tier": "t0",
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace",
+      "smoker"
+    ]
+  }
+}

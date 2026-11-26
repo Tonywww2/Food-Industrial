@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/freezing_unit_front_active",
+    "side": "foodindustrial:block/freezing_unit_side",
+    "top": "foodindustrial:block/freezing_unit_top"
+  }
+}

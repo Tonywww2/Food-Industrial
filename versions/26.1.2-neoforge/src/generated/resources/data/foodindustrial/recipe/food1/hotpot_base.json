@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:chilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:hotpot_base_melt"
+      }
+    }
+  ],
+  "mode": "chilling",
+  "outputs": [
+    {
+      "item": "foodindustrial:hotpot_base"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "cooling"
+  },
+  "time": 400
+}

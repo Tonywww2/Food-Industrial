@@ -1,0 +1,48 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:chemicals/potassium_iodate"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "foodindustrial:iodized_salt"
+    }
+  ]
+}

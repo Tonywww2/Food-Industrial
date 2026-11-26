@@ -1,0 +1,51 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:filling_retort_line",
+  "name": "book.foodindustrial.manual.entry.filling_retort_line",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:filling_retort_line",
+      "text": "book.foodindustrial.manual.entry.filling_retort_line.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:filling_retort_line[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "A A",
+            "A A",
+            "A A",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.filling_retort_line"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.filling_retort_line.structure"
+    }
+  ],
+  "sortnum": 17
+}

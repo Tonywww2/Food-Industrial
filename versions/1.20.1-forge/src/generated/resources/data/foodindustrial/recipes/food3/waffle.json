@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/baking_iron"
+    }
+  },
+  "inputs": [
+    {
+      "semi_finished": "waffle|batter"
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "item": "foodindustrial:waffle"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

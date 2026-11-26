@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "oat_flakes|dry_flakes"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/paper_bag"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:oat_flakes"
+  }
+}

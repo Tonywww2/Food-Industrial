@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/monosodium_glutamate"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:chemicals/starch"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "foodindustrial:meat_stock"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "foodindustrial:semi_finished"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:baking",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/cake_mold"
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "muffin|batter"
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:muffin"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

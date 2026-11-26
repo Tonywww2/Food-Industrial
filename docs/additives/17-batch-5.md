@@ -278,18 +278,18 @@
 
 | 原料 | 配方引用标签 | 现实来源 | 本模组来源 | 用于 |
 | --- | --- | --- | --- | --- |
-| 巴拉塔胶乳（流体） | `balata_latex` | Manilkara huberi（巴西亚马孙）与 Manilkara bidentata（圭亚那、委内瑞拉）树干割胶所得乳胶 | 暂无来源 | 564 |
-| 节路顿胶乳（流体） | `jelutong_latex` | Dyera costulata、Dyera polyphylla（syn. D. lowii）树干人字形割胶所得乳胶；马来西亚、印度尼西亚（加里曼丹、苏门答腊） | 暂无来源 | 565 |
-| 来开欧胶乳（流体） | `sorva_latex` | Couma macrocarpa（另有 C. utilis）割胶所得乳胶；巴西亚马孙州、秘鲁、哥伦比亚 | 暂无来源 | 566 |
-| 人心果胶乳（流体） | `sapodilla_latex` | 人心果 Manilkara zapota（syn. M. zapotilla）之字形割胶所得乳胶；墨西哥尤卡坦半岛、危地马拉、伯利兹 | 暂无来源 | 567、568 |
-| 松树伐根 | `materials/pine_stump` | 长叶松 Pinus palustris、湿地松 P. elliottii 采伐后在土中存放多年、边材腐去的富脂伐根（美国东南部）；中国马尾松 P. massoniana 伐根（明子） | 暂无来源 | 427、579 |
-| 小烛树茎秆 | `materials/candelilla_stem` | 小烛树 Euphorbia antisyphilitica 带叶茎秆；墨西哥北部（科阿韦拉、奇瓦瓦）与美国得克萨斯州西南部 | 暂无来源 | 582 |
-| 凹凸棒石黏土矿 | `materials/attapulgite` | 凹凸棒石（坡缕石）黏土矿；江苏盱眙、安徽明光 | 暂无来源 | 438 |
-| 膨润土矿石 | `materials/bentonite` | 蒙脱石为主的黏土矿；内蒙古、广西、浙江，美国怀俄明 | 暂无来源（GTCEu `#forge:ores/bentonite`、`#forge:dusts/bentonite`，未核对） | 443、440 |
-| 珍珠岩矿石 | `materials/perlite` | 酸性火山玻璃岩；河南信阳、浙江，希腊、土耳其 | 暂无来源（GTCEu `#forge:dusts/perlite`，未核对） | 444 |
-| 滑石矿石 | `materials/talc` | 滑石 Mg3Si4O10(OH)2；辽宁海城、广西龙胜 | 暂无来源（GTCEu `#forge:ores/talc`、`#forge:dusts/talc`、`soapstone`，未核对） | 451 |
-| 菊苣根 | `materials/chicory_root` | 菊苣 *Cichorium intybus* 的肉质根，菊粉含量约 70%（干基）；主产比利时、法国、荷兰，中国新疆、甘肃有种植 | 暂无来源 | 549、539 |
-| 月见草籽 | `materials/evening_primrose_seed` | 月见草 *Oenothera biennis* 的种子，含油约 20%，油中 γ-亚麻酸约 9%；主产中国吉林、辽宁、黑龙江 | 暂无来源 | 538 |
+| 巴拉塔胶乳（流体） | `balata_latex` | Manilkara huberi（巴西亚马孙）与 Manilkara bidentata（圭亚那、委内瑞拉）树干割胶所得乳胶 | 树木类（08 §来源规则） | 564 |
+| 节路顿胶乳（流体） | `jelutong_latex` | Dyera costulata、Dyera polyphylla（syn. D. lowii）树干人字形割胶所得乳胶；马来西亚、印度尼西亚（加里曼丹、苏门答腊） | 树木类（08 §来源规则） | 565 |
+| 来开欧胶乳（流体） | `sorva_latex` | Couma macrocarpa（另有 C. utilis）割胶所得乳胶；巴西亚马孙州、秘鲁、哥伦比亚 | 树木类（08 §来源规则） | 566 |
+| 人心果胶乳（流体） | `sapodilla_latex` | 人心果 Manilkara zapota（syn. M. zapotilla）之字形割胶所得乳胶；墨西哥尤卡坦半岛、危地马拉、伯利兹 | 树木类（08 §来源规则） | 567、568 |
+| 松树伐根 | `materials/pine_stump` | 长叶松 Pinus palustris、湿地松 P. elliottii 采伐后在土中存放多年、边材腐去的富脂伐根（美国东南部）；中国马尾松 P. massoniana 伐根（明子） | 树木类（08 §来源规则） | 427、579 |
+| 小烛树茎秆 | `materials/candelilla_stem` | 小烛树 Euphorbia antisyphilitica 带叶茎秆；墨西哥北部（科阿韦拉、奇瓦瓦）与美国得克萨斯州西南部 | 野生植物类（08 §来源规则） | 582 |
+| 凹凸棒石黏土矿 | `materials/attapulgite` | 凹凸棒石（坡缕石）黏土矿；江苏盱眙、安徽明光 | 矿类（08 §来源规则） | 438 |
+| 膨润土矿石 | `materials/bentonite` | 蒙脱石为主的黏土矿；内蒙古、广西、浙江，美国怀俄明 | 矿类（GTCEu `#forge:ores/bentonite`、`#forge:dusts/bentonite`，未核对；08 §来源规则） | 443、440 |
+| 珍珠岩矿石 | `materials/perlite` | 酸性火山玻璃岩；河南信阳、浙江，希腊、土耳其 | 矿类（GTCEu `#forge:dusts/perlite`，未核对；08 §来源规则） | 444 |
+| 滑石矿石 | `materials/talc` | 滑石 Mg3Si4O10(OH)2；辽宁海城、广西龙胜 | 矿类（GTCEu `#forge:ores/talc`、`#forge:dusts/talc`、`soapstone`，未核对；08 §来源规则） | 451 |
+| 菊苣根 | `materials/chicory_root` | 菊苣 *Cichorium intybus* 的肉质根，菊粉含量约 70%（干基）；主产比利时、法国、荷兰，中国新疆、甘肃有种植 | 作物类（08 §来源规则） | 549、539 |
+| 月见草籽 | `materials/evening_primrose_seed` | 月见草 *Oenothera biennis* 的种子，含油约 20%，油中 γ-亚麻酸约 9%；主产中国吉林、辽宁、黑龙江 | 野生植物类（08 §来源规则） | 538 |
 | 粗硒 | `materials/selenium` | 铜电解精炼阳极泥（及硫酸厂酸泥）焙烧回收的单质硒 | 他模组标签（候选 `#forge:dusts/selenium`，未核对）；本模组另有硒矿石焙烧路线（509 B，不经粗硒） | 509（经 509 供 510–515） |
 | 铬 | `materials/chromium` | 铬铁矿经铝热还原或电解所得金属铬 | 他模组标签 `#forge:ingots/chrome`、`#forge:dusts/chrome`（GTCEu 命名，未核对）；未装时为空 | 527、528 |
 | 动物血 | `materials/animal_blood` | 屠宰场采集的猪（*Sus scrofa domesticus*）、牛（*Bos taurus*）血，加抗凝剂 | 原版生肉（牛肉、猪肉、羊肉、鸡肉、兔肉）在 M12 固液分离机压榨，副产动物血（游戏简化）；同时接受他模组血液标签（如 `#forge:blood`，未核对） | 485、486、493 |
@@ -405,12 +405,12 @@
 - 569 两种配比作同一物料 `styrene_butadiene_rubber` 的两条配方（游戏简化）；要区分规格就拆为 `sbr_75_25`、`sbr_50_50`。GB 29987 表 C.1 有锂限量，说明现实也有丁基锂溶液聚合，本稿取乳液聚合，不引入有机锂。
 - 580 标准写“乙烯催化聚合”：齐格勒类催化剂要烷基铝，本模组没有金属铝，改用高压自由基法（现实有此做法，见 US4820876）；丙烯作链转移剂会少量共聚，与标准允许的“乙烯和 C3–C12 α-烯烃线性聚合”相符。
 - 579 妥尔松香来自硫酸盐法制浆副产的粗妥尔油，本模组只有亚硫酸盐法制浆（P80），暂不设；聚合松香与部分二聚松香的区分（减压蒸出单体、富集二聚体）为推断，未确认。
-- 427、579 木松香：现实用重石脑油轻馏分浸提伐根，游戏用正己烷（`n_hexane`）；松树伐根暂无来源，可考虑砍伐松木（云杉）后留桩、经时间转化为伐根方块，待定。
+- 427、579 木松香：现实用重石脑油轻馏分浸提伐根，游戏用正己烷（`n_hexane`）；松树伐根按 [08 §来源规则](08-raw-materials.md) 归树木类。**已定（2026-11-18，问题 21）**：砍伐松木（云杉）后留桩，经时间转化为伐根方块。
 - 578 引用的松节油（N298）、β-蒎烯（S0659）由香料组设计，本组不另建物料；`limonene` 代双戊烯。
 - 572 异戊二烯取异丁烯–甲醛（普林斯）路线，现实主流是裂解碳五馏分萃取精馏；`isoprenol` 也是香料 S0956（3-甲基-2-丁烯-1-醇）的常用前体，香料组如另设同一中间体应合并 ID。
 - 581 低分子部分（轻油）游戏简化不设物料；费-托合成的温度、压力取铁催化剂常见范围，未逐项核对；以 C50H102 计的碳数由凝固点 93–99 °C 推断。
 - 576 甲醇加压酯化的温度、压力未确认；577 两单体配比 GB 29987 未给，未确认。
-- 564–568 天然树胶的胶 / 树脂比例只写有出处的（节路顿胶干基约 20% 古塔型物质，FAO）；巴拉塔树胶、糖胶树胶的组成比例未确认；五种乳胶均“暂无来源”，以后补树木时可用 H15 割取（同 136 橡胶木）。
+- 564–568 天然树胶的胶 / 树脂比例只写有出处的（节路顿胶干基约 20% 古塔型物质，FAO）；巴拉塔树胶、糖胶树胶的组成比例未确认；五种乳胶按 [08 §来源规则](08-raw-materials.md) 归树木类。**已定（2026-11-18，问题 21）**：本模组加对应热带树木，用 H15 割取（同 136 橡胶木）。
 - 424 纯度类别取 K5（按茶多酚计）；GB 1886.360-2022 的含量指标与酯化时的缚酸剂未读到。
 - 583 三乙酸甘油酯即 09 `triacetin`（259 A 前段），香料 S1206 由香料组写“见 583”。
 - 合成高分子纯度类别按 09 先例（聚乙酸乙烯酯、聚异丁烯为 K3）取 K3，未按 BRIEF5“高分子与胶体 K6”；天然树胶、海藻酸铵按天然橡胶、海藻酸盐取 K6；聚乙烯蜡、费-托蜡、小烛树蜡按蜡取 K7。

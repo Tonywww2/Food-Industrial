@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:chemicals/animal_fat",
+      "required": false
+    },
+    "foodindustrial:lard",
+    "foodindustrial:tallow"
+  ]
+}

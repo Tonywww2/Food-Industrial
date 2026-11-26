@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "sanzi|dough_strands"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 2,
+    "semi_finished": "sanzi|blank"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/stretching_mold"
+    }
+  ]
+}

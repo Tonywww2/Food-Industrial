@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "X": {
+      "item": "foodindustrial:noodle_press"
+    }
+  },
+  "pattern": [
+    "IXI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:forming_line"
+  }
+}

@@ -1,0 +1,403 @@
+{
+ "id": "electrolyzer",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\electrolyzer_front.png",
+  "inner": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\electrolyzer_inner.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\electrolyzer_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\electrolyzer_top.png"
+ },
+ "elements": [
+  {
+   "name": "body0",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    6
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      10,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      6,
+      16
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      16,
+      6
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      10,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body1",
+   "from": [
+    0,
+    0,
+    6
+   ],
+   "to": [
+    16,
+    14,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      2,
+      10,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      2,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      6,
+      2,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      6,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      10
+     ]
+    }
+   }
+  },
+  {
+   "name": "body2",
+   "from": [
+    0,
+    14,
+    6
+   ],
+   "to": [
+    3,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      10,
+      2
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      3,
+      2
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      6,
+      0,
+      16,
+      2
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      6,
+      3,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body3",
+   "from": [
+    6,
+    14,
+    6
+   ],
+   "to": [
+    10,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      10,
+      2
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      6,
+      0,
+      10,
+      2
+     ]
+    },
+    "west": {
+     "texture": "inner",
+     "uv": [
+      6,
+      0,
+      16,
+      2
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      6,
+      6,
+      10,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body4",
+   "from": [
+    13,
+    14,
+    6
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      10,
+      2
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      13,
+      0,
+      16,
+      2
+     ]
+    },
+    "west": {
+     "texture": "inner",
+     "uv": [
+      6,
+      0,
+      16,
+      2
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      13,
+      6,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body5",
+   "from": [
+    3,
+    14,
+    9
+   ],
+   "to": [
+    6,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "inner",
+     "uv": [
+      10,
+      0,
+      13,
+      2
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      3,
+      0,
+      6,
+      2
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      3,
+      9,
+      6,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body6",
+   "from": [
+    10,
+    14,
+    9
+   ],
+   "to": [
+    13,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "inner",
+     "uv": [
+      3,
+      0,
+      6,
+      2
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      10,
+      0,
+      13,
+      2
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      10,
+      9,
+      13,
+      16
+     ]
+    }
+   }
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}

@@ -1,0 +1,41 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:flavor_notes/sweet"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:flavor_notes/all"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "foodindustrial:sweet_flavoring"
+    }
+  ]
+}

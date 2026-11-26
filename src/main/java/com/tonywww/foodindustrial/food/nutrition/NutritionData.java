@@ -18,14 +18,31 @@ import java.util.function.Predicate;
  * @param amounts    per serving, by {@link Component} ordinal (do not modify)
  * @param missing    mask of the components the file did not name (counted as 0)
  * @param impurity   impurity units per serving (foods/02 §5.1), 0 for none
+ * @param curingNitrite nitrite (mg) a serving adds when it carries a colour-retention agent (foods/02 §4.4, I45)
+ * @param misuseNitrite nitrite (mg) a serving adds when nitrite was taken for salt (foods/02 §4.4, I45)
  * @param energyKcal energy per serving, or {@code null}; for the report only
  * @param source     file id the data comes from ({@code null} on the client)
  * @param priority   priority of that file
  */
-public record NutritionData(double servingG, double[] amounts, int missing, double impurity, @Nullable Double energyKcal,
-                            @Nullable String source, int priority) {
+public record NutritionData(double servingG, double[] amounts, int missing, double impurity, double curingNitrite,
+                            double misuseNitrite, @Nullable Double energyKcal, @Nullable String source, int priority) {
     public double amount(Component component) {
         return amounts[component.ordinal()];
+    }
+
+    /**
+     * Nitrite (mg, as sodium nitrite) of one serving of a stack with the given food quality code: the data's own
+     * amount, plus the colour-retention agent's and the misused nitrite's amounts when the code carries them.
+     */
+    public double nitrite(int qualityCode) {
+        double total = amount(Component.NITRITE);
+        if (com.tonywww.foodindustrial.food.quality.FoodQuality.has(qualityCode, com.tonywww.foodindustrial.food.quality.FoodQuality.CURING_AGENT)) {
+            total += curingNitrite;
+        }
+        if (com.tonywww.foodindustrial.food.quality.FoodQuality.has(qualityCode, com.tonywww.foodindustrial.food.quality.FoodQuality.NITRITE_MISUSE)) {
+            total += misuseNitrite;
+        }
+        return total;
     }
 
     /** Whether any component is above 0. */
@@ -41,7 +58,8 @@ public record NutritionData(double servingG, double[] amounts, int missing, doub
     @Override
     public boolean equals(Object other) {
         return other instanceof NutritionData data && servingG == data.servingG && Arrays.equals(amounts, data.amounts)
-            && missing == data.missing && impurity == data.impurity && java.util.Objects.equals(energyKcal, data.energyKcal)
+            && missing == data.missing && impurity == data.impurity && curingNitrite == data.curingNitrite
+            && misuseNitrite == data.misuseNitrite && java.util.Objects.equals(energyKcal, data.energyKcal)
             && java.util.Objects.equals(source, data.source) && priority == data.priority;
     }
 
@@ -71,7 +89,7 @@ public record NutritionData(double servingG, double[] amounts, int missing, doub
             }
             for (NutritionFile.Entry entry : file.entries()) {
                 NutritionData data = new NutritionData(entry.servingG(), entry.amounts(), entry.missing(), entry.impurity(),
-                    entry.energyKcal().orElse(null), file.source(), file.priority());
+                    entry.curingNitrite(), entry.misuseNitrite(), entry.energyKcal().orElse(null), file.source(), file.priority());
                 for (String id : entry.items()) {
                     Optional<I> item = items.apply(id);
                     if (item.isEmpty()) {

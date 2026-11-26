@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:master_stock",
+    "foodindustrial:flowing_master_stock"
+  ]
+}

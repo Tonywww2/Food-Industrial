@@ -1,0 +1,11 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:swiftlet_nest",
+  "cooldown": 12000,
+  "result": {
+    "item": "foodindustrial:swallowroot"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

@@ -8,6 +8,7 @@
     {
       "id": "#forge:crops/tealeaf",
       "required": false
-    }
+    },
+    "foodindustrial:tea_leaf"
   ]
 }

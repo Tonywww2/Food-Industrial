@@ -1,0 +1,34 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/cooling"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/all"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:flavor_carriers/water_soluble"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 8,
+      "form": "water_soluble",
+      "item": "foodindustrial:cooling_flavoring"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

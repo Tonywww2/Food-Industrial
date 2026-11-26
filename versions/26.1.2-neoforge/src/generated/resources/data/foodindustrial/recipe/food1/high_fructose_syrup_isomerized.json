@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:reacting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:catalysts/immobilized_glucose_isomerase"
+  },
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:glucose_syrup"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:high_fructose_syrup_isomerized"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t2",
+    "temperature": "heated"
+  },
+  "time": 200
+}

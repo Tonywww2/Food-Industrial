@@ -1,0 +1,8 @@
+{
+  "parent": "foodindustrial:block/mixing_churn_shape",
+  "textures": {
+    "front": "foodindustrial:block/mixing_churn_front_active",
+    "side": "foodindustrial:block/mixing_churn_side",
+    "top": "foodindustrial:block/mixing_churn_top"
+  }
+}

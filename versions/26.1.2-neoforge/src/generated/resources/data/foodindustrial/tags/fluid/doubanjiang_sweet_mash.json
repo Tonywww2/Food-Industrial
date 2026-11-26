@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:doubanjiang_sweet_mash",
+    "foodindustrial:flowing_doubanjiang_sweet_mash",
+    {
+      "id": "#forge:doubanjiang_sweet_mash",
+      "required": false
+    },
+    {
+      "id": "#c:doubanjiang_sweet_mash",
+      "required": false
+    }
+  ]
+}

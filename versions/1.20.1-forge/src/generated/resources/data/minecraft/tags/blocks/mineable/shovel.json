@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "foodindustrial:attapulgite_deposit",
+    "foodindustrial:bentonite_deposit",
     "foodindustrial:trona_ore",
     "foodindustrial:nitratine",
     "foodindustrial:nitre_soil"

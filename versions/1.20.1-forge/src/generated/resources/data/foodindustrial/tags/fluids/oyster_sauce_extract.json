@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:oyster_sauce_extract",
+    "foodindustrial:flowing_oyster_sauce_extract",
+    {
+      "id": "#forge:oyster_sauce_extract",
+      "required": false
+    },
+    {
+      "id": "#c:oyster_sauce_extract",
+      "required": false
+    }
+  ]
+}

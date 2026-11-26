@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "breakfast_cereal|toasted"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    }
+  ],
+  "process": "confectionery",
+  "result": {
+    "semi_finished": "breakfast_cereal|coated"
+  }
+}

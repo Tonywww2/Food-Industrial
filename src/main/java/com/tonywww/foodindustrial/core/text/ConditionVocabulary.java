@@ -86,7 +86,9 @@ public final class ConditionVocabulary {
             "daytime", "白天", "Daytime",
             "non_cold_biome", "非寒冷群系", "Non-cold biome",
             "jungle_biome", "丛林群系", "Jungle biome",
-            "bamboo_biome", "竹林", "Bamboo jungle");
+            "bamboo_biome", "竹林", "Bamboo jungle",
+            // seawater pumps (I43): ocean or beach biome, water on one of the six sides
+            "coastal", "临海", "Coastal");
         // machine modes (I14, additives/06 §T1 作坊：操作与实现规格, 2026-11-10); recipes name them with "mode"
         category("mode",
             "dry_grinding", "干磨", "Dry grinding",
@@ -164,7 +166,51 @@ public final class ConditionVocabulary {
             "ultrafiltration", "超滤", "Ultrafiltration",
             "nanofiltration", "纳滤", "Nanofiltration",
             "reverse_osmosis", "反渗透", "Reverse osmosis",
-            "bipolar_electrodialysis", "双极膜电渗析", "Bipolar membrane electrodialysis");
+            "bipolar_electrodialysis", "双极膜电渗析", "Bipolar membrane electrodialysis",
+            // finished-food line (machines/05 §1.1, §1.2; I38, 2026-11-18): R20 forming
+            "dough_mixing", "和面", "Dough mixing",
+            "sheeting", "压延", "Sheeting",
+            "slitting", "切条", "Slitting",
+            "molding", "成型", "Molding",
+            // R21 sterilizing
+            "pasteurizing", "巴氏杀菌", "Pasteurizing",
+            "uht", "超高温灭菌", "UHT sterilizing",
+            "retorting", "罐内灭菌", "In-container sterilizing",
+            // R22 cooking
+            "water_boiling", "煮", "Boiling",
+            "steaming", "蒸", "Steaming",
+            "braising", "卤", "Braising",
+            // R23 baking (焙烧 roasting is M20's)
+            "baking", "烘烤", "Baking",
+            "pan_roasting", "焙炒", "Pan roasting",
+            // R25 curing
+            "proofing", "醒发", "Proofing",
+            "marinating", "腌制", "Marinating",
+            "aging", "陈酿", "Aging",
+            // R26 cutting
+            "slicing", "切割", "Cutting",
+            "chopping", "斩拌", "Chopping",
+            "stuffing", "灌肠", "Stuffing",
+            // R27 confectionery
+            "tempering", "调温", "Tempering",
+            "depositing", "浇注", "Depositing",
+            "panning", "包衣", "Panning",
+            // R28 chilling (冷冻 freezing is M15's)
+            "chilling", "冷却", "Chilling",
+            "quick_freezing", "速冻", "Quick freezing",
+            "churn_freezing", "凝冻", "Churn freezing",
+            // R11 and R19 on the food line
+            "coagulating", "凝固", "Coagulating",
+            "curdling", "凝乳", "Curdling",
+            "enzymolysis", "酶解", "Enzymatic hydrolysis",
+            "whipping", "搅打", "Whipping",
+            "churning", "搅乳", "Churning",
+            "high_pressure_homogenizing", "高压均质", "High-pressure homogenizing",
+            // M03's modes on the finished-food line (I41): simmering keeps its old recipes
+            "simmering", "熬煮", "Simmering",
+            "cooking", "蒸煮", "Cooking",
+            "frying", "油炸", "Frying",
+            "sterilizing", "杀菌", "Sterilizing");
         category("manual_purity",
             "fixed", "定值", "Fixed",
             "refine", "提纯", "Refine",

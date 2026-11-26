@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "semi_finished": "wafer|wafer_sheet"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/shortening"
+      }
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:wafer"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/filling_mold"
+    }
+  ]
+}

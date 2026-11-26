@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:materials/yellow_mustard_seed",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:materials/mustard_seed",
+      "required": false
+    }
+  ]
+}

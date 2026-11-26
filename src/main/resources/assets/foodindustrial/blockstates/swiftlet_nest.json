@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "foodindustrial:block/swiftlet_nest"
+    },
+    "facing=east": {
+      "model": "foodindustrial:block/swiftlet_nest",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "foodindustrial:block/swiftlet_nest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "foodindustrial:block/swiftlet_nest",
+      "y": 270
+    }
+  }
+}

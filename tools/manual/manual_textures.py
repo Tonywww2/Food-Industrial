@@ -2,7 +2,8 @@
 """Generates the placeholder textures of the T0 tools and devices (I12, additives/07 §操作与实现规格).
 
   textures/block/clay_pot.png, iron_pot.png, crock.png, leach_barrel.png, salt_pan.png,
-                 drying_rack.png, koji_tray.png, fumigation_box.png     one texture on every face
+                 drying_rack.png, koji_tray.png, fumigation_box.png,
+                 hand_seawater_pump.png (I43)                            one texture on every face
   textures/item/mortar.png, sieve.png, cloth_bag.png, flint_knife.png, fluid_bottle.png,
                 dried_apple.png, dried_berries.png
 
@@ -192,6 +193,8 @@ def main():
     save(planks('#A88452'), 'block/drying_rack.png')
     save(weave('#B8B060'), 'block/koji_tray.png')
     save(fumigation_box(), 'block/fumigation_box.png')
+    # H16 hand seawater pump (I43): barrel staves with iron hoops
+    save(planks('#7A5A36', bands=(2, 7, 12)), 'block/hand_seawater_pump.png')
     save(mortar(), 'item/mortar.png')
     save(sieve(), 'item/sieve.png')
     save(cloth_bag(), 'item/cloth_bag.png')

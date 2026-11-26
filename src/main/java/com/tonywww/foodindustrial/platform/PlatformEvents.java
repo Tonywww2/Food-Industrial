@@ -74,6 +74,7 @@ public final class PlatformEvents {
     private static final List<AxeStripListener> AXE_STRIP = new ArrayList<>();
     private static final List<Consumer<ServerLevel>> LEVEL_TICK = new ArrayList<>();
     private static final List<RightClickBlockListener> RIGHT_CLICK_BLOCK = new ArrayList<>();
+    private static final List<LivingDropsListener> LIVING_DROPS = new ArrayList<>();
 
     private PlatformEvents() {
     }
@@ -159,6 +160,22 @@ public final class PlatformEvents {
     /** Listens to right clicks on blocks by players (world interactions such as tapping a log). */
     public static void onRightClickBlock(RightClickBlockListener listener) {
         RIGHT_CLICK_BLOCK.add(listener);
+    }
+
+    /** Extra drops of a dying mob (I44: dismemberment). */
+    @FunctionalInterface
+    public interface LivingDropsListener {
+        /**
+         * Server side. {@code attacker}: the entity behind the killing blow, or {@code null}; {@code drop} adds a stack at
+         * the mob's position.
+         */
+        void drops(net.minecraft.world.entity.LivingEntity victim, @org.jetbrains.annotations.Nullable net.minecraft.world.entity.Entity attacker,
+                   Consumer<net.minecraft.world.item.ItemStack> drop);
+    }
+
+    /** Listens to mob deaths for extra drops. */
+    public static void onLivingDrops(LivingDropsListener listener) {
+        LIVING_DROPS.add(listener);
     }
 
     /** Server side: registers commands whenever the command tree is built. */
@@ -261,6 +278,11 @@ public final class PlatformEvents {
         gameBus().addListener(PlatformEvents::toolModification);
         gameBus().addListener(PlatformEvents::levelTick);
         gameBus().addListener(PlatformEvents::rightClickBlock);
+        gameBus().addListener(PlatformLoot::onLoad);
+        gameBus().addListener(PlatformEvents::livingDrops);
+        //? if <26.1 {
+        gameBus().addListener(PlatformTrades::onTrades);
+        //?}
     }
 
     //? if forge {
@@ -302,6 +324,21 @@ public final class PlatformEvents {
         }
     }
     *///?}
+
+    //? if forge {
+    private static void livingDrops(net.minecraftforge.event.entity.living.LivingDropsEvent event) {
+    //?} else {
+    /*private static void livingDrops(net.neoforged.neoforge.event.entity.living.LivingDropsEvent event) {
+    *///?}
+        net.minecraft.world.entity.LivingEntity victim = event.getEntity();
+        if (LIVING_DROPS.isEmpty() || !(victim.level() instanceof ServerLevel level)) {
+            return;
+        }
+        for (LivingDropsListener listener : LIVING_DROPS) {
+            listener.drops(victim, event.getSource().getEntity(), stack -> event.getDrops().add(
+                new net.minecraft.world.entity.item.ItemEntity(level, victim.getX(), victim.getY(), victim.getZ(), stack)));
+        }
+    }
 
     private static void toolModification(BlockEvent.BlockToolModificationEvent event) {
         //? if forge {

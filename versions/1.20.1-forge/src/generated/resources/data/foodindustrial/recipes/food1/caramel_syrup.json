@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "caramel_syrup|molten_sugar"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:caramel_syrup"
+    }
+  ],
+  "quality": {
+    "items": [
+      "color",
+      {
+        "accepts": [
+          "sweet_flavoring"
+        ],
+        "item": "taste"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

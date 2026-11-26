@@ -66,7 +66,8 @@ public final class IntegrationRecipes {
             }
             int count = 0;
             for (Map.Entry<String, ProcessRecipe> entry : recipes.entrySet()) {
-                if (handOnly.contains(entry.getKey())) {
+                // a recipe loaded only with another mod's raw material (I49) is not copied to other machines
+                if (handOnly.contains(entry.getKey()) || RecipeGen.tagCondition(entry.getKey()) != null) {
                     continue;
                 }
                 Map<Tier, ExternalRecipe> plans = new LinkedHashMap<>();

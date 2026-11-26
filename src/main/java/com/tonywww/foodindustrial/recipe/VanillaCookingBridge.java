@@ -135,6 +135,11 @@ public final class VanillaCookingBridge {
         ProcessInput.ItemInput item = input(data);
         int b = OutcomeResolver.purity(recipe, 0, device.spec().profile(), data.base(), new int[]{item.purityOf(input)},
             new long[]{item.weight()}, UNUSED);
+        // the food line: the result keeps the quality of what went in (foods/05 §6)
+        int quality = com.tonywww.foodindustrial.food.FoodLine.quality(input);
+        if (quality != 0) {
+            com.tonywww.foodindustrial.food.FoodLine.withQuality(result, quality);
+        }
         return b == OutcomeResolver.NONE ? result : Purity.with(result, b);
     }
 

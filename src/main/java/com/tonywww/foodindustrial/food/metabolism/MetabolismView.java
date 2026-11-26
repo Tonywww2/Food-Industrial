@@ -18,11 +18,16 @@ public final class MetabolismView implements PlatformNetwork.Payload {
     final long[] next = new long[Substance.all().length];
     /** Ticks since each nutrient's reserve ran out (−1: not out), as of the sync. */
     final long[] deficient = new long[Substance.all().length];
+    /** Each nutrient with an upper level eaten today, in its data unit (vitamin A: preformed), as of the sync. */
+    final double[] today = new double[Substance.all().length];
     boolean unconscious;
+    /** Nitrite eaten today (mg), shown against the acceptable daily intake. */
+    double nitriteToday;
     /** The player's metabolic rate: {@link #next} and {@link #deficient} are in the body's time, which runs this many times as fast. */
     double rate = 1.0;
     boolean impurityOn = true;
-    boolean nutrientsOn = true;
+    /** The nutrients the server's configuration leaves on, by nutrient index. */
+    int nutrientsOn = MetabolismState.ALL_NUTRIENTS;
     /** Unconsciousness settings, by {@link Unconscious} ordinal. */
     final boolean[] unconsciousRules = new boolean[Unconscious.values().length];
 
@@ -49,8 +54,18 @@ public final class MetabolismView implements PlatformNetwork.Payload {
         return deficient[substance.ordinal()];
     }
 
+    /** A nutrient with an upper level eaten on the current day of the body's time (vitamin A: preformed only). */
+    public double today(Substance substance) {
+        return today[substance.ordinal()];
+    }
+
     public boolean unconscious() {
         return unconscious;
+    }
+
+    /** Nitrite eaten on the current day of the body's time (mg). */
+    public double nitriteToday() {
+        return nitriteToday;
     }
 
     /** The player's metabolic rate as of the sync (1: normal). */
@@ -70,7 +85,7 @@ public final class MetabolismView implements PlatformNetwork.Payload {
 
     /** Whether a substance is shown and active under the server's configuration. */
     public boolean shown(Substance substance) {
-        return substance == Substance.IMPURITY ? impurityOn : !substance.nutrient() || nutrientsOn;
+        return substance == Substance.IMPURITY ? impurityOn : !substance.nutrient() || MetabolismState.on(nutrientsOn, substance.nutrientIndex());
     }
 
     /** Copies {@code other} into this view. */
@@ -79,8 +94,10 @@ public final class MetabolismView implements PlatformNetwork.Payload {
         System.arraycopy(other.tiers, 0, tiers, 0, tiers.length);
         System.arraycopy(other.next, 0, next, 0, next.length);
         System.arraycopy(other.deficient, 0, deficient, 0, deficient.length);
+        System.arraycopy(other.today, 0, today, 0, today.length);
         System.arraycopy(other.unconsciousRules, 0, unconsciousRules, 0, unconsciousRules.length);
         unconscious = other.unconscious;
+        nitriteToday = other.nitriteToday;
         rate = other.rate;
         impurityOn = other.impurityOn;
         nutrientsOn = other.nutrientsOn;
@@ -89,12 +106,14 @@ public final class MetabolismView implements PlatformNetwork.Payload {
     /** Whether the client would show something different from {@code other}. Allocation-free. */
     boolean differs(MetabolismView other) {
         if (!Arrays.equals(tiers, other.tiers) || unconscious != other.unconscious || impurityOn != other.impurityOn
-            || nutrientsOn != other.nutrientsOn || rate != other.rate || !Arrays.equals(unconsciousRules, other.unconsciousRules)) {
+            || nutrientsOn != other.nutrientsOn || rate != other.rate || !Arrays.equals(unconsciousRules, other.unconsciousRules)
+            || Math.round(nitriteToday * 100) != Math.round(other.nitriteToday * 100)) {
             return true;
         }
         for (Substance substance : Substance.all()) {
             if (MetabolismText.displayed(substance, amounts[substance.ordinal()])
-                != MetabolismText.displayed(substance, other.amounts[substance.ordinal()])) {
+                != MetabolismText.displayed(substance, other.amounts[substance.ordinal()])
+                || Math.round(today[substance.ordinal()] * 10) != Math.round(other.today[substance.ordinal()] * 10)) {
                 return true;
             }
         }
@@ -108,11 +127,13 @@ public final class MetabolismView implements PlatformNetwork.Payload {
             out.putInt(substance.id() + "_tier", tiers[substance.ordinal()]);
             out.putLong(substance.id() + "_next", next[substance.ordinal()]);
             out.putLong(substance.id() + "_deficient", deficient[substance.ordinal()]);
+            out.putDouble(substance.id() + "_today", today[substance.ordinal()]);
         }
         out.putBoolean("unconscious", unconscious);
+        out.putDouble("nitrite_today", nitriteToday);
         out.putDouble("rate", rate);
         out.putBoolean("impurity_on", impurityOn);
-        out.putBoolean("nutrients_on", nutrientsOn);
+        out.putInt("nutrients_on", nutrientsOn);
         for (Unconscious rule : Unconscious.values()) {
             out.putBoolean("rule_" + rule.ordinal(), unconsciousRules[rule.ordinal()]);
         }
@@ -125,11 +146,13 @@ public final class MetabolismView implements PlatformNetwork.Payload {
             view.tiers[substance.ordinal()] = in.getInt(substance.id() + "_tier", 0);
             view.next[substance.ordinal()] = in.getLong(substance.id() + "_next", -1);
             view.deficient[substance.ordinal()] = in.getLong(substance.id() + "_deficient", -1);
+            view.today[substance.ordinal()] = in.getDouble(substance.id() + "_today", 0);
         }
         view.unconscious = in.getBoolean("unconscious", false);
+        view.nitriteToday = in.getDouble("nitrite_today", 0);
         view.rate = in.getDouble("rate", 1.0);
         view.impurityOn = in.getBoolean("impurity_on", true);
-        view.nutrientsOn = in.getBoolean("nutrients_on", true);
+        view.nutrientsOn = in.getInt("nutrients_on", MetabolismState.ALL_NUTRIENTS);
         for (Unconscious rule : Unconscious.values()) {
             view.unconsciousRules[rule.ordinal()] = in.getBoolean("rule_" + rule.ordinal(), false);
         }

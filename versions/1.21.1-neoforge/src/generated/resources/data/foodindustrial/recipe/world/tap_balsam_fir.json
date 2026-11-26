@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:balsam_fir_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:canada_balsam"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "foodindustrial:block/seawater_pump_shape",
+  "textures": {
+    "front": "foodindustrial:block/seawater_pump_front",
+    "side": "foodindustrial:block/seawater_pump_side",
+    "top": "foodindustrial:block/seawater_pump_top"
+  }
+}

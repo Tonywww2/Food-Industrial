@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "neoforge:fluid_container",
+    "fluid": "foodindustrial:nutty_roasted_flavoring_premix",
+    "textures": {
+      "base": "minecraft:item/bucket",
+      "fluid": "neoforge:item/mask/bucket_fluid"
+    }
+  }
+}

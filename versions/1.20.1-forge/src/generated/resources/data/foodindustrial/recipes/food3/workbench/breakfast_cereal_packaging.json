@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "breakfast_cereal|coated"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/paper_bag"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:breakfast_cereal"
+  }
+}

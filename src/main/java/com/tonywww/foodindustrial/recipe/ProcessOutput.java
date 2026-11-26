@@ -11,6 +11,8 @@ import com.tonywww.foodindustrial.core.data.StrictCodecs;
 import com.tonywww.foodindustrial.core.Tier;
 import com.tonywww.foodindustrial.core.purity.Purity;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
+import com.tonywww.foodindustrial.food.flavor.DosageForm;
+import com.tonywww.foodindustrial.food.flavor.Flavorings;
 import com.tonywww.foodindustrial.platform.PlatformTags;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
@@ -27,6 +29,8 @@ import java.util.Optional;
  * <pre>
  * { "item": "foodindustrial:salt", "count": 2, "purity": { "mode": "removal", "value": 50 } }
  * { "fluid": "foodindustrial:bittern", "amount": 50, "chance": 0.5, "min_tier": "t2" }
+ * { "semi_finished": "steamed_bun|dough", "count": 4 }      the semi-finished item of a product's stage (foods/08 §3)
+ * { "item": "foodindustrial:fruity_flavoring", "count": 8, "form": "emulsion" }   a flavouring in a dosage form (I48)
  * </pre>
  * The first output of a recipe is its main product; {@code chance} (0–1) is only for by-products.
  *
@@ -36,16 +40,20 @@ import java.util.Optional;
  * @param minTier lowest device tier that produces this output, or {@code null}
  * @param chance  probability per completion, {@code 1} = always
  * @param purity  written purity rule, or {@code null} for the recipe type's default
+ * @param semi    semi-finished key {@code product|stage} of a semi-finished output, or empty
+ * @param form    dosage form of a flavouring output ({@link DosageForm}), or empty
  */
 public record ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amount, @Nullable Tier minTier,
-                            double chance, @Nullable PurityRule purity) {
+                            double chance, @Nullable PurityRule purity, String semi, String form) {
     private static final MapCodec<ProcessOutput> ITEM = RecordCodecBuilder.mapCodec(instance -> instance.group(
         BuiltInRegistries.ITEM.byNameCodec().fieldOf("item").forGetter(ProcessOutput::item),
         StrictCodecs.optional("count", Codec.intRange(1, 64), 1).forGetter(ProcessOutput::amount),
         StrictCodecs.optional("min_tier", Tier.CODEC).forGetter(output -> Optional.ofNullable(output.minTier)),
         StrictCodecs.optional("chance", Codec.DOUBLE, 1.0).forGetter(ProcessOutput::chance),
-        StrictCodecs.optional("purity", PurityRule.CODEC).forGetter(output -> Optional.ofNullable(output.purity))
-    ).apply(instance, (item, count, minTier, chance, purity) -> new ProcessOutput(item, null, count, minTier.orElse(null), chance, purity.orElse(null))));
+        StrictCodecs.optional("purity", PurityRule.CODEC).forGetter(output -> Optional.ofNullable(output.purity)),
+        StrictCodecs.optional("form", Codec.STRING, "").forGetter(ProcessOutput::form)
+    ).apply(instance, (item, count, minTier, chance, purity, form) -> new ProcessOutput(item, null, count, minTier.orElse(null), chance,
+        purity.orElse(null), "", form)));
 
     private static final MapCodec<ProcessOutput> FLUID = RecordCodecBuilder.mapCodec(instance -> instance.group(
         BuiltInRegistries.FLUID.byNameCodec().fieldOf("fluid").forGetter(ProcessOutput::fluid),
@@ -55,7 +63,24 @@ public record ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amou
         StrictCodecs.optional("purity", PurityRule.CODEC).forGetter(output -> Optional.ofNullable(output.purity))
     ).apply(instance, (fluid, amount, minTier, chance, purity) -> new ProcessOutput(null, fluid, amount, minTier.orElse(null), chance, purity.orElse(null))));
 
-    /** Item outputs have {@code item}, fluid outputs {@code fluid}. */
+    private static final MapCodec<ProcessOutput> SEMI = RecordCodecBuilder.mapCodec(instance -> instance.group(
+        Codec.STRING.fieldOf("semi_finished").forGetter(ProcessOutput::semi),
+        StrictCodecs.optional("count", Codec.intRange(1, 64), 1).forGetter(ProcessOutput::amount),
+        StrictCodecs.optional("min_tier", Tier.CODEC).forGetter(output -> Optional.ofNullable(output.minTier)),
+        StrictCodecs.optional("chance", Codec.DOUBLE, 1.0).forGetter(ProcessOutput::chance)
+    ).apply(instance, (semi, count, minTier, chance) -> new ProcessOutput(com.tonywww.foodindustrial.food.SemiFinished.ITEM.get(), null,
+        count, minTier.orElse(null), chance, null, semi)));
+
+    public ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amount, @Nullable Tier minTier, double chance, @Nullable PurityRule purity) {
+        this(item, fluid, amount, minTier, chance, purity, "", "");
+    }
+
+    public ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amount, @Nullable Tier minTier, double chance, @Nullable PurityRule purity,
+                         String semi) {
+        this(item, fluid, amount, minTier, chance, purity, semi, "");
+    }
+
+    /** Item outputs have {@code item}, fluid outputs {@code fluid}, semi-finished outputs {@code semi_finished}. */
     public static final Codec<ProcessOutput> CODEC = new Codec<>() {
         @Override
         public <T> DataResult<Pair<ProcessOutput, T>> decode(DynamicOps<T> ops, T input) {
@@ -69,12 +94,15 @@ public record ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amou
             if (map.get("item") != null) {
                 return ITEM.decode(ops, map);
             }
-            return DataResult.error(() -> "Recipe output needs \"item\" or \"fluid\"");
+            if (map.get("semi_finished") != null) {
+                return SEMI.decode(ops, map);
+            }
+            return DataResult.error(() -> "Recipe output needs \"item\", \"semi_finished\" or \"fluid\"");
         }
 
         @Override
         public <T> DataResult<T> encode(ProcessOutput output, DynamicOps<T> ops, T prefix) {
-            return (output.isFluid() ? FLUID : ITEM).codec().encode(output, ops, prefix);
+            return (output.isFluid() ? FLUID : output.isSemi() ? SEMI : ITEM).codec().encode(output, ops, prefix);
         }
     };
 
@@ -87,15 +115,19 @@ public record ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amou
     }
 
     public ProcessOutput withPurity(@Nullable PurityRule rule) {
-        return new ProcessOutput(item, fluid, amount, minTier, chance, rule);
+        return new ProcessOutput(item, fluid, amount, minTier, chance, rule, semi, form);
     }
 
     public ProcessOutput withChance(double probability) {
-        return new ProcessOutput(item, fluid, amount, minTier, probability, purity);
+        return new ProcessOutput(item, fluid, amount, minTier, probability, purity, semi, form);
     }
 
     public ProcessOutput withMinTier(@Nullable Tier tier) {
-        return new ProcessOutput(item, fluid, amount, tier, chance, purity);
+        return new ProcessOutput(item, fluid, amount, tier, chance, purity, semi, form);
+    }
+
+    public boolean isSemi() {
+        return !semi.isEmpty();
     }
 
     private static DataResult<ProcessOutput> validate(ProcessOutput output) {
@@ -104,6 +136,9 @@ public record ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amou
         }
         if (output.isFluid() ? output.fluid == Fluids.EMPTY : output.item == Items.AIR) {
             return DataResult.error(() -> "Output must not be empty");
+        }
+        if (!output.form.isEmpty() && (DosageForm.byId(output.form) == null || Flavorings.type(output.item) == null)) {
+            return DataResult.error(() -> "Dosage form \"" + output.form + "\" is for a flavouring and one of the six forms");
         }
         return DataResult.success(output);
     }
@@ -132,9 +167,16 @@ public record ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amou
         return isFluid() ? Purity.materialOf(fluid) : Purity.materialOf(item);
     }
 
-    /** A fresh stack of {@code count} items (without purity); empty for fluid outputs. */
+    /** A fresh stack of {@code count} items (without purity; semi-finished with its key); empty for fluid outputs. */
     public ItemStack stack(int count) {
-        return isFluid() ? ItemStack.EMPTY : new ItemStack(item, count);
+        if (isFluid()) {
+            return ItemStack.EMPTY;
+        }
+        if (isSemi()) {
+            return com.tonywww.foodindustrial.food.SemiFinished.stack(semi, count);
+        }
+        DosageForm dosage = form.isEmpty() ? null : DosageForm.byId(form);
+        return dosage == null ? new ItemStack(item, count) : Flavorings.withForm(new ItemStack(item, count), dosage);
     }
 
     /** The fluid of {@code mB} (without purity); empty for item outputs. */
@@ -142,7 +184,7 @@ public record ProcessOutput(@Nullable Item item, @Nullable Fluid fluid, int amou
         return isFluid() ? FluidAmount.of(fluid, mB) : FluidAmount.EMPTY;
     }
 
-    /** Registry id of the product. */
+    /** Registry id of the product (semi-finished outputs: the semi-finished item; their key is {@link #semi}). */
     public String id() {
         return isFluid() ? PlatformTags.fluidId(fluid) : PlatformTags.itemId(item);
     }

@@ -272,7 +272,7 @@ final class DevCommands {
         String material = Purity.materialOf(fluid.fluid());
         return PlatformTags.fluidId(fluid.fluid()) + " " + fluid.amount() + " mB purity="
             + (fluid.hasPurity() ? describe(material, fluid.purity()) : "none")
-            + " effective=" + describe(material, Purity.get(fluid));
+            + " effective=" + describe(material, Purity.get(fluid)) + (fluid.quality() != 0 ? " quality=" + fluid.quality() : "");
     }
 
     private static int containerContents(CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
@@ -301,7 +301,8 @@ final class DevCommands {
         ItemStack stack = container.getItem(slot);
         FluidAmount held = PlatformFluidContainers.contained(stack);
         ItemStack drained = PlatformFluidContainers.drained(stack);
-        reply(context, "drained " + describe(held) + " -> " + (drained.isEmpty() ? "failed" : PlatformTags.itemId(drained.getItem())));
+        reply(context, "drained " + describe(held) + " -> " + (drained.isEmpty() ? "failed" : PlatformTags.itemId(drained.getItem())
+            + " x" + drained.getCount()));
         if (!drained.isEmpty()) {
             container.setItem(slot, drained);
         }

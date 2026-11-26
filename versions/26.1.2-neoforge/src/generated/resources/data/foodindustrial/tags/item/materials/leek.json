@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:leek"
+    "foodindustrial:leek",
+    {
+      "id": "#c:crops/leek",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/leek",
+      "required": false
+    }
   ]
 }

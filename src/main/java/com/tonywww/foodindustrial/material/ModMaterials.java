@@ -201,6 +201,11 @@ public final class ModMaterials {
         }
     }
 
+    /** Creative tab entries of the food intermediates (I47), listed after the finished products. */
+    public static void foodIntermediates(Consumer<ItemStack> output) {
+        tabEntries(output, "food");
+    }
+
     private static boolean matches(String category, String[] categories) {
         for (String candidate : categories) {
             if (candidate.equals(category)) {

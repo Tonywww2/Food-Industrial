@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:buttermilk",
+    "foodindustrial:flowing_buttermilk",
+    {
+      "id": "#forge:buttermilk",
+      "required": false
+    },
+    {
+      "id": "#c:buttermilk",
+      "required": false
+    }
+  ]
+}

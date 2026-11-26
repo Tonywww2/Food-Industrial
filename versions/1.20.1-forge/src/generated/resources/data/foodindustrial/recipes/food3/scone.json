@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:baking",
+  "inputs": [
+    {
+      "semi_finished": "scone|dough"
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:scone"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200,
+  "vanilla_devices": [
+    "campfire",
+    "furnace",
+    "smoker"
+  ]
+}

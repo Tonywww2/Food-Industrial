@@ -1,0 +1,33 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/ginger"
+    },
+    {
+      "tag": "foodindustrial:materials/ginger"
+    },
+    {
+      "tag": "foodindustrial:materials/ginger"
+    },
+    {
+      "tag": "foodindustrial:materials/ginger"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "foodindustrial:ginger_juice"
+    }
+  ]
+}

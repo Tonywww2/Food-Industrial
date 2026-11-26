@@ -17,10 +17,16 @@ public final class MetabolismText {
         Lang.add(KEY + "caffeine", "咖啡因", "Caffeine");
         Lang.add(KEY + "alcohol", "酒精", "Alcohol");
         Lang.add(KEY + "fast_sugar", "快吸收糖", "Fast sugar");
+        Lang.add(KEY + "nitrite", "亚硝酸盐", "Nitrite");
         Lang.add(KEY + "impurity", "杂质", "Impurity");
         Lang.add(KEY + "vitamin_c", "维生素 C", "Vitamin C");
         Lang.add(KEY + "vitamin_b1", "维生素 B1", "Vitamin B1");
         Lang.add(KEY + "vitamin_d", "维生素 D", "Vitamin D");
+        Lang.add(KEY + "vitamin_a", "维生素 A", "Vitamin A");
+        Lang.add(KEY + "provitamin_a", "维生素 A 原", "Provitamin A");
+        Lang.add(KEY + "calcium", "钙", "Calcium");
+        Lang.add(KEY + "iron", "铁", "Iron");
+        Lang.add(KEY + "zinc", "锌", "Zinc");
         Lang.add(KEY + "normal", "正常", "Normal");
         Lang.add(KEY + "caffeine.tier1", "警觉", "Alert");
         Lang.add(KEY + "caffeine.tier2", "难以入睡", "Sleepless");
@@ -32,6 +38,10 @@ public final class MetabolismText {
         Lang.add(KEY + "alcohol.tier4", "失去意识", "Unconscious");
         Lang.add(KEY + "alcohol.tier5", "酒精中毒", "Alcohol poisoning");
         Lang.add(KEY + "fast_sugar.tier1", "耐力", "Endurance");
+        Lang.add(KEY + "nitrite.tier1", "发绀", "Cyanosis");
+        Lang.add(KEY + "nitrite.tier2", "缺氧", "Hypoxia");
+        Lang.add(KEY + "nitrite.tier3", "失去意识", "Unconscious");
+        Lang.add(KEY + "nitrite.tier4", "亚硝酸盐中毒", "Nitrite poisoning");
         Lang.add(KEY + "impurity.tier1", "疲劳", "Fatigue");
         Lang.add(KEY + "impurity.tier2", "乏力", "Weakness");
         Lang.add(KEY + "impurity.tier3", "贫血", "Anemia");
@@ -41,6 +51,20 @@ public final class MetabolismText {
         Lang.add(KEY + "vitamin_b1.tier2", "脚气病", "Beriberi");
         Lang.add(KEY + "vitamin_d.tier1", "缺乏", "Deficient");
         Lang.add(KEY + "vitamin_d.tier2", "骨软化", "Osteomalacia");
+        Lang.add(KEY + "vitamin_a.tier1", "夜盲", "Night blindness");
+        Lang.add(KEY + "vitamin_a.tier2", "干眼症", "Xerophthalmia");
+        Lang.add(KEY + "vitamin_a.tier3", "过量", "Excess");
+        Lang.add(KEY + "vitamin_a.tier4", "维生素 A 中毒", "Vitamin A toxicity");
+        Lang.add(KEY + "calcium.tier1", "缺乏", "Deficient");
+        Lang.add(KEY + "calcium.tier2", "骨质疏松", "Osteoporosis");
+        Lang.add(KEY + "calcium.tier3", "过量", "Excess");
+        Lang.add(KEY + "iron.tier1", "缺乏", "Deficient");
+        Lang.add(KEY + "iron.tier2", "缺铁性贫血", "Iron-deficiency anemia");
+        Lang.add(KEY + "iron.tier3", "过量", "Excess");
+        Lang.add(KEY + "iron.tier4", "铁过载", "Iron overload");
+        Lang.add(KEY + "zinc.tier1", "缺乏", "Deficient");
+        Lang.add(KEY + "zinc.tier2", "严重缺乏", "Severe deficiency");
+        Lang.add(KEY + "zinc.tier3", "过量", "Excess");
         Lang.add(KEY + "panel", "体内", "Body");
         // metabolic rate attribute (2026-11-13 user request)
         Lang.add("attribute.foodindustrial." + MetabolismRules.RATE_ATTRIBUTE, "代谢速率", "Metabolic Rate");
@@ -82,10 +106,25 @@ public final class MetabolismText {
         Lang.add(KEY + "effect.poison", "每 %s 秒受到 %s 点伤害", "%2$s damage every %1$s s");
         Lang.add(KEY + "effect.cancelled", "警觉、耐力取消", "Alert and endurance end");
         Lang.add(KEY + "effect.cap", "与咖啡因合计不超过 %s%%", "At most %s%% with caffeine");
+        Lang.add(KEY + "effect.darken", "视野变暗", "Darkened view");
+        Lang.add(KEY + "nitrite_today", "今日摄入 %s mg，为每日允许量的 %s%%", "%s mg today, %s%% of the acceptable daily intake");
+        // upper levels of the nutrients (I46)
+        Lang.add(KEY + "upper_today", "今日摄入 %s，为可耐受最高摄入量的 %s%%", "%s today, %s%% of the upper level");
+        Lang.add(KEY + "upper_today_preformed", "今日预成型维生素 A %s，为可耐受最高摄入量的 %s%%",
+            "%s of preformed vitamin A today, %s%% of the upper level");
+        Lang.add(KEY + "upper", "可耐受最高摄入量每日 %s", "Upper level %s a day");
+        Lang.add(KEY + "upper_preformed", "可耐受最高摄入量每日 %s（只算预成型）", "Upper level %s a day (preformed only)");
+        Lang.add(KEY + "overflow", "储备达 %s 天也算过量", "A reserve of %s days is excess too");
+        Lang.add(KEY + "per_day", "%s/日", "%s a day");
+        Lang.add(KEY + "stat.damage_taken", "受到的伤害", "Damage taken");
         // food tooltip notes (text standard §3.3)
         Lang.add(KEY + "daily_share", "日需 %s%%", "%s%% of daily need");
         Lang.add(KEY + "blood_alcohol", "≈ %s%%", "≈ %s%%");
+        Lang.add(KEY + "methemoglobin", "高铁血红蛋白 +%s%%", "Methemoglobin +%s%%");
+        Lang.add(KEY + "nitrite_curing", "护色剂", "Colour retention agent");
+        Lang.add(KEY + "nitrite_misuse", "误用亚硝酸盐", "Nitrite mistaken for salt");
         Lang.add("death.attack.foodindustrial.alcohol_poisoning", "%1$s 死于酒精中毒", "%1$s died of alcohol poisoning");
+        Lang.add("death.attack.foodindustrial.nitrite_poisoning", "%1$s 死于亚硝酸盐中毒", "%1$s died of nitrite poisoning");
     }
 
     public static MutableComponent name(Substance substance) {
@@ -105,20 +144,22 @@ public final class MetabolismText {
     static long displayed(Substance substance, double value) {
         return switch (substance) {
             case ALCOHOL -> Math.round(value * 1000);
+            case NITRITE -> Math.round(value * 10);
             case IMPURITY -> Math.round(value * 10);
-            case VITAMIN_C, VITAMIN_B1, VITAMIN_D -> value > 0 && value < 1 ? -1 : (long) Math.floor(value);
-            default -> Math.round(value);
+            case CAFFEINE, FAST_SUGAR -> Math.round(value);
+            default -> value > 0 && value < 1 ? -1 : (long) Math.floor(value);
         };
     }
 
-    /** The amount as the body panel shows it: “95 mg”, “0.033%”, “12 g”, “4.5”, “储备 12 天”. */
+    /** The amount as the body panel shows it: “95 mg”, “0.033%”, “12 g”, “15.2%”, “4.5”, “储备 12 天”. */
     public static MutableComponent amount(Substance substance, double value) {
         return switch (substance) {
             case CAFFEINE -> net.minecraft.network.chat.Component.literal(Math.round(value) + " mg");
             case ALCOHOL -> net.minecraft.network.chat.Component.literal(fixed(value, 3) + "%");
             case FAST_SUGAR -> net.minecraft.network.chat.Component.literal(Math.round(value) + " g");
+            case NITRITE -> net.minecraft.network.chat.Component.literal(fixed(value, 1) + "%");
             case IMPURITY -> net.minecraft.network.chat.Component.literal(fixed(value, 1));
-            case VITAMIN_C, VITAMIN_B1, VITAMIN_D -> net.minecraft.network.chat.Component.translatable(KEY + "reserve", reserveDays(value));
+            default -> net.minecraft.network.chat.Component.translatable(KEY + "reserve", reserveDays(value));
         };
     }
 

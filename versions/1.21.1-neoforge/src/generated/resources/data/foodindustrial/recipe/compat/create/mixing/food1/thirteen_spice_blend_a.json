@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/star_anise"
+    },
+    {
+      "tag": "foodindustrial:materials/fennel_seed"
+    },
+    {
+      "tag": "foodindustrial:materials/sichuan_pepper"
+    },
+    {
+      "tag": "foodindustrial:materials/galangal_root"
+    },
+    {
+      "tag": "foodindustrial:materials/citrus_peel"
+    },
+    {
+      "tag": "foodindustrial:materials/black_pepper"
+    },
+    {
+      "tag": "foodindustrial:materials/nutmeg"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "foodindustrial:semi_finished"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:smoky_flavoring_premix",
+    "foodindustrial:flowing_smoky_flavoring_premix",
+    {
+      "id": "#forge:smoky_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:smoky_flavoring_premix",
+      "required": false
+    }
+  ]
+}

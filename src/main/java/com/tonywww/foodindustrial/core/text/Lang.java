@@ -47,6 +47,11 @@ public final class Lang {
         COMMON_NAMES.put(professional, common);
     }
 
+    /** Whether {@code key} was added by {@link #addName} (its text follows the chemical name rules). */
+    static boolean isChemicalName(String key) {
+        return CHEMICAL_NAMES.contains(key);
+    }
+
     public static Map<String, String> zh() {
         return Collections.unmodifiableMap(ZH);
     }
@@ -89,9 +94,14 @@ public final class Lang {
         return "itemGroup." + FoodIndustrial.MOD_ID + "." + id;
     }
 
-    /** Registers the language generator. Called once from {@link FoodIndustrial#init()}. */
+    /**
+     * Registers the language generator. Called once from {@link FoodIndustrial#init()}. It runs last, after the tag names
+     * ({@link TagNames}) are known from the tag files the other generators wrote.
+     */
     public static void bootstrap() {
-        PlatformDatagen.register("lang", sink -> {
+        TagNames.bootstrap();
+        PlatformDatagen.registerLast("lang", sink -> {
+            TagNames.addNames();
             TextChecks.checkAll(ZH, EN, COMMON_NAMES, CHEMICAL_NAMES);
             sink.json(PlatformDatagen.Kind.LANG, FoodIndustrial.MOD_ID, "zh_cn", toJson(ZH));
             sink.json(PlatformDatagen.Kind.LANG, FoodIndustrial.MOD_ID, "en_us", toJson(EN));

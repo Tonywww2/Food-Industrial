@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:sweet_flavoring_premix",
+    "foodindustrial:flowing_sweet_flavoring_premix",
+    {
+      "id": "#forge:sweet_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:sweet_flavoring_premix",
+      "required": false
+    }
+  ]
+}

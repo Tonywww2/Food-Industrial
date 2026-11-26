@@ -4,6 +4,7 @@ import com.tonywww.foodindustrial.core.purity.Purity;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import com.tonywww.foodindustrial.core.text.Lang;
 import com.tonywww.foodindustrial.core.text.Tooltips;
+import com.tonywww.foodindustrial.food.quality.QualityText;
 import com.tonywww.foodindustrial.gui.GuiText;
 import com.tonywww.foodindustrial.platform.PlatformBlockItem;
 import com.tonywww.foodindustrial.platform.PlatformFluids;
@@ -63,7 +64,7 @@ public class TankBlockItem extends PlatformBlockItem {
             return FluidAmount.EMPTY;
         }
         int purity = PlatformItemData.getInt(stack, KEY, "Purity", FluidAmount.NO_PURITY);
-        return FluidAmount.of(fluid, amount, purity);
+        return FluidAmount.of(fluid, amount, purity).withQuality(PlatformItemData.getInt(stack, KEY, "Quality", 0));
     }
 
     /** Whether the item is in use mode. */
@@ -83,11 +84,49 @@ public class TankBlockItem extends PlatformBlockItem {
                 if (fluid.hasPurity()) {
                     out.putInt("Purity", fluid.purity());
                 }
+                if (fluid.quality() != 0) {
+                    out.putInt("Quality", fluid.quality());
+                }
             }
             if (use) {
                 out.putInt("Use", 1);
             }
         });
+    }
+
+    // ---- machine windows (2026-11-19, user) ----
+
+    /** Pours at most {@code max} mB out of one tank item (any amount: the tank is no bucket). */
+    public static com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer drain(ItemStack stack, int max,
+                                                                                         HolderLookup.Provider registries) {
+        FluidAmount contents = fluid(stack);
+        int moved = Math.min(max, contents.amount());
+        if (moved <= 0) {
+            return com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer.NONE;
+        }
+        ItemStack after = stack.copyWithCount(1);
+        setFluid(after, contents.withAmount(contents.amount() - moved), registries);
+        return new com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer(contents.withAmount(moved), after);
+    }
+
+    /** Takes as much of {@code offered} as one tank item holds: the same fluid as it has, or any it accepts when empty. */
+    public static com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer fill(ItemStack stack, FluidAmount offered,
+                                                                                        HolderLookup.Provider registries) {
+        if (!(stack.getItem() instanceof TankBlockItem item) || offered.isEmpty() || !item.kind.accepts(offered.fluid())) {
+            return com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer.NONE;
+        }
+        FluidAmount contents = fluid(stack);
+        if (!contents.isEmpty() && !contents.joins(offered)) {
+            return com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer.NONE;
+        }
+        int moved = Math.min(offered.amount(), item.kind.capacity() - contents.amount());
+        if (moved <= 0) {
+            return com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer.NONE;
+        }
+        FluidAmount part = offered.withAmount(moved);
+        ItemStack after = stack.copyWithCount(1);
+        setFluid(after, contents.isEmpty() ? part : Purity.merge(contents, part), registries);
+        return new com.tonywww.foodindustrial.platform.PlatformFluidContainers.Transfer(part, after);
     }
 
     // ---- use ----
@@ -171,6 +210,7 @@ public class TankBlockItem extends PlatformBlockItem {
         if (!contents.isEmpty()) {
             lines.add(PlatformFluids.displayName(contents).copy().append(" ").append(Component.translatable(GuiText.key("tank", "amount"),
                 String.valueOf(contents.amount()), String.valueOf(kind.capacity()))).withStyle(ChatFormatting.GRAY));
+            QualityText.append(contents.quality(), shiftDown, lines);
             if (Purity.bears(contents.fluid())) {
                 Tooltips.purityLine(Purity.materialOf(contents.fluid()), Purity.get(contents), lines);
             }

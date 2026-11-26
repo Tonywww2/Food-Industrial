@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/egg"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "dough_mixing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "egg_noodles|dough"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "emulsifier"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "semi_finished": "gingerbread|dough"
+    }
+  ],
+  "mode": "sheeting",
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "gingerbread|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

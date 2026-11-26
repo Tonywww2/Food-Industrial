@@ -1,0 +1,13 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "gingerbread|dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 2,
+    "semi_finished": "gingerbread|blank"
+  }
+}

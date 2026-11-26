@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:brick_oven",
+  "name": "book.foodindustrial.manual.entry.brick_oven",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:brick_oven",
+      "text": "book.foodindustrial.manual.entry.brick_oven.text"
+    }
+  ],
+  "sortnum": 13
+}

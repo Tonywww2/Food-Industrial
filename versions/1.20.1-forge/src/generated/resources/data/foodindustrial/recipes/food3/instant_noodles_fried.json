@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:frying",
+  "inputs": [
+    {
+      "semi_finished": "instant_noodles|steamed_noodles"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 50,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "semi_finished": "instant_noodles|noodle_cake"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 100
+}

@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/leavened_dough"
+      }
+    }
+  ],
+  "process": "cutting",
+  "result": {
+    "count": 2,
+    "semi_finished": "steamed_bun|blank"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:knives"
+    }
+  ]
+}

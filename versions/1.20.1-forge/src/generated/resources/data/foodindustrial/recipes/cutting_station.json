@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "foodindustrial:machine_frame"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "X": {
+      "item": "foodindustrial:meat_grinder"
+    }
+  },
+  "pattern": [
+    "IXI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:cutting_station"
+  }
+}

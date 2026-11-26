@@ -14,7 +14,6 @@ import com.tonywww.foodindustrial.platform.PlatformRegistry;
 import com.tonywww.foodindustrial.platform.PlatformSavedData;
 import com.tonywww.foodindustrial.platform.PlatformTags;
 import com.tonywww.foodindustrial.platform.recipe.PlatformRecipes;
-import com.tonywww.foodindustrial.platform.world.PlatformFluidPickup;
 import com.tonywww.foodindustrial.platform.world.PlatformRandomTicks;
 import com.tonywww.foodindustrial.recipe.Environment;
 import com.tonywww.foodindustrial.recipe.OutcomeResolver;
@@ -108,7 +107,8 @@ public final class WorldInteractions {
         PlatformEvents.onServerLevelTick(WorldInteractions::levelTick);
         PlatformEvents.onRightClickBlock(WorldInteractions::harvest);
         PlatformRandomTicks.setHook(WorldInteractions::randomTick);
-        PlatformFluidPickup.setHook(WorldInteractions::seawater);
+        // seawater comes only from the pumps now (I43, additives/07 §H16): a water bucket stays water
+        PumpingRecipe.bootstrap();
         WorldInteractionData.bootstrap();
     }
 
@@ -193,20 +193,6 @@ public final class WorldInteractions {
             return;
         }
         recipe.resultBlock().ifPresent(block -> level.setBlockAndUpdate(pos, block.defaultBlockState()));
-    }
-
-    // ---- seawater (additives/08 §C) ----
-
-    /** A water bucket filled in an ocean or beach biome holds seawater. */
-    private static ItemStack seawater(net.minecraft.world.level.LevelAccessor level, BlockPos pos, ItemStack taken) {
-        if (!taken.is(net.minecraft.world.item.Items.WATER_BUCKET)) {
-            return taken;
-        }
-        var biome = level.getBiome(pos);
-        if (!biome.is(net.minecraft.tags.BiomeTags.IS_OCEAN) && !biome.is(net.minecraft.tags.BiomeTags.IS_BEACH)) {
-            return taken;
-        }
-        return PlatformTags.item(FoodIndustrial.MOD_ID + ":seawater_bucket").map(ItemStack::new).orElse(taken);
     }
 
     // ---- W02 ----

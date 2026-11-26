@@ -1,0 +1,39 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:whipping_cream"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    }
+  ],
+  "mode": "whipping",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "cream_cake|whipped_cream"
+    }
+  ],
+  "quality": {
+    "items": [
+      "color",
+      {
+        "accepts": [
+          "emulsifier"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

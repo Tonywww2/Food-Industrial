@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/iron",
+    "P": "#minecraft:planks",
+    "S": "#c:rods/wooden"
+  },
+  "pattern": [
+    "III",
+    "PSP",
+    "P P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:noodle_press"
+  }
+}

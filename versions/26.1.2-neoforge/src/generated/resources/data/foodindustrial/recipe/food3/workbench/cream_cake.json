@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:foods/cake_base"
+    },
+    {
+      "semi_finished": "cream_cake|whipped_cream"
+    }
+  ],
+  "process": "confectionery",
+  "result": {
+    "item": "foodindustrial:cream_cake"
+  }
+}

@@ -83,8 +83,8 @@ public final class PlatformRecipes {
     /** Every registered kind, in registration order (recipe sync to clients from 26.1 on). */
     private static final List<Kind<?>> KINDS = new ArrayList<>();
     //? if >=26.1 {
-    /*/^* Recipes of the mod's kinds the server sent with the last datapack sync (client side). ^/
-    private static volatile net.minecraft.world.item.crafting.RecipeMap clientRecipes;
+    /*/^* Recipes the server sent with the last datapack sync (client side): the mod's kinds, and what JEI asks for. ^/
+    static volatile net.minecraft.world.item.crafting.RecipeMap clientRecipes;
     *///?}
 
     /** Registers recipe type and serializer {@code foodindustrial:<name>}. */

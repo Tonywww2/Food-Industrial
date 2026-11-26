@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:vanilla_smoking",
+  "recipe": {
+    "type": "foodindustrial:baking",
+    "inputs": [
+      {
+        "semi_finished": "croissant|blank"
+      }
+    ],
+    "mode": "baking",
+    "outputs": [
+      {
+        "item": "foodindustrial:croissant"
+      }
+    ],
+    "requirements": {
+      "min_tier": "t0",
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace",
+      "smoker"
+    ]
+  }
+}

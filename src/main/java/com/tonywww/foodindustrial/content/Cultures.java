@@ -44,6 +44,7 @@ public final class Cultures extends Batch {
         ISOLATION.put("raw_meat", List.of("e_coli"));
         ISOLATION.put("beetroot", List.of("protaminobacter"));
         ISOLATION.put("mushroom", List.of("edible_fungus"));
+        ISOLATION.put("cocoa", List.of("lasiodiplodia"));  // I44: 可可毛色二孢 from cocoa (08 §C, game setting)
         MUTAGENESIS.put("soil", List.of("ketogulonicigenium", "bacillus_megaterium"));
     }
 
@@ -58,6 +59,11 @@ public final class Cultures extends Batch {
     private void generate() {
         ISOLATION.forEach((sample, cultures) -> plate("isolation", sample, cultures));
         MUTAGENESIS.forEach((sample, cultures) -> plate("mutagenesis", sample, cultures));
+        // I44 (08 §C 菌藻类): the algae picked off a plate of their lake sample, dried to powder in the game's terms
+        r(CULTURING).in("samples/alkaline_lake", 1).in("chemicals/agar", 1).out("spirulina", 1).out("wild_mold", 1).mode("isolation")
+            .plateWeights(2, 1).add("alkaline_lake_isolation");
+        r(CULTURING).in("samples/brine", 1).in("chemicals/agar", 1).out("dunaliella", 1).out("wild_mold", 1).mode("isolation")
+            .plateWeights(2, 1).add("brine_isolation");
         // the non-toxigenic Penicillium citrinum bred from the wild strain (2026-11-11, user)
         r(CULTURING).in("cultures/penicillium_citrinum", 1).in("chemicals/agar", 1).out("penicillium_citrinum_nontoxic", 1).src(20)
             .out("penicillium_citrinum", 1).mode("mutagenesis").plateWeights(1, 3).add("penicillium_citrinum_mutagenesis");

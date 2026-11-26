@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/cooker_fryer_front_active",
+    "side": "foodindustrial:block/cooker_fryer_side",
+    "top": "foodindustrial:block/cooker_fryer_top"
+  }
+}

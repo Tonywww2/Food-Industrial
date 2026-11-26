@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "tag": "c:ingots/copper"
+    }
+  },
+  "pattern": [
+    "C C",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:panning_drum"
+  }
+}

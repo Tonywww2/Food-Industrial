@@ -265,6 +265,9 @@ def material(m):
         return flavor(m)
     if category == 'catalyst':
         return catalyst(m)
+    if category == 'food':
+        # food intermediates (I47): kind and colour given in tools/foods/intermediates.json
+        return result(m['texture'], '食品中间体（intermediates.json 指定）', m['color'], 'intermediates.json')
     if category == 'consumable':
         return result('enzyme_liquid', '表达载体（质粒溶液）', '#7AD0E0', '耗材默认色')
     return raw(m)

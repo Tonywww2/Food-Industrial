@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:filling_sealer",
+  "name": "book.foodindustrial.manual.entry.filling_sealer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:filling_sealer",
+      "text": "book.foodindustrial.manual.entry.filling_sealer.text"
+    }
+  ],
+  "sortnum": 17
+}

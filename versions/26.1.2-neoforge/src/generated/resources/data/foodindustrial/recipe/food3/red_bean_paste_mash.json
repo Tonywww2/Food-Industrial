@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/adzuki_bean"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "water_boiling",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "red_bean_paste|bean_mash"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

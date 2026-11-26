@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "soda_cracker|dough"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_bicarbonate"
+      }
+    }
+  ],
+  "mode": "proofing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "soda_cracker|risen_dough"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

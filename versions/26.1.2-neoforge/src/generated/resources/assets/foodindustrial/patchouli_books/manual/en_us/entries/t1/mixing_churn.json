@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:mixing_churn",
+  "name": "book.foodindustrial.manual.entry.mixing_churn",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:mixing_churn",
+      "text": "book.foodindustrial.manual.entry.mixing_churn.text"
+    }
+  ],
+  "sortnum": 12
+}

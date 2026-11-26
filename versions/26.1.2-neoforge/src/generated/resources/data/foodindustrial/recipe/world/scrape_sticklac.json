@@ -1,0 +1,9 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "#foodindustrial:harvest/sticklac",
+  "cooldown": 6000,
+  "result": {
+    "item": "foodindustrial:sticklac"
+  },
+  "tool": "#foodindustrial:knives"
+}

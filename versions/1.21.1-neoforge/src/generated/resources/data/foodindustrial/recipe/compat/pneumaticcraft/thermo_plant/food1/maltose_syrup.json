@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "type": "pneumaticcraft:thermo_plant",
+  "inputs": {
+    "fluid": {
+      "amount": 1000,
+      "tag": "foodindustrial:maltose_syrup_wort"
+    }
+  },
+  "outputs": {
+    "fluid_output": {
+      "amount": 500,
+      "id": "foodindustrial:maltose_syrup"
+    }
+  },
+  "temperature": {
+    "min": 373
+  }
+}

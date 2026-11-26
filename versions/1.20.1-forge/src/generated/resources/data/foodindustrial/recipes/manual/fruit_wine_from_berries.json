@@ -19,6 +19,13 @@
     {
       "amount": 1000,
       "fluid": "foodindustrial:fruit_wine"
+    },
+    {
+      "item": "foodindustrial:yeast",
+      "purity": {
+        "mode": "source",
+        "value": 20
+      }
     }
   ],
   "requirements": {

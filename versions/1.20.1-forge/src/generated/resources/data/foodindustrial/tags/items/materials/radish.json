@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:red_radish",
+    {
+      "id": "#forge:crops/radish",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/radish",
+      "required": false
+    },
+    {
+      "id": "#c:crops/radish",
+      "required": false
+    },
+    {
+      "id": "#c:vegetables/radish",
+      "required": false
+    }
+  ]
+}

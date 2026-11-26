@@ -191,6 +191,13 @@ public final class ManualBook {
             simple("t0", kind.id(), NS + ":" + kind.id(), sort++, kind.zh(), kind.en(), kind.descriptionZh(), kind.descriptionEn(),
                 new ArrayList<>(kind.spec().types()));
         }
+        // H16 (I43): its own block, not a T0Kind
+        List<Supplier<JsonObject>> pump = new ArrayList<>();
+        pump.add(constant(spotlight(NS + ":hand_seawater_pump", add("entry.hand_seawater_pump.text",
+            "手摇海水泵是" + stage(Tier.T0, true) + "阶段的设备。放在海洋或沙滩群系、挨着水，空手右键抽海水，八次装满 1,000 mB。$(br2)用桶或瓶取出，正下方的储罐也会自动接走。",
+            "The Hand Seawater Pump is a device of the " + stage(Tier.T0, false) + " stage. Set it beside water in an ocean or beach biome and right-click with an empty hand; eight strokes fill its 1,000 mB.$(br2)Take the seawater out with a bucket or bottle; a tank right below takes it too."))));
+        add("entry.hand_seawater_pump", "手摇海水泵", "Hand Seawater Pump");
+        ENTRIES.add(new Entry("hand_seawater_pump", "t0", NS + ":hand_seawater_pump", pump, sort++));
         world(sort);
         for (Tier tier : List.of(Tier.T1, Tier.T2, Tier.T3, Tier.T4)) {
             int order = 0;
@@ -267,8 +274,8 @@ public final class ManualBook {
 
         pages = new ArrayList<>();
         pages.add(constant(spotlight(NS + ":seawater_bucket", add("entry.seawater.text",
-            "在海洋或沙滩群系用水桶装水，得到的是海水。倒进晒盐池，露天晴天晒出盐，剩下苦卤。",
-            "A water bucket filled in an ocean or beach biome holds seawater. Pour it into salt pans in the open and clear weather to get salt, with bittern left over."))));
+            "在海洋或沙滩群系、挨着水放手摇海水泵，空手右键抽出海水，后来可换电动海水泵。倒进晒盐池，露天晴天晒出盐，剩下苦卤。",
+            "Set a hand seawater pump beside water in an ocean or beach biome and right-click to draw seawater; the electric pump comes later. Pour it into salt pans in the open and clear weather to get salt, with bittern left over."))));
         add("entry.seawater", "海水", "Seawater");
         ENTRIES.add(new Entry("seawater", "t0", NS + ":seawater_bucket", pages, sort));
     }

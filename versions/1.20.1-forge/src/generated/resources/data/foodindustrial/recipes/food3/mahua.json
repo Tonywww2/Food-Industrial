@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:frying",
+  "inputs": [
+    {
+      "semi_finished": "mahua|blank"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 50,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "item": "foodindustrial:mahua"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 100
+}

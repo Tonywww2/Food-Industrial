@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:elemi_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:elemi"
+  },
+  "tool": {
+    "tag": "foodindustrial:knives"
+  }
+}

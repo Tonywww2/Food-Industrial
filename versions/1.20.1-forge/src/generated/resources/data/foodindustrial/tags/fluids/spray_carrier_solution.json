@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:spray_carrier_solution",
+    "foodindustrial:flowing_spray_carrier_solution",
+    {
+      "id": "#forge:spray_carrier_solution",
+      "required": false
+    },
+    {
+      "id": "#c:spray_carrier_solution",
+      "required": false
+    }
+  ]
+}

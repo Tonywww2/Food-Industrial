@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "N": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "pattern": [
+    "N N",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:filling_mold"
+  }
+}

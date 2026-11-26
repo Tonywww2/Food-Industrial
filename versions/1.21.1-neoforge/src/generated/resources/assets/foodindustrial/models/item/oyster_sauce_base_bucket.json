@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:oyster_sauce_base",
+  "loader": "neoforge:fluid_container"
+}

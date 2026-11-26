@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:foods/taosu",
+    "#foodindustrial:foods/butter_cookie",
+    "#foodindustrial:foods/soda_cracker"
+  ]
+}

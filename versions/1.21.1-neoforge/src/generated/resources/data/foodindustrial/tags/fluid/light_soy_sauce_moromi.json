@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:light_soy_sauce_moromi",
+    "foodindustrial:flowing_light_soy_sauce_moromi",
+    {
+      "id": "#forge:light_soy_sauce_moromi",
+      "required": false
+    },
+    {
+      "id": "#c:light_soy_sauce_moromi",
+      "required": false
+    }
+  ]
+}

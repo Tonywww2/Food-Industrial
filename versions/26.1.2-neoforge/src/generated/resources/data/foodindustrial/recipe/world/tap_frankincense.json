@@ -1,0 +1,10 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:frankincense_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:olibanum"
+  },
+  "tool": "#foodindustrial:knives"
+}

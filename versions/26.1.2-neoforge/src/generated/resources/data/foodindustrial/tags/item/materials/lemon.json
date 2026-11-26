@@ -16,6 +16,7 @@
     {
       "id": "#forge:crops/lemon",
       "required": false
-    }
+    },
+    "foodindustrial:lemon"
   ]
 }

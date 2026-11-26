@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/yeast",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "dough_mixing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "leavened_dough|dough"
+    }
+  ],
+  "quality": {},
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

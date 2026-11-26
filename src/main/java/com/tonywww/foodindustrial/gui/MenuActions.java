@@ -20,7 +20,7 @@ public final class MenuActions {
     public static final int LOCK_SLOT = 8;
     /** {@code a} tank. */
     public static final int LOCK_TANK = 9;
-    /** {@code a} tank: fill from or into the carried fluid container. */
+    /** {@code a} tank; {@code b} 0 pours the carried fluid container into it, 1 fills the container from it (2026-11-19). */
     public static final int TANK_CLICK = 10;
     /** {@code a} tank: empty it (confirmed on the client). */
     public static final int TANK_DUMP = 11;
@@ -36,6 +36,8 @@ public final class MenuActions {
     public static final int TRANSFER = 16;
     /** JEI transfer (I22): {@code a} machine input slot, moved back into the inventory. */
     public static final int CLEAR_SLOT = 17;
+    /** Flavour type the machine makes (I48): {@code a} a flavour type ordinal, {@code -1} automatic. */
+    public static final int FLAVOR_TARGET = 18;
     /** Port: {@code a} direction (input, output, off). */
     public static final int PORT_MODE = 20;
     /** Port: {@code b} automatic output on. */

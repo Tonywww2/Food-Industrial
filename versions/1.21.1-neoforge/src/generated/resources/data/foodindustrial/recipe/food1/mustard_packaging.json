@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:packaging",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:mustard"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/glass_jar"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:mustard"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 40
+}

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:chemicals/maltodextrin",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:chemicals/starch",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:chemicals/salt",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:chemicals/glucose",
+      "required": false
+    },
+    {
+      "id": "#foodindustrial:chemicals/sucrose",
+      "required": false
+    }
+  ]
+}

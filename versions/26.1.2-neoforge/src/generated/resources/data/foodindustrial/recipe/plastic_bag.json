@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#foodindustrial:chemicals/polyethylene"
+  ],
+  "result": {
+    "count": 4,
+    "id": "foodindustrial:plastic_bag"
+  }
+}

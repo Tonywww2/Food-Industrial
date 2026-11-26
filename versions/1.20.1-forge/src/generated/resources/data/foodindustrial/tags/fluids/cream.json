@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cream",
+    "foodindustrial:flowing_cream",
+    {
+      "id": "#forge:cream",
+      "required": false
+    },
+    {
+      "id": "#c:cream",
+      "required": false
+    }
+  ]
+}

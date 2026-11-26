@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:hotpot_base_melt",
+  "loader": "neoforge:fluid_container"
+}

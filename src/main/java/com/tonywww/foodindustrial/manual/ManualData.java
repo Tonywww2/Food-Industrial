@@ -27,6 +27,7 @@ final class ManualData {
             SharedTags.block(kind == T0Kind.IRON_POT || kind.isPot() || kind == T0Kind.CROCK || kind == T0Kind.SALT_PAN
                 ? "minecraft:mineable/pickaxe" : "minecraft:mineable/axe", NS + ":" + kind.id());
         }
+        SharedTags.block("minecraft:mineable/axe", NS + ":hand_seawater_pump");
         PlatformDatagen.register("manual", ManualData::generate);
     }
 
@@ -37,6 +38,21 @@ final class ManualData {
             sink.json(PlatformDatagen.Kind.BLOCK_LOOT, NS, kind.id(), dropSelf(NS + ":" + kind.id()));
         }
         models(sink);
+        // H16 hand seawater pump (I43): barrel body, crank on top, intake pipe on the side
+        JsonObject pumpState = new JsonObject();
+        JsonObject pumpVariants = new JsonObject();
+        pumpVariants.add("", variant(NS + ":block/hand_seawater_pump"));
+        pumpState.add("variants", pumpVariants);
+        sink.json(PlatformDatagen.Kind.BLOCKSTATE, NS, "hand_seawater_pump", pumpState);
+        Model pump = new Model("hand_seawater_pump");
+        pump.box(3, 0, 3, 13, 14, 13);
+        pump.box(7, 14, 7, 9, 16, 9);
+        pump.box(9, 15, 7, 16, 16, 9);
+        pump.box(0, 2, 7, 3, 4, 9);
+        pump.box(0, 0, 7, 2, 2, 9);
+        pump.write(sink, "block/hand_seawater_pump");
+        itemModel(sink, "hand_seawater_pump", NS + ":block/hand_seawater_pump");
+        sink.json(PlatformDatagen.Kind.BLOCK_LOOT, NS, "hand_seawater_pump", dropSelf(NS + ":hand_seawater_pump"));
         for (HandTool tool : HandTool.values()) {
             generatedItem(sink, tool.id());
         }
@@ -281,6 +297,8 @@ final class ManualData {
         shaped(sink, "drying_rack", map('K', stick, 'P', "#minecraft:planks"), "PPP", "K K", "K K");
         shaped(sink, "koji_tray", map('B', "minecraft:bamboo"), "B B", "BBB", "BBB");
         shaped(sink, "fumigation_box", map('P', "#minecraft:planks", 'I', iron), "PPP", "P P", "PIP");
+        // H16 (I43, additives/07): barrel ×1 + iron ingot ×2 + stick ×1
+        shaped(sink, "hand_seawater_pump", map('B', "minecraft:barrel", 'I', iron, 'K', stick), " K ", "IBI");
         tag(sink, PlatformDatagen.Kind.ITEM_TAG, NS + ":mortar_stones", List.of("minecraft:stone", "minecraft:calcite"));
 
         // 07 #107: the liver of a cod (game setting)

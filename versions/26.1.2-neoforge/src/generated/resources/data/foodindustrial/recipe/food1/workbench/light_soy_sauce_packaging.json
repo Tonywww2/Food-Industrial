@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "foodindustrial:light_soy_sauce_bucket"
+    },
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:containers/glass_bottle"
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:light_soy_sauce"
+  }
+}

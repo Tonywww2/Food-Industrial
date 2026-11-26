@@ -6,14 +6,16 @@
           "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
-          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "苹果（生，带皮）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171688 Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)：每 100 g 维生素 C 4.6 mg、硫胺素 0.017 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 171688 “1 medium (3\" dia)” = 182 g"
+          "一份：FDC 171688 “1 medium (3\" dia)” = 182 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -22,10 +24,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 10.92,
         "fast_sugar_g": 0,
+        "iron_mg": 0.2184,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 4.929,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.03094,
         "vitamin_c_mg": 8.372,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.0728
       },
       "serving_g": 182
     },
@@ -36,14 +44,16 @@
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
-          "西瓜片一份由 286 g 改为 50 g，与农夫乐事西瓜汁一瓶 250 mL 一致（用户决定，2026-11-13）"
+          "西瓜片一份由 286 g 改为 50 g，与农夫乐事西瓜汁一瓶 250 mL 一致（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "西瓜（生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 167765 Watermelon, raw：每 100 g 维生素 C 8.1 mg、硫胺素 0.033 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份 50 g：使农夫乐事的西瓜汁（4 片西瓜 + 1 份糖 50 g）恰为一瓶 250 mL，按 250 g 计；原先取 FDC 167765 “1 wedge (approx 1/16 of melon)” = 286 g"
+          "一份 50 g：使农夫乐事的西瓜汁（4 片西瓜 + 1 份糖 50 g）恰为一瓶 250 mL，按 250 g 计；原先取 FDC 167765 “1 wedge (approx 1/16 of melon)” = 286 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -52,10 +62,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 3.5,
         "fast_sugar_g": 0,
+        "iron_mg": 0.12,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 14.25,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.0165,
         "vitamin_c_mg": 4.05,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.05
       },
       "serving_g": 50
     },
@@ -67,14 +83,16 @@
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
           "甜浆果参照蔓越莓（用户指定，2026-11-13）",
-          "一份取 1 cup, whole = 100 g（建议值，用户批准，2026-11-13）"
+          "一份取 1 cup, whole = 100 g（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "蔓越莓（生），作为甜浆果的参照",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171722 Cranberries, raw：每 100 g 维生素 C 14.0 mg、硫胺素 0.012 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 171722 “1 cup, whole” = 100 g"
+          "一份：FDC 171722 “1 cup, whole” = 100 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -83,10 +101,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 8,
         "fast_sugar_g": 0,
+        "iron_mg": 0.23,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 3.167,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.012,
         "vitamin_c_mg": 14,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.09
       },
       "serving_g": 100
     },
@@ -96,14 +120,16 @@
           "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
-          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "胡萝卜（生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 170393 Carrots, raw：每 100 g 维生素 C 5.9 mg、硫胺素 0.066 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 170393 “1 medium” = 61 g"
+          "一份：FDC 170393 “1 medium” = 61 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -112,10 +138,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 20.13,
         "fast_sugar_g": 0,
+        "iron_mg": 0.183,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 509.5,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.04026,
         "vitamin_c_mg": 3.599,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.1464
       },
       "serving_g": 61
     },
@@ -125,14 +157,16 @@
           "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
-          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "马铃薯（生，带皮）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 170026 Potatoes, flesh and skin, raw：每 100 g 维生素 C 19.7 mg、硫胺素 0.081 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 170026 “1 Potato medium (2-1/4\" to 3-1/4\" dia)” = 213 g"
+          "一份：FDC 170026 “1 Potato medium (2-1/4\" to 3-1/4\" dia)” = 213 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -141,10 +175,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 25.56,
         "fast_sugar_g": 0,
+        "iron_mg": 1.725,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0.1775,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.1725,
         "vitamin_c_mg": 41.96,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.639
       },
       "serving_g": 213
     },
@@ -154,14 +194,16 @@
           "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
-          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "烤马铃薯（带皮，不加盐）",
         "processing": "烤制；直接取烤制品的条目，不另乘保留率",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 170093 Potatoes, baked, flesh and skin, without salt：每 100 g 维生素 C 9.6 mg、硫胺素 0.064 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 170093 “1 potato medium” = 173 g"
+          "一份：FDC 170093 “1 potato medium” = 173 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -170,10 +212,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 25.95,
         "fast_sugar_g": 0,
+        "iron_mg": 1.868,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0.865,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.1107,
         "vitamin_c_mg": 16.61,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.6228
       },
       "serving_g": 173
     },
@@ -185,14 +233,16 @@
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
           "毒马铃薯按马铃薯计算（用户指定，2026-11-13）",
-          "杂质每份 5 单位：原版设定中吃了可能中毒（用户决定，2026-11-13）"
+          "杂质每份 5 单位：原版设定中吃了可能中毒（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "马铃薯（生，带皮），毒马铃薯按马铃薯计",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 170026 Potatoes, flesh and skin, raw：每 100 g 维生素 C 19.7 mg、硫胺素 0.081 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 170026 “1 Potato medium (2-1/4\" to 3-1/4\" dia)” = 213 g"
+          "一份：FDC 170026 “1 Potato medium (2-1/4\" to 3-1/4\" dia)” = 213 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "impurity": 5,
@@ -202,10 +252,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 25.56,
         "fast_sugar_g": 0,
+        "iron_mg": 1.725,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0.1775,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.1725,
         "vitamin_c_mg": 41.96,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.639
       },
       "serving_g": 213
     },
@@ -215,14 +271,16 @@
           "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
-          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "甜菜根（生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 169145 Beets, raw：每 100 g 维生素 C 4.9 mg、硫胺素 0.031 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 169145 “1 beet (2\" dia)” = 82 g"
+          "一份：FDC 169145 “1 beet (2\" dia)” = 82 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -231,10 +289,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 13.12,
         "fast_sugar_g": 0,
+        "iron_mg": 0.656,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 1.367,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.02542,
         "vitamin_c_mg": 4.018,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.287
       },
       "serving_g": 82
     },
@@ -247,15 +311,17 @@
           "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
           "一份 14 g（干重）与按 155 g 鲜海带计营养（建议值，用户批准，2026-11-13）",
           "晒干保留率按 FRUITS,DRIED（建议值，用户批准，2026-11-13）",
-          "USDA 生海带含水 81.6%，来源的鲜干比对应含水约 89–91%，两者不一致，已告知用户"
+          "USDA 生海带含水 81.6%，来源的鲜干比对应含水约 89–91%，两者不一致，已告知用户",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "干海带：约 1 米长的海带晒干",
-        "processing": "晒干：USDA Table of Nutrient Retention Factors Release 6 没有蔬菜（海藻）干制的条目，按最接近的 FRUITS,DRIED（代码 0158）计：维生素 C 保留 20%、硫胺素保留 70%；成分按 155 g 鲜海带的含量计；维生素 D 按不损失计（03 第 5 节第 3 条）",
+        "processing": "晒干：USDA Table of Nutrient Retention Factors Release 6 没有蔬菜（海藻）干制的条目，按最接近的 FRUITS,DRIED（代码 0158）计：维生素 C 保留 20%、硫胺素保留 70%；成分按 155 g 鲜海带的含量计；维生素 D 按不损失计（03 第 5 节第 3 条）；维生素 A、维生素 A 原、钙、铁、锌按同一保留率代码的对应项计（没有该项的按不损失）",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 168457 Seaweed, kelp, raw：每 100 g 维生素 C 3.0 mg、硫胺素 0.05 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
           "一份：约 1 米长的海带晒干后的重量（用户指定的标准，2026-11-13）：鲜重按来源表 3 在 12 月（十个品种平均体长 68.9 cm、鲜质量 0.105 kg）与 1 月（156.6 cm、0.247 kg）之间按体长线性插值，100 cm 约 155 g；鲜干比取表 5 中 4 月的十个品种平均 11.3，干重约 14 g",
-          "来源：《威海桑沟湾海域不同海带品种/系的生长状况研究》，大连海洋大学学报 2020，表 3（体长、鲜质量，12 月至 6 月）、表 5（鲜干比，4–6 月），https://xuebao.dlou.edu.cn/article/2020/2095-1388/202001013.html"
+          "来源：《威海桑沟湾海域不同海带品种/系的生长状况研究》，大连海洋大学学报 2020，表 3（体长、鲜质量，12 月至 6 月）、表 5（鲜干比，4–6 月），https://xuebao.dlou.edu.cn/article/2020/2095-1388/202001013.html",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -264,10 +330,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 260.4,
         "fast_sugar_g": 0,
+        "iron_mg": 4.418,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 4.521,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.05425,
         "vitamin_c_mg": 0.93,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 1.907
       },
       "serving_g": 14
     },
@@ -276,14 +348,16 @@
         "assumptions": [
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
-          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "牛肉（各零售部位综合，生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 169485 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, raw：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.075 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.1 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
-          "一份：FDC 169485 “4 oz” = 113 g"
+          "一份：FDC 169485 “4 oz” = 113 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -292,10 +366,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 19.21,
         "fast_sugar_g": 0,
+        "iron_mg": 1.955,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 2.26,
         "vitamin_b1_mg": 0.08475,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0.113
+        "vitamin_d_ug": 0.113,
+        "zinc_mg": 4.486
       },
       "serving_g": 113
     },
@@ -305,14 +385,16 @@
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
           "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "牛排用综合部位的熟肉条目：西冷牛排条目（FDC 168728/168729）没有维生素 D（建议值，用户批准，2026-11-13）"
+          "牛排用综合部位的熟肉条目：西冷牛排条目（FDC 168728/168729）没有维生素 D（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "牛肉（各零售部位综合，熟），对应牛排",
         "processing": "熟制：直接取熟制品的条目，不另乘保留率",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 169486 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, cooked：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.067 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.1 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
-          "一份：FDC 169486 “3 oz” = 85 g"
+          "一份：FDC 169486 “3 oz” = 85 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -321,10 +403,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 11.05,
         "fast_sugar_g": 0,
+        "iron_mg": 1.904,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 2.55,
         "vitamin_b1_mg": 0.05695,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0.085
+        "vitamin_d_ug": 0.085,
+        "zinc_mg": 4.301
       },
       "serving_g": 85
     },
@@ -333,14 +421,16 @@
         "assumptions": [
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
-          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "猪里脊中段带骨排（生，肥瘦同取）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 168238 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.485 (Based on physical composition; Derived from imputed data; Known physical composition) mg、维生素 D 0.5 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
-          "一份：FDC 168238 “4 oz” = 113 g"
+          "一份：FDC 168238 “4 oz” = 113 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -349,10 +439,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 21.47,
         "fast_sugar_g": 0,
+        "iron_mg": 0.7119,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 2.26,
         "vitamin_b1_mg": 0.5481,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0.565
+        "vitamin_d_ug": 0.565,
+        "zinc_mg": 2
       },
       "serving_g": 113
     },
@@ -361,14 +457,16 @@
         "assumptions": [
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
-          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "猪里脊中段带骨排（烤，肥瘦同取）",
         "processing": "熟制：直接取熟制品的条目，不另乘保留率",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 167827 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled：每 100 g 维生素 C 0.0 (Based on physical composition; Derived from imputed data; Known physical composition) mg、硫胺素 0.599 (Based on physical composition; Derived from analytical data; Known physical composition) mg、维生素 D 0.8 (Based on physical composition; Derived from analytical data; Known physical composition) µg",
-          "一份：FDC 167827 “3 oz” = 85 g"
+          "一份：FDC 167827 “3 oz” = 85 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -377,10 +475,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 20.4,
         "fast_sugar_g": 0,
+        "iron_mg": 0.6715,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 1.7,
         "vitamin_b1_mg": 0.5091,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0.68
+        "vitamin_d_ug": 0.68,
+        "zinc_mg": 1.819
       },
       "serving_g": 85
     },
@@ -390,7 +494,8 @@
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
           "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "该条目没有维生素 D，借用 FDC 174370 的值（用户决定，2026-11-13）"
+          "该条目没有维生素 D，借用 FDC 174370 的值（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "羊肉（各零售部位综合，生）",
@@ -398,7 +503,8 @@
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 172545 Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, raw：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.12 (Based on physical composition; Derived from analytical data; Estimated physical composition) mg，无维生素 D 数据",
           "一份：4 oz = 113 g（FDC 172545 只列 “1 oz” = 28.35 g，按 4 × 28.35 g 取整）",
-          "维生素 D 借用 USDA FDC 174370 Lamb, ground, raw：每 100 g 0.1 µg"
+          "维生素 D 借用 USDA FDC 174370 Lamb, ground, raw：每 100 g 0.1 µg",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -407,10 +513,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 13.56,
         "fast_sugar_g": 0,
+        "iron_mg": 1.831,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.1356,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0.113
+        "vitamin_d_ug": 0.113,
+        "zinc_mg": 3.978
       },
       "serving_g": 113
     },
@@ -420,7 +532,8 @@
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
           "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "该条目没有维生素 D，借用 FDC 172544 的值（用户决定，2026-11-13）"
+          "该条目没有维生素 D，借用 FDC 172544 的值（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "羊肉（各零售部位综合，熟）",
@@ -428,7 +541,8 @@
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 172546 Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, choice, cooked：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.1 (Based on physical composition; Derived from analytical data; Estimated physical composition) mg，无维生素 D 数据",
           "一份：FDC 172546 “3 oz” = 85 g",
-          "维生素 D 借用 USDA FDC 172544 Lamb, ground, cooked, broiled：每 100 g 0.1 µg"
+          "维生素 D 借用 USDA FDC 172544 Lamb, ground, cooked, broiled：每 100 g 0.1 µg",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -437,10 +551,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 13.6,
         "fast_sugar_g": 0,
+        "iron_mg": 1.64,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.085,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0.085
+        "vitamin_d_ug": 0.085,
+        "zinc_mg": 4.029
       },
       "serving_g": 85
     },
@@ -450,14 +570,16 @@
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
           "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "杂质每份 2 单位：原版设定中吃了有负面效果（用户决定，2026-11-13）"
+          "杂质每份 2 单位：原版设定中吃了有负面效果（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "整鸡（带皮，生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171447 Chicken, broilers or fryers, meat and skin, raw：每 100 g 维生素 C 1.6 mg、硫胺素 0.06 mg、维生素 D 0.2 (Based on physical composition; Derived from imputed data; Known physical composition) µg",
-          "一份：FDC 171447 “4 oz” = 113 g"
+          "一份：FDC 171447 “4 oz” = 113 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "impurity": 2,
@@ -467,10 +589,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 12.43,
         "fast_sugar_g": 0,
+        "iron_mg": 1.017,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 46.33,
         "vitamin_b1_mg": 0.0678,
         "vitamin_c_mg": 1.808,
-        "vitamin_d_ug": 0.226
+        "vitamin_d_ug": 0.226,
+        "zinc_mg": 1.48
       },
       "serving_g": 113
     },
@@ -479,14 +607,16 @@
         "assumptions": [
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
-          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+          "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "整鸡（带皮，烤）",
         "processing": "熟制：直接取熟制品的条目，不另乘保留率",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171450 Chicken, broilers or fryers, meat and skin, cooked, roasted：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.063 mg、维生素 D 0.0 µg",
-          "一份：FDC 171450 “3 oz” = 85 g"
+          "一份：FDC 171450 “3 oz” = 85 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -495,10 +625,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 12.75,
         "fast_sugar_g": 0,
+        "iron_mg": 1.071,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 40.8,
         "vitamin_b1_mg": 0.05355,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 1.649
       },
       "serving_g": 85
     },
@@ -508,14 +644,16 @@
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
           "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "家兔条目没有维生素 D，记 0（用户决定，2026-11-13）"
+          "家兔条目没有维生素 D，记 0（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "家兔（各部位综合，生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 172521 Game meat, rabbit, domesticated, composite of cuts, raw：每 100 g 维生素 C 0.0 mg、硫胺素 0.1 mg，无维生素 D 数据",
-          "一份：4 oz = 113 g（FDC 172521 只列 “1 oz” = 28.35 g，按 4 × 28.35 g 取整）"
+          "一份：4 oz = 113 g（FDC 172521 只列 “1 oz” = 28.35 g，按 4 × 28.35 g 取整）",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -524,10 +662,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 14.69,
         "fast_sugar_g": 0,
+        "iron_mg": 1.774,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.113,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 1.774
       },
       "serving_g": 113
     },
@@ -537,14 +681,16 @@
           "咖啡因、酒精、快吸收糖按 0：肉类不含（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户确认，2026-11-13）",
           "一份：肉类统一取 USDA 标准份量，生肉 4 oz（113 g）、熟肉 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "家兔条目没有维生素 D，记 0（用户决定，2026-11-13）"
+          "家兔条目没有维生素 D，记 0（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "家兔（各部位综合，烤）",
         "processing": "熟制：直接取熟制品的条目，不另乘保留率",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 172522 Game meat, rabbit, domesticated, composite of cuts, cooked, roasted：每 100 g 维生素 C 0.0 (Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)) mg、硫胺素 0.09 mg，无维生素 D 数据",
-          "一份：FDC 172522 “3 oz” = 85 g"
+          "一份：FDC 172522 “3 oz” = 85 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -553,10 +699,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 16.15,
         "fast_sugar_g": 0,
+        "iron_mg": 1.929,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.0765,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 1.929
       },
       "serving_g": 85
     },
@@ -581,10 +733,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 0,
         "fast_sugar_g": 0,
+        "iron_mg": 0,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0
       },
       "serving_g": 113
     },
@@ -609,10 +767,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 0,
         "fast_sugar_g": 0,
+        "iron_mg": 0,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0
       },
       "serving_g": 10
     },
@@ -621,14 +785,16 @@
         "assumptions": [
           "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
-          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "大西洋鳕（生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171955 Fish, cod, Atlantic, raw：每 100 g 维生素 C 1.0 mg、硫胺素 0.076 mg、维生素 D 0.9 µg",
-          "一份：FDC 171955 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+          "一份：FDC 171955 4 oz = 113 g（按 4 oz × 28.35 g 取整）",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -637,10 +803,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 18.08,
         "fast_sugar_g": 0,
+        "iron_mg": 0.4294,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 13.56,
         "vitamin_b1_mg": 0.08588,
         "vitamin_c_mg": 1.13,
-        "vitamin_d_ug": 1.017
+        "vitamin_d_ug": 1.017,
+        "zinc_mg": 0.5085
       },
       "serving_g": 113
     },
@@ -649,14 +821,16 @@
         "assumptions": [
           "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
-          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）"
+          "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "大西洋鳕（干热烹调）",
         "processing": "熟制：直接取熟制品的条目，不另乘保留率",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171956 Fish, cod, Atlantic, cooked, dry heat：每 100 g 维生素 C 1.0 mg、硫胺素 0.088 mg、维生素 D 1.2 µg",
-          "一份：FDC 171956 “3 oz” = 85 g"
+          "一份：FDC 171956 “3 oz” = 85 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -665,10 +839,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 11.9,
         "fast_sugar_g": 0,
+        "iron_mg": 0.4165,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 11.9,
         "vitamin_b1_mg": 0.0748,
         "vitamin_c_mg": 0.85,
-        "vitamin_d_ug": 1.02
+        "vitamin_d_ug": 1.02,
+        "zinc_mg": 0.493
       },
       "serving_g": 85
     },
@@ -678,14 +858,16 @@
           "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
           "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）"
+          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "红鲑（野生，生）",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 173691 Fish, salmon, sockeye, raw：每 100 g 维生素 C 0.0（Analytical） mg、硫胺素 0.132（Analytical） mg、维生素 D 14.1 µg",
-          "一份：FDC 173691 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+          "一份：FDC 173691 4 oz = 113 g（按 4 oz × 28.35 g 取整）",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -694,10 +876,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 10.17,
         "fast_sugar_g": 0,
+        "iron_mg": 0.4859,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 55.37,
         "vitamin_b1_mg": 0.1492,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 15.93
+        "vitamin_d_ug": 15.93,
+        "zinc_mg": 0.5198
       },
       "serving_g": 113
     },
@@ -707,14 +895,16 @@
           "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
           "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）"
+          "鲑鱼用红鲑：大西洋野生鲑的条目（FDC 173686、171998）没有维生素 D（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "红鲑（干热烹调）",
         "processing": "熟制：直接取熟制品的条目，不另乘保留率",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 173692 Fish, salmon, sockeye, cooked, dry heat：每 100 g 维生素 C 0.0（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） mg、硫胺素 0.157（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） mg、维生素 D 16.7（Recipe; Approximate ingredient proportions (ex. combination of several recipes)） µg",
-          "一份：FDC 173692 “3 oz” = 85 g"
+          "一份：FDC 173692 “3 oz” = 85 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -723,10 +913,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 9.35,
         "fast_sugar_g": 0,
+        "iron_mg": 0.442,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 49.3,
         "vitamin_b1_mg": 0.1335,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 14.2
+        "vitamin_d_ug": 14.2,
+        "zinc_mg": 0.4675
       },
       "serving_g": 85
     },
@@ -736,14 +932,16 @@
           "咖啡因、酒精、快吸收糖按 0：鱼类不含（用户批准，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
           "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
-          "热带鱼参照鲷鱼：USDA 没有对应的小型礁石鱼条目（建议值，用户批准，2026-11-13）"
+          "热带鱼参照鲷鱼：USDA 没有对应的小型礁石鱼条目（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "鲷鱼（多品种混合，生），作为热带鱼的参照",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 173698 Fish, snapper, mixed species, raw：每 100 g 维生素 C 1.6 mg、硫胺素 0.046 mg、维生素 D 10.2 µg",
-          "一份：FDC 173698 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+          "一份：FDC 173698 4 oz = 113 g（按 4 oz × 28.35 g 取整）",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -752,10 +950,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 36.16,
         "fast_sugar_g": 0,
+        "iron_mg": 0.2034,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 36.16,
         "vitamin_b1_mg": 0.05198,
         "vitamin_c_mg": 1.808,
-        "vitamin_d_ug": 11.53
+        "vitamin_d_ug": 11.53,
+        "zinc_mg": 0.4068
       },
       "serving_g": 113
     },
@@ -766,14 +970,16 @@
           "数据来源：本批直接用 USDA FoodData Central（用户批准，2026-11-13）",
           "一份：与肉类一致，生的 4 oz（113 g）、熟的 3 oz（85 g）（建议值，用户批准，2026-11-13）",
           "河豚参照生鳕鱼：USDA 没有河豚的条目（用户决定，2026-11-13）",
-          "杂质每份 10 单位：原版设定中吃了中毒、反胃（用户决定，2026-11-13）"
+          "杂质每份 10 单位：原版设定中吃了中毒、反胃（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "大西洋鳕（生），作为河豚的参照",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171955 Fish, cod, Atlantic, raw：每 100 g 维生素 C 1.0 mg、硫胺素 0.076 mg、维生素 D 0.9 µg",
-          "一份：FDC 171955 4 oz = 113 g（按 4 oz × 28.35 g 取整）"
+          "一份：FDC 171955 4 oz = 113 g（按 4 oz × 28.35 g 取整）",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "impurity": 10,
@@ -783,10 +989,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 18.08,
         "fast_sugar_g": 0,
+        "iron_mg": 0.4294,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 13.56,
         "vitamin_b1_mg": 0.08588,
         "vitamin_c_mg": 1.13,
-        "vitamin_d_ug": 1.017
+        "vitamin_d_ug": 1.017,
+        "zinc_mg": 0.5085
       },
       "serving_g": 113
     },
@@ -795,7 +1007,8 @@
         "assumptions": [
           "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
           "一份取建议值（用户批准，2026-11-13）",
-          "用全麦面包：美国白面包为强化面粉，硫胺素偏高（用户批准，2026-11-13）"
+          "用全麦面包：美国白面包为强化面粉，硫胺素偏高（用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "全麦面包",
@@ -803,7 +1016,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2707709 Bread, whole wheat（食物编号 51300110）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 0 mg、硫胺素 0.391 mg、维生素 D 0 µg",
           "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 51300110：每 100 g 1.0 茶匙当量 = 4.2 g",
-          "一份：FDC 2707709 “1 medium or regular slice” = 36 g，取 2 片 = 72 g"
+          "一份：FDC 2707709 “1 medium or regular slice” = 36 g，取 2 片 = 72 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -812,10 +1026,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 117.4,
         "fast_sugar_g": 3.024,
+        "iron_mg": 1.843,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0.12,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.2815,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 1.267
       },
       "serving_g": 72
     },
@@ -823,7 +1043,8 @@
       "basis": {
         "assumptions": [
           "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
-          "一份取建议值（用户批准，2026-11-13）"
+          "一份取建议值（用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "巧克力豆曲奇",
@@ -831,7 +1052,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2707909 Cookie, chocolate chip（食物编号 53206000）：每 100 g 咖啡因 11 mg、酒精 0 g、维生素 C 0 mg、硫胺素 0.292 mg、维生素 D 0 µg",
           "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53206000：每 100 g 7.5 茶匙当量 = 31.5 g",
-          "一份：FDC 2707909 “1 medium cookie” = 30 g"
+          "一份：FDC 2707909 “1 medium cookie” = 30 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -840,10 +1062,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 3.3,
+        "calcium_mg": 6.3,
         "fast_sugar_g": 9.45,
+        "iron_mg": 1.674,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.0876,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.216
       },
       "serving_g": 30
     },
@@ -852,7 +1080,8 @@
         "assumptions": [
           "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
           "一份取建议值（用户批准，2026-11-13）",
-          "游戏里一次吃掉整个派，按一块计（整个 1200 g 过多）（用户批准，2026-11-13）"
+          "游戏里一次吃掉整个派，按一块计（整个 1200 g 过多）（用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "南瓜派（一块）",
@@ -860,7 +1089,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2708011 Pie, pumpkin（食物编号 53347000）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 2.2 mg、硫胺素 0.095 mg、维生素 D 0.3 µg",
           "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53347000：每 100 g 5.3 茶匙当量 = 22.26 g",
-          "一份：FDC 2708011 “1 regular slice” = 150 g"
+          "一份：FDC 2708011 “1 regular slice” = 150 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -869,10 +1099,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 136.5,
         "fast_sugar_g": 33.39,
+        "iron_mg": 1.86,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 425.3,
+        "vitamin_a_ug": 66,
         "vitamin_b1_mg": 0.1425,
         "vitamin_c_mg": 3.3,
-        "vitamin_d_ug": 0.45
+        "vitamin_d_ug": 0.45,
+        "zinc_mg": 0.765
       },
       "serving_g": 150
     },
@@ -880,7 +1116,8 @@
       "basis": {
         "assumptions": [
           "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
-          "一份取建议值（用户批准，2026-11-13）"
+          "一份取建议值（用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "白蛋糕，白色糖霜（一口为一块）",
@@ -888,7 +1125,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2707891 Cake or cupcake, white with white icing, bakery（食物编号 53120270）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 0 mg、硫胺素 0.066 mg、维生素 D 0.3 µg",
           "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 53120270：每 100 g 9.7 茶匙当量 = 40.74 g",
-          "一份：FDC 2707891 “1 regular or small piece/slice, 1 layer cake” = 115 g；放置后分口吃，一口为一份（共 7 口）"
+          "一份：FDC 2707891 “1 regular or small piece/slice, 1 layer cake” = 115 g；放置后分口吃，一口为一份（共 7 口）",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -897,10 +1135,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 79.35,
         "fast_sugar_g": 46.85,
+        "iron_mg": 1,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0.04792,
+        "vitamin_a_ug": 21.85,
         "vitamin_b1_mg": 0.0759,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0.345
+        "vitamin_d_ug": 0.345,
+        "zinc_mg": 0.276
       },
       "serving_g": 115
     },
@@ -908,7 +1152,8 @@
       "basis": {
         "assumptions": [
           "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
-          "一份取建议值（用户批准，2026-11-13）"
+          "一份取建议值（用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "煮蘑菇（不加油）",
@@ -916,7 +1161,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2709937 Mushrooms, fresh, cooked, no added fat（食物编号 75219011）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 2.2 mg、硫胺素 0.059 mg、维生素 D 0 µg",
           "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 75219011：每 100 g 0.0 茶匙当量 = 0 g",
-          "一份：FDC 2709937 “1 cup” = 155 g"
+          "一份：FDC 2709937 “1 cup” = 155 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -925,10 +1171,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 9.3,
         "fast_sugar_g": 0,
+        "iron_mg": 0.434,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.09145,
         "vitamin_c_mg": 3.41,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.961
       },
       "serving_g": 155
     },
@@ -936,7 +1188,8 @@
       "basis": {
         "assumptions": [
           "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
-          "一份取建议值（用户批准，2026-11-13）"
+          "一份取建议值（用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "罗宋汤",
@@ -944,7 +1197,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2710105 Soup, borscht（食物编号 75601100）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 3.5 mg、硫胺素 0.014 mg、维生素 D 0 µg",
           "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 75601100：每 100 g 0.0 茶匙当量 = 0 g",
-          "一份：FDC 2710105 “1 cup” = 245 g"
+          "一份：FDC 2710105 “1 cup” = 245 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -953,10 +1207,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 26.95,
         "fast_sugar_g": 0,
+        "iron_mg": 0.6125,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 61.66,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.0343,
         "vitamin_c_mg": 8.575,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.3185
       },
       "serving_g": 245
     },
@@ -966,7 +1226,8 @@
           "数据来源：本批用 USDA FNDDS 的整份条目，快吸收糖取 FPED 的添加糖（这些食物不含 100% 果汁，与 WHO 游离糖一致）（用户批准，2026-11-13）",
           "一份取建议值（用户批准，2026-11-13）",
           "迷之炖菜营养同蘑菇煲；原版吃了随机得到状态效果，配杂质（用户决定，2026-11-13）",
-          "杂质每份 1 单位（用户决定，2026-11-13）"
+          "杂质每份 1 单位（用户决定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "煮蘑菇（不加油），迷之炖菜营养同蘑菇煲，花不计",
@@ -974,7 +1235,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2709937 Mushrooms, fresh, cooked, no added fat（食物编号 75219011）：每 100 g 咖啡因 0 mg、酒精 0 g、维生素 C 2.2 mg、硫胺素 0.059 mg、维生素 D 0 µg",
           "快吸收糖：USDA FPED 2021–2023（Food Patterns Equivalents Database，每 100 g FNDDS 食物），ADD_SUGARS；1 茶匙当量 = 4.2 g（FPED 2021–2023 文档），食物编号 75219011：每 100 g 0.0 茶匙当量 = 0 g",
-          "一份：FDC 2709937 “1 cup” = 155 g"
+          "一份：FDC 2709937 “1 cup” = 155 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "impurity": 1,
@@ -984,10 +1246,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 9.3,
         "fast_sugar_g": 0,
+        "iron_mg": 0.434,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.09145,
         "vitamin_c_mg": 3.41,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.961
       },
       "serving_g": 155
     },
@@ -998,17 +1266,19 @@
           "蘑菇取褐蘑菇（crimini）FDC 168434 “1 piece whole” = 20 g；红、棕蘑菇两种配方按同一组数（用户批准，2026-11-13）",
           "已熟的兔肉、马铃薯按再加热计；USDA 表没有兔肉，取同组的羊肉再加热（用户批准，2026-11-13）",
           "一碗的重量只把配料重量相加，汤水不计（用户批准，2026-11-13）",
-          "咖啡因、酒精、快吸收糖为 0：配料都不含"
+          "咖啡因、酒精、快吸收糖为 0：配料都不含",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "兔肉煲：按游戏配方（熟兔肉、胡萝卜、烤马铃薯、蘑菇各一份）计算",
-        "processing": "熟兔肉按 LAMB,REHEATED（1074） 计：维生素 C 95%、硫胺素 95%；胡萝卜（生）按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；烤马铃薯按 POTATOES,REHEATED（3379） 计：维生素 C 95%、硫胺素 95%；棕蘑菇（生，crimini）按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）",
+        "processing": "熟兔肉按 LAMB,REHEATED（1074） 计：维生素 C 95%、硫胺素 95%；胡萝卜（生）按 VEG,ROOTS,ETC,BOILED,WATER USED（3456） 计：维生素 C 75%、硫胺素 90%；烤马铃薯按 POTATOES,REHEATED（3379） 计：维生素 C 95%、硫胺素 95%；棕蘑菇（生，crimini）按 VEG,OTHER,BLD,WATER USED（3776） 计：维生素 C 85%、硫胺素 90%；维生素 D 按不损失计（03 第 5 节第 3 条）；维生素 A、维生素 A 原、钙、铁、锌按同一保留率代码的对应项计（没有该项的按不损失）",
         "sources": [
           "熟兔肉 85 g：USDA FoodData Central SR Legacy FDC 172522，每 100 g 维生素 C 0 mg、硫胺素 0.09 mg、维生素 D 0 µg",
           "胡萝卜（生） 61 g：USDA FoodData Central SR Legacy FDC 170393，每 100 g 维生素 C 5.9 mg、硫胺素 0.066 mg、维生素 D 0 µg",
           "烤马铃薯 173 g：USDA FoodData Central SR Legacy FDC 170093，每 100 g 维生素 C 9.6 mg、硫胺素 0.064 mg、维生素 D 0 µg",
           "棕蘑菇（生，crimini） 20 g：USDA FoodData Central SR Legacy FDC 168434，每 100 g 维生素 C 0 mg、硫胺素 0.095 mg、维生素 D 0.1 µg",
-          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）"
+          "保留率：USDA Table of Nutrient Retention Factors, Release 6（2007）",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -1017,17 +1287,24 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 65.83,
         "fast_sugar_g": 0,
+        "iron_mg": 4.061,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 459.4,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.2312,
         "vitamin_c_mg": 18.48,
-        "vitamin_d_ug": 0.02
+        "vitamin_d_ug": 0.02,
+        "zinc_mg": 2.919
       },
       "serving_g": 339
     },
     {
       "basis": {
         "assumptions": [
-          "一瓶 250 mL（用户决定，2026-11-13），按密度折合 338.1 g"
+          "一瓶 250 mL（用户决定，2026-11-13），按密度折合 338.1 g",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "蜂蜜，一瓶 250 mL",
@@ -1035,7 +1312,8 @@
         "sources": [
           "USDA FoodData Central，Survey (FNDDS)，FDC 2710281 Honey（食物编号 91302010）：每 100 g 维生素 C 0.5 mg、硫胺素 0 mg、维生素 D 0 µg、咖啡因 0 mg、酒精 0 g",
           "快吸收糖：USDA FPED 2021–2023 ADD_SUGARS，食物编号 91302010：每 100 g 19.6 茶匙当量 × 4.2 g = 82.32 g（FPED 把蜂蜜算作添加糖，与 WHO 游离糖一致）",
-          "密度：FDC 2710281 “1 cup” = 320 g，1 美制杯 = 236.588 mL"
+          "密度：FDC 2710281 “1 cup” = 320 g，1 美制杯 = 236.588 mL",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -1044,10 +1322,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 20.29,
         "fast_sugar_g": 278.4,
+        "iron_mg": 1.42,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0,
         "vitamin_c_mg": 1.691,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.7438
       },
       "serving_g": 338.1
     },
@@ -1056,14 +1340,16 @@
         "assumptions": [
           "一桶 1 L（用户决定，2026-11-13），按密度折合 1031.3 g",
           "用未强化牛奶（用户决定，2026-11-13）",
-          "快吸收糖为 0：乳中天然的糖不计（02 第 4.3 节）；咖啡因、酒精为 0"
+          "快吸收糖为 0：乳中天然的糖不计（02 第 4.3 节）；咖啡因、酒精为 0",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "全脂牛奶（未强化），一桶 1 L",
         "processing": "无",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 172217 Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D：每 100 g 维生素 C 0 mg、硫胺素 0.046 mg、维生素 D 0.1 µg",
-          "密度：FDC 172217 “1 quart” = 976 g，1 美制夸脱 = 946.353 mL"
+          "密度：FDC 172217 “1 quart” = 976 g，1 美制夸脱 = 946.353 mL",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -1072,10 +1358,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 1165,
         "fast_sugar_g": 0,
+        "iron_mg": 0.3093,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 6.014,
+        "vitamin_a_ug": 463.9,
         "vitamin_b1_mg": 0.4744,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 1.031
+        "vitamin_d_ug": 1.031,
+        "zinc_mg": 3.815
       },
       "serving_g": 1031
     },
@@ -1097,10 +1389,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 0,
         "fast_sugar_g": 0,
+        "iron_mg": 0,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0
       },
       "serving_g": 250
     },
@@ -1122,10 +1420,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 0,
         "fast_sugar_g": 0,
+        "iron_mg": 0,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0
       },
       "serving_g": 250
     },
@@ -1138,14 +1442,16 @@
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
           "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
           "甜浆果参照蔓越莓（用户指定，2026-11-13）",
-          "一份取 1 cup, whole = 100 g（建议值，用户批准，2026-11-13）"
+          "一份取 1 cup, whole = 100 g（建议值，用户批准，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "蔓越莓（生），与甜浆果同一组数，作为发光浆果的参照",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171722 Cranberries, raw：每 100 g 维生素 C 14.0 mg、硫胺素 0.012 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 171722 “1 cup, whole” = 100 g"
+          "一份：FDC 171722 “1 cup, whole” = 100 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -1154,10 +1460,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 8,
         "fast_sugar_g": 0,
+        "iron_mg": 0.23,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 3.167,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.012,
         "vitamin_c_mg": 14,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.09
       },
       "serving_g": 100
     },
@@ -1168,14 +1480,16 @@
           "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
-          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "苹果（生，带皮），金不计",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 171688 Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)：每 100 g 维生素 C 4.6 mg、硫胺素 0.017 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 171688 “1 medium (3\" dia)” = 182 g"
+          "一份：FDC 171688 “1 medium (3\" dia)” = 182 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -1185,10 +1499,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 10.92,
         "fast_sugar_g": 0,
+        "iron_mg": 0.2184,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 4.929,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.03094,
         "vitamin_c_mg": 8.372,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.0728
       },
       "serving_g": 182
     },
@@ -1199,14 +1519,16 @@
           "咖啡因、酒精按 0：这些食物不含，USDA 对咖啡因标为假定为 0（用户确认，2026-11-13）",
           "快吸收糖按 02 第 4.3 节不计（完整果蔬），记 0（用户确认，2026-11-13）",
           "维生素 D 取 USDA 的值（用户确认，2026-11-13）",
-          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）"
+          "数据来源：本批直接用 USDA FoodData Central（用户指定，2026-11-13）",
+          "维生素 A、钙、铁、锌按 I36 已批准的条目、份量、配方与保留率补齐；配料缺的项按 0，全部配料都没有的项留空（用户决定，2026-11-19，I46）"
         ],
         "confirmed": "2026-11-13",
         "food": "胡萝卜（生），金粒不计",
         "processing": "生食，无加工",
         "sources": [
           "USDA FoodData Central，SR Legacy，FDC 170393 Carrots, raw：每 100 g 维生素 C 5.9 mg、硫胺素 0.066 mg、维生素 D 0.0 µg（Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)）",
-          "一份：FDC 170393 “1 medium” = 61 g"
+          "一份：FDC 170393 “1 medium” = 61 g",
+          "维生素 A（预成型）、维生素 A 原（β-胡萝卜素 ÷ 12、α-胡萝卜素与 β-隐黄质 ÷ 24，折 µg RAE）、钙、铁、锌：取上列同一批 USDA FoodData Central 条目、份量与配方（I46，2026-11-19）"
         ]
       },
       "items": [
@@ -1215,10 +1537,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 20.13,
         "fast_sugar_g": 0,
+        "iron_mg": 0.183,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 509.5,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0.04026,
         "vitamin_c_mg": 3.599,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0.1464
       },
       "serving_g": 61
     },
@@ -1240,10 +1568,16 @@
       "per_serving": {
         "alcohol_g": 0,
         "caffeine_mg": 0,
+        "calcium_mg": 0,
         "fast_sugar_g": 0,
+        "iron_mg": 0,
+        "nitrite_mg": 0,
+        "provitamin_a_ug": 0,
+        "vitamin_a_ug": 0,
         "vitamin_b1_mg": 0,
         "vitamin_c_mg": 0,
-        "vitamin_d_ug": 0
+        "vitamin_d_ug": 0,
+        "zinc_mg": 0
       },
       "serving_g": 182
     }

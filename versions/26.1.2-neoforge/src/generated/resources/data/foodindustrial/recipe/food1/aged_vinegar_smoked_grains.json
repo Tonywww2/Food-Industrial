@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:fumigating",
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "aged_vinegar|vinegar_grains"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "aged_vinegar|smoked_grains"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:fermenting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/soy_koji"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:salt_position"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 500,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:soybean_paste"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "air",
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

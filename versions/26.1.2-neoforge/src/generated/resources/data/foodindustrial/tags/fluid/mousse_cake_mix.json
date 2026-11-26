@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:mousse_cake_mix",
+    "foodindustrial:flowing_mousse_cake_mix",
+    {
+      "id": "#forge:mousse_cake_mix",
+      "required": false
+    },
+    {
+      "id": "#c:mousse_cake_mix",
+      "required": false
+    }
+  ]
+}

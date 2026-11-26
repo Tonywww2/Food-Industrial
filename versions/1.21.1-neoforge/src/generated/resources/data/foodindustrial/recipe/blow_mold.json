@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "I I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:blow_mold"
+  }
+}

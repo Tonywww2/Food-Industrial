@@ -1,0 +1,24 @@
+{
+  "type": "thermal:refinery",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "thermal"
+    }
+  ],
+  "energy": 4000,
+  "ingredient": {
+    "amount": 1000,
+    "fluid_tag": "foodindustrial:master_stock_raw"
+  },
+  "result": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:master_stock"
+    }
+  ]
+}

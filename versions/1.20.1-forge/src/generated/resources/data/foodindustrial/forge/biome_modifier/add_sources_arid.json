@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:desert",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau"
+  ],
+  "features": [
+    "foodindustrial:wild_licorice",
+    "foodindustrial:wild_damiana",
+    "foodindustrial:wild_mexican_oregano"
+  ],
+  "step": "vegetal_decoration"
+}

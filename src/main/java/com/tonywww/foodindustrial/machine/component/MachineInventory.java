@@ -24,7 +24,8 @@ public final class MachineInventory {
 
     public MachineInventory(IoLayout layout, Consumer<SlotRole> onChange) {
         this.onChange = onChange;
-        int[] sizes = {layout.itemIn(), layout.itemOut(), layout.catalyst(), layout.fuel(), layout.upgrades(), layout.modules()};
+        int[] sizes = {layout.itemIn(), layout.itemOut(), layout.catalyst(), layout.fuel(), layout.upgrades(), layout.modules(),
+            layout.additives()};
         int total = 0;
         for (SlotRole role : SlotRole.values()) {
             start[role.ordinal()] = total;
@@ -224,17 +225,28 @@ public final class MachineInventory {
         return true;
     }
 
+    /**
+     * Key of a slot by its role and its place within the role ({@code SlotI3}, I47.5), so that a machine that gains slots of
+     * one role keeps what the others hold; data written before keyed the slots by their place in the whole inventory
+     * ({@code Slot5}), read when the new key is absent.
+     */
+    private String key(String prefix, int slot) {
+        SlotRole role = roles[slot];
+        return prefix + SlotKeys.code(role) + (slot - start[role.ordinal()]);
+    }
+
     public void save(DataWriter out) {
         for (int i = 0; i < stacks.length; i++) {
             if (!stacks[i].isEmpty()) {
-                out.putItem("Slot" + i, stacks[i]);
+                out.putItem(key("Slot", i), stacks[i]);
             }
         }
     }
 
     public void load(DataReader in) {
         for (int i = 0; i < stacks.length; i++) {
-            stacks[i] = in.getItem("Slot" + i);
+            ItemStack stack = in.getItem(key("Slot", i));
+            stacks[i] = stack.isEmpty() ? in.getItem("Slot" + i) : stack;
         }
     }
 
@@ -242,14 +254,20 @@ public final class MachineInventory {
     public void saveLocks(DataWriter out) {
         for (int i = 0; i < locks.length; i++) {
             if (!locks[i].isEmpty()) {
-                out.putItem("Lock" + i, locks[i]);
+                out.putItem(key("Lock", i), locks[i]);
             }
         }
     }
 
     public void loadLocks(DataReader in) {
         for (int i = 0; i < locks.length; i++) {
-            ItemStack lock = roles[i] == SlotRole.INPUT ? in.getItem("Lock" + i) : ItemStack.EMPTY;
+            ItemStack lock = ItemStack.EMPTY;
+            if (roles[i] == SlotRole.INPUT) {
+                lock = in.getItem(key("Lock", i));
+                if (lock.isEmpty()) {
+                    lock = in.getItem("Lock" + i);
+                }
+            }
             locks[i] = lock.isEmpty() ? ItemStack.EMPTY : lock.copyWithCount(1);
         }
     }

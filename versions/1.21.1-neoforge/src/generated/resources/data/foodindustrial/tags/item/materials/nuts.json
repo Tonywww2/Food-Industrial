@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:walnut",
+    {
+      "id": "#c:nuts",
+      "required": false
+    },
+    {
+      "id": "#forge:nuts",
+      "required": false
+    }
+  ]
+}

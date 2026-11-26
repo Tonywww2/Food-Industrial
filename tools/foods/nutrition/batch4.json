@@ -1,0 +1,1012 @@
+{
+ "batch": 4,
+ "doc": "foods/15 §10、foods/16 §8",
+ "notes": [
+  "单位换算按 USDA FDC 的份量：白糖 1 茶匙 4.2 g、1 汤匙 12.5 g；盐 1 茶匙 6 g；泡打粉、小苏打 1 茶匙 4.6 g；干酵母 1 茶匙 4 g；鸡蛋 50 g/个（蛋黄 17 g、蛋白 33 g）；蜂蜜 1 汤匙 21 g；油 1 汤匙 13.6 g；黄油 1 汤匙 14.2 g；水 1 汤匙 14.8 g；香草精 1 茶匙 4.2 g；牛奶 1 杯 244 g；重奶油 1 杯 238 g；糖粉 1 杯 120 g"
+ ],
+ "entries": [
+  {
+   "id": "yogurt",
+   "name": "酸奶",
+   "card": "foods/15",
+   "serving_g": 170.0,
+   "energy_kcal": 122.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 2.5,
+    "fat_g": 2.7,
+    "carb_g": 9.3
+   },
+   "composition": "cn:958",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "卡片的家常做法不加糖；工业做法“发酵前加糖不宜超过约 8%”只是上限，没有用量（待审：游戏配方有糖 ×1）"
+  },
+  {
+   "id": "flavored_yogurt",
+   "name": "风味酸奶",
+   "card": "foods/15",
+   "serving_g": 170.0,
+   "energy_kcal": 151.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 3.0,
+    "fat_g": 3.2,
+    "carb_g": 11.9
+   },
+   "composition": "cn:960",
+   "free_sugar": {
+    "per100g": 4.85
+   },
+   "free_sugar_note": "果料按利乐手册“一般不超过 10%”取 10%，果料的糖按果酱（FDC 169641 Jams and preserves 48.5%）计；酸奶本身不加糖（待审）"
+  },
+  {
+   "id": "fruit_yogurt",
+   "name": "果粒酸奶",
+   "card": "foods/15",
+   "serving_g": 170.0,
+   "energy_kcal": 167.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 3.3,
+    "fat_g": 2.9,
+    "carb_g": 14.6
+   },
+   "composition": "cn:961",
+   "free_sugar": {
+    "per100g": 4.85
+   },
+   "free_sugar_note": "同风味酸奶：果料 10%，糖按果酱 48.5% 计（待审）"
+  },
+  {
+   "id": "sour_cream",
+   "name": "酸奶油",
+   "card": "foods/15",
+   "serving_g": 30.0,
+   "energy_kcal": 59.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 2.44,
+    "fat_g": 19.4,
+    "carb_g": 4.63
+   },
+   "composition": "fdc:171257",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "butter",
+   "name": "黄油",
+   "card": "foods/15",
+   "serving_g": 14.0,
+   "energy_kcal": 100.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.85,
+    "fat_g": 81.1,
+    "carb_g": 0.06
+   },
+   "composition": "fdc:173430",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "whipping_cream",
+   "name": "淡奶油",
+   "card": "foods/15",
+   "serving_g": 15.0,
+   "energy_kcal": 51.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 2.84,
+    "fat_g": 36.1,
+    "carb_g": 2.84
+   },
+   "composition": "fdc:170859",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "mozzarella",
+   "name": "马苏里拉奶酪",
+   "card": "foods/15",
+   "serving_g": 30.0,
+   "energy_kcal": 90.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 22.2,
+    "fat_g": 22.1,
+    "carb_g": 2.4
+   },
+   "composition": "fdc:170845",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.4,
+   "misuse_note": "误用（卡片）：0.40 g（13%）：盐 1 茶匙 6 g / 出品约 454 g；表值钠 486 mg × 2.54 折盐 1.23%，与此相符"
+  },
+  {
+   "id": "cheddar_cheese",
+   "name": "切达奶酪",
+   "card": "foods/15",
+   "serving_g": 30.0,
+   "energy_kcal": 126.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 24.9,
+    "fat_g": 34.5,
+    "carb_g": 3.3
+   },
+   "composition": "cn:968",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.6,
+   "misuse_note": "误用（卡片）：0.60 g（20%）：盐 1 汤匙 18 g / 出品约 900 g；表值钠 687.0 mg × 2.54 折盐 1.75%"
+  },
+  {
+   "id": "cream_cheese",
+   "name": "奶油奶酪",
+   "card": "foods/15",
+   "serving_g": 30.0,
+   "energy_kcal": 105.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 6.15,
+    "fat_g": 34.4,
+    "carb_g": 5.52
+   },
+   "composition": "fdc:173418",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.45,
+   "misuse_note": "误用（卡片）：0.45 g（15%）：盐 2 茶匙 12 g / 出品 0.7–0.9 L 取 0.8 kg；表值钠 314 mg × 2.54 折盐 0.80%，来源配方偏咸"
+  },
+  {
+   "id": "processed_cheese_slice",
+   "name": "再制奶酪片",
+   "card": "foods/15",
+   "serving_g": 30.0,
+   "energy_kcal": 110.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 18.1,
+    "fat_g": 30.7,
+    "carb_g": 4.78
+   },
+   "composition": "fdc:170853",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "milk_tofu",
+   "name": "奶豆腐",
+   "card": "foods/15",
+   "serving_g": 30.0,
+   "energy_kcal": 92.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 46.2,
+    "fat_g": 7.8,
+    "carb_g": 12.5
+   },
+   "composition": "cn:963",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "condensed_milk",
+   "name": "炼乳",
+   "card": "foods/15",
+   "serving_g": 38.0,
+   "energy_kcal": 127.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 8.0,
+    "fat_g": 8.7,
+    "carb_g": 55.4
+   },
+   "composition": "cn:972",
+   "free_sugar": {
+    "per100g": 45
+   },
+   "free_sugar_note": "卡片：工业甜炼乳加糖到成品约 45%"
+  },
+  {
+   "id": "milk_powder",
+   "name": "奶粉",
+   "card": "foods/15",
+   "serving_g": 32.0,
+   "energy_kcal": 161.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 22.0,
+    "fat_g": 26.0,
+    "carb_g": 45.5
+   },
+   "composition": "cn:939",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "formula_milk_powder",
+   "name": "调制乳粉",
+   "card": "foods/15",
+   "serving_g": 32.0,
+   "energy_kcal": 145.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 17.0,
+    "fat_g": 13.0,
+    "carb_g": 66.0
+   },
+   "composition": "cn:944",
+   "free_sugar": {
+    "per100g": 24.975
+   },
+   "free_sugar_note": "卡片：游戏配方奶粉 3 份、糖 1 份",
+   "override": {
+    "vitamin_c_mg": 12.8
+   },
+   "override_note": "维生素 C 取卡片：40.0 mg/100 g × 32 g = 12.8 mg（条目 944）"
+  },
+  {
+   "id": "milk_tablet",
+   "name": "奶片",
+   "card": "foods/15",
+   "serving_g": 15.0,
+   "energy_kcal": 71.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 13.3,
+    "fat_g": 20.2,
+    "carb_g": 59.3
+   },
+   "composition": "cn:974",
+   "free_sugar": {
+    "parts": [
+     [
+      "葡萄糖",
+      9,
+      0.999
+     ]
+    ],
+    "total_g": 125
+   },
+   "free_sugar_note": "卡片配比：奶粉 100 g、低聚异麦芽糖 16 g（寡糖，不是游离糖）、葡萄糖 9 g；该文另加的香菇粉 50 g 是风味料，不计"
+  },
+  {
+   "id": "double_skin_milk",
+   "name": "双皮奶",
+   "card": "foods/15",
+   "serving_g": 130.0,
+   "energy_kcal": 97.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 4.1,
+    "fat_g": 3.2,
+    "carb_g": 7.3
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:926",
+      464,
+      {
+       "retention": "retn:2151"
+      }
+     ],
+     [
+      "cn:982",
+      66,
+      {
+       "retention": "retn:0107"
+      }
+     ],
+     [
+      "cn:1448",
+      12.5,
+      {
+       "fill": "fdc:169655"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：牛乳 450 mL 按 464 g、蛋清 2 个按 66 g、糖 1 汤匙 12.5 g；保留率：牛乳按 2151 加热约 10 min，蛋清按 0107 蛋（水煮，蒸代用）",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      12.5,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 542.5
+   }
+  },
+  {
+   "id": "ginger_milk_curd",
+   "name": "姜撞奶",
+   "card": "foods/15",
+   "serving_g": 130.0,
+   "energy_kcal": 113.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 2.8,
+    "fat_g": 3.2,
+    "carb_g": 11.7
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:926",
+      412,
+      {
+       "retention": "retn:2151"
+      }
+     ],
+     [
+      "cn:1448",
+      30,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:528",
+      40
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：牛乳 400 mL 按 412 g、糖 30 g、姜汁按鲜姜条目 528 计 40 g；牛乳按 2151 加热约 10 min",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      30,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 482
+   }
+  },
+  {
+   "id": "vanilla_ice_cream",
+   "name": "香草冰淇淋",
+   "card": "foods/16",
+   "serving_g": 88.0,
+   "energy_kcal": 112.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 2.4,
+    "fat_g": 5.3,
+    "carb_g": 17.3
+   },
+   "composition": "cn:1393",
+   "free_sugar": {
+    "per100g": 17.196961748878785
+   },
+   "free_sugar_note": "重奶油 714 mL 按 FDC 每杯 236.6 mL = 238 g 折 718 g、糖 150 g、香草精 ¾ 茶匙；盐少许不计"
+  },
+  {
+   "id": "chocolate_ice_cream",
+   "name": "巧克力冰淇淋",
+   "card": "foods/16",
+   "serving_g": 88.0,
+   "energy_kcal": 247.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 3.3,
+    "fat_g": 19.7,
+    "carb_g": 23.6
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:1387",
+      43,
+      {
+       "fill": "fdc:169593"
+      }
+     ],
+     [
+      "cn:1451",
+      73
+     ],
+     [
+      "cn:1448",
+      100,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:926",
+      244
+     ],
+     [
+      "fdc:170859",
+      476
+     ],
+     [
+      "fdc:173471",
+      8.4
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：可可粉 43 g（条目 1387；表没有的项按 FDC 169593 补）、红糖 73 g、白糖 100 g、牛乳 244 g、重奶油 476 g、香草精 2 茶匙；不加热",
+   "free_sugar": {
+    "parts": [
+     [
+      "红糖",
+      73,
+      "cn:1451"
+     ],
+     [
+      "白糖",
+      100,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 944.4
+   },
+   "caffeine_note": "咖啡因：可可粉 43 g 按 FDC 169593 的 230 mg/100 g（中国表没有咖啡因），占原料 952.4 g，每份 88 g",
+   "caffeine_mg": 9.22
+  },
+  {
+   "id": "mint_ice_cream",
+   "name": "薄荷冰淇淋",
+   "card": "foods/16",
+   "serving_g": 88.0,
+   "energy_kcal": 123.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 3.2,
+    "fat_g": 5.1,
+    "carb_g": 20.2
+   },
+   "composition": {
+    "mix": [
+     [
+      "fdc:171255",
+      242,
+      {
+       "retention": "retn:2151"
+      }
+     ],
+     [
+      "fdc:172205",
+      492,
+      {
+       "retention": "retn:2151"
+      }
+     ],
+     [
+      "cn:1448",
+      150,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:984",
+      34,
+      {
+       "retention": "retn:0107"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：半奶油 242 g、2% 牛奶 492 g、粗糖按白砂糖 150 g、蛋黄 34 g；奶按 2151 加热，蛋黄按 0107（蛋奶糊加热代用）；薄荷叶滤出不计",
+   "free_sugar": {
+    "parts": [
+     [
+      "粗糖",
+      150,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 918
+   }
+  },
+  {
+   "id": "berry_ice_cream",
+   "name": "浆果冰淇淋",
+   "card": "foods/16",
+   "serving_g": 88.0,
+   "energy_kcal": 135.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 2.7,
+    "fat_g": 3.2,
+    "carb_g": 28.5
+   },
+   "composition": "cn:1394",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      133,
+      "cn:1448"
+     ],
+     [
+      "柠檬汁",
+      7.6,
+      "fdc:167747"
+     ]
+    ],
+    "total_g": 960.6
+   },
+   "free_sugar_note": "草莓 340 g、糖 133 g、柠檬汁 1½ 茶匙按 7.6 g、重奶油 320 g、牛奶 160 g"
+  },
+  {
+   "id": "matcha_ice_cream",
+   "name": "抹茶冰淇淋",
+   "card": "foods/16",
+   "serving_g": 88.0,
+   "energy_kcal": 206.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 3.7,
+    "fat_g": 16.0,
+    "carb_g": 19.7
+   },
+   "composition": {
+    "mix": [
+     [
+      "jp:16035",
+      12
+     ],
+     [
+      "cn:1448",
+      100,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:984",
+      34,
+      {
+       "retention": "retn:0107"
+      }
+     ],
+     [
+      "fdc:172205",
+      246,
+      {
+       "retention": "retn:2151"
+      }
+     ],
+     [
+      "fdc:170859",
+      238
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：抹茶 12 g（日本食品標準成分表 16035）、糖 100 g、蛋黄 34 g、2% 牛奶 246 g、重奶油 238 g；牛奶按 2151 加热，蛋黄按 0107",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      100,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 630
+   },
+   "caffeine_note": "咖啡因取卡片：抹茶 3.2 g/100 g（日本食品標準成分表，转引日本农林水产省），每份含抹茶 1.68 g",
+   "caffeine_mg": 54
+  },
+  {
+   "id": "ice_cream_bar",
+   "name": "雪糕",
+   "card": "foods/16",
+   "serving_g": 75.0,
+   "energy_kcal": 111.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 2.8,
+    "fat_g": 6.2,
+    "carb_g": 20.1
+   },
+   "composition": "cn:1402",
+   "free_sugar": {
+    "per100g": 17.196961748878785
+   },
+   "free_sugar_note": "按卡片家常做法的香草冰淇淋算（同香草冰淇淋）；巧克力外衣的用量未给，其糖与咖啡因不计（偏低）"
+  },
+  {
+   "id": "popsicle",
+   "name": "冰棍",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 24.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 0.8,
+    "fat_g": 0.2,
+    "carb_g": 10.5
+   },
+   "composition": "cn:1392",
+   "free_sugar": {
+    "from_source": "cn:1392"
+   },
+   "free_sugar_note": "卡片的糖浆底料含糖 28.6%（糖 150 g ÷ 原料 526 g），但卡片能量取表值冰棍（条目 1392，碳水 10.5 g/100 g），按配比算糖会超过能量；改取表值的碳水全部计为游离糖（待审）"
+  },
+  {
+   "id": "mung_bean_popsicle",
+   "name": "绿豆冰棍",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 67.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 5.6,
+    "fat_g": 3.4,
+    "carb_g": 20.6
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:926",
+      366,
+      {
+       "retention": "retn:2151"
+      }
+     ],
+     [
+      "cn:350",
+      104,
+      {
+       "retention": "retn:0522"
+      }
+     ],
+     [
+      "water",
+      199
+     ],
+     [
+      "cn:972",
+      153
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：牛乳 1½ 杯按 366 g、绿豆（干）104 g 煮后 303 g（多出的 199 g 为吸水）、炼乳 ½ 杯按 153 g；玉米淀粉不计（同卡片）；绿豆按 0522 豆类煮 45–75 min（水不倒）",
+   "free_sugar": {
+    "parts": [
+     [
+      "炼乳",
+      153,
+      0.45
+     ]
+    ],
+    "total_g": 822
+   },
+   "free_sugar_note": "炼乳的游离糖按炼乳卡片的“加糖到成品约 45%”"
+  },
+  {
+   "id": "sorbet",
+   "name": "果味冰沙",
+   "card": "foods/16",
+   "serving_g": 133.0,
+   "energy_kcal": 167.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 0.6,
+    "fat_g": 0.3,
+    "carb_g": 30.5
+   },
+   "composition": {
+    "mix": [
+     [
+      "fdc:167755",
+      500
+     ],
+     [
+      "cn:1448",
+      250,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "water",
+      250
+     ],
+     [
+      "fdc:167747",
+      15
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：树莓 500 g、糖 250 g、水 250 mL、柠檬汁 1 汤匙按 15 g；去籽损失与煮的损失不计",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      250,
+      "cn:1448"
+     ],
+     [
+      "柠檬汁",
+      15,
+      "fdc:167747"
+     ]
+    ],
+    "total_g": 1015
+   }
+  },
+  {
+   "id": "shaved_ice",
+   "name": "刨冰",
+   "card": "foods/16",
+   "serving_g": 87.0,
+   "energy_kcal": 111.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.4,
+    "fat_g": 0.0,
+    "carb_g": 32.6
+   },
+   "composition": "fdc:2710323",
+   "free_sugar": {
+    "from_source": "fdc:2710323"
+   },
+   "free_sugar_note": "糖浆用量随意，取 FDC 2710323 Snow cone 的总糖（全部来自糖浆）"
+  },
+  {
+   "id": "red_bean_ice",
+   "name": "红豆冰",
+   "card": "foods/16",
+   "serving_g": 87.0,
+   "energy_kcal": 61.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 2.8,
+    "fat_g": 1.3,
+    "carb_g": 12.0
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:351",
+      131,
+      {
+       "retention": "retn:0522"
+      }
+     ],
+     [
+      "water",
+      473
+     ],
+     [
+      "cn:1448",
+      75,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "fdc:172194",
+      252
+     ],
+     [
+      "water",
+      600
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：赤小豆 131 g、水 473 g、糖 75 g、淡奶 252 g、冰 4 杯按 600 g；赤豆按 0522",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      75,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1531
+   }
+  },
+  {
+   "id": "century_egg",
+   "name": "皮蛋",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 85.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 14.2,
+    "fat_g": 10.7,
+    "carb_g": 4.5
+   },
+   "composition": "cn:994",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.69,
+   "misuse_note": "误用（卡片）：0.69 g（23%）：包泥的盐只部分渗入蛋内，按表值钠 542.7 mg × 2.54 折算"
+  },
+  {
+   "id": "salted_egg",
+   "name": "咸鸭蛋",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 88.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 13.8,
+    "fat_g": 13.5,
+    "carb_g": 0.0
+   },
+   "composition": "cn:996",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "braised_egg",
+   "name": "卤蛋",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 72.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 13.3,
+    "fat_g": 8.8,
+    "carb_g": 2.8
+   },
+   "composition": "cn:978",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "卤汁的糖渗入量未计（同卡片）",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      63.8
+     ]
+    ],
+    "total_g": 830
+   },
+   "misuse_salt_g": 0.62,
+   "misuse_note": "误用（卡片）：0.62 g（21%）：生抽 63.8 g 含盐 10.34 g / 原料 830 g"
+  },
+  {
+   "id": "tea_egg",
+   "name": "茶叶蛋",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 72.0,
+   "hunger": 4,
+   "macros_100g": {},
+   "composition": "cn:978",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      63.8
+     ]
+    ],
+    "total_g": 828
+   },
+   "misuse_salt_g": 0.62,
+   "misuse_note": "误用（卡片）：0.62 g（21%）：酱油 63.8 g 含盐 10.34 g / 原料 828 g（水按卤蛋的 2 杯计）"
+  },
+  {
+   "id": "wine_preserved_egg",
+   "name": "糟蛋",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 114.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 15.8,
+    "fat_g": 13.1,
+    "carb_g": 11.7
+   },
+   "composition": {
+    "per100g": {
+     "calcium_mg": 248
+    },
+    "source": "科普中国“糟蛋”：每 100 g 钙 248 mg"
+   },
+   "composition_note": "卡片取科普资料（只给了钙）；其余项留空",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "卡片未给糖，酒糟渗入的糖算不出（待审）",
+   "alcohol_note": "酒精取卡片的估算：每 100 g 约 7.0 g，一份 50 g 约 3.5 g",
+   "alcohol_g": 3.5,
+   "misuse_salt_g": 1.15,
+   "misuse_note": "误用（卡片）：1.15 g（38%）：撒在酒糟上的盐大半留在糟里，按厂家标签钠 909 mg × 2.54 折算（11 问题 67）"
+  },
+  {
+   "id": "ramen_egg",
+   "name": "溏心蛋",
+   "card": "foods/16",
+   "serving_g": 50.0,
+   "energy_kcal": 72.0,
+   "hunger": 4,
+   "macros_100g": {},
+   "composition": "cn:978",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "腌汁的糖渗入量未计（同卡片）",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      63.8
+     ]
+    ],
+    "total_g": 385
+   },
+   "misuse_salt_g": 1.34,
+   "misuse_note": "误用（卡片）：1.34 g（44%）：生抽 63.8 g 含盐 10.34 g / 原料 385 g"
+  },
+  {
+   "id": "egg_pudding",
+   "name": "鸡蛋布丁",
+   "card": "foods/16",
+   "serving_g": 130.0,
+   "energy_kcal": 147.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 5.6,
+    "fat_g": 4.7,
+    "carb_g": 12.0
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:978",
+      100,
+      {
+       "retention": "retn:0107"
+      }
+     ],
+     [
+      "cn:926",
+      258,
+      {
+       "retention": "retn:2151"
+      }
+     ],
+     [
+      "cn:1448",
+      30,
+      {
+       "fill": "fdc:169655"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：鸡蛋 2 个按 100 g、牛乳 250 mL 按 258 g、糖 30 g，蒸 12 min；蛋按 0107，奶按 2151",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      30,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 388
+   }
+  }
+ ]
+}

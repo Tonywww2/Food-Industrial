@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:culturing",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:samples/brine"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/agar"
+    }
+  ],
+  "mode": "isolation",
+  "outputs": [
+    {
+      "item": "foodindustrial:dunaliella"
+    },
+    {
+      "item": "foodindustrial:wild_mold"
+    }
+  ],
+  "plate": {
+    "weights": [
+      2,
+      1
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 1200
+}

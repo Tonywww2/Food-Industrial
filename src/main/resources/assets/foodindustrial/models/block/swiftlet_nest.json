@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "nest": "foodindustrial:block/swiftlet_nest",
+    "particle": "foodindustrial:block/swiftlet_nest"
+  },
+  "elements": [
+    {
+      "from": [
+        3,
+        5,
+        0
+      ],
+      "to": [
+        13,
+        11,
+        6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#nest"
+        },
+        "south": {
+          "texture": "#nest"
+        },
+        "east": {
+          "texture": "#nest"
+        },
+        "west": {
+          "texture": "#nest"
+        },
+        "up": {
+          "texture": "#nest"
+        },
+        "down": {
+          "texture": "#nest"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/wheat_flour"
+    },
+    {
+      "tag": "foodindustrial:materials/wheat_flour"
+    },
+    {
+      "tag": "foodindustrial:materials/egg"
+    },
+    {
+      "tag": "foodindustrial:foods/butter"
+    },
+    {
+      "tag": "foodindustrial:chemicals/sodium_bicarbonate"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:buttermilk"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "foodindustrial:semi_finished"
+    }
+  ]
+}

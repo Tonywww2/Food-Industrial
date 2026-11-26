@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/frozen_tangyuan"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "water_boiling",
+  "outputs": [
+    {
+      "item": "foodindustrial:tangyuan"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

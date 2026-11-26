@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:liangpi_batter",
+    "foodindustrial:flowing_liangpi_batter",
+    {
+      "id": "#forge:liangpi_batter",
+      "required": false
+    },
+    {
+      "id": "#c:liangpi_batter",
+      "required": false
+    }
+  ]
+}

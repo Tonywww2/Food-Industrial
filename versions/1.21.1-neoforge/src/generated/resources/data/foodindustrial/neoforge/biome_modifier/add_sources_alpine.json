@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:meadow",
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_forest"
+  ],
+  "features": [
+    "foodindustrial:sea_buckthorn_bush",
+    "foodindustrial:jasmine_officinale_bush",
+    "foodindustrial:mountain_pine_bush",
+    "foodindustrial:wild_gromwell",
+    "foodindustrial:wild_nardostachys",
+    "foodindustrial:wild_gentian",
+    "foodindustrial:wild_dittany_of_crete"
+  ],
+  "step": "vegetal_decoration"
+}

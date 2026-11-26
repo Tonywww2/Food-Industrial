@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:chilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:margarine_emulsion"
+      }
+    }
+  ],
+  "mode": "churn_freezing",
+  "outputs": [
+    {
+      "semi_finished": "margarine|block"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 400
+}

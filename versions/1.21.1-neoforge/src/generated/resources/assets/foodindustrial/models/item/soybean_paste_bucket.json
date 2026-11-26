@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:soybean_paste",
+  "loader": "neoforge:fluid_container"
+}

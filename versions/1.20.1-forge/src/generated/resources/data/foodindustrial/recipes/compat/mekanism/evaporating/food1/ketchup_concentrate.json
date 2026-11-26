@@ -1,0 +1,21 @@
+{
+  "type": "mekanism:evaporating",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:ketchup_puree"
+  },
+  "output": {
+    "amount": 500,
+    "fluid": "foodindustrial:ketchup_concentrate"
+  }
+}

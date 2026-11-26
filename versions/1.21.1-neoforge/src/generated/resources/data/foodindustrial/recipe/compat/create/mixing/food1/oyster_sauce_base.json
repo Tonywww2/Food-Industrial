@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/sucrose"
+    },
+    {
+      "tag": "foodindustrial:salt_position"
+    },
+    {
+      "tag": "foodindustrial:chemicals/starch"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "foodindustrial:oyster_sauce_extract"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "foodindustrial:oyster_sauce_base"
+    }
+  ]
+}

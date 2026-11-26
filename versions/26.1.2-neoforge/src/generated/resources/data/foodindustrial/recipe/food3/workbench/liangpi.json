@@ -1,0 +1,16 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "liangpi|dough_sheet"
+    }
+  ],
+  "process": "cutting",
+  "result": {
+    "count": 2,
+    "item": "foodindustrial:liangpi"
+  },
+  "tools": [
+    "#foodindustrial:knives"
+  ]
+}

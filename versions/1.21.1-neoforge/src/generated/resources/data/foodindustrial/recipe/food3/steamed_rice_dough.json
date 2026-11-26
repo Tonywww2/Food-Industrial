@@ -1,0 +1,27 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:rice_slurry"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "steaming",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:steamed_rice_dough"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

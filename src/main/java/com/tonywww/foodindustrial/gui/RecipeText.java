@@ -53,8 +53,20 @@ public final class RecipeText {
         category("solid_fermenting", "固态发酵", "Solid Fermentation");
         category("culturing", "菌种操作", "Culture Work");
         category("mixing", "配料与混炼", "Blending");
+        // machines/05 §1.1 (I38)
+        category("forming", "和面与成型", "Dough and Forming");
+        category("sterilizing", "杀菌", "Sterilization");
+        category("cooking", "蒸煮", "Cooking");
+        category("baking", "烘烤", "Baking");
+        category("frying", "油炸", "Frying");
+        category("curing", "腌制与陈酿", "Curing and Aging");
+        category("cutting", "切割与斩拌", "Cutting and Chopping");
+        category("confectionery", "糖果与巧克力", "Confectionery");
+        category("chilling", "冷冻", "Chilling and Freezing");
+        category("packaging", "灌装封口", "Filling and Sealing");
         category("block_transform", "方块转化", "Block Transformation");
         category("harvesting", "割取", "Harvesting");
+        category("pumping", "取水", "Pumping");
         category(STRUCTURE_CATEGORY, "多方块结构", "Multiblock Structure");
 
         add("tag", "标签：%s", "Tag: %s");
@@ -84,6 +96,11 @@ public final class RecipeText {
         add("cooldown", "冷却 %s 秒", "Cooldown %s s");
         add("transfer_device", "这台机器不做此配方", "This machine cannot run this recipe");
         add("transfer_missing", "背包里缺少原料", "Missing ingredients in the inventory");
+        add("tool_kept", "不消耗，留在合成格", "Not used up; stays in the grid");
+        add("container_back", "至少 %s mB，用后还回空容器", "At least %s mB; the empty container comes back");
+        add("second_kept", "副产物：%s ×%s，留在合成格", "Second product: %s ×%s, stays in the grid");
+        add("workbench_process", "工序：%s", "Process: %s");
+        add("additives", "空格可放添加剂", "Free slots take additives");
 
         Lang.add(structure("layer"), "第 %s / %s 层", "Layer %s / %s");
         Lang.add(structure("all_layers"), "全部层", "All layers");

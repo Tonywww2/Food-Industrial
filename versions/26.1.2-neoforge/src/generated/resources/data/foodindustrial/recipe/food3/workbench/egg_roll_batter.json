@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:foods/butter"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/egg"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/roasted_sesame"
+    }
+  ],
+  "process": "mixing",
+  "quality": {
+    "items": [
+      "color"
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "egg_roll|batter"
+  }
+}

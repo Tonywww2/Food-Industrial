@@ -85,10 +85,44 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
     public Capabilities capabilities() {
         return switch (kind) {
             case CLAY_POT, IRON_POT -> heated() ? kind.ownCapabilities() : Capabilities.NONE;
-            case CROCK -> Capabilities.of(sealed() ? "atmosphere.airtight" : "atmosphere.air", "method.settling")
-                .with(Environment.at(level, worldPosition));
+            case CROCK -> {
+                Capabilities environment = Environment.at(level, worldPosition);
+                Capabilities crock = Capabilities.of(sealed() ? "atmosphere.airtight" : "atmosphere.air", "method.settling")
+                    .with(CROCK_MODES).with(environment);
+                // R28 chilling (I41, foods/07 §4): in a cold biome, or next to ice
+                yield cold(environment) || besideIce() ? crock.with(COOLING) : crock;
+            }
+            case DRYING_RACK -> {
+                Capabilities environment = Environment.at(level, worldPosition);
+                Capabilities rack = kind.ownCapabilities().with(environment);
+                // R28 freezing (I41): out in the open in a cold biome
+                yield cold(environment) && environment.keys().contains("environment.open_sky") ? rack.with(FREEZING) : rack;
+            }
             default -> kind.ownCapabilities().with(Environment.at(level, worldPosition));
         };
+    }
+
+    private static final Capabilities CROCK_MODES = T0Kind.crockModes();
+    private static final Capabilities COOLING = Capabilities.of("temperature.cooling");
+    private static final Capabilities FREEZING = T0Kind.rackFreezing();
+
+    private static boolean cold(Capabilities environment) {
+        return environment.keys().contains("environment.cold_biome");
+    }
+
+    /** Ice, packed ice or blue ice on one of the six sides (the crock's R28 chilling). */
+    private boolean besideIce() {
+        if (level == null) {
+            return false;
+        }
+        for (net.minecraft.core.Direction side : net.minecraft.core.Direction.values()) {
+            net.minecraft.world.level.block.state.BlockState state = level.getBlockState(worldPosition.relative(side));
+            if (state.is(net.minecraft.world.level.block.Blocks.ICE) || state.is(net.minecraft.world.level.block.Blocks.PACKED_ICE)
+                || state.is(net.minecraft.world.level.block.Blocks.BLUE_ICE)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /** Whether a lit heat source sits right below (the pots). */
@@ -284,7 +318,10 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
                     return true;
                 }
             }
-            return false;
+            // the catalyst slots are full: an item that is also an ingredient goes in with the others (I47.5)
+            if (kind == T0Kind.FUMIGATION_BOX || !isInput(held)) {
+                return false;
+            }
         }
         if (kind == T0Kind.FUMIGATION_BOX ? !Fumigation.canFumigate(held) && !Fumigation.isMarked(held) : !isInput(held)) {
             return false;
@@ -332,7 +369,7 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
         for (ProcessType type : kind.spec().types()) {
             for (RecipeIndex.Entry entry : index.candidates(type, held.getItem())) {
                 ProcessRecipe recipe = entry.recipe();
-                if (entry.runsOn(kind.spec()) && recipe.inputs().get(0) instanceof ProcessInput.ItemInput item && item.ingredient().test(held)
+                if (entry.runsOn(kind.spec()) && recipe.inputs().get(0) instanceof ProcessInput.ItemInput item && item.accepts(held)
                     && (best == null || recipe.specificity() > best.specificity())) {
                     best = recipe;
                 }
@@ -350,7 +387,7 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
                     continue;
                 }
                 for (ProcessInput input : entry.recipe().inputs()) {
-                    if (input instanceof ProcessInput.ItemInput item && item.ingredient().test(stack)) {
+                    if (input instanceof ProcessInput.ItemInput item && item.accepts(stack)) {
                         return true;
                     }
                 }
@@ -483,7 +520,7 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
         int target = -1;
         for (int i = 0; i < count && target < 0; i++) {
             FluidAmount here = contents.tank(i);
-            if (!here.isEmpty() && here.fluid() == fluid.fluid() && here.amount() + fluid.amount() <= contents.tankCapacity()) {
+            if (!here.isEmpty() && here.joins(fluid) && here.amount() + fluid.amount() <= contents.tankCapacity()) {
                 target = i;
             }
         }
@@ -508,7 +545,7 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
         int room = 0;
         for (T0DeviceBlockEntity device : group) {
             FluidAmount here = device.contents.tank(0);
-            if (here.isEmpty() || here.fluid() == fluid.fluid()) {
+            if (here.isEmpty() || here.joins(fluid)) {
                 open.add(device);
                 room += device.contents.tankCapacity() - here.amount();
             }
@@ -537,7 +574,7 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
      * the inlets; joined pans give from every pan holding the fluid of this one.
      */
     private FluidAmount take(List<T0DeviceBlockEntity> group, int amount, boolean simulate) {
-        int[] order = kind == T0Kind.LEACH_BARREL ? new int[]{1, 0} : contents.tankCount() == 2 ? new int[]{0, 1} : new int[]{0};
+        int[] order = kind.tankOrder();
         for (int tank : order) {
             FluidAmount first = FluidAmount.EMPTY;
             for (T0DeviceBlockEntity device : group) {
@@ -553,7 +590,7 @@ public class T0DeviceBlockEntity extends FIBlockEntity {
             int left = amount;
             for (T0DeviceBlockEntity device : group) {
                 FluidAmount here = device.contents.tank(tank);
-                if (left <= 0 || here.isEmpty() || here.fluid() != first.fluid()) {
+                if (left <= 0 || here.isEmpty() || !here.joins(first)) {
                     continue;
                 }
                 int part = Math.min(left, here.amount());

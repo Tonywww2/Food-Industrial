@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:p_xylene",
+    "foodindustrial:flowing_p_xylene",
+    {
+      "id": "#forge:p_xylene",
+      "required": false
+    },
+    {
+      "id": "#c:p_xylene",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "instant_noodles|dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "instant_noodles|raw_noodles"
+  }
+}

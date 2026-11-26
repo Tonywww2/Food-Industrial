@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:huangjiu_mash",
+    "foodindustrial:flowing_huangjiu_mash",
+    {
+      "id": "#forge:huangjiu_mash",
+      "required": false
+    },
+    {
+      "id": "#c:huangjiu_mash",
+      "required": false
+    }
+  ]
+}

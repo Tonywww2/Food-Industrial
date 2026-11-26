@@ -78,6 +78,8 @@ public final class ModMachines {
         com.tonywww.foodindustrial.machine.mechanical.MechanicalMachines.bootstrap();
         com.tonywww.foodindustrial.machine.chemical.ChemicalMachines.bootstrap();
         com.tonywww.foodindustrial.machine.bio.BioMachines.bootstrap();
+        com.tonywww.foodindustrial.machine.kitchen.KitchenMachines.bootstrap();
         MachineData.bootstrap();
+        com.tonywww.foodindustrial.machine.display.MachineDisplay.bootstrap();
     }
 }

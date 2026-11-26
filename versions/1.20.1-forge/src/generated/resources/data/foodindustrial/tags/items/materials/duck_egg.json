@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:duck_egg",
+    {
+      "id": "#forge:eggs/duck",
+      "required": false
+    },
+    {
+      "id": "#c:eggs/duck",
+      "required": false
+    }
+  ]
+}

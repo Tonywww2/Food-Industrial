@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:rice_vinegar_acetic_mash",
+  "loader": "neoforge:fluid_container"
+}

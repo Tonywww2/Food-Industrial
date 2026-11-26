@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/filling_mold"
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "egg_yolk_pastry|pastry"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/red_bean_paste"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/salted_egg_yolk"
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "egg_yolk_pastry|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

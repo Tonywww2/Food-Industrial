@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:non_dairy_creamer_homogenized",
+    "foodindustrial:flowing_non_dairy_creamer_homogenized",
+    {
+      "id": "#forge:non_dairy_creamer_homogenized",
+      "required": false
+    },
+    {
+      "id": "#c:non_dairy_creamer_homogenized",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:forming",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/leavened_dough"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/scallion"
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:vegetable_oil"
+      }
+    }
+  ],
+  "mode": "sheeting",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "flower_roll|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

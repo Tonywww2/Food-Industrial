@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "foodindustrial:block/tallow_tree_leaves_fruiting"
+  },
+  "render_type": "minecraft:cutout_mipped"
+}

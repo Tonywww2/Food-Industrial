@@ -31,6 +31,34 @@ public final class PlatformItems {
         //?}
     }
 
+    /**
+     * Picks a variant of the item's model (I48: the flavourings' dosage forms): vanilla's custom model data, read by the
+     * item model's {@code custom_model_data} override (1.20.1, 1.21.1) or a {@code minecraft:custom_model_data}
+     * range dispatch on the first float (26.1). {@code 0} leaves the base model.
+     */
+    public static void setModelVariant(ItemStack stack, int variant) {
+        //? if >=26.1 {
+        /*if (variant == 0) {
+            stack.remove(DataComponents.CUSTOM_MODEL_DATA);
+        } else {
+            stack.set(DataComponents.CUSTOM_MODEL_DATA, new net.minecraft.world.item.component.CustomModelData(
+                java.util.List.of((float) variant), java.util.List.of(), java.util.List.of(), java.util.List.of()));
+        }
+        *///?} else if >=1.21 {
+        /*if (variant == 0) {
+            stack.remove(DataComponents.CUSTOM_MODEL_DATA);
+        } else {
+            stack.set(DataComponents.CUSTOM_MODEL_DATA, new net.minecraft.world.item.component.CustomModelData(variant));
+        }
+        *///?} else {
+        if (variant == 0) {
+            stack.removeTagKey("CustomModelData");
+        } else {
+            stack.getOrCreateTag().putInt("CustomModelData", variant);
+        }
+        //?}
+    }
+
     /** Wears the tool in {@code hand} by {@code amount} (breaks it at zero; none in creative). */
     public static void damage(ItemStack stack, int amount, Player player, InteractionHand hand) {
         //? if >=1.21 {
@@ -43,12 +71,26 @@ public final class PlatformItems {
 
     /** {@code properties} made edible: {@code nutrition} hunger points, saturation modifier {@code saturation}. */
     public static Item.Properties food(Item.Properties properties, int nutrition, float saturation) {
+        return food(properties, nutrition, saturation, false);
+    }
+
+    /**
+     * {@code properties} made edible; {@code alwaysEdible} lets it be eaten or drunk with a full hunger bar (foods/04
+     * §5.2: products of 0 hunger, kept for their metabolic components).
+     */
+    public static Item.Properties food(Item.Properties properties, int nutrition, float saturation, boolean alwaysEdible) {
         //? if >=1.21 {
-        /*FoodProperties food = new FoodProperties.Builder().nutrition(nutrition).saturationModifier(saturation).build();
+        /*FoodProperties.Builder builder = new FoodProperties.Builder().nutrition(nutrition).saturationModifier(saturation);
+        if (alwaysEdible) {
+            builder.alwaysEdible();
+        }
         *///?} else {
-        FoodProperties food = new FoodProperties.Builder().nutrition(nutrition).saturationMod(saturation).build();
+        FoodProperties.Builder builder = new FoodProperties.Builder().nutrition(nutrition).saturationMod(saturation);
+        if (alwaysEdible) {
+            builder.alwaysEat();
+        }
         //?}
-        return properties.food(food);
+        return properties.food(builder.build());
     }
 
     /** How an item is consumed, by its use animation. */

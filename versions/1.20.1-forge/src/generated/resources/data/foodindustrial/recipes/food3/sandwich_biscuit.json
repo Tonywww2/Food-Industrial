@@ -1,0 +1,35 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/filling_mold"
+    }
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "sandwich_biscuit|biscuit"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/shortening"
+      }
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:sandwich_biscuit"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

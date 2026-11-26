@@ -1,0 +1,7520 @@
+{
+ "cn:260": {
+  "name": "小麦粉(富强粉，特一粉)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 260",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/260.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.17,
+   "calcium_mg": 27.0,
+   "iron_mg": 2.7,
+   "zinc_mg": 0.97,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1489.0,
+   "protein_g": 10.3,
+   "fat_g": 1.1,
+   "carb_g": 75.2,
+   "water_g": 12.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.17mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "27mg",
+   "铁(Fe)": "2.7mg",
+   "锌(Zn)": "0.97mg"
+  }
+ },
+ "cn:269": {
+  "name": "花卷",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 269",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/269.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 19.0,
+   "iron_mg": 0.4,
+   "zinc_mg": null,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 908.0,
+   "protein_g": 6.4,
+   "fat_g": 1.0,
+   "carb_g": 45.6,
+   "water_g": 45.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "19mg",
+   "铁(Fe)": "0.4mg",
+   "锌(Zn)": ""
+  }
+ },
+ "cn:272": {
+  "name": "馒头(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 272",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/272.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 38.0,
+   "iron_mg": 1.8,
+   "zinc_mg": 0.71,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 947.0,
+   "protein_g": 7.0,
+   "fat_g": 1.1,
+   "carb_g": 47.0,
+   "water_g": 43.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "38mg",
+   "铁(Fe)": "1.8mg",
+   "锌(Zn)": "0.71mg"
+  }
+ },
+ "cn:277": {
+  "name": "油条",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 277",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/277.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 6.0,
+   "iron_mg": 1.0,
+   "zinc_mg": 0.75,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1627.0,
+   "protein_g": 6.9,
+   "fat_g": 17.6,
+   "carb_g": 51.0,
+   "water_g": 21.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "1.0mg",
+   "锌(Zn)": "0.75mg"
+  }
+ },
+ "cn:280": {
+  "name": "稻米(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 280",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/280.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.11,
+   "calcium_mg": 13.0,
+   "iron_mg": 2.3,
+   "zinc_mg": 1.7,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1473.0,
+   "protein_g": 7.4,
+   "fat_g": 0.8,
+   "carb_g": 77.9,
+   "water_g": 13.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.11mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "13mg",
+   "铁(Fe)": "2.3mg",
+   "锌(Zn)": "1.70mg"
+  }
+ },
+ "cn:285": {
+  "name": "糯米[江米](均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 285",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/285.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.11,
+   "calcium_mg": 26.0,
+   "iron_mg": 1.4,
+   "zinc_mg": 1.54,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1485.0,
+   "protein_g": 7.3,
+   "fat_g": 1.0,
+   "carb_g": 78.3,
+   "water_g": 12.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.11mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "26mg",
+   "铁(Fe)": "1.4mg",
+   "锌(Zn)": "1.54mg"
+  }
+ },
+ "cn:320": {
+  "name": "玉米淀粉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 320",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/320.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 18.0,
+   "iron_mg": 4.0,
+   "zinc_mg": 0.09,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1468.0,
+   "protein_g": 1.2,
+   "fat_g": 0.1,
+   "carb_g": 85.0,
+   "water_g": 13.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "18mg",
+   "铁(Fe)": "4.0mg",
+   "锌(Zn)": "0.09mg"
+  }
+ },
+ "cn:334": {
+  "name": "豆腐(北)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 334",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/334.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 138.0,
+   "iron_mg": 2.5,
+   "zinc_mg": 0.63,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 2.5
+  },
+  "macros": {
+   "energy_kj": 415.0,
+   "protein_g": 12.2,
+   "fat_g": 4.8,
+   "carb_g": 2.0,
+   "water_g": 80.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "30.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "138mg",
+   "铁(Fe)": "2.5mg",
+   "锌(Zn)": "0.63mg"
+  }
+ },
+ "cn:335": {
+  "name": "豆腐(南)[南豆腐]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 335",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/335.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 116.0,
+   "iron_mg": 1.5,
+   "zinc_mg": 0.59,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 240.0,
+   "protein_g": 6.2,
+   "fat_g": 2.5,
+   "carb_g": 2.6,
+   "water_g": 87.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "116mg",
+   "铁(Fe)": "1.5mg",
+   "锌(Zn)": "0.59mg"
+  }
+ },
+ "cn:336": {
+  "name": "豆腐(内酯)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 336",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/336.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 17.0,
+   "iron_mg": 0.8,
+   "zinc_mg": 0.55,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 208.0,
+   "protein_g": 5.0,
+   "fat_g": 1.9,
+   "carb_g": 3.3,
+   "water_g": 89.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "17mg",
+   "铁(Fe)": "0.8mg",
+   "锌(Zn)": "0.55mg"
+  }
+ },
+ "cn:337": {
+  "name": "豆腐脑[老豆腐]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 337",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/337.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 18.0,
+   "iron_mg": 0.9,
+   "zinc_mg": 0.49,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 62.0,
+   "protein_g": 1.9,
+   "fat_g": 0.8,
+   "carb_g": 0.0,
+   "water_g": 96.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "18mg",
+   "铁(Fe)": "0.9mg",
+   "锌(Zn)": "0.49mg"
+  }
+ },
+ "cn:339": {
+  "name": "豆奶[豆乳]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 339",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/339.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 23.0,
+   "iron_mg": 0.6,
+   "zinc_mg": 0.24,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 127.0,
+   "protein_g": 2.4,
+   "fat_g": 1.5,
+   "carb_g": 1.8,
+   "water_g": 94.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "23mg",
+   "铁(Fe)": "0.6mg",
+   "锌(Zn)": "0.24mg"
+  }
+ },
+ "cn:344": {
+  "name": "腐竹",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 344",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/344.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.13,
+   "calcium_mg": 77.0,
+   "iron_mg": 16.5,
+   "zinc_mg": 3.69,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1931.0,
+   "protein_g": 44.6,
+   "fat_g": 21.7,
+   "carb_g": 22.3,
+   "water_g": 7.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.13mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "77mg",
+   "铁(Fe)": "16.5mg",
+   "锌(Zn)": "3.69mg"
+  }
+ },
+ "cn:346": {
+  "name": "豆腐干(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 346",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/346.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 308.0,
+   "iron_mg": 4.9,
+   "zinc_mg": 1.76,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 597.0,
+   "protein_g": 16.2,
+   "fat_g": 3.6,
+   "carb_g": 11.5,
+   "water_g": 65.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "308mg",
+   "铁(Fe)": "4.9mg",
+   "锌(Zn)": "1.76mg"
+  }
+ },
+ "cn:350": {
+  "name": "绿豆(干)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 350",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/350.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.25,
+   "calcium_mg": 81.0,
+   "iron_mg": 6.5,
+   "zinc_mg": 2.18,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 10.833333
+  },
+  "macros": {
+   "energy_kj": 1393.0,
+   "protein_g": 21.6,
+   "fat_g": 0.8,
+   "carb_g": 62.0,
+   "water_g": 12.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "130.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.25mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "81mg",
+   "铁(Fe)": "6.5mg",
+   "锌(Zn)": "2.18mg"
+  }
+ },
+ "cn:351": {
+  "name": "赤小豆[小豆，红小豆](干)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 351",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/351.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.16,
+   "calcium_mg": 74.0,
+   "iron_mg": 7.4,
+   "zinc_mg": 2.2,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 6.666667
+  },
+  "macros": {
+   "energy_kj": 1374.0,
+   "protein_g": 20.2,
+   "fat_g": 0.6,
+   "carb_g": 63.4,
+   "water_g": 12.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "80.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.16mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "74mg",
+   "铁(Fe)": "7.4mg",
+   "锌(Zn)": "2.20mg"
+  }
+ },
+ "cn:380": {
+  "name": "胡萝卜(红)[金笋，丁香萝卜]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 380",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/380.html",
+  "per100g": {
+   "vitamin_c_mg": 13.0,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 32.0,
+   "iron_mg": 1.0,
+   "zinc_mg": 0.23,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 344.166667
+  },
+  "macros": {
+   "energy_kj": 164.0,
+   "protein_g": 1.0,
+   "fat_g": 0.2,
+   "carb_g": 8.8,
+   "water_g": 89.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "4130.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "13.0mg",
+   "钙(Ca)": "32mg",
+   "铁(Fe)": "1.0mg",
+   "锌(Zn)": "0.23mg"
+  }
+ },
+ "cn:384": {
+  "name": "甜菜根[甜菜头，糖萝卜](鲜)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 384",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/384.html",
+  "per100g": {
+   "vitamin_c_mg": 8.0,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 56.0,
+   "iron_mg": 0.9,
+   "zinc_mg": 0.31,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 367.0,
+   "protein_g": 1.0,
+   "fat_g": 0.1,
+   "carb_g": 23.5,
+   "water_g": 74.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "8.0mg",
+   "钙(Ca)": "56mg",
+   "铁(Fe)": "0.9mg",
+   "锌(Zn)": "0.31mg"
+  }
+ },
+ "cn:451": {
+  "name": "酸白菜[酸菜]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 451",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/451.html",
+  "per100g": {
+   "vitamin_c_mg": 2.0,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 48.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 0.36,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 2.5
+  },
+  "macros": {
+   "energy_kj": 62.0,
+   "protein_g": 1.1,
+   "fat_g": 0.2,
+   "carb_g": 2.4,
+   "water_g": 95.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "30.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "2.0mg",
+   "钙(Ca)": "48mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "0.36mg"
+  }
+ },
+ "cn:528": {
+  "name": "姜[黄姜](鲜)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 528",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/528.html",
+  "per100g": {
+   "vitamin_c_mg": 4.0,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 27.0,
+   "iron_mg": 1.4,
+   "zinc_mg": 0.34,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 14.166667
+  },
+  "macros": {
+   "energy_kj": 195.0,
+   "protein_g": 1.3,
+   "fat_g": 0.6,
+   "carb_g": 10.3,
+   "water_g": 87.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "170.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "4.0mg",
+   "钙(Ca)": "27mg",
+   "铁(Fe)": "1.4mg",
+   "锌(Zn)": "0.34mg"
+  }
+ },
+ "cn:577": {
+  "name": "蘑菇(鲜蘑)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 577",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/577.html",
+  "per100g": {
+   "vitamin_c_mg": 2.0,
+   "vitamin_b1_mg": 0.08,
+   "calcium_mg": 6.0,
+   "iron_mg": 1.2,
+   "zinc_mg": 0.92,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 0.833333
+  },
+  "macros": {
+   "energy_kj": 100.0,
+   "protein_g": 2.7,
+   "fat_g": 0.1,
+   "carb_g": 4.1,
+   "water_g": 92.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "10.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.08mg",
+   "维生素C(Vitamin C)": "2.0mg",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "1.2mg",
+   "锌(Zn)": "0.92mg"
+  }
+ },
+ "cn:607": {
+  "name": "海带(浸)[江白菜，昆布]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 607",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/607.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 241.0,
+   "iron_mg": 3.3,
+   "zinc_mg": 0.66,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 25.833333
+  },
+  "macros": {
+   "energy_kj": 65.0,
+   "protein_g": 1.1,
+   "fat_g": 0.1,
+   "carb_g": 3.0,
+   "water_g": 94.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "310.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "241mg",
+   "铁(Fe)": "3.3mg",
+   "锌(Zn)": "0.66mg"
+  }
+ },
+ "cn:654": {
+  "name": "红果[山里红，大山楂]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 654",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/654.html",
+  "per100g": {
+   "vitamin_c_mg": 53.0,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 52.0,
+   "iron_mg": 0.9,
+   "zinc_mg": 0.28,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 8.333333
+  },
+  "macros": {
+   "energy_kj": 429.0,
+   "protein_g": 0.5,
+   "fat_g": 0.6,
+   "carb_g": 25.1,
+   "water_g": 73.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "100.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "53.0mg",
+   "钙(Ca)": "52mg",
+   "铁(Fe)": "0.9mg",
+   "锌(Zn)": "0.28mg"
+  }
+ },
+ "cn:701": {
+  "name": "草莓[洋莓，凤阳草莓]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 701",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/701.html",
+  "per100g": {
+   "vitamin_c_mg": 47.0,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 18.0,
+   "iron_mg": 1.8,
+   "zinc_mg": 0.14,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 2.5
+  },
+  "macros": {
+   "energy_kj": 135.0,
+   "protein_g": 1.0,
+   "fat_g": 0.2,
+   "carb_g": 7.1,
+   "water_g": 91.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "30.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "47.0mg",
+   "钙(Ca)": "18mg",
+   "铁(Fe)": "1.8mg",
+   "锌(Zn)": "0.14mg"
+  }
+ },
+ "cn:712": {
+  "name": "柠檬",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 712",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/712.html",
+  "per100g": {
+   "vitamin_c_mg": 22.0,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 101.0,
+   "iron_mg": 0.8,
+   "zinc_mg": 0.65,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 157.0,
+   "protein_g": 1.1,
+   "fat_g": 1.2,
+   "carb_g": 6.2,
+   "water_g": 91.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "22.0mg",
+   "钙(Ca)": "101mg",
+   "铁(Fe)": "0.8mg",
+   "锌(Zn)": "0.65mg"
+  }
+ },
+ "cn:739": {
+  "name": "西瓜(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 739",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/739.html",
+  "per100g": {
+   "vitamin_c_mg": 6.0,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 8.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 0.1,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 37.5
+  },
+  "macros": {
+   "energy_kj": 110.0,
+   "protein_g": 0.6,
+   "fat_g": 0.1,
+   "carb_g": 5.8,
+   "water_g": 93.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "450.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "6.0mg",
+   "钙(Ca)": "8mg",
+   "铁(Fe)": "0.3mg",
+   "锌(Zn)": "0.10mg"
+  }
+ },
+ "cn:743": {
+  "name": "核桃(干)[胡桃]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 743",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/743.html",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.15,
+   "calcium_mg": 56.0,
+   "iron_mg": 2.7,
+   "zinc_mg": 2.17,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 2.5
+  },
+  "macros": {
+   "energy_kj": 2668.0,
+   "protein_g": 14.9,
+   "fat_g": 58.8,
+   "carb_g": 19.1,
+   "water_g": 5.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "30.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.15mg",
+   "维生素C(Vitamin C)": "1.0mg",
+   "钙(Ca)": "56mg",
+   "铁(Fe)": "2.7mg",
+   "锌(Zn)": "2.17mg"
+  }
+ },
+ "cn:769": {
+  "name": "南瓜子(炒)[白瓜子]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 769",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/769.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.08,
+   "calcium_mg": 37.0,
+   "iron_mg": 6.5,
+   "zinc_mg": 7.12,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2415.0,
+   "protein_g": 36.0,
+   "fat_g": 46.1,
+   "carb_g": 7.9,
+   "water_g": 4.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.08mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "37mg",
+   "铁(Fe)": "6.5mg",
+   "锌(Zn)": "7.12mg"
+  }
+ },
+ "cn:779": {
+  "name": "猪肉(肥瘦)(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 779",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/779.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.22,
+   "calcium_mg": 6.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 2.06,
+   "vitamin_a_ug": 18.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1634.0,
+   "protein_g": 13.2,
+   "fat_g": 37.0,
+   "carb_g": 2.4,
+   "water_g": 46.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "18.0μg",
+   "硫胺素(Thiamin)": "0.22mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "2.06mg"
+  }
+ },
+ "cn:780": {
+  "name": "猪肉(肥)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 780",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/780.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.08,
+   "calcium_mg": 3.0,
+   "iron_mg": 1.0,
+   "zinc_mg": 0.69,
+   "vitamin_a_ug": 29.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 3319.0,
+   "protein_g": 2.4,
+   "fat_g": 88.6,
+   "carb_g": 0.0,
+   "water_g": 8.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "29.0μg",
+   "硫胺素(Thiamin)": "0.08mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "3mg",
+   "铁(Fe)": "1.0mg",
+   "锌(Zn)": "0.69mg"
+  }
+ },
+ "cn:786": {
+  "name": "猪肉(奶面)[硬五花]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 786",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/786.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.36,
+   "calcium_mg": 6.0,
+   "iron_mg": 1.3,
+   "zinc_mg": 2.2,
+   "vitamin_a_ug": 10.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1401.0,
+   "protein_g": 13.6,
+   "fat_g": 30.6,
+   "carb_g": 2.2,
+   "water_g": 53.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "10.0μg",
+   "硫胺素(Thiamin)": "0.36mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "1.3mg",
+   "锌(Zn)": "2.20mg"
+  }
+ },
+ "cn:788": {
+  "name": "猪肉(瘦)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 788",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/788.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.54,
+   "calcium_mg": 6.0,
+   "iron_mg": 3.0,
+   "zinc_mg": 2.99,
+   "vitamin_a_ug": 44.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 600.0,
+   "protein_g": 20.3,
+   "fat_g": 6.2,
+   "carb_g": 1.5,
+   "water_g": 71.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "44.0μg",
+   "硫胺素(Thiamin)": "0.54mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "3.0mg",
+   "锌(Zn)": "2.99mg"
+  }
+ },
+ "cn:804": {
+  "name": "叉烧肉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 804",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/804.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.66,
+   "calcium_mg": 8.0,
+   "iron_mg": 2.6,
+   "zinc_mg": 2.42,
+   "vitamin_a_ug": 16.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1164.0,
+   "protein_g": 23.8,
+   "fat_g": 16.9,
+   "carb_g": 7.9,
+   "water_g": 49.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "16.0μg",
+   "硫胺素(Thiamin)": "0.66mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "8mg",
+   "铁(Fe)": "2.6mg",
+   "锌(Zn)": "2.42mg"
+  }
+ },
+ "cn:805": {
+  "name": "腊肉(培根)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 805",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/805.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.9,
+   "calcium_mg": 2.0,
+   "iron_mg": 2.4,
+   "zinc_mg": 2.26,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 756.0,
+   "protein_g": 22.3,
+   "fat_g": 9.0,
+   "carb_g": 2.6,
+   "water_g": 63.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.90mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "2mg",
+   "铁(Fe)": "2.4mg",
+   "锌(Zn)": "2.26mg"
+  }
+ },
+ "cn:806": {
+  "name": "腊肉(生)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 806",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/806.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 22.0,
+   "iron_mg": 7.5,
+   "zinc_mg": 3.49,
+   "vitamin_a_ug": 96.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2056.0,
+   "protein_g": 11.8,
+   "fat_g": 48.8,
+   "carb_g": 2.9,
+   "water_g": 31.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "96.0μg",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "22mg",
+   "铁(Fe)": "7.5mg",
+   "锌(Zn)": "3.49mg"
+  }
+ },
+ "cn:807": {
+  "name": "午餐肉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 807",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/807.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.24,
+   "calcium_mg": 57.0,
+   "iron_mg": 0.8,
+   "zinc_mg": 1.39,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 952.0,
+   "protein_g": 9.4,
+   "fat_g": 15.9,
+   "carb_g": 12.0,
+   "water_g": 59.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.24mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "57mg",
+   "铁(Fe)": "0.8mg",
+   "锌(Zn)": "1.39mg"
+  }
+ },
+ "cn:808": {
+  "name": "咸肉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 808",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/808.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.77,
+   "calcium_mg": 10.0,
+   "iron_mg": 2.6,
+   "zinc_mg": 2.04,
+   "vitamin_a_ug": 20.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1613.0,
+   "protein_g": 16.5,
+   "fat_g": 36.0,
+   "carb_g": 0.0,
+   "water_g": 40.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "20.0μg",
+   "硫胺素(Thiamin)": "0.77mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "10mg",
+   "铁(Fe)": "2.6mg",
+   "锌(Zn)": "2.04mg"
+  }
+ },
+ "cn:811": {
+  "name": "猪肉松(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 811",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/811.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 41.0,
+   "iron_mg": 6.4,
+   "zinc_mg": 4.28,
+   "vitamin_a_ug": 44.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1668.0,
+   "protein_g": 23.4,
+   "fat_g": 11.5,
+   "carb_g": 49.7,
+   "water_g": 9.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "44.0μg",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "41mg",
+   "铁(Fe)": "6.4mg",
+   "锌(Zn)": "4.28mg"
+  }
+ },
+ "cn:814": {
+  "name": "广东香肠",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 814",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/814.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.42,
+   "calcium_mg": 5.0,
+   "iron_mg": 2.8,
+   "zinc_mg": 2.62,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1795.0,
+   "protein_g": 18.0,
+   "fat_g": 37.3,
+   "carb_g": 6.4,
+   "water_g": 33.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.42mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "5mg",
+   "铁(Fe)": "2.8mg",
+   "锌(Zn)": "2.62mg"
+  }
+ },
+ "cn:815": {
+  "name": "火腿肠",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 815",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/815.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.26,
+   "calcium_mg": 9.0,
+   "iron_mg": 4.5,
+   "zinc_mg": 3.22,
+   "vitamin_a_ug": 5.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 888.0,
+   "protein_g": 14.0,
+   "fat_g": 10.4,
+   "carb_g": 15.6,
+   "water_g": 57.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "5.0μg",
+   "硫胺素(Thiamin)": "0.26mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "4.5mg",
+   "锌(Zn)": "3.22mg"
+  }
+ },
+ "cn:819": {
+  "name": "小泥肠",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 819",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/819.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.16,
+   "calcium_mg": 20.0,
+   "iron_mg": 1.1,
+   "zinc_mg": 1.24,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1220.0,
+   "protein_g": 11.3,
+   "fat_g": 26.3,
+   "carb_g": 3.2,
+   "water_g": 56.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.16mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "20mg",
+   "铁(Fe)": "1.1mg",
+   "锌(Zn)": "1.24mg"
+  }
+ },
+ "cn:822": {
+  "name": "金华火腿",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 822",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/822.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.51,
+   "calcium_mg": 9.0,
+   "iron_mg": 2.1,
+   "zinc_mg": 2.26,
+   "vitamin_a_ug": 20.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1317.0,
+   "protein_g": 16.4,
+   "fat_g": 28.0,
+   "carb_g": 0.1,
+   "water_g": 48.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "20.0μg",
+   "硫胺素(Thiamin)": "0.51mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "2.1mg",
+   "锌(Zn)": "2.26mg"
+  }
+ },
+ "cn:841": {
+  "name": "酱牛肉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 841",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/841.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 20.0,
+   "iron_mg": 4.0,
+   "zinc_mg": 7.12,
+   "vitamin_a_ug": 11.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1029.0,
+   "protein_g": 31.4,
+   "fat_g": 11.9,
+   "carb_g": 3.2,
+   "water_g": 50.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "11.0μg",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "20mg",
+   "铁(Fe)": "4.0mg",
+   "锌(Zn)": "7.12mg"
+  }
+ },
+ "cn:842": {
+  "name": "牛肉干",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 842",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/842.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 43.0,
+   "iron_mg": 15.6,
+   "zinc_mg": 7.26,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2288.0,
+   "protein_g": 45.6,
+   "fat_g": 40.0,
+   "carb_g": 1.9,
+   "water_g": 9.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "43mg",
+   "铁(Fe)": "15.6mg",
+   "锌(Zn)": "7.26mg"
+  }
+ },
+ "cn:891": {
+  "name": "鸭(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 891",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/891.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.08,
+   "calcium_mg": 6.0,
+   "iron_mg": 2.2,
+   "zinc_mg": 1.33,
+   "vitamin_a_ug": 52.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 996.0,
+   "protein_g": 15.5,
+   "fat_g": 19.7,
+   "carb_g": 0.2,
+   "water_g": 63.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "52.0μg",
+   "硫胺素(Thiamin)": "0.08mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "2.2mg",
+   "锌(Zn)": "1.33mg"
+  }
+ },
+ "cn:901": {
+  "name": "北京烤鸭",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 901",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/901.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 35.0,
+   "iron_mg": 2.4,
+   "zinc_mg": 1.25,
+   "vitamin_a_ug": 36.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1805.0,
+   "protein_g": 16.6,
+   "fat_g": 38.4,
+   "carb_g": 6.0,
+   "water_g": 38.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "36.0μg",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "35mg",
+   "铁(Fe)": "2.4mg",
+   "锌(Zn)": "1.25mg"
+  }
+ },
+ "cn:902": {
+  "name": "酱鸭",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 902",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/902.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 14.0,
+   "iron_mg": 4.1,
+   "zinc_mg": 2.69,
+   "vitamin_a_ug": 11.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1109.0,
+   "protein_g": 18.9,
+   "fat_g": 18.4,
+   "carb_g": 6.3,
+   "water_g": 53.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "11.0μg",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "14mg",
+   "铁(Fe)": "4.1mg",
+   "锌(Zn)": "2.69mg"
+  }
+ },
+ "cn:916": {
+  "name": "乳品（牛乳，均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 916",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/916.html",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 104.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 0.42,
+   "vitamin_a_ug": 24.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 227.0,
+   "protein_g": 3.0,
+   "fat_g": 3.2,
+   "carb_g": 3.4,
+   "water_g": 89.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "24.0μg",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "1.0mg",
+   "钙(Ca)": "104mg",
+   "铁(Fe)": "0.3mg",
+   "锌(Zn)": "0.42mg"
+  }
+ },
+ "cn:926": {
+  "name": "牛乳(伊利牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 926",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/926.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 110.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.45,
+   "vitamin_a_ug": 16.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 283.0,
+   "protein_g": 3.2,
+   "fat_g": 3.7,
+   "carb_g": 5.4,
+   "water_g": 86.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "16.0μg",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "Tr",
+   "钙(Ca)": "110mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.45mg"
+  }
+ },
+ "cn:939": {
+  "name": "全脂奶粉(伊利牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 939",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/939.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 750.0,
+   "iron_mg": 3.9,
+   "zinc_mg": 3.97,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2110.0,
+   "protein_g": 22.0,
+   "fat_g": 26.0,
+   "carb_g": 45.5,
+   "water_g": 3.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "750mg",
+   "铁(Fe)": "3.9mg",
+   "锌(Zn)": "3.97mg"
+  }
+ },
+ "cn:944": {
+  "name": "高钙高铁奶粉(可淇牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 944",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/944.html",
+  "per100g": {
+   "vitamin_c_mg": 40.0,
+   "vitamin_b1_mg": 0.8,
+   "calcium_mg": 1000.0,
+   "iron_mg": 9.0,
+   "zinc_mg": 6.0,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1892.0,
+   "protein_g": 17.0,
+   "fat_g": 13.0,
+   "carb_g": 66.0,
+   "water_g": 4.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.80mg",
+   "维生素C(Vitamin C)": "40.0mg",
+   "钙(Ca)": "1000mg",
+   "铁(Fe)": "9.0mg",
+   "锌(Zn)": "6.00mg"
+  }
+ },
+ "cn:958": {
+  "name": "乳品（酸奶，均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 958",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/958.html",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 118.0,
+   "iron_mg": 0.4,
+   "zinc_mg": 0.53,
+   "vitamin_a_ug": 26.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 301.0,
+   "protein_g": 2.5,
+   "fat_g": 2.7,
+   "carb_g": 9.3,
+   "water_g": 84.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "26.0μg",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "1.0mg",
+   "钙(Ca)": "118mg",
+   "铁(Fe)": "0.4mg",
+   "锌(Zn)": "0.53mg"
+  }
+ },
+ "cn:960": {
+  "name": "酸奶(调味)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 960",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/960.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 160.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 0.63,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 372.0,
+   "protein_g": 3.0,
+   "fat_g": 3.2,
+   "carb_g": 11.9,
+   "water_g": 81.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "Tr",
+   "钙(Ca)": "160mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "0.63mg"
+  }
+ },
+ "cn:961": {
+  "name": "酸奶(果粒)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 961",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/961.html",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 61.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.39,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 411.0,
+   "protein_g": 3.3,
+   "fat_g": 2.9,
+   "carb_g": 14.6,
+   "water_g": 78.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "1.0mg",
+   "钙(Ca)": "61mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.39mg"
+  }
+ },
+ "cn:963": {
+  "name": "奶豆腐(鲜)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 963",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/963.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 597.0,
+   "iron_mg": 3.1,
+   "zinc_mg": 2.48,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1287.0,
+   "protein_g": 46.2,
+   "fat_g": 7.8,
+   "carb_g": 12.5,
+   "water_g": 31.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "597mg",
+   "铁(Fe)": "3.1mg",
+   "锌(Zn)": "2.48mg"
+  }
+ },
+ "cn:968": {
+  "name": "硬质干酪",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 968",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/968.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 731.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 4.1,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 17.916667
+  },
+  "macros": {
+   "energy_kj": 1756.0,
+   "protein_g": 24.9,
+   "fat_g": 34.5,
+   "carb_g": 3.3,
+   "water_g": 37.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "215.0μg",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "Tr",
+   "钙(Ca)": "731mg",
+   "铁(Fe)": "0.3mg",
+   "锌(Zn)": "4.10mg"
+  }
+ },
+ "cn:972": {
+  "name": "炼乳(甜，罐头)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 972",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/972.html",
+  "per100g": {
+   "vitamin_c_mg": 2.0,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 242.0,
+   "iron_mg": 0.4,
+   "zinc_mg": 1.53,
+   "vitamin_a_ug": 41.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1400.0,
+   "protein_g": 8.0,
+   "fat_g": 8.7,
+   "carb_g": 55.4,
+   "water_g": 26.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "41.0μg",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "2.0mg",
+   "钙(Ca)": "242mg",
+   "铁(Fe)": "0.4mg",
+   "锌(Zn)": "1.53mg"
+  }
+ },
+ "cn:974": {
+  "name": "奶片",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 974",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/974.html",
+  "per100g": {
+   "vitamin_c_mg": 5.0,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 269.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 3.0,
+   "vitamin_a_ug": 75.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1982.0,
+   "protein_g": 13.3,
+   "fat_g": 20.2,
+   "carb_g": 59.3,
+   "water_g": 3.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "75.0μg",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "5.0mg",
+   "钙(Ca)": "269mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "3.00mg"
+  }
+ },
+ "cn:978": {
+  "name": "蛋（鸡蛋，均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 978",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.11,
+   "calcium_mg": 56.0,
+   "iron_mg": 2.0,
+   "zinc_mg": 1.1,
+   "vitamin_a_ug": 234.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 599.0,
+   "protein_g": 13.3,
+   "fat_g": 8.8,
+   "carb_g": 2.8,
+   "water_g": 74.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "234.0μg",
+   "硫胺素(Thiamin)": "0.11mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "56mg",
+   "铁(Fe)": "2.0mg",
+   "锌(Zn)": "1.10mg"
+  }
+ },
+ "cn:982": {
+  "name": "鸡蛋白",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 982",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/982.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 9.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 0.02,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 254.0,
+   "protein_g": 11.6,
+   "fat_g": 0.1,
+   "carb_g": 3.1,
+   "water_g": 84.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "0.02mg"
+  }
+ },
+ "cn:984": {
+  "name": "蛋黄（鸡蛋黄）",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 984",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/984.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.33,
+   "calcium_mg": 112.0,
+   "iron_mg": 6.5,
+   "zinc_mg": 3.79,
+   "vitamin_a_ug": 438.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1360.0,
+   "protein_g": 15.2,
+   "fat_g": 28.2,
+   "carb_g": 3.4,
+   "water_g": 51.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "438.0μg",
+   "硫胺素(Thiamin)": "0.33mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "112mg",
+   "铁(Fe)": "6.5mg",
+   "锌(Zn)": "3.79mg"
+  }
+ },
+ "cn:994": {
+  "name": "蛋（松花蛋，鸭蛋)[皮蛋]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 994",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/994.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 63.0,
+   "iron_mg": 3.3,
+   "zinc_mg": 1.48,
+   "vitamin_a_ug": 215.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 714.0,
+   "protein_g": 14.2,
+   "fat_g": 10.7,
+   "carb_g": 4.5,
+   "water_g": 68.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "215.0μg",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "63mg",
+   "铁(Fe)": "3.3mg",
+   "锌(Zn)": "1.48mg"
+  }
+ },
+ "cn:996": {
+  "name": "咸鸭蛋(煮)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 996",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/996.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.15,
+   "calcium_mg": 52.0,
+   "iron_mg": 2.1,
+   "zinc_mg": 1.5,
+   "vitamin_a_ug": 56.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 734.0,
+   "protein_g": 13.8,
+   "fat_g": 13.5,
+   "carb_g": 0.0,
+   "water_g": 70.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "56.0μg",
+   "硫胺素(Thiamin)": "0.15mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "52mg",
+   "铁(Fe)": "2.1mg",
+   "锌(Zn)": "1.50mg"
+  }
+ },
+ "cn:1052": {
+  "name": "鲑鱼[大麻哈鱼]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1052",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1052.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.07,
+   "calcium_mg": 13.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 1.11,
+   "vitamin_a_ug": 45.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 581.0,
+   "protein_g": 17.2,
+   "fat_g": 7.8,
+   "carb_g": 0.0,
+   "water_g": 74.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "45.0μg",
+   "硫胺素(Thiamin)": "0.07mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "13mg",
+   "铁(Fe)": "0.3mg",
+   "锌(Zn)": "1.11mg"
+  }
+ },
+ "cn:1062": {
+  "name": "鳕鱼[鳕狭，明太鱼]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1062",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1062.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 42.0,
+   "iron_mg": 0.5,
+   "zinc_mg": 0.86,
+   "vitamin_a_ug": 14.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 374.0,
+   "protein_g": 20.4,
+   "fat_g": 0.5,
+   "carb_g": 0.5,
+   "water_g": 77.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "14.0μg",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "42mg",
+   "铁(Fe)": "0.5mg",
+   "锌(Zn)": "0.86mg"
+  }
+ },
+ "cn:1067": {
+  "name": "鱼丸",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1067",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1067.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 97.0,
+   "iron_mg": 1.2,
+   "zinc_mg": 1.59,
+   "vitamin_a_ug": 5.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 453.0,
+   "protein_g": 11.1,
+   "fat_g": 1.3,
+   "carb_g": 12.7,
+   "water_g": 72.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "5.0μg",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "97mg",
+   "铁(Fe)": "1.2mg",
+   "锌(Zn)": "1.59mg"
+  }
+ },
+ "cn:1073": {
+  "name": "鲮鱼(豆豉，熟)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1073",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1073.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 179.0,
+   "iron_mg": 9.2,
+   "zinc_mg": 2.18,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 6.25
+  },
+  "macros": {
+   "energy_kj": 1963.0,
+   "protein_g": 25.5,
+   "fat_g": 33.1,
+   "carb_g": 17.9,
+   "water_g": 18.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "75.0μg",
+   "维生素A(Vitamin)": "Tr",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "179mg",
+   "铁(Fe)": "9.2mg",
+   "锌(Zn)": "2.18mg"
+  }
+ },
+ "cn:1088": {
+  "name": "鳕鱼(炸)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1088",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1088.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.07,
+   "calcium_mg": 43.0,
+   "iron_mg": 0.4,
+   "zinc_mg": 0.4,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1032.0,
+   "protein_g": 12.4,
+   "fat_g": 14.3,
+   "carb_g": 17.4,
+   "water_g": 55.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.07mg",
+   "维生素C(Vitamin C)": "Tr",
+   "钙(Ca)": "43mg",
+   "铁(Fe)": "0.4mg",
+   "锌(Zn)": "0.40mg"
+  }
+ },
+ "cn:1105": {
+  "name": "蟹足棒",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1105",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1105.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 144.0,
+   "iron_mg": 0.6,
+   "zinc_mg": 0.72,
+   "vitamin_a_ug": 5.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 522.0,
+   "protein_g": 9.0,
+   "fat_g": 0.6,
+   "carb_g": 20.4,
+   "water_g": 67.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "5.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "144mg",
+   "铁(Fe)": "0.6mg",
+   "锌(Zn)": "0.72mg"
+  }
+ },
+ "cn:1206": {
+  "name": "凉粉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1206",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1206.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 9.0,
+   "iron_mg": 1.3,
+   "zinc_mg": 0.24,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 160.0,
+   "protein_g": 0.2,
+   "fat_g": 0.3,
+   "carb_g": 8.9,
+   "water_g": 90.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "1.3mg",
+   "锌(Zn)": "0.24mg"
+  }
+ },
+ "cn:1211": {
+  "name": "年糕",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1211",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1211.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 31.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 1.36,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 661.0,
+   "protein_g": 3.3,
+   "fat_g": 0.6,
+   "carb_g": 34.7,
+   "water_g": 60.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "31mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "1.36mg"
+  }
+ },
+ "cn:1220": {
+  "name": "黑芝麻汤圆",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1220",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1220.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.04,
+   "calcium_mg": 69.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 1.31,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1319.0,
+   "protein_g": 4.4,
+   "fat_g": 13.8,
+   "carb_g": 44.2,
+   "water_g": 37.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "Tr",
+   "硫胺素(Thiamin)": "0.04mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "69mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "1.31mg"
+  }
+ },
+ "cn:1224": {
+  "name": "蛋糕(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1224",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1224.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.09,
+   "calcium_mg": 39.0,
+   "iron_mg": 2.5,
+   "zinc_mg": 1.01,
+   "vitamin_a_ug": 54.0,
+   "provitamin_a_ug": 15.833333
+  },
+  "macros": {
+   "energy_kj": 1472.0,
+   "protein_g": 8.6,
+   "fat_g": 5.1,
+   "carb_g": 67.1,
+   "water_g": 18.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "190.0μg",
+   "维生素A(Vitamin)": "54.0μg",
+   "硫胺素(Thiamin)": "0.09mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "39mg",
+   "铁(Fe)": "2.5mg",
+   "锌(Zn)": "1.01mg"
+  }
+ },
+ "cn:1227": {
+  "name": "月饼(豆沙)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1227",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1227.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 64.0,
+   "iron_mg": 3.1,
+   "zinc_mg": 0.64,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 3.333333
+  },
+  "macros": {
+   "energy_kj": 1730.0,
+   "protein_g": 8.2,
+   "fat_g": 13.6,
+   "carb_g": 65.6,
+   "water_g": 11.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "40.0μg",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "64mg",
+   "铁(Fe)": "3.1mg",
+   "锌(Zn)": "0.64mg"
+  }
+ },
+ "cn:1228": {
+  "name": "月饼(五仁)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1228",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1228.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 54.0,
+   "iron_mg": 2.8,
+   "zinc_mg": 0.61,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 3.333333
+  },
+  "macros": {
+   "energy_kj": 1781.0,
+   "protein_g": 8.0,
+   "fat_g": 16.0,
+   "carb_g": 64.0,
+   "water_g": 11.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "40.0μg",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "54mg",
+   "铁(Fe)": "2.8mg",
+   "锌(Zn)": "0.61mg"
+  }
+ },
+ "cn:1230": {
+  "name": "月饼(蛋黄)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1230",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1230.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 35.0,
+   "iron_mg": 2.0,
+   "zinc_mg": 0.97,
+   "vitamin_a_ug": 45.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1682.0,
+   "protein_g": 6.0,
+   "fat_g": 20.0,
+   "carb_g": 50.2,
+   "water_g": 23.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "45.0μg",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "35mg",
+   "铁(Fe)": "2.0mg",
+   "锌(Zn)": "0.97mg"
+  }
+ },
+ "cn:1241": {
+  "name": "麻花",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1241",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1241.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 26.0,
+   "iron_mg": null,
+   "zinc_mg": 3.06,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2201.0,
+   "protein_g": 8.3,
+   "fat_g": 31.5,
+   "carb_g": 53.4,
+   "water_g": 6.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "26mg",
+   "铁(Fe)": "",
+   "锌(Zn)": "3.06mg"
+  }
+ },
+ "cn:1244": {
+  "name": "桃酥",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1244",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1244.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 48.0,
+   "iron_mg": 3.1,
+   "zinc_mg": 0.69,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2024.0,
+   "protein_g": 7.1,
+   "fat_g": 21.8,
+   "carb_g": 65.1,
+   "water_g": 5.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "48mg",
+   "铁(Fe)": "3.1mg",
+   "锌(Zn)": "0.69mg"
+  }
+ },
+ "cn:1274": {
+  "name": "燕麦片",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1274",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1274.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.3,
+   "calcium_mg": 186.0,
+   "iron_mg": 7.0,
+   "zinc_mg": 2.59,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1593.0,
+   "protein_g": 15.0,
+   "fat_g": 6.7,
+   "carb_g": 66.9,
+   "water_g": 9.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.30mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "186mg",
+   "铁(Fe)": "7.0mg",
+   "锌(Zn)": "2.59mg"
+  }
+ },
+ "cn:1289": {
+  "name": "玉米片",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1289",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1289.html",
+  "per100g": {
+   "vitamin_c_mg": 22.0,
+   "vitamin_b1_mg": 1.3,
+   "calcium_mg": 7.0,
+   "iron_mg": 30.0,
+   "zinc_mg": 0.27,
+   "vitamin_a_ug": 482.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1579.0,
+   "protein_g": 7.0,
+   "fat_g": 0.8,
+   "carb_g": 86.0,
+   "water_g": 3.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "482.0μg",
+   "硫胺素(Thiamin)": "1.30mg",
+   "维生素C(Vitamin C)": "22.0mg",
+   "钙(Ca)": "7mg",
+   "铁(Fe)": "30.0mg",
+   "锌(Zn)": "0.27mg"
+  }
+ },
+ "cn:1291": {
+  "name": "方便面",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1291",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1291.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.12,
+   "calcium_mg": 25.0,
+   "iron_mg": 4.1,
+   "zinc_mg": 1.06,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1983.0,
+   "protein_g": 9.5,
+   "fat_g": 21.1,
+   "carb_g": 61.6,
+   "water_g": 3.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.12mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "25mg",
+   "铁(Fe)": "4.1mg",
+   "锌(Zn)": "1.06mg"
+  }
+ },
+ "cn:1311": {
+  "name": "冬菜虾仁馄饨",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1311",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1311.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.08,
+   "calcium_mg": 33.0,
+   "iron_mg": 1.1,
+   "zinc_mg": 0.6,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 744.0,
+   "protein_g": 9.1,
+   "fat_g": 4.3,
+   "carb_g": 26.5,
+   "water_g": 58.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.08mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "33mg",
+   "铁(Fe)": "1.1mg",
+   "锌(Zn)": "0.60mg"
+  }
+ },
+ "cn:1316": {
+  "name": "面包(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1316",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1316.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 49.0,
+   "iron_mg": 2.0,
+   "zinc_mg": 0.75,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1322.0,
+   "protein_g": 8.3,
+   "fat_g": 5.1,
+   "carb_g": 58.6,
+   "water_g": 27.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "49mg",
+   "铁(Fe)": "2.0mg",
+   "锌(Zn)": "0.75mg"
+  }
+ },
+ "cn:1317": {
+  "name": "法式牛角面包",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1317",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1317.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 83.0,
+   "iron_mg": 1.7,
+   "zinc_mg": 0.61,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1587.0,
+   "protein_g": 8.4,
+   "fat_g": 14.3,
+   "carb_g": 54.6,
+   "water_g": 21.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "83mg",
+   "铁(Fe)": "1.7mg",
+   "锌(Zn)": "0.61mg"
+  }
+ },
+ "cn:1319": {
+  "name": "黄油面包",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1319",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1319.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 35.0,
+   "iron_mg": 1.5,
+   "zinc_mg": 0.5,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1393.0,
+   "protein_g": 7.9,
+   "fat_g": 8.7,
+   "carb_g": 55.6,
+   "water_g": 27.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "35mg",
+   "铁(Fe)": "1.5mg",
+   "锌(Zn)": "0.50mg"
+  }
+ },
+ "cn:1323": {
+  "name": "苏打饼干",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1323",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1323.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": null,
+   "iron_mg": 1.6,
+   "zinc_mg": 0.35,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1723.0,
+   "protein_g": 8.4,
+   "fat_g": 7.7,
+   "carb_g": 76.2,
+   "water_g": 5.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "0.35mg"
+  }
+ },
+ "cn:1325": {
+  "name": "饼干(夹心)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1325",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1325.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 45.0,
+   "iron_mg": 1.3,
+   "zinc_mg": 0.38,
+   "vitamin_a_ug": 49.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1928.0,
+   "protein_g": 6.2,
+   "fat_g": 15.9,
+   "carb_g": 75.3,
+   "water_g": 1.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "49.0μg",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "45mg",
+   "铁(Fe)": "1.3mg",
+   "锌(Zn)": "0.38mg"
+  }
+ },
+ "cn:1328": {
+  "name": "曲奇饼(加奶油)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1328",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1328.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 70.0,
+   "iron_mg": 1.0,
+   "zinc_mg": null,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2201.0,
+   "protein_g": 6.4,
+   "fat_g": 27.2,
+   "carb_g": 63.9,
+   "water_g": 1.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "—",
+   "维生素C(Vitamin C)": "Tr",
+   "钙(Ca)": "70mg",
+   "铁(Fe)": "1.0mg",
+   "锌(Zn)": "—"
+  }
+ },
+ "cn:1330": {
+  "name": "水饺(猪肉白菜馅)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1330",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1330.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 21.0,
+   "iron_mg": 0.5,
+   "zinc_mg": 0.6,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 940.0,
+   "protein_g": 7.5,
+   "fat_g": 10.8,
+   "carb_g": 26.0,
+   "water_g": 54.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "Tr",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "21mg",
+   "铁(Fe)": "0.5mg",
+   "锌(Zn)": "0.60mg"
+  }
+ },
+ "cn:1339": {
+  "name": "包子(猪肉馅)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1339",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1339.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 13.0,
+   "iron_mg": 1.1,
+   "zinc_mg": 0.7,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 965.0,
+   "protein_g": 7.3,
+   "fat_g": 10.0,
+   "carb_g": 28.6,
+   "water_g": 52.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "Tr",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "13mg",
+   "铁(Fe)": "1.1mg",
+   "锌(Zn)": "0.70mg"
+  }
+ },
+ "cn:1340": {
+  "name": "雪米饼",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1340",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1340.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 6.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 0.49,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1968.0,
+   "protein_g": 5.5,
+   "fat_g": 17.6,
+   "carb_g": 73.5,
+   "water_g": 2.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "0.3mg",
+   "锌(Zn)": "0.49mg"
+  }
+ },
+ "cn:1341": {
+  "name": "蛋酥卷",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1341",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1341.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 18.0,
+   "iron_mg": 2.0,
+   "zinc_mg": 0.84,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 88.583333
+  },
+  "macros": {
+   "energy_kj": 2261.0,
+   "protein_g": 8.1,
+   "fat_g": 35.3,
+   "carb_g": 53.7,
+   "water_g": 2.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "1063.0μg",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "18mg",
+   "铁(Fe)": "2.0mg",
+   "锌(Zn)": "0.84mg"
+  }
+ },
+ "cn:1348": {
+  "name": "虾片",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1348",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1348.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 47.0,
+   "iron_mg": 0.5,
+   "zinc_mg": null,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kj": 2243.0,
+   "protein_g": 5.3,
+   "fat_g": 30.9,
+   "carb_g": 59.5,
+   "water_g": 2.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "0.0μg",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "47mg",
+   "铁(Fe)": "0.5mg",
+   "锌(Zn)": "—"
+  }
+ },
+ "cn:1349": {
+  "name": "锅巴(豆香)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1349",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1349.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 13.0,
+   "iron_mg": 2.7,
+   "zinc_mg": 0.97,
+   "vitamin_a_ug": 107.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2235.0,
+   "protein_g": 7.6,
+   "fat_g": 30.6,
+   "carb_g": 59.2,
+   "water_g": 0.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "107.0μg",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "13mg",
+   "铁(Fe)": "2.7mg",
+   "锌(Zn)": "0.97mg"
+  }
+ },
+ "cn:1351": {
+  "name": "海苔",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1351",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1351.html",
+  "per100g": {
+   "vitamin_c_mg": 186.0,
+   "vitamin_b1_mg": 0.24,
+   "calcium_mg": 336.0,
+   "iron_mg": 14.3,
+   "zinc_mg": 4.11,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 797.75
+  },
+  "macros": {
+   "energy_kj": 1117.0,
+   "protein_g": 29.4,
+   "fat_g": 4.8,
+   "carb_g": 50.4,
+   "water_g": 5.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "9573.0μg",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.24mg",
+   "维生素C(Vitamin C)": "186.0mg",
+   "钙(Ca)": "336mg",
+   "铁(Fe)": "14.3mg",
+   "锌(Zn)": "4.11mg"
+  }
+ },
+ "cn:1353": {
+  "name": "薯片(烧烤味)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1353",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1353.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.17,
+   "calcium_mg": 22.0,
+   "iron_mg": 1.8,
+   "zinc_mg": 0.93,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2317.0,
+   "protein_g": 7.5,
+   "fat_g": 37.6,
+   "carb_g": 49.2,
+   "water_g": 1.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "Tr",
+   "硫胺素(Thiamin)": "0.17mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "22mg",
+   "铁(Fe)": "1.8mg",
+   "锌(Zn)": "0.93mg"
+  }
+ },
+ "cn:1363": {
+  "name": "果冻(草莓水果冻)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1363",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1363.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 35.0,
+   "iron_mg": 0.9,
+   "zinc_mg": 0.0,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 302.0,
+   "protein_g": 0.1,
+   "fat_g": 0.2,
+   "carb_g": 17.2,
+   "water_g": 82.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "—",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "35mg",
+   "铁(Fe)": "0.9mg",
+   "锌(Zn)": "Tr"
+  }
+ },
+ "cn:1367": {
+  "name": "可口可乐",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1367",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1367.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 3.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.01,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 184.0,
+   "protein_g": 0.1,
+   "fat_g": 0.0,
+   "carb_g": 10.7,
+   "water_g": 89.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.00mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "3mg",
+   "铁(Fe)": "0.0mg",
+   "锌(Zn)": "0.01mg"
+  }
+ },
+ "cn:1369": {
+  "name": "苹果汁饮料(光明牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1369",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1369.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 2.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.03,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 229.0,
+   "protein_g": 0.1,
+   "fat_g": 0.3,
+   "carb_g": 12.8,
+   "water_g": 86.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "Tr",
+   "钙(Ca)": "2mg",
+   "铁(Fe)": "0.0mg",
+   "锌(Zn)": "0.03mg"
+  }
+ },
+ "cn:1378": {
+  "name": "胡萝卜汁饮料",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1378",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1378.html",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 5.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.02,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 3.25
+  },
+  "macros": {
+   "energy_kj": 105.0,
+   "protein_g": 0.1,
+   "fat_g": 0.0,
+   "carb_g": 6.3,
+   "water_g": 93.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "39.0μg",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "1.0mg",
+   "钙(Ca)": "5mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.02mg"
+  }
+ },
+ "cn:1382": {
+  "name": "核桃乳(儿童型)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1382",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1382.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 3.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.1,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 183.0,
+   "protein_g": 0.8,
+   "fat_g": 2.1,
+   "carb_g": 5.4,
+   "water_g": 91.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "3mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.10mg"
+  }
+ },
+ "cn:1386": {
+  "name": "杏仁露",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1386",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1386.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 20.0,
+   "iron_mg": 0.2,
+   "zinc_mg": 0.14,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 205.0,
+   "protein_g": 0.7,
+   "fat_g": 2.1,
+   "carb_g": 6.8,
+   "water_g": 90.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.00mg",
+   "维生素C(Vitamin C)": "Tr",
+   "钙(Ca)": "20mg",
+   "铁(Fe)": "0.2mg",
+   "锌(Zn)": "0.14mg"
+  }
+ },
+ "cn:1387": {
+  "name": "可可粉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1387",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1387.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 74.0,
+   "iron_mg": 1.0,
+   "zinc_mg": 1.12,
+   "vitamin_a_ug": 22.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1464.0,
+   "protein_g": 20.9,
+   "fat_g": 8.4,
+   "carb_g": 54.5,
+   "water_g": 7.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "22.0μg",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "74mg",
+   "铁(Fe)": "1.0mg",
+   "锌(Zn)": "1.12mg"
+  }
+ },
+ "cn:1392": {
+  "name": "冰棍",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1392",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1392.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 31.0,
+   "iron_mg": 0.9,
+   "zinc_mg": null,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 200.0,
+   "protein_g": 0.8,
+   "fat_g": 0.2,
+   "carb_g": 10.5,
+   "water_g": 88.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "31mg",
+   "铁(Fe)": "0.9mg",
+   "锌(Zn)": ""
+  }
+ },
+ "cn:1393": {
+  "name": "冰淇淋",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1393",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1393.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 126.0,
+   "iron_mg": 0.5,
+   "zinc_mg": 0.37,
+   "vitamin_a_ug": 48.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 531.0,
+   "protein_g": 2.4,
+   "fat_g": 5.3,
+   "carb_g": 17.3,
+   "water_g": 74.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "48.0μg",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "126mg",
+   "铁(Fe)": "0.5mg",
+   "锌(Zn)": "0.37mg"
+  }
+ },
+ "cn:1394": {
+  "name": "冰淇淋(草莓味)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1394",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1394.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.11,
+   "calcium_mg": 86.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.17,
+   "vitamin_a_ug": 19.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 641.0,
+   "protein_g": 2.7,
+   "fat_g": 3.2,
+   "carb_g": 28.5,
+   "water_g": 64.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "19.0μg",
+   "硫胺素(Thiamin)": "0.11mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "86mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.17mg"
+  }
+ },
+ "cn:1402": {
+  "name": "雪糕(百乐宝)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1402",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1402.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 61.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.11,
+   "vitamin_a_ug": 33.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 619.0,
+   "protein_g": 2.8,
+   "fat_g": 6.2,
+   "carb_g": 20.1,
+   "water_g": 70.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "33.0μg",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "61mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.11mg"
+  }
+ },
+ "cn:1407": {
+  "name": "啤酒(4.3％，青岛牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1407",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1407.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 7.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.19,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 117.0,
+   "protein_g": 0.4,
+   "fat_g": 0.0,
+   "carb_g": 6.5,
+   "water_g": 92.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.00mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "7mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.19mg"
+  }
+ },
+ "cn:1413": {
+  "name": "葡萄酒(干白，11％，长城牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1413",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1413.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 6.0,
+   "iron_mg": 0.4,
+   "zinc_mg": 0.04,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 173.0,
+   "protein_g": 0.1,
+   "fat_g": 0.0,
+   "carb_g": 10.1,
+   "water_g": 89.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "6mg",
+   "铁(Fe)": "0.4mg",
+   "锌(Zn)": "0.04mg"
+  }
+ },
+ "cn:1416": {
+  "name": "葡萄酒(干红，11.5％，长城牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1416",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1416.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 9.0,
+   "iron_mg": 0.6,
+   "zinc_mg": 0.03,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 187.0,
+   "protein_g": 0.2,
+   "fat_g": 0.0,
+   "carb_g": 10.8,
+   "water_g": 88.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "0.6mg",
+   "锌(Zn)": "0.03mg"
+  }
+ },
+ "cn:1419": {
+  "name": "黑加仑酒(8％)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1419",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1419.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 8.0,
+   "iron_mg": 0.5,
+   "zinc_mg": 0.45,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 137.0,
+   "protein_g": 0.0,
+   "fat_g": 0.2,
+   "carb_g": 8.6,
+   "water_g": 92.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "8mg",
+   "铁(Fe)": "0.5mg",
+   "锌(Zn)": "0.45mg"
+  }
+ },
+ "cn:1423": {
+  "name": "江米酒",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1423",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1423.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 16.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.7,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 233.0,
+   "protein_g": 1.6,
+   "fat_g": null,
+   "carb_g": 12.1,
+   "water_g": 86.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "16mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.70mg"
+  }
+ },
+ "cn:1424": {
+  "name": "绍兴黄酒(15度)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1424",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1424.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 15.0,
+   "iron_mg": 1.3,
+   "zinc_mg": 0.39,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 206.0,
+   "protein_g": null,
+   "fat_g": null,
+   "carb_g": 12.1,
+   "water_g": 87.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "15mg",
+   "铁(Fe)": "1.3mg",
+   "锌(Zn)": "0.39mg"
+  }
+ },
+ "cn:1425": {
+  "name": "花雕酒(16.5％)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1425",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1425.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 58.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 0.26,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 355.0,
+   "protein_g": 1.0,
+   "fat_g": 0.0,
+   "carb_g": 19.9,
+   "water_g": 78.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "58mg",
+   "铁(Fe)": "0.3mg",
+   "锌(Zn)": "0.26mg"
+  }
+ },
+ "cn:1437": {
+  "name": "竹叶青酒(45％)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1437",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1437.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.06,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kj": 821.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 49.3,
+   "water_g": 51.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "0.0μg",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "1mg",
+   "铁(Fe)": "0.0mg",
+   "锌(Zn)": "0.06mg"
+  }
+ },
+ "cn:1438": {
+  "name": "金奖白兰地(38％)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1438",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1438.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.04,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kj": 556.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 33.7,
+   "water_g": 67.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "0.0μg",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "0mg",
+   "铁(Fe)": "0.0mg",
+   "锌(Zn)": "0.04mg"
+  }
+ },
+ "cn:1439": {
+  "name": "伏特加",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1439",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1439.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 568.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 33.4,
+   "water_g": 66.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "0mg",
+   "铁(Fe)": "0.0mg",
+   "锌(Zn)": "0.00mg"
+  }
+ },
+ "cn:1441": {
+  "name": "苹果酒(干型)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1441",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1441.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 8.0,
+   "iron_mg": 0.5,
+   "zinc_mg": 0.0,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kj": 128.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 7.5,
+   "water_g": 92.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "Tr",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "8mg",
+   "铁(Fe)": "0.5mg",
+   "锌(Zn)": "Tr"
+  }
+ },
+ "cn:1448": {
+  "name": "糖（白砂糖）",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1448",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1448.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 20.0,
+   "iron_mg": 0.6,
+   "zinc_mg": 0.06,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1698.0,
+   "protein_g": null,
+   "fat_g": null,
+   "carb_g": 99.9,
+   "water_g": null
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "20mg",
+   "铁(Fe)": "0.6mg",
+   "锌(Zn)": "0.06mg"
+  }
+ },
+ "cn:1450": {
+  "name": "糖（冰糖）",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1450",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1450.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 23.0,
+   "iron_mg": 1.4,
+   "zinc_mg": 0.21,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1688.0,
+   "protein_g": null,
+   "fat_g": null,
+   "carb_g": 99.3,
+   "water_g": 0.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "23mg",
+   "铁(Fe)": "1.4mg",
+   "锌(Zn)": "0.21mg"
+  }
+ },
+ "cn:1451": {
+  "name": "糖（红糖）",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1451",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1451.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 157.0,
+   "iron_mg": 2.2,
+   "zinc_mg": 0.35,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1654.0,
+   "protein_g": 0.7,
+   "fat_g": null,
+   "carb_g": 96.6,
+   "water_g": 1.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "157mg",
+   "铁(Fe)": "2.2mg",
+   "锌(Zn)": "0.35mg"
+  }
+ },
+ "cn:1452": {
+  "name": "花生牛轧糖",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1452",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1452.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 29.0,
+   "iron_mg": 3.6,
+   "zinc_mg": 2.12,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1820.0,
+   "protein_g": 4.9,
+   "fat_g": 12.3,
+   "carb_g": 75.4,
+   "water_g": 6.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "29mg",
+   "铁(Fe)": "3.6mg",
+   "锌(Zn)": "2.12mg"
+  }
+ },
+ "cn:1453": {
+  "name": "奶糖",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1453",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1453.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.08,
+   "calcium_mg": 50.0,
+   "iron_mg": 3.4,
+   "zinc_mg": 0.29,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1723.0,
+   "protein_g": 2.5,
+   "fat_g": 6.6,
+   "carb_g": 84.5,
+   "water_g": 5.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.08mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "50mg",
+   "铁(Fe)": "3.4mg",
+   "锌(Zn)": "0.29mg"
+  }
+ },
+ "cn:1454": {
+  "name": "巧克力",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1454",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1454.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 111.0,
+   "iron_mg": 1.7,
+   "zinc_mg": 1.02,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2451.0,
+   "protein_g": 4.3,
+   "fat_g": 40.1,
+   "carb_g": 53.4,
+   "water_g": 1.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "111mg",
+   "铁(Fe)": "1.7mg",
+   "锌(Zn)": "1.02mg"
+  }
+ },
+ "cn:1456": {
+  "name": "酥糖",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1456",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1456.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.1,
+   "calcium_mg": 186.0,
+   "iron_mg": 6.0,
+   "zinc_mg": 1.52,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1866.0,
+   "protein_g": 6.0,
+   "fat_g": 13.9,
+   "carb_g": 75.6,
+   "water_g": 3.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.10mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "186mg",
+   "铁(Fe)": "6.0mg",
+   "锌(Zn)": "1.52mg"
+  }
+ },
+ "cn:1469": {
+  "name": "苹果脯",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1469",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1469.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.01,
+   "calcium_mg": 9.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 0.16,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 5.833333
+  },
+  "macros": {
+   "energy_kj": 1443.0,
+   "protein_g": 0.6,
+   "fat_g": 0.1,
+   "carb_g": 84.9,
+   "water_g": 14.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "70.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.01mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "0.16mg"
+  }
+ },
+ "cn:1478": {
+  "name": "九制梅肉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1478",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1478.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 219.0,
+   "iron_mg": 39.0,
+   "zinc_mg": 0.65,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1226.0,
+   "protein_g": 3.4,
+   "fat_g": 3.2,
+   "carb_g": 70.8,
+   "water_g": 15.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "219mg",
+   "铁(Fe)": "39.0mg",
+   "锌(Zn)": "0.65mg"
+  }
+ },
+ "cn:1487": {
+  "name": "蜂蜜",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1487",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1487.html",
+  "per100g": {
+   "vitamin_c_mg": 3.0,
+   "vitamin_b1_mg": 0.0,
+   "calcium_mg": 4.0,
+   "iron_mg": 1.0,
+   "zinc_mg": 0.37,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1362.0,
+   "protein_g": 0.4,
+   "fat_g": 1.9,
+   "carb_g": 75.6,
+   "water_g": 22.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "—",
+   "硫胺素(Thiamin)": "Tr",
+   "维生素C(Vitamin C)": "3.0mg",
+   "钙(Ca)": "4mg",
+   "铁(Fe)": "1.0mg",
+   "锌(Zn)": "0.37mg"
+  }
+ },
+ "cn:1500": {
+  "name": "花生油",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1500",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1500.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 12.0,
+   "iron_mg": 2.9,
+   "zinc_mg": 0.48,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 3696.0,
+   "protein_g": null,
+   "fat_g": 99.9,
+   "carb_g": 0.0,
+   "water_g": 0.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "12mg",
+   "铁(Fe)": "2.9mg",
+   "锌(Zn)": "0.48mg"
+  }
+ },
+ "cn:1508": {
+  "name": "芝麻油[香油]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1508",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1508.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 9.0,
+   "iron_mg": 2.2,
+   "zinc_mg": 0.17,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 3692.0,
+   "protein_g": null,
+   "fat_g": 99.7,
+   "carb_g": 0.2,
+   "water_g": 0.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "2.2mg",
+   "锌(Zn)": "0.17mg"
+  }
+ },
+ "cn:1516": {
+  "name": "大豆色拉油",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1516",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1516.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 1.81,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kj": 3698.0,
+   "protein_g": 0.0,
+   "fat_g": 99.9,
+   "carb_g": 0.1,
+   "water_g": 0.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "0.0μg",
+   "维生素A(Vitamin)": "Tr",
+   "硫胺素(Thiamin)": "—",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "1mg",
+   "铁(Fe)": "0.3mg",
+   "锌(Zn)": "1.81mg"
+  }
+ },
+ "cn:1520": {
+  "name": "醋(均值)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1520",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1520.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 17.0,
+   "iron_mg": 6.0,
+   "zinc_mg": 1.25,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 130.0,
+   "protein_g": 2.1,
+   "fat_g": 0.3,
+   "carb_g": 4.9,
+   "water_g": 90.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "17mg",
+   "铁(Fe)": "6.0mg",
+   "锌(Zn)": "1.25mg"
+  }
+ },
+ "cn:1528": {
+  "name": "芝麻酱",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1528",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1528.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.16,
+   "calcium_mg": 1170.0,
+   "iron_mg": 50.3,
+   "zinc_mg": 4.01,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 8.333333
+  },
+  "macros": {
+   "energy_kj": 2609.0,
+   "protein_g": 19.2,
+   "fat_g": 52.7,
+   "carb_g": 22.7,
+   "water_g": 0.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "100.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.16mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "1170mg",
+   "铁(Fe)": "50.3mg",
+   "锌(Zn)": "4.01mg"
+  }
+ },
+ "cn:1532": {
+  "name": "花生酱",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1532",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1532.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 54.0,
+   "iron_mg": 1.6,
+   "zinc_mg": 2.89,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 2697.0,
+   "protein_g": 22.2,
+   "fat_g": 53.1,
+   "carb_g": 20.9,
+   "water_g": 0.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "Tr",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "54mg",
+   "铁(Fe)": "1.6mg",
+   "锌(Zn)": "2.89mg"
+  }
+ },
+ "cn:1538": {
+  "name": "草莓酱",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1538",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1538.html",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.15,
+   "calcium_mg": 44.0,
+   "iron_mg": 2.1,
+   "zinc_mg": 0.5,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1146.0,
+   "protein_g": 0.8,
+   "fat_g": 0.2,
+   "carb_g": 66.3,
+   "water_g": 32.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.15mg",
+   "维生素C(Vitamin C)": "1.0mg",
+   "钙(Ca)": "44mg",
+   "铁(Fe)": "2.1mg",
+   "锌(Zn)": "0.50mg"
+  }
+ },
+ "cn:1539": {
+  "name": "番茄酱",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1539",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1539.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 28.0,
+   "iron_mg": 1.1,
+   "zinc_mg": 0.7,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 359.0,
+   "protein_g": 4.9,
+   "fat_g": 0.2,
+   "carb_g": 16.9,
+   "water_g": 75.8
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "28mg",
+   "铁(Fe)": "1.1mg",
+   "锌(Zn)": "0.70mg"
+  }
+ },
+ "cn:1540": {
+  "name": "苹果酱",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1540",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1540.html",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.28,
+   "calcium_mg": 2.0,
+   "iron_mg": 1.3,
+   "zinc_mg": 0.08,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1181.0,
+   "protein_g": 0.4,
+   "fat_g": 0.1,
+   "carb_g": 69.0,
+   "water_g": 30.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.28mg",
+   "维生素C(Vitamin C)": "1.0mg",
+   "钙(Ca)": "2mg",
+   "铁(Fe)": "1.3mg",
+   "锌(Zn)": "0.08mg"
+  }
+ },
+ "cn:1545": {
+  "name": "腐乳(白)[酱豆腐]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1545",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1545.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 61.0,
+   "iron_mg": 3.8,
+   "zinc_mg": 0.69,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 10.833333
+  },
+  "macros": {
+   "energy_kj": 562.0,
+   "protein_g": 10.9,
+   "fat_g": 8.2,
+   "carb_g": 4.8,
+   "water_g": 68.3
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "130.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "61mg",
+   "铁(Fe)": "3.8mg",
+   "锌(Zn)": "0.69mg"
+  }
+ },
+ "cn:1547": {
+  "name": "腐乳(红)[酱豆腐]",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1547",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1547.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 87.0,
+   "iron_mg": 11.5,
+   "zinc_mg": 1.67,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 7.5
+  },
+  "macros": {
+   "energy_kj": 638.0,
+   "protein_g": 12.0,
+   "fat_g": 8.1,
+   "carb_g": 8.2,
+   "water_g": 61.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "90.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "87mg",
+   "铁(Fe)": "11.5mg",
+   "锌(Zn)": "1.67mg"
+  }
+ },
+ "cn:1551": {
+  "name": "榨菜",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1551",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1551.html",
+  "per100g": {
+   "vitamin_c_mg": 2.0,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 155.0,
+   "iron_mg": 3.9,
+   "zinc_mg": 0.63,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 40.833333
+  },
+  "macros": {
+   "energy_kj": 140.0,
+   "protein_g": 2.2,
+   "fat_g": 0.3,
+   "carb_g": 6.5,
+   "water_g": 75.0
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "490.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "2.0mg",
+   "钙(Ca)": "155mg",
+   "铁(Fe)": "3.9mg",
+   "锌(Zn)": "0.63mg"
+  }
+ },
+ "cn:1553": {
+  "name": "腌雪里红",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1553",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1553.html",
+  "per100g": {
+   "vitamin_c_mg": 4.0,
+   "vitamin_b1_mg": 0.05,
+   "calcium_mg": 294.0,
+   "iron_mg": 5.5,
+   "zinc_mg": 0.74,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 4.166667
+  },
+  "macros": {
+   "energy_kj": 121.0,
+   "protein_g": 2.4,
+   "fat_g": 0.2,
+   "carb_g": 5.4,
+   "water_g": 77.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "50.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.05mg",
+   "维生素C(Vitamin C)": "4.0mg",
+   "钙(Ca)": "294mg",
+   "铁(Fe)": "5.5mg",
+   "锌(Zn)": "0.74mg"
+  }
+ },
+ "cn:1565": {
+  "name": "精盐",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1565",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1565.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 22.0,
+   "iron_mg": 1.0,
+   "zinc_mg": 0.24,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 0.0,
+   "protein_g": null,
+   "fat_g": null,
+   "carb_g": 0.0,
+   "water_g": 0.1
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "22mg",
+   "铁(Fe)": "1.0mg",
+   "锌(Zn)": "0.24mg"
+  }
+ },
+ "cn:1568": {
+  "name": "酵母(鲜)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1568",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1568.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.09,
+   "calcium_mg": 9.0,
+   "iron_mg": 7.1,
+   "zinc_mg": 3.08,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 451.0,
+   "protein_g": 2.6,
+   "fat_g": null,
+   "carb_g": 23.9,
+   "water_g": 71.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.09mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "9mg",
+   "铁(Fe)": "7.1mg",
+   "锌(Zn)": "3.08mg"
+  }
+ },
+ "cn:1569": {
+  "name": "酵母(干)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1569",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1569.html",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 6.56,
+   "calcium_mg": 106.0,
+   "iron_mg": 18.2,
+   "zinc_mg": null,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kj": 1575.0,
+   "protein_g": 47.6,
+   "fat_g": 1.7,
+   "carb_g": 45.5,
+   "water_g": 4.4
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "0.0μg",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "6.56mg",
+   "维生素C(Vitamin C)": "0.0mg",
+   "钙(Ca)": "106mg",
+   "铁(Fe)": "18.2mg",
+   "锌(Zn)": ""
+  }
+ },
+ "cn:1572": {
+  "name": "五香豆豉",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1572",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1572.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 29.0,
+   "iron_mg": 3.7,
+   "zinc_mg": 2.37,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 1143.0,
+   "protein_g": 24.1,
+   "fat_g": 3.0,
+   "carb_g": 39.7,
+   "water_g": 22.7
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "29mg",
+   "铁(Fe)": "3.7mg",
+   "锌(Zn)": "2.37mg"
+  }
+ },
+ "cn:1576": {
+  "name": "橙汁饮料(光明牌)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1576",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1576.html",
+  "per100g": {
+   "vitamin_c_mg": 32.0,
+   "vitamin_b1_mg": 0.06,
+   "calcium_mg": 3.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.03,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 187.0,
+   "protein_g": 0.7,
+   "fat_g": 0.1,
+   "carb_g": 10.2,
+   "water_g": 88.6
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.06mg",
+   "维生素C(Vitamin C)": "32.0mg",
+   "钙(Ca)": "3mg",
+   "铁(Fe)": "0.1mg",
+   "锌(Zn)": "0.03mg"
+  }
+ },
+ "cn:1581": {
+  "name": "老抽",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1581",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1581.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.03,
+   "calcium_mg": 27.0,
+   "iron_mg": 6.1,
+   "zinc_mg": 0.66,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 550.0,
+   "protein_g": 7.9,
+   "fat_g": 0.3,
+   "carb_g": 23.8,
+   "water_g": 51.5
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.03mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "27mg",
+   "铁(Fe)": "6.1mg",
+   "锌(Zn)": "0.66mg"
+  }
+ },
+ "cn:1590": {
+  "name": "汉口白酒(49.6度)",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1590",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1590.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "calcium_mg": 2.0,
+   "iron_mg": null,
+   "zinc_mg": null,
+   "vitamin_a_ug": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 716.0,
+   "protein_g": null,
+   "fat_g": null,
+   "carb_g": 42.1,
+   "water_g": 57.9
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "",
+   "维生素A(Vitamin)": "",
+   "硫胺素(Thiamin)": "",
+   "维生素C(Vitamin C)": "",
+   "钙(Ca)": "2mg",
+   "铁(Fe)": "",
+   "锌(Zn)": ""
+  }
+ },
+ "cn:1611": {
+  "name": "生抽",
+  "source": "中国食物成分表（食物营养成分查询平台）条目 1611",
+  "url": "https://nlc.chinanutri.cn/fq/foodinfo/1611.html",
+  "per100g": {
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": 0.02,
+   "calcium_mg": 16.0,
+   "iron_mg": 2.7,
+   "zinc_mg": 0.45,
+   "vitamin_a_ug": 0.0,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kj": 85.0,
+   "protein_g": 4.8,
+   "fat_g": 0.1,
+   "carb_g": 0.0,
+   "water_g": 81.2
+  },
+  "raw": {
+   "胡萝卜素(Carotene)": "—",
+   "维生素A(Vitamin)": "0.0μg",
+   "硫胺素(Thiamin)": "0.02mg",
+   "维生素C(Vitamin C)": "—",
+   "钙(Ca)": "16mg",
+   "铁(Fe)": "2.7mg",
+   "锌(Zn)": "0.45mg"
+  }
+ },
+ "fdc:167571": {
+  "name": "Candies, white chocolate",
+  "source": "USDA FoodData Central 167571（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167571/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.5,
+   "vitamin_b1_mg": 0.063,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 9.0,
+   "calcium_mg": 199.0,
+   "iron_mg": 0.24,
+   "zinc_mg": 0.74,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 539.0,
+   "protein_g": 5.87,
+   "fat_g": 32.09,
+   "carb_g": 59.24,
+   "sugars_g": 59.0,
+   "water_g": 1.3,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167706": {
+  "name": "Jams, preserves, marmalade, reduced sugar",
+  "source": "USDA FoodData Central 167706（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167706/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 15.0,
+   "vitamin_b1_mg": 0.01,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.05,
+   "provitamin_a_ug": 0.416667
+  },
+  "macros": {
+   "energy_kcal": 151.0,
+   "protein_g": 0.0,
+   "fat_g": 0.1,
+   "carb_g": 37.6,
+   "sugars_g": 29.41,
+   "water_g": 62.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167747": {
+  "name": "Lemon juice, raw",
+  "source": "USDA FoodData Central 167747（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167747/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 38.7,
+   "vitamin_b1_mg": 0.024,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 6.0,
+   "iron_mg": 0.08,
+   "zinc_mg": 0.05,
+   "provitamin_a_ug": 0.25
+  },
+  "macros": {
+   "energy_kcal": 22.0,
+   "protein_g": 0.35,
+   "fat_g": 0.24,
+   "carb_g": 6.9,
+   "sugars_g": 2.52,
+   "water_g": 92.31,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167755": {
+  "name": "Raspberries, raw",
+  "source": "USDA FoodData Central 167755（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167755/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 26.2,
+   "vitamin_b1_mg": 0.032,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 25.0,
+   "iron_mg": 0.69,
+   "zinc_mg": 0.42,
+   "provitamin_a_ug": 1.666667
+  },
+  "macros": {
+   "energy_kcal": 52.0,
+   "protein_g": 1.2,
+   "fat_g": 0.65,
+   "carb_g": 11.94,
+   "sugars_g": 4.42,
+   "water_g": 85.75,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167974": {
+  "name": "Candies, caramels",
+  "source": "USDA FoodData Central 167974（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167974/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.4,
+   "vitamin_b1_mg": 0.103,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 11.0,
+   "calcium_mg": 138.0,
+   "iron_mg": 0.14,
+   "zinc_mg": 0.44,
+   "provitamin_a_ug": 0.166667
+  },
+  "macros": {
+   "energy_kcal": 382.0,
+   "protein_g": 4.6,
+   "fat_g": 8.1,
+   "carb_g": 77.0,
+   "sugars_g": 65.5,
+   "water_g": 8.5,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167976": {
+  "name": "Candies, semisweet chocolate",
+  "source": "USDA FoodData Central 167976（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167976/nutrients",
+  "per100g": {
+   "caffeine_mg": 62.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.055,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 32.0,
+   "iron_mg": 3.13,
+   "zinc_mg": 1.62,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 480.0,
+   "protein_g": 4.2,
+   "fat_g": 30.0,
+   "carb_g": 63.9,
+   "sugars_g": 54.5,
+   "water_g": 0.7,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167989": {
+  "name": "Candies, gumdrops, starch jelly pieces",
+  "source": "USDA FoodData Central 167989（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167989/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.006,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 3.0,
+   "iron_mg": 0.4,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 396.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 98.9,
+   "sugars_g": 58.97,
+   "water_g": 1.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167990": {
+  "name": "Candies, hard",
+  "source": "USDA FoodData Central 167990（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167990/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.004,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 3.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 394.0,
+   "protein_g": 0.0,
+   "fat_g": 0.2,
+   "carb_g": 98.0,
+   "sugars_g": 62.9,
+   "water_g": 1.3,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:167995": {
+  "name": "Candies, marshmallows",
+  "source": "USDA FoodData Central 167995（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/167995/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.001,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 3.0,
+   "iron_mg": 0.23,
+   "zinc_mg": 0.04,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 318.0,
+   "protein_g": 1.8,
+   "fat_g": 0.2,
+   "carb_g": 81.3,
+   "sugars_g": 57.56,
+   "water_g": 16.4,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168158": {
+  "name": "Blueberries, dried, sweetened",
+  "source": "USDA FoodData Central 168158（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168158/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 23.8,
+   "vitamin_b1_mg": 0.092,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 19.0,
+   "iron_mg": 0.9,
+   "zinc_mg": 0.49,
+   "provitamin_a_ug": 7.0
+  },
+  "macros": {
+   "energy_kcal": 317.0,
+   "protein_g": 2.5,
+   "fat_g": 2.5,
+   "carb_g": 80.0,
+   "sugars_g": 67.5,
+   "water_g": 14.8,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168172": {
+  "name": "Strawberries, canned, heavy syrup pack, solids and liquids",
+  "source": "USDA FoodData Central 168172（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168172/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 31.7,
+   "vitamin_b1_mg": 0.021,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 13.0,
+   "iron_mg": 0.49,
+   "zinc_mg": 0.09,
+   "provitamin_a_ug": 1.333333
+  },
+  "macros": {
+   "energy_kcal": 92.0,
+   "protein_g": 0.56,
+   "fat_g": 0.26,
+   "carb_g": 23.53,
+   "sugars_g": 21.83,
+   "water_g": 75.35,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168518": {
+  "name": "Carrots, canned, no salt added, drained solids",
+  "source": "USDA FoodData Central 168518（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168518/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 2.7,
+   "vitamin_b1_mg": 0.018,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 25.0,
+   "iron_mg": 0.64,
+   "zinc_mg": 0.26,
+   "provitamin_a_ug": 558.541667
+  },
+  "macros": {
+   "energy_kcal": 25.0,
+   "protein_g": 0.64,
+   "fat_g": 0.19,
+   "carb_g": 5.54,
+   "sugars_g": 2.48,
+   "water_g": 92.95,
+   "alcohol_g": null
+  }
+ },
+ "fdc:168558": {
+  "name": "Pickles, cucumber, dill or kosher dill",
+  "source": "USDA FoodData Central 168558（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168558/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 2.3,
+   "vitamin_b1_mg": 0.045,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 57.0,
+   "iron_mg": 0.26,
+   "zinc_mg": 0.1,
+   "provitamin_a_ug": 6.208333
+  },
+  "macros": {
+   "energy_kcal": 12.0,
+   "protein_g": 0.5,
+   "fat_g": 0.3,
+   "carb_g": 2.41,
+   "sugars_g": 1.07,
+   "water_g": 94.34,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168600": {
+  "name": "Nuts, mixed nuts, oil roasted, with peanuts, with salt added",
+  "source": "USDA FoodData Central 168600（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168600/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.5,
+   "vitamin_b1_mg": 0.189,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 117.0,
+   "iron_mg": 2.61,
+   "zinc_mg": 3.36,
+   "provitamin_a_ug": 0.166667
+  },
+  "macros": {
+   "energy_kcal": 607.0,
+   "protein_g": 20.04,
+   "fat_g": 53.95,
+   "carb_g": 21.05,
+   "sugars_g": 4.15,
+   "water_g": 2.08,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168771": {
+  "name": "Chewing gum",
+  "source": "USDA FoodData Central 168771（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168771/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 360.0,
+   "protein_g": 0.0,
+   "fat_g": 0.3,
+   "carb_g": 96.7,
+   "sugars_g": 66.08,
+   "water_g": 2.6,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168782": {
+  "name": "Puddings, rice, ready-to-eat",
+  "source": "USDA FoodData Central 168782（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168782/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 1.3,
+   "vitamin_b1_mg": 0.027,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 19.0,
+   "calcium_mg": 95.0,
+   "iron_mg": 0.11,
+   "zinc_mg": 0.43,
+   "provitamin_a_ug": 0.333333
+  },
+  "macros": {
+   "energy_kcal": 108.0,
+   "protein_g": 3.23,
+   "fat_g": 2.15,
+   "carb_g": 18.39,
+   "sugars_g": 11.59,
+   "water_g": 75.15,
+   "alcohol_g": 0.3
+  }
+ },
+ "fdc:168819": {
+  "name": "Marmalade, orange",
+  "source": "USDA FoodData Central 168819（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168819/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 4.8,
+   "vitamin_b1_mg": 0.005,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 38.0,
+   "iron_mg": 0.15,
+   "zinc_mg": 0.04,
+   "provitamin_a_ug": 3.041667
+  },
+  "macros": {
+   "energy_kcal": 246.0,
+   "protein_g": 0.3,
+   "fat_g": 0.0,
+   "carb_g": 66.3,
+   "sugars_g": 60.0,
+   "water_g": 33.2,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168820": {
+  "name": "Molasses",
+  "source": "USDA FoodData Central 168820（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168820/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.041,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 205.0,
+   "iron_mg": 4.72,
+   "zinc_mg": 0.29,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 290.0,
+   "protein_g": 0.0,
+   "fat_g": 0.1,
+   "carb_g": 74.73,
+   "sugars_g": 74.72,
+   "water_g": 21.87,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:168837": {
+  "name": "Syrups, corn, light",
+  "source": "USDA FoodData Central 168837（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/168837/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.059,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 13.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.44,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 283.0,
+   "protein_g": 0.0,
+   "fat_g": 0.2,
+   "carb_g": 76.79,
+   "sugars_g": 76.77,
+   "water_g": 22.81,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169064": {
+  "name": "Pretzels, soft",
+  "source": "USDA FoodData Central 169064（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169064/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.41,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 23.0,
+   "iron_mg": 3.92,
+   "zinc_mg": 0.94,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 338.0,
+   "protein_g": 8.2,
+   "fat_g": 3.1,
+   "carb_g": 69.39,
+   "sugars_g": 0.25,
+   "water_g": 15.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169254": {
+  "name": "Mushrooms, canned, drained solids",
+  "source": "USDA FoodData Central 169254（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169254/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.085,
+   "vitamin_d_ug": 0.2,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 11.0,
+   "iron_mg": 0.79,
+   "zinc_mg": 0.72,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 25.0,
+   "protein_g": 1.87,
+   "fat_g": 0.29,
+   "carb_g": 5.09,
+   "sugars_g": 2.34,
+   "water_g": 91.08,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169583": {
+  "name": "Candies, MARS SNACKFOOD US, M&M's Milk Chocolate Candies",
+  "source": "USDA FoodData Central 169583（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169583/nutrients",
+  "per100g": {
+   "caffeine_mg": 14.0,
+   "vitamin_c_mg": 0.5,
+   "vitamin_b1_mg": 0.079,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 56.0,
+   "calcium_mg": 105.0,
+   "iron_mg": 1.11,
+   "zinc_mg": 1.61,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 492.0,
+   "protein_g": 4.33,
+   "fat_g": 21.13,
+   "carb_g": 71.19,
+   "sugars_g": 63.68,
+   "water_g": 1.7,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169586": {
+  "name": "Candies, peanut brittle, prepared-from-recipe",
+  "source": "USDA FoodData Central 169586（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169586/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.134,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 38.0,
+   "calcium_mg": 27.0,
+   "iron_mg": 1.22,
+   "zinc_mg": 0.87,
+   "provitamin_a_ug": 0.75
+  },
+  "macros": {
+   "energy_kcal": 486.0,
+   "protein_g": 7.57,
+   "fat_g": 18.98,
+   "carb_g": 71.24,
+   "sugars_g": 51.33,
+   "water_g": 0.7,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169588": {
+  "name": "Candies, sesame crunch",
+  "source": "USDA FoodData Central 169588（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169588/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.444,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 639.0,
+   "iron_mg": 4.27,
+   "zinc_mg": 3.76,
+   "provitamin_a_ug": 0.25
+  },
+  "macros": {
+   "energy_kcal": 516.0,
+   "protein_g": 11.6,
+   "fat_g": 33.3,
+   "carb_g": 50.3,
+   "sugars_g": 31.17,
+   "water_g": 2.2,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169593": {
+  "name": "Cocoa, dry powder, unsweetened",
+  "source": "USDA FoodData Central 169593（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169593/nutrients",
+  "per100g": {
+   "caffeine_mg": 230.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.078,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 128.0,
+   "iron_mg": 13.86,
+   "zinc_mg": 6.81,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 228.0,
+   "protein_g": 19.6,
+   "fat_g": 13.7,
+   "carb_g": 57.9,
+   "sugars_g": 1.75,
+   "water_g": 3.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169655": {
+  "name": "Sugars, granulated",
+  "source": "USDA FoodData Central 169655（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169655/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.05,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 387.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 99.98,
+   "sugars_g": 99.8,
+   "water_g": 0.02,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169656": {
+  "name": "Sugars, powdered",
+  "source": "USDA FoodData Central 169656（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169656/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.06,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 389.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 99.77,
+   "sugars_g": 97.81,
+   "water_g": 0.23,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169660": {
+  "name": "Syrups, malt",
+  "source": "USDA FoodData Central 169660（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169660/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.011,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 61.0,
+   "iron_mg": 0.96,
+   "zinc_mg": 0.14,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 318.0,
+   "protein_g": 6.2,
+   "fat_g": 0.0,
+   "carb_g": 71.3,
+   "sugars_g": 71.3,
+   "water_g": 21.1,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169671": {
+  "name": "Candies, toffee, prepared-from-recipe",
+  "source": "USDA FoodData Central 169671（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169671/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.2,
+   "vitamin_b1_mg": 0.008,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 314.0,
+   "calcium_mg": 34.0,
+   "iron_mg": 0.03,
+   "zinc_mg": 0.12,
+   "provitamin_a_ug": 5.333333
+  },
+  "macros": {
+   "energy_kcal": 560.0,
+   "protein_g": 1.07,
+   "fat_g": 32.75,
+   "carb_g": 64.72,
+   "sugars_g": 63.47,
+   "water_g": 0.55,
+   "alcohol_g": null
+  }
+ },
+ "fdc:169711": {
+  "name": "Rice, white, glutinous, unenriched, cooked",
+  "source": "USDA FoodData Central 169711（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169711/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.02,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 2.0,
+   "iron_mg": 0.14,
+   "zinc_mg": 0.41,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 97.0,
+   "protein_g": 2.02,
+   "fat_g": 0.19,
+   "carb_g": 21.09,
+   "sugars_g": 0.05,
+   "water_g": 76.63,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169717": {
+  "name": "Tapioca, pearl, dry",
+  "source": "USDA FoodData Central 169717（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169717/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.004,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 20.0,
+   "iron_mg": 1.58,
+   "zinc_mg": 0.12,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 358.0,
+   "protein_g": 0.19,
+   "fat_g": 0.02,
+   "carb_g": 88.69,
+   "sugars_g": 3.35,
+   "water_g": 10.99,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169737": {
+  "name": "Pasta, cooked, enriched, without added salt",
+  "source": "USDA FoodData Central 169737（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169737/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.274,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 7.0,
+   "iron_mg": 1.28,
+   "zinc_mg": 0.51,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 158.0,
+   "protein_g": 5.8,
+   "fat_g": 0.93,
+   "carb_g": 30.86,
+   "sugars_g": 0.56,
+   "water_g": 62.13,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:169882": {
+  "name": "Chewing gum, sugarless",
+  "source": "USDA FoodData Central 169882（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/169882/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 20.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 268.0,
+   "protein_g": 0.0,
+   "fat_g": 0.4,
+   "carb_g": 94.8,
+   "sugars_g": 0.0,
+   "water_g": 3.5,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170065": {
+  "name": "Vegetables, mixed, canned, drained solids",
+  "source": "USDA FoodData Central 170065（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170065/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 5.0,
+   "vitamin_b1_mg": 0.046,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 27.0,
+   "iron_mg": 1.05,
+   "zinc_mg": 0.41,
+   "provitamin_a_ug": 582.541667
+  },
+  "macros": {
+   "energy_kcal": 49.0,
+   "protein_g": 2.59,
+   "fat_g": 0.25,
+   "carb_g": 9.26,
+   "sugars_g": 2.41,
+   "water_g": 87.01,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170279": {
+  "name": "Candies, fruit snacks, with high vitamin C",
+  "source": "USDA FoodData Central 170279（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170279/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 136.4,
+   "vitamin_b1_mg": 0.025,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.19,
+   "provitamin_a_ug": 0.208333
+  },
+  "macros": {
+   "energy_kcal": 352.0,
+   "protein_g": 0.08,
+   "fat_g": 0.0,
+   "carb_g": 87.97,
+   "sugars_g": 68.18,
+   "water_g": 11.84,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170392": {
+  "name": "Cabbage, kimchi",
+  "source": "USDA FoodData Central 170392（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170392/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.01,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 33.0,
+   "iron_mg": 2.5,
+   "zinc_mg": 0.22,
+   "provitamin_a_ug": 4.625
+  },
+  "macros": {
+   "energy_kcal": 15.0,
+   "protein_g": 1.1,
+   "fat_g": 0.5,
+   "carb_g": 2.4,
+   "sugars_g": 1.06,
+   "water_g": 94.3,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170480": {
+  "name": "Beets, pickled, canned, solids and liquids",
+  "source": "USDA FoodData Central 170480（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170480/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 2.3,
+   "vitamin_b1_mg": 0.01,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 11.0,
+   "iron_mg": 0.41,
+   "zinc_mg": 0.26,
+   "provitamin_a_ug": 2.416667
+  },
+  "macros": {
+   "energy_kcal": 65.0,
+   "protein_g": 0.8,
+   "fat_g": 0.08,
+   "carb_g": 16.28,
+   "sugars_g": 11.05,
+   "water_g": 81.88,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170500": {
+  "name": "Carrot, dehydrated",
+  "source": "USDA FoodData Central 170500（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170500/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 14.6,
+   "vitamin_b1_mg": 0.534,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 212.0,
+   "iron_mg": 3.93,
+   "zinc_mg": 1.57,
+   "provitamin_a_ug": 3423.291667
+  },
+  "macros": {
+   "energy_kcal": 341.0,
+   "protein_g": 8.1,
+   "fat_g": 1.49,
+   "carb_g": 79.57,
+   "sugars_g": 38.82,
+   "water_g": 4.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170845": {
+  "name": "Cheese, mozzarella, whole milk",
+  "source": "USDA FoodData Central 170845（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.03,
+   "vitamin_d_ug": 0.4,
+   "vitamin_a_ug": 174.0,
+   "calcium_mg": 505.0,
+   "iron_mg": 0.44,
+   "zinc_mg": 2.92,
+   "provitamin_a_ug": 4.75
+  },
+  "macros": {
+   "energy_kcal": 299.0,
+   "protein_g": 22.17,
+   "fat_g": 22.14,
+   "carb_g": 2.4,
+   "sugars_g": 0.0,
+   "water_g": 50.01,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170853": {
+  "name": "Cheese, pasteurized process, American, fortified with vitamin D",
+  "source": "USDA FoodData Central 170853（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170853/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.015,
+   "vitamin_d_ug": 7.5,
+   "vitamin_a_ug": 313.0,
+   "calcium_mg": 1045.0,
+   "iron_mg": 0.63,
+   "zinc_mg": 2.49,
+   "provitamin_a_ug": 4.375
+  },
+  "macros": {
+   "energy_kcal": 366.0,
+   "protein_g": 18.13,
+   "fat_g": 30.71,
+   "carb_g": 4.78,
+   "sugars_g": 2.26,
+   "water_g": 39.61,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170859": {
+  "name": "Cream, fluid, heavy whipping",
+  "source": "USDA FoodData Central 170859（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170859/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.6,
+   "vitamin_b1_mg": 0.02,
+   "vitamin_d_ug": 1.6,
+   "vitamin_a_ug": 405.0,
+   "calcium_mg": 66.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.24,
+   "provitamin_a_ug": 6.0
+  },
+  "macros": {
+   "energy_kcal": 340.0,
+   "protein_g": 2.84,
+   "fat_g": 36.08,
+   "carb_g": 2.84,
+   "sugars_g": 2.92,
+   "water_g": 57.71,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:170969": {
+  "name": "Babyfood, cereal, rice, dry fortified",
+  "source": "USDA FoodData Central 170969（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/170969/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 2.4,
+   "vitamin_b1_mg": 1.195,
+   "vitamin_d_ug": 8.5,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 860.0,
+   "iron_mg": 53.01,
+   "zinc_mg": 10.92,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 390.0,
+   "protein_g": 6.65,
+   "fat_g": 2.19,
+   "carb_g": 83.14,
+   "sugars_g": 4.85,
+   "water_g": 5.13,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171016": {
+  "name": "Oil, sesame, salad or cooking",
+  "source": "USDA FoodData Central 171016（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171016/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 884.0,
+   "protein_g": 0.0,
+   "fat_g": 100.0,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 0.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171051": {
+  "name": "Chicken, broilers or fryers, meat and skin, cooked, stewed",
+  "source": "USDA FoodData Central 171051（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171051/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.046,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 44.0,
+   "calcium_mg": 13.0,
+   "iron_mg": 1.16,
+   "zinc_mg": 1.76,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 219.0,
+   "protein_g": 24.68,
+   "fat_g": 12.56,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 63.93,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171119": {
+  "name": "Chicken, feet, boiled",
+  "source": "USDA FoodData Central 171119（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171119/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.06,
+   "vitamin_d_ug": 0.2,
+   "vitamin_a_ug": 30.0,
+   "calcium_mg": 88.0,
+   "iron_mg": 0.91,
+   "zinc_mg": 0.69,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 215.0,
+   "protein_g": 19.4,
+   "fat_g": 14.6,
+   "carb_g": 0.2,
+   "sugars_g": 0.0,
+   "water_g": 65.8,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171255": {
+  "name": "Cream, fluid, half and half",
+  "source": "USDA FoodData Central 171255（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171255/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.9,
+   "vitamin_b1_mg": 0.03,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 95.0,
+   "calcium_mg": 107.0,
+   "iron_mg": 0.05,
+   "zinc_mg": 0.39,
+   "provitamin_a_ug": 1.833333
+  },
+  "macros": {
+   "energy_kcal": 131.0,
+   "protein_g": 3.13,
+   "fat_g": 11.5,
+   "carb_g": 4.3,
+   "sugars_g": 4.13,
+   "water_g": 80.57,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171257": {
+  "name": "Cream, sour, cultured",
+  "source": "USDA FoodData Central 171257（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171257/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.9,
+   "vitamin_b1_mg": 0.02,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 121.0,
+   "calcium_mg": 101.0,
+   "iron_mg": 0.07,
+   "zinc_mg": 0.33,
+   "provitamin_a_ug": 2.125
+  },
+  "macros": {
+   "energy_kcal": 198.0,
+   "protein_g": 2.44,
+   "fat_g": 19.35,
+   "carb_g": 4.63,
+   "sugars_g": 3.41,
+   "water_g": 73.07,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171410": {
+  "name": "Oil, peanut, salad or cooking",
+  "source": "USDA FoodData Central 171410（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171410/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.03,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 884.0,
+   "protein_g": 0.0,
+   "fat_g": 100.0,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 0.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171411": {
+  "name": "Oil, soybean, salad or cooking",
+  "source": "USDA FoodData Central 171411（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171411/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.05,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 884.0,
+   "protein_g": 0.0,
+   "fat_g": 100.0,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 0.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171691": {
+  "name": "Apples, dried, sulfured, uncooked",
+  "source": "USDA FoodData Central 171691（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171691/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 3.9,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 14.0,
+   "iron_mg": 1.4,
+   "zinc_mg": 0.2,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 243.0,
+   "protein_g": 0.93,
+   "fat_g": 0.32,
+   "carb_g": 65.89,
+   "sugars_g": 57.19,
+   "water_g": 31.76,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171890": {
+  "name": "Beverages, coffee, brewed, prepared with tap water",
+  "source": "USDA FoodData Central 171890（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171890/nutrients",
+  "per100g": {
+   "caffeine_mg": 40.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.014,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 2.0,
+   "iron_mg": 0.01,
+   "zinc_mg": 0.02,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 1.0,
+   "protein_g": 0.12,
+   "fat_g": 0.02,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 99.39,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171893": {
+  "name": "Beverages, coffee, instant, regular, powder",
+  "source": "USDA FoodData Central 171893（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171893/nutrients",
+  "per100g": {
+   "caffeine_mg": 3142.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.008,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 141.0,
+   "iron_mg": 4.41,
+   "zinc_mg": 0.35,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 353.0,
+   "protein_g": 12.2,
+   "fat_g": 0.5,
+   "carb_g": 75.4,
+   "sugars_g": 0.0,
+   "water_g": 3.1,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171917": {
+  "name": "Beverages, tea, green, brewed, regular",
+  "source": "USDA FoodData Central 171917（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171917/nutrients",
+  "per100g": {
+   "caffeine_mg": 12.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.007,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.02,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 1.0,
+   "protein_g": 0.22,
+   "fat_g": 0.0,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 99.93,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:171946": {
+  "name": "Beverages, tea, hibiscus, brewed",
+  "source": "USDA FoodData Central 171946（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/171946/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 8.0,
+   "iron_mg": 0.08,
+   "zinc_mg": 0.04,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 0.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 99.58,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172194": {
+  "name": "Milk, canned, evaporated, with added vitamin A",
+  "source": "USDA FoodData Central 172194（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172194/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 1.9,
+   "vitamin_b1_mg": 0.047,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": null,
+   "calcium_mg": 261.0,
+   "iron_mg": 0.19,
+   "zinc_mg": 0.77,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 134.0,
+   "protein_g": 6.81,
+   "fat_g": 7.56,
+   "carb_g": 10.04,
+   "sugars_g": null,
+   "water_g": 74.04,
+   "alcohol_g": null
+  }
+ },
+ "fdc:172205": {
+  "name": "Milk, reduced fat, fluid, 2% milkfat, without added vitamin A and vitamin D",
+  "source": "USDA FoodData Central 172205（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172205/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.2,
+   "vitamin_b1_mg": 0.039,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 27.0,
+   "calcium_mg": 120.0,
+   "iron_mg": 0.02,
+   "zinc_mg": 0.48,
+   "provitamin_a_ug": 0.583333
+  },
+  "macros": {
+   "energy_kcal": 50.0,
+   "protein_g": 3.3,
+   "fat_g": 1.98,
+   "carb_g": 4.8,
+   "sugars_g": 5.06,
+   "water_g": 89.21,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172443": {
+  "name": "Natto",
+  "source": "USDA FoodData Central 172443（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172443/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 13.0,
+   "vitamin_b1_mg": 0.16,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 217.0,
+   "iron_mg": 8.6,
+   "zinc_mg": 3.03,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 211.0,
+   "protein_g": 19.4,
+   "fat_g": 11.0,
+   "carb_g": 12.68,
+   "sugars_g": 4.89,
+   "water_g": 55.02,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172445": {
+  "name": "Soy meal, defatted, raw",
+  "source": "USDA FoodData Central 172445（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172445/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.691,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 244.0,
+   "iron_mg": 13.7,
+   "zinc_mg": 5.06,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 337.0,
+   "protein_g": 49.2,
+   "fat_g": 2.39,
+   "carb_g": 35.89,
+   "sugars_g": null,
+   "water_g": 6.94,
+   "alcohol_g": null
+  }
+ },
+ "fdc:172451": {
+  "name": "Tofu, fried",
+  "source": "USDA FoodData Central 172451（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172451/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.17,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 372.0,
+   "iron_mg": 4.87,
+   "zinc_mg": 1.99,
+   "provitamin_a_ug": 1.333333
+  },
+  "macros": {
+   "energy_kcal": 270.0,
+   "protein_g": 18.82,
+   "fat_g": 20.18,
+   "carb_g": 8.86,
+   "sugars_g": 2.72,
+   "water_g": 50.52,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172675": {
+  "name": "Bread, french or vienna (includes sourdough)",
+  "source": "USDA FoodData Central 172675（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172675/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.71,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 52.0,
+   "iron_mg": 3.91,
+   "zinc_mg": 1.04,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 272.0,
+   "protein_g": 10.75,
+   "fat_g": 2.42,
+   "carb_g": 51.88,
+   "sugars_g": 4.62,
+   "water_g": 33.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172688": {
+  "name": "Bread, whole-wheat, commercially prepared",
+  "source": "USDA FoodData Central 172688（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172688/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.394,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 161.0,
+   "iron_mg": 2.47,
+   "zinc_mg": 1.77,
+   "provitamin_a_ug": 0.166667
+  },
+  "macros": {
+   "energy_kcal": 252.0,
+   "protein_g": 12.45,
+   "fat_g": 3.5,
+   "carb_g": 42.71,
+   "sugars_g": 4.34,
+   "water_g": 39.01,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172711": {
+  "name": "Cake, cheesecake, commercially prepared",
+  "source": "USDA FoodData Central 172711（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172711/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.4,
+   "vitamin_b1_mg": 0.028,
+   "vitamin_d_ug": 0.5,
+   "vitamin_a_ug": 156.0,
+   "calcium_mg": 51.0,
+   "iron_mg": 0.63,
+   "zinc_mg": 0.51,
+   "provitamin_a_ug": 2.916667
+  },
+  "macros": {
+   "energy_kcal": 321.0,
+   "protein_g": 5.5,
+   "fat_g": 22.5,
+   "carb_g": 25.5,
+   "sugars_g": 21.8,
+   "water_g": 45.6,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172736": {
+  "name": "Cookies, sugar wafers with creme filling, regular",
+  "source": "USDA FoodData Central 172736（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172736/nutrients",
+  "per100g": {
+   "caffeine_mg": 9.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.037,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 27.0,
+   "iron_mg": 3.73,
+   "zinc_mg": 0.43,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 502.0,
+   "protein_g": 3.84,
+   "fat_g": 23.24,
+   "carb_g": 70.64,
+   "sugars_g": 42.95,
+   "water_g": 1.66,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172758": {
+  "name": "Doughnuts, yeast-leavened, glazed, enriched (includes honey buns)",
+  "source": "USDA FoodData Central 172758（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172758/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 1.2,
+   "vitamin_b1_mg": 0.312,
+   "vitamin_d_ug": 0.1,
+   "vitamin_a_ug": 5.0,
+   "calcium_mg": 101.0,
+   "iron_mg": 2.38,
+   "zinc_mg": 0.61,
+   "provitamin_a_ug": 0.333333
+  },
+  "macros": {
+   "energy_kcal": 421.0,
+   "protein_g": 6.14,
+   "fat_g": 22.7,
+   "carb_g": 47.93,
+   "sugars_g": 22.75,
+   "water_g": 22.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172764": {
+  "name": "Muffins, plain, prepared from recipe, made with low fat (2%) milk",
+  "source": "USDA FoodData Central 172764（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172764/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.3,
+   "vitamin_b1_mg": 0.284,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 39.0,
+   "calcium_mg": 200.0,
+   "iron_mg": 2.39,
+   "zinc_mg": 0.56,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 296.0,
+   "protein_g": 6.9,
+   "fat_g": 11.4,
+   "carb_g": 41.4,
+   "sugars_g": null,
+   "water_g": 37.7,
+   "alcohol_g": null
+  }
+ },
+ "fdc:172778": {
+  "name": "Pie, blueberry, commercially prepared",
+  "source": "USDA FoodData Central 172778（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172778/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 2.7,
+   "vitamin_b1_mg": 0.01,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 41.0,
+   "calcium_mg": 8.0,
+   "iron_mg": 0.3,
+   "zinc_mg": 0.16,
+   "provitamin_a_ug": 3.25
+  },
+  "macros": {
+   "energy_kcal": 232.0,
+   "protein_g": 1.8,
+   "fat_g": 10.0,
+   "carb_g": 34.9,
+   "sugars_g": 9.89,
+   "water_g": 52.5,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172783": {
+  "name": "Pie, egg custard, commercially prepared",
+  "source": "USDA FoodData Central 172783（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172783/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.6,
+   "vitamin_b1_mg": 0.039,
+   "vitamin_d_ug": 0.8,
+   "vitamin_a_ug": 57.0,
+   "calcium_mg": 80.0,
+   "iron_mg": 0.58,
+   "zinc_mg": 0.52,
+   "provitamin_a_ug": 0.791667
+  },
+  "macros": {
+   "energy_kcal": 210.0,
+   "protein_g": 5.5,
+   "fat_g": 11.6,
+   "carb_g": 20.8,
+   "sugars_g": 11.58,
+   "water_g": 60.9,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:172802": {
+  "name": "Wonton wrappers (includes egg roll wrappers)",
+  "source": "USDA FoodData Central 172802（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/172802/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.519,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 4.0,
+   "calcium_mg": 47.0,
+   "iron_mg": 3.36,
+   "zinc_mg": 0.71,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 291.0,
+   "protein_g": 9.8,
+   "fat_g": 1.5,
+   "carb_g": 57.9,
+   "sugars_g": null,
+   "water_g": 28.8,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173041": {
+  "name": "Grape juice, canned or bottled, unsweetened, with added ascorbic acid",
+  "source": "USDA FoodData Central 173041（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173041/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 25.0,
+   "vitamin_b1_mg": 0.017,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 11.0,
+   "iron_mg": 0.25,
+   "zinc_mg": 0.07,
+   "provitamin_a_ug": 0.416667
+  },
+  "macros": {
+   "energy_kcal": 60.0,
+   "protein_g": 0.37,
+   "fat_g": 0.13,
+   "carb_g": 14.77,
+   "sugars_g": 14.2,
+   "water_g": 84.51,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173172": {
+  "name": "Beverages, UNILEVER, SLIMFAST Shake Mix, powder, 3-2-1 Plan",
+  "source": "USDA FoodData Central 173172（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173172/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 1.3,
+   "vitamin_b1_mg": 1.442,
+   "vitamin_d_ug": 9.6,
+   "vitamin_a_ug": 1034.0,
+   "calcium_mg": 364.0,
+   "iron_mg": 0.68,
+   "zinc_mg": 17.31,
+   "provitamin_a_ug": 0.083333
+  },
+  "macros": {
+   "energy_kcal": 448.0,
+   "protein_g": 8.13,
+   "fat_g": 13.34,
+   "carb_g": 73.92,
+   "sugars_g": 38.02,
+   "water_g": 1.99,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173180": {
+  "name": "Beverages, Protein powder whey based",
+  "source": "USDA FoodData Central 173180（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173180/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.609,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 469.0,
+   "iron_mg": 1.13,
+   "zinc_mg": 6.18,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 352.0,
+   "protein_g": 78.13,
+   "fat_g": 1.56,
+   "carb_g": 6.25,
+   "sugars_g": 0.0,
+   "water_g": 3.44,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173205": {
+  "name": "Beverages, carbonated, lemon-lime soda, no caffeine",
+  "source": "USDA FoodData Central 173205（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173205/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 2.0,
+   "iron_mg": 0.02,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 41.0,
+   "protein_g": 0.09,
+   "fat_g": 0.0,
+   "carb_g": 10.42,
+   "sugars_g": 10.38,
+   "water_g": 89.49,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173227": {
+  "name": "Beverages, tea, black, brewed, prepared with tap water",
+  "source": "USDA FoodData Central 173227（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173227/nutrients",
+  "per100g": {
+   "caffeine_mg": 20.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.02,
+   "zinc_mg": 0.02,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 1.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.3,
+   "sugars_g": 0.0,
+   "water_g": 99.7,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173418": {
+  "name": "Cheese, cream",
+  "source": "USDA FoodData Central 173418（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173418/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.023,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 303.0,
+   "calcium_mg": 97.0,
+   "iron_mg": 0.11,
+   "zinc_mg": 0.5,
+   "provitamin_a_ug": 5.041667
+  },
+  "macros": {
+   "energy_kcal": 350.0,
+   "protein_g": 6.15,
+   "fat_g": 34.44,
+   "carb_g": 5.52,
+   "sugars_g": 3.76,
+   "water_g": 52.62,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173430": {
+  "name": "Butter, without salt",
+  "source": "USDA FoodData Central 173430（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173430/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.005,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 671.0,
+   "calcium_mg": 24.0,
+   "iron_mg": 0.02,
+   "zinc_mg": 0.09,
+   "provitamin_a_ug": 13.166667
+  },
+  "macros": {
+   "energy_kcal": 717.0,
+   "protein_g": 0.85,
+   "fat_g": 81.11,
+   "carb_g": 0.06,
+   "sugars_g": 0.06,
+   "water_g": 16.17,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173468": {
+  "name": "Salt, table",
+  "source": "USDA FoodData Central 173468（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173468/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 24.0,
+   "iron_mg": 0.33,
+   "zinc_mg": 0.1,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 0.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 0.2,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173471": {
+  "name": "Vanilla extract",
+  "source": "USDA FoodData Central 173471（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173471/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.011,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 11.0,
+   "iron_mg": 0.12,
+   "zinc_mg": 0.11,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 288.0,
+   "protein_g": 0.06,
+   "fat_g": 0.06,
+   "carb_g": 12.65,
+   "sugars_g": 12.65,
+   "water_g": 52.58,
+   "alcohol_g": 34.4
+  }
+ },
+ "fdc:173660": {
+  "name": "Beverages, PEPSICO QUAKER, Gatorade, G performance O 2, ready-to-drink.",
+  "source": "USDA FoodData Central 173660（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173660/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.4,
+   "vitamin_b1_mg": 0.011,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.05,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 26.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 6.43,
+   "sugars_g": 5.24,
+   "water_g": 93.38,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173687": {
+  "name": "Fish, salmon, chinook, smoked",
+  "source": "USDA FoodData Central 173687（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173687/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.023,
+   "vitamin_d_ug": 17.1,
+   "vitamin_a_ug": 26.0,
+   "calcium_mg": 11.0,
+   "iron_mg": 0.85,
+   "zinc_mg": 0.31,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 117.0,
+   "protein_g": 18.28,
+   "fat_g": 4.32,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 72.0,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173690": {
+  "name": "Fish, salmon, pink, canned, total can contents",
+  "source": "USDA FoodData Central 173690（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173690/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.023,
+   "vitamin_d_ug": 13.7,
+   "vitamin_a_ug": 17.0,
+   "calcium_mg": 215.0,
+   "iron_mg": 0.64,
+   "zinc_mg": 0.76,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 129.0,
+   "protein_g": 19.68,
+   "fat_g": 4.97,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 74.04,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173864": {
+  "name": "Ham, sliced, regular (approximately 11% fat)",
+  "source": "USDA FoodData Central 173864（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173864/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 4.0,
+   "vitamin_b1_mg": 0.626,
+   "vitamin_d_ug": 0.7,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 24.0,
+   "iron_mg": 1.02,
+   "zinc_mg": 1.35,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 164.0,
+   "protein_g": 16.6,
+   "fat_g": 8.8,
+   "carb_g": 3.63,
+   "sugars_g": 1.0,
+   "water_g": 67.27,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:173930": {
+  "name": "Apples, canned, sweetened, sliced, drained, heated",
+  "source": "USDA FoodData Central 173930（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/173930/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.2,
+   "vitamin_b1_mg": 0.009,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 4.0,
+   "iron_mg": 0.24,
+   "zinc_mg": 0.05,
+   "provitamin_a_ug": 2.75
+  },
+  "macros": {
+   "energy_kcal": 67.0,
+   "protein_g": 0.18,
+   "fat_g": 0.43,
+   "carb_g": 16.84,
+   "sugars_g": 14.84,
+   "water_g": 82.28,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174108": {
+  "name": "Beverages,  Energy drink, Citrus",
+  "source": "USDA FoodData Central 174108（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174108/nutrients",
+  "per100g": {
+   "caffeine_mg": 13.0,
+   "vitamin_c_mg": 25.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 8.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 45.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 11.27,
+   "sugars_g": 10.42,
+   "water_g": 88.45,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174151": {
+  "name": "Beverages, Fruit punch drink, with added nutrients, canned",
+  "source": "USDA FoodData Central 174151（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174151/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 29.6,
+   "vitamin_b1_mg": 0.005,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 8.0,
+   "iron_mg": 0.09,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 1.333333
+  },
+  "macros": {
+   "energy_kcal": 47.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 11.94,
+   "sugars_g": 11.29,
+   "water_g": 87.97,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174161": {
+  "name": "Beverages, Water with added vitamins and minerals, bottles, sweetened, assorted fruit flavors",
+  "source": "USDA FoodData Central 174161（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174161/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 12.7,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 32.0,
+   "calcium_mg": 17.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.32,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 22.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 5.49,
+   "sugars_g": 5.49,
+   "water_g": 94.44,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174190": {
+  "name": "Fish, cod, Atlantic, dried and salted",
+  "source": "USDA FoodData Central 174190（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174190/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 3.5,
+   "vitamin_b1_mg": 0.268,
+   "vitamin_d_ug": 4.0,
+   "vitamin_a_ug": 42.0,
+   "calcium_mg": 160.0,
+   "iron_mg": 2.5,
+   "zinc_mg": 1.59,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 290.0,
+   "protein_g": 62.82,
+   "fat_g": 2.37,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 16.14,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174531": {
+  "name": "Sauce, fish, ready-to-serve",
+  "source": "USDA FoodData Central 174531（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174531/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.5,
+   "vitamin_b1_mg": 0.012,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 4.0,
+   "calcium_mg": 43.0,
+   "iron_mg": 0.78,
+   "zinc_mg": 0.2,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 35.0,
+   "protein_g": 5.06,
+   "fat_g": 0.01,
+   "carb_g": 3.64,
+   "sugars_g": 3.64,
+   "water_g": 71.07,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174842": {
+  "name": "Beverages, carbonated, club soda",
+  "source": "USDA FoodData Central 174842（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174842/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 5.0,
+   "iron_mg": 0.01,
+   "zinc_mg": 0.1,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 0.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.0,
+   "sugars_g": 0.0,
+   "water_g": 99.9,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174846": {
+  "name": "Beverages, carbonated, ginger ale",
+  "source": "USDA FoodData Central 174846（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174846/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 3.0,
+   "iron_mg": 0.18,
+   "zinc_mg": 0.05,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 34.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 8.76,
+   "sugars_g": 8.9,
+   "water_g": 91.23,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174854": {
+  "name": "Beverages, carbonated, orange",
+  "source": "USDA FoodData Central 174854（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174854/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 5.0,
+   "iron_mg": 0.06,
+   "zinc_mg": 0.1,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 48.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 12.3,
+   "sugars_g": null,
+   "water_g": 87.6,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174859": {
+  "name": "Lemonade, powder, prepared with water",
+  "source": "USDA FoodData Central 174859（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174859/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 1.5,
+   "vitamin_b1_mg": 0.001,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 4.0,
+   "iron_mg": 0.01,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 14.0,
+   "protein_g": 0.0,
+   "fat_g": 0.04,
+   "carb_g": 3.59,
+   "sugars_g": 3.5,
+   "water_g": 96.26,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174899": {
+  "name": "Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame)",
+  "source": "USDA FoodData Central 174899（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174899/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.568,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 219.0,
+   "iron_mg": 3.57,
+   "zinc_mg": 0.83,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 264.0,
+   "protein_g": 10.56,
+   "fat_g": 1.32,
+   "carb_g": 52.38,
+   "sugars_g": 8.43,
+   "water_g": 33.81,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:174956": {
+  "name": "Cookies, gingersnaps",
+  "source": "USDA FoodData Central 174956（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/174956/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.2,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 77.0,
+   "iron_mg": 6.4,
+   "zinc_mg": 0.55,
+   "provitamin_a_ug": 0.083333
+  },
+  "macros": {
+   "energy_kcal": 416.0,
+   "protein_g": 5.6,
+   "fat_g": 9.8,
+   "carb_g": 76.9,
+   "sugars_g": 19.92,
+   "water_g": 5.3,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:175011": {
+  "name": "Pie, apple, commercially prepared, enriched flour",
+  "source": "USDA FoodData Central 175011（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/175011/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 3.2,
+   "vitamin_b1_mg": 0.028,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 31.0,
+   "calcium_mg": 11.0,
+   "iron_mg": 0.45,
+   "zinc_mg": 0.16,
+   "provitamin_a_ug": 1.0
+  },
+  "macros": {
+   "energy_kcal": 237.0,
+   "protein_g": 1.9,
+   "fat_g": 11.0,
+   "carb_g": 34.0,
+   "sugars_g": 15.65,
+   "water_g": 52.2,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:175039": {
+  "name": "Waffles, plain, prepared from recipe",
+  "source": "USDA FoodData Central 175039（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/175039/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.4,
+   "vitamin_b1_mg": 0.263,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 64.0,
+   "calcium_mg": 255.0,
+   "iron_mg": 2.31,
+   "zinc_mg": 0.68,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 291.0,
+   "protein_g": 7.9,
+   "fat_g": 14.1,
+   "carb_g": 32.9,
+   "sugars_g": null,
+   "water_g": 42.0,
+   "alcohol_g": null
+  }
+ },
+ "fdc:175090": {
+  "name": "Beverages, tea, instant, lemon, sweetened, prepared with water",
+  "source": "USDA FoodData Central 175090（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/175090/nutrients",
+  "per100g": {
+   "caffeine_mg": 3.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.001,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 2.0,
+   "iron_mg": 0.02,
+   "zinc_mg": 0.01,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 35.0,
+   "protein_g": 0.01,
+   "fat_g": 0.06,
+   "carb_g": 8.61,
+   "sugars_g": 8.33,
+   "water_g": 91.18,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:175097": {
+  "name": "Alcoholic beverage, liqueur, coffee, 53 proof",
+  "source": "USDA FoodData Central 175097（sr_legacy_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/175097/nutrients",
+  "per100g": {
+   "caffeine_mg": 26.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.004,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.06,
+   "zinc_mg": 0.03,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 336.0,
+   "protein_g": 0.1,
+   "fat_g": 0.3,
+   "carb_g": 46.8,
+   "sugars_g": 38.3,
+   "water_g": 31.0,
+   "alcohol_g": 21.7
+  }
+ },
+ "fdc:1780827": {
+  "name": "SEAWEED SALAD",
+  "source": "USDA FoodData Central 1780827（branded_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/1780827/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": null,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": null,
+   "calcium_mg": 100.0,
+   "iron_mg": 0.72,
+   "zinc_mg": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 70.0,
+   "protein_g": 1.0,
+   "fat_g": 2.5,
+   "carb_g": 11.0,
+   "sugars_g": 6.0,
+   "water_g": null,
+   "alcohol_g": null
+  }
+ },
+ "fdc:1878769": {
+  "name": "FESTY, CREME SANDWICH COOKIES, STRAWBERRY, STRAWBERRY",
+  "source": "USDA FoodData Central 1878769（branded_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/1878769/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": null,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": null,
+   "calcium_mg": 171.0,
+   "iron_mg": 2.06,
+   "zinc_mg": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 429.0,
+   "protein_g": 2.86,
+   "fat_g": 17.14,
+   "carb_g": 65.71,
+   "sugars_g": 34.29,
+   "water_g": null,
+   "alcohol_g": null
+  }
+ },
+ "fdc:2070999": {
+  "name": "DORAYAKI BAKED RED BEAN CAKE",
+  "source": "USDA FoodData Central 2070999（branded_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/2070999/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": null,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": null,
+   "calcium_mg": 33.0,
+   "iron_mg": 1.2,
+   "zinc_mg": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 217.0,
+   "protein_g": 6.67,
+   "fat_g": 3.33,
+   "carb_g": 58.33,
+   "sugars_g": 25.0,
+   "water_g": null,
+   "alcohol_g": null
+  }
+ },
+ "fdc:2705698": {
+  "name": "Mousse",
+  "source": "USDA FoodData Central 2705698（survey_fndds_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/2705698/nutrients",
+  "per100g": {
+   "caffeine_mg": 7.0,
+   "vitamin_c_mg": 0.2,
+   "vitamin_b1_mg": 0.049,
+   "vitamin_d_ug": 1.5,
+   "vitamin_a_ug": 137.0,
+   "calcium_mg": 102.0,
+   "iron_mg": 0.52,
+   "zinc_mg": 0.65,
+   "provitamin_a_ug": 1.083333
+  },
+  "macros": {
+   "energy_kcal": 212.0,
+   "protein_g": 4.2,
+   "fat_g": 15.12,
+   "carb_g": 16.23,
+   "sugars_g": 15.1,
+   "water_g": 63.62,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:2707808": {
+  "name": "Scone",
+  "source": "USDA FoodData Central 2707808（survey_fndds_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/2707808/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.352,
+   "vitamin_d_ug": 0.5,
+   "vitamin_a_ug": 176.0,
+   "calcium_mg": 211.0,
+   "iron_mg": 2.9,
+   "zinc_mg": 0.53,
+   "provitamin_a_ug": 3.0
+  },
+  "macros": {
+   "energy_kcal": 382.0,
+   "protein_g": 6.67,
+   "fat_g": 18.35,
+   "carb_g": 48.07,
+   "sugars_g": 13.4,
+   "water_g": 24.02,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:2707886": {
+  "name": "Cake, sponge",
+  "source": "USDA FoodData Central 2707886（survey_fndds_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/2707886/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.243,
+   "vitamin_d_ug": 0.2,
+   "vitamin_a_ug": 44.0,
+   "calcium_mg": 70.0,
+   "iron_mg": 2.72,
+   "zinc_mg": 0.51,
+   "provitamin_a_ug": 0.458333
+  },
+  "macros": {
+   "energy_kcal": 290.0,
+   "protein_g": 5.4,
+   "fat_g": 2.7,
+   "carb_g": 61.0,
+   "sugars_g": 36.66,
+   "water_g": 29.7,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:2708030": {
+  "name": "Cream puff, eclair, custard or cream filled, not iced",
+  "source": "USDA FoodData Central 2708030（survey_fndds_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/2708030/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 0.2,
+   "vitamin_b1_mg": 0.148,
+   "vitamin_d_ug": 1.0,
+   "vitamin_a_ug": 213.0,
+   "calcium_mg": 32.0,
+   "iron_mg": 1.12,
+   "zinc_mg": 0.43,
+   "provitamin_a_ug": 1.916667
+  },
+  "macros": {
+   "energy_kcal": 264.0,
+   "protein_g": 4.76,
+   "fat_g": 21.52,
+   "carb_g": 12.92,
+   "sugars_g": 2.24,
+   "water_g": 59.95,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:2710323": {
+  "name": "Snow cone",
+  "source": "USDA FoodData Central 2710323（survey_fndds_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/2710323/nutrients",
+  "per100g": {
+   "caffeine_mg": 0.0,
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.001,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 2.0,
+   "iron_mg": 0.16,
+   "zinc_mg": 0.02,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 128.0,
+   "protein_g": 0.4,
+   "fat_g": 0.0,
+   "carb_g": 32.6,
+   "sugars_g": 32.6,
+   "water_g": 66.9,
+   "alcohol_g": 0.0
+  }
+ },
+ "fdc:2719414": {
+  "name": "Yakult Probiotic Drink",
+  "source": "USDA FoodData Central 2719414（branded_food）",
+  "url": "https://fdc.nal.usda.gov/food-details/2719414/nutrients",
+  "per100g": {
+   "caffeine_mg": null,
+   "vitamin_c_mg": null,
+   "vitamin_b1_mg": null,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": null,
+   "calcium_mg": 50.0,
+   "iron_mg": 0.0,
+   "zinc_mg": null,
+   "provitamin_a_ug": null
+  },
+  "macros": {
+   "energy_kcal": 62.0,
+   "protein_g": 1.25,
+   "fat_g": 0.0,
+   "carb_g": 15.0,
+   "sugars_g": 12.5,
+   "water_g": null,
+   "alcohol_g": null
+  }
+ },
+ "jp:01136": {
+  "name": "とうもろこし ポップコーン",
+  "source": "日本食品標準成分表2020年版（八訂）01136",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.13,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 7.0,
+   "iron_mg": 4.3,
+   "zinc_mg": 2.4,
+   "provitamin_a_ug": 15.0
+  },
+  "macros": {
+   "energy_kcal": 472.0,
+   "protein_g": 10.2,
+   "fat_g": 22.8,
+   "carb_g": 59.6,
+   "water_g": 4.0,
+   "alcohol_g": null
+  }
+ },
+ "jp:07170": {
+  "name": "ココナッツ ナタデココ",
+  "source": "日本食品標準成分表2020年版（八訂）07170",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 80.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 20.2,
+   "water_g": 79.7,
+   "alcohol_g": null
+  }
+ },
+ "jp:09028": {
+  "name": "てんぐさ 寒天",
+  "source": "日本食品標準成分表2020年版（八訂）09028",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 10.0,
+   "iron_mg": 0.2,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 3.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 1.5,
+   "water_g": 98.5,
+   "alcohol_g": null
+  }
+ },
+ "jp:15086": {
+  "name": "＜デザート菓子類＞ カスタードプリン",
+  "source": "日本食品標準成分表2020年版（八訂）15086",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 1.0,
+   "vitamin_b1_mg": 0.04,
+   "vitamin_d_ug": 1.4,
+   "vitamin_a_ug": 87.0,
+   "calcium_mg": 81.0,
+   "iron_mg": 0.5,
+   "zinc_mg": 0.6,
+   "provitamin_a_ug": 0.5
+  },
+  "macros": {
+   "energy_kcal": 116.0,
+   "protein_g": 5.7,
+   "fat_g": 5.5,
+   "carb_g": 14.0,
+   "water_g": 74.1,
+   "alcohol_g": null
+  }
+ },
+ "jp:15087": {
+  "name": "＜デザート菓子類＞ ゼリー オレンジ",
+  "source": "日本食品標準成分表2020年版（八訂）15087",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 40.0,
+   "vitamin_b1_mg": 0.07,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 9.0,
+   "iron_mg": 0.1,
+   "zinc_mg": 0.1,
+   "provitamin_a_ug": 3.75
+  },
+  "macros": {
+   "energy_kcal": 80.0,
+   "protein_g": 2.1,
+   "fat_g": 0.1,
+   "carb_g": 19.8,
+   "water_g": 77.6,
+   "alcohol_g": null
+  }
+ },
+ "jp:16016": {
+  "name": "＜アルコール飲料類＞ （蒸留酒類） ウイスキー",
+  "source": "日本食品標準成分表2020年版（八訂）16016",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 234.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.0,
+   "water_g": 66.6,
+   "alcohol_g": 33.4
+  }
+ },
+ "jp:16020": {
+  "name": "＜アルコール飲料類＞ （蒸留酒類） ラム",
+  "source": "日本食品標準成分表2020年版（八訂）16020",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 237.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.1,
+   "water_g": 66.1,
+   "alcohol_g": 33.8
+  }
+ },
+ "jp:16022": {
+  "name": "＜アルコール飲料類＞ （混成酒類） 梅酒",
+  "source": "日本食品標準成分表2020年版（八訂）16022",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 1.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 155.0,
+   "protein_g": 0.1,
+   "fat_g": 0.0,
+   "carb_g": 20.7,
+   "water_g": 68.9,
+   "alcohol_g": 10.2
+  }
+ },
+ "jp:16030": {
+  "name": "＜アルコール飲料類＞ （混成酒類） ペパーミント",
+  "source": "日本食品標準成分表2020年版（八訂）16030",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 0.0,
+   "vitamin_b1_mg": 0.0,
+   "vitamin_d_ug": null,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 0.0,
+   "iron_mg": 0.0,
+   "zinc_mg": 0.0,
+   "provitamin_a_ug": 0.0
+  },
+  "macros": {
+   "energy_kcal": 300.0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 37.6,
+   "water_g": 41.0,
+   "alcohol_g": 21.4
+  }
+ },
+ "jp:16035": {
+  "name": "＜茶類＞ （緑茶類） 抹茶 茶",
+  "source": "日本食品標準成分表2020年版（八訂）16035",
+  "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "per100g": {
+   "vitamin_c_mg": 60.0,
+   "vitamin_b1_mg": 0.6,
+   "vitamin_d_ug": 0.0,
+   "vitamin_a_ug": 0.0,
+   "calcium_mg": 420.0,
+   "iron_mg": 17.0,
+   "zinc_mg": 6.3,
+   "provitamin_a_ug": 2416.666667
+  },
+  "macros": {
+   "energy_kcal": 237.0,
+   "protein_g": 29.6,
+   "fat_g": 5.3,
+   "carb_g": 39.5,
+   "water_g": 5.0,
+   "alcohol_g": null
+  }
+ },
+ "retn:0107": {
+  "name": "EGGS,POACHED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 0107",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 80.0,
+   "vitamin_b1_mg": 80.0,
+   "vitamin_a_ug": 100.0,
+   "provitamin_a_ug": 100.0,
+   "calcium_mg": 100.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:0302": {
+  "name": "FLOUR/MEAL,BOILED,STEAMED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 0302",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 80.0,
+   "vitamin_b1_mg": 80.0,
+   "vitamin_a_ug": 90.0,
+   "provitamin_a_ug": 90.0,
+   "calcium_mg": 100.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:0305": {
+  "name": "FLOUR/MEAL,SAUTEED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 0305",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 80.0,
+   "vitamin_b1_mg": 75.0,
+   "vitamin_a_ug": 85.0,
+   "provitamin_a_ug": 85.0,
+   "calcium_mg": 100.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:0432": {
+  "name": "RICE,WHITE/BROWN,COOKED,WATER USED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 0432",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 80.0,
+   "vitamin_b1_mg": 80.0,
+   "vitamin_a_ug": 95.0,
+   "provitamin_a_ug": 95.0,
+   "calcium_mg": 100.0,
+   "iron_mg": 95.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:0522": {
+  "name": "LEGUMES,CKD 45/75MIN,BLD,WATER USED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 0522",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 70.0,
+   "vitamin_b1_mg": 65.0,
+   "vitamin_a_ug": 90.0,
+   "provitamin_a_ug": 90.0,
+   "calcium_mg": 90.0,
+   "iron_mg": 85.0,
+   "zinc_mg": 90.0
+  }
+ },
+ "retn:1254": {
+  "name": "PORK,FRESH,ROASTED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 1254",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 80.0,
+   "vitamin_b1_mg": 60.0,
+   "vitamin_a_ug": 75.0,
+   "provitamin_a_ug": 75.0,
+   "calcium_mg": 95.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:1301": {
+  "name": "PORK,FRESH,ROAST,SIMMERED WO/DRIP",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 1301",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 75.0,
+   "vitamin_b1_mg": 40.0,
+   "vitamin_a_ug": 75.0,
+   "provitamin_a_ug": 75.0,
+   "calcium_mg": 80.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:1405": {
+  "name": "PORK,FRSH,GROUND,SIMMERED,WO/DRIP",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 1405",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 75.0,
+   "vitamin_b1_mg": 40.0,
+   "vitamin_a_ug": 75.0,
+   "provitamin_a_ug": 75.0,
+   "calcium_mg": 80.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:2151": {
+  "name": "MILK,HEATED APPROX 10MIN",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 2151",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 85.0,
+   "vitamin_b1_mg": 90.0,
+   "vitamin_a_ug": 100.0,
+   "provitamin_a_ug": 100.0,
+   "calcium_mg": 100.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:2203": {
+  "name": "NUTS,ROASTED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 2203",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 80.0,
+   "vitamin_b1_mg": 85.0,
+   "vitamin_a_ug": 80.0,
+   "provitamin_a_ug": 80.0,
+   "calcium_mg": 100.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:2401": {
+  "name": "FINFISH,<5%FAT,SIMMERED,WO/DRIPPING",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 2401",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 75.0,
+   "vitamin_b1_mg": 80.0,
+   "vitamin_a_ug": 80.0,
+   "provitamin_a_ug": 80.0,
+   "calcium_mg": 100.0,
+   "iron_mg": 100.0,
+   "zinc_mg": 100.0
+  }
+ },
+ "retn:3775": {
+  "name": "VEG,OTHER,BLD,WATER COVER,DRAINED",
+  "source": "USDA Table of Nutrient Retention Factors, Release 6 (2007) 3775",
+  "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf",
+  "retention": {
+   "vitamin_c_mg": 75.0,
+   "vitamin_b1_mg": 80.0,
+   "vitamin_a_ug": 90.0,
+   "provitamin_a_ug": 90.0,
+   "calcium_mg": 95.0,
+   "iron_mg": 95.0,
+   "zinc_mg": 95.0
+  }
+ }
+}

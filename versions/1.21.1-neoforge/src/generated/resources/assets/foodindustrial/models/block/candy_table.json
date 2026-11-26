@@ -1,0 +1,8 @@
+{
+  "parent": "foodindustrial:block/candy_table_shape",
+  "textures": {
+    "front": "foodindustrial:block/candy_table_front",
+    "side": "foodindustrial:block/candy_table_side",
+    "top": "foodindustrial:block/candy_table_top"
+  }
+}

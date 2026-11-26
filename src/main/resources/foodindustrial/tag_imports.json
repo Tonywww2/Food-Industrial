@@ -1596,54 +1596,6 @@
    "c": [
     "foodindustrial:perlite"
    ]
-  },
-  {
-   "tag": "materials/red_rice",
-   "kind": "item",
-   "forge": [],
-   "c": []
-  },
-  {
-   "tag": "materials/red_radish",
-   "kind": "item",
-   "forge": [],
-   "c": []
-  },
-  {
-   "tag": "materials/red_amaranth",
-   "kind": "item",
-   "forge": [],
-   "c": []
-  },
-  {
-   "tag": "materials/purple_sweet_potato",
-   "kind": "item",
-   "forge": [],
-   "c": []
-  },
-  {
-   "tag": "materials/ilmenite",
-   "kind": "item",
-   "forge": [],
-   "c": []
-  },
-  {
-   "tag": "materials/pyrolusite",
-   "kind": "item",
-   "forge": [],
-   "c": []
-  },
-  {
-   "tag": "materials/barley",
-   "kind": "item",
-   "forge": [],
-   "c": []
-  },
-  {
-   "tag": "materials/jerusalem_artichoke",
-   "kind": "item",
-   "forge": [],
-   "c": []
   }
  ]
 }

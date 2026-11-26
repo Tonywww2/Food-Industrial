@@ -70,10 +70,11 @@ final class ManualRecipes {
     // ---- #1 vinegar, H13 vinegar mother; the wines ----
 
     private static void wineAndVinegar(RecipeGen.Output out) {
+        // H13 (I49, 2026-11-19 user): the wild yeasts on the fruit skins (additives/08) settle out as brewer's yeast
         recipe(out, ProcessTypes.FERMENTING).in("materials/apple", 4).inFluid("water", BUCKET)
-            .outFluid("fruit_wine", BUCKET).time(2 * DAY).sealed().add("fruit_wine_from_apples");
+            .outFluid("fruit_wine", BUCKET).out("yeast", 1).source(20).time(2 * DAY).sealed().add("fruit_wine_from_apples");
         recipe(out, ProcessTypes.FERMENTING).in("materials/berries", 4).inFluid("water", BUCKET)
-            .outFluid("fruit_wine", BUCKET).time(2 * DAY).sealed().add("fruit_wine_from_berries");
+            .outFluid("fruit_wine", BUCKET).out("yeast", 1).source(20).time(2 * DAY).sealed().add("fruit_wine_from_berries");
         recipe(out, ProcessTypes.FERMENTING).in("materials/grape", 4).inFluid("water", BUCKET)
             .outFluid("wine", BUCKET).time(2 * DAY).sealed().add("grape_wine");
         recipe(out, ProcessTypes.FERMENTING).inFluid("fruit_wine", BUCKET).catalyst("cultures/acetobacter", 8)
@@ -296,6 +297,9 @@ final class ManualRecipes {
         heatedDrying(out, "materials/sprouted_wheat", "malt");
         recipe(out, ProcessTypes.DRYING).in("materials/wet_rubber_sheet", 1).out("natural_rubber", 1).source(90).time(VANILLA).heated()
             .vanilla(VanillaDevice.CAMPFIRE, VanillaDevice.FURNACE, VanillaDevice.SMOKER).add("natural_rubber_heated");
+        // I44: smoked plum (乌梅) is ume plums smoked (12 酸梅汤), in the smoker or the drying room's smoking mode
+        recipe(out, ProcessTypes.FUMIGATING).in("materials/plum", 1).out("smoked_plum", 1).time(VANILLA).heated()
+            .vanilla(VanillaDevice.SMOKER).add("smoked_plum");
     }
 
     // ---- the T0 routes of the fourth batch (I30, additives/15): lime, hot-oil colours, waxes, exudate gums, monk fruit ----

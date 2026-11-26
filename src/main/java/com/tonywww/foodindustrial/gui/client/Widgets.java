@@ -27,7 +27,7 @@ public final class Widgets {
 
     /** 16 × 16 icons in {@code elements.png} row 100: left panels and the top buttons (the right panels use item icons). */
     public enum Icon {
-        INFO(0, 100), UPGRADES(16, 100), STRUCTURE(64, 100), MODE(80, 100), HIGHLIGHT(96, 100);
+        INFO(0, 100), UPGRADES(16, 100), STRUCTURE(64, 100), MODE(80, 100), HIGHLIGHT(96, 100), DISPLAY(112, 100);
 
         final int u;
         final int v;
@@ -66,6 +66,8 @@ public final class Widgets {
     public static final int CHANNEL_OFF = 0xFF8B8B8B;
     public static final int CHANNEL_INPUT = 0xFF3F76E4;
     public static final int CHANNEL_OUTPUT = 0xFFE07B27;
+    /** Side set to feed the additive slots (foods/05 §3, I38): green, apart from input blue and output orange. */
+    public static final int CHANNEL_ADDITIVE = 0xFF4FB548;
     public static final int CHANNEL_NONE = 0xFF555555;
 
     private Widgets() {

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:trichloroethane",
+    "foodindustrial:flowing_trichloroethane",
+    {
+      "id": "#forge:trichloroethane",
+      "required": false
+    },
+    {
+      "id": "#c:trichloroethane",
+      "required": false
+    }
+  ]
+}

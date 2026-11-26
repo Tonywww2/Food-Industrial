@@ -98,7 +98,7 @@
 | 195 | 赤藓红及其铝色淀 | T3 | `erythrosine`、`erythrosine_lake` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 196 | 新红及其铝色淀 | T3 | `new_red`、`new_red_lake` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 197 | β-胡萝卜素 | T2 / T4 | `beta_carotene` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 198 | 二氧化钛 | T3 | `titanium_dioxide` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 198 | 二氧化钛 | T3 | `titanium_dioxide` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 199 | 酸性红（偶氮玉红） | T3 | `azorubine` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 200 | 氧化铁黑 | T2 | `iron_oxide_black` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 201 | 氧化铁红 | T1 / T2 | `iron_oxide_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
@@ -106,43 +106,43 @@
 | 203 | 番茄红素 | T2 / T4 | `lycopene` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 204 | β-阿朴-8'-胡萝卜素醛 | T3（107 B 为 T4） | `apocarotenal` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 205 | 姜黄 | T0 | `turmeric` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 206 | 红花黄 | T1 / T3 | `safflower_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 207 | 紫胶红（虫胶红） | T2 / T3 | `lac_dye` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 206 | 红花黄 | T1 / T3 | `safflower_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 207 | 紫胶红（虫胶红） | T2 / T3 | `lac_dye` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 208 | 越橘红 | T1 / T3 | `lingonberry_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 209 | 辣椒橙 | T2 | `capsicum_orange` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 210 | 红米红 | T1 / T3 | `red_rice_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 211 | 菊花黄浸膏 | T1 / T2 | `coreopsis_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 212 | 黑豆红 | T1 / T3 | `black_bean_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 213 | 高粱红 | T1 / T3 | `sorghum_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 210 | 红米红 | T1 / T3 | `red_rice_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 211 | 菊花黄浸膏 | T1 / T2 | `coreopsis_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 212 | 黑豆红 | T1 / T3 | `black_bean_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 213 | 高粱红 | T1 / T3 | `sorghum_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 214 | 玉米黄 | T2 | `corn_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 215 | 萝卜红 | T1 / T3 | `radish_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 215 | 萝卜红 | T1 / T3 | `radish_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 216 | 可可壳色 | T1 / T3 | `cocoa_shell_color` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 217 | 黑加仑红 | T1 / T3 | `blackcurrant_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 217 | 黑加仑红 | T1 / T3 | `blackcurrant_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 218 | 栀子蓝 | T2 / T3 | `gardenia_blue` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 219 | 沙棘黄 | T2 / T3 | `sea_buckthorn_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 220 | 玫瑰茄红 | T1 / T3 | `roselle_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 221 | 橡子壳棕 | T1 / T3 | `acorn_shell_brown` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 222 | 桑椹红 | T1 / T3 | `mulberry_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 223 | 天然苋菜红 | T1 / T3 | `amaranthus_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 224 | 金樱子棕 | T1 / T3 | `rosa_laevigata_brown` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 219 | 沙棘黄 | T2 / T3 | `sea_buckthorn_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 220 | 玫瑰茄红 | T1 / T3 | `roselle_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 221 | 橡子壳棕 | T1 / T3 | `acorn_shell_brown` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 222 | 桑椹红 | T1 / T3 | `mulberry_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 223 | 天然苋菜红 | T1 / T3 | `amaranthus_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 224 | 金樱子棕 | T1 / T3 | `rosa_laevigata_brown` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 225 | 花生衣红 | T1 / T3 | `peanut_skin_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 226 | 葡萄皮红 | T1 / T3 | `grape_skin_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 227 | 蓝锭果红 | T1 / T3 | `haskap_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 228 | 藻蓝 | T2 / T4 | `phycocyanin` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 227 | 蓝锭果红 | T1 / T3 | `haskap_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 228 | 藻蓝 | T2 / T4 | `phycocyanin` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 229 | 植物炭黑 | T1 / T2 | `vegetable_carbon` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 230 | 紫草红 | T0 / T2 | `lithospermum_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 230 | 紫草红 | T0 / T2 | `lithospermum_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 231 | 柑橘黄 | T2 | `citrus_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 232 | 胭脂树橙 | T0 / T2 | `bixin`、`norbixin` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 233 | 胭脂虫红及其铝色淀 | T1 / T3 | `carminic_acid`、`carmine` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 234 | 叶黄素 | T2 | `lutein` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 232 | 胭脂树橙 | T0 / T2 | `bixin`、`norbixin` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 233 | 胭脂虫红及其铝色淀 | T1 / T3 | `carminic_acid`、`carmine` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 234 | 叶黄素 | T2 | `lutein` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 235 | 天然胡萝卜素 | T2 | `natural_carotene` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 236 | 核黄素（维生素 B2） | T4 | `riboflavin` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 237 | 杨梅红 | T1 / T3 | `bayberry_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 237 | 杨梅红 | T1 / T3 | `bayberry_red` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 238 | 番茄红 | T2 | `tomato_oleoresin` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 239 | 焦糖色（苛性硫酸盐法） | T2 | `caramel` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 240 | 红曲黄色素 | T3 / T4 | `monascus_yellow` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 241 | 叶绿素铜 | T2 | `copper_chlorophyll` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
-| 242 | 紫甘薯色素 | T1 / T3 | `purple_sweet_potato_color` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 242 | 紫甘薯色素 | T1 / T3 | `purple_sweet_potato_color` | [additives/15 §B](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 243 | 叶绿素铜钾盐 | T2 | `potassium_copper_chlorophyllin` | [additives/15 §B](../additives/15-batch-4.md) | 已完成 |
 | 244 | 酪蛋白酸钠 | T1 / T2 | `sodium_caseinate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 245 | 山梨醇酐三硬脂酸酯（司盘 65） | T2 | `sorbitan_tristearate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
@@ -152,12 +152,12 @@
 | 249 | 双乙酰酒石酸单双甘油酯 | T3 | `diacetyltartaric_monoglycerides` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 250 | 硬脂酰乳酸钠 | T2 | `sodium_stearoyl_lactylate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 251 | 聚氧乙烯(20)山梨醇酐单硬脂酸酯（吐温 60） | T3 | `polysorbate_60` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
-| 252 | 辛，癸酸甘油酯 | T3 | `caprylic_capric_triglyceride` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 252 | 辛，癸酸甘油酯 | T3 | `caprylic_capric_triglyceride` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 253 | 改性大豆磷脂 | T3 | `modified_soy_lecithin` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 254 | 丙二醇脂肪酸酯 | T2 / T4 | `propylene_glycol_monostearate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 255 | 聚甘油脂肪酸酯 | T2 | `polyglycerol_esters` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
-| 256 | 山梨醇酐单月桂酸酯（司盘 20） | T3 | `sorbitan_monolaurate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 257 | 聚氧乙烯(20)山梨醇酐单月桂酸酯（吐温 20） | T3 | `polysorbate_20` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 256 | 山梨醇酐单月桂酸酯（司盘 20） | T3 | `sorbitan_monolaurate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 257 | 聚氧乙烯(20)山梨醇酐单月桂酸酯（吐温 20） | T3 | `polysorbate_20` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 258 | 聚氧乙烯(20)山梨醇酐单棕榈酸酯（吐温 40） | T3 | `polysorbate_40` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 259 | 乙酰化单，双甘油脂肪酸酯 | T2 / T3 | `acetylated_monoglycerides` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 260 | 硬脂酸钾 | T1 / T2 | `potassium_stearate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
@@ -169,13 +169,13 @@
 | 266 | 琥珀酸单甘油酯 | T3 | `succinylated_monoglycerides` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 267 | 硬脂酸钙 | T1 / T2 | `calcium_stearate` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 268 | 酶解大豆磷脂 | T2 | `hydrolyzed_lecithin` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
-| 269 | 皂树皮提取物 | T1 / T3 | `quillaja_extract` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 270 | 达瓦树胶 | T0 / T2 | `ghatti_gum` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 271 | 紫胶（虫胶） | T1 / T3 | `shellac` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 269 | 皂树皮提取物 | T1 / T3 | `quillaja_extract` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 270 | 达瓦树胶 | T0 / T2 | `ghatti_gum` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 271 | 紫胶（虫胶） | T1 / T3 | `shellac` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 272 | 液体石蜡（白油） | T3 | `liquid_paraffin` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
-| 273 | 吗啉脂肪酸盐果蜡 | T3 | `morpholine_fruit_wax` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 273 | 吗啉脂肪酸盐果蜡 | T3 | `morpholine_fruit_wax` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 274 | 松香季戊四醇酯 | T3 | `rosin_pentaerythritol_ester` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
-| 275 | 巴西棕榈蜡 | T0 / T2 | `carnauba_wax` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 275 | 巴西棕榈蜡 | T0 / T2 | `carnauba_wax` | [additives/15 §C](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 276 | 硬脂酸 | T1 / T3 | `stearic_acid` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 277 | 聚乙烯醇 | T3 | `polyvinyl_alcohol` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 278 | 普鲁兰多糖 | T4 | `pullulan` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
@@ -183,49 +183,49 @@
 | 280 | 蜂蜡 | T0 / T2 | `beeswax` | [additives/15 §C](../additives/15-batch-4.md) | 已完成 |
 | 281 | 乙二胺四乙酸二钠 | T3 | `disodium_edta` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 282 | 柠檬酸亚锡二钠 | T2 | `disodium_stannous_citrate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 283 | 刺梧桐胶 | T0 | `karaya_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 283 | 刺梧桐胶 | T0 | `karaya_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 284 | α-环状糊精 | T2（393 为 T4） | `alpha_cyclodextrin` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 285 | γ-环状糊精 | T3（393 为 T4） | `gamma_cyclodextrin` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 286 | 聚天冬氨酸钾 | T3（85 为 T4） | `potassium_polyaspartate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 287 | 海藻酸钾 | T2 | `potassium_alginate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 288 | 阿拉伯胶 | T0 / T3 | `gum_arabic` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 288 | 阿拉伯胶 | T0 / T3 | `gum_arabic` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 289 | 海藻酸丙二醇酯 | T3 | `propylene_glycol_alginate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 290 | 罗望子多糖胶 | T2 | `tamarind_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 290 | 罗望子多糖胶 | T2 | `tamarind_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 291 | 羧甲基淀粉钠 | T2（氯乙酸钠为 T3，见 45） | `sodium_carboxymethyl_starch` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 292 | 淀粉磷酸酯钠 | T2 | `sodium_starch_phosphate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 293 | 乙酰化二淀粉磷酸酯 | T2（乙酸酐为 T3，见 48） | `acetylated_distarch_phosphate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 294 | 羟丙基二淀粉磷酸酯 | T3 | `hydroxypropyl_distarch_phosphate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 295 | 磷酸化二淀粉磷酸酯 | T2 | `phosphated_distarch_phosphate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 296 | 甲壳素（几丁质） | T2 | `chitin` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 297 | 亚麻籽胶 | T0 / T2 | `flaxseed_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 298 | 田菁胶 | T1 / T2 | `sesbania_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 297 | 亚麻籽胶 | T0 / T2 | `flaxseed_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 298 | 田菁胶 | T1 / T2 | `sesbania_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 299 | 聚葡萄糖 | T3 | `polydextrose` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 300 | 槐豆胶 | T1 / T2 | `locust_bean_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 300 | 槐豆胶 | T1 / T2 | `locust_bean_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 301 | β-环状糊精 | T2（393 为 T4） | `beta_cyclodextrin` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 302 | 瓜尔胶 | T1 / T2 | `guar_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 302 | 瓜尔胶 | T1 / T2 | `guar_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 303 | 脱乙酰甲壳素（壳聚糖） | T2 | `chitosan` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 304 | 羟丙基甲基纤维素 | T3 | `hydroxypropyl_methylcellulose` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 305 | 皂荚糖胶 | T1 / T2 | `gleditsia_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 305 | 皂荚糖胶 | T1 / T2 | `gleditsia_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 306 | 氧化淀粉 | T2（次氯酸钠为 T3） | `oxidized_starch` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 307 | 乙酰化双淀粉己二酸酯 | T2（144、乙酸酐为 T3） | `acetylated_distarch_adipate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 308 | 氧化羟丙基淀粉 | T3 | `oxidized_hydroxypropyl_starch` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 309 | 磷酸酯双淀粉 | T2 | `distarch_phosphate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 310 | 聚丙烯酸钠 | T3 | `sodium_polyacrylate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 311 | 沙蒿胶 | T2 | `artemisia_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 312 | 刺云实胶 | T1 / T2 | `tara_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 311 | 沙蒿胶 | T2 | `artemisia_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 312 | 刺云实胶 | T1 / T2 | `tara_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 313 | 可得然胶 | T4 | `curdlan` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 314 | 甲基纤维素 | T3 | `methylcellulose` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 315 | 可溶性大豆多糖 | T3 | `soluble_soybean_polysaccharide` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
-| 316 | 决明胶 | T1 / T2 | `cassia_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 316 | 决明胶 | T1 / T2 | `cassia_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 317 | 海藻酸钙 | T2 | `calcium_alginate` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 318 | 三赞胶 | T4 | `sanzan_gum` | [additives/15 §D](../additives/15-batch-4.md) | 已完成 |
 | 319 | D-异抗坏血酸 | T4 | `erythorbic_acid` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 320 | 肌醇六磷酸（植酸） | T3 | `phytic_acid` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 321 | 甘草抗氧化物 | T2 | `licorice_antioxidant` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 321 | 甘草抗氧化物 | T2 | `licorice_antioxidant` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 322 | 抗坏血酸钙 | T2（28 为 T4） | `calcium_ascorbate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 323 | 抗坏血酸棕榈酸酯 | T3（28 为 T4） | `ascorbyl_palmitate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 324 | 硫代二丙酸二月桂酯 | T3 | `dilauryl_thiodipropionate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 325 | 4-己基间苯二酚 | T3 | `hexylresorcinol` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 324 | 硫代二丙酸二月桂酯 | T3 | `dilauryl_thiodipropionate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 325 | 4-己基间苯二酚 | T3 | `hexylresorcinol` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 326 | D-异抗坏血酸钠 | T4 | `sodium_erythorbate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 327 | 竹叶抗氧化物 | T2 / T3 | `bamboo_leaf_antioxidant` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 328 | 乙二胺四乙酸二钠钙 | T2（乙二胺四乙酸为 T3，见 281） | `calcium_disodium_edta` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
@@ -242,7 +242,7 @@
 | 339 | 联苯醚 | T3 | `diphenyl_ether` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 340 | 稳定态二氧化氯 | T3 | `stabilized_chlorine_dioxide` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 341 | 丙酸 | T2 / T3 | `propionic_acid` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 342 | 单辛酸甘油酯 | T3 / T4 | `glyceryl_monocaprylate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 342 | 单辛酸甘油酯 | T3 / T4 | `glyceryl_monocaprylate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 343 | 对羟基苯甲酸甲酯钠 | T3 | `sodium_methyl_paraben` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 344 | 二甲基二碳酸盐 | T3 | `dimethyl_dicarbonate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 345 | 液体二氧化碳（煤气化法） | T3 | `carbon_dioxide` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
@@ -252,24 +252,24 @@
 | 349 | ε-聚赖氨酸盐酸盐 | T4 | `epsilon_polylysine_hydrochloride` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 350 | 异麦芽酮糖 | T4 | `isomaltulose` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 351 | 山梨糖醇 | T3 | `sorbitol` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 352 | 甘草酸一钾 | T2 | `monopotassium_glycyrrhizinate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 353 | 甘草酸铵 | T2 | `ammonium_glycyrrhizinate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 352 | 甘草酸一钾 | T2 | `monopotassium_glycyrrhizinate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 353 | 甘草酸铵 | T2 | `ammonium_glycyrrhizinate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 354 | 阿力甜 | T4 | `alitame` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 355 | 乳糖醇 | T3 | `lactitol` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 356 | 罗汉果甜苷 | T0 / T3 | `mogroside` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 357 | 索马甜 | T4 | `thaumatin` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 356 | 罗汉果甜苷 | T0 / T3 | `mogroside` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 357 | 索马甜 | T4 | `thaumatin` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 358 | 天门冬酰苯丙氨酸甲酯乙酰磺胺酸 | T2（85 为 T4） | `aspartame_acesulfame` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 359 | 麦芽糖醇液 | T3 | `maltitol_syrup` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 360 | 山梨糖醇液 | T3 | `sorbitol_syrup` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 361 | 环己基氨基磺酸钙 | T2（89 为 T3） | `calcium_cyclamate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 362 | 甘草酸三钾 | T2 | `tripotassium_glycyrrhizinate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 362 | 甘草酸三钾 | T2 | `tripotassium_glycyrrhizinate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 363 | 爱德万甜 | T3（85 为 T4） | `advantame` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 364 | 高锰酸钾 | T2 / T3 | `potassium_permanganate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 364 | 高锰酸钾 | T2 / T3 | `potassium_permanganate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 365 | 异构化乳糖 | T3 | `lactulose_syrup` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 366 | 咖啡因 | T1 / T3 / T4 | `caffeine` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 367 | 辣椒油树脂 | T2 | `paprika_oleoresin` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 368 | 乙酸钠（醋酸钠） | T1 | `sodium_acetate` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
-| 369 | 半乳甘露聚糖 | T3 | `galactomannan` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 369 | 半乳甘露聚糖 | T3 | `galactomannan` | [additives/15 §E](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 370 | 羟基硬脂精 | T3 | `oxystearin` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 371 | 冰结构蛋白 | T4 | `ice_structuring_protein` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
 | 372 | 硫酸镁（泻盐） | T1 / T2 | `epsom_salt` | [additives/15 §E](../additives/15-batch-4.md) | 已完成 |
@@ -278,7 +278,7 @@
 | 375 | α-半乳糖苷酶 | T4 | `enzymes/alpha_galactosidase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 376 | α-乙酰乳酸脱羧酶 | T4 | `enzymes/aldc` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 377 | β-果糖基转移酶 | T4 | `enzymes/beta_fructosyltransferase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
-| 378 | β-葡聚糖酶 | T4 | `enzymes/beta_glucanase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 378 | β-葡聚糖酶 | T4 | `enzymes/beta_glucanase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 379 | 阿拉伯呋喃糖苷酶 | T4 | `enzymes/arabinofuranosidase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 380 | 氨基肽酶 | T4 | `enzymes/aminopeptidase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 381 | 半纤维素酶 | T4 | `enzymes/hemicellulase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
@@ -295,14 +295,14 @@
 | 392 | 海藻糖酶 | T4 | `enzymes/trehalase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 393 | 环糊精葡萄糖苷转移酶 | T4 | `enzymes/cgtase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 394 | 己糖氧化酶 | T4 | `enzymes/hexose_oxidase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
-| 395 | 菊糖酶 | T4 | `enzymes/inulinase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 395 | 菊糖酶 | T4 | `enzymes/inulinase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 396 | 壳聚糖酶 | T4 | `enzymes/chitosanase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
-| 397 | 磷脂酶 | T2 | `enzymes/phospholipase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 397 | 磷脂酶 | T2 | `enzymes/phospholipase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 398 | 磷脂酶 A1 | T4 | `enzymes/phospholipase_a1` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
-| 399 | 磷脂酶 A2 | T2 | `enzymes/phospholipase_a2` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 399 | 磷脂酶 A2 | T2 | `enzymes/phospholipase_a2` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 400 | 磷脂酶 C | T4 | `enzymes/phospholipase_c` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 401 | 磷酸肌醇磷脂酶 C | T4 | `enzymes/pi_plc` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
-| 402 | 麦芽碳水化合物水解酶（α-、β-淀粉酶） | T1 | `enzymes/malt_carbohydrase`、`enzymes/barley_malt` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 402 | 麦芽碳水化合物水解酶（α-、β-淀粉酶） | T1 | `enzymes/malt_carbohydrase`、`enzymes/barley_malt` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 403 | 麦芽糖淀粉酶 | T4 | `enzymes/maltogenic_amylase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 404 | 麦芽四糖水解酶 | T4 | `enzymes/maltotetraohydrolase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 405 | 木聚糖酶 | T4 | `enzymes/xylanase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
@@ -315,11 +315,11 @@
 | 412 | 4-α-糖基转移酶 | T4 | `enzymes/alpha_glucanotransferase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 413 | 天门冬酰胺酶 | T4 | `enzymes/asparaginase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 414 | 脱氨酶 | T4 | `enzymes/deaminase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
-| 415 | 胃蛋白酶 | T2 | `enzymes/pepsin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 416 | 无花果蛋白酶 | T1 | `enzymes/ficin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 415 | 胃蛋白酶 | T2 | `enzymes/pepsin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 416 | 无花果蛋白酶 | T1 | `enzymes/ficin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 417 | 右旋糖酐酶 | T4 | `enzymes/dextranase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
-| 418 | 胰蛋白酶 | T2 | `enzymes/trypsin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
-| 419 | 胰凝乳蛋白酶（糜蛋白酶） | T2 | `enzymes/chymotrypsin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料暂无来源） |
+| 418 | 胰蛋白酶 | T2 | `enzymes/trypsin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
+| 419 | 胰凝乳蛋白酶（糜蛋白酶） | T2 | `enzymes/chymotrypsin` | [additives/15 §F](../additives/15-batch-4.md) | 已完成（原料来源按规则待生成） |
 | 420 | 蔗糖 1-果糖转移酶 | T4 | `enzymes/sucrose_fructosyltransferase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 421 | 酯酶 | T4 | `enzymes/esterase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
 | 422 | 植酸酶 | T4 | `enzymes/phytase` | [additives/15 §F](../additives/15-batch-4.md) | 已完成 |
@@ -408,5 +408,6 @@
 
 ## 待定
 
+- 暂无来源的原料 2026-11-18 按 [additives/08 §来源规则](../additives/08-raw-materials.md) 分到六类（问题 21），数据生成按规则补来源后空标签随之填满，本页状态栏随之写作“已完成（原料来源按规则待生成）”
 - 15 §存疑中未问的事项维持 15 的写法：159 硅藻土作反应物（催化剂类别，不带纯度，可作输入）、163 消泡硅膏、167 锌无后备来源、174 不加还原剂、175 葡萄糖酸钙代钡、180 B 不加乌洛托品、181 B 硫源写硫酸铵、204 C10 二醛上游未展开、椰子与油棕等作物来源、动物原料掉落
 - 第五批（I31）没有设计文档（16 只有清单），阻塞

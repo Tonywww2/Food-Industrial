@@ -1,0 +1,36 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:salt_position"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:lamian_alkali"
+      }
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": []
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "lanzhou_pulled_noodles|dough"
+  }
+}

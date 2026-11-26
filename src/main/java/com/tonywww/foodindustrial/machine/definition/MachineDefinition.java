@@ -74,6 +74,8 @@ public final class MachineDefinition {
     private final boolean described;
     private final DeviceSpec spec;
     private final boolean development;
+    private final boolean coolant;
+    private final boolean shaped;
 
     private Supplier<MachineBlock> block;
     private Supplier<? extends BlockItem> item;
@@ -106,7 +108,10 @@ public final class MachineDefinition {
         this.slotFilters = Map.copyOf(builder.slotFilters);
         this.described = builder.descriptionZh != null;
         this.development = builder.development;
-        Capabilities all = capabilities;
+        this.coolant = builder.coolant;
+        this.shaped = builder.shaped;
+        // what the machine's entity can add at run time (I41: the candy table's cooling, the freezer's ice and salt)
+        Capabilities all = capabilities.with(builder.mayHave);
         for (MachineMode mode : modes) {
             all = all.with(mode.possibleCapabilities());
         }
@@ -120,22 +125,26 @@ public final class MachineDefinition {
             all = all.with(Capabilities.of(gas.capability()));
         }
         // one configuration per mode: what the machine has, that mode's capabilities, every module, its air and gas
-        Capabilities fixed = capabilities;
+        Capabilities fixed = capabilities.with(builder.mayHave);
         for (MachineModule module : modules) {
             fixed = fixed.with(module.capabilities());
-        }
-        if (airIntake) {
-            fixed = fixed.with(Capabilities.of(AIR));
         }
         if (gas != null) {
             fixed = fixed.with(Capabilities.of(gas.capability()));
         }
         List<DeviceSpec.Configuration> configurations = new java.util.ArrayList<>();
         for (MachineMode mode : modes) {
-            configurations.add(new DeviceSpec.Configuration(fixed.with(mode.possibleCapabilities()), Set.copyOf(mode.types())));
+            // a sealed mode takes no air from the intakes (I47: the aseptic fermenter's sealed mode)
+            Capabilities base = airIntake && !sealed(mode) ? fixed.with(Capabilities.of(AIR)) : fixed;
+            configurations.add(new DeviceSpec.Configuration(base.with(mode.possibleCapabilities()), Set.copyOf(mode.types())));
         }
         this.spec = new DeviceSpec(FoodIndustrial.MOD_ID + ":" + id, profile, Set.copyOf(types), all, layout.deviceSlots(), false, true, null,
             false, configurations);
+    }
+
+    /** Whether {@code mode} seals the vessel: it then takes no air from the intakes. */
+    public static boolean sealed(@Nullable MachineMode mode) {
+        return mode != null && mode.capabilities().keys().contains("atmosphere.airtight");
     }
 
     /** Capability of a machine that breathes air (machines/03 §1). */
@@ -323,6 +332,38 @@ public final class MachineDefinition {
         return development;
     }
 
+    /**
+     * The machine has a shape of its own ({@code models/block/<id>_shape.json}, built in Blockbench by
+     * tools/models): its block models take the shape as parent instead of a plain cube.
+     */
+    public boolean shaped() {
+        return shaped;
+    }
+
+    /**
+     * Whether the fuel slots hold a coolant used up batch by batch, not fuel (M50's ice and salt, machines/03 §1, I47.5): they
+     * take what {@link #slotFilters()} names, nothing burns and there is no flame.
+     */
+    public boolean coolant() {
+        return coolant;
+    }
+
+    /**
+     * Whether the machine is set to the flavour type it makes (I48, 2026-11-19, user): the ingredient-step mixers (R19 with
+     * additive slots, M21 and M41), where the flavouring recipes run.
+     */
+    public boolean choosesFlavor() {
+        return layout.additives() > 0 && types.contains(com.tonywww.foodindustrial.recipe.ProcessTypes.MIXING);
+    }
+
+    /** Whether the {@code index}-th fuel slot takes {@code stack}: a coolant by the slot's filter, else anything that burns. */
+    public boolean fuelAccepts(net.minecraft.world.level.Level level, int index, ItemStack stack) {
+        if (coolant) {
+            return slotFilters.containsKey(SlotRole.FUEL) && slotAccepts(SlotRole.FUEL, index, stack);
+        }
+        return com.tonywww.foodindustrial.platform.PlatformFuel.burnTime(level, stack) > 0;
+    }
+
     /** The device entry of the recipe framework. */
     public DeviceSpec spec() {
         return spec;
@@ -351,6 +392,7 @@ public final class MachineDefinition {
         private final List<MachineMode> modes = new ArrayList<>();
         private final List<MachineModule> modules = new ArrayList<>();
         private Capabilities capabilities = Capabilities.NONE;
+        private Capabilities mayHave = Capabilities.NONE;
         private PowerKind power = PowerKind.NONE;
         private long energyCapacity;
         private int tankCapacity;
@@ -376,6 +418,8 @@ public final class MachineDefinition {
         private String descriptionEn;
         private BlockBehaviour.Properties properties = BlockBehaviour.Properties.of().strength(3.5F).requiresCorrectToolForDrops();
         private boolean development;
+        private boolean coolant;
+        private boolean shaped;
 
         private Builder(String id) {
             this.id = id;
@@ -484,6 +528,15 @@ public final class MachineDefinition {
             return this;
         }
 
+        /**
+         * Capabilities the machine's entity can add at run time ({@code extraCapabilities}); recipes needing them count
+         * as runnable on the machine (I41).
+         */
+        public Builder mayHave(Capabilities value) {
+            this.mayHave = value;
+            return this;
+        }
+
         public Builder power(PowerKind value) {
             this.power = value;
             return this;
@@ -514,9 +567,25 @@ public final class MachineDefinition {
             return this;
         }
 
+        /** The fuel slots hold a coolant ({@link MachineDefinition#coolant()}); give them filters with {@link #slotFilters}. */
+        public Builder coolant() {
+            this.coolant = true;
+            return this;
+        }
+
         /** Marks a development-only test machine. */
         public Builder development() {
             this.development = true;
+            return this;
+        }
+
+        /**
+         * Marks a machine with a shape of its own ({@link MachineDefinition#shaped()}). Its parts stand out of
+         * or are set into the cube, so the block does not hide its neighbours' faces and lets light in: without
+         * that, the faces inside the block's space would be drawn unlit.
+         */
+        public Builder shaped() {
+            this.shaped = true;
             return this;
         }
 
@@ -528,7 +597,10 @@ public final class MachineDefinition {
             if (power == PowerKind.FUEL && layout.fuel() == 0) {
                 throw new IllegalStateException("Machine " + id + " burns fuel but has no fuel slot");
             }
-            if (layout.fuel() > 0 && power != PowerKind.FUEL && power != PowerKind.NONE) {
+            if (coolant && (power == PowerKind.FUEL || layout.fuel() == 0 || !slotFilters.containsKey(SlotRole.FUEL))) {
+                throw new IllegalStateException("Machine " + id + " keeps a coolant: it needs filtered fuel slots and burns nothing");
+            }
+            if (layout.fuel() > 0 && power != PowerKind.FUEL && power != PowerKind.NONE && !coolant) {
                 throw new IllegalStateException("Machine " + id + " has a fuel slot but runs on " + power);
             }
             if (gas != null && layout.fluidIn() == 0) {
@@ -541,7 +613,8 @@ public final class MachineDefinition {
             if (BY_ID.putIfAbsent(id, definition) != null) {
                 throw new IllegalStateException("Duplicate machine " + id);
             }
-            definition.block = PlatformRegistry.block(id, props -> new MachineBlock(props, definition), properties);
+            definition.block = PlatformRegistry.block(id, props -> new MachineBlock(props, definition),
+                shaped ? properties.noOcclusion() : properties);
             definition.item = PlatformRegistry.blockItem(id, definition.block, com.tonywww.foodindustrial.machine.block.MachineBlockItem::new, new Item.Properties());
             definition.blockEntityType = PlatformRegistry.blockEntity(id, (pos, state) -> definition.entityFactory != null
                 ? definition.entityFactory.create(definition, pos, state)

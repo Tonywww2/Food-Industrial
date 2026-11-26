@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:vegetable_oil",
+      "required": false
+    },
+    "foodindustrial:crude_peanut_oil",
+    "foodindustrial:sesame_oil"
+  ]
+}

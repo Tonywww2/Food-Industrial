@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "curry_roux|roux"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/dried_turmeric"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/coriander_seed"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/cumin_seed"
+    },
+    {
+      "ingredient": "#foodindustrial:salt_position"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "curry_roux|mix"
+    }
+  ],
+  "quality": {
+    "items": [
+      "state",
+      "taste"
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

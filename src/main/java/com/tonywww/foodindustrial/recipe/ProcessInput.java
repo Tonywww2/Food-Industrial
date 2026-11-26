@@ -27,6 +27,7 @@ import java.util.Optional;
  * <pre>
  * { "ingredient": { "tag": "foodindustrial:chemicals/salt" }, "count": 4 }
  * { "fluid": { "type": "foodindustrial:fluid", "tag": "foodindustrial:water", "amount": 1000 } }
+ * { "semi_finished": "steamed_bun|dough", "count": 2 }      the semi-finished item of a product's stage (foods/08 §3)
  * </pre>
  */
 public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInput.FluidInput {
@@ -48,12 +49,36 @@ public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInpu
     @Nullable
     String plainMaterial();
 
-    /** Item input. */
-    record ItemInput(Ingredient ingredient, int count, @Nullable String material) implements ProcessInput {
+    /**
+     * Item input.
+     *
+     * @param semi the semi-finished key {@code product|stage} the stack must carry (foods/08 §3), or empty
+     * @param form the dosage form a flavouring must have (I48: the emulsion flavouring for spray drying), or empty
+     */
+    record ItemInput(Ingredient ingredient, int count, @Nullable String material, String semi, String form) implements ProcessInput {
         static final MapCodec<ItemInput> MAP_CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
             PlatformIngredients.codec().fieldOf("ingredient").forGetter(ItemInput::ingredient),
+            StrictCodecs.optional("count", Codec.intRange(1, 64), 1).forGetter(ItemInput::count),
+            StrictCodecs.optional("form", Codec.STRING, "").forGetter(ItemInput::form)
+        ).apply(instance, (ingredient, count, form) -> of(ingredient, count).withForm(form)));
+
+        static final MapCodec<ItemInput> SEMI_CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
+            Codec.STRING.fieldOf("semi_finished").forGetter(ItemInput::semi),
             StrictCodecs.optional("count", Codec.intRange(1, 64), 1).forGetter(ItemInput::count)
-        ).apply(instance, ItemInput::of));
+        ).apply(instance, ItemInput::semi));
+
+        public ItemInput(Ingredient ingredient, int count, @Nullable String material) {
+            this(ingredient, count, material, "", "");
+        }
+
+        public ItemInput(Ingredient ingredient, int count, @Nullable String material, String semi) {
+            this(ingredient, count, material, semi, "");
+        }
+
+        /** This input taking only flavourings of the dosage form {@code dosage} ({@code ""}: any). */
+        public ItemInput withForm(String dosage) {
+            return new ItemInput(ingredient, count, material, semi, dosage);
+        }
 
         public static ItemInput of(Ingredient ingredient, int count) {
             String material = PlatformIngredients.purityThreshold(ingredient).map(PurityThreshold::material)
@@ -61,9 +86,57 @@ public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInpu
             return new ItemInput(ingredient, count, material);
         }
 
+        /** {@code count} semi-finished items with the key {@code product|stage}. */
+        public static ItemInput semi(String key, int count) {
+            return new ItemInput(Ingredient.of(com.tonywww.foodindustrial.food.SemiFinished.ITEM.get()), count, null, key);
+        }
+
+        public boolean isSemi() {
+            return !semi.isEmpty();
+        }
+
         /** The stack matches the ingredient (purity threshold included) and holds enough items. */
         public boolean test(ItemStack stack) {
-            return !stack.isEmpty() && stack.getCount() >= count && PlatformIngredients.fresh(ingredient).test(stack);
+            return !stack.isEmpty() && stack.getCount() >= count && accepts(stack);
+        }
+
+        /** The stack is of the kind this input takes (any count): the ingredient, or the semi-finished key. */
+        public boolean accepts(ItemStack stack) {
+            if (isSemi()) {
+                return semi.equals(com.tonywww.foodindustrial.food.SemiFinished.keyOf(stack));
+            }
+            if (!form.isEmpty()) {
+                com.tonywww.foodindustrial.food.flavor.DosageForm dosage = com.tonywww.foodindustrial.food.flavor.Flavorings.form(stack);
+                if (dosage == null || !dosage.id().equals(form)) {
+                    return false;
+                }
+            }
+            return PlatformIngredients.fresh(ingredient).test(stack);
+        }
+
+        /** Stacks standing for the input in recipe pages. */
+        public java.util.List<ItemStack> displayStacks() {
+            if (isSemi()) {
+                return java.util.List.of(com.tonywww.foodindustrial.food.SemiFinished.stack(semi, count));
+            }
+            com.tonywww.foodindustrial.food.flavor.DosageForm dosage = form.isEmpty() ? null : com.tonywww.foodindustrial.food.flavor.DosageForm.byId(form);
+            if (dosage != null) {
+                return PlatformIngredients.displayStacks(ingredient).stream()
+                    .map(stack -> com.tonywww.foodindustrial.food.flavor.Flavorings.withForm(stack.copy(), dosage)).toList();
+            }
+            // a flavouring in any form shows each form: recipe pages tell the forms apart (JEI subtypes, 2026-11-20)
+            java.util.List<ItemStack> stacks = new java.util.ArrayList<>();
+            for (ItemStack stack : PlatformIngredients.displayStacks(ingredient)) {
+                if (com.tonywww.foodindustrial.food.flavor.Flavorings.type(stack.getItem()) != null
+                    && com.tonywww.foodindustrial.food.flavor.Flavorings.form(stack) == null) {
+                    for (com.tonywww.foodindustrial.food.flavor.DosageForm each : com.tonywww.foodindustrial.food.flavor.DosageForm.values()) {
+                        stacks.add(com.tonywww.foodindustrial.food.flavor.Flavorings.withForm(stack.copy(), each));
+                    }
+                } else {
+                    stacks.add(stack);
+                }
+            }
+            return stacks;
         }
 
         /** Effective purity of a consumed stack, or {@link Purity#NONE}. */
@@ -144,13 +217,16 @@ public sealed interface ProcessInput permits ProcessInput.ItemInput, ProcessInpu
             if (map.get("ingredient") != null) {
                 return ItemInput.MAP_CODEC.decode(ops, map).map(value -> value);
             }
-            return DataResult.error(() -> "Recipe input needs \"ingredient\" (items) or \"fluid\" (fluids)");
+            if (map.get("semi_finished") != null) {
+                return ItemInput.SEMI_CODEC.decode(ops, map).map(value -> value);
+            }
+            return DataResult.error(() -> "Recipe input needs \"ingredient\" (items), \"semi_finished\" or \"fluid\" (fluids)");
         }
 
         @Override
         public <T> DataResult<T> encode(ProcessInput input, DynamicOps<T> ops, T prefix) {
             if (input instanceof ItemInput item) {
-                return ItemInput.MAP_CODEC.codec().encode(item, ops, prefix);
+                return (item.isSemi() ? ItemInput.SEMI_CODEC : ItemInput.MAP_CODEC).codec().encode(item, ops, prefix);
             }
             return FluidInput.MAP_CODEC.codec().encode((FluidInput) input, ops, prefix);
         }

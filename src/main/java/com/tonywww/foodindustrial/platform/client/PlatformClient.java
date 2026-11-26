@@ -264,6 +264,7 @@ public final class PlatformClient {
         //?}
         modBus.addListener(PlatformClient::registerItemDecorations);
         PlatformBlockRenderers.bind(modBus);
+        PlatformAnimalRenderers.bind(modBus);
         PlatformHud.bind();
         //? if >=26.1 {
         /*modBus.addListener(PlatformClient::registerFluidModels);

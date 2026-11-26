@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:maltose_syrup",
+  "loader": "neoforge:fluid_container"
+}

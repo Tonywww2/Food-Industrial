@@ -1,0 +1,40 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "ingredient": "#foodindustrial:foods/shortening"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_bicarbonate"
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": [
+      "color",
+      {
+        "accepts": [
+          "fruity_flavoring"
+        ],
+        "item": "taste"
+      },
+      {
+        "accepts": [
+          "emulsifier"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "sandwich_biscuit|dough"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:crystallizing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:rock_sugar_liquor"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "item": "foodindustrial:rock_sugar"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 200
+}

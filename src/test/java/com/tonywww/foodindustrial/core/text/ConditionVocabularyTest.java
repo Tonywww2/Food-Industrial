@@ -23,8 +23,10 @@ class ConditionVocabularyTest {
     void tableOfTextStandard() {
         assertEquals(6, ConditionVocabulary.category("temperature").size());
         assertEquals(19, ConditionVocabulary.category("method").size());
-        // machine modes (I14–I17): one word per mode of M01–M31, shared modes once, and M25's regeneration
-        assertEquals(73, ConditionVocabulary.category("mode").size());
+        // machine modes (I14–I17): one word per mode of M01–M31, shared modes once, and M25's regeneration;
+        // I38: 30 more for the food line (machines/05 §1.1, §1.2); I41: M03's simmering, cooking, frying, sterilizing
+        assertEquals(107, ConditionVocabulary.category("mode").size());
+        assertEquals("凝冻", ConditionVocabulary.find("mode", "churn_freezing").orElseThrow().zh());
         assertEquals("晾晒结晶", ConditionVocabulary.find("mode", "sun_crystallization").orElseThrow().zh());
         assertTrue(ConditionVocabulary.isConditionCategory("mode"));
         assertEquals("极高温", ConditionVocabulary.find("temperature", "extreme").orElseThrow().zh());

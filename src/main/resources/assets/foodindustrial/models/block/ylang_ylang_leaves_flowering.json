@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "foodindustrial:block/ylang_ylang_leaves_flowering"
+  },
+  "render_type": "minecraft:cutout_mipped"
+}

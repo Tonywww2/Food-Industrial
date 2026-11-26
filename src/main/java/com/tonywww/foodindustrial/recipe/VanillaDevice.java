@@ -11,15 +11,19 @@ import java.util.Locale;
 import java.util.Set;
 
 /**
- * Vanilla processing blocks that run R07–R09 recipes listing them in {@code vanilla_devices}
+ * Vanilla processing blocks that run R07–R09 and R23 recipes listing them in {@code vanilla_devices}
  * (machines/01 §5): tier, recipe types, capabilities and the factor on the recipe time. A device of
  * high temperature offers the heated grade too. The recipes reach the blocks through bridge recipes
  * of the vanilla cooking types ({@link VanillaCookingBridge}).
  */
 public enum VanillaDevice {
-    CAMPFIRE(Tier.T0, List.of(ProcessTypes.DRYING, ProcessTypes.KILN), Capabilities.of("temperature.heated"), 3.0),
-    FURNACE(Tier.T0, List.of(ProcessTypes.DRYING, ProcessTypes.KILN), Capabilities.of("temperature.heated", "temperature.high"), 1.0),
-    SMOKER(Tier.T0, List.of(ProcessTypes.DRYING, ProcessTypes.FUMIGATING), Capabilities.of("temperature.heated"), 0.5),
+    // R23 baking: the one-in-one-out recipes of the food line (machines/05 §2.3, foods/05 §6), in either of R23's modes (I49)
+    CAMPFIRE(Tier.T0, List.of(ProcessTypes.DRYING, ProcessTypes.KILN, ProcessTypes.BAKING),
+        Capabilities.of("temperature.heated", "mode.baking", "mode.pan_roasting"), 3.0),
+    FURNACE(Tier.T0, List.of(ProcessTypes.DRYING, ProcessTypes.KILN, ProcessTypes.BAKING),
+        Capabilities.of("temperature.heated", "temperature.high", "mode.baking", "mode.pan_roasting"), 1.0),
+    SMOKER(Tier.T0, List.of(ProcessTypes.DRYING, ProcessTypes.FUMIGATING, ProcessTypes.BAKING),
+        Capabilities.of("temperature.heated", "mode.baking", "mode.pan_roasting"), 0.5),
     BLAST_FURNACE(Tier.T1, List.of(ProcessTypes.KILN), Capabilities.of("temperature.heated", "temperature.high"), 0.5);
 
     public static final Codec<VanillaDevice> CODEC = Codec.STRING.comapFlatMap(

@@ -1,0 +1,37 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:meat_stock"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/xylose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/l_cysteine"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 4,
+      "form": "paste",
+      "item": "foodindustrial:savory_flavoring"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 400
+}

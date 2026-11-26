@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:light_soy_sauce",
+    "foodindustrial:dark_soy_sauce",
+    "foodindustrial:premium_soy_sauce"
+  ]
+}

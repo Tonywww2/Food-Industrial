@@ -1,0 +1,37 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "minecraft:meadow"
+  ],
+  "features": [
+    "foodindustrial:buchu_bush",
+    "foodindustrial:rockrose_bush",
+    "foodindustrial:boronia_bush",
+    "foodindustrial:broom_bush",
+    "foodindustrial:yerba_santa_bush",
+    "foodindustrial:carob_tree",
+    "foodindustrial:lemon_tree",
+    "foodindustrial:bergamot_tree",
+    "foodindustrial:bitter_orange_tree",
+    "foodindustrial:bay_laurel_tree",
+    "foodindustrial:bitter_almond_tree",
+    "foodindustrial:mimosa_tree",
+    "foodindustrial:tangelo_tree",
+    "foodindustrial:quillaja_tree",
+    "foodindustrial:fig_tree",
+    "foodindustrial:oriental_sweetgum_tree",
+    "foodindustrial:grape_bush",
+    "foodindustrial:wild_conehead_thyme",
+    "foodindustrial:wild_spanish_sage",
+    "foodindustrial:wild_hyssop",
+    "foodindustrial:wild_immortelle",
+    "foodindustrial:wild_spike_lavender",
+    "foodindustrial:wild_sage",
+    "foodindustrial:wild_rue"
+  ],
+  "step": "vegetal_decoration"
+}

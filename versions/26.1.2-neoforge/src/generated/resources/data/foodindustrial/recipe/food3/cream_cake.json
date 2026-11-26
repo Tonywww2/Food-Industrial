@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:confectionery",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:foods/cake_base"
+    },
+    {
+      "semi_finished": "cream_cake|whipped_cream"
+    }
+  ],
+  "mode": "panning",
+  "outputs": [
+    {
+      "item": "foodindustrial:cream_cake"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 200
+}

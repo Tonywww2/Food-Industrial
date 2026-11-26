@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:packaging",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:rice_vinegar"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:containers/glass_bottle"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "foodindustrial:rice_vinegar"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 40
+}

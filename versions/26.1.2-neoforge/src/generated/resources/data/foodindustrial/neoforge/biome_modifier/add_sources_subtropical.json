@@ -1,0 +1,32 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:bamboo_jungle",
+    "minecraft:cherry_grove",
+    "minecraft:sparse_jungle"
+  ],
+  "features": [
+    "foodindustrial:cherokee_rose_bush",
+    "foodindustrial:murraya_bush",
+    "foodindustrial:jasmine_sambac_bush",
+    "foodindustrial:aglaia_bush",
+    "foodindustrial:bayberry_tree",
+    "foodindustrial:tallow_tree_tree",
+    "foodindustrial:malania_tree",
+    "foodindustrial:star_anise_tree",
+    "foodindustrial:michelia_tree",
+    "foodindustrial:fingered_citron_tree",
+    "foodindustrial:pummelo_tree",
+    "foodindustrial:osmanthus_tree",
+    "foodindustrial:longan_tree",
+    "foodindustrial:daidai_tree",
+    "foodindustrial:mandarin_tree",
+    "foodindustrial:tangerine_tree",
+    "foodindustrial:camphor_tree",
+    "foodindustrial:cassia_tree",
+    "foodindustrial:orange_tree",
+    "foodindustrial:tea_bush",
+    "foodindustrial:litsea_bush"
+  ],
+  "step": "vegetal_decoration"
+}

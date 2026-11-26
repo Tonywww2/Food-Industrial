@@ -26,7 +26,7 @@ import java.util.List;
 import net.minecraft.client.gui.GuiGraphics;
 //?}
 
-/** The two world interaction categories, W01 block transformation and W02 harvesting (I22). */
+/** The world interaction categories: W01 block transformation, W02 harvesting (I22) and W03 pumping (I43). */
 final class WorldCategory implements IRecipeCategory<WorldPage> {
     private final String id;
     private final RecipeType<WorldPage> recipeType;
@@ -65,6 +65,10 @@ final class WorldCategory implements IRecipeCategory<WorldPage> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, WorldPage page, IFocusGroup focuses) {
+        if (page.pumping()) {
+            fluidResult(builder, page.resultFluid());
+            return;
+        }
         JeiSupport.items(builder, RecipeIngredientRole.INPUT, WorldPage.BLOCK_X + 1, 1, page.blocks());
         if (page.harvesting()) {
             JeiSupport.items(builder, JeiSupport.CATALYST, WorldPage.TOOL_X + 1, 1, page.tools())
@@ -75,18 +79,22 @@ final class WorldCategory implements IRecipeCategory<WorldPage> {
             }
             FluidAmount fluid = page.resultFluid();
             if (!fluid.isEmpty()) {
-                JeiSupport.fluids(builder, RecipeIngredientRole.OUTPUT, WorldPage.RESULT_X + 1, 1, List.of(fluid))
-                    .addRichTooltipCallback((view, tooltip) -> JeiSupport.displayedFluid(view).ifPresent(shown -> {
-                        List<Component> lines = new ArrayList<>();
-                        Tooltips.purityLine(Purity.materialOf(shown.fluid()), Purity.get(shown), lines);
-                        tooltip.addAll(lines);
-                    }));
+                fluidResult(builder, fluid);
             } else {
                 JeiSupport.items(builder, RecipeIngredientRole.OUTPUT, WorldPage.RESULT_X + 1, 1, List.of(page.resultItem()));
             }
         } else {
             JeiSupport.items(builder, RecipeIngredientRole.OUTPUT, WorldPage.RESULT_X + 1, 1, List.of(page.resultBlock()));
         }
+    }
+
+    private static void fluidResult(IRecipeLayoutBuilder builder, FluidAmount fluid) {
+        JeiSupport.fluids(builder, RecipeIngredientRole.OUTPUT, WorldPage.RESULT_X + 1, 1, List.of(fluid))
+            .addRichTooltipCallback((view, tooltip) -> JeiSupport.displayedFluid(view).ifPresent(shown -> {
+                List<Component> lines = new ArrayList<>();
+                Tooltips.purityLine(Purity.materialOf(shown.fluid()), Purity.get(shown), lines);
+                tooltip.addAll(lines);
+            }));
     }
 
     //? if >=26.1 {

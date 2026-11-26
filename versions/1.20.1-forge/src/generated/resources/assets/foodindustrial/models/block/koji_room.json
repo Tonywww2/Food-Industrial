@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/koji_room_shape",
   "textures": {
     "front": "foodindustrial:block/koji_room_front",
     "side": "foodindustrial:block/koji_room_side",

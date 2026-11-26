@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "shortening|block"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:containers/glass_jar"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "item": "foodindustrial:shortening"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:fermenting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:cultures/rhizopus",
+    "runs": 8
+  },
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/steamed_rice"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 2000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "amount": 2000,
+      "fluid": "foodindustrial:rice_vinegar_wine_mash"
+    }
+  ],
+  "requirements": {
+    "atmosphere": "airtight",
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:animal_fats"
+    },
+    {
+      "tag": "foodindustrial:animal_fats"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "foodindustrial:refined_soybean_oil"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "foodindustrial:shortening_blend"
+    }
+  ]
+}

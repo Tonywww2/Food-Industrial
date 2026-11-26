@@ -1,0 +1,33 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/apple"
+    },
+    {
+      "tag": "foodindustrial:materials/apple"
+    },
+    {
+      "tag": "foodindustrial:materials/apple"
+    },
+    {
+      "tag": "foodindustrial:materials/apple"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:raw_apple_juice"
+    }
+  ]
+}

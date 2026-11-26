@@ -1,0 +1,47 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    },
+    {
+      "ingredient": "#foodindustrial:materials/egg"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:buttermilk"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:foods/butter"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sodium_bicarbonate"
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "waffle|batter"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "leavening",
+          "sodium_acid_pyrophosphate"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

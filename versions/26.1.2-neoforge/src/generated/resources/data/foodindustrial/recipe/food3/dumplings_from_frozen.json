@@ -1,0 +1,29 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:foods/frozen_dumplings"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "water_boiling",
+  "outputs": [
+    {
+      "item": "foodindustrial:dumplings"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

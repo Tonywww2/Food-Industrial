@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "amount": 750,
+      "fluidTag": "foodindustrial:light_soy_sauce"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:high_fructose_syrup"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:premium_soy_sauce"
+    }
+  ]
+}

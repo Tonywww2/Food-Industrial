@@ -1,0 +1,23 @@
+{
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "pneumaticcraft"
+    }
+  ],
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "tag": "foodindustrial:rock_sugar_liquor"
+  },
+  "max_temp": 273,
+  "result": {
+    "count": 3,
+    "item": "foodindustrial:rock_sugar"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rice_vinegar_wine_mash",
+    "foodindustrial:flowing_rice_vinegar_wine_mash",
+    {
+      "id": "#forge:rice_vinegar_wine_mash",
+      "required": false
+    },
+    {
+      "id": "#c:rice_vinegar_wine_mash",
+      "required": false
+    }
+  ]
+}

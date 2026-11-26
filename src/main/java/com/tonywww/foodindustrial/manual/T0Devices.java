@@ -47,6 +47,26 @@ public final class T0Devices {
     public static final Supplier<Item> DRIED_APPLE = food("dried_apple", "苹果干", "Dried Apple", 4, 0.6F);
     public static final Supplier<Item> DRIED_BERRIES = food("dried_berries", "浆果干", "Dried Berries", 4, 0.4F);
 
+    /** H16 hand seawater pump (I43, additives/07 §H16): its own block, not a {@link T0Kind}, since it takes no recipe input. */
+    @SuppressWarnings("unchecked")
+    private static final Supplier<BlockEntityType<HandPumpBlockEntity>>[] HAND_PUMP_TYPE = new Supplier[1];
+    public static final Supplier<HandPumpBlock> HAND_PUMP = PlatformRegistry.block("hand_seawater_pump",
+        props -> new HandPumpBlock(props, () -> HAND_PUMP_TYPE[0].get()),
+        // stands beside water: solid, so flowing water does not wash it away
+        BlockBehaviour.Properties.of().strength(1.5F).sound(SoundType.WOOD).noOcclusion().forceSolidOn());
+
+    static {
+        HAND_PUMP_TYPE[0] = PlatformRegistry.blockEntity("hand_seawater_pump",
+            (pos, state) -> new HandPumpBlockEntity(HAND_PUMP_TYPE[0].get(), pos, state), HAND_PUMP);
+        Supplier<T0BlockItem> item = PlatformRegistry.blockItem("hand_seawater_pump", HAND_PUMP,
+            (b, props) -> new T0BlockItem(b, props, "hand_seawater_pump"), new Item.Properties());
+        PlatformMachineCapabilities.register(HAND_PUMP_TYPE[0]);
+        Lang.add(Lang.block("hand_seawater_pump"), "手摇海水泵", "Hand Seawater Pump");
+        Lang.add(Lang.description("hand_seawater_pump"), "放在海边水旁，空手右键抽海水，桶或瓶取出",
+            "Set by the sea; right-click to pump, take with a bucket");
+        ModCreativeTabs.add(ModCreativeTabs.Tab.MACHINES, output -> output.accept(new ItemStack(item.get())));
+    }
+
     static {
         for (HandTool tool : HandTool.values()) {
             Supplier<HandToolItem> item = PlatformRegistry.item(tool.id(), props -> new HandToolItem(props, tool), new Item.Properties().stacksTo(1));
@@ -64,7 +84,11 @@ public final class T0Devices {
     }
 
     private static Supplier<Item> food(String id, String zh, String en, int nutrition, float saturation) {
-        Supplier<Item> item = PlatformRegistry.item(id, PlatformItems.food(new Item.Properties(), nutrition, saturation));
+        // finished products (dried fruit, foods/19) take their food values from the products' nutrition (I45)
+        Item.Properties properties = com.tonywww.foodindustrial.food.FoodNutrition.of(id) != null
+            ? com.tonywww.foodindustrial.food.FoodNutrition.properties(id)
+            : PlatformItems.food(new Item.Properties(), nutrition, saturation);
+        Supplier<Item> item = PlatformRegistry.item(id, properties);
         Lang.add(Lang.item(id), zh, en);
         ModCreativeTabs.add(ModCreativeTabs.Tab.PRODUCTS, output -> output.accept(new ItemStack(item.get())));
         return item;

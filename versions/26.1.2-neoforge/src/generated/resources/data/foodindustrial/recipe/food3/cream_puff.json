@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": "#foodindustrial:molds/filling_mold"
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "cream_puff|shell"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:cream"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "count": 2,
+      "item": "foodindustrial:cream_puff"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

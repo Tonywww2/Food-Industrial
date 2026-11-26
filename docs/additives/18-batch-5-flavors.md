@@ -8,7 +8,7 @@ GB 2760-2024 附录 B 的食品用香料共 1,892 条：表 B.2 天然香料 388
 - **阶段**写本步工序所需设备的档次；上游原料要更高档次时在括号内注明，如“T2（S0318 为 T3）”。括号内的档次按前体关系图推算（全部 2,287 个节点无循环、无断链）；I31 的“最早阶段”取两者较高者。
 - **核对**：单一化合物 1,456 条均由 SMILES 经 RDKit 反算元素组成，与化学式一致；关键反应全部配平（eqcheck bad 0）。
 - **名称**取表 B.2、B.3 中文名：“又名”括号里是常用短名的写作日常名称（如 十二酸（月桂酸）），是系统名的删去（文本规范第 2 节）；原表文字层丢字、错位的已对照 PDF 改正，记在存疑。
-- **缺原料时补原料本身**：植物原料登记植物部位（花、叶、籽、根、树脂），没有获取途径的写“暂无来源”，与第四批相同（08 第 C 节）。
+- **缺原料时补原料本身**：植物原料登记植物部位（花、叶、籽、根、树脂），没有获取途径的写“暂无来源”，与第四批相同（08 第 C 节）；这些原料 2026-11-18 已按 [08 §来源规则](08-raw-materials.md) 分到六类（问题 21）。
 - 路线中“未确认”表示没有找到可核对的原文，“游戏简化”表示为玩法做的简化。各组的存疑逐条列在第 6 节（合成香料见 19 第 5 节）；设计者的决定（2026-11-11）汇总在 [17](17-batch-5.md) 第 9 节与 [11](11-roadmap.md) 问题 29–41。
 
 ## 1 路线模板
@@ -806,227 +806,227 @@ I31 的数据生成检查（按配方类型、模式、催化剂、输入物料�
 
 ## 4 新增原料
 
-天然香料新增原料 217 种，已并入 08 第 C 节“第五批新增原料”。“暂无来源”的原料暂时没有获取途径，对应路线照写，纯度报表把它们单列为“原料暂无来源”（I30 约定）。
+天然香料新增原料 217 种，已并入 08 第 C 节“第五批新增原料”。写这一批时没有获取途径的原料标“暂无来源”，对应路线照写，纯度报表把它们单列为“原料暂无来源”（I30 约定）；2026-11-18 按 [08 §来源规则](08-raw-materials.md) 分到六类（问题 21），本节保留当时的记录。
 
 | 原料 | 配方引用标签 | 现实来源 | 本模组来源 | 用于 |
 | --- | --- | --- | --- | --- |
-| 丁香叶 | `materials/clove_leaf` | 丁香 Syzygium aromaticum（Eugenia spp.）叶；印度尼西亚、马达加斯加 | 暂无来源 | N001 |
-| 丁香花蕾 | `materials/clove_bud` | 丁香未开放花蕾，晒干；坦桑尼亚桑给巴尔、印度尼西亚、马达加斯加 | 暂无来源 | N002、N003 |
-| 罗勒 | `materials/basil` | 罗勒 Ocimum basilicum 花期地上部分；埃及、印度、法国 | 暂无来源 | N004 |
-| 八角 | `materials/star_anise` | 八角 Illicium verum 成熟果实；广西、云南 | 暂无来源 | N005 |
-| 九里香花 | `materials/jasmin_orange_flower` | 九里香 Murraya paniculata 花；广东、广西、福建 | 暂无来源 | N006 |
-| 广藿香叶 | `materials/patchouli_leaf` | 广藿香 Pogostemon cablin 叶（晒干、堆放发酵）；印度尼西亚、广东 | 暂无来源 | N007 |
-| 小豆蔻 | `materials/cardamom` | 小豆蔻 Elettaria cardamomum（原表作 Elletaria）果实；印度、危地马拉 | 暂无来源 | N010、N011 |
-| 甜茴香籽 | `materials/sweet_fennel_seed` | 甜茴香 Foeniculum vulgare var. dulce 果实；法国、意大利 | 暂无来源 | N129 |
-| 山楂 | `materials/hawthorn_fruit` | 山楂 Crataegus pinnatifida 等果实；山东、河北、辽宁 | 暂无来源 | N014 |
-| 大蒜 | `materials/garlic` | 蒜 Allium sativum 鳞茎；山东金乡、河南 | 暂无来源 | N015、N016 |
+| 丁香叶 | `materials/clove_leaf` | 丁香 Syzygium aromaticum（Eugenia spp.）叶；印度尼西亚、马达加斯加 | 树木类（08 §来源规则） | N001 |
+| 丁香花蕾 | `materials/clove_bud` | 丁香未开放花蕾，晒干；坦桑尼亚桑给巴尔、印度尼西亚、马达加斯加 | 树木类（08 §来源规则） | N002、N003 |
+| 罗勒 | `materials/basil` | 罗勒 Ocimum basilicum 花期地上部分；埃及、印度、法国 | 作物类（08 §来源规则） | N004 |
+| 八角 | `materials/star_anise` | 八角 Illicium verum 成熟果实；广西、云南 | 树木类（08 §来源规则） | N005 |
+| 九里香花 | `materials/jasmin_orange_flower` | 九里香 Murraya paniculata 花；广东、广西、福建 | 树木类（08 §来源规则） | N006 |
+| 广藿香叶 | `materials/patchouli_leaf` | 广藿香 Pogostemon cablin 叶（晒干、堆放发酵）；印度尼西亚、广东 | 作物类（08 §来源规则） | N007 |
+| 小豆蔻 | `materials/cardamom` | 小豆蔻 Elettaria cardamomum（原表作 Elletaria）果实；印度、危地马拉 | 作物类（08 §来源规则） | N010、N011 |
+| 甜茴香籽 | `materials/sweet_fennel_seed` | 甜茴香 Foeniculum vulgare var. dulce 果实；法国、意大利 | 作物类（08 §来源规则） | N129 |
+| 山楂 | `materials/hawthorn_fruit` | 山楂 Crataegus pinnatifida 等果实；山东、河北、辽宁 | 树木类（08 §来源规则） | N014 |
+| 大蒜 | `materials/garlic` | 蒜 Allium sativum 鳞茎；山东金乡、河南 | 作物类（08 §来源规则） | N015、N016 |
 | 葡萄酒酒脚 | `materials/wine_lees` | 葡萄酒发酵、澄清后沉在罐底的酵母与沉渣 | 葡萄酒（`wine`）澄清的沉渣，与酒石同出（H14 冷置、M04 澄清配方补此副产） | N017 |
-| 云木香根 | `materials/costus_root` | 云木香 Saussurea costus（S. lappa C.B.Clarke，原表作 Saussures lappa Clanke）根；云南丽江、印度克什米尔 | 暂无来源 | N019 |
-| 乌梅 | `materials/smoked_plum` | 梅 Prunus mume 近成熟果实低温烘焙至乌黑；四川、福建、浙江 | 暂无来源（12 酸梅汤同用） | N021 |
-| 布枯叶 | `materials/buchu_leaf` | 布枯 Agathosma betulina（Barosma betulina）叶；南非西开普 | 暂无来源 | N022 |
+| 云木香根 | `materials/costus_root` | 云木香 Saussurea costus（S. lappa C.B.Clarke，原表作 Saussures lappa Clanke）根；云南丽江、印度克什米尔 | 作物类（08 §来源规则） | N019 |
+| 乌梅 | `materials/smoked_plum` | 梅 Prunus mume 近成熟果实低温烘焙至乌黑；四川、福建、浙江 | 树木类（12 酸梅汤同用；08 §来源规则） | N021 |
+| 布枯叶 | `materials/buchu_leaf` | 布枯 Agathosma betulina（Barosma betulina）叶；南非西开普 | 树木类（08 §来源规则） | N022 |
 | 可可碎粒 | `materials/cocoa_nibs` | 焙炒可可豆去壳后的子叶 | 可可豆（`materials/cocoa_beans`）焙炒（熔炉 / M17）、M11 破碎风选的主产物，可可豆壳为副产（同 216） | N023 |
-| 甘松根 | `materials/nardostachys_root` | 甘松 Nardostachys chinensis 根及根茎；四川、甘肃、青海 | 暂无来源 | N025 |
-| 冬青叶 | `materials/wintergreen_leaf` | 平铺白珠树 Gaultheria procumbens 叶；北美东部 | 暂无来源 | N028 |
-| 白兰花 | `materials/michelia_alba_flower` | 白兰 Michelia × alba 花；广东、福建、广西 | 暂无来源 | N029、N032（经 N032 供 N031） |
-| 白兰叶 | `materials/michelia_alba_leaf` | 白兰叶；广东 | 暂无来源 | N030 |
-| 白芷根 | `materials/angelica_dahurica_root` | 白芷 Angelica dahurica 根；四川遂宁、浙江、河南 | 暂无来源 | N033 |
-| 肉豆蔻 | `materials/nutmeg` | 肉豆蔻 Myristica fragrans 种仁；印度尼西亚、格林纳达 | 暂无来源 | N037、N038 |
+| 甘松根 | `materials/nardostachys_root` | 甘松 Nardostachys chinensis 根及根茎；四川、甘肃、青海 | 野生植物类（08 §来源规则） | N025 |
+| 冬青叶 | `materials/wintergreen_leaf` | 平铺白珠树 Gaultheria procumbens 叶；北美东部 | 树木类（08 §来源规则） | N028 |
+| 白兰花 | `materials/michelia_alba_flower` | 白兰 Michelia × alba 花；广东、福建、广西 | 树木类（08 §来源规则） | N029、N032（经 N032 供 N031） |
+| 白兰叶 | `materials/michelia_alba_leaf` | 白兰叶；广东 | 树木类（08 §来源规则） | N030 |
+| 白芷根 | `materials/angelica_dahurica_root` | 白芷 Angelica dahurica 根；四川遂宁、浙江、河南 | 作物类（08 §来源规则） | N033 |
+| 肉豆蔻 | `materials/nutmeg` | 肉豆蔻 Myristica fragrans 种仁；印度尼西亚、格林纳达 | 树木类（08 §来源规则） | N037、N038 |
 | 红茶 | `materials/black_tea` | 茶 Camellia sinensis 鲜叶经萎凋、揉捻、发酵、干燥 | 茶叶（`materials/tea`）萎凋、揉捻后陶坛通气发酵（同 329 A 前段）、M10 烘干（待加配方） | N041 |
-| 印蒿 | `materials/davana_herb` | 印蒿 Artemisia pallens 花期地上部分；印度卡纳塔克 | 暂无来源 | N042 |
-| 吐鲁香脂 | `materials/tolu_balsam` | 吐鲁香树 Myroxylon balsamum 树干割伤流出的香脂；哥伦比亚、委内瑞拉 | 暂无来源 | N043、N044 |
+| 印蒿 | `materials/davana_herb` | 印蒿 Artemisia pallens 花期地上部分；印度卡纳塔克 | 野生植物类（08 §来源规则） | N042 |
+| 吐鲁香脂 | `materials/tolu_balsam` | 吐鲁香树 Myroxylon balsamum 树干割伤流出的香脂；哥伦比亚、委内瑞拉 | 树木类（08 §来源规则） | N043、N044 |
 | 豆豉 | `foods/douchi` | 黑豆蒸煮、制曲后加盐发酵 | 12 成品豆豉（`douchi`）；`foods/douchi` 标签待生成 | N045 |
-| 杜松子 | `materials/juniper_berry` | 欧洲刺柏 Juniperus communis 球果；意大利、克罗地亚 | 暂无来源 | N046 |
-| 芫荽籽 | `materials/coriander_seed` | 芫荽 Coriandrum sativum 果实；俄罗斯、乌克兰、摩洛哥 | 暂无来源 | N047 |
-| 芹菜花 | `materials/celery_flower` | 旱芹 Apium graveolens 花期地上部分（花序） | 暂无来源 | N048 |
-| 芹菜籽 | `materials/celery_seed` | 旱芹果实；印度、法国 | 暂无来源 | N049 |
-| 牡荆叶 | `materials/vitex_leaf` | 牡荆 Vitex negundo var. cannabifolia 叶；华东、华南 | 暂无来源 | N050 |
-| 苍术 | `materials/atractylodes_rhizome` | 茅苍术 Atractylodes lancea 根茎；江苏茅山、湖北 | 暂无来源 | N052 |
-| 枣 | `materials/jujube` | 枣 Ziziphus jujuba 成熟果实（干）；新疆、河北、山东 | 暂无来源 | N053 |
+| 杜松子 | `materials/juniper_berry` | 欧洲刺柏 Juniperus communis 球果；意大利、克罗地亚 | 树木类（08 §来源规则） | N046 |
+| 芫荽籽 | `materials/coriander_seed` | 芫荽 Coriandrum sativum 果实；俄罗斯、乌克兰、摩洛哥 | 作物类（08 §来源规则） | N047 |
+| 芹菜花 | `materials/celery_flower` | 旱芹 Apium graveolens 花期地上部分（花序） | 作物类（08 §来源规则） | N048 |
+| 芹菜籽 | `materials/celery_seed` | 旱芹果实；印度、法国 | 作物类（08 §来源规则） | N049 |
+| 牡荆叶 | `materials/vitex_leaf` | 牡荆 Vitex negundo var. cannabifolia 叶；华东、华南 | 树木类（08 §来源规则） | N050 |
+| 苍术 | `materials/atractylodes_rhizome` | 茅苍术 Atractylodes lancea 根茎；江苏茅山、湖北 | 野生植物类（08 §来源规则） | N052 |
+| 枣 | `materials/jujube` | 枣 Ziziphus jujuba 成熟果实（干）；新疆、河北、山东 | 树木类（08 §来源规则） | N053 |
 | 玫瑰花 | `materials/rose_flower` | 大马士革玫瑰 Rosa damascena、玫瑰 Rosa rugosa 鲜花；保加利亚、土耳其、山东平阴、甘肃苦水 | 原版 `minecraft:rose_bush`（游戏简化；与 N2 `materials/crimson_glory_rose` 重叠，见存疑） | N054、N056（经 N056 供 N055） |
-| 鸢尾根 | `materials/orris_root` | 德国鸢尾 Iris germanica、香根鸢尾 I. pallida、I. florentina 根茎，干燥陈化 2–3 年；意大利托斯卡纳、摩洛哥 | 暂无来源 | N057、N058 |
-| 杭白菊 | `materials/chrysanthemum_flower` | 菊 Chrysanthemum morifolium（杭白菊）头状花序；浙江桐乡 | 暂无来源 | N059、N060 |
-| 枫糖浆 | `materials/maple_syrup` | 糖槭 Acer saccharum 等树液熬浓的糖浆；加拿大魁北克、美国东北 | 暂无来源（作物模组槭树标签未核对） | N061、N062 |
-| 岩蔷薇枝叶 | `materials/rockrose_twig` | 岩蔷薇 Cistus ladanifer 枝叶；西班牙安达卢西亚、葡萄牙 | 暂无来源 | N063 |
+| 鸢尾根 | `materials/orris_root` | 德国鸢尾 Iris germanica、香根鸢尾 I. pallida、I. florentina 根茎，干燥陈化 2–3 年；意大利托斯卡纳、摩洛哥 | 野生植物类（08 §来源规则） | N057、N058 |
+| 杭白菊 | `materials/chrysanthemum_flower` | 菊 Chrysanthemum morifolium（杭白菊）头状花序；浙江桐乡 | 作物类（08 §来源规则） | N059、N060 |
+| 枫糖浆 | `materials/maple_syrup` | 糖槭 Acer saccharum 等树液熬浓的糖浆；加拿大魁北克、美国东北 | 树木类（作物模组槭树标签未核对；08 §来源规则） | N061、N062 |
+| 岩蔷薇枝叶 | `materials/rockrose_twig` | 岩蔷薇 Cistus ladanifer 枝叶；西班牙安达卢西亚、葡萄牙 | 树木类（08 §来源规则） | N063 |
 | 焙炒咖啡豆 | `materials/roasted_coffee_bean` | 咖啡 Coffea arabica、C. canephora 种子焙炒 | 咖啡生豆（`materials/coffee_bean`）焙炒（熔炉 / M17，同可可豆焙炒） | N064 |
-| 金合欢花 | `materials/cassie_flower` | 金合欢 Vachellia farnesiana（Acacia farnesiana）花；法国南部、埃及、印度 | 暂无来源 | N066 |
-| 大花茉莉花 | `materials/jasmine_grandiflorum_flower` | 素馨花 Jasminum grandiflorum 花；埃及、印度 | 暂无来源 | N069（经 N069 供 N068） |
-| 小花茉莉花 | `materials/jasmine_sambac_flower` | 茉莉花 Jasminum sambac 花；广西横州、福建福州 | 暂无来源 | N071（经 N071 供 N070） |
-| 素方花 | `materials/jasmine_officinale_flower` | 素方花 Jasminum officinale 花；四川、云南、法国格拉斯 | 暂无来源 | N124（经 `common_jasmine_concrete`） |
-| 佛手 | `materials/fingered_citron` | 佛手 Citrus medica var. sarcodactylis 果实；广东肇庆、浙江金华、四川 | 暂无来源 | N072 |
-| 葫芦巴籽 | `materials/fenugreek_seed` | 胡卢巴 Trigonella foenum-graecum 种子；印度、甘肃、河南 | 暂无来源 | N079 |
-| 柚 | `materials/pummelo` | 柚 Citrus maxima（C. grandis）果实；福建、广西、广东 | 暂无来源 | N083 |
-| 北美香柏枝叶 | `materials/thuja_leaf` | 北美香柏 Thuja occidentalis 枝叶；加拿大、美国东北 | 暂无来源 | N084 |
-| 孜然 | `materials/cumin_seed` | 孜然芹 Cuminum cyminum 果实；新疆、印度、伊朗 | 暂无来源 | N085 |
-| 柠檬叶 | `materials/lemon_leaf` | 柠檬 Citrus limon 叶与嫩枝；意大利西西里、巴拉圭 | 暂无来源 | N089 |
-| 栀子花 | `materials/gardenia_flower` | 栀子 Gardenia jasminoides 花；湖南、江西、福建 | 暂无来源（本模组栀子灌木 I07 可加花期采花，待定） | N091 |
-| 树兰花 | `materials/aglaia_flower` | 米仔兰 Aglaia odorata 花；广东、广西、福建 | 暂无来源 | N092、N093、N094 |
-| 树苔 | `materials/tree_moss` | 扁枝衣 Pseudevernia furfuracea（原表作 Evernia furfuraceae，地衣）；法国、摩洛哥、东欧 | 暂无来源 | N096（经 N096 供 N095） |
-| 香叶天竺葵 | `materials/rose_geranium_leaf` | 香叶天竺葵 Pelargonium graveolens 茎叶；云南、埃及、留尼汪 | 暂无来源 | N097 |
-| 香茶菜 | `materials/rabdosia_herb` | 香茶菜属 Isodon（Rabdosia）spp. 全草；华南、西南 | 暂无来源 | N099 |
-| 香柠檬 | `materials/bergamot` | 香柠檬 Citrus bergamia（C. aurantium subsp. bergamia）果实；意大利卡拉布里亚 | 暂无来源 | N101 |
-| 香根草根 | `materials/vetiver_root` | 香根草 Chrysopogon zizanioides（Vetiveria zizanioides，原表误作 Vertiver）根；海地、印度尼西亚爪哇、福建 | 暂无来源 | N102、N103 |
+| 金合欢花 | `materials/cassie_flower` | 金合欢 Vachellia farnesiana（Acacia farnesiana）花；法国南部、埃及、印度 | 树木类（08 §来源规则） | N066 |
+| 大花茉莉花 | `materials/jasmine_grandiflorum_flower` | 素馨花 Jasminum grandiflorum 花；埃及、印度 | 树木类（08 §来源规则） | N069（经 N069 供 N068） |
+| 小花茉莉花 | `materials/jasmine_sambac_flower` | 茉莉花 Jasminum sambac 花；广西横州、福建福州 | 树木类（08 §来源规则） | N071（经 N071 供 N070） |
+| 素方花 | `materials/jasmine_officinale_flower` | 素方花 Jasminum officinale 花；四川、云南、法国格拉斯 | 树木类（08 §来源规则） | N124（经 `common_jasmine_concrete`） |
+| 佛手 | `materials/fingered_citron` | 佛手 Citrus medica var. sarcodactylis 果实；广东肇庆、浙江金华、四川 | 树木类（08 §来源规则） | N072 |
+| 葫芦巴籽 | `materials/fenugreek_seed` | 胡卢巴 Trigonella foenum-graecum 种子；印度、甘肃、河南 | 作物类（08 §来源规则） | N079 |
+| 柚 | `materials/pummelo` | 柚 Citrus maxima（C. grandis）果实；福建、广西、广东 | 树木类（08 §来源规则） | N083 |
+| 北美香柏枝叶 | `materials/thuja_leaf` | 北美香柏 Thuja occidentalis 枝叶；加拿大、美国东北 | 树木类（08 §来源规则） | N084 |
+| 孜然 | `materials/cumin_seed` | 孜然芹 Cuminum cyminum 果实；新疆、印度、伊朗 | 作物类（08 §来源规则） | N085 |
+| 柠檬叶 | `materials/lemon_leaf` | 柠檬 Citrus limon 叶与嫩枝；意大利西西里、巴拉圭 | 树木类（08 §来源规则） | N089 |
+| 栀子花 | `materials/gardenia_flower` | 栀子 Gardenia jasminoides 花；湖南、江西、福建 | 树木类（08 §来源规则；本模组栀子灌木 I07 加花期采花） | N091 |
+| 树兰花 | `materials/aglaia_flower` | 米仔兰 Aglaia odorata 花；广东、广西、福建 | 树木类（08 §来源规则） | N092、N093、N094 |
+| 树苔 | `materials/tree_moss` | 扁枝衣 Pseudevernia furfuracea（原表作 Evernia furfuraceae，地衣）；法国、摩洛哥、东欧 | 野生植物类（08 §来源规则） | N096（经 N096 供 N095） |
+| 香叶天竺葵 | `materials/rose_geranium_leaf` | 香叶天竺葵 Pelargonium graveolens 茎叶；云南、埃及、留尼汪 | 作物类（08 §来源规则） | N097 |
+| 香茶菜 | `materials/rabdosia_herb` | 香茶菜属 Isodon（Rabdosia）spp. 全草；华南、西南 | 野生植物类（08 §来源规则） | N099 |
+| 香柠檬 | `materials/bergamot` | 香柠檬 Citrus bergamia（C. aurantium subsp. bergamia）果实；意大利卡拉布里亚 | 树木类（08 §来源规则） | N101 |
+| 香根草根 | `materials/vetiver_root` | 香根草 Chrysopogon zizanioides（Vetiveria zizanioides，原表误作 Vertiver）根；海地、印度尼西亚爪哇、福建 | 野生植物类（08 §来源规则） | N102、N103 |
 | 发酵香荚兰豆 | `materials/cured_vanilla_bean` | 香荚兰豆荚杀青、发汗、干燥后的成品 | 香荚兰豆（`materials/vanilla`）热水杀青、发汗、干燥（30 A 前段，H07 晾晒架） | N104、N105 |
-| 香附 | `materials/cyperus_rhizome` | 香附子 Cyperus rotundus 块茎；山东、浙江、湖南 | 暂无来源 | N106 |
-| 细香葱 | `materials/chives` | 北葱 Allium schoenoprasum 叶；欧洲、华北 | 暂无来源 | N107 |
-| 香紫苏 | `materials/clary_sage_herb` | 南欧丹参 Salvia sclarea 花期全草；俄罗斯、法国、陕西 | 暂无来源 | N108 |
-| 香榧子壳 | `materials/torreya_shell` | 香榧 Torreya grandis 'Merrillii' 种子的假种皮与外壳；浙江诸暨、绍兴 | 暂无来源 | N109 |
-| 啤酒花 | `materials/hops` | 啤酒花 Humulus lupulus 雌花序；新疆、甘肃、德国巴伐利亚 | 暂无来源（12 啤酒同用） | N112、N113 |
-| 蓝桉叶 | `materials/eucalyptus_leaf` | 蓝桉 Eucalyptus globulus 叶；云南、澳大利亚、葡萄牙 | 暂无来源 | N114 |
-| 海狸香囊 | `materials/castoreum` | 河狸 Castor fiber、C. canadensis 香囊（干燥）；加拿大、俄罗斯、新疆阿勒泰 | 暂无来源 | N115 |
-| 锡兰肉桂皮 | `materials/ceylon_cinnamon_bark` | 锡兰肉桂 Cinnamomum verum（C. zeylanicum）树皮；斯里兰卡 | 暂无来源 | N116 |
-| 锡兰肉桂叶 | `materials/ceylon_cinnamon_leaf` | 锡兰肉桂叶；斯里兰卡 | 暂无来源 | N117 |
-| 桂花 | `materials/osmanthus_flower` | 木犀 Osmanthus fragrans 花；广西桂林、浙江杭州、湖北咸宁 | 暂无来源 | N119、N120（经 N120 供 N118） |
-| 龙眼 | `materials/longan` | 龙眼 Dimocarpus longan（原表作 Euphoria longana）果实（桂圆干）；福建、广东、广西 | 暂无来源 | N121 |
-| 留兰香 | `materials/spearmint` | 留兰香 Mentha spicata 全草；江苏、美国 | 暂无来源 | N122 |
-| 青核桃皮 | `materials/walnut_hull` | 胡桃 Juglans regia、黑胡桃 J. nigra 的青果皮；云南、新疆、美国 | 暂无来源 | N123 |
-| 蚕豆花 | `materials/broad_bean_flower` | 蚕豆 Vicia faba 花；云南、四川 | 暂无来源 | N126 |
-| 野蔷薇花 | `materials/wild_rose_flower` | 野蔷薇 Rosa multiflora 花；华东、华中 | 暂无来源 | N128 |
-| 菊苣根 | `materials/chicory_root` | Cichorium intybus 的根（烘焙后用），比利时、法国、中国新疆 | 暂无来源 | N134 |
-| 晚香玉花 | `materials/tuberose_flower` | Polianthes tuberosa，印度、中国云南 | 暂无来源 | N135 |
-| 紫罗兰叶 | `materials/violet_leaf` | Viola odorata，法国、埃及 | 暂无来源 | N136 |
-| 椒样薄荷 | `materials/peppermint` | Mentha × piperita 全草，美国、印度 | 暂无来源 | N137 |
-| 黑加仑芽 | `materials/blackcurrant_bud` | Ribes nigrum 休眠芽，法国勃艮第 | 暂无来源 | N138、N139 |
-| 槐花 | `materials/sophora_flower` | Styphnolobium japonicum（Sophora japonica）花，中国 | 暂无来源 | N141（N140） |
-| 愈疮木 | `materials/guaiac_wood` | Bulnesia sarmientoi 心材，巴拉圭、阿根廷 | 暂无来源 | N144 |
-| 缬草根 | `materials/valerian_root` | Valeriana officinalis，欧洲、中国 | 暂无来源 | N145 |
-| 墨红花 | `materials/crimson_glory_rose` | Rosa 'Crimson Glory'，中国浙江、云南 | 暂无来源（原版玫瑰丛归玫瑰花 `materials/rose_flower`，2026-11-11 定） | N147（N146） |
-| 苦橙叶 | `materials/bitter_orange_leaf` | Citrus aurantium 叶与嫩枝，巴拉圭、法国 | 暂无来源 | N149、N254 |
-| 檀香木 | `materials/sandalwood` | Santalum album 心材，印度、澳大利亚 | 暂无来源 | N152 |
-| 薰衣草 | `materials/lavender` | Lavandula angustifolia 花穗，法国、中国新疆 | 暂无来源 | N153 |
-| 头状百里香 | `materials/conehead_thyme` | Thymbra capitata（Thymus capitatus）全草，西班牙、地中海沿岸 | 暂无来源 | N154 |
-| 可乐果 | `materials/kola_nut` | Cola acuminata、C. nitida 种子，西非 | 暂无来源 | N155 |
-| 加州胡椒果 | `materials/peruvian_pepper_berry` | Schinus molle 果实，秘鲁、美国加州 | 暂无来源 | N156 |
-| 卡黎皮 | `materials/cascarilla_bark` | Croton eluteria 树皮，巴哈马 | 暂无来源 | N157 |
-| 百里香 | `materials/thyme` | Thymus vulgaris、T. zygis 全草，西班牙、法国 | 暂无来源 | N158（N235） |
-| 依兰花 | `materials/ylang_ylang_flower` | Cananga odorata 花（卡南伽油用 f. macrophylla），印度尼西亚、科摩罗 | 暂无来源 | N067 |
-| 月桂叶 | `materials/laurel_leaf` | Laurus nobilis，土耳其、地中海沿岸 | 暂无来源 | N161 |
-| 生姜 | `materials/ginger` | Zingiber officinale 根茎（干），中国、印度 | 暂无来源 | N162 |
+| 香附 | `materials/cyperus_rhizome` | 香附子 Cyperus rotundus 块茎；山东、浙江、湖南 | 野生植物类（08 §来源规则） | N106 |
+| 细香葱 | `materials/chives` | 北葱 Allium schoenoprasum 叶；欧洲、华北 | 作物类（08 §来源规则） | N107 |
+| 香紫苏 | `materials/clary_sage_herb` | 南欧丹参 Salvia sclarea 花期全草；俄罗斯、法国、陕西 | 作物类（08 §来源规则） | N108 |
+| 香榧子壳 | `materials/torreya_shell` | 香榧 Torreya grandis 'Merrillii' 种子的假种皮与外壳；浙江诸暨、绍兴 | 树木类（08 §来源规则） | N109 |
+| 啤酒花 | `materials/hops` | 啤酒花 Humulus lupulus 雌花序；新疆、甘肃、德国巴伐利亚 | 作物类（12 啤酒同用；08 §来源规则） | N112、N113 |
+| 蓝桉叶 | `materials/eucalyptus_leaf` | 蓝桉 Eucalyptus globulus 叶；云南、澳大利亚、葡萄牙 | 树木类（08 §来源规则） | N114 |
+| 海狸香囊 | `materials/castoreum` | 河狸 Castor fiber、C. canadensis 香囊（干燥）；加拿大、俄罗斯、新疆阿勒泰 | 动物与虫类（08 §来源规则） | N115 |
+| 锡兰肉桂皮 | `materials/ceylon_cinnamon_bark` | 锡兰肉桂 Cinnamomum verum（C. zeylanicum）树皮；斯里兰卡 | 树木类（08 §来源规则） | N116 |
+| 锡兰肉桂叶 | `materials/ceylon_cinnamon_leaf` | 锡兰肉桂叶；斯里兰卡 | 树木类（08 §来源规则） | N117 |
+| 桂花 | `materials/osmanthus_flower` | 木犀 Osmanthus fragrans 花；广西桂林、浙江杭州、湖北咸宁 | 树木类（08 §来源规则） | N119、N120（经 N120 供 N118） |
+| 龙眼 | `materials/longan` | 龙眼 Dimocarpus longan（原表作 Euphoria longana）果实（桂圆干）；福建、广东、广西 | 树木类（08 §来源规则） | N121 |
+| 留兰香 | `materials/spearmint` | 留兰香 Mentha spicata 全草；江苏、美国 | 作物类（08 §来源规则） | N122 |
+| 青核桃皮 | `materials/walnut_hull` | 胡桃 Juglans regia、黑胡桃 J. nigra 的青果皮；云南、新疆、美国 | 核桃去青皮的副产（08 §C） | N123 |
+| 蚕豆花 | `materials/broad_bean_flower` | 蚕豆 Vicia faba 花；云南、四川 | 作物类（08 §来源规则） | N126 |
+| 野蔷薇花 | `materials/wild_rose_flower` | 野蔷薇 Rosa multiflora 花；华东、华中 | 树木类（08 §来源规则） | N128 |
+| 菊苣根 | `materials/chicory_root` | Cichorium intybus 的根（烘焙后用），比利时、法国、中国新疆 | 作物类（08 §来源规则） | N134 |
+| 晚香玉花 | `materials/tuberose_flower` | Polianthes tuberosa，印度、中国云南 | 作物类（08 §来源规则） | N135 |
+| 紫罗兰叶 | `materials/violet_leaf` | Viola odorata，法国、埃及 | 作物类（08 §来源规则） | N136 |
+| 椒样薄荷 | `materials/peppermint` | Mentha × piperita 全草，美国、印度 | 作物类（08 §来源规则） | N137 |
+| 黑加仑芽 | `materials/blackcurrant_bud` | Ribes nigrum 休眠芽，法国勃艮第 | 树木类（08 §来源规则） | N138、N139 |
+| 槐花 | `materials/sophora_flower` | Styphnolobium japonicum（Sophora japonica）花，中国 | 树木类（08 §来源规则） | N141（N140） |
+| 愈疮木 | `materials/guaiac_wood` | Bulnesia sarmientoi 心材，巴拉圭、阿根廷 | 树木类（08 §来源规则） | N144 |
+| 缬草根 | `materials/valerian_root` | Valeriana officinalis，欧洲、中国 | 野生植物类（08 §来源规则） | N145 |
+| 墨红花 | `materials/crimson_glory_rose` | Rosa 'Crimson Glory'，中国浙江、云南 | 作物类（原版玫瑰丛归玫瑰花 `materials/rose_flower`，2026-11-11 定；08 §来源规则） | N147（N146） |
+| 苦橙叶 | `materials/bitter_orange_leaf` | Citrus aurantium 叶与嫩枝，巴拉圭、法国 | 树木类（08 §来源规则） | N149、N254 |
+| 檀香木 | `materials/sandalwood` | Santalum album 心材，印度、澳大利亚 | 树木类（08 §来源规则） | N152 |
+| 薰衣草 | `materials/lavender` | Lavandula angustifolia 花穗，法国、中国新疆 | 作物类（08 §来源规则） | N153 |
+| 头状百里香 | `materials/conehead_thyme` | Thymbra capitata（Thymus capitatus）全草，西班牙、地中海沿岸 | 野生植物类（08 §来源规则） | N154 |
+| 可乐果 | `materials/kola_nut` | Cola acuminata、C. nitida 种子，西非 | 树木类（08 §来源规则） | N155 |
+| 加州胡椒果 | `materials/peruvian_pepper_berry` | Schinus molle 果实，秘鲁、美国加州 | 树木类（08 §来源规则） | N156 |
+| 卡黎皮 | `materials/cascarilla_bark` | Croton eluteria 树皮，巴哈马 | 树木类（08 §来源规则） | N157 |
+| 百里香 | `materials/thyme` | Thymus vulgaris、T. zygis 全草，西班牙、法国 | 作物类（08 §来源规则） | N158（N235） |
+| 依兰花 | `materials/ylang_ylang_flower` | Cananga odorata 花（卡南伽油用 f. macrophylla），印度尼西亚、科摩罗 | 树木类（08 §来源规则） | N067 |
+| 月桂叶 | `materials/laurel_leaf` | Laurus nobilis，土耳其、地中海沿岸 | 树木类（08 §来源规则） | N161 |
+| 生姜 | `materials/ginger` | Zingiber officinale 根茎（干），中国、印度 | 作物类（08 §来源规则） | N162 |
 | 白栎木 | `materials/oak_log` | Quercus alba 木材（烘烤木屑），北美 | `#minecraft:oak_logs`（原版橡木原木） | N163 |
-| 龙蒿 | `materials/tarragon` | Artemisia dracunculus 全草，法国、中国新疆 | 暂无来源 | N164 |
-| 樟木 | `materials/camphor_wood` | Cinnamomum camphora 木材与根，中国、日本 | 暂无来源 | `crude_camphor_oil`（N165、N220） |
-| 肉豆蔻衣 | `materials/mace` | Myristica fragrans 假种皮，印度尼西亚、格林纳达 | 暂无来源 | N166、N245 |
-| 众香叶 | `materials/pimento_leaf` | Pimenta dioica（P. officinalis）叶，牙买加 | 暂无来源 | N167 |
-| 西班牙鼠尾草 | `materials/spanish_sage` | Salvia lavandulifolia 全草，西班牙 | 暂无来源 | N168 |
-| 红橘 | `materials/mandarin` | Citrus reticulata 果实（压榨果皮），中国、地中海沿岸 | 暂无来源 | N110 |
-| 杂薰衣草 | `materials/lavandin` | Lavandula × intermedia 花穗，法国 | 暂无来源 | N170 |
-| 杏仁 | `materials/apricot_kernel` | Prunus armeniaca 果核仁，中国、土耳其 | 暂无来源 | N171 |
-| 苏合香原脂 | `materials/styrax` | Liquidambar orientalis、L. styraciflua 树干渗出的香脂，土耳其、中美洲 | 暂无来源 | N172、N173 |
-| 角豆荚 | `materials/carob_pod` | Ceratonia siliqua 荚果（籽即已有的 `materials/carob_seed`），地中海沿岸 | 暂无来源 | N174、N175 |
-| 乳香 | `materials/olibanum` | Boswellia sacra、B. carteri 树脂，索马里、阿曼 | 暂无来源 | N177 |
-| 没药 | `materials/myrrh` | Commiphora myrrha 树脂，索马里、埃塞俄比亚 | 暂无来源 | N178 |
-| 高良姜根茎 | `materials/galangal_root` | Alpinia galanga、A. officinarum，中国广东、海南，东南亚 | 暂无来源 | N179 |
-| 松针 | `materials/pine_needles` | Pinus sylvestris 针叶与嫩枝，欧洲 | 暂无来源（原版云杉树叶已归冷杉针叶 `materials/fir_needles`，2026-11-11 定） | N180 |
-| 小茴香籽 | `materials/fennel_seed` | Foeniculum vulgare 果实，中国、印度 | 暂无来源 | N181 |
-| 苦扁桃仁 | `materials/bitter_almond` | Prunus dulcis var. amara 种仁，摩洛哥、地中海沿岸 | 暂无来源 | N182 |
-| 阿魏 | `materials/asafoetida` | Ferula assa-foetida 油胶树脂，伊朗、阿富汗；中国新疆（F. sinkiangensis） | 暂无来源 | N183 |
-| 欧芹 | `materials/parsley` | Petroselinum crispum 全草与籽，欧洲 | 暂无来源 | N185、N251 |
+| 龙蒿 | `materials/tarragon` | Artemisia dracunculus 全草，法国、中国新疆 | 作物类（08 §来源规则） | N164 |
+| 樟木 | `materials/camphor_wood` | Cinnamomum camphora 木材与根，中国、日本 | 树木类（08 §来源规则） | `crude_camphor_oil`（N165、N220） |
+| 肉豆蔻衣 | `materials/mace` | Myristica fragrans 假种皮，印度尼西亚、格林纳达 | 树木类（08 §来源规则） | N166、N245 |
+| 众香叶 | `materials/pimento_leaf` | Pimenta dioica（P. officinalis）叶，牙买加 | 树木类（08 §来源规则） | N167 |
+| 西班牙鼠尾草 | `materials/spanish_sage` | Salvia lavandulifolia 全草，西班牙 | 野生植物类（08 §来源规则） | N168 |
+| 红橘 | `materials/mandarin` | Citrus reticulata 果实（压榨果皮），中国、地中海沿岸 | 树木类（08 §来源规则） | N110 |
+| 杂薰衣草 | `materials/lavandin` | Lavandula × intermedia 花穗，法国 | 作物类（08 §来源规则） | N170 |
+| 杏仁 | `materials/apricot_kernel` | Prunus armeniaca 果核仁，中国、土耳其 | 树木类（08 §来源规则） | N171 |
+| 苏合香原脂 | `materials/styrax` | Liquidambar orientalis、L. styraciflua 树干渗出的香脂，土耳其、中美洲 | 树木类（08 §来源规则） | N172、N173 |
+| 角豆荚 | `materials/carob_pod` | Ceratonia siliqua 荚果（籽即已有的 `materials/carob_seed`），地中海沿岸 | 树木类（08 §来源规则） | N174、N175 |
+| 乳香 | `materials/olibanum` | Boswellia sacra、B. carteri 树脂，索马里、阿曼 | 树木类（08 §来源规则） | N177 |
+| 没药 | `materials/myrrh` | Commiphora myrrha 树脂，索马里、埃塞俄比亚 | 树木类（08 §来源规则） | N178 |
+| 高良姜根茎 | `materials/galangal_root` | Alpinia galanga、A. officinarum，中国广东、海南，东南亚 | 作物类（08 §来源规则） | N179 |
+| 松针 | `materials/pine_needles` | Pinus sylvestris 针叶与嫩枝，欧洲 | 树木类（原版云杉树叶已归冷杉针叶 `materials/fir_needles`，2026-11-11 定；08 §来源规则） | N180 |
+| 小茴香籽 | `materials/fennel_seed` | Foeniculum vulgare 果实，中国、印度 | 作物类（08 §来源规则） | N181 |
+| 苦扁桃仁 | `materials/bitter_almond` | Prunus dulcis var. amara 种仁，摩洛哥、地中海沿岸 | 树木类（08 §来源规则） | N182 |
+| 阿魏 | `materials/asafoetida` | Ferula assa-foetida 油胶树脂，伊朗、阿富汗；中国新疆（F. sinkiangensis） | 野生植物类（08 §来源规则） | N183 |
+| 欧芹 | `materials/parsley` | Petroselinum crispum 全草与籽，欧洲 | 作物类（08 §来源规则） | N185、N251 |
 | 冷杉针叶 | `materials/fir_needles` | Abies sibirica、A. balsamea 针叶与嫩枝，俄罗斯、加拿大 | 原版云杉树叶 `minecraft:spruce_leaves`（游戏简化：香脂冷杉与云杉同为松科） | N192 |
-| 波罗尼花 | `materials/boronia_flower` | Boronia megastigma，澳大利亚塔斯马尼亚 | 暂无来源 | N187 |
-| 玫瑰木 | `materials/rosewood` | Aniba rosaeodora 木材，巴西亚马孙 | 暂无来源 | N188 |
-| 玫瑰草 | `materials/palmarosa` | Cymbopogon martini 全草，印度 | 暂无来源 | N189 |
-| 香茅 | `materials/citronella_grass` | Cymbopogon nardus、C. winterianus 全草，斯里兰卡、印度尼西亚、中国 | 暂无来源 | N190 |
-| 加拿大香脂 | `materials/canada_balsam` | Abies balsamea 树皮油囊中的原脂，加拿大 | 暂无来源 | N193 |
-| 胡萝卜籽 | `materials/carrot_seed` | Daucus carota 果实，法国、匈牙利 | 暂无来源 | N194 |
-| 罗马春黄菊花 | `materials/roman_chamomile` | Chamaemelum nobile（Anthemis nobilis）花，英国、法国 | 暂无来源 | N195、N196 |
-| 药鼠李皮 | `materials/cascara_bark` | Frangula purshiana（Rhamnus purshiana）树皮，北美太平洋沿岸 | 暂无来源 | N197 |
-| 荜澄茄 | `materials/cubeb` | Piper cubeba 未熟果实，印度尼西亚 | 暂无来源 | N198 |
-| 胡薄荷 | `materials/pennyroyal` | Mentha pulegium 全草，地中海沿岸 | 暂无来源 | N199 |
-| 欧当归根 | `materials/lovage_root` | Levisticum officinale，欧洲 | 暂无来源 | N200、N250 |
-| 欧夏至草 | `materials/horehound` | Marrubium vulgare 全草，欧洲 | 暂无来源 | N201 |
-| 丝兰茎 | `materials/yucca_trunk` | Yucca schidigera（莫哈弗丝兰）茎干，美国西南部、墨西哥 | 暂无来源 | N202 |
-| 海索草 | `materials/hyssop` | Hyssopus officinalis 全草，欧洲 | 暂无来源 | N204 |
-| 莳萝 | `materials/dill` | Anethum graveolens 全草，欧洲、美国 | 暂无来源 | N205 |
-| 秘鲁香脂原脂 | `materials/crude_peru_balsam` | Myroxylon balsamum var. pereirae 树干伤口渗出物，萨尔瓦多 | 暂无来源 | N206 |
-| 格蓬 | `materials/galbanum` | Ferula gummosa（F. galbaniflua）油胶树脂，伊朗 | 暂无来源 | N207 |
-| 脂檀木 | `materials/amyris_wood` | Amyris balsamifera 木材，海地、牙买加 | 暂无来源 | N208 |
-| 银荆花 | `materials/mimosa_flower` | Acacia dealbata 花，法国、印度 | 暂无来源 | N209 |
-| 接骨木花 | `materials/elderflower` | Sambucus nigra、S. canadensis，欧洲、北美 | 暂无来源 | N210 |
-| 甘牛至 | `materials/marjoram` | Origanum majorana 全草，埃及、地中海沿岸 | 暂无来源 | N211 |
-| 黄龙胆根 | `materials/gentian_root` | Gentiana lutea，欧洲山区 | 暂无来源 | N212 |
-| 黄葵籽 | `materials/ambrette_seed` | Abelmoschus moschatus（Hibiscus abelmoschus）种子，印度、厄瓜多尔、中国 | 暂无来源 | N213 |
-| 野黑樱桃树皮 | `materials/wild_cherry_bark` | Prunus serotina 树皮，北美 | 暂无来源 | N214 |
-| 黑胡椒 | `materials/black_pepper` | Piper nigrum 未熟果实（晒干），越南、印度、中国海南 | 暂无来源 | N215 |
-| 榄香脂 | `materials/elemi` | Canarium luzonicum 油树脂，菲律宾 | 暂无来源 | N217 |
-| 蜡菊花 | `materials/immortelle_flower` | Helichrysum italicum（H. angustifolium）花，法国科西嘉、巴尔干 | 暂无来源 | N218 |
-| 香蜂花 | `materials/lemon_balm` | Melissa officinalis 全草，欧洲 | 暂无来源 | N219 |
-| 苦橙花 | `materials/bitter_orange_flower` | Citrus aurantium subsp. amara 花，突尼斯、摩洛哥、埃及 | 暂无来源 | N221 |
+| 波罗尼花 | `materials/boronia_flower` | Boronia megastigma，澳大利亚塔斯马尼亚 | 树木类（08 §来源规则） | N187 |
+| 玫瑰木 | `materials/rosewood` | Aniba rosaeodora 木材，巴西亚马孙 | 树木类（08 §来源规则） | N188 |
+| 玫瑰草 | `materials/palmarosa` | Cymbopogon martini 全草，印度 | 野生植物类（08 §来源规则） | N189 |
+| 香茅 | `materials/citronella_grass` | Cymbopogon nardus、C. winterianus 全草，斯里兰卡、印度尼西亚、中国 | 作物类（08 §来源规则） | N190 |
+| 加拿大香脂 | `materials/canada_balsam` | Abies balsamea 树皮油囊中的原脂，加拿大 | 树木类（08 §来源规则） | N193 |
+| 胡萝卜籽 | `materials/carrot_seed` | Daucus carota 果实，法国、匈牙利 | 作物类（08 §来源规则） | N194 |
+| 罗马春黄菊花 | `materials/roman_chamomile` | Chamaemelum nobile（Anthemis nobilis）花，英国、法国 | 作物类（08 §来源规则） | N195、N196 |
+| 药鼠李皮 | `materials/cascara_bark` | Frangula purshiana（Rhamnus purshiana）树皮，北美太平洋沿岸 | 树木类（08 §来源规则） | N197 |
+| 荜澄茄 | `materials/cubeb` | Piper cubeba 未熟果实，印度尼西亚 | 树木类（08 §来源规则） | N198 |
+| 胡薄荷 | `materials/pennyroyal` | Mentha pulegium 全草，地中海沿岸 | 野生植物类（08 §来源规则） | N199 |
+| 欧当归根 | `materials/lovage_root` | Levisticum officinale，欧洲 | 作物类（08 §来源规则） | N200、N250 |
+| 欧夏至草 | `materials/horehound` | Marrubium vulgare 全草，欧洲 | 野生植物类（08 §来源规则） | N201 |
+| 丝兰茎 | `materials/yucca_trunk` | Yucca schidigera（莫哈弗丝兰）茎干，美国西南部、墨西哥 | 野生植物类（08 §来源规则） | N202 |
+| 海索草 | `materials/hyssop` | Hyssopus officinalis 全草，欧洲 | 野生植物类（08 §来源规则） | N204 |
+| 莳萝 | `materials/dill` | Anethum graveolens 全草，欧洲、美国 | 作物类（08 §来源规则） | N205 |
+| 秘鲁香脂原脂 | `materials/crude_peru_balsam` | Myroxylon balsamum var. pereirae 树干伤口渗出物，萨尔瓦多 | 树木类（08 §来源规则） | N206 |
+| 格蓬 | `materials/galbanum` | Ferula gummosa（F. galbaniflua）油胶树脂，伊朗 | 野生植物类（08 §来源规则） | N207 |
+| 脂檀木 | `materials/amyris_wood` | Amyris balsamifera 木材，海地、牙买加 | 树木类（08 §来源规则） | N208 |
+| 银荆花 | `materials/mimosa_flower` | Acacia dealbata 花，法国、印度 | 树木类（08 §来源规则） | N209 |
+| 接骨木花 | `materials/elderflower` | Sambucus nigra、S. canadensis，欧洲、北美 | 树木类（08 §来源规则） | N210 |
+| 甘牛至 | `materials/marjoram` | Origanum majorana 全草，埃及、地中海沿岸 | 作物类（08 §来源规则） | N211 |
+| 黄龙胆根 | `materials/gentian_root` | Gentiana lutea，欧洲山区 | 野生植物类（08 §来源规则） | N212 |
+| 黄葵籽 | `materials/ambrette_seed` | Abelmoschus moschatus（Hibiscus abelmoschus）种子，印度、厄瓜多尔、中国 | 作物类（08 §来源规则） | N213 |
+| 野黑樱桃树皮 | `materials/wild_cherry_bark` | Prunus serotina 树皮，北美 | 树木类（08 §来源规则） | N214 |
+| 黑胡椒 | `materials/black_pepper` | Piper nigrum 未熟果实（晒干），越南、印度、中国海南 | 作物类（08 §来源规则） | N215 |
+| 榄香脂 | `materials/elemi` | Canarium luzonicum 油树脂，菲律宾 | 树木类（08 §来源规则） | N217 |
+| 蜡菊花 | `materials/immortelle_flower` | Helichrysum italicum（H. angustifolium）花，法国科西嘉、巴尔干 | 野生植物类（08 §来源规则） | N218 |
+| 香蜂花 | `materials/lemon_balm` | Melissa officinalis 全草，欧洲 | 作物类（08 §来源规则） | N219 |
+| 苦橙花 | `materials/bitter_orange_flower` | Citrus aurantium subsp. amara 花，突尼斯、摩洛哥、埃及 | 树木类（08 §来源规则） | N221 |
 | 葡萄柚 | `materials/grapefruit` | Citrus × paradisi（及柚 C. maxima）果皮、幼果，美国、中国 | `#forge:fruits/grapefruit`（08 柑橘已列） | N222 |
-| 穗薰衣草 | `materials/spike_lavender` | Lavandula latifolia 花穗，西班牙 | 暂无来源 | N223 |
-| 鹰爪豆花 | `materials/genet_flower` | Spartium junceum 花，地中海沿岸 | 暂无来源 | N224 |
-| 苦橙 | `materials/bitter_orange` | Citrus aurantium 果实（含玳玳 C. aurantium 'Daidai'），西班牙、中国浙江 | 暂无来源 | N255 |
-| 小米辣 | `materials/bird_eye_chili` | Capsicum frutescens 干果，中国云南、海南 | 暂无来源（或并入 `materials/dried_chili`） | N227 |
-| 丁香花梗 | `materials/clove_stem` | Syzygium aromaticum（Eugenia spp.）花梗，印度尼西亚、马达加斯加 | 暂无来源 | N228 |
-| 茴芹籽 | `materials/anise_seed` | Pimpinella anisum 果实，土耳其、埃及 | 暂无来源 | N229 |
-| 巴拉圭茶叶 | `materials/mate_leaf` | Ilex paraguariensis 叶，巴拉圭、阿根廷、巴西 | 暂无来源 | N231 |
-| 山核桃树皮 | `materials/hickory_bark` | Carya ovata 等树皮，北美 | 暂无来源 | N232 |
-| 瓜拉纳籽 | `materials/guarana_seed` | Paullinia cupana 种子，巴西 | 暂无来源 | N233 |
-| 白胡椒 | `materials/white_pepper` | Piper nigrum 成熟果实去果皮，中国海南、印度尼西亚 | 暂无来源 | N236、N237 |
-| 众香果 | `materials/allspice` | Pimenta dioica 未熟果实（晒干），牙买加 | 暂无来源 | N241 |
-| 安息香 | `materials/benzoin` | Styrax tonkinensis 树脂，老挝、越南 | 暂无来源 | N242 |
-| 当归籽 | `materials/angelica_seed` | Angelica archangelica、A. sinensis 果实，欧洲、中国甘肃 | 暂无来源 | N243 |
-| 当归根 | `materials/angelica_root` | Angelica archangelica、A. sinensis 根，欧洲、中国甘肃 | 暂无来源 | N244 |
-| 西印度月桂叶 | `materials/west_indian_bay_leaf` | Pimenta racemosa（P. acris）叶，多米尼克、西印度群岛 | 暂无来源 | N246、N247 |
-| 苦木 | `materials/quassia_wood` | Picrasma excelsa、Quassia amara 木材，牙买加、苏里南 | 暂无来源 | N253 |
-| 金鸡纳树皮 | `materials/cinchona_bark` | Cinchona calisaya、C. ledgeriana 等树皮，秘鲁、刚果（金）、印度尼西亚、中国云南 | 暂无来源 | N256、N258 |
-| 金钮扣 | `materials/jambu` | Acmella oleracea（Spilanthes acmella var. oleracea）全草与花序，巴西、中国云南 | 暂无来源 | N257 |
-| 互叶白千层叶 | `materials/tea_tree_leaf` | Melaleuca alternifolia 叶与嫩枝，澳大利亚 | 暂无来源 | N261 |
+| 穗薰衣草 | `materials/spike_lavender` | Lavandula latifolia 花穗，西班牙 | 野生植物类（08 §来源规则） | N223 |
+| 鹰爪豆花 | `materials/genet_flower` | Spartium junceum 花，地中海沿岸 | 树木类（08 §来源规则） | N224 |
+| 苦橙 | `materials/bitter_orange` | Citrus aurantium 果实（含玳玳 C. aurantium 'Daidai'），西班牙、中国浙江 | 树木类（08 §来源规则） | N255 |
+| 小米辣 | `materials/bird_eye_chili` | Capsicum frutescens 干果，中国云南、海南 | 作物类（或并入 `materials/dried_chili`；08 §来源规则） | N227 |
+| 丁香花梗 | `materials/clove_stem` | Syzygium aromaticum（Eugenia spp.）花梗，印度尼西亚、马达加斯加 | 树木类（08 §来源规则） | N228 |
+| 茴芹籽 | `materials/anise_seed` | Pimpinella anisum 果实，土耳其、埃及 | 作物类（08 §来源规则） | N229 |
+| 巴拉圭茶叶 | `materials/mate_leaf` | Ilex paraguariensis 叶，巴拉圭、阿根廷、巴西 | 树木类（08 §来源规则） | N231 |
+| 山核桃树皮 | `materials/hickory_bark` | Carya ovata 等树皮，北美 | 树木类（08 §来源规则） | N232 |
+| 瓜拉纳籽 | `materials/guarana_seed` | Paullinia cupana 种子，巴西 | 树木类（08 §来源规则） | N233 |
+| 白胡椒 | `materials/white_pepper` | Piper nigrum 成熟果实去果皮，中国海南、印度尼西亚 | 作物类（08 §来源规则） | N236、N237 |
+| 众香果 | `materials/allspice` | Pimenta dioica 未熟果实（晒干），牙买加 | 树木类（08 §来源规则） | N241 |
+| 安息香 | `materials/benzoin` | Styrax tonkinensis 树脂，老挝、越南 | 树木类（08 §来源规则） | N242 |
+| 当归籽 | `materials/angelica_seed` | Angelica archangelica、A. sinensis 果实，欧洲、中国甘肃 | 作物类（08 §来源规则） | N243 |
+| 当归根 | `materials/angelica_root` | Angelica archangelica、A. sinensis 根，欧洲、中国甘肃 | 作物类（08 §来源规则） | N244 |
+| 西印度月桂叶 | `materials/west_indian_bay_leaf` | Pimenta racemosa（P. acris）叶，多米尼克、西印度群岛 | 树木类（08 §来源规则） | N246、N247 |
+| 苦木 | `materials/quassia_wood` | Picrasma excelsa、Quassia amara 木材，牙买加、苏里南 | 树木类（08 §来源规则） | N253 |
+| 金鸡纳树皮 | `materials/cinchona_bark` | Cinchona calisaya、C. ledgeriana 等树皮，秘鲁、刚果（金）、印度尼西亚、中国云南 | 树木类（08 §来源规则） | N256、N258 |
+| 金钮扣 | `materials/jambu` | Acmella oleracea（Spilanthes acmella var. oleracea）全草与花序，巴西、中国云南 | 野生植物类（08 §来源规则） | N257 |
+| 互叶白千层叶 | `materials/tea_tree_leaf` | Melaleuca alternifolia 叶与嫩枝，澳大利亚 | 树木类（08 §来源规则） | N261 |
 | 白柠檬 | `materials/lime` | Citrus aurantiifolia 果实，墨西哥、秘鲁 | `#forge:fruits/lime`（08 柑橘已列） | N262 |
-| 白芥子 | `materials/yellow_mustard_seed` | Sinapis alba 种子，加拿大 | 暂无来源 | N265 |
-| 芥菜籽 | `materials/brown_mustard_seed` | Brassica juncea 种子，加拿大、印度、中国 | 暂无来源 | N266 |
-| 紫苏叶 | `materials/perilla_leaf` | 紫苏 Perilla frutescens 叶，中国、日本、韩国 | 暂无来源 | N268 |
-| 药鼠尾草 | `materials/sage` | Salvia officinalis 叶，克罗地亚达尔马提亚、阿尔巴尼亚 | 暂无来源 | N274、N296 |
-| 山达草叶 | `materials/yerba_santa` | Eriodictyon californicum 叶，美国加利福尼亚 | 暂无来源 | N278、N398 |
-| 苜蓿 | `materials/alfalfa` | Medicago sativa 全草，美国、中国甘肃、内蒙古 | 暂无来源 | N279 |
-| 母菊花 | `materials/german_chamomile` | Matricaria chamomilla（M. recutita）头状花序，匈牙利、埃及、中国新疆 | 暂无来源 | N287、N309、N357 |
-| 红三叶草花序 | `materials/red_clover` | Trifolium pratense 开花顶部，欧洲、北美 | 暂无来源 | N290 |
+| 白芥子 | `materials/yellow_mustard_seed` | Sinapis alba 种子，加拿大 | 作物类（08 §来源规则） | N265 |
+| 芥菜籽 | `materials/brown_mustard_seed` | Brassica juncea 种子，加拿大、印度、中国 | 作物类（08 §来源规则） | N266 |
+| 紫苏叶 | `materials/perilla_leaf` | 紫苏 Perilla frutescens 叶，中国、日本、韩国 | 作物类（08 §来源规则） | N268 |
+| 药鼠尾草 | `materials/sage` | Salvia officinalis 叶，克罗地亚达尔马提亚、阿尔巴尼亚 | 野生植物类（08 §来源规则） | N274、N296 |
+| 山达草叶 | `materials/yerba_santa` | Eriodictyon californicum 叶，美国加利福尼亚 | 树木类（08 §来源规则） | N278、N398 |
+| 苜蓿 | `materials/alfalfa` | Medicago sativa 全草，美国、中国甘肃、内蒙古 | 作物类（08 §来源规则） | N279 |
+| 母菊花 | `materials/german_chamomile` | Matricaria chamomilla（M. recutita）头状花序，匈牙利、埃及、中国新疆 | 野生植物类（08 §来源规则） | N287、N309、N357 |
+| 红三叶草花序 | `materials/red_clover` | Trifolium pratense 开花顶部，欧洲、北美 | 野生植物类（08 §来源规则） | N290 |
 | 蒲公英 | `materials/dandelion` | Taraxacum officinale 根与全草，欧洲、中国 | 原版 `minecraft:dandelion`（游戏简化：花代全株） | N291、N292 |
-| 加拿大飞蓬 | `materials/canadian_fleabane` | Erigeron canadensis（Conyza canadensis）开花全草，北美 | 暂无来源 | N293 |
-| 穗花槭树皮 | `materials/mountain_maple_bark` | Acer spicatum 树皮（部位未确认），北美东北部 | 暂无来源 | N294 |
-| 芸香 | `materials/rue` | Ruta graveolens 开花全草，地中海沿岸、北非 | 暂无来源 | N295 |
-| 菝葜根 | `materials/sarsaparilla_root` | Smilax ornata、S. regelii 等的根，墨西哥、洪都拉斯、牙买加 | 暂无来源 | N297 |
-| 苦艾 | `materials/wormwood` | Artemisia absinthium 开花全草，欧洲、北非、中国新疆 | 暂无来源 | N302、N345、N348 |
-| 橘柚 | `materials/tangelo` | Citrus × tangelo（橘 × 葡萄柚）果实，美国佛罗里达 | 暂无来源 | N304 |
-| 美国栗叶 | `materials/chestnut_leaf` | Castanea dentata 叶，北美东部（野生种群因栗疫病已很少） | 暂无来源 | N306 |
-| 古巴香脂 | `materials/copaiba_balsam` | Copaifera officinalis、C. langsdorffii 等树干钻孔流出的油树脂，巴西亚马孙 | 暂无来源 | N307 |
-| 达迷草叶 | `materials/damiana_leaf` | Turnera diffusa 叶，墨西哥 | 暂无来源 | N308 |
-| 甜没药 | `materials/opoponax` | Commiphora guidottii（C. erythraea）树胶树脂，索马里、埃塞俄比亚 | 暂无来源 | N311、N341 |
-| 藏红花柱头 | `materials/saffron` | Crocus sativus 柱头，伊朗、西班牙；中国上海崇明栽培 | 暂无来源 | N312 |
-| 酸角果肉 | `materials/tamarind_pulp` | Tamarindus indica 果肉，泰国、印度、中国云南（种子即已有 `materials/tamarind_seed`） | 暂无来源 | N317 |
-| 辣根 | `materials/horseradish_root` | Armoracia rusticana 根，欧洲、中国山东 | 暂无来源 | N318 |
-| 芹菜叶 | `materials/celery_leaf` | Apium graveolens 茎叶，印度、欧洲、中国 | 暂无来源（作物模组芹菜标签待核对） | N320 |
-| 柏木 | `materials/cedarwood` | 柏木 Cupressus funebris 木材（中国柏木油），或北美红柏 Juniperus virginiana；中国四川、贵州，美国 | 暂无来源 | N321 |
-| 韭葱 | `materials/leek` | Allium porrum 全株，欧洲、中国山东 | 暂无来源（作物模组韭葱标签待核对） | N326 |
-| 香橙 | `materials/yuzu` | Citrus junos 果实（取皮），日本高知、中国四川、湖北 | 暂无来源 | N329 |
-| 墨西哥牛至 | `materials/mexican_oregano` | Lippia graveolens 叶，墨西哥 | 暂无来源 | N331 |
-| 冬香薄荷 | `materials/winter_savory` | Satureja montana 开花全草，巴尔干、地中海沿岸 | 暂无来源 | N333 |
-| 桃叶 | `materials/peach_leaf` | Prunus persica 叶，中国、地中海沿岸 | 暂无来源 | N336 |
-| 白藓牛至 | `materials/dittany_of_crete` | Origanum dictamnus 开花全草，希腊克里特岛 | 暂无来源 | N337 |
-| 花椒 | `materials/sichuan_pepper` | Zanthoxylum bungeanum 果皮，中国四川、陕西、甘肃 | 暂无来源 | N342 |
-| 儿茶心材 | `materials/catechu_heartwood` | Senegalia catechu（Acacia catechu）心材，印度、缅甸、中国云南 | 暂无来源 | N344 |
-| 橡苔 | `materials/oakmoss` | Evernia prunastri（生于栎树的地衣），巴尔干、摩洛哥 | 暂无来源 | N353 |
-| 苏格兰留兰香 | `materials/scotch_spearmint` | Mentha × gracilis（M. cardiaca）茎叶，美国中西部、西北部 | 暂无来源 | N354 |
-| 安古树皮 | `materials/angostura_bark` | Angostura trifoliata（Galipea officinalis）树皮，委内瑞拉、哥伦比亚 | 暂无来源 | N356 |
-| 灵猫香 | `materials/civet` | 非洲灵猫 Civettictis civetta、大灵猫 Viverra zibetha 会阴腺分泌物，埃塞俄比亚；中国浙江养殖小灵猫 | 暂无来源 | N361 |
-| 橘叶 | `materials/mandarin_leaf` | Citrus reticulata 叶与嫩枝，意大利西西里、巴拉圭 | 暂无来源 | N366 |
-| 欧洲山松针叶 | `materials/dwarf_pine_needles` | Pinus mugo 针叶与枝梢，奥地利、斯洛伐克 | 暂无来源（不与 N2 `materials/pine_needles` 共用，避免 NT1 配方冲突） | N367 |
-| 玫瑰果 | `materials/rose_hip` | Rosa canina 等的果实，智利、欧洲、中国新疆 | 暂无来源 | N368 |
-| 夏香薄荷 | `materials/summer_savory` | Satureja hortensis 开花全草，欧洲东南部 | 暂无来源 | N369 |
-| 加拿大细辛 | `materials/canadian_snakeroot` | Asarum canadense 根茎与根，北美东部 | 暂无来源 | N370 |
-| 黄蓍胶片 | `materials/tragacanth_lump` | Astragalus gummifer 等茎干割伤渗出物（带状、片状），伊朗、土耳其 | 暂无来源 | N372 |
-| 摩洛哥豆蔻 | `materials/grains_of_paradise` | Aframomum melegueta 种子，加纳、尼日利亚 | 暂无来源 | N374 |
+| 加拿大飞蓬 | `materials/canadian_fleabane` | Erigeron canadensis（Conyza canadensis）开花全草，北美 | 野生植物类（08 §来源规则） | N293 |
+| 穗花槭树皮 | `materials/mountain_maple_bark` | Acer spicatum 树皮（部位未确认），北美东北部 | 树木类（08 §来源规则） | N294 |
+| 芸香 | `materials/rue` | Ruta graveolens 开花全草，地中海沿岸、北非 | 野生植物类（08 §来源规则） | N295 |
+| 菝葜根 | `materials/sarsaparilla_root` | Smilax ornata、S. regelii 等的根，墨西哥、洪都拉斯、牙买加 | 野生植物类（08 §来源规则） | N297 |
+| 苦艾 | `materials/wormwood` | Artemisia absinthium 开花全草，欧洲、北非、中国新疆 | 野生植物类（08 §来源规则） | N302、N345、N348 |
+| 橘柚 | `materials/tangelo` | Citrus × tangelo（橘 × 葡萄柚）果实，美国佛罗里达 | 树木类（08 §来源规则） | N304 |
+| 美国栗叶 | `materials/chestnut_leaf` | Castanea dentata 叶，北美东部（野生种群因栗疫病已很少） | 树木类（08 §来源规则） | N306 |
+| 古巴香脂 | `materials/copaiba_balsam` | Copaifera officinalis、C. langsdorffii 等树干钻孔流出的油树脂，巴西亚马孙 | 树木类（08 §来源规则） | N307 |
+| 达迷草叶 | `materials/damiana_leaf` | Turnera diffusa 叶，墨西哥 | 野生植物类（08 §来源规则） | N308 |
+| 甜没药 | `materials/opoponax` | Commiphora guidottii（C. erythraea）树胶树脂，索马里、埃塞俄比亚 | 野生植物类（08 §来源规则） | N311、N341 |
+| 藏红花柱头 | `materials/saffron` | Crocus sativus 柱头，伊朗、西班牙；中国上海崇明栽培 | 作物类（08 §来源规则） | N312 |
+| 酸角果肉 | `materials/tamarind_pulp` | Tamarindus indica 果肉，泰国、印度、中国云南（种子即已有 `materials/tamarind_seed`） | 树木类（08 §来源规则） | N317 |
+| 辣根 | `materials/horseradish_root` | Armoracia rusticana 根，欧洲、中国山东 | 作物类（08 §来源规则） | N318 |
+| 芹菜叶 | `materials/celery_leaf` | Apium graveolens 茎叶，印度、欧洲、中国 | 作物类（作物模组芹菜标签待核对；08 §来源规则） | N320 |
+| 柏木 | `materials/cedarwood` | 柏木 Cupressus funebris 木材（中国柏木油），或北美红柏 Juniperus virginiana；中国四川、贵州，美国 | 树木类（08 §来源规则） | N321 |
+| 韭葱 | `materials/leek` | Allium porrum 全株，欧洲、中国山东 | 作物类（作物模组韭葱标签待核对；08 §来源规则） | N326 |
+| 香橙 | `materials/yuzu` | Citrus junos 果实（取皮），日本高知、中国四川、湖北 | 树木类（08 §来源规则） | N329 |
+| 墨西哥牛至 | `materials/mexican_oregano` | Lippia graveolens 叶，墨西哥 | 野生植物类（08 §来源规则） | N331 |
+| 冬香薄荷 | `materials/winter_savory` | Satureja montana 开花全草，巴尔干、地中海沿岸 | 作物类（08 §来源规则） | N333 |
+| 桃叶 | `materials/peach_leaf` | Prunus persica 叶，中国、地中海沿岸 | 树木类（08 §来源规则） | N336 |
+| 白藓牛至 | `materials/dittany_of_crete` | Origanum dictamnus 开花全草，希腊克里特岛 | 野生植物类（08 §来源规则） | N337 |
+| 花椒 | `materials/sichuan_pepper` | Zanthoxylum bungeanum 果皮，中国四川、陕西、甘肃 | 树木类（08 §来源规则） | N342 |
+| 儿茶心材 | `materials/catechu_heartwood` | Senegalia catechu（Acacia catechu）心材，印度、缅甸、中国云南 | 树木类（08 §来源规则） | N344 |
+| 橡苔 | `materials/oakmoss` | Evernia prunastri（生于栎树的地衣），巴尔干、摩洛哥 | 野生植物类（08 §来源规则） | N353 |
+| 苏格兰留兰香 | `materials/scotch_spearmint` | Mentha × gracilis（M. cardiaca）茎叶，美国中西部、西北部 | 作物类（08 §来源规则） | N354 |
+| 安古树皮 | `materials/angostura_bark` | Angostura trifoliata（Galipea officinalis）树皮，委内瑞拉、哥伦比亚 | 树木类（08 §来源规则） | N356 |
+| 灵猫香 | `materials/civet` | 非洲灵猫 Civettictis civetta、大灵猫 Viverra zibetha 会阴腺分泌物，埃塞俄比亚；中国浙江养殖小灵猫 | 动物与虫类（08 §来源规则） | N361 |
+| 橘叶 | `materials/mandarin_leaf` | Citrus reticulata 叶与嫩枝，意大利西西里、巴拉圭 | 树木类（08 §来源规则） | N366 |
+| 欧洲山松针叶 | `materials/dwarf_pine_needles` | Pinus mugo 针叶与枝梢，奥地利、斯洛伐克 | 树木类（不与 N2 `materials/pine_needles` 共用，避免 NT1 配方冲突；08 §来源规则） | N367 |
+| 玫瑰果 | `materials/rose_hip` | Rosa canina 等的果实，智利、欧洲、中国新疆 | 树木类（08 §来源规则） | N368 |
+| 夏香薄荷 | `materials/summer_savory` | Satureja hortensis 开花全草，欧洲东南部 | 作物类（08 §来源规则） | N369 |
+| 加拿大细辛 | `materials/canadian_snakeroot` | Asarum canadense 根茎与根，北美东部 | 野生植物类（08 §来源规则） | N370 |
+| 黄蓍胶片 | `materials/tragacanth_lump` | Astragalus gummifer 等茎干割伤渗出物（带状、片状），伊朗、土耳其 | 野生植物类（08 §来源规则） | N372 |
+| 摩洛哥豆蔻 | `materials/grains_of_paradise` | Aframomum melegueta 种子，加纳、尼日利亚 | 作物类（08 §来源规则） | N374 |
 | 鲣节 | `materials/katsuobushi` | 鲣鱼 Katsuwonus pelamis 鱼柳经蒸煮、烟熏焙干、接种霉菌陈化，日本鹿儿岛枕崎、静冈烧津 | 鱼（`materials/raw_fish`）M03 蒸煮 → M10 烟熏、烘干（需补此配方；游戏简化，省去霉化） | N379 |
-| 药蜀葵根 | `materials/marshmallow_root` | Althaea officinalis 根，欧洲、西亚 | 暂无来源 | N382 |
-| 白千层枝叶 | `materials/cajeput_leaf` | Melaleuca cajuputi 叶与嫩枝，印度尼西亚、越南 | 暂无来源 | N384 |
-| 芦荟叶 | `materials/aloe` | Aloe ferox、A. vera 叶（取汁），南非、加勒比 | 暂无来源 | N389 |
-| 龙涎香 | `materials/ambergris` | 抹香鲸 Physeter macrocephalus 肠道分泌物，海上漂浮或冲上海岸的陈化块 | 暂无来源 | N390 |
-| 燕根 | `materials/swallowroot` | Decalepis hamiltonii 根，印度南部 | 暂无来源 | N392 |
-| 香厚壳桂皮 | `materials/massoia_bark` | Cryptocarya massoy 树皮，新几内亚 | 暂无来源 | N397 |
+| 药蜀葵根 | `materials/marshmallow_root` | Althaea officinalis 根，欧洲、西亚 | 野生植物类（08 §来源规则） | N382 |
+| 白千层枝叶 | `materials/cajeput_leaf` | Melaleuca cajuputi 叶与嫩枝，印度尼西亚、越南 | 树木类（08 §来源规则） | N384 |
+| 芦荟叶 | `materials/aloe` | Aloe ferox、A. vera 叶（取汁），南非、加勒比 | 作物类（08 §来源规则） | N389 |
+| 龙涎香 | `materials/ambergris` | 抹香鲸 Physeter macrocephalus 肠道分泌物，海上漂浮或冲上海岸的陈化块 | 动物与虫类（08 §来源规则） | N390 |
+| 燕根 | `materials/swallowroot` | Decalepis hamiltonii 根，印度南部 | 动物与虫类（08 §来源规则） | N392 |
+| 香厚壳桂皮 | `materials/massoia_bark` | Cryptocarya massoy 树皮，新几内亚 | 树木类（08 §来源规则） | N397 |
 | 柚苷酶（酶） | `enzymes/naringinase` | α-L-鼠李糖苷酶与 β-葡萄糖苷酶复合酶，黑曲霉、青霉发酵生产 | 黑曲霉（`cultures/aspergillus_niger`）M29 发酵，柑橘皮诱导（游戏简化，同 15 F 组通用酶流程） | N375、N399 |
 | 产苏氨酸大肠杆菌（菌种） | `cultures/e_coli_threonine` | 解除反馈抑制的苏氨酸生产菌（大肠杆菌） | M30 基因重组（P94）：大肠杆菌（游戏简化，同 `cultures/e_coli_cysteine`） | N359 |
-| 玳玳果 | `materials/daidai_fruit` | 玳玳 Citrus aurantium ‘Daidai’ 果实；浙江金华 | 暂无来源 | N082、N225 |
-| 红橘 | `materials/tangerine` | 红橘 Citrus reticulata ‘Tangerine’ 果皮；四川、重庆 | 暂无来源 | N169 |
-| 卡南伽花 | `materials/cananga_flower` | 卡南伽 Cananga odorata var. macrophylla 花；印度尼西亚爪哇 | 暂无来源 | N160 |
-| 冷杉属针叶 | `materials/abies_needles` | 冷杉属 Abies spp. 针叶（GB 原表学名；与 N192 的香脂冷杉分开） | 暂无来源 | N186 |
+| 玳玳果 | `materials/daidai_fruit` | 玳玳 Citrus aurantium ‘Daidai’ 果实；浙江金华 | 树木类（08 §来源规则） | N082、N225 |
+| 红橘 | `materials/tangerine` | 红橘 Citrus reticulata ‘Tangerine’ 果皮；四川、重庆 | 树木类（08 §来源规则） | N169 |
+| 卡南伽花 | `materials/cananga_flower` | 卡南伽 Cananga odorata var. macrophylla 花；印度尼西亚爪哇 | 树木类（08 §来源规则） | N160 |
+| 冷杉属针叶 | `materials/abies_needles` | 冷杉属 Abies spp. 针叶（GB 原表学名；与 N192 的香脂冷杉分开） | 树木类（08 §来源规则） | N186 |
 
 ## 5 新增中间体
 
@@ -1071,7 +1071,7 @@ I31 的数据生成检查（按配方类型、模式、催化剂、输入物料�
 - N017 天然康酿克油的原料葡萄酒酒脚需在葡萄酒澄清配方（H14、M04）补副产输出；N023 可可碎粒、N064 焙炒咖啡豆、N041 红茶同样需补加工配方。
 - N052 苍术脂常温为固体（挥发油中茅术醇、β-桉叶醇析晶），状态记固；未找到描述析晶的链接。
 - N034 白柠檬油：商品青柠油以整果破碎蒸馏的蒸馏油为主，本组按冷榨（NT2）设计；蒸馏油可作 B 路线（NT1）。
-- 新原料多数暂无来源；能直接取得的只有玫瑰（原版玫瑰丛）、桦木（原版桦木原木）、青柠与葡萄柚（08 柑橘已列的 `#forge:fruits/lime`、`#forge:fruits/grapefruit`），以及由已有原料加工得到的可可碎粒、焙炒咖啡豆、红茶、发酵香荚兰豆、葡萄酒酒脚。
+- 新原料写这一批时多数没有来源（2026-11-18 按 [08 §来源规则](08-raw-materials.md) 分到六类）；当时能直接取得的只有玫瑰（原版玫瑰丛）、桦木（原版桦木原木）、青柠与葡萄柚（08 柑橘已列的 `#forge:fruits/lime`、`#forge:fruits/grapefruit`），以及由已有原料加工得到的可可碎粒、焙炒咖啡豆、红茶、发酵香荚兰豆、葡萄酒酒脚。
 
 ### N2 组（序号 131–260）
 
@@ -1119,7 +1119,7 @@ I31 的数据生成检查（按配方类型、模式、催化剂、输入物料�
 - 游戏简化：N330 以 `materials/kelp` 代墨角藻（Fucus vesiculosus）等褐藻；N291、N292 以原版蒲公英整株代根。
 - N342 中文“花椒提取物”与英文“prickly ash bark”（美洲花椒属树皮）部位不同，本组按国内习惯用花椒果皮（Zanthoxylum bungeanum）。
 - N294 提取部位未确认，按树皮写。
-- N361 灵猫净油、N390 龙涎香酊是动物源，现实受动物保护与贸易限制，游戏中暂无来源，可能长期做不出。
+- N361 灵猫净油、N390 龙涎香酊是动物源，现实受动物保护与贸易限制。**已定（2026-11-18，问题 21）**：灵猫香由灵猫掉落，龙涎香改走战利品（钓鱼、沉船箱），见 [08 §来源规则](08-raw-materials.md)。
 - N321 在表 B.2 中没有对应的柏木油条目，模板写 NT1、NT9 连做；N269、N273、N277、N283、N301、N305、N350、N395 的原料是 N1、N2 组品种（写编码）。
 - 新中间体 4 个：`cane_molasses`（甘蔗制糖的母液联产；原 `molasses`，2026-11-12 改名）、`crude_fusel_oil`（128 乙醇精馏侧线，128 可直接引用）、`hesperidin`、`rutin`。
 - 原表用字：N388 写作“毕澄茄”，N198 写作“荜澄茄”，照抄原表，疑为原表用字不一；其余中文名与 PDF 原表一致。英文名改正原表拼写：Canarium commune（原作 cimmune）、Helichrysum angustifolium（augustifolium）、Lavandula angustifolia（angustidolia）、Pelargonium（Pelargonlium）、Iris germanica（germanical）、Galipea officinalis（offincinalis）、Castanea dentata（dentate）、Cinnamomum（Cinnamomaum）、Homoeriodictyol（Homoeriodyctiol）。

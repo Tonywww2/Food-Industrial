@@ -50,6 +50,8 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
  */
 public final class PlatformDatagen {
     private static final List<Generator> GENERATORS = new ArrayList<>();
+    /** Generators that run after all others (the language files, which name the tags the others wrote). */
+    private static final List<Generator> LAST = new ArrayList<>();
     private static final List<Map.Entry<Kind, Check>> CHECKS = new ArrayList<>();
 
     private PlatformDatagen() {
@@ -75,6 +77,8 @@ public final class PlatformDatagen {
         ENTITY_TAG,
         /** Block loot table ({@code path} without {@code blocks/}). */
         BLOCK_LOOT,
+        /** Entity loot table ({@code path} without {@code entities/}). */
+        ENTITY_LOOT,
         /** Recipe. */
         RECIPE,
         /** {@code data/<ns>/worldgen/<path>.json} ({@code path} starts with the worldgen registry, e.g. {@code placed_feature/}). */
@@ -186,6 +190,14 @@ public final class PlatformDatagen {
     /** Registers a generator; it runs once per data run. */
     public static void register(String name, Consumer<Sink> generator) {
         GENERATORS.add(new Generator(name, generator));
+    }
+
+    /**
+     * Registers a generator that runs after every generator of {@link #register} (data providers run one after another,
+     * in the order added), so it sees what the others wrote through {@link #addCheck}.
+     */
+    public static void registerLast(String name, Consumer<Sink> generator) {
+        LAST.add(new Generator(name, generator));
     }
 
     /** Namespace of the common tags: {@code forge} on 1.20.1, {@code c} from 1.21 on. */
@@ -377,6 +389,7 @@ public final class PlatformDatagen {
             case FLUID_TAG -> "data/" + namespace + "/tags/" + (plural ? "fluids/" : "fluid/") + path + ".json";
             case ENTITY_TAG -> "data/" + namespace + "/tags/" + (plural ? "entity_types/" : "entity_type/") + path + ".json";
             case BLOCK_LOOT -> "data/" + namespace + "/" + (plural ? "loot_tables" : "loot_table") + "/blocks/" + path + ".json";
+            case ENTITY_LOOT -> "data/" + namespace + "/" + (plural ? "loot_tables" : "loot_table") + "/entities/" + path + ".json";
             case RECIPE -> "data/" + namespace + "/" + (plural ? "recipes/" : "recipe/") + path + ".json";
             case WORLDGEN -> "data/" + namespace + "/worldgen/" + path + ".json";
             case BIOME_MODIFIER -> "data/" + namespace + "/" + loaderNamespace() + "/biome_modifier/" + path + ".json";
@@ -493,6 +506,9 @@ public final class PlatformDatagen {
     private static void addProviders(GatherDataEvent event) {
         CompletableFuture<HolderLookup.Provider> lookup = event.getLookupProvider();
         for (Generator generator : GENERATORS) {
+            event.getGenerator().addProvider(true, provider(event.getGenerator().getPackOutput(), lookup, generator));
+        }
+        for (Generator generator : LAST) {
             event.getGenerator().addProvider(true, provider(event.getGenerator().getPackOutput(), lookup, generator));
         }
     }

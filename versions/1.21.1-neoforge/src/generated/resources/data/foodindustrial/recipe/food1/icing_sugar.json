@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/starch"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:icing_sugar"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

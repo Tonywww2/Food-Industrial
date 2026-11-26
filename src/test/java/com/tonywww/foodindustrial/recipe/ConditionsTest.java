@@ -77,8 +77,9 @@ class ConditionsTest {
         assertEquals(PurityRule.SOURCE_DEFAULT, ProcessTypes.HARVESTING.defaultRule(plain, true));
         assertEquals(PurityRule.SOURCE_FOOD, ProcessTypes.MIXING.defaultRule(plain, true), "R19 compounding: food bound");
         assertEquals(PurityRule.SOURCE_DEFAULT, ProcessTypes.MIXING.defaultRule(plain, false));
-        assertEquals(19, ProcessTypes.recipeTypes().size());
-        assertEquals(21, ProcessTypes.all().size());
+        // R01–R19 and the food line's R20–R29 (I38); W01, W02, W03 (I43)
+        assertEquals(29, ProcessTypes.recipeTypes().size());
+        assertEquals(32, ProcessTypes.all().size());
     }
 
     @Test

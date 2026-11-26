@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:master_stock_raw",
+    "foodindustrial:flowing_master_stock_raw",
+    {
+      "id": "#forge:master_stock_raw",
+      "required": false
+    },
+    {
+      "id": "#c:master_stock_raw",
+      "required": false
+    }
+  ]
+}

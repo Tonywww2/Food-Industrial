@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:hotpot_base_melt",
+    "foodindustrial:flowing_hotpot_base_melt",
+    {
+      "id": "#forge:hotpot_base_melt",
+      "required": false
+    },
+    {
+      "id": "#c:hotpot_base_melt",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/green"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/all"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:flavor_carriers/oil_soluble"
+      }
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 8,
+    "form": "oil_soluble",
+    "item": "foodindustrial:green_flavoring"
+  }
+}

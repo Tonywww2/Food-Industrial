@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "foodindustrial:machine_frame",
+    "I": "#c:ingots/iron",
+    "R": "#c:dusts/redstone",
+    "X": "foodindustrial:boiling_stove"
+  },
+  "pattern": [
+    "IXI",
+    "RFR",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:cooker_fryer"
+  }
+}

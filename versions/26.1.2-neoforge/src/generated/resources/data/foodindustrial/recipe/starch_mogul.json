@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": "#minecraft:planks",
+    "S": "#c:rods/wooden"
+  },
+  "pattern": [
+    "S S",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:starch_mogul"
+  }
+}

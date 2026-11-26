@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodindustrial:block/west_indian_bay_sapling"
+  }
+}

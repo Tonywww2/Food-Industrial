@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 2,
+      "semi_finished": "cream_puff|shell"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:cream"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sucrose"
+      }
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "count": 2,
+    "item": "foodindustrial:cream_puff"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:molds/filling_mold"
+    }
+  ]
+}

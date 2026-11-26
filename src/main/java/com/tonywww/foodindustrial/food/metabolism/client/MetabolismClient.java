@@ -42,6 +42,8 @@ public final class MetabolismClient {
     private static final float SWAY_ROLL_HEAVY = 5.0F;
     private static final float SWAY_PERIOD = 80.0F;
     private static final int BLACKOUT = 0xF5000000;
+    /** Darkened view at moderate nitrite poisoning (foods/02 §4.4) and vitamin A deficiency (night blindness, §5.6.1). */
+    private static final int DARKEN = 0x80000000;
     /** Text colours of tooltips (vanilla §9, §c, §7, §8, §f; tier states §7, §a, §6, §c). */
     private static final int POSITIVE = 0x5555FF;
     private static final int NEGATIVE = 0xFF5555;
@@ -67,13 +69,14 @@ public final class MetabolismClient {
     private static final int MILD = 2;
     private static final int SEVERE = 3;
     /** Bar scales of the acute substances (the right end of the bar). */
-    private static final double[] SCALE = {500, 0.45, 60, 100};
+    private static final double[] SCALE = {500, 0.45, 60, 100, 100};
     /** Hover card bar size. */
     private static final int CARD_BAR = 120;
     /** Food tooltip: the compact row wraps at this width. */
     private static final int CHIPS_WIDTH = 120;
     /** Text colours of the nutrition components (text standard §3.3), by component order. */
-    private static final int[] COMPONENT_COLOR = {0xC9A27E, 0x7FD3E6, 0xF5B3D0, 0xFF7A33, 0xA8D26E, 0xFFF07A};
+    private static final int[] COMPONENT_COLOR = {0xC9A27E, 0x7FD3E6, 0xF5B3D0, 0x8C9CFF, 0xFF7A33, 0xA8D26E, 0xFFF07A,
+        0xF0A860, 0xF0A860, 0xE6E0D2, 0xD9625B, 0x8FB8D6};
     /** Text colour of impurity in food tooltips (purple grey, like its icon). */
     private static final int IMPURITY_COLOR = 0xB4A7C6;
 
@@ -146,7 +149,18 @@ public final class MetabolismClient {
             angles.roll += (float) (Math.sin(time) * amplitude);
             angles.yaw += (float) (Math.sin(time * 0.5) * amplitude * 0.5);
         });
-        PlatformHud.onScreenTint(() -> Metabolism.client().applies(Unconscious.SCREEN) ? BLACKOUT : 0);
+        PlatformHud.onScreenTint(() -> {
+            MetabolismView view = Metabolism.client();
+            if (view.applies(Unconscious.SCREEN)) {
+                return BLACKOUT;
+            }
+            for (Substance substance : Substance.all()) {
+                if (MetabolismEffects.darkens(substance, view.tier(substance))) {
+                    return DARKEN;
+                }
+            }
+            return 0;
+        });
         PlatformHud.registerInventoryPanel(new PlatformHud.InventoryPanel() {
             @Override
             public boolean available() {
@@ -209,7 +223,12 @@ public final class MetabolismClient {
 
     /** Seconds between the hourly alcohol effects at the view's metabolic rate. */
     private static long hourlySeconds(MetabolismView view) {
-        return view.rate() > 0 ? Math.max(1, Math.round(HOUR / 20.0 / view.rate())) : HOUR / 20;
+        return intervalSeconds(HOUR, view);
+    }
+
+    /** Seconds of world time a stretch of the body's time takes at the view's metabolic rate (at least 1). */
+    private static long intervalSeconds(long bodyTicks, MetabolismView view) {
+        return view.rate() > 0 ? Math.max(1, Math.round(bodyTicks / 20.0 / view.rate())) : bodyTicks / 20;
     }
 
     // ---------------------------------------------------------------- panel
@@ -221,6 +240,9 @@ public final class MetabolismClient {
         }
         if (substance == Substance.FAST_SUGAR || substance == Substance.CAFFEINE && tier <= 3) {
             return GOOD;
+        }
+        if (substance.excessTier(tier)) {
+            return tier == Substance.DEFICIENCY_TIERS + 1 ? MILD : SEVERE;
         }
         return tier == 1 ? MILD : SEVERE;
     }
@@ -245,7 +267,7 @@ public final class MetabolismClient {
             double cap = RESERVE_CAP[substance.nutrientIndex()];
             double reserve = view.amount(substance);
             if (reserve > 0) {
-                return GuiBar.plain((float) (reserve / cap), SLIM_FILL[NORMAL], SLIM_TRACK, 0, 0);
+                return GuiBar.plain((float) Math.min(1, reserve / cap), SLIM_FILL[state], SLIM_TRACK, 0, 0);
             }
             float progress = tier >= 2 ? 1.0F : (float) Math.max(0, view.deficient(substance) + bodyElapsed(view)) / (float) (cap * DAY);
             return GuiBar.plain(progress, SLIM_FILL[state], SLIM_TRACK, 0, 0);
@@ -263,7 +285,7 @@ public final class MetabolismClient {
             double cap = RESERVE_CAP[substance.nutrientIndex()];
             double reserve = view.amount(substance);
             if (reserve > 0) {
-                return GuiBar.plain((float) (reserve / cap), BAR_FILL[NORMAL], TRACK, EDGE, 0);
+                return GuiBar.plain((float) Math.min(1, reserve / cap), BAR_FILL[state], TRACK, EDGE, 0);
             }
             long deficient = view.deficient(substance);
             float progress = tier >= 2 ? 1.0F : (float) Math.max(0, deficient + bodyElapsed(view)) / (float) (cap * DAY);
@@ -297,6 +319,18 @@ public final class MetabolismClient {
                 card.row(i == 0 ? 2 : 0).text(effects.get(i));
             }
         }
+        if (substance == Substance.NITRITE && view.nitriteToday() > 0) {
+            double share = view.nitriteToday() / NITRITE_ADI_MG * 100;
+            card.row(2).text(colored(Component.translatable(KEY + "nitrite_today", MetabolismText.serving(view.nitriteToday()),
+                share < 1 ? "<1" : Long.toString(Math.round(share))), GRAY));
+        }
+        if (substance.hasExcess() && view.today(substance) > 0) {
+            double upper = UPPER_LEVEL[substance.nutrientIndex()];
+            double share = view.today(substance) / upper * 100;
+            card.row(2).text(colored(Component.translatable(KEY + (substance == Substance.VITAMIN_A ? "upper_today_preformed" : "upper_today"),
+                MetabolismText.serving(view.today(substance)) + " " + substance.component().unit(),
+                share < 1 ? "<1" : Long.toString(Math.round(share))), GRAY));
+        }
         Component next = countdown(substance, view, tier);
         if (next != null) {
             card.row(2).text(colored(next, GRAY));
@@ -319,7 +353,8 @@ public final class MetabolismClient {
             nameWidth = Math.max(nameWidth, font.width(MetabolismText.tier(substance, i)));
         }
         for (int i = 1; i <= substance.tiers(); i++) {
-            boolean reached = i <= tier;
+            // a nutrient's deficiency (1–2) and excess (3–4) tiers are two ladders
+            boolean reached = i <= tier && substance.excessTier(i) == substance.excessTier(tier);
             List<Component> deltas = deltas(substance, i, view);
             if (deltas.isEmpty()) {
                 deltas = List.of(Component.empty());
@@ -340,21 +375,36 @@ public final class MetabolismClient {
             int index = substance.nutrientIndex();
             String need = MetabolismText.serving(DAILY_NEED[index]) + " " + substance.component().unit();
             card.row(2).text(colored(Component.translatable(KEY + "need", need, number(RESERVE_CAP[index], 0)), DARK));
+            if (UPPER_LEVEL[index] > 0) {
+                String upper = MetabolismText.serving(UPPER_LEVEL[index]) + " " + substance.component().unit();
+                card.row().text(colored(Component.translatable(KEY + (substance == Substance.VITAMIN_A ? "upper_preformed" : "upper"), upper), DARK));
+            }
+            if (substance.hasExcess() && OVERFLOW[index]) {
+                card.row().text(colored(Component.translatable(KEY + "overflow", number(RESERVE_CAP[index] * EXCESS_MULTIPLE, 0)), DARK));
+            }
         }
     }
 
     /** The amount a tier starts at: “75 mg”, “>0.20%”, “30 g”, “10”, “储备耗尽”, “缺乏 30 天”. */
     private static Component threshold(Substance substance, int tier) {
         double bound = bound(substance, tier);
-        boolean strict = substance == Substance.CAFFEINE && tier == 4 || substance == Substance.ALCOHOL && (tier == 3 || tier == 4);
+        boolean strict = substance == Substance.CAFFEINE && tier == 4 || substance == Substance.ALCOHOL && (tier == 3 || tier == 4)
+            || substance == Substance.NITRITE && tier == 3;
         String prefix = strict ? ">" : "";
         return switch (substance) {
             case CAFFEINE -> Component.literal(prefix + number(bound, 0) + " mg");
             case ALCOHOL -> Component.literal(prefix + number(bound, 2) + "%");
             case FAST_SUGAR -> Component.literal(number(bound, 0) + " g");
+            case NITRITE -> Component.literal(prefix + number(bound, 0) + "%");
             case IMPURITY -> Component.literal(number(bound, 0));
-            case VITAMIN_C, VITAMIN_B1, VITAMIN_D -> tier == 1 ? Component.translatable(KEY + "empty")
-                : Component.translatable(KEY + "deficient_days", number(RESERVE_CAP[substance.nutrientIndex()], 0));
+            default -> {
+                int index = substance.nutrientIndex();
+                if (substance.excessTier(tier)) {
+                    double times = tier > Substance.DEFICIENCY_TIERS + 1 ? EXCESS_MULTIPLE : 1;
+                    yield Component.translatable(KEY + "per_day", MetabolismText.serving(UPPER_LEVEL[index] * times) + " " + substance.component().unit());
+                }
+                yield tier == 1 ? Component.translatable(KEY + "empty") : Component.translatable(KEY + "deficient_days", number(RESERVE_CAP[index], 0));
+            }
         };
     }
 
@@ -395,8 +445,21 @@ public final class MetabolismClient {
                     out.add(percent("jump", VITAMIN_B1_JUMP, true));
                 }
             }
+            case NITRITE -> {
+                if (tier >= 1) {
+                    out.add(percent("attack_damage", NITRITE_MILD_ATTACK_DAMAGE, true));
+                    out.add(percent("movement_speed", tier >= 2 ? NITRITE_MODERATE_MOVEMENT : NITRITE_MILD_MOVEMENT, true));
+                }
+                if (tier >= 2) {
+                    out.add(percent("attack_speed", NITRITE_MODERATE_ATTACK_SPEED, true));
+                    out.add(bad(Component.translatable(KEY + "effect.darken")));
+                }
+                for (int i = 3; i <= tier; i++) {
+                    out.addAll(deltas(substance, i, view));
+                }
+            }
             default -> {
-                for (int i = 1; i <= tier; i++) {
+                for (int i = substance.excessTier(tier) ? Substance.DEFICIENCY_TIERS + 1 : 1; i <= tier; i++) {
                     out.addAll(deltas(substance, i, view));
                 }
             }
@@ -444,6 +507,27 @@ public final class MetabolismClient {
                 out.add(percent("exhaustion", -SUGAR_EXHAUSTION, false));
                 out.add(colored(Component.translatable(KEY + "effect.cap", MetabolismText.signed(-EXHAUSTION_CAP * 100)), GRAY));
             }
+            case NITRITE -> {
+                switch (tier) {
+                    case 1 -> {
+                        out.add(percent("attack_damage", NITRITE_MILD_ATTACK_DAMAGE, true));
+                        out.add(percent("movement_speed", NITRITE_MILD_MOVEMENT, true));
+                    }
+                    case 2 -> {
+                        out.add(percent("movement_speed", NITRITE_MODERATE_MOVEMENT, true));
+                        out.add(percent("attack_speed", NITRITE_MODERATE_ATTACK_SPEED, true));
+                        out.add(bad(Component.translatable(KEY + "effect.darken")));
+                    }
+                    case 3 -> {
+                        Component line = unconsciousLine(view);
+                        if (line != null) {
+                            out.add(line);
+                        }
+                    }
+                    default -> out.add(bad(Component.translatable(KEY + "effect.poison", intervalSeconds(NITRITE_POISON_INTERVAL, view),
+                        MetabolismText.serving(NITRITE_POISON_DAMAGE))));
+                }
+            }
             case IMPURITY -> {
                 switch (tier) {
                     case 1 -> {
@@ -472,6 +556,39 @@ public final class MetabolismClient {
             }
             case VITAMIN_D -> out.add(tier == 1 ? percent("fall_damage", VITAMIN_D_FALL_DAMAGE, false)
                 : percent("attack_damage", VITAMIN_D_ATTACK_DAMAGE, true));
+            case VITAMIN_A -> {
+                switch (tier) {
+                    case 1 -> out.add(bad(Component.translatable(KEY + "effect.darken")));
+                    case 2 -> out.add(add("max_health", VITAMIN_A_MAX_HEALTH));
+                    case 3 -> out.add(percent("mining_speed", VITAMIN_A_EXCESS_MINING, true));
+                    default -> out.add(add("max_health", VITAMIN_A_EXCESS_MAX_HEALTH));
+                }
+            }
+            case CALCIUM -> {
+                switch (tier) {
+                    case 1 -> out.add(percent("fall_damage", CALCIUM_FALL_DAMAGE, false));
+                    case 2 -> out.add(add("max_health", CALCIUM_MAX_HEALTH));
+                    default -> out.add(percent("movement_speed", CALCIUM_EXCESS_MOVEMENT, true));
+                }
+            }
+            case IRON -> {
+                switch (tier) {
+                    case 1 -> {
+                        out.add(add("max_health", IRON_MAX_HEALTH));
+                        out.add(percent("attack_damage", IRON_ATTACK_DAMAGE, true));
+                    }
+                    case 2 -> out.add(percent("movement_speed", IRON_MOVEMENT, true));
+                    case 3 -> out.add(percent("damage_taken", IRON_EXCESS_DAMAGE_TAKEN, false));
+                    default -> out.add(add("max_health", IRON_EXCESS_MAX_HEALTH));
+                }
+            }
+            case ZINC -> {
+                switch (tier) {
+                    case 1 -> out.add(percent("healing", ZINC_HEALING, true));
+                    case 2 -> out.add(percent("attack_damage", ZINC_ATTACK_DAMAGE, true));
+                    default -> out.add(add("max_health", ZINC_EXCESS_MAX_HEALTH));
+                }
+            }
         }
         return out;
     }
@@ -502,6 +619,20 @@ public final class MetabolismClient {
         }
         long next = view.next(substance);
         long left = next < 0 ? -1 : worldTicks(Math.max(0, next - bodyElapsed(view)), view);
+        if (substance.excessTier(tier)) {
+            if (left < 0) {
+                return null;
+            }
+            // the day's intake ends with the day (real time); a reserve over three caps drains by days
+            boolean days = left >= DAY;
+            String span = days ? Long.toString(Math.max(1, Math.round((double) left / DAY))) : MetabolismText.clock(left);
+            int index = substance.nutrientIndex();
+            boolean reserveExcess = OVERFLOW[index] && view.amount(substance) >= RESERVE_CAP[index] * EXCESS_MULTIPLE;
+            if (tier == Substance.DEFICIENCY_TIERS + 1 || !reserveExcess) {
+                return Component.translatable(KEY + (days ? "normal_in_days" : "normal_in"), span);
+            }
+            return Component.translatable(KEY + (days ? "drops_in_days" : "drops_in"), span, MetabolismText.tier(substance, tier - 1));
+        }
         if (substance.nutrient()) {
             long deficient = view.deficient(substance) < 0 ? -1 : worldTicks(view.deficient(substance) + bodyElapsed(view), view);
             if (tier == 0) {
@@ -563,7 +694,7 @@ public final class MetabolismClient {
 
     /**
      * The nutrition part of a food's tooltip (text standard §3.3): a row of icons and amounts, or with Shift a table
-     * of names, amounts and notes; {@code null} without data or with every component at 0.
+     * of names, amounts and notes; {@code null} without data or with every shown component at 0.
      */
     @Nullable
     private static TooltipRows foodTooltip(ItemStack stack) {
@@ -571,9 +702,12 @@ public final class MetabolismClient {
         if (data == null) {
             return null;
         }
-        List<Substance> parts = new ArrayList<>(7);
+        int quality = com.tonywww.foodindustrial.food.FoodLine.quality(stack);
+        // parts the server's configuration switched off are not shown (foods/03 §3.1)
+        MetabolismView view = Metabolism.client();
+        List<Substance> parts = new ArrayList<>(Substance.all().length);
         for (Substance substance : Substance.all()) {
-            if (substance == Substance.IMPURITY ? data.impurity() > 0 : data.amount(substance.component()) > 0) {
+            if (view.shown(substance) && value(data, substance, quality) > 0) {
                 parts.add(substance);
             }
         }
@@ -584,7 +718,7 @@ public final class MetabolismClient {
         if (!Platform.isShiftDown()) {
             rows.row().wrap(CHIPS_WIDTH);
             for (Substance substance : parts) {
-                rows.group().icon(substance.icon(), 8).text(colored(Component.literal(amount(data, substance)), color(substance))).gap(6);
+                rows.group().icon(substance.icon(), 8).text(colored(Component.literal(amount(data, substance, quality)), color(substance))).gap(6);
             }
             return rows.build();
         }
@@ -593,13 +727,13 @@ public final class MetabolismClient {
         int valueWidth = 0;
         for (Substance substance : parts) {
             nameWidth = Math.max(nameWidth, font.width(MetabolismText.name(substance)));
-            valueWidth = Math.max(valueWidth, font.width(amount(data, substance)));
+            valueWidth = Math.max(valueWidth, font.width(amount(data, substance, quality)));
         }
         for (Substance substance : parts) {
             rows.row().icon(substance.icon(), 8).gap(3)
                 .text(colored(MetabolismText.name(substance), color(substance)), nameWidth).gap(3)
-                .text(colored(Component.literal(amount(data, substance)), WHITE), valueWidth).gap(3);
-            Component note = note(data, substance);
+                .text(colored(Component.literal(amount(data, substance, quality)), WHITE), valueWidth).gap(3);
+            Component note = note(data, substance, quality);
             if (note != null) {
                 rows.text(colored(note, GRAY));
             }
@@ -611,21 +745,40 @@ public final class MetabolismClient {
         return substance == Substance.IMPURITY ? IMPURITY_COLOR : COMPONENT_COLOR[substance.component().ordinal()];
     }
 
+    /** One serving's amount of a substance; nitrite counts the stack's colour-retention agent and misuse. */
+    private static double value(NutritionData data, Substance substance, int quality) {
+        if (substance == Substance.IMPURITY) {
+            return data.impurity();
+        }
+        if (substance == Substance.VITAMIN_A) {
+            // the reserve takes preformed vitamin A and provitamin A alike
+            return data.amount(substance.component()) + data.amount(com.tonywww.foodindustrial.food.nutrition.Component.PROVITAMIN_A);
+        }
+        return substance == Substance.NITRITE ? data.nitrite(quality) : data.amount(substance.component());
+    }
+
     /** “95 mg” per serving; impurity has no unit (“5”). */
-    private static String amount(NutritionData data, Substance substance) {
+    private static String amount(NutritionData data, Substance substance, int quality) {
         if (substance == Substance.IMPURITY) {
             return MetabolismText.serving(data.impurity());
         }
-        return MetabolismText.serving(data.amount(substance.component())) + " " + substance.component().unit();
+        return MetabolismText.serving(value(data, substance, quality)) + " " + substance.component().unit();
     }
 
-    /** “日需 75%” for nutrients, “≈ 0.033%” (blood alcohol of one serving) for alcohol. */
+    /**
+     * “日需 75%” for nutrients, “≈ 0.033%” (blood alcohol of one serving) for alcohol, “高铁血红蛋白 +15%” for
+     * nitrite.
+     */
     @Nullable
-    private static Component note(NutritionData data, Substance substance) {
+    private static Component note(NutritionData data, Substance substance, int quality) {
         if (substance == Substance.IMPURITY) {
             return null;
         }
-        double value = data.amount(substance.component());
+        double value = value(data, substance, quality);
+        if (substance == Substance.NITRITE) {
+            double rise = Math.min(METHEMOGLOBIN_CAP, MetabolismRules.methemoglobin(value));
+            return Component.translatable(KEY + "methemoglobin", rise < 0.1 ? "<0.1" : number(rise, 1));
+        }
         if (substance.nutrient()) {
             double share = value / DAILY_NEED[substance.nutrientIndex()] * 100;
             return Component.translatable(KEY + "daily_share", share < 1 ? "<1" : Long.toString(Math.round(share)));

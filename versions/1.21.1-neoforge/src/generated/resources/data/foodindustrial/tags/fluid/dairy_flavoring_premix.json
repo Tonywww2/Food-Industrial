@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:dairy_flavoring_premix",
+    "foodindustrial:flowing_dairy_flavoring_premix",
+    {
+      "id": "#forge:dairy_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:dairy_flavoring_premix",
+      "required": false
+    }
+  ]
+}

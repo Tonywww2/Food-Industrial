@@ -1,0 +1,20 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "count": 4,
+      "semi_finished": "mahua|dough"
+    }
+  ],
+  "mode": "proofing",
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "mahua|proofed_dough"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

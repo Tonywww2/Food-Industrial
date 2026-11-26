@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "#c:ingots/iron",
+    "N": "#c:nuggets/iron"
+  },
+  "pattern": [
+    "I I",
+    "NIN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:cake_mold"
+  }
+}

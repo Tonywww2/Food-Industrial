@@ -274,7 +274,7 @@ public class TankBlockEntity extends FIBlockEntity implements StorageHost {
 
         @Override
         public boolean joins(int tank, FluidAmount current, FluidAmount offered) {
-            return current.fluid() == offered.fluid();
+            return current.joins(offered);
         }
 
         @Override

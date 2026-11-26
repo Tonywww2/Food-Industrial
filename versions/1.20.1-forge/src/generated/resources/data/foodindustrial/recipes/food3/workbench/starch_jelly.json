@@ -1,0 +1,18 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "starch_jelly|jelly_block"
+    }
+  ],
+  "process": "cutting",
+  "result": {
+    "count": 2,
+    "item": "foodindustrial:starch_jelly"
+  },
+  "tools": [
+    {
+      "tag": "foodindustrial:knives"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "inner": "foodindustrial:block/koji_room_inner",
+    "parts": "foodindustrial:block/koji_room_parts"
+  },
+  "elements": [
+    {
+      "name": "body0",
+      "from": [0, 0, 0],
+      "to": [16, 2, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#inner"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "body1",
+      "from": [0, 2, 0],
+      "to": [5, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [11, 0, 16, 14],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#inner"
+        },
+        "south": {
+          "uv": [0, 0, 5, 14],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 5, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body2",
+      "from": [11, 2, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 5, 14],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [11, 0, 16, 14],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#inner"
+        },
+        "up": {
+          "uv": [11, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body3",
+      "from": [5, 13, 0],
+      "to": [11, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [5, 0, 11, 3],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [5, 0, 11, 3],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "up": {
+          "uv": [5, 0, 11, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [5, 0, 11, 16],
+          "texture": "#inner"
+        }
+      }
+    },
+    {
+      "name": "body4",
+      "from": [5, 2, 1],
+      "to": [11, 13, 16],
+      "faces": {
+        "north": {
+          "uv": [5, 3, 11, 14],
+          "texture": "#front"
+        },
+        "south": {
+          "uv": [5, 3, 11, 14],
+          "texture": "#side",
+          "cullface": "south"
+        }
+      }
+    },
+    {
+      "name": "knob",
+      "from": [6, 6, 0],
+      "to": [7, 7, 1],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 0.5, 0.5],
+          "texture": "#parts",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 0.5, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [0, 0, 0.5, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0, 0, 0.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0, 0, 0.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "thermometer",
+      "from": [3, 7, -1],
+      "to": [4, 12, 0],
+      "faces": {
+        "north": {
+          "uv": [0.5, 0, 1, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [1, 0, 1.5, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [1, 0, 1.5, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [1.5, 0, 2, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [1.5, 0, 2, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

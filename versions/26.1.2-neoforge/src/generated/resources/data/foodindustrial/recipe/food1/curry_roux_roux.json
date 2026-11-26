@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:boiling",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:cooking_fats"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/wheat_flour"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "curry_roux|roux"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "open_flame"
+    ],
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

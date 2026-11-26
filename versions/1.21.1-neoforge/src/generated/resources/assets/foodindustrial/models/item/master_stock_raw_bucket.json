@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:master_stock_raw",
+  "loader": "neoforge:fluid_container"
+}

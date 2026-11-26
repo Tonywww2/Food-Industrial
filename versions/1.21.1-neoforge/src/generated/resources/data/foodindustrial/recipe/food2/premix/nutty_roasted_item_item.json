@@ -1,0 +1,41 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/nutty_roasted"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_notes/all"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:flavor_carriers/emulsifiers"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "mode": "blending",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:nutty_roasted_flavoring_premix"
+    }
+  ],
+  "requirements": {
+    "methods": [
+      "emulsifying"
+    ],
+    "min_tier": "t1"
+  },
+  "time": 100
+}

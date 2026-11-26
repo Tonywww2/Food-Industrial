@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:dark_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga"
+  ],
+  "features": [
+    "foodindustrial:wild_shiitake",
+    "foodindustrial:wild_canadian_snakeroot"
+  ],
+  "step": "vegetal_decoration"
+}

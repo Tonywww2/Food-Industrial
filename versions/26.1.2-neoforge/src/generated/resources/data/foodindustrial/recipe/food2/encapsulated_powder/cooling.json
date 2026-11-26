@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:flavorings/cooling"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:spray_carrier_solution"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "form": "encapsulated_powder",
+      "item": "foodindustrial:cooling_flavoring"
+    }
+  ],
+  "requirements": {
+    "heat_sensitivity": "sensitive",
+    "min_tier": "t3"
+  },
+  "time": 200
+}

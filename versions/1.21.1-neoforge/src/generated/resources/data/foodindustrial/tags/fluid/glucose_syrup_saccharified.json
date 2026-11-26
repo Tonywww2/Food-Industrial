@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:glucose_syrup_saccharified",
+    "foodindustrial:flowing_glucose_syrup_saccharified",
+    {
+      "id": "#forge:glucose_syrup_saccharified",
+      "required": false
+    },
+    {
+      "id": "#c:glucose_syrup_saccharified",
+      "required": false
+    }
+  ]
+}

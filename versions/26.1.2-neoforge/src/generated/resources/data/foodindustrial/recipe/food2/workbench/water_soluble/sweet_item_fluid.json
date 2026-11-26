@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:flavor_notes/sweet"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:flavor_notes/all"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:flavor_carriers/water_soluble"
+      }
+    }
+  ],
+  "process": "mixing",
+  "result": {
+    "count": 8,
+    "form": "water_soluble",
+    "item": "foodindustrial:sweet_flavoring"
+  }
+}

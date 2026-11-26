@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:chemicals/cassie_concrete",
+    "#foodindustrial:chemicals/hops_extract_solid",
+    "#foodindustrial:chemicals/ethyl_cyclopentenolone",
+    "#foodindustrial:chemicals/dimethylcyclopentanedione_35",
+    "#foodindustrial:chemicals/dithiane_1_4",
+    "#foodindustrial:chemicals/ethyl_menthanecarboxamide"
+  ]
+}

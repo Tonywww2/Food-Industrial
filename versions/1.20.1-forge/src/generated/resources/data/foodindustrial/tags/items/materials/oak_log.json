@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:oak_log"
+    "foodindustrial:oak_log",
+    {
+      "id": "#minecraft:oak_logs",
+      "required": false
+    }
   ]
 }

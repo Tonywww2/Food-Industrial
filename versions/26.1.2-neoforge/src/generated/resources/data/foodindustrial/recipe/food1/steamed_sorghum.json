@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:materials/sorghum"
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "steaming",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:steamed_sorghum"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

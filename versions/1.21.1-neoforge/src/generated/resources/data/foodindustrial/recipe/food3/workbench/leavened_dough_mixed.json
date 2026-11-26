@@ -1,0 +1,31 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:water"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:cultures/yeast"
+      }
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": []
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "leavened_dough|dough"
+  }
+}

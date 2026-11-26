@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "foodindustrial:block/copaiba_log_top",
+    "side": "foodindustrial:block/copaiba_log"
+  }
+}

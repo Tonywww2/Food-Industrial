@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:rock_sugar_liquor",
+    "foodindustrial:flowing_rock_sugar_liquor",
+    {
+      "id": "#forge:rock_sugar_liquor",
+      "required": false
+    },
+    {
+      "id": "#c:rock_sugar_liquor",
+      "required": false
+    }
+  ]
+}

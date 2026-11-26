@@ -20,8 +20,11 @@ import java.util.List;
  * without content are left out; the processing zone takes the width left over, so the zones always span
  * the window. Elements sit on an 18-pixel grid of three rows: slots touch, columns start at the top row
  * and are centred horizontally in their zone; tanks and the energy bar fill the zone height. The energy
- * zone holds either the energy bar or the fuel and is centred vertically. Too many columns make the
- * tanks narrower. Upgrade and module slots sit in the left upgrades panel (§2).
+ * zone holds either the energy bar or the fuel and is centred vertically; M50's coolant slots sit beside
+ * its crank bar (I47.5). Too many columns make the tanks narrower; when even the narrowest tanks do not
+ * fit (the ingredient-step devices with nine inputs and three input tanks, I47.5), the zones close up:
+ * no gap between them and one pixel less padding inside the frames. Upgrade and module slots sit in the
+ * left upgrades panel (§2).
  */
 public final class GuiLayout {
     public static final int WIDTH = 176;
@@ -43,6 +46,11 @@ public final class GuiLayout {
     public static final int ZONE_PAD = 3;
     /** Space between two zone frames. */
     public static final int ZONE_GAP = 2;
+    /** Padding and gap of the closed-up zones, used when the normal ones do not fit (I47.5). */
+    public static final int COMPACT_PAD = 2;
+    public static final int COMPACT_GAP = 0;
+    /** Space between the crank bar and M50's coolant slots. */
+    private static final int BAR_GAP = 2;
     /** Left and right edge of the zone frames. */
     public static final int AREA_LEFT = 7;
     public static final int AREA_RIGHT = WIDTH - 7;
@@ -85,9 +93,11 @@ public final class GuiLayout {
     private final Box purity;
     private final List<Zone> zones;
     private final int statusY;
+    private final int pad;
+    private final int gap;
 
     private GuiLayout(int height, Box[] slots, Box[] tanks, Box[] vents, @Nullable Box energy, @Nullable Box flame, Box arrow, Box purity,
-                      List<Zone> zones, int statusY) {
+                      List<Zone> zones, int statusY, int pad, int gap) {
         this.height = height;
         this.slots = slots;
         this.tanks = tanks;
@@ -98,6 +108,18 @@ public final class GuiLayout {
         this.purity = purity;
         this.zones = zones;
         this.statusY = statusY;
+        this.pad = pad;
+        this.gap = gap;
+    }
+
+    /** Frame line plus padding of the zones: {@link #ZONE_PAD}, or {@link #COMPACT_PAD} when closed up. */
+    public int pad() {
+        return pad;
+    }
+
+    /** Space between the zone frames: {@link #ZONE_GAP}, or {@link #COMPACT_GAP} when closed up. */
+    public int gap() {
+        return gap;
     }
 
     public int height() {
@@ -197,21 +219,30 @@ public final class GuiLayout {
         int rows = ROWS;
         int area = rows * SLOT;
         boolean bar = power == PowerKind.ENERGY || power == PowerKind.MANUAL;
-        int energyContent = bar ? ENERGY_W : io.fuel() > 0 ? SLOT : 0;
+        // fuel slots beside a bar: M50's coolant (I47.5); a fuel machine has no bar
+        int barFuel = bar && !controller ? io.fuel() : 0;
+        int energyContent = bar ? ENERGY_W + (barFuel > 0 ? BAR_GAP + SLOT : 0) : io.fuel() > 0 ? SLOT : 0;
         int processingContent = Math.max(Math.max(ARROW_W, PURITY_W), controller ? 0 : io.catalyst() * SLOT);
         int tankWidth = TANK_WIDTHS[0];
+        int pad = ZONE_PAD;
+        int gap = ZONE_GAP;
         int[] contents = new int[4];
-        for (int width : TANK_WIDTHS) {
-            tankWidth = width;
-            contents[0] = energyContent;
-            contents[1] = controller ? 0 : columns(io.itemIn(), rows) * SLOT + io.fluidIn() * width;
-            contents[2] = processingContent;
-            contents[3] = controller ? 0 : columns(io.itemOut(), rows) * SLOT + io.fluidOut() * width;
-            if (naturalWidth(contents) <= AREA_RIGHT - AREA_LEFT) {
-                break;
+        fit:
+        for (int[] spacing : new int[][]{{ZONE_PAD, ZONE_GAP}, {COMPACT_PAD, COMPACT_GAP}}) {
+            pad = spacing[0];
+            gap = spacing[1];
+            for (int width : TANK_WIDTHS) {
+                tankWidth = width;
+                contents[0] = energyContent;
+                contents[1] = controller ? 0 : columns(io.itemIn(), rows) * SLOT + io.fluidIn() * width;
+                contents[2] = processingContent;
+                contents[3] = controller ? 0 : columns(io.itemOut(), rows) * SLOT + io.fluidOut() * width;
+                if (naturalWidth(contents, pad, gap) <= AREA_RIGHT - AREA_LEFT) {
+                    break fit;
+                }
             }
         }
-        contents[2] += Math.max(0, AREA_RIGHT - AREA_LEFT - naturalWidth(contents));
+        contents[2] += Math.max(0, AREA_RIGHT - AREA_LEFT - naturalWidth(contents, pad, gap));
 
         Box[] slots = new Box[io.itemSlots()];
         Box[] tanks = new Box[io.tanks()];
@@ -227,13 +258,17 @@ public final class GuiLayout {
             if (content == 0) {
                 continue;
             }
-            zones.add(new Zone(kind, new Box(frameX, TOP - ZONE_PAD, content + 2 * ZONE_PAD, area + 2 * ZONE_PAD)));
-            int x = frameX + ZONE_PAD;
+            zones.add(new Zone(kind, new Box(frameX, TOP - pad, content + 2 * pad, area + 2 * pad)));
+            int x = frameX + pad;
             switch (kind) {
                 case ENERGY -> {
                     if (bar) {
                         // FE, or the hand crank's stored running time (I14)
                         energy = new Box(x, TOP, ENERGY_W, area);
+                        int y = TOP + (area - barFuel * SLOT) / 2;
+                        for (int i = 0; i < barFuel; i++) {
+                            slots[io.start(SlotRole.FUEL) + i] = new Box(x + ENERGY_W + BAR_GAP, y + i * SLOT, SLOT, SLOT);
+                        }
                     } else {
                         int shownFuel = controller ? 0 : io.fuel();
                         int y = TOP + (area - (1 + shownFuel) * SLOT) / 2;
@@ -267,7 +302,7 @@ public final class GuiLayout {
                     }
                 }
             }
-            frameX += content + 2 * ZONE_PAD + ZONE_GAP;
+            frameX += content + 2 * pad + gap;
         }
         if (controller) {
             for (int i = 0; i < io.start(SlotRole.UPGRADE); i++) {
@@ -287,24 +322,50 @@ public final class GuiLayout {
         for (int i = 0; i < io.modules(); i++) {
             slots[io.start(SlotRole.MODULE) + i] = new Box(panelLeft + (i % 4) * SLOT, moduleTop + (i / 4) * SLOT, SLOT, SLOT);
         }
-        return new GuiLayout(TALL, slots, tanks, vents, energy, flame, arrow, purity, List.copyOf(zones), TOP + area + ZONE_PAD + 2);
+        // additive slots A (I41): four columns in their own left panel
+        int additiveTop = additivesPanelTop(io) + PANEL_HEADER;
+        for (int i = 0; i < io.additives(); i++) {
+            slots[io.start(SlotRole.ADDITIVE) + i] = controller ? HIDDEN
+                : new Box(panelLeft + (i % 4) * SLOT, additiveTop + (i / 4) * SLOT, SLOT, SLOT);
+        }
+        return new GuiLayout(TALL, slots, tanks, vents, energy, flame, arrow, purity, List.copyOf(zones), TOP + area + ZONE_PAD + 2, pad, gap);
     }
 
     /** Width of the zones with their frames and gaps for the given content widths (0 = no zone). */
-    private static int naturalWidth(int[] contents) {
+    private static int naturalWidth(int[] contents, int pad, int gap) {
         int width = 0;
         int zones = 0;
         for (int content : contents) {
             if (content > 0) {
-                width += content + 2 * ZONE_PAD;
+                width += content + 2 * pad;
                 zones++;
             }
         }
-        return width + Math.max(0, zones - 1) * ZONE_GAP;
+        return width + Math.max(0, zones - 1) * gap;
+    }
+
+    /** Whether the zones fit the window ({@link #of}); the data-generation self-check (I47.5). */
+    public static boolean fits(GuiLayout layout) {
+        List<Zone> zones = layout.zones();
+        return zones.isEmpty() || zones.get(zones.size() - 1).frame().x() + zones.get(zones.size() - 1).frame().w() <= AREA_RIGHT;
     }
 
     private static int columns(int count, int rows) {
         return (count + rows - 1) / rows;
+    }
+
+    /**
+     * Top of the additives panel (I41): the left panels are info, upgrades (when the machine has any) and
+     * additives, and only one of them is open at a time, so the ones above it are collapsed tabs.
+     */
+    public static int additivesPanelTop(IoLayout io) {
+        int above = 1 + (io.upgrades() + io.modules() > 0 ? 1 : 0);
+        return PANEL_TOP + above * (TAB + PANEL_GAP);
+    }
+
+    /** Bottom of the additive slots in the additives panel, relative to the panel's top. */
+    public static int additivesSlotsBottom(IoLayout io) {
+        return PANEL_HEADER + (io.additives() + 3) / 4 * SLOT;
     }
 
     /** Bottom of the upgrade and module slots in the upgrades panel, relative to the panel's top. */

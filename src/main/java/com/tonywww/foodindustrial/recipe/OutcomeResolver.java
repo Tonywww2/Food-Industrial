@@ -218,7 +218,7 @@ public final class OutcomeResolver {
         if (output.isChanced() && !(random.nextDouble() < output.chance())) {
             return 0;
         }
-        if (index == 0 && recipe.type().yieldScalable()) {
+        if (index == 0 && recipe.scalesYield()) {
             return output.amount() + extra(output.amount(), profile.yieldPermille(), random.nextInt(1000));
         }
         return output.amount();

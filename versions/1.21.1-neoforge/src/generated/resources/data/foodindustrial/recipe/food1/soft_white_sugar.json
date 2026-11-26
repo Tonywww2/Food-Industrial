@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "count": 8,
+      "semi_finished": "soft_white_sugar|wet_sugar"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "item": "foodindustrial:soft_white_sugar"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

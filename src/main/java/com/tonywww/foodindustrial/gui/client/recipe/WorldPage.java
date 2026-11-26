@@ -14,6 +14,7 @@ import com.tonywww.foodindustrial.recipe.Conditions;
 import com.tonywww.foodindustrial.recipe.ProcessOutput;
 import com.tonywww.foodindustrial.world.interaction.BlockTransformRecipe;
 import com.tonywww.foodindustrial.world.interaction.HarvestRecipe;
+import com.tonywww.foodindustrial.world.interaction.PumpingRecipe;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
@@ -27,8 +28,9 @@ import java.util.Locale;
 import java.util.Optional;
 
 /**
- * The world interactions as JEI pages (W01 block transformation, W02 harvesting; I22): the block, the
- * tool and container for harvesting, the result, the conditions and the chances.
+ * The world interactions as JEI pages (W01 block transformation, W02 harvesting; I22; W03 pumping, I43): the
+ * block, the tool and container for harvesting, the result, the conditions and the chances. Pumping has no block:
+ * the pumps are the category's catalysts.
  */
 public final class WorldPage {
     public static final int WIDTH = 160;
@@ -48,10 +50,14 @@ public final class WorldPage {
     private final HarvestRecipe harvest;
     @Nullable
     private final BlockTransformRecipe transform;
+    @Nullable
+    private final PumpingRecipe pumping;
 
-    private WorldPage(String block, Conditions requirements, @Nullable HarvestRecipe harvest, @Nullable BlockTransformRecipe transform) {
+    private WorldPage(String block, Conditions requirements, @Nullable HarvestRecipe harvest, @Nullable BlockTransformRecipe transform,
+                      @Nullable PumpingRecipe pumping) {
         this.harvest = harvest;
         this.transform = transform;
+        this.pumping = pumping;
         this.block = block;
         for (String key : requirements.required().keys()) {
             int dot = key.indexOf('.');
@@ -62,7 +68,7 @@ public final class WorldPage {
     }
 
     public static WorldPage of(BlockTransformRecipe recipe) {
-        WorldPage page = new WorldPage(recipe.block(), recipe.requirements(), null, recipe);
+        WorldPage page = new WorldPage(recipe.block(), recipe.requirements(), null, recipe, null);
         if (recipe.randomTickChance() > 0) {
             page.notes.add(Component.translatable(RecipeText.key("random_tick"), percent(recipe.randomTickChance())));
         }
@@ -73,11 +79,15 @@ public final class WorldPage {
     }
 
     public static WorldPage of(HarvestRecipe recipe) {
-        WorldPage page = new WorldPage(recipe.block(), recipe.requirements(), recipe, null);
+        WorldPage page = new WorldPage(recipe.block(), recipe.requirements(), recipe, null, null);
         if (recipe.cooldown() > 0) {
             page.notes.add(Component.translatable(RecipeText.key("cooldown"), String.valueOf(recipe.cooldown() / 20)));
         }
         return page;
+    }
+
+    public static WorldPage of(PumpingRecipe recipe) {
+        return new WorldPage("", recipe.requirements(), null, null, recipe);
     }
 
     private static String percent(double chance) {
@@ -91,6 +101,9 @@ public final class WorldPage {
     /** Items of the blocks the interaction works on (read from the block tag when asked). */
     public List<ItemStack> blocks() {
         List<ItemStack> blocks = new ArrayList<>();
+        if (pumping != null) {
+            return blocks;
+        }
         for (Block candidate : PlatformTags.blocks(block)) {
             ItemStack stack = new ItemStack(candidate.asItem());
             if (!stack.isEmpty() && stack.getItem() != Items.AIR) {
@@ -133,12 +146,12 @@ public final class WorldPage {
         return stack;
     }
 
-    /** Harvest result fluid, or empty. */
+    /** Harvest or pumping result fluid, or empty. */
     public FluidAmount resultFluid() {
-        if (harvest == null || !harvest.result().isFluid()) {
+        ProcessOutput output = pumping != null ? pumping.result() : harvest != null ? harvest.result() : null;
+        if (output == null || !output.isFluid()) {
             return FluidAmount.EMPTY;
         }
-        ProcessOutput output = harvest.result();
         int b = sourcePurity(output);
         FluidAmount fluid = output.fluidAmount(output.amount());
         return b == Purity.NONE ? fluid : fluid.withPurity(b);
@@ -158,8 +171,14 @@ public final class WorldPage {
         return harvest != null;
     }
 
+    public boolean pumping() {
+        return pumping != null;
+    }
+
     public void draw(Canvas canvas, double mouseX, double mouseY) {
-        Widgets.slot(canvas, Widgets.SlotKind.NORMAL, BLOCK_X, 0);
+        if (pumping == null) {
+            Widgets.slot(canvas, Widgets.SlotKind.NORMAL, BLOCK_X, 0);
+        }
         if (harvest != null) {
             Widgets.slot(canvas, Widgets.SlotKind.CATALYST, TOOL_X, 0);
             if (harvest.container().isPresent()) {

@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:grinding",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:mustard_seeds"
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "outputs": [
+    {
+      "count": 4,
+      "semi_finished": "mustard|mustard_powder"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 100
+}

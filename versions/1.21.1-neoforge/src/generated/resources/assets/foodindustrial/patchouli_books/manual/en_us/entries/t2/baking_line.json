@@ -1,0 +1,51 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:baking_line",
+  "name": "book.foodindustrial.manual.entry.baking_line",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:baking_line",
+      "text": "book.foodindustrial.manual.entry.baking_line.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:baking_line[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "A A",
+            "A A",
+            "A A",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.baking_line"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.baking_line.structure"
+    }
+  ],
+  "sortnum": 11
+}

@@ -16,6 +16,7 @@
     {
       "id": "#c:crops/grape",
       "required": false
-    }
+    },
+    "foodindustrial:grape"
   ]
 }

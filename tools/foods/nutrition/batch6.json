@@ -1,0 +1,1602 @@
+{
+ "batch": 6,
+ "doc": "foods/19 §10、foods/20 §8",
+ "notes": [
+  "单位换算按 USDA FDC 的份量：白糖 1 茶匙 4.2 g、1 汤匙 12.5 g；盐 1 茶匙 6 g；泡打粉、小苏打 1 茶匙 4.6 g；干酵母 1 茶匙 4 g；鸡蛋 50 g/个（蛋黄 17 g、蛋白 33 g）；蜂蜜 1 汤匙 21 g；油 1 汤匙 13.6 g；黄油 1 汤匙 14.2 g；水 1 汤匙 14.8 g；香草精 1 茶匙 4.2 g；牛奶 1 杯 244 g；重奶油 1 杯 238 g；糖粉 1 杯 120 g"
+ ],
+ "entries": [
+  {
+   "id": "apple_jam",
+   "name": "苹果酱",
+   "card": "foods/19",
+   "serving_g": 21.0,
+   "energy_kcal": 59.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.4,
+    "fat_g": 0.1,
+    "carb_g": 69.0
+   },
+   "composition": "cn:1540",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      1000,
+      "cn:1448"
+     ],
+     [
+      "柠檬汁",
+      30,
+      "fdc:167747"
+     ]
+    ],
+    "total_g": 2080.0
+   },
+   "free_sugar_note": "苹果 8 杯、水 1½ 杯、糖 5 杯 1,000 g、柠檬汁 2 汤匙 30 g，出 6–7 个半品脱罐取 6.5 个；罐中果酱按 FDC 169641 每汤匙 20 g 折每罐 320 g，分母为出品 2,080 g"
+  },
+  {
+   "id": "berry_jam",
+   "name": "浆果果酱",
+   "card": "foods/19",
+   "serving_g": 21.0,
+   "energy_kcal": 57.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.8,
+    "fat_g": 0.2,
+    "carb_g": 66.3
+   },
+   "composition": "cn:1538",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      800,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1728
+   },
+   "free_sugar_note": "压碎的浆果 4 杯按 FDC 167762 草莓泥每杯 232 g、糖 4 杯 800 g；来源未给出品，熬煮失水不计（偏低）"
+  },
+  {
+   "id": "glow_berry_jam",
+   "name": "发光浆果果酱",
+   "card": "foods/19",
+   "serving_g": 21.0,
+   "energy_kcal": 57.0,
+   "hunger": 3,
+   "macros_100g": {},
+   "composition": "cn:1538",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      800,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1728
+   },
+   "free_sugar_note": "同浆果果酱"
+  },
+  {
+   "id": "marmalade",
+   "name": "柑橘果酱",
+   "card": "foods/19",
+   "serving_g": 21.0,
+   "energy_kcal": 52.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.3,
+    "fat_g": 0.0,
+    "carb_g": 66.3
+   },
+   "composition": "fdc:168819",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      1200,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 2400.0
+   },
+   "free_sugar_note": "糖 6 杯 1,200 g，出 7–8 个半品脱罐取 7.5 个，每罐 320 g（FDC 169641），分母为出品 2,400 g"
+  },
+  {
+   "id": "low_sugar_jam",
+   "name": "低糖果酱",
+   "card": "foods/19",
+   "serving_g": 21.0,
+   "energy_kcal": 32.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.1,
+    "carb_g": 37.6
+   },
+   "composition": "fdc:167706",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "用山梨糖醇代糖，不计入快吸收糖（卡片）"
+  },
+  {
+   "id": "dried_apple",
+   "name": "苹果干",
+   "card": "foods/19",
+   "serving_g": 40.0,
+   "energy_kcal": 97.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.93,
+    "fat_g": 0.32,
+    "carb_g": 65.9
+   },
+   "composition": "fdc:171691",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "dried_berries",
+   "name": "浆果干",
+   "card": "foods/19",
+   "serving_g": 40.0,
+   "energy_kcal": 127.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 2.5,
+    "fat_g": 2.5,
+    "carb_g": 80.0
+   },
+   "composition": "fdc:168158",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "配方不加糖（营养条目是加糖的商品，只取其成分）"
+  },
+  {
+   "id": "candied_apple_slices",
+   "name": "蜜饯苹果片",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 103.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.6,
+    "fat_g": 0.1,
+    "carb_g": 84.9
+   },
+   "composition": "cn:1469",
+   "free_sugar": {
+    "from_source": "cn:1469"
+   },
+   "free_sugar_note": "果脯的糖主要由糖渍带入，取表值的碳水化合物全部计为游离糖（含苹果自身的糖，偏高）"
+  },
+  {
+   "id": "candied_citrus_peel",
+   "name": "糖渍橘皮",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 104.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.6,
+    "fat_g": 0.1,
+    "carb_g": 84.9
+   },
+   "composition": "cn:1469",
+   "composition_note": "卡片按同类蜜饯（苹果脯，条目 1469）取值",
+   "free_sugar": {
+    "from_source": "cn:1469"
+   },
+   "free_sugar_note": "同糖渍苹果片：表值碳水全部计为游离糖（偏高）"
+  },
+  {
+   "id": "preserved_plum",
+   "name": "话梅",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 88.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 3.4,
+    "fat_g": 3.2,
+    "carb_g": 70.8
+   },
+   "composition": "cn:1478",
+   "free_sugar": {
+    "from_source": "cn:1478"
+   },
+   "free_sugar_note": "九制梅肉的浸料含糖但未给用量，取表值碳水全部计为游离糖（偏高，待审）",
+   "misuse_salt_g": 1.35,
+   "misuse_note": "误用（卡片）：1.35 g（45%）：脱盐终点 4%–5% 取中值 4.5%"
+  },
+  {
+   "id": "canned_apple",
+   "name": "糖水苹果罐头",
+   "card": "foods/19",
+   "serving_g": 140.0,
+   "energy_kcal": 94.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.18,
+    "fat_g": 0.43,
+    "carb_g": 16.8
+   },
+   "composition": "fdc:173930",
+   "free_sugar": {
+    "per100g": 4.449999999999999
+   },
+   "free_sugar_note": "糖水带入的糖 = 罐装苹果（FDC 173930）总糖 14.84 g − 鲜苹果（FDC 171688）总糖 10.39 g，每 100 g"
+  },
+  {
+   "id": "canned_berries",
+   "name": "浆果罐头",
+   "card": "foods/19",
+   "serving_g": 140.0,
+   "energy_kcal": 129.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.56,
+    "fat_g": 0.26,
+    "carb_g": 23.5
+   },
+   "composition": "fdc:168172",
+   "free_sugar": {
+    "per100g": 16.939999999999998
+   },
+   "free_sugar_note": "糖水带入的糖 = 罐装草莓连汁（FDC 168172）总糖 21.83 g − 鲜草莓（FDC 167762）4.89 g，每 100 g"
+  },
+  {
+   "id": "sichuan_pickles",
+   "name": "四川泡菜",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 4.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 1.1,
+    "fat_g": 0.5,
+    "carb_g": 2.4
+   },
+   "composition": "fdc:170392",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "泡菜盐水里的甘蔗与糯米醪很少，且发酵消耗，按 0",
+   "misuse_salt_g": 0.38,
+   "misuse_note": "误用（卡片）：0.38 g（13%）：按 FDC 170392 的钠 498 mg 折算"
+  },
+  {
+   "id": "suancai",
+   "name": "酸菜",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 4.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 1.1,
+    "fat_g": 0.2,
+    "carb_g": 2.4
+   },
+   "composition": "cn:451",
+   "free_sugar": {
+    "parts": [
+     [
+      "白砂糖",
+      1,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 111.5
+   },
+   "free_sugar_note": "配料按区间中值：盐 6、蒜 2、八角粉 1.25、花椒粉 0.75、白砂糖 1、白酒 0.5 份对酸菜 100 份（待审）",
+   "misuse_salt_g": 0.03,
+   "misuse_note": "误用（卡片）：0.03 g（1%）：按表值钠 43.1 mg 折算（二次发酵的配料另加盐 2–10 份／100 份菜）"
+  },
+  {
+   "id": "zhacai",
+   "name": "榨菜",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 10.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 2.2,
+    "fat_g": 0.3,
+    "carb_g": 6.5
+   },
+   "composition": "cn:1551",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 3.24,
+   "misuse_note": "误用（卡片）：3.24 g（封顶 100%）：按表值钠 4,252.6 mg 折算（成品含盐约 10.8%）"
+  },
+  {
+   "id": "xuecai",
+   "name": "雪菜",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 9.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 2.4,
+    "fat_g": 0.2,
+    "carb_g": 5.4
+   },
+   "composition": "cn:1553",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 2.52,
+   "misuse_note": "误用（卡片）：2.52 g（83%）：按表值钠 3,304.2 mg 折算（约 8.4%）"
+  },
+  {
+   "id": "pickled_cucumber",
+   "name": "腌黄瓜",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 4.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 0.5,
+    "fat_g": 0.3,
+    "carb_g": 2.41
+   },
+   "composition": "fdc:168558",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      50,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 7036
+   },
+   "free_sugar_note": "黄瓜 8 lb、5% 醋 1½ qt、糖 ¼ 杯 50 g、水 2 qt、腌渍香料 2 汤匙按 12 g、芥菜籽 3 汤匙按 33 g；泡黄瓜的盐水倒掉，不计",
+   "misuse_salt_g": 0.62,
+   "misuse_note": "误用（卡片）：0.62 g（20%）：按 FDC 168558 的钠 809 mg 折算"
+  },
+  {
+   "id": "pickled_beetroot",
+   "name": "醋渍甜菜根",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 20.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 0.8,
+    "fat_g": 0.08,
+    "carb_g": 16.3
+   },
+   "composition": "fdc:170480",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      400,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 5013
+   },
+   "free_sugar_note": "甜菜 7 lb、5% 醋 4 杯按 956 g、盐 1½ 茶匙、糖 2 杯 400 g、水 2 杯；洋葱可不加，不计",
+   "misuse_salt_g": 0.11,
+   "misuse_note": "误用（卡片）：0.11 g（4%）：按 FDC 170480 的钠 149 mg 折算"
+  },
+  {
+   "id": "sweet_sour_carrot",
+   "name": "糖醋胡萝卜",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 20.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 0.4,
+    "fat_g": 0.1,
+    "carb_g": 16.1
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:380",
+      1247
+     ],
+     [
+      "cn:1448",
+      396,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1520",
+      1249
+     ],
+     [
+      "water",
+      227
+     ],
+     [
+      "cn:1565",
+      12,
+      {
+       "fill": "fdc:173468"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：胡萝卜 1,247 g、糖 396 g、醋 1,249 g（按醋均值条目 1520）、水 227 g、盐 12 g，糖水全部留在成品里",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      396,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 3131
+   },
+   "misuse_salt_g": 0.11,
+   "misuse_note": "误用（卡片）：0.11 g（4%）：盐 2 茶匙 12 g / 原料 3,131 g"
+  },
+  {
+   "id": "carrot_puree",
+   "name": "胡萝卜泥",
+   "card": "foods/19",
+   "serving_g": 60.0,
+   "energy_kcal": 15.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 0.64,
+    "fat_g": 0.19,
+    "carb_g": 5.54
+   },
+   "composition": "fdc:168518",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "canned_vegetables",
+   "name": "什锦蔬菜罐头",
+   "card": "foods/19",
+   "serving_g": 130.0,
+   "energy_kcal": 64.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 2.59,
+    "fat_g": 0.25,
+    "carb_g": 9.26
+   },
+   "composition": "fdc:170065",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.71,
+   "misuse_note": "误用（卡片）：0.71 g（23%）：按 FDC 170065 的钠 214 mg 折算"
+  },
+  {
+   "id": "dehydrated_vegetables",
+   "name": "脱水蔬菜",
+   "card": "foods/19",
+   "serving_g": 5.0,
+   "energy_kcal": 17.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 8.1,
+    "fat_g": 1.49,
+    "carb_g": 79.6
+   },
+   "composition": "fdc:170500",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "brine_tofu",
+   "name": "卤水豆腐（北豆腐）",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 84.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 12.2,
+    "fat_g": 4.8,
+    "carb_g": 2.0
+   },
+   "composition": "cn:334",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "gypsum_tofu",
+   "name": "石膏豆腐（南豆腐）",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 49.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 6.2,
+    "fat_g": 2.5,
+    "carb_g": 2.6
+   },
+   "composition": "cn:335",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "lactone_tofu",
+   "name": "内酯豆腐",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 42.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 5.0,
+    "fat_g": 1.9,
+    "carb_g": 3.3
+   },
+   "composition": "cn:336",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "douhua",
+   "name": "豆花",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 13.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 1.9,
+    "fat_g": 0.8
+   },
+   "composition": "cn:337",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "frozen_tofu",
+   "name": "冻豆腐",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 84.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 12.2,
+    "fat_g": 4.8,
+    "carb_g": 2.0
+   },
+   "composition": "cn:334",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "dried_tofu",
+   "name": "豆干",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 121.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 16.2,
+    "fat_g": 3.6,
+    "carb_g": 11.5
+   },
+   "composition": "cn:346",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "spiced_dried_tofu",
+   "name": "五香豆干",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 129.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 15.4,
+    "fat_g": 4.8,
+    "carb_g": 11.7
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:346",
+      1000
+     ],
+     [
+      "cn:1516",
+      15,
+      {
+       "fill": "fdc:171411"
+      }
+     ],
+     [
+      "cn:1448",
+      8,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1568",
+      5
+     ],
+     [
+      "cn:1565",
+      25,
+      {
+       "fill": "fdc:173468"
+      }
+     ],
+     [
+      "water",
+      1
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：豆腐干 1,000 g、五香油 15 g（按色拉油）、白糖 8 g、味精 5 g（条目 1568）、呈味核苷酸二钠 1 g（不计成分）、盐 25 g",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      8,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1054
+   },
+   "misuse_salt_g": 2.02,
+   "misuse_note": "误用（卡片）：2.02 g（67%）：盐 25 / 合计 1,054"
+  },
+  {
+   "id": "braised_dried_tofu",
+   "name": "卤豆干",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 121.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 16.2,
+    "fat_g": 3.6,
+    "carb_g": 11.5
+   },
+   "composition": "cn:346",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "smoked_tofu",
+   "name": "熏豆干",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 121.0,
+   "hunger": 5,
+   "macros_100g": {},
+   "composition": "cn:346",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "yuba",
+   "name": "腐竹",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 392.0,
+   "hunger": 9,
+   "macros_100g": {
+    "protein_g": 44.6,
+    "fat_g": 21.7,
+    "carb_g": 22.3
+   },
+   "composition": "cn:344",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "tofu_skin",
+   "name": "油豆皮",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 230.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 18.8,
+    "fat_g": 20.2,
+    "carb_g": 8.86
+   },
+   "composition": "fdc:172451",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "white_fermented_tofu",
+   "name": "白腐乳",
+   "card": "foods/19",
+   "serving_g": 15.0,
+   "energy_kcal": 20.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 10.9,
+    "fat_g": 8.2,
+    "carb_g": 4.8
+   },
+   "composition": "cn:1545",
+   "free_sugar": {
+    "g": 0
+   },
+   "alcohol_note": "酒精取卡片的估算 0.8 g",
+   "alcohol_g": 0.8,
+   "misuse_salt_g": 0.94,
+   "misuse_note": "误用（卡片）：0.94 g（31%）：按表值钠 2,460.0 mg 折算（约 6.2%）"
+  },
+  {
+   "id": "red_fermented_tofu",
+   "name": "红腐乳",
+   "card": "foods/19",
+   "serving_g": 15.0,
+   "energy_kcal": 23.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 12.0,
+    "fat_g": 8.1,
+    "carb_g": 8.2
+   },
+   "composition": "cn:1547",
+   "free_sugar": {
+    "g": 0
+   },
+   "alcohol_note": "酒精取卡片的估算 0.8 g（同白腐乳）",
+   "alcohol_g": 0.8,
+   "misuse_salt_g": 1.18,
+   "misuse_note": "误用（卡片）：1.18 g（39%）：按表值钠 3,091.0 mg 折算（约 7.9%）"
+  },
+  {
+   "id": "stinky_tofu",
+   "name": "臭豆腐",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 230.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 18.8,
+    "fat_g": 20.2,
+    "carb_g": 8.86
+   },
+   "composition": "fdc:172451",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "douchi",
+   "name": "豆豉",
+   "card": "foods/19",
+   "serving_g": 15.0,
+   "energy_kcal": 41.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 24.1,
+    "fat_g": 3.0,
+    "carb_g": 39.7
+   },
+   "composition": "cn:1572",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.1,
+   "misuse_note": "误用（卡片）：0.10 g（3%）：按表值钠 263.8 mg 折算"
+  },
+  {
+   "id": "natto",
+   "name": "纳豆",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 179.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 19.4,
+    "fat_g": 11.0,
+    "carb_g": 12.7
+   },
+   "composition": "fdc:172443",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "textured_soy_protein",
+   "name": "大豆素肉",
+   "card": "foods/19",
+   "serving_g": 55.0,
+   "energy_kcal": 185.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 49.2,
+    "fat_g": 2.39,
+    "carb_g": 35.9
+   },
+   "composition": "fdc:172445",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "kelp_salad",
+   "name": "凉拌海带丝",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 60.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 1.0,
+    "fat_g": 2.5,
+    "carb_g": 11.0
+   },
+   "composition": "fdc:1780827",
+   "free_sugar": {
+    "per100g": 6.0
+   },
+   "free_sugar_note": "商品标签糖 6.0 g/100 g（配料加糖，海带本身几乎不含糖），全部计入",
+   "misuse_salt_g": 1.77,
+   "misuse_note": "误用（卡片）：1.77 g（58%）：按商品标签钠 820 mg/100 g 折算"
+  },
+  {
+   "id": "kelp_knots",
+   "name": "海带结",
+   "card": "foods/19",
+   "serving_g": 85.0,
+   "energy_kcal": 13.0,
+   "hunger": 2,
+   "macros_100g": {},
+   "composition": "cn:607",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "agar_cold_jelly",
+   "name": "琼脂凉粉",
+   "card": "foods/19",
+   "serving_g": 140.0,
+   "energy_kcal": 4.0,
+   "hunger": 1,
+   "macros_100g": {
+    "carb_g": 1.5
+   },
+   "composition": "jp:09028",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 1.8,
+   "misuse_note": "误用（卡片）：1.8 g（58%）：拌料按凉拌海带丝同量计"
+  },
+  {
+   "id": "seasoned_seaweed_snack",
+   "name": "调味海苔",
+   "card": "foods/19",
+   "serving_g": 3.0,
+   "energy_kcal": 8.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 29.4,
+    "fat_g": 4.8,
+    "carb_g": 50.4
+   },
+   "composition": "cn:1351",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.12,
+   "misuse_note": "误用（卡片）：0.12 g（4%）：按表值钠 1,599.1 mg 折算"
+  },
+  {
+   "id": "canned_mushrooms",
+   "name": "蘑菇罐头",
+   "card": "foods/19",
+   "serving_g": 130.0,
+   "energy_kcal": 33.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 1.87,
+    "fat_g": 0.29,
+    "carb_g": 5.09
+   },
+   "composition": "fdc:169254",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 1.4,
+   "misuse_note": "误用（卡片）：1.40 g（46%）：按 FDC 169254 的钠 425 mg 折算"
+  },
+  {
+   "id": "pickled_mushrooms",
+   "name": "腌蘑菇",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 31.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 2.0,
+    "fat_g": 9.3,
+    "carb_g": 3.1
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:577",
+      3175,
+      {
+       "retention": "retn:3775"
+      }
+     ],
+     [
+      "cn:1516",
+      396,
+      {
+       "fill": "fdc:171411"
+      }
+     ],
+     [
+      "cn:1520",
+      568
+     ],
+     [
+      "fdc:167747",
+      113
+     ],
+     [
+      "cn:1565",
+      18,
+      {
+       "fill": "fdc:173468"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：蘑菇 3,175 g、油 396 g、醋 568 g、柠檬汁 113 g、盐 18 g；蘑菇按 3775 蔬菜水煮倒水",
+   "free_sugar": {
+    "parts": [
+     [
+      "柠檬汁",
+      113,
+      "fdc:167747"
+     ]
+    ],
+    "total_g": 4270
+   },
+   "misuse_salt_g": 0.13,
+   "misuse_note": "误用（卡片）：0.13 g（4%）：盐 1 汤匙 18 g / 原料 4,270 g"
+  },
+  {
+   "id": "roasted_pumpkin_seeds",
+   "name": "炒南瓜子",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 173.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 36.0,
+    "fat_g": 46.1,
+    "carb_g": 7.9
+   },
+   "composition": "cn:769",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.2,
+   "misuse_note": "误用（卡片）：0.20 g（7%）：按 FDC 169415 的钠 256 mg 折算"
+  },
+  {
+   "id": "salted_nuts",
+   "name": "椒盐坚果",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 182.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 20.0,
+    "fat_g": 54.0,
+    "carb_g": 21.0
+   },
+   "composition": "fdc:168600",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.21,
+   "misuse_note": "误用（卡片）：0.21 g（7%）：按 FDC 168600 的钠 273 mg 折算"
+  },
+  {
+   "id": "amber_walnuts",
+   "name": "琥珀核桃",
+   "card": "foods/19",
+   "serving_g": 30.0,
+   "energy_kcal": 176.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 10.0,
+    "fat_g": 45.8,
+    "carb_g": 38.6
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:743",
+      128,
+      {
+       "retention": "retn:2203"
+      }
+     ],
+     [
+      "cn:1448",
+      49.5,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1516",
+      12.4,
+      {
+       "fill": "fdc:171411"
+      }
+     ],
+     [
+      "cn:1565",
+      1.5,
+      {
+       "fill": "fdc:173468"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：核桃仁 128 g、白糖 49.5 g、油 12.4 g、盐 1.5 g；核桃按 2203 坚果烤",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      49.5,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 191.4
+   },
+   "misuse_salt_g": 0.24,
+   "misuse_note": "误用（卡片）：0.24 g（8%）：盐 ¼ 茶匙 1.5 g / 原料 191.4 g"
+  },
+  {
+   "id": "peanut_butter",
+   "name": "花生酱",
+   "card": "foods/19",
+   "serving_g": 34.0,
+   "energy_kcal": 219.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 22.2,
+    "fat_g": 53.1,
+    "carb_g": 20.9
+   },
+   "composition": "cn:1532",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.42,
+   "misuse_note": "误用（卡片）：0.42 g（14%）：按表值钠 483.4 mg 折算"
+  },
+  {
+   "id": "sesame_paste",
+   "name": "芝麻酱",
+   "card": "foods/19",
+   "serving_g": 32.0,
+   "energy_kcal": 200.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 19.2,
+    "fat_g": 52.7,
+    "carb_g": 22.7
+   },
+   "composition": "cn:1528",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.03,
+   "misuse_note": "误用（卡片）：0.03 g（1%）：按表值钠 38.5 mg 折算"
+  },
+  {
+   "id": "dark_chocolate",
+   "name": "黑巧克力",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 144.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 4.2,
+    "fat_g": 30.0,
+    "carb_g": 63.9
+   },
+   "composition": "fdc:167976",
+   "free_sugar": {
+    "from_source": "fdc:167976"
+   },
+   "free_sugar_note": "可可液块不含糖，糖全部为添加糖，取 FDC 167976 的总糖"
+  },
+  {
+   "id": "milk_chocolate",
+   "name": "牛奶巧克力",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 176.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 4.3,
+    "fat_g": 40.1,
+    "carb_g": 53.4
+   },
+   "composition": "cn:1454",
+   "free_sugar": {
+    "from_source": "cn:1454"
+   },
+   "free_sugar_note": "取表值碳水化合物全部计为游离糖（含奶粉的乳糖，偏高）",
+   "caffeine_note": "中国表没有咖啡因，按 FDC 167587 Candies, milk chocolate 的 20 mg/100 g",
+   "caffeine_mg": 6.0
+  },
+  {
+   "id": "white_chocolate",
+   "name": "白巧克力",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 162.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 5.87,
+    "fat_g": 32.1,
+    "carb_g": 59.2
+   },
+   "composition": "fdc:167571",
+   "free_sugar": {
+    "from_source": "fdc:167571"
+   },
+   "free_sugar_note": "取 FDC 167571 的总糖（含乳固体的乳糖，偏高）"
+  },
+  {
+   "id": "chocolate_chips",
+   "name": "巧克力豆",
+   "card": "foods/20",
+   "serving_g": 15.0,
+   "energy_kcal": 72.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 4.2,
+    "fat_g": 30.0,
+    "carb_g": 63.9
+   },
+   "composition": "fdc:167976",
+   "free_sugar": {
+    "from_source": "fdc:167976"
+   },
+   "free_sugar_note": "同黑巧克力"
+  },
+  {
+   "id": "coated_chocolate_beans",
+   "name": "糖衣巧克力豆",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 148.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 4.33,
+    "fat_g": 21.1,
+    "carb_g": 71.2
+   },
+   "composition": "fdc:169583",
+   "free_sugar": {
+    "from_source": "fdc:169583"
+   },
+   "free_sugar_note": "取 FDC 169583 的总糖（含乳糖，偏高）"
+  },
+  {
+   "id": "liqueur_chocolate",
+   "name": "酒心巧克力",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 131.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 3.0,
+    "fat_g": 21.1,
+    "carb_g": 59.0
+   },
+   "composition": {
+    "mix": [
+     [
+      "fdc:167976",
+      70
+     ],
+     [
+      "fdc:175097",
+      30
+     ]
+    ]
+   },
+   "composition_note": "卡片：黑巧克力 70 g（FDC 167976）+ 咖啡利口酒 30 g（FDC 175097，53 proof）",
+   "free_sugar": {
+    "parts": [
+     [
+      "黑巧克力",
+      70,
+      "fdc:167976"
+     ],
+     [
+      "利口酒",
+      30,
+      "fdc:175097"
+     ]
+    ],
+    "total_g": 100
+   },
+   "free_sugar_note": "两者的总糖全部为添加糖"
+  },
+  {
+   "id": "hard_candy",
+   "name": "硬糖",
+   "card": "foods/20",
+   "serving_g": 15.0,
+   "energy_kcal": 59.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.2,
+    "carb_g": 98.0
+   },
+   "composition": "fdc:167990",
+   "free_sugar": {
+    "from_source": "fdc:167990"
+   },
+   "free_sugar_note": "取 FDC 167990 的总糖（葡萄糖浆里的寡糖不是游离糖，不计）"
+  },
+  {
+   "id": "mint_candy",
+   "name": "薄荷糖",
+   "card": "foods/20",
+   "serving_g": 15.0,
+   "energy_kcal": 59.0,
+   "hunger": 3,
+   "macros_100g": {
+    "carb_g": 98.0
+   },
+   "composition": "fdc:167990",
+   "free_sugar": {
+    "from_source": "fdc:167990"
+   },
+   "free_sugar_note": "同硬糖"
+  },
+  {
+   "id": "throat_lozenge",
+   "name": "润喉糖",
+   "card": "foods/20",
+   "serving_g": 15.0,
+   "energy_kcal": 59.0,
+   "hunger": 3,
+   "macros_100g": {},
+   "composition": "fdc:167990",
+   "free_sugar": {
+    "from_source": "fdc:167990"
+   },
+   "free_sugar_note": "同硬糖"
+  },
+  {
+   "id": "gummy_candy",
+   "name": "明胶软糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 119.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carb_g": 98.9
+   },
+   "composition": "fdc:167989",
+   "free_sugar": {
+    "from_source": "fdc:167989"
+   },
+   "free_sugar_note": "取 FDC 167989 的总糖"
+  },
+  {
+   "id": "pectin_jelly_candy",
+   "name": "果汁软糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 106.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 0.08,
+    "fat_g": 0.0,
+    "carb_g": 88.0
+   },
+   "composition": "fdc:170279",
+   "free_sugar": {
+    "from_source": "fdc:170279"
+   },
+   "free_sugar_note": "取 FDC 170279 的总糖",
+   "override": {
+    "vitamin_c_mg": 0
+   },
+   "override_note": "营养条目是强化维生素 C 的商品果汁软糖（136.4 mg/100 g），配方不加维生素 C，按 0（待审）"
+  },
+  {
+   "id": "marshmallow",
+   "name": "棉花糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 95.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 1.8,
+    "fat_g": 0.2,
+    "carb_g": 81.3
+   },
+   "composition": "fdc:167995",
+   "free_sugar": {
+    "from_source": "fdc:167995"
+   },
+   "free_sugar_note": "取 FDC 167995 的总糖"
+  },
+  {
+   "id": "nougat",
+   "name": "牛轧糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 131.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 4.9,
+    "fat_g": 12.3,
+    "carb_g": 75.4
+   },
+   "composition": "cn:1452",
+   "free_sugar": {
+    "from_source": "cn:1452"
+   },
+   "free_sugar_note": "取表值碳水化合物全部计为游离糖（含花生自身的碳水，偏高）"
+  },
+  {
+   "id": "toffee",
+   "name": "太妃糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 168.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 1.07,
+    "fat_g": 32.8,
+    "carb_g": 64.7
+   },
+   "composition": "fdc:169671",
+   "free_sugar": {
+    "from_source": "fdc:169671"
+   },
+   "free_sugar_note": "取 FDC 169671 的总糖（按配方计算的条目）",
+   "misuse_salt_g": 0.17,
+   "misuse_note": "误用（卡片）：0.17 g（6%）：盐 1½ 茶匙 4 g / 原料 692.5 g"
+  },
+  {
+   "id": "caramel_candy",
+   "name": "焦糖块",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 115.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 4.6,
+    "fat_g": 8.1,
+    "carb_g": 77.0
+   },
+   "composition": "fdc:167974",
+   "free_sugar": {
+    "from_source": "fdc:167974"
+   },
+   "free_sugar_note": "取 FDC 167974 的总糖（含奶油的乳糖，偏高）"
+  },
+  {
+   "id": "milk_candy",
+   "name": "奶糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 124.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 2.5,
+    "fat_g": 6.6,
+    "carb_g": 84.5
+   },
+   "composition": "cn:1453",
+   "free_sugar": {
+    "from_source": "cn:1453"
+   },
+   "free_sugar_note": "取表值碳水化合物全部计为游离糖（含奶粉的乳糖，偏高）"
+  },
+  {
+   "id": "chewing_gum",
+   "name": "口香糖",
+   "card": "foods/20",
+   "serving_g": 3.0,
+   "energy_kcal": 11.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.3,
+    "carb_g": 96.7
+   },
+   "composition": "fdc:168771",
+   "free_sugar": {
+    "from_source": "fdc:168771"
+   },
+   "free_sugar_note": "取 FDC 168771 的总糖"
+  },
+  {
+   "id": "sugar_free_gum",
+   "name": "无糖口香糖",
+   "card": "foods/20",
+   "serving_g": 3.0,
+   "energy_kcal": 8.0,
+   "hunger": 1,
+   "macros_100g": {
+    "protein_g": 0.0,
+    "fat_g": 0.4,
+    "carb_g": 94.8
+   },
+   "composition": "fdc:169882",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "山梨糖醇不计入快吸收糖（卡片）"
+  },
+  {
+   "id": "lollipop",
+   "name": "棒棒糖",
+   "card": "foods/20",
+   "serving_g": 15.0,
+   "energy_kcal": 59.0,
+   "hunger": 3,
+   "macros_100g": {},
+   "composition": "fdc:167990",
+   "free_sugar": {
+    "from_source": "fdc:167990"
+   },
+   "free_sugar_note": "同硬糖"
+  },
+  {
+   "id": "tanghulu",
+   "name": "冰糖葫芦",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 76.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 0.3,
+    "fat_g": 0.3,
+    "carb_g": 62.6
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:654",
+      200
+     ],
+     [
+      "cn:1448",
+      200,
+      {
+       "fill": "fdc:169655"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：山楂 200 g、糖 200 g，熬糖的水蒸干不计",
+   "free_sugar": {
+    "parts": [
+     [
+      "白砂糖",
+      200,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 400
+   }
+  },
+  {
+   "id": "dragon_beard_candy",
+   "name": "龙须酥",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 134.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 6.0,
+    "fat_g": 13.9,
+    "carb_g": 75.6
+   },
+   "composition": "cn:1456",
+   "free_sugar": {
+    "from_source": "cn:1456"
+   },
+   "free_sugar_note": "取表值碳水化合物全部计为游离糖（含面粉与坚果的碳水，偏高）"
+  },
+  {
+   "id": "sesame_brittle",
+   "name": "芝麻糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 155.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 11.6,
+    "fat_g": 33.3,
+    "carb_g": 50.3
+   },
+   "composition": "fdc:169588",
+   "free_sugar": {
+    "from_source": "fdc:169588"
+   },
+   "free_sugar_note": "取 FDC 169588 的总糖",
+   "misuse_salt_g": 0.13,
+   "misuse_note": "误用（卡片）：0.13 g（4%）：按 FDC 169588 的钠 167 mg 折算"
+  },
+  {
+   "id": "peanut_brittle",
+   "name": "花生糖",
+   "card": "foods/20",
+   "serving_g": 30.0,
+   "energy_kcal": 146.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 7.57,
+    "fat_g": 19.0,
+    "carb_g": 71.2
+   },
+   "composition": "fdc:169586",
+   "free_sugar": {
+    "from_source": "fdc:169586"
+   },
+   "free_sugar_note": "取 FDC 169586 的总糖",
+   "misuse_salt_g": 0.34,
+   "misuse_note": "误用（卡片）：0.34 g（11%）：按 FDC 169586 的钠 445 mg 折算"
+  },
+  {
+   "id": "popping_candy",
+   "name": "跳跳糖",
+   "card": "foods/20",
+   "serving_g": 15.0,
+   "energy_kcal": 59.0,
+   "hunger": 3,
+   "macros_100g": {
+    "carb_g": 98.0
+   },
+   "composition": "fdc:167990",
+   "free_sugar": {
+    "from_source": "fdc:167990"
+   },
+   "free_sugar_note": "同硬糖"
+  }
+ ]
+}

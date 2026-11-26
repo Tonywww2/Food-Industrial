@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "semi_finished": "donut|fried"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    }
+  ],
+  "process": "confectionery",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:donut"
+  }
+}

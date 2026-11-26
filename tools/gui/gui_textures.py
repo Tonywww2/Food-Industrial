@@ -8,9 +8,11 @@ files are overwritten only with --force.
   textures/gui/panel_<colour>.png 256 x 256 side panel frames (blue info, green upgrades,
                                   orange input/output, red redstone)
   textures/gui/elements.png       slots, tank and energy frames, arrow, flame, lock, icons, buttons
-  textures/item/device_wrench.png, textures/item/redprint.png
+  textures/gui/immersive_panel.png  64 x 64 pieces of the panels of the immersive display (I37)
 
-The element coordinates are mirrored in gui/client/GuiTextures.java.
+The element coordinates are mirrored in gui/client/Widgets.java, those of the panel texture in
+machine/display/client/ImmersiveDisplay.java. The icons of the device wrench and the redprint are drawn
+by tools/textures/item_art.py since 2026-11-18.
 
 Requires Pillow. Usage: python3 tools/gui/gui_textures.py [--force]
 """
@@ -190,6 +192,18 @@ def icon_highlight(draw, x, y):
     draw.rectangle([x + 6, y + 6, x + 9, y + 9], fill=red)
 
 
+def icon_display(draw, x, y):
+    """Immersive display (I37): a small panel floating over a machine block."""
+    frame = (30, 44, 56, 255)
+    glow = (66, 224, 240, 255)
+    draw.rectangle([x + 1, y + 1, x + 14, y + 7], fill=(18, 26, 34, 255), outline=frame)
+    draw.rectangle([x + 3, y + 3, x + 5, y + 5], fill=(210, 220, 228, 255))
+    draw.line([x + 7, y + 4, x + 9, y + 4], fill=glow)
+    draw.rectangle([x + 10, y + 3, x + 12, y + 5], fill=glow)
+    draw.line([x + 7, y + 8, x + 8, y + 9], fill=glow)
+    draw.rectangle([x + 4, y + 10, x + 11, y + 14], fill=(150, 150, 155, 255), outline=SLOT_DARK)
+
+
 # 8 x 8 icons of the small buttons in the redstone and input/output panels (2026-11-05)
 
 def small_ignore(draw, x, y):
@@ -298,7 +312,8 @@ def elements():
         draw.line([50, 32 + i, 61, 32 + i], fill=color)
     # row 100: panel icons
     # (columns 2 and 3 were the input/output and redstone panel icons; those tabs show items since 2026-11-05)
-    for index, painter in {0: icon_info, 1: icon_upgrades, 4: icon_structure, 5: icon_mode, 6: icon_highlight}.items():
+    for index, painter in {0: icon_info, 1: icon_upgrades, 4: icon_structure, 5: icon_mode, 6: icon_highlight,
+                           7: icon_display}.items():
         icon(draw, index, 100, painter)
     # row 132: 8 x 8 icons of the small panel buttons
     for index, painter in enumerate([small_ignore, small_low, small_high, small_disabled, small_in_items,
@@ -311,29 +326,49 @@ def elements():
     return image
 
 
-def wrench():
-    image = Image.new('RGBA', (16, 16), CLEAR)
+def immersive_panel():
+    """
+    Texture of the panels of the immersive display (machines/04 §9.2), 64 x 64: the backing frame at 0,0
+    (16 x 16, 3-pixel corners, stretched), a slot at 16,0 (18 x 18), the progress arrow empty at 0,20 and full
+    at 24,20 (24 x 17), a white square at 40,0 (4 x 4), a steam puff at 48,0 (6 x 6), a bubble at 56,0 (4 x 4).
+    """
+    image = Image.new('RGBA', (64, 64), CLEAR)
     draw = ImageDraw.Draw(image)
-    iron = (200, 200, 205, 255)
-    dark = (90, 90, 100, 255)
-    copper = (200, 110, 60, 255)
-    for i in range(9):
-        draw.rectangle([3 + i, 12 - i, 4 + i, 13 - i], fill=iron)
-    draw.line([3, 14, 13, 4], fill=dark)
-    draw.rectangle([10, 1, 14, 5], fill=iron, outline=dark)
-    draw.rectangle([12, 0, 13, 3], fill=CLEAR)
-    draw.rectangle([1, 11, 4, 14], fill=copper, outline=(120, 60, 30, 255))
-    return image
-
-
-def redprint():
-    image = Image.new('RGBA', (16, 16), CLEAR)
-    draw = ImageDraw.Draw(image)
-    paper = (200, 40, 40, 255)
-    draw.rectangle([2, 1, 13, 14], fill=paper, outline=(110, 10, 10, 255))
-    for y in range(3, 13, 3):
-        draw.line([4, y, 11, y], fill=(250, 200, 200, 255))
-    draw.rectangle([4, 9, 7, 12], outline=(250, 220, 220, 255))
+    # backing: dark translucent glass, a thin steel edge, cyan corner marks
+    draw.rectangle([0, 0, 15, 15], fill=(16, 22, 30, 196))
+    draw.rectangle([0, 0, 15, 15], outline=(86, 104, 122, 235))
+    for x, y in [(0, 0), (15, 0), (0, 15), (15, 15)]:
+        draw.point((x, y), fill=CLEAR)
+    for x, y in [(1, 1), (14, 1), (1, 14), (14, 14)]:
+        draw.point((x, y), fill=(66, 224, 240, 235))
+    # slot: sunken, dark, lit from the top left
+    draw.rectangle([16, 0, 33, 17], fill=(8, 12, 18, 150))
+    draw.line([16, 0, 33, 0], fill=(40, 52, 64, 255))
+    draw.line([16, 0, 16, 17], fill=(40, 52, 64, 255))
+    draw.line([17, 17, 33, 17], fill=(120, 138, 154, 255))
+    draw.line([33, 1, 33, 17], fill=(120, 138, 154, 255))
+    # arrows: the outline of the window's arrow, empty and lit
+    for x, colour, edge in ((0, (58, 70, 84, 230), (30, 38, 48, 255)), (24, (66, 224, 240, 255), (16, 84, 104, 255))):
+        y = 20
+        draw.rectangle([x + 1, y + 6, x + 13, y + 10], fill=colour, outline=edge)
+        for i in range(8):
+            draw.line([x + 13 + i, y + 1 + i, x + 13 + i, y + 15 - i], fill=colour)
+        for i in range(9):
+            draw.point((x + 13 + i, y + i), fill=edge)
+            draw.point((x + 13 + i, y + 16 - i), fill=edge)
+        draw.line([x + 13, y + 1, x + 13, y + 5], fill=edge)
+        draw.line([x + 13, y + 11, x + 13, y + 15], fill=edge)
+        draw.line([x + 14, y + 6, x + 14, y + 10], fill=colour)
+    # white, steam puff, bubble
+    draw.rectangle([40, 0, 43, 3], fill=WHITE)
+    for dx, dy, alpha in [(1, 0, 150), (2, 0, 190), (3, 0, 190), (4, 0, 150), (0, 1, 150), (5, 1, 150), (0, 4, 150), (5, 4, 150),
+                          (1, 5, 150), (2, 5, 190), (3, 5, 190), (4, 5, 150)]:
+        draw.point((48 + dx, dy), fill=(255, 255, 255, alpha))
+    draw.rectangle([49, 1, 52, 4], fill=(255, 255, 255, 235))
+    draw.rectangle([48, 2, 53, 3], fill=(255, 255, 255, 235))
+    draw.rectangle([50, 0, 51, 5], fill=(255, 255, 255, 235))
+    draw.ellipse([56, 0, 59, 3], outline=(214, 250, 255, 255))
+    draw.point((57, 1), fill=(255, 255, 255, 255))
     return image
 
 
@@ -342,8 +377,7 @@ def main():
     for name, color in {'blue': (59, 110, 170), 'green': (62, 140, 75), 'orange': (205, 120, 40), 'red': (170, 50, 50)}.items():
         save(bevel_frame(256, shade(color, 1.0), light=shade(color, 1.35), dark=shade(color, 0.6)), f'gui/panel_{name}.png')
     save(elements(), 'gui/elements.png')
-    save(wrench(), 'item/device_wrench.png')
-    save(redprint(), 'item/redprint.png')
+    save(immersive_panel(), 'gui/immersive_panel.png')
 
 
 if __name__ == '__main__':

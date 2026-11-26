@@ -1,0 +1,26 @@
+{
+  "type": "foodindustrial:baking",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/sesame"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "pan_roasting",
+  "outputs": [
+    {
+      "count": 4,
+      "item": "foodindustrial:roasted_sesame"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

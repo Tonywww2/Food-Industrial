@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:egg_custard_mix",
+    "foodindustrial:flowing_egg_custard_mix",
+    {
+      "id": "#forge:egg_custard_mix",
+      "required": false
+    },
+    {
+      "id": "#c:egg_custard_mix",
+      "required": false
+    }
+  ]
+}

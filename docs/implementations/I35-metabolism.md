@@ -167,6 +167,7 @@ API 名称见“节点差异”，实装时按目标版本的反编译源码核�
 
 ## 实现记录
 
+- 2026-11-19 [I45](I45-food-nutrition-generation.md) 按 foods/02 §4.4 加入第八种成分亚硝酸盐（高铁血红蛋白、四档效果、亚硝酸盐中毒伤害、当日摄入），代码同在本包；失去意识的配置项两者共用
 - 2026-11-13 实装：
   - 包 `food.metabolism`：`Substance`（七种成分、档数、图标、语言键）、`MetabolismRules`（全部数值与分档函数，别处不写数字）、`MetabolismState`（体内量与算术，纯 Java，可单测；自己的时钟只前进）、`MetabolismEffects`（每个成分、每个属性一个修正）、`MetabolismView`（发给本人客户端的显示值、档位与配置）、`MetabolismText`、`MetabolismData`（伤害类型与标签的数据生成）、`Metabolism`（事件、结算、同步、配置）、`client/MetabolismClient`；`food.ProductGrade`（劣质、土法、不标、特级；读法由成品各批装入，现在全部为不标）
   - 结算：每名玩家每 20 tick（`tickCount % 20`），另在吃喝、登录、退出、重生、换维度时；时间差取主世界一天中的时间与游戏刻两者差值的较大者，不为负；登录与重生时从当前时刻重新计时（离线与死亡画面期间不计）。快吸收糖用 32 格的定长环形记录（满了并入最近一格），营养素记“储备归零的时刻”算第二档
@@ -188,7 +189,7 @@ API 名称见“节点差异”，实装时按目标版本的反编译源码核�
 - Apothic Attributes：三个节点以 `deps.opt.apothic`、`deps.opt.placebo` 加入（1.20.1：1.3.7 / Placebo 8.6.3；1.21.1：2.11.0 / 9.9.4；26.1.2：3.1.0 / 10.0.2，Modrinth 版本 ID 见各节点 `gradle.properties`），开发运行时用 `-PfiWith=apothic,placebo` 加入。来源类型的优先级 200，`render` 把 16 × 16 图标缩到 8 × 8 画；1.21.1 的 Apothic Attributes 2.11.0 另有 `mining_speed`，按计划仍用原版 `block_break_speed`
 - 图标：`tools/textures/metabolism_icons.py` 画 7 个 16 × 16 成分图标与 8 × 8 的按钮图标（小人），写到 `assets/foodindustrial/textures/gui/metabolism/`
 - 面板：按钮 10 × 10，在副手栏正上方（背包坐标 80, 49，与副手栏的格框相隔 2 像素；2026-11-13 用户要求，原在玩家模型框内左上角 28, 10）；面板贴在背包右侧。2026-11-13 按样版改版，见下一条（原为每行图标、名称、数值 · 档位，宽度随文字）。Apothic Attributes 的面板与配方书都在背包左侧；两者都打开时，窗口较窄会把右侧面板挤出屏幕
-- 发现的既有问题（与本计划无关，未改）：26.1.2 上 9 个配方因引用的标签不存在而加载失败（如 `materials/straw`、`materials/litsea`、`catalysts/immobilized_lipase`）：这些标签在该节点只含没有安装的他模组物品，按 I06“空标签不写”没有生成
+- 发现的既有问题（与本计划无关，未改）：26.1.2 上 9 个配方因引用的标签不存在而加载失败（如 `materials/straw`、`materials/litsea`、`catalysts/immobilized_lipase`）：这些标签在该节点只含没有安装的他模组物品，按 I06“空标签不写”没有生成（2026-11-25 由 [I55](I55-own-sources.md) 补上本模组来源，见 [foods/23](../foods/23-own-sources.md) 第 9 节）
 
 - 界面改版实装（2026-11-13）：platform 新增 Tooltip 组件 `TooltipRows`（图标、文字、长条按行排列，可按组折行）与渲染器 `TooltipRowsRenderer`（经 `RegisterClientTooltipComponentFactoriesEvent` 注册），物品 Tooltip 经 `RenderTooltipEvent.GatherComponents` 加入（`PlatformClient.onTooltipRows`），插在他模组放在最后的模组名行之前；`GuiCanvas` 统一三个节点的矩形、图标、文字、长条与悬浮框绘制，`GuiBar` 描述长条。面板（第二轮 F）：不画底板与标题，每种成分一枚 44 × 10 的胶囊（`#CC101116`，四角各削两像素），胶囊间隔 2；内有 8 × 8 图标与 26 × 2 细条，细条底 `#1CFFFFFF`，填充按档位着色，档位分界画成 `#121318` 的 1 像素缺口；悬浮卡片里的长条仍是 120 × 4、带各档淡色区间。长条右端：咖啡因 500 mg、酒精 0.45%、快吸收糖 60 g、杂质 100（超出画满）。26.1 的 Tooltip 在屏幕自身绘制的末尾统一画出，面板改在 `ScreenEvent.Render.Foreground` 里画，手持物品与物品 Tooltip 仍在面板之上；1.20.1、1.21.1 仍在 `Render.Post`
 - 倒计时：同步时附上每种成分离降档的 tick 数（咖啡因、酒精、杂质按公式 `MetabolismRules.ticksToDrop`，快吸收糖按窗口内各次进食的到期时间，营养素按储备与缺乏时长）和营养素已缺乏的 tick 数，客户端按收到后经过的游戏时间往下数；单元测试 14 项通过

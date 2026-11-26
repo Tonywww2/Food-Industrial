@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/culture_bench_shape",
   "textures": {
     "front": "foodindustrial:block/culture_bench_front_active",
     "side": "foodindustrial:block/culture_bench_side",

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodindustrial:block/wild_dittany_of_crete_stage3"
+  }
+}

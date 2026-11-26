@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:garlic"
+    "foodindustrial:garlic",
+    {
+      "id": "#forge:crops/garlic",
+      "required": false
+    },
+    {
+      "id": "#c:crops/garlic",
+      "required": false
+    }
   ]
 }

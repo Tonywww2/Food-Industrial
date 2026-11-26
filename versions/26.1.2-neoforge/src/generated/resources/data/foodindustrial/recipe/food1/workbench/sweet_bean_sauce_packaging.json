@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "foodindustrial:sweet_bean_sauce_bucket"
+    },
+    {
+      "count": 4,
+      "ingredient": "#foodindustrial:containers/glass_jar"
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:sweet_bean_sauce"
+  }
+}

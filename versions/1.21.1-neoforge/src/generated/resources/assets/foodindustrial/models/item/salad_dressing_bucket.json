@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "foodindustrial:salad_dressing",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,6 +1,6 @@
 # 08 原料清单与标签
 
-第一批共用到约 **90 种一级原料**：原版物品 32 类、他模组原料 26 类、本模组新增 35 种（含菌种、酶与催化剂）。第二、三批另增约 80 种（“用于”一栏标 31–139 编号的行，来源见 [13](13-batch-2.md)、[14](14-batch-3.md)）；第四批另增原料 69 种、菌种 32 个、酶 49 种、耗材 1 种、催化剂 5 种（“用于”标 140–423，来源见 [15](15-batch-4.md)），其中“暂无来源（待定）”的原料要等以后补作物、生物或联动标签。**所有配方输入一律按标签匹配**：配方只引用本模组命名空间下的标签，标签再聚合原版物品、本模组物品和各模组的 `forge:` 标签；只有配方输出写具体物品。 第五批（17–19）另增原料 244 种（多数为香料植物部位，暂无来源）、菌种与酶 23 种、催化剂与吸附助滤耗材 7 种，已并入第 C 节各表。
+第一批共用到约 **90 种一级原料**：原版物品 32 类、他模组原料 26 类、本模组新增 35 种（含菌种、酶与催化剂）。第二、三批另增约 80 种（“用于”一栏标 31–139 编号的行，来源见 [13](13-batch-2.md)、[14](14-batch-3.md)）；第四批另增原料 69 种、菌种 32 个、酶 49 种、耗材 1 种、催化剂 5 种（“用于”标 140–423，来源见 [15](15-batch-4.md)），其中原先写“暂无来源（待定）”的 269 种原料已按本页 §C 的来源规则分到六类（2026-11-18 定，问题 21）。**所有配方输入一律按标签匹配**：配方只引用本模组命名空间下的标签，标签再聚合原版物品、本模组物品和各模组的 `forge:` 标签；只有配方输出写具体物品。 第五批（17–19）另增原料 244 种（多数为香料植物部位，暂无来源）、菌种与酶 23 种、催化剂与吸附助滤耗材 7 种，已并入第 C 节各表。
 
 ## 标签体系
 
@@ -55,7 +55,7 @@
 | 海草 | `materials/seagrass` | `minecraft:seagrass` | `minecraft:seagrass` | 5（低产海藻灰） | 植物纤维、无机盐 |
 | 甘蔗 | `materials/sugar_cane` | `minecraft:sugar_cane` | `minecraft:sugar_cane`、`#c:crops/sugar_cane` | 蔗糖（白糖）、朗姆酒 | 蔗糖 |
 | 糖 | `chemicals/sucrose` | `minecraft:sugar`、本模组蔗糖（白糖）、`#forge:sugar` | `minecraft:sugar`、本模组蔗糖（白糖）、`#c:sugar` | 18，转化糖 | 蔗糖 C12H22O11 |
-| 甜菜根 | `materials/beetroot` | `minecraft:beetroot`、`#forge:crops/beetroot`、`#forge:vegetables/beetroot` | `minecraft:beetroot`、`#c:crops/beetroot`、`#c:vegetables/beetroot` | 19 | 甜菜苷、蔗糖 |
+| 甜菜根 | `materials/beetroot` | `minecraft:beetroot`、`#forge:crops/beetroot`、`#forge:vegetables/beetroot` | `minecraft:beetroot`、`#c:crops/beetroot`、`#c:vegetables/beetroot` | 19；成品（醋渍甜菜根，2026-11-18 补；原在 B 节另列一行，写的 farmersdelight:beetroot 农夫乐事没有，2026-11-25 并入本行） | 甜菜苷、蔗糖 |
 | 胡萝卜 | `materials/carrot` | `minecraft:carrot`、`#forge:crops/carrot`、`#forge:vegetables/carrot` | `minecraft:carrot`、`#c:crops/carrot`、`#c:vegetables/carrot` | 20 | β-胡萝卜素 |
 | 马铃薯 | `materials/potato` | `minecraft:potato`、`#forge:crops/potato`、`#forge:vegetables/potato` | `minecraft:potato`、`#c:crops/potato`、`#c:vegetables/potato` | 淀粉 → 2, 3, 4, 13, 26, 28 | 淀粉 |
 | 小麦 | `materials/wheat` | `minecraft:wheat`、`#forge:crops/wheat`、`#forge:grain/wheat` | `minecraft:wheat`、`#c:crops/wheat`、`#c:grain/wheat`、`#c:grains/wheat` | 4（面筋）、淀粉、麦芽 | 淀粉、面筋蛋白 |
@@ -116,7 +116,7 @@
 | 番茄 | `materials/tomato` | `#forge:crops/tomato`、`#forge:vegetables/tomato` | `#c:crops/tomato`、`#c:vegetables/tomato` | 59（番茄红素），成品 |
 | 洋葱 | `materials/onion` | `#forge:crops/onion` | `#c:crops/onion` | 成品（12） |
 | 卷心菜 | `materials/cabbage` | `#forge:crops/cabbage` | `#c:crops/cabbage` | 成品（12） |
-| 稻草 | `materials/straw` | `farmersdelight:straw` | `farmersdelight:straw` | 淋灰桶滤层、燃料 |
+| 稻草 | `materials/straw` | `farmersdelight:straw`；本模组稻草（稻谷、糯稻收获时一并得到，2026-11-25，见 [../foods/23](../foods/23-own-sources.md) 第 9 节） | 同左 | 淋灰桶滤层、燃料；407（β-葡萄糖苷酶的诱导底物） |
 | 硫（硫磺） | `chemicals/sulfur` | 本模组硫（硫磺）、`#forge:dusts/sulfur`、`#forge:gems/sulfur` | 本模组硫（硫磺）、`#c:dusts/sulfur`、`#c:gems/sulfur` | 25，硫酸 |
 | 硝酸钾（硝石） | `chemicals/potassium_nitrate` | 本模组硝酸钾（硝石）、`#forge:dusts/niter`、`#forge:gems/niter`、`#forge:dusts/saltpeter` | 本模组硝酸钾（硝石）、`#c:dusts/niter`、`#c:gems/niter`、`#c:dusts/saltpeter` | 24 |
 | 磷灰石 | `materials/apatite` | `#forge:gems/apatite`、`#forge:dusts/apatite` | `#c:gems/apatite`、`#c:dusts/apatite` | 10 |
@@ -137,6 +137,8 @@
 
 ### 计划联动的作物模组（潘马斯等，只到标签层级）
 
+> 2026-11-25（[../foods/23](../foods/23-own-sources.md)）：本节只接他模组标签的食品原料（大豆、芝麻、番茄、桂皮、砂仁、玉米、燕麦、洋葱、叶菜、花生、黄瓜、萝卜、菠萝、木瓜、柑橘、橙、柠檬、葡萄、茶叶、椰子、核桃、坚果、虾、蚝、紫菜、鸭、鸭蛋）都有了本模组的后备来源，物品加进同一个 `materials/` 标签；装有他模组时其物品照常可用。
+
 | 原料 | 配方引用标签 | 默认内容（1.20.1） | 默认内容（1.21 起） | 用于 |
 | --- | --- | --- | --- | --- |
 | 柠檬 | `materials/lemon` | `#forge:fruits/lemon`、`#forge:crops/lemon` | `#c:fruits/lemon`、`#c:crops/lemon` | 3 |
@@ -155,14 +157,21 @@
 | 菠萝 | `materials/pineapple` | `#forge:fruits/pineapple` | `#c:fruits/pineapple` | 101（植物蛋白酶） |
 | 栀子 | `materials/gardenia` | 本模组栀子（I07） | 本模组栀子（I07） | 62 |
 | 迷迭香 | `materials/rosemary` | 本模组迷迭香（I07） | 本模组迷迭香（I07） | 67 |
-| 山苍子 | `materials/litsea` | — | — | 125, 126, 133 |
-| 柠檬草 | `materials/lemongrass` | — | — | 125, 126, 133 |
+| 山苍子 | `materials/litsea` | 本模组山苍子（山鸡椒丛，2026-11-25，见 [../foods/23](../foods/23-own-sources.md) 第 9 节） | 同左 | 125, 126, 133 |
+| 柠檬草 | `materials/lemongrass` | 本模组柠檬草（作物，同上） | 同左 | 125, 126, 133 |
 | 桂皮 | `materials/cinnamon` | `#forge:crops/cinnamon` | `#c:crops/cinnamon` | 125, 126, 133 |
-| 葛缕子 | `materials/caraway` | — | — | 125, 126, 133 |
+| 葛缕子 | `materials/caraway` | 本模组葛缕籽（作物葛缕子，同上） | 同左 | 125, 126, 133 |
 | 蓖麻 | `materials/castor_bean` | — | — | 130（蓖麻油） |
 | 橙 | `materials/orange` | `#forge:fruits/orange` | `#c:fruits/orange` | 133（橙皮油中的 d-柠檬烯） |
+| 萝卜 | `materials/radish` | #forge:crops/radish、#forge:vegetables/radish（照 I44 接入，见 tools/world/sources.py 的 LINKED） | #c: 同名 | 成品（四川泡菜，2026-11-18 补） |
+| 黄瓜 | `materials/cucumber` | #forge:crops/cucumber、#forge:vegetables/cucumber（照 I44 接入，同上） | #c: 同名 | 成品（腌黄瓜，2026-11-18 补） |
+| 核桃 | `materials/walnut` | #forge:crops/walnut、#forge:nuts/walnut（照 I44 接入，同上） | #c: 同名 | 成品（琥珀核桃、五仁月饼），青核桃皮（N123，2026-11-18 补） |
+| 坚果 | `materials/nuts` | #forge:nuts（潘马斯的核桃、杏仁、开心果等都在其中；照 I44 接入，同上） | #c:nuts | 成品（椒盐坚果、牛轧糖、龙须酥，2026-11-18 补） |
+| 草本 | `materials/herbs` | 本模组已有的草本与花类物料的并集：甘草根、母菊花、罗马春黄菊花、薄荷、迷迭香等 13 种（照 I44 接入，同上，不新增作物） | 同左 | 成品（凉茶、龟苓膏、草本药酒，2026-11-18 补，[../foods/21](../foods/21-batch7-beverages.md) 第 1.1 节） |
+| 紫菜 | `materials/laver` | #forge:crops/laver、#forge:foods/laver（照 I44 接入，同上；标签名未核对） | #c: 同名 | 成品（调味海苔，2026-11-18 补） |
+| 椰子 | `materials/coconut` | #forge:crops/coconut（照 I44 接入，同上；现有椰子干另计） | #c: 同名 | 成品（椰果，2026-11-18 补，[../foods/21](../foods/21-batch7-beverages.md) 第 1.1 节） |
 
-> 柑橘包含柠檬、橙、青柠、葡萄柚（2026-11-04 定）。潘马斯的实际标签名与原表候选不同的已改正：香荚兰 `crops/vanillabean`、芝麻 `crops/sesameseeds`、桂皮 `crops/cinnamon`、茶叶 `crops/tealeaf`、可可 `crops/cocoabeans`。以下候选在核对的模组中都不存在，未写入：`#forge:crops/turmeric`、`#forge:crops/tea`、`#forge:crops/mint`、`#forge:crops/vanilla`、`#forge:fruits/vanillabean`、`#forge:crops/sesame`、`#forge:crops/chili_pepper`、`#forge:crops/gardenia`、`#forge:crops/rosemary`、`#forge:crops/lemongrass`、`#forge:spices/cinnamon`、`#forge:crops/caraway`、`#forge:crops/castor`、`#forge:crops/sugarcane`（1.20.1）、`#forge:fruits/berries`、`#forge:crops/cocoa`。内容为空的标签（姜黄、山苍子、柠檬草、葛缕子、蓖麻）暂不生成，等有来源时再加；整合包可自行创建。
+> 柑橘包含柠檬、橙、青柠、葡萄柚（2026-11-04 定）。潘马斯的实际标签名与原表候选不同的已改正：香荚兰 `crops/vanillabean`、芝麻 `crops/sesameseeds`、桂皮 `crops/cinnamon`、茶叶 `crops/tealeaf`、可可 `crops/cocoabeans`。以下候选在核对的模组中都不存在，未写入：`#forge:crops/turmeric`、`#forge:crops/tea`、`#forge:crops/mint`、`#forge:crops/vanilla`、`#forge:fruits/vanillabean`、`#forge:crops/sesame`、`#forge:crops/chili_pepper`、`#forge:crops/gardenia`、`#forge:crops/rosemary`、`#forge:crops/lemongrass`、`#forge:spices/cinnamon`、`#forge:crops/caraway`、`#forge:crops/castor`、`#forge:crops/sugarcane`（1.20.1）、`#forge:fruits/berries`、`#forge:crops/cocoa`。内容为空的标签暂不生成，等有来源时再加；整合包可自行创建。原先为空的姜黄、山苍子、柠檬草、葛缕子已有本模组来源（姜黄 I07，其余三种 2026-11-25），只剩蓖麻（现无配方用它）。
 
 ### 计划联动的科技模组（中间体互通）
 
@@ -192,21 +201,44 @@
 
 > 钴、铂、铑、钯、钒（I18 补，2026-11-11）：催化剂原料，由其他模组提供（11 待定问题 4），只导入他模组标签，未装时标签为空；候选标签未在各模组 jar 中核对。
 >
-> 粗硒、铬、动物血（I31 补，2026-11-11）：第 C 节写的他模组标签写入本表，由 I06 数据生成导入；本模组物品照常在标签内（粗硒、铬暂无来源）。
+> 粗硒、铬、动物血（I31 补，2026-11-11）：第 C 节写的他模组标签写入本表，由 I06 数据生成导入；本模组物品照常在标签内；粗硒与铬按问题 14 的做法依赖其他模组，不做本模组后备矿石（2026-11-18 定，问题 21）。
 >
 > 通用机械的气体属于 Mekanism Chemical，不进 Forge 流体标签；只有它额外注册的流体形态才能被匹配。
 
 ## C 本模组新增原料
 
+### 来源规则（2026-11-18 定，问题 21）
+
+§C 中原先写“暂无来源（待定）”的 269 种原料按下表分六类生成，“获取”一栏写的就是所属类别。
+
+| 类别 | 判定 | 生成方式 | 实装落点 |
+| --- | --- | --- | --- |
+| 作物 | 靠种子、块茎栽培的草本（含栽培花卉与香草） | 本模组作物方块与种子，种子由村民交易或战利品给出 | I07 |
+| 野生植物 | 野生多年生草本、地衣、苔类、食用菌 | 按群系生成的采集方块，右键或破坏得到产物 | I07 |
+| 树木 | 木本：乔木、灌木与木质藤本 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取（W02） | I07、I12 |
+| 动物与虫 | 动物分泌物、虫体、虫巢 | 实体掉落 | I07 |
+| 菌藻 | 藻类与菌种 | M30 菌种工作台培养 | I17 |
+| 矿 | 矿石与黏土矿 | 本模组矿石生成 | I07 |
+
+- 同一物种的不同部位共用一个方块或作物（丁香叶、丁香花蕾、丁香花梗同出一株丁香树；锡兰肉桂皮与肉桂叶同出一株），按采集工具、生长阶段或破坏产物区分，不为每个部位单设方块。
+- 装有对应模组时优先用其标签（潘马斯等作物模组、GTCEu 的矿石与粉），本模组的来源作后备，判定与节点差异同问题 14。
+- 金属与类金属（镍、锡、银、铅、粗硒、铬、钴、铂、铑、钯、钒）不在上表之内，照问题 4、问题 14 依赖其他模组。
+- 具体群系、生长条件、掉落源、村民交易等级与产量由实装的数据生成按上表落地，逐种列进 I07 的清单。
+- 动物与虫类里的龙涎香改走战利品（钓鱼、沉船箱），燕根（燕窝）改走结构生成（崖壁燕巢方块）：两者在现实中都不靠猎捕取得，也没有合适的生物。其余四种（紫胶原胶、胭脂虫干、海狸香囊、灵猫香）由对应生物掉落。
+- 烯烃复分解催化剂不属上面六类，按次数消耗，来源同 §C 催化剂与助剂。
+
+
 | 原料 | 配方引用标签 | 类型 | 获取 | 用于 | 主要组成 | ID | 英文名（待审） | 分类 | 颜色 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 海水 | `seawater`（流体） | 流体 | 在海洋、海滩群系用桶取水 | 11，氯化钠 | NaCl、MgCl2、MgSO4、KCl | seawater（见 09） | — | 见 09 | — |
+| 海水 | `seawater`（流体） | 流体 | 在海洋、海滩群系用海水泵抽取（H16 手摇、M54 电动，2026-11-18 定） | 11，氯化钠 | NaCl、MgCl2、MgSO4、KCl | seawater（见 09） | — | 见 09 | — |
 | 苦卤 | `bittern`（流体） | 流体 | 晒盐池 / 蒸发结晶器副产 | 11, 7；481（P103 提溴） | MgCl2、MgSO4、KCl、少量 NaBr | bittern（见 09） | — | 见 09 | — |
 | 光卤石 | `chemicals/carnallite` | 物品 | 苦卤分步结晶 | 7, 11 | KCl·MgCl2·6H2O | carnallite（见 09） | — | 见 09 | — |
 | 石花菜 | `materials/red_algae` | 海洋植物 | 温暖海洋生成，可养殖 | 14 | 琼脂糖 | gelidium | Gelidium | 原料 | — |
 | 薄荷 | `materials/mint` | 作物 | 草原、平原野生 | 29 | 薄荷醇、薄荷酮 | mint | Mint | 原料 | — |
 | 香荚兰豆 | `materials/vanilla` | 藤本作物 | 丛林野生，长在丛林原木侧面（同可可果） | 30 | 香兰素葡萄糖苷 | vanilla_pod | Vanilla Pod | 原料 | — |
 | 甜菊 | `materials/stevia` | 作物 | 平原、热带草原野生 | 36 | 甜菊苷、莱鲍迪苷 A | stevia | Stevia | 原料 | — |
+| 维生素矿物质预混 | `premix_vitamin_mineral` | 物品 | R19 调配：09 的各维生素与矿物质盐 + 麦芽糊精载体（2026-11-18 补，[../foods/21](../foods/21-batch7-beverages.md) 第 5 节） | 成品（婴儿米粉、代餐粉、维生素水） | 各维生素、矿物质盐、麦芽糊精 | premix_vitamin_mineral | Vitamin and Mineral Premix | 原料 | — |
+| 维生素 B 族预混 | `premix_vitamin_b` | 物品 | R19 调配：09 的 B 族维生素 + 麦芽糊精载体（2026-11-18 补，21 第 3 节） | 成品（能量饮料、果味饮料） | 维生素 B2、B6、B12、烟酰胺、泛酸钙、麦芽糊精 | premix_vitamin_b | Vitamin B Premix | 原料 | — |
 | 石膏矿石 | `materials/gypsum` | 矿石 / 方块 | 沙漠、恶地地下；导入 `#forge:ores/gypsum`（石膏粉 `#forge:dusts/gypsum` 进 `chemicals/gypsum`） | 12 | CaSO4·2H2O | gypsum_ore | Gypsum Ore | 原料 | — |
 | 明矾石矿石 | `materials/alunite` | 矿石 | 山地、火山附近 | 9 | KAl3(SO4)2(OH)6 | alunite_ore | Alunite Ore | 原料 | — |
 | 天然碱矿 | `materials/trona` | 地表方块（碱壳） | 沙漠、恶地的干湖床 | 5 | Na3H(CO3)2·2H2O | trona_ore | Trona Ore | 原料 | — |
@@ -264,304 +296,304 @@
 | 死烧石膏 | `materials/dead_burnt_gypsum` | 物品 | 熟石膏在锅里继续干炒（失败产物，不能点豆腐） | — | 无水硫酸钙 | dead_burnt_gypsum | Dead-Burnt Gypsum | 原料 | — |
 | 胶乳凝块 | `materials/rubber_coagulum` | 物品 | 乳胶加醋在陶坛凝固 | 136 | 顺式聚异戊二烯 | rubber_coagulum | Rubber Coagulum | 原料 | — |
 | 湿胶片 | `materials/wet_rubber_sheet` | 物品 | 胶乳凝块用布袋压片 | 136 | 顺式聚异戊二烯、水 | wet_rubber_sheet | Wet Rubber Sheet | 原料 | — |
-| 红花干花 | `materials/safflower` | 物品 | 暂无来源（待定，见 15） | 206 | 红花黄色素（羟基红花黄色素 A）、红花红色素 | safflower | Dried Safflower | 原料 | — |
-| 紫胶原胶 | `materials/sticklac` | 物品 | 暂无来源（待定，见 15） | 207、271、273 | 紫胶树脂、紫胶色酸、蜡 | sticklac | Sticklac | 原料 | — |
+| 红花干花 | `materials/safflower` | 物品 | 本模组作物，种子由村民交易或战利品 | 206 | 红花黄色素（羟基红花黄色素 A）、红花红色素 | safflower | Dried Safflower | 原料 | — |
+| 紫胶原胶 | `materials/sticklac` | 物品 | 实体掉落 | 207、271、273 | 紫胶树脂、紫胶色酸、蜡 | sticklac | Sticklac | 原料 | — |
 | 越橘 | `materials/lingonberry` | 物品 | 标签默认含原版甜浆果（游戏简化） | 208 | 花青素、有机酸 | lingonberry | Lingonberry | 原料 | — |
-| 红米 | `materials/red_rice` | 作物 | 暂无来源（待定，见 15） | 210 | 淀粉、种皮花青素 | red_rice | Red Rice | 原料 | — |
+| 红米 | `materials/red_rice` | 作物 | 本模组作物，种子由村民交易或战利品 | 210 | 淀粉、种皮花青素 | red_rice | Red Rice | 原料 | — |
 | 红米糠 | `materials/red_rice_bran` | 物品 | 红米经 M01 / M11 碾米，与大米同一配方（联产，2026-11-12） | 210 | 花青素、米糠油、蛋白质 | red_rice_bran | Red Rice Bran | 原料 | — |
-| 剑叶金鸡菊花序 | `materials/coreopsis` | 物品 | 暂无来源（待定，见 15） | 211 | 查耳酮、橙酮类黄酮 | coreopsis | Coreopsis Flower | 原料 | — |
-| 黑豆种皮 | `materials/black_soybean_hull` | 物品 | 暂无来源（待定，见 15） | 212 | 花青素（矢车菊素-3-葡萄糖苷） | black_soybean_hull | Black Soybean Hull | 原料 | — |
-| 高粱壳 | `materials/sorghum_husk` | 物品 | 暂无来源（待定，见 15） | 213 | 3-脱氧花青素、黄酮 | sorghum_husk | Sorghum Husk | 原料 | — |
+| 剑叶金鸡菊花序 | `materials/coreopsis` | 物品 | 野生采集方块，按群系生成 | 211 | 查耳酮、橙酮类黄酮 | coreopsis | Coreopsis Flower | 原料 | — |
+| 黑豆种皮 | `materials/black_soybean_hull` | 物品 | 黑豆（本模组新增作物，第 C 节）脱皮的副产（2026-11-18，11 问题 71，见 [../foods/19](../foods/19-batch6-produce.md) 第 1.1 节） | 212 | 花青素（矢车菊素-3-葡萄糖苷） | black_soybean_hull | Black Soybean Hull | 原料 | — |
+| 高粱壳 | `materials/sorghum_husk` | 物品 | 本模组作物，种子由村民交易或战利品 | 213 | 3-脱氧花青素、黄酮 | sorghum_husk | Sorghum Husk | 原料 | — |
 | 玉米蛋白粉 | `materials/corn_gluten_meal` | 物品 | 玉米（`materials/corn`）M01 湿磨副产 | 214 | 玉米醇溶蛋白、玉米黄质、叶黄素 | corn_gluten_meal | Corn Gluten Meal | 原料 | — |
-| 红心萝卜 | `materials/red_radish` | 作物 | 暂无来源（待定，见 15）；作物模组标签未核对 | 215 | 花青素（天竺葵素酰化苷） | red_radish | Red Radish | 原料 | — |
+| 红心萝卜 | `materials/red_radish` | 作物 | 本模组作物，种子由村民交易或战利品；作物模组标签未核对 | 215 | 花青素（天竺葵素酰化苷） | red_radish | Red Radish | 原料 | — |
 | 可可豆壳 | `materials/cocoa_shell` | 物品 | 可可豆焙炒、M11 破碎风选的副产 | 216 | 多酚聚合色素、纤维 | cocoa_shell | Cocoa Shell | 原料 | — |
-| 黑加仑 | `materials/blackcurrant` | 物品 | 暂无来源（待定，见 15） | 217 | 花青素（飞燕草素、矢车菊素芸香苷） | blackcurrant | Blackcurrant | 原料 | — |
-| 沙棘果 | `materials/sea_buckthorn` | 物品 | 暂无来源（待定，见 15） | 219 | 类胡萝卜素、黄酮、油脂 | sea_buckthorn | Sea Buckthorn Berry | 原料 | — |
-| 玫瑰茄花萼 | `materials/roselle` | 物品 | 暂无来源（待定，见 15） | 220 | 花青素（飞燕草素桑布双糖苷）、有机酸 | roselle | Roselle Calyx | 原料 | — |
-| 橡子壳 | `materials/acorn_shell` | 物品 | 暂无来源（待定，见 15） | 221 | 单宁、多酚 | acorn_shell | Acorn Shell | 原料 | — |
-| 桑椹 | `materials/mulberry` | 物品 | 暂无来源（待定，见 15） | 222 | 花青素（矢车菊素-3-葡萄糖苷） | mulberry | Mulberry | 原料 | — |
-| 红苋菜 | `materials/red_amaranth` | 作物 | 暂无来源（待定，见 15） | 223 | 苋菜红素（甜菜色素） | red_amaranth | Red Amaranth | 原料 | — |
-| 金樱子 | `materials/rosa_laevigata` | 物品 | 暂无来源（待定，见 15） | 224 | 多酚、单宁、黄酮 | rosa_laevigata | Cherokee Rose Hip | 原料 | — |
+| 黑加仑 | `materials/blackcurrant` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 217 | 花青素（飞燕草素、矢车菊素芸香苷） | blackcurrant | Blackcurrant | 原料 | — |
+| 沙棘果 | `materials/sea_buckthorn` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 219 | 类胡萝卜素、黄酮、油脂 | sea_buckthorn | Sea Buckthorn Berry | 原料 | — |
+| 玫瑰茄花萼 | `materials/roselle` | 物品 | 本模组作物，种子由村民交易或战利品 | 220 | 花青素（飞燕草素桑布双糖苷）、有机酸 | roselle | Roselle Calyx | 原料 | — |
+| 橡子壳 | `materials/acorn_shell` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 221 | 单宁、多酚 | acorn_shell | Acorn Shell | 原料 | — |
+| 桑椹 | `materials/mulberry` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 222 | 花青素（矢车菊素-3-葡萄糖苷） | mulberry | Mulberry | 原料 | — |
+| 红苋菜 | `materials/red_amaranth` | 作物 | 本模组作物，种子由村民交易或战利品 | 223 | 苋菜红素（甜菜色素） | red_amaranth | Red Amaranth | 原料 | — |
+| 金樱子 | `materials/rosa_laevigata` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 224 | 多酚、单宁、黄酮 | rosa_laevigata | Cherokee Rose Hip | 原料 | — |
 | 花生红衣 | `materials/peanut_skin` | 物品 | 花生（`materials/peanut`）榨油前脱红衣的副产（12 的榨油线补此工序） | 225 | 原花青素、单宁 | peanut_skin | Peanut Skin | 原料 | — |
 | 葡萄皮渣 | `materials/grape_pomace` | 物品 | 葡萄（`materials/grape`）M02 压榨或葡萄酒压渣的副产 | 226 | 花青素、单宁、酒石 | grape_pomace | Grape Pomace | 原料 | — |
-| 蓝锭果 | `materials/haskap` | 物品 | 暂无来源（待定，见 15） | 227 | 花青素（矢车菊素-3-葡萄糖苷） | haskap | Haskap Berry | 原料 | — |
-| 螺旋藻粉 | `materials/spirulina` | 物品 | 暂无来源（待定，见 15） | 228 | 藻蓝蛋白、蛋白质、叶绿素 | spirulina | Spirulina Powder | 原料 | — |
-| 紫草根 | `materials/gromwell_root` | 物品 | 暂无来源（待定，见 15） | 230 | 紫草素及其酯 | gromwell_root | Gromwell Root | 原料 | — |
+| 蓝锭果 | `materials/haskap` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 227 | 花青素（矢车菊素-3-葡萄糖苷） | haskap | Haskap Berry | 原料 | — |
+| 螺旋藻粉 | `materials/spirulina` | 物品 | M30 菌种工作台培养 | 228 | 藻蓝蛋白、蛋白质、叶绿素 | spirulina | Spirulina Powder | 原料 | — |
+| 紫草根 | `materials/gromwell_root` | 物品 | 野生采集方块，按群系生成 | 230 | 紫草素及其酯 | gromwell_root | Gromwell Root | 原料 | — |
 | 柑橘皮 | `materials/citrus_peel` | 物品 | 柑橘（`materials/citrus`）M02 压榨的副产 | 231，16 | 类胡萝卜素、果胶、柠檬烯 | citrus_peel | Citrus Peel | 原料 | — |
-| 胭脂树籽 | `materials/annatto_seed` | 物品 | 暂无来源（待定，见 15） | 232 | 红木素、降红木素 | annatto_seed | Annatto Seed | 原料 | — |
-| 胭脂虫干 | `materials/dried_cochineal` | 物品 | 暂无来源（待定，见 15） | 233 | 胭脂红酸 | dried_cochineal | Dried Cochineal | 原料 | — |
-| 万寿菊干花 | `materials/marigold` | 物品 | 暂无来源（待定，见 15） | 234 | 叶黄素酯 | marigold | Dried Marigold | 原料 | — |
-| 杨梅 | `materials/bayberry` | 物品 | 暂无来源（待定，见 15） | 237 | 花青素（矢车菊素-3-葡萄糖苷）、有机酸 | bayberry | Chinese Bayberry | 原料 | — |
-| 紫甘薯 | `materials/purple_sweet_potato` | 作物 | 暂无来源（待定，见 15） | 242 | 酰化花青素、淀粉 | purple_sweet_potato | Purple Sweet Potato | 原料 | — |
-| 盐藻粉 | `materials/dunaliella` | 物品 | 暂无来源（待定，见 15） | 197 | β-胡萝卜素、甘油 | dunaliella | Dunaliella Powder | 原料 | — |
-| 钛铁矿石 | `materials/ilmenite` | 矿石 | 暂无来源（待定，见 15）；GTCEu `#forge:ores/ilmenite`、`#forge:dusts/ilmenite` 未核对 | 198 | FeTiO3 | ilmenite | Ilmenite Ore | 原料 | — |
-| 椰子干 | `materials/copra` | 物品 | 暂无来源（待定，见 15）；潘马斯椰子标签未核对 | 252、256、257、324、325、342 | 椰子油（月桂酸甘油三酯为主） | copra | Copra | 原料 | — |
-| 油棕果 | `materials/oil_palm_fruit` | 物品 | 暂无来源（待定，见 15） | 248、258 | 棕榈油、类胡萝卜素 | oil_palm_fruit | Oil Palm Fruit | 原料 | — |
-| 皂树皮 | `materials/quillaja_bark` | 物品 | 暂无来源（待定，见 15） | 269 | 皂树皂苷、多酚 | quillaja_bark | Quillaja Bark | 原料 | — |
-| 达瓦树胶块 | `materials/ghatti_lump` | 物品 | 暂无来源（待定，见 15） | 270 | 酸性杂多糖（阿拉伯糖、半乳糖、葡萄糖醛酸） | ghatti_lump | Gum Ghatti Lump | 原料 | — |
-| 巴西棕榈蜡粉 | `materials/carnauba_powder` | 物品 | 暂无来源（待定，见 15） | 273、275 | 蜡酯（长链脂肪酸与长链醇） | carnauba_powder | Carnauba Wax Powder | 原料 | — |
-| 刺梧桐胶块 | `materials/karaya_lump` | 物品 | 暂无来源（待定，见 15） | 283 | 乙酰化酸性多糖（鼠李糖、半乳糖醛酸） | karaya_lump | Karaya Gum Lump | 原料 | — |
-| 阿拉伯胶块 | `materials/acacia_lump` | 物品 | 暂无来源（待定，见 15） | 288 | 阿拉伯半乳聚糖–蛋白复合物 | acacia_lump | Gum Arabic Lump | 原料 | — |
-| 罗望子种子 | `materials/tamarind_seed` | 物品 | 暂无来源（待定，见 15）；潘马斯罗望子标签未核对 | 290 | 罗望子多糖（木葡聚糖） | tamarind_seed | Tamarind Seed | 原料 | — |
-| 亚麻籽 | `materials/flaxseed` | 物品 | 暂无来源（待定，见 15）；潘马斯亚麻标签未核对 | 297 | 种皮黏液（亚麻籽胶）、亚麻籽油 | flaxseed | Flaxseed | 原料 | — |
-| 田菁籽 | `materials/sesbania_seed` | 物品 | 暂无来源（待定，见 15） | 298 | 半乳甘露聚糖 | sesbania_seed | Sesbania Seed | 原料 | — |
-| 槐豆 | `materials/carob_seed` | 物品 | 暂无来源（待定，见 15） | 300、369 | 半乳甘露聚糖（甘露糖 : 半乳糖约 4 : 1） | carob_seed | Carob Seed | 原料 | — |
-| 瓜尔豆 | `materials/guar_seed` | 物品 | 暂无来源（待定，见 15） | 302、369 | 半乳甘露聚糖（约 2 : 1） | guar_seed | Guar Seed | 原料 | — |
-| 皂荚籽 | `materials/gleditsia_seed` | 物品 | 暂无来源（待定，见 15） | 305 | 半乳甘露聚糖 | gleditsia_seed | Honeylocust Seed | 原料 | — |
-| 沙蒿籽 | `materials/artemisia_seed` | 物品 | 暂无来源（待定，见 15） | 311 | 沙蒿胶多糖、油脂 | artemisia_seed | Sand Sagebrush Seed | 原料 | — |
-| 刺云实籽 | `materials/tara_seed` | 物品 | 暂无来源（待定，见 15） | 312 | 半乳甘露聚糖（约 3 : 1） | tara_seed | Tara Seed | 原料 | — |
-| 决明子 | `materials/cassia_seed` | 物品 | 暂无来源（待定，见 15） | 316 | 半乳甘露聚糖、蒽醌 | cassia_seed | Cassia Seed | 原料 | — |
-| 虾蟹壳 | `materials/crustacean_shell` | 物品 | 暂无来源（待定，见 15） | 296、303 | 甲壳素、碳酸钙、蛋白质 | crustacean_shell | Crustacean Shell | 原料 | — |
+| 胭脂树籽 | `materials/annatto_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 232 | 红木素、降红木素 | annatto_seed | Annatto Seed | 原料 | — |
+| 胭脂虫干 | `materials/dried_cochineal` | 物品 | 实体掉落 | 233 | 胭脂红酸 | dried_cochineal | Dried Cochineal | 原料 | — |
+| 万寿菊干花 | `materials/marigold` | 物品 | 本模组作物，种子由村民交易或战利品 | 234 | 叶黄素酯 | marigold | Dried Marigold | 原料 | — |
+| 杨梅 | `materials/bayberry` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 237 | 花青素（矢车菊素-3-葡萄糖苷）、有机酸 | bayberry | Chinese Bayberry | 原料 | — |
+| 紫甘薯 | `materials/purple_sweet_potato` | 作物 | 本模组作物，种子由村民交易或战利品 | 242 | 酰化花青素、淀粉 | purple_sweet_potato | Purple Sweet Potato | 原料 | — |
+| 盐藻粉 | `materials/dunaliella` | 物品 | M30 菌种工作台培养 | 197 | β-胡萝卜素、甘油 | dunaliella | Dunaliella Powder | 原料 | — |
+| 钛铁矿石 | `materials/ilmenite` | 矿石 | 本模组矿石生成；GTCEu `#forge:ores/ilmenite`、`#forge:dusts/ilmenite` 未核对 | 198 | FeTiO3 | ilmenite | Ilmenite Ore | 原料 | — |
+| 椰子干 | `materials/copra` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取；潘马斯椰子标签未核对 | 252、256、257、324、325、342 | 椰子油（月桂酸甘油三酯为主） | copra | Copra | 原料 | — |
+| 油棕果 | `materials/oil_palm_fruit` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 248、258 | 棕榈油、类胡萝卜素 | oil_palm_fruit | Oil Palm Fruit | 原料 | — |
+| 皂树皮 | `materials/quillaja_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 269 | 皂树皂苷、多酚 | quillaja_bark | Quillaja Bark | 原料 | — |
+| 达瓦树胶块 | `materials/ghatti_lump` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 270 | 酸性杂多糖（阿拉伯糖、半乳糖、葡萄糖醛酸） | ghatti_lump | Gum Ghatti Lump | 原料 | — |
+| 巴西棕榈蜡粉 | `materials/carnauba_powder` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 273、275 | 蜡酯（长链脂肪酸与长链醇） | carnauba_powder | Carnauba Wax Powder | 原料 | — |
+| 刺梧桐胶块 | `materials/karaya_lump` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 283 | 乙酰化酸性多糖（鼠李糖、半乳糖醛酸） | karaya_lump | Karaya Gum Lump | 原料 | — |
+| 阿拉伯胶块 | `materials/acacia_lump` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 288 | 阿拉伯半乳聚糖–蛋白复合物 | acacia_lump | Gum Arabic Lump | 原料 | — |
+| 罗望子种子 | `materials/tamarind_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取；潘马斯罗望子标签未核对 | 290 | 罗望子多糖（木葡聚糖） | tamarind_seed | Tamarind Seed | 原料 | — |
+| 亚麻籽 | `materials/flaxseed` | 物品 | 本模组作物，种子由村民交易或战利品；潘马斯亚麻标签未核对 | 297 | 种皮黏液（亚麻籽胶）、亚麻籽油 | flaxseed | Flaxseed | 原料 | — |
+| 田菁籽 | `materials/sesbania_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | 298 | 半乳甘露聚糖 | sesbania_seed | Sesbania Seed | 原料 | — |
+| 槐豆 | `materials/carob_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 300、369 | 半乳甘露聚糖（甘露糖 : 半乳糖约 4 : 1） | carob_seed | Carob Seed | 原料 | — |
+| 瓜尔豆 | `materials/guar_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | 302、369 | 半乳甘露聚糖（约 2 : 1） | guar_seed | Guar Seed | 原料 | — |
+| 皂荚籽 | `materials/gleditsia_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 305 | 半乳甘露聚糖 | gleditsia_seed | Honeylocust Seed | 原料 | — |
+| 沙蒿籽 | `materials/artemisia_seed` | 物品 | 野生采集方块，按群系生成 | 311 | 沙蒿胶多糖、油脂 | artemisia_seed | Sand Sagebrush Seed | 原料 | — |
+| 刺云实籽 | `materials/tara_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 312 | 半乳甘露聚糖（约 3 : 1） | tara_seed | Tara Seed | 原料 | — |
+| 决明子 | `materials/cassia_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | 316 | 半乳甘露聚糖、蒽醌 | cassia_seed | Cassia Seed | 原料 | — |
+| 虾蟹壳 | `materials/crustacean_shell` | 物品 | 虾（他模组标签 `materials/shrimp`）R26 剥壳的副产，与虾仁同一配方（联产，2026-11-18，11 问题 69，见 [../foods/18](../foods/18-batch5-aquatic.md) 第 2 节） | 296、303 | 甲壳素、碳酸钙、蛋白质 | crustacean_shell | Crustacean Shell | 原料 | — |
 | 黑曲霉菌丝体 | `materials/fungal_mycelium` | 物品 | 柠檬酸（3）B、C 路线发酵液过滤副产 | 296、303 | 甲壳素–葡聚糖、蛋白质 | fungal_mycelium | Fungal Mycelium | 原料 | — |
 | 豆渣 | `materials/okara` | 物品 | 大豆（`materials/soybean`）M01 湿磨、M12 过滤副产，与豆奶、豆腐共用 | 315 | 膳食纤维、大豆多糖、蛋白质 | okara | Okara | 原料 | — |
-| 甘草根 | `materials/licorice_root` | 物品 | 暂无来源（待定，见 15） | 321、352、353、362 | 甘草酸、甘草黄酮 | licorice_root | Licorice Root | 原料 | — |
+| 甘草根 | `materials/licorice_root` | 物品 | 野生采集方块，按群系生成 | 321、352、353、362 | 甘草酸、甘草黄酮 | licorice_root | Licorice Root | 原料 | — |
 | 甘草渣 | `materials/licorice_residue` | 物品 | 甘草根热水浸提（352）后的渣，与甘草酸浸提液同一配方（联产，2026-11-12，11 问题 43） | 321 | 甘草黄酮、纤维 | licorice_residue | Licorice Residue | 原料 | — |
-| 罗汉果干果 | `materials/monk_fruit` | 物品 | 暂无来源（待定，见 15） | 356 | 罗汉果苷 V | monk_fruit | Dried Monk Fruit | 原料 | — |
-| 西非竹芋果 | `materials/katemfe_fruit` | 物品 | 暂无来源（待定，见 15） | 357 | 索马甜（甜味蛋白） | katemfe_fruit | Katemfe Fruit | 原料 | — |
+| 罗汉果干果 | `materials/monk_fruit` | 物品 | 本模组作物，种子由村民交易或战利品 | 356 | 罗汉果苷 V | monk_fruit | Dried Monk Fruit | 原料 | — |
+| 西非竹芋果 | `materials/katemfe_fruit` | 物品 | 野生采集方块，按群系生成 | 357 | 索马甜（甜味蛋白） | katemfe_fruit | Katemfe Fruit | 原料 | — |
 | 米糠 | `materials/rice_bran` | 物品 | 稻谷（`materials/paddy`）M01 / M11 碾米，与大米同一配方（联产，2026-11-12） | 320、331 | 米糠油、阿魏酸酯、植酸 | rice_bran | Rice Bran | 原料 | — |
 | 蛋清 | `materials/egg_white` | 物品 | 鸡蛋（`materials/egg`）在工作台或 M12 分离，蛋黄供 69 | 346 | 卵清蛋白、溶菌酶 | egg_white | Egg White | 原料 | — |
-| 咖啡生豆 | `materials/coffee_bean` | 物品 | 暂无来源（待定，见 15）；潘马斯 `#forge:crops/coffeebean` 未核对 | 366 | 咖啡因、绿原酸 | coffee_bean | Green Coffee Bean | 原料 | — |
-| 软锰矿石 | `materials/pyrolusite` | 矿石 | 暂无来源（待定，见 15）；GTCEu `#forge:ores/pyrolusite`、`#forge:dusts/pyrolusite` 未核对 | 92、364 | MnO2 | pyrolusite | Pyrolusite Ore | 原料 | — |
-| 胰脏 | `materials/pancreas` | 物品 | 暂无来源（待定，见 15） | 397、399、418、419 | 胰蛋白酶原、胰脂肪酶、胰淀粉酶 | pancreas | Pancreas | 原料 | — |
-| 胃黏膜 | `materials/gastric_mucosa` | 物品 | 暂无来源（待定，见 15） | 415 | 胃蛋白酶原 | gastric_mucosa | Gastric Mucosa | 原料 | — |
-| 肝脏 | `materials/liver` | 物品 | 暂无来源（待定，见 15）（不含鱼肝） | 390 | 过氧化氢酶 | liver | Liver | 原料 | — |
-| 无花果乳汁 | `ficus_latex`（流体） | 流体 | 暂无来源（待定，见 15）；作物模组提供无花果树时扩展 H15 割取 | 416 | 无花果蛋白酶 | ficus_latex | Fig Latex | 原料 | #F0EEE6 |
+| 咖啡生豆 | `materials/coffee_bean` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取；潘马斯 `#forge:crops/coffeebean` 未核对 | 366 | 咖啡因、绿原酸 | coffee_bean | Green Coffee Bean | 原料 | — |
+| 软锰矿石 | `materials/pyrolusite` | 矿石 | 本模组矿石生成；GTCEu `#forge:ores/pyrolusite`、`#forge:dusts/pyrolusite` 未核对 | 92、364 | MnO2 | pyrolusite | Pyrolusite Ore | 原料 | — |
+| 胰脏 | `materials/pancreas` | 物品 | 用带“肢解”附魔的武器击杀成年猪时掉落（2026-11-18，11 问题 69，见 [../foods/17](../foods/17-batch5-meat.md) 第 1.1 节） | 397、399、418、419 | 胰蛋白酶原、胰脂肪酶、胰淀粉酶 | pancreas | Pancreas | 原料 | — |
+| 胃黏膜 | `materials/gastric_mucosa` | 物品 | 用带“肢解”附魔的武器击杀成年猪时掉落（2026-11-18，11 问题 69，见 [../foods/17](../foods/17-batch5-meat.md) 第 1.1 节） | 415 | 胃蛋白酶原 | gastric_mucosa | Gastric Mucosa | 原料 | — |
+| 肝脏 | `materials/liver` | 物品 | 用带“肢解”附魔的武器击杀成年牛（含哞菇）、猪时掉落（2026-11-18，11 问题 69，见 [../foods/17](../foods/17-batch5-meat.md) 第 1.1 节）（不含鱼肝） | 390 | 过氧化氢酶 | liver | Liver | 原料 | — |
+| 无花果乳汁 | `ficus_latex`（流体） | 流体 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取；作物模组提供无花果树时扩展 H15 割取 | 416 | 无花果蛋白酶 | ficus_latex | Fig Latex | 原料 | #F0EEE6 |
 | 木瓜乳汁 | `papaya_latex`（流体） | 流体 | 未熟木瓜（`materials/papaya`）H15 割取（07 第 101 号；木瓜的割取暂不做） | 101 | 木瓜蛋白酶 | papaya_latex | Papaya Latex | 原料 | #F2F0E4 |
-| 大麦 | `materials/barley` | 作物 | 暂无来源（待定，见 15）；潘马斯 `#forge:crops/barley` 未核对 | 402（大麦麦芽）、378（诱导底物） | 淀粉、β-葡聚糖 | barley | Barley | 原料 | — |
-| 皱胃 | `materials/abomasum` | 物品 | 暂无来源（待定，见 15） | 105 A、工程菌（凝乳酶）供体 | 凝乳酶原、胃蛋白酶原 | abomasum | Abomasum | 原料 | — |
-| 菊芋块茎 | `materials/jerusalem_artichoke` | 作物 | 暂无来源（待定，见 15） | 395 | 菊粉 | jerusalem_artichoke | Jerusalem Artichoke | 原料 | — |
-| 龙脑樟枝叶 | `materials/borneol_camphor_leaf` | 物品 | 暂无来源（待定，见 17–19） | S0028 | — | borneol_camphor_leaf | Borneol Camphor Leaf | 原料 | — |
-| 乌桕籽 | `materials/tallow_tree_seed` | 物品 | 暂无来源（待定，见 17–19） | S0482 | — | tallow_tree_seed | Tallow Tree Seed | 原料 | — |
-| 蒜头果种子 | `materials/malania_seed` | 物品 | 暂无来源（待定，见 17–19） | S0637 | — | malania_seed | Malania Seed | 原料 | — |
-| 香菇（干） | `materials/shiitake` | 物品 | 暂无来源（待定，见 17–19） | S0683 A | — | shiitake | Shiitake | 原料 | — |
-| 芥菜籽 | `materials/mustard_seed` | 物品 | 暂无来源（待定，见 17–19） | S0762 A | — | mustard_seed | Mustard Seed | 原料 | — |
+| 大麦 | `materials/barley` | 作物 | 本模组作物，种子由村民交易或战利品；潘马斯 `#forge:crops/barley` 未核对 | 402（大麦麦芽）、378（诱导底物） | 淀粉、β-葡聚糖 | barley | Barley | 原料 | — |
+| 皱胃 | `materials/abomasum` | 物品 | 用带“肢解”附魔的武器击杀成年牛（含哞菇）时掉落，掉落率在实装草案中定（2026-11-18，11 问题 69，见 [../foods/17](../foods/17-batch5-meat.md) 第 1.1 节）；原定击杀成年牛掉落（2026-11-17，11 问题 65，[../foods/15](../foods/15-batch4-dairy.md) 第 1.1 节） | 105 A、工程菌（凝乳酶）供体 | 凝乳酶原、胃蛋白酶原 | abomasum | Abomasum | 原料 | — |
+| 菊芋块茎 | `materials/jerusalem_artichoke` | 作物 | 本模组作物，种子由村民交易或战利品 | 395 | 菊粉 | jerusalem_artichoke | Jerusalem Artichoke | 原料 | — |
+| 龙脑樟枝叶 | `materials/borneol_camphor_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | S0028 | — | borneol_camphor_leaf | Borneol Camphor Leaf | 原料 | — |
+| 乌桕籽 | `materials/tallow_tree_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | S0482 | — | tallow_tree_seed | Tallow Tree Seed | 原料 | — |
+| 蒜头果种子 | `materials/malania_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | S0637 | — | malania_seed | Malania Seed | 原料 | — |
+| 香菇（干） | `materials/shiitake` | 物品 | 野生采集方块，按群系生成 | S0683 A | — | shiitake | Shiitake | 原料 | — |
+| 芥菜籽 | `materials/mustard_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | S0762 A | — | mustard_seed | Mustard Seed | 原料 | — |
 | 西瓜 | `materials/melon` | 物品 | 原版 `minecraft:melon_slice` | S0862 | — | melon | Melon | 原料 | — |
-| 宽叶薄荷桉叶 | `materials/eucalyptus_dives` | 物品 | 暂无来源（待定，见 17–19） | S0955 | — | eucalyptus_dives | Eucalyptus Dives | 原料 | — |
-| 山葵根茎 | `materials/wasabi` | 物品 | 暂无来源（待定，见 17–19） | S1081、S1087、S1088 | — | wasabi | Wasabi | 原料 | — |
-| 香紫苏（复用 N 组标签） | `materials/clary_sage_herb` | 物品 | 暂无来源（同 N108） | S1049（经 `sclareol`）、N108 | — | clary_sage_herb | Clary Sage Herb | 原料 | — |
+| 宽叶薄荷桉叶 | `materials/eucalyptus_dives` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | S0955 | — | eucalyptus_dives | Eucalyptus Dives | 原料 | — |
+| 山葵根茎 | `materials/wasabi` | 物品 | 本模组作物，种子由村民交易或战利品 | S1081、S1087、S1088 | — | wasabi | Wasabi | 原料 | — |
+| 香紫苏（复用 N 组标签） | `materials/clary_sage_herb` | 物品 | 本模组作物，种子由村民交易或战利品（同 N108） | S1049（经 `sclareol`）、N108 | — | clary_sage_herb | Clary Sage Herb | 原料 | — |
 | 山楂核 | `materials/hawthorn_kernel` | 物品 | `materials/hawthorn_fruit`（N1 组新增）去肉取核（游戏简化：M11 粉碎时副产） | S1230、S1231 | — | hawthorn_kernel | Hawthorn Kernel | 原料 | — |
-| 柏木 | `materials/cedarwood` | 物品 | 暂无来源（待定，见 17–19） | S1197（经 `cedrol`）、N321 | — | cedarwood | Cedarwood | 原料 | — |
-| 高芥酸菜籽 | `materials/rapeseed` | 物品 | 暂无来源（待定，见 17–19） | S1281（经 `brassylic_acid`） | — | rapeseed | Rapeseed | 原料 | — |
-| 丁香叶 | `materials/clove_leaf` | 物品 | 暂无来源（待定，见 17–19） | N001 | — | clove_leaf | Clove Leaf | 原料 | — |
-| 丁香花蕾 | `materials/clove_bud` | 物品 | 暂无来源（待定，见 17–19） | N002、N003 | — | clove_bud | Clove Bud | 原料 | — |
-| 罗勒 | `materials/basil` | 物品 | 暂无来源（待定，见 17–19） | N004 | — | basil | Basil | 原料 | — |
-| 八角 | `materials/star_anise` | 物品 | 暂无来源（待定，见 17–19） | N005 | — | star_anise | Star Anise | 原料 | — |
-| 九里香花 | `materials/jasmin_orange_flower` | 物品 | 暂无来源（待定，见 17–19） | N006 | — | jasmin_orange_flower | Jasmin Orange Flower | 原料 | — |
-| 广藿香叶 | `materials/patchouli_leaf` | 物品 | 暂无来源（待定，见 17–19） | N007 | — | patchouli_leaf | Patchouli Leaf | 原料 | — |
-| 小豆蔻 | `materials/cardamom` | 物品 | 暂无来源（待定，见 17–19） | N010、N011 | — | cardamom | Cardamom | 原料 | — |
-| 甜茴香籽 | `materials/sweet_fennel_seed` | 物品 | 暂无来源（待定，见 17–19） | N129 | — | sweet_fennel_seed | Sweet Fennel Seed | 原料 | — |
-| 山楂 | `materials/hawthorn_fruit` | 物品 | 暂无来源（待定，见 17–19） | N014 | — | hawthorn_fruit | Hawthorn Fruit | 原料 | — |
-| 大蒜 | `materials/garlic` | 物品 | 暂无来源（待定，见 17–19） | N015、N016 | — | garlic | Garlic | 原料 | — |
+| 柏木 | `materials/cedarwood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | S1197（经 `cedrol`）、N321 | — | cedarwood | Cedarwood | 原料 | — |
+| 高芥酸菜籽 | `materials/rapeseed` | 物品 | 本模组作物，种子由村民交易或战利品 | S1281（经 `brassylic_acid`） | — | rapeseed | Rapeseed | 原料 | — |
+| 丁香叶 | `materials/clove_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N001 | — | clove_leaf | Clove Leaf | 原料 | — |
+| 丁香花蕾 | `materials/clove_bud` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N002、N003 | — | clove_bud | Clove Bud | 原料 | — |
+| 罗勒 | `materials/basil` | 物品 | 本模组作物，种子由村民交易或战利品 | N004 | — | basil | Basil | 原料 | — |
+| 八角 | `materials/star_anise` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N005 | — | star_anise | Star Anise | 原料 | — |
+| 九里香花 | `materials/jasmin_orange_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N006 | — | jasmin_orange_flower | Jasmin Orange Flower | 原料 | — |
+| 广藿香叶 | `materials/patchouli_leaf` | 物品 | 本模组作物，种子由村民交易或战利品 | N007 | — | patchouli_leaf | Patchouli Leaf | 原料 | — |
+| 小豆蔻 | `materials/cardamom` | 物品 | 本模组作物，种子由村民交易或战利品 | N010、N011 | — | cardamom | Cardamom | 原料 | — |
+| 甜茴香籽 | `materials/sweet_fennel_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N129 | — | sweet_fennel_seed | Sweet Fennel Seed | 原料 | — |
+| 山楂 | `materials/hawthorn_fruit` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N014 | — | hawthorn_fruit | Hawthorn Fruit | 原料 | — |
+| 大蒜 | `materials/garlic` | 物品 | 本模组作物，种子由村民交易或战利品 | N015、N016 | — | garlic | Garlic | 原料 | — |
 | 葡萄酒酒脚 | `materials/wine_lees` | 物品 | 葡萄酒（`wine`）澄清的沉渣，与酒石同出（H14 冷置、M04 澄清配方补此副产） | N017 | — | wine_lees | Wine Lees | 原料 | — |
-| 云木香根 | `materials/costus_root` | 物品 | 暂无来源（待定，见 17–19） | N019 | — | costus_root | Costus Root | 原料 | — |
-| 乌梅 | `materials/smoked_plum` | 物品 | 暂无来源（12 酸梅汤同用） | N021 | — | smoked_plum | Smoked Plum | 原料 | — |
-| 布枯叶 | `materials/buchu_leaf` | 物品 | 暂无来源（待定，见 17–19） | N022 | — | buchu_leaf | Buchu Leaf | 原料 | — |
+| 云木香根 | `materials/costus_root` | 物品 | 本模组作物，种子由村民交易或战利品 | N019 | — | costus_root | Costus Root | 原料 | — |
+| 乌梅 | `materials/smoked_plum` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取（12 酸梅汤同用） | N021 | — | smoked_plum | Smoked Plum | 原料 | — |
+| 布枯叶 | `materials/buchu_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N022 | — | buchu_leaf | Buchu Leaf | 原料 | — |
 | 可可碎粒 | `materials/cocoa_nibs` | 物品 | 可可豆（`materials/cocoa_beans`）焙炒（熔炉 / M17）、M11 破碎风选的主产物，可可豆壳为副产（同 216） | N023 | — | cocoa_nibs | Cocoa Nibs | 原料 | — |
-| 甘松根 | `materials/nardostachys_root` | 物品 | 暂无来源（待定，见 17–19） | N025 | — | nardostachys_root | Nardostachys Root | 原料 | — |
-| 冬青叶 | `materials/wintergreen_leaf` | 物品 | 暂无来源（待定，见 17–19） | N028 | — | wintergreen_leaf | Wintergreen Leaf | 原料 | — |
-| 白兰花 | `materials/michelia_alba_flower` | 物品 | 暂无来源（待定，见 17–19） | N029、N032（经 N032 供 N031） | — | michelia_alba_flower | Michelia Alba Flower | 原料 | — |
-| 白兰叶 | `materials/michelia_alba_leaf` | 物品 | 暂无来源（待定，见 17–19） | N030 | — | michelia_alba_leaf | Michelia Alba Leaf | 原料 | — |
-| 白芷根 | `materials/angelica_dahurica_root` | 物品 | 暂无来源（待定，见 17–19） | N033 | — | angelica_dahurica_root | Angelica Dahurica Root | 原料 | — |
-| 肉豆蔻 | `materials/nutmeg` | 物品 | 暂无来源（待定，见 17–19） | N037、N038 | — | nutmeg | Nutmeg | 原料 | — |
+| 甘松根 | `materials/nardostachys_root` | 物品 | 野生采集方块，按群系生成 | N025 | — | nardostachys_root | Nardostachys Root | 原料 | — |
+| 冬青叶 | `materials/wintergreen_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N028 | — | wintergreen_leaf | Wintergreen Leaf | 原料 | — |
+| 白兰花 | `materials/michelia_alba_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N029、N032（经 N032 供 N031） | — | michelia_alba_flower | Michelia Alba Flower | 原料 | — |
+| 白兰叶 | `materials/michelia_alba_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N030 | — | michelia_alba_leaf | Michelia Alba Leaf | 原料 | — |
+| 白芷根 | `materials/angelica_dahurica_root` | 物品 | 本模组作物，种子由村民交易或战利品 | N033 | — | angelica_dahurica_root | Angelica Dahurica Root | 原料 | — |
+| 肉豆蔻 | `materials/nutmeg` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N037、N038 | — | nutmeg | Nutmeg | 原料 | — |
 | 红茶 | `materials/black_tea` | 物品 | 茶叶（`materials/tea`）萎凋、揉捻后陶坛通气发酵（同 329 A 前段）、M10 烘干（待加配方） | N041 | — | black_tea | Black Tea | 原料 | — |
-| 印蒿 | `materials/davana_herb` | 物品 | 暂无来源（待定，见 17–19） | N042 | — | davana_herb | Davana Herb | 原料 | — |
-| 吐鲁香脂 | `materials/tolu_balsam` | 物品 | 暂无来源（待定，见 17–19） | N043、N044 | — | tolu_balsam | Tolu Balsam | 原料 | — |
+| 印蒿 | `materials/davana_herb` | 物品 | 野生采集方块，按群系生成 | N042 | — | davana_herb | Davana Herb | 原料 | — |
+| 吐鲁香脂 | `materials/tolu_balsam` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N043、N044 | — | tolu_balsam | Tolu Balsam | 原料 | — |
 | 豆豉 | `foods/douchi` | 物品 | 12 成品豆豉（`douchi`）；`foods/douchi` 标签待生成 | N045 | — | douchi | Douchi | 原料 | — |
-| 杜松子 | `materials/juniper_berry` | 物品 | 暂无来源（待定，见 17–19） | N046 | — | juniper_berry | Juniper Berry | 原料 | — |
-| 芫荽籽 | `materials/coriander_seed` | 物品 | 暂无来源（待定，见 17–19） | N047 | — | coriander_seed | Coriander Seed | 原料 | — |
-| 芹菜花 | `materials/celery_flower` | 物品 | 暂无来源（待定，见 17–19） | N048 | — | celery_flower | Celery Flower | 原料 | — |
-| 芹菜籽 | `materials/celery_seed` | 物品 | 暂无来源（待定，见 17–19） | N049 | — | celery_seed | Celery Seed | 原料 | — |
-| 牡荆叶 | `materials/vitex_leaf` | 物品 | 暂无来源（待定，见 17–19） | N050 | — | vitex_leaf | Vitex Leaf | 原料 | — |
-| 苍术 | `materials/atractylodes_rhizome` | 物品 | 暂无来源（待定，见 17–19） | N052 | — | atractylodes_rhizome | Atractylodes Rhizome | 原料 | — |
-| 枣 | `materials/jujube` | 物品 | 暂无来源（待定，见 17–19） | N053 | — | jujube | Jujube | 原料 | — |
+| 杜松子 | `materials/juniper_berry` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N046 | — | juniper_berry | Juniper Berry | 原料 | — |
+| 芫荽籽 | `materials/coriander_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N047 | — | coriander_seed | Coriander Seed | 原料 | — |
+| 芹菜花 | `materials/celery_flower` | 物品 | 本模组作物，种子由村民交易或战利品 | N048 | — | celery_flower | Celery Flower | 原料 | — |
+| 芹菜籽 | `materials/celery_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N049 | — | celery_seed | Celery Seed | 原料 | — |
+| 牡荆叶 | `materials/vitex_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N050 | — | vitex_leaf | Vitex Leaf | 原料 | — |
+| 苍术 | `materials/atractylodes_rhizome` | 物品 | 野生采集方块，按群系生成 | N052 | — | atractylodes_rhizome | Atractylodes Rhizome | 原料 | — |
+| 枣 | `materials/jujube` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N053 | — | jujube | Jujube | 原料 | — |
 | 玫瑰花 | `materials/rose_flower` | 物品 | 原版 `minecraft:rose_bush`（游戏简化；与 N2 `materials/crimson_glory_rose` 重叠，见存疑） | N054、N056（经 N056 供 N055） | — | rose_flower | Rose Flower | 原料 | — |
-| 鸢尾根 | `materials/orris_root` | 物品 | 暂无来源（待定，见 17–19） | N057、N058 | — | orris_root | Orris Root | 原料 | — |
-| 杭白菊 | `materials/chrysanthemum_flower` | 物品 | 暂无来源（待定，见 17–19） | N059、N060 | — | chrysanthemum_flower | Chrysanthemum Flower | 原料 | — |
-| 枫糖浆 | `materials/maple_syrup` | 物品 | 暂无来源（作物模组槭树标签未核对） | N061、N062 | — | maple_syrup | Maple Syrup | 原料 | — |
-| 岩蔷薇枝叶 | `materials/rockrose_twig` | 物品 | 暂无来源（待定，见 17–19） | N063 | — | rockrose_twig | Rockrose Twig | 原料 | — |
+| 鸢尾根 | `materials/orris_root` | 物品 | 野生采集方块，按群系生成 | N057、N058 | — | orris_root | Orris Root | 原料 | — |
+| 杭白菊 | `materials/chrysanthemum_flower` | 物品 | 本模组作物，种子由村民交易或战利品 | N059、N060 | — | chrysanthemum_flower | Chrysanthemum Flower | 原料 | — |
+| 枫糖浆 | `materials/maple_syrup` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取（作物模组槭树标签未核对） | N061、N062 | — | maple_syrup | Maple Syrup | 原料 | — |
+| 岩蔷薇枝叶 | `materials/rockrose_twig` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N063 | — | rockrose_twig | Rockrose Twig | 原料 | — |
 | 焙炒咖啡豆 | `materials/roasted_coffee_bean` | 物品 | 咖啡生豆（`materials/coffee_bean`）焙炒（熔炉 / M17，同可可豆焙炒） | N064 | — | roasted_coffee_bean | Roasted Coffee Bean | 原料 | — |
-| 金合欢花 | `materials/cassie_flower` | 物品 | 暂无来源（待定，见 17–19） | N066 | — | cassie_flower | Cassie Flower | 原料 | — |
-| 大花茉莉花 | `materials/jasmine_grandiflorum_flower` | 物品 | 暂无来源（待定，见 17–19） | N069（经 N069 供 N068） | — | jasmine_grandiflorum_flower | Jasmine Grandiflorum Flower | 原料 | — |
-| 小花茉莉花 | `materials/jasmine_sambac_flower` | 物品 | 暂无来源（待定，见 17–19） | N071（经 N071 供 N070） | — | jasmine_sambac_flower | Jasmine Sambac Flower | 原料 | — |
-| 素方花 | `materials/jasmine_officinale_flower` | 物品 | 暂无来源（待定，见 17–19） | N124（经 `common_jasmine_concrete`） | — | jasmine_officinale_flower | Jasmine Officinale Flower | 原料 | — |
-| 佛手 | `materials/fingered_citron` | 物品 | 暂无来源（待定，见 17–19） | N072 | — | fingered_citron | Fingered Citron | 原料 | — |
-| 葫芦巴籽 | `materials/fenugreek_seed` | 物品 | 暂无来源（待定，见 17–19） | N079 | — | fenugreek_seed | Fenugreek Seed | 原料 | — |
-| 柚 | `materials/pummelo` | 物品 | 暂无来源（待定，见 17–19） | N083 | — | pummelo | Pummelo | 原料 | — |
-| 北美香柏枝叶 | `materials/thuja_leaf` | 物品 | 暂无来源（待定，见 17–19） | N084 | — | thuja_leaf | Thuja Leaf | 原料 | — |
-| 孜然 | `materials/cumin_seed` | 物品 | 暂无来源（待定，见 17–19） | N085 | — | cumin_seed | Cumin Seed | 原料 | — |
-| 柠檬叶 | `materials/lemon_leaf` | 物品 | 暂无来源（待定，见 17–19） | N089 | — | lemon_leaf | Lemon Leaf | 原料 | — |
-| 栀子花 | `materials/gardenia_flower` | 物品 | 暂无来源（本模组栀子灌木 I07 可加花期采花，待定） | N091 | — | gardenia_flower | Gardenia Flower | 原料 | — |
-| 树兰花 | `materials/aglaia_flower` | 物品 | 暂无来源（待定，见 17–19） | N092、N093、N094 | — | aglaia_flower | Aglaia Flower | 原料 | — |
-| 树苔 | `materials/tree_moss` | 物品 | 暂无来源（待定，见 17–19） | N096（经 N096 供 N095） | — | tree_moss | Tree Moss | 原料 | — |
-| 香叶天竺葵 | `materials/rose_geranium_leaf` | 物品 | 暂无来源（待定，见 17–19） | N097 | — | rose_geranium_leaf | Rose Geranium Leaf | 原料 | — |
-| 香茶菜 | `materials/rabdosia_herb` | 物品 | 暂无来源（待定，见 17–19） | N099 | — | rabdosia_herb | Rabdosia Herb | 原料 | — |
-| 香柠檬 | `materials/bergamot` | 物品 | 暂无来源（待定，见 17–19） | N101 | — | bergamot | Bergamot | 原料 | — |
-| 香根草根 | `materials/vetiver_root` | 物品 | 暂无来源（待定，见 17–19） | N102、N103 | — | vetiver_root | Vetiver Root | 原料 | — |
+| 金合欢花 | `materials/cassie_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N066 | — | cassie_flower | Cassie Flower | 原料 | — |
+| 大花茉莉花 | `materials/jasmine_grandiflorum_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N069（经 N069 供 N068） | — | jasmine_grandiflorum_flower | Jasmine Grandiflorum Flower | 原料 | — |
+| 小花茉莉花 | `materials/jasmine_sambac_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N071（经 N071 供 N070） | — | jasmine_sambac_flower | Jasmine Sambac Flower | 原料 | — |
+| 素方花 | `materials/jasmine_officinale_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N124（经 `common_jasmine_concrete`） | — | jasmine_officinale_flower | Jasmine Officinale Flower | 原料 | — |
+| 佛手 | `materials/fingered_citron` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N072 | — | fingered_citron | Fingered Citron | 原料 | — |
+| 葫芦巴籽 | `materials/fenugreek_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N079 | — | fenugreek_seed | Fenugreek Seed | 原料 | — |
+| 柚 | `materials/pummelo` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N083 | — | pummelo | Pummelo | 原料 | — |
+| 北美香柏枝叶 | `materials/thuja_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N084 | — | thuja_leaf | Thuja Leaf | 原料 | — |
+| 孜然 | `materials/cumin_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N085 | — | cumin_seed | Cumin Seed | 原料 | — |
+| 柠檬叶 | `materials/lemon_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N089 | — | lemon_leaf | Lemon Leaf | 原料 | — |
+| 栀子花 | `materials/gardenia_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取（栀子灌木 I07 已有，加花期采花） | N091 | — | gardenia_flower | Gardenia Flower | 原料 | — |
+| 树兰花 | `materials/aglaia_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N092、N093、N094 | — | aglaia_flower | Aglaia Flower | 原料 | — |
+| 树苔 | `materials/tree_moss` | 物品 | 野生采集方块，按群系生成 | N096（经 N096 供 N095） | — | tree_moss | Tree Moss | 原料 | — |
+| 香叶天竺葵 | `materials/rose_geranium_leaf` | 物品 | 本模组作物，种子由村民交易或战利品 | N097 | — | rose_geranium_leaf | Rose Geranium Leaf | 原料 | — |
+| 香茶菜 | `materials/rabdosia_herb` | 物品 | 野生采集方块，按群系生成 | N099 | — | rabdosia_herb | Rabdosia Herb | 原料 | — |
+| 香柠檬 | `materials/bergamot` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N101 | — | bergamot | Bergamot | 原料 | — |
+| 香根草根 | `materials/vetiver_root` | 物品 | 野生采集方块，按群系生成 | N102、N103 | — | vetiver_root | Vetiver Root | 原料 | — |
 | 发酵香荚兰豆 | `materials/cured_vanilla_bean` | 物品 | 香荚兰豆（`materials/vanilla`）热水杀青、发汗、干燥（30 A 前段，H07 晾晒架） | N104、N105 | — | cured_vanilla_bean | Cured Vanilla Bean | 原料 | — |
-| 香附 | `materials/cyperus_rhizome` | 物品 | 暂无来源（待定，见 17–19） | N106 | — | cyperus_rhizome | Cyperus Rhizome | 原料 | — |
-| 细香葱 | `materials/chives` | 物品 | 暂无来源（待定，见 17–19） | N107 | — | chives | Chives | 原料 | — |
-| 香榧子壳 | `materials/torreya_shell` | 物品 | 暂无来源（待定，见 17–19） | N109 | — | torreya_shell | Torreya Shell | 原料 | — |
-| 啤酒花 | `materials/hops` | 物品 | 暂无来源（12 啤酒同用） | N112、N113 | — | hops | Hops | 原料 | — |
-| 蓝桉叶 | `materials/eucalyptus_leaf` | 物品 | 暂无来源（待定，见 17–19） | N114 | — | eucalyptus_leaf | Eucalyptus Leaf | 原料 | — |
-| 海狸香囊 | `materials/castoreum` | 物品 | 暂无来源（待定，见 17–19） | N115 | — | castoreum | Castoreum | 原料 | — |
-| 锡兰肉桂皮 | `materials/ceylon_cinnamon_bark` | 物品 | 暂无来源（待定，见 17–19） | N116 | — | ceylon_cinnamon_bark | Ceylon Cinnamon Bark | 原料 | — |
-| 锡兰肉桂叶 | `materials/ceylon_cinnamon_leaf` | 物品 | 暂无来源（待定，见 17–19） | N117 | — | ceylon_cinnamon_leaf | Ceylon Cinnamon Leaf | 原料 | — |
-| 桂花 | `materials/osmanthus_flower` | 物品 | 暂无来源（待定，见 17–19） | N119、N120（经 N120 供 N118） | — | osmanthus_flower | Osmanthus Flower | 原料 | — |
-| 龙眼 | `materials/longan` | 物品 | 暂无来源（待定，见 17–19） | N121 | — | longan | Longan | 原料 | — |
-| 留兰香 | `materials/spearmint` | 物品 | 暂无来源（待定，见 17–19） | N122 | — | spearmint | Spearmint | 原料 | — |
-| 青核桃皮 | `materials/walnut_hull` | 物品 | 暂无来源（待定，见 17–19） | N123 | — | walnut_hull | Walnut Hull | 原料 | — |
-| 蚕豆花 | `materials/broad_bean_flower` | 物品 | 暂无来源（待定，见 17–19） | N126 | — | broad_bean_flower | Broad Bean Flower | 原料 | — |
-| 野蔷薇花 | `materials/wild_rose_flower` | 物品 | 暂无来源（待定，见 17–19） | N128 | — | wild_rose_flower | Wild Rose Flower | 原料 | — |
-| 菊苣根 | `materials/chicory_root` | 物品 | 暂无来源（待定，见 17–19） | N134、549、539 | — | chicory_root | Chicory Root | 原料 | — |
-| 晚香玉花 | `materials/tuberose_flower` | 物品 | 暂无来源（待定，见 17–19） | N135 | — | tuberose_flower | Tuberose Flower | 原料 | — |
-| 紫罗兰叶 | `materials/violet_leaf` | 物品 | 暂无来源（待定，见 17–19） | N136 | — | violet_leaf | Violet Leaf | 原料 | — |
-| 椒样薄荷 | `materials/peppermint` | 物品 | 暂无来源（待定，见 17–19） | N137 | — | peppermint | Peppermint | 原料 | — |
-| 黑加仑芽 | `materials/blackcurrant_bud` | 物品 | 暂无来源（待定，见 17–19） | N138、N139 | — | blackcurrant_bud | Blackcurrant Bud | 原料 | — |
-| 槐花 | `materials/sophora_flower` | 物品 | 暂无来源（待定，见 17–19） | N141（N140） | — | sophora_flower | Sophora Flower | 原料 | — |
-| 愈疮木 | `materials/guaiac_wood` | 物品 | 暂无来源（待定，见 17–19） | N144 | — | guaiac_wood | Guaiac Wood | 原料 | — |
-| 缬草根 | `materials/valerian_root` | 物品 | 暂无来源（待定，见 17–19） | N145 | — | valerian_root | Valerian Root | 原料 | — |
-| 墨红花 | `materials/crimson_glory_rose` | 物品 | 暂无来源（原版玫瑰丛归玫瑰花 `materials/rose_flower`，2026-11-11 定） | N147（N146） | — | crimson_glory_rose | Crimson Glory Rose | 原料 | — |
-| 苦橙叶 | `materials/bitter_orange_leaf` | 物品 | 暂无来源（待定，见 17–19） | N149、N254 | — | bitter_orange_leaf | Bitter Orange Leaf | 原料 | — |
-| 檀香木 | `materials/sandalwood` | 物品 | 暂无来源（待定，见 17–19） | N152 | — | sandalwood | Sandalwood | 原料 | — |
-| 薰衣草 | `materials/lavender` | 物品 | 暂无来源（待定，见 17–19） | N153 | — | lavender | Lavender | 原料 | — |
-| 头状百里香 | `materials/conehead_thyme` | 物品 | 暂无来源（待定，见 17–19） | N154 | — | conehead_thyme | Conehead Thyme | 原料 | — |
-| 可乐果 | `materials/kola_nut` | 物品 | 暂无来源（待定，见 17–19） | N155 | — | kola_nut | Kola Nut | 原料 | — |
-| 加州胡椒果 | `materials/peruvian_pepper_berry` | 物品 | 暂无来源（待定，见 17–19） | N156 | — | peruvian_pepper_berry | Peruvian Pepper Berry | 原料 | — |
-| 卡黎皮 | `materials/cascarilla_bark` | 物品 | 暂无来源（待定，见 17–19） | N157 | — | cascarilla_bark | Cascarilla Bark | 原料 | — |
-| 百里香 | `materials/thyme` | 物品 | 暂无来源（待定，见 17–19） | N158（N235） | — | thyme | Thyme | 原料 | — |
-| 依兰花 | `materials/ylang_ylang_flower` | 物品 | 暂无来源（待定，见 17–19） | N067 | — | ylang_ylang_flower | Ylang Ylang Flower | 原料 | — |
-| 月桂叶 | `materials/laurel_leaf` | 物品 | 暂无来源（待定，见 17–19） | N161 | — | laurel_leaf | Laurel Leaf | 原料 | — |
-| 生姜 | `materials/ginger` | 物品 | 暂无来源（待定，见 17–19） | N162 | — | ginger | Ginger | 原料 | — |
+| 香附 | `materials/cyperus_rhizome` | 物品 | 野生采集方块，按群系生成 | N106 | — | cyperus_rhizome | Cyperus Rhizome | 原料 | — |
+| 细香葱 | `materials/chives` | 物品 | 本模组作物，种子由村民交易或战利品 | N107 | — | chives | Chives | 原料 | — |
+| 香榧子壳 | `materials/torreya_shell` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N109 | — | torreya_shell | Torreya Shell | 原料 | — |
+| 啤酒花 | `materials/hops` | 物品 | 本模组作物，种子由村民交易或战利品（12 啤酒同用） | N112、N113 | — | hops | Hops | 原料 | — |
+| 蓝桉叶 | `materials/eucalyptus_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N114 | — | eucalyptus_leaf | Eucalyptus Leaf | 原料 | — |
+| 海狸香囊 | `materials/castoreum` | 物品 | 实体掉落 | N115 | — | castoreum | Castoreum | 原料 | — |
+| 锡兰肉桂皮 | `materials/ceylon_cinnamon_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N116 | — | ceylon_cinnamon_bark | Ceylon Cinnamon Bark | 原料 | — |
+| 锡兰肉桂叶 | `materials/ceylon_cinnamon_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N117 | — | ceylon_cinnamon_leaf | Ceylon Cinnamon Leaf | 原料 | — |
+| 桂花 | `materials/osmanthus_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N119、N120（经 N120 供 N118） | — | osmanthus_flower | Osmanthus Flower | 原料 | — |
+| 龙眼 | `materials/longan` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N121 | — | longan | Longan | 原料 | — |
+| 留兰香 | `materials/spearmint` | 物品 | 本模组作物，种子由村民交易或战利品 | N122 | — | spearmint | Spearmint | 原料 | — |
+| 青核桃皮 | `materials/walnut_hull` | 物品 | 核桃（他模组标签 `materials/walnut`，第 B 节）去青皮的副产（2026-11-18，11 问题 71，见 [../foods/19](../foods/19-batch6-produce.md) 第 1.1 节） | N123 | — | walnut_hull | Walnut Hull | 原料 | — |
+| 蚕豆花 | `materials/broad_bean_flower` | 物品 | 本模组作物，种子由村民交易或战利品 | N126 | — | broad_bean_flower | Broad Bean Flower | 原料 | — |
+| 野蔷薇花 | `materials/wild_rose_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N128 | — | wild_rose_flower | Wild Rose Flower | 原料 | — |
+| 菊苣根 | `materials/chicory_root` | 物品 | 本模组作物，种子由村民交易或战利品 | N134、549、539 | — | chicory_root | Chicory Root | 原料 | — |
+| 晚香玉花 | `materials/tuberose_flower` | 物品 | 本模组作物，种子由村民交易或战利品 | N135 | — | tuberose_flower | Tuberose Flower | 原料 | — |
+| 紫罗兰叶 | `materials/violet_leaf` | 物品 | 本模组作物，种子由村民交易或战利品 | N136 | — | violet_leaf | Violet Leaf | 原料 | — |
+| 椒样薄荷 | `materials/peppermint` | 物品 | 本模组作物，种子由村民交易或战利品 | N137 | — | peppermint | Peppermint | 原料 | — |
+| 黑加仑芽 | `materials/blackcurrant_bud` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N138、N139 | — | blackcurrant_bud | Blackcurrant Bud | 原料 | — |
+| 槐花 | `materials/sophora_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N141（N140） | — | sophora_flower | Sophora Flower | 原料 | — |
+| 愈疮木 | `materials/guaiac_wood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N144 | — | guaiac_wood | Guaiac Wood | 原料 | — |
+| 缬草根 | `materials/valerian_root` | 物品 | 野生采集方块，按群系生成 | N145 | — | valerian_root | Valerian Root | 原料 | — |
+| 墨红花 | `materials/crimson_glory_rose` | 物品 | 本模组作物，种子由村民交易或战利品（原版玫瑰丛归玫瑰花 `materials/rose_flower`，2026-11-11 定） | N147（N146） | — | crimson_glory_rose | Crimson Glory Rose | 原料 | — |
+| 苦橙叶 | `materials/bitter_orange_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N149、N254 | — | bitter_orange_leaf | Bitter Orange Leaf | 原料 | — |
+| 檀香木 | `materials/sandalwood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N152 | — | sandalwood | Sandalwood | 原料 | — |
+| 薰衣草 | `materials/lavender` | 物品 | 本模组作物，种子由村民交易或战利品 | N153 | — | lavender | Lavender | 原料 | — |
+| 头状百里香 | `materials/conehead_thyme` | 物品 | 野生采集方块，按群系生成 | N154 | — | conehead_thyme | Conehead Thyme | 原料 | — |
+| 可乐果 | `materials/kola_nut` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N155 | — | kola_nut | Kola Nut | 原料 | — |
+| 加州胡椒果 | `materials/peruvian_pepper_berry` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N156 | — | peruvian_pepper_berry | Peruvian Pepper Berry | 原料 | — |
+| 卡黎皮 | `materials/cascarilla_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N157 | — | cascarilla_bark | Cascarilla Bark | 原料 | — |
+| 百里香 | `materials/thyme` | 物品 | 本模组作物，种子由村民交易或战利品 | N158（N235） | — | thyme | Thyme | 原料 | — |
+| 依兰花 | `materials/ylang_ylang_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N067 | — | ylang_ylang_flower | Ylang Ylang Flower | 原料 | — |
+| 月桂叶 | `materials/laurel_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N161 | — | laurel_leaf | Laurel Leaf | 原料 | — |
+| 生姜 | `materials/ginger` | 物品 | 本模组作物，种子由村民交易或战利品；食品按他模组标签接（潘马斯有生姜作物，标签名未核对，见 [../foods/14](../foods/14-batch3-bakery.md) 开头） | N162 | — | ginger | Ginger | 原料 | — |
 | 白栎木 | `materials/oak_log` | 物品 | `#minecraft:oak_logs`（原版橡木原木） | N163 | — | oak_log | Oak Log | 原料 | — |
-| 龙蒿 | `materials/tarragon` | 物品 | 暂无来源（待定，见 17–19） | N164 | — | tarragon | Tarragon | 原料 | — |
-| 樟木 | `materials/camphor_wood` | 物品 | 暂无来源（待定，见 17–19） | `crude_camphor_oil`（N165、N220） | — | camphor_wood | Camphor Wood | 原料 | — |
-| 肉豆蔻衣 | `materials/mace` | 物品 | 暂无来源（待定，见 17–19） | N166、N245 | — | mace | Mace | 原料 | — |
-| 众香叶 | `materials/pimento_leaf` | 物品 | 暂无来源（待定，见 17–19） | N167 | — | pimento_leaf | Pimento Leaf | 原料 | — |
-| 西班牙鼠尾草 | `materials/spanish_sage` | 物品 | 暂无来源（待定，见 17–19） | N168 | — | spanish_sage | Spanish Sage | 原料 | — |
-| 红橘 | `materials/mandarin` | 物品 | 暂无来源（待定，见 17–19） | N110 | — | mandarin | Mandarin | 原料 | — |
-| 杂薰衣草 | `materials/lavandin` | 物品 | 暂无来源（待定，见 17–19） | N170 | — | lavandin | Lavandin | 原料 | — |
-| 杏仁 | `materials/apricot_kernel` | 物品 | 暂无来源（待定，见 17–19） | N171 | — | apricot_kernel | Apricot Kernel | 原料 | — |
-| 苏合香原脂 | `materials/styrax` | 物品 | 暂无来源（待定，见 17–19） | N172、N173 | — | styrax_resin | Styrax | 原料 | — |
-| 角豆荚 | `materials/carob_pod` | 物品 | 暂无来源（待定，见 17–19） | N174、N175 | — | carob_pod | Carob Pod | 原料 | — |
-| 乳香 | `materials/olibanum` | 物品 | 暂无来源（待定，见 17–19） | N177 | — | olibanum | Olibanum | 原料 | — |
-| 没药 | `materials/myrrh` | 物品 | 暂无来源（待定，见 17–19） | N178 | — | myrrh | Myrrh | 原料 | — |
-| 高良姜根茎 | `materials/galangal_root` | 物品 | 暂无来源（待定，见 17–19） | N179 | — | galangal_root | Galangal Root | 原料 | — |
-| 松针 | `materials/pine_needles` | 物品 | 暂无来源（原版云杉树叶已归冷杉针叶 `materials/fir_needles`，2026-11-11 定） | N180 | — | pine_needles | Pine Needles | 原料 | — |
-| 小茴香籽 | `materials/fennel_seed` | 物品 | 暂无来源（待定，见 17–19） | N181 | — | fennel_seed | Fennel Seed | 原料 | — |
-| 苦扁桃仁 | `materials/bitter_almond` | 物品 | 暂无来源（待定，见 17–19） | N182 | — | bitter_almond | Bitter Almond | 原料 | — |
-| 阿魏 | `materials/asafoetida` | 物品 | 暂无来源（待定，见 17–19） | N183 | — | asafoetida | Asafoetida | 原料 | — |
-| 欧芹 | `materials/parsley` | 物品 | 暂无来源（待定，见 17–19） | N185、N251 | — | parsley | Parsley | 原料 | — |
+| 龙蒿 | `materials/tarragon` | 物品 | 本模组作物，种子由村民交易或战利品 | N164 | — | tarragon | Tarragon | 原料 | — |
+| 樟木 | `materials/camphor_wood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | `crude_camphor_oil`（N165、N220） | — | camphor_wood | Camphor Wood | 原料 | — |
+| 肉豆蔻衣 | `materials/mace` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N166、N245 | — | mace | Mace | 原料 | — |
+| 众香叶 | `materials/pimento_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N167 | — | pimento_leaf | Pimento Leaf | 原料 | — |
+| 西班牙鼠尾草 | `materials/spanish_sage` | 物品 | 野生采集方块，按群系生成 | N168 | — | spanish_sage | Spanish Sage | 原料 | — |
+| 红橘 | `materials/mandarin` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N110 | — | mandarin | Mandarin | 原料 | — |
+| 杂薰衣草 | `materials/lavandin` | 物品 | 本模组作物，种子由村民交易或战利品 | N170 | — | lavandin | Lavandin | 原料 | — |
+| 杏仁 | `materials/apricot_kernel` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N171 | — | apricot_kernel | Apricot Kernel | 原料 | — |
+| 苏合香原脂 | `materials/styrax` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N172、N173 | — | styrax_resin | Styrax | 原料 | — |
+| 角豆荚 | `materials/carob_pod` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N174、N175 | — | carob_pod | Carob Pod | 原料 | — |
+| 乳香 | `materials/olibanum` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N177 | — | olibanum | Olibanum | 原料 | — |
+| 没药 | `materials/myrrh` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N178 | — | myrrh | Myrrh | 原料 | — |
+| 高良姜根茎 | `materials/galangal_root` | 物品 | 本模组作物，种子由村民交易或战利品 | N179 | — | galangal_root | Galangal Root | 原料 | — |
+| 松针 | `materials/pine_needles` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取（原版云杉树叶已归冷杉针叶 `materials/fir_needles`，2026-11-11 定） | N180 | — | pine_needles | Pine Needles | 原料 | — |
+| 小茴香籽 | `materials/fennel_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N181 | — | fennel_seed | Fennel Seed | 原料 | — |
+| 苦扁桃仁 | `materials/bitter_almond` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N182 | — | bitter_almond | Bitter Almond | 原料 | — |
+| 阿魏 | `materials/asafoetida` | 物品 | 野生采集方块，按群系生成 | N183 | — | asafoetida | Asafoetida | 原料 | — |
+| 欧芹 | `materials/parsley` | 物品 | 本模组作物，种子由村民交易或战利品 | N185、N251 | — | parsley | Parsley | 原料 | — |
 | 冷杉针叶 | `materials/fir_needles` | 物品 | 原版云杉树叶 `minecraft:spruce_leaves`（游戏简化：香脂冷杉与云杉同为松科） | N192 | — | fir_needles | Fir Needles | 原料 | — |
-| 波罗尼花 | `materials/boronia_flower` | 物品 | 暂无来源（待定，见 17–19） | N187 | — | boronia_flower | Boronia Flower | 原料 | — |
-| 玫瑰木 | `materials/rosewood` | 物品 | 暂无来源（待定，见 17–19） | N188 | — | rosewood | Rosewood | 原料 | — |
-| 玫瑰草 | `materials/palmarosa` | 物品 | 暂无来源（待定，见 17–19） | N189 | — | palmarosa | Palmarosa | 原料 | — |
-| 香茅 | `materials/citronella_grass` | 物品 | 暂无来源（待定，见 17–19） | N190 | — | citronella_grass | Citronella Grass | 原料 | — |
-| 加拿大香脂 | `materials/canada_balsam` | 物品 | 暂无来源（待定，见 17–19） | N193 | — | canada_balsam | Canada Balsam | 原料 | — |
-| 胡萝卜籽 | `materials/carrot_seed` | 物品 | 暂无来源（待定，见 17–19） | N194 | — | carrot_seed | Carrot Seed | 原料 | — |
-| 罗马春黄菊花 | `materials/roman_chamomile` | 物品 | 暂无来源（待定，见 17–19） | N195、N196 | — | roman_chamomile | Roman Chamomile | 原料 | — |
-| 药鼠李皮 | `materials/cascara_bark` | 物品 | 暂无来源（待定，见 17–19） | N197 | — | cascara_bark | Cascara Bark | 原料 | — |
-| 荜澄茄 | `materials/cubeb` | 物品 | 暂无来源（待定，见 17–19） | N198 | — | cubeb | Cubeb | 原料 | — |
-| 胡薄荷 | `materials/pennyroyal` | 物品 | 暂无来源（待定，见 17–19） | N199 | — | pennyroyal | Pennyroyal | 原料 | — |
-| 欧当归根 | `materials/lovage_root` | 物品 | 暂无来源（待定，见 17–19） | N200、N250 | — | lovage_root | Lovage Root | 原料 | — |
-| 欧夏至草 | `materials/horehound` | 物品 | 暂无来源（待定，见 17–19） | N201 | — | horehound | Horehound | 原料 | — |
-| 丝兰茎 | `materials/yucca_trunk` | 物品 | 暂无来源（待定，见 17–19） | N202 | — | yucca_trunk | Yucca Trunk | 原料 | — |
-| 海索草 | `materials/hyssop` | 物品 | 暂无来源（待定，见 17–19） | N204 | — | hyssop | Hyssop | 原料 | — |
-| 莳萝 | `materials/dill` | 物品 | 暂无来源（待定，见 17–19） | N205 | — | dill | Dill | 原料 | — |
-| 秘鲁香脂原脂 | `materials/crude_peru_balsam` | 物品 | 暂无来源（待定，见 17–19） | N206 | — | crude_peru_balsam | Crude Peru Balsam | 原料 | — |
-| 格蓬 | `materials/galbanum` | 物品 | 暂无来源（待定，见 17–19） | N207 | — | galbanum | Galbanum | 原料 | — |
-| 脂檀木 | `materials/amyris_wood` | 物品 | 暂无来源（待定，见 17–19） | N208 | — | amyris_wood | Amyris Wood | 原料 | — |
-| 银荆花 | `materials/mimosa_flower` | 物品 | 暂无来源（待定，见 17–19） | N209 | — | mimosa_flower | Mimosa Flower | 原料 | — |
-| 接骨木花 | `materials/elderflower` | 物品 | 暂无来源（待定，见 17–19） | N210 | — | elderflower | Elderflower | 原料 | — |
-| 甘牛至 | `materials/marjoram` | 物品 | 暂无来源（待定，见 17–19） | N211 | — | marjoram | Marjoram | 原料 | — |
-| 黄龙胆根 | `materials/gentian_root` | 物品 | 暂无来源（待定，见 17–19） | N212 | — | gentian_root | Gentian Root | 原料 | — |
-| 黄葵籽 | `materials/ambrette_seed` | 物品 | 暂无来源（待定，见 17–19） | N213 | — | ambrette_seed | Ambrette Seed | 原料 | — |
-| 野黑樱桃树皮 | `materials/wild_cherry_bark` | 物品 | 暂无来源（待定，见 17–19） | N214 | — | wild_cherry_bark | Wild Cherry Bark | 原料 | — |
-| 黑胡椒 | `materials/black_pepper` | 物品 | 暂无来源（待定，见 17–19） | N215 | — | black_pepper | Black Pepper | 原料 | — |
-| 榄香脂 | `materials/elemi` | 物品 | 暂无来源（待定，见 17–19） | N217 | — | elemi | Elemi | 原料 | — |
-| 蜡菊花 | `materials/immortelle_flower` | 物品 | 暂无来源（待定，见 17–19） | N218 | — | immortelle_flower | Immortelle Flower | 原料 | — |
-| 香蜂花 | `materials/lemon_balm` | 物品 | 暂无来源（待定，见 17–19） | N219 | — | lemon_balm | Lemon Balm | 原料 | — |
-| 苦橙花 | `materials/bitter_orange_flower` | 物品 | 暂无来源（待定，见 17–19） | N221 | — | bitter_orange_flower | Bitter Orange Flower | 原料 | — |
+| 波罗尼花 | `materials/boronia_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N187 | — | boronia_flower | Boronia Flower | 原料 | — |
+| 玫瑰木 | `materials/rosewood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N188 | — | rosewood | Rosewood | 原料 | — |
+| 玫瑰草 | `materials/palmarosa` | 物品 | 野生采集方块，按群系生成 | N189 | — | palmarosa | Palmarosa | 原料 | — |
+| 香茅 | `materials/citronella_grass` | 物品 | 本模组作物，种子由村民交易或战利品 | N190 | — | citronella_grass | Citronella Grass | 原料 | — |
+| 加拿大香脂 | `materials/canada_balsam` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N193 | — | canada_balsam | Canada Balsam | 原料 | — |
+| 胡萝卜籽 | `materials/carrot_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N194 | — | carrot_seed | Carrot Seed | 原料 | — |
+| 罗马春黄菊花 | `materials/roman_chamomile` | 物品 | 本模组作物，种子由村民交易或战利品 | N195、N196 | — | roman_chamomile | Roman Chamomile | 原料 | — |
+| 药鼠李皮 | `materials/cascara_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N197 | — | cascara_bark | Cascara Bark | 原料 | — |
+| 荜澄茄 | `materials/cubeb` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N198 | — | cubeb | Cubeb | 原料 | — |
+| 胡薄荷 | `materials/pennyroyal` | 物品 | 野生采集方块，按群系生成 | N199 | — | pennyroyal | Pennyroyal | 原料 | — |
+| 欧当归根 | `materials/lovage_root` | 物品 | 本模组作物，种子由村民交易或战利品 | N200、N250 | — | lovage_root | Lovage Root | 原料 | — |
+| 欧夏至草 | `materials/horehound` | 物品 | 野生采集方块，按群系生成 | N201 | — | horehound | Horehound | 原料 | — |
+| 丝兰茎 | `materials/yucca_trunk` | 物品 | 野生采集方块，按群系生成 | N202 | — | yucca_trunk | Yucca Trunk | 原料 | — |
+| 海索草 | `materials/hyssop` | 物品 | 野生采集方块，按群系生成 | N204 | — | hyssop | Hyssop | 原料 | — |
+| 莳萝 | `materials/dill` | 物品 | 本模组作物，种子由村民交易或战利品 | N205 | — | dill | Dill | 原料 | — |
+| 秘鲁香脂原脂 | `materials/crude_peru_balsam` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N206 | — | crude_peru_balsam | Crude Peru Balsam | 原料 | — |
+| 格蓬 | `materials/galbanum` | 物品 | 野生采集方块，按群系生成 | N207 | — | galbanum | Galbanum | 原料 | — |
+| 脂檀木 | `materials/amyris_wood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N208 | — | amyris_wood | Amyris Wood | 原料 | — |
+| 银荆花 | `materials/mimosa_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N209 | — | mimosa_flower | Mimosa Flower | 原料 | — |
+| 接骨木花 | `materials/elderflower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N210 | — | elderflower | Elderflower | 原料 | — |
+| 甘牛至 | `materials/marjoram` | 物品 | 本模组作物，种子由村民交易或战利品 | N211 | — | marjoram | Marjoram | 原料 | — |
+| 黄龙胆根 | `materials/gentian_root` | 物品 | 野生采集方块，按群系生成 | N212 | — | gentian_root | Gentian Root | 原料 | — |
+| 黄葵籽 | `materials/ambrette_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N213 | — | ambrette_seed | Ambrette Seed | 原料 | — |
+| 野黑樱桃树皮 | `materials/wild_cherry_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N214 | — | wild_cherry_bark | Wild Cherry Bark | 原料 | — |
+| 黑胡椒 | `materials/black_pepper` | 物品 | 本模组作物，种子由村民交易或战利品 | N215 | — | black_pepper | Black Pepper | 原料 | — |
+| 榄香脂 | `materials/elemi` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N217 | — | elemi | Elemi | 原料 | — |
+| 蜡菊花 | `materials/immortelle_flower` | 物品 | 野生采集方块，按群系生成 | N218 | — | immortelle_flower | Immortelle Flower | 原料 | — |
+| 香蜂花 | `materials/lemon_balm` | 物品 | 本模组作物，种子由村民交易或战利品 | N219 | — | lemon_balm | Lemon Balm | 原料 | — |
+| 苦橙花 | `materials/bitter_orange_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N221 | — | bitter_orange_flower | Bitter Orange Flower | 原料 | — |
 | 葡萄柚 | `materials/grapefruit` | 物品 | `#forge:fruits/grapefruit`（08 柑橘已列） | N222 | — | grapefruit | Grapefruit | 原料 | — |
-| 穗薰衣草 | `materials/spike_lavender` | 物品 | 暂无来源（待定，见 17–19） | N223 | — | spike_lavender | Spike Lavender | 原料 | — |
-| 鹰爪豆花 | `materials/genet_flower` | 物品 | 暂无来源（待定，见 17–19） | N224 | — | genet_flower | Genet Flower | 原料 | — |
-| 苦橙 | `materials/bitter_orange` | 物品 | 暂无来源（待定，见 17–19） | N255 | — | bitter_orange | Bitter Orange | 原料 | — |
-| 小米辣 | `materials/bird_eye_chili` | 物品 | 暂无来源（或并入 `materials/dried_chili`） | N227 | — | bird_eye_chili | Bird Eye Chili | 原料 | — |
-| 丁香花梗 | `materials/clove_stem` | 物品 | 暂无来源（待定，见 17–19） | N228 | — | clove_stem | Clove Stem | 原料 | — |
-| 茴芹籽 | `materials/anise_seed` | 物品 | 暂无来源（待定，见 17–19） | N229 | — | anise_seed | Anise Seed | 原料 | — |
-| 巴拉圭茶叶 | `materials/mate_leaf` | 物品 | 暂无来源（待定，见 17–19） | N231 | — | mate_leaf | Mate Leaf | 原料 | — |
-| 山核桃树皮 | `materials/hickory_bark` | 物品 | 暂无来源（待定，见 17–19） | N232 | — | hickory_bark | Hickory Bark | 原料 | — |
-| 瓜拉纳籽 | `materials/guarana_seed` | 物品 | 暂无来源（待定，见 17–19） | N233 | — | guarana_seed | Guarana Seed | 原料 | — |
-| 白胡椒 | `materials/white_pepper` | 物品 | 暂无来源（待定，见 17–19） | N236、N237 | — | white_pepper | White Pepper | 原料 | — |
-| 众香果 | `materials/allspice` | 物品 | 暂无来源（待定，见 17–19） | N241 | — | allspice | Allspice | 原料 | — |
-| 安息香 | `materials/benzoin` | 物品 | 暂无来源（待定，见 17–19） | N242 | — | benzoin_resin | Benzoin | 原料 | — |
-| 当归籽 | `materials/angelica_seed` | 物品 | 暂无来源（待定，见 17–19） | N243 | — | angelica_seed | Angelica Seed | 原料 | — |
-| 当归根 | `materials/angelica_root` | 物品 | 暂无来源（待定，见 17–19） | N244 | — | angelica_root | Angelica Root | 原料 | — |
-| 西印度月桂叶 | `materials/west_indian_bay_leaf` | 物品 | 暂无来源（待定，见 17–19） | N246、N247 | — | west_indian_bay_leaf | West Indian Bay Leaf | 原料 | — |
-| 苦木 | `materials/quassia_wood` | 物品 | 暂无来源（待定，见 17–19） | N253 | — | quassia_wood | Quassia Wood | 原料 | — |
-| 金鸡纳树皮 | `materials/cinchona_bark` | 物品 | 暂无来源（待定，见 17–19） | N256、N258 | — | cinchona_bark | Cinchona Bark | 原料 | — |
-| 金钮扣 | `materials/jambu` | 物品 | 暂无来源（待定，见 17–19） | N257 | — | jambu | Jambu | 原料 | — |
-| 互叶白千层叶 | `materials/tea_tree_leaf` | 物品 | 暂无来源（待定，见 17–19） | N261 | — | tea_tree_leaf | Tea Tree Leaf | 原料 | — |
+| 穗薰衣草 | `materials/spike_lavender` | 物品 | 野生采集方块，按群系生成 | N223 | — | spike_lavender | Spike Lavender | 原料 | — |
+| 鹰爪豆花 | `materials/genet_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N224 | — | genet_flower | Genet Flower | 原料 | — |
+| 苦橙 | `materials/bitter_orange` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N255 | — | bitter_orange | Bitter Orange | 原料 | — |
+| 小米辣 | `materials/bird_eye_chili` | 物品 | 本模组作物，种子由村民交易或战利品（或并入 `materials/dried_chili`） | N227 | — | bird_eye_chili | Bird Eye Chili | 原料 | — |
+| 丁香花梗 | `materials/clove_stem` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N228 | — | clove_stem | Clove Stem | 原料 | — |
+| 茴芹籽 | `materials/anise_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N229 | — | anise_seed | Anise Seed | 原料 | — |
+| 巴拉圭茶叶 | `materials/mate_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N231 | — | mate_leaf | Mate Leaf | 原料 | — |
+| 山核桃树皮 | `materials/hickory_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N232 | — | hickory_bark | Hickory Bark | 原料 | — |
+| 瓜拉纳籽 | `materials/guarana_seed` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N233 | — | guarana_seed | Guarana Seed | 原料 | — |
+| 白胡椒 | `materials/white_pepper` | 物品 | 本模组作物，种子由村民交易或战利品 | N236、N237 | — | white_pepper | White Pepper | 原料 | — |
+| 众香果 | `materials/allspice` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N241 | — | allspice | Allspice | 原料 | — |
+| 安息香 | `materials/benzoin` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N242 | — | benzoin_resin | Benzoin | 原料 | — |
+| 当归籽 | `materials/angelica_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N243 | — | angelica_seed | Angelica Seed | 原料 | — |
+| 当归根 | `materials/angelica_root` | 物品 | 本模组作物，种子由村民交易或战利品 | N244 | — | angelica_root | Angelica Root | 原料 | — |
+| 西印度月桂叶 | `materials/west_indian_bay_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N246、N247 | — | west_indian_bay_leaf | West Indian Bay Leaf | 原料 | — |
+| 苦木 | `materials/quassia_wood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N253 | — | quassia_wood | Quassia Wood | 原料 | — |
+| 金鸡纳树皮 | `materials/cinchona_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N256、N258 | — | cinchona_bark | Cinchona Bark | 原料 | — |
+| 金钮扣 | `materials/jambu` | 物品 | 野生采集方块，按群系生成 | N257 | — | jambu | Jambu | 原料 | — |
+| 互叶白千层叶 | `materials/tea_tree_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N261 | — | tea_tree_leaf | Tea Tree Leaf | 原料 | — |
 | 白柠檬 | `materials/lime` | 物品 | `#forge:fruits/lime`（08 柑橘已列） | N262 | — | lime | Lime | 原料 | — |
-| 白芥子 | `materials/yellow_mustard_seed` | 物品 | 暂无来源（待定，见 17–19） | N265 | — | yellow_mustard_seed | Yellow Mustard Seed | 原料 | — |
-| 芥菜籽 | `materials/brown_mustard_seed` | 物品 | 暂无来源（待定，见 17–19） | N266 | — | brown_mustard_seed | Brown Mustard Seed | 原料 | — |
-| 紫苏叶 | `materials/perilla_leaf` | 物品 | 暂无来源（待定，见 17–19） | N268 | — | perilla_leaf | Perilla Leaf | 原料 | — |
-| 药鼠尾草 | `materials/sage` | 物品 | 暂无来源（待定，见 17–19） | N274、N296 | — | sage | Sage | 原料 | — |
-| 山达草叶 | `materials/yerba_santa` | 物品 | 暂无来源（待定，见 17–19） | N278、N398 | — | yerba_santa | Yerba Santa | 原料 | — |
-| 苜蓿 | `materials/alfalfa` | 物品 | 暂无来源（待定，见 17–19） | N279 | — | alfalfa | Alfalfa | 原料 | — |
-| 母菊花 | `materials/german_chamomile` | 物品 | 暂无来源（待定，见 17–19） | N287、N309、N357 | — | german_chamomile | German Chamomile | 原料 | — |
-| 红三叶草花序 | `materials/red_clover` | 物品 | 暂无来源（待定，见 17–19） | N290 | — | red_clover | Red Clover | 原料 | — |
+| 白芥子 | `materials/yellow_mustard_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N265 | — | yellow_mustard_seed | Yellow Mustard Seed | 原料 | — |
+| 芥菜籽 | `materials/brown_mustard_seed` | 物品 | 本模组作物，种子由村民交易或战利品 | N266 | — | brown_mustard_seed | Brown Mustard Seed | 原料 | — |
+| 紫苏叶 | `materials/perilla_leaf` | 物品 | 本模组作物，种子由村民交易或战利品 | N268 | — | perilla_leaf | Perilla Leaf | 原料 | — |
+| 药鼠尾草 | `materials/sage` | 物品 | 野生采集方块，按群系生成 | N274、N296 | — | sage | Sage | 原料 | — |
+| 山达草叶 | `materials/yerba_santa` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N278、N398 | — | yerba_santa | Yerba Santa | 原料 | — |
+| 苜蓿 | `materials/alfalfa` | 物品 | 本模组作物，种子由村民交易或战利品 | N279 | — | alfalfa | Alfalfa | 原料 | — |
+| 母菊花 | `materials/german_chamomile` | 物品 | 野生采集方块，按群系生成 | N287、N309、N357 | — | german_chamomile | German Chamomile | 原料 | — |
+| 红三叶草花序 | `materials/red_clover` | 物品 | 野生采集方块，按群系生成 | N290 | — | red_clover | Red Clover | 原料 | — |
 | 蒲公英 | `materials/dandelion` | 物品 | 原版 `minecraft:dandelion`（游戏简化：花代全株） | N291、N292 | — | dandelion | Dandelion | 原料 | — |
-| 加拿大飞蓬 | `materials/canadian_fleabane` | 物品 | 暂无来源（待定，见 17–19） | N293 | — | canadian_fleabane | Canadian Fleabane | 原料 | — |
-| 穗花槭树皮 | `materials/mountain_maple_bark` | 物品 | 暂无来源（待定，见 17–19） | N294 | — | mountain_maple_bark | Mountain Maple Bark | 原料 | — |
-| 芸香 | `materials/rue` | 物品 | 暂无来源（待定，见 17–19） | N295 | — | rue | Rue | 原料 | — |
-| 菝葜根 | `materials/sarsaparilla_root` | 物品 | 暂无来源（待定，见 17–19） | N297 | — | sarsaparilla_root | Sarsaparilla Root | 原料 | — |
-| 苦艾 | `materials/wormwood` | 物品 | 暂无来源（待定，见 17–19） | N302、N345、N348 | — | wormwood | Wormwood | 原料 | — |
-| 橘柚 | `materials/tangelo` | 物品 | 暂无来源（待定，见 17–19） | N304 | — | tangelo | Tangelo | 原料 | — |
-| 美国栗叶 | `materials/chestnut_leaf` | 物品 | 暂无来源（待定，见 17–19） | N306 | — | chestnut_leaf | Chestnut Leaf | 原料 | — |
-| 古巴香脂 | `materials/copaiba_balsam` | 物品 | 暂无来源（待定，见 17–19） | N307 | — | copaiba_balsam | Copaiba Balsam | 原料 | — |
-| 达迷草叶 | `materials/damiana_leaf` | 物品 | 暂无来源（待定，见 17–19） | N308 | — | damiana_leaf | Damiana Leaf | 原料 | — |
-| 甜没药 | `materials/opoponax` | 物品 | 暂无来源（待定，见 17–19） | N311、N341 | — | opoponax | Opoponax | 原料 | — |
-| 藏红花柱头 | `materials/saffron` | 物品 | 暂无来源（待定，见 17–19） | N312 | — | saffron | Saffron | 原料 | — |
-| 酸角果肉 | `materials/tamarind_pulp` | 物品 | 暂无来源（待定，见 17–19） | N317 | — | tamarind_pulp | Tamarind Pulp | 原料 | — |
-| 辣根 | `materials/horseradish_root` | 物品 | 暂无来源（待定，见 17–19） | N318 | — | horseradish_root | Horseradish Root | 原料 | — |
-| 芹菜叶 | `materials/celery_leaf` | 物品 | 暂无来源（作物模组芹菜标签待核对） | N320 | — | celery_leaf | Celery Leaf | 原料 | — |
-| 韭葱 | `materials/leek` | 物品 | 暂无来源（作物模组韭葱标签待核对） | N326 | — | leek | Leek | 原料 | — |
-| 香橙 | `materials/yuzu` | 物品 | 暂无来源（待定，见 17–19） | N329 | — | yuzu | Yuzu | 原料 | — |
-| 墨西哥牛至 | `materials/mexican_oregano` | 物品 | 暂无来源（待定，见 17–19） | N331 | — | mexican_oregano | Mexican Oregano | 原料 | — |
-| 冬香薄荷 | `materials/winter_savory` | 物品 | 暂无来源（待定，见 17–19） | N333 | — | winter_savory | Winter Savory | 原料 | — |
-| 桃叶 | `materials/peach_leaf` | 物品 | 暂无来源（待定，见 17–19） | N336 | — | peach_leaf | Peach Leaf | 原料 | — |
-| 白藓牛至 | `materials/dittany_of_crete` | 物品 | 暂无来源（待定，见 17–19） | N337 | — | dittany_of_crete | Dittany of Crete | 原料 | — |
-| 花椒 | `materials/sichuan_pepper` | 物品 | 暂无来源（待定，见 17–19） | N342 | — | sichuan_pepper | Sichuan Pepper | 原料 | — |
-| 儿茶心材 | `materials/catechu_heartwood` | 物品 | 暂无来源（待定，见 17–19） | N344 | — | catechu_heartwood | Catechu Heartwood | 原料 | — |
-| 橡苔 | `materials/oakmoss` | 物品 | 暂无来源（待定，见 17–19） | N353 | — | oakmoss | Oakmoss | 原料 | — |
-| 苏格兰留兰香 | `materials/scotch_spearmint` | 物品 | 暂无来源（待定，见 17–19） | N354 | — | scotch_spearmint | Scotch Spearmint | 原料 | — |
-| 安古树皮 | `materials/angostura_bark` | 物品 | 暂无来源（待定，见 17–19） | N356 | — | angostura_bark | Angostura Bark | 原料 | — |
-| 灵猫香 | `materials/civet` | 物品 | 暂无来源（待定，见 17–19） | N361 | — | civet | Civet | 原料 | — |
-| 橘叶 | `materials/mandarin_leaf` | 物品 | 暂无来源（待定，见 17–19） | N366 | — | mandarin_leaf | Mandarin Leaf | 原料 | — |
-| 欧洲山松针叶 | `materials/dwarf_pine_needles` | 物品 | 暂无来源（不与 N2 `materials/pine_needles` 共用，避免 NT1 配方冲突） | N367 | — | dwarf_pine_needles | Dwarf Pine Needles | 原料 | — |
-| 玫瑰果 | `materials/rose_hip` | 物品 | 暂无来源（待定，见 17–19） | N368 | — | rose_hip | Rose Hip | 原料 | — |
-| 夏香薄荷 | `materials/summer_savory` | 物品 | 暂无来源（待定，见 17–19） | N369 | — | summer_savory | Summer Savory | 原料 | — |
-| 加拿大细辛 | `materials/canadian_snakeroot` | 物品 | 暂无来源（待定，见 17–19） | N370 | — | canadian_snakeroot | Canadian Snakeroot | 原料 | — |
-| 黄蓍胶片 | `materials/tragacanth_lump` | 物品 | 暂无来源（待定，见 17–19） | N372 | — | tragacanth_lump | Tragacanth Lump | 原料 | — |
-| 摩洛哥豆蔻 | `materials/grains_of_paradise` | 物品 | 暂无来源（待定，见 17–19） | N374 | — | grains_of_paradise | Grains of Paradise | 原料 | — |
+| 加拿大飞蓬 | `materials/canadian_fleabane` | 物品 | 野生采集方块，按群系生成 | N293 | — | canadian_fleabane | Canadian Fleabane | 原料 | — |
+| 穗花槭树皮 | `materials/mountain_maple_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N294 | — | mountain_maple_bark | Mountain Maple Bark | 原料 | — |
+| 芸香 | `materials/rue` | 物品 | 野生采集方块，按群系生成 | N295 | — | rue | Rue | 原料 | — |
+| 菝葜根 | `materials/sarsaparilla_root` | 物品 | 野生采集方块，按群系生成 | N297 | — | sarsaparilla_root | Sarsaparilla Root | 原料 | — |
+| 苦艾 | `materials/wormwood` | 物品 | 野生采集方块，按群系生成 | N302、N345、N348 | — | wormwood | Wormwood | 原料 | — |
+| 橘柚 | `materials/tangelo` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N304 | — | tangelo | Tangelo | 原料 | — |
+| 美国栗叶 | `materials/chestnut_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N306 | — | chestnut_leaf | Chestnut Leaf | 原料 | — |
+| 古巴香脂 | `materials/copaiba_balsam` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N307 | — | copaiba_balsam | Copaiba Balsam | 原料 | — |
+| 达迷草叶 | `materials/damiana_leaf` | 物品 | 野生采集方块，按群系生成 | N308 | — | damiana_leaf | Damiana Leaf | 原料 | — |
+| 甜没药 | `materials/opoponax` | 物品 | 野生采集方块，按群系生成 | N311、N341 | — | opoponax | Opoponax | 原料 | — |
+| 藏红花柱头 | `materials/saffron` | 物品 | 本模组作物，种子由村民交易或战利品 | N312 | — | saffron | Saffron | 原料 | — |
+| 酸角果肉 | `materials/tamarind_pulp` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N317 | — | tamarind_pulp | Tamarind Pulp | 原料 | — |
+| 辣根 | `materials/horseradish_root` | 物品 | 本模组作物，种子由村民交易或战利品 | N318 | — | horseradish_root | Horseradish Root | 原料 | — |
+| 芹菜叶 | `materials/celery_leaf` | 物品 | 本模组作物，种子由村民交易或战利品（作物模组芹菜标签待核对） | N320 | — | celery_leaf | Celery Leaf | 原料 | — |
+| 韭葱 | `materials/leek` | 物品 | 本模组作物，种子由村民交易或战利品（作物模组韭葱标签待核对） | N326 | — | leek | Leek | 原料 | — |
+| 香橙 | `materials/yuzu` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N329 | — | yuzu | Yuzu | 原料 | — |
+| 墨西哥牛至 | `materials/mexican_oregano` | 物品 | 野生采集方块，按群系生成 | N331 | — | mexican_oregano | Mexican Oregano | 原料 | — |
+| 冬香薄荷 | `materials/winter_savory` | 物品 | 本模组作物，种子由村民交易或战利品 | N333 | — | winter_savory | Winter Savory | 原料 | — |
+| 桃叶 | `materials/peach_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N336 | — | peach_leaf | Peach Leaf | 原料 | — |
+| 白藓牛至 | `materials/dittany_of_crete` | 物品 | 野生采集方块，按群系生成 | N337 | — | dittany_of_crete | Dittany of Crete | 原料 | — |
+| 花椒 | `materials/sichuan_pepper` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N342 | — | sichuan_pepper | Sichuan Pepper | 原料 | — |
+| 儿茶心材 | `materials/catechu_heartwood` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N344 | — | catechu_heartwood | Catechu Heartwood | 原料 | — |
+| 橡苔 | `materials/oakmoss` | 物品 | 野生采集方块，按群系生成 | N353 | — | oakmoss | Oakmoss | 原料 | — |
+| 苏格兰留兰香 | `materials/scotch_spearmint` | 物品 | 本模组作物，种子由村民交易或战利品 | N354 | — | scotch_spearmint | Scotch Spearmint | 原料 | — |
+| 安古树皮 | `materials/angostura_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N356 | — | angostura_bark | Angostura Bark | 原料 | — |
+| 灵猫香 | `materials/civet` | 物品 | 实体掉落 | N361 | — | civet | Civet | 原料 | — |
+| 橘叶 | `materials/mandarin_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N366 | — | mandarin_leaf | Mandarin Leaf | 原料 | — |
+| 欧洲山松针叶 | `materials/dwarf_pine_needles` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取（不与 N2 `materials/pine_needles` 共用，避免 NT1 配方冲突） | N367 | — | dwarf_pine_needles | Dwarf Pine Needles | 原料 | — |
+| 玫瑰果 | `materials/rose_hip` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N368 | — | rose_hip | Rose Hip | 原料 | — |
+| 夏香薄荷 | `materials/summer_savory` | 物品 | 本模组作物，种子由村民交易或战利品 | N369 | — | summer_savory | Summer Savory | 原料 | — |
+| 加拿大细辛 | `materials/canadian_snakeroot` | 物品 | 野生采集方块，按群系生成 | N370 | — | canadian_snakeroot | Canadian Snakeroot | 原料 | — |
+| 黄蓍胶片 | `materials/tragacanth_lump` | 物品 | 野生采集方块，按群系生成 | N372 | — | tragacanth_lump | Tragacanth Lump | 原料 | — |
+| 摩洛哥豆蔻 | `materials/grains_of_paradise` | 物品 | 本模组作物，种子由村民交易或战利品 | N374 | — | grains_of_paradise | Grains of Paradise | 原料 | — |
 | 鲣节 | `materials/katsuobushi` | 物品 | 鱼（`materials/raw_fish`）M03 蒸煮 → M10 烟熏、烘干（需补此配方；游戏简化，省去霉化） | N379 | — | katsuobushi | Katsuobushi | 原料 | — |
-| 药蜀葵根 | `materials/marshmallow_root` | 物品 | 暂无来源（待定，见 17–19） | N382 | — | marshmallow_root | Marshmallow Root | 原料 | — |
-| 白千层枝叶 | `materials/cajeput_leaf` | 物品 | 暂无来源（待定，见 17–19） | N384 | — | cajeput_leaf | Cajeput Leaf | 原料 | — |
-| 芦荟叶 | `materials/aloe` | 物品 | 暂无来源（待定，见 17–19） | N389 | — | aloe | Aloe | 原料 | — |
-| 龙涎香 | `materials/ambergris` | 物品 | 暂无来源（待定，见 17–19） | N390 | — | ambergris | Ambergris | 原料 | — |
-| 燕根 | `materials/swallowroot` | 物品 | 暂无来源（待定，见 17–19） | N392 | — | swallowroot | Swallowroot | 原料 | — |
-| 香厚壳桂皮 | `materials/massoia_bark` | 物品 | 暂无来源（待定，见 17–19） | N397 | — | massoia_bark | Massoia Bark | 原料 | — |
-| 巴拉塔胶乳 | `balata_latex`（流体） | 流体 | 暂无来源（待定，见 17–19） | 564 | — | balata_latex | Balata Latex | 原料 | — |
-| 节路顿胶乳 | `jelutong_latex`（流体） | 流体 | 暂无来源（待定，见 17–19） | 565 | — | jelutong_latex | Jelutong Latex | 原料 | — |
-| 来开欧胶乳 | `sorva_latex`（流体） | 流体 | 暂无来源（待定，见 17–19） | 566 | — | sorva_latex | Sorva Latex | 原料 | — |
-| 人心果胶乳 | `sapodilla_latex`（流体） | 流体 | 暂无来源（待定，见 17–19） | 567、568 | — | sapodilla_latex | Sapodilla Latex | 原料 | — |
-| 松树伐根 | `materials/pine_stump` | 物品 | 暂无来源（待定，见 17–19） | 427、579 | — | pine_stump | Pine Stump | 原料 | — |
-| 小烛树茎秆 | `materials/candelilla_stem` | 物品 | 暂无来源（待定，见 17–19） | 582 | — | candelilla_stem | Candelilla Stem | 原料 | — |
-| 凹凸棒石黏土矿 | `materials/attapulgite` | 物品 | 暂无来源（待定，见 17–19） | 438 | — | attapulgite | Attapulgite | 原料 | — |
-| 膨润土矿石 | `materials/bentonite` | 物品 | 暂无来源（GTCEu `#forge:ores/bentonite`、`#forge:dusts/bentonite`，未核对） | 443、440 | — | bentonite_ore | Bentonite | 原料 | — |
-| 珍珠岩矿石 | `materials/perlite` | 物品 | 暂无来源（GTCEu `#forge:dusts/perlite`，未核对） | 444 | — | perlite_ore | Perlite | 原料 | — |
-| 滑石矿石 | `materials/talc` | 物品 | 暂无来源（GTCEu `#forge:ores/talc`、`#forge:dusts/talc`、`soapstone`，未核对） | 451 | — | talc_ore | Talc | 原料 | — |
-| 月见草籽 | `materials/evening_primrose_seed` | 物品 | 暂无来源（待定，见 17–19） | 538 | — | evening_primrose_seed | Evening Primrose Seed | 原料 | — |
+| 药蜀葵根 | `materials/marshmallow_root` | 物品 | 野生采集方块，按群系生成 | N382 | — | marshmallow_root | Marshmallow Root | 原料 | — |
+| 白千层枝叶 | `materials/cajeput_leaf` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N384 | — | cajeput_leaf | Cajeput Leaf | 原料 | — |
+| 芦荟叶 | `materials/aloe` | 物品 | 本模组作物，种子由村民交易或战利品 | N389 | — | aloe | Aloe | 原料 | — |
+| 龙涎香 | `materials/ambergris` | 物品 | 战利品：钓鱼与沉船箱 | N390 | — | ambergris | Ambergris | 原料 | — |
+| 燕根 | `materials/swallowroot` | 物品 | 结构生成：崖壁燕巢方块 | N392 | — | swallowroot | Swallowroot | 原料 | — |
+| 香厚壳桂皮 | `materials/massoia_bark` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N397 | — | massoia_bark | Massoia Bark | 原料 | — |
+| 巴拉塔胶乳 | `balata_latex`（流体） | 流体 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 564 | — | balata_latex | Balata Latex | 原料 | — |
+| 节路顿胶乳 | `jelutong_latex`（流体） | 流体 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 565 | — | jelutong_latex | Jelutong Latex | 原料 | — |
+| 来开欧胶乳 | `sorva_latex`（流体） | 流体 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 566 | — | sorva_latex | Sorva Latex | 原料 | — |
+| 人心果胶乳 | `sapodilla_latex`（流体） | 流体 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 567、568 | — | sapodilla_latex | Sapodilla Latex | 原料 | — |
+| 松树伐根 | `materials/pine_stump` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | 427、579 | — | pine_stump | Pine Stump | 原料 | — |
+| 小烛树茎秆 | `materials/candelilla_stem` | 物品 | 野生采集方块，按群系生成 | 582 | — | candelilla_stem | Candelilla Stem | 原料 | — |
+| 凹凸棒石黏土矿 | `materials/attapulgite` | 物品 | 本模组矿石生成 | 438 | — | attapulgite | Attapulgite | 原料 | — |
+| 膨润土矿石 | `materials/bentonite` | 物品 | 本模组矿石生成（GTCEu `#forge:ores/bentonite`、`#forge:dusts/bentonite`，未核对） | 443、440 | — | bentonite_ore | Bentonite | 原料 | — |
+| 珍珠岩矿石 | `materials/perlite` | 物品 | 本模组矿石生成（GTCEu `#forge:dusts/perlite`，未核对） | 444 | — | perlite_ore | Perlite | 原料 | — |
+| 滑石矿石 | `materials/talc` | 物品 | 本模组矿石生成（GTCEu `#forge:ores/talc`、`#forge:dusts/talc`、`soapstone`，未核对） | 451 | — | talc_ore | Talc | 原料 | — |
+| 月见草籽 | `materials/evening_primrose_seed` | 物品 | 野生采集方块，按群系生成 | 538 | — | evening_primrose_seed | Evening Primrose Seed | 原料 | — |
 | 粗硒 | `materials/selenium` | 物品 | 他模组标签（候选 `#forge:dusts/selenium`，未核对）；本模组另有硒矿石焙烧路线（509 B，不经粗硒） | 509（经 509 供 510–515） | — | selenium | Selenium | 原料 | — |
 | 铬 | `materials/chromium` | 物品 | 他模组标签 `#forge:ingots/chrome`、`#forge:dusts/chrome`（GTCEu 命名，未核对）；未装时为空 | 527、528 | — | chromium | Chromium | 原料 | — |
 | 动物血 | `animal_blood`（流体） | 流体 | 原版生肉（牛肉、猪肉、羊肉、鸡肉、兔肉）在 M12 固液分离机压榨，副产动物血（游戏简化）；同时接受他模组血液标签（如 `#forge:blood`，未核对） | 485、486、493 | — | animal_blood | Animal Blood | 原料 | — |
@@ -569,11 +601,13 @@
 | 食用菌 | `materials/mushroom` | 物品 | 原版 `minecraft:brown_mushroom`（褐色蘑菇） | 512（分离菌种） | — | mushroom | Mushroom | 原料 | — |
 | 硒矿石 | `materials/selenium_ore` | 矿石 / 方块 | 世界生成（硒矿石，见 08 世界生成表） | 509 B | — | selenium_ore | Selenium Ore | 原料 | — |
 | 铬铁矿石 | `materials/chromite` | 矿石 / 方块 | 世界生成（铬铁矿石，见 08 世界生成表）；同时导入 `#forge:ores/chromite` | `sodium_chromate`（527 B、528 B） | — | chromite | Chromite | 原料 | — |
-| 玳玳果 | `materials/daidai_fruit` | 物品 | 暂无来源（待定，见 17–19） | N082、N225 | — | daidai_fruit | Daidai Fruit | 原料 | — |
-| 红橘 | `materials/tangerine` | 物品 | 暂无来源（待定，见 17–19） | N169 | — | tangerine | Tangerine | 原料 | — |
-| 卡南伽花 | `materials/cananga_flower` | 物品 | 暂无来源（待定，见 17–19） | N160 | — | cananga_flower | Cananga Flower | 原料 | — |
-| 冷杉属针叶 | `materials/abies_needles` | 物品 | 暂无来源（待定，见 17–19） | N186 | — | abies_needles | Abies Needles | 原料 | — |
+| 玳玳果 | `materials/daidai_fruit` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N082、N225 | — | daidai_fruit | Daidai Fruit | 原料 | — |
+| 红橘 | `materials/tangerine` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N169 | — | tangerine | Tangerine | 原料 | — |
+| 卡南伽花 | `materials/cananga_flower` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N160 | — | cananga_flower | Cananga Flower | 原料 | — |
+| 冷杉属针叶 | `materials/abies_needles` | 物品 | 本模组树木，采花、叶、果、皮；树脂与胶乳用 H15 割取 | N186 | — | abies_needles | Abies Needles | 原料 | — |
 | 朗姆酒 | `foods/rum` | 物品 | 12 成品朗姆酒（`rum`，2026-11-11 实装时核对成品表已有） | N380 | — | rum | Rum | 原料 | — |
+
+> 食品成品新增的原料只在食品文档登记，不列入本表：作物（糯稻、绿豆、赤豆等，[../foods/13](../foods/13-batch3-grain-products.md)、[16](../foods/16-batch4-frozen-eggs.md)；第 6 批另加芥菜、黑豆、梅子、山楂，[../foods/19](../foods/19-batch6-produce.md) 第 1.1 节）；“肢解”附魔掉落的猪皮 `materials/pork_skin`、猪后腿 `materials/pork_hind_leg`、小肠 `materials/small_intestine`、鸡爪 `materials/chicken_feet`（[../foods/17](../foods/17-batch5-meat.md) 第 1.1 节）。他模组的鸭肉 `materials/duck`、虾 `materials/shrimp`、鸭蛋等标签按 foods/08 第 7 节第 3 条，标签名核对后再写入第 B 节。
 
 > I07 的方块与作物（2026-11-04 定）：作物的收获物本身可种（同胡萝卜），野外有野生植株；栀子按甜浆果丛、香荚兰按可可果的形态；橡胶木做完整木材套组（原木、木头、去皮原木、去皮木头、木板、楼梯、台阶、栅栏、栅栏门、门、活板门、压力板、按钮、树叶、树苗；告示牌、悬挂式告示牌、船列入后续）；松脂先按原料注册；松脂是多组分混合物，不带纯度（2026-11-05，10 §1.1）。后备来源只做硫矿石、磷灰石矿石（未装热力时）和稻谷、树皮（未装农夫乐事时）；镍、锡、银、铅不做后备，依赖其他模组。后备物品在各节点都注册，只在缺对应模组时生成或掉落，配置文件 `foodindustrial-common.toml` 的 `[fallbacks]` 可强制启用。
 
@@ -644,6 +678,8 @@
 | 酿酒酵母 | `cultures/yeast` | 果皮表面（浆果、苹果） | 乙醇、19 | yeast | Saccharomyces Cerevisiae | 菌种 |
 | 黑曲霉 | `cultures/aspergillus_niger` | 发霉的面包 / 谷物 | 3, 13，葡萄糖氧化酶 | aspergillus_niger | Aspergillus Niger | 菌种 |
 | 红曲霉 | `cultures/monascus` | 曲盘蒸米，丛林类群系（H13） | 21 | monascus | Monascus | 菌种 |
+| 雅致放射毛霉 | `cultures/actinomucor` | 曲盘上的豆腐坯（H13） | 腐乳的毛坯（[../foods/19](../foods/19-batch6-produce.md) 第 5.12 节，2026-11-18 补） | actinomucor | Actinomucor Elegans | 菌种 |
+| 纳豆枯草芽孢杆菌 | `cultures/bacillus_natto` | 稻草上的蒸豆（H13） | 纳豆（[../foods/19](../foods/19-batch6-produce.md) 第 5.16 节，2026-11-18 补） | bacillus_natto | Bacillus Subtilis Natto | 菌种 |
 | 谷氨酸棒杆菌 | `cultures/corynebacterium` | 土壤样本（M30 筛选） | 4 | corynebacterium | Corynebacterium Glutamicum | 菌种 |
 | 三孢布拉霉（+） | `cultures/blakeslea_plus` | 腐烂植物样本（M30 筛选） | 20 | blakeslea_plus | Blakeslea Trispora (+) | 菌种 |
 | 三孢布拉霉（−） | `cultures/blakeslea_minus` | 腐烂植物样本（M30 筛选） | 20 | blakeslea_minus | Blakeslea Trispora (−) | 菌种 |
@@ -776,7 +812,7 @@
 | 转葡糖苷酶 | `enzymes/transglucosidase` | 黑曲霉 | 423 | transglucosidase | Transglucosidase | 酶 |
 | L-天冬氨酸 β-脱羧酶 | `enzymes/aspartate_decarboxylase` | 达库哈假单胞菌 M29 发酵，卡拉胶包埋固定化 | 179 | aspartate_decarboxylase | Aspartate β-Decarboxylase | 酶 |
 | 大麦麦芽 | `enzymes/barley_malt` | 大麦发芽（大麦标签未核对） | 402 | barley_malt | Barley Malt | 酶 |
-| 可可毛色二孢（菌种） | `cultures/lasiodiplodia` | 暂无来源（待定，见 17–19） | S0565 | lasiodiplodia | Lasiodiplodia | 菌种 |
+| 可可毛色二孢（菌种） | `cultures/lasiodiplodia` | M30 菌种工作台培养 | S0565 | lasiodiplodia | Lasiodiplodia | 菌种 |
 | 柚苷酶（酶） | `enzymes/naringinase` | 黑曲霉（`cultures/aspergillus_niger`）M29 发酵，柑橘皮诱导（游戏简化，同 15 F 组通用酶流程） | N375、N399 | naringinase | Naringinase | 酶 |
 | 产苏氨酸大肠杆菌（菌种） | `cultures/e_coli_threonine` | M30 基因重组（P94）：大肠杆菌（游戏简化，同 `cultures/e_coli_cysteine`） | N359 | e_coli_threonine | Threonine-Producing E. Coli | 菌种 |
 | 丙酮丁醇梭菌 | `cultures/clostridium_acetobutylicum` | 土壤样本（M30 筛选） | 431 C | clostridium_acetobutylicum | Clostridium Acetobutylicum | 菌种 |
@@ -830,11 +866,11 @@
 | 钼酸铋催化剂 | `catalysts/bismuth_molybdate` | Bi2(MoO4)3 | 丙烯氧化制丙烯酸（310） | 钼、铋（他模组，按标签匹配） | bismuth_molybdate_catalyst（见 09） | — | 催化剂 | 见 09 |
 | 氯化锌 | `catalysts/zinc_chloride` | ZnCl2 | 己酸与间苯二酚酰化（325）；第五批 506 号作营养强化剂，物料改为化学品 K1，催化剂槽照样接受（2026-11-11） | 锌 + 盐酸 | zinc_chloride（见 09） | — | 催化剂 | 见 09 |
 | 固定化蔗糖异构酶菌体 | `catalysts/immobilized_sucrose_isomerase` | 海藻酸钙包埋的灭活菌体 | 异麦芽酮糖（350） | 红色精朊杆菌发酵 → 海藻酸钙包埋（P96） | immobilized_sucrose_isomerase（见 09） | — | 催化剂 | 见 09 |
-| 烯烃复分解催化剂 | `catalysts/metathesis` | 钌卡宾络合物（格拉布催化剂）或 Re2O7/Al2O3（加四甲基锡助剂）；工业乙烯解另用钨、钼卡宾络合物 | S0334、`diethyl_octadecenedioate` | 暂无来源（催化剂，按次数消耗，待定） | metathesis | Metathesis | 催化剂 | — |
+| 烯烃复分解催化剂 | `catalysts/metathesis` | 钌卡宾络合物（格拉布催化剂）或 Re2O7/Al2O3（加四甲基锡助剂）；工业乙烯解另用钨、钼卡宾络合物 | S0334、`diethyl_octadecenedioate` | 催化剂，按次数消耗，来源同 §C 催化剂与助剂（催化剂，按次数消耗，待定） | metathesis | Metathesis | 催化剂 | — |
 | 凹凸棒黏土 | `catalysts/attapulgite` | 坡缕石 (Mg,Al)2Si4O10(OH)·4H2O 为主 | 吸附、助滤（GB 2760 表 C.2） | 第五批 438 号 | attapulgite_clay（见 09） | — | 催化剂 | 见 09 |
 | 不溶性聚乙烯聚吡咯烷酮 | `catalysts/pvpp` | (C6H9NO)n | 吸附、助滤（GB 2760 表 C.2） | 第五批 439 号 | pvpp（见 09） | — | 催化剂 | 见 09 |
 | 活性白土 | `catalysts/activated_clay` | 酸活化蒙脱石，SiO2 为主，含 Al2O3 | 吸附、助滤（GB 2760 表 C.2） | 第五批 440 号 | activated_clay（见 09） | — | 催化剂 | 见 09 |
 | 聚苯乙烯 | `catalysts/polystyrene` | (C8H8)n | 吸附、助滤（GB 2760 表 C.2） | 第五批 441 号 | polystyrene（见 09） | — | 催化剂 | 见 09 |
 | 膨润土 | `catalysts/bentonite` | 蒙脱石 (Na,Ca)0.33(Al,Mg)2Si4O10(OH)2·nH2O 为主 | 吸附、助滤（GB 2760 表 C.2） | 第五批 443 号 | bentonite（见 09） | — | 催化剂 | 见 09 |
 | 珍珠岩 | `catalysts/perlite` | 火山玻璃，SiO2 约 70%–75%、Al2O3 约 12%–15% | 吸附、助滤（GB 2760 表 C.2） | 第五批 444 号 | perlite（见 09） | — | 催化剂 | 见 09 |
-| 钯-离子交换树脂 | `catalysts/palladium_resin` | 钯负载于磺酸型离子交换树脂（双功能：酸催化缩合与加氢） | S1132（一步缩合加氢） | 贵金属催化剂 + 离子交换树脂，搅拌反应罐加热浸渍（I31 实装拟定，2026-11-12：高压反应釜只有一个催化剂槽，按用户定的“先合成或混合”做成一种催化剂） | palladium_resin | Palladium on Ion Exchange Resin | 催化剂 | — |
+| 钯-离子交换树脂 | `catalysts/palladium_resin` | 钯负载于磺酸型离子交换树脂（双功能：酸催化缩合与加氢） | S1132（一步缩合加氢） | 贵金属催化剂 + 离子交换树脂，搅拌反应罐加热浸渍（I31 实装拟定，2026-11-12：高压反应釜只有一个催化剂槽，按用户定的“先合成或混合”做成单一催化剂） | palladium_resin | Palladium on Ion Exchange Resin | 催化剂 | — |

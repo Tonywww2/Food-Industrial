@@ -1,0 +1,10 @@
+{
+  "type": "foodindustrial:harvesting",
+  "block": "foodindustrial:gum_arabic_log",
+  "cooldown": 6000,
+  "result": {
+    "count": 1,
+    "item": "foodindustrial:acacia_lump"
+  },
+  "tool": "#foodindustrial:knives"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/filling_mold"
+    }
+  },
+  "inputs": [
+    {
+      "count": 2,
+      "semi_finished": "alkaline_zongzi|lye_rice"
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:materials/zongzi_leaf"
+      }
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "semi_finished": "alkaline_zongzi|raw_zongzi"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

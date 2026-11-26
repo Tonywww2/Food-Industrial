@@ -16,6 +16,7 @@
     {
       "id": "#c:vegetables/tomato",
       "required": false
-    }
+    },
+    "foodindustrial:tomato"
   ]
 }

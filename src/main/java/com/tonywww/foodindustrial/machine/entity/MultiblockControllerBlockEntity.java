@@ -217,7 +217,9 @@ public class MultiblockControllerBlockEntity extends ProcessingMachineBlockEntit
     private List<String> lackingPorts(List<BlockPos> found) {
         List<String> lacking = new ArrayList<>(portNeeds(definition));
         for (BlockPos pos : found) {
-            if (level.getBlockEntity(pos) instanceof PortBlockEntity port && port.mode() != SideConfig.Mode.OFF) {
+            // an additive port (I42) feeds only the A slots, so it does not count as the item input
+            if (level.getBlockEntity(pos) instanceof PortBlockEntity port && port.mode() != SideConfig.Mode.OFF
+                && port.mode() != SideConfig.Mode.ADDITIVE) {
                 String direction = port.mode() == SideConfig.Mode.OUTPUT ? "output" : "input";
                 lacking.remove(port.kind().name().toLowerCase(java.util.Locale.ROOT) + "_" + direction);
             }

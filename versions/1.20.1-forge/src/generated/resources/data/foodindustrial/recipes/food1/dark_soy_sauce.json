@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:curing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:dark_soy_sauce_base"
+      }
+    }
+  ],
+  "mode": "aging",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:dark_soy_sauce"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 12000
+}

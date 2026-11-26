@@ -1,0 +1,21 @@
+{
+  "type": "mekanism:evaporating",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:glucose_syrup_decolorized"
+  },
+  "output": {
+    "amount": 500,
+    "fluid": "foodindustrial:glucose_syrup"
+  }
+}

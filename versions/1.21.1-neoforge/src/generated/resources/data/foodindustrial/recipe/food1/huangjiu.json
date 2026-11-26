@@ -1,0 +1,19 @@
+{
+  "type": "foodindustrial:sterilizing",
+  "inputs": [
+    {
+      "semi_finished": "huangjiu|sealed"
+    }
+  ],
+  "mode": "pasteurizing",
+  "outputs": [
+    {
+      "item": "foodindustrial:huangjiu"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

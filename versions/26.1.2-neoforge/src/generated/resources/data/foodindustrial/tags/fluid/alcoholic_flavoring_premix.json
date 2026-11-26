@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:alcoholic_flavoring_premix",
+    "foodindustrial:flowing_alcoholic_flavoring_premix",
+    {
+      "id": "#forge:alcoholic_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:alcoholic_flavoring_premix",
+      "required": false
+    }
+  ]
+}

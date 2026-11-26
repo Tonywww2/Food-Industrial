@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:laver",
+    {
+      "id": "#forge:crops/laver",
+      "required": false
+    },
+    {
+      "id": "#forge:foods/laver",
+      "required": false
+    },
+    {
+      "id": "#c:crops/laver",
+      "required": false
+    },
+    {
+      "id": "#c:foods/laver",
+      "required": false
+    }
+  ]
+}

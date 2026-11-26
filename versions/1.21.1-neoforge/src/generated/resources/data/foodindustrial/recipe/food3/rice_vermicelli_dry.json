@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "rice_vermicelli|wet_vermicelli"
+    }
+  ],
+  "outputs": [
+    {
+      "semi_finished": "rice_vermicelli|dry_vermicelli"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

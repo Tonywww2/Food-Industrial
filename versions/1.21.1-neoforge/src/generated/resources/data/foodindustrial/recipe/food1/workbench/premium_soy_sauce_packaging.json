@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "foodindustrial:premium_soy_sauce_bucket"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:containers/glass_bottle"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:premium_soy_sauce"
+  }
+}

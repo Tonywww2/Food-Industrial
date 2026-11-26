@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:wheat_flour",
+    {
+      "id": "#forge:flour/wheat",
+      "required": false
+    },
+    {
+      "id": "#forge:flours/wheat",
+      "required": false
+    },
+    {
+      "id": "#c:flour/wheat",
+      "required": false
+    },
+    {
+      "id": "#c:flours/wheat",
+      "required": false
+    }
+  ]
+}

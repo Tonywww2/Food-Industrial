@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/apple"
+    },
+    {
+      "tag": "foodindustrial:materials/apple"
+    },
+    {
+      "tag": "foodindustrial:materials/apple"
+    },
+    {
+      "tag": "foodindustrial:materials/apple"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "foodindustrial:raw_apple_juice"
+    }
+  ]
+}

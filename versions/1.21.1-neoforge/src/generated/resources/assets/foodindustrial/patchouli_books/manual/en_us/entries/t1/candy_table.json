@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:candy_table",
+  "name": "book.foodindustrial.manual.entry.candy_table",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:candy_table",
+      "text": "book.foodindustrial.manual.entry.candy_table.text"
+    }
+  ],
+  "sortnum": 15
+}

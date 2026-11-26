@@ -1,0 +1,22 @@
+{
+  "type": "foodindustrial:cutting",
+  "catalyst": {
+    "ingredient": "#foodindustrial:knives"
+  },
+  "inputs": [
+    {
+      "ingredient": "#foodindustrial:materials/leavened_dough"
+    }
+  ],
+  "mode": "slicing",
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "steamed_bun|blank"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

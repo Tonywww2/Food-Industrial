@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:high_fructose_syrup",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:rice_slurry"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/starch"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "steaming",
+  "outputs": [
+    {
+      "count": 2,
+      "semi_finished": "hor_fun|rice_sheet"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

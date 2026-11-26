@@ -1,0 +1,33 @@
+{
+  "type": "foodindustrial:cooking",
+  "inputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "foodindustrial:stock_meats"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "water_boiling",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:meat_stock"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

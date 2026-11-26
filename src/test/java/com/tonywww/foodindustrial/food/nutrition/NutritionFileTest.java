@@ -31,7 +31,7 @@ class NutritionFileTest {
         NutritionFile.Entry entry = file.entries().get(0);
         assertEquals(95.0, entry.amount(Component.CAFFEINE));
         assertEquals(0.0, entry.amount(Component.VITAMIN_C));
-        assertEquals(Component.ALL & ~Component.CAFFEINE.bit(), entry.missing());
+        assertEquals(Component.REQUIRED & ~Component.CAFFEINE.bit(), entry.missing());
         assertEquals(0, file.priority());
     }
 
@@ -92,9 +92,10 @@ class NutritionFileTest {
         // A data pack file does not read only_on.
         NutritionFile pack = NutritionFile.parse("a:b", input.toJson());
         assertTrue(pack.entries().get(0).onlyOn().isEmpty());
-        assertEquals(Component.ALL, NutritionFile.parse("a:b", JsonParser.parseString(
+        assertEquals(Component.REQUIRED, NutritionFile.parse("a:b", JsonParser.parseString(
             "{\"mod\":\"m\",\"entries\":[{\"items\":[\"m:x\"],\"serving_g\":1,\"per_serving\":{}}]}")).entries().get(0).missing());
-        assertEquals(0, pack.entries().get(0).missing());
+        // keys an entry leaves out stay out of the written file (I45: never written as 0)
+        assertEquals(Component.REQUIRED, pack.entries().get(0).missing());
     }
 
     @Test

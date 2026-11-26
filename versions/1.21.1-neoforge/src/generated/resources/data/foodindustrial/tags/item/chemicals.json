@@ -538,6 +538,7 @@
     "foodindustrial:disodium_sebacate",
     "foodindustrial:acetyl_d_methylselenocysteine",
     "foodindustrial:acetyl_d_methionine",
+    "foodindustrial:terephthalic_acid",
     "foodindustrial:starch",
     "foodindustrial:cellulose",
     "foodindustrial:alginic_acid",
@@ -723,6 +724,7 @@
     "foodindustrial:chicle",
     "foodindustrial:styrene_butadiene_rubber",
     "foodindustrial:polyethylene",
+    "foodindustrial:pvdc",
     "foodindustrial:butyl_rubber",
     "foodindustrial:dimerized_rosin_glycerol_ester",
     "foodindustrial:hydrogenated_rosin_pentaerythritol_ester",
@@ -732,6 +734,7 @@
     "foodindustrial:polyethylene_wax",
     "foodindustrial:fischer_tropsch_wax",
     "foodindustrial:candelilla_wax",
-    "foodindustrial:ammonium_alginate"
+    "foodindustrial:ammonium_alginate",
+    "foodindustrial:pet"
   ]
 }

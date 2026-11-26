@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/drying_room_shape",
   "textures": {
     "front": "foodindustrial:block/drying_room_front",
     "side": "foodindustrial:block/drying_room_side",

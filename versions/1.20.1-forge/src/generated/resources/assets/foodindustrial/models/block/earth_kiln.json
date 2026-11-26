@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/earth_kiln_shape",
   "textures": {
     "front": "foodindustrial:block/earth_kiln_front",
     "side": "foodindustrial:block/earth_kiln_side",

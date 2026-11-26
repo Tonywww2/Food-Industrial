@@ -32,6 +32,8 @@
     {
       "id": "#c:fruits/grapefruit",
       "required": false
-    }
+    },
+    "foodindustrial:orange",
+    "foodindustrial:lemon"
   ]
 }

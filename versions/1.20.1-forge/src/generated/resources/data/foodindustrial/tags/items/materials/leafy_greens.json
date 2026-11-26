@@ -1,0 +1,48 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:cabbage",
+    "foodindustrial:napa_cabbage",
+    "foodindustrial:spinach",
+    {
+      "id": "#forge:crops/cabbage",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/lettuce",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/spinach",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/kale",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/bokchoy",
+      "required": false
+    },
+    {
+      "id": "#c:crops/cabbage",
+      "required": false
+    },
+    {
+      "id": "#c:crops/lettuce",
+      "required": false
+    },
+    {
+      "id": "#c:crops/spinach",
+      "required": false
+    },
+    {
+      "id": "#c:crops/kale",
+      "required": false
+    },
+    {
+      "id": "#c:crops/bokchoy",
+      "required": false
+    }
+  ]
+}

@@ -88,6 +88,31 @@ final class ModWorldData {
                     pools.add(dropSelf(self));
                 }
             }
+            case REEF -> {
+                // foods/23: oysters ×1–3; Silk Touch or shears keep the reef
+                JsonObject keep = item(self);
+                JsonObject silk = new JsonObject();
+                silk.addProperty("condition", "minecraft:any_of");
+                silk.add("terms", array(matchTool(PlatformDatagen.toolHasSilkTouch()), matchTool(PlatformDatagen.toolIsShears())));
+                keep.add("conditions", array(silk));
+                JsonObject drop = item(produce);
+                drop.add("functions", array(setCountUniform(1, 3), function("minecraft:explosion_decay")));
+                JsonObject alternatives = new JsonObject();
+                alternatives.addProperty("type", "minecraft:alternatives");
+                alternatives.add("children", array(keep, drop));
+                pools.add(pool(array(alternatives), null));
+            }
+            case DEPOSIT, CLAY_DEPOSIT -> {
+                // I44: the lump, Silk Touch keeps the block
+                JsonObject silk = item(self);
+                silk.add("conditions", array(matchTool(PlatformDatagen.toolHasSilkTouch())));
+                JsonObject drop = item(produce);
+                drop.add("functions", array(function("minecraft:explosion_decay")));
+                JsonObject alternatives = new JsonObject();
+                alternatives.addProperty("type", "minecraft:alternatives");
+                alternatives.add("children", array(silk, drop));
+                pools.add(pool(array(alternatives), null));
+            }
             case SLAB -> {
                 JsonObject item = item(self);
                 JsonObject doubled = setCount(2);
@@ -115,6 +140,12 @@ final class ModWorldData {
                 apply.add("parameters", parameters);
                 bonus.add("functions", array(apply));
                 pools.add(pool(array(bonus), array(stateIs(self, "age", "7"))));
+                if (entry == ModWorldBlocks.PADDY.crop()) {
+                    // the straw of the harvest, where Farmer's Delight is missing too (additives/08 §A, 2026-11-25)
+                    JsonObject straw = item(NS + ":straw");
+                    straw.add("functions", array(setCountUniform(1, 2)));
+                    pools.add(pool(array(straw), array(stateIs(self, "age", "7"))));
+                }
             }
             case WILD_PLANT -> {
                 JsonObject item = item(produce);
@@ -124,7 +155,8 @@ final class ModWorldData {
             case BUSH -> {
                 table.add("functions", array(function("minecraft:explosion_decay")));
                 pools.add(bushPool(self, produce, 3, 2, 3));
-                pools.add(bushPool(self, produce, 2, 1, 2));
+                // I44: the gardenia flowers at age 2 (08 §C), fruits at age 3
+                pools.add(bushPool(self, NS + ":gardenia_flower", 2, 1, 2));
             }
             case POD -> {
                 JsonObject item = item(produce);
@@ -271,7 +303,8 @@ final class ModWorldData {
             String id = NS + ":" + entry.id();
             Kind kind = entry.kind();
             switch (kind) {
-                case ORE -> add(blocks, "minecraft:mineable/pickaxe", id);
+                case ORE, DEPOSIT -> add(blocks, "minecraft:mineable/pickaxe", id);
+                case CLAY_DEPOSIT -> add(blocks, "minecraft:mineable/shovel", id);
                 case CRUST, SOIL -> add(blocks, "minecraft:mineable/shovel", id);
                 case CROP -> {
                     add(blocks, "minecraft:crops", id);

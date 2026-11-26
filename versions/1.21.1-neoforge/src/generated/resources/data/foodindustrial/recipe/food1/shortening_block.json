@@ -1,0 +1,23 @@
+{
+  "type": "foodindustrial:chilling",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 250,
+        "tag": "foodindustrial:shortening_blend"
+      }
+    }
+  ],
+  "mode": "churn_freezing",
+  "outputs": [
+    {
+      "semi_finished": "shortening|block"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "cooling"
+  },
+  "time": 400
+}

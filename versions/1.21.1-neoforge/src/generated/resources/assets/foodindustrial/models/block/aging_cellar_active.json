@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "foodindustrial:block/aging_cellar_front_active",
+    "side": "foodindustrial:block/aging_cellar_side",
+    "top": "foodindustrial:block/aging_cellar_top"
+  }
+}

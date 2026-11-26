@@ -1,0 +1,25 @@
+{
+  "type": "foodindustrial:forming",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:molds/extrusion_die"
+    }
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_rice_dough"
+      }
+    }
+  ],
+  "mode": "molding",
+  "outputs": [
+    {
+      "semi_finished": "rice_vermicelli|wet_vermicelli"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

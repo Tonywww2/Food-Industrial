@@ -8,6 +8,7 @@
     {
       "id": "#forge:crops/onion",
       "required": false
-    }
+    },
+    "foodindustrial:onion"
   ]
 }

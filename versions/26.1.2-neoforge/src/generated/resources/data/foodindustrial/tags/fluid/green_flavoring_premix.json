@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:green_flavoring_premix",
+    "foodindustrial:flowing_green_flavoring_premix",
+    {
+      "id": "#forge:green_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:green_flavoring_premix",
+      "required": false
+    }
+  ]
+}

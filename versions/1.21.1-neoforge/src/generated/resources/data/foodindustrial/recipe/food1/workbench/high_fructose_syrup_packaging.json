@@ -1,0 +1,21 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "foodindustrial:high_fructose_syrup_bucket"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:containers/glass_bottle"
+      }
+    }
+  ],
+  "process": "packaging",
+  "result": {
+    "count": 4,
+    "item": "foodindustrial:high_fructose_syrup"
+  }
+}

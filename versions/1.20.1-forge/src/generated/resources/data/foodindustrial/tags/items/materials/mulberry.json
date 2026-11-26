@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:mulberry"
+    "foodindustrial:mulberry",
+    {
+      "id": "#forge:crops/mulberry",
+      "required": false
+    },
+    {
+      "id": "#c:crops/mulberry",
+      "required": false
+    }
   ]
 }

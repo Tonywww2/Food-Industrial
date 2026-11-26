@@ -1,0 +1,431 @@
+{
+ "id": "koji_room",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\koji_room_front.png",
+  "inner": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\koji_room_inner.png",
+  "parts": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\koji_room_parts.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\koji_room_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\koji_room_top.png"
+ },
+ "elements": [
+  {
+   "name": "body0",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    2,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body1",
+   "from": [
+    0,
+    2,
+    0
+   ],
+   "to": [
+    5,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      11,
+      0,
+      16,
+      14
+     ]
+    },
+    "east": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      14
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      5,
+      14
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      14
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      5,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body2",
+   "from": [
+    11,
+    2,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      5,
+      14
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      14
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      11,
+      0,
+      16,
+      14
+     ]
+    },
+    "west": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      14
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      11,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body3",
+   "from": [
+    5,
+    13,
+    0
+   ],
+   "to": [
+    11,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      5,
+      0,
+      11,
+      3
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      5,
+      0,
+      11,
+      3
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      5,
+      0,
+      11,
+      16
+     ]
+    },
+    "down": {
+     "texture": "inner",
+     "uv": [
+      5,
+      0,
+      11,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body4",
+   "from": [
+    5,
+    2,
+    1
+   ],
+   "to": [
+    11,
+    13,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      5,
+      3,
+      11,
+      14
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      5,
+      3,
+      11,
+      14
+     ]
+    }
+   }
+  },
+  {
+   "name": "knob",
+   "from": [
+    6,
+    6,
+    0
+   ],
+   "to": [
+    7,
+    7,
+    1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      0.5,
+      0.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      0.5,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      0.5,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      0.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      0.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "thermometer",
+   "from": [
+    3,
+    7,
+    -1
+   ],
+   "to": [
+    4,
+    12,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.5,
+      0.0,
+      1.0,
+      2.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      1.5,
+      2.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      1.5,
+      2.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      1.5,
+      0.0,
+      2.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      1.5,
+      0.0,
+      2.0,
+      0.5
+     ]
+    }
+   }
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}

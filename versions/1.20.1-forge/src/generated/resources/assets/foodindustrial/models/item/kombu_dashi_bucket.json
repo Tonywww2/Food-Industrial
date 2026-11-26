@@ -1,0 +1,5 @@
+{
+  "parent": "forge:item/bucket",
+  "fluid": "foodindustrial:kombu_dashi",
+  "loader": "forge:fluid_container"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:maltose_syrup_wort",
+    "foodindustrial:flowing_maltose_syrup_wort",
+    {
+      "id": "#forge:maltose_syrup_wort",
+      "required": false
+    },
+    {
+      "id": "#c:maltose_syrup_wort",
+      "required": false
+    }
+  ]
+}

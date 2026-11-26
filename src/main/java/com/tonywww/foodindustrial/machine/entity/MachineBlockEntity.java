@@ -43,6 +43,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluids;
 import org.jetbrains.annotations.Nullable;
+import com.tonywww.foodindustrial.core.purity.Purity;
+import com.tonywww.foodindustrial.food.flavor.FlavorType;
+import com.tonywww.foodindustrial.food.flavor.Flavorings;
+import com.tonywww.foodindustrial.recipe.ProcessOutput;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A machine (machines/02 §4–6): owns the components, runs a batch every 4 ticks on its type's phase,
@@ -110,10 +116,17 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         this.tanks = new TankSet(definition.layout().fluidIn(), definition.layout().fluidOut(), definition.tankCapacity(), this::tanksChanged);
         this.energy = definition.power() == PowerKind.ENERGY
             ? new EnergyBuffer(definition.energyCapacity(), Math.max(1, definition.energyCapacity() / 20), this::energyReceived) : null;
-        this.heat = definition.layout().fuel() > 0 ? new HeatSource() : null;
+        // a coolant in the fuel slots (M50, I47.5) does not burn
+        this.heat = definition.layout().fuel() > 0 && !definition.coolant() ? new HeatSource() : null;
         this.catalysts = new CatalystCounters(definition.layout().catalyst());
         this.capabilities = definition.capabilities();
         recomputeCapabilities();
+    }
+
+    /** Room for the panel of the immersive display around and above the block (machines/04 §9). */
+    @Override
+    protected int renderReach() {
+        return 1;
     }
 
     // ---- accessors ----
@@ -253,13 +266,13 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
 
     protected final void recomputeCapabilities() {
         Capabilities result = definition.capabilities();
-        if (definition.airIntake() && airOpen) {
+        MachineMode current = mode();
+        if (definition.airIntake() && airOpen && !MachineDefinition.sealed(current)) {
             result = result.with(Capabilities.of(MachineDefinition.AIR));
         }
         if (definition.gas() != null && gasPresent) {
             result = result.with(Capabilities.of(definition.gas().capability()));
         }
-        MachineMode current = mode();
         if (current != null) {
             result = result.with(current.capabilities());
             if (current.outdoors()) {
@@ -290,7 +303,65 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
      */
     @Nullable
     public String recipeLacking(ProcessRecipe recipe) {
-        return null;
+        return flavorLacking(recipe);
+    }
+
+    // ---- flavour type (I48, 2026-11-19, user) ----
+
+    /** Flavour type the machine makes: {@code -1} automatic, else a {@link FlavorType} ordinal. */
+    private int flavorTarget = -1;
+
+    public int flavorTarget() {
+        return flavorTarget;
+    }
+
+    /** Sets the flavour type the machine makes ({@code -1}: automatic), on the machines that choose one. */
+    public void setFlavorTarget(int target) {
+        if (!definition.choosesFlavor()) {
+            return;
+        }
+        flavorTarget = target < 0 || target >= FlavorType.values().length ? -1 : target;
+        inputsChanged();
+        settingsChanged();
+    }
+
+    /**
+     * Why the machine does not run a flavouring recipe: it makes a flavouring (or the coarse emulsion of one) of another
+     * type than the one set, or on "automatic" than the first group of the first flavouring material in the inputs.
+     */
+    @Nullable
+    protected String flavorLacking(ProcessRecipe recipe) {
+        if (!definition.choosesFlavor() || recipe.outputs().isEmpty()) {
+            return null;
+        }
+        ProcessOutput main = recipe.outputs().get(0);
+        FlavorType made = main.isFluid() ? Flavorings.typeOfPremix(main.fluid()) : Flavorings.type(main.item());
+        if (made == null) {
+            return null;
+        }
+        FlavorType wanted = flavorTarget >= 0 ? FlavorType.values()[flavorTarget] : Flavorings.autoType(inputMaterials());
+        return made == wanted ? null : "gui.foodindustrial.need.flavor_target";
+    }
+
+    /** Materials (plain ids) of the input slots, then the input tanks, in order. */
+    private List<String> inputMaterials() {
+        List<String> materials = new ArrayList<>();
+        for (int i = 0; i < inventory.count(SlotRole.INPUT); i++) {
+            String material = com.tonywww.foodindustrial.food.quality.QualityRules.material(inventory.get(SlotRole.INPUT, i));
+            if (material != null) {
+                materials.add(material);
+            }
+        }
+        for (int i = 0; i < tanks.inputs(); i++) {
+            FluidAmount fluid = tanks.get(i);
+            if (!fluid.isEmpty()) {
+                String material = com.tonywww.foodindustrial.food.quality.QualityRules.plain(Purity.materialOf(fluid.fluid()));
+                if (material != null) {
+                    materials.add(material);
+                }
+            }
+        }
+        return materials;
     }
 
     /** Copies the structure allows per parallel copy of the upgrades (M29: one per vessel layer). */
@@ -539,7 +610,12 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
                 recomputeCapabilities();
                 inputsChanged();
             }
+            case ADDITIVE -> inputsChanged();
             case FUEL -> {
+                // M50's coolant decides what the machine can do (I47.5)
+                if (definition.coolant()) {
+                    inputsChanged();
+                }
             }
         }
         wake();
@@ -967,11 +1043,15 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
     }
 
     /**
-     * Whether automation should put {@code stack} only into the fuel slots: the machine burns fuel and
-     * no recipe of the machine uses the item (I14: an item port also takes fuel).
+     * Whether automation should put {@code stack} only into the fuel slots: a fuel slot takes it (fuel, or M50's
+     * coolant) and no recipe of the machine uses the item (I14: an item port also takes fuel).
      */
     public boolean fuelOnly(ItemStack stack) {
-        if (inventory.count(SlotRole.FUEL) == 0 || PlatformFuel.burnTime(level, stack) <= 0) {
+        boolean fuel = false;
+        for (int i = 0; i < inventory.count(SlotRole.FUEL) && !fuel; i++) {
+            fuel = definition.fuelAccepts(level, i, stack);
+        }
+        if (!fuel) {
             return false;
         }
         RecipeIndex index = RecipeIndex.get(level);
@@ -1107,9 +1187,14 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
             if (!definition.slotAccepts(role, slot - definition.layout().start(role), stack)) {
                 return false;
             }
+            // additives come in only through faces and ports set to "additive", and those feed nothing else
+            // (foods/05 §3, I41, I42)
+            if ((mode == SideConfig.Mode.ADDITIVE) != (role == SlotRole.ADDITIVE)) {
+                return false;
+            }
             return switch (role) {
                 case INPUT -> inventory.allowedByLock(slot, stack) && (!inventory.lock(slot).isEmpty() || !fuelOnly(stack));
-                case FUEL -> PlatformFuel.burnTime(level, stack) > 0;
+                case FUEL -> definition.fuelAccepts(level, slot - definition.layout().start(role), stack);
                 default -> true;
             };
         }
@@ -1223,6 +1308,9 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         if (mode != 0) {
             out.putInt("Mode", mode);
         }
+        if (flavorTarget >= 0) {
+            out.putInt("FlavorTarget", flavorTarget);
+        }
         inventory.saveLocks(out);
         tanks.saveLocks(out);
         tanks.saveVents(out);
@@ -1233,6 +1321,8 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
         sides.clampTanks(tanks.inputs(), tanks.outputs());
         redstone = RedstoneControl.byIndex(in.getByte("Redstone", (byte) 0));
         mode = definition.modes().isEmpty() ? 0 : Math.floorMod(in.getInt("Mode", 0), definition.modes().size());
+        int target = in.getInt("FlavorTarget", -1);
+        flavorTarget = definition.choosesFlavor() && target >= 0 && target < FlavorType.values().length ? target : -1;
         inventory.loadLocks(in);
         tanks.loadLocks(in);
         tanks.loadVents(in);
@@ -1241,7 +1331,8 @@ public abstract class MachineBlockEntity extends FIBlockEntity implements Storag
 
     /** Whether the settings are all default. */
     public boolean hasDefaultConfig() {
-        return sides.isDefault() && redstone == RedstoneControl.IGNORE && mode == 0 && !inventory.hasLocks() && !tanks.hasLocks() && !tanks.hasVents();
+        return sides.isDefault() && redstone == RedstoneControl.IGNORE && mode == 0 && flavorTarget < 0 && !inventory.hasLocks() && !tanks.hasLocks()
+            && !tanks.hasVents();
     }
 
     /**

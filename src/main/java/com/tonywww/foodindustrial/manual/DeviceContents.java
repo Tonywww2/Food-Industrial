@@ -164,7 +164,7 @@ public final class DeviceContents {
         }
         for (int tank : tankIndices) {
             FluidAmount here = tanks[tank];
-            if (!here.isEmpty() && here.fluid() == fluid.fluid() && here.amount() + fluid.amount() <= tankCapacity) {
+            if (!here.isEmpty() && here.joins(fluid) && here.amount() + fluid.amount() <= tankCapacity) {
                 tanks[tank] = Purity.merge(here, fluid);
                 return true;
             }

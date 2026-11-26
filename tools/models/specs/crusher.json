@@ -1,0 +1,725 @@
+{
+ "id": "crusher",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crusher_front.png",
+  "inner": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crusher_inner.png",
+  "parts": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crusher_parts.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crusher_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\crusher_top.png"
+ },
+ "elements": [
+  {
+   "name": "body0",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    4,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      12,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body1",
+   "from": [
+    0,
+    4,
+    0
+   ],
+   "to": [
+    2,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      14,
+      0,
+      16,
+      12
+     ]
+    },
+    "east": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      2,
+      12
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      2,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body2",
+   "from": [
+    14,
+    4,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      2,
+      12
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      14,
+      0,
+      16,
+      12
+     ]
+    },
+    "west": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      16,
+      12
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      14,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body3",
+   "from": [
+    2,
+    14,
+    0
+   ],
+   "to": [
+    14,
+    16,
+    6
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      2,
+      0,
+      14,
+      2
+     ]
+    },
+    "south": {
+     "texture": "inner",
+     "uv": [
+      2,
+      0,
+      14,
+      2
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      2,
+      0,
+      14,
+      6
+     ]
+    },
+    "down": {
+     "texture": "inner",
+     "uv": [
+      2,
+      10,
+      14,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body4",
+   "from": [
+    2,
+    4,
+    5
+   ],
+   "to": [
+    14,
+    14,
+    6
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      2,
+      2,
+      14,
+      12
+     ]
+    },
+    "south": {
+     "texture": "inner",
+     "uv": [
+      2,
+      2,
+      14,
+      12
+     ]
+    }
+   }
+  },
+  {
+   "name": "body5",
+   "from": [
+    2,
+    4,
+    6
+   ],
+   "to": [
+    14,
+    12,
+    16
+   ],
+   "faces": {
+    "south": {
+     "texture": "side",
+     "uv": [
+      2,
+      4,
+      14,
+      12
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      2,
+      6,
+      14,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body6",
+   "from": [
+    2,
+    12,
+    6
+   ],
+   "to": [
+    3,
+    16,
+    16
+   ],
+   "faces": {
+    "east": {
+     "texture": "inner",
+     "uv": [
+      0,
+      0,
+      10,
+      4
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      2,
+      0,
+      3,
+      4
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      2,
+      6,
+      3,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body7",
+   "from": [
+    13,
+    12,
+    6
+   ],
+   "to": [
+    14,
+    16,
+    16
+   ],
+   "faces": {
+    "south": {
+     "texture": "side",
+     "uv": [
+      13,
+      0,
+      14,
+      4
+     ]
+    },
+    "west": {
+     "texture": "inner",
+     "uv": [
+      6,
+      0,
+      16,
+      4
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      13,
+      6,
+      14,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "body8",
+   "from": [
+    3,
+    12,
+    9
+   ],
+   "to": [
+    13,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "inner",
+     "uv": [
+      3,
+      0,
+      13,
+      4
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      3,
+      0,
+      13,
+      4
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      3,
+      9,
+      13,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "tooth0",
+   "from": [
+    3,
+    4,
+    1
+   ],
+   "to": [
+    5,
+    6,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.5,
+      1.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "tooth1",
+   "from": [
+    5,
+    4,
+    1
+   ],
+   "to": [
+    7,
+    7,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.5,
+      1.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      3.5,
+      0.0,
+      5.0,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      3.5,
+      0.0,
+      5.0,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.5,
+      1.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "tooth2",
+   "from": [
+    7,
+    4,
+    1
+   ],
+   "to": [
+    9,
+    6,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.5,
+      1.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "tooth3",
+   "from": [
+    9,
+    4,
+    1
+   ],
+   "to": [
+    11,
+    7,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.5,
+      1.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      3.5,
+      0.0,
+      5.0,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      3.5,
+      0.0,
+      5.0,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.5,
+      1.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "tooth4",
+   "from": [
+    11,
+    4,
+    1
+   ],
+   "to": [
+    13,
+    6,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      1.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.5,
+      1.5
+     ]
+    }
+   }
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}

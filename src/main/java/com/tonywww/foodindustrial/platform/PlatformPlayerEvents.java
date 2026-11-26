@@ -63,6 +63,8 @@ public final class PlatformPlayerEvents {
     private static ExhaustionScale exhaustion;
     @Nullable
     private static InteractionGate gate;
+    @Nullable
+    private static DamageTakenScale damageTaken;
 
     private PlatformPlayerEvents() {
     }
@@ -129,6 +131,21 @@ public final class PlatformPlayerEvents {
     /** Sets the exhaustion scale (one per mod). */
     public static void setExhaustionScale(ExhaustionScale scale) {
         exhaustion = scale;
+    }
+
+    /** Scales the damage a server player is about to lose health by (after armour and other reductions). */
+    @FunctionalInterface
+    public interface DamageTakenScale {
+        float scale(ServerPlayer player, float amount);
+    }
+
+    /** Sets the damage-taken scale (one per mod). */
+    public static void setDamageTakenScale(DamageTakenScale scale) {
+        damageTaken = scale;
+    }
+
+    private static float scaleDamage(Player player, float amount) {
+        return damageTaken != null && amount > 0 && player instanceof ServerPlayer server ? damageTaken.scale(server, amount) : amount;
     }
 
     /** Decides whether a player may sleep. */
@@ -240,8 +257,11 @@ public final class PlatformPlayerEvents {
             }
         });
         bus.addListener((LivingDamageEvent event) -> {
-            if (event.getAmount() > 0 && event.getEntity() instanceof ServerPlayer player) {
-                each(DAMAGED, player);
+            if (event.getEntity() instanceof ServerPlayer player) {
+                event.setAmount(scaleDamage(player, event.getAmount()));
+                if (event.getAmount() > 0) {
+                    each(DAMAGED, player);
+                }
             }
         });
         bus.addListener((LivingEntityUseItemEvent.Finish event) -> {
@@ -381,6 +401,11 @@ public final class PlatformPlayerEvents {
 
     //? if neoforge && <26.1 {
     /*private static void bindDamageAndBreak(net.neoforged.bus.api.IEventBus bus) {
+        bus.addListener((LivingDamageEvent.Pre event) -> {
+            if (event.getEntity() instanceof ServerPlayer player) {
+                event.setNewDamage(scaleDamage(player, event.getNewDamage()));
+            }
+        });
         bus.addListener((LivingDamageEvent.Post event) -> {
             if (event.getNewDamage() > 0 && event.getEntity() instanceof ServerPlayer player) {
                 each(DAMAGED, player);
@@ -396,6 +421,11 @@ public final class PlatformPlayerEvents {
 
     //? if >=26.1 {
     /*private static void bindDamageAndBreak(net.neoforged.bus.api.IEventBus bus) {
+        bus.addListener((LivingDamageEvent.Pre event) -> {
+            if (event.getEntity() instanceof ServerPlayer player) {
+                event.setNewDamage(scaleDamage(player, event.getNewDamage()));
+            }
+        });
         bus.addListener((LivingDamageEvent.Post event) -> {
             if (event.getHealthDamage() > 0 && event.getEntity() instanceof ServerPlayer player) {
                 each(DAMAGED, player);

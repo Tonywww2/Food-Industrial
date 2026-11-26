@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:blast_furnace",
+    "C": "#c:ingots/copper",
+    "I": "#c:ingots/iron"
+  },
+  "pattern": [
+    "CIC",
+    "IBI",
+    "CIC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:uht_section"
+  }
+}

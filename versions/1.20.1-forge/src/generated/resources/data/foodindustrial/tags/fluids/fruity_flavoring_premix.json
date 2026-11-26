@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:fruity_flavoring_premix",
+    "foodindustrial:flowing_fruity_flavoring_premix",
+    {
+      "id": "#forge:fruity_flavoring_premix",
+      "required": false
+    },
+    {
+      "id": "#c:fruity_flavoring_premix",
+      "required": false
+    }
+  ]
+}

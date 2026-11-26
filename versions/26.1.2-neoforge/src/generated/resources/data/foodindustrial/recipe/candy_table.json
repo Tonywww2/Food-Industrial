@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": "minecraft:furnace",
+    "P": "#minecraft:planks",
+    "S": "minecraft:smooth_stone_slab"
+  },
+  "pattern": [
+    "SSS",
+    "PFP",
+    "P P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:candy_table"
+  }
+}

@@ -21,9 +21,11 @@ import java.util.Optional;
  * { "mod": "minecraft", "priority": 0, "entries": [ { "items": ["minecraft:apple"], "serving_g": 182,
  *   "per_serving": { "caffeine_mg": 0, … }, "impurity": 0, "energy_kcal": 95, "basis": { … } } ] }
  * </pre>
- * A missing component key counts as 0 and is recorded as missing; an unknown key, {@code serving_g} ≤ 0 or a
- * negative amount make the whole file malformed. {@code impurity} (units per serving, foods/02 §5.1) is optional
- * and defaults to 0; it is not a component and never counts as missing.
+ * A missing component key counts as 0 and is recorded as missing (optional components are not recorded); an
+ * unknown key, {@code serving_g} ≤ 0 or a negative amount make the whole file malformed. {@code impurity} (units per
+ * serving, foods/02 §5.1) is optional and defaults to 0; it is not a component and never counts as missing.
+ * {@code curing_nitrite_mg} and {@code misuse_nitrite_mg} (I45, optional) are the nitrite one serving adds when the
+ * stack carries a colour-retention agent or had nitrite taken for salt (foods/02 §4.4).
  *
  * @param source   file id ({@code namespace:path}), for messages
  * @param mod      mod the data is for; the file is skipped when it is not loaded
@@ -41,12 +43,15 @@ public record NutritionFile(String source, String mod, int priority, List<Entry>
      * @param amounts    amount per serving of each {@link Component}, by ordinal
      * @param missing    mask of the components the entry did not name ({@link Component#bit()})
      * @param impurity   impurity units per serving (0 for none)
+     * @param curingNitrite nitrite (mg, as sodium nitrite) added when a colour-retention agent was used (I45)
+     * @param misuseNitrite nitrite (mg) added when nitrite was taken for salt: the serving's salt (I45)
      * @param energyKcal energy per serving, for the report only
      * @param basis      where the numbers come from, as written; the game never reads it
      * @param onlyOn     generation inputs only: the Minecraft versions to generate the entry for ({@code null}:
      *                   all nodes)
      */
     public record Entry(List<String> items, double servingG, double[] amounts, int missing, double impurity,
+                        double curingNitrite, double misuseNitrite,
                         Optional<Double> energyKcal, Optional<JsonElement> basis, Optional<List<String>> onlyOn) {
         public Entry {
             items = List.copyOf(items);
@@ -63,6 +68,7 @@ public record NutritionFile(String source, String mod, int priority, List<Entry>
     }
 
     private record RawEntry(List<String> items, double servingG, Map<String, Double> perServing, double impurity,
+                            double curingNitrite, double misuseNitrite,
                             Optional<Double> energyKcal, Optional<Dynamic<?>> basis, Optional<List<String>> onlyOn) {
     }
 
@@ -75,6 +81,8 @@ public record NutritionFile(String source, String mod, int priority, List<Entry>
             Codec.DOUBLE.fieldOf("serving_g").forGetter(RawEntry::servingG),
             Codec.unboundedMap(Codec.STRING, Codec.DOUBLE).fieldOf("per_serving").forGetter(RawEntry::perServing),
             StrictCodecs.optional("impurity", Codec.DOUBLE, 0.0).forGetter(RawEntry::impurity),
+            StrictCodecs.optional("curing_nitrite_mg", Codec.DOUBLE, 0.0).forGetter(RawEntry::curingNitrite),
+            StrictCodecs.optional("misuse_nitrite_mg", Codec.DOUBLE, 0.0).forGetter(RawEntry::misuseNitrite),
             StrictCodecs.optional("energy_kcal", Codec.DOUBLE).forGetter(RawEntry::energyKcal),
             StrictCodecs.optional("basis", Codec.PASSTHROUGH).forGetter(RawEntry::basis),
             (input ? StrictCodecs.optional("only_on", Codec.STRING.listOf())
@@ -141,17 +149,21 @@ public record NutritionFile(String source, String mod, int priority, List<Entry>
             amounts[component.ordinal()] = amount.getValue();
             named |= component.bit();
         }
-        if (!(raw.impurity() >= 0)) {
-            throw new IllegalArgumentException("impurity must not be negative (" + raw.items().get(0) + ")");
+        if (!(raw.impurity() >= 0) || !(raw.curingNitrite() >= 0) || !(raw.misuseNitrite() >= 0)) {
+            throw new IllegalArgumentException("impurity and nitrite amounts must not be negative (" + raw.items().get(0) + ")");
         }
         if (raw.energyKcal().isPresent() && !(raw.energyKcal().get() >= 0)) {
             throw new IllegalArgumentException("energy_kcal must not be negative (" + raw.items().get(0) + ")");
         }
         Optional<JsonElement> basis = raw.basis().map(dynamic -> dynamic.convert(JsonOps.INSTANCE).getValue());
-        return new Entry(raw.items(), raw.servingG(), amounts, Component.ALL & ~named, raw.impurity(), raw.energyKcal(), basis, raw.onlyOn());
+        return new Entry(raw.items(), raw.servingG(), amounts, Component.REQUIRED & ~named, raw.impurity(), raw.curingNitrite(),
+            raw.misuseNitrite(), raw.energyKcal(), basis, raw.onlyOn());
     }
 
-    /** The file as written to a data pack: generation-only fields left out, every component key written. */
+    /**
+     * The file as written to a data pack: generation-only fields left out, every component key written except the
+     * ones an entry leaves out (the mod's products where their composition source gives no value, I45).
+     */
     public JsonObject toJson() {
         JsonObject root = new JsonObject();
         root.addProperty("mod", mod);
@@ -167,11 +179,19 @@ public record NutritionFile(String source, String mod, int priority, List<Entry>
             object.addProperty("serving_g", number(entry.servingG()));
             JsonObject perServing = new JsonObject();
             for (Component component : Component.all()) {
-                perServing.addProperty(component.key(), number(entry.amount(component)));
+                if ((entry.missing() & component.bit()) == 0) {
+                    perServing.addProperty(component.key(), number(entry.amount(component)));
+                }
             }
             object.add("per_serving", perServing);
             if (entry.impurity() > 0) {
                 object.addProperty("impurity", number(entry.impurity()));
+            }
+            if (entry.curingNitrite() > 0) {
+                object.addProperty("curing_nitrite_mg", number(entry.curingNitrite()));
+            }
+            if (entry.misuseNitrite() > 0) {
+                object.addProperty("misuse_nitrite_mg", number(entry.misuseNitrite()));
             }
             entry.energyKcal().ifPresent(energy -> object.addProperty("energy_kcal", number(energy)));
             entry.basis().ifPresent(basis -> object.add("basis", basis));

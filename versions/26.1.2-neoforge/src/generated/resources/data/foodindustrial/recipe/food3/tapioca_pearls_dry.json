@@ -1,0 +1,17 @@
+{
+  "type": "foodindustrial:drying",
+  "inputs": [
+    {
+      "semi_finished": "tapioca_pearls|raw_pearls"
+    }
+  ],
+  "outputs": [
+    {
+      "semi_finished": "tapioca_pearls|dry_pearls"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0"
+  },
+  "time": 200
+}

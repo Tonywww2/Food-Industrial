@@ -1,0 +1,45 @@
+{
+  "category": "foodindustrial:t2",
+  "icon": "foodindustrial:cooker_fryer",
+  "name": "book.foodindustrial.manual.entry.cooker_fryer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:cooker_fryer",
+      "text": "book.foodindustrial.manual.entry.cooker_fryer.text"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": true,
+      "multiblock": {
+        "mapping": {
+          "0": "foodindustrial:cooker_fryer[facing=south]",
+          "A": "foodindustrial:food_machine_casing"
+        },
+        "pattern": [
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ],
+          [
+            "AAA",
+            "A A",
+            "A0A"
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ]
+      },
+      "name": "book.foodindustrial.manual.entry.cooker_fryer"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "book.foodindustrial.manual.entry.cooker_fryer.structure"
+    }
+  ],
+  "sortnum": 12
+}

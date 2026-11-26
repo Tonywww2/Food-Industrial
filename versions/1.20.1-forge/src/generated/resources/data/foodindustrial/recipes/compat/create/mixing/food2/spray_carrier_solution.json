@@ -1,0 +1,43 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/starch_sodium_octenylsuccinate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/gum_arabic"
+    },
+    {
+      "amount": 1000,
+      "fluidTag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:spray_carrier_solution"
+    }
+  ]
+}

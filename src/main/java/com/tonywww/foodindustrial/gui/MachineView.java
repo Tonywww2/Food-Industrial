@@ -91,6 +91,8 @@ public final class MachineView {
     public int auto;
     public int redstone;
     public int mode;
+    /** Flavour type the machine makes (I48): {@code -1} automatic, else a {@link com.tonywww.foodindustrial.food.flavor.FlavorType} ordinal. */
+    public int flavorTarget = -1;
     // UPGRADES
     public int speedPermille = 1000;
     public int energyPermille = 1000;
@@ -208,6 +210,7 @@ public final class MachineView {
                 | (sides.autoOutputItems() ? 4 : 0) | (sides.autoOutputFluids() ? 8 : 0);
             view.redstone = machine.redstone().ordinal();
             view.mode = machine.modeIndex();
+            view.flavorTarget = machine.flavorTarget();
         }
         if ((groups & UPGRADES) != 0) {
             view.speedPermille = machine.upgrades().speedPermille();
@@ -289,7 +292,8 @@ public final class MachineView {
             case CATALYST -> Arrays.equals(catalystLeft, o.catalystLeft);
             case CONFIG -> Arrays.equals(sideItems, o.sideItems) && Arrays.equals(sideFluids, o.sideFluids)
                 && Arrays.equals(itemScopes, o.itemScopes) && Arrays.equals(fluidOutTanks, o.fluidOutTanks)
-                && Arrays.equals(fluidInTanks, o.fluidInTanks) && auto == o.auto && redstone == o.redstone && mode == o.mode;
+                && Arrays.equals(fluidInTanks, o.fluidInTanks) && auto == o.auto && redstone == o.redstone && mode == o.mode
+                && flavorTarget == o.flavorTarget;
             case UPGRADES -> speedPermille == o.speedPermille && energyPermille == o.energyPermille && parallel == o.parallel
                 && normalizing == o.normalizing
                 && capabilities.equals(o.capabilities) && moduleCapabilities.equals(o.moduleCapabilities);
@@ -364,6 +368,7 @@ public final class MachineView {
             auto = o.auto;
             redstone = o.redstone;
             mode = o.mode;
+            flavorTarget = o.flavorTarget;
         }
         if ((groups & UPGRADES) != 0) {
             speedPermille = o.speedPermille;
@@ -450,6 +455,7 @@ public final class MachineView {
             out.putInt("Auto", auto);
             out.putInt("Redstone", redstone);
             out.putInt("Mode", mode);
+            out.putInt("FlavorTarget", flavorTarget);
         }
         if ((groups & UPGRADES) != 0) {
             out.putInt("Speed", speedPermille);
@@ -549,6 +555,7 @@ public final class MachineView {
             view.auto = in.getInt("Auto", 0);
             view.redstone = in.getInt("Redstone", 0);
             view.mode = in.getInt("Mode", 0);
+            view.flavorTarget = in.getInt("FlavorTarget", -1);
         }
         if ((groups & UPGRADES) != 0) {
             view.speedPermille = in.getInt("Speed", 1000);

@@ -1,0 +1,33 @@
+{
+  "type": "nuclearcraft:crystallizer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearcraft"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "nuclearcraft",
+      "tiers": [
+        "t4"
+      ]
+    }
+  ],
+  "inputFluids": [
+    {
+      "amount": 500,
+      "tag": "foodindustrial:glucose_syrup"
+    }
+  ],
+  "output": [
+    {
+      "type": "forge:nbt",
+      "count": 4,
+      "item": "foodindustrial:glucose",
+      "nbt": "{Purity:42b}"
+    }
+  ],
+  "powerModifier": 1.0,
+  "radiation": 1.0,
+  "timeModifier": 1.0
+}

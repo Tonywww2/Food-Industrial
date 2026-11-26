@@ -1784,20 +1784,20 @@
 
 | 原料 | 配方引用标签 | 现实来源 | 本模组来源 | 用于 |
 | --- | --- | --- | --- | --- |
-| 龙脑樟枝叶 | `materials/borneol_camphor_leaf` | 龙脑樟 Cinnamomum camphora（龙脑型化学型）枝叶；江西吉安、湖南新晃、贵州等地人工林 | 暂无来源 | S0028 |
-| 烯烃复分解催化剂 | `catalysts/metathesis` | 钌卡宾络合物（格拉布催化剂）或 Re2O7/Al2O3（加四甲基锡助剂）；工业乙烯解另用钨、钼卡宾络合物 | 暂无来源（催化剂，按次数消耗，待定） | S0334、`diethyl_octadecenedioate` |
-| 乌桕籽 | `materials/tallow_tree_seed` | 乌桕 *Triadica sebifera* (L.) Small（异名 *Sapium sebiferum*）的种子，外被白色蜡层（桕脂），种仁榨油即梓油；主产中国长江流域及以南 | 暂无来源 | S0482 |
-| 蒜头果种子 | `materials/malania_seed` | 蒜头果 Malania oleifera Chun et S. K. Lee 的种子，种仁油富含 15-二十四碳烯酸（神经酸）；产云南东南部、广西西部 | 暂无来源 | S0637 |
-| 可可毛色二孢（菌种） | `cultures/lasiodiplodia` | Lasiodiplodia theobromae（异名 Botryodiplodia theobromae），热带植物病原真菌，深层发酵分泌茉莉酸 | 暂无来源 | S0565 |
-| 香菇（干） | `materials/shiitake` | 香菇 *Lentinula edodes* 的干燥子实体，主产中国、日本、韩国；复水时酶解生成香菇素 | 暂无来源 | S0683 A |
-| 芥菜籽 | `materials/mustard_seed` | 黑芥 *Brassica nigra*（*Rhamphospermum nigrum*）、褐芥 *Brassica juncea* 种子，含黑芥子苷，主产印度、加拿大、尼泊尔、中国 | 暂无来源 | S0762 A |
+| 龙脑樟枝叶 | `materials/borneol_camphor_leaf` | 龙脑樟 Cinnamomum camphora（龙脑型化学型）枝叶；江西吉安、湖南新晃、贵州等地人工林 | 树木类（08 §来源规则） | S0028 |
+| 烯烃复分解催化剂 | `catalysts/metathesis` | 钌卡宾络合物（格拉布催化剂）或 Re2O7/Al2O3（加四甲基锡助剂）；工业乙烯解另用钨、钼卡宾络合物 | 催化剂，按次数消耗（08 §来源规则） | S0334、`diethyl_octadecenedioate` |
+| 乌桕籽 | `materials/tallow_tree_seed` | 乌桕 *Triadica sebifera* (L.) Small（异名 *Sapium sebiferum*）的种子，外被白色蜡层（桕脂），种仁榨油即梓油；主产中国长江流域及以南 | 树木类（08 §来源规则） | S0482 |
+| 蒜头果种子 | `materials/malania_seed` | 蒜头果 Malania oleifera Chun et S. K. Lee 的种子，种仁油富含 15-二十四碳烯酸（神经酸）；产云南东南部、广西西部 | 树木类（08 §来源规则） | S0637 |
+| 可可毛色二孢（菌种） | `cultures/lasiodiplodia` | Lasiodiplodia theobromae（异名 Botryodiplodia theobromae），热带植物病原真菌，深层发酵分泌茉莉酸 | 菌藻类（08 §来源规则） | S0565 |
+| 香菇（干） | `materials/shiitake` | 香菇 *Lentinula edodes* 的干燥子实体，主产中国、日本、韩国；复水时酶解生成香菇素 | 野生植物类（08 §来源规则） | S0683 A |
+| 芥菜籽 | `materials/mustard_seed` | 黑芥 *Brassica nigra*（*Rhamphospermum nigrum*）、褐芥 *Brassica juncea* 种子，含黑芥子苷，主产印度、加拿大、尼泊尔、中国 | 作物类（08 §来源规则） | S0762 A |
 | 西瓜 | `materials/melon` | 西瓜 Citrullus lanatus 果肉（含 9-脂氧合酶、氢过氧化物裂解酶），中国、土耳其、印度主产 | 原版 `minecraft:melon_slice` | S0862 |
-| 宽叶薄荷桉叶 | `materials/eucalyptus_dives` | *Eucalyptus dives* Schauer 叶，原产澳大利亚东南部，南非栽培为胡椒酮油主产地 | 暂无来源 | S0955 |
-| 山葵根茎 | `materials/wasabi` | *Eutrema japonicum* (Miq.) Koidz.（*Wasabia japonica*）根茎，日本、中国云南与四川 | 暂无来源 | S1081、S1087、S1088 |
-| 香紫苏（复用 N 组标签） | `materials/clary_sage_herb` | *Salvia sclarea* L. 花期全草，N108 蒸油后的秸秆用于提取香紫苏醇 | 暂无来源（同 N108） | S1049（经 `sclareol`） |
+| 宽叶薄荷桉叶 | `materials/eucalyptus_dives` | *Eucalyptus dives* Schauer 叶，原产澳大利亚东南部，南非栽培为胡椒酮油主产地 | 树木类（08 §来源规则） | S0955 |
+| 山葵根茎 | `materials/wasabi` | *Eutrema japonicum* (Miq.) Koidz.（*Wasabia japonica*）根茎，日本、中国云南与四川 | 作物类（08 §来源规则） | S1081、S1087、S1088 |
+| 香紫苏（复用 N 组标签） | `materials/clary_sage_herb` | *Salvia sclarea* L. 花期全草，N108 蒸油后的秸秆用于提取香紫苏醇 | 作物类（同 N108；08 §来源规则） | S1049（经 `sclareol`） |
 | 山楂核 | `materials/hawthorn_kernel` | 山楂 *Crataegus pinnatifida* Bunge 果核（果品加工副产），中国华北、东北 | `materials/hawthorn_fruit`（N1 组新增）去肉取核（游戏简化：M11 粉碎时副产） | S1230、S1231 |
-| 柏木 | `materials/cedarwood` | 柏木 *Cupressus funebris* Endl. 木材（中国四川、贵州）；北美红桧 *Juniperus virginiana* L. 木材（美国） | 暂无来源 | S1197（经 `cedrol`） |
-| 高芥酸菜籽 | `materials/rapeseed` | 甘蓝型油菜高芥酸品种（Brassica napus，HEAR）与海甘蓝（Crambe abyssinica）的种子，油中芥酸约 45%–55%；加拿大、欧洲 | 暂无来源 | S1281（经 `brassylic_acid`） |
+| 柏木 | `materials/cedarwood` | 柏木 *Cupressus funebris* Endl. 木材（中国四川、贵州）；北美红桧 *Juniperus virginiana* L. 木材（美国） | 树木类（08 §来源规则） | S1197（经 `cedrol`） |
+| 高芥酸菜籽 | `materials/rapeseed` | 甘蓝型油菜高芥酸品种（Brassica napus，HEAR）与海甘蓝（Crambe abyssinica）的种子，油中芥酸约 45%–55%；加拿大、欧洲 | 作物类（08 §来源规则） | S1281（经 `brassylic_acid`） |
 | 产亮氨酸谷氨酸棒杆菌 | `cultures/corynebacterium_leucine` | 谷氨酸棒杆菌的营养缺陷、类似物抗性诱变株 | M30 诱变：谷氨酸棒杆菌（`cultures/corynebacterium`） | S0326 |
 | 产脯氨酸谷氨酸棒杆菌 | `cultures/corynebacterium_proline` | 谷氨酸棒杆菌的营养缺陷、类似物抗性诱变株 | M30 诱变：谷氨酸棒杆菌（`cultures/corynebacterium`） | S0339 |
 | 产精氨酸谷氨酸棒杆菌 | `cultures/corynebacterium_arginine` | 谷氨酸棒杆菌的营养缺陷、类似物抗性诱变株 | M30 诱变：谷氨酸棒杆菌（`cultures/corynebacterium`） | S0343 |
@@ -2231,7 +2231,7 @@
 - S0474 维蒂希路线按 (Z)-4-烯酸酯的常用合成法拟定，未找到该酯工业路线原文（未确认）；鏻盐用氯化物，现实多用溴化物，本模组无溴（游戏简化）。
 - S0461 雷福尔马茨基反应现实多用溴乙酸乙酯；本模组无溴，改用氯乙酸乙酯（游戏简化）。替代做法为 β-酮酯（3-氧代己酸乙酯）ST05 加氢，需另建中间体，未展开。
 - S0471 美拉德反应得率低、产物为混合物，只写第一步计量式。工业合成法（CN106749128：2-甲基呋喃 S0871 经氯气与硫氰酸盐硫氰化后水解）细节未确认，需新增硫氰酸钠，未列 B 路线。
-- S0445 只有 ST13 单离（N195），罗马春黄菊原料暂无来源时无法量产。惕各酸酯经有机亚磺酸催化异构化、边反应边精馏可得当归酸酯（US 4613680），需新增催化剂与模板，未列。
+- S0445 只有 ST13 单离（N195）；罗马春黄菊 2026-11-18 按 [08 §来源规则](08-raw-materials.md) 归作物类（问题 21），在此之前无法量产。惕各酸酯经有机亚磺酸催化异构化、边反应边精馏可得当归酸酯（US 4613680），需新增催化剂与模板，未列。
 - S0406 为两种异构体的混合物：按“不是单一分子组成”纯度写“—”、SMILES 写“—”；若视为单一物质可改 K4。
 - 阶段：表内 S 编码前体的档次以各组结果为准，本组只注明 09 物料与本组新中间体带来的更高档次；统稿时按规则 3 补注。
 - 纯度：长链脂肪酸酯（S0481、S0483、S0484 等）按“液态香料”定 K4；按 10 第 1.1 节 K7“单一脂肪酸的酯”也说得通，由设计定。

@@ -120,6 +120,10 @@ final class ProcessCategory implements IRecipeCategory<ProcessCategory.Entry> {
     @Override
     public void createRecipeExtras(IRecipeExtrasBuilder builder, Entry entry, IFocusGroup focuses) {
         RecipePage page = entry.page();
+        if (builder.getRecipeSlots() == null) {
+            // EMI's JEI bridge builds no slot drawables: choosing the device stays a JEI feature (2026-11-25)
+            return;
+        }
         List<IRecipeSlotDrawable> outputs = builder.getRecipeSlots().getSlots(RecipeIngredientRole.OUTPUT);
         builder.addInputHandler(new IJeiInputHandler() {
             @Override

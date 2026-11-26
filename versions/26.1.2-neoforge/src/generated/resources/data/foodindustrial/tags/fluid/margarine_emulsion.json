@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:margarine_emulsion",
+    "foodindustrial:flowing_margarine_emulsion",
+    {
+      "id": "#forge:margarine_emulsion",
+      "required": false
+    },
+    {
+      "id": "#c:margarine_emulsion",
+      "required": false
+    }
+  ]
+}

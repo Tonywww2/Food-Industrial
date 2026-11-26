@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "foodindustrial:non_dairy_creamer_emulsion",
+    "foodindustrial:flowing_non_dairy_creamer_emulsion",
+    {
+      "id": "#forge:non_dairy_creamer_emulsion",
+      "required": false
+    },
+    {
+      "id": "#c:non_dairy_creamer_emulsion",
+      "required": false
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "inputs": [
     {
       "ingredient": {
-        "tag": "foodindustrial:chemicals/animal_fat"
+        "tag": "foodindustrial:animal_fats"
       }
     },
     {

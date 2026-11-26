@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "foodindustrial:block/gum_arabic_log_top",
+    "side": "foodindustrial:block/gum_arabic_log"
+  }
+}

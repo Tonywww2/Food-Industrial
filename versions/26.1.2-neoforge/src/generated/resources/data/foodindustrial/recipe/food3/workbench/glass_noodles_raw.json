@@ -1,0 +1,15 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "ingredient": "#foodindustrial:materials/starch_dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "glass_noodles|raw_strands"
+  },
+  "tools": [
+    "#foodindustrial:molds/extrusion_die"
+  ]
+}

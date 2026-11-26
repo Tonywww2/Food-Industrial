@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:river"
+  ],
+  "spawners": [
+    {
+      "type": "foodindustrial:beaver",
+      "maxCount": 3,
+      "minCount": 1,
+      "weight": 6
+    }
+  ]
+}

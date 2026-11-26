@@ -92,6 +92,8 @@ public final class Nutrition {
                 entry.putString("item", PlatformTags.itemId(item));
                 entry.putDouble("serving_g", data.servingG());
                 entry.putDouble("impurity", data.impurity());
+                entry.putDouble("curing_nitrite_mg", data.curingNitrite());
+                entry.putDouble("misuse_nitrite_mg", data.misuseNitrite());
                 for (Component component : Component.all()) {
                     entry.putDouble(component.key(), data.amount(component));
                 }
@@ -110,7 +112,7 @@ public final class Nutrition {
                     amounts[component.ordinal()] = entry.getDouble(component.key(), 0.0);
                 }
                 table.put(item.get(), new NutritionData(entry.getDouble("serving_g", 0.0), amounts, 0, entry.getDouble("impurity", 0.0),
-                    null, null, 0));
+                    entry.getDouble("curing_nitrite_mg", 0.0), entry.getDouble("misuse_nitrite_mg", 0.0), null, null, 0));
             }
             return new SyncPayload(table);
         }

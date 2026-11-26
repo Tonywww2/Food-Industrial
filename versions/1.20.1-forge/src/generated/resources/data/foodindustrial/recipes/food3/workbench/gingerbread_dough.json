@@ -1,0 +1,46 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/wheat_flour"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:foods/butter"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/honey"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/ginger"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:chemicals/sodium_bicarbonate"
+      }
+    }
+  ],
+  "process": "forming",
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "leavening"
+        ],
+        "item": "state"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "semi_finished": "gingerbread|dough"
+  }
+}

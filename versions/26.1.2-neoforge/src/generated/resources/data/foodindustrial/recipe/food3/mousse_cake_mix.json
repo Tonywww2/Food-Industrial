@@ -1,0 +1,43 @@
+{
+  "type": "foodindustrial:mixing",
+  "inputs": [
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:cream"
+      }
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/sucrose"
+    },
+    {
+      "count": 2,
+      "ingredient": "#foodindustrial:materials/berries"
+    },
+    {
+      "ingredient": "#foodindustrial:chemicals/gelatin"
+    }
+  ],
+  "mode": "whipping",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:mousse_cake_mix"
+    }
+  ],
+  "quality": {
+    "items": [
+      {
+        "accepts": [
+          "fruity_flavoring"
+        ],
+        "item": "taste"
+      }
+    ]
+  },
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

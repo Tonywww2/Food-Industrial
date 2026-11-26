@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#foodindustrial:chemicals/immobilized_psicose_epimerase",
+      "required": false
+    }
+  ]
+}

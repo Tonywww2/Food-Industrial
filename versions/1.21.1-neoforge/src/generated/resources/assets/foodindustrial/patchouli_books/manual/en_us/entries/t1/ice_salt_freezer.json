@@ -1,0 +1,13 @@
+{
+  "category": "foodindustrial:t1",
+  "icon": "foodindustrial:ice_salt_freezer",
+  "name": "book.foodindustrial.manual.entry.ice_salt_freezer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "foodindustrial:ice_salt_freezer",
+      "text": "book.foodindustrial.manual.entry.ice_salt_freezer.text"
+    }
+  ],
+  "sortnum": 16
+}

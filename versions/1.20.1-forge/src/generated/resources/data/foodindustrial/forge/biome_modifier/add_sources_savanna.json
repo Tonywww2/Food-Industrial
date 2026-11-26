@@ -1,0 +1,28 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna"
+  ],
+  "features": [
+    "foodindustrial:tara_bush",
+    "foodindustrial:cassie_bush",
+    "foodindustrial:jasmine_grandiflorum_bush",
+    "foodindustrial:carnauba_tree",
+    "foodindustrial:tamarind_tree",
+    "foodindustrial:broadleaf_peppermint_tree",
+    "foodindustrial:blue_gum_tree",
+    "foodindustrial:peruvian_pepper_tree",
+    "foodindustrial:gum_ghatti_tree",
+    "foodindustrial:karaya_tree",
+    "foodindustrial:gum_arabic_tree",
+    "foodindustrial:guaiac_tree",
+    "foodindustrial:sandalwood_tree",
+    "foodindustrial:amyris_tree",
+    "foodindustrial:catechu_tree",
+    "foodindustrial:wild_davana",
+    "foodindustrial:wild_palmarosa"
+  ],
+  "step": "vegetal_decoration"
+}

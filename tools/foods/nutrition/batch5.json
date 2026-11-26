@@ -1,0 +1,1164 @@
+{
+ "batch": 5,
+ "doc": "foods/17 §9、foods/18 §7",
+ "notes": [
+  "单位换算按 USDA FDC 的份量：白糖 1 茶匙 4.2 g、1 汤匙 12.5 g；盐 1 茶匙 6 g；泡打粉、小苏打 1 茶匙 4.6 g；干酵母 1 茶匙 4 g；鸡蛋 50 g/个（蛋黄 17 g、蛋白 33 g）；蜂蜜 1 汤匙 21 g；油 1 汤匙 13.6 g；黄油 1 汤匙 14.2 g；水 1 汤匙 14.8 g；香草精 1 茶匙 4.2 g；牛奶 1 杯 244 g；重奶油 1 杯 238 g；糖粉 1 杯 120 g"
+ ],
+ "entries": [
+  {
+   "id": "la_rou",
+   "name": "腊肉",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 270.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 11.8,
+    "fat_g": 48.8,
+    "carb_g": 2.9
+   },
+   "composition": "cn:806",
+   "free_sugar": {
+    "g": 0
+   },
+   "curing_nitrite_mg": 1.65,
+   "misuse_salt_g": 1.57,
+   "misuse_note": "误用（卡片）：1.57 g（52%）：盐 3%"
+  },
+  {
+   "id": "lap_cheong",
+   "name": "腊肠",
+   "card": "foods/17",
+   "serving_g": 30.0,
+   "energy_kcal": 129.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 18.0,
+    "fat_g": 37.3,
+    "carb_g": 6.4
+   },
+   "composition": "cn:814",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      30,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 725.5
+   },
+   "free_sugar_note": "广式配比：瘦肉 350、肥膘 150、盐 7.5、糖 30、腌制盐 3、生抽 20、酒 15、水 150 g；烘干失水不计（偏低）",
+   "curing_nitrite_mg": 0.9,
+   "misuse_salt_g": 0.31,
+   "misuse_note": "误用（卡片）：0.31 g（10%）：盐 7.5 g / 原料 725.5 g"
+  },
+  {
+   "id": "salted_pork",
+   "name": "咸肉",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 212.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 16.5,
+    "fat_g": 36.0
+   },
+   "composition": "cn:808",
+   "free_sugar": {
+    "g": 0
+   },
+   "curing_nitrite_mg": 1.65,
+   "misuse_salt_g": 5.44,
+   "misuse_note": "误用（卡片）：5.44 g（封顶）：盐 ½ lb / 原料约 2.3 kg"
+  },
+  {
+   "id": "salted_duck",
+   "name": "板鸭",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 234.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 27.7,
+    "fat_g": 35.2,
+    "carb_g": 0.4
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:891",
+      100
+     ],
+     [
+      "cn:1565",
+      8.173,
+      {
+       "fill": "fdc:173468"
+      }
+     ]
+    ],
+    "yield_g": 55.9
+   },
+   "composition_note": "卡片：鸭（均值）条目 891 干到成品水分 20.83%、盐 14.62%，100 g 生鸭得成品 55.9 g；成品的盐 8.17 g 按精盐计；煮后的变化不计",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 3.24,
+   "misuse_note": "误用（卡片）：3.24 g（封顶）：盐为鸭重 1/16"
+  },
+  {
+   "id": "jinhua_ham",
+   "name": "金华火腿",
+   "card": "foods/17",
+   "serving_g": 30.0,
+   "energy_kcal": 94.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 16.4,
+    "fat_g": 28.0,
+    "carb_g": 0.1
+   },
+   "composition": "cn:822",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 2.09,
+   "misuse_note": "误用（卡片）：2.09 g（69%）：每 100 kg 腿 7.5 kg"
+  },
+  {
+   "id": "western_ham",
+   "name": "西式火腿",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 90.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 16.6,
+    "fat_g": 8.8,
+    "carb_g": 3.6
+   },
+   "composition": "fdc:173864",
+   "free_sugar": {
+    "per100g": 0.5152294516654666
+   },
+   "free_sugar_note": "甜腌水：盐 8 lb、糖 3 lb、硝酸钠 2 oz、亚硝酸钠 ½ oz 加水 5 加仑（共 23.99 kg），注射肉重的 10%，成品按 1.10 倍肉重；与卡片误用量的算法相同",
+   "curing_nitrite_mg": 3.85,
+   "misuse_salt_g": 0.76,
+   "misuse_note": "误用（卡片）：0.76 g（25%）：腌水含盐 15.1%、注射 10%"
+  },
+  {
+   "id": "bacon",
+   "name": "培根",
+   "card": "foods/17",
+   "serving_g": 15.0,
+   "energy_kcal": 27.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 22.3,
+    "fat_g": 9.0,
+    "carb_g": 2.6
+   },
+   "composition": "cn:805",
+   "free_sugar": {
+    "parts": [
+     [
+      "红糖",
+      69,
+      "cn:1451"
+     ]
+    ],
+    "total_g": 2499.5
+   },
+   "free_sugar_note": "五花 5 lb 按 2,268 g，盐 5 汤匙按 90 g、红糖 5 汤匙按 69 g（压实 13.8 g/汤匙）、腌制盐 1 茶匙 6 g、咖啡粉 5 汤匙按 26.5 g、辣椒粉 5 汤匙按 40 g；冲洗去掉的腌料不扣（偏高）；咖啡粉随腌料冲掉，咖啡因不计",
+   "curing_nitrite_mg": 0.45,
+   "misuse_salt_g": 0.56,
+   "misuse_note": "误用（卡片）：0.56 g（18%）：盐 90 g / 原料约 2.43 kg"
+  },
+  {
+   "id": "frankfurter",
+   "name": "热狗肠",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 160.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 11.3,
+    "fat_g": 26.3,
+    "carb_g": 3.2
+   },
+   "composition": "cn:819",
+   "free_sugar": {
+    "g": 0
+   },
+   "curing_nitrite_mg": 1.65,
+   "misuse_salt_g": 1.08,
+   "misuse_note": "误用（卡片）：1.08 g（36%）：盐取 2%–3% 的中值 2.5%（以肉计），加冰 25%"
+  },
+  {
+   "id": "luncheon_meat",
+   "name": "午餐肉罐头",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 125.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 9.4,
+    "fat_g": 15.9,
+    "carb_g": 12.0
+   },
+   "composition": "cn:807",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "来源写加糖但未给用量，按 0（待审）",
+   "curing_nitrite_mg": 2.75,
+   "misuse_salt_g": 1.37,
+   "misuse_note": "误用（卡片）：1.37 g（45%）：来源未给盐量，按表值钠 981.9 mg × 2.54 折算"
+  },
+  {
+   "id": "ham_sausage",
+   "name": "火腿肠",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 117.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 14.0,
+    "fat_g": 10.4,
+    "carb_g": 15.6
+   },
+   "composition": "cn:815",
+   "free_sugar": {
+    "per100g": 0.8714996074326093
+   },
+   "free_sugar_note": "基础配方白糖 1.0% 对猪肉 100%，配料合计 114.63（水“适量”不计，同卡片误用量的算法）",
+   "curing_nitrite_mg": 1.65,
+   "misuse_salt_g": 1.68,
+   "misuse_note": "误用（卡片）：1.68 g（55%）：盐 3.5 / 合计 114.3"
+  },
+  {
+   "id": "char_siu",
+   "name": "叉烧",
+   "card": "foods/17",
+   "serving_g": 85.0,
+   "energy_kcal": 236.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 23.8,
+    "fat_g": 16.9,
+    "carb_g": 7.9
+   },
+   "composition": "cn:804",
+   "free_sugar": {
+    "parts": [
+     [
+      "白糖",
+      50,
+      "cn:1448"
+     ],
+     [
+      "糖蜜",
+      13.3,
+      "fdc:168820"
+     ],
+     [
+      "蜂蜜（刷面）",
+      42,
+      "cn:1487"
+     ]
+    ],
+    "total_g": 1553.15
+   },
+   "free_sugar_note": "梅头肉 3 lb 按 1,361 g、糖 ¼ 杯 50 g、盐 2 茶匙、五香粉 ½ 茶匙、白胡椒 ¼ 茶匙、香油 ½ 茶匙、绍酒、酱油、海鲜酱各 1 汤匙（15、16、16 g）、糖蜜 2 茶匙 13.3 g、蒜 3 瓣 9 g，刷面蜂蜜 2 汤匙 42 g 与水 1 汤匙；海鲜酱自带的糖未计",
+   "misuse_salt_g": 0.66,
+   "misuse_note": "误用（卡片）：0.66 g（22%）：盐 12 g / 原料约 1.54 kg"
+  },
+  {
+   "id": "roast_duck",
+   "name": "烤鸭",
+   "card": "foods/17",
+   "serving_g": 85.0,
+   "energy_kcal": 367.0,
+   "hunger": 9,
+   "macros_100g": {
+    "protein_g": 16.6,
+    "fat_g": 38.4,
+    "carb_g": 6.0
+   },
+   "composition": "cn:901",
+   "free_sugar": {
+    "parts": [
+     [
+      "麦芽糖",
+      42,
+      "fdc:169660"
+     ]
+    ],
+    "total_g": 2703
+   },
+   "free_sugar_note": "整鸭 2.5 kg、盐 2 汤匙 36 g，刷皮：麦芽糖 2 汤匙按 42 g（含糖按 FDC 169660 Syrups, malt 71.3%）、热水 120 mL、醋 1 茶匙；淋皮的沸水不计",
+   "misuse_salt_g": 1.13,
+   "misuse_note": "误用（卡片）：1.13 g（37%）：盐 36 g / 原料约 2.70 kg"
+  },
+  {
+   "id": "braised_beef_shank",
+   "name": "卤牛肉",
+   "card": "foods/17",
+   "serving_g": 85.0,
+   "energy_kcal": 209.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 31.4,
+    "fat_g": 11.9,
+    "carb_g": 3.2
+   },
+   "composition": "cn:841",
+   "free_sugar": {
+    "parts": [
+     [
+      "冰糖",
+      12,
+      "cn:1450"
+     ]
+    ],
+    "total_g": 2440
+   },
+   "free_sugar_note": "冰糖 12 g，全部原料按卡片误用量算法的 2,440 g",
+   "misuse_check": {
+    "parts": [
+     [
+      "soybean_paste",
+      68
+     ],
+     [
+      "light_soy_sauce",
+      64
+     ],
+     [
+      "dark_soy_sauce",
+      16
+     ]
+    ],
+    "total_g": 2440
+   },
+   "misuse_salt_g": 0.68,
+   "misuse_note": "误用（卡片）：0.68 g（22%）：黄豆酱 68 g、生抽 64 g、老抽 16 g 含盐 19.44 g / 原料 2,440 g"
+  },
+  {
+   "id": "soy_braised_duck",
+   "name": "酱鸭",
+   "card": "foods/17",
+   "serving_g": 85.0,
+   "energy_kcal": 225.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 18.9,
+    "fat_g": 18.4,
+    "carb_g": 6.3
+   },
+   "composition": "cn:902",
+   "free_sugar": {
+    "parts": [
+     [
+      "细砂糖",
+      85,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1968
+   },
+   "free_sugar_note": "细砂糖 3 oz 按 85 g，全部原料 1,968 g（同卡片误用量）",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      255
+     ],
+     [
+      "dark_soy_sauce",
+      40
+     ]
+    ],
+    "total_g": 1968
+   },
+   "misuse_salt_g": 2.09,
+   "misuse_note": "误用（卡片）：2.09 g（69%）：生抽 255 g、老抽 40 g 含盐 48.35 g / 原料 1,968 g"
+  },
+  {
+   "id": "white_cut_chicken",
+   "name": "白切鸡",
+   "card": "foods/17",
+   "serving_g": 85.0,
+   "energy_kcal": 186.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 24.7,
+    "fat_g": 12.6,
+    "carb_g": 0.0
+   },
+   "composition": "fdc:171051",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "braised_chicken_feet",
+   "name": "卤鸡爪",
+   "card": "foods/17",
+   "serving_g": 85.0,
+   "energy_kcal": 183.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 19.4,
+    "fat_g": 14.6,
+    "carb_g": 0.2
+   },
+   "composition": "fdc:171119",
+   "free_sugar": {
+    "parts": [
+     [
+      "冰糖",
+      25,
+      "cn:1450"
+     ]
+    ],
+    "total_g": 1575
+   },
+   "free_sugar_note": "冰糖 25 g，全部原料 1,575 g（同卡片误用量）",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      25
+     ],
+     [
+      "salt",
+      5
+     ]
+    ],
+    "total_g": 1575
+   },
+   "misuse_salt_g": 0.49,
+   "misuse_note": "误用（卡片）：0.49 g（16%）：酱油 25 g 与盐 5 g 含盐 9.04 g / 原料 1,575 g（水按与食材等重计）"
+  },
+  {
+   "id": "red_braised_pork",
+   "name": "红烧肉",
+   "card": "foods/17",
+   "serving_g": 140.0,
+   "energy_kcal": 498.0,
+   "hunger": 10,
+   "macros_100g": {
+    "protein_g": 12.6,
+    "fat_g": 31.2,
+    "carb_g": 7.0
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:786",
+      680,
+      {
+       "retention": "retn:1301"
+      }
+     ],
+     [
+      "cn:1516",
+      28,
+      {
+       "fill": "fdc:171411"
+      }
+     ],
+     [
+      "cn:1450",
+      25,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1424",
+      80
+     ],
+     [
+      "cn:1611",
+      30
+     ],
+     [
+      "cn:1581",
+      15
+     ]
+    ],
+    "yield_g": 755.75
+   },
+   "composition_note": "卡片配比：五花 680 g、油 28 g、冰糖 25 g、黄酒 80 g、生抽 30 g、老抽 15 g，酒与酱油的水按收汁蒸发计（出品为干物合计）；五花按 1301 猪肉炖。卡片写“硬五花 806 号”，806 是腊肉（生）；硬五花在中国表为条目 786〔猪肉(奶面)[硬五花]〕，卡片的能量与 786 相符，按 786 取（卡片已于 2026-11-19 更正）",
+   "free_sugar": {
+    "per100g": 3.3
+   },
+   "free_sugar_note": "卡片给出游离糖 3.3 g/100 g",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      30
+     ],
+     [
+      "dark_soy_sauce",
+      15
+     ]
+    ],
+    "total_g": 1426
+   },
+   "misuse_salt_g": 0.74,
+   "misuse_note": "误用（卡片）：0.74 g（24%）：生抽 30 g、老抽 15 g 含盐 7.50 g / 原料 1,426 g"
+  },
+  {
+   "id": "dongpo_pork",
+   "name": "东坡肉",
+   "card": "foods/17",
+   "serving_g": 140.0,
+   "energy_kcal": 475.0,
+   "hunger": 10,
+   "macros_100g": {
+    "protein_g": 11.7,
+    "fat_g": 24.3,
+    "carb_g": 18.8
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:786",
+      900,
+      {
+       "retention": "retn:1301"
+      }
+     ],
+     [
+      "cn:1450",
+      128,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1424",
+      480
+     ],
+     [
+      "cn:1611",
+      160
+     ],
+     [
+      "cn:1581",
+      37
+     ]
+    ],
+    "yield_g": 1135.06
+   },
+   "composition_note": "卡片配比：五花 900 g、冰糖 128 g、黄酒 480 g、生抽 160 g、老抽 37 g，汁中的水全部蒸发计；五花按 1301。卡片写“硬五花 806 号”，806 是腊肉（生）；硬五花在中国表为条目 786〔猪肉(奶面)[硬五花]〕，卡片的能量与 786 相符，按 786 取（卡片已于 2026-11-19 更正）",
+   "free_sugar": {
+    "per100g": 11.3
+   },
+   "free_sugar_note": "卡片给出游离糖 11.3 g/100 g",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      160
+     ],
+     [
+      "dark_soy_sauce",
+      37
+     ]
+    ],
+    "total_g": 1705
+   },
+   "misuse_salt_g": 2.66,
+   "misuse_note": "误用（卡片）：2.66 g（88%）：生抽 160 g、老抽 37 g 含盐 32.43 g / 原料 1,705 g"
+  },
+  {
+   "id": "lions_head",
+   "name": "狮子头",
+   "card": "foods/17",
+   "serving_g": 140.0,
+   "energy_kcal": 285.0,
+   "hunger": 8,
+   "macros_100g": {
+    "protein_g": 9.2,
+    "fat_g": 17.4,
+    "carb_g": 3.1
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:788",
+      315,
+      {
+       "retention": "retn:1405"
+      }
+     ],
+     [
+      "cn:780",
+      135,
+      {
+       "retention": "retn:1405"
+      }
+     ],
+     [
+      "cn:978",
+      50,
+      {
+       "retention": "retn:0107"
+      }
+     ],
+     [
+      "cn:320",
+      7
+     ],
+     [
+      "cn:1424",
+      30
+     ],
+     [
+      "cn:1611",
+      37.5
+     ],
+     [
+      "cn:1581",
+      1.25
+     ],
+     [
+      "cn:1450",
+      10,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "water",
+      240
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：瘦肉 315 g、肥肉 135 g、鸡蛋 50 g、玉米淀粉 7 g、黄酒 30 g、生抽 37.5 g、老抽 1.25 g、冰糖 10 g、余汁的水 240 g；肉按 1405 猪绞肉煮，蛋按 0107；油炸吸油未计",
+   "free_sugar": {
+    "per100g": 1.2
+   },
+   "free_sugar_note": "卡片给出游离糖 1.2 g/100 g",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      37.5
+     ],
+     [
+      "dark_soy_sauce",
+      1.25
+     ]
+    ],
+    "total_g": 826
+   },
+   "misuse_salt_g": 1.07,
+   "misuse_note": "误用（卡片）：1.07 g（35%）：生抽 37.5 g、老抽 1.25 g 含盐 6.29 g / 原料 826 g"
+  },
+  {
+   "id": "pork_balls",
+   "name": "肉丸",
+   "card": "foods/17",
+   "serving_g": 85.0,
+   "energy_kcal": 285.0,
+   "hunger": 8,
+   "macros_100g": {
+    "protein_g": 14.5,
+    "fat_g": 29.9,
+    "carb_g": 2.9
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:788",
+      350,
+      {
+       "retention": "retn:1405"
+      }
+     ],
+     [
+      "cn:780",
+      150,
+      {
+       "retention": "retn:1405"
+      }
+     ],
+     [
+      "cn:1448",
+      4,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:320",
+      7
+     ],
+     [
+      "cn:1565",
+      6,
+      {
+       "fill": "fdc:173468"
+      }
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：瘦肉 350 g、肥肉 150 g、糖 4 g、玉米淀粉 7 g、盐 6 g，冰不计；肉按 1405",
+   "free_sugar": {
+    "per100g": 0.8
+   },
+   "free_sugar_note": "卡片给出游离糖 0.8 g/100 g",
+   "misuse_salt_g": 0.99,
+   "misuse_note": "误用（卡片）：0.99 g（33%）：盐 6 g / 原料 517 g"
+  },
+  {
+   "id": "pork_skin_jelly",
+   "name": "肉冻",
+   "card": "foods/17",
+   "serving_g": 55.0,
+   "energy_kcal": 39.0,
+   "hunger": 3,
+   "macros_100g": {
+    "protein_g": 7.3,
+    "fat_g": 4.6,
+    "carb_g": 0.0
+   },
+   "composition": null,
+   "composition_note": "猪皮成分取论文实测（只有水分、蛋白质、脂肪、灰分），维生素与矿物质留空",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.27,
+   "misuse_note": "误用（卡片）：0.27 g（9%）：盐 6 g / 1,206 g"
+  },
+  {
+   "id": "pork_floss",
+   "name": "肉松",
+   "card": "foods/17",
+   "serving_g": 30.0,
+   "energy_kcal": 120.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 23.4,
+    "fat_g": 11.5,
+    "carb_g": 49.7
+   },
+   "composition": "cn:811",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      16
+     ],
+     [
+      "dark_soy_sauce",
+      5.3
+     ]
+    ],
+    "total_g": 100
+   },
+   "misuse_salt_g": 1.06,
+   "misuse_note": "误用（卡片）：1.06 g（35%）：生抽 16 g、老抽 5.3 g 含盐 3.52 g / 出品 100 g"
+  },
+  {
+   "id": "beef_jerky",
+   "name": "牛肉干",
+   "card": "foods/17",
+   "serving_g": 30.0,
+   "energy_kcal": 164.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 45.6,
+    "fat_g": 40.0,
+    "carb_g": 1.9
+   },
+   "composition": "cn:842",
+   "free_sugar": {
+    "parts": [
+     [
+      "冰糖",
+      25.2,
+      "cn:1450"
+     ]
+    ],
+    "total_g": 1924
+   },
+   "free_sugar_note": "冰糖 2 汤匙按 25.2 g，全部原料 1,924 g（同卡片误用量，加的水计入分母）；刷面的蜂蜜水用量未给，不计",
+   "misuse_check": {
+    "parts": [
+     [
+      "light_soy_sauce",
+      63.8
+     ],
+     [
+      "salt",
+      3
+     ]
+    ],
+    "total_g": 1924
+   },
+   "misuse_salt_g": 0.21,
+   "misuse_note": "误用（卡片）：0.21 g（7%）：酱油 63.8 g 与盐 3 g 含盐 13.33 g / 原料 1,924 g"
+  },
+  {
+   "id": "pork_jerky",
+   "name": "猪肉脯",
+   "card": "foods/17",
+   "serving_g": 30.0,
+   "energy_kcal": 108.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 35.9,
+    "fat_g": 10.8,
+    "carb_g": 29.1
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:788",
+      500,
+      {
+       "retention": "retn:1254"
+      }
+     ],
+     [
+      "cn:1448",
+      75,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "fdc:174531",
+      36
+     ]
+    ],
+    "yield_g": 288
+   },
+   "composition_note": "卡片：瘦肉 500 g、白糖 75 g、鱼露 36 g（FDC 174531），干到水分 20% 得 288 g；肉按 1254 猪肉烤",
+   "free_sugar": {
+    "per100g": 26.0
+   },
+   "free_sugar_note": "卡片给出游离糖 26.0 g/100 g"
+  },
+  {
+   "id": "fish_balls",
+   "name": "鱼丸",
+   "card": "foods/18",
+   "serving_g": 85.0,
+   "energy_kcal": 92.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 11.1,
+    "fat_g": 1.3,
+    "carb_g": 12.7
+   },
+   "composition": "cn:1067",
+   "free_sugar": {
+    "parts": [
+     [
+      "糖",
+      50,
+      "cn:1448"
+     ]
+    ],
+    "total_g": 1662.0
+   },
+   "free_sugar_note": "鱼肉 1,000 g、冰水 400 g、料酒 2 汤匙 30 g、糖 4 汤匙 50 g、盐 3 茶匙 18 g、蛋清 4 个、玉米淀粉 4 汤匙 32 g",
+   "misuse_salt_g": 0.93,
+   "misuse_note": "误用（卡片）：0.93 g（31%）：盐 18 g / 原料约 1.65 kg"
+  },
+  {
+   "id": "crab_sticks",
+   "name": "蟹肉棒",
+   "card": "foods/18",
+   "serving_g": 55.0,
+   "energy_kcal": 69.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 9.0,
+    "fat_g": 0.6,
+    "carb_g": 20.4
+   },
+   "composition": "cn:1105",
+   "free_sugar": {
+    "per100g": 1.38861
+   },
+   "free_sugar_note": "配比：糖 1.39%",
+   "misuse_salt_g": 0.76,
+   "misuse_note": "误用（卡片）：0.76 g（25%）：盐 1.39%"
+  },
+  {
+   "id": "fish_tofu",
+   "name": "鱼豆腐",
+   "card": "foods/18",
+   "serving_g": 85.0,
+   "energy_kcal": 82.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 16.2,
+    "fat_g": 1.1,
+    "carb_g": 5.2
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:1062",
+      454,
+      {
+       "retention": "retn:2401"
+      }
+     ],
+     [
+      "cn:978",
+      50,
+      {
+       "retention": "retn:0107"
+      }
+     ],
+     [
+      "cn:320",
+      28
+     ],
+     [
+      "cn:1565",
+      3,
+      {
+       "fill": "fdc:173468"
+      }
+     ],
+     [
+      "cn:1448",
+      5,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1611",
+      22
+     ],
+     [
+      "water",
+      60
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：鳕鱼 454 g、鸡蛋 50 g、淀粉 28 g、盐 3 g、糖 5 g、生抽 22 g、水 60 g，蒸后煎；鱼按 2401 低脂鱼煮，蛋按 0107；煎炸吸油未计",
+   "free_sugar": {
+    "per100g": 0.8
+   },
+   "free_sugar_note": "卡片给出游离糖 0.8 g/100 g",
+   "misuse_salt_g": 0.41,
+   "misuse_note": "误用（卡片）：0.41 g（14%）：盐 3 g / 原料 622 g"
+  },
+  {
+   "id": "salted_fish",
+   "name": "咸鱼",
+   "card": "foods/18",
+   "serving_g": 55.0,
+   "energy_kcal": 159.0,
+   "hunger": 6,
+   "macros_100g": {
+    "protein_g": 62.8,
+    "fat_g": 2.4,
+    "carb_g": 0.0
+   },
+   "composition": "fdc:174190",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 11.0,
+   "misuse_note": "误用（卡片）：11.0 g（封顶）：盐 : 鱼取 1 : 4"
+  },
+  {
+   "id": "stockfish",
+   "name": "鱼干",
+   "card": "foods/18",
+   "serving_g": 30.0,
+   "energy_kcal": 95.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 72.2,
+    "fat_g": 1.8,
+    "carb_g": 1.8
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:1062",
+      100
+     ]
+    ],
+    "yield_g": 28.25
+   },
+   "composition_note": "卡片：鳕鱼干到水分 20%，100 g 鲜鱼得 28.25 g",
+   "free_sugar": {
+    "g": 0
+   }
+  },
+  {
+   "id": "smoked_salmon",
+   "name": "熏鱼",
+   "card": "foods/18",
+   "serving_g": 55.0,
+   "energy_kcal": 64.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 18.3,
+    "fat_g": 4.3,
+    "carb_g": 0.0
+   },
+   "composition": "fdc:173687",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "腌料的盐与糖冲洗掉，渗入量未计（同卡片）"
+  },
+  {
+   "id": "gravlax",
+   "name": "腌三文鱼",
+   "card": "foods/18",
+   "serving_g": 55.0,
+   "energy_kcal": 76.0,
+   "hunger": 4,
+   "macros_100g": {
+    "protein_g": 17.2,
+    "fat_g": 7.8,
+    "carb_g": 0.0
+   },
+   "composition": "cn:1052",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "腌后冲去盐糖，渗入未计（同卡片）",
+   "misuse_salt_g": 6.39,
+   "misuse_note": "误用（卡片）：6.39 g（封顶）：粗盐 ⅔ 杯按 Diamond Crystal 与 Morton 的中值 12 g/汤匙计 128 g / 原料约 1.10 kg"
+  },
+  {
+   "id": "canned_fish",
+   "name": "鱼罐头",
+   "card": "foods/18",
+   "serving_g": 85.0,
+   "energy_kcal": 110.0,
+   "hunger": 5,
+   "macros_100g": {
+    "protein_g": 19.7,
+    "fat_g": 5.0,
+    "carb_g": 0.0
+   },
+   "composition": "fdc:173690",
+   "free_sugar": {
+    "g": 0
+   },
+   "misuse_salt_g": 0.71,
+   "misuse_note": "误用（卡片）：0.71 g（23%）：按 FDC 加盐与不加盐两条的钠差（403 − 75 mg）× 2.54"
+  },
+  {
+   "id": "fried_dace_black_bean",
+   "name": "豆豉鲮鱼罐头",
+   "card": "foods/18",
+   "serving_g": 85.0,
+   "energy_kcal": 399.0,
+   "hunger": 9,
+   "macros_100g": {
+    "protein_g": 25.5,
+    "fat_g": 33.1,
+    "carb_g": 17.9
+   },
+   "composition": "cn:1073",
+   "free_sugar": {
+    "g": 0
+   },
+   "free_sugar_note": "调味汁含糖，但炸鱼只浸 40 s，渗入量算不出，按 0（待审）",
+   "misuse_salt_g": 2.43,
+   "misuse_note": "误用（卡片）：2.43 g（80%）：每 100 kg 鱼盐 5 kg（4.5–5.5 的中值），鱼占固形物 60%"
+  },
+  {
+   "id": "sweet_sour_fish",
+   "name": "糖醋鱼",
+   "card": "foods/18",
+   "serving_g": 140.0,
+   "energy_kcal": 260.0,
+   "hunger": 7,
+   "macros_100g": {
+    "protein_g": 8.1,
+    "fat_g": 9.0,
+    "carb_g": 18.1
+   },
+   "composition": {
+    "mix": [
+     [
+      "cn:1088",
+      340
+     ],
+     [
+      "cn:1539",
+      17
+     ],
+     [
+      "cn:1520",
+      37
+     ],
+     [
+      "water",
+      110
+     ],
+     [
+      "cn:1448",
+      25,
+      {
+       "fill": "fdc:169655"
+      }
+     ],
+     [
+      "cn:1565",
+      1.5,
+      {
+       "fill": "fdc:173468"
+      }
+     ],
+     [
+      "cn:320",
+      10.5
+     ]
+    ]
+   },
+   "composition_note": "卡片配比：炸鳕鱼 340 g（条目 1088）、番茄酱 17 g、醋 37 g、水 110 g、糖 25 g、盐 1.5 g、玉米淀粉 10.5 g",
+   "free_sugar": {
+    "per100g": 4.6
+   },
+   "free_sugar_note": "卡片给出游离糖 4.6 g/100 g",
+   "misuse_salt_g": 0.79,
+   "misuse_note": "误用（卡片）：0.79 g（26%）：盐 4.5 g / 原料约 0.80 kg（面粉 ¾ 杯按 90 g、苏打水 ⅔ 杯按 158 g 计）"
+  },
+  {
+   "id": "fish_skin_jelly",
+   "name": "鱼皮冻",
+   "card": "foods/18",
+   "serving_g": 55.0,
+   "energy_kcal": 24.0,
+   "hunger": 2,
+   "macros_100g": {
+    "protein_g": 4.8,
+    "fat_g": 2.6,
+    "carb_g": 0.0
+   },
+   "composition": null,
+   "composition_note": "鱼皮成分取论文实测（只有水分、蛋白质、脂肪、灰分），维生素与矿物质留空",
+   "free_sugar": {
+    "g": 0
+   }
+  }
+ ]
+}

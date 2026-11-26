@@ -63,7 +63,7 @@ public class TankBlock extends PlatformEntityBlock {
             FluidAmount fluid = carried;
             for (FluidAmount part : new FluidAmount[]{TankBlockEntity.total(below), TankBlockEntity.total(above)}) {
                 if (!part.isEmpty()) {
-                    if (!fluid.isEmpty() && fluid.fluid() != part.fluid()) {
+                    if (!fluid.isEmpty() && !fluid.joins(part)) {
                         problem = "mixed";
                     }
                     fluid = part;
@@ -139,7 +139,7 @@ public class TankBlock extends PlatformEntityBlock {
         ItemStack result;
         FluidAmount after;
         if (!inside.isEmpty()) {
-            if (!kind.accepts(inside.fluid()) || (!contents.isEmpty() && contents.fluid() != inside.fluid())
+            if (!kind.accepts(inside.fluid()) || (!contents.isEmpty() && !contents.joins(inside))
                 || capacity - contents.amount() < inside.amount()) {
                 return UseResult.PASS;
             }

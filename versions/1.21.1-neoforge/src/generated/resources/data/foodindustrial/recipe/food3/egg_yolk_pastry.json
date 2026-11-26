@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:baking",
+  "inputs": [
+    {
+      "semi_finished": "egg_yolk_pastry|blank"
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:materials/egg"
+      }
+    }
+  ],
+  "mode": "baking",
+  "outputs": [
+    {
+      "item": "foodindustrial:egg_yolk_pastry"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1",
+    "temperature": "heated"
+  },
+  "time": 200
+}

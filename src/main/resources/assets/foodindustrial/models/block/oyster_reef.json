@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_seagrass",
+  "textures": {
+    "texture": "foodindustrial:block/oyster_reef"
+  },
+  "render_type": "minecraft:cutout"
+}

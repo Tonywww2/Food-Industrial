@@ -4,6 +4,7 @@ import com.tonywww.foodindustrial.core.purity.Purity;
 import com.tonywww.foodindustrial.core.storage.FluidAmount;
 import com.tonywww.foodindustrial.core.text.Lang;
 import com.tonywww.foodindustrial.core.text.Tooltips;
+import com.tonywww.foodindustrial.food.quality.QualityText;
 import com.tonywww.foodindustrial.gui.GuiText;
 import com.tonywww.foodindustrial.platform.PlatformFluidContainers;
 import com.tonywww.foodindustrial.platform.PlatformFluids;
@@ -32,6 +33,7 @@ public class FluidBottleItem extends PlatformTankItem {
         if (!contents.isEmpty()) {
             lines.add(PlatformFluids.displayName(contents).copy().append(" ").append(Component.translatable(GuiText.key("tank", "amount"),
                 String.valueOf(contents.amount()), String.valueOf(CAPACITY))).withStyle(ChatFormatting.GRAY));
+            QualityText.append(contents.quality(), shiftDown, lines);
             if (Purity.bears(contents.fluid())) {
                 Tooltips.purityLine(Purity.materialOf(contents.fluid()), Purity.get(contents), lines);
             }

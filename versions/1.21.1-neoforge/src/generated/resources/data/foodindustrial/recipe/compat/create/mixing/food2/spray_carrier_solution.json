@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/maltodextrin"
+    },
+    {
+      "tag": "foodindustrial:chemicals/starch_sodium_octenylsuccinate"
+    },
+    {
+      "tag": "foodindustrial:chemicals/gum_arabic"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "foodindustrial:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "foodindustrial:spray_carrier_solution"
+    }
+  ]
+}

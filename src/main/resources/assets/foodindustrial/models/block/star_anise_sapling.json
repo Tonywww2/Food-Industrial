@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "foodindustrial:block/star_anise_sapling"
+  },
+  "render_type": "minecraft:cutout"
+}

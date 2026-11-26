@@ -2,7 +2,7 @@
   "type": "foodindustrial:reacting",
   "inputs": [
     {
-      "ingredient": "#foodindustrial:chemicals/animal_fat"
+      "ingredient": "#foodindustrial:animal_fats"
     },
     {
       "count": 3,

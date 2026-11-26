@@ -44,6 +44,26 @@ class MaterialTableTest {
     }
 
     @Test
+    void foodIntermediatesFollowTheMaterials() {
+        // I47: the product batches' intermediates, category "food", no purity; items in materials/, fluids by their id
+        MaterialDef juice = find("cane_juice");
+        assertEquals("food", juice.category());
+        assertTrue(juice.isFluid());
+        assertEquals("cane_juice", juice.tag());
+        assertNull(juice.purity());
+        MaterialDef flour = find("wheat_flour");
+        assertFalse(flour.isFluid());
+        assertEquals("materials/wheat_flour", flour.tag());
+        assertEquals("生抽（酱醅）", find("light_soy_sauce_moromi").nameZh());
+        assertTrue(MATERIALS.indexOf(find("salt")) < MATERIALS.indexOf(juice), "the food table follows materials.json");
+        // I49: the grain and bakery intermediates, and the dairy ones batch 3 takes first
+        assertEquals("materials/glutinous_rice", find("glutinous_rice").tag());
+        assertTrue(find("cream").isFluid());
+        assertEquals("凉皮（面浆）", find("liangpi_batter").nameZh());
+        assertEquals("materials/salted_egg_yolk", find("salted_egg_yolk").tag());
+    }
+
+    @Test
     void knownRows() {
         MaterialDef salt = find("salt");
         assertEquals("氯化钠（盐）", salt.nameZh());

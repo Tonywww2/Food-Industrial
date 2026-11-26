@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#foodindustrial:foods/edible_oil",
+    "#foodindustrial:foods/peanut_oil",
+    "#foodindustrial:foods/sesame_oil"
+  ]
+}

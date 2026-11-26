@@ -1,0 +1,131 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "parts": "foodindustrial:block/steeping_vat_parts"
+  },
+  "elements": [
+    {
+      "name": "vat",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "tap_pipe",
+      "from": [7, 4, -3],
+      "to": [9, 6, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 1, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [1, 0, 2.5, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [1, 0, 2.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [2.5, 0, 3.5, 1.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [2.5, 0, 3.5, 1.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "tap_spout",
+      "from": [7, 2, -3],
+      "to": [9, 4, -2],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 1, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [3.5, 0, 4, 1],
+          "texture": "#parts"
+        },
+        "south": {
+          "uv": [0, 0, 1, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [3.5, 0, 4, 1],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [4, 0, 5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "tap_key",
+      "from": [6, 6, -2],
+      "to": [10, 8, -1],
+      "faces": {
+        "north": {
+          "uv": [5, 0, 7, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [3.5, 0, 4, 1],
+          "texture": "#parts"
+        },
+        "south": {
+          "uv": [5, 0, 7, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [3.5, 0, 4, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [7, 0, 9, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [7, 0, 9, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

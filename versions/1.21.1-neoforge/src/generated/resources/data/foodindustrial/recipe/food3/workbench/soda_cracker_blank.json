@@ -1,0 +1,12 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "soda_cracker|risen_dough"
+    }
+  ],
+  "process": "forming",
+  "result": {
+    "semi_finished": "soda_cracker|blank"
+  }
+}

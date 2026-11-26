@@ -8,6 +8,7 @@
     {
       "id": "#c:crops/sesameseeds",
       "required": false
-    }
+    },
+    "foodindustrial:sesame"
   ]
 }

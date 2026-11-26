@@ -1,0 +1,16 @@
+{
+  "type": "foodindustrial:food_crafting",
+  "ingredients": [
+    {
+      "semi_finished": "toast_loaf|loaf"
+    }
+  ],
+  "process": "cutting",
+  "result": {
+    "count": 8,
+    "item": "foodindustrial:toast_loaf"
+  },
+  "tools": [
+    "#foodindustrial:knives"
+  ]
+}

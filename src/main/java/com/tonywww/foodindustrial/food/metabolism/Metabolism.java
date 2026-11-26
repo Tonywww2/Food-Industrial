@@ -32,13 +32,15 @@ import static com.tonywww.foodindustrial.food.metabolism.MetabolismRules.*;
 public final class Metabolism {
     /** Damage type of alcohol poisoning (bypasses armour). */
     public static final String ALCOHOL_POISONING = "foodindustrial:alcohol_poisoning";
+    /** Damage type of nitrite poisoning (bypasses armour, foods/02 §4.4). */
+    public static final String NITRITE_POISONING = "foodindustrial:nitrite_poisoning";
     private static final PlatformPlayerData.Key<MetabolismState> DATA = PlatformPlayerData.register("metabolism", MetabolismState::new);
     private static final PlatformNetwork.Channel<MetabolismView> SYNC = PlatformNetwork.toClient("metabolism", MetabolismView::read, Metabolism::received);
 
     private static final String SECTION = "metabolism";
     private static BooleanSupplier clearOnDeath = () -> true;
     private static BooleanSupplier impurity = () -> true;
-    private static BooleanSupplier nutrients = () -> true;
+    private static java.util.function.Supplier<java.util.List<String>> disabledNutrients = java.util.List::of;
     private static final BooleanSupplier[] UNCONSCIOUS = new BooleanSupplier[Unconscious.values().length];
     @org.jetbrains.annotations.Nullable
     private static PlatformAttributes.PlayerAttribute rate;
@@ -57,7 +59,15 @@ public final class Metabolism {
         clearOnDeath = PlatformConfig.commonBoolean(SECTION, "clear_on_death",
             "Clear caffeine, alcohol, fast sugar and impurity, and refill nutrient reserves, when a player dies", true);
         impurity = PlatformConfig.commonBoolean(SECTION, "impurity", "Impurity from homemade and poor products and its effects", true);
-        nutrients = PlatformConfig.commonBoolean(SECTION, "nutrients", "Vitamin C, B1 and D reserves and their deficiency effects", true);
+        java.util.List<String> nutrientIds = new java.util.ArrayList<>();
+        for (Substance substance : Substance.all()) {
+            if (substance.nutrient()) {
+                nutrientIds.add(substance.id());
+            }
+        }
+        disabledNutrients = PlatformConfig.commonStringList(SECTION, "disabled_nutrients",
+            "Nutrients that are switched off: not counted, used up or shown, and without effects. Any of " + String.join(", ", nutrientIds)
+                + "; list them all to turn the nutrient part off", java.util.List.of(), nutrientIds);
         UNCONSCIOUS[Unconscious.SCREEN.ordinal()] = PlatformConfig.commonBoolean(SECTION, "unconscious_screen",
             "Unconscious players see a black screen", true);
         UNCONSCIOUS[Unconscious.MOVEMENT.ordinal()] = PlatformConfig.commonBoolean(SECTION, "unconscious_movement",
@@ -74,6 +84,7 @@ public final class Metabolism {
             "Unconscious players wake up when they take damage", false);
         rate = PlatformAttributes.registerPlayer(RATE_ATTRIBUTE, 1.0, RATE_MIN, RATE_MAX);
         MetabolismText.bootstrap();
+        MetabolismCommands.bootstrap();
         MetabolismEffects.declare();
         MetabolismData.bootstrap();
 
@@ -116,6 +127,10 @@ public final class Metabolism {
             ? net.minecraft.network.chat.Component.translatable(MetabolismText.KEY + "no_sleep") : null);
         PlatformPlayerEvents.setExhaustionScale((player, amount) ->
             player.level().isClientSide() ? amount : (float) (amount * DATA.get(player).exhaustionFactor));
+        PlatformPlayerEvents.setDamageTakenScale((player, amount) -> {
+            double extra = MetabolismEffects.damageTaken(DATA.get(player).tiers);
+            return extra == 0 ? amount : (float) (amount * (1 + extra));
+        });
         PlatformPlayerEvents.setInteractionGate(Metabolism::blocked);
         if (Platform.isPhysicalClient()) {
             com.tonywww.foodindustrial.food.metabolism.client.MetabolismClient.bootstrap();
@@ -152,7 +167,7 @@ public final class Metabolism {
     /** Settles the time since the last settlement, then applies changed tiers. */
     public static void settle(ServerPlayer player, MetabolismState state, boolean silent) {
         boolean impurityPart = impurity.getAsBoolean();
-        boolean nutrientPart = nutrients.getAsBoolean();
+        int nutrientPart = nutrientMask();
         switches(state, impurityPart, nutrientPart);
         long dayTime = PlatformPlayers.overworldDayTime(player);
         long gameTime = PlatformPlayers.gameTime(player);
@@ -160,7 +175,7 @@ public final class Metabolism {
         long elapsed = state.elapsed(dayTime, gameTime);
         state.rate = rate(player);
         state.advance(elapsed, state.rate, impurityPart, nutrientPart);
-        if (nutrientPart && sunStep > 0 && PlatformPlayers.inDirectSunlight(player)) {
+        if (MetabolismState.on(nutrientPart, Substance.VITAMIN_D.nutrientIndex()) && sunStep > 0 && PlatformPlayers.inDirectSunlight(player)) {
             state.addSunlight(sunStep);
         }
         update(player, state, silent);
@@ -170,7 +185,7 @@ public final class Metabolism {
     public static void advance(ServerPlayer player, long ticks) {
         MetabolismState state = DATA.get(player);
         settle(player, state, false);
-        state.advance(ticks, state.rate, impurity.getAsBoolean(), nutrients.getAsBoolean());
+        state.advance(ticks, state.rate, impurity.getAsBoolean(), nutrientMask());
         update(player, state, false);
     }
 
@@ -182,19 +197,29 @@ public final class Metabolism {
         MetabolismState state = DATA.get(player);
         settle(player, state, true);
         NutritionData data = Nutrition.of(stack);
+        int quality = com.tonywww.foodindustrial.food.FoodLine.quality(stack);
         double units = (grade == ProductGrade.POOR ? IMPURITY_POOR : grade == ProductGrade.HOMEMADE ? IMPURITY_HOMEMADE : 0)
             + (data == null ? 0 : data.impurity());
         if (data == null && units == 0) {
             return;
         }
+        double[] amounts = null;
+        if (data != null) {
+            amounts = new double[MetabolismState.NUTRIENTS];
+            for (Substance substance : Substance.all()) {
+                if (substance.nutrient()) {
+                    amounts[substance.nutrientIndex()] = data.amount(substance.component());
+                }
+            }
+        }
         state.intake(
             data == null ? 0 : data.amount(Component.CAFFEINE),
             data == null ? 0 : data.amount(Component.ALCOHOL),
             data == null ? 0 : data.amount(Component.FAST_SUGAR),
-            data == null ? 0 : data.amount(Component.VITAMIN_C),
-            data == null ? 0 : data.amount(Component.VITAMIN_B1),
-            data == null ? 0 : data.amount(Component.VITAMIN_D),
-            units, impurity.getAsBoolean(), nutrients.getAsBoolean());
+            data == null ? 0 : data.nitrite(quality),
+            amounts,
+            data == null ? 0 : data.amount(Component.PROVITAMIN_A),
+            units, impurity.getAsBoolean(), nutrientMask());
         update(player, state, false);
     }
 
@@ -214,16 +239,32 @@ public final class Metabolism {
         eat(player, stack, ProductGrade.of(stack));
     }
 
-    /** A part turned on or off: it starts again from a new player's state. */
-    private static void switches(MetabolismState state, boolean impurityPart, boolean nutrientPart) {
+    /** A part or a nutrient turned on or off: it starts again from a new player's state. */
+    private static void switches(MetabolismState state, boolean impurityPart, int nutrientPart) {
         if (impurityPart != state.impurityOn) {
             state.resetImpurity();
             state.impurityOn = impurityPart;
         }
         if (nutrientPart != state.nutrientsOn) {
-            state.resetNutrients();
+            for (int i = 0; i < MetabolismState.NUTRIENTS; i++) {
+                if (MetabolismState.on(nutrientPart, i) != MetabolismState.on(state.nutrientsOn, i)) {
+                    state.resetNutrient(i);
+                }
+            }
             state.nutrientsOn = nutrientPart;
         }
+    }
+
+    /** The nutrients the configuration leaves on (option {@code disabled_nutrients}, I46), as a mask by nutrient index. */
+    static int nutrientMask() {
+        int mask = MetabolismState.ALL_NUTRIENTS;
+        for (String id : disabledNutrients.get()) {
+            Substance substance = Substance.byId(id);
+            if (substance != null && substance.nutrient()) {
+                mask &= ~(1 << substance.nutrientIndex());
+            }
+        }
+        return mask;
     }
 
     /** The player's metabolic rate (attribute {@code foodindustrial:metabolic_rate}). */
@@ -233,14 +274,14 @@ public final class Metabolism {
 
     /** Applies every effect again, silently, and sends the full state (login, respawn, dimension change). */
     private static void refresh(ServerPlayer player, MetabolismState state) {
-        switches(state, impurity.getAsBoolean(), nutrients.getAsBoolean());
+        switches(state, impurity.getAsBoolean(), nutrientMask());
         state.rate = rate(player);
         for (Substance substance : Substance.all()) {
             int tier = state.tier(substance, state.impurityOn, state.nutrientsOn);
             state.tiers[substance.ordinal()] = tier;
             MetabolismEffects.apply(player, substance, tier);
         }
-        state.unconscious = state.tiers[Substance.ALCOHOL.ordinal()] >= 4;
+        state.unconscious = unconsciousTier(state);
         state.movementLocked = !lockWanted(state);
         lockMovement(player, state);
         state.exhaustionFactor = 1.0 - exhaustionCut(state.tiers[Substance.CAFFEINE.ordinal()], state.tiers[Substance.FAST_SUGAR.ordinal()]);
@@ -262,8 +303,9 @@ public final class Metabolism {
             }
         }
         int alcoholTier = state.tiers[Substance.ALCOHOL.ordinal()];
-        // Re-judged every settlement: a player woken by damage loses consciousness again while above 0.30 %.
-        state.unconscious = alcoholTier >= 4;
+        // Re-judged every settlement: a player woken by damage loses consciousness again while above 0.30 % blood
+        // alcohol or 50 % methemoglobin.
+        state.unconscious = unconsciousTier(state);
         lockMovement(player, state);
         if (alcoholTier >= 3 && state.clock - state.lastVomit >= HOUR) {
             state.lastVomit = state.clock;
@@ -273,11 +315,20 @@ public final class Metabolism {
             state.lastPoison = state.clock;
             PlatformPlayers.hurt(player, ALCOHOL_POISONING, POISON_DAMAGE);
         }
+        if (state.tiers[Substance.NITRITE.ordinal()] >= 4 && state.clock - state.lastNitritePoison >= NITRITE_POISON_INTERVAL) {
+            state.lastNitritePoison = state.clock;
+            PlatformPlayers.hurt(player, NITRITE_POISONING, NITRITE_POISON_DAMAGE);
+        }
         state.exhaustionFactor = 1.0 - exhaustionCut(state.tiers[Substance.CAFFEINE.ordinal()], state.tiers[Substance.FAST_SUGAR.ordinal()]);
         if (message != null) {
             PlatformPlayers.actionBar(player, message);
         }
         sync(player, state, false);
+    }
+
+    /** Unconscious from alcohol (> 0.30 %) or nitrite (> 50 % methemoglobin). */
+    private static boolean unconsciousTier(MetabolismState state) {
+        return state.tiers[Substance.ALCOHOL.ordinal()] >= 4 || state.tiers[Substance.NITRITE.ordinal()] >= 3;
     }
 
     private static boolean lockWanted(MetabolismState state) {
@@ -311,6 +362,8 @@ public final class Metabolism {
         view.amounts[Substance.CAFFEINE.ordinal()] = state.caffeine;
         view.amounts[Substance.ALCOHOL.ordinal()] = state.alcohol;
         view.amounts[Substance.FAST_SUGAR.ordinal()] = state.sugarInWindow();
+        view.amounts[Substance.NITRITE.ordinal()] = state.methemoglobin;
+        view.nitriteToday = state.nitriteToday();
         view.amounts[Substance.IMPURITY.ordinal()] = state.impurity;
         for (Substance substance : Substance.all()) {
             if (substance.nutrient()) {
@@ -318,12 +371,11 @@ public final class Metabolism {
             }
             int tier = state.tiers[substance.ordinal()];
             view.tiers[substance.ordinal()] = tier;
-            view.next[substance.ordinal()] = switch (substance) {
-                case FAST_SUGAR -> tier > 0 ? state.sugarEnduranceLeft() : -1;
-                case VITAMIN_C, VITAMIN_B1, VITAMIN_D -> nextNutrientChange(state, substance, tier);
-                default -> MetabolismRules.ticksToDrop(substance, view.amounts[substance.ordinal()], tier);
-            };
+            view.next[substance.ordinal()] = substance == Substance.FAST_SUGAR ? (tier > 0 ? state.sugarEnduranceLeft() : -1)
+                : substance.nutrient() ? nextNutrientChange(state, substance, tier)
+                : MetabolismRules.ticksToDrop(substance, view.amounts[substance.ordinal()], tier);
             view.deficient[substance.ordinal()] = substance.nutrient() ? state.deficientFor(substance) : -1;
+            view.today[substance.ordinal()] = substance.hasExcess() ? state.today(substance) : 0;
         }
         view.unconscious = state.unconscious;
         view.rate = state.rate;
@@ -334,10 +386,17 @@ public final class Metabolism {
         }
     }
 
-    /** Ticks until a nutrient's tier changes: the reserve runs out (tier 0), or the deficiency turns severe (tier 1). */
+    /**
+     * Ticks until a nutrient's tier changes: the reserve runs out (tier 0), the deficiency turns severe (tier 1), or the
+     * excess ends or eases (tiers 3 and 4).
+     */
     private static long nextNutrientChange(MetabolismState state, Substance nutrient, int tier) {
+        if (nutrient.excessTier(tier)) {
+            return state.excessLeft(nutrient, tier);
+        }
         if (tier == 0) {
-            return state.nutrientsOn ? (long) Math.ceil(state.reserve(nutrient) * MetabolismRules.DAY) : -1;
+            return MetabolismState.on(state.nutrientsOn, nutrient.nutrientIndex())
+                ? (long) Math.ceil(state.reserve(nutrient) * MetabolismRules.DAY) : -1;
         }
         if (tier == 1) {
             long severe = (long) (MetabolismRules.RESERVE_CAP[nutrient.nutrientIndex()] * MetabolismRules.DAY);

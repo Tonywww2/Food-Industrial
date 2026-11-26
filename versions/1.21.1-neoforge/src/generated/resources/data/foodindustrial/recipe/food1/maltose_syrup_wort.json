@@ -1,0 +1,38 @@
+{
+  "type": "foodindustrial:reacting",
+  "inputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "foodindustrial:materials/steamed_rice"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "foodindustrial:enzymes/malt"
+      }
+    },
+    {
+      "fluid": {
+        "type": "foodindustrial:fluid",
+        "amount": 1000,
+        "tag": "foodindustrial:water"
+      }
+    }
+  ],
+  "manual": {
+    "actions": 8
+  },
+  "mode": "enzymolysis",
+  "outputs": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:maltose_syrup_wort"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t0",
+    "temperature": "heated"
+  },
+  "time": 200
+}

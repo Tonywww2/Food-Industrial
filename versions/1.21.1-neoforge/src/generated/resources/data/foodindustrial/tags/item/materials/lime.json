@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:lime"
+    "foodindustrial:lime",
+    {
+      "id": "#c:fruits/lime",
+      "required": false
+    },
+    {
+      "id": "#forge:fruits/lime",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:materials/sugar_cane"
+    },
+    {
+      "tag": "foodindustrial:materials/sugar_cane"
+    },
+    {
+      "tag": "foodindustrial:materials/sugar_cane"
+    },
+    {
+      "tag": "foodindustrial:materials/sugar_cane"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "foodindustrial:cane_juice"
+    }
+  ]
+}

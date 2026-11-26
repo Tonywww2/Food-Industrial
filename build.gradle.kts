@@ -24,9 +24,21 @@ group = prop("mod.group")
 version = artifactVersion
 base.archivesName = "$modId-$loader"
 
-// Per-node datagen output (datapack layouts differ between Minecraft versions).
+// Per-node datagen output (datapack layouts differ between Minecraft versions). The dev runs read it in place:
+// a source set of no sources whose resource output is the folder itself joins the mod, so its ~34,000 files are
+// not copied into build/resources on every run (minutes on Windows, 2026-11-20, user); the jar takes them from here.
 val generatedResources = file("src/generated/resources")
-sourceSets.main { resources.srcDir(generatedResources) }
+val generated: SourceSet = sourceSets.create("generated") {
+    java.setSrcDirs(listOf<File>())
+    resources.setSrcDirs(listOf<File>())
+    output.setResourcesDir(generatedResources)
+}
+
+// Dev runs compile without the Mixin annotation processor: it is not incremental, so any change recompiled every
+// class (about 2 min on Windows, 2026-11-20). The dev game runs on Mojang names and needs no refmap; builds keep it.
+val devRunsOnly = gradle.startParameter.taskNames.let { names ->
+    names.isNotEmpty() && names.all { it.substringAfterLast(':').startsWith("run") }
+}
 
 // Create 0.5.1 support (deps.create05, 2026-11-14): the transmission interface's stress and Flywheel 0.6
 // rendering for packs still on Create 0.5.1. Its classes (src/create05/java, no Stonecutter conditions: this
@@ -76,6 +88,7 @@ loom {
     mods {
         create(modId) {
             sourceSet(sourceSets.main.get())
+            sourceSet(generated)
             create05?.let { sourceSet(it) }
         }
     }
@@ -104,7 +117,9 @@ loom {
         configureEach {
             runDir("../../run/$nodeName")
             property("forge.logging.markers", "REGISTRIES")
-            property("forge.logging.console.level", "debug")
+            // info on the console (debug.log keeps everything): tens of thousands of debug lines slowed the dev
+            // start in a Windows terminal (2026-11-20)
+            property("forge.logging.console.level", "info")
             property("forge.enabledGameTestNamespaces", modId)
             ideConfigGenerated(stonecutter.current.isActive)
         }
@@ -161,8 +176,10 @@ dependencies {
     }
     val modCoordinates = project.properties.keys.filter { it.startsWith("deps.mod.") }.sorted().map { prop(it) }
     modCoordinates.forEach { "modImplementation"(it) }
-    // Dev runtime only (deps.dev.<name>): mods that fill material tags for the dev runs, never compiled against.
-    project.properties.keys.filter { it.startsWith("deps.dev.") }.sorted().forEach { "modLocalRuntime"(prop(it)) }
+    // Dev runtime only (deps.dev.<name>): mods that fill material tags for the dev runs, and EMI; never compiled
+    // against. -PfiWithout=<name>,… leaves them out too (a JEI-only run: -PfiWithout=emi, 2026-11-25).
+    project.properties.keys.filter { it.startsWith("deps.dev.") && it.removePrefix("deps.dev.") !in names(optProp("fiWithout")) }
+        .sorted().forEach { "modLocalRuntime"(prop(it)) }
     // Optional mods (deps.opt.<name>): compiled against always, in the dev runtime only when named in
     // -PfiWith=<name>,… (or "all"), so runs with and without each mod are possible (I24–I27, 2026-11-11).
     // fi.devWith names those in every dev run (Jade, 2026-11-12, user); -PfiWithout=<name>,… leaves them out.
@@ -314,6 +331,14 @@ tasks {
         options.release = javaVersion
         dependsOn("stonecutterGenerate")
     }
+    if (devRunsOnly) {
+        named<JavaCompile>("compileJava") {
+            options.annotationProcessorPath = files()
+            options.compilerArgs.add("-proc:none")
+        }
+    }
+    // The generated source set has nothing to process; its output is the datagen folder itself.
+    named("processGeneratedResources") { enabled = false }
 
     // The Create 0.5.1 classes see the main classes and the main classpath without Create 6 and what it
     // bundles (Flywheel 1, Ponder); Loom adds the remapped Create 0.5.1 and Flywheel 0.6. Their classes go
@@ -355,6 +380,7 @@ tasks {
     }
 
     jar {
+        from(generatedResources) { exclude(".cache/**") }
         manifest.attributes(
             "Specification-Title" to modId,
             "Specification-Vendor" to prop("mod.authors"),

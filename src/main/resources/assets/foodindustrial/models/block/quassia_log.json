@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "foodindustrial:block/quassia_log_top",
+    "side": "foodindustrial:block/quassia_log"
+  }
+}

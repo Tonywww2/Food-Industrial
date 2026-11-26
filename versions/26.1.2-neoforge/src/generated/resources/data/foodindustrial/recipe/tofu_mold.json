@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": "#minecraft:planks",
+    "T": "minecraft:string"
+  },
+  "pattern": [
+    "P P",
+    "PTP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodindustrial:tofu_mold"
+  }
+}

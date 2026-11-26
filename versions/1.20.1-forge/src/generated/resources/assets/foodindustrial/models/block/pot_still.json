@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/pot_still_shape",
   "textures": {
     "front": "foodindustrial:block/pot_still_front",
     "side": "foodindustrial:block/pot_still_side",

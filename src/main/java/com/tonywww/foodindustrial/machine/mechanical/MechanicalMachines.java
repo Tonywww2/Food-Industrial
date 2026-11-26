@@ -4,6 +4,7 @@ import com.tonywww.foodindustrial.core.Tier;
 import com.tonywww.foodindustrial.core.text.Lang;
 import com.tonywww.foodindustrial.machine.block.AirIntakeBlock;
 import com.tonywww.foodindustrial.machine.block.CasingBlock;
+import com.tonywww.foodindustrial.machine.component.SlotRole;
 import com.tonywww.foodindustrial.machine.definition.GasSupply;
 import com.tonywww.foodindustrial.machine.definition.IoLayout;
 import com.tonywww.foodindustrial.machine.definition.MachineDefinition;
@@ -98,15 +99,16 @@ public final class MechanicalMachines {
 
     // ---- machines ----
 
-    /** M11 (machines/03 §3: I 1, O 2, U 2; phase 0); the I09 sample made a real machine. */
+    /** M11 (machines/03 §3: I 2 from I47.5, O 2, U 2; phase 0); the I09 sample made a real machine. */
     public static final MachineDefinition CRUSHER = MachineDefinition.builder("crusher")
         .name("粉碎机", "Crusher")
         .description("电动研磨，比石磨快、出得多", "Electric grinding, faster and richer than the stone mill")
         .tier(Tier.T2)
         .types(ProcessTypes.GRINDING)
-        .layout(IoLayout.of(1, 2, 0, 0).withUpgrades(2))
+        .layout(IoLayout.of(2, 2, 0, 0).withUpgrades(2))
         .power(PowerKind.ENERGY)
         .phase(TickPhase.MECHANICAL)
+        .shaped()
         .register();
 
     /** M12 (I 1, O 2, FI 1, FO 2, U 2, X 2; phase 0): pressing and separation; filtering and spinning by module. */
@@ -119,6 +121,7 @@ public final class MechanicalMachines {
         .modules(FILTER_PLATES, CENTRIFUGE_DRUM)
         .power(PowerKind.ENERGY)
         .phase(TickPhase.MECHANICAL)
+        .shaped()
         .register();
 
     /**
@@ -133,21 +136,25 @@ public final class MechanicalMachines {
         .layout(IoLayout.of(3, 2, 6, 3).withCatalyst(1).withUpgrades(2).withModules(3))
         .capabilities(Capabilities.of("temperature.heated", "temperature.cooling"))
         .modes(MachineMode.of("reaction", Capabilities.NONE),
-            MachineMode.of("polymerization", Capabilities.of("method.polymerization")))
+            MachineMode.of("polymerization", Capabilities.of("method.polymerization")),
+            // finished-food line (I41, I42): R11 coagulating, curdling and enzymolysis (machines/05 §2.1)
+            MachineMode.of("coagulating", Capabilities.NONE), MachineMode.of("curdling", Capabilities.NONE),
+            MachineMode.of("enzymolysis", Capabilities.NONE))
         .modules(CORROSION_LINING, VACUUM_PUMP, CRYO_JACKET, UV_LAMP)
         .airIntake()
         .gas(new GasSupply("atmosphere.inert", "foodindustrial:nitrogen", 10, 40))
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REACTION)
+        .shaped()
         .register();
 
-    /** M15 (I 1, O 2, FI 2, FO 2, U 2, X 2; phase 2): five modes over boiling (R05) and crystallizing (R06). */
+    /** M15 (I 3, O 2, FI 2, FO 2, C 1, U 2, X 2; phase 2; I 3 and C 1 from I47.5): five modes over boiling (R05) and crystallizing (R06). */
     public static final MachineDefinition EVAPORATING_CRYSTALLIZER = MachineDefinition.builder("evaporating_crystallizer")
         .name("蒸发结晶器", "Evaporating Crystallizer")
         .description("浓缩与结晶，可装真空、多效模块", "Concentrating and crystallizing; vacuum and multi-effect")
         .tier(Tier.T2)
         .types(ProcessTypes.BOILING, ProcessTypes.CRYSTALLIZING)
-        .layout(IoLayout.of(1, 2, 2, 2).withUpgrades(2).withModules(2))
+        .layout(IoLayout.of(3, 2, 2, 2).withCatalyst(1).withUpgrades(2).withModules(2))
         .modes(MachineMode.of("concentration", Capabilities.of("temperature.heated"), ProcessTypes.BOILING),
             MachineMode.of("evaporative_crystallization", Capabilities.of("temperature.heated"), ProcessTypes.CRYSTALLIZING),
             MachineMode.of("cooling_crystallization", Capabilities.of("temperature.cooling"), ProcessTypes.CRYSTALLIZING),
@@ -156,6 +163,7 @@ public final class MechanicalMachines {
         .modules(VACUUM_PUMP, MULTI_EFFECT)
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REFINING)
+        .shaped()
         .register();
 
     /** M17 (I 2, O 2, FI 1, U 2, X 2; phase 2): drum or flash drying; flash drying breathes through the back. */
@@ -172,6 +180,7 @@ public final class MechanicalMachines {
         .airIntake()
         .power(PowerKind.ENERGY)
         .phase(TickPhase.REFINING)
+        .shaped()
         .register();
 
     /** M18 (I 2, O 2, FI 2, FO 2, U 2, X 1; phase 0): solvent recovery needs a condenser on top. */
@@ -187,6 +196,7 @@ public final class MechanicalMachines {
         .requires(MachineRequirement.blockAbove(WorkshopMachines.CONDENSER, Lang.block("condenser")))
         .power(PowerKind.ENERGY)
         .phase(TickPhase.MECHANICAL)
+        .shaped()
         .register();
 
     /**
@@ -199,7 +209,8 @@ public final class MechanicalMachines {
         .tier(Tier.T2)
         .types(ProcessTypes.ABSORBING)
         .layout(IoLayout.of(1, 1, 2, 2).withUpgrades(2).withModules(1))
-        .modes(MachineMode.of("absorption", Capabilities.NONE), MachineMode.of("carbonation", Capabilities.NONE),
+        // carbonation runs under pressure (I41: soft drinks; popping candy's 600 psi needs T3 by its recipe)
+        .modes(MachineMode.of("absorption", Capabilities.NONE), MachineMode.of("carbonation", Capabilities.of("pressure.pressurized")),
             MachineMode.of("combustion", Capabilities.NONE).needing(AIR))
         .modules(LEAD_CHAMBER)
         .airIntake()
@@ -212,6 +223,7 @@ public final class MechanicalMachines {
             .layer("###", "###", "###")
             .where('#', Lang.block("tower_wall"), true, TOWER_WALL, AIR_INTAKE)
             .build())
+        .shaped()
         .register();
 
     /**
@@ -243,22 +255,32 @@ public final class MechanicalMachines {
             .layer("###", "###", "###", "###", "###")
             .where('#', Lang.block("kiln_shell"), true, KILN_SHELL, AIR_INTAKE)
             .build())
+        .shaped()
         .register();
 
-    /** M21 (I 6, O 2, FI 3, FO 1, U 2, X 1; phase 0; three input tanks from I31): blending recipes, homogenizing and normalizing jobs. */
+    /**
+     * M21 (I 9, O 2, FI 3, FO 1, A 8, U 2, X 1; phase 0; three input tanks from I31; nine inputs, level with the crafting table,
+     * from I47.5): blending recipes, homogenizing and normalizing jobs.
+     */
     public static final MachineDefinition MIXER = MachineDefinition.builder("mixer")
         .name("调配机", "Mixer")
         .description("配料；均质纯度；他模组物品归一", "Blending; evens out purity; converts other mods' items")
         .tier(Tier.T2)
         .types(ProcessTypes.MIXING)
-        .layout(IoLayout.of(6, 2, 3, 1).withUpgrades(2).withModules(1))
+        // C 1 from I49: the brewer's yeast of a leavened batter (fagao, foods/13 §6.7)
+        .layout(IoLayout.of(9, 2, 3, 1).withCatalyst(1).withUpgrades(2).withModules(1).withAdditives(8))
+        .slotNames(SlotRole.CATALYST, "culture")
         .modes(MachineMode.of("blending", Capabilities.NONE),
             MachineMode.of(MixerBlockEntity.HOMOGENIZING, Capabilities.NONE),
-            MachineMode.of(MixerBlockEntity.NORMALIZING, Capabilities.NONE))
+            MachineMode.of(MixerBlockEntity.NORMALIZING, Capabilities.NONE),
+            // finished-food line (I41, machines/05 §2.3)
+            MachineMode.of("whipping", Capabilities.NONE), MachineMode.of("churning", Capabilities.NONE),
+            MachineMode.of("high_pressure_homogenizing", Capabilities.NONE))
         .modules(EMULSIFYING_HEAD, INTERNAL_MIXER)
         .entity(MixerBlockEntity::new)
         .power(PowerKind.ENERGY)
         .phase(TickPhase.MECHANICAL)
+        .shaped()
         .register();
 
     private MechanicalMachines() {

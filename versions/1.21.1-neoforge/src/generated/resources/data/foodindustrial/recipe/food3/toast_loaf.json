@@ -1,0 +1,24 @@
+{
+  "type": "foodindustrial:cutting",
+  "catalyst": {
+    "ingredient": {
+      "tag": "foodindustrial:knives"
+    }
+  },
+  "inputs": [
+    {
+      "semi_finished": "toast_loaf|loaf"
+    }
+  ],
+  "mode": "slicing",
+  "outputs": [
+    {
+      "count": 8,
+      "item": "foodindustrial:toast_loaf"
+    }
+  ],
+  "requirements": {
+    "min_tier": "t1"
+  },
+  "time": 100
+}

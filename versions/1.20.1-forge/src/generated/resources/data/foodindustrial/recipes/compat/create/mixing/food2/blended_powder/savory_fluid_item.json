@@ -1,0 +1,40 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "foodindustrial:flavor_notes/all"
+    },
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "tag": "foodindustrial:flavor_carriers/powders"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "foodindustrial:flavor_notes/savory"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "foodindustrial:savory_flavoring"
+    }
+  ]
+}

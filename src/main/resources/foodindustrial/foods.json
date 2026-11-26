@@ -115,7 +115,12 @@
     "en": "Whipping Cream"
    },
    "category": "dairy",
-   "category_name": "乳及乳制品"
+   "category_name": "乳及乳制品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#FBF6E6",
+    "texture": "liquid"
+   }
   },
   {
    "id": "milk_tablet",
@@ -178,7 +183,9 @@
     "en": "Vegetable Cooking Oil"
    },
    "category": "fats_oils",
-   "category_name": "脂肪、油和乳化脂肪制品"
+   "category_name": "脂肪、油和乳化脂肪制品",
+   "container": "glass_bottle",
+   "pours": "refined_soybean_oil"
   },
   {
    "id": "peanut_oil",
@@ -187,7 +194,9 @@
     "en": "Peanut Oil"
    },
    "category": "fats_oils",
-   "category_name": "脂肪、油和乳化脂肪制品"
+   "category_name": "脂肪、油和乳化脂肪制品",
+   "container": "glass_bottle",
+   "pours": "crude_peanut_oil"
   },
   {
    "id": "sesame_oil",
@@ -196,7 +205,12 @@
     "en": "Sesame Oil"
    },
    "category": "fats_oils",
-   "category_name": "脂肪、油和乳化脂肪制品"
+   "category_name": "脂肪、油和乳化脂肪制品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#B07820",
+    "texture": "viscous"
+   }
   },
   {
    "id": "margarine",
@@ -205,7 +219,8 @@
     "en": "Margarine"
    },
    "category": "fats_oils",
-   "category_name": "脂肪、油和乳化脂肪制品"
+   "category_name": "脂肪、油和乳化脂肪制品",
+   "container": "glass_jar"
   },
   {
    "id": "shortening",
@@ -214,7 +229,8 @@
     "en": "Shortening"
    },
    "category": "fats_oils",
-   "category_name": "脂肪、油和乳化脂肪制品"
+   "category_name": "脂肪、油和乳化脂肪制品",
+   "container": "glass_jar"
   },
   {
    "id": "non_dairy_creamer",
@@ -223,7 +239,8 @@
     "en": "Non-Dairy Creamer"
    },
    "category": "fats_oils",
-   "category_name": "脂肪、油和乳化脂肪制品"
+   "category_name": "脂肪、油和乳化脂肪制品",
+   "container": "paper_bag"
   },
   {
    "id": "vanilla_ice_cream",
@@ -772,7 +789,11 @@
     "en": "Sesame Paste"
    },
    "category": "fruits_vegetables",
-   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类"
+   "category_name": "水果、蔬菜、豆类、食用菌、藻类、坚果及籽类",
+   "fluid": {
+    "color": "#8A6A40",
+    "texture": "viscous"
+   }
   },
   {
    "id": "dark_chocolate",
@@ -997,7 +1018,8 @@
     "en": "Self-Rising Flour"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "dried_noodles",
@@ -1006,7 +1028,8 @@
     "en": "Dried Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "lanzhou_pulled_noodles",
@@ -1015,7 +1038,8 @@
     "en": "Lanzhou Pulled Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "alkaline_noodles",
@@ -1024,7 +1048,8 @@
     "en": "Alkaline Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "plastic_bag"
   },
   {
    "id": "egg_noodles",
@@ -1033,7 +1058,8 @@
     "en": "Egg Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "instant_noodles",
@@ -1042,7 +1068,8 @@
     "en": "Instant Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "plastic_bag"
   },
   {
    "id": "knife_cut_noodles",
@@ -1051,7 +1078,8 @@
     "en": "Knife-Cut Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "dumplings",
@@ -1060,7 +1088,8 @@
     "en": "Dumplings"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "wontons",
@@ -1069,7 +1098,8 @@
     "en": "Wontons"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "shumai",
@@ -1078,7 +1108,8 @@
     "en": "Shumai"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "frozen_dumplings",
@@ -1087,7 +1118,8 @@
     "en": "Frozen Dumplings"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "plastic_bag"
   },
   {
    "id": "tangyuan",
@@ -1096,7 +1128,8 @@
     "en": "Tangyuan"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "frozen_tangyuan",
@@ -1105,7 +1138,8 @@
     "en": "Frozen Tangyuan"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "plastic_bag"
   },
   {
    "id": "niangao",
@@ -1114,7 +1148,8 @@
     "en": "Niangao"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "rice_vermicelli",
@@ -1123,7 +1158,8 @@
     "en": "Rice Vermicelli"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "hor_fun",
@@ -1132,7 +1168,8 @@
     "en": "Hor Fun"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "glass_noodles",
@@ -1141,7 +1178,8 @@
     "en": "Glass Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "starch_noodles",
@@ -1150,7 +1188,8 @@
     "en": "Starch Noodles"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "liangpi",
@@ -1159,7 +1198,8 @@
     "en": "Liangpi"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "starch_jelly",
@@ -1168,7 +1208,8 @@
     "en": "Starch Jelly"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "alkaline_zongzi",
@@ -1177,7 +1218,8 @@
     "en": "Alkaline Zongzi"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "youtiao",
@@ -1186,7 +1228,8 @@
     "en": "Youtiao"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "mahua",
@@ -1213,7 +1256,8 @@
     "en": "Steamed Bun"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "baozi",
@@ -1222,7 +1266,8 @@
     "en": "Baozi"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "flower_roll",
@@ -1231,7 +1276,8 @@
     "en": "Flower Roll"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "fagao",
@@ -1240,7 +1286,8 @@
     "en": "Fagao"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "stack": 16
   },
   {
    "id": "oat_flakes",
@@ -1249,7 +1296,8 @@
     "en": "Oat Flakes"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "breakfast_cereal",
@@ -1258,7 +1306,8 @@
     "en": "Breakfast Cereal"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "rice_pudding",
@@ -1267,7 +1316,12 @@
     "en": "Rice Pudding"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#F2E8D0",
+    "texture": "viscous"
+   }
   },
   {
    "id": "tapioca_pearls",
@@ -1276,7 +1330,8 @@
     "en": "Tapioca Pearls"
    },
    "category": "cereals",
-   "category_name": "粮食和粮食制品"
+   "category_name": "粮食和粮食制品",
+   "container": "paper_bag"
   },
   {
    "id": "white_bread",
@@ -1285,7 +1340,8 @@
     "en": "White Bread"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "whole_wheat_bread",
@@ -1294,7 +1350,8 @@
     "en": "Whole Wheat Bread"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "toast_loaf",
@@ -1303,7 +1360,8 @@
     "en": "Toast Loaf"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "baguette",
@@ -1312,7 +1370,8 @@
     "en": "Baguette"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "croissant",
@@ -1321,7 +1380,8 @@
     "en": "Croissant"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "bagel",
@@ -1330,7 +1390,8 @@
     "en": "Bagel"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "pretzel",
@@ -1339,7 +1400,8 @@
     "en": "Pretzel"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "donut",
@@ -1348,7 +1410,8 @@
     "en": "Donut"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "sponge_cake",
@@ -1357,7 +1420,8 @@
     "en": "Sponge Cake"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "chiffon_cake",
@@ -1366,7 +1430,8 @@
     "en": "Chiffon Cake"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "cheesecake",
@@ -1375,7 +1440,8 @@
     "en": "Cheesecake"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "mousse_cake",
@@ -1384,7 +1450,8 @@
     "en": "Mousse Cake"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "cream_cake",
@@ -1393,7 +1460,8 @@
     "en": "Cream Cake"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "cantonese_mooncake",
@@ -1483,7 +1551,8 @@
     "en": "Cream Puff"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "egg_tart",
@@ -1492,7 +1561,8 @@
     "en": "Egg Tart"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "apple_pie",
@@ -1501,7 +1571,8 @@
     "en": "Apple Pie"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "berry_pie",
@@ -1510,7 +1581,8 @@
     "en": "Berry Pie"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "muffin",
@@ -1519,7 +1591,8 @@
     "en": "Muffin"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "scone",
@@ -1528,7 +1601,8 @@
     "en": "Scone"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "waffle",
@@ -1537,7 +1611,8 @@
     "en": "Waffle"
    },
    "category": "bakery",
-   "category_name": "焙烤食品"
+   "category_name": "焙烤食品",
+   "stack": 16
   },
   {
    "id": "dorayaki",
@@ -1558,7 +1633,7 @@
    "category_name": "焙烤食品"
   },
   {
-   "id": "larou",
+   "id": "la_rou",
    "name": {
     "zh": "腊肉",
     "en": "Cured Pork Belly"
@@ -1585,7 +1660,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "pressed_salted_duck",
+   "id": "salted_duck",
    "name": {
     "zh": "板鸭",
     "en": "Pressed Salted Duck"
@@ -1594,10 +1669,10 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "chinese_ham",
+   "id": "jinhua_ham",
    "name": {
-    "zh": "中式火腿",
-    "en": "Chinese Ham"
+    "zh": "金华火腿",
+    "en": "Jinhua Ham"
    },
    "category": "meat",
    "category_name": "肉及肉制品"
@@ -1621,7 +1696,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "hot_dog",
+   "id": "frankfurter",
    "name": {
     "zh": "热狗肠",
     "en": "Hot Dog Sausage"
@@ -1666,7 +1741,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "braised_beef",
+   "id": "braised_beef_shank",
    "name": {
     "zh": "卤牛肉",
     "en": "Braised Beef"
@@ -1693,7 +1768,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "braised_pork_belly",
+   "id": "red_braised_pork",
    "name": {
     "zh": "红烧肉",
     "en": "Braised Pork Belly"
@@ -1729,7 +1804,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "pork_jerky_sheet",
+   "id": "pork_jerky",
    "name": {
     "zh": "猪肉脯",
     "en": "Pork Jerky Sheet"
@@ -1738,7 +1813,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "meatballs",
+   "id": "pork_balls",
    "name": {
     "zh": "肉丸",
     "en": "Meatballs"
@@ -1747,7 +1822,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "lions_head_meatball",
+   "id": "lions_head",
    "name": {
     "zh": "狮子头",
     "en": "Lion's Head Meatball"
@@ -1756,7 +1831,7 @@
    "category_name": "肉及肉制品"
   },
   {
-   "id": "meat_aspic",
+   "id": "pork_skin_jelly",
    "name": {
     "zh": "肉冻",
     "en": "Meat Aspic"
@@ -1783,7 +1858,7 @@
    "category_name": "水产及其制品"
   },
   {
-   "id": "crab_stick",
+   "id": "crab_sticks",
    "name": {
     "zh": "蟹肉棒",
     "en": "Crab Stick"
@@ -1810,7 +1885,7 @@
    "category_name": "水产及其制品"
   },
   {
-   "id": "dried_fish",
+   "id": "stockfish",
    "name": {
     "zh": "鱼干",
     "en": "Dried Fish"
@@ -1819,7 +1894,7 @@
    "category_name": "水产及其制品"
   },
   {
-   "id": "smoked_fish",
+   "id": "smoked_salmon",
    "name": {
     "zh": "熏鱼",
     "en": "Smoked Fish"
@@ -1837,7 +1912,7 @@
    "category_name": "水产及其制品"
   },
   {
-   "id": "fried_dace_with_black_beans",
+   "id": "fried_dace_black_bean",
    "name": {
     "zh": "豆豉鲮鱼罐头",
     "en": "Canned Dace with Black Beans"
@@ -2014,7 +2089,12 @@
     "en": "Maltose Syrup"
    },
    "category": "sweeteners",
-   "category_name": "甜味料"
+   "category_name": "甜味料",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#D8A040",
+    "texture": "viscous"
+   }
   },
   {
    "id": "glucose_syrup",
@@ -2023,7 +2103,12 @@
     "en": "Glucose Syrup"
    },
    "category": "sweeteners",
-   "category_name": "甜味料"
+   "category_name": "甜味料",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#F0E8C0",
+    "texture": "viscous"
+   }
   },
   {
    "id": "high_fructose_syrup",
@@ -2032,7 +2117,12 @@
     "en": "High-Fructose Syrup"
    },
    "category": "sweeteners",
-   "category_name": "甜味料"
+   "category_name": "甜味料",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#F2ECCC",
+    "texture": "viscous"
+   }
   },
   {
    "id": "caramel_syrup",
@@ -2041,7 +2131,12 @@
     "en": "Caramel Syrup"
    },
    "category": "sweeteners",
-   "category_name": "甜味料"
+   "category_name": "甜味料",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#6A3010",
+    "texture": "viscous"
+   }
   },
   {
    "id": "tabletop_sweetener",
@@ -2086,7 +2181,12 @@
     "en": "Light Soy Sauce"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#5A2A10",
+    "texture": "liquid"
+   }
   },
   {
    "id": "dark_soy_sauce",
@@ -2095,7 +2195,12 @@
     "en": "Dark Soy Sauce"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#2A1208",
+    "texture": "liquid"
+   }
   },
   {
    "id": "premium_soy_sauce",
@@ -2104,7 +2209,12 @@
     "en": "Premium Soy Sauce"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#6A3418",
+    "texture": "liquid"
+   }
   },
   {
    "id": "rice_vinegar",
@@ -2113,7 +2223,12 @@
     "en": "Rice Vinegar"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#C89A50",
+    "texture": "liquid"
+   }
   },
   {
    "id": "aged_vinegar",
@@ -2122,7 +2237,12 @@
     "en": "Aged Vinegar"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#2A1408",
+    "texture": "liquid"
+   }
   },
   {
    "id": "apple_cider_vinegar",
@@ -2131,7 +2251,12 @@
     "en": "Apple Cider Vinegar"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#D8B060",
+    "texture": "liquid"
+   }
   },
   {
    "id": "white_vinegar",
@@ -2140,7 +2265,12 @@
     "en": "White Vinegar"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#F0F0E8",
+    "texture": "liquid"
+   }
   },
   {
    "id": "doubanjiang",
@@ -2149,7 +2279,12 @@
     "en": "Doubanjiang"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#8A2A1A",
+    "texture": "viscous"
+   }
   },
   {
    "id": "sweet_bean_sauce",
@@ -2158,7 +2293,12 @@
     "en": "Sweet Bean Sauce"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#3A1E10",
+    "texture": "viscous"
+   }
   },
   {
    "id": "soybean_paste",
@@ -2167,7 +2307,12 @@
     "en": "Soybean Paste"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#8A5A2A",
+    "texture": "viscous"
+   }
   },
   {
    "id": "ketchup",
@@ -2176,7 +2321,12 @@
     "en": "Ketchup"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#C8281A",
+    "texture": "viscous"
+   }
   },
   {
    "id": "salad_dressing",
@@ -2185,7 +2335,12 @@
     "en": "Salad Dressing"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#F4F0E0",
+    "texture": "viscous"
+   }
   },
   {
    "id": "mayonnaise",
@@ -2194,7 +2349,12 @@
     "en": "Mayonnaise"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#F0E0A0",
+    "texture": "viscous"
+   }
   },
   {
    "id": "mustard",
@@ -2203,7 +2363,12 @@
     "en": "Mustard"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#D8C030",
+    "texture": "viscous"
+   }
   },
   {
    "id": "chili_sauce",
@@ -2212,7 +2377,12 @@
     "en": "Chili Sauce"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_jar",
+   "fluid": {
+    "color": "#B0201A",
+    "texture": "viscous"
+   }
   },
   {
    "id": "oyster_sauce",
@@ -2221,7 +2391,12 @@
     "en": "Oyster Sauce"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#3A2010",
+    "texture": "viscous"
+   }
   },
   {
    "id": "chicken_bouillon_powder",
@@ -2230,7 +2405,8 @@
     "en": "Chicken Bouillon Powder"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "paper_bag"
   },
   {
    "id": "stock_cube",
@@ -2248,7 +2424,12 @@
     "en": "Kombu Dashi"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#C8B070",
+    "texture": "liquid"
+   }
   },
   {
    "id": "master_stock",
@@ -2257,7 +2438,12 @@
     "en": "Master Stock"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#5A2A10",
+    "texture": "liquid"
+   }
   },
   {
    "id": "cooking_wine",
@@ -2266,7 +2452,12 @@
     "en": "Cooking Wine"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#B07020",
+    "texture": "liquid"
+   }
   },
   {
    "id": "hotpot_base",
@@ -2311,7 +2502,12 @@
     "en": "Chili Oil"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#C0301A",
+    "texture": "viscous"
+   }
   },
   {
    "id": "sichuan_pepper_oil",
@@ -2320,7 +2516,12 @@
     "en": "Sichuan Pepper Oil"
    },
    "category": "condiments",
-   "category_name": "调味品"
+   "category_name": "调味品",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#D8B040",
+    "texture": "viscous"
+   }
   },
   {
    "id": "infant_rice_cereal",
@@ -2665,7 +2866,7 @@
    "category_name": "饮料类"
   },
   {
-   "id": "jiuniang",
+   "id": "sweet_rice_wine",
    "name": {
     "zh": "甜米酒",
     "en": "Sweet Rice Wine"
@@ -2680,7 +2881,12 @@
     "en": "Huangjiu"
    },
    "category": "alcoholic",
-   "category_name": "酒类"
+   "category_name": "酒类",
+   "container": "glass_bottle",
+   "fluid": {
+    "color": "#B07020",
+    "texture": "liquid"
+   }
   },
   {
    "id": "baijiu",
@@ -2701,13 +2907,17 @@
    "category_name": "酒类"
   },
   {
-   "id": "cider",
+   "id": "apple_wine",
    "name": {
     "zh": "苹果酒",
     "en": "Cider"
    },
    "category": "alcoholic",
-   "category_name": "酒类"
+   "category_name": "酒类",
+   "fluid": {
+    "color": "#E0C060",
+    "texture": "liquid"
+   }
   },
   {
    "id": "berry_wine",
@@ -2719,7 +2929,7 @@
    "category_name": "酒类"
   },
   {
-   "id": "grape_wine",
+   "id": "wine",
    "name": {
     "zh": "葡萄酒",
     "en": "Grape Wine"
@@ -2782,7 +2992,7 @@
    "category_name": "酒类"
   },
   {
-   "id": "plum_liqueur",
+   "id": "plum_wine",
    "name": {
     "zh": "青梅酒",
     "en": "Plum Liqueur"
@@ -2800,16 +3010,16 @@
    "category_name": "酒类"
   },
   {
-   "id": "vanilla_liqueur",
+   "id": "herbal_liqueur",
    "name": {
-    "zh": "香草利口酒",
-    "en": "Vanilla Liqueur"
+    "zh": "草本药酒",
+    "en": "Herbal Liqueur"
    },
    "category": "alcoholic",
    "category_name": "酒类"
   },
   {
-   "id": "red_yeast_rice_wine",
+   "id": "red_yeast_wine",
    "name": {
     "zh": "红曲酒",
     "en": "Red Yeast Rice Wine"
@@ -2863,7 +3073,7 @@
    "category_name": "其他类"
   },
   {
-   "id": "guilinggao",
+   "id": "herbal_jelly",
    "name": {
     "zh": "龟苓膏",
     "en": "Guilinggao"
@@ -2899,7 +3109,7 @@
    "category_name": "其他类"
   },
   {
-   "id": "prawn_crackers",
+   "id": "shrimp_chips",
    "name": {
     "zh": "虾片",
     "en": "Prawn Crackers"
@@ -2908,10 +3118,10 @@
    "category_name": "其他类"
   },
   {
-   "id": "corn_chips",
+   "id": "corn_flakes",
    "name": {
     "zh": "玉米片",
-    "en": "Corn Chips"
+    "en": "Corn Flakes"
    },
    "category": "other",
    "category_name": "其他类"
@@ -2926,7 +3136,7 @@
    "category_name": "其他类"
   },
   {
-   "id": "guoba",
+   "id": "rice_crust",
    "name": {
     "zh": "锅巴",
     "en": "Guoba"
@@ -2935,7 +3145,7 @@
    "category_name": "其他类"
   },
   {
-   "id": "puffed_rice_cracker",
+   "id": "rice_cracker",
    "name": {
     "zh": "膨化米饼",
     "en": "Puffed Rice Cracker"
@@ -2944,7 +3154,7 @@
    "category_name": "其他类"
   },
   {
-   "id": "flavored_tea",
+   "id": "flavoured_tea_bag",
    "name": {
     "zh": "调味茶包",
     "en": "Flavored Tea Bag"

@@ -1,0 +1,21 @@
+{
+  "type": "mekanism:evaporating",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "foodindustrial:integration",
+      "mod": "mekanism"
+    }
+  ],
+  "input": {
+    "amount": 1000,
+    "tag": "foodindustrial:high_fructose_syrup_decolorized"
+  },
+  "output": {
+    "amount": 800,
+    "fluid": "foodindustrial:high_fructose_syrup"
+  }
+}

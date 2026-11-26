@@ -1,0 +1,28 @@
+{
+  "type": "foodindustrial:vanilla_campfire_cooking",
+  "recipe": {
+    "type": "foodindustrial:baking",
+    "inputs": [
+      {
+        "semi_finished": "soda_cracker|blank"
+      }
+    ],
+    "mode": "baking",
+    "outputs": [
+      {
+        "count": 4,
+        "item": "foodindustrial:soda_cracker"
+      }
+    ],
+    "requirements": {
+      "min_tier": "t0",
+      "temperature": "heated"
+    },
+    "time": 200,
+    "vanilla_devices": [
+      "campfire",
+      "furnace",
+      "smoker"
+    ]
+  }
+}

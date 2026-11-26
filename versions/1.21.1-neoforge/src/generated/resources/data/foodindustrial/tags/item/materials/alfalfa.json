@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "foodindustrial:alfalfa"
+    "foodindustrial:alfalfa",
+    {
+      "id": "#c:crops/alfalfa",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/alfalfa",
+      "required": false
+    }
   ]
 }

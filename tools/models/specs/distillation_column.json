@@ -1,0 +1,226 @@
+{
+ "id": "distillation_column",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\distillation_column_front.png",
+  "parts": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\distillation_column_parts.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\distillation_column_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\distillation_column_top.png"
+ },
+ "elements": [
+  {
+   "name": "body",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "knob_a",
+   "from": [
+    3.0,
+    5.0,
+    -1
+   ],
+   "to": [
+    7.0,
+    7.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.5,
+      2.0,
+      1.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      2.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      2.0,
+      0.0,
+      2.5,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      4.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      4.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "knob_b",
+   "from": [
+    4.0,
+    4.0,
+    -1
+   ],
+   "to": [
+    6.0,
+    8.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.5,
+      0.0,
+      1.5,
+      2.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      4.5,
+      0.0,
+      5.0,
+      2.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      4.5,
+      0.0,
+      5.0,
+      2.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      5.0,
+      0.0,
+      6.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      5.0,
+      0.0,
+      6.0,
+      0.5
+     ]
+    }
+   }
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}
