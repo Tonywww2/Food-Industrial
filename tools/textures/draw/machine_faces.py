@@ -21,10 +21,11 @@ CORNERS = ((2, 2), (13, 2), (2, 13), (13, 13))
 # --- steel ----------------------------------------------------------------------------------------------------------
 
 def steel_panel(seams=(), seed=71):
-    """A steel plate, lighter at the top; a bevel that turns over two pixels, rivets at the corners, two faint
-    brushed lines along it; seams with a lit and a shaded side, riveted."""
+    """A steel plate, lighter at the top; its edge a single pixel lit at the top left (user 2026-11-26: the
+    earlier two-pixel bevel read as a thick frame the sheets do not draw), rivets at the corners, two faint brushed
+    lines along it; seams with a lit and a shaded side, riveted."""
     L = Layer(STEEL)
-    L.vgrad(0, 0, 16, 16, 0.35, -0.35)
+    L.vgrad(0, 0, 16, 16, 0.25, -0.25)
     g = Grain(seed)
     for i in range(2):
         y, x = 4 + g.next(8), 2 + g.next(4)
@@ -34,7 +35,7 @@ def steel_panel(seams=(), seed=71):
         L.add(x + 1, 2, x + 2, 14, 0.75)
         for y in (4, 11):
             stud(L, x - 1, y, STEEL)
-    L.bevel(0, 0, 16, 16, 1.25, -1.0, inner=0.5)
+    L.bevel(0, 0, 16, 16, 0.75, -0.75, inner=0)     # a one-pixel edge, as the sheets draw it (user 2026-11-26)
     for x, y in CORNERS:
         stud(L, x, y, STEEL)
     return L
@@ -64,10 +65,10 @@ def tank_top():
 # --- white cabinet --------------------------------------------------------------------------------------------------
 
 def white_panel():
-    """Enamelled white, lighter at the top, a bevel turning over two pixels, a screw in each corner."""
+    """Enamelled white, lighter at the top, its edge a single pixel lit at the top left, a screw in each corner."""
     L = Layer(WHITE)
     L.vgrad(0, 0, 16, 16, 0.5, -0.25)
-    L.bevel(0, 0, 16, 16, 1.5, -1.25, inner=0.5)
+    L.bevel(0, 0, 16, 16, 1.0, -1.0, inner=0)
     for x, y in CORNERS:
         L.px(x, y, level=-1.25)
         L.px(x + 1, y + 1, add=-0.5)

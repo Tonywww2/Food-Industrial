@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/adsorption_column_shape",
   "textures": {
     "front": "foodindustrial:block/adsorption_column_front_active",
     "side": "foodindustrial:block/adsorption_column_side",

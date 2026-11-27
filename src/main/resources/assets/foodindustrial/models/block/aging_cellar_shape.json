@@ -1,0 +1,260 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "parts": "foodindustrial:block/aging_cellar_parts"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "hinge0",
+      "from": [14, 11, -1],
+      "to": [15, 13, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 0.5, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [0, 0, 0.5, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [0, 0, 0.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "hinge1",
+      "from": [14, 3, -1],
+      "to": [15, 5, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 0.5, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [0, 0, 0.5, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [0, 0, 0.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "handle_top",
+      "from": [5, 9, -1],
+      "to": [6, 10, 0],
+      "faces": {
+        "east": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "handle_foot",
+      "from": [5, 6, -1],
+      "to": [6, 7, 0],
+      "faces": {
+        "east": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "handle",
+      "from": [5, 6, -2],
+      "to": [6, 10, -1],
+      "faces": {
+        "north": {
+          "uv": [1, 0, 1.5, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [1, 0, 1.5, 2],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [1, 0, 1.5, 2],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0.5, 0, 1, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_a",
+      "from": [0, 11, -1],
+      "to": [5, 14, 0],
+      "faces": {
+        "north": {
+          "uv": [1.5, 0.5, 4, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [4, 0, 4.5, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [4, 0, 4.5, 1.5],
+          "texture": "#parts",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [4.5, 0, 7, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [4.5, 0, 7, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b",
+      "from": [1, 10, -1],
+      "to": [4, 15, 0],
+      "faces": {
+        "north": {
+          "uv": [2, 0, 3.5, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [7, 0, 7.5, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [7, 0, 7.5, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [7.5, 0, 9, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [7.5, 0, 9, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_needle",
+      "from": [2, 12, -2],
+      "to": [3, 14, -1],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [2.5, 12.5, -1.5]
+      },
+      "faces": {
+        "north": {
+          "uv": [9, 0, 9.5, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [9, 0, 9.5, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [9, 0, 9.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [9.5, 0, 10, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [9.5, 0, 10, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

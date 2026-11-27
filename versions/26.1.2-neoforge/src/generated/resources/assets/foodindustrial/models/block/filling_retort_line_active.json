@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/filling_retort_line_shape",
   "textures": {
     "front": "foodindustrial:block/filling_retort_line_front_active",
     "side": "foodindustrial:block/filling_retort_line_side",

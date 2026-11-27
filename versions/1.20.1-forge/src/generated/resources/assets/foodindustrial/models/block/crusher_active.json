@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/crusher_shape",
   "textures": {
     "front": "foodindustrial:block/crusher_front_active",
     "side": "foodindustrial:block/crusher_side",

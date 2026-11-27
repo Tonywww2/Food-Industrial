@@ -47,6 +47,9 @@ def element(name, frm, to, faces, rotation=None, origin=None):
         if b - a < 1 or a != int(a) or b != int(b):
             raise ValueError(f'{name}: off the 16 grid (16x: whole units, one pixel each; style guide: no mixels)')
     e = {'name': name, 'from': list(frm), 'to': list(to), 'faces': out}
+    turned = [a for a in (rotation or []) if a]
+    if len(turned) > 1 or any(a not in (-45, -22.5, 22.5, 45) for a in turned):
+        raise ValueError(f'{name}: Minecraft turns an element about one axis by -45, -22.5, 22.5 or 45 degrees only')
     if rotation:  # Blockbench's [x, y, z] degrees about origin; Minecraft allows one axis, a multiple of 22.5
         e['rotation'] = rotation
         e['origin'] = origin

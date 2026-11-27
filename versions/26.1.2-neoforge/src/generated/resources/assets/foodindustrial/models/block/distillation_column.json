@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/distillation_column_shape",
   "textures": {
     "front": "foodindustrial:block/distillation_column_front",
     "side": "foodindustrial:block/distillation_column_side",

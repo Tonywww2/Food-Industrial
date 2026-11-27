@@ -1,0 +1,293 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "inner": "foodindustrial:block/membrane_separator_inner",
+    "parts": "foodindustrial:block/membrane_separator_parts"
+  },
+  "elements": [
+    {
+      "name": "body0",
+      "from": [0, 0, 0],
+      "to": [16, 4, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#inner"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "body1",
+      "from": [0, 4, 0],
+      "to": [7, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [9, 0, 16, 12],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#inner"
+        },
+        "south": {
+          "uv": [0, 0, 7, 12],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 7, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body2",
+      "from": [14, 4, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 2, 12],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [14, 0, 16, 12],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#inner"
+        },
+        "up": {
+          "uv": [14, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body3",
+      "from": [7, 12, 0],
+      "to": [14, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [2, 0, 9, 4],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [7, 0, 14, 4],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "up": {
+          "uv": [7, 0, 14, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [7, 0, 14, 16],
+          "texture": "#inner"
+        }
+      }
+    },
+    {
+      "name": "body4",
+      "from": [7, 4, 3],
+      "to": [14, 12, 16],
+      "faces": {
+        "north": {
+          "uv": [2, 4, 9, 12],
+          "texture": "#front"
+        },
+        "south": {
+          "uv": [7, 4, 14, 12],
+          "texture": "#side",
+          "cullface": "south"
+        }
+      }
+    },
+    {
+      "name": "tube0",
+      "from": [7, 10, 1],
+      "to": [14, 12, 3],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "tube1",
+      "from": [7, 7, 1],
+      "to": [14, 9, 3],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "tube2",
+      "from": [7, 4, 1],
+      "to": [14, 6, 3],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0, 0, 3.5, 1],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_a",
+      "from": [1, 10, -1],
+      "to": [6, 13, 0],
+      "faces": {
+        "north": {
+          "uv": [3.5, 0.5, 6, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [6, 0, 6.5, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [6, 0, 6.5, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [6.5, 0, 9, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [6.5, 0, 9, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b",
+      "from": [2, 9, -1],
+      "to": [5, 14, 0],
+      "faces": {
+        "north": {
+          "uv": [4, 0, 5.5, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [9, 0, 9.5, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [9, 0, 9.5, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [9.5, 0, 11, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [9.5, 0, 11, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_needle",
+      "from": [3, 11, -2],
+      "to": [4, 13, -1],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [3.5, 11.5, -1.5]
+      },
+      "faces": {
+        "north": {
+          "uv": [11, 0, 11.5, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [11, 0, 11.5, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [11, 0, 11.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [11.5, 0, 12, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [11.5, 0, 12, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

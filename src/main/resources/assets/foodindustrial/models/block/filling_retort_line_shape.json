@@ -1,0 +1,306 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "inner": "foodindustrial:block/filling_retort_line_inner",
+    "parts": "foodindustrial:block/filling_retort_line_parts"
+  },
+  "elements": [
+    {
+      "name": "body0",
+      "from": [0, 0, 0],
+      "to": [16, 2, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 14, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#inner"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "body1",
+      "from": [0, 2, 0],
+      "to": [2, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [14, 0, 16, 14],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#inner"
+        },
+        "south": {
+          "uv": [0, 0, 2, 14],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 2, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body2",
+      "from": [14, 2, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 2, 14],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [14, 0, 16, 14],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 14],
+          "texture": "#inner"
+        },
+        "up": {
+          "uv": [14, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body3",
+      "from": [2, 14, 0],
+      "to": [14, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [2, 0, 14, 2],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [2, 0, 14, 2],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "up": {
+          "uv": [2, 0, 14, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [2, 0, 14, 16],
+          "texture": "#inner"
+        }
+      }
+    },
+    {
+      "name": "body4",
+      "from": [2, 2, 2],
+      "to": [14, 14, 16],
+      "faces": {
+        "north": {
+          "uv": [2, 2, 14, 14],
+          "texture": "#front"
+        },
+        "south": {
+          "uv": [2, 2, 14, 14],
+          "texture": "#side",
+          "cullface": "south"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [10, 6, 1],
+      "to": [12, 14, 2],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 1, 4],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [1, 0, 1.5, 4],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [1, 0, 1.5, 4],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "nozzle",
+      "from": [9, 5, 0],
+      "to": [13, 6, 2],
+      "faces": {
+        "north": {
+          "uv": [1.5, 0, 3.5, 0.5],
+          "texture": "#parts",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [3.5, 0, 4.5, 0.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [3.5, 0, 4.5, 0.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [4.5, 0, 6.5, 1],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [4.5, 0, 6.5, 1],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "pipe_b",
+      "from": [7, 4, 1],
+      "to": [8, 9, 2],
+      "faces": {
+        "north": {
+          "uv": [6.5, 0, 7, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [6.5, 0, 7, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [6.5, 0, 7, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [7, 0, 7.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_a",
+      "from": [2, 10, 1],
+      "to": [7, 13, 2],
+      "faces": {
+        "north": {
+          "uv": [7.5, 0.5, 10, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [10, 0, 10.5, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [10, 0, 10.5, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [10.5, 0, 13, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [10.5, 0, 13, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b",
+      "from": [3, 9, 1],
+      "to": [6, 14, 2],
+      "faces": {
+        "north": {
+          "uv": [8, 0, 9.5, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [13, 0, 13.5, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [13, 0, 13.5, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [13.5, 0, 15, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [13.5, 0, 15, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_needle",
+      "from": [4, 11, 0],
+      "to": [5, 13, 1],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "z",
+        "origin": [4.5, 11.5, 0.5]
+      },
+      "faces": {
+        "north": {
+          "uv": [15, 0, 15.5, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [15, 0, 15.5, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [15, 0, 15.5, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [15.5, 0, 16, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [15.5, 0, 16, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

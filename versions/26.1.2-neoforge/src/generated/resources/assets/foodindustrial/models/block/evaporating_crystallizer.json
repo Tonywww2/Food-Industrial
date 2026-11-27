@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/evaporating_crystallizer_shape",
   "textures": {
     "front": "foodindustrial:block/evaporating_crystallizer_front",
     "side": "foodindustrial:block/evaporating_crystallizer_side",

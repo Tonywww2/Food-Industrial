@@ -33,6 +33,14 @@ val generated: SourceSet = sourceSets.create("generated") {
     resources.setSrcDirs(listOf<File>())
     output.setResourcesDir(generatedResources)
 }
+// Resources carry no Stonecutter conditions (CONVENTIONS.md §2), yet Stonecutter copied all ~5,300 of them into
+// build/generated/stonecutter on every source change (about a minute per node on Windows, 2026-11-26). Inactive
+// nodes read src/main/resources directly; only the Java sources are preprocessed.
+val stonecutterResources = layout.buildDirectory.dir("generated/stonecutter/main/resources").get().asFile
+sourceSets.main {
+    resources.setSrcDirs(resources.srcDirs.map { if (it == stonecutterResources) rootProject.file("src/main/resources") else it })
+}
+tasks.named<Sync>("stonecutterGenerate") { exclude("resources/**") }
 
 // Dev runs compile without the Mixin annotation processor: it is not incremental, so any change recompiled every
 // class (about 2 min on Windows, 2026-11-20). The dev game runs on Mojang names and needs no refmap; builds keep it.

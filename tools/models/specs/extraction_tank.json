@@ -1,0 +1,1197 @@
+{
+ "id": "extraction_tank",
+ "out": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\build\\blockbench",
+ "close": true,
+ "textures": {
+  "front": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\extraction_tank_front.png",
+  "parts": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\extraction_tank_parts.png",
+  "side": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\extraction_tank_side.png",
+  "top": "C:\\Users\\Tony\\Documents\\EX\\ForgeDev\\FoodIndustrial\\src\\main\\resources\\assets\\foodindustrial\\textures\\block\\extraction_tank_top.png"
+ },
+ "elements": [
+  {
+   "name": "tank",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "front",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "top",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "side",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_a_a",
+   "from": [
+    9.0,
+    10.0,
+    -1
+   ],
+   "to": [
+    14.0,
+    13.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.5,
+      2.5,
+      2.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.0,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.0,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      0.0,
+      5.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      0.0,
+      5.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_a_b",
+   "from": [
+    10.0,
+    9.0,
+    -1
+   ],
+   "to": [
+    13.0,
+    14.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.5,
+      0.0,
+      2.0,
+      2.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      5.5,
+      0.0,
+      6.0,
+      2.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      5.5,
+      0.0,
+      6.0,
+      2.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      6.0,
+      0.0,
+      7.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      6.0,
+      0.0,
+      7.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_a_needle",
+   "from": [
+    11.0,
+    11.0,
+    -2
+   ],
+   "to": [
+    12.0,
+    13.0,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      7.5,
+      0.0,
+      8.0,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      7.5,
+      0.0,
+      8.0,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      7.5,
+      0.0,
+      8.0,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      8.0,
+      0.0,
+      8.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      8.0,
+      0.0,
+      8.5,
+      0.5
+     ]
+    }
+   },
+   "rotation": [
+    0,
+    0,
+    22.5
+   ],
+   "origin": [
+    11.5,
+    11.5,
+    -1.5
+   ]
+  },
+  {
+   "name": "gauge_b_a",
+   "from": [
+    2.0,
+    10.0,
+    -1
+   ],
+   "to": [
+    7.0,
+    13.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      0.5,
+      2.5,
+      2.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.0,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      0.0,
+      3.0,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      0.0,
+      5.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      0.0,
+      5.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_b_b",
+   "from": [
+    3.0,
+    9.0,
+    -1
+   ],
+   "to": [
+    6.0,
+    14.0,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.5,
+      0.0,
+      2.0,
+      2.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      5.5,
+      0.0,
+      6.0,
+      2.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      5.5,
+      0.0,
+      6.0,
+      2.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      6.0,
+      0.0,
+      7.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      6.0,
+      0.0,
+      7.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "gauge_b_needle",
+   "from": [
+    4.0,
+    11.0,
+    -2
+   ],
+   "to": [
+    5.0,
+    13.0,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      7.5,
+      0.0,
+      8.0,
+      1.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      7.5,
+      0.0,
+      8.0,
+      1.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      7.5,
+      0.0,
+      8.0,
+      1.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      8.0,
+      0.0,
+      8.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      8.0,
+      0.0,
+      8.5,
+      0.5
+     ]
+    }
+   },
+   "rotation": [
+    0,
+    0,
+    -45
+   ],
+   "origin": [
+    4.5,
+    11.5,
+    -1.5
+   ]
+  },
+  {
+   "name": "wheel_rim0",
+   "from": [
+    9,
+    1,
+    -2
+   ],
+   "to": [
+    12,
+    2,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      8.5,
+      0.0,
+      10.0,
+      0.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      8.5,
+      0.0,
+      10.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      8.5,
+      0.0,
+      10.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_rim1",
+   "from": [
+    9,
+    7,
+    -2
+   ],
+   "to": [
+    12,
+    8,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      10.5,
+      0.0,
+      12.0,
+      0.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      10.5,
+      0.0,
+      12.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      10.5,
+      0.0,
+      12.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_rim2",
+   "from": [
+    7,
+    3,
+    -2
+   ],
+   "to": [
+    8,
+    6,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      12.5,
+      0.0,
+      13.0,
+      1.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      12.5,
+      0.0,
+      13.0,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      12.5,
+      0.0,
+      13.0,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_rim3",
+   "from": [
+    13,
+    3,
+    -2
+   ],
+   "to": [
+    14,
+    6,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      13.0,
+      0.0,
+      13.5,
+      1.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      13.0,
+      0.0,
+      13.5,
+      1.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      13.0,
+      0.0,
+      13.5,
+      1.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_rim4",
+   "from": [
+    8,
+    2,
+    -2
+   ],
+   "to": [
+    9,
+    3,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      10.0,
+      0.0,
+      10.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_rim5",
+   "from": [
+    12,
+    2,
+    -2
+   ],
+   "to": [
+    13,
+    3,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_rim6",
+   "from": [
+    8,
+    6,
+    -2
+   ],
+   "to": [
+    9,
+    7,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_rim7",
+   "from": [
+    12,
+    6,
+    -2
+   ],
+   "to": [
+    13,
+    7,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      12.0,
+      0.0,
+      12.5,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_spoke_h",
+   "from": [
+    8,
+    4,
+    -2
+   ],
+   "to": [
+    13,
+    5,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      2.5,
+      2.5,
+      3.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      2.5,
+      2.5,
+      3.0
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      0.0,
+      2.5,
+      2.5,
+      3.0
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_spoke_v",
+   "from": [
+    10,
+    2,
+    -2
+   ],
+   "to": [
+    11,
+    7,
+    -1
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      2.5,
+      3.0,
+      5.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      2.5,
+      3.0,
+      5.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      2.5,
+      2.5,
+      3.0,
+      5.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_hub",
+   "from": [
+    10,
+    4,
+    -3
+   ],
+   "to": [
+    11,
+    5,
+    -2
+   ],
+   "faces": {
+    "north": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      2.5,
+      3.5,
+      3.0
+     ]
+    },
+    "east": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      2.5,
+      3.5,
+      3.0
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      2.5,
+      3.5,
+      3.0
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      2.5,
+      3.5,
+      3.0
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      3.0,
+      2.5,
+      3.5,
+      3.0
+     ]
+    }
+   }
+  },
+  {
+   "name": "wheel_stem",
+   "from": [
+    10,
+    4,
+    -1
+   ],
+   "to": [
+    11,
+    5,
+    0
+   ],
+   "faces": {
+    "east": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "west": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "up": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "parts",
+     "uv": [
+      13.5,
+      0.0,
+      14.0,
+      0.5
+     ]
+    }
+   }
+  }
+ ],
+ "cameras": [
+  {
+   "position": [
+    -30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    -30
+   ]
+  },
+  {
+   "position": [
+    30,
+    28,
+    30
+   ]
+  }
+ ],
+ "check": {}
+}

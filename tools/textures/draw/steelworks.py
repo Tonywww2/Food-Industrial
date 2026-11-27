@@ -81,10 +81,10 @@ def hole(mid, face, i=0):
 # --- plates ---------------------------------------------------------------------------------------------------------
 
 def plate(seed, vseams=(), hseams=(), rivets='corners', ramp=STEEL):
-    """A brushed steel plate as the extraction tank's: lighter at the top, two faint brushed lines, a bevel turning
-    over two pixels, riveted at the corners (or all along its edges); seams with a lit and a shaded side."""
+    """A brushed steel plate as the extraction tank's: lighter at the top, two faint brushed lines, its edge a single
+    pixel lit at the top left, riveted at the corners (or all along its edges); seams with a lit and a shaded side."""
     L = Layer(ramp)
-    L.vgrad(0, 0, 16, 16, 0.35, -0.35)
+    L.vgrad(0, 0, 16, 16, 0.25, -0.25)
     g = Grain(seed)
     for _ in range(2):
         y, x = 4 + g.next(8), 2 + g.next(4)
@@ -95,7 +95,7 @@ def plate(seed, vseams=(), hseams=(), rivets='corners', ramp=STEEL):
     for y in hseams:
         L.add(2, y, 14, y + 1, -1.25)
         L.add(2, y + 1, 14, y + 2, 0.75)
-    L.bevel(0, 0, 16, 16, 1.25, -1.0, inner=0.5)
+    L.bevel(0, 0, 16, 16, 0.75, -0.75, inner=0)     # a one-pixel edge, as the sheets draw it (user 2026-11-26)
     if rivets == 'corners':
         for x, y in CORNERS:
             stud(L, x, y, ramp)

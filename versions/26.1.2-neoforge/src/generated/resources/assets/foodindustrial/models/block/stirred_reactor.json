@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/stirred_reactor_shape",
   "textures": {
     "front": "foodindustrial:block/stirred_reactor_front",
     "side": "foodindustrial:block/stirred_reactor_side",

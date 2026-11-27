@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/solid_liquid_separator_shape",
   "textures": {
     "front": "foodindustrial:block/solid_liquid_separator_front",
     "side": "foodindustrial:block/solid_liquid_separator_side",

@@ -121,7 +121,8 @@ public static ResourceLocation id(String path) { … }
 
 - `src/main/resources/META-INF/mods.toml` 只给 Forge 节点，`META-INF/neoforge.mods.toml` 只给 NeoForge 节点；构建脚本会排除另一个文件。两者和 `pack.mcmeta` 中的 `${...}` 由 `processResources` 按节点属性展开（`vers.loaderRange`、`vers.loaderDepRange`、`vers.minecraftRange`、`vers.packFormat`）。toml 中依赖表名必须写死 `[[dependencies.foodindustrial]]`。
 - 手写的、各版本通用的 assets 放 `src/main/resources`。
-- 数据生成输出按节点分开：`versions/<节点>/src/generated/resources`（该目录会自动加入对应节点的资源）。原因：1.21 起数据包目录改为单数（`recipe`、`loot_table`、`advancement`、`tags/item` 等），1.20.1 仍为复数；26.1 物品还需要 `assets/<ns>/items/*.json`。1.20.1-forge 的开发运行直接读这个目录，不复制（2026-11-20）：它是一个没有源码的源码集 `generated` 的资源输出，与主源码集一起登记为本模组；打 jar 时由 `jar` 任务从这里装入（不含 `.cache`）。NeoForge 节点仍把它作为主资源目录复制。
+- 数据生成输出按节点分开：`versions/<节点>/src/generated/resources`（该目录会自动加入对应节点的资源）。原因：1.21 起数据包目录改为单数（`recipe`、`loot_table`、`advancement`、`tags/item` 等），1.20.1 仍为复数；26.1 物品还需要 `assets/<ns>/items/*.json`。1.20.1-forge 的开发运行直接读这个目录，不复制（2026-11-20）：它是一个没有源码的源码集 `generated` 的资源输出，与主源码集一起登记为本模组；打 jar 时由 `jar` 任务从这里装入（不含 `.cache`）。NeoForge 节点同样原地读取（2026-11-26）。
+- 资源文件里不写 Stonecutter 条件：Stonecutter 只预处理 Java 源码，所有节点直接读 `src/main/resources`，不再把它复制进 `build\generated\stonecutter`（2026-11-26）。确有版本差异的资源放数据生成，或在 `platform` 里按节点选择。
 - `forge:` / `neoforge:` 前缀的数据（biome modifier、conditions 等）必须按加载器分开维护。
 
 ## 6. 依赖与 Mixin
@@ -159,6 +160,9 @@ public static ResourceLocation id(String path) { … }
 - 构建耗时与内存（2026-11-13 实测，云端 2 核）：不带节点路径的 `build` 依次构建三个节点，clean build 约 2 分钟，峰值内存约 3.4 GB（Gradle 进程最多 3 GB，另有每个 Java 版本一个编译进程）。只要某个节点的 jar 时用 `:<节点>:build`。不产出源码 jar（Forge 节点重映射它要约 50 秒、峰值多约 0.6 GB，用户定）。Windows 上生成资源有三万余个小文件，实时防护会逐个扫描复制、打包的文件，可把项目目录与 `%USERPROFILE%\.gradle` 加入 Microsoft Defender 的排除项。
 - 资源处理（2026-11-18）：资源没有变化时，`processResources` 会被跳过（显示 `UP-TO-DATE`）。任何一个资源文件变了，Gradle 都会把该节点的全部资源（约 3.3 万个文件、140 MB）重新复制一遍，这是 Gradle 复制任务的做法。NeoForge 节点原先每次构建都重新复制：ModStitch 的 `appendModMetadata` 任务每次都把处理后的 `neoforge.mods.toml` 重写一遍，使 `processResources` 的输出发生变化；现在该任务只在通过 ModStitch 登记了 mixin 配置或 class tweaker 时才运行。所以 NeoForge 的 mixin 配置要直接写在 `neoforge.mods.toml` 的 `[[mixins]]` 里（第 6 节），不要用 `modstitch { mixin { … } }` 登记。
 - 1.20.1-forge 开发运行的启动时间（2026-11-20，用户反映很慢）：用户机器上原先每次 `runClient` 编译约 1 分 50 秒、复制资源约 2 分 40 秒。现在 ① 命令里只有 `run…` 任务时（`runClient`、`runServer`、`runData`），`compileJava` 不跑 Mixin 注解处理器：它不支持增量编译，改一个类也要全部重编；开发环境用 Mojang 名运行，不需要 refmap。改一个类后重新启动，编译约 4 秒（云端实测）。之后跑 `build` 会带处理器全量编译一次，再跑 `runClient` 又全量编译一次。② 生成资源不再复制（第 5 节），`processResources` 只处理手写资源（约 4,900 个文件）。③ 控制台日志改为 info（完整日志仍在 `run\<节点>\logs\debug.log`）。仍慢时：把项目目录与 `%USERPROFILE%\.gradle` 加入 Defender 排除项，或在用户级 `%USERPROFILE%\.gradle\gradle.properties` 写 `org.gradle.daemon=true`（项目里的 `daemon=false` 是用户原有设置，不改）。
+- 本地 `build` 很慢（2026-11-26，用户：一次约半小时）：两个 NeoForge 节点也改为像 1.20.1-forge 那样原地读取生成资源（一个没有源码、资源输出就是 `src\generated\resources` 的源码集 `generated`，登记进本模组；jar 直接从该目录取文件，不含 `.cache`），`processResources` 只复制手写资源（约 5,300 个文件），不再在任何资源变化时把约 3 万个生成文件复制进 `build\resources`。jar 内容不变（只少了 `.cache`）。
+  同日在用户机器上实测三节点 `build`（改动后第一次，含一次性清理旧文件）共 16.5 分钟：`:1.20.1-forge:remapJar` 9 分 39 秒，三个 `jar` 各 2–3 分钟，三个 `stonecutterGenerate` 各约 1 分钟，三个 `processResources` 各 1–1.5 分钟，编译合计不到 1 分钟；构建期间 Defender（MsMpEng）占满一个核，Gradle 本身几乎空闲。同样的构建云端 2.5 分钟。慢在实时防护逐个扫描写出的小文件和大 jar，最有效的是加 Defender 排除项（或把项目放到 Dev Drive）。
+  随后 `stonecutterGenerate` 不再复制资源（第 5 节），每个节点每次少写约 5,300 个文件；三个 jar 的条目与内容不变（云端逐项比对）。
 - 同一节点的客户端与服务端共用 `run\<节点>\`：先等服务端启动完成再开客户端，同时启动会争写 `config\` 下的模组配置文件，可能把文件写坏。
 
 提交前的自检（`platform` 以外必须没有任何结果）：
@@ -198,7 +202,7 @@ Get-ChildItem src\main\java -Recurse -Filter *.java |
 
 1. **16x 规范**：方块贴图 16×16，每个模型单位 1 像素；模型方块的坐标都是整数，最小的部件 1 单位；部件图集（`<id>_parts.png`，32×32）也是每单位 1 像素。
 2. **贴图用脚本画**（`tools/textures/draw/`），不从参考图缩小取样。按光照层级画：每种材质九级色阶，左上受光，边缘用两个像素过渡，边框与条带投下一行短阴影，凹处在上沿和左沿下最暗。
-3. **贴近参考图**：外形、布局、配色尽量与参考图一致。有原版对应物的材质照原版的配色与画法，例如木制机器照原版木桶：木板平涂、每块板一条亮线一条深缝、铁条两像素宽（向光一半是铁色，另一半近黑）、铁条下面一行木板在阴影里。图案自己画，不照抄原版贴图。
+3. **贴近参考图**：外形、布局、配色尽量与参考图一致；边框和包边的粗细也照参考图，多数只有一个像素（钢板的边、木箱的包铁、铜板的包边），不要画成两个像素的斜面（2026-11-26 用户：边框过粗，与参考图不符）。有原版对应物的材质照原版的配色与画法，例如木制机器照原版木桶：木板平涂、每块板一条亮线一条深缝、铁条两像素宽（向光一半是铁色，另一半近黑）、铁条下面一行木板在阴影里。图案自己画，不照抄原版贴图。
 4. **凸出的部件用方块搭**：参考图画成凸出的部件（阀门、龙头、仪表、手轮、螺杆、出料槽等）用方块搭成立体的，形状要一眼认得出，例如龙头由伸出的管、向下的出水嘴和把手组成。部件各面由 `tools/textures/draw/part_faces.py` 按面的实际大小单独画，与方块贴图用同一套色阶。搭出来的部件不再画在面上；参考图画成开口的部分向里凹。
 5. **流程**：`tools/models/machines.py` 写形状 → `preview.py` 本地预览，与参考图对照 → 在用户电脑的 Blockbench（MCP 插件）里建模、截图、导出 → `install.py` 核对导出与形状一致，写成 `<id>_shape.json` → 核对 Blockbench 工程内嵌的贴图与仓库一致 → 进游戏看。
 

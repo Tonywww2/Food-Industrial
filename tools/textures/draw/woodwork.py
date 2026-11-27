@@ -12,11 +12,18 @@ from pixels import BAND, WOOD, WOOD_DARK, Layer, edge, round_mask, staves, strap
 # iron straps two pixels wide with the boards under them in shadow, a light rim where the boards end. Drawn anew
 # for these machines (their own layouts, seams, hoops and lid), not copied from the barrel.
 
-def banded(seed, boards, ramp=BAND):
-    """Boards inside an iron band two pixels wide round the face, nailed at the corners (the press's sides and
-    top, the crates); boards(layer) lays the boards inside, from 2 to 14; ramp: the band's metal."""
+def banded(seed, boards, ramp=BAND, width=2):
+    """Boards inside an iron band round the face (the press's sides and top, two pixels and nailed at the corners;
+    the crates', one pixel as their sheets draw it); boards(layer) lays the boards inside, from width to 16 - width;
+    ramp: the band's metal."""
     L = Layer(WOOD, WOOD.flat)
     boards(L)
+    if width == 1:
+        L.add(1, 1, 15, 2, -1.0)
+        L.add(1, 2, 2, 15, -0.5)
+        for box, lv in (((0, 0, 16, 1), 0.5), ((0, 1, 1, 16), 0.0), ((1, 15, 16, 16), -1.0), ((15, 1, 16, 15), -1.0)):
+            L.set(*box, ramp=ramp, level=lv)
+        return L
     L.add(2, 2, 14, 3, -1.0)                        # the band's shadow on the boards, under its top and left
     L.add(2, 3, 3, 14, -0.5)
     strap(L, 0, 0, 16, 2, seed, ramp)

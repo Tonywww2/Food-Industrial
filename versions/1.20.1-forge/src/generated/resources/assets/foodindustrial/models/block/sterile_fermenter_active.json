@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/sterile_fermenter_shape",
   "textures": {
     "front": "foodindustrial:block/sterile_fermenter_front_active",
     "side": "foodindustrial:block/sterile_fermenter_side",

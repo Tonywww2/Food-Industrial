@@ -196,7 +196,8 @@ def tank_inner():
 # --- crates: noodle press, meat grinder, filling sealer -------------------------------------------------------------
 
 def crate(seed, vertical=True, ramp=BAND):
-    return banded(seed, lambda L: staves(L, 2, 2, 14, 14, (4, 4, 4), vertical, seed), ramp)
+    """Boards in a band one pixel wide, as the noodle press's, the grinder's and the sealer's sheets draw it."""
+    return banded(seed, lambda L: staves(L, 1, 1, 15, 15, (5, 4, 5), vertical, seed), ramp, width=1)
 
 
 def window_frame(L, m, ramp, level=0.5):
@@ -324,7 +325,7 @@ def steel_inner():
 
 # --- copper: pot still, seawater pump -------------------------------------------------------------------------------
 
-def copper_panel(seed, trim=BRASS, seam=True, trim_w=2):
+def copper_panel(seed, trim=BRASS, seam=True, trim_w=1):
     """Copper sheet in a trim round its edges, riveted along the trim and down a seam in the middle; a soft sheen
     across it."""
     L = Layer(COPPER, COPPER.flat)
@@ -342,10 +343,10 @@ def copper_panel(seed, trim=BRASS, seam=True, trim_w=2):
     t = trim_w
     for box in ((0, 0, 16, t), (0, 16 - t, 16, 16), (0, t, t, 16 - t), (16 - t, t, 16, 16 - t)):
         L.set(*box, ramp=trim, level=0.0)
-    L.bevel(0, 0, 16, 16, 1.0, -1.0, inner=0.5 if t > 1 else 0)
-    for i in range(2, 15, 3):
-        for x, y in ((i, 0 if t == 1 else 1), (0 if t == 1 else 1, i), (i, 15 if t == 1 else 14), (15 if t == 1 else 14, i)):
-            L.px(x, y, level=-1.5 if trim is BRASS else 1.5)
+    L.bevel(0, 0, 16, 16, 1.0, -1.0, inner=0)
+    for i in range(2, 15, 3):                                     # rivets in the copper along the trim
+        for x, y in ((i, t + 1), (t + 1, i), (i, 14 - t), (14 - t, i)):
+            L.px(x, y, level=COPPER.flat - 1.5)
     L.add(t, t, 16 - t, t + 1, -0.5)
     return L
 

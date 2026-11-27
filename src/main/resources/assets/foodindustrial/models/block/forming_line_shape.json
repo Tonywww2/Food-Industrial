@@ -1,0 +1,204 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "inner": "foodindustrial:block/forming_line_inner",
+    "parts": "foodindustrial:block/forming_line_parts"
+  },
+  "elements": [
+    {
+      "name": "body0",
+      "from": [0, 0, 0],
+      "to": [16, 5, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 11, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 11, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 11, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 11, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#inner"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "body1",
+      "from": [0, 5, 0],
+      "to": [3, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [13, 0, 16, 11],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 11],
+          "texture": "#inner"
+        },
+        "south": {
+          "uv": [0, 0, 3, 11],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 11],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 3, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body2",
+      "from": [13, 5, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 3, 11],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 11],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [13, 0, 16, 11],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 11],
+          "texture": "#inner"
+        },
+        "up": {
+          "uv": [13, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body3",
+      "from": [3, 14, 0],
+      "to": [13, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 0, 13, 2],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [3, 0, 13, 2],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "up": {
+          "uv": [3, 0, 13, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [3, 0, 13, 16],
+          "texture": "#inner"
+        }
+      }
+    },
+    {
+      "name": "body4",
+      "from": [3, 5, 4],
+      "to": [13, 14, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 2, 13, 11],
+          "texture": "#front"
+        },
+        "south": {
+          "uv": [3, 2, 13, 11],
+          "texture": "#side",
+          "cullface": "south"
+        }
+      }
+    },
+    {
+      "name": "roller_top",
+      "from": [4, 9, 1],
+      "to": [12, 11, 3],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 4, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [0, 0, 4, 1],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [0, 0, 4, 1],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "sheet",
+      "from": [4, 8, 0],
+      "to": [12, 9, 4],
+      "faces": {
+        "north": {
+          "uv": [4, 0, 8, 0.5],
+          "texture": "#parts",
+          "cullface": "north"
+        },
+        "up": {
+          "uv": [8, 0, 12, 2],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "roller_bottom",
+      "from": [4, 6, 1],
+      "to": [12, 8, 3],
+      "faces": {
+        "north": {
+          "uv": [12, 0, 16, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [12, 0, 16, 1],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [12, 0, 16, 1],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "inner": "foodindustrial:block/baking_line_inner"
+  },
+  "elements": [
+    {
+      "name": "body0",
+      "from": [0, 0, 0],
+      "to": [16, 4, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 12, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#inner"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "body1",
+      "from": [0, 4, 0],
+      "to": [3, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [13, 0, 16, 12],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#inner"
+        },
+        "south": {
+          "uv": [0, 0, 3, 12],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 3, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body2",
+      "from": [13, 4, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 3, 12],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [13, 0, 16, 12],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 12],
+          "texture": "#inner"
+        },
+        "up": {
+          "uv": [13, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "body3",
+      "from": [3, 8, 0],
+      "to": [13, 9, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 7, 13, 8],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [3, 7, 13, 8],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "up": {
+          "uv": [3, 0, 13, 16],
+          "texture": "#inner"
+        },
+        "down": {
+          "uv": [3, 0, 13, 16],
+          "texture": "#inner"
+        }
+      }
+    },
+    {
+      "name": "body4",
+      "from": [3, 14, 0],
+      "to": [13, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 0, 13, 2],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [3, 0, 13, 2],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "up": {
+          "uv": [3, 0, 13, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [3, 0, 13, 16],
+          "texture": "#inner"
+        }
+      }
+    },
+    {
+      "name": "body5",
+      "from": [3, 9, 1],
+      "to": [13, 14, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 2, 13, 7],
+          "texture": "#front"
+        },
+        "south": {
+          "uv": [3, 2, 13, 7],
+          "texture": "#side",
+          "cullface": "south"
+        }
+      }
+    },
+    {
+      "name": "body6",
+      "from": [3, 4, 2],
+      "to": [13, 8, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 8, 13, 12],
+          "texture": "#front"
+        },
+        "south": {
+          "uv": [3, 8, 13, 12],
+          "texture": "#side",
+          "cullface": "south"
+        }
+      }
+    }
+  ]
+}

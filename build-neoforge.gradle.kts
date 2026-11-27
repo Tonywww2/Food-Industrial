@@ -21,14 +21,29 @@ val artifactVersion = "${prop("mod.version")}+$mcVersion"
 // 1.21.4+ splits datagen into clientData / serverData run types.
 val splitDatagen = stonecutter.current.parsed >= "1.21.4"
 
-// Per-node datagen output (datapack layouts differ between Minecraft versions).
+// Per-node datagen output (datapack layouts differ between Minecraft versions). The dev runs read it in place, as
+// on the Forge node: a source set of no sources whose resource output is the folder itself joins the mod, so its
+// ~30,000 files are not copied into build/resources whenever any resource changes (minutes on Windows; 2026-11-26,
+// user: a local build took half an hour); the jar takes them from here.
 val generatedResources = file("src/generated/resources")
+val generated: SourceSet = sourceSets.create("generated") {
+    java.setSrcDirs(listOf<File>())
+    resources.setSrcDirs(listOf<File>())
+    output.setResourcesDir(generatedResources)
+}
+// Resources carry no Stonecutter conditions (CONVENTIONS.md §2), yet Stonecutter copied all ~5,300 of them into
+// build/generated/stonecutter on every source change (about a minute per node on Windows, 2026-11-26). Inactive
+// nodes read src/main/resources directly; only the Java sources are preprocessed.
+val stonecutterResources = layout.buildDirectory.dir("generated/stonecutter/main/resources").get().asFile
+sourceSets.main {
+    resources.setSrcDirs(resources.srcDirs.map { if (it == stonecutterResources) rootProject.file("src/main/resources") else it })
+}
+tasks.named<Sync>("stonecutterGenerate") { exclude("resources/**") }
 // Files written while configuring, kept outside build/ so that `clean` does not delete them after they were
 // checked and before the tasks that need them run (`clean build` failed to compile, 2026-11-13).
 val configureOutput: File = rootProject.file(".gradle/foodindustrial/$nodeName")
 // Jars of the integrated mods (deps.mod.*, deps.opt.* and what they nest), listed for the data run.
 val externalJarList: File = configureOutput.resolve("external-jars.txt")
-sourceSets.main { resources.srcDir(generatedResources) }
 // Plain JUnit tests need the game classes (no game bootstrap); ModDevGradle only puts them on main.
 sourceSets.test {
     compileClasspath += sourceSets.main.get().compileClasspath
@@ -54,6 +69,8 @@ modstitch {
         defaultRuns()
 
         configureNeoForge {
+            // The mod is the main classes and resources and the datagen folder, read where it lies.
+            mods.configureEach { sourceSet(generated) }
             runs {
                 register("data") {
                     if (splitDatagen) clientData() else data()
@@ -209,11 +226,15 @@ tasks {
         }
     }
 
+    // The generated source set has nothing to process; its output is the datagen folder itself.
+    named("processGeneratedResources") { enabled = false }
+
     withType<Jar>().configureEach {
         archiveVersion = artifactVersion
     }
 
     jar {
+        from(generatedResources) { exclude(".cache/**") }
         manifest.attributes(
             "Specification-Title" to modId,
             "Specification-Vendor" to prop("mod.authors"),

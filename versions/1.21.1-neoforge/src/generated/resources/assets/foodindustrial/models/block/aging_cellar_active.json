@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/aging_cellar_shape",
   "textures": {
     "front": "foodindustrial:block/aging_cellar_front_active",
     "side": "foodindustrial:block/aging_cellar_side",

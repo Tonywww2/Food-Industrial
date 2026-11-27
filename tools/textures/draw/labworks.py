@@ -36,22 +36,23 @@ def hole(mid, face, i=0):
 
 
 def framed(seed, inside=None):
-    """A slate panel (or what inside(L) draws) in a polished steel frame two pixels wide, heavier at the corners
-    where brackets reach a pixel further in; lit at the top left, the frame's shadow on the panel under its top and
-    left; rivets in the panel's corners."""
+    """A slate panel (or what inside(L) draws) in a polished steel frame: a bright outer pixel, a greyer inner one,
+    the panel's corners cut on the diagonal where the frame's brackets reach in (two steps, as the sheets draw them;
+    user 2026-11-26: the earlier square brackets made the frame read too thick); the frame's shadow on the panel
+    under its top and left; rivets in the panel's corners."""
     L = Layer(SLATE, SLATE.flat)
     L.vgrad(0, 0, 16, 16, 0.25, -0.25)
     if inside:
         inside(L)
-    inner = np.zeros((16, 16), bool)
-    inner[2:14, 2:14] = True
-    for x0, y0 in ((2, 2), (12, 2), (2, 12), (12, 12)):            # the brackets
-        inner[y0:y0 + 2, x0:x0 + 2] = False
-    L.mask(~inner, ramp=STEEL, level=0.0)
-    L.bevel(0, 0, 16, 16, 1.25, -1.0, inner=0.5)
+    yy, xx = np.mgrid[0:16, 0:16]
+    inner = (xx >= 2) & (xx < 14) & (yy >= 2) & (yy < 14)
+    for cx, cy in ((2, 2), (13, 2), (2, 13), (13, 13)):
+        inner &= (abs(xx - cx) + abs(yy - cy)) >= 2
+    L.mask(~inner, ramp=STEEL_DARK, level=0.5)
+    L.mask(~inner & ((xx == 0) | (yy == 0) | (xx == 15) | (yy == 15)), ramp=STEEL, level=0.5)
+    L.bevel(0, 0, 16, 16, 0.75, -0.75, inner=0)
     L.mask(inner & np.roll(~inner, 1, axis=0), add=-0.5)           # the frame's shadow on the panel
     L.mask(inner & np.roll(~inner, 1, axis=1), add=-0.5)
-    L.mask(~inner & np.roll(inner, -1, axis=0) & ~np.roll(~inner, -1, axis=0), add=-0.5)
     for x, y in ((4, 4), (11, 4), (4, 11), (11, 11)):
         if L.ramp[y, x] is SLATE:
             stud(L, x, y, SLATE)
@@ -114,9 +115,9 @@ def electrolyzer_side():
     L = framed(521)
     L.set(2, 5, 14, 6, ramp=IRON_DARK, level=-1.0)
     L.set(2, 10, 14, 11, ramp=IRON_DARK, level=-1.5)
-    L.set(0, 6, 16, 10, ramp=COPPER, level=COPPER.flat)
-    L.set(0, 6, 16, 7, level=COPPER.flat + 1.0)
-    L.set(0, 9, 16, 10, level=COPPER.flat - 1.0)
+    L.set(2, 6, 14, 10, ramp=COPPER, level=COPPER.flat)           # inside the frame, as the sheet draws it
+    L.set(2, 6, 14, 7, level=COPPER.flat + 1.0)
+    L.set(2, 9, 14, 10, level=COPPER.flat - 1.0)
     for x in (2, 13):
         for y in (7, 8):
             L.px(x, y, level=COPPER.flat - 2.0)
@@ -227,10 +228,10 @@ def spray_top():
 
 
 def enamel(seed):
-    """White enamel, riveted at the corners, a bevel round it (as the culture bench's cabinet)."""
+    """White enamel, riveted at the corners, its edge a single pixel lit at the top left (as the culture bench's)."""
     L = Layer(WHITE, 0.0)
     L.vgrad(0, 0, 16, 16, 0.35, -0.35)
-    L.bevel(0, 0, 16, 16, 1.0, -1.0, inner=0.5)
+    L.bevel(0, 0, 16, 16, 1.0, -1.0, inner=0)
     for x, y in ((2, 2), (13, 2), (2, 13), (13, 13)):
         stud(L, x, y, WHITE, level=-0.5)
     return L

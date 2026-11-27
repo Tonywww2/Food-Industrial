@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/cutting_station_shape",
   "textures": {
     "front": "foodindustrial:block/cutting_station_front",
     "side": "foodindustrial:block/cutting_station_side",

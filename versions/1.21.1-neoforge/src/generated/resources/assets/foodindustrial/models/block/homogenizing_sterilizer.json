@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/homogenizing_sterilizer_shape",
   "textures": {
     "front": "foodindustrial:block/homogenizing_sterilizer_front",
     "side": "foodindustrial:block/homogenizing_sterilizer_side",

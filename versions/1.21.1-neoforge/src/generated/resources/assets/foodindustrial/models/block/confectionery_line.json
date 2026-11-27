@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/confectionery_line_shape",
   "textures": {
     "front": "foodindustrial:block/confectionery_line_front",
     "side": "foodindustrial:block/confectionery_line_side",

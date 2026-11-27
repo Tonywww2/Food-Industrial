@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/cooker_fryer_shape",
   "textures": {
     "front": "foodindustrial:block/cooker_fryer_front",
     "side": "foodindustrial:block/cooker_fryer_side",

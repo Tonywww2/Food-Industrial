@@ -437,8 +437,8 @@ def forming_line(b):
 def homogenizing_sterilizer(b):
     """A steel block with its two gauges standing out of the front."""
     body(b)
-    gauge(b, 'gauge_a', 10.5, 11.5, 30)
-    gauge(b, 'gauge_b', 4.5, 11.5, -20)
+    gauge(b, 'gauge_a', 10.5, 11.5, 22.5)
+    gauge(b, 'gauge_b', 4.5, 11.5, -22.5)
 
 
 def cooker_fryer(b):
@@ -473,7 +473,7 @@ def filling_retort_line(b):
     b.add('pipe', (10, 6, 1), (12, 14, 2), {'north': ENAMEL, 'east': ENAMEL, 'west': ENAMEL})
     b.add('nozzle', (9, 5, 0), (13, 6, 2), sides(ENAMEL, 'south'))
     b.add('pipe_b', (7, 4, 1), (8, 9, 2), {'north': ENAMEL, 'east': ENAMEL, 'west': ENAMEL, 'up': ENAMEL})
-    gauge(b, 'gauge', 4.5, 11.5, -30, z=1)
+    gauge(b, 'gauge', 4.5, 11.5, -22.5, z=1)
 
 
 # the third and fourth tiers (tools/textures/draw/labworks.py draws their faces and holds their openings)
@@ -491,7 +491,7 @@ def distillation_column(b):
 def high_pressure_reactor(b):
     """The big pressure gauge standing out of the front."""
     body(b)
-    gauge(b, 'gauge', 9, 10, 40, n=8)
+    gauge(b, 'gauge', 9, 10, 45, n=8)
 
 
 def gas_phase_reactor(b):
@@ -506,7 +506,7 @@ def membrane_separator(b):
     carve(b, lab_cut('membrane_separator'))
     for i, y in enumerate((10, 7, 4)):
         b.add(f'tube{i}', (7, y, 1), (14, y + 2, 3), {'north': MEMBRANE, 'up': MEMBRANE, 'down': MEMBRANE})
-    gauge(b, 'gauge', 3.5, 11.5, 20)
+    gauge(b, 'gauge', 3.5, 11.5, 22.5)
 
 
 def extraction_tank(b):

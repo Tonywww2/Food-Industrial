@@ -1,0 +1,218 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#side",
+    "parts": "foodindustrial:block/homogenizing_sterilizer_parts"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [0, 0, 16, 16],
+          "texture": "#side",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "gauge_a_a",
+      "from": [8, 10, -1],
+      "to": [13, 13, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 0.5, 2.5, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_a_b",
+      "from": [9, 9, -1],
+      "to": [12, 14, 0],
+      "faces": {
+        "north": {
+          "uv": [0.5, 0, 2, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_a_needle",
+      "from": [10, 11, -2],
+      "to": [11, 13, -1],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [10.5, 11.5, -1.5]
+      },
+      "faces": {
+        "north": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b_a",
+      "from": [2, 10, -1],
+      "to": [7, 13, 0],
+      "faces": {
+        "north": {
+          "uv": [0, 0.5, 2.5, 2],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [2.5, 0, 3, 1.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [3, 0, 5.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b_b",
+      "from": [3, 9, -1],
+      "to": [6, 14, 0],
+      "faces": {
+        "north": {
+          "uv": [0.5, 0, 2, 2.5],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [5.5, 0, 6, 2.5],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [6, 0, 7.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    },
+    {
+      "name": "gauge_b_needle",
+      "from": [4, 11, -2],
+      "to": [5, 13, -1],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "z",
+        "origin": [4.5, 11.5, -1.5]
+      },
+      "faces": {
+        "north": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "east": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "west": {
+          "uv": [7.5, 0, 8, 1],
+          "texture": "#parts"
+        },
+        "up": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        },
+        "down": {
+          "uv": [8, 0, 8.5, 0.5],
+          "texture": "#parts"
+        }
+      }
+    }
+  ]
+}

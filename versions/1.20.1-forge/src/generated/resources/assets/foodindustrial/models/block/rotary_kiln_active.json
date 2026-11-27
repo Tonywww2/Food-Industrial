@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "foodindustrial:block/rotary_kiln_shape",
   "textures": {
     "front": "foodindustrial:block/rotary_kiln_front_active",
     "side": "foodindustrial:block/rotary_kiln_side",
